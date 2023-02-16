@@ -12,7 +12,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <summary>
         /// Reference to any Comments written in the SysML model to be converted into a C# format <c>&lt;summary /&gt;</c>
         /// </summary>
-        public Summary Summary { get; private set; }
+        public Summary Summary { get; protected set; }
 
         public string Name => base.SysML_Name.ToPascalCase();
 

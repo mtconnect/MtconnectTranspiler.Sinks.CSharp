@@ -2,39 +2,19 @@
 using MtconnectTranspiler.Sinks.CSharp.Attributes;
 using MtconnectTranspiler.Sinks.CSharp.Models;
 using Scriban;
-using Scriban.Parsing;
 using Scriban.Runtime;
 using System.Collections.Generic;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using System.Threading;
 
 namespace MtconnectTranspiler.Sinks.CSharp
 {
-    public class IncludeSharedTemplates : ITemplateLoader
-    {
-        public string GetPath(TemplateContext context, SourceSpan callerSpan, string templateName)
-        {
-            return Path.Combine("Templates", templateName);
-        }
-
-        public string Load(TemplateContext context, SourceSpan callerSpan, string templatePath)
-        {
-            var mtconnectFunctions = new MTConnectHelperMethods();
-            context.PushGlobal(mtconnectFunctions);
-            return File.ReadAllText(templatePath);
-        }
-
-        public async ValueTask<string> LoadAsync(TemplateContext context, SourceSpan callerSpan, string templatePath)
-        {
-            var mtconnectFunctions = new MTConnectHelperMethods();
-            context.PushGlobal(mtconnectFunctions);
-            return await Task.FromResult(File.ReadAllText(templatePath));
-        }
-    }
+    /// <summary>
+    /// A base class for transpiling the MTConnect Standard SysML model into C# files.
+    /// </summary>
     public abstract class CsharpTranspiler : ITranspilerSink
     {
         /// <summary>
@@ -42,10 +22,20 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// </summary>
         public string ProjectPath { get; set; }
 
+        /// <summary>
+        /// Reference to the template rendering context.
+        /// </summary>
         protected TemplateContext TemplateContext { get; set; }
 
+        /// <summary>
+        /// Reference to the core template rendering model.
+        /// </summary>
         protected ScriptObject Model { get; set; }
 
+        /// <summary>
+        /// Constructs a new instance of the transpiler that can transpile the model into C# files.
+        /// </summary>
+        /// <param name="projectPath"><inheritdoc cref="ProjectPath" path="/summary"/></param>
         public CsharpTranspiler(string projectPath)
         {
             ProjectPath = projectPath;
@@ -65,43 +55,24 @@ namespace MtconnectTranspiler.Sinks.CSharp
             TemplateContext.PushGlobal(Model);
         }
 
+        /// <summary>
+        /// <inheritdoc cref="ITranspilerSink.Transpile(MTConnectModel, CancellationToken)" path="/summary"/>
+        /// </summary>
+        /// <param name="model"><inheritdoc cref="MTConnectModel" path="/summary"/></param>
+        /// <param name="cancellationToken"><inheritdoc cref="CancellationToken" path="/summary"/></param>
         public abstract void Transpile(MTConnectModel model, CancellationToken cancellationToken = default);
 
-        private void processDeviceModel(MTConnectDeviceInformationModel model, string @namespace = "MtconnectCore.Standard")
-        {
-            if (model == null) return;
-
-            if (model.Classes != null && model.Classes.Any())
-            {
-                processTemplate(
-                    model.Classes.Select(o => new Class(Model["model"] as MTConnectModel, o) { Namespace = $"{@namespace}.{o.Name}" }),
-                    ProjectPath//Path.Combine(ProjectPath, value.Name),
-                );
-            }
-
-            if (model.SubModels != null && model.SubModels.Any())
-            {
-                // Recursively build sub-class structure
-                foreach (var subModel in model.SubModels)
-                {
-                    if (subModel.Name == "Component Types")
-                    {
-                        // Convert Component Classes into Enums
-                        // Process Enums
-                        processTemplate(
-                            new Models.Enum(Model["model"] as MTConnectModel, subModel),
-                            Path.Combine(ProjectPath, "Enums"));
-                    }
-                    else
-                    {
-                        processDeviceModel(subModel, $"{@namespace}.{model.Name}");
-                    }
-                }
-            }
-        }
-
-        private Dictionary<string, Template> templateCache = new Dictionary<string, Template>();
-        private Template getTemplate(string filepath)
+        /// <summary>
+        /// An internal cache of <see cref="Template"/>s based on the source <c>.scriban</c> file location.
+        /// </summary>
+        protected Dictionary<string, Template> templateCache = new Dictionary<string, Template>();
+        /// <summary>
+        /// Retrieves a <see cref="Template"/> from a <c>.scriban</c> file at the given <paramref name="filepath"/>.
+        /// </summary>
+        /// <param name="filepath">Location of the <c>.scriban</c> file to parse a <see cref="Template"/>.</param>
+        /// <returns>Reference to the <see cref="Template"/> parsed from the given <c>.scriban</c> at the <paramref name="filepath"/>.</returns>
+        /// <exception cref="InvalidOperationException"></exception>
+        protected Template getTemplate(string filepath)
         {
             if (templateCache.TryGetValue(filepath, out Template template)) return template;
 
