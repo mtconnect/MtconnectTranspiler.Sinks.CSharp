@@ -10,7 +10,19 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public Summary Summary { get; protected set; }
 
-        public string Name => ScribanHelperMethods.ToSnakeCase(base.SysML_Name);
+        protected string _name { get; set; }
+        public string Name
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_name))
+                {
+                    _name = ScribanHelperMethods.ToSnakeCase(base.SysML_Name);
+                }
+                return _name;
+            }
+            set { _name = value; }
+        }
 
         public EnumItem(MTConnectModel model, UmlEnumerationLiteral source) : base(model, source)
         {

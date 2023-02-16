@@ -11,7 +11,19 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public Summary Summary { get; protected set; }
 
-        public string Name => base.SysML_Name.ToPascalCase();
+        protected string _name { get; set; }
+        public string Name
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_name))
+                {
+                    _name = base.SysML_Name.ToPascalCase();
+                }
+                return _name;
+            }
+            set { _name = value; }
+        }
 
         /// <summary>
         /// Reference to the access modifier for the property. Default is <c>public</c>

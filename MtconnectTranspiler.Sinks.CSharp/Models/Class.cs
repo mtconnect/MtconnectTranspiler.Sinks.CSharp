@@ -14,10 +14,37 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public Summary Summary { get; protected set; }
 
-        public string Name => base.SysML_Name.ToPascalCase();
+        protected string _name { get; set; }
+        public string Name
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_name))
+                {
+                    _name = base.SysML_Name.ToPascalCase();
+                }
+                return _name;
+            }
+            set
+            {
+                _name = value;
+            }
+        }
 
+        protected string _filename { get; set; }
         /// <inheritdoc />
-        public string Filename { get; set; }
+        public string Filename
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_filename))
+                {
+                    _filename = $"{Name}.cs";
+                }
+                return _filename;
+            }
+            set { _filename = value; }
+        }
 
         /// <inheritdoc />
         public string Namespace { get; set; }
@@ -32,8 +59,6 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
         public Class(MTConnectModel model, UmlClass source) : base(model, source)
         {
-            Filename = $"{Name}.cs";
-
             if (source.Comments?.Length > 0)
             {
                 Summary = new Summary(source.Comments);
