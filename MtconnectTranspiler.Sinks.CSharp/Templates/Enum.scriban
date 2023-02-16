@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace MtconnectTranspiler.Sinks.CSharp.Generated
+{
+	/// <summary>
+	{{ source?.summary }}
+	/// </summary>
+	{{ include 'GeneratedCodeAttribute.scriban' }}
+	public enum {{ to_pascal_case source.name }} {
+	{{~ for item in source.items ~}}
+		/// <summary>
+		{{ item?.summary }}
+		/// </summary>
+		{{ item.name }},
+	{{~ end ~}}
+	}
+}

@@ -1,0 +1,16 @@
+﻿using System;
+
+namespace MtconnectTranspiler.Sinks.CSharp.Generated
+{
+	{{ include 'GeneratedCodeAttribute.scriban' }}
+	{{ source.keyword }} {{ source.modifier }} class {{ source.name }}
+	{
+	{{~ for item in source.items ~}}
+		/// <summary>
+		{{ item?.summary }}
+		/// </summary>
+		/// <remarks>Original Name: {{ item.name }}</remarks>
+		{{ item.access_modifier }} {{ item.type }} {{ item.name }} { get; set; }
+	{{~ end ~}}
+	}
+}
