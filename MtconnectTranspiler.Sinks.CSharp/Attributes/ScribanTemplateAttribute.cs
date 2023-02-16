@@ -6,7 +6,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Attributes
     /// An attribute used to relate a <c>class</c> with a Scriban-formatted template contained in the "Templates" folder of the project.
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
-    internal class ScribanTemplateAttribute : Attribute
+    public class ScribanTemplateAttribute : Attribute
     {
         /// <summary>
         /// Reference to the filename within the "Templates" folder to pull the Scriban template.
