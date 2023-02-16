@@ -131,7 +131,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <param name="folderPath">Location to save the <c>.cs</c> file.</param>
         /// <exception cref="NotImplementedException"></exception>
         /// <exception cref="FileNotFoundException"></exception>
-        protected void processTemplate<T>(T item, string folderPath) where T : IFileSource
+        protected void processTemplate<T>(T item, string folderPath, bool overwriteExisting = false) where T : IFileSource
         {
             if (item == null) return;
 
@@ -150,7 +150,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
             }
 
             string csharp = renderTemplateWithModel("source", item, template);
-            XmiTranspilerExtensions.WriteToFile(Path.Combine(folderPath, item.Filename), csharp);
+            XmiTranspilerExtensions.WriteToFile(Path.Combine(folderPath, item.Filename), csharp, overwriteExisting);
         }
     }
 }
