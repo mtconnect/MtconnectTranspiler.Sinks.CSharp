@@ -117,11 +117,11 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <typeparam name="T">An implementation of <see cref="IFileSource"/>.</typeparam>
         /// <param name="items">Collection of objects, decorated with <see cref="ScribanTemplateAttribute"/>.</param>
         /// <param name="folderPath">Location to save the <c>.cs</c> files.</param>
-        protected void processTemplate<T>(IEnumerable<T> items, string folderPath) where T : IFileSource
+        protected void processTemplate<T>(IEnumerable<T> items, string folderPath, bool overwriteExisting = false) where T : IFileSource
         {
             if (items == null || items.Any() == false) return;
 
-            foreach (var item in items) processTemplate(item, folderPath);
+            foreach (var item in items) processTemplate(item, folderPath, overwriteExisting);
         }
         /// <summary>
         /// Processes an object, decorated with the <see cref="ScribanTemplateAttribute"/>, into a C# file.
