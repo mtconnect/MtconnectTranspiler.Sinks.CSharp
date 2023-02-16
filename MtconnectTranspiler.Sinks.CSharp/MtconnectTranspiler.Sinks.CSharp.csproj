@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>MTConnect Transpiler Sink for C#</Title>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>mtconnect, tbm0115</Authors>
     <Company>MTConnect Institute; TAMS;</Company>
     <Description>An implementation of `ITranspilerSink` from the `MtconnectTranspiler` library. This libary makes it possible to transpile the MTConnect Standard SysML model into C# code.</Description>
@@ -14,11 +14,15 @@
 
   <ItemGroup>
     <None Remove="Templates\Class.scriban" />
+    <None Remove="Templates\Enum.scriban" />
     <None Remove="Templates\GeneratedCodeAttribute.scriban" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Templates\Class.scriban">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Enum.scriban">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Templates\GeneratedCodeAttribute.scriban">
