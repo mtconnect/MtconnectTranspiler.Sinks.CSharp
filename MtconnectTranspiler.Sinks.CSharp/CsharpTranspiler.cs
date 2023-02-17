@@ -174,11 +174,38 @@ namespace MtconnectTranspiler.Sinks.CSharp
             Template template = getTemplate(Path.Combine(TemplatesPath, attr.Filename));
             if (template == null)
             {
-                throw new FileNotFoundException();
+                var templateNotFound = new FileNotFoundException();
+                _logger?.LogError(templateNotFound, "Could not find template");
+                throw templateNotFound;
             }
 
-            string csharp = renderTemplateWithModel("source", item, template);
-            XmiTranspilerExtensions.WriteToFile(Path.Combine(folderPath, item.Filename), csharp, overwriteExisting);
+            string csharp = string.Empty;
+            string filepath = Path.Combine(folderPath, item.Filename);
+            try
+            {
+                csharp = renderTemplateWithModel("source", item, template);
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Failed to render C#");
+                throw ex;
+            }
+
+            if (!string.IsNullOrEmpty(csharp))
+            {
+                try
+                {
+                    XmiTranspilerExtensions.WriteToFile(filepath, csharp, overwriteExisting);
+                }
+                catch (Exception ex)
+                {
+                    _logger?.LogError(ex, "Failed to write to file: {Filepath}", filepath);
+                    throw ex;
+                }
+            } else
+            {
+                _logger?.LogWarning("Cannot write an empty C# file: {Filepath}", filepath);
+            }
         }
     }
 }
