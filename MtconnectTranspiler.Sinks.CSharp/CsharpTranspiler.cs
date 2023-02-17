@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
+using Microsoft.Extensions.Logging;
 
 namespace MtconnectTranspiler.Sinks.CSharp
 {
@@ -17,10 +18,17 @@ namespace MtconnectTranspiler.Sinks.CSharp
     /// </summary>
     public abstract class CsharpTranspiler : ITranspilerSink
     {
+        protected ILogger<ITranspilerSink> _logger;
+
         /// <summary>
         /// The root output directory for the transpiled code.
         /// </summary>
         public string ProjectPath { get; set; }
+
+        /// <summary>
+        /// Reference to the directory containing all Scriban template files.
+        /// </summary>
+        public string TemplatesPath { get; set; } = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates");
 
         /// <summary>
         /// Reference to the template rendering context.
@@ -36,9 +44,10 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// Constructs a new instance of the transpiler that can transpile the model into C# files.
         /// </summary>
         /// <param name="projectPath"><inheritdoc cref="ProjectPath" path="/summary"/></param>
-        public CsharpTranspiler(string projectPath)
+        public CsharpTranspiler(string projectPath, ILogger<ITranspilerSink> logger = default)
         {
             ProjectPath = projectPath;
+            _logger = logger;
 
             TemplateContext = new TemplateContext();
             TemplateContext.TemplateLoader = new IncludeSharedTemplates();
@@ -76,12 +85,15 @@ namespace MtconnectTranspiler.Sinks.CSharp
         {
             if (templateCache.TryGetValue(filepath, out Template template)) return template;
 
+            if (!File.Exists(filepath)) throw new FileNotFoundException("Could not find template file", filepath);
+
             string templateContent = File.ReadAllText(filepath);
             template = Template.Parse(templateContent);
 
             if (template != null)
             {
                 if (templateCache.ContainsKey(filepath)) return templateCache[filepath];
+                _logger?.LogInformation("Registering Template from file: {Filepath}", filepath);
                 templateCache.Add(filepath, template);
                 return template;
             }
@@ -143,7 +155,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
                 throw new NotImplementedException("The type of " + typeof(T).Name + " must be decorated with the ScribanTemplateAttribute");
             }
 
-            Template template = getTemplate($"Templates\\{attr.Filename}");
+            Template template = getTemplate(Path.Combine(TemplatesPath, attr.Filename));
             if (template == null)
             {
                 throw new FileNotFoundException();
