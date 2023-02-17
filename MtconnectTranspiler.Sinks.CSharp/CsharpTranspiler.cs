@@ -25,10 +25,26 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// </summary>
         public string ProjectPath { get; set; }
 
+        private string _templatesPath { get; set; }
         /// <summary>
         /// Reference to the directory containing all Scriban template files.
         /// </summary>
-        public string TemplatesPath { get; set; } = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates");
+        public string TemplatesPath
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_templatesPath))
+                {
+                    _templatesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates");
+                }
+                return _templatesPath;
+            }
+            set
+            {
+                _templatesPath = value;
+                (TemplateContext.TemplateLoader as IncludeSharedTemplates).TemplatesPath = value;
+            }
+        }
 
         /// <summary>
         /// Reference to the template rendering context.
