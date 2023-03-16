@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>MTConnect Transpiler Sink for C#</Title>
-    <Version>0.0.12</Version>
+    <Version>0.0.14</Version>
     <Authors>mtconnect, tbm0115</Authors>
     <Company>MTConnect Institute; TAMS;</Company>
     <Description>An implementation of `ITranspilerSink` from the `MtconnectTranspiler` library. This libary makes it possible to transpile the MTConnect Standard SysML model into C# code.</Description>
@@ -12,6 +12,7 @@
     <PackageTags>MTConnect;Transpiler;CI;C#;</PackageTags>
     <PackageProjectUrl>https://github.com/mtconnect/MtconnectTranspiler.Sinks.CSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mtconnect/MtconnectTranspiler.Sinks.CSharp</RepositoryUrl>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -38,8 +39,8 @@
 
   <ItemGroup>
     <PackageReference Include="CaseExtensions" Version="1.1.0" />
-    <PackageReference Include="MtconnectTranspiler" Version="0.0.3" />
-    <PackageReference Include="Scriban" Version="5.6.0" />
+    <PackageReference Include="MtconnectTranspiler" Version="0.0.5" />
+    <PackageReference Include="Scriban" Version="5.7.0" />
   </ItemGroup>
 
 </Project>
