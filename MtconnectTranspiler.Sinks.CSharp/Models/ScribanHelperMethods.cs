@@ -5,11 +5,48 @@ using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System;
 using System.Linq;
+using MtconnectTranspiler.Xmi.UML;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
     public class ScribanHelperMethods : ScriptObject
     {
+        private static Dictionary<string, Type> umlDataTypeToCSharp = new Dictionary<string, Type>()
+        {
+            { "boolean", typeof(bool) },
+            { "ID", typeof(string) },
+            { "string", typeof(string) },
+            { "float", typeof(float) },
+            { "datetime", typeof(DateTime) },
+            { "integer", typeof(int) },
+            { "xlinktype", typeof(string) },
+            { "xslang", typeof(string) },
+            { "SECOND", typeof(float) },
+            { "IDREF", typeof(string) },
+            { "xlinkhref", typeof(string) },
+            { "MILLIMETER", typeof(float) },
+            { "DEGREE", typeof(float) },
+            { "x509", typeof(string) },
+            { "CUBIC_MILLIMETER", typeof(float) },
+            { "int32", typeof(int) },
+            { "int64", typeof(long) },
+            { "version", typeof(string) },
+            { "uint32", typeof(uint) },
+            { "uint64", typeof(ulong) },
+            { "double", typeof(double) },
+            
+        };
+        /// <summary>
+        /// Gets the C# equivalant of the UmlDataType.
+        /// </summary>
+        /// <param name="dataType">Reference to the packaged UML DataType</param>
+        /// <returns>Primitive type. Returns null if unrecognizes or unhandled DataType</returns>
+        public static Type ToPrimitiveType(UmlDataType dataType)
+        {
+            if (umlDataTypeToCSharp.TryGetValue(dataType.Name, out Type type))
+                return type;
+            return null;
+        }
         /// <summary>
         /// Converts Markdown into C# <c>&lt;summary /&gt;</c> formatted text.
         /// </summary>
