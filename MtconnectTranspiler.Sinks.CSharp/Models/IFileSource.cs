@@ -1,4 +1,6 @@
-﻿namespace MtconnectTranspiler.Sinks.CSharp.Models
+﻿using System.Xml.Linq;
+
+namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
     /// <summary>
     /// Represents an object that is intended to directly convert into a file.

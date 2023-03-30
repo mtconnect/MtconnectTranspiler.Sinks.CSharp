@@ -22,7 +22,7 @@ internal class Program
 
 
         // NOTE: The GitHubRelease can be a reference to a specific tag referring to the version in which to download.
-        TranspilerDispatcherOptions dispatchOptions = null;
+        TranspilerDispatcherOptions? dispatchOptions = null;
         if (args.Length > 1)
         {
             if (!File.Exists(args[1])) throw new FileNotFoundException(args[1]);

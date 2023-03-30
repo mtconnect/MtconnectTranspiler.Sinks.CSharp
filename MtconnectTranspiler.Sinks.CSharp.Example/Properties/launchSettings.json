@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MtconnectTranspiler.Sinks.CSharp.Example": {
+      "commandName": "Project",
+      "commandLineArgs": "\"%UserProfile%\\Desktop\\MTConnect Transpiled\\CSharp\""
+    }
+  }
+}
