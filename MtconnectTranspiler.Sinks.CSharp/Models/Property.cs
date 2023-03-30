@@ -30,7 +30,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
             AccessModifier = source.Visibility;
 
-            Type = ScribanHelperMethods.ToPrimitiveType(model, source)?.Name;
+            Type = ScribanHelperMethods.ToPrimitiveType(model, source)?.Name ?? "object";
         }
     }
 }

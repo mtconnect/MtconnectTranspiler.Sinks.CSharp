@@ -63,6 +63,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         public static Type ToPrimitiveType(Xmi.XmiDocument model, UmlProperty source)
         {
             var umlDataType = model.LookupDataType(source.PropertyType);
+            if (umlDataType == null)
+                return null;
             return ToPrimitiveType(umlDataType);
         }
 
