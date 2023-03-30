@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
-using MtconnectTranspiler.Model;
-using MtconnectTranspiler.Sinks.CSharp;
 using MtconnectTranspiler.Sinks.CSharp.Models;
 using MtconnectTranspiler.Sinks.CSharp.Example.Models;
 using MtconnectTranspiler.Xmi.UML;
 using Scriban.Runtime;
+using MtconnectTranspiler.Xmi;
+using MtconnectTranspiler.Contracts;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Example
 {
@@ -20,9 +20,9 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
         /// 
         /// </summary>
         /// <param name="projectPath"></param>
-        public Transpiler(string projectPath, ILogger<Transpiler> logger = default) : base(projectPath, logger) { }
+        public Transpiler(string projectPath, ILogger<Transpiler>? logger = default) : base(projectPath, logger) { }
 
-        public override void Transpile(MTConnectModel model, CancellationToken cancellationToken = default(CancellationToken))
+        public override void Transpile(XmiDocument model, CancellationToken cancellationToken = default)
         {
             _logger?.LogInformation("Received MTConnectModel, beginning transpilation");
 
@@ -41,71 +41,87 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             foreach (var category in categories)
             {
                 // Get the UmlPackage for the category (ie. Samples, Events, Conditions).
-                var typesPackage = model
-                    ?.ObservationInformationModel
-                    ?.ObservationTypes
-                    ?.Elements
-                    ?.Where(o => o.Name == $"{category} Types")
-                    ?.FirstOrDefault() as UmlPackage;
+                var typesPackage = MTConnectHelper.JumpToPackage(
+                    model!,
+                    MTConnectHelper.PackageNavigationTree.ObservationInformationModel.ObservationTypes
+                    )?
+                    .Packages
+                    .FirstOrDefault(o => o.Name == $"{category} Types");
+                if (typesPackage == null)
+                {
+                    _logger?.LogTrace("Couldn't find {Category} Types", category);
+                    continue;
+                }
+
                 // Get all DataItem Type and SubType references
                 var allTypes = typesPackage
-                    ?.Elements
-                    ?.Where(o => o is UmlClass)
-                    ?.Select(o => o as UmlClass);
+                    .Classes;
                 // Filter to get just the Type references
                 var types = allTypes
-                    ?.Where(o => !o.Name.Contains("."));
+                    ?.Where(o => !o!.Name!.Contains('.'));
+                if (types == null)
+                {
+                    _logger?.LogTrace("Couldn't find type classes for {Category} Types", category);
+                    continue;
+                }
+
                 // Filter and group each SubType by the relevant Type reference
                 var subTypes = allTypes
-                    ?.Where(o => o.Name.Contains("."))
-                    ?.GroupBy(o => o.Name.Substring(0, o.Name.IndexOf(".")), o => o)
+                    ?.Where(o => o!.Name!.Contains('.'))
+                    ?.GroupBy(o => o!.Name![..o.Name!.IndexOf(".")], o => o)
                     ?.Where(o => o.Any())
                     ?.ToDictionary(o => o.Key, o => o?.ToList());
 
-                var categoryEnum = new ExampleEnum(model, typesPackage, $"{category}Types") { Namespace = DataItemNamespace };
+                var categoryEnum = new ExampleEnum(model!, typesPackage)
+                {
+                    Name = $"{category}Types",
+                    Namespace = DataItemNamespace
+                };
 
                 foreach (var type in types)
                 {
                     // Add type to CATEGORY enum
-                    categoryEnum.AddItem(model, type);
+                    categoryEnum.Add(model, type);
 
                     // Find value
-                    var typeResult = type?.Properties?.FirstOrDefault(o => o.Name == "result");
+                    var typeResult = type!.Properties?.FirstOrDefault(o => o.Name == "result");
                     if (typeResult != null)
                     {
-                        var typeValuesSysEnum = model
-                            ?.Profile
-                            ?.ProfileDataTypes
-                            ?.Elements
-                            ?.FirstOrDefault(o => o is UmlEnumeration && o.Id == typeResult.PropertyType);
-                        if (typeValuesSysEnum != null)
+                        var typeValuesSysEnum = MTConnectHelper.JumpToPackage(model!, MTConnectHelper.PackageNavigationTree.Profile.DataTypes)?
+                            .Enumerations
+                            .GetById(typeResult.PropertyType);
+                        if (typeValuesSysEnum != null && typeValuesSysEnum is UmlEnumeration)
                         {
-                            var typeValuesEnum = new ExampleEnum(model, typeValuesSysEnum as UmlEnumeration) { Namespace = DataItemValueNamespace, Name = $"{type.Name}Values" };
+                            var typeValuesEnum = new ExampleEnum(model!, typeValuesSysEnum!)
+                            {
+                                Namespace = DataItemValueNamespace,
+                                Name = $"{type.Name}Values"
+                            };
                             foreach (var value in typeValuesEnum.Items)
                             {
                                 value.Name = value.SysML_Name;
                             }
-                            if (!categoryEnum.ValueTypes.ContainsKey(type.Name)) categoryEnum.ValueTypes.Add(ScribanHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}Values");
+                            if (!categoryEnum.ValueTypes.ContainsKey(type.Name!)) categoryEnum.ValueTypes.Add(ScribanHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}Values");
                             valueEnums.Add(typeValuesEnum);
                         }
                     }
 
                     // Add subType as enum
-                    if (subTypes.ContainsKey(type.Name))
+                    if (subTypes != null && subTypes.ContainsKey(type.Name!))
                     {
                         // Register type as having a subType in the CATEGORY enum
-                        if (!categoryEnum.SubTypes.ContainsKey(type.Name)) categoryEnum.SubTypes.Add(ScribanHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}SubTypes");
+                        if (!categoryEnum.SubTypes.ContainsKey(type.Name!)) categoryEnum.SubTypes.Add(ScribanHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}SubTypes");
 
-                        var subTypeEnum = new ExampleEnum(model, type, $"{type.Name}SubTypes") { Namespace = DataItemNamespace };
+                        var subTypeEnum = new ExampleEnum(model!, type, $"{type.Name}SubTypes") { Namespace = DataItemNamespace };
 
-                        var typeSubTypes = subTypes[type.Name];
-                        subTypeEnum.AddItems(model, typeSubTypes);
+                        var typeSubTypes = subTypes[type.Name!];
+                        subTypeEnum.AddRange(model, typeSubTypes);
 
                         // Cleanup Enum names
                         foreach (var item in subTypeEnum.Items)
                         {
-                            if (!item.Name.Contains(".")) continue;
-                            item.Name = ScribanHelperMethods.ToUpperSnakeCode(item.Name.Substring(item.Name.IndexOf(".") + 1));
+                            if (!item.Name.Contains('.')) continue;
+                            item.Name = ScribanHelperMethods.ToUpperSnakeCode(item.Name[(item.Name.IndexOf(".") + 1)..]);
                         }
 
                         // Register the DataItem SubType Enum
@@ -123,11 +139,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                 dataItemTypeEnums.Add(categoryEnum);
             }
 
-            _logger?.LogInformation($"Processing {dataItemTypeEnums.Count} DataItem types/subTypes");
+            _logger?.LogInformation("Processing {Count} DataItem types/subTypes", dataItemTypeEnums.Count);
 
             // Process the template into enum files
-            processTemplate(dataItemTypeEnums, Path.Combine(ProjectPath, "Enums", "Devices", "DataItemTypes"), true);
-            processTemplate(valueEnums, Path.Combine(ProjectPath, "Enums", "Streams"), true);
+            ProcessTemplate(dataItemTypeEnums, Path.Combine(ProjectPath, "Enums", "Devices", "DataItemTypes"), true);
+            ProcessTemplate(valueEnums, Path.Combine(ProjectPath, "Enums", "Streams"), true);
         }
     }
 }

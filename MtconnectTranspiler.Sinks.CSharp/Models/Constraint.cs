@@ -1,12 +1,21 @@
 ﻿using CaseExtensions;
-using MtconnectTranspiler.Model;
+using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
+    /// <summary>
+    /// Represents a generic constraint which could be used to create methods
+    /// </summary>
     public class Constraint : MtconnectVersionedObject
     {
+        /// <summary>
+        /// Internal string, used by <see cref="Name"/>.
+        /// </summary>
         protected string _name { get; set; }
+        /// <summary>
+        /// The intended name for the C# method.
+        /// </summary>
         public string Name
         {
             get
@@ -20,11 +29,22 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             set { _name = value; }
         }
 
+        /// <summary>
+        /// Refers to the language of the <see cref="RawScript"/>. <b>NOTE</b>: As of v2.0 of the MTConnect Standard, OCL2.0 is typical language used.
+        /// </summary>
         public string SourceLanguage { get; set; } = "Unspecified";
 
+        /// <summary>
+        /// Source code that defines the logic for the constraint.
+        /// </summary>
         public string RawScript { get; set; }
 
-        public Constraint(MTConnectModel model, UmlConstraint source) : base(model, source)
+        /// <summary>
+        /// Constructs a new <see cref="Constraint"/>
+        /// </summary>
+        /// <param name="model"><inheritdoc cref="XmiDocument"/></param>
+        /// <param name="source"><inheritdoc cref="UmlConstraint"/></param>
+        public Constraint(XmiDocument model, UmlConstraint source) : base(model, source)
         {
             SourceLanguage = source.Specification?.Language;
             RawScript = source.Specification?.Body;

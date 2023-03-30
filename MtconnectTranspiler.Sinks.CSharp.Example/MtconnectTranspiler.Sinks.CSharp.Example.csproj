@@ -9,9 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Consoul" Version="1.6.2" />
-    <PackageReference Include="MtconnectTranspiler" Version="0.0.3" />
-    <PackageReference Include="MtconnectTranspiler.Sinks.CSharp" Version="0.0.12-beta" />
+    <PackageReference Include="Consoul" Version="1.6.3" />
+    <PackageReference Include="MtconnectTranspiler" Version="1.0.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +21,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Templates\UmlCommentsSummaryContent.scriban" />
+    <ProjectReference Include="..\MtconnectTranspiler.Sinks.CSharp\MtconnectTranspiler.Sinks.CSharp.csproj" />
     <Content Update="Templates\UmlCommentsSummaryContent.scriban">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

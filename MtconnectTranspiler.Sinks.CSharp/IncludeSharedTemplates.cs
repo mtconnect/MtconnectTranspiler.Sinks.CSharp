@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace MtconnectTranspiler.Sinks.CSharp
 {
+    /// <summary>
+    /// Used as the <see cref="ITemplateLoader"/> in the <see cref="CsharpTranspiler"/>.
+    /// </summary>
     public class IncludeSharedTemplates : ITemplateLoader
     {
         /// <summary>
@@ -15,11 +18,13 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// </summary>
         public string TemplatesPath { get; set; } = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates");
 
+        /// <inheritdoc />
         public string GetPath(TemplateContext context, SourceSpan callerSpan, string templateName)
         {
             return Path.Combine(TemplatesPath, templateName);
         }
 
+        /// <inheritdoc />
         public string Load(TemplateContext context, SourceSpan callerSpan, string templatePath)
         {
             if (!File.Exists(templatePath)) templatePath = Path.Combine(TemplatesPath, templatePath);
@@ -30,6 +35,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
             return File.ReadAllText(templatePath);
         }
 
+        /// <inheritdoc />
         public async ValueTask<string> LoadAsync(TemplateContext context, SourceSpan callerSpan, string templatePath)
         {
             if (!File.Exists(templatePath)) templatePath = Path.Combine(TemplatesPath, templatePath);

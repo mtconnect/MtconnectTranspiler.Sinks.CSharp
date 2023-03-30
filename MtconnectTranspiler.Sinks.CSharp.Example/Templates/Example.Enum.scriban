@@ -1,31 +1,63 @@
+{{~ nversion_slim = (source?.normative_version | string.slice 20 3) | string.replace "_" "."
+dversion_slim = (source?.deprecated_version | string.slice 20 3) | string.replace "_" "." ~}}
+#pragma warning disable 0618
+#pragma warning disable 1574
 using System;
 using System.CodeDom.Compiler;
 
 namespace {{ to_pascal_code source.namespace }}
 {
 	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.sysml_id }}">model.mtconnect.org</seealso>
-	{{ include 'UmlCommentsSummaryContent.scriban' source?.summary ~}}
-	/// </summary>
-	{{~ if source?.deprecated_version != "" ~}}
-	[Obsolete("Deprecated according to https://model.mtconnect.org/")]
+	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso>
+	{{~ if source?.summary != null && source?.summary != "" ~}}
+	{{ source?.summary }}
 	{{~ end ~}}
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp.Example", "{{ version }}")]
+	/// </summary>
+	{{~ if nversion_slim != "" || dversion_slim != "" ~}}
+	/// <remarks>
+	/// <list type="bullet">
+	{{~ if nversion_slim != "" ~}}
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_{{ nversion_slim }}">v{{ nversion_slim }}</see></item>
+	{{~ end ~}}
+	{{~ if dversion_slim != "" ~}}
+	/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_{{ dversion_slim }}">v{{ dversion_slim }}</see></item>
+	{{~ end ~}}
+	/// </list>
+	/// </remarks>
+	{{~ end ~}}
+	{{~ if dversion_slim != "" ~}}
+	[Obsolete("Deprecated in v{{ dversion_slim }} according to https://model.mtconnect.org/#_Version_{{ dversion_slim }}")]
+	{{~ end ~}}
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public enum {{ to_pascal_case source.name }}
 	{
-	{{~ for item in source.items ~}}
 		/// <summary>
-		{{ include 'UmlCommentsSummaryContent.scriban' item?.summary ~}}
+		/// An extension to the standard. Extensions to the standard are usually prefaced with <c>x:</c>.
 		/// </summary>
-		{{~ if item?.deprecated_version != "" ~}}
-		[Obsolete("Deprecated according to https://model.mtconnect.org/")]
+		STANDARD_EXTENSION = -1,
+	{{~ for item in source.items ~}}
+{{~ n_item_version_slim = (item?.normative_version | string.slice 20 3) | string.replace "_" "."
+d_item_version_slim = (item?.deprecated_version | string.slice 20 3) | string.replace "_" "." ~}}
+		{{~ if item?.summary != null && item?.summary != "" ~}}
+		/// <summary>
+		{{ item?.summary }}
+		/// </summary>
 		{{~ end ~}}
-		{{~ if category_contains_type source item ~}}
-		/// <remarks><b>Observational Sub-Type</b>: {{ source?.sub_types[item.name] }}</remarks>
-{{ end ~}}
-		{{~ if category_contains_value source item ~}}
-		/// <remarks><b>Observational Value</b>: {{ source?.value_types[item.name] }}</remarks>
-{{ end ~}}
+		{{~ if n_item_version_slim != "" || d_item_version_slim != "" ~}}
+		/// <remarks>
+		/// <list type="bullet">
+		{{~ if n_item_version_slim != "" ~}}
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_{{ n_item_version_slim }}">v{{ n_item_version_slim }}</see></item>
+		{{~ end ~}}
+		{{~ if d_item_version_slim != "" ~}}
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_{{ d_item_version_slim }}">v{{ d_item_version_slim }}</see></item>
+		{{~ end ~}}
+		/// </list>
+		/// </remarks>
+		{{~ end ~}}
+		{{~ if d_item_version_slim != "" ~}}
+		[Obsolete("Deprecated in v{{ d_item_version_slim }} according to https://model.mtconnect.org/#_Version_{{ d_item_version_slim }}")]
+		{{~ end ~}}
 		{{ item.name }},
 	{{~ end ~}}
 	}

@@ -1,19 +1,38 @@
 ﻿using Scriban.Runtime;
-using MtconnectTranspiler.Model;
 using MtconnectTranspiler.Xmi.Profile;
 using MtconnectTranspiler.Xmi.UML;
 using System.Collections.Generic;
 using System;
 using System.Linq;
+using MtconnectTranspiler.Xmi;
+using MtconnectTranspiler.Contracts;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
+    /// <summary>
+    /// Helper methods related to processing MTConnect references.
+    /// </summary>
     public class MTConnectHelperMethods : ScriptObject
     {
-        public static Normative LookupNormative(MTConnectModel model, string id) => MtconnectTranspiler.Contracts.MTConnectHelper.LookupNormative(model, id);
-        public static Deprecated LookupDeprecated(MTConnectModel model, string id) => MtconnectTranspiler.Contracts.MTConnectHelper.LookupDeprecated(model, id);
+        /// <summary>
+        /// Finds the first <see cref="Normative"/> definition for the type with the provided <paramref name="id"/>.
+        /// </summary>
+        /// <param name="model">Reference to the whole <see cref="XmiDocument"/> in order to find all <see cref="Normative"/> references</param>
+        /// <param name="id">Reference to the <c>xmi:id</c> which is used to compare against the <see cref="Normative.BaseElement"/></param>
+        /// <returns>First find of the <see cref="Normative"/></returns>
+        public static Normative LookupNormative(XmiDocument model, string id) => MtconnectTranspiler.Contracts.MTConnectHelper.LookupNormative(model, id);
+        /// <summary>
+        /// Finds the first <see cref="Deprecated"/> definition for the type with the provided <paramref name="id"/>.
+        /// </summary>
+        /// <param name="model">Reference to the whole <see cref="XmiDocument"/> in order to find all <see cref="Normative"/> references</param>
+        /// <param name="id">Reference to the <c>xmi:id</c> which is used to compare against the <see cref="Deprecated.BaseElement"/></param>
+        /// <returns>First find of the <see cref="Deprecated"/></returns>
+        public static Deprecated LookupDeprecated(XmiDocument model, string id) => MtconnectTranspiler.Contracts.MTConnectHelper.LookupDeprecated(model, id);
 
         // TODO: Remove these references to MtconnectVersions and leave that up to MtconnectCore
+        /// <summary>
+        /// An overridable collection of alternative version numbers, keyed by the version numbers defined within the <see cref="XmiDocument"/>.
+        /// </summary>
         public static Dictionary<string, string> VersionEnumLookup { get; set; } = new Dictionary<string, string>()
         {
             { "1.0", "MtconnectVersions.V_1_0_1" },
@@ -26,55 +45,19 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             { "1.7", "MtconnectVersions.V_1_7_0" },
             { "1.8", "MtconnectVersions.V_1_8_0" },
             { "2.0", "MtconnectVersions.V_2_0_0" },
-            { "2.1", "MtconnectVersions.V_2_1_0" }
+            { "2.1", "MtconnectVersions.V_2_1_0" },
+            { "2.2", "MtconnectVersions.V_2_2_0" }
         };
+        /// <summary>
+        /// References <see cref="VersionEnumLookup"/> to lookup an alternative to the version number referred to within the <see cref="XmiDocument"/>.
+        /// </summary>
+        /// <param name="version">Version number as defined within the <see cref="XmiDocument"/></param>
+        /// <returns>Alternative version string, see <see cref="VersionEnumLookup"/>. Returns <c>null</c> if not found.</returns>
         public static string LookupMtconnectVersions(string version)
         {
             if (version == null) return null;
             if (!VersionEnumLookup.TryGetValue(version, out string versionEnum)) return null;
             return versionEnum;
         }
-
-        public static string LookupCsharpDataType(MTConnectModel model, UmlProperty property)
-        {
-            if (property == null) return null;
-            var dataType = LookupDataType(model, property);
-            if (dataType == null)
-                return "object";
-            if (!UmlToCsharpDataTypes.TryGetValue(dataType.Name, out System.Type type)) return "object";
-            return type.Name;
-        }
-
-        public static UmlDataType LookupDataType(MTConnectModel model, UmlProperty property)
-        {
-            var dataTypes = model?.AllDataTypes;
-            return dataTypes
-                ?.Where(o => o.Id == property?.PropertyType)
-                ?.FirstOrDefault();
-        }
-        public static Dictionary<string, System.Type> UmlToCsharpDataTypes = new Dictionary<string, System.Type>()
-        {
-            { "boolean", typeof(bool) },
-            { "ID", typeof(string) },
-            { "string", typeof(string) },
-            { "float", typeof(float) },
-            { "datetime", typeof(DateTime) },
-            { "integer", typeof(int) },
-            { "xlinktype", typeof(string) },
-            { "xslang", typeof(string) },
-            { "SECOND", typeof(float) },
-            { "IDREF", typeof(string) },
-            { "xlinkhref", typeof(string) },
-            { "MILLIMETER", typeof(float) },
-            { "DEGREE", typeof(float) },
-            { "x509", typeof(string) },
-            { "unit", typeof(float) },
-            { "CUBIC_MILLIMETER", typeof(float) },
-            { "int32", typeof(int) },
-            { "int64", typeof(long) },
-            { "version", typeof(string) },
-            { "uint32", typeof(uint) },
-            { "uint64", typeof(ulong) },
-        };
     }
 }

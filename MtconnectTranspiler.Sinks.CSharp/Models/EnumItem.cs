@@ -1,8 +1,11 @@
-﻿using MtconnectTranspiler.Model;
+﻿using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
+    /// <summary>
+    /// Represents a C# <see cref="Enum"/> value.
+    /// </summary>
     public class EnumItem : MtconnectVersionedObject
     {
         /// <summary>
@@ -10,33 +13,53 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public Summary Summary { get; protected set; }
 
+        /// <summary>
+        /// Internal string, used by <see cref="Name"/>.
+        /// </summary>
         protected string _name { get; set; }
+        /// <summary>
+        /// <inheritdoc cref="CsharpType.Name"/>
+        /// </summary>
         public string Name
         {
             get
             {
                 if (string.IsNullOrEmpty(_name))
-                {
                     _name = ScribanHelperMethods.ToSnakeCase(base.SysML_Name);
-                }
                 return _name;
             }
             set { _name = value; }
         }
 
-        public EnumItem(MTConnectModel model, UmlEnumerationLiteral source) : base(model, source)
+        /// <summary>
+        /// Constructs an <see cref="EnumItem"/> more generically. <b>NOTE</b>: You'll need to add items manually from here.
+        /// </summary>
+        /// <param name="model"><inheritdoc cref="XmiDocument" path="/summary"/></param>
+        /// <param name="source"><inheritdoc cref="XmiElement" path="/summary"/></param>
+        public EnumItem(XmiDocument model, XmiElement source) : base(model, source) { }
+
+
+        /// <summary>
+        /// <inheritdoc cref="EnumItem(XmiDocument, XmiElement)"/>
+        /// </summary>
+        /// <param name="model"><inheritdoc cref="EnumItem(XmiDocument, XmiElement)" path="/param[@name='model']"/></param>
+        /// <param name="source">The source <see cref="UmlEnumerationLiteral"/> to convert into an <see cref="Enum"/></param>
+        public EnumItem(XmiDocument model, UmlEnumerationLiteral source) : this(model, source as XmiElement)
         {
             if (source?.Comments?.Length > 0)
-            {
                 Summary = new Summary(source.Comments);
-            }
         }
-        public EnumItem(MTConnectModel model, UmlClass source) : base(model, source)
+
+        /// <summary>
+        /// <inheritdoc cref="EnumItem(XmiDocument, XmiElement)"/>
+        /// </summary>
+        /// <param name="model"><inheritdoc cref="EnumItem(XmiDocument, XmiElement)" path="/param[@name='model']"/></param>
+        /// <param name="source">The source <see cref="UmlClass"/> to convert into an <see cref="EnumItem"/></param>
+        public EnumItem(XmiDocument model, UmlClass source) : this(model, source as XmiElement)
         {
             if (source?.Comments?.Length > 0)
-            {
                 Summary = new Summary(source.Comments);
-            }
         }
+
     }
 }

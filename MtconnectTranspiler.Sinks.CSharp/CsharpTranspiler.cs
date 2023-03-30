@@ -1,5 +1,4 @@
-﻿using MtconnectTranspiler.Model;
-using MtconnectTranspiler.Sinks.CSharp.Attributes;
+﻿using MtconnectTranspiler.Sinks.CSharp.Attributes;
 using MtconnectTranspiler.Sinks.CSharp.Models;
 using Scriban;
 using Scriban.Runtime;
@@ -10,6 +9,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 using Microsoft.Extensions.Logging;
+using MtconnectTranspiler.Xmi;
 
 namespace MtconnectTranspiler.Sinks.CSharp
 {
@@ -18,6 +18,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
     /// </summary>
     public abstract class CsharpTranspiler : ITranspilerSink
     {
+        /// <inheritdoc cref="ILogger"/>
         protected ILogger<ITranspilerSink> _logger;
 
         /// <summary>
@@ -60,13 +61,16 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// Constructs a new instance of the transpiler that can transpile the model into C# files.
         /// </summary>
         /// <param name="projectPath"><inheritdoc cref="ProjectPath" path="/summary"/></param>
+        /// <param name="logger"><inheritdoc cref="ILogger"/></param>
         public CsharpTranspiler(string projectPath, ILogger<ITranspilerSink> logger = default)
         {
             ProjectPath = projectPath;
             _logger = logger;
 
-            TemplateContext = new TemplateContext();
-            TemplateContext.TemplateLoader = new IncludeSharedTemplates();
+            TemplateContext = new TemplateContext
+            {
+                TemplateLoader = new IncludeSharedTemplates()
+            };
 
             var helperFunctions = new ScribanHelperMethods();
             TemplateContext.PushGlobal(helperFunctions);
@@ -81,11 +85,11 @@ namespace MtconnectTranspiler.Sinks.CSharp
         }
 
         /// <summary>
-        /// <inheritdoc cref="ITranspilerSink.Transpile(MTConnectModel, CancellationToken)" path="/summary"/>
+        /// <inheritdoc cref="ITranspilerSink.Transpile(XmiDocument, CancellationToken)" path="/summary"/>
         /// </summary>
-        /// <param name="model"><inheritdoc cref="MTConnectModel" path="/summary"/></param>
+        /// <param name="model"><inheritdoc cref="XmiDocument" path="/summary"/></param>
         /// <param name="cancellationToken"><inheritdoc cref="CancellationToken" path="/summary"/></param>
-        public abstract void Transpile(MTConnectModel model, CancellationToken cancellationToken = default);
+        public abstract void Transpile(XmiDocument model, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// An internal cache of <see cref="Template"/>s based on the source <c>.scriban</c> file location.
@@ -97,7 +101,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <param name="filepath">Location of the <c>.scriban</c> file to parse a <see cref="Template"/>.</param>
         /// <returns>Reference to the <see cref="Template"/> parsed from the given <c>.scriban</c> at the <paramref name="filepath"/>.</returns>
         /// <exception cref="InvalidOperationException"></exception>
-        protected Template getTemplate(string filepath)
+        protected Template GetTemplate(string filepath)
         {
             if (templateCache.TryGetValue(filepath, out Template template)) return template;
 
@@ -124,7 +128,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <param name="value">The value for the provided <paramref name="member"/> reference.</param>
         /// <param name="template">The <see cref="Template"/> to render C#.</param>
         /// <returns>Raw C# code.</returns>
-        protected string renderTemplateWithModel(string member, object value, Template template)
+        protected string RenderTemplateWithModel(string member, object value, Template template)
         {
             if (value == null) return String.Empty;
             if (Model.Contains(member))
@@ -145,11 +149,12 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <typeparam name="T">An implementation of <see cref="IFileSource"/>.</typeparam>
         /// <param name="items">Collection of objects, decorated with <see cref="ScribanTemplateAttribute"/>.</param>
         /// <param name="folderPath">Location to save the <c>.cs</c> files.</param>
-        protected void processTemplate<T>(IEnumerable<T> items, string folderPath, bool overwriteExisting = false) where T : IFileSource
+        /// <param name="overwriteExisting">Flag for whether or not the output file should be overwritten</param>
+        protected void ProcessTemplate<T>(IEnumerable<T> items, string folderPath, bool overwriteExisting = false) where T : IFileSource
         {
             if (items == null || items.Any() == false) return;
 
-            foreach (var item in items) processTemplate(item, folderPath, overwriteExisting);
+            foreach (var item in items) ProcessTemplate(item, folderPath, overwriteExisting);
         }
         /// <summary>
         /// Processes an object, decorated with the <see cref="ScribanTemplateAttribute"/>, into a C# file.
@@ -157,21 +162,19 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <typeparam name="T">An implementation of <see cref="IFileSource"/>.</typeparam>
         /// <param name="item">An object, decorated with <see cref="ScribanTemplateAttribute"/>.</param>
         /// <param name="folderPath">Location to save the <c>.cs</c> file.</param>
+        /// <param name="overwriteExisting">Flag for whether or not the output file should be overwritten</param>
         /// <exception cref="NotImplementedException"></exception>
         /// <exception cref="FileNotFoundException"></exception>
-        protected void processTemplate<T>(T item, string folderPath, bool overwriteExisting = false) where T : IFileSource
+        protected void ProcessTemplate<T>(T item, string folderPath, bool overwriteExisting = false) where T : IFileSource
         {
             if (item == null) return;
 
             System.Type type = typeof(T);
-            ScribanTemplateAttribute attr = type.GetCustomAttribute<ScribanTemplateAttribute>();
 
-            if (attr == null)
-            {
-                throw new NotImplementedException("The type of " + typeof(T).Name + " must be decorated with the ScribanTemplateAttribute");
-            }
+            ScribanTemplateAttribute attr = type.GetCustomAttribute<ScribanTemplateAttribute>()
+                ?? throw new NotImplementedException("The type of " + typeof(T).Name + " must be decorated with the ScribanTemplateAttribute");
 
-            Template template = getTemplate(Path.Combine(TemplatesPath, attr.Filename));
+            Template template = GetTemplate(Path.Combine(TemplatesPath, attr.Filename));
             if (template == null)
             {
                 var templateNotFound = new FileNotFoundException();
@@ -179,11 +182,12 @@ namespace MtconnectTranspiler.Sinks.CSharp
                 throw templateNotFound;
             }
 
-            string csharp = string.Empty;
             string filepath = Path.Combine(folderPath, item.Filename);
+
+            string csharp;
             try
             {
-                csharp = renderTemplateWithModel("source", item, template);
+                csharp = RenderTemplateWithModel("source", item, template);
             }
             catch (Exception ex)
             {
