@@ -83,6 +83,19 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         }
 
         /// <summary>
+        /// <inheritdoc cref="Enum(XmiDocument, XmiElement, string)"/>
+        /// </summary>
+        /// <param name="model"><inheritdoc cref="Enum(XmiDocument, XmiElement, string)" path="/param[@name='model']"/></param>
+        /// <param name="source">The source <see cref="UmlClass"/> to convert into an <see cref="Enum"/></param>
+        public Enum(XmiDocument model, UmlClass source) : this(model, source, source.Name)
+        {
+            AddRange(model, source.Properties.ToList());
+
+            if (source.Comments?.Length > 0)
+                Summary = new Summary(source.Comments);
+        }
+
+        /// <summary>
         /// Adds a <see cref="EnumItem"/>
         /// </summary>
         /// <param name="item">Reference to <see cref="EnumItem"/> to add to the internal list</param>
