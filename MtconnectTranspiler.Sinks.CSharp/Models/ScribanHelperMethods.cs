@@ -87,7 +87,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 { new Regex(@"(.*?)(?<block>\{\{termplural\((?<contents>.*?)\)\}\})(.*?)"), (string s) =>$"<i>{s}</i>s" },
                 { new Regex(@"(.*?)(?<block>\*(?<contents>.*?)\*)(.*?)"), (string s) => $"<i>{s}</i>" },
                 { new Regex(@"(.*?)(?<block>\{\{url\((?<contents>.*?)\)\}\}(.*?))(.*?)"), (string s) => $"<see href=\"{s}\">{s}</see>" },
-                { new Regex(@"(.*?)(?<block>\{\{def\((?<contents>.*?)\)\}\}(.*?))(.*?)"), (string s) => $"<see cref=\"{s.Replace(":", ".")} />" },
+                { new Regex(@"(.*?)(?<block>\{\{def\((?<contents>.*?)\)\}\}(.*?))(.*?)"), (string s) => $"<see cref=\"{s.Replace(":", ".")}\" />" },
                 { new Regex(@"(.*?)(?<block>\{\{property\((?<contents>.*?)\)\}\}(.*?))(.*?)"), (string s) =>
                     {
                         string[] parts = s.Split(',');
