@@ -184,7 +184,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             int startIndex = 1;
             if (input.StartsWith(MTConnect, StringComparison.OrdinalIgnoreCase))
             {
-                startIndex = MTConnect.Length + 1;
+                startIndex = MTConnect.Length;
                 sb.Append(MTConnect);
             }
             else
