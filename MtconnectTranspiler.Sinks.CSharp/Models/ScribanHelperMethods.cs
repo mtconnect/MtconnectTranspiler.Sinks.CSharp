@@ -176,36 +176,28 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <returns><c>"The Quick Brown Fox"</c> => <c>"the_quick_brown_fox"</c></returns>
         public static string ToSnakeCase(string input)
         {
-            if (string.IsNullOrEmpty(input))
-            {
-                return input;
-            }
+            if (string.IsNullOrEmpty(input)) return input;
 
-            var result = new StringBuilder();
-            var lastCharWasUpper = false;
-            var lastCharWasLetterOrDigit = false;
+            var sb = new StringBuilder();
+            sb.Append(char.ToLower(input[0]));
 
-            for (int i = 0; i < input.Length; i++)
+            for (var i = 1; i < input.Length; i++)
             {
-                char c = input[i];
-                if (char.IsUpper(c))
+                if (char.IsUpper(input[i]))
                 {
-                    if (i > 0 && lastCharWasLetterOrDigit && !lastCharWasUpper)
+                    if (i > 1 && !char.IsUpper(input[i - 1]))
                     {
-                        result.Append('_');
+                        sb.Append("_");
                     }
-                    result.Append(char.ToLower(c));
-                    lastCharWasUpper = true;
+                    else if (i < input.Length - 1 && !char.IsUpper(input[i + 1]))
+                    {
+                        sb.Append("_");
+                    }
                 }
-                else
-                {
-                    result.Append(c);
-                    lastCharWasUpper = false;
-                }
-                lastCharWasLetterOrDigit = char.IsLetterOrDigit(c);
+                sb.Append(char.ToLower(input[i]));
             }
 
-            return result.ToString();
+            return sb.ToString();
         }
 
         /// <inheritdoc cref="ToSnakeCase(string)" />
