@@ -176,33 +176,36 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <returns><c>"The Quick Brown Fox"</c> => <c>"the_quick_brown_fox"</c></returns>
         public static string ToSnakeCase(string input)
         {
-            if (string.IsNullOrWhiteSpace(input))
+            const string MTConnect = "MTConnect";
+            if (string.IsNullOrEmpty(input)) return input;
+
+            var sb = new StringBuilder();
+
+            int startIndex = 1;
+            if (input.StartsWith(MTConnect, StringComparison.OrdinalIgnoreCase))
             {
-                return input;
+                startIndex = MTConnect.Length + 1;
+                sb.Append(MTConnect);
+            }
+            else
+            {
+                sb.Append(char.ToLower(input[0]));
             }
 
-            StringBuilder sb = new StringBuilder();
-            bool lastCharWasUpper = false;
-
-            for (int i = 0; i < input.Length; i++)
+            for (var i = startIndex; i < input.Length; i++)
             {
-                char currentChar = input[i];
-
-                if (char.IsUpper(currentChar))
+                if (char.IsUpper(input[i]))
                 {
-                    if (i > 0 && !lastCharWasUpper)
+                    if (i > 1 && !char.IsUpper(input[i - 1]))
                     {
-                        sb.Append('_');
+                        sb.Append("_");
                     }
-
-                    lastCharWasUpper = true;
+                    else if (i < input.Length - 1 && !char.IsUpper(input[i + 1]))
+                    {
+                        sb.Append("_");
+                    }
                 }
-                else
-                {
-                    lastCharWasUpper = false;
-                }
-
-                sb.Append(char.ToLowerInvariant(currentChar));
+                sb.Append(char.ToLower(input[i]));
             }
 
             return sb.ToString();
