@@ -5,6 +5,7 @@ using System;
 using System.Linq;
 using MtconnectTranspiler.Xmi.UML;
 using MtconnectTranspiler.Contracts;
+using System.Text;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
@@ -173,7 +174,39 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <summary></summary>
         /// <param name="input"></param>
         /// <returns><c>"The Quick Brown Fox"</c> => <c>"the_quick_brown_fox"</c></returns>
-        public static string ToSnakeCase(string input) => CaseExtensions.StringExtensions.ToSnakeCase(input);
+        public static string ToSnakeCase(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return input;
+            }
+
+            var result = new StringBuilder();
+            var lastCharWasUpper = false;
+            var lastCharWasLetterOrDigit = false;
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                char c = input[i];
+                if (char.IsUpper(c))
+                {
+                    if (i > 0 && lastCharWasLetterOrDigit && !lastCharWasUpper)
+                    {
+                        result.Append('_');
+                    }
+                    result.Append(char.ToLower(c));
+                    lastCharWasUpper = true;
+                }
+                else
+                {
+                    result.Append(c);
+                    lastCharWasUpper = false;
+                }
+                lastCharWasLetterOrDigit = char.IsLetterOrDigit(c);
+            }
+
+            return result.ToString();
+        }
 
         /// <inheritdoc cref="ToSnakeCase(string)" />
         /// <remarks><inheritdoc cref="ToCodeSafe(string, string)" path="/summary"/></remarks>
