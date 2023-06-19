@@ -1,6 +1,7 @@
 ﻿using ConsoulLibrary;
 using Microsoft.Extensions.Logging;
 using MtconnectTranspiler;
+using MtconnectTranspiler.Sinks;
 using MtconnectTranspiler.Sinks.CSharp.Example;
 
 internal class Program
@@ -18,7 +19,7 @@ internal class Program
 
         var logFactory = LoggerFactory.Create((o) => o.AddConsoulLogger());
         var dispatchLogger = logFactory.CreateLogger<TranspilerDispatcher>();
-        var transpilerLogger = logFactory.CreateLogger<Transpiler>();
+        var transpilerLogger = logFactory.CreateLogger<ITranspilerSink>();
 
 
         // NOTE: The GitHubRelease can be a reference to a specific tag referring to the version in which to download.

@@ -20,7 +20,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
         /// 
         /// </summary>
         /// <param name="projectPath"></param>
-        public Transpiler(string projectPath, ILogger<Transpiler>? logger = default) : base(projectPath, logger) { }
+        public Transpiler(string projectPath, ILogger<ITranspilerSink>? logger = default) : base(projectPath, logger) { }
 
         public override void Transpile(XmiDocument model, CancellationToken cancellationToken = default)
         {
