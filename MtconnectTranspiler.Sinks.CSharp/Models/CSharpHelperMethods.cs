@@ -8,7 +8,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
     /// <summary>
     /// Helper methods to process content for scriban templates
     /// </summary>
-    public class ScribanHelperMethods : ScribanTemplates.ScribanHelperMethods
+    public class CSharpHelperMethods : ScribanTemplates.ScribanHelperMethods
     {
         private static Dictionary<string, Type> umlDataTypeToCSharp = new Dictionary<string, Type>()
         {

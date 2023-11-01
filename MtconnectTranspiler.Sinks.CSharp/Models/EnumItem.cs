@@ -25,7 +25,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             get
             {
                 if (string.IsNullOrEmpty(_name))
-                    _name = ScribanHelperMethods.ToSnakeCase(base.SysML_Name);
+                    _name = CSharpHelperMethods.ToSnakeCase(base.SysML_Name);
                 return _name;
             }
             set { _name = value; }

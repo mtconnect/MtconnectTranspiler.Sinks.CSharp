@@ -101,7 +101,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                             {
                                 value.Name = value.SysML_Name;
                             }
-                            if (!categoryEnum.ValueTypes.ContainsKey(type.Name!)) categoryEnum.ValueTypes.Add(ScribanHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}Values");
+                            if (!categoryEnum.ValueTypes.ContainsKey(type.Name!)) categoryEnum.ValueTypes.Add(CSharpHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}Values");
                             valueEnums.Add(typeValuesEnum);
                         }
                     }
@@ -110,7 +110,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                     if (subTypes != null && subTypes.ContainsKey(type.Name!))
                     {
                         // Register type as having a subType in the CATEGORY enum
-                        if (!categoryEnum.SubTypes.ContainsKey(type.Name!)) categoryEnum.SubTypes.Add(ScribanHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}SubTypes");
+                        if (!categoryEnum.SubTypes.ContainsKey(type.Name!)) categoryEnum.SubTypes.Add(CSharpHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}SubTypes");
 
                         var subTypeEnum = new ExampleEnum(model!, type, $"{type.Name}SubTypes") { Namespace = DataItemNamespace };
 
@@ -121,7 +121,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                         foreach (var item in subTypeEnum.Items)
                         {
                             if (!item.Name.Contains('.')) continue;
-                            item.Name = ScribanHelperMethods.ToUpperSnakeCode(item.Name[(item.Name.IndexOf(".") + 1)..]);
+                            item.Name = CSharpHelperMethods.ToUpperSnakeCode(item.Name[(item.Name.IndexOf(".") + 1)..]);
                         }
 
                         // Register the DataItem SubType Enum
@@ -132,7 +132,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                 // Cleanup Enum names
                 foreach (var item in categoryEnum.Items)
                 {
-                    item.Name = ScribanHelperMethods.ToUpperSnakeCode(item.Name);
+                    item.Name = CSharpHelperMethods.ToUpperSnakeCode(item.Name);
                 }
 
                 // Register the DataItem Category Enum (ie. Samples, Events, Conditions)

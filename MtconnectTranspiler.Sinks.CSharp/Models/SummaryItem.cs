@@ -22,7 +22,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <inheritdoc />
         public override string ToString()
         {
-            return $"/// {ScribanHelperMethods.ToSummary(_source.Body)}";
+            return $"/// {CSharpHelperMethods.ToSummary(_source.Body)}";
         }
     }
 }
