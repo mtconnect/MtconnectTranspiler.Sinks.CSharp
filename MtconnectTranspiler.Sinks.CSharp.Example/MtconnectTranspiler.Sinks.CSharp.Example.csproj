@@ -9,15 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Consoul" Version="1.6.3" />
-    <PackageReference Include="MtconnectTranspiler" Version="1.0.8.2-prerelease" />
+    <None Remove="Templates\CSharp.Package.scriban" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Templates\Example.Class.scriban">
+    <PackageReference Include="Consoul" Version="1.6.3" />
+    <PackageReference Include="MtconnectTranspiler" Version="1.0.8.2-prerelease" />
+    <PackageReference Include="MtconnectTranspiler.Sinks.ScribanTemplates" Version="1.0.15.3-prerelease" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Templates\CSharp.Class.scriban">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\Example.Enum.scriban">
+    <Content Include="Templates\CSharp.Enum.scriban">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\CSharp.Package.scriban">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Templates\UmlCommentsSummaryContent.scriban" />

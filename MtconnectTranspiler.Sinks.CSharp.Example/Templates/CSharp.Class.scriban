@@ -1,0 +1,69 @@
+using System;
+
+namespace {{ source.namespace }}
+{
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
+	public sealed class {{ source.name }}
+	{
+		/// <inheritdoc cref="Class.ReferenceId" />
+		public string ReferenceId => "{{ source.reference_id }}";
+		
+		/// <inheritdoc cref="Class.Name" />
+		public string Name => "{{ source.name }}";
+		
+		/// <inheritdoc cref="Class.AccessModifier" />
+		public string AccessModifier => "{{ source.access_modifier }}";
+				
+		/// <inheritdoc cref="Class.Modifier" />
+		public string Modifier => "{{ source.modifier }}";
+				
+		/// <inheritdoc cref="Class.NormativeVersion" />
+		public string NormativeVersion => "{{ source.normative_version }}";
+				
+		/// <inheritdoc cref="Class.DeprecatedVersion" />
+		public string DeprecatedVersion => "{{ source.deprecated_version }}";
+
+		public {{ source.name }}Properties Properties { get; } = new {{ source.name }}Properties();
+		public sealed class {{ source.name }}Properties
+		{
+		{{~ for item in source.properties ~}}
+			/// <remarks>Original Name: {{ item.name }}</remarks>
+			public {{ item.name }}Property {{ item.name }} { get; } = new {{ item.name }}Property();
+			public sealed class {{ item.name }}Property
+			{
+				/// <inheritdoc cref="Property.Type" />
+				public Type Type => typeof({{ item.type }});
+				
+				/// <inheritdoc cref="Property.Name" />
+				public string Name => "{{ item.name }}";
+				
+				/// <inheritdoc cref="Property.AccessModifier" />
+				public string AccessModifier => "{{ item.access_modifier }}";
+				
+				/// <inheritdoc cref="Property.Modifier" />
+				public string Modifier => "{{ item.modifier }}";
+				
+				/// <inheritdoc cref="Property.NormativeVersion" />
+				public string NormativeVersion => "{{ item.normative_version }}";
+				
+				/// <inheritdoc cref="Property.DeprecatedVersion" />
+				public string DeprecatedVersion => "{{ item.deprecated_version }}";
+
+				// TODO: Add Summary
+			}
+		{{~ end ~}}
+		};
+
+		# region Rules
+	{{~ for constraint in source.constraints ~}}
+		/// <summary>
+		/// {{ constraint.name }}
+		/// </summary>
+		/// <remarks>Specification Language: <c>{{ constraint?.specification?.language ?? "Unspecified" }}</c></remarks>
+		/*
+		{{ constraint?.raw_script ?? "No Content" }}
+		*/
+	{{~ end ~}}
+		# endregion
+	}
+}

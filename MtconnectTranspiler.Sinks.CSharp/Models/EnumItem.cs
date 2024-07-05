@@ -31,6 +31,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             set { _name = value; }
         }
 
+        public string OriginalName => base.SysML_Name;
+
         /// <summary>
         /// Constructs an <see cref="EnumItem"/> more generically. <b>NOTE</b>: You'll need to add items manually from here.
         /// </summary>

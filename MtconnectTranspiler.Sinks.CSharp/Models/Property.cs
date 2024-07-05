@@ -30,6 +30,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
             AccessModifier = source.Visibility;
 
+            Modifier = source.IsStatic ? "static" : source.IsReadOnly ? "readonly" : "";
+
             Type = CSharpHelperMethods.ToPrimitiveType(model, source)?.Name ?? "object";
         }
     }

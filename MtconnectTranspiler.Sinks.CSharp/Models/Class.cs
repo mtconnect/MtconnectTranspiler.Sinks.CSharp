@@ -1,4 +1,5 @@
-﻿using MtconnectTranspiler.Sinks.ScribanTemplates;
+﻿using CaseExtensions;
+using MtconnectTranspiler.Sinks.ScribanTemplates;
 using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
 using System.Collections.Generic;
@@ -27,12 +28,12 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         protected string _filename { get; set; }
         /// <inheritdoc />
-        public string Filename
+        public virtual string Filename
         {
             get
             {
                 if (string.IsNullOrEmpty(_filename))
-                    _filename = $"{Name}.cs";
+                    _filename = $"{Namespace.Replace(".", "/").Replace(":", "_")}/{Name.ToPascalCase().Replace(":", "_")}.cs";
                 return _filename;
             }
             set { _filename = value; }
@@ -65,19 +66,27 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         {
             ReferenceId = source.Id;
 
+            Namespace = "Mtconnect";
+
             if (source.Comments?.Length > 0)
                 Summary = new Summary(source.Comments);
 
             if (source.IsAbstract)
                 Modifier = "abstract";
 
+            AccessModifier = "public";
+
             _properties = source.Properties
+                ?.Where(o => !string.IsNullOrEmpty(o.Name))
                 ?.Select(o => new Property(model, o))
-                ?.ToList();
+                ?.ToList()
+                ?? new List<Property>();
 
             _constraints = source.Constraints
+                ?.Where(o => !string.IsNullOrEmpty(o.Name))
                 ?.Select(o => new Constraint(model, o))
-                ?.ToList();
+                ?.ToList()
+                ?? new List<Constraint>();
         }
 
         /// <summary>

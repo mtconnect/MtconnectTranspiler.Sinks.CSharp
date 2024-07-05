@@ -1,4 +1,5 @@
-﻿using MtconnectTranspiler.Sinks.ScribanTemplates;
+﻿using CaseExtensions;
+using MtconnectTranspiler.Sinks.ScribanTemplates;
 using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
 using System.Collections.Generic;
@@ -36,12 +37,12 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         protected string _filename { get; set; }
         /// <inheritdoc />
-        public string Filename
+        public virtual string Filename
         {
             get
             {
                 if (string.IsNullOrEmpty(_filename))
-                    _filename = $"{Name}.cs";
+                    _filename = $"{Namespace.Replace(".", "/").Replace(":", "_")}/{Name.ToPascalCase().Replace(":", "_")}.cs";
                 return _filename;
             }
             set { _filename = value; }

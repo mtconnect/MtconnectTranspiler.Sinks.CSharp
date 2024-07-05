@@ -35,17 +35,21 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             { "double", typeof(double) },
             
         };
+        public static Type ToPrimitiveType(string umlType)
+        {
+            if (umlDataTypeToCSharp.TryGetValue(umlType, out var type))
+                return type;
+            return null;
+        }
+
         /// <summary>
         /// Gets the C# equivalant of the <see cref="UmlDataType"/>.
         /// </summary>
         /// <param name="source">Reference to the packaged UML DataType</param>
         /// <returns>Primitive type. Returns null if unrecognizes or unhandled DataType</returns>
         public static Type ToPrimitiveType(UmlDataType source)
-        {
-            if (umlDataTypeToCSharp.TryGetValue(source.Name, out Type type))
-                return type;
-            return null;
-        }
+            => ToPrimitiveType(source.Name);
+
         /// <summary>
         /// Gets the C# equivalant of the <see cref="UmlProperty"/>.
         /// </summary>

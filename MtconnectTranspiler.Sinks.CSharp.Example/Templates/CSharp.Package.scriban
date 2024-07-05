@@ -1,0 +1,15 @@
+using System;
+
+namespace {{ source.namespace }} {
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
+	public static class {{ source.name }} {
+	{{~ for item in source.packages ~}}
+	public static {{ item.name }} => {{ item.name }};
+	{{~ end ~}}
+
+	{{~ for item in source.classes ~}}
+	private static {{ item.name }} _{{ item.name }};
+	public static {{ item.name }} {{ item.name }} => _{{ item.name }} ?? (_{{ item.name }} = new {{ item.name }}());
+	{{~ end ~}}
+	}
+}
