@@ -32,6 +32,7 @@ namespace {{ source.namespace }}
 			public sealed class {{ item.name }}Property
 			{
 				/// <inheritdoc cref="Property.Type" />
+				/// Original Type: {{ item.original_property_type }}
 				public Type Type => typeof({{ item.type }});
 				
 				/// <inheritdoc cref="Property.Name" />

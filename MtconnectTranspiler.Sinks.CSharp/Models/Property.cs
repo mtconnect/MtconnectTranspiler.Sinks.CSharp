@@ -18,6 +18,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public string Type { get; set; }
 
+        public string OriginalPropertyType { get; set; }
+
         /// <summary>
         /// Constructs an <see cref="Property"/> more generically. <b>NOTE</b>: You'll need to add items manually from here.
         /// </summary>
@@ -32,7 +34,14 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
             Modifier = source.IsStatic ? "static" : source.IsReadOnly ? "readonly" : "";
 
-            Type = CSharpHelperMethods.ToPrimitiveType(model, source)?.Name ?? "object";
+            Type = CSharpHelperMethods.ToPrimitiveType(model, source)?.Name
+                ?? "object";
+            OriginalPropertyType = source.PropertyType;
+        }
+
+        private string typeDeepSearch(XmiDocument model, string propertyType)
+        {
+            return string.Empty;
         }
     }
 }
