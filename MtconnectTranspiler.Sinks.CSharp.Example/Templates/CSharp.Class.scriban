@@ -1,9 +1,15 @@
+{{ code_name = source.name | to_code_safe | string.remove "." }}
 using System;
+using System.CodeDom.Compiler;
+{{ namespaces = get_class_namespaces source }}
+{{~ for item in namespaces ~}}
+using {{ to_code_safe item }};
+{{~ end ~}}
 
-namespace {{ source.namespace }}
+namespace {{ to_code_safe source.namespace }}
 {
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
-	public sealed class {{ source.name }}
+	public sealed class {{ code_name }}Class
 	{
 		/// <inheritdoc cref="Class.ReferenceId" />
 		public string ReferenceId => "{{ source.reference_id }}";
@@ -23,17 +29,28 @@ namespace {{ source.namespace }}
 		/// <inheritdoc cref="Class.DeprecatedVersion" />
 		public string DeprecatedVersion => "{{ source.deprecated_version }}";
 
-		public {{ source.name }}Properties Properties { get; } = new {{ source.name }}Properties();
-		public sealed class {{ source.name }}Properties
+		public string Generalization => "{{ source.generalization }}";
+
+		{{~ if source.properties.size > 0 ~}}
+		public {{ code_name }}Properties Properties { get; } = new {{ code_name }}Properties();
+		public sealed class {{ code_name }}Properties
 		{
 		{{~ for item in source.properties ~}}
+		{{ item_code_name = item.name | to_code_safe | string.remove "." }}
+		{{
+			if item.association
+				item_suffix = "PartProperty"
+			else
+				item_suffix = "Property"
+			end
+		}}
 			/// <remarks>Original Name: {{ item.name }}</remarks>
-			public {{ item.name }}Property {{ item.name }} { get; } = new {{ item.name }}Property();
-			public sealed class {{ item.name }}Property
+			public {{ item_code_name }}{{ item_suffix }} {{ item_code_name }}{{ if item.association }}Part{{ end }} { get; } = new {{ item_code_name }}{{ item_suffix }}();
+			public sealed class {{ item_code_name }}{{ item_suffix }}
 			{
 				/// <inheritdoc cref="Property.Type" />
 				/// Original Type: {{ item.original_property_type }}
-				public Type Type => typeof({{ item.type }});
+				public Type Type => typeof({{ item.type | to_pascal_case | to_code_safe }});
 				
 				/// <inheritdoc cref="Property.Name" />
 				public string Name => "{{ item.name }}";
@@ -49,12 +66,24 @@ namespace {{ source.namespace }}
 				
 				/// <inheritdoc cref="Property.DeprecatedVersion" />
 				public string DeprecatedVersion => "{{ item.deprecated_version }}";
+				
+				public string Aggregation => "{{ item.aggregation }}";
+
+				// Note: Extension.Extender
+				public string Extension => "{{ item.extension }}";
+
+				public string Association => "{{ item.association }}";
+
+				// Note: DefaultValue.Name
+				public string DefaultValue => "{{ item.default_value }}";
 
 				// TODO: Add Summary
 			}
 		{{~ end ~}}
 		};
+		{{~ end ~}}
 
+		{{~ if source.constraints.size > 0 ~}}
 		# region Rules
 	{{~ for constraint in source.constraints ~}}
 		/// <summary>
@@ -66,5 +95,6 @@ namespace {{ source.namespace }}
 		*/
 	{{~ end ~}}
 		# endregion
+		{{~ end ~}}
 	}
 }

@@ -3,7 +3,7 @@
 using System;
 using System.CodeDom.Compiler;
 
-namespace {{ source.namespace }}
+namespace {{ to_code_safe source.namespace }}
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso>
@@ -27,12 +27,8 @@ namespace {{ source.namespace }}
 	[Obsolete("Deprecated in v{{ dversion_slim }} according to https://model.mtconnect.org/#_Version_{{ dversion_slim }}")]
 	{{~ end ~}}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
-	public enum {{ to_pascal_case source.name }}
+	public enum {{ source.name | to_code_safe | to_pascal_case }}
 	{
-		/// <summary>
-		/// An extension to the standard. Extensions to the standard are usually prefaced with <c>x:</c>.
-		/// </summary>
-		STANDARD_EXTENSION = -1,
 	{{~ for item in source.items ~}}
 {{~ n_item_version_slim = (item?.normative_version | string.slice 20 3) | string.replace "_" "."
 d_item_version_slim = (item?.deprecated_version | string.slice 20 3) | string.replace "_" "." ~}}
@@ -56,7 +52,7 @@ d_item_version_slim = (item?.deprecated_version | string.slice 20 3) | string.re
 		{{~ if d_item_version_slim != "" ~}}
 		[Obsolete("Deprecated in v{{ d_item_version_slim }} according to https://model.mtconnect.org/#_Version_{{ d_item_version_slim }}")]
 		{{~ end ~}}
-		{{ to_upper_case item.original_name }},
+		{{ item.original_name | to_code_safe | to_upper_case }},
 	{{~ end ~}}
 	}
 }

@@ -1,15 +1,31 @@
+{{ code_name = source.name | to_code_safe | string.remove "." }}
 using System;
+using System.CodeDom.Compiler;
+{{~ if source.packages.size > 0 || source.classes.size > 0 ~}}
+using Package = {{ to_code_safe source.namespace }}.{{ code_name }};
+{{~ end ~}}
+{{ namespaces = get_package_namespaces source }}
+{{~ for item in namespaces ~}}
+using {{ to_code_safe item }};
+{{~ end ~}}
 
-namespace {{ source.namespace }} {
+namespace {{ to_code_safe source.namespace }} {
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
-	public static class {{ source.name }} {
+	public class {{ code_name }}Package {
 	{{~ for item in source.packages ~}}
-	public static {{ item.name }} => {{ item.name }};
+{{ item_code_name = item.name | to_code_safe | string.remove "." }}
+	private Package.{{ item_code_name }}Package _{{ item_code_name }}Package;
+	public Package.{{ item_code_name }}Package {{ item_code_name }}Package => _{{ item_code_name}}Package ?? (_{{ item_code_name }}Package = new Package.{{ item_code_name }}Package());
 	{{~ end ~}}
 
 	{{~ for item in source.classes ~}}
-	private static {{ item.name }} _{{ item.name }};
-	public static {{ item.name }} {{ item.name }} => _{{ item.name }} ?? (_{{ item.name }} = new {{ item.name }}());
+{{ item_class_code_name = item.name | to_code_safe | string.remove "." }}
+{{~ if item.generalization ~}}// Generalization: {{ item.generalization }}{{~ end ~}}
+	private Package.{{ item_class_code_name }}Class _{{ item_class_code_name }};
+	/// <summary>
+	/// Id: {{ item.ReferenceId }}
+	/// </summary>
+	public Package.{{ item_class_code_name }}Class {{ item_class_code_name }} => _{{ item_class_code_name }} ?? (_{{ item_class_code_name }} = new Package.{{ item_class_code_name }}Class());
 	{{~ end ~}}
 	}
 }

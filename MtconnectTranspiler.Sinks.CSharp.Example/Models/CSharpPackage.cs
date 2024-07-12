@@ -9,26 +9,8 @@ using System.Data;
 namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
 {
     [ScribanTemplate("CSharp.Package.scriban")]
-    public class CSharpPackage : IFileSource
+    public class CSharpPackage : CsharpType, IFileSource
     {
-        /// <summary>
-        /// The intended namespace for the C# type.
-        /// </summary>
-        public virtual string Namespace { get; set; } = "Mtconnect";
-
-        /// <summary>
-        /// Internal string, used by <see cref="Name"/>.
-        /// </summary>
-        protected string _name { get; set; }
-        /// <summary>
-        /// The intended name for the C# type.
-        /// </summary>
-        public new string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
         /// <summary>
         /// Reference to the xmi:id
         /// </summary>
@@ -77,7 +59,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
         /// </summary>
         public IEnumerable<CSharpEnum> Enums => _enums;
 
-        public CSharpPackage(XmiDocument model, UmlPackage source) : base()
+        public CSharpPackage(XmiDocument model, UmlPackage source) : base(model, source)
         {
             _name = CSharpHelperMethods.ToPascalCase(source.Name);
 

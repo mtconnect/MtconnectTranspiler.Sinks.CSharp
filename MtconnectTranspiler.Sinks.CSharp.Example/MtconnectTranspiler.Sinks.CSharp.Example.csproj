@@ -13,9 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Consoul" Version="1.6.3" />
-    <PackageReference Include="MtconnectTranspiler" Version="1.0.8.2-prerelease" />
-    <PackageReference Include="MtconnectTranspiler.Sinks.ScribanTemplates" Version="1.0.15.3-prerelease" />
+    <PackageReference Include="Consoul" Version="1.6.5" />
+    <PackageReference Include="MtconnectTranspiler" Version="1.0.8.3-prerelease.1" />
+    <PackageReference Include="MtconnectTranspiler.Sinks.ScribanTemplates" Version="1.0.15.3-prerelease.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,7 +29,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Templates\UmlCommentsSummaryContent.scriban" />
-    <ProjectReference Include="..\MtconnectTranspiler.Sinks.CSharp\MtconnectTranspiler.Sinks.CSharp.csproj" />
     <Content Update="Templates\UmlCommentsSummaryContent.scriban">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

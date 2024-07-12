@@ -1,0 +1,149 @@
+
+using System;
+using System.CodeDom.Compiler;
+
+using Mtconnect.Glossary;
+
+namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
+{
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	public sealed class SpecificationLimitsClass
+	{
+		/// <inheritdoc cref="Class.ReferenceId" />
+		public string ReferenceId => "_19_0_3_68e0225_1605643883082_895051_1004";
+		
+		/// <inheritdoc cref="Class.Name" />
+		public string Name => "SpecificationLimits";
+		
+		/// <inheritdoc cref="Class.AccessModifier" />
+		public string AccessModifier => "public";
+				
+		/// <inheritdoc cref="Class.Modifier" />
+		public string Modifier => "";
+				
+		/// <inheritdoc cref="Class.NormativeVersion" />
+		public string NormativeVersion => "MtconnectVersions.V_1_7_0";
+				
+		/// <inheritdoc cref="Class.DeprecatedVersion" />
+		public string DeprecatedVersion => "";
+
+		public string Generalization => "";
+
+		public SpecificationLimitsProperties Properties { get; } = new SpecificationLimitsProperties();
+		public sealed class SpecificationLimitsProperties
+		{
+		
+		
+			/// <remarks>Original Name: UpperLimit</remarks>
+			public UpperLimitPartProperty UpperLimitPart { get; } = new UpperLimitPartProperty();
+			public sealed class UpperLimitPartProperty
+			{
+				/// <inheritdoc cref="Property.Type" />
+				/// Original Type: _19_0_3_68e0225_1605643508394_491668_626
+				public Type Type => typeof(UpperLimitClass);
+				
+				/// <inheritdoc cref="Property.Name" />
+				public string Name => "UpperLimit";
+				
+				/// <inheritdoc cref="Property.AccessModifier" />
+				public string AccessModifier => "public";
+				
+				/// <inheritdoc cref="Property.Modifier" />
+				public string Modifier => "";
+				
+				/// <inheritdoc cref="Property.NormativeVersion" />
+				public string NormativeVersion => "";
+				
+				/// <inheritdoc cref="Property.DeprecatedVersion" />
+				public string DeprecatedVersion => "";
+				
+				public string Aggregation => "composite";
+
+				// Note: Extension.Extender
+				public string Extension => "MagicDraw UML 19.0";
+
+				public string Association => "UpperLimit";
+
+				// Note: DefaultValue.Name
+				public string DefaultValue => "";
+
+				// TODO: Add Summary
+			}
+		
+		
+			/// <remarks>Original Name: Nominal</remarks>
+			public NominalPartProperty NominalPart { get; } = new NominalPartProperty();
+			public sealed class NominalPartProperty
+			{
+				/// <inheritdoc cref="Property.Type" />
+				/// Original Type: _19_0_3_45f01b9_1580316543777_893941_47725
+				public Type Type => typeof(NominalClass);
+				
+				/// <inheritdoc cref="Property.Name" />
+				public string Name => "Nominal";
+				
+				/// <inheritdoc cref="Property.AccessModifier" />
+				public string AccessModifier => "public";
+				
+				/// <inheritdoc cref="Property.Modifier" />
+				public string Modifier => "";
+				
+				/// <inheritdoc cref="Property.NormativeVersion" />
+				public string NormativeVersion => "";
+				
+				/// <inheritdoc cref="Property.DeprecatedVersion" />
+				public string DeprecatedVersion => "";
+				
+				public string Aggregation => "composite";
+
+				// Note: Extension.Extender
+				public string Extension => "MagicDraw UML 19.0";
+
+				public string Association => "Nominal";
+
+				// Note: DefaultValue.Name
+				public string DefaultValue => "";
+
+				// TODO: Add Summary
+			}
+		
+		
+			/// <remarks>Original Name: LowerLimit</remarks>
+			public LowerLimitPartProperty LowerLimitPart { get; } = new LowerLimitPartProperty();
+			public sealed class LowerLimitPartProperty
+			{
+				/// <inheritdoc cref="Property.Type" />
+				/// Original Type: _19_0_3_68e0225_1605643526040_637158_716
+				public Type Type => typeof(LowerLimitClass);
+				
+				/// <inheritdoc cref="Property.Name" />
+				public string Name => "LowerLimit";
+				
+				/// <inheritdoc cref="Property.AccessModifier" />
+				public string AccessModifier => "public";
+				
+				/// <inheritdoc cref="Property.Modifier" />
+				public string Modifier => "";
+				
+				/// <inheritdoc cref="Property.NormativeVersion" />
+				public string NormativeVersion => "";
+				
+				/// <inheritdoc cref="Property.DeprecatedVersion" />
+				public string DeprecatedVersion => "";
+				
+				public string Aggregation => "composite";
+
+				// Note: Extension.Extender
+				public string Extension => "MagicDraw UML 19.0";
+
+				public string Association => "LowerLimit";
+
+				// Note: DefaultValue.Name
+				public string DefaultValue => "";
+
+				// TODO: Add Summary
+			}
+		};
+
+	}
+}

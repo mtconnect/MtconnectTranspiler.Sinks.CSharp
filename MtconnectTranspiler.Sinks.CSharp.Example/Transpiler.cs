@@ -7,6 +7,8 @@ using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Contracts;
 using System.Linq;
 using CaseExtensions;
+using MtconnectTranspiler.Sinks.ScribanTemplates;
+using System.Text.RegularExpressions;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Example
 {
@@ -15,8 +17,50 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
         public static bool CategoryContainsType(CSharpEnum @enum, EnumItem item) => @enum.SubTypes.ContainsKey(item.Name);
         public static bool CategoryContainsValue(CSharpEnum @enum, EnumItem item) => @enum.ValueTypes.ContainsKey(item.Name);
         public static bool EnumHasValues(CSharpEnum @enum) => @enum.ValueTypes.Any();
+        public static string ToCodeSafe(string input, string replaceBy = "_")
+        {
+            if (input.Contains("^2"))
+                input = input.Replace("^2", "_SQUARED");
+            if (input.Contains("^3"))
+                input = input.Replace("^3", "_CUBED");
+            if (input.Contains("/"))
+                input = input.Replace("/", "_PER_");
+            char[] numbers = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            if (numbers.Any(c => input.StartsWith(c)))
+                input = $"_{input}";
+
+            var invlidFileCharacters = System.IO.Path
+            .GetInvalidFileNameChars()
+            .Concat(new char[] { ' ', '{', '}', '[', ']', '(', ')', '^', '`', '&', '+', '-', '!', '?', '%', '*', '<', '>', ',', '|', '\\', '/', '=', ':', ';' })
+            .ToArray();
+            /// <summary>
+            /// Regular expression to replace the <see cref="InvalidCharacters"/>
+            /// </summary>
+            var regex = new Regex(@"\" + String.Join(@"|\", invlidFileCharacters), RegexOptions.Compiled);
+            return regex.Replace(input, replaceBy);
+        }
+        public static string GetTypeNamespace(string typeName)
+            => TypeCache.GetTypeNamespace(typeName);
+        public static string[] GetClassNamespaces(CSharpClass cSharpClass)
+        {
+            var namespaces = new List<string>();
+            foreach (var property in cSharpClass.Properties)
+            {
+                namespaces.Add(TypeCache.GetTypeNamespace(property.Type));
+            }
+            return namespaces.Distinct().Where(o => !string.IsNullOrEmpty(o)).ToArray();
+        }
+        public static string[] GetPackageNamespaces(CSharpPackage cSharpPackage)
+        {
+            var namespaces = new List<string>();
+            foreach (var csharpClass in cSharpPackage.Classes)
+            {
+                namespaces.Add(csharpClass.Namespace);
+            }
+            return namespaces.Distinct().Where(o => !string.IsNullOrEmpty(o)).ToArray();
+        }
     }
-    internal class Transpiler : CsharpTranspiler
+    internal class Transpiler : ScribanTranspiler
     {
         /// <summary>
         /// 
@@ -31,117 +75,6 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             Model.SetValue("model", model, true);
 
             base.TemplateContext.PushGlobal(new CategoryFunctions());
-
-            //const string DataItemNamespace = "Example.Enums.DataItemTypes";
-            //const string DataItemValueNamespace = "Example.Enums.DataItemValues";
-
-            //// Process DataItem Types/Sub-Types
-            //var dataItemTypeEnums = new List<CSharpEnum>();
-            //var valueEnums = new List<CSharpEnum>();
-            //string[] categories = new string[] { "Sample", "Event", "Condition" };
-
-            //foreach (var category in categories)
-            //{
-            //    // Get the UmlPackage for the category (ie. Samples, Events, Conditions).
-            //    var typesPackage = MTConnectHelper.JumpToPackage(
-            //        model!,
-            //        MTConnectHelper.PackageNavigationTree.ObservationInformationModel.ObservationTypes
-            //        )?
-            //        .Packages
-            //        .FirstOrDefault(o => o.Name == $"{category} Types");
-            //    if (typesPackage == null)
-            //    {
-            //        _logger?.LogTrace("Couldn't find {Category} Types", category);
-            //        continue;
-            //    }
-
-            //    // Get all DataItem Type and SubType references
-            //    var allTypes = typesPackage
-            //        .Classes;
-            //    // Filter to get just the Type references
-            //    var types = allTypes
-            //        ?.Where(o => !o!.Name!.Contains('.'));
-            //    if (types == null)
-            //    {
-            //        _logger?.LogTrace("Couldn't find type classes for {Category} Types", category);
-            //        continue;
-            //    }
-
-            //    // Filter and group each SubType by the relevant Type reference
-            //    var subTypes = allTypes
-            //        ?.Where(o => o!.Name!.Contains('.'))
-            //        ?.GroupBy(o => o!.Name![..o.Name!.IndexOf(".")], o => o)
-            //        ?.Where(o => o.Any())
-            //        ?.ToDictionary(o => o.Key, o => o?.ToList());
-
-            //    var categoryEnum = new CSharpEnum(model!, typesPackage)
-            //    {
-            //        Name = $"{category}Types",
-            //        Namespace = DataItemNamespace
-            //    };
-
-            //    foreach (var type in types)
-            //    {
-            //        // Add type to CATEGORY enum
-            //        categoryEnum.Add(model, type);
-
-            //        // Find value
-            //        var typeResult = type!.Properties?.FirstOrDefault(o => o.Name == "result");
-            //        if (typeResult != null)
-            //        {
-            //            var typeValuesSysEnum = MTConnectHelper.JumpToPackage(model!, MTConnectHelper.PackageNavigationTree.Profile.DataTypes)?
-            //                .Enumerations
-            //                .GetById(typeResult.PropertyType);
-            //            if (typeValuesSysEnum != null && typeValuesSysEnum is UmlEnumeration)
-            //            {
-            //                var typeValuesEnum = new CSharpEnum(model!, typeValuesSysEnum!)
-            //                {
-            //                    Namespace = DataItemValueNamespace,
-            //                    Name = $"{type.Name}Values"
-            //                };
-            //                foreach (var value in typeValuesEnum.Items)
-            //                {
-            //                    value.Name = value.SysML_Name;
-            //                }
-            //                if (!categoryEnum.ValueTypes.ContainsKey(type.Name!)) categoryEnum.ValueTypes.Add(CSharpHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}Values");
-            //                valueEnums.Add(typeValuesEnum);
-            //            }
-            //        }
-
-            //        // Add subType as enum
-            //        if (subTypes != null && subTypes.ContainsKey(type.Name!))
-            //        {
-            //            // Register type as having a subType in the CATEGORY enum
-            //            if (!categoryEnum.SubTypes.ContainsKey(type.Name!)) categoryEnum.SubTypes.Add(CSharpHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}SubTypes");
-
-            //            var subTypeEnum = new CSharpEnum(model!, type, $"{type.Name}SubTypes") { Namespace = DataItemNamespace };
-
-            //            var typeSubTypes = subTypes[type.Name!];
-            //            subTypeEnum.AddRange(model, typeSubTypes);
-
-            //            // Cleanup Enum names
-            //            foreach (var item in subTypeEnum.Items)
-            //            {
-            //                if (!item.Name.Contains('.')) continue;
-            //                item.Name = CSharpHelperMethods.ToUpperSnakeCode(item.Name[(item.Name.IndexOf(".") + 1)..]);
-            //            }
-
-            //            // Register the DataItem SubType Enum
-            //            dataItemTypeEnums.Add(subTypeEnum);
-            //        }
-            //    }
-
-            //    // Cleanup Enum names
-            //    foreach (var item in categoryEnum.Items)
-            //    {
-            //        item.Name = CSharpHelperMethods.ToUpperSnakeCode(item.Name);
-            //    }
-
-            //    // Register the DataItem Category Enum (ie. Samples, Events, Conditions)
-            //    dataItemTypeEnums.Add(categoryEnum);
-            //}
-
-            //_logger?.LogInformation("Processing {Count} DataItem types/subTypes", dataItemTypeEnums.Count);
 
             //// Process the template into enum files
             var allPackages = new List<CSharpPackage>();
