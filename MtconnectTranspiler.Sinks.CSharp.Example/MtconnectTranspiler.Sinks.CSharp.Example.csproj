@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Templates\CSharp.Model.scriban" />
     <None Remove="Templates\CSharp.Package.scriban" />
   </ItemGroup>
 
@@ -19,6 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Templates\CSharp.Model.scriban">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Templates\CSharp.Class.scriban">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

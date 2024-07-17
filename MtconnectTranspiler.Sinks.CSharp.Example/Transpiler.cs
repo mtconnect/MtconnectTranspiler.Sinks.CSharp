@@ -103,6 +103,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             var allPackages = new List<CSharpPackage>();
             var allClasses = new List<CSharpClass>();
             var allEnumerations = new List<CSharpEnum>();
+            MtconnectModel rootPackage = new MtconnectModel(model, model.Model);
             foreach (var package in model.Model.Packages)
             {
                 allPackages.Add(new CSharpPackage(model, package) { Namespace = "Mtconnect" });
@@ -147,19 +148,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                 }
             }
 
-            //var csharpPackages = allPackages.Select(o => new CSharpPackage(model, o));
-            //var csharpClasses = allClasses.Select(o => new CSharpClass(model, o));
-            //var csharpEnums = allEnumerations.Select(o => new CSharpEnum(model, o));
-
-            //var nullPackages = csharpPackages.Where(o => o == null).ToList();
-            //var nullClasses = csharpClasses.Where(o => o == null).ToList();
-            //var nullEnums = csharpEnums.Where(o => o == null).ToList();
-
             ProcessTemplate(allPackages, Path.Combine(ProjectPath, "Packages"), true);
             ProcessTemplate(allClasses, Path.Combine(ProjectPath, "Classes"), true);
             ProcessTemplate(allEnumerations, Path.Combine(ProjectPath, "Enums"), true);
-            //ProcessTemplate(dataItemTypeEnums, Path.Combine(ProjectPath, "Enums", "Devices", "DataItemTypes"), true);
-            //ProcessTemplate(valueEnums, Path.Combine(ProjectPath, "Enums", "Streams"), true);
+
+            ProcessTemplate(rootPackage, ProjectPath, true);
         }
 
         private IEnumerable<CSharpPackage> getPackages(XmiDocument model, UmlPackage package, string namespacePrefix = "Mtconnect")
