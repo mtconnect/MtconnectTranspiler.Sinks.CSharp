@@ -22,7 +22,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 switch (this)
                 {
                     case CSharpClass csharpClass:
-                        TypeCache.RegisterType($"{csharpClass.Name}Class", csharpClass.Namespace);
+                        TypeCache.RegisterType(csharpClass.Name, csharpClass.Namespace);
                         break;
                     case Property csharpProperty:
                         TypeCache.RegisterType(csharpProperty.Name, csharpProperty.Namespace);
@@ -54,7 +54,10 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                     _name = CSharpHelperMethods.ToPascalCase(base.SysML_Name);
                 return _name;
             }
-            set { _name = value; }
+            set {
+                TypeCache.ChangeTypeName(_name, value);
+                _name = value;
+            }
         }
 
         /// <summary>

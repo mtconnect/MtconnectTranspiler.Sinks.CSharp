@@ -63,6 +63,48 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 return null;
             return ToPrimitiveType(umlDataType);
         }
- 
+
+
+        public static string? TypeDeepSearch(Xmi.XmiDocument model, string propertyType, out Xmi.XmiElement? remoteType)
+        {
+            remoteType = null;
+            if (string.IsNullOrEmpty(propertyType))
+                return null;
+            // TODO: Also cache the namespaces that each of these properties are contained within
+            object _remote;
+            if (model.IdCache.TryGetValue(propertyType, out _remote))
+            {
+                switch (_remote)
+                {
+                    case UmlEnumeration umlEnum:
+                        remoteType = umlEnum;
+                        return umlEnum.Name;
+                    case UmlClass umlClass:
+                        remoteType = umlClass;
+                        return CSharpClass.GetClassName(model, umlClass);// $"{umlClass.Name}Class";
+                    case UmlDataType umlDataType:
+                        remoteType = umlDataType;
+                        switch (umlDataType.Name)
+                        {
+                            case "float3d":
+                                return "float[]";
+                            case "binary":
+                                return "bool";
+                            default:
+                                break;
+                        }
+                        break;
+                    case UmlAssociation umlAssociation:
+                        remoteType = umlAssociation;
+                        var ownedEnds = umlAssociation.OwnedEnds?.Select(o => TypeDeepSearch(model, o.TypeId, out _))?.ToList();
+                        return umlAssociation.Name;
+                    case UmlGeneralization umlGeneralization:
+                        return TypeDeepSearch(model, umlGeneralization.General, out remoteType);
+                    default:
+                        break;
+                }
+            }
+            return null;
+        }
     }
 }

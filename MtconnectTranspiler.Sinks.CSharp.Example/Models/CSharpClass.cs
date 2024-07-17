@@ -1,4 +1,5 @@
 ﻿using CaseExtensions;
+using MtconnectTranspiler.Sinks.CSharp.Example;
 using MtconnectTranspiler.Sinks.ScribanTemplates;
 using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
@@ -33,7 +34,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             get
             {
                 if (string.IsNullOrEmpty(_filename))
-                    _filename = $"{Namespace.Replace(".", "/").Replace(":", "_")}/{Name.ToPascalCase().Replace(":", "_")}.cs";
+                    _filename = $"{CategoryFunctions.ToPathSafe(Namespace.Substring(Namespace.LastIndexOf(".")+1))}/{CategoryFunctions.ToPathSafe(Name.ToPascalCase())}.cs";
                 return _filename;
             }
             set { _filename = value; }
@@ -59,6 +60,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
         public string Generalization { get; set; }
 
+        private XmiElement _remoteType { get; set; }
+
         /// <summary>
         /// Constructs an <see cref="CSharpClass"/> more generically. <b>NOTE</b>: You'll need to add items manually from here.
         /// </summary>
@@ -81,6 +84,24 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 ?.Select(o => new Property(model, o))
                 ?.ToList()
                 ?? new List<Property>();
+            var propertyGroupings = _properties.GroupBy(o => o.Name);
+            foreach (var propertyGrouping in propertyGroupings)
+            {
+                if (propertyGrouping.Count() <= 1)
+                    continue;
+                var properties = _properties.Where(o => o.Name == propertyGrouping.Key).ToList();
+                foreach (var property in properties)
+                {
+                    if (property.Type.EndsWith("Class"))
+                    {
+                        string remoteClassName = property.Type.Replace("Class", string.Empty);
+                        if (!property.Name.EndsWith(remoteClassName))
+                        {
+                            property.Name += remoteClassName;
+                        }
+                    }
+                }
+            }
 
             _constraints = source.Constraints
                 ?.Where(o => !string.IsNullOrEmpty(o.Name))
@@ -88,7 +109,9 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 ?.ToList()
                 ?? new List<Constraint>();
 
-            Generalization = source.Generalization?.Name;
+            Generalization = source.Generalization?.Name ?? source.Generalization?.General;
+
+            Name = GetClassName(model, source);
         }
 
         /// <summary>
@@ -97,6 +120,38 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <param name="property">Reference to the source <see cref="Property"/> to add</param>
         public void Add(Property property)
             => _properties.Add(property);
+
+        public static string GetClassName(XmiDocument model, UmlClass umlClass)
+        {
+            string name = CSharpHelperMethods.ToPascalCase(umlClass.Name);
+
+            string? generalization = umlClass.Generalization?.Name ?? umlClass.Generalization?.Id;
+            if (!string.IsNullOrEmpty(generalization))
+            {
+                string? generalizedType = CSharpHelperMethods.TypeDeepSearch(model, generalization, out XmiElement? remoteType);
+                if (!string.IsNullOrEmpty(generalizedType) && generalizedType.EndsWith("Class"))
+                {
+                    string remoteGeneralization = generalizedType.Replace("Class", string.Empty);
+                    if (name.EndsWith(remoteGeneralization, StringComparison.OrdinalIgnoreCase))
+                    {
+                        name += "Generalization";
+                    }
+                    else
+                    {
+                        //name += generalizedType;
+                        name += "Class";
+                    }
+                }
+                else
+                {
+                    name += "Class";
+                }
+            } else
+            {
+                name += "Class";
+            }
+            return name;
+        }
 
     }
 }

@@ -1,0 +1,139 @@
+using System;
+using System.CodeDom.Compiler;
+using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+// using Mtconnect.AgentArchitecture.Pipelines;
+
+namespace Mtconnect.AgentArchitecture.Pipelines
+{
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	public sealed class TransformClass : IClass
+	{
+		/// <inheritdoc />
+		public string ReferenceId => "_19_0_4_45f01b9_1674413898061_196217_3470";
+		
+		/// <inheritdoc />
+		public string Name => "TransformClass";
+		
+		/// <inheritdoc />
+		public string AccessModifier => "public";
+				
+		/// <inheritdoc />
+		public string Modifier => "";
+				
+		/// <inheritdoc />
+		public string NormativeVersion => "";
+				
+		/// <inheritdoc />
+		public string DeprecatedVersion => "";
+		
+		/// <inheritdoc />
+		public string Generalization => "";
+
+		/// <inheritdoc />
+		public TransformClassProperties Properties { get; } = new TransformClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public sealed class TransformClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+				Guard,
+				Next,
+			};
+			/// <remarks>Original Name: Guard</remarks>
+			public GuardProperty Guard { get; } = new GuardProperty();
+			public sealed class GuardProperty : IProperty
+			{
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks>
+				/// <list type="bullet">
+				/// <item>Original Type: _19_0_4_45f01b9_1674414211400_186233_3570</item>
+				/// <item>Type: GuardClass</item>
+				/// <item>Namespace: Mtconnect.AgentArchitecture.Pipelines</item>
+				/// </list>
+				/// </remarks>
+				/// </summary>
+				public System.Type Type => typeof(Mtconnect.AgentArchitecture.Pipelines.GuardClass);
+				
+				/// <inheritdoc />
+				public string Name => "Guard";
+				
+				/// <inheritdoc />
+				public string AccessModifier => "public";
+				
+				/// <inheritdoc />
+				public string Modifier => "";
+				
+				/// <inheritdoc />
+				public string NormativeVersion => "";
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => "";
+				
+				/// <inheritdoc />
+				public string Aggregation => "composite";
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => "";
+				
+				/// <inheritdoc />
+				public string Association => "";
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => "";
+
+				// TODO: Add Summary
+			}
+			/// <remarks>Original Name: Next</remarks>
+			public NextProperty Next { get; } = new NextProperty();
+			public sealed class NextProperty : IProperty
+			{
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks>
+				/// <list type="bullet">
+				/// <item>Original Type: _19_0_4_45f01b9_1674413898061_196217_3470</item>
+				/// <item>Type: TransformClass</item>
+				/// <item>Namespace: Mtconnect.AgentArchitecture.Pipelines</item>
+				/// </list>
+				/// </remarks>
+				/// </summary>
+				public System.Type Type => typeof(Mtconnect.AgentArchitecture.Pipelines.TransformClass);
+				
+				/// <inheritdoc />
+				public string Name => "Next";
+				
+				/// <inheritdoc />
+				public string AccessModifier => "public";
+				
+				/// <inheritdoc />
+				public string Modifier => "";
+				
+				/// <inheritdoc />
+				public string NormativeVersion => "";
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => "";
+				
+				/// <inheritdoc />
+				public string Aggregation => "composite";
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => "";
+				
+				/// <inheritdoc />
+				public string Association => "";
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => "";
+
+				// TODO: Add Summary
+			}
+		};
+
+	}
+}

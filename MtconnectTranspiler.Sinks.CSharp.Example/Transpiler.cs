@@ -19,12 +19,18 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
         public static bool EnumHasValues(CSharpEnum @enum) => @enum.ValueTypes.Any();
         public static string ToCodeSafe(string input, string replaceBy = "_")
         {
+            if (string.IsNullOrEmpty(input))
+                return input;
             if (input.Contains("^2"))
                 input = input.Replace("^2", "_SQUARED");
             if (input.Contains("^3"))
                 input = input.Replace("^3", "_CUBED");
             if (input.Contains("/"))
                 input = input.Replace("/", "_PER_");
+            if (input.Equals("float[]", StringComparison.OrdinalIgnoreCase))
+                return input;
+            if (input.Equals("float[3]", StringComparison.OrdinalIgnoreCase))
+                return input;
             char[] numbers = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
             if (numbers.Any(c => input.StartsWith(c)))
                 input = $"_{input}";
@@ -39,6 +45,16 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             var regex = new Regex(@"\" + String.Join(@"|\", invlidFileCharacters), RegexOptions.Compiled);
             return regex.Replace(input, replaceBy);
         }
+        public static string ToPathSafe(string input, string replaceBy = "_")
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+            var invalidFileCharacters = System.IO.Path
+                .GetInvalidFileNameChars()
+                .ToArray();
+            var regex = new Regex(@"\" + String.Join(@"|\", invalidFileCharacters), RegexOptions.Compiled);
+            return regex.Replace(input, replaceBy);
+        }
         public static string GetTypeNamespace(string typeName)
             => TypeCache.GetTypeNamespace(typeName);
         public static string[] GetClassNamespaces(CSharpClass cSharpClass)
@@ -46,7 +62,14 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             var namespaces = new List<string>();
             foreach (var property in cSharpClass.Properties)
             {
-                namespaces.Add(TypeCache.GetTypeNamespace(property.Type));
+                string @namespace = TypeCache.GetTypeNamespace(property.Type);
+                if (!string.IsNullOrEmpty(@namespace))
+                {
+                    namespaces.Add(@namespace);
+                } else
+                {
+                    System.Diagnostics.Debug.WriteLine("Missing namespace for '" + property.Type + "'");
+                }
             }
             return namespaces.Distinct().Where(o => !string.IsNullOrEmpty(o)).ToArray();
         }

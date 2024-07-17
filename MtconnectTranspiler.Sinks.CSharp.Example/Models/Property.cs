@@ -28,6 +28,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
         public string DefaultValue { get; set; }
 
+        private XmiElement? _remoteType { get; set; }
+
         /// <summary>
         /// Constructs an <see cref="Property"/> more generically. <b>NOTE</b>: You'll need to add items manually from here.
         /// </summary>
@@ -42,49 +44,18 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
             Modifier = source.IsStatic ? "static" : source.IsReadOnly ? "readonly" : "";
 
+            XmiElement? remoteType = null;
             Type = CSharpHelperMethods.ToPrimitiveType(model, source)?.Name
-                ?? typeDeepSearch(model, source.PropertyType)
+                ?? CSharpHelperMethods.TypeDeepSearch(model, source.PropertyType, out remoteType)
                 ?? "object";
+
             OriginalPropertyType = source.PropertyType;
 
             Aggregation = source.Aggregation;
             Extension = source.Extension?.Extender;
-            Association = typeDeepSearch(model, source.Association);
+            Association = CSharpHelperMethods.TypeDeepSearch(model, source.Association, out remoteType);
             DefaultValue = source.DefaultValue?.Name;
         }
 
-        private string typeDeepSearch(XmiDocument model, string propertyType)
-        {
-            if (string.IsNullOrEmpty(propertyType))
-                return null;
-            // TODO: Also cache the namespaces that each of these properties are contained within
-            object remoteType;
-            if (model.IdCache.TryGetValue(propertyType, out remoteType))
-            {
-                switch (remoteType)
-                {
-                    case UmlEnumeration umlEnum:
-                        return umlEnum.Name;
-                    case UmlClass umlClass:
-                        return $"{umlClass.Name}Class";
-                    case UmlDataType umlDataType:
-                        switch (umlDataType.Name)
-                        {
-                            case "float3d":
-                                return "float[]";
-                            case "binary":
-                                return "bool";
-                            default:
-                                break;
-                        }
-                        break;
-                    case UmlAssociation umlAssociation:
-                        return umlAssociation.Name;
-                    default:
-                        break;
-                }
-            }
-            return null;
-        }
     }
 }

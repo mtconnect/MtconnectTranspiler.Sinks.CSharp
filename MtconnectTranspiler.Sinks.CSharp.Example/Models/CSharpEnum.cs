@@ -1,4 +1,5 @@
 ﻿using CaseExtensions;
+using MtconnectTranspiler.Sinks.CSharp.Example;
 using MtconnectTranspiler.Sinks.ScribanTemplates;
 using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
@@ -42,7 +43,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             get
             {
                 if (string.IsNullOrEmpty(_filename))
-                    _filename = $"{Namespace.Replace(".", "/").Replace(":", "_")}/{Name.ToPascalCase().Replace(":", "_")}.cs";
+                    _filename = $"{CategoryFunctions.ToPathSafe(Namespace.Substring(Namespace.LastIndexOf(".") + 1))}/{CategoryFunctions.ToPathSafe(Name.ToPascalCase())}.cs";
                 return _filename;
             }
             set { _filename = value; }

@@ -11,10 +11,9 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <inheritdoc />
         public MtconnectVersionedObject(XmiDocument model, XmiElement source) : base(model, source) { }
 
-        /// <inheritdoc />
-        protected override string lookupMtconnectVersion(string version)
+        protected override string lookupMtconnectVersion(string? version)
         {
-            return MTConnectHelperMethods.LookupMtconnectVersions(version);
+            return version ?? "1.0.1";
         }
     }
 }

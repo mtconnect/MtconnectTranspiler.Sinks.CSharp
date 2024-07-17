@@ -2,7 +2,7 @@
   "profiles": {
     "MtconnectTranspiler.Sinks.CSharp.Example": {
       "commandName": "Project",
-      "commandLineArgs": "\"C:\\Users\\tbm01\\Documents\\GitHub\\MtconnectTranspiler.Sinks.CSharp\\MtconnectTranspiler.Sinks.CSharp\\Models\" \"C:\\Users\\tbm01\\Desktop\\MTConnect Standard\\MTConnect Standard\\2.3.0\\MTConnect SysML Model.xml\""
+      "commandLineArgs": "\"$(SolutionDir)MtconnectTranspiler.Sinks.CSharp\\Models\" \"\\\\lightworksnas\\work\\True Analytics Solutions\\MTConnect Standard\\2.3.0\\MTConnect SysML Model.xml\""
     }
   }
 }

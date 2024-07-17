@@ -26,7 +26,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
             get
             {
                 if (string.IsNullOrEmpty(_filename))
-                    _filename = $"{Namespace.Replace(".", "/").Replace(":", "_")}/{Name.ToPascalCase().Replace(":", "_")}.cs";
+                    _filename = $"{CategoryFunctions.ToPathSafe(Namespace.Substring(Namespace.LastIndexOf(".") + 1))}/{CategoryFunctions.ToPathSafe(Name.ToPascalCase())}.cs";
                 return _filename;
             }
             set { _filename = value; }
@@ -74,6 +74,31 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
                 ?.Select(o => new CSharpClass(model, o))
                 ?.ToList()
                 ?? new List<CSharpClass>();
+            //var classGroupings = _classes.GroupBy(o => o.Name);
+            //foreach (var classGrouping in classGroupings)
+            //{
+            //    if (classGrouping.Count() <= 1)
+            //        continue;
+            //    var classes = _classes.Where(o => o.Name == classGrouping.Key).ToList();
+            //    foreach (var @class in classes)
+            //    {
+            //        if (!string.IsNullOrEmpty(@class?.Generalization))
+            //        {
+            //            string generalization = CSharpHelperMethods.TypeDeepSearch(model, @class?.Generalization, out XmiElement? remoteType);
+            //            if (generalization.EndsWith("Class"))
+            //            {
+            //                string remoteClassName = generalization.Replace("Class", string.Empty);
+            //                if (@class.Name.EndsWith(remoteClassName))
+            //                {
+            //                    @class.Name += "Class";
+            //                }else
+            //                {
+            //                    @class.Name += generalization;
+            //                }
+            //            }
+            //        }
+            //    }
+            //}
 
             _enums = source!.Enumerations
                 ?.Select(o => new CSharpEnum(model, o))

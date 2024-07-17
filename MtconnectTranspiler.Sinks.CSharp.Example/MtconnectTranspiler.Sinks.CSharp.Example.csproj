@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <PackageReference Include="Consoul" Version="1.6.5" />
-    <PackageReference Include="MtconnectTranspiler" Version="1.0.8.3-prerelease.1" />
+    <PackageReference Include="MtconnectTranspiler" Version="1.0.8.3-prerelease.3" />
     <PackageReference Include="MtconnectTranspiler.Sinks.ScribanTemplates" Version="1.0.15.3-prerelease.2" />
   </ItemGroup>
 

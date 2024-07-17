@@ -1,86 +1,126 @@
-{{ code_name = source.name | to_code_safe | string.remove "." }}
+{{~ code_name = source.name | to_code_safe | string.remove "." ~}}
 using System;
 using System.CodeDom.Compiler;
-{{ namespaces = get_class_namespaces source }}
+using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+{{~ namespaces = get_class_namespaces source ~}}
 {{~ for item in namespaces ~}}
-using {{ to_code_safe item }};
+// using {{ to_code_safe item }};
 {{~ end ~}}
 
 namespace {{ to_code_safe source.namespace }}
 {
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
-	public sealed class {{ code_name }}Class
+	public sealed class {{ code_name }} : IClass
 	{
-		/// <inheritdoc cref="Class.ReferenceId" />
+		/// <inheritdoc />
 		public string ReferenceId => "{{ source.reference_id }}";
 		
-		/// <inheritdoc cref="Class.Name" />
+		/// <inheritdoc />
 		public string Name => "{{ source.name }}";
 		
-		/// <inheritdoc cref="Class.AccessModifier" />
+		/// <inheritdoc />
 		public string AccessModifier => "{{ source.access_modifier }}";
 				
-		/// <inheritdoc cref="Class.Modifier" />
+		/// <inheritdoc />
 		public string Modifier => "{{ source.modifier }}";
 				
-		/// <inheritdoc cref="Class.NormativeVersion" />
+		/// <inheritdoc />
 		public string NormativeVersion => "{{ source.normative_version }}";
 				
-		/// <inheritdoc cref="Class.DeprecatedVersion" />
+		/// <inheritdoc />
 		public string DeprecatedVersion => "{{ source.deprecated_version }}";
-
+		
+		/// <inheritdoc />
 		public string Generalization => "{{ source.generalization }}";
 
 		{{~ if source.properties.size > 0 ~}}
+		/// <inheritdoc />
 		public {{ code_name }}Properties Properties { get; } = new {{ code_name }}Properties();
-		public sealed class {{ code_name }}Properties
+        IPropertyList IClass.Properties => Properties;
+		public sealed class {{ code_name }}Properties : IPropertyList
 		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			{{~ for item in source.properties ~}}
+{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
+{{~
+	if item.association
+		item_suffix = "Part"
+	else
+		item_suffix = ""
+	end
+~}}
+				{{ item_code_name }}{{ item_suffix }},
+			{{~ end ~}}
+			};
 		{{~ for item in source.properties ~}}
-		{{ item_code_name = item.name | to_code_safe | string.remove "." }}
-		{{
+		{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
+{{~ property_type_namespace = item.type | get_type_namespace | to_code_safe ~}}
+		{{~
+			if property_type_namespace
+				item_type_name = item.type | to_pascal_case | to_code_safe | string.remove "."
+			else
+				item_type_name = item.type | to_code_safe | string.remove "."
+			end
+		~}}
+		{{~
 			if item.association
 				item_suffix = "PartProperty"
 			else
 				item_suffix = "Property"
 			end
-		}}
+		~}}
 			/// <remarks>Original Name: {{ item.name }}</remarks>
 			public {{ item_code_name }}{{ item_suffix }} {{ item_code_name }}{{ if item.association }}Part{{ end }} { get; } = new {{ item_code_name }}{{ item_suffix }}();
-			public sealed class {{ item_code_name }}{{ item_suffix }}
+			public sealed class {{ item_code_name }}{{ item_suffix }} : IProperty
 			{
-				/// <inheritdoc cref="Property.Type" />
-				/// Original Type: {{ item.original_property_type }}
-				public Type Type => typeof({{ item.type | to_pascal_case | to_code_safe }});
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks>
+				/// <list type="bullet">
+				/// <item>Original Type: {{ item.original_property_type }}</item>
+				/// <item>Type: {{ item.type | to_pascal_case | to_code_safe }}</item>
+				/// <item>Namespace: {{ property_type_namespace }}</item>
+				/// </list>
+				/// </remarks>
+				/// </summary>
+				public System.Type Type => typeof({{ if property_type_namespace }}{{ property_type_namespace }}.{{ end }}{{ item_type_name }});
 				
-				/// <inheritdoc cref="Property.Name" />
+				/// <inheritdoc />
 				public string Name => "{{ item.name }}";
 				
-				/// <inheritdoc cref="Property.AccessModifier" />
+				/// <inheritdoc />
 				public string AccessModifier => "{{ item.access_modifier }}";
 				
-				/// <inheritdoc cref="Property.Modifier" />
+				/// <inheritdoc />
 				public string Modifier => "{{ item.modifier }}";
 				
-				/// <inheritdoc cref="Property.NormativeVersion" />
+				/// <inheritdoc />
 				public string NormativeVersion => "{{ item.normative_version }}";
 				
-				/// <inheritdoc cref="Property.DeprecatedVersion" />
+				/// <inheritdoc />
 				public string DeprecatedVersion => "{{ item.deprecated_version }}";
 				
+				/// <inheritdoc />
 				public string Aggregation => "{{ item.aggregation }}";
 
 				// Note: Extension.Extender
+				/// <inheritdoc />
 				public string Extension => "{{ item.extension }}";
-
+				
+				/// <inheritdoc />
 				public string Association => "{{ item.association }}";
 
 				// Note: DefaultValue.Name
+				/// <inheritdoc />
 				public string DefaultValue => "{{ item.default_value }}";
 
 				// TODO: Add Summary
 			}
 		{{~ end ~}}
 		};
+		{{~ else ~}}
+		public IPropertyList Properties => null;
 		{{~ end ~}}
 
 		{{~ if source.constraints.size > 0 ~}}
