@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// lower boundary indicating increased concern and supervision may be required.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LowerWarningClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375168_117007_2024";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// lower boundary indicating increased concern and supervision may be required.";
+
 		/// <inheritdoc />
 		public string Name => "LowerWarningClass";
 		

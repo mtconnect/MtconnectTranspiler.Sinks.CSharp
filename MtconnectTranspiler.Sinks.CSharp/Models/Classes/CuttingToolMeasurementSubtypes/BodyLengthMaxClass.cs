@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class BodyLengthMaxClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119498_219776_1408";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.";
+
 		/// <inheritdoc />
 		public string Name => "BodyLengthMaxClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				Code,
 				Units,
 			};
+			/// <summary>
+			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
+			/// </summary>
 			public CodeProperty Code { get; } = new CodeProperty();
 			public sealed class CodeProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "Code";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -83,10 +95,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			public sealed class UnitsProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -130,8 +146,6 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

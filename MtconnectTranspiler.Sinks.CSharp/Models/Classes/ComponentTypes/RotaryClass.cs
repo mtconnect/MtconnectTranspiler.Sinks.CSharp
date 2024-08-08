@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component Types::Axis">Component Types::Axis</see> that provides rotation about a fixed axis.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class RotaryClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382015_53595_42288";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides rotation about a fixed axis.";
+
 		/// <inheritdoc />
 		public string Name => "RotaryClass";
 		
@@ -41,7 +47,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesRotaryVelocity,
 				ObservesAxisFeedrate,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesLoadProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesLoad</remarks>
+			/// </summary>
 			public ObservesLoadProperty ObservesLoad { get; } = new ObservesLoadProperty();
 			public sealed class ObservesLoadProperty : IProperty
 			{
@@ -61,6 +70,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesLoad";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides rotation about a fixed axis.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -85,10 +97,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesTemperatureProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesTemperature</remarks>
+			/// </summary>
 			public ObservesTemperatureProperty ObservesTemperature { get; } = new ObservesTemperatureProperty();
 			public sealed class ObservesTemperatureProperty : IProperty
 			{
@@ -108,6 +121,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesTemperature";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides rotation about a fixed axis.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -132,10 +148,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesRotaryVelocityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesRotaryVelocity</remarks>
+			/// </summary>
 			public ObservesRotaryVelocityProperty ObservesRotaryVelocity { get; } = new ObservesRotaryVelocityProperty();
 			public sealed class ObservesRotaryVelocityProperty : IProperty
 			{
@@ -155,6 +172,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesRotaryVelocity";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides rotation about a fixed axis.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -179,10 +199,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesAxisFeedrateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesAxisFeedrate</remarks>
+			/// </summary>
 			public ObservesAxisFeedrateProperty ObservesAxisFeedrate { get; } = new ObservesAxisFeedrateProperty();
 			public sealed class ObservesAxisFeedrateProperty : IProperty
 			{
@@ -202,6 +223,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesAxisFeedrate";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides rotation about a fixed axis.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -226,8 +250,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

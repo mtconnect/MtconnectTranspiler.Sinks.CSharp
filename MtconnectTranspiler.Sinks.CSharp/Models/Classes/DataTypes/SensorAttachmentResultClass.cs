@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="SensorAttachment::result" /> <b>MUST</b> be of a <see cref="Table">Table</see>, <see cref="DataSet">DataSet</see> or <see cref="Value">Value</see> <see cref="Representation">Representation</see> type.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SensorAttachmentResultClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1620207520256_148935_1073";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""SensorAttachment::result"" /> <b>MUST</b> be of a <see cref=""Table"">Table</see>, <see cref=""DataSet"">DataSet</see> or <see cref=""Value"">Value</see> <see cref=""Representation"">Representation</see> type.";
+
 		/// <inheritdoc />
 		public string Name => "SensorAttachmentResultClass";
 		
@@ -37,8 +43,14 @@ namespace Mtconnect.DataTypes
 			public IProperty[] Properties => new IProperty[] {
 				SensorId,
 			};
+			/// <summary>
+			/// <inheritdoc cref="SensorIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SensorId</remarks>
+			/// </summary>
 			public SensorIdProperty SensorId { get; } = new SensorIdProperty();
+			/// <summary>
+			/// identity of a sensor used to observe some measurement of an item.
+			/// </summary>
 			public sealed class SensorIdProperty : IProperty
 			{
 				/// <summary>
@@ -56,6 +68,9 @@ namespace Mtconnect.DataTypes
 				/// <inheritdoc />
 				public string Name => "SensorId";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""SensorAttachment::result"" /> <b>MUST</b> be of a <see cref=""Table"">Table</see>, <see cref=""DataSet"">DataSet</see> or <see cref=""Value"">Value</see> <see cref=""Representation"">Representation</see> type.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +96,6 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

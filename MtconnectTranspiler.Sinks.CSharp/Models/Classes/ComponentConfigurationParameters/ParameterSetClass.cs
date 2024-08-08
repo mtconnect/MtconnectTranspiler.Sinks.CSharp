@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// set of <see cref="Parameter">Parameter</see>s.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ParameterSetClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678197254209_96040_17915";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";
+
 		/// <inheritdoc />
 		public string Name => "ParameterSetClass";
 		
@@ -39,8 +45,14 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				Name,
 				HasParameterPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the parameter set if more than one exists.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -58,6 +70,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				/// <inheritdoc />
 				public string Name => "Name";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,10 +98,11 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasParameterPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasParameter</remarks>
+			/// </summary>
 			public HasParameterPartProperty HasParameterPart { get; } = new HasParameterPartProperty();
 			public sealed class HasParameterPartProperty : IProperty
 			{
@@ -105,6 +121,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				/// <inheritdoc />
 				public string Name => "HasParameter";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +149,6 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

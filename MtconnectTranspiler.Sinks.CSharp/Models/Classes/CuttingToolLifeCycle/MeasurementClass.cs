@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// constrained scalar value associated with a cutting tool./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MeasurementClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_C09F377D_8946_421b_B746_E23C01D97EAC";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
 		/// <inheritdoc />
 		public string Name => "MeasurementClass";
 		
@@ -45,8 +51,14 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				Units,
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
+			/// </summary>
 			public CodeProperty Code { get; } = new CodeProperty();
+			/// <summary>
+			/// shop specific code for the measurement.   ISO 13399 codes <b>MAY</b> be used for these codes as well.   See <see cref="Cutting Tool Measurement Subtypes">Cutting Tool Measurement Subtypes</see> and <see cref="Cutting Item Measurement Subtypes">Cutting Item Measurement Subtypes</see> for details on <see cref="Measurement">Measurement</see> types and their respective <see cref="Measurement::code" /> values.
+			/// </summary>
 			public sealed class CodeProperty : IProperty
 			{
 				/// <summary>
@@ -65,6 +77,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "Code";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -89,11 +104,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MaximumProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Maximum</remarks>
+			/// </summary>
 			public MaximumProperty Maximum { get; } = new MaximumProperty();
+			/// <summary>
+			/// maximum value for the measurement. 
+			/// </summary>
 			public sealed class MaximumProperty : IProperty
 			{
 				/// <summary>
@@ -112,6 +131,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "Maximum";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -136,11 +158,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MinimumProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Minimum</remarks>
+			/// </summary>
 			public MinimumProperty Minimum { get; } = new MinimumProperty();
+			/// <summary>
+			/// minimum value for the measurement. 
+			/// </summary>
 			public sealed class MinimumProperty : IProperty
 			{
 				/// <summary>
@@ -159,6 +185,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "Minimum";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -183,11 +212,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NativeUnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeUnits</remarks>
+			/// </summary>
 			public NativeUnitsProperty NativeUnits { get; } = new NativeUnitsProperty();
+			/// <summary>
+			/// units the measurement was originally recorded in. See <see cref="Device Information Model">Device Information Model</see> for the complete list of <see cref="DataItem::nativeUnits" />.
+			/// </summary>
 			public sealed class NativeUnitsProperty : IProperty
 			{
 				/// <summary>
@@ -206,6 +239,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "NativeUnits";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -230,11 +266,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NominalProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Nominal</remarks>
+			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
+			/// <summary>
+			/// as advertised value for the measurement. 
+			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
 				/// <summary>
@@ -253,6 +293,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "Nominal";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -277,11 +320,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SignificantDigitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SignificantDigits</remarks>
+			/// </summary>
 			public SignificantDigitsProperty SignificantDigits { get; } = new SignificantDigitsProperty();
+			/// <summary>
+			/// number of significant digits in the reported value. 
+			/// </summary>
 			public sealed class SignificantDigitsProperty : IProperty
 			{
 				/// <summary>
@@ -300,6 +347,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "SignificantDigits";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -324,11 +374,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
+			/// <summary>
+			/// units for the measurements. See <see cref="Device Information Model">Device Information Model</see> for the complete list of <see cref="DataItem::units" />.
+			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
@@ -347,6 +401,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -371,10 +428,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			public sealed class ValueProperty : IProperty
 			{
@@ -393,6 +451,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -418,8 +479,6 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class Entity_Message_Class : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1673982051125_363498_261";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "Entity{Message}Class";
 		
@@ -39,7 +42,10 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				Sorce,
 				Topic,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			public sealed class NameProperty : IProperty
 			{
@@ -59,6 +65,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -83,10 +92,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SorceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Sorce</remarks>
+			/// </summary>
 			public SorceProperty Sorce { get; } = new SorceProperty();
 			public sealed class SorceProperty : IProperty
 			{
@@ -106,6 +116,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public string Name => "Sorce";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -130,10 +143,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TopicProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Topic</remarks>
+			/// </summary>
 			public TopicProperty Topic { get; } = new TopicProperty();
 			public sealed class TopicProperty : IProperty
 			{
@@ -153,6 +167,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public string Name => "Topic";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -177,8 +194,6 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

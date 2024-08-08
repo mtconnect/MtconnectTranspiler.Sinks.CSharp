@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="System">System</see> that provides movement and distribution of pressurized liquid throughout the piece of equipment.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class HydraulicClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381993_131470_42246";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""System"">System</see> that provides movement and distribution of pressurized liquid throughout the piece of equipment.";
+
 		/// <inheritdoc />
 		public string Name => "HydraulicClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				ObservesPressure,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesPressureProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPressure</remarks>
+			/// </summary>
 			public ObservesPressureProperty ObservesPressure { get; } = new ObservesPressureProperty();
 			public sealed class ObservesPressureProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "ObservesPressure";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> that provides movement and distribution of pressurized liquid throughout the piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// translations along X, Y, and Z axes are expressed as x,y, and z respectively within a 3-dimensional vector. 
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TranslationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1583182362743_846297_4736";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// translations along X, Y, and Z axes are expressed as x,y, and z respectively within a 3-dimensional vector. ";
+
 		/// <inheritdoc />
 		public string Name => "TranslationClass";
 		
@@ -37,8 +43,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			public IProperty[] Properties => new IProperty[] {
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			/// <summary>
+			/// The value of <see cref="Rotation">Rotation</see> in <c>MILLIMETER_3D</c>.
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>
@@ -56,6 +68,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// translations along X, Y, and Z axes are expressed as x,y, and z respectively within a 3-dimensional vector. ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +96,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// status of the cutting tool.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class StatusClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_2F5EC70A_8269_4c6a_AAB3_7F17B8F22C82";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// status of the cutting tool.";
+
 		/// <inheritdoc />
 		public string Name => "StatusClass";
 		
@@ -38,8 +44,14 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			public IProperty[] Properties => new IProperty[] {
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			/// <summary>
+			/// status value of the cutting tool.
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>
@@ -57,6 +69,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// status of the cutting tool.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +97,6 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

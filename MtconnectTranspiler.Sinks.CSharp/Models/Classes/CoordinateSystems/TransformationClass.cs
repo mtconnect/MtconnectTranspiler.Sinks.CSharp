@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref="Translation">Translation</see> and <see cref="Rotation">Rotation</see>./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TransformationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579103900791_417826_16362";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";
+
 		/// <inheritdoc />
 		public string Name => "TransformationClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				HasTranslationPart,
 				HasRotationPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasTranslationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasTranslation</remarks>
+			/// </summary>
 			public HasTranslationPartProperty HasTranslationPart { get; } = new HasTranslationPartProperty();
 			public sealed class HasTranslationPartProperty : IProperty
 			{
@@ -58,6 +67,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <inheritdoc />
 				public string Name => "HasTranslation";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,10 +95,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasRotationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasRotation</remarks>
+			/// </summary>
 			public HasRotationPartProperty HasRotationPart { get; } = new HasRotationPartProperty();
 			public sealed class HasRotationPartProperty : IProperty
 			{
@@ -105,6 +118,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <inheritdoc />
 				public string Name => "HasRotation";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +146,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
@@ -140,6 +154,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		/// Transform
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string Transform => @"hasTranslation->size() + hasRotation->size() = 1 and hasTranslation->size() + hasRotation->size() <> 0 ";
 		/*
 		hasTranslation->size() + hasRotation->size() = 1 and hasTranslation->size() + hasRotation->size() <> 0 
 		*/

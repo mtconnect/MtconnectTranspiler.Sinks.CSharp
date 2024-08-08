@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="SampleEnum::ANGULAR_DECELERATION">SampleEnum::ANGULAR_DECELERATION</see>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AngularDecelerationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605642749479_983550_196";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""SampleEnum::ANGULAR_DECELERATION"">SampleEnum::ANGULAR_DECELERATION</see>";
+
 		/// <inheritdoc />
 		public string Name => "AngularDecelerationClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				Type,
 				SubType,
 			};
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			public sealed class UnitsProperty : IProperty
 			{
@@ -60,6 +69,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""SampleEnum::ANGULAR_DECELERATION"">SampleEnum::ANGULAR_DECELERATION</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -84,10 +96,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -107,6 +120,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""SampleEnum::ANGULAR_DECELERATION"">SampleEnum::ANGULAR_DECELERATION</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -131,10 +147,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -153,6 +170,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				/// <inheritdoc />
 				public string Name => "SubType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""SampleEnum::ANGULAR_DECELERATION"">SampleEnum::ANGULAR_DECELERATION</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -178,8 +198,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

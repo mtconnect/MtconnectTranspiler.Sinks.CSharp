@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// identifier used to reference a material heat number.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PartGroupIdHeatTreatClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605549063031_286367_574";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// identifier used to reference a material heat number.";
+
 		/// <inheritdoc />
 		public string Name => "PartGroupId.HeatTreatClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
 			};
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "SubType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// identifier used to reference a material heat number.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

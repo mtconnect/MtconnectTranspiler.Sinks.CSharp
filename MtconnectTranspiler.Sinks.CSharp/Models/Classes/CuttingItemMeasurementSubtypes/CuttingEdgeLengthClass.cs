@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// theoretical length of the cutting edge of a cutting item over sharp corners.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingEdgeLengthClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119523_979361_1447";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// theoretical length of the cutting edge of a cutting item over sharp corners.";
+
 		/// <inheritdoc />
 		public string Name => "CuttingEdgeLengthClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				Code,
 				Units,
 			};
+			/// <summary>
+			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
+			/// </summary>
 			public CodeProperty Code { get; } = new CodeProperty();
 			public sealed class CodeProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "Code";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// theoretical length of the cutting edge of a cutting item over sharp corners.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -83,10 +95,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			public sealed class UnitsProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// theoretical length of the cutting edge of a cutting item over sharp corners.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -130,8 +146,6 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

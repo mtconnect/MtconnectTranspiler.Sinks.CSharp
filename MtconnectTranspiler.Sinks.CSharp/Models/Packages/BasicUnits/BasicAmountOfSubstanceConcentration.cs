@@ -2,14 +2,31 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.Imports.UnitImports.BasicUnits {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
-	public class BasicAmountOfSubstanceConcentrationPackage : IPackage {
+namespace Mtconnect.Imports.UnitImports.BasicUnits
+{
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public class BasicAmountOfSubstanceConcentrationPackage : IPackage
+	{
+		/// <inheritdoc />
+		public string ReferenceId => "_19_0_3_45f01b9_1579105790697_906422_162854";
+		
+		/// <inheritdoc />
+		public string Name => "BasicAmountOfSubstanceConcentration";
+
+		/// <inheritdoc />
+		public string Summary => @"";
+
+		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
 		};
-
+		
+		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 		};
+		#region Packages
+	#endregion
 
+	#region Classes
+	#endregion
 	}
 }

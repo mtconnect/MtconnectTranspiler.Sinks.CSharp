@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// operating state of the <i>response</i> to a <i>request</i> to unload a piece of material or product.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MaterialUnloadResponseClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623846333302_943133_2729";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to unload a piece of material or product.";
+
 		/// <inheritdoc />
 		public string Name => "MaterialUnload.ResponseClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				SubType,
 				Result,
 			};
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -58,6 +67,9 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				/// <inheritdoc />
 				public string Name => "SubType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to unload a piece of material or product.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,10 +95,11 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
 			public sealed class ResultProperty : IProperty
 			{
@@ -105,6 +118,9 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				/// <inheritdoc />
 				public string Name => "Result";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to unload a piece of material or product.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +146,6 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

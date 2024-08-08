@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Auxiliary">Auxiliary</see> that removes manufacturing byproducts from a piece of equipment.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class WasteDisposalClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382023_920799_42303";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Auxiliary"">Auxiliary</see> that removes manufacturing byproducts from a piece of equipment.";
+
 		/// <inheritdoc />
 		public string Name => "WasteDisposalClass";
 		

@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>document</i> that represents a Part(s) of the MTConnect Standard.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MTConnectDocumentGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375171_473670_2035";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>document</i> that represents a Part(s) of the MTConnect Standard.";
+
 		/// <inheritdoc />
 		public string Name => "MTConnectDocumentGeneralization";
 		

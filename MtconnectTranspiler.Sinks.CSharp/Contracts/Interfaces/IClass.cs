@@ -7,6 +7,16 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
     public interface IPackage
     {
         /// <summary>
+        /// Reference to the SysML Id defined in the XMI document.
+        /// </summary>
+        string ReferenceId { get; }
+
+        /// <summary>
+        /// Reference to the SysML name defined in the XMI document.
+        /// </summary>
+        string Name { get; }
+
+        /// <summary>
         /// Collection of hard-coded package references. Note: Each hard-coded package property lazy-loads the target entity.
         /// </summary>
         IPackage[] Packages { get; }
@@ -15,6 +25,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
         /// Collection of hard-coded class references. Note: Each hard-coded class property lazy-loads the target entity.
         /// </summary>
         IClass[] Classes { get; }
+
+        /// <summary>
+        /// Concatenation of all Comments.
+        /// </summary>
+        string Summary { get; }
     }
     /// <summary>
     /// Representation of a SysML class entity related to a literal C# class.
@@ -60,6 +75,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
         /// Collection of properties associated with the representation of the SysML class entity.
         /// </summary>
         IPropertyList Properties { get; }
+
+        /// <summary>
+        /// Concatenation of all Comments.
+        /// </summary>
+        string Summary { get; }
     }
     /// <summary>
     /// Represents a collection of C# class properties translated from a SysML class entity.
@@ -118,6 +138,9 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
         // Note: DefaultValue.Name
         string DefaultValue { get; }
 
-        // TODO: Add Summary
+        /// <summary>
+        /// Concatenation of all Comments.
+        /// </summary>
+        string Summary { get; }
     }
 }

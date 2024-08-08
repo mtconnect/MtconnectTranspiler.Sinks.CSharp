@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.Files
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// key-value pair providing additional metadata about a <see cref="File">File</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FilePropertyClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1589825710107_976904_827";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// key-value pair providing additional metadata about a <see cref=""File"">File</see>.";
+
 		/// <inheritdoc />
 		public string Name => "FilePropertyClass";
 		
@@ -38,8 +44,14 @@ namespace Mtconnect.AssetInformationModel.Files
 				Name,
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the <see cref="FileProperty">FileProperty</see>.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -58,6 +70,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// key-value pair providing additional metadata about a <see cref=""File"">File</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -82,11 +97,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			/// <summary>
+			/// The value of the <see cref="FileProperty">FileProperty</see>.
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>
@@ -105,6 +124,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "Value";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// key-value pair providing additional metadata about a <see cref=""File"">File</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -129,8 +151,6 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

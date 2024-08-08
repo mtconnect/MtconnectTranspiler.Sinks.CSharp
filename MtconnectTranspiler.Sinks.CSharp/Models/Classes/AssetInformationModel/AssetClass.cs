@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <i>Asset</i>. /// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_C7D39183_23CB_416b_A62D_F60815E08B1A";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+
 		/// <inheritdoc />
 		public string Name => "AssetClass";
 		
@@ -45,8 +51,14 @@ namespace Mtconnect.AssetInformationModel
 				HasConfigurationPart,
 				Hash,
 			};
+			/// <summary>
+			/// <inheritdoc cref="AssetIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetId</remarks>
+			/// </summary>
 			public AssetIdProperty AssetId { get; } = new AssetIdProperty();
+			/// <summary>
+			/// unique identifier for an <see cref="Asset">Asset</see>.
+			/// </summary>
 			public sealed class AssetIdProperty : IProperty
 			{
 				/// <summary>
@@ -65,6 +77,9 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "AssetId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -89,11 +104,15 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="DeviceUuidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DeviceUuid</remarks>
+			/// </summary>
 			public DeviceUuidProperty DeviceUuid { get; } = new DeviceUuidProperty();
+			/// <summary>
+			/// associated piece of equipment's <i>UUID</i> that supplied the <see cref="Asset">Asset</see>'s data.  It references to <see cref="Device::uuid" /> defined in <see cref="Device Information Model">Device Information Model</see>.
+			/// </summary>
 			public sealed class DeviceUuidProperty : IProperty
 			{
 				/// <summary>
@@ -112,6 +131,9 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "DeviceUuid";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -136,11 +158,15 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="RemovedProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Removed</remarks>
+			/// </summary>
 			public RemovedProperty Removed { get; } = new RemovedProperty();
+			/// <summary>
+			/// indicator that the <see cref="Asset">Asset</see> has been removed from the piece of equipment.
+			/// </summary>
 			public sealed class RemovedProperty : IProperty
 			{
 				/// <summary>
@@ -158,6 +184,9 @@ namespace Mtconnect.AssetInformationModel
 				/// <inheritdoc />
 				public string Name => "Removed";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -183,11 +212,15 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TimestampProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Timestamp</remarks>
+			/// </summary>
 			public TimestampProperty Timestamp { get; } = new TimestampProperty();
+			/// <summary>
+			/// time the <see cref="Asset">Asset</see> data was last modified.
+			/// </summary>
 			public sealed class TimestampProperty : IProperty
 			{
 				/// <summary>
@@ -205,6 +238,9 @@ namespace Mtconnect.AssetInformationModel
 				/// <inheritdoc />
 				public string Name => "Timestamp";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -230,11 +266,15 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasDescriptionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDescription</remarks>
+			/// </summary>
 			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
+			/// <summary>
+			/// Description can contain any descriptive content about the Asset.
+			/// </summary>
 			public sealed class HasDescriptionPartProperty : IProperty
 			{
 				/// <summary>
@@ -252,6 +292,9 @@ namespace Mtconnect.AssetInformationModel
 				/// <inheritdoc />
 				public string Name => "HasDescription";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -277,10 +320,11 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasConfigurationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasConfiguration</remarks>
+			/// </summary>
 			public HasConfigurationPartProperty HasConfigurationPart { get; } = new HasConfigurationPartProperty();
 			public sealed class HasConfigurationPartProperty : IProperty
 			{
@@ -299,6 +343,9 @@ namespace Mtconnect.AssetInformationModel
 				/// <inheritdoc />
 				public string Name => "HasConfiguration";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -324,11 +371,15 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HashProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Hash</remarks>
+			/// </summary>
 			public HashProperty Hash { get; } = new HashProperty();
+			/// <summary>
+			/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso>
+			/// </summary>
 			public sealed class HashProperty : IProperty
 			{
 				/// <summary>
@@ -346,6 +397,9 @@ namespace Mtconnect.AssetInformationModel
 				/// <inheritdoc />
 				public string Name => "Hash";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -371,8 +425,6 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Observation">Observation</see> that is continuously changing or analog data value. /// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SampleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531116_175117_25733";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
 		/// <inheritdoc />
 		public string Name => "SampleClass";
 		
@@ -46,8 +52,14 @@ namespace Mtconnect.ObservationInformationModel
 				Units,
 				Type,
 			};
+			/// <summary>
+			/// <inheritdoc cref="DurationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Duration</remarks>
+			/// </summary>
 			public DurationProperty Duration { get; } = new DurationProperty();
+			/// <summary>
+			/// time-period over which the data was collected.  <see cref="Sample::duration" /> <b>MUST</b> be provided when the <see cref="DataItem::statistic" /> is defined in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class DurationProperty : IProperty
 			{
 				/// <summary>
@@ -65,6 +77,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Duration";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -90,11 +105,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResetTriggeredProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ResetTriggered</remarks>
+			/// </summary>
 			public ResetTriggeredProperty ResetTriggered { get; } = new ResetTriggeredProperty();
+			/// <summary>
+			/// identifies when a reported value has been reset and what has caused that reset to occur for those <see cref="DataItem">DataItem</see> entities that may be periodically reset to an initial value.  <c>resetTriggered</c> <b>MUST</b> only be provided for the specific occurrence of a <see cref="DataItem">DataItem</see> reported in the <i>MTConnectStreams Response Document</i> when the reset occurred.
+			/// </summary>
 			public sealed class ResetTriggeredProperty : IProperty
 			{
 				/// <summary>
@@ -112,6 +131,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "ResetTriggered";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -137,11 +159,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SampleRateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SampleRate</remarks>
+			/// </summary>
 			public SampleRateProperty SampleRate { get; } = new SampleRateProperty();
+			/// <summary>
+			/// rate at which successive samples of the value are recorded. /// Description
+			/// </summary>
 			public sealed class SampleRateProperty : IProperty
 			{
 				/// <summary>
@@ -160,6 +186,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "SampleRate";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -184,11 +213,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="StatisticProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Statistic</remarks>
+			/// </summary>
 			public StatisticProperty Statistic { get; } = new StatisticProperty();
+			/// <summary>
+			/// type of statistical calculation defined by the <see cref="DataItem::statistic" /> defined in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class StatisticProperty : IProperty
 			{
 				/// <summary>
@@ -207,6 +240,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Statistic";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -231,10 +267,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="OrganizedByComponentStreamPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizedByComponentStream</remarks>
+			/// </summary>
 			public OrganizedByComponentStreamPartProperty OrganizedByComponentStreamPart { get; } = new OrganizedByComponentStreamPartProperty();
 			public sealed class OrganizedByComponentStreamPartProperty : IProperty
 			{
@@ -253,6 +290,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "OrganizedByComponentStream";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -278,10 +318,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
 			public sealed class ResultProperty : IProperty
 			{
@@ -300,6 +341,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Result";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -325,10 +369,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			public sealed class UnitsProperty : IProperty
 			{
@@ -348,6 +393,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -372,10 +420,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -395,6 +444,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -419,8 +471,6 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

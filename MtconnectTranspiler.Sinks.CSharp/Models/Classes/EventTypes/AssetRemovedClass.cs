@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="EventEnum::ASSET_REMOVED">EventEnum::ASSET_REMOVED</see>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetRemovedClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218180_352606_1551";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""EventEnum::ASSET_REMOVED"">EventEnum::ASSET_REMOVED</see>";
+
 		/// <inheritdoc />
 		public string Name => "AssetRemovedClass";
 		
@@ -40,8 +46,14 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				Type,
 				Hash,
 			};
+			/// <summary>
+			/// <inheritdoc cref="AssetTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetType</remarks>
+			/// </summary>
 			public AssetTypeProperty AssetType { get; } = new AssetTypeProperty();
+			/// <summary>
+			/// type of <see cref="Asset">Asset</see> removed. See <see cref="Asset Information Model">Asset Information Model</see> for details on the <see cref="Asset">Asset</see> model.
+			/// </summary>
 			public sealed class AssetTypeProperty : IProperty
 			{
 				/// <summary>
@@ -59,6 +71,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "AssetType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ASSET_REMOVED"">EventEnum::ASSET_REMOVED</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -84,10 +99,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -106,6 +122,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ASSET_REMOVED"">EventEnum::ASSET_REMOVED</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -131,11 +150,15 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HashProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Hash</remarks>
+			/// </summary>
 			public HashProperty Hash { get; } = new HashProperty();
+			/// <summary>
+			/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso>
+			/// </summary>
 			public sealed class HashProperty : IProperty
 			{
 				/// <summary>
@@ -153,6 +176,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Hash";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ASSET_REMOVED"">EventEnum::ASSET_REMOVED</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -178,8 +204,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

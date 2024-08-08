@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DataSourceServiceGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1587353600211_165608_1139";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "DataSourceServiceGeneralization";
 		

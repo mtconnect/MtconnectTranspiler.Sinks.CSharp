@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// control placed on an element of a <i>feature</i> such as its size, location, or form, which may be a specification limit, a nominal with tolerance, or some other numerical or non-numerical control. <seealso href="https://www.google.com/search?q=QIF 3.0 3.4.29&btnI=I">QIF 3.0 3.4.29</seealso>. <seealso href="https://www.google.com/search?q=AS9102-B&btnI=I">AS9102-B</seealso>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CharacteristicClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1677579209252_492424_316";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// control placed on an element of a <i>feature</i> such as its size, location, or form, which may be a specification limit, a nominal with tolerance, or some other numerical or non-numerical control. <seealso href=""https://www.google.com/search?q=QIF 3.0 3.4.29&btnI=I"">QIF 3.0 3.4.29</seealso>. <seealso href=""https://www.google.com/search?q=AS9102-B&btnI=I"">AS9102-B</seealso>.";
+
 		/// <inheritdoc />
 		public string Name => "CharacteristicClass";
 		

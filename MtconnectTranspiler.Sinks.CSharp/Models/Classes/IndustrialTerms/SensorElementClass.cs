@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// provides a signal or measured value.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SensorElementClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375186_504629_2088";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// provides a signal or measured value.";
+
 		/// <inheritdoc />
 		public string Name => "SensorElementClass";
 		

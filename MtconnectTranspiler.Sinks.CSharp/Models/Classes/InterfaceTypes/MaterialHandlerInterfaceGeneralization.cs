@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.InterfaceInteractionModel.InterfaceTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Interface">Interface</see> that coordinates the operations between a piece of equipment and another associated piece of equipment used to automatically handle various types of materials or services associated with the original piece of equipment.  A material handler is a piece of equipment capable of providing any one, or more, of a variety of support services for another piece of equipment or a process like:  * Loading/unloading material or tooling * Part inspection * Testing * Cleaning  A robot is a common example of a material handler.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MaterialHandlerInterfaceGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622717400199_925921_979";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Interface"">Interface</see> that coordinates the operations between a piece of equipment and another associated piece of equipment used to automatically handle various types of materials or services associated with the original piece of equipment.  A material handler is a piece of equipment capable of providing any one, or more, of a variety of support services for another piece of equipment or a process like:  * Loading/unloading material or tooling * Part inspection * Testing * Cleaning  A robot is a common example of a material handler.";
+
 		/// <inheritdoc />
 		public string Name => "MaterialHandlerInterfaceGeneralization";
 		

@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// The collection of one or more pieces of information.   
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SampleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581814695455_317721_5160";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// The collection of one or more pieces of information.   ";
+
 		/// <inheritdoc />
 		public string Name => "SampleClass";
 		
@@ -37,7 +43,10 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 			public IProperty[] Properties => new IProperty[] {
 				Result,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
 			public sealed class ResultProperty : IProperty
 			{
@@ -56,6 +65,9 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				/// <inheritdoc />
 				public string Name => "Result";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// The collection of one or more pieces of information.   ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +93,6 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

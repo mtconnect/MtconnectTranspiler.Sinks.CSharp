@@ -6,12 +6,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class Robot7axesClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1582231560100_542213_121";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "Robot7axesClass";
 		
@@ -53,7 +56,10 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				Angle6,
 				Angle7,
 			};
+			/// <summary>
+			/// <inheritdoc cref="Joint1Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Joint1</remarks>
+			/// </summary>
 			public Joint1Property Joint1 { get; } = new Joint1Property();
 			public sealed class Joint1Property : IProperty
 			{
@@ -73,6 +79,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Joint1";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -97,10 +106,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Joint2Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Joint2</remarks>
+			/// </summary>
 			public Joint2Property Joint2 { get; } = new Joint2Property();
 			public sealed class Joint2Property : IProperty
 			{
@@ -120,6 +130,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Joint2";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -144,10 +157,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Joint3Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Joint3</remarks>
+			/// </summary>
 			public Joint3Property Joint3 { get; } = new Joint3Property();
 			public sealed class Joint3Property : IProperty
 			{
@@ -166,6 +180,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				public string Name => "Joint3";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -191,10 +208,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Joint4Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Joint4</remarks>
+			/// </summary>
 			public Joint4Property Joint4 { get; } = new Joint4Property();
 			public sealed class Joint4Property : IProperty
 			{
@@ -214,6 +232,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Joint4";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -238,10 +259,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Joint5Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Joint5</remarks>
+			/// </summary>
 			public Joint5Property Joint5 { get; } = new Joint5Property();
 			public sealed class Joint5Property : IProperty
 			{
@@ -261,6 +283,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Joint5";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -285,10 +310,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Joint6Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Joint6</remarks>
+			/// </summary>
 			public Joint6Property Joint6 { get; } = new Joint6Property();
 			public sealed class Joint6Property : IProperty
 			{
@@ -308,6 +334,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Joint6";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -332,10 +361,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Joint7Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Joint7</remarks>
+			/// </summary>
 			public Joint7Property Joint7 { get; } = new Joint7Property();
 			public sealed class Joint7Property : IProperty
 			{
@@ -355,6 +385,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Joint7";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -379,10 +412,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="PositionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Position</remarks>
+			/// </summary>
 			public PositionProperty Position { get; } = new PositionProperty();
 			public sealed class PositionProperty : IProperty
 			{
@@ -402,6 +436,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Position";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -426,10 +463,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Angle1Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Angle1</remarks>
+			/// </summary>
 			public Angle1Property Angle1 { get; } = new Angle1Property();
 			public sealed class Angle1Property : IProperty
 			{
@@ -449,6 +487,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angle1";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -473,10 +514,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Angle2Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Angle2</remarks>
+			/// </summary>
 			public Angle2Property Angle2 { get; } = new Angle2Property();
 			public sealed class Angle2Property : IProperty
 			{
@@ -496,6 +538,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angle2";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -520,10 +565,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Angle3Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Angle3</remarks>
+			/// </summary>
 			public Angle3Property Angle3 { get; } = new Angle3Property();
 			public sealed class Angle3Property : IProperty
 			{
@@ -543,6 +589,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angle3";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -567,10 +616,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Angle4Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Angle4</remarks>
+			/// </summary>
 			public Angle4Property Angle4 { get; } = new Angle4Property();
 			public sealed class Angle4Property : IProperty
 			{
@@ -590,6 +640,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angle4";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -614,10 +667,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Angle5Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Angle5</remarks>
+			/// </summary>
 			public Angle5Property Angle5 { get; } = new Angle5Property();
 			public sealed class Angle5Property : IProperty
 			{
@@ -637,6 +691,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angle5";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -661,10 +718,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Angle6Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Angle6</remarks>
+			/// </summary>
 			public Angle6Property Angle6 { get; } = new Angle6Property();
 			public sealed class Angle6Property : IProperty
 			{
@@ -684,6 +742,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angle6";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -708,10 +769,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Angle7Property" path="/summary" /><br/>
 			/// <remarks>Original Name: Angle7</remarks>
+			/// </summary>
 			public Angle7Property Angle7 { get; } = new Angle7Property();
 			public sealed class Angle7Property : IProperty
 			{
@@ -731,6 +793,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angle7";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -755,8 +820,6 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

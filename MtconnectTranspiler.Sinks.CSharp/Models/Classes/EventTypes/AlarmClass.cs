@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="EventEnum::ALARM">EventEnum::ALARM</see>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AlarmClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218144_231993_1515";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""EventEnum::ALARM"">EventEnum::ALARM</see>";
+
 		/// <inheritdoc />
 		public string Name => "AlarmClass";
 		
@@ -43,7 +49,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				State,
 				Lang,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -62,6 +71,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ALARM"">EventEnum::ALARM</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -87,11 +99,15 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
+			/// </summary>
 			public CodeProperty Code { get; } = new CodeProperty();
+			/// <summary>
+			/// type of alarm.
+			/// </summary>
 			public sealed class CodeProperty : IProperty
 			{
 				/// <summary>
@@ -110,6 +126,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "Code";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ALARM"">EventEnum::ALARM</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -134,11 +153,15 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SeverityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Severity</remarks>
+			/// </summary>
 			public SeverityProperty Severity { get; } = new SeverityProperty();
+			/// <summary>
+			/// severity of the alarm.
+			/// </summary>
 			public sealed class SeverityProperty : IProperty
 			{
 				/// <summary>
@@ -157,6 +180,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "Severity";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ALARM"">EventEnum::ALARM</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -181,11 +207,15 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NativeCodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeCode</remarks>
+			/// </summary>
 			public NativeCodeProperty NativeCode { get; } = new NativeCodeProperty();
+			/// <summary>
+			/// native code for the piece of equipment.
+			/// </summary>
 			public sealed class NativeCodeProperty : IProperty
 			{
 				/// <summary>
@@ -204,6 +234,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "NativeCode";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ALARM"">EventEnum::ALARM</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -228,11 +261,15 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="StateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: State</remarks>
+			/// </summary>
 			public StateProperty State { get; } = new StateProperty();
+			/// <summary>
+			/// state of the alarm.
+			/// </summary>
 			public sealed class StateProperty : IProperty
 			{
 				/// <summary>
@@ -251,6 +288,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "State";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ALARM"">EventEnum::ALARM</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -275,11 +315,15 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="LangProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Lang</remarks>
+			/// </summary>
 			public LangProperty Lang { get; } = new LangProperty();
+			/// <summary>
+			/// specifies the language of the alarm text.  See <seealso href="https://www.google.com/search?q=IETF RFC 4646&btnI=I">IETF RFC 4646</seealso> (http://www.ietf.org/rfc/rfc4646.txt).
+			/// </summary>
 			public sealed class LangProperty : IProperty
 			{
 				/// <summary>
@@ -298,6 +342,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "Lang";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::ALARM"">EventEnum::ALARM</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -322,8 +369,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.XMLTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// structured text file encoded using <i>XML</i>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class XMLDocumentGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623669632303_353398_16887";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+
 		/// <inheritdoc />
 		public string Name => "XMLDocumentGeneralization";
 		
@@ -41,7 +47,10 @@ namespace Mtconnect.Glossary.XMLTerms
 				HasNamespace,
 				HasXmlSchema,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasDocumentHeaderProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDocumentHeader</remarks>
+			/// </summary>
 			public HasDocumentHeaderProperty HasDocumentHeader { get; } = new HasDocumentHeaderProperty();
 			public sealed class HasDocumentHeaderProperty : IProperty
 			{
@@ -61,6 +70,9 @@ namespace Mtconnect.Glossary.XMLTerms
 				public string Name => "HasDocumentHeader";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -85,10 +97,11 @@ namespace Mtconnect.Glossary.XMLTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasDocumentBodyProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDocumentBody</remarks>
+			/// </summary>
 			public HasDocumentBodyProperty HasDocumentBody { get; } = new HasDocumentBodyProperty();
 			public sealed class HasDocumentBodyProperty : IProperty
 			{
@@ -108,6 +121,9 @@ namespace Mtconnect.Glossary.XMLTerms
 				public string Name => "HasDocumentBody";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -132,10 +148,11 @@ namespace Mtconnect.Glossary.XMLTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasNamespaceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasNamespace</remarks>
+			/// </summary>
 			public HasNamespaceProperty HasNamespace { get; } = new HasNamespaceProperty();
 			public sealed class HasNamespaceProperty : IProperty
 			{
@@ -155,6 +172,9 @@ namespace Mtconnect.Glossary.XMLTerms
 				public string Name => "HasNamespace";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -179,10 +199,11 @@ namespace Mtconnect.Glossary.XMLTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasXmlSchemaProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasXmlSchema</remarks>
+			/// </summary>
 			public HasXmlSchemaProperty HasXmlSchema { get; } = new HasXmlSchemaProperty();
 			public sealed class HasXmlSchemaProperty : IProperty
 			{
@@ -202,6 +223,9 @@ namespace Mtconnect.Glossary.XMLTerms
 				public string Name => "HasXmlSchema";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -226,8 +250,6 @@ namespace Mtconnect.Glossary.XMLTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

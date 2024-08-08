@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// indication that specific content in an <i>MTConnect Document</i> is currently usable but is regarded as being obsolete or superseded. 
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DeprecatedClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375155_885919_1978";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// indication that specific content in an <i>MTConnect Document</i> is currently usable but is regarded as being obsolete or superseded. ";
+
 		/// <inheritdoc />
 		public string Name => "DeprecatedClass";
 		

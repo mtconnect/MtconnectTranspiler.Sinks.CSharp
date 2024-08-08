@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservableEventClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581813388630_658160_4475";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "ObservableEventClass";
 		
@@ -37,7 +40,10 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 			public IProperty[] Properties => new IProperty[] {
 				Units,
 			};
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			public sealed class UnitsProperty : IProperty
 			{
@@ -56,6 +62,9 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				/// <inheritdoc />
 				public string Name => "Units";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +90,6 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

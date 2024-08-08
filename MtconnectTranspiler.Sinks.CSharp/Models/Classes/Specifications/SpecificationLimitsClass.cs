@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// set of limits that define a range of values designating acceptable performance for a variable.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SpecificationLimitsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605643883082_895051_1004";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// set of limits that define a range of values designating acceptable performance for a variable.";
+
 		/// <inheritdoc />
 		public string Name => "SpecificationLimitsClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				NominalPart,
 				LowerLimitPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="UpperLimitPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperLimit</remarks>
+			/// </summary>
 			public UpperLimitPartProperty UpperLimitPart { get; } = new UpperLimitPartProperty();
 			public sealed class UpperLimitPartProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "UpperLimit";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of limits that define a range of values designating acceptable performance for a variable.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -84,10 +96,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NominalPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Nominal</remarks>
+			/// </summary>
 			public NominalPartProperty NominalPart { get; } = new NominalPartProperty();
 			public sealed class NominalPartProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "Nominal";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of limits that define a range of values designating acceptable performance for a variable.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -131,10 +147,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="LowerLimitPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LowerLimit</remarks>
+			/// </summary>
 			public LowerLimitPartProperty LowerLimitPart { get; } = new LowerLimitPartProperty();
 			public sealed class LowerLimitPartProperty : IProperty
 			{
@@ -153,6 +170,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "LowerLimit";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of limits that define a range of values designating acceptable performance for a variable.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -178,8 +198,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

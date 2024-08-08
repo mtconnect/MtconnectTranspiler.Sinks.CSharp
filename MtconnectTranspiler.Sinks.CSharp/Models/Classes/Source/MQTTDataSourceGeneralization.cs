@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture.Source
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MQTTDataSourceGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1584929379292_433586_18837";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "MQTTDataSourceGeneralization";
 		

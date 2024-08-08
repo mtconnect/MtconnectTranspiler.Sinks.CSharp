@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png "MTConnectError"){: width="0.8"}  > Note: Additional properties of <see cref="MTConnectError">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MTConnectErrorClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1579560579030_994981_6548";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png ""MTConnectError""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectError"">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 		/// <inheritdoc />
 		public string Name => "MTConnectErrorClass";
 		
@@ -41,7 +47,10 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				HasErrorPart,
 				ErrorPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasHeaderPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasHeader</remarks>
+			/// </summary>
 			public HasHeaderPartProperty HasHeaderPart { get; } = new HasHeaderPartProperty();
 			public sealed class HasHeaderPartProperty : IProperty
 			{
@@ -60,6 +69,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				/// <inheritdoc />
 				public string Name => "HasHeader";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png ""MTConnectError""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectError"">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -85,10 +97,11 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasErrorPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasError</remarks>
+			/// </summary>
 			public HasErrorPartProperty HasErrorPart { get; } = new HasErrorPartProperty();
 			public sealed class HasErrorPartProperty : IProperty
 			{
@@ -107,6 +120,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				/// <inheritdoc />
 				public string Name => "HasError";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png ""MTConnectError""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectError"">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -132,10 +148,11 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ErrorPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Error</remarks>
+			/// </summary>
 			public ErrorPartProperty ErrorPart { get; } = new ErrorPartProperty();
 			public sealed class ErrorPartProperty : IProperty
 			{
@@ -154,6 +171,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				/// <inheritdoc />
 				public string Name => "Error";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png ""MTConnectError""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectError"">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -179,8 +199,6 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

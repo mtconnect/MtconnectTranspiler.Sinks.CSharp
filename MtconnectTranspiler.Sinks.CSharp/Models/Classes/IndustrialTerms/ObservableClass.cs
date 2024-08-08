@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// quality, property, or characteristic that can be observed.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservableClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1629291153288_544363_79";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// quality, property, or characteristic that can be observed.";
+
 		/// <inheritdoc />
 		public string Name => "ObservableClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				ObservedBy,
 				HasObservation,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservedByProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservedBy</remarks>
+			/// </summary>
 			public ObservedByProperty ObservedBy { get; } = new ObservedByProperty();
 			public sealed class ObservedByProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <inheritdoc />
 				public string Name => "ObservedBy";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// quality, property, or characteristic that can be observed.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -84,10 +96,11 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasObservationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasObservation</remarks>
+			/// </summary>
 			public HasObservationProperty HasObservation { get; } = new HasObservationProperty();
 			public sealed class HasObservationProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <inheritdoc />
 				public string Name => "HasObservation";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// quality, property, or characteristic that can be observed.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -131,8 +147,6 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

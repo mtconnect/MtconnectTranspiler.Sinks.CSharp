@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// standard or original length of an object.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LengthStandardClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218327_469818_1866";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// standard or original length of an object.";
+
 		/// <inheritdoc />
 		public string Name => "Length.StandardClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
 			};
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				/// <inheritdoc />
 				public string Name => "SubType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// standard or original length of an object.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

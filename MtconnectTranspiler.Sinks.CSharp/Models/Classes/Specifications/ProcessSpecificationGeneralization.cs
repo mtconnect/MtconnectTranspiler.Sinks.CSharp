@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Specification">Specification</see> that provides information used to assess the conformance of a variable to process requirements.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessSpecificationGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605643801279_773776_859";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
+
 		/// <inheritdoc />
 		public string Name => "ProcessSpecificationGeneralization";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				HasControlLimitsPart,
 				HasAlarmLimitsPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasSpecificationLimitsPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSpecificationLimits</remarks>
+			/// </summary>
 			public HasSpecificationLimitsPartProperty HasSpecificationLimitsPart { get; } = new HasSpecificationLimitsPartProperty();
 			public sealed class HasSpecificationLimitsPartProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "HasSpecificationLimits";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -84,10 +96,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasControlLimitsPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasControlLimits</remarks>
+			/// </summary>
 			public HasControlLimitsPartProperty HasControlLimitsPart { get; } = new HasControlLimitsPartProperty();
 			public sealed class HasControlLimitsPartProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "HasControlLimits";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -131,10 +147,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasAlarmLimitsPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAlarmLimits</remarks>
+			/// </summary>
 			public HasAlarmLimitsPartProperty HasAlarmLimitsPart { get; } = new HasAlarmLimitsPartProperty();
 			public sealed class HasAlarmLimitsPartProperty : IProperty
 			{
@@ -153,6 +170,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "HasAlarmLimits";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -178,8 +198,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

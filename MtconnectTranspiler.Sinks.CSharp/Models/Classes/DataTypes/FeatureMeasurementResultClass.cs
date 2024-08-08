@@ -5,12 +5,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FeatureMeasurementResultClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678194789732_239714_17210";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "FeatureMeasurementResultClass";
 		
@@ -46,8 +49,14 @@ namespace Mtconnect.DataTypes
 				UncertaintyType,
 				Uncertainty,
 			};
+			/// <summary>
+			/// <inheritdoc cref="MeasurementIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MeasurementId</remarks>
+			/// </summary>
 			public MeasurementIdProperty MeasurementId { get; } = new MeasurementIdProperty();
+			/// <summary>
+			/// identifier of this measurement.
+			/// </summary>
 			public sealed class MeasurementIdProperty : IProperty
 			{
 				/// <summary>
@@ -65,6 +74,9 @@ namespace Mtconnect.DataTypes
 				/// <inheritdoc />
 				public string Name => "MeasurementId";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -90,11 +102,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="FeaturePersistentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: FeaturePersistentId</remarks>
+			/// </summary>
 			public FeaturePersistentIdProperty FeaturePersistentId { get; } = new FeaturePersistentIdProperty();
+			/// <summary>
+			/// <i>UUID</i> of the feature.
+			/// </summary>
 			public sealed class FeaturePersistentIdProperty : IProperty
 			{
 				/// <summary>
@@ -113,6 +129,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "FeaturePersistentId";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -137,11 +156,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CharacteristicPersistentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CharacteristicPersistentId</remarks>
+			/// </summary>
 			public CharacteristicPersistentIdProperty CharacteristicPersistentId { get; } = new CharacteristicPersistentIdProperty();
+			/// <summary>
+			/// <i>UUID</i> of the characteristic.
+			/// </summary>
 			public sealed class CharacteristicPersistentIdProperty : IProperty
 			{
 				/// <summary>
@@ -160,6 +183,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "CharacteristicPersistentId";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -184,11 +210,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MeasurementTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MeasurementType</remarks>
+			/// </summary>
 			public MeasurementTypeProperty MeasurementType { get; } = new MeasurementTypeProperty();
+			/// <summary>
+			/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso>  Examples: <c>POINT</c>, <c>RADIUS</c>, <c>ANGLE</c>, <c>LENGTH</c>, etc.
+			/// </summary>
 			public sealed class MeasurementTypeProperty : IProperty
 			{
 				/// <summary>
@@ -207,6 +237,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "MeasurementType";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -231,11 +264,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MeasurementValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MeasurementValue</remarks>
+			/// </summary>
 			public MeasurementValueProperty MeasurementValue { get; } = new MeasurementValueProperty();
+			/// <summary>
+			/// measurement based on the measurement type.
+			/// </summary>
 			public sealed class MeasurementValueProperty : IProperty
 			{
 				/// <summary>
@@ -254,6 +291,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "MeasurementValue";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -278,11 +318,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MeasurementUnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MeasurementUnits</remarks>
+			/// </summary>
 			public MeasurementUnitsProperty MeasurementUnits { get; } = new MeasurementUnitsProperty();
+			/// <summary>
+			/// engineering units of the measurement.
+			/// </summary>
 			public sealed class MeasurementUnitsProperty : IProperty
 			{
 				/// <summary>
@@ -301,6 +345,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "MeasurementUnits";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -325,11 +372,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CharacteristicStatusProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CharacteristicStatus</remarks>
+			/// </summary>
 			public CharacteristicStatusProperty CharacteristicStatus { get; } = new CharacteristicStatusProperty();
+			/// <summary>
+			/// pass/fail result of the measurement.
+			/// </summary>
 			public sealed class CharacteristicStatusProperty : IProperty
 			{
 				/// <summary>
@@ -348,6 +399,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "CharacteristicStatus";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -372,11 +426,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UncertaintyTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UncertaintyType</remarks>
+			/// </summary>
 			public UncertaintyTypeProperty UncertaintyType { get; } = new UncertaintyTypeProperty();
+			/// <summary>
+			/// method used to compute <i>standard uncertainty</i>.
+			/// </summary>
 			public sealed class UncertaintyTypeProperty : IProperty
 			{
 				/// <summary>
@@ -395,6 +453,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "UncertaintyType";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -419,11 +480,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UncertaintyProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Uncertainty</remarks>
+			/// </summary>
 			public UncertaintyProperty Uncertainty { get; } = new UncertaintyProperty();
+			/// <summary>
+			/// <i>uncertainty</i> specified by <c>UNCERTAINTY_TYPE</c>.
+			/// </summary>
 			public sealed class UncertaintyProperty : IProperty
 			{
 				/// <summary>
@@ -442,6 +507,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "Uncertainty";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -466,8 +534,6 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

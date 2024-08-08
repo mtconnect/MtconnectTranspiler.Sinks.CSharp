@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.Devices
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Device">Device</see> composed of an <i>MTConnect Agent</i> and all its connected data sources./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AgentClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605101231735_42972_30";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Device"">Device</see> composed of an <i>MTConnect Agent</i> and all its connected data sources./// Description";
+
 		/// <inheritdoc />
 		public string Name => "AgentClass";
 		

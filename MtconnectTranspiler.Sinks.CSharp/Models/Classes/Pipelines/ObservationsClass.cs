@@ -5,12 +5,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1674406832907_5231_497";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "ObservationsClass";
 		
@@ -38,7 +41,10 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			public IProperty[] Properties => new IProperty[] {
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			public sealed class ValueProperty : IProperty
 			{
@@ -57,6 +63,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +91,6 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> and an <see cref="Asset">Asset</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1658942745281_216676_1135";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
+
 		/// <inheritdoc />
 		public string Name => "AssetRelationshipClass";
 		
@@ -39,8 +45,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				AssetType,
 				Href,
 			};
+			/// <summary>
+			/// <inheritdoc cref="AssetIdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetIdRef</remarks>
+			/// </summary>
 			public AssetIdRefProperty AssetIdRef { get; } = new AssetIdRefProperty();
+			/// <summary>
+			/// uuid of the related <see cref="Asset">Asset</see>.
+			/// </summary>
 			public sealed class AssetIdRefProperty : IProperty
 			{
 				/// <summary>
@@ -58,6 +70,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <inheritdoc />
 				public string Name => "AssetIdRef";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,11 +98,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="AssetTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetType</remarks>
+			/// </summary>
 			public AssetTypeProperty AssetType { get; } = new AssetTypeProperty();
+			/// <summary>
+			/// type of <see cref="Asset">Asset</see> being referenced.
+			/// </summary>
 			public sealed class AssetTypeProperty : IProperty
 			{
 				/// <summary>
@@ -105,6 +124,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <inheritdoc />
 				public string Name => "AssetType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,11 +152,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HrefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Href</remarks>
+			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
+			/// <summary>
+			/// <i>URI</i> reference to the associated <see cref="Asset">Asset</see>./// Description
+			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
 				/// <summary>
@@ -152,6 +178,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <inheritdoc />
 				public string Name => "Href";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -177,8 +206,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

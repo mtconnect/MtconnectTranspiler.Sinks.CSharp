@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class VectorClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1582232884691_747207_501";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "VectorClass";
 		
@@ -39,7 +42,10 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				Y,
 				Z,
 			};
+			/// <summary>
+			/// <inheritdoc cref="XProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: X</remarks>
+			/// </summary>
 			public XProperty X { get; } = new XProperty();
 			public sealed class XProperty : IProperty
 			{
@@ -59,6 +65,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "X";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -83,10 +92,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="YProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Y</remarks>
+			/// </summary>
 			public YProperty Y { get; } = new YProperty();
 			public sealed class YProperty : IProperty
 			{
@@ -106,6 +116,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Y";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -130,10 +143,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ZProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Z</remarks>
+			/// </summary>
 			public ZProperty Z { get; } = new ZProperty();
 			public sealed class ZProperty : IProperty
 			{
@@ -153,6 +167,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Z";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -177,8 +194,6 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

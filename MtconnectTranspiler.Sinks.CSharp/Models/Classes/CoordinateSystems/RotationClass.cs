@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector.  
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class RotationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1583182385473_997250_4783";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector.  ";
+
 		/// <inheritdoc />
 		public string Name => "RotationClass";
 		
@@ -37,8 +43,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			public IProperty[] Properties => new IProperty[] {
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			/// <summary>
+			/// The value of <see cref="Rotation">Rotation</see> in <c>DEGREE_3D</c>.
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>
@@ -56,6 +68,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector.  ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +96,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// specific applications <b>MAY</b> reference one or more locations on a piece of bar stock as the indication for the <see cref="EndOfBar">EndOfBar</see>.   The main or most important location <b>MUST</b> be designated as the <see cref="PRIMARY">PRIMARY</see> indication for the <see cref="EndOfBar">EndOfBar</see>.  If no <see cref="subType">subType</see> is specified, <see cref="PRIMARY">PRIMARY</see> <b>MUST</b> be the default <see cref="EndOfBar">EndOfBar</see> indication.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EndOfBarPrimaryClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218289_100730_1779";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// specific applications <b>MAY</b> reference one or more locations on a piece of bar stock as the indication for the <see cref=""EndOfBar"">EndOfBar</see>.   The main or most important location <b>MUST</b> be designated as the <see cref=""PRIMARY"">PRIMARY</see> indication for the <see cref=""EndOfBar"">EndOfBar</see>.  If no <see cref=""subType"">subType</see> is specified, <see cref=""PRIMARY"">PRIMARY</see> <b>MUST</b> be the default <see cref=""EndOfBar"">EndOfBar</see> indication.";
+
 		/// <inheritdoc />
 		public string Name => "EndOfBar.PrimaryClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
 			};
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "SubType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// specific applications <b>MAY</b> reference one or more locations on a piece of bar stock as the indication for the <see cref=""EndOfBar"">EndOfBar</see>.   The main or most important location <b>MUST</b> be designated as the <see cref=""PRIMARY"">PRIMARY</see> indication for the <see cref=""EndOfBar"">EndOfBar</see>.  If no <see cref=""subType"">subType</see> is specified, <see cref=""PRIMARY"">PRIMARY</see> <b>MUST</b> be the default <see cref=""EndOfBar"">EndOfBar</see> indication.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

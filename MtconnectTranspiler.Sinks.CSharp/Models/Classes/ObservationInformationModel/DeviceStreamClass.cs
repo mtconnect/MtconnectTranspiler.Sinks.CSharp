@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>organize</i>s data reported from a <see cref="Device">Device</see>./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DeviceStreamClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_02192189_58E6_456c_A679_CDDFF559DA00";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
+
 		/// <inheritdoc />
 		public string Name => "DeviceStreamClass";
 		
@@ -40,8 +46,14 @@ namespace Mtconnect.ObservationInformationModel
 				Uuid,
 				HasComponentStreamPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the <see cref="Device">Device</see>.  The value reported for <see cref="DeviceStream::name" /> <b>MUST</b> be the same as the value defined for the <see cref="Device::name" /> in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -60,6 +72,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -84,11 +99,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UuidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Uuid</remarks>
+			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
+			/// <summary>
+			/// uuid of the <see cref="Device">Device</see>.  The value reported for <see cref="DeviceStream::uuid" /> <b>MUST</b> be the same as the value defined for the <see cref="Device::uuid" /> of the same <see cref="Device">Device</see> in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
 				/// <summary>
@@ -107,6 +126,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Uuid";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -131,10 +153,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasComponentStreamPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComponentStream</remarks>
+			/// </summary>
 			public HasComponentStreamPartProperty HasComponentStreamPart { get; } = new HasComponentStreamPartProperty();
 			public sealed class HasComponentStreamPartProperty : IProperty
 			{
@@ -153,6 +176,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "HasComponentStream";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -178,8 +204,6 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

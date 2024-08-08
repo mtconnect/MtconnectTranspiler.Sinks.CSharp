@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// methodology for defining the structure and meaning for data in a specific logical way that can be interpreted by a software system. 
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SemanticDataModelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375185_374500_2083";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// methodology for defining the structure and meaning for data in a specific logical way that can be interpreted by a software system. ";
+
 		/// <inheritdoc />
 		public string Name => "SemanticDataModelClass";
 		

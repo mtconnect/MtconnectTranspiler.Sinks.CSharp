@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// defines the meaning of <see cref="Entry">Entry</see> and <see cref="Cell">Cell</see> entities when the associated <see cref="DataItem::representation" /> is either <c>DATA_SET</c> or <c>TABLE</c>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DefinitionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581433165009_756087_158";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
+
 		/// <inheritdoc />
 		public string Name => "DefinitionClass";
 		
@@ -41,7 +47,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				HasDescriptionPart,
 				HasEntryDefinitionPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasCellDefinitionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasCellDefinition</remarks>
+			/// </summary>
 			public HasCellDefinitionPartProperty HasCellDefinitionPart { get; } = new HasCellDefinitionPartProperty();
 			public sealed class HasCellDefinitionPartProperty : IProperty
 			{
@@ -60,6 +69,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <inheritdoc />
 				public string Name => "HasCellDefinition";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -85,10 +97,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasDescriptionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDescription</remarks>
+			/// </summary>
 			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
 			public sealed class HasDescriptionPartProperty : IProperty
 			{
@@ -107,6 +120,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <inheritdoc />
 				public string Name => "HasDescription";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -132,10 +148,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasEntryDefinitionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasEntryDefinition</remarks>
+			/// </summary>
 			public HasEntryDefinitionPartProperty HasEntryDefinitionPart { get; } = new HasEntryDefinitionPartProperty();
 			public sealed class HasEntryDefinitionPartProperty : IProperty
 			{
@@ -154,6 +171,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <inheritdoc />
 				public string Name => "HasEntryDefinition";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -179,8 +199,6 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

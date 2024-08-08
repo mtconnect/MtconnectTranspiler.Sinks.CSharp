@@ -5,12 +5,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CollaboratorClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622718569783_691547_1331";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "CollaboratorClass";
 		
@@ -42,7 +45,10 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				Optional,
 				HasCapabilityPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasPriorityPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPriority</remarks>
+			/// </summary>
 			public HasPriorityPartProperty HasPriorityPart { get; } = new HasPriorityPartProperty();
 			public sealed class HasPriorityPartProperty : IProperty
 			{
@@ -61,6 +67,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <inheritdoc />
 				public string Name => "HasPriority";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -86,10 +95,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CollaboratorIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CollaboratorId</remarks>
+			/// </summary>
 			public CollaboratorIdProperty CollaboratorId { get; } = new CollaboratorIdProperty();
 			public sealed class CollaboratorIdProperty : IProperty
 			{
@@ -109,6 +119,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public string Name => "CollaboratorId";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -133,10 +146,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CollaboratorTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CollaboratorType</remarks>
+			/// </summary>
 			public CollaboratorTypeProperty CollaboratorType { get; } = new CollaboratorTypeProperty();
 			public sealed class CollaboratorTypeProperty : IProperty
 			{
@@ -156,6 +170,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public string Name => "CollaboratorType";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -180,10 +197,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="OptionalProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Optional</remarks>
+			/// </summary>
 			public OptionalProperty Optional { get; } = new OptionalProperty();
 			public sealed class OptionalProperty : IProperty
 			{
@@ -203,6 +221,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public string Name => "Optional";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -227,10 +248,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasCapabilityPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasCapability</remarks>
+			/// </summary>
 			public HasCapabilityPartProperty HasCapabilityPart { get; } = new HasCapabilityPartProperty();
 			public sealed class HasCapabilityPartProperty : IProperty
 			{
@@ -249,6 +271,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <inheritdoc />
 				public string Name => "HasCapability";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -274,8 +299,6 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

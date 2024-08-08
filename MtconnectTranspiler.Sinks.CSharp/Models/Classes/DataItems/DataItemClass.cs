@@ -11,12 +11,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// information reported about a piece of equipment.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DataItemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_002C94B7_1257_49be_8EAA_CE7FCD7AFF8A";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// information reported about a piece of equipment.";
+
 		/// <inheritdoc />
 		public string Name => "DataItemClass";
 		
@@ -68,8 +74,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				CoordinateSystemIdRef,
 				HasRelationshipPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="CategoryProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Category</remarks>
+			/// </summary>
 			public CategoryProperty Category { get; } = new CategoryProperty();
+			/// <summary>
+			/// specifies the kind of information provided by a data item.
+			/// </summary>
 			public sealed class CategoryProperty : IProperty
 			{
 				/// <summary>
@@ -87,6 +99,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "Category";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -112,11 +127,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CompositionIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CompositionId</remarks>
+			/// </summary>
 			public CompositionIdProperty CompositionId { get; } = new CompositionIdProperty();
+			/// <summary>
+			/// identifier attribute of the <see cref="Composition">Composition</see> that the reported data is most closely associated.
+			/// </summary>
 			public sealed class CompositionIdProperty : IProperty
 			{
 				/// <summary>
@@ -134,6 +153,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "CompositionId";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -159,11 +181,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CoordinateSystemProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CoordinateSystem</remarks>
+			/// </summary>
 			public CoordinateSystemProperty CoordinateSystem { get; } = new CoordinateSystemProperty();
+			/// <summary>
+			/// for measured values relative to a coordinate system like <see cref="Position">Position</see>, the coordinate system used may be reported.  <b>DEPRECATED</b> in <i>Version 2.0</i>s. Replaced by <see cref="Component::coordinateSystemIdRef" />. 
+			/// </summary>
 			public sealed class CoordinateSystemProperty : IProperty
 			{
 				/// <summary>
@@ -181,6 +207,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "CoordinateSystem";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -206,11 +235,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="DiscreteProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Discrete</remarks>
+			/// </summary>
 			public DiscreteProperty Discrete { get; } = new DiscreteProperty();
+			/// <summary>
+			/// indication signifying whether each value reported for the <i>Observation</i> is significant and whether duplicate values are to be suppressed.  If a value is not defined for <see cref="DataItem::discrete" />, the default value <b>MUST</b> be <c>false</c>.
+			/// </summary>
 			public sealed class DiscreteProperty : IProperty
 			{
 				/// <summary>
@@ -228,6 +261,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "Discrete";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -253,11 +289,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Id</remarks>
+			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
+			/// <summary>
+			/// unique identifier for this data item.
+			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
 				/// <summary>
@@ -276,6 +316,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "Id";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -300,11 +343,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the data item.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -323,6 +370,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -347,11 +397,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NativeScaleProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeScale</remarks>
+			/// </summary>
 			public NativeScaleProperty NativeScale { get; } = new NativeScaleProperty();
+			/// <summary>
+			/// used to convert the reported value to represent the original measured value.
+			/// </summary>
 			public sealed class NativeScaleProperty : IProperty
 			{
 				/// <summary>
@@ -370,6 +424,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "NativeScale";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -394,11 +451,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NativeUnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeUnits</remarks>
+			/// </summary>
 			public NativeUnitsProperty NativeUnits { get; } = new NativeUnitsProperty();
+			/// <summary>
+			/// native units of measurement for the reported value of the data item.
+			/// </summary>
 			public sealed class NativeUnitsProperty : IProperty
 			{
 				/// <summary>
@@ -417,6 +478,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "NativeUnits";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -441,11 +505,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SampleRateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SampleRate</remarks>
+			/// </summary>
 			public SampleRateProperty SampleRate { get; } = new SampleRateProperty();
+			/// <summary>
+			/// rate at which successive samples of a data item are recorded by a piece of equipment.
+			/// </summary>
 			public sealed class SampleRateProperty : IProperty
 			{
 				/// <summary>
@@ -464,6 +532,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "SampleRate";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -488,11 +559,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SignificantDigitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SignificantDigits</remarks>
+			/// </summary>
 			public SignificantDigitsProperty SignificantDigits { get; } = new SignificantDigitsProperty();
+			/// <summary>
+			/// number of significant digits in the reported value.
+			/// </summary>
 			public sealed class SignificantDigitsProperty : IProperty
 			{
 				/// <summary>
@@ -511,6 +586,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "SignificantDigits";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -535,11 +613,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="StatisticProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Statistic</remarks>
+			/// </summary>
 			public StatisticProperty Statistic { get; } = new StatisticProperty();
+			/// <summary>
+			/// type of statistical calculation performed on a series of data samples to provide the reported data value.
+			/// </summary>
 			public sealed class StatisticProperty : IProperty
 			{
 				/// <summary>
@@ -557,6 +639,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "Statistic";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -582,11 +667,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
+			/// <summary>
+			/// sub-categorization of the <see cref="DataItem::type" />.
+			/// </summary>
 			public sealed class SubTypeProperty : IProperty
 			{
 				/// <summary>
@@ -605,6 +694,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "SubType";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -629,11 +721,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
+			/// <summary>
+			/// type of data being measured. See <see cref="DataItem Types">DataItem Types</see>.
+			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
 				/// <summary>
@@ -652,6 +748,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -676,11 +775,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
+			/// <summary>
+			/// unit of measurement for the reported value of the data item.
+			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
@@ -699,6 +802,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -723,10 +829,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IsObservedByPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsObservedBy</remarks>
+			/// </summary>
 			public IsObservedByPartProperty IsObservedByPart { get; } = new IsObservedByPartProperty();
 			public sealed class IsObservedByPartProperty : IProperty
 			{
@@ -745,6 +852,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "IsObservedBy";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -770,11 +880,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="RepresentationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Representation</remarks>
+			/// </summary>
 			public RepresentationProperty Representation { get; } = new RepresentationProperty();
+			/// <summary>
+			/// description of a means to interpret data consisting of multiple data points or samples reported as a single value.    If <see cref="DataItem::representation" /> is not specified, it <b>MUST</b> be determined to be <c>VALUE</c>. 
+			/// </summary>
 			public sealed class RepresentationProperty : IProperty
 			{
 				/// <summary>
@@ -792,6 +906,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "Representation";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -817,10 +934,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasSourcePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSource</remarks>
+			/// </summary>
 			public HasSourcePartProperty HasSourcePart { get; } = new HasSourcePartProperty();
 			public sealed class HasSourcePartProperty : IProperty
 			{
@@ -839,6 +957,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "HasSource";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -864,10 +985,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasConstraintPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasConstraint</remarks>
+			/// </summary>
 			public HasConstraintPartProperty HasConstraintPart { get; } = new HasConstraintPartProperty();
 			public sealed class HasConstraintPartProperty : IProperty
 			{
@@ -886,6 +1008,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "HasConstraint";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -911,10 +1036,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasFilterPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasFilter</remarks>
+			/// </summary>
 			public HasFilterPartProperty HasFilterPart { get; } = new HasFilterPartProperty();
 			public sealed class HasFilterPartProperty : IProperty
 			{
@@ -933,6 +1059,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "HasFilter";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -958,10 +1087,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasInitialValuePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasInitialValue</remarks>
+			/// </summary>
 			public HasInitialValuePartProperty HasInitialValuePart { get; } = new HasInitialValuePartProperty();
 			public sealed class HasInitialValuePartProperty : IProperty
 			{
@@ -980,6 +1110,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "HasInitialValue";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -1005,10 +1138,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasResetTriggerPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasResetTrigger</remarks>
+			/// </summary>
 			public HasResetTriggerPartProperty HasResetTriggerPart { get; } = new HasResetTriggerPartProperty();
 			public sealed class HasResetTriggerPartProperty : IProperty
 			{
@@ -1027,6 +1161,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "HasResetTrigger";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -1052,10 +1189,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasObservationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasObservation</remarks>
+			/// </summary>
 			public HasObservationPartProperty HasObservationPart { get; } = new HasObservationPartProperty();
 			public sealed class HasObservationPartProperty : IProperty
 			{
@@ -1074,6 +1212,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "HasObservation";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -1099,10 +1240,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasDefinitionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDefinition</remarks>
+			/// </summary>
 			public HasDefinitionPartProperty HasDefinitionPart { get; } = new HasDefinitionPartProperty();
 			public sealed class HasDefinitionPartProperty : IProperty
 			{
@@ -1121,6 +1263,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "HasDefinition";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -1146,11 +1291,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CoordinateSystemIdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CoordinateSystemIdRef</remarks>
+			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
+			/// <summary>
+			/// associated <see cref="CoordinateSystem">CoordinateSystem</see> context for the <see cref="DataItem">DataItem</see>.
+			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
 				/// <summary>
@@ -1168,6 +1317,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "CoordinateSystemIdRef";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -1193,10 +1345,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasRelationshipPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasRelationship</remarks>
+			/// </summary>
 			public HasRelationshipPartProperty HasRelationshipPart { get; } = new HasRelationshipPartProperty();
 			public sealed class HasRelationshipPartProperty : IProperty
 			{
@@ -1215,6 +1368,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <inheritdoc />
 				public string Name => "HasRelationship";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// information reported about a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -1240,8 +1396,6 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
@@ -1250,6 +1404,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 		/// Dataitem1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string Dataitem1 => @"id->size() = 1 and
+(self.oclAsType(DataItems::""DataItem Types""::Event).type->size() = 1 or
+self.oclAsType(DataItems::""DataItem Types""::Sample).type->size() = 1 or
+self.oclAsType(DataItems::""DataItem Types""::Condition).type->size() = 1
+) and
+(self.oclAsType(DataItems::""DataItem Types""::Event).category->size() = 1 or
+self.oclAsType(DataItems::""DataItem Types""::Sample).category->size() = 1 or
+self.oclAsType(DataItems::""DataItem Types""::Condition).category->size() = 1
+)";
 		/*
 		id->size() = 1 and
 		(self.oclAsType(DataItems::"DataItem Types"::Event).type->size() = 1 or
@@ -1265,6 +1428,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 		/// Dataitem2
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string Dataitem2 => @"self.oclAsType(DataItems::""DataItem Types""::Event).category = DataTypes::CategoryEnum::EVENT or 
+self.oclAsType(DataItems::""DataItem Types""::Sample).category =  DataTypes::CategoryEnum::SAMPLE or
+self.oclAsType(DataItems::""DataItem Types""::Condition).category =  DataTypes::CategoryEnum::CONDITION";
 		/*
 		self.oclAsType(DataItems::"DataItem Types"::Event).category = DataTypes::CategoryEnum::EVENT or 
 		self.oclAsType(DataItems::"DataItem Types"::Sample).category =  DataTypes::CategoryEnum::SAMPLE or

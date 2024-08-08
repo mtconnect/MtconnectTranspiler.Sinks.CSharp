@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// physical or logical entity used by an organization
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ResourceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1637112275744_245123_3488";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// physical or logical entity used by an organization";
+
 		/// <inheritdoc />
 		public string Name => "ResourceClass";
 		

@@ -1,6 +1,4 @@
-﻿using MtconnectTranspiler.Sinks.CSharp.Models;
-using MtconnectTranspiler.Sinks.Models;
-using MtconnectTranspiler.Sinks.ScribanTemplates;
+﻿using MtconnectTranspiler.Sinks.Models;
 using MtconnectTranspiler.Xmi;
 
 namespace MtconnectTranspiler.Sinks.CSharp

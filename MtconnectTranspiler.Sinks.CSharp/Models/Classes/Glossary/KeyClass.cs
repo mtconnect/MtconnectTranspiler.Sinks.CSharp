@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// unique identifier in a <i>key-value pair</i> association.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class KeyClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375168_377091_2019";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// unique identifier in a <i>key-value pair</i> association.";
+
 		/// <inheritdoc />
 		public string Name => "KeyClass";
 		

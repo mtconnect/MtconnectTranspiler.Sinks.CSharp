@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Process">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessOccurrenceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605547395898_219029_214";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ProcessOccurrenceClass";
 		
@@ -44,7 +50,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesProgram,
 				ObservesPartUniqueId,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesProcessOccurrenceIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessOccurrenceId</remarks>
+			/// </summary>
 			public ObservesProcessOccurrenceIdProperty ObservesProcessOccurrenceId { get; } = new ObservesProcessOccurrenceIdProperty();
 			public sealed class ObservesProcessOccurrenceIdProperty : IProperty
 			{
@@ -64,6 +73,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesProcessOccurrenceId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -88,10 +100,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesProcessAggregateIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessAggregateId</remarks>
+			/// </summary>
 			public ObservesProcessAggregateIdProperty ObservesProcessAggregateId { get; } = new ObservesProcessAggregateIdProperty();
 			public sealed class ObservesProcessAggregateIdProperty : IProperty
 			{
@@ -111,6 +124,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesProcessAggregateId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -135,10 +151,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesProcessTimeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessTime</remarks>
+			/// </summary>
 			public ObservesProcessTimeProperty ObservesProcessTime { get; } = new ObservesProcessTimeProperty();
 			public sealed class ObservesProcessTimeProperty : IProperty
 			{
@@ -158,6 +175,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesProcessTime";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -182,10 +202,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesProcessKindIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessKindId</remarks>
+			/// </summary>
 			public ObservesProcessKindIdProperty ObservesProcessKindId { get; } = new ObservesProcessKindIdProperty();
 			public sealed class ObservesProcessKindIdProperty : IProperty
 			{
@@ -205,6 +226,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesProcessKindId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -229,10 +253,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesUserProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUser</remarks>
+			/// </summary>
 			public ObservesUserProperty ObservesUser { get; } = new ObservesUserProperty();
 			public sealed class ObservesUserProperty : IProperty
 			{
@@ -252,6 +277,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesUser";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -276,10 +304,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesProgramProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProgram</remarks>
+			/// </summary>
 			public ObservesProgramProperty ObservesProgram { get; } = new ObservesProgramProperty();
 			public sealed class ObservesProgramProperty : IProperty
 			{
@@ -299,6 +328,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesProgram";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -323,10 +355,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartUniqueIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartUniqueId</remarks>
+			/// </summary>
 			public ObservesPartUniqueIdProperty ObservesPartUniqueId { get; } = new ObservesPartUniqueIdProperty();
 			public sealed class ObservesPartUniqueIdProperty : IProperty
 			{
@@ -346,6 +379,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPartUniqueId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -370,8 +406,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

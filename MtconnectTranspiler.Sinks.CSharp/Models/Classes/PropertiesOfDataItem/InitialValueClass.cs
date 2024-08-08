@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// starting value for a <see cref="DataItem">DataItem</see> as well as the value to be set for the <see cref="DataItem">DataItem</see> after a reset event.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class InitialValueClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_3F705CFA_0BDC_4dc1_91C8_0A38B91DD3E6";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// starting value for a <see cref=""DataItem"">DataItem</see> as well as the value to be set for the <see cref=""DataItem"">DataItem</see> after a reset event.";
+
 		/// <inheritdoc />
 		public string Name => "InitialValueClass";
 		
@@ -37,7 +43,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			public IProperty[] Properties => new IProperty[] {
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			public sealed class ValueProperty : IProperty
 			{
@@ -56,6 +65,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// starting value for a <see cref=""DataItem"">DataItem</see> as well as the value to be set for the <see cref=""DataItem"">DataItem</see> after a reset event.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +93,6 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

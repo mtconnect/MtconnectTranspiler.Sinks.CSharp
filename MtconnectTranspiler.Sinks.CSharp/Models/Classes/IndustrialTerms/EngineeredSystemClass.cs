@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// logical or physical entity that may produce <i>observation</i>s about itself.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EngineeredSystemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1635250812908_628647_270";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+
 		/// <inheritdoc />
 		public string Name => "EngineeredSystemClass";
 		
@@ -43,7 +49,10 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				Observes,
 				MadeObservation,
 			};
+			/// <summary>
+			/// <inheritdoc cref="PartOfProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: PartOf</remarks>
+			/// </summary>
 			public PartOfProperty PartOf { get; } = new PartOfProperty();
 			public sealed class PartOfProperty : IProperty
 			{
@@ -62,6 +71,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <inheritdoc />
 				public string Name => "PartOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -87,10 +99,11 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPart</remarks>
+			/// </summary>
 			public HasPartProperty HasPart { get; } = new HasPartProperty();
 			public sealed class HasPartProperty : IProperty
 			{
@@ -110,6 +123,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "HasPart";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -134,10 +150,11 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MakesObservationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MakesObservation</remarks>
+			/// </summary>
 			public MakesObservationProperty MakesObservation { get; } = new MakesObservationProperty();
 			public sealed class MakesObservationProperty : IProperty
 			{
@@ -157,6 +174,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "MakesObservation";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -181,10 +201,11 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Observes</remarks>
+			/// </summary>
 			public ObservesProperty Observes { get; } = new ObservesProperty();
 			public sealed class ObservesProperty : IProperty
 			{
@@ -204,6 +225,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "Observes";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -228,10 +252,11 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MadeObservationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeObservation</remarks>
+			/// </summary>
 			public MadeObservationProperty MadeObservation { get; } = new MadeObservationProperty();
 			public sealed class MadeObservationProperty : IProperty
 			{
@@ -251,6 +276,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "MadeObservation";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -275,8 +303,6 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

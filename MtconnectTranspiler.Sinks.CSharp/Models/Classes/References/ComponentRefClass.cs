@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.References
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Reference">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentRefClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581212139957_418083_223";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Reference"">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description";
+
 		/// <inheritdoc />
 		public string Name => "ComponentRefClass";
 		
@@ -38,8 +44,14 @@ namespace Mtconnect.DeviceInformationModel.References
 			public IProperty[] Properties => new IProperty[] {
 				IdRef,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IdRef</remarks>
+			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
+			/// <summary>
+			/// pointer to the <see cref="Component::id" /> that contains the information to be associated with this entity.
+			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
 				/// <summary>
@@ -57,6 +69,9 @@ namespace Mtconnect.DeviceInformationModel.References
 				/// <inheritdoc />
 				public string Name => "IdRef";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Reference"">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +97,6 @@ namespace Mtconnect.DeviceInformationModel.References
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.Files
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <see cref="Asset">Asset</see> that contains the common properties of the <see cref="File">File</see> and <see cref="FileArchetype">FileArchetype</see> types.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AbstractFileClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1589825445428_505818_673";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <see cref=""Asset"">Asset</see> that contains the common properties of the <see cref=""File"">File</see> and <see cref=""FileArchetype"">FileArchetype</see> types.";
+
 		/// <inheritdoc />
 		public string Name => "AbstractFileClass";
 		
@@ -44,8 +50,14 @@ namespace Mtconnect.AssetInformationModel.Files
 				HasFilePropertyPart,
 				HasFileCommentPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the file.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -64,6 +76,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Asset"">Asset</see> that contains the common properties of the <see cref=""File"">File</see> and <see cref=""FileArchetype"">FileArchetype</see> types.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -88,11 +103,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MediaTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MediaType</remarks>
+			/// </summary>
 			public MediaTypeProperty MediaType { get; } = new MediaTypeProperty();
+			/// <summary>
+			/// mime type of the file. 
+			/// </summary>
 			public sealed class MediaTypeProperty : IProperty
 			{
 				/// <summary>
@@ -111,6 +130,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "MediaType";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Asset"">Asset</see> that contains the common properties of the <see cref=""File"">File</see> and <see cref=""FileArchetype"">FileArchetype</see> types.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -135,11 +157,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ApplicationCategoryProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ApplicationCategory</remarks>
+			/// </summary>
 			public ApplicationCategoryProperty ApplicationCategory { get; } = new ApplicationCategoryProperty();
+			/// <summary>
+			/// category of application that will use this file.
+			/// </summary>
 			public sealed class ApplicationCategoryProperty : IProperty
 			{
 				/// <summary>
@@ -158,6 +184,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "ApplicationCategory";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Asset"">Asset</see> that contains the common properties of the <see cref=""File"">File</see> and <see cref=""FileArchetype"">FileArchetype</see> types.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -182,11 +211,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ApplicationTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ApplicationType</remarks>
+			/// </summary>
 			public ApplicationTypeProperty ApplicationType { get; } = new ApplicationTypeProperty();
+			/// <summary>
+			/// type of application that will use this file.
+			/// </summary>
 			public sealed class ApplicationTypeProperty : IProperty
 			{
 				/// <summary>
@@ -205,6 +238,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "ApplicationType";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Asset"">Asset</see> that contains the common properties of the <see cref=""File"">File</see> and <see cref=""FileArchetype"">FileArchetype</see> types.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -229,10 +265,11 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasFilePropertyPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasFileProperty</remarks>
+			/// </summary>
 			public HasFilePropertyPartProperty HasFilePropertyPart { get; } = new HasFilePropertyPartProperty();
 			public sealed class HasFilePropertyPartProperty : IProperty
 			{
@@ -251,6 +288,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <inheritdoc />
 				public string Name => "HasFileProperty";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Asset"">Asset</see> that contains the common properties of the <see cref=""File"">File</see> and <see cref=""FileArchetype"">FileArchetype</see> types.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -276,10 +316,11 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasFileCommentPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasFileComment</remarks>
+			/// </summary>
 			public HasFileCommentPartProperty HasFileCommentPart { get; } = new HasFileCommentPartProperty();
 			public sealed class HasFileCommentPartProperty : IProperty
 			{
@@ -298,6 +339,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <inheritdoc />
 				public string Name => "HasFileComment";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Asset"">Asset</see> that contains the common properties of the <see cref=""File"">File</see> and <see cref=""FileArchetype"">FileArchetype</see> types.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -323,8 +367,6 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

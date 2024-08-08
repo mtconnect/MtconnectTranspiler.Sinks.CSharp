@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EntityNameGuardGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1674414438419_20936_3728";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "EntityNameGuardGeneralization";
 		
@@ -37,7 +40,10 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			public IProperty[] Properties => new IProperty[] {
 				Name,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			public sealed class NameProperty : IProperty
 			{
@@ -56,6 +62,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				/// <inheritdoc />
 				public string Name => "Name";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +90,6 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

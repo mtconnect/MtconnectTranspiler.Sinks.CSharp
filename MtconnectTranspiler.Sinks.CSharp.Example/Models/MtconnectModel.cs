@@ -1,13 +1,7 @@
 ﻿using MtconnectTranspiler.Sinks.CSharp.Models;
-using MtconnectTranspiler.Sinks.ScribanTemplates;
 using MtconnectTranspiler.Xmi.UML;
 using MtconnectTranspiler.Xmi;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
 {

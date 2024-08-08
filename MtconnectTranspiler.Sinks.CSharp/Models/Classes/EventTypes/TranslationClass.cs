@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="EventEnum::TRANSLATION">EventEnum::TRANSLATION</see>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TranslationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587752631993_447108_4157";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""EventEnum::TRANSLATION"">EventEnum::TRANSLATION</see>";
+
 		/// <inheritdoc />
 		public string Name => "TranslationClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				Type,
 				Result,
 			};
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			public sealed class UnitsProperty : IProperty
 			{
@@ -60,6 +69,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::TRANSLATION"">EventEnum::TRANSLATION</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -84,10 +96,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -107,6 +120,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::TRANSLATION"">EventEnum::TRANSLATION</see>";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -131,10 +147,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
 			public sealed class ResultProperty : IProperty
 			{
@@ -153,6 +170,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Result";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::TRANSLATION"">EventEnum::TRANSLATION</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -178,8 +198,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

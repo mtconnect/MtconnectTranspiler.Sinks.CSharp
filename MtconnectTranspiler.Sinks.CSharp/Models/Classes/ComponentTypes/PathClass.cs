@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component">Component</see> that organizes an independent operation or function within a <see cref="Controller">Controller</see>./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PathClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382004_482583_42267";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+
 		/// <inheritdoc />
 		public string Name => "PathClass";
 		
@@ -45,7 +51,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesPathFeedrate,
 				ObservesPartCount,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesExecutionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesExecution</remarks>
+			/// </summary>
 			public ObservesExecutionProperty ObservesExecution { get; } = new ObservesExecutionProperty();
 			public sealed class ObservesExecutionProperty : IProperty
 			{
@@ -65,6 +74,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesExecution";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -89,10 +101,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesProgramProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProgram</remarks>
+			/// </summary>
 			public ObservesProgramProperty ObservesProgram { get; } = new ObservesProgramProperty();
 			public sealed class ObservesProgramProperty : IProperty
 			{
@@ -112,6 +125,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesProgram";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -136,10 +152,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPathFeedrateOverrideProgrammedProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPathFeedrateOverrideProgrammed</remarks>
+			/// </summary>
 			public ObservesPathFeedrateOverrideProgrammedProperty ObservesPathFeedrateOverrideProgrammed { get; } = new ObservesPathFeedrateOverrideProgrammedProperty();
 			public sealed class ObservesPathFeedrateOverrideProgrammedProperty : IProperty
 			{
@@ -159,6 +176,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPathFeedrateOverrideProgrammed";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -183,10 +203,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPathFeedrateOverrideRapidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPathFeedrateOverrideRapid</remarks>
+			/// </summary>
 			public ObservesPathFeedrateOverrideRapidProperty ObservesPathFeedrateOverrideRapid { get; } = new ObservesPathFeedrateOverrideRapidProperty();
 			public sealed class ObservesPathFeedrateOverrideRapidProperty : IProperty
 			{
@@ -206,6 +227,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPathFeedrateOverrideRapid";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -230,10 +254,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesRotaryVelocityOverrideProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesRotaryVelocityOverride</remarks>
+			/// </summary>
 			public ObservesRotaryVelocityOverrideProperty ObservesRotaryVelocityOverride { get; } = new ObservesRotaryVelocityOverrideProperty();
 			public sealed class ObservesRotaryVelocityOverrideProperty : IProperty
 			{
@@ -253,6 +278,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesRotaryVelocityOverride";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -277,10 +305,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPathFeedrateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPathFeedrate</remarks>
+			/// </summary>
 			public ObservesPathFeedrateProperty ObservesPathFeedrate { get; } = new ObservesPathFeedrateProperty();
 			public sealed class ObservesPathFeedrateProperty : IProperty
 			{
@@ -300,6 +329,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPathFeedrate";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -324,10 +356,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartCountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartCount</remarks>
+			/// </summary>
 			public ObservesPartCountProperty ObservesPartCount { get; } = new ObservesPartCountProperty();
 			public sealed class ObservesPartCountProperty : IProperty
 			{
@@ -347,6 +380,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPartCount";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -371,8 +407,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

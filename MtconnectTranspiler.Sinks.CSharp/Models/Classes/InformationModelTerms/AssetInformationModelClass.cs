@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.InformationModelTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>information model</i> that provides semantic models for <i>Asset</i>s.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetInformationModelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375143_753891_1954";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>information model</i> that provides semantic models for <i>Asset</i>s.";
+
 		/// <inheritdoc />
 		public string Name => "AssetInformationModelClass";
 		

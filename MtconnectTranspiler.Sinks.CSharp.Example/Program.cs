@@ -1,6 +1,9 @@
 ﻿using ConsoulLibrary;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MtconnectTranspiler;
+using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
 using MtconnectTranspiler.Sinks;
 using MtconnectTranspiler.Sinks.CSharp.Example;
 
@@ -16,10 +19,41 @@ internal class Program
             Consoul.Write("Creating project path: " + projectPath);
             Directory.CreateDirectory(projectPath);
         }
+        IConfiguration configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .AddEnvironmentVariables()
+            .AddCommandLine(args)
+            .Build();
 
-        var logFactory = LoggerFactory.Create((o) => o.AddConsoulLogger());
-        var dispatchLogger = logFactory.CreateLogger<TranspilerDispatcher>();
-        var transpilerLogger = logFactory.CreateLogger<ITranspilerSink>();
+        //setup our DI
+        var services = new ServiceCollection()
+            .AddLogging((builder) =>
+            {
+                builder.AddConsoulLogger();
+            });
+        var serviceProvider = services
+            .AddSingleton<ScribanTemplateGenerator>((builder) =>
+            {
+                return new ScribanTemplateGenerator(configuration["OutputPath"], builder.GetService<ILoggerFactory>().CreateLogger<ScribanTemplateGenerator>());
+            })
+            .AddSingleton(configuration)
+            .AddSingleton<Transpiler>()
+            .BuildServiceProvider();
+
+        //configure console logging
+        //serviceProvider
+        //    .GetService<ILoggerFactory>()
+        //    .AddConsole(LogLevel.Debug);
+
+        var logger = serviceProvider.GetService<ILoggerFactory>()
+            .CreateLogger<Program>();
+        logger.LogDebug("Starting application");
+
+
+        //var logFactory = LoggerFactory.Create((o) => o.AddConsoulLogger());
+        //var dispatchLogger = logFactory.CreateLogger<TranspilerDispatcher>();
+        //var transpilerLogger = logFactory.CreateLogger<ITranspilerSink>();
 
 
         // NOTE: The GitHubRelease can be a reference to a specific tag referring to the version in which to download.
@@ -38,9 +72,11 @@ internal class Program
         }
 
         using (var tokenSource = new CancellationTokenSource())
-        using (var dispatcher = new TranspilerDispatcher(dispatchOptions, dispatchLogger))
+        using (var dispatcher = new TranspilerDispatcher(dispatchOptions, serviceProvider.GetService<ILoggerFactory>()
+            .CreateLogger<TranspilerDispatcher>()))
         {
-            dispatcher.AddSink(new Transpiler(projectPath, transpilerLogger));
+            var defaultTranspiler = serviceProvider.GetService<Transpiler>();
+            dispatcher.AddSink(defaultTranspiler);
 
             Consoul.Write("Beginning deserialization and dispatching");
             var task = Task.Run(() => dispatcher.TranspileAsync(tokenSource.Token));

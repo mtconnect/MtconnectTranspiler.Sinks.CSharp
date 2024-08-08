@@ -7,8 +7,8 @@ using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Contracts;
 using System.Linq;
 using CaseExtensions;
-using MtconnectTranspiler.Sinks.ScribanTemplates;
 using System.Text.RegularExpressions;
+using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Example
 {
@@ -83,21 +83,30 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             return namespaces.Distinct().Where(o => !string.IsNullOrEmpty(o)).ToArray();
         }
     }
-    internal class Transpiler : ScribanTranspiler
+    internal class Transpiler : ITranspilerSink
     {
+        private readonly ILogger<ITranspilerSink> _logger;
+
+        private readonly ScribanTemplateGenerator _generator;
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="projectPath"></param>
-        public Transpiler(string projectPath, ILogger<ITranspilerSink>? logger = default) : base(projectPath, logger) { }
+        public Transpiler(ScribanTemplateGenerator generator, ILogger<ITranspilerSink>? logger = default)
+        {
+            _logger = logger;
 
-        public override void Transpile(XmiDocument model, CancellationToken cancellationToken = default)
+            _generator = generator;
+        }
+
+        public void Transpile(XmiDocument model, CancellationToken cancellationToken = default)
         {
             _logger?.LogInformation("Received MTConnectModel, beginning transpilation");
 
-            Model.SetValue("model", model, true);
+            _generator.Model.SetValue("model", model, true);
 
-            base.TemplateContext.PushGlobal(new CategoryFunctions());
+            _generator.TemplateContext.PushGlobal(new CategoryFunctions());
 
             //// Process the template into enum files
             var allPackages = new List<CSharpPackage>();
@@ -148,11 +157,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                 }
             }
 
-            ProcessTemplate(allPackages, Path.Combine(ProjectPath, "Packages"), true);
-            ProcessTemplate(allClasses, Path.Combine(ProjectPath, "Classes"), true);
-            ProcessTemplate(allEnumerations, Path.Combine(ProjectPath, "Enums"), true);
+            _generator.ProcessTemplate(allPackages, Path.Combine(_generator.ProjectPath, "Packages"), true);
+            _generator.ProcessTemplate(allClasses, Path.Combine(_generator.ProjectPath, "Classes"), true);
+            _generator.ProcessTemplate(allEnumerations, Path.Combine(_generator.ProjectPath, "Enums"), true);
 
-            ProcessTemplate(rootPackage, ProjectPath, true);
+            _generator.ProcessTemplate(rootPackage, _generator.ProjectPath, true);
         }
 
         private IEnumerable<CSharpPackage> getPackages(XmiDocument model, UmlPackage package, string namespacePrefix = "Mtconnect")

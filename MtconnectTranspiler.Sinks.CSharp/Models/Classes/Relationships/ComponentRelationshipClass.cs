@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_2D0A9D8F_2538_4f46_8B83_6B1988818511";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.";
+
 		/// <inheritdoc />
 		public string Name => "ComponentRelationshipClass";
 		
@@ -37,8 +43,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			public IProperty[] Properties => new IProperty[] {
 				IdRef,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IdRef</remarks>
+			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
+			/// <summary>
+			/// reference to the associated <see cref="Component">Component</see>.
+			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
 				/// <summary>
@@ -56,6 +68,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <inheritdoc />
 				public string Name => "IdRef";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +96,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

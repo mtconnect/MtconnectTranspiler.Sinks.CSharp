@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>key-value pair</i> published as part of a <see cref="DataSet">DataSet</see>./// Constraints for Entry Values
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EntryClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531114_364030_25729";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
+
 		/// <inheritdoc />
 		public string Name => "EntryClass";
 		
@@ -41,8 +47,14 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				IsEntryForPart,
 				Result,
 			};
+			/// <summary>
+			/// <inheritdoc cref="KeyProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Key</remarks>
+			/// </summary>
 			public KeyProperty Key { get; } = new KeyProperty();
+			/// <summary>
+			/// unique identifier for each <i>key-value pair</i>.
+			/// </summary>
 			public sealed class KeyProperty : IProperty
 			{
 				/// <summary>
@@ -61,6 +73,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "Key";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -85,11 +100,15 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="RemovedProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Removed</remarks>
+			/// </summary>
 			public RemovedProperty Removed { get; } = new RemovedProperty();
+			/// <summary>
+			/// removal indicator of a <i>key-value pair</i>.
+			/// </summary>
 			public sealed class RemovedProperty : IProperty
 			{
 				/// <summary>
@@ -108,6 +127,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "Removed";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -132,10 +154,11 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IsEntryForPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsEntryFor</remarks>
+			/// </summary>
 			public IsEntryForPartProperty IsEntryForPart { get; } = new IsEntryForPartProperty();
 			public sealed class IsEntryForPartProperty : IProperty
 			{
@@ -154,6 +177,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <inheritdoc />
 				public string Name => "IsEntryFor";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -179,11 +205,15 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
+			/// <summary>
+			/// value of the <see cref="Entry">Entry</see>.
+			/// </summary>
 			public sealed class ResultProperty : IProperty
 			{
 				/// <summary>
@@ -201,6 +231,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <inheritdoc />
 				public string Name => "Result";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -226,8 +259,6 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

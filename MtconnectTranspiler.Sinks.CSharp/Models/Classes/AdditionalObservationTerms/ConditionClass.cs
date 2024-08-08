@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// An indicator of the ability of a piece of equipment or <i>Component</i> to function to specification.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConditionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375148_768097_1965";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// An indicator of the ability of a piece of equipment or <i>Component</i> to function to specification.";
+
 		/// <inheritdoc />
 		public string Name => "ConditionClass";
 		

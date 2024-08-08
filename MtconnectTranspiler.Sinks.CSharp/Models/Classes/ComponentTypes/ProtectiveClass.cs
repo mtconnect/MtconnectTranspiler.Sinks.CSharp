@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="System">System</see> that provides functions used to detect or prevent harm or damage to equipment or personnel./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProtectiveClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382013_685011_42282";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""System"">System</see> that provides functions used to detect or prevent harm or damage to equipment or personnel./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ProtectiveClass";
 		

@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.ProtocolTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// communications pattern that supports the transfer of information between an <i>agent</i> and a <i>client</i>. 
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class RequestAndResponseClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375182_181734_2072";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// communications pattern that supports the transfer of information between an <i>agent</i> and a <i>client</i>. ";
+
 		/// <inheritdoc />
 		public string Name => "RequestAndResponseClass";
 		

@@ -5,12 +5,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture.InformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SampleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1585536710703_127812_2820";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "SampleClass";
 		
@@ -38,7 +41,10 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 			public IProperty[] Properties => new IProperty[] {
 				HasValue,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasValue</remarks>
+			/// </summary>
 			public HasValueProperty HasValue { get; } = new HasValueProperty();
 			public sealed class HasValueProperty : IProperty
 			{
@@ -57,6 +63,9 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 				/// <inheritdoc />
 				public string Name => "HasValue";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +91,6 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

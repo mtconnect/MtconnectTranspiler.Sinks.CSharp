@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Material">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class StockClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382018_505205_42294";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
+
 		/// <inheritdoc />
 		public string Name => "StockClass";
 		
@@ -41,7 +47,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesLengthRemaining,
 				ObservesLengthStandard,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesMaterialProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesMaterial</remarks>
+			/// </summary>
 			public ObservesMaterialProperty ObservesMaterial { get; } = new ObservesMaterialProperty();
 			public sealed class ObservesMaterialProperty : IProperty
 			{
@@ -61,6 +70,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesMaterial";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -85,10 +97,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesLengthRemainingProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesLengthRemaining</remarks>
+			/// </summary>
 			public ObservesLengthRemainingProperty ObservesLengthRemaining { get; } = new ObservesLengthRemainingProperty();
 			public sealed class ObservesLengthRemainingProperty : IProperty
 			{
@@ -108,6 +121,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesLengthRemaining";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -132,10 +148,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesLengthStandardProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesLengthStandard</remarks>
+			/// </summary>
 			public ObservesLengthStandardProperty ObservesLengthStandard { get; } = new ObservesLengthStandardProperty();
 			public sealed class ObservesLengthStandardProperty : IProperty
 			{
@@ -155,6 +172,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesLengthStandard";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -179,8 +199,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

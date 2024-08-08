@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>uncertainty</i> of the result of a measurement expressed as a standard deviation. <seealso href="https://www.google.com/search?q=JCGM 100:2008 2.3.1&btnI=I">JCGM 100:2008 2.3.1</seealso>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class StandardUncertaintyGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678196842084_529316_17608";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>uncertainty</i> of the result of a measurement expressed as a standard deviation. <seealso href=""https://www.google.com/search?q=JCGM 100:2008 2.3.1&btnI=I"">JCGM 100:2008 2.3.1</seealso>";
+
 		/// <inheritdoc />
 		public string Name => "StandardUncertaintyGeneralization";
 		

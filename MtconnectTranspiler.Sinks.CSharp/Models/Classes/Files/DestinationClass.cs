@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.Files
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// reference to the target <see cref="Device">Device</see> for this <see cref="File">File</see>. 
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DestinationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605277188545_673734_476";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// reference to the target <see cref=""Device"">Device</see> for this <see cref=""File"">File</see>. ";
+
 		/// <inheritdoc />
 		public string Name => "DestinationClass";
 		
@@ -37,8 +43,14 @@ namespace Mtconnect.AssetInformationModel.Files
 			public IProperty[] Properties => new IProperty[] {
 				DeviceUuid,
 			};
+			/// <summary>
+			/// <inheritdoc cref="DeviceUuidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DeviceUuid</remarks>
+			/// </summary>
 			public DeviceUuidProperty DeviceUuid { get; } = new DeviceUuidProperty();
+			/// <summary>
+			/// <c>uuid</c> of the target device or application.
+			/// </summary>
 			public sealed class DeviceUuidProperty : IProperty
 			{
 				/// <summary>
@@ -56,6 +68,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <inheritdoc />
 				public string Name => "DeviceUuid";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// reference to the target <see cref=""Device"">Device</see> for this <see cref=""File"">File</see>. ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +96,6 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -10,12 +10,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DeviceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1620240839406_285612_1596";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 		/// <inheritdoc />
 		public string Name => "DeviceClass";
 		
@@ -60,7 +66,10 @@ namespace Mtconnect.DeviceInformationModel
 				ObservesAssetRemoved,
 				Hash,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasAuxiliaryPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAuxiliary</remarks>
+			/// </summary>
 			public HasAuxiliaryPartProperty HasAuxiliaryPart { get; } = new HasAuxiliaryPartProperty();
 			public sealed class HasAuxiliaryPartProperty : IProperty
 			{
@@ -79,6 +88,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasAuxiliary";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -104,10 +116,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasControllerPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasController</remarks>
+			/// </summary>
 			public HasControllerPartProperty HasControllerPart { get; } = new HasControllerPartProperty();
 			public sealed class HasControllerPartProperty : IProperty
 			{
@@ -126,6 +139,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasController";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -151,10 +167,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasInterfacePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasInterface</remarks>
+			/// </summary>
 			public HasInterfacePartProperty HasInterfacePart { get; } = new HasInterfacePartProperty();
 			public sealed class HasInterfacePartProperty : IProperty
 			{
@@ -173,6 +190,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasInterface";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -198,10 +218,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasResourcePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasResource</remarks>
+			/// </summary>
 			public HasResourcePartProperty HasResourcePart { get; } = new HasResourcePartProperty();
 			public sealed class HasResourcePartProperty : IProperty
 			{
@@ -220,6 +241,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasResource";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -245,10 +269,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasStructurePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasStructure</remarks>
+			/// </summary>
 			public HasStructurePartProperty HasStructurePart { get; } = new HasStructurePartProperty();
 			public sealed class HasStructurePartProperty : IProperty
 			{
@@ -267,6 +292,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasStructure";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -292,11 +320,15 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Iso841ClassProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Iso841Class</remarks>
+			/// </summary>
 			public Iso841ClassProperty Iso841Class { get; } = new Iso841ClassProperty();
+			/// <summary>
+			/// <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>s.
+			/// </summary>
 			public sealed class Iso841ClassProperty : IProperty
 			{
 				/// <summary>
@@ -314,6 +346,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "Iso841Class";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -339,11 +374,15 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UuidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Uuid</remarks>
+			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
+			/// <summary>
+			/// universally unique identifier for the element.
+			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
 				/// <summary>
@@ -361,6 +400,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "Uuid";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -386,11 +428,15 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MtconnectVersionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MtconnectVersion</remarks>
+			/// </summary>
 			public MtconnectVersionProperty MtconnectVersion { get; } = new MtconnectVersionProperty();
+			/// <summary>
+			/// MTConnect version of the <i>Device Information Model</i> used to configure the information to be published for a piece of equipment in an <i>MTConnect Response Document</i>.
+			/// </summary>
 			public sealed class MtconnectVersionProperty : IProperty
 			{
 				/// <summary>
@@ -408,6 +454,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "MtconnectVersion";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -433,10 +482,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasSystemPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSystem</remarks>
+			/// </summary>
 			public HasSystemPartProperty HasSystemPart { get; } = new HasSystemPartProperty();
 			public sealed class HasSystemPartProperty : IProperty
 			{
@@ -455,6 +505,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasSystem";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -480,11 +533,15 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of an element or a piece of equipment.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -502,6 +559,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "Name";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -527,10 +587,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasPartPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPart</remarks>
+			/// </summary>
 			public HasPartPartProperty HasPartPart { get; } = new HasPartPartProperty();
 			public sealed class HasPartPartProperty : IProperty
 			{
@@ -549,6 +610,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasPart";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -574,10 +638,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasProcessPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasProcess</remarks>
+			/// </summary>
 			public HasProcessPartProperty HasProcessPart { get; } = new HasProcessPartProperty();
 			public sealed class HasProcessPartProperty : IProperty
 			{
@@ -596,6 +661,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasProcess";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -621,10 +689,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasAxisPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAxis</remarks>
+			/// </summary>
 			public HasAxisPartProperty HasAxisPart { get; } = new HasAxisPartProperty();
 			public sealed class HasAxisPartProperty : IProperty
 			{
@@ -643,6 +712,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasAxis";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -668,10 +740,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasAdapterPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAdapter</remarks>
+			/// </summary>
 			public HasAdapterPartProperty HasAdapterPart { get; } = new HasAdapterPartProperty();
 			public sealed class HasAdapterPartProperty : IProperty
 			{
@@ -690,6 +763,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "HasAdapter";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -715,10 +791,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesAvailabilityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesAvailability</remarks>
+			/// </summary>
 			public ObservesAvailabilityProperty ObservesAvailability { get; } = new ObservesAvailabilityProperty();
 			public sealed class ObservesAvailabilityProperty : IProperty
 			{
@@ -738,6 +815,9 @@ namespace Mtconnect.DeviceInformationModel
 				public string Name => "ObservesAvailability";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -762,10 +842,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesAssetChangedProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesAssetChanged</remarks>
+			/// </summary>
 			public ObservesAssetChangedProperty ObservesAssetChanged { get; } = new ObservesAssetChangedProperty();
 			public sealed class ObservesAssetChangedProperty : IProperty
 			{
@@ -785,6 +866,9 @@ namespace Mtconnect.DeviceInformationModel
 				public string Name => "ObservesAssetChanged";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -809,10 +893,11 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesAssetRemovedProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesAssetRemoved</remarks>
+			/// </summary>
 			public ObservesAssetRemovedProperty ObservesAssetRemoved { get; } = new ObservesAssetRemovedProperty();
 			public sealed class ObservesAssetRemovedProperty : IProperty
 			{
@@ -832,6 +917,9 @@ namespace Mtconnect.DeviceInformationModel
 				public string Name => "ObservesAssetRemoved";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -856,11 +944,15 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HashProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Hash</remarks>
+			/// </summary>
 			public HashProperty Hash { get; } = new HashProperty();
+			/// <summary>
+			/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso>
+			/// </summary>
 			public sealed class HashProperty : IProperty
 			{
 				/// <summary>
@@ -878,6 +970,9 @@ namespace Mtconnect.DeviceInformationModel
 				/// <inheritdoc />
 				public string Name => "Hash";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -903,8 +998,6 @@ namespace Mtconnect.DeviceInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
@@ -913,6 +1006,21 @@ namespace Mtconnect.DeviceInformationModel
 		/// Device1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string Device1 => @"Components::Devices::Device::allInstances()->iterate(device;devicecount:Real=0|
+if device.observes->size() >= 3
+then 
+    if device.observes->iterate(av;avail:Real=0|if av.oclAsType(DataItems::""DataItem Types""::Event).type = DataTypes::EventEnum::AVAILABILITY then avail+1 else avail+0 endif) = 1
+    then if device.observes->iterate(ac;assetc:Real=0|if ac.oclAsType(DataItems::""DataItem Types""::Event).type = DataTypes::EventEnum::ASSET_CHANGED then assetc+1 else assetc+0 endif) = 1
+        then if device.observes->iterate(ar;assetr:Real=0|if ar.oclAsType(DataItems::""DataItem Types""::Event).type = DataTypes::EventEnum::ASSET_REMOVED then assetr+1 else assetr+0 endif) = 1
+            then devicecount + 1
+            else devicecount + 0
+            endif
+        else devicecount + 0
+        endif
+    else devicecount + 0
+    endif
+else devicecount + 0
+endif) = hasDevice->size()";
 		/*
 		Components::Devices::Device::allInstances()->iterate(device;devicecount:Real=0|
 		if device.observes->size() >= 3
@@ -934,6 +1042,17 @@ namespace Mtconnect.DeviceInformationModel
 		/// Device2
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string Device2 => @"Components::Devices::Device::allInstances()->iterate(device;devicecount:Real=0|
+if device.id->size() = 1 and 
+    device.name->size() = 1 and
+    device.uuid->size() = 1 and
+    (device.observes->size() > 0 or device.hasReference->size() > 0 or device.hasComponent->size() > 0) 
+then
+    devicecount + 1
+else
+    devicecount + 0
+endif
+) = Components::Devices::Device::allInstances()->size()";
 		/*
 		Components::Devices::Device::allInstances()->iterate(device;devicecount:Real=0|
 		if device.id->size() = 1 and 

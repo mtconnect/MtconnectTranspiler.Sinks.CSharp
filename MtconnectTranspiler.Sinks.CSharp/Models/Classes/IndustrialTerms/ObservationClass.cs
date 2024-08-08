@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// observed value of a property at a point in time.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1629291060726_222338_26";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// observed value of a property at a point in time.";
+
 		/// <inheritdoc />
 		public string Name => "ObservationClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				MadeBy,
 				MadeFor,
 			};
+			/// <summary>
+			/// <inheritdoc cref="MadeByProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeBy</remarks>
+			/// </summary>
 			public MadeByProperty MadeBy { get; } = new MadeByProperty();
 			public sealed class MadeByProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "MadeBy";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// observed value of a property at a point in time.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -83,10 +95,11 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MadeForProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeFor</remarks>
+			/// </summary>
 			public MadeForProperty MadeFor { get; } = new MadeForProperty();
 			public sealed class MadeForProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "MadeFor";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// observed value of a property at a point in time.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -130,8 +146,6 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

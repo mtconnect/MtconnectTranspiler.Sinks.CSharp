@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LambdaGuardGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1674414517415_840067_3791";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "LambdaGuardGeneralization";
 		
@@ -37,7 +40,10 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			public IProperty[] Properties => new IProperty[] {
 				Lambda,
 			};
+			/// <summary>
+			/// <inheritdoc cref="LambdaProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Lambda</remarks>
+			/// </summary>
 			public LambdaProperty Lambda { get; } = new LambdaProperty();
 			public sealed class LambdaProperty : IProperty
 			{
@@ -56,6 +62,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				/// <inheritdoc />
 				public string Name => "Lambda";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +90,6 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

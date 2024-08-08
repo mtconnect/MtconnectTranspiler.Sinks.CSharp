@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocument
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref="Asset">Asset</see> types.  ![MTConnectAssets](figures/MTConnectAssets.png "MTConnectAssets"){: width="0.8"}  > Note: Additional properties of <see cref="MTConnectAssets">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MTConnectAssetsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_AD98C122_E276_4506_AD69_B82107CB3802";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref=""Asset"">Asset</see> types.  ![MTConnectAssets](figures/MTConnectAssets.png ""MTConnectAssets""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectAssets"">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 		/// <inheritdoc />
 		public string Name => "MTConnectAssetsClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				HasHeaderPart,
 				HasAssetPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasHeaderPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasHeader</remarks>
+			/// </summary>
 			public HasHeaderPartProperty HasHeaderPart { get; } = new HasHeaderPartProperty();
 			public sealed class HasHeaderPartProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				/// <inheritdoc />
 				public string Name => "HasHeader";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref=""Asset"">Asset</see> types.  ![MTConnectAssets](figures/MTConnectAssets.png ""MTConnectAssets""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectAssets"">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -84,10 +96,11 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasAssetPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAsset</remarks>
+			/// </summary>
 			public HasAssetPartProperty HasAssetPart { get; } = new HasAssetPartProperty();
 			public sealed class HasAssetPartProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				/// <inheritdoc />
 				public string Name => "HasAsset";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref=""Asset"">Asset</see> types.  ![MTConnectAssets](figures/MTConnectAssets.png ""MTConnectAssets""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectAssets"">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -131,8 +147,6 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

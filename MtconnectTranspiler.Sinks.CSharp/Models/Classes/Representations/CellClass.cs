@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>key-value pair</i> published as part of a <see cref="TableEntry">TableEntry</see>./// Constraints for Cell Values
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CellClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582847071494_298325_2235";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";
+
 		/// <inheritdoc />
 		public string Name => "CellClass";
 		
@@ -38,8 +44,14 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				Key,
 				Result,
 			};
+			/// <summary>
+			/// <inheritdoc cref="KeyProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Key</remarks>
+			/// </summary>
 			public KeyProperty Key { get; } = new KeyProperty();
+			/// <summary>
+			/// unique identifier for each <i>key-value pair</i>.
+			/// </summary>
 			public sealed class KeyProperty : IProperty
 			{
 				/// <summary>
@@ -57,6 +69,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <inheritdoc />
 				public string Name => "Key";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,11 +97,15 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
+			/// <summary>
+			/// value of the <see cref="Cell">Cell</see>.
+			/// </summary>
 			public sealed class ResultProperty : IProperty
 			{
 				/// <summary>
@@ -104,6 +123,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <inheritdoc />
 				public string Name => "Result";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -129,8 +151,6 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

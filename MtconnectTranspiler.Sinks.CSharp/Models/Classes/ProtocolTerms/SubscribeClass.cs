@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.ProtocolTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// receiving messages in a <i>publish and subscribe</i> pattern.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SubscribeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375188_852098_2096";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// receiving messages in a <i>publish and subscribe</i> pattern.";
+
 		/// <inheritdoc />
 		public string Name => "SubscribeClass";
 		

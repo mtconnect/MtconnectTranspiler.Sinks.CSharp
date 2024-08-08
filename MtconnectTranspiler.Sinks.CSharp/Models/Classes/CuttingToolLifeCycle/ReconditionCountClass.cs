@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// number of times the cutter has been reconditioned. /// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ReconditionCountClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_AB33F1B2_493B_4f60_9394_4A69B30576F9";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// number of times the cutter has been reconditioned. /// Description";
+
 		/// <inheritdoc />
 		public string Name => "ReconditionCountClass";
 		
@@ -38,8 +44,14 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				MaximumCount,
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="MaximumCountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MaximumCount</remarks>
+			/// </summary>
 			public MaximumCountProperty MaximumCount { get; } = new MaximumCountProperty();
+			/// <summary>
+			/// maximum number of times the tool may be reconditioned. 
+			/// </summary>
 			public sealed class MaximumCountProperty : IProperty
 			{
 				/// <summary>
@@ -57,6 +69,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <inheritdoc />
 				public string Name => "MaximumCount";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// number of times the cutter has been reconditioned. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,10 +97,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			public sealed class ValueProperty : IProperty
 			{
@@ -104,6 +120,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// number of times the cutter has been reconditioned. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -129,8 +148,6 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

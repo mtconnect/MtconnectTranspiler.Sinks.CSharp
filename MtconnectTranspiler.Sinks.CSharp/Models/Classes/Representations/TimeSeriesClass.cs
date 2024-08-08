@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Representation">Representation</see> for an <see cref="Observation">Observation</see> composed of a series of sampled data. /// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TimeSeriesClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531117_257703_25734";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of a series of sampled data. /// Description";
+
 		/// <inheritdoc />
 		public string Name => "TimeSeriesClass";
 		
@@ -38,8 +44,14 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				SampleCount,
 				Result,
 			};
+			/// <summary>
+			/// <inheritdoc cref="SampleCountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SampleCount</remarks>
+			/// </summary>
 			public SampleCountProperty SampleCount { get; } = new SampleCountProperty();
+			/// <summary>
+			/// number of values given for the <see cref="Observation">Observation</see>.
+			/// </summary>
 			public sealed class SampleCountProperty : IProperty
 			{
 				/// <summary>
@@ -57,6 +69,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <inheritdoc />
 				public string Name => "SampleCount";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of a series of sampled data. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,10 +97,11 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
 			public sealed class ResultProperty : IProperty
 			{
@@ -105,6 +121,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "Result";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of a series of sampled data. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -129,8 +148,6 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

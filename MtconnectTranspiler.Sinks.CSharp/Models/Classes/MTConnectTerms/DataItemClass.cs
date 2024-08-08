@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DataItemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1635251889215_363828_393";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s";
+
 		/// <inheritdoc />
 		public string Name => "DataItemClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			public IProperty[] Properties => new IProperty[] {
 				ObservedBy,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservedByProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservedBy</remarks>
+			/// </summary>
 			public ObservedByProperty ObservedBy { get; } = new ObservedByProperty();
 			public sealed class ObservedByProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				/// <inheritdoc />
 				public string Name => "ObservedBy";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -4,23 +4,55 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocument;
 // using Mtconnect;
 
-namespace Mtconnect.Fundamentals.MTConnectProtocol {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
-	public class MTConnectDevicesResponseDocumentPackage : IPackage {
+namespace Mtconnect.Fundamentals.MTConnectProtocol
+{
+	/// <summary>
+	/// This section provides semantic information for the <see cref="MTConnectDevices">MTConnectDevices</see> entity.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public class MTConnectDevicesResponseDocumentPackage : IPackage
+	{
+		/// <inheritdoc />
+		public string ReferenceId => "EAPK_1812F5DC_90C0_47d9_B731_2E752A6D72A0";
+		
+		/// <inheritdoc />
+		public string Name => "MTConnectDevicesResponseDocument";
+
+		/// <inheritdoc />
+		public string Summary => @"/// This section provides semantic information for the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity.";
+
+		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
 		};
-
+		
+		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			MTConnectDevicesClass,
 			HeaderClass,
 			AssetCountClass,
 		};
+		#region Packages
+	#endregion
 
+	#region Classes
 	private Package.MTConnectDevicesClass _MTConnectDevicesClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.MTConnectDevicesClass" path="/summary" />
+	/// </summary>
 	public Package.MTConnectDevicesClass MTConnectDevicesClass => _MTConnectDevicesClass ?? (_MTConnectDevicesClass = new Package.MTConnectDevicesClass());
+
 	private Package.HeaderClass _HeaderClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.HeaderClass" path="/summary" />
+	/// </summary>
 	public Package.HeaderClass HeaderClass => _HeaderClass ?? (_HeaderClass = new Package.HeaderClass());
+
 	private Package.AssetCountClass _AssetCountClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AssetCountClass" path="/summary" />
+	/// </summary>
 	public Package.AssetCountClass AssetCountClass => _AssetCountClass ?? (_AssetCountClass = new Package.AssetCountClass());
+
+	#endregion
 	}
 }

@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>configuration</i> for a <i>Component</i>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConfigurationGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1635251403887_914466_345";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>configuration</i> for a <i>Component</i>";
+
 		/// <inheritdoc />
 		public string Name => "ConfigurationGeneralization";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			public IProperty[] Properties => new IProperty[] {
 				ConfigurationFor,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ConfigurationForProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ConfigurationFor</remarks>
+			/// </summary>
 			public ConfigurationForProperty ConfigurationFor { get; } = new ConfigurationForProperty();
 			public sealed class ConfigurationForProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				/// <inheritdoc />
 				public string Name => "ConfigurationFor";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>configuration</i> for a <i>Component</i>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

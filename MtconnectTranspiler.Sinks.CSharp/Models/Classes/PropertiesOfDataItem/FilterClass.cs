@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// provides a means to control when an <i>agent</i> records updated information for a <see cref="DataItem">DataItem</see>. 
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FilterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_8A5219C3_747D_4904_A58A_A312D13DAEE9";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";
+
 		/// <inheritdoc />
 		public string Name => "FilterClass";
 		
@@ -39,8 +45,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				Type,
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
+			/// <summary>
+			/// type of <see cref="Filter">Filter</see>.
+			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
 				/// <summary>
@@ -58,6 +70,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,10 +98,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			public sealed class ValueProperty : IProperty
 			{
@@ -105,6 +121,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +149,6 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

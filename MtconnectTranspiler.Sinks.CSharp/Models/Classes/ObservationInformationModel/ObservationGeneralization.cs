@@ -7,12 +7,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract entity that provides telemetry data for a <see cref="DataItem">DataItem</see> at a point in time./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531115_47734_25731";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ObservationGeneralization";
 		
@@ -51,8 +57,14 @@ namespace Mtconnect.ObservationInformationModel
 				Result,
 				MadeForDataItemPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="CompositionIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CompositionId</remarks>
+			/// </summary>
 			public CompositionIdProperty CompositionId { get; } = new CompositionIdProperty();
+			/// <summary>
+			/// identifier of the <see cref="Composition">Composition</see> entity defined in the <i>MTConnectDevices Response Document</i> associated with the data reported for the <see cref="Observation">Observation</see>.
+			/// </summary>
 			public sealed class CompositionIdProperty : IProperty
 			{
 				/// <summary>
@@ -70,6 +82,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "CompositionId";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -95,11 +110,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="DataItemIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DataItemId</remarks>
+			/// </summary>
 			public DataItemIdProperty DataItemId { get; } = new DataItemIdProperty();
+			/// <summary>
+			/// unique identifier of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.  <see cref="Observation::dataItemId" /> <b>MUST</b> match the associated <see cref="DataItem::id" /> defined in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class DataItemIdProperty : IProperty
 			{
 				/// <summary>
@@ -118,6 +137,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "DataItemId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -142,11 +164,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.  <see cref="Observation::name" /> <b>MUST</b> match the associated <see cref="DataItem::name" /> defined in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -165,6 +191,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -189,11 +218,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SequenceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Sequence</remarks>
+			/// </summary>
 			public SequenceProperty Sequence { get; } = new SequenceProperty();
+			/// <summary>
+			/// number representing the sequential position of an occurrence of an <i>observation</i> in the data buffer of an <i>agent</i>.  <see cref="Observation::sequence" /> <b>MUST</b> have a value represented as an unsigned 64-bit value from 1 to <i> 2^{64}-1 </i>s.
+			/// </summary>
 			public sealed class SequenceProperty : IProperty
 			{
 				/// <summary>
@@ -211,6 +244,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Sequence";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -236,11 +272,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
+			/// <summary>
+			/// subtype of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.  <see cref="Observation::subType" /> <b>MUST</b> match the associated <see cref="DataItem::subType" /> defined in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class SubTypeProperty : IProperty
 			{
 				/// <summary>
@@ -258,6 +298,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "SubType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -283,11 +326,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TimestampProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Timestamp</remarks>
+			/// </summary>
 			public TimestampProperty Timestamp { get; } = new TimestampProperty();
+			/// <summary>
+			/// most accurate time available to a piece of equipment that represents the point in time that the data reported was measured.
+			/// </summary>
 			public sealed class TimestampProperty : IProperty
 			{
 				/// <summary>
@@ -305,6 +352,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Timestamp";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -330,10 +380,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MadeByComponentPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeByComponent</remarks>
+			/// </summary>
 			public MadeByComponentPartProperty MadeByComponentPart { get; } = new MadeByComponentPartProperty();
 			public sealed class MadeByComponentPartProperty : IProperty
 			{
@@ -353,6 +404,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "MadeByComponent";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -377,11 +431,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
+			/// <summary>
+			/// type of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.  <see cref="Observation::type" /> <b>MUST</b> match the associated <see cref="DataItem::type" /> defined in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
 				/// <summary>
@@ -400,6 +458,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -424,11 +485,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
+			/// <summary>
+			/// units of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.  <see cref="Observation::units" /> <b>MUST</b> match the associated <see cref="DataItem::units" /> defined in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
@@ -447,6 +512,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -471,11 +539,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IsUnavailableProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsUnavailable</remarks>
+			/// </summary>
 			public IsUnavailableProperty IsUnavailable { get; } = new IsUnavailableProperty();
+			/// <summary>
+			/// when <c>true</c>, <see cref="Observation::result" /> is indeterminate.  > Note 1 to entry: In <i>XML</i>, when <c>isUnavailable</c> is <c>true</c>, the <i>XML</i> <c>CDATA</c> of the <c>Observation</c> <b>MUST</b> be <c>UNAVAILABLE</c>.  <c></c>`xml <Execution dataItemId="..." ...>UNAVAILABLE</Execution> <c></c>`  > Note 2 to entry: In <i>JSON</i>, when <c>isUnavailable</c> is <c>true</c>, the <i>JSON</i> <c>value</c> of the <c>Observation</c> <b>MUST</b> be <c>UNAVAILABLE</c>. <c></c>`json   "Execution" : [ { "dataItemId": "..." ..., "value": "UNAVAILABLE" } ] <c></c>`
+			/// </summary>
 			public sealed class IsUnavailableProperty : IProperty
 			{
 				/// <summary>
@@ -494,6 +566,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "IsUnavailable";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -518,11 +593,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
+			/// <summary>
+			/// <i>observation</i> of the <see cref="Observation">Observation</see> entity.  The default value type for <see cref="Observation::result" /> is <c>string</c>.  > Note 1 to entry: in <i>XML</i> the <see cref="Observation::result" /> is the <c>CDATA</c> of the Observation <i>element</i>.  ~~~~xml <Execution dataItemId="..." ...>READY</Execution> ~~~~  > Note 2 to entry: in <i>JSON</i> the <see cref="Observation::result" /> is the member <c>value</c> of the Observation object.  ~~~~json "Execution" : [ { "dataItemId": "..." ..., "value": "READY" } ] ~~~~
+			/// </summary>
 			public sealed class ResultProperty : IProperty
 			{
 				/// <summary>
@@ -541,6 +620,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Result";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -565,10 +647,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MadeForDataItemPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeForDataItem</remarks>
+			/// </summary>
 			public MadeForDataItemPartProperty MadeForDataItemPart { get; } = new MadeForDataItemPartProperty();
 			public sealed class MadeForDataItemPartProperty : IProperty
 			{
@@ -588,6 +671,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "MadeForDataItem";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -612,8 +698,6 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

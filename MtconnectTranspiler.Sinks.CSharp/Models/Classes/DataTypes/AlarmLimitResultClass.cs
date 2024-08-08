@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AlarmLimitResultClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1620206902894_670781_812";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "AlarmLimitResultClass";
 		
@@ -40,8 +43,14 @@ namespace Mtconnect.DataTypes
 				LowerWarning,
 				LowerLimit,
 			};
+			/// <summary>
+			/// <inheritdoc cref="UpperLimitProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperLimit</remarks>
+			/// </summary>
 			public UpperLimitProperty UpperLimit { get; } = new UpperLimitProperty();
+			/// <summary>
+			/// upper conformance boundary for a variable.  > Note: immediate concern or action may be required.  
+			/// </summary>
 			public sealed class UpperLimitProperty : IProperty
 			{
 				/// <summary>
@@ -60,6 +69,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "UpperLimit";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -84,11 +96,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UpperWarningProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperWarning</remarks>
+			/// </summary>
 			public UpperWarningProperty UpperWarning { get; } = new UpperWarningProperty();
+			/// <summary>
+			/// upper boundary indicating increased concern and supervision may be required.
+			/// </summary>
 			public sealed class UpperWarningProperty : IProperty
 			{
 				/// <summary>
@@ -107,6 +123,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "UpperWarning";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -131,11 +150,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="LowerWarningProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LowerWarning</remarks>
+			/// </summary>
 			public LowerWarningProperty LowerWarning { get; } = new LowerWarningProperty();
+			/// <summary>
+			/// lower boundary indicating increased concern and supervision may be required.
+			/// </summary>
 			public sealed class LowerWarningProperty : IProperty
 			{
 				/// <summary>
@@ -154,6 +177,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "LowerWarning";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -178,11 +204,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="LowerLimitProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LowerLimit</remarks>
+			/// </summary>
 			public LowerLimitProperty LowerLimit { get; } = new LowerLimitProperty();
+			/// <summary>
+			/// lower conformance boundary for a variable.  > Note: immediate concern or action may be required.  
+			/// </summary>
 			public sealed class LowerLimitProperty : IProperty
 			{
 				/// <summary>
@@ -201,6 +231,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "LowerLimit";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -225,8 +258,6 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

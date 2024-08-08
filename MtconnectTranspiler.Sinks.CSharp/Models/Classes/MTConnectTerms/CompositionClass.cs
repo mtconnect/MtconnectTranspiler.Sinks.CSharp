@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>Component</i> belonging to a <i>Component</i> and not composed of any <i>Component</i>s.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CompositionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375147_715142_1964";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>Component</i> belonging to a <i>Component</i> and not composed of any <i>Component</i>s.";
+
 		/// <inheritdoc />
 		public string Name => "CompositionClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			public IProperty[] Properties => new IProperty[] {
 				BelongsTo,
 			};
+			/// <summary>
+			/// <inheritdoc cref="BelongsToProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: BelongsTo</remarks>
+			/// </summary>
 			public BelongsToProperty BelongsTo { get; } = new BelongsToProperty();
 			public sealed class BelongsToProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				/// <inheritdoc />
 				public string Name => "BelongsTo";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>Component</i> belonging to a <i>Component</i> and not composed of any <i>Component</i>s.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

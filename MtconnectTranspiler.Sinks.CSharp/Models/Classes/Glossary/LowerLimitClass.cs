@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// lower conformance boundary for a variable.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LowerLimitClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375168_738246_2023";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// lower conformance boundary for a variable.";
+
 		/// <inheritdoc />
 		public string Name => "LowerLimitClass";
 		

@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// axis along or around which the <see cref="Component">Component</see> moves relative to a coordinate system.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AxisClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_7D0C7298_9CC4_4c45_A016_310B9A55DD7F";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// axis along or around which the <see cref=""Component"">Component</see> moves relative to a coordinate system.";
+
 		/// <inheritdoc />
 		public string Name => "AxisClass";
 		
@@ -37,8 +43,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 			public IProperty[] Properties => new IProperty[] {
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			/// <summary>
+			/// unit vector defining the axis of motion.
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>
@@ -56,6 +68,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// axis along or around which the <see cref=""Component"">Component</see> moves relative to a coordinate system.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +96,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
@@ -91,6 +104,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 		/// Axis
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string Axis => @"value->iterate(e:Real;sum:Real=0|sum+e*e) >= 0.9 and  value->iterate(e:Real;sum:Real=0|sum+e*e) <= 1.1";
 		/*
 		value->iterate(e:Real;sum:Real=0|sum+e*e) >= 0.9 and  value->iterate(e:Real;sum:Real=0|sum+e*e) <= 1.1
 		*/

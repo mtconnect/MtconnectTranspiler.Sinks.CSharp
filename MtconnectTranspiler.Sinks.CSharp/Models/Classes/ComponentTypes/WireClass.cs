@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// leaf <see cref="Component">Component</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class WireClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580312106480_27284_44483";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.";
+
 		/// <inheritdoc />
 		public string Name => "WireClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				HasComposition,
 				HasComponent,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasCompositionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComposition</remarks>
+			/// </summary>
 			public HasCompositionProperty HasComposition { get; } = new HasCompositionProperty();
 			public sealed class HasCompositionProperty : IProperty
 			{
@@ -60,6 +69,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "HasComposition";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -84,10 +96,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasComponentProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComponent</remarks>
+			/// </summary>
 			public HasComponentProperty HasComponent { get; } = new HasComponentProperty();
 			public sealed class HasComponentProperty : IProperty
 			{
@@ -107,6 +120,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "HasComponent";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -131,8 +147,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

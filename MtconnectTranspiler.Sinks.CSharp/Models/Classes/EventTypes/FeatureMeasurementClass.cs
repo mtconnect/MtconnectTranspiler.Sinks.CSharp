@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// tabular representation of <see cref="EventEnum::FEATURE_MEASUREMENT">EventEnum::FEATURE_MEASUREMENT</see>  <see cref="FeatureMeasurement">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FeatureMeasurementClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678194652938_418535_17145";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// tabular representation of <see cref=""EventEnum::FEATURE_MEASUREMENT"">EventEnum::FEATURE_MEASUREMENT</see>  <see cref=""FeatureMeasurement"">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.";
+
 		/// <inheritdoc />
 		public string Name => "FeatureMeasurementClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				Type,
 				Result,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -58,6 +67,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// tabular representation of <see cref=""EventEnum::FEATURE_MEASUREMENT"">EventEnum::FEATURE_MEASUREMENT</see>  <see cref=""FeatureMeasurement"">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,10 +95,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
 			public sealed class ResultProperty : IProperty
 			{
@@ -105,6 +118,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Result";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// tabular representation of <see cref=""EventEnum::FEATURE_MEASUREMENT"">EventEnum::FEATURE_MEASUREMENT</see>  <see cref=""FeatureMeasurement"">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +146,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

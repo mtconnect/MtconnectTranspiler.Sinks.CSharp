@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="System">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ElectricClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381986_185851_42231";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""System"">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ElectricClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				ObservesWattage,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesWattageProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesWattage</remarks>
+			/// </summary>
 			public ObservesWattageProperty ObservesWattage { get; } = new ObservesWattageProperty();
 			public sealed class ObservesWattageProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "ObservesWattage";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Observation">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EventClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531115_47447_25730";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
+
 		/// <inheritdoc />
 		public string Name => "EventClass";
 		
@@ -41,8 +47,14 @@ namespace Mtconnect.ObservationInformationModel
 				OrganizedByComponentStreamPart,
 				Type,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ResetTriggeredProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ResetTriggered</remarks>
+			/// </summary>
 			public ResetTriggeredProperty ResetTriggered { get; } = new ResetTriggeredProperty();
+			/// <summary>
+			/// identifies when a reported value has been reset and what has caused that reset to occur for those <see cref="DataItem">DataItem</see> entities that may be periodically reset to an initial value.  <c>resetTriggered</c> <b>MUST</b> only be provided for the specific occurrence of a <see cref="DataItem">DataItem</see> reported in the <i>MTConnectStreams Response Document</i> when the reset occurred.
+			/// </summary>
 			public sealed class ResetTriggeredProperty : IProperty
 			{
 				/// <summary>
@@ -60,6 +72,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "ResetTriggered";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -85,10 +100,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="OrganizedByComponentStreamPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizedByComponentStream</remarks>
+			/// </summary>
 			public OrganizedByComponentStreamPartProperty OrganizedByComponentStreamPart { get; } = new OrganizedByComponentStreamPartProperty();
 			public sealed class OrganizedByComponentStreamPartProperty : IProperty
 			{
@@ -107,6 +123,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "OrganizedByComponentStream";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -132,10 +151,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -154,6 +174,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -179,8 +202,6 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

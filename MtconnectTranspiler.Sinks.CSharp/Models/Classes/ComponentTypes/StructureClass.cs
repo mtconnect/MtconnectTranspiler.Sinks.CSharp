@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class StructureClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1587597358521_716746_1028";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component"">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.";
+
 		/// <inheritdoc />
 		public string Name => "StructureClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				IsStructureOfPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IsStructureOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsStructureOf</remarks>
+			/// </summary>
 			public IsStructureOfPartProperty IsStructureOfPart { get; } = new IsStructureOfPartProperty();
 			public sealed class IsStructureOfPartProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "IsStructureOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

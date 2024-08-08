@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// default <see cref="Representation">Representation</see> type for all <see cref="Observation">Observation</see> types where <see cref="Observation::result" /> type is an MTConnect data type. See <see cref="DataTypes">DataTypes</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ValueClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1633690320192_358108_736";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// default <see cref=""Representation"">Representation</see> type for all <see cref=""Observation"">Observation</see> types where <see cref=""Observation::result"" /> type is an MTConnect data type. See <see cref=""DataTypes"">DataTypes</see>.";
+
 		/// <inheritdoc />
 		public string Name => "ValueClass";
 		
@@ -37,7 +43,10 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			public IProperty[] Properties => new IProperty[] {
 				Result,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
+			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
 			public sealed class ResultProperty : IProperty
 			{
@@ -56,6 +65,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <inheritdoc />
 				public string Name => "Result";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// default <see cref=""Representation"">Representation</see> type for all <see cref=""Observation"">Observation</see> types where <see cref=""Observation::result"" /> type is an MTConnect data type. See <see cref=""DataTypes"">DataTypes</see>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +93,6 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

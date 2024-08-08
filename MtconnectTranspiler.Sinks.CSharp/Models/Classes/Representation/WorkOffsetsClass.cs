@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_SmoothG.Representation
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class WorkOffsetsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1634045367649_547336_746";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "WorkOffsetsClass";
 		
@@ -37,8 +40,14 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 			public IProperty[] Properties => new IProperty[] {
 				Count,
 			};
+			/// <summary>
+			/// <inheritdoc cref="CountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Count</remarks>
+			/// </summary>
 			public CountProperty Count { get; } = new CountProperty();
+			/// <summary>
+			/// number of <see cref="Entry">Entry</see> elements for the <see cref="Observation">Observation</see>.
+			/// </summary>
 			public sealed class CountProperty : IProperty
 			{
 				/// <summary>
@@ -56,6 +65,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 				/// <inheritdoc />
 				public string Name => "Count";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -81,8 +93,6 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

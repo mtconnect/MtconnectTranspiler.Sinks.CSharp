@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// property defining a configuration of a <see cref="Component">Component</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ParameterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678197371649_500788_17992";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+
 		/// <inheritdoc />
 		public string Name => "ParameterClass";
 		
@@ -43,8 +49,14 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				Value,
 				Units,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IdentifierProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Identifier</remarks>
+			/// </summary>
 			public IdentifierProperty Identifier { get; } = new IdentifierProperty();
+			/// <summary>
+			/// internal identifier, register, or address.
+			/// </summary>
 			public sealed class IdentifierProperty : IProperty
 			{
 				/// <summary>
@@ -63,6 +75,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "Identifier";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -87,11 +102,15 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// descriptive name.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -110,6 +129,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -134,11 +156,15 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MinimumProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Minimum</remarks>
+			/// </summary>
 			public MinimumProperty Minimum { get; } = new MinimumProperty();
+			/// <summary>
+			/// minimal allowed value.
+			/// </summary>
 			public sealed class MinimumProperty : IProperty
 			{
 				/// <summary>
@@ -157,6 +183,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "Minimum";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -181,11 +210,15 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MaximumProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Maximum</remarks>
+			/// </summary>
 			public MaximumProperty Maximum { get; } = new MaximumProperty();
+			/// <summary>
+			/// maximum allowed value.
+			/// </summary>
 			public sealed class MaximumProperty : IProperty
 			{
 				/// <summary>
@@ -204,6 +237,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "Maximum";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -228,11 +264,15 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NominalProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Nominal</remarks>
+			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
+			/// <summary>
+			/// nominal value.
+			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
 				/// <summary>
@@ -251,6 +291,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "Nominal";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -275,11 +318,15 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			/// <summary>
+			/// configured value.
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>
@@ -298,6 +345,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "Value";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -322,11 +372,15 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
+			/// <summary>
+			/// engineering units.  <see cref="Parameter::units" /> <b>SHOULD</b> be SI or MTConnect Units.
+			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
@@ -345,6 +399,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -369,8 +426,6 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

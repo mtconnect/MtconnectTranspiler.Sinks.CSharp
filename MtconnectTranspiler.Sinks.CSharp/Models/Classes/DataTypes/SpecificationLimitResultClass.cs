@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SpecificationLimitResultClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1620206901637_323897_780";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "SpecificationLimitResultClass";
 		
@@ -39,8 +42,14 @@ namespace Mtconnect.DataTypes
 				Nominal,
 				LowerLimit,
 			};
+			/// <summary>
+			/// <inheritdoc cref="UpperLimitProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperLimit</remarks>
+			/// </summary>
 			public UpperLimitProperty UpperLimit { get; } = new UpperLimitProperty();
+			/// <summary>
+			/// upper conformance boundary for a variable.  > Note: immediate concern or action may be required.  
+			/// </summary>
 			public sealed class UpperLimitProperty : IProperty
 			{
 				/// <summary>
@@ -59,6 +68,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "UpperLimit";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -83,11 +95,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NominalProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Nominal</remarks>
+			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
+			/// <summary>
+			/// ideal or desired value for a variable.
+			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
 				/// <summary>
@@ -106,6 +122,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "Nominal";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -130,11 +149,15 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="LowerLimitProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LowerLimit</remarks>
+			/// </summary>
 			public LowerLimitProperty LowerLimit { get; } = new LowerLimitProperty();
+			/// <summary>
+			/// lower conformance boundary for a variable.  > Note: immediate concern or action may be required.  
+			/// </summary>
 			public sealed class LowerLimitProperty : IProperty
 			{
 				/// <summary>
@@ -153,6 +176,9 @@ namespace Mtconnect.DataTypes
 				public string Name => "LowerLimit";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -177,8 +203,6 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

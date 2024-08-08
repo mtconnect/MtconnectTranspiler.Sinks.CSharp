@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Structure">Structure</see> that provides a connection between <see cref="Component">Component</see> entities.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LinkClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1587597430378_591532_1084";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Structure"">Structure</see> that provides a connection between <see cref=""Component"">Component</see> entities.";
+
 		/// <inheritdoc />
 		public string Name => "LinkClass";
 		

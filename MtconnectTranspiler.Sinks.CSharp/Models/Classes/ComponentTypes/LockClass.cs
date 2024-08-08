@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component">Component</see> that physically prohibits a <see cref="Device">Device</see> or <see cref="Component">Component</see> from opening or operating.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LockClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622457426342_839834_623";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component"">Component</see> that physically prohibits a <see cref=""Device"">Device</see> or <see cref=""Component"">Component</see> from opening or operating.";
+
 		/// <inheritdoc />
 		public string Name => "LockClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				ObservesLockState,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesLockStateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesLockState</remarks>
+			/// </summary>
 			public ObservesLockStateProperty ObservesLockState { get; } = new ObservesLockStateProperty();
 			public sealed class ObservesLockStateProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "ObservesLockState";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that physically prohibits a <see cref=""Device"">Device</see> or <see cref=""Component"">Component</see> from opening or operating.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

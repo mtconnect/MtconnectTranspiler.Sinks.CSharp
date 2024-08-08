@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// set of limits that is used to indicate whether a process variable is stable and in control.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ControlLimitsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605643876416_54094_959";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
+
 		/// <inheritdoc />
 		public string Name => "ControlLimitsClass";
 		
@@ -42,7 +48,10 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				NominalPart,
 				LowerLimitPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="UpperLimitPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperLimit</remarks>
+			/// </summary>
 			public UpperLimitPartProperty UpperLimitPart { get; } = new UpperLimitPartProperty();
 			public sealed class UpperLimitPartProperty : IProperty
 			{
@@ -61,6 +70,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "UpperLimit";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -86,10 +98,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UpperWarningPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperWarning</remarks>
+			/// </summary>
 			public UpperWarningPartProperty UpperWarningPart { get; } = new UpperWarningPartProperty();
 			public sealed class UpperWarningPartProperty : IProperty
 			{
@@ -108,6 +121,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "UpperWarning";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -133,10 +149,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="LowerWarningPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LowerWarning</remarks>
+			/// </summary>
 			public LowerWarningPartProperty LowerWarningPart { get; } = new LowerWarningPartProperty();
 			public sealed class LowerWarningPartProperty : IProperty
 			{
@@ -155,6 +172,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "LowerWarning";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -180,10 +200,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NominalPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Nominal</remarks>
+			/// </summary>
 			public NominalPartProperty NominalPart { get; } = new NominalPartProperty();
 			public sealed class NominalPartProperty : IProperty
 			{
@@ -202,6 +223,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "Nominal";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -227,10 +251,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="LowerLimitPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LowerLimit</remarks>
+			/// </summary>
 			public LowerLimitPartProperty LowerLimitPart { get; } = new LowerLimitPartProperty();
 			public sealed class LowerLimitPartProperty : IProperty
 			{
@@ -249,6 +274,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <inheritdoc />
 				public string Name => "LowerLimit";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -274,8 +302,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// organizes the data associated with each <see cref="Component">Component</see> entity defined for a <see cref="Device">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentStreamClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_9057AAF9_4687_42be_BD2B_E2F18DF049DC";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ComponentStreamClass";
 		
@@ -47,8 +53,14 @@ namespace Mtconnect.ObservationInformationModel
 				OrganizesConditionPart,
 				IsOrganizerForPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ComponentProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Component</remarks>
+			/// </summary>
 			public ComponentProperty Component { get; } = new ComponentProperty();
+			/// <summary>
+			/// identifies the <see cref="Component">Component</see> type associated with the <see cref="ComponentStream">ComponentStream</see>.  Examples of <see cref="ComponentStream::component" /> are <see cref="Device">Device</see>, <see cref="Controller">Controller</see>, <see cref="Linear">Linear</see> and <see cref="Loader">Loader</see>.
+			/// </summary>
 			public sealed class ComponentProperty : IProperty
 			{
 				/// <summary>
@@ -67,6 +79,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Component";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -91,11 +106,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ComponentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ComponentId</remarks>
+			/// </summary>
 			public ComponentIdProperty ComponentId { get; } = new ComponentIdProperty();
+			/// <summary>
+			/// identifier of the <see cref="Component">Component</see> as defined by the <see cref="Component::id" /> in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class ComponentIdProperty : IProperty
 			{
 				/// <summary>
@@ -114,6 +133,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "ComponentId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -138,11 +160,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -161,6 +187,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -185,11 +214,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NativeNameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeName</remarks>
+			/// </summary>
 			public NativeNameProperty NativeName { get; } = new NativeNameProperty();
+			/// <summary>
+			/// common name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.
+			/// </summary>
 			public sealed class NativeNameProperty : IProperty
 			{
 				/// <summary>
@@ -207,6 +240,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "NativeName";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -232,11 +268,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UuidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Uuid</remarks>
+			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
+			/// <summary>
+			/// uuid of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.
+			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
 				/// <summary>
@@ -254,6 +294,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Uuid";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -279,10 +322,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="OrganizesEventPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizesEvent</remarks>
+			/// </summary>
 			public OrganizesEventPartProperty OrganizesEventPart { get; } = new OrganizesEventPartProperty();
 			public sealed class OrganizesEventPartProperty : IProperty
 			{
@@ -301,6 +345,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "OrganizesEvent";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -326,10 +373,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="OrganizesSamplePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizesSample</remarks>
+			/// </summary>
 			public OrganizesSamplePartProperty OrganizesSamplePart { get; } = new OrganizesSamplePartProperty();
 			public sealed class OrganizesSamplePartProperty : IProperty
 			{
@@ -348,6 +396,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "OrganizesSample";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -373,10 +424,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="OrganizesConditionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizesCondition</remarks>
+			/// </summary>
 			public OrganizesConditionPartProperty OrganizesConditionPart { get; } = new OrganizesConditionPartProperty();
 			public sealed class OrganizesConditionPartProperty : IProperty
 			{
@@ -395,6 +447,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "OrganizesCondition";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -420,10 +475,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IsOrganizerForPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsOrganizerFor</remarks>
+			/// </summary>
 			public IsOrganizerForPartProperty IsOrganizerForPart { get; } = new IsOrganizerForPartProperty();
 			public sealed class IsOrganizerForPartProperty : IProperty
 			{
@@ -442,6 +498,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "IsOrganizerFor";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -467,8 +526,6 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
@@ -477,6 +534,7 @@ namespace Mtconnect.ObservationInformationModel
 		/// ComponentStream1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string ComponentStream1 => @"self.organizesEvent->size() <> 0 or self.organizesSample->size() <> 0 or self.organizesCondition->size() <> 0";
 		/*
 		self.organizesEvent->size() <> 0 or self.organizesSample->size() <> 0 or self.organizesCondition->size() <> 0
 		*/

@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component">Component</see> composed of a sensor or an instrument that measures temperature.  <see cref="Thermostat">Thermostat</see> was <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>s and was replaced by <see cref="Temperature">Temperature</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ThermostatClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1643678703742_369144_1539";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component"">Component</see> composed of a sensor or an instrument that measures temperature.  <see cref=""Thermostat"">Thermostat</see> was <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>s and was replaced by <see cref=""Temperature"">Temperature</see>.";
+
 		/// <inheritdoc />
 		public string Name => "ThermostatClass";
 		

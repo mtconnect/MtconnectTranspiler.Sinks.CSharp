@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <see cref="DataItem">DataItem</see> that is continuously changing or analog data value. /// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SampleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_B0781166_9F74_4844_B40C_CA32663868F2";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
+
 		/// <inheritdoc />
 		public string Name => "SampleClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				Type,
 				Units,
 			};
+			/// <summary>
+			/// <inheritdoc cref="CategoryProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Category</remarks>
+			/// </summary>
 			public CategoryProperty Category { get; } = new CategoryProperty();
 			public sealed class CategoryProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				/// <inheritdoc />
 				public string Name => "Category";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -84,10 +96,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -107,6 +120,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -131,10 +147,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			public sealed class UnitsProperty : IProperty
 			{
@@ -154,6 +171,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -178,8 +198,6 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

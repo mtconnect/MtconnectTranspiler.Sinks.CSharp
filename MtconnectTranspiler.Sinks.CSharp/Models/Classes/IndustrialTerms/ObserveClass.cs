@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// act of measuring or determining the value of a property at a point in time.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObserveClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375176_568179_2052";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// act of measuring or determining the value of a property at a point in time.";
+
 		/// <inheritdoc />
 		public string Name => "ObserveClass";
 		

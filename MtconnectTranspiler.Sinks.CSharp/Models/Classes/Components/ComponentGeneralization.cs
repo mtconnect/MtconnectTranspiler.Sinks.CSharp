@@ -9,12 +9,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// logical or physical entity that provides a capability./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_8548C620_467A_4f50_9A22_58D84B7E8779";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ComponentGeneralization";
 		
@@ -57,8 +63,14 @@ namespace Mtconnect.DeviceInformationModel.Components
 				CoordinateSystemIdRef,
 				HasComponentStreamPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Id</remarks>
+			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
+			/// <summary>
+			/// unique identifier for the <see cref="Component">Component</see>.
+			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
 				/// <summary>
@@ -77,6 +89,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "Id";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -101,11 +116,15 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the <see cref="Component">Component</see>.  When provided, <see cref="Component::name" /> <b>MUST</b> be unique for all child <see cref="Component">Component</see> entities of a parent <see cref="Component">Component</see>.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -124,6 +143,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -148,11 +170,15 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NativeNameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeName</remarks>
+			/// </summary>
 			public NativeNameProperty NativeName { get; } = new NativeNameProperty();
+			/// <summary>
+			/// common name associated with <see cref="Component">Component</see>.
+			/// </summary>
 			public sealed class NativeNameProperty : IProperty
 			{
 				/// <summary>
@@ -170,6 +196,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "NativeName";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -195,11 +224,15 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SampleIntervalProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SampleInterval</remarks>
+			/// </summary>
 			public SampleIntervalProperty SampleInterval { get; } = new SampleIntervalProperty();
+			/// <summary>
+			/// interval in milliseconds between the completion of the reading of the data associated with the <see cref="Component">Component</see> until the beginning of the next sampling of that data.  This information may be used by client software applications to understand how often information from a <see cref="Component">Component</see> is expected to be refreshed.  The refresh rate for data from all child <see cref="Component">Component</see> entities will be the same as for the parent <see cref="Component">Component</see> element unless specifically overridden by another <see cref="Component::sampleInterval" /> provided for the child <see cref="Component">Component</see>.
+			/// </summary>
 			public sealed class SampleIntervalProperty : IProperty
 			{
 				/// <summary>
@@ -217,6 +250,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "SampleInterval";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -242,11 +278,15 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SampleRateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SampleRate</remarks>
+			/// </summary>
 			public SampleRateProperty SampleRate { get; } = new SampleRateProperty();
+			/// <summary>
+			/// <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>s. Replaced by <see cref="Component::sampleInterval" />.
+			/// </summary>
 			public sealed class SampleRateProperty : IProperty
 			{
 				/// <summary>
@@ -264,6 +304,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "SampleRate";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -289,11 +332,15 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UuidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Uuid</remarks>
+			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
+			/// <summary>
+			/// universally unique identifier for the <see cref="Component">Component</see>.
+			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
 				/// <summary>
@@ -311,6 +358,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "Uuid";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -336,10 +386,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasDescriptionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDescription</remarks>
+			/// </summary>
 			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
 			public sealed class HasDescriptionPartProperty : IProperty
 			{
@@ -358,6 +409,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "HasDescription";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -383,10 +437,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasCompositionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComposition</remarks>
+			/// </summary>
 			public HasCompositionPartProperty HasCompositionPart { get; } = new HasCompositionPartProperty();
 			public sealed class HasCompositionPartProperty : IProperty
 			{
@@ -405,6 +460,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "HasComposition";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -430,10 +488,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasComponentPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComponent</remarks>
+			/// </summary>
 			public HasComponentPartProperty HasComponentPart { get; } = new HasComponentPartProperty();
 			public sealed class HasComponentPartProperty : IProperty
 			{
@@ -452,6 +511,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "HasComponent";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -477,10 +539,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasConfigurationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasConfiguration</remarks>
+			/// </summary>
 			public HasConfigurationPartProperty HasConfigurationPart { get; } = new HasConfigurationPartProperty();
 			public sealed class HasConfigurationPartProperty : IProperty
 			{
@@ -499,6 +562,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "HasConfiguration";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -524,10 +590,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IsComponentOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsComponentOf</remarks>
+			/// </summary>
 			public IsComponentOfPartProperty IsComponentOfPart { get; } = new IsComponentOfPartProperty();
 			public sealed class IsComponentOfPartProperty : IProperty
 			{
@@ -546,6 +613,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "IsComponentOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -571,10 +641,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Observes</remarks>
+			/// </summary>
 			public ObservesPartProperty ObservesPart { get; } = new ObservesPartProperty();
 			public sealed class ObservesPartProperty : IProperty
 			{
@@ -593,6 +664,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "Observes";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -618,10 +692,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MadeObservationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeObservation</remarks>
+			/// </summary>
 			public MadeObservationPartProperty MadeObservationPart { get; } = new MadeObservationPartProperty();
 			public sealed class MadeObservationPartProperty : IProperty
 			{
@@ -640,6 +715,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "MadeObservation";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -665,10 +743,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasReferencePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasReference</remarks>
+			/// </summary>
 			public HasReferencePartProperty HasReferencePart { get; } = new HasReferencePartProperty();
 			public sealed class HasReferencePartProperty : IProperty
 			{
@@ -687,6 +766,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "HasReference";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -712,11 +794,15 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CoordinateSystemIdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CoordinateSystemIdRef</remarks>
+			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
+			/// <summary>
+			/// specifies the <see cref="CoordinateSystem">CoordinateSystem</see> for this <see cref="Component">Component</see> and its children.
+			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
 				/// <summary>
@@ -734,6 +820,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "CoordinateSystemIdRef";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -759,10 +848,11 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasComponentStreamPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComponentStream</remarks>
+			/// </summary>
 			public HasComponentStreamPartProperty HasComponentStreamPart { get; } = new HasComponentStreamPartProperty();
 			public sealed class HasComponentStreamPartProperty : IProperty
 			{
@@ -781,6 +871,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <inheritdoc />
 				public string Name => "HasComponentStream";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -806,8 +899,6 @@ namespace Mtconnect.DeviceInformationModel.Components
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
@@ -816,6 +907,15 @@ namespace Mtconnect.DeviceInformationModel.Components
 		/// Component1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string Component1 => @"Components::Component::allInstances()->iterate(comp;compcount:Real=0|
+if comp.id->size() = 1 and
+    (comp.observes->size() <> 0 or comp.hasReference->size() <> 0 or comp.hasComponent->size() <> 0 or comp.oclAsType(Components::""Component Types""::Organizer)->size() <> 0) 
+then
+    compcount + 1
+else
+    compcount + 0                                
+endif
+) = Components::Component::allInstances()->size()";
 		/*
 		Components::Component::allInstances()->iterate(comp;compcount:Real=0|
 		if comp.id->size() = 1 and

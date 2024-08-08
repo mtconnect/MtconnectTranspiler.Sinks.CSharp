@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="EventEnum::MESSAGE">EventEnum::MESSAGE</see>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MessageClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218355_525053_1935";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""EventEnum::MESSAGE"">EventEnum::MESSAGE</see>";
+
 		/// <inheritdoc />
 		public string Name => "MessageClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				Type,
 				NativeCode,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -58,6 +67,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::MESSAGE"">EventEnum::MESSAGE</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,11 +95,15 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NativeCodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeCode</remarks>
+			/// </summary>
 			public NativeCodeProperty NativeCode { get; } = new NativeCodeProperty();
+			/// <summary>
+			/// control system local identification of the information being transferred.
+			/// </summary>
 			public sealed class NativeCodeProperty : IProperty
 			{
 				/// <summary>
@@ -105,6 +121,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "NativeCode";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::MESSAGE"">EventEnum::MESSAGE</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +149,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -5,12 +5,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class OriginPropertyClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1582232410859_111633_157";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "OriginPropertyClass";
 		
@@ -43,7 +46,10 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				Transform,
 				UnitVector,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ParentCoordinatesProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ParentCoordinates</remarks>
+			/// </summary>
 			public ParentCoordinatesProperty ParentCoordinates { get; } = new ParentCoordinatesProperty();
 			public sealed class ParentCoordinatesProperty : IProperty
 			{
@@ -63,6 +69,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "ParentCoordinates";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -87,10 +96,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="OriginProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Origin</remarks>
+			/// </summary>
 			public OriginProperty Origin { get; } = new OriginProperty();
 			public sealed class OriginProperty : IProperty
 			{
@@ -110,6 +120,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Origin";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -134,10 +147,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="RotationVectorProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: RotationVector</remarks>
+			/// </summary>
 			public RotationVectorProperty RotationVector { get; } = new RotationVectorProperty();
 			public sealed class RotationVectorProperty : IProperty
 			{
@@ -157,6 +171,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "RotationVector";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -181,10 +198,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TranslationVectorProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: TranslationVector</remarks>
+			/// </summary>
 			public TranslationVectorProperty TranslationVector { get; } = new TranslationVectorProperty();
 			public sealed class TranslationVectorProperty : IProperty
 			{
@@ -204,6 +222,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "TranslationVector";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -228,10 +249,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TransformProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Transform</remarks>
+			/// </summary>
 			public TransformProperty Transform { get; } = new TransformProperty();
 			public sealed class TransformProperty : IProperty
 			{
@@ -250,6 +272,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				public string Name => "Transform";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -275,10 +300,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="UnitVectorProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UnitVector</remarks>
+			/// </summary>
 			public UnitVectorProperty UnitVector { get; } = new UnitVectorProperty();
 			public sealed class UnitVectorProperty : IProperty
 			{
@@ -297,6 +323,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				public string Name => "UnitVector";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -322,8 +351,6 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.InformationModelTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>information model</i> that describes the <i>streaming data</i> reported by a piece of equipment.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationInformationModelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375176_664425_2051";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>information model</i> that describes the <i>streaming data</i> reported by a piece of equipment.";
+
 		/// <inheritdoc />
 		public string Name => "ObservationInformationModelClass";
 		

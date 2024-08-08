@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TokensClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1674406002024_615828_206";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "TokensClass";
 		
@@ -39,7 +42,10 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				Source,
 				Tokens,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			public sealed class NameProperty : IProperty
 			{
@@ -59,6 +65,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -83,10 +92,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SourceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Source</remarks>
+			/// </summary>
 			public SourceProperty Source { get; } = new SourceProperty();
 			public sealed class SourceProperty : IProperty
 			{
@@ -106,6 +116,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public string Name => "Source";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -130,10 +143,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TokensProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Tokens</remarks>
+			/// </summary>
 			public TokensProperty Tokens { get; } = new TokensProperty();
 			public sealed class TokensProperty : IProperty
 			{
@@ -153,6 +167,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public string Name => "Tokens";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -177,8 +194,6 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

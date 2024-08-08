@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="SampleEnum::GRAVITATIONAL_FORCE">SampleEnum::GRAVITATIONAL_FORCE</see>  > Note: <i>Mass\times GravitationalAcceleration</i>s
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class GravitationalForceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1660317516642_837590_88";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""SampleEnum::GRAVITATIONAL_FORCE"">SampleEnum::GRAVITATIONAL_FORCE</see>  > Note: <i>Mass\\times GravitationalAcceleration</i>s";
+
 		/// <inheritdoc />
 		public string Name => "GravitationalForceClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				Units,
 				Type,
 			};
+			/// <summary>
+			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
+			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			public sealed class UnitsProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "Units";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""SampleEnum::GRAVITATIONAL_FORCE"">SampleEnum::GRAVITATIONAL_FORCE</see>  > Note: <i>Mass\\times GravitationalAcceleration</i>s";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -83,10 +95,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""SampleEnum::GRAVITATIONAL_FORCE"">SampleEnum::GRAVITATIONAL_FORCE</see>  > Note: <i>Mass\\times GravitationalAcceleration</i>s";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -130,8 +146,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

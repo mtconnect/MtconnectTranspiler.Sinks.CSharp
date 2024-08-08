@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="EventEnum::PART_GROUP_ID">EventEnum::PART_GROUP_ID</see>  If no <see cref="DataItem::subType" /> is specified, <c>UUID</c> is default.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PartGroupIdClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605548793581_13403_454";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""EventEnum::PART_GROUP_ID"">EventEnum::PART_GROUP_ID</see>  If no <see cref=""DataItem::subType"" /> is specified, <c>UUID</c> is default.";
+
 		/// <inheritdoc />
 		public string Name => "PartGroupIdClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				Type,
 				SubType,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -58,6 +67,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::PART_GROUP_ID"">EventEnum::PART_GROUP_ID</see>  If no <see cref=""DataItem::subType"" /> is specified, <c>UUID</c> is default.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,10 +95,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -105,6 +118,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "SubType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""EventEnum::PART_GROUP_ID"">EventEnum::PART_GROUP_ID</see>  If no <see cref=""DataItem::subType"" /> is specified, <c>UUID</c> is default.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +146,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

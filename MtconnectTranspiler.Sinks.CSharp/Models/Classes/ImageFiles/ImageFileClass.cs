@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// reference to a file containing an image of the <see cref="Component">Component</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ImageFileClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1677585025728_765757_660";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
+
 		/// <inheritdoc />
 		public string Name => "ImageFileClass";
 		
@@ -40,8 +46,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				MediaType,
 				Name,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Id</remarks>
+			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
+			/// <summary>
+			/// unique identifier of the image file.
+			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
 				/// <summary>
@@ -60,6 +72,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				public string Name => "Id";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -84,11 +99,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HrefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Href</remarks>
+			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
+			/// <summary>
+			/// <i>URL</i> giving the location of the image file.
+			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
 				/// <summary>
@@ -107,6 +126,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				public string Name => "Href";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -131,11 +153,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="MediaTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MediaType</remarks>
+			/// </summary>
 			public MediaTypeProperty MediaType { get; } = new MediaTypeProperty();
+			/// <summary>
+			/// mime type of the image file. 
+			/// </summary>
 			public sealed class MediaTypeProperty : IProperty
 			{
 				/// <summary>
@@ -154,6 +180,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				public string Name => "MediaType";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -178,11 +207,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// description of the image file.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -200,6 +233,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				/// <inheritdoc />
 				public string Name => "Name";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -225,8 +261,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

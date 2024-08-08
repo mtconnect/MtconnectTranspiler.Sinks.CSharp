@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <see cref="DataItem">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConditionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_3F5927FF_5B8D_4307_8D27_9654F724A657";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ConditionClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				Category,
 				Type,
 			};
+			/// <summary>
+			/// <inheritdoc cref="CategoryProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Category</remarks>
+			/// </summary>
 			public CategoryProperty Category { get; } = new CategoryProperty();
 			public sealed class CategoryProperty : IProperty
 			{
@@ -58,6 +67,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				/// <inheritdoc />
 				public string Name => "Category";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,10 +95,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -105,6 +118,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +146,6 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

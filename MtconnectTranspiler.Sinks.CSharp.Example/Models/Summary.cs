@@ -1,6 +1,5 @@
-﻿using MtconnectTranspiler.Sinks.ScribanTemplates;
+﻿using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
 using MtconnectTranspiler.Xmi;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 

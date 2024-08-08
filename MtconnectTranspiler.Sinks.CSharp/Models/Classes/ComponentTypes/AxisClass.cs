@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <see cref="Component">Component</see> composed of a motion system that provides linear or rotational motion for a piece of equipment./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AxisClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381972_553005_42207";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <see cref=""Component"">Component</see> composed of a motion system that provides linear or rotational motion for a piece of equipment./// Description";
+
 		/// <inheritdoc />
 		public string Name => "AxisClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				IsAxisOfPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IsAxisOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsAxisOf</remarks>
+			/// </summary>
 			public IsAxisOfPartProperty IsAxisOfPart { get; } = new IsAxisOfPartProperty();
 			public sealed class IsAxisOfPartProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "IsAxisOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Component"">Component</see> composed of a motion system that provides linear or rotational motion for a piece of equipment./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

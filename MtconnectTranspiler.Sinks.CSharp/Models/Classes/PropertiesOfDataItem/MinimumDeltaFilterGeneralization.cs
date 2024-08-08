@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="FilterEnum::MINIMUM_DELTA">FilterEnum::MINIMUM_DELTA</see>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MinimumDeltaFilterGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1644604760483_617184_91";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""FilterEnum::MINIMUM_DELTA"">FilterEnum::MINIMUM_DELTA</see>";
+
 		/// <inheritdoc />
 		public string Name => "MinimumDeltaFilterGeneralization";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			public IProperty[] Properties => new IProperty[] {
 				Type,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""FilterEnum::MINIMUM_DELTA"">FilterEnum::MINIMUM_DELTA</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

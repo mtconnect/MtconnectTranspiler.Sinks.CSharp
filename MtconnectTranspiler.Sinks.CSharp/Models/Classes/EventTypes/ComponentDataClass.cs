@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// tabular <see cref="EventEnum::COMPONENT_DATA">EventEnum::COMPONENT_DATA</see>  If the <see cref="Component">Component</see> multiplicity can be determined, the device model <b>MUST</b> use a fixed set of <see cref="Component">Component</see>s.  <see cref="ComponentData">ComponentData</see> <b>MUST</b> provide a <see cref="DataItem">DataItem</see> <see cref="Definition">Definition</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentDataClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678101504782_455626_16476";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// tabular <see cref=""EventEnum::COMPONENT_DATA"">EventEnum::COMPONENT_DATA</see>  If the <see cref=""Component"">Component</see> multiplicity can be determined, the device model <b>MUST</b> use a fixed set of <see cref=""Component"">Component</see>s.  <see cref=""ComponentData"">ComponentData</see> <b>MUST</b> provide a <see cref=""DataItem"">DataItem</see> <see cref=""Definition"">Definition</see>.";
+
 		/// <inheritdoc />
 		public string Name => "ComponentDataClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			public IProperty[] Properties => new IProperty[] {
 				Type,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// tabular <see cref=""EventEnum::COMPONENT_DATA"">EventEnum::COMPONENT_DATA</see>  If the <see cref=""Component"">Component</see> multiplicity can be determined, the device model <b>MUST</b> use a fixed set of <see cref=""Component"">Component</see>s.  <see cref=""ComponentData"">ComponentData</see> <b>MUST</b> provide a <see cref=""DataItem"">DataItem</see> <see cref=""Definition"">Definition</see>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

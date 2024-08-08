@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>asset</i> that is used by the manufacturing process to perform tasks.  > Note 1 to entry: An <i>Asset</i> relies upon an <i>Device</i> to provide <i>observation</i>s and information about itself and the <i>Device</i> revises the information to reflect changes to the <i>Asset</i> during their interaction. Examples of <i>Asset</i>s are cutting tools, Part Information, Manufacturing Processes, Fixtures, and Files.  > Note 2 to entry: A singular <see cref="Asset::assetId" /> uniquely identifies an <i>Asset</i> throughout its lifecycle and is used to track and relate the <i>Asset</i> to other <i>Device</i>s and entities.  > Note 3 to entry: <i>Asset</i>s are temporally associated with a device and can be removed from the device without damage or alteration to its primary functions.  
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581734255313_425984_984";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>asset</i> that is used by the manufacturing process to perform tasks.  > Note 1 to entry: An <i>Asset</i> relies upon an <i>Device</i> to provide <i>observation</i>s and information about itself and the <i>Device</i> revises the information to reflect changes to the <i>Asset</i> during their interaction. Examples of <i>Asset</i>s are cutting tools, Part Information, Manufacturing Processes, Fixtures, and Files.  > Note 2 to entry: A singular <see cref=""Asset::assetId"" /> uniquely identifies an <i>Asset</i> throughout its lifecycle and is used to track and relate the <i>Asset</i> to other <i>Device</i>s and entities.  > Note 3 to entry: <i>Asset</i>s are temporally associated with a device and can be removed from the device without damage or alteration to its primary functions.  ";
+
 		/// <inheritdoc />
 		public string Name => "AssetGeneralization";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			public IProperty[] Properties => new IProperty[] {
 				BelongsTo,
 			};
+			/// <summary>
+			/// <inheritdoc cref="BelongsToProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: BelongsTo</remarks>
+			/// </summary>
 			public BelongsToProperty BelongsTo { get; } = new BelongsToProperty();
 			public sealed class BelongsToProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				/// <inheritdoc />
 				public string Name => "BelongsTo";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>asset</i> that is used by the manufacturing process to perform tasks.  > Note 1 to entry: An <i>Asset</i> relies upon an <i>Device</i> to provide <i>observation</i>s and information about itself and the <i>Device</i> revises the information to reflect changes to the <i>Asset</i> during their interaction. Examples of <i>Asset</i>s are cutting tools, Part Information, Manufacturing Processes, Fixtures, and Files.  > Note 2 to entry: A singular <see cref=""Asset::assetId"" /> uniquely identifies an <i>Asset</i> throughout its lifecycle and is used to track and relate the <i>Asset</i> to other <i>Device</i>s and entities.  > Note 3 to entry: <i>Asset</i>s are temporally associated with a device and can be removed from the device without damage or alteration to its primary functions.  ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

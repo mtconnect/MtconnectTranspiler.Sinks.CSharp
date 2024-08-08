@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// set of <see cref="ParameterSet">ParameterSet</see>s that govern the functionality of the related <see cref="Component">Component</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentConfigurationParametersClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678197202508_829668_17803";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// set of <see cref=""ParameterSet"">ParameterSet</see>s that govern the functionality of the related <see cref=""Component"">Component</see>.";
+
 		/// <inheritdoc />
 		public string Name => "ComponentConfigurationParametersClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			public IProperty[] Properties => new IProperty[] {
 				HasParameterSetPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasParameterSetPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasParameterSet</remarks>
+			/// </summary>
 			public HasParameterSetPartProperty HasParameterSetPart { get; } = new HasParameterSetPartProperty();
 			public sealed class HasParameterSetPartProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				/// <inheritdoc />
 				public string Name => "HasParameterSet";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// set of <see cref=""ParameterSet"">ParameterSet</see>s that govern the functionality of the related <see cref=""Component"">Component</see>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

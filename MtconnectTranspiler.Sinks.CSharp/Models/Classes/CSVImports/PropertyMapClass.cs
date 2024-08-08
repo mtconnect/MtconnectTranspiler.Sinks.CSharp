@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Imports.CSVImports
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PropertyMapClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579210647406_198412_3583";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "PropertyMapClass";
 		
@@ -39,7 +42,10 @@ namespace Mtconnect.Imports.CSVImports
 				StereotypeName,
 				ColumnIndex,
 			};
+			/// <summary>
+			/// <inheritdoc cref="PropertyNameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: PropertyName</remarks>
+			/// </summary>
 			public PropertyNameProperty PropertyName { get; } = new PropertyNameProperty();
 			public sealed class PropertyNameProperty : IProperty
 			{
@@ -59,6 +65,9 @@ namespace Mtconnect.Imports.CSVImports
 				public string Name => "PropertyName";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -83,10 +92,11 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="StereotypeNameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: StereotypeName</remarks>
+			/// </summary>
 			public StereotypeNameProperty StereotypeName { get; } = new StereotypeNameProperty();
 			public sealed class StereotypeNameProperty : IProperty
 			{
@@ -106,6 +116,9 @@ namespace Mtconnect.Imports.CSVImports
 				public string Name => "StereotypeName";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -130,10 +143,11 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ColumnIndexProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ColumnIndex</remarks>
+			/// </summary>
 			public ColumnIndexProperty ColumnIndex { get; } = new ColumnIndexProperty();
 			public sealed class ColumnIndexProperty : IProperty
 			{
@@ -153,6 +167,9 @@ namespace Mtconnect.Imports.CSVImports
 				public string Name => "ColumnIndex";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -177,8 +194,6 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

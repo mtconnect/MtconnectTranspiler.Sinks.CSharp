@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ServiceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1587352697171_916488_715";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "ServiceClass";
 		
@@ -38,7 +41,10 @@ namespace Mtconnect.AgentArchitecture
 				Services,
 				Name,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ServicesProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Services</remarks>
+			/// </summary>
 			public ServicesProperty Services { get; } = new ServicesProperty();
 			public sealed class ServicesProperty : IProperty
 			{
@@ -57,6 +63,9 @@ namespace Mtconnect.AgentArchitecture
 				/// <inheritdoc />
 				public string Name => "Services";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,10 +91,11 @@ namespace Mtconnect.AgentArchitecture
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			public sealed class NameProperty : IProperty
 			{
@@ -104,6 +114,9 @@ namespace Mtconnect.AgentArchitecture
 				/// <inheritdoc />
 				public string Name => "Name";
 				
+				/// <inheritdoc />
+				public string Summary => @"";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -129,8 +142,6 @@ namespace Mtconnect.AgentArchitecture
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

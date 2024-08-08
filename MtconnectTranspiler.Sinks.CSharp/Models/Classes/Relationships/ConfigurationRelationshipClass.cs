@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConfigurationRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_28132294_DF39_4e8e_8AE5_B79565F991A2";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ConfigurationRelationshipClass";
 		
@@ -41,8 +47,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				Type,
 				Criticality,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name associated with this <see cref="ConfigurationRelationship">ConfigurationRelationship</see>.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -61,6 +73,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -85,11 +100,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Id</remarks>
+			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
+			/// <summary>
+			/// unique identifier for this <see cref="ConfigurationRelationship">ConfigurationRelationship</see>.
+			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
 				/// <summary>
@@ -108,6 +127,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "Id";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -132,11 +154,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
+			/// <summary>
+			/// defines the authority that this piece of equipment has relative to the associated piece of equipment.
+			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
 				/// <summary>
@@ -155,6 +181,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -179,11 +208,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CriticalityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Criticality</remarks>
+			/// </summary>
 			public CriticalityProperty Criticality { get; } = new CriticalityProperty();
+			/// <summary>
+			/// defines whether the services or functions provided by the associated piece of equipment is required for the operation of this piece of equipment.
+			/// </summary>
 			public sealed class CriticalityProperty : IProperty
 			{
 				/// <summary>
@@ -202,6 +235,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "Criticality";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -226,8 +262,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

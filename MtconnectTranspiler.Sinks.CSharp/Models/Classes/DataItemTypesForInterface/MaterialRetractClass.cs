@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="InterfaceEventEnum::MATERIAL_RETRACT">InterfaceEventEnum::MATERIAL_RETRACT</see>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MaterialRetractClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218353_840620_1929";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""InterfaceEventEnum::MATERIAL_RETRACT"">InterfaceEventEnum::MATERIAL_RETRACT</see>";
+
 		/// <inheritdoc />
 		public string Name => "MaterialRetractClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				Type,
 				SubType,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -58,6 +67,9 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""InterfaceEventEnum::MATERIAL_RETRACT"">InterfaceEventEnum::MATERIAL_RETRACT</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,10 +95,11 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
+			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -105,6 +118,9 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				/// <inheritdoc />
 				public string Name => "SubType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""InterfaceEventEnum::MATERIAL_RETRACT"">InterfaceEventEnum::MATERIAL_RETRACT</see>";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +146,6 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

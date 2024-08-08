@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581812901326_593856_4168";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.";
+
 		/// <inheritdoc />
 		public string Name => "ObservationClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			public IProperty[] Properties => new IProperty[] {
 				MadeBy,
 			};
+			/// <summary>
+			/// <inheritdoc cref="MadeByProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeBy</remarks>
+			/// </summary>
 			public MadeByProperty MadeBy { get; } = new MadeByProperty();
 			public sealed class MadeByProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				/// <inheritdoc />
 				public string Name => "MadeBy";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

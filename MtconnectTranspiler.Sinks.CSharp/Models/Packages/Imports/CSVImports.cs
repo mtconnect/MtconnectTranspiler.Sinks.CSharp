@@ -4,20 +4,45 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Imports.CSVImports;
 // using Mtconnect;
 
-namespace Mtconnect.Imports {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
-	public class CSVImportsPackage : IPackage {
+namespace Mtconnect.Imports
+{
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public class CSVImportsPackage : IPackage
+	{
+		/// <inheritdoc />
+		public string ReferenceId => "_19_0_3_45f01b9_1579210647400_714066_3582";
+		
+		/// <inheritdoc />
+		public string Name => "CSVImports";
+
+		/// <inheritdoc />
+		public string Summary => @"";
+
+		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
 		};
-
+		
+		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			PropertyMapClass,
 			ImportDescriptorClass,
 		};
+		#region Packages
+	#endregion
 
+	#region Classes
 	private Package.PropertyMapClass _PropertyMapClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.PropertyMapClass" path="/summary" />
+	/// </summary>
 	public Package.PropertyMapClass PropertyMapClass => _PropertyMapClass ?? (_PropertyMapClass = new Package.PropertyMapClass());
+
 	private Package.ImportDescriptorClass _ImportDescriptorClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ImportDescriptorClass" path="/summary" />
+	/// </summary>
 	public Package.ImportDescriptorClass ImportDescriptorClass => _ImportDescriptorClass ?? (_ImportDescriptorClass = new Package.ImportDescriptorClass());
+
+	#endregion
 	}
 }

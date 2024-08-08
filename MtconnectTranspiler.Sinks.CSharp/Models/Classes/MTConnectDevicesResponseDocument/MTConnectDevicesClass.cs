@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocument
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref="Device">Device</see> entities.  ![MTConnectDevices](figures/MTConnectDevices.png "MTConnectDevices"){: width="0.8"}  > Note: Additional properties of <see cref="MTConnectDevices">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MTConnectDevicesClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_76BFE349_267B_45b3_B5FF_3C89D29AE715";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref=""Device"">Device</see> entities.  ![MTConnectDevices](figures/MTConnectDevices.png ""MTConnectDevices""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectDevices"">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 		/// <inheritdoc />
 		public string Name => "MTConnectDevicesClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				HasHeaderPart,
 				HasDevicePart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasHeaderPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasHeader</remarks>
+			/// </summary>
 			public HasHeaderPartProperty HasHeaderPart { get; } = new HasHeaderPartProperty();
 			public sealed class HasHeaderPartProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <inheritdoc />
 				public string Name => "HasHeader";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref=""Device"">Device</see> entities.  ![MTConnectDevices](figures/MTConnectDevices.png ""MTConnectDevices""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectDevices"">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -84,10 +96,11 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasDevicePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDevice</remarks>
+			/// </summary>
 			public HasDevicePartProperty HasDevicePart { get; } = new HasDevicePartProperty();
 			public sealed class HasDevicePartProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <inheritdoc />
 				public string Name => "HasDevice";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref=""Device"">Device</see> entities.  ![MTConnectDevices](figures/MTConnectDevices.png ""MTConnectDevices""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectDevices"">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -131,8 +147,6 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
@@ -141,6 +155,11 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 		/// MtconnectDevices1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string MtconnectDevices1 => @"Components::Component::allInstances()->forAll(comp1, comp2 | comp1 <> comp2 implies comp1.id <> comp2.id and comp1.name <> comp2.name)  and 
+DataItems::DataItem::allInstances()->forAll(di1, di2 | di1 <> di2 implies di1.id <> di2.id and di1.name <> di2.name) and
+Components::Devices::Device::allInstances()->forAll(d1, d2 | d1 <> d2 implies d1.id <> d2.id and d1.name <> d2.name) and 
+Compositions::Composition::allInstances()->forAll(compn1, compn2 | compn1 <> compn2 implies compn1.id <> compn2.id and compn1.name <> compn2.name)
+ ";
 		/*
 		Components::Component::allInstances()->forAll(comp1, comp2 | comp1 <> comp2 implies comp1.id <> comp2.id and comp1.name <> comp2.name)  and 
 		DataItems::DataItem::allInstances()->forAll(di1, di2 | di1 <> di2 implies di1.id <> di2.id and di1.name <> di2.name) and

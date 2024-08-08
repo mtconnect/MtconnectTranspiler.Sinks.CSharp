@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href="https://www.google.com/search?q=ISO 13399&btnI=I">ISO 13399</seealso>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingToolDefinitionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_37B8CFD0_D728_4841_9A07_B6CF819EC895";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";
+
 		/// <inheritdoc />
 		public string Name => "CuttingToolDefinitionClass";
 		
@@ -39,8 +45,14 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				Format,
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="FormatProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Format</remarks>
+			/// </summary>
 			public FormatProperty Format { get; } = new FormatProperty();
+			/// <summary>
+			/// identifies the expected representation of the enclosed data.
+			/// </summary>
 			public sealed class FormatProperty : IProperty
 			{
 				/// <summary>
@@ -58,6 +70,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				/// <inheritdoc />
 				public string Name => "Format";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -83,11 +98,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			/// <summary>
+			/// text of the <see cref="CuttingToolDefinition">CuttingToolDefinition</see> in format defined by <see cref="CuttingToolDefinition::format" />.
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>
@@ -105,6 +124,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				/// <inheritdoc />
 				public string Name => "Value";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -130,8 +152,6 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

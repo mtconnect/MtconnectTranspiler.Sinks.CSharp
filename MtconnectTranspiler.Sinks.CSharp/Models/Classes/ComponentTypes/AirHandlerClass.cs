@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// system that circulates air or regulates airflow without altering temperature or humidity.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AirHandlerClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1696069278270_26061_1220";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// system that circulates air or regulates airflow without altering temperature or humidity.";
+
 		/// <inheritdoc />
 		public string Name => "AirHandlerClass";
 		

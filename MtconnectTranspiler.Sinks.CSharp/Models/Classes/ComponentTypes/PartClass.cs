@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <see cref="Component">Component</see> composed of a <i>part</i> being processed by a piece of equipment.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PartClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622456766067_72580_282";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <see cref=""Component"">Component</see> composed of a <i>part</i> being processed by a piece of equipment.";
+
 		/// <inheritdoc />
 		public string Name => "PartClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				IsWorkedOnPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IsWorkedOnPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsWorkedOn</remarks>
+			/// </summary>
 			public IsWorkedOnPartProperty IsWorkedOnPart { get; } = new IsWorkedOnPartProperty();
 			public sealed class IsWorkedOnPartProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "IsWorkedOn";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Component"">Component</see> composed of a <i>part</i> being processed by a piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

@@ -8,12 +8,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="System">System</see> that provides regulation or management of a system or component. <seealso href="https://www.google.com/search?q=ISO 16484-5:2017&btnI=I">ISO 16484-5:2017</seealso>/// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ControllerClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381977_283525_42216";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+
 		/// <inheritdoc />
 		public string Name => "ControllerClass";
 		
@@ -47,7 +53,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesCommunicationsCondition,
 				ObservesLogicProgramCondition,
 			};
+			/// <summary>
+			/// <inheritdoc cref="HasPathPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPath</remarks>
+			/// </summary>
 			public HasPathPartProperty HasPathPart { get; } = new HasPathPartProperty();
 			public sealed class HasPathPartProperty : IProperty
 			{
@@ -66,6 +75,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "HasPath";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -91,10 +103,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IsControllerOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsControllerOf</remarks>
+			/// </summary>
 			public IsControllerOfPartProperty IsControllerOfPart { get; } = new IsControllerOfPartProperty();
 			public sealed class IsControllerOfPartProperty : IProperty
 			{
@@ -113,6 +126,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "IsControllerOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -138,10 +154,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesEmergencyStopProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesEmergencyStop</remarks>
+			/// </summary>
 			public ObservesEmergencyStopProperty ObservesEmergencyStop { get; } = new ObservesEmergencyStopProperty();
 			public sealed class ObservesEmergencyStopProperty : IProperty
 			{
@@ -161,6 +178,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesEmergencyStop";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -185,10 +205,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesSystemConditionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesSystemCondition</remarks>
+			/// </summary>
 			public ObservesSystemConditionProperty ObservesSystemCondition { get; } = new ObservesSystemConditionProperty();
 			public sealed class ObservesSystemConditionProperty : IProperty
 			{
@@ -208,6 +229,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesSystemCondition";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -232,10 +256,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesControllerModeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesControllerMode</remarks>
+			/// </summary>
 			public ObservesControllerModeProperty ObservesControllerMode { get; } = new ObservesControllerModeProperty();
 			public sealed class ObservesControllerModeProperty : IProperty
 			{
@@ -255,6 +280,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesControllerMode";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -279,10 +307,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesCommunicationsConditionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesCommunicationsCondition</remarks>
+			/// </summary>
 			public ObservesCommunicationsConditionProperty ObservesCommunicationsCondition { get; } = new ObservesCommunicationsConditionProperty();
 			public sealed class ObservesCommunicationsConditionProperty : IProperty
 			{
@@ -302,6 +331,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesCommunicationsCondition";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -326,10 +358,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesLogicProgramConditionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesLogicProgramCondition</remarks>
+			/// </summary>
 			public ObservesLogicProgramConditionProperty ObservesLogicProgramCondition { get; } = new ObservesLogicProgramConditionProperty();
 			public sealed class ObservesLogicProgramConditionProperty : IProperty
 			{
@@ -349,6 +382,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesLogicProgramCondition";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -373,8 +409,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

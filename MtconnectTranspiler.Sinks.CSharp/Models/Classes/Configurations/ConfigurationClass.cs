@@ -14,12 +14,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConfigurationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_C04DCC77_16E8_4cef_92D4_B777AFC52570";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 		/// <inheritdoc />
 		public string Name => "ConfigurationClass";
 		
@@ -56,7 +62,10 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				HasImageFilePart,
 				HasPowerSourcePart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IsConfigurationForPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsConfigurationFor</remarks>
+			/// </summary>
 			public IsConfigurationForPartProperty IsConfigurationForPart { get; } = new IsConfigurationForPartProperty();
 			public sealed class IsConfigurationForPartProperty : IProperty
 			{
@@ -75,6 +84,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "IsConfigurationFor";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -100,10 +112,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasSolidModelPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSolidModel</remarks>
+			/// </summary>
 			public HasSolidModelPartProperty HasSolidModelPart { get; } = new HasSolidModelPartProperty();
 			public sealed class HasSolidModelPartProperty : IProperty
 			{
@@ -122,6 +135,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "HasSolidModel";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -147,10 +163,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasSensorConfigurationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSensorConfiguration</remarks>
+			/// </summary>
 			public HasSensorConfigurationPartProperty HasSensorConfigurationPart { get; } = new HasSensorConfigurationPartProperty();
 			public sealed class HasSensorConfigurationPartProperty : IProperty
 			{
@@ -169,6 +186,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "HasSensorConfiguration";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -194,10 +214,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasMotionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasMotion</remarks>
+			/// </summary>
 			public HasMotionPartProperty HasMotionPart { get; } = new HasMotionPartProperty();
 			public sealed class HasMotionPartProperty : IProperty
 			{
@@ -216,6 +237,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "HasMotion";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -241,10 +265,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasRelationshipPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasRelationship</remarks>
+			/// </summary>
 			public HasRelationshipPartProperty HasRelationshipPart { get; } = new HasRelationshipPartProperty();
 			public sealed class HasRelationshipPartProperty : IProperty
 			{
@@ -263,6 +288,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "HasRelationship";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -288,10 +316,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasCoordinateSystemPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasCoordinateSystem</remarks>
+			/// </summary>
 			public HasCoordinateSystemPartProperty HasCoordinateSystemPart { get; } = new HasCoordinateSystemPartProperty();
 			public sealed class HasCoordinateSystemPartProperty : IProperty
 			{
@@ -310,6 +339,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "HasCoordinateSystem";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -335,10 +367,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasSpecificationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSpecification</remarks>
+			/// </summary>
 			public HasSpecificationPartProperty HasSpecificationPart { get; } = new HasSpecificationPartProperty();
 			public sealed class HasSpecificationPartProperty : IProperty
 			{
@@ -357,6 +390,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "HasSpecification";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -382,10 +418,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="IsConfigurationForCompositionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsConfigurationForComposition</remarks>
+			/// </summary>
 			public IsConfigurationForCompositionPartProperty IsConfigurationForCompositionPart { get; } = new IsConfigurationForCompositionPartProperty();
 			public sealed class IsConfigurationForCompositionPartProperty : IProperty
 			{
@@ -404,6 +441,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "IsConfigurationForComposition";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -429,10 +469,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasImageFilePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasImageFile</remarks>
+			/// </summary>
 			public HasImageFilePartProperty HasImageFilePart { get; } = new HasImageFilePartProperty();
 			public sealed class HasImageFilePartProperty : IProperty
 			{
@@ -451,6 +492,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "HasImageFile";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -476,10 +520,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasPowerSourcePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPowerSource</remarks>
+			/// </summary>
 			public HasPowerSourcePartProperty HasPowerSourcePart { get; } = new HasPowerSourcePartProperty();
 			public sealed class HasPowerSourcePartProperty : IProperty
 			{
@@ -498,6 +543,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				public string Name => "HasPowerSource";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -523,8 +571,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

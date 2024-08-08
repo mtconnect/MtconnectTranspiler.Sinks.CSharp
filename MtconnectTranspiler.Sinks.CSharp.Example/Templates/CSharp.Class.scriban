@@ -9,12 +9,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace {{ to_code_safe source.namespace }}
 {
+{{~ if source?.summary != null && source?.summary != "" ~}}
+	/// <summary>
+	{{ source?.summary }}
+	/// </summary>
+{{~ end ~}}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public sealed class {{ code_name }} : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "{{ source.reference_id }}";
 		
+		/// <inheritdoc />
+		public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+
 		/// <inheritdoc />
 		public string Name => "{{ source.name }}";
 		
@@ -70,8 +78,16 @@ namespace {{ to_code_safe source.namespace }}
 				item_suffix = "Property"
 			end
 		~}}
+			/// <summary>
+			/// <inheritdoc cref="{{ item_code_name}}{{ item_suffix }}" path="/summary" /><br/>
 			/// <remarks>Original Name: {{ item.name }}</remarks>
+			/// </summary>
 			public {{ item_code_name }}{{ item_suffix }} {{ item_code_name }}{{ if item.association }}Part{{ end }} { get; } = new {{ item_code_name }}{{ item_suffix }}();
+{{~ if item?.summary != null && item?.summary != "" ~}}
+			/// <summary>
+			{{ item?.summary }}
+			/// </summary>
+{{~ end ~}}
 			public sealed class {{ item_code_name }}{{ item_suffix }} : IProperty
 			{
 				/// <summary>
@@ -89,6 +105,9 @@ namespace {{ to_code_safe source.namespace }}
 				/// <inheritdoc />
 				public string Name => "{{ item.name }}";
 				
+				/// <inheritdoc />
+				public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+
 				/// <inheritdoc />
 				public string AccessModifier => "{{ item.access_modifier }}";
 				
@@ -114,8 +133,6 @@ namespace {{ to_code_safe source.namespace }}
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "{{ item.default_value }}";
-
-				// TODO: Add Summary
 			}
 		{{~ end ~}}
 		};
@@ -130,6 +147,7 @@ namespace {{ to_code_safe source.namespace }}
 		/// {{ constraint.name }}
 		/// </summary>
 		/// <remarks>Specification Language: <c>{{ constraint?.specification?.language ?? "Unspecified" }}</c></remarks>
+		public string {{ constraint.name }} => @"{{ constraint?.raw_script | string.replace "\"" "\"\"" }}";
 		/*
 		{{ constraint?.raw_script ?? "No Content" }}
 		*/

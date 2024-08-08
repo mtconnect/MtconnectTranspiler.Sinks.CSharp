@@ -2,13 +2,14 @@
 using System;
 using MtconnectTranspiler.Xmi.UML;
 using MtconnectTranspiler.Contracts;
+using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
     /// <summary>
     /// Helper methods to process content for scriban templates
     /// </summary>
-    public class CSharpHelperMethods : ScribanTemplates.ScribanHelperMethods
+    public class CSharpHelperMethods : ScribanHelperMethods
     {
         private static Dictionary<string, Type> umlDataTypeToCSharp = new Dictionary<string, Type>()
         {

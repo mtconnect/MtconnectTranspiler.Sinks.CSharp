@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DeviceRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+
 		/// <inheritdoc />
 		public string Name => "DeviceRelationshipClass";
 		
@@ -41,8 +47,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				Role,
 				Xlink_Type,
 			};
+			/// <summary>
+			/// <inheritdoc cref="DeviceUuidRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DeviceUuidRef</remarks>
+			/// </summary>
 			public DeviceUuidRefProperty DeviceUuidRef { get; } = new DeviceUuidRefProperty();
+			/// <summary>
+			/// reference to the <see cref="Device::uuid" /> of the associated piece of equipment.
+			/// </summary>
 			public sealed class DeviceUuidRefProperty : IProperty
 			{
 				/// <summary>
@@ -61,6 +73,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "DeviceUuidRef";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -85,11 +100,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HrefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Href</remarks>
+			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
+			/// <summary>
+			/// <i>URI</i> identifying the <i>agent</i> that is publishing information for the associated piece of equipment. /// Description
+			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
 				/// <summary>
@@ -108,6 +127,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "Href";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -132,11 +154,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="RoleProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Role</remarks>
+			/// </summary>
 			public RoleProperty Role { get; } = new RoleProperty();
+			/// <summary>
+			/// defines the services or capabilities that the referenced piece of equipment provides relative to this piece of equipment.
+			/// </summary>
 			public sealed class RoleProperty : IProperty
 			{
 				/// <summary>
@@ -155,6 +181,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "Role";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -179,11 +208,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Xlink_TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xlink:Type</remarks>
+			/// </summary>
 			public Xlink_TypeProperty Xlink_Type { get; } = new Xlink_TypeProperty();
+			/// <summary>
+			/// <c>xlink:type</c><b>MUST</b> have a fixed value of <c>locator</c> as defined in W3C XLink 1.1 <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>./// Description
+			/// </summary>
 			public sealed class Xlink_TypeProperty : IProperty
 			{
 				/// <summary>
@@ -202,6 +235,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "Xlink:Type";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -226,8 +262,6 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

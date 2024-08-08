@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <see cref="Component">Component</see> that is permanently integrated into the piece of equipment.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SystemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382020_336298_42297";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <see cref=""Component"">Component</see> that is permanently integrated into the piece of equipment.";
+
 		/// <inheritdoc />
 		public string Name => "SystemClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				IsSystemOfPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IsSystemOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsSystemOf</remarks>
+			/// </summary>
 			public IsSystemOfPartProperty IsSystemOfPart { get; } = new IsSystemOfPartProperty();
 			public sealed class IsSystemOfPartProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "IsSystemOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Component"">Component</see> that is permanently integrated into the piece of equipment.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

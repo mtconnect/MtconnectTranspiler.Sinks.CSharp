@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <i>archetype</i> provides the requirements, constraints, and common properties for a type of <i>Asset</i>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ArchetypeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375141_294923_1950";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <i>archetype</i> provides the requirements, constraints, and common properties for a type of <i>Asset</i>.";
+
 		/// <inheritdoc />
 		public string Name => "ArchetypeClass";
 		

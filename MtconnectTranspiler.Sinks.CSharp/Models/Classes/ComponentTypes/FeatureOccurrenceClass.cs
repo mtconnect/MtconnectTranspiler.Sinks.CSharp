@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component">Component</see> that provides information related to an individual <i>feature</i>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FeatureOccurrenceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678029650656_503771_494";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
 		/// <inheritdoc />
 		public string Name => "FeatureOccurrenceClass";
 		
@@ -46,7 +52,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesMeasurementUnits,
 				ObservesMeasurementValue,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesFeaturePersisitentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesFeaturePersisitentId</remarks>
+			/// </summary>
 			public ObservesFeaturePersisitentIdProperty ObservesFeaturePersisitentId { get; } = new ObservesFeaturePersisitentIdProperty();
 			public sealed class ObservesFeaturePersisitentIdProperty : IProperty
 			{
@@ -66,6 +75,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesFeaturePersisitentId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -90,10 +102,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesFeatureMeasurementProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesFeatureMeasurement</remarks>
+			/// </summary>
 			public ObservesFeatureMeasurementProperty ObservesFeatureMeasurement { get; } = new ObservesFeatureMeasurementProperty();
 			public sealed class ObservesFeatureMeasurementProperty : IProperty
 			{
@@ -113,6 +126,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesFeatureMeasurement";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -137,10 +153,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesMeasurementTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesMeasurementType</remarks>
+			/// </summary>
 			public ObservesMeasurementTypeProperty ObservesMeasurementType { get; } = new ObservesMeasurementTypeProperty();
 			public sealed class ObservesMeasurementTypeProperty : IProperty
 			{
@@ -160,6 +177,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesMeasurementType";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -184,10 +204,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesCharacteristicPersistentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesCharacteristicPersistentId</remarks>
+			/// </summary>
 			public ObservesCharacteristicPersistentIdProperty ObservesCharacteristicPersistentId { get; } = new ObservesCharacteristicPersistentIdProperty();
 			public sealed class ObservesCharacteristicPersistentIdProperty : IProperty
 			{
@@ -207,6 +228,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesCharacteristicPersistentId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -231,10 +255,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesCharacteristicStatusProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesCharacteristicStatus</remarks>
+			/// </summary>
 			public ObservesCharacteristicStatusProperty ObservesCharacteristicStatus { get; } = new ObservesCharacteristicStatusProperty();
 			public sealed class ObservesCharacteristicStatusProperty : IProperty
 			{
@@ -254,6 +279,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesCharacteristicStatus";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -278,10 +306,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesUncertaintyProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUncertainty</remarks>
+			/// </summary>
 			public ObservesUncertaintyProperty ObservesUncertainty { get; } = new ObservesUncertaintyProperty();
 			public sealed class ObservesUncertaintyProperty : IProperty
 			{
@@ -301,6 +330,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesUncertainty";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -325,10 +357,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesUncertaintyTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUncertaintyType</remarks>
+			/// </summary>
 			public ObservesUncertaintyTypeProperty ObservesUncertaintyType { get; } = new ObservesUncertaintyTypeProperty();
 			public sealed class ObservesUncertaintyTypeProperty : IProperty
 			{
@@ -348,6 +381,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesUncertaintyType";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -372,10 +408,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesMeasurementUnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesMeasurementUnits</remarks>
+			/// </summary>
 			public ObservesMeasurementUnitsProperty ObservesMeasurementUnits { get; } = new ObservesMeasurementUnitsProperty();
 			public sealed class ObservesMeasurementUnitsProperty : IProperty
 			{
@@ -395,6 +432,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesMeasurementUnits";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -419,10 +459,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesMeasurementValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesMeasurementValue</remarks>
+			/// </summary>
 			public ObservesMeasurementValueProperty ObservesMeasurementValue { get; } = new ObservesMeasurementValueProperty();
 			public sealed class ObservesMeasurementValueProperty : IProperty
 			{
@@ -442,6 +483,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesMeasurementValue";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -466,8 +510,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

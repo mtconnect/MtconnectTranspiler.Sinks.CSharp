@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <see cref="Component">Component</see> composed of material or personnel involved in a manufacturing process.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ResourceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382014_307743_42285";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <see cref=""Component"">Component</see> composed of material or personnel involved in a manufacturing process.";
+
 		/// <inheritdoc />
 		public string Name => "ResourceClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				IsResourceOfPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IsResourceOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsResourceOf</remarks>
+			/// </summary>
 			public IsResourceOfPartProperty IsResourceOfPart { get; } = new IsResourceOfPartProperty();
 			public sealed class IsResourceOfPartProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "IsResourceOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Component"">Component</see> composed of material or personnel involved in a manufacturing process.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

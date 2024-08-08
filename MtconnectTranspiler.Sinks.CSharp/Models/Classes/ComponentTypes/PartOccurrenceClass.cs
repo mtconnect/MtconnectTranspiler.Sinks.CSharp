@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Part">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PartOccurrenceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605547467172_656422_264";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
 		/// <inheritdoc />
 		public string Name => "PartOccurrenceClass";
 		
@@ -46,7 +52,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesProcessTime,
 				ObservesUser,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartId</remarks>
+			/// </summary>
 			public ObservesPartIdProperty ObservesPartId { get; } = new ObservesPartIdProperty();
 			public sealed class ObservesPartIdProperty : IProperty
 			{
@@ -66,6 +75,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPartId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -90,10 +102,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartUniqueIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartUniqueId</remarks>
+			/// </summary>
 			public ObservesPartUniqueIdProperty ObservesPartUniqueId { get; } = new ObservesPartUniqueIdProperty();
 			public sealed class ObservesPartUniqueIdProperty : IProperty
 			{
@@ -113,6 +126,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPartUniqueId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -137,10 +153,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartGroupIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartGroupId</remarks>
+			/// </summary>
 			public ObservesPartGroupIdProperty ObservesPartGroupId { get; } = new ObservesPartGroupIdProperty();
 			public sealed class ObservesPartGroupIdProperty : IProperty
 			{
@@ -160,6 +177,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPartGroupId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -184,10 +204,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartKindIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartKindId</remarks>
+			/// </summary>
 			public ObservesPartKindIdProperty ObservesPartKindId { get; } = new ObservesPartKindIdProperty();
 			public sealed class ObservesPartKindIdProperty : IProperty
 			{
@@ -207,6 +228,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPartKindId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -231,10 +255,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartCountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartCount</remarks>
+			/// </summary>
 			public ObservesPartCountProperty ObservesPartCount { get; } = new ObservesPartCountProperty();
 			public sealed class ObservesPartCountProperty : IProperty
 			{
@@ -254,6 +279,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPartCount";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -278,10 +306,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesPartStatusProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartStatus</remarks>
+			/// </summary>
 			public ObservesPartStatusProperty ObservesPartStatus { get; } = new ObservesPartStatusProperty();
 			public sealed class ObservesPartStatusProperty : IProperty
 			{
@@ -301,6 +330,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesPartStatus";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -325,10 +357,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesProcessOccurrenceIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessOccurrenceId</remarks>
+			/// </summary>
 			public ObservesProcessOccurrenceIdProperty ObservesProcessOccurrenceId { get; } = new ObservesProcessOccurrenceIdProperty();
 			public sealed class ObservesProcessOccurrenceIdProperty : IProperty
 			{
@@ -348,6 +381,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesProcessOccurrenceId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -372,10 +408,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesProcessTimeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessTime</remarks>
+			/// </summary>
 			public ObservesProcessTimeProperty ObservesProcessTime { get; } = new ObservesProcessTimeProperty();
 			public sealed class ObservesProcessTimeProperty : IProperty
 			{
@@ -395,6 +432,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesProcessTime";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -419,10 +459,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesUserProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUser</remarks>
+			/// </summary>
 			public ObservesUserProperty ObservesUser { get; } = new ObservesUserProperty();
 			public sealed class ObservesUserProperty : IProperty
 			{
@@ -442,6 +483,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesUser";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -466,8 +510,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

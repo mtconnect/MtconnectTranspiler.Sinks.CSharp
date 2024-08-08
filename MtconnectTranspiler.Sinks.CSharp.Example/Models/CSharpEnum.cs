@@ -1,10 +1,8 @@
 ﻿using CaseExtensions;
+using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
 using MtconnectTranspiler.Sinks.CSharp.Example;
-using MtconnectTranspiler.Sinks.ScribanTemplates;
 using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {

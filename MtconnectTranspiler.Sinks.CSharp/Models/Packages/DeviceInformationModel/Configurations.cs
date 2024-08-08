@@ -4,9 +4,24 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.Configurations;
 // using Mtconnect;
 
-namespace Mtconnect.DeviceInformationModel {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
-	public class ConfigurationsPackage : IPackage {
+namespace Mtconnect.DeviceInformationModel
+{
+	/// <summary>
+	/// {{figure(Configuration)}} shows the abstract <see cref="Configuration">Configuration</see> and its types.  ![Configuration](figures/Configuration.png "Configuration"){: width="0.8"}  > Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema./// Configurations Model
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public class ConfigurationsPackage : IPackage
+	{
+		/// <inheritdoc />
+		public string ReferenceId => "_19_0_3_91b028d_1579526876433_244855_7626";
+		
+		/// <inheritdoc />
+		public string Name => "Configurations";
+
+		/// <inheritdoc />
+		public string Summary => @"/// {{figure(Configuration)}} shows the abstract <see cref=""Configuration"">Configuration</see> and its types.  ![Configuration](figures/Configuration.png ""Configuration""){: width=""0.8""}  > Note: See <see cref=""Configuration Schema Diagrams"">Configuration Schema Diagrams</see> for XML schema./// Configurations Model";
+
+		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
 			CoordinateSystemsPackage,
 			MotionPackage,
@@ -17,28 +32,69 @@ namespace Mtconnect.DeviceInformationModel {
 			ImageFilesPackage,
 			PowerSourcePackage,
 		};
-
+		
+		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			ConfigurationClass,
 		};
+		#region Packages
 	private Package.CoordinateSystemsPackage _CoordinateSystemsPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.CoordinateSystemsPackage" path="/summary" />
+	/// </summary>
 	public Package.CoordinateSystemsPackage CoordinateSystemsPackage => _CoordinateSystemsPackage ?? (_CoordinateSystemsPackage = new Package.CoordinateSystemsPackage());
+
 	private Package.MotionPackage _MotionPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.MotionPackage" path="/summary" />
+	/// </summary>
 	public Package.MotionPackage MotionPackage => _MotionPackage ?? (_MotionPackage = new Package.MotionPackage());
+
 	private Package.SpecificationsPackage _SpecificationsPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.SpecificationsPackage" path="/summary" />
+	/// </summary>
 	public Package.SpecificationsPackage SpecificationsPackage => _SpecificationsPackage ?? (_SpecificationsPackage = new Package.SpecificationsPackage());
+
 	private Package.SensorPackage _SensorPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.SensorPackage" path="/summary" />
+	/// </summary>
 	public Package.SensorPackage SensorPackage => _SensorPackage ?? (_SensorPackage = new Package.SensorPackage());
+
 	private Package.RelationshipsPackage _RelationshipsPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.RelationshipsPackage" path="/summary" />
+	/// </summary>
 	public Package.RelationshipsPackage RelationshipsPackage => _RelationshipsPackage ?? (_RelationshipsPackage = new Package.RelationshipsPackage());
+
 	private Package.SolidModelPackage _SolidModelPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.SolidModelPackage" path="/summary" />
+	/// </summary>
 	public Package.SolidModelPackage SolidModelPackage => _SolidModelPackage ?? (_SolidModelPackage = new Package.SolidModelPackage());
+
 	private Package.ImageFilesPackage _ImageFilesPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.ImageFilesPackage" path="/summary" />
+	/// </summary>
 	public Package.ImageFilesPackage ImageFilesPackage => _ImageFilesPackage ?? (_ImageFilesPackage = new Package.ImageFilesPackage());
+
 	private Package.PowerSourcePackage _PowerSourcePackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.PowerSourcePackage" path="/summary" />
+	/// </summary>
 	public Package.PowerSourcePackage PowerSourcePackage => _PowerSourcePackage ?? (_PowerSourcePackage = new Package.PowerSourcePackage());
 
+	#endregion
+
+	#region Classes
 	private Package.ConfigurationClass _ConfigurationClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ConfigurationClass" path="/summary" />
+	/// </summary>
 	public Package.ConfigurationClass ConfigurationClass => _ConfigurationClass ?? (_ConfigurationClass = new Package.ConfigurationClass());
+
+	#endregion
 	}
 }

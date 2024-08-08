@@ -4,12 +4,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TransformationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1582233160564_921570_689";
 		
+		/// <inheritdoc />
+		public string Summary => @"";
+
 		/// <inheritdoc />
 		public string Name => "TransformationClass";
 		
@@ -60,7 +63,10 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				Angin,
 				Angout,
 			};
+			/// <summary>
+			/// <inheritdoc cref="XinProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xin</remarks>
+			/// </summary>
 			public XinProperty Xin { get; } = new XinProperty();
 			public sealed class XinProperty : IProperty
 			{
@@ -80,6 +86,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Xin";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -104,10 +113,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="YinProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Yin</remarks>
+			/// </summary>
 			public YinProperty Yin { get; } = new YinProperty();
 			public sealed class YinProperty : IProperty
 			{
@@ -127,6 +137,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Yin";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -151,10 +164,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ZinProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Zin</remarks>
+			/// </summary>
 			public ZinProperty Zin { get; } = new ZinProperty();
 			public sealed class ZinProperty : IProperty
 			{
@@ -174,6 +188,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Zin";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -198,10 +215,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="XoutProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xout</remarks>
+			/// </summary>
 			public XoutProperty Xout { get; } = new XoutProperty();
 			public sealed class XoutProperty : IProperty
 			{
@@ -221,6 +239,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Xout";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -245,10 +266,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="YoutProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Yout</remarks>
+			/// </summary>
 			public YoutProperty Yout { get; } = new YoutProperty();
 			public sealed class YoutProperty : IProperty
 			{
@@ -268,6 +290,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Yout";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -292,10 +317,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ZoutProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Zout</remarks>
+			/// </summary>
 			public ZoutProperty Zout { get; } = new ZoutProperty();
 			public sealed class ZoutProperty : IProperty
 			{
@@ -315,6 +341,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Zout";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -339,10 +368,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="XtProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xt</remarks>
+			/// </summary>
 			public XtProperty Xt { get; } = new XtProperty();
 			public sealed class XtProperty : IProperty
 			{
@@ -362,6 +392,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Xt";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -386,10 +419,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="YtProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Yt</remarks>
+			/// </summary>
 			public YtProperty Yt { get; } = new YtProperty();
 			public sealed class YtProperty : IProperty
 			{
@@ -409,6 +443,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Yt";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -433,10 +470,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ZtProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Zt</remarks>
+			/// </summary>
 			public ZtProperty Zt { get; } = new ZtProperty();
 			public sealed class ZtProperty : IProperty
 			{
@@ -456,6 +494,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Zt";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -480,10 +521,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="XrProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xr</remarks>
+			/// </summary>
 			public XrProperty Xr { get; } = new XrProperty();
 			public sealed class XrProperty : IProperty
 			{
@@ -503,6 +545,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Xr";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -527,10 +572,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="YrProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Yr</remarks>
+			/// </summary>
 			public YrProperty Yr { get; } = new YrProperty();
 			public sealed class YrProperty : IProperty
 			{
@@ -550,6 +596,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Yr";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -574,10 +623,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ZrProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Zr</remarks>
+			/// </summary>
 			public ZrProperty Zr { get; } = new ZrProperty();
 			public sealed class ZrProperty : IProperty
 			{
@@ -597,6 +647,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Zr";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -621,10 +674,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="AinProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Ain</remarks>
+			/// </summary>
 			public AinProperty Ain { get; } = new AinProperty();
 			public sealed class AinProperty : IProperty
 			{
@@ -644,6 +698,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Ain";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -668,10 +725,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="BinProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Bin</remarks>
+			/// </summary>
 			public BinProperty Bin { get; } = new BinProperty();
 			public sealed class BinProperty : IProperty
 			{
@@ -691,6 +749,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Bin";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -715,10 +776,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CinProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Cin</remarks>
+			/// </summary>
 			public CinProperty Cin { get; } = new CinProperty();
 			public sealed class CinProperty : IProperty
 			{
@@ -738,6 +800,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Cin";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -762,10 +827,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="AoutProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Aout</remarks>
+			/// </summary>
 			public AoutProperty Aout { get; } = new AoutProperty();
 			public sealed class AoutProperty : IProperty
 			{
@@ -785,6 +851,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Aout";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -809,10 +878,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="BoutProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Bout</remarks>
+			/// </summary>
 			public BoutProperty Bout { get; } = new BoutProperty();
 			public sealed class BoutProperty : IProperty
 			{
@@ -832,6 +902,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Bout";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -856,10 +929,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CoutProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Cout</remarks>
+			/// </summary>
 			public CoutProperty Cout { get; } = new CoutProperty();
 			public sealed class CoutProperty : IProperty
 			{
@@ -879,6 +953,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Cout";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -903,10 +980,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="XuProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xu</remarks>
+			/// </summary>
 			public XuProperty Xu { get; } = new XuProperty();
 			public sealed class XuProperty : IProperty
 			{
@@ -926,6 +1004,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Xu";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -950,10 +1031,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="YuProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Yu</remarks>
+			/// </summary>
 			public YuProperty Yu { get; } = new YuProperty();
 			public sealed class YuProperty : IProperty
 			{
@@ -973,6 +1055,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Yu";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -997,10 +1082,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ZuProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Zu</remarks>
+			/// </summary>
 			public ZuProperty Zu { get; } = new ZuProperty();
 			public sealed class ZuProperty : IProperty
 			{
@@ -1020,6 +1106,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Zu";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -1044,10 +1133,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="AngProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Ang</remarks>
+			/// </summary>
 			public AngProperty Ang { get; } = new AngProperty();
 			public sealed class AngProperty : IProperty
 			{
@@ -1067,6 +1157,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Ang";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -1091,10 +1184,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="AnginProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Angin</remarks>
+			/// </summary>
 			public AnginProperty Angin { get; } = new AnginProperty();
 			public sealed class AnginProperty : IProperty
 			{
@@ -1114,6 +1208,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angin";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -1138,10 +1235,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="AngoutProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Angout</remarks>
+			/// </summary>
 			public AngoutProperty Angout { get; } = new AngoutProperty();
 			public sealed class AngoutProperty : IProperty
 			{
@@ -1161,6 +1259,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public string Name => "Angout";
 				
 				/// <inheritdoc />
+				public string Summary => @"";
+
+				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
 				/// <inheritdoc />
@@ -1185,8 +1286,6 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
@@ -1195,6 +1294,61 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		/// Constraints
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string Constraints => @"var outx,outy,outz,outux,outuy,outuz;
+var anglist = angin.split('|||');
+var ux,uy,uz,angle,vector;
+
+var xu2,yu2,zu2,xt2,yt2,zt2;
+xu2 = xu;
+yu2 = yu;
+zu2 = zu;
+xt2 = xt;
+yt2 = yt;
+zt2 = zt;                                  
+                               
+              
+if(anglist.length >= 2) {
+  anglist.pop();
+  for (var i = 0; i < anglist.length; i++) {
+    angle = parseFloat(anglist[i].split('|')[0]);
+    vector = anglist[i].split('|')[1];
+    ux = parseFloat(vector.split(',')[0]);
+    uy = parseFloat(vector.split(',')[1]);
+    uz = parseFloat(vector.split(',')[2]);
+
+    outx = xt2*Math.cos(angle*Math.PI/180) + (uy*zt2 -uz*yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
+    outy = yt2*Math.cos(angle*Math.PI/180) + (uz*xt2 -ux*zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
+    outz = zt2*Math.cos(angle*Math.PI/180) + (ux*yt2 -uy*xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
+    xt2 = outx
+    yt2 = outy
+    zt2 = outz
+  
+    outux = xu2*Math.cos(angle*Math.PI/180) + (uy*zu2 -uz*yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
+    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz*xu2 -ux*zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
+    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux*yu2 -uy*xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
+    xu2 = outux
+    yu2 = outuy
+    zu2 = outuz
+}           
+
+}
+
+
+xout = xin + xt2;
+yout = yin + yt2;
+zout = zin + zt2; 
+
+aout = ain + xr + ang*xu;
+bout = bin + yr + ang*yu;
+cout = cin + zr + ang*zu;
+
+var angles = '';
+if(ang != 0) { 
+angles = angin + ang.toString()+'|'+xu2.toString()+ ','+yu2.toString()+ ','+zu2.toString() + '|||';  
+angout = angles;                                                                                
+} else if(ang == 0){
+angout = angin;
+}";
 		/*
 		var outx,outy,outz,outux,outuy,outuz;
 		var anglist = angin.split('|||');

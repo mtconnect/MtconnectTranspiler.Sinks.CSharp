@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.Files
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="AbstractFile">AbstractFile</see> type that provides information about the <see cref="File">File</see> instance and its <i>URL</i>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FileClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1589825359572_789274_577";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
 		/// <inheritdoc />
 		public string Name => "FileClass";
 		
@@ -47,8 +53,14 @@ namespace Mtconnect.AssetInformationModel.Files
 				HasLocationPart,
 				HasDestinationPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="SizeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Size</remarks>
+			/// </summary>
 			public SizeProperty Size { get; } = new SizeProperty();
+			/// <summary>
+			/// size of the file in bytes.
+			/// </summary>
 			public sealed class SizeProperty : IProperty
 			{
 				/// <summary>
@@ -67,6 +79,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "Size";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -91,11 +106,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="VersionIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: VersionId</remarks>
+			/// </summary>
 			public VersionIdProperty VersionId { get; } = new VersionIdProperty();
+			/// <summary>
+			/// version identifier of the file. 
+			/// </summary>
 			public sealed class VersionIdProperty : IProperty
 			{
 				/// <summary>
@@ -114,6 +133,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "VersionId";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -138,11 +160,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="StateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: State</remarks>
+			/// </summary>
 			public StateProperty State { get; } = new StateProperty();
+			/// <summary>
+			/// state of the file. 
+			/// </summary>
 			public sealed class StateProperty : IProperty
 			{
 				/// <summary>
@@ -161,6 +187,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "State";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -185,11 +214,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SignatureProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Signature</remarks>
+			/// </summary>
 			public SignatureProperty Signature { get; } = new SignatureProperty();
+			/// <summary>
+			/// secure hash of the file.
+			/// </summary>
 			public sealed class SignatureProperty : IProperty
 			{
 				/// <summary>
@@ -208,6 +241,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "Signature";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -232,11 +268,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="PublicKeyProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: PublicKey</remarks>
+			/// </summary>
 			public PublicKeyProperty PublicKey { get; } = new PublicKeyProperty();
+			/// <summary>
+			/// public key used to verify the signature.
+			/// </summary>
 			public sealed class PublicKeyProperty : IProperty
 			{
 				/// <summary>
@@ -255,6 +295,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "PublicKey";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -279,11 +322,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CreationTimeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CreationTime</remarks>
+			/// </summary>
 			public CreationTimeProperty CreationTime { get; } = new CreationTimeProperty();
+			/// <summary>
+			/// time the file was created.
+			/// </summary>
 			public sealed class CreationTimeProperty : IProperty
 			{
 				/// <summary>
@@ -302,6 +349,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "CreationTime";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -326,11 +376,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ModificationTimeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ModificationTime</remarks>
+			/// </summary>
 			public ModificationTimeProperty ModificationTime { get; } = new ModificationTimeProperty();
+			/// <summary>
+			/// time the file was modified.
+			/// </summary>
 			public sealed class ModificationTimeProperty : IProperty
 			{
 				/// <summary>
@@ -349,6 +403,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "ModificationTime";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -373,10 +430,11 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasLocationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasLocation</remarks>
+			/// </summary>
 			public HasLocationPartProperty HasLocationPart { get; } = new HasLocationPartProperty();
 			public sealed class HasLocationPartProperty : IProperty
 			{
@@ -395,6 +453,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <inheritdoc />
 				public string Name => "HasLocation";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -420,10 +481,11 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasDestinationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDestination</remarks>
+			/// </summary>
 			public HasDestinationPartProperty HasDestinationPart { get; } = new HasDestinationPartProperty();
 			public sealed class HasDestinationPartProperty : IProperty
 			{
@@ -442,6 +504,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <inheritdoc />
 				public string Name => "HasDestination";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -467,8 +532,6 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

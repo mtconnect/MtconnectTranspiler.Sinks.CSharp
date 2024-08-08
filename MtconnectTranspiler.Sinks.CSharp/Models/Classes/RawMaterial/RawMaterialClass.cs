@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.RawMaterial
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Asset">Asset</see> that represents <i>raw material</i>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class RawMaterialClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1618829902716_470188_214";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
 		/// <inheritdoc />
 		public string Name => "RawMaterialClass";
 		
@@ -54,8 +60,14 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				CurrentDimension,
 				CurrentQuantity,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// name of the <i>raw material</i>.  Examples: <c>Container1</c> and <c>AcrylicContainer</c>.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -74,6 +86,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "Name";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -98,11 +113,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ContainerTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ContainerType</remarks>
+			/// </summary>
 			public ContainerTypeProperty ContainerType { get; } = new ContainerTypeProperty();
+			/// <summary>
+			/// type of container holding the <i>raw material</i>.   Examples: <c>Pallet</c>, <c>Canister</c>, <c>Cartridge</c>, <c>Tank</c>, <c>Bin</c>, <c>Roll</c>, and <c>Spool</c>.
+			/// </summary>
 			public sealed class ContainerTypeProperty : IProperty
 			{
 				/// <summary>
@@ -121,6 +140,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "ContainerType";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -145,11 +167,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ProcessKindProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ProcessKind</remarks>
+			/// </summary>
 			public ProcessKindProperty ProcessKind { get; } = new ProcessKindProperty();
+			/// <summary>
+			/// ISO process type supported by this <i>raw material</i>.   Examples include: <c>VAT_POLYMERIZATION</c>, <c>BINDER_JETTING</c>, <c>MATERIAL_EXTRUSION</c>, <c>MATERIAL_JETTING</c>, <c>SHEET_LAMINATION</c>, <c>POWDER_BED_FUSION</c> and <c>DIRECTED_ENERGY_DEPOSITION</c>.
+			/// </summary>
 			public sealed class ProcessKindProperty : IProperty
 			{
 				/// <summary>
@@ -168,6 +194,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "ProcessKind";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -192,11 +221,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="SerialNumberProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SerialNumber</remarks>
+			/// </summary>
 			public SerialNumberProperty SerialNumber { get; } = new SerialNumberProperty();
+			/// <summary>
+			/// serial number of the <i>raw material</i>.
+			/// </summary>
 			public sealed class SerialNumberProperty : IProperty
 			{
 				/// <summary>
@@ -215,6 +248,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "SerialNumber";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -239,11 +275,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasMaterialProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasMaterial</remarks>
+			/// </summary>
 			public HasMaterialProperty HasMaterial { get; } = new HasMaterialProperty();
+			/// <summary>
+			/// <see cref="Material">Material</see> has existing usable volume.
+			/// </summary>
 			public sealed class HasMaterialProperty : IProperty
 			{
 				/// <summary>
@@ -262,6 +302,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "HasMaterial";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -286,10 +329,11 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasMaterialPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasMaterial</remarks>
+			/// </summary>
 			public HasMaterialPartProperty HasMaterialPart { get; } = new HasMaterialPartProperty();
 			public sealed class HasMaterialPartProperty : IProperty
 			{
@@ -308,6 +352,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				/// <inheritdoc />
 				public string Name => "HasMaterial";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -333,11 +380,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="FormProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Form</remarks>
+			/// </summary>
 			public FormProperty Form { get; } = new FormProperty();
+			/// <summary>
+			/// form of the <i>raw material</i>.
+			/// </summary>
 			public sealed class FormProperty : IProperty
 			{
 				/// <summary>
@@ -356,6 +407,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "Form";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -380,11 +434,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ManufacturingDateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ManufacturingDate</remarks>
+			/// </summary>
 			public ManufacturingDateProperty ManufacturingDate { get; } = new ManufacturingDateProperty();
+			/// <summary>
+			/// date the <i>raw material</i> was created.
+			/// </summary>
 			public sealed class ManufacturingDateProperty : IProperty
 			{
 				/// <summary>
@@ -403,6 +461,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "ManufacturingDate";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -427,11 +488,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="FirstUseDateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: FirstUseDate</remarks>
+			/// </summary>
 			public FirstUseDateProperty FirstUseDate { get; } = new FirstUseDateProperty();
+			/// <summary>
+			/// date <i>raw material</i> was first used.
+			/// </summary>
 			public sealed class FirstUseDateProperty : IProperty
 			{
 				/// <summary>
@@ -450,6 +515,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "FirstUseDate";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -474,11 +542,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="LastUseDateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LastUseDate</remarks>
+			/// </summary>
 			public LastUseDateProperty LastUseDate { get; } = new LastUseDateProperty();
+			/// <summary>
+			/// date <i>raw material</i> was last used.
+			/// </summary>
 			public sealed class LastUseDateProperty : IProperty
 			{
 				/// <summary>
@@ -497,6 +569,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "LastUseDate";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -521,11 +596,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="InitialVolumeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: InitialVolume</remarks>
+			/// </summary>
 			public InitialVolumeProperty InitialVolume { get; } = new InitialVolumeProperty();
+			/// <summary>
+			/// amount of material initially placed in <i>raw material</i> when manufactured.
+			/// </summary>
 			public sealed class InitialVolumeProperty : IProperty
 			{
 				/// <summary>
@@ -544,6 +623,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "InitialVolume";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -568,11 +650,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="InitialDimensionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: InitialDimension</remarks>
+			/// </summary>
 			public InitialDimensionProperty InitialDimension { get; } = new InitialDimensionProperty();
+			/// <summary>
+			/// dimension of material initially placed in <i>raw material</i> when manufactured.
+			/// </summary>
 			public sealed class InitialDimensionProperty : IProperty
 			{
 				/// <summary>
@@ -591,6 +677,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "InitialDimension";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -615,11 +704,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="InitialQuantityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: InitialQuantity</remarks>
+			/// </summary>
 			public InitialQuantityProperty InitialQuantity { get; } = new InitialQuantityProperty();
+			/// <summary>
+			/// quantity of material initially placed in <i>raw material</i> when manufactured.
+			/// </summary>
 			public sealed class InitialQuantityProperty : IProperty
 			{
 				/// <summary>
@@ -638,6 +731,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "InitialQuantity";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -662,11 +758,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CurrentVolumeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CurrentVolume</remarks>
+			/// </summary>
 			public CurrentVolumeProperty CurrentVolume { get; } = new CurrentVolumeProperty();
+			/// <summary>
+			/// amount of material currently in <i>raw material</i>.
+			/// </summary>
 			public sealed class CurrentVolumeProperty : IProperty
 			{
 				/// <summary>
@@ -685,6 +785,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "CurrentVolume";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -709,11 +812,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CurrentDimensionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CurrentDimension</remarks>
+			/// </summary>
 			public CurrentDimensionProperty CurrentDimension { get; } = new CurrentDimensionProperty();
+			/// <summary>
+			/// dimension of material currently in <i>raw material</i>.
+			/// </summary>
 			public sealed class CurrentDimensionProperty : IProperty
 			{
 				/// <summary>
@@ -731,6 +838,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				/// <inheritdoc />
 				public string Name => "CurrentDimension";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -756,11 +866,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="CurrentQuantityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CurrentQuantity</remarks>
+			/// </summary>
 			public CurrentQuantityProperty CurrentQuantity { get; } = new CurrentQuantityProperty();
+			/// <summary>
+			/// quantity of material currently in <i>raw material</i>.
+			/// </summary>
 			public sealed class CurrentQuantityProperty : IProperty
 			{
 				/// <summary>
@@ -778,6 +892,9 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				/// <inheritdoc />
 				public string Name => "CurrentQuantity";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -803,8 +920,6 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

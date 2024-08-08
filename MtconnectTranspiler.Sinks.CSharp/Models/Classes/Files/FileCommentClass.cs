@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.Files
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// remark or interpretation for human interpretation associated with a <see cref="File">File</see> or <see cref="FileArchetype">FileArchetype</see>.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FileCommentClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605276197212_1938_196";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// remark or interpretation for human interpretation associated with a <see cref=""File"">File</see> or <see cref=""FileArchetype"">FileArchetype</see>.";
+
 		/// <inheritdoc />
 		public string Name => "FileCommentClass";
 		
@@ -38,8 +44,14 @@ namespace Mtconnect.AssetInformationModel.Files
 				Timestamp,
 				Value,
 			};
+			/// <summary>
+			/// <inheritdoc cref="TimestampProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Timestamp</remarks>
+			/// </summary>
 			public TimestampProperty Timestamp { get; } = new TimestampProperty();
+			/// <summary>
+			/// time the comment was made.
+			/// </summary>
 			public sealed class TimestampProperty : IProperty
 			{
 				/// <summary>
@@ -58,6 +70,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "Timestamp";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// remark or interpretation for human interpretation associated with a <see cref=""File"">File</see> or <see cref=""FileArchetype"">FileArchetype</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -82,11 +97,15 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
+			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			/// <summary>
+			/// text of the comment about the file.
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>
@@ -105,6 +124,9 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "Value";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// remark or interpretation for human interpretation associated with a <see cref=""File"">File</see> or <see cref=""FileArchetype"">FileArchetype</see>.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -129,8 +151,6 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

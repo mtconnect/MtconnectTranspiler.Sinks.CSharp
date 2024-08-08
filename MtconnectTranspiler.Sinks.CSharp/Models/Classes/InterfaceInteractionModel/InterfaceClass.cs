@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.InterfaceInteractionModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// abstract <see cref="Component">Component</see> that coordinates actions and activities between pieces of equipment. 
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class InterfaceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381996_964170_42252";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// abstract <see cref=""Component"">Component</see> that coordinates actions and activities between pieces of equipment. ";
+
 		/// <inheritdoc />
 		public string Name => "InterfaceClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.InterfaceInteractionModel
 				IsInterfaceOfPart,
 				ObservesInterfaceState,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IsInterfaceOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsInterfaceOf</remarks>
+			/// </summary>
 			public IsInterfaceOfPartProperty IsInterfaceOfPart { get; } = new IsInterfaceOfPartProperty();
 			public sealed class IsInterfaceOfPartProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.InterfaceInteractionModel
 				/// <inheritdoc />
 				public string Name => "IsInterfaceOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Component"">Component</see> that coordinates actions and activities between pieces of equipment. ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -84,10 +96,11 @@ namespace Mtconnect.InterfaceInteractionModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesInterfaceStateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesInterfaceState</remarks>
+			/// </summary>
 			public ObservesInterfaceStateProperty ObservesInterfaceState { get; } = new ObservesInterfaceStateProperty();
 			public sealed class ObservesInterfaceStateProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.InterfaceInteractionModel
 				/// <inheritdoc />
 				public string Name => "ObservesInterfaceState";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// abstract <see cref=""Component"">Component</see> that coordinates actions and activities between pieces of equipment. ";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -131,8 +147,6 @@ namespace Mtconnect.InterfaceInteractionModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

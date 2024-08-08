@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Resource">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. 
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PersonnelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382005_168835_42270";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";
+
 		/// <inheritdoc />
 		public string Name => "PersonnelClass";
 		
@@ -39,7 +45,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesUserOperator,
 				ObservesUserMaintenance,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesUserOperatorProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUserOperator</remarks>
+			/// </summary>
 			public ObservesUserOperatorProperty ObservesUserOperator { get; } = new ObservesUserOperatorProperty();
 			public sealed class ObservesUserOperatorProperty : IProperty
 			{
@@ -59,6 +68,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesUserOperator";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -83,10 +95,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesUserMaintenanceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUserMaintenance</remarks>
+			/// </summary>
 			public ObservesUserMaintenanceProperty ObservesUserMaintenance { get; } = new ObservesUserMaintenanceProperty();
 			public sealed class ObservesUserMaintenanceProperty : IProperty
 			{
@@ -106,6 +119,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesUserMaintenance";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -130,8 +146,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

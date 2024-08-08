@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="ToolingDelivery">ToolingDelivery</see> composed of a linear or matrixed tool storage mechanism that holds any number of tools./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ToolRackClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605551899241_174607_2546";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""ToolingDelivery"">ToolingDelivery</see> composed of a linear or matrixed tool storage mechanism that holds any number of tools./// Description";
+
 		/// <inheritdoc />
 		public string Name => "ToolRackClass";
 		

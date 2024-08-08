@@ -1,5 +1,4 @@
 ﻿using MtconnectTranspiler.Xmi;
-using MtconnectTranspiler.Sinks.Models;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {

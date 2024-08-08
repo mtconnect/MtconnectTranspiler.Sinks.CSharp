@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Observation">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConditionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531113_85883_25726";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
 		/// <inheritdoc />
 		public string Name => "ConditionClass";
 		
@@ -47,8 +53,14 @@ namespace Mtconnect.ObservationInformationModel
 				Type,
 				ConditionId,
 			};
+			/// <summary>
+			/// <inheritdoc cref="NativeCodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeCode</remarks>
+			/// </summary>
 			public NativeCodeProperty NativeCode { get; } = new NativeCodeProperty();
+			/// <summary>
+			/// native code is the proprietary identifier designating a specific alarm, fault or warning code provided by the piece of equipment.
+			/// </summary>
 			public sealed class NativeCodeProperty : IProperty
 			{
 				/// <summary>
@@ -67,6 +79,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "NativeCode";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -91,11 +106,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NativeSeverityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeSeverity</remarks>
+			/// </summary>
 			public NativeSeverityProperty NativeSeverity { get; } = new NativeSeverityProperty();
+			/// <summary>
+			/// severity information to a client software application if the piece of equipment designates a severity level to a fault.
+			/// </summary>
 			public sealed class NativeSeverityProperty : IProperty
 			{
 				/// <summary>
@@ -114,6 +133,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "NativeSeverity";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -138,11 +160,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="QualifierProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Qualifier</remarks>
+			/// </summary>
 			public QualifierProperty Qualifier { get; } = new QualifierProperty();
+			/// <summary>
+			/// additional information regarding a <i>condition state</i> associated with the measured value of a process variable.  <see cref="Condition::qualifier" /> defines whether the <i>condition state</i> represented indicates a measured value that is above or below an expected value of a process variable.
+			/// </summary>
 			public sealed class QualifierProperty : IProperty
 			{
 				/// <summary>
@@ -161,6 +187,9 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "Qualifier";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -185,11 +214,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="StatisticProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Statistic</remarks>
+			/// </summary>
 			public StatisticProperty Statistic { get; } = new StatisticProperty();
+			/// <summary>
+			/// <see cref="Condition::statistic" /> provides additional information describing the meaning of the <see cref="Condition">Condition</see> entity.  <see cref="Condition::statistic" /> <b>MUST</b> match the <see cref="DataItem::statistic" /> defined in the <i>MTConnectDevices Response Document</i>.
+			/// </summary>
 			public sealed class StatisticProperty : IProperty
 			{
 				/// <summary>
@@ -207,6 +240,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Statistic";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -232,11 +268,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="Xs_LangProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xs:Lang</remarks>
+			/// </summary>
 			public Xs_LangProperty Xs_Lang { get; } = new Xs_LangProperty();
+			/// <summary>
+			/// specifies the language of the <see cref="Observation::result" /> returned for the <see cref="Condition">Condition</see>.   See <seealso href="https://www.google.com/search?q=IETF RFC 4646&btnI=I">IETF RFC 4646</seealso> (http://www.ietf.org/rfc/rfc4646.txt).
+			/// </summary>
 			public sealed class Xs_LangProperty : IProperty
 			{
 				/// <summary>
@@ -254,6 +294,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Xs:Lang";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -279,10 +322,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="OrganizedByComponentStreamPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizedByComponentStream</remarks>
+			/// </summary>
 			public OrganizedByComponentStreamPartProperty OrganizedByComponentStreamPart { get; } = new OrganizedByComponentStreamPartProperty();
 			public sealed class OrganizedByComponentStreamPartProperty : IProperty
 			{
@@ -301,6 +345,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "OrganizedByComponentStream";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -326,11 +373,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="StateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: State</remarks>
+			/// </summary>
 			public StateProperty State { get; } = new StateProperty();
+			/// <summary>
+			/// <i>condition state</i> of the piece of equipment or <see cref="Component">Component</see>.
+			/// </summary>
 			public sealed class StateProperty : IProperty
 			{
 				/// <summary>
@@ -348,6 +399,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "State";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -373,10 +427,11 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
+			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			public sealed class TypeProperty : IProperty
 			{
@@ -395,6 +450,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "Type";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -420,11 +478,15 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ConditionIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ConditionId</remarks>
+			/// </summary>
 			public ConditionIdProperty ConditionId { get; } = new ConditionIdProperty();
+			/// <summary>
+			/// identifier of an individual <i>condition activation</i> provided by a piece of equipment.  <see cref="Condition::conditionId" /> <b>MUST</b> be unique for all concurrent {{termpl(condition activation)}}.  <see cref="Condition::conditionId" /> <b>MUST</b> be maintained for all state transitions related to the same <i>condition activation</i>.  Multiple <see cref="Condition::conditionId" />s <b>MAY</b> exist for the same <see cref="nativeCode" />.  If <see cref="Condition::conditionId" /> is not given, the value is the <see cref="Condition::nativeCode" />. If <see cref="Condition::nativeCode" /> and <see cref="Condition::conditionId" /> are not given, <see cref="Condition::conditionId" /> <b>MUST</b> be generated.
+			/// </summary>
 			public sealed class ConditionIdProperty : IProperty
 			{
 				/// <summary>
@@ -442,6 +504,9 @@ namespace Mtconnect.ObservationInformationModel
 				/// <inheritdoc />
 				public string Name => "ConditionId";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Observation"">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.  /// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -467,8 +532,6 @@ namespace Mtconnect.ObservationInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

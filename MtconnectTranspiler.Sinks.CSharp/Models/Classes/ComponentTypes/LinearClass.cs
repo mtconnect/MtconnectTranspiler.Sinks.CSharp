@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component Types::Axis">Component Types::Axis</see> that provides prismatic motion along a fixed axis.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LinearClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381997_851399_42255";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides prismatic motion along a fixed axis.";
+
 		/// <inheritdoc />
 		public string Name => "LinearClass";
 		
@@ -40,7 +46,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesTemperature,
 				ObservesAxisFeedrateActual,
 			};
+			/// <summary>
+			/// <inheritdoc cref="ObservesLoadProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesLoad</remarks>
+			/// </summary>
 			public ObservesLoadProperty ObservesLoad { get; } = new ObservesLoadProperty();
 			public sealed class ObservesLoadProperty : IProperty
 			{
@@ -60,6 +69,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesLoad";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides prismatic motion along a fixed axis.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -84,10 +96,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesTemperatureProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesTemperature</remarks>
+			/// </summary>
 			public ObservesTemperatureProperty ObservesTemperature { get; } = new ObservesTemperatureProperty();
 			public sealed class ObservesTemperatureProperty : IProperty
 			{
@@ -107,6 +120,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesTemperature";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides prismatic motion along a fixed axis.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -131,10 +147,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="ObservesAxisFeedrateActualProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesAxisFeedrateActual</remarks>
+			/// </summary>
 			public ObservesAxisFeedrateActualProperty ObservesAxisFeedrateActual { get; } = new ObservesAxisFeedrateActualProperty();
 			public sealed class ObservesAxisFeedrateActualProperty : IProperty
 			{
@@ -154,6 +171,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "ObservesAxisFeedrateActual";
 				
 				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides prismatic motion along a fixed axis.";
+
+				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
 				/// <inheritdoc />
@@ -178,8 +198,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

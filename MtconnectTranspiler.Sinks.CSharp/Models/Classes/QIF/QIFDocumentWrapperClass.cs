@@ -6,12 +6,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.QIF
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Asset">Asset</see> that carries the QIF Document.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class QIFDocumentWrapperClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622119541205_751450_1761";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";
+
 		/// <inheritdoc />
 		public string Name => "QIFDocumentWrapperClass";
 		
@@ -40,8 +46,14 @@ namespace Mtconnect.AssetInformationModel.QIF
 				QifDocumentType,
 				HasQIFDocumentPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="QifDocumentTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: QifDocumentType</remarks>
+			/// </summary>
 			public QifDocumentTypeProperty QifDocumentType { get; } = new QifDocumentTypeProperty();
+			/// <summary>
+			/// contained QIF Document type as defined in the <i>QIF</i> Standard.
+			/// </summary>
 			public sealed class QifDocumentTypeProperty : IProperty
 			{
 				/// <summary>
@@ -59,6 +71,9 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <inheritdoc />
 				public string Name => "QifDocumentType";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -84,10 +99,11 @@ namespace Mtconnect.AssetInformationModel.QIF
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="HasQIFDocumentPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasQIFDocument</remarks>
+			/// </summary>
 			public HasQIFDocumentPartProperty HasQIFDocumentPart { get; } = new HasQIFDocumentPartProperty();
 			public sealed class HasQIFDocumentPartProperty : IProperty
 			{
@@ -106,6 +122,9 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <inheritdoc />
 				public string Name => "HasQIFDocument";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -131,8 +150,6 @@ namespace Mtconnect.AssetInformationModel.QIF
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

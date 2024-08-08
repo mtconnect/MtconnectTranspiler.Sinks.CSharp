@@ -4,12 +4,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.RelationshipTypesForDataItem
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// association between a <see cref="DataItem">DataItem</see> and another entity./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AbstractDataItemRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1658942187874_859516_1061";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";
+
 		/// <inheritdoc />
 		public string Name => "AbstractDataItemRelationshipClass";
 		
@@ -38,8 +44,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				IdRef,
 				Name,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IdRef</remarks>
+			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
+			/// <summary>
+			/// reference to the related entity's <c>id</c>. 
+			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
 				/// <summary>
@@ -57,6 +69,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				/// <inheritdoc />
 				public string Name => "IdRef";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -82,11 +97,15 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
+			/// <summary>
+			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
+			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
+			/// <summary>
+			/// descriptive name associated with this <see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see>.
+			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
 				/// <summary>
@@ -104,6 +123,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				/// <inheritdoc />
 				public string Name => "Name";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "public";
 				
@@ -129,8 +151,6 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 

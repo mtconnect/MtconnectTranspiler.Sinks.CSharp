@@ -5,12 +5,18 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "1.0.15.3")]
+	/// <summary>
+	/// <see cref="Component">Component</see> that provides information about the data source for an <i>MTConnect Agent</i>./// Description
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AdapterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605101651646_782838_139";
 		
+		/// <inheritdoc />
+		public string Summary => @"/// <see cref=""Component"">Component</see> that provides information about the data source for an <i>MTConnect Agent</i>./// Description";
+
 		/// <inheritdoc />
 		public string Name => "AdapterClass";
 		
@@ -38,7 +44,10 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public IProperty[] Properties => new IProperty[] {
 				IsAdapterOfPart,
 			};
+			/// <summary>
+			/// <inheritdoc cref="IsAdapterOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsAdapterOf</remarks>
+			/// </summary>
 			public IsAdapterOfPartProperty IsAdapterOfPart { get; } = new IsAdapterOfPartProperty();
 			public sealed class IsAdapterOfPartProperty : IProperty
 			{
@@ -57,6 +66,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <inheritdoc />
 				public string Name => "IsAdapterOf";
 				
+				/// <inheritdoc />
+				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information about the data source for an <i>MTConnect Agent</i>./// Description";
+
 				/// <inheritdoc />
 				public string AccessModifier => "private";
 				
@@ -82,8 +94,6 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => "";
-
-				// TODO: Add Summary
 			}
 		};
 
