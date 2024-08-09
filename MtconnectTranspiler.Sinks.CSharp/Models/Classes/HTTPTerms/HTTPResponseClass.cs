@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 {
 	/// <summary>
 	/// after receiving and interpreting a request message, a server responds with an HTTP response message. <seealso href="https://www.google.com/search?q=IETF:RFC-2616&btnI=I">IETF:RFC-2616</seealso>  > Note: In MTConnect Standard, the information published from an <i>agent</i> in reply to an <i>HTTP Request</i>.   
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375164_626060_2009">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class HTTPResponseClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public string Summary => @"/// after receiving and interpreting a request message, a server responds with an HTTP response message. <seealso href=""https://www.google.com/search?q=IETF:RFC-2616&btnI=I"">IETF:RFC-2616</seealso>  > Note: In MTConnect Standard, the information published from an <i>agent</i> in reply to an <i>HTTP Request</i>.   ";
 
 		/// <inheritdoc />
-		public string Name => "HTTPResponseClass";
+		public string Name => "HTTP Response";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public HTTPResponseClassProperties Properties { get; } = new HTTPResponseClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class HTTPResponseClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

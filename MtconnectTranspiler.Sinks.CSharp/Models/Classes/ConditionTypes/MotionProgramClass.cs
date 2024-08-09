@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 {
 	/// <summary>
 	/// <see cref="ConditionEnum::MOTION_PROGRAM">ConditionEnum::MOTION_PROGRAM</see>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1598552917043_472168_592">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MotionProgramClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 		public string Summary => @"/// <see cref=""ConditionEnum::MOTION_PROGRAM"">ConditionEnum::MOTION_PROGRAM</see>";
 
 		/// <inheritdoc />
-		public string Name => "MotionProgramClass";
+		public string Name => "MotionProgram";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531113_85883_25726";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531113_85883_25726
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ConditionClass);
 
 		/// <inheritdoc />
 		public MotionProgramClassProperties Properties { get; } = new MotionProgramClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MotionProgramClassProperties : IPropertyList
+		public class MotionProgramClassProperties : Mtconnect.ObservationInformationModel.ConditionClass.ConditionClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Type,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""ConditionEnum::MOTION_PROGRAM"">ConditionEnum::MOTION_PROGRAM</see>";
@@ -93,7 +97,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "MOTION_PROGRAM";
 			}
 		};
 

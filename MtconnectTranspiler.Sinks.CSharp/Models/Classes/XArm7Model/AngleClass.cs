@@ -14,7 +14,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "AngleClass";
+		public string Name => "Angle";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,12 +29,12 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public AngleClassProperties Properties { get; } = new AngleClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AngleClassProperties : IPropertyList
+		public class AngleClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -60,7 +60,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Angle";
+				public string Name => "angle";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

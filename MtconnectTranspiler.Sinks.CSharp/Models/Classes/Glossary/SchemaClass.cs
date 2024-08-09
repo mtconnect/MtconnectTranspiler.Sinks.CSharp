@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// definition of the structure, rules, and vocabularies used to define the information published in an electronic document.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375184_91838_2082">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SchemaClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// definition of the structure, rules, and vocabularies used to define the information published in an electronic document.";
 
 		/// <inheritdoc />
-		public string Name => "SchemaClass";
+		public string Name => "schema";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public SchemaClassProperties Properties { get; } = new SchemaClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class SchemaClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790698_38973_162860";
 		
 		/// <inheritdoc />
-		public string Name => "BasicThermodynamicTemperature";
+		public string Name => "Basic Thermodynamic Temperature";
 
 		/// <inheritdoc />
 		public string Summary => @"";

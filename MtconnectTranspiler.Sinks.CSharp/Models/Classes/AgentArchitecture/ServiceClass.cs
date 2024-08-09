@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ServiceClass";
+		public string Name => "Service";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,12 +29,12 @@ namespace Mtconnect.AgentArchitecture
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ServiceClassProperties Properties { get; } = new ServiceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ServiceClassProperties : IPropertyList
+		public class ServiceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -61,7 +61,7 @@ namespace Mtconnect.AgentArchitecture
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Services";
+				public string Name => "services";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -112,7 +112,7 @@ namespace Mtconnect.AgentArchitecture
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

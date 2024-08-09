@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790710_824663_163207";
 		
 		/// <inheritdoc />
-		public string Name => "BasicLuminance";
+		public string Name => "Basic Luminance";
 
 		/// <inheritdoc />
 		public string Summary => @"";

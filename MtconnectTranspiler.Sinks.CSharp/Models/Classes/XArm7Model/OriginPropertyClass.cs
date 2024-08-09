@@ -1,7 +1,6 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model
 {
@@ -15,7 +14,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "OriginPropertyClass";
+		public string Name => "OriginProperty";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -30,12 +29,12 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public OriginPropertyClassProperties Properties { get; } = new OriginPropertyClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class OriginPropertyClassProperties : IPropertyList
+		public class OriginPropertyClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -66,7 +65,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.ParentCoordinatesClass);
 				
 				/// <inheritdoc />
-				public string Name => "ParentCoordinates";
+				public string Name => "parentCoordinates";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -117,7 +116,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPositionGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "Origin";
+				public string Name => "origin";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -168,7 +167,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.RotationVectorGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "RotationVector";
+				public string Name => "rotationVector";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -219,7 +218,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.TranslationVectorGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "TranslationVector";
+				public string Name => "translationVector";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -270,7 +269,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.TransformationClass);
 				
 				/// <inheritdoc />
-				public string Name => "Transform";
+				public string Name => "transform";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -321,7 +320,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AxisClass);
 				
 				/// <inheritdoc />
-				public string Name => "UnitVector";
+				public string Name => "unitVector";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

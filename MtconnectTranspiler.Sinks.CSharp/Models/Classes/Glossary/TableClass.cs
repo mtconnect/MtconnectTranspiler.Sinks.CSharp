@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// two dimensional set of values given by a set of <i>key-value pair</i>s <i>table entry</i>s. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375188_845789_2098">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TableClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// two dimensional set of values given by a set of <i>key-value pair</i>s <i>table entry</i>s. ";
 
 		/// <inheritdoc />
-		public string Name => "TableClass";
+		public string Name => "table";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public TableClassProperties Properties { get; } = new TableClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class TableClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

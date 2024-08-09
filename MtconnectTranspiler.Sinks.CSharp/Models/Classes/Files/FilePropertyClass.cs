@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.Files
 {
 	/// <summary>
 	/// key-value pair providing additional metadata about a <see cref="File">File</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1589825710107_976904_827">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FilePropertyClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string Summary => @"/// key-value pair providing additional metadata about a <see cref=""File"">File</see>.";
 
 		/// <inheritdoc />
-		public string Name => "FilePropertyClass";
+		public string Name => "FileProperty";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public FilePropertyClassProperties Properties { get; } = new FilePropertyClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class FilePropertyClassProperties : IPropertyList
+		public class FilePropertyClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +68,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// key-value pair providing additional metadata about a <see cref=""File"">File</see>.";
@@ -121,7 +122,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// key-value pair providing additional metadata about a <see cref=""File"">File</see>.";

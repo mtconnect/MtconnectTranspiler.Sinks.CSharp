@@ -14,7 +14,7 @@ namespace Mtconnect.Imports.CSVImports
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "PropertyMapClass";
+		public string Name => "PropertyMap";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,12 +29,12 @@ namespace Mtconnect.Imports.CSVImports
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public PropertyMapClassProperties Properties { get; } = new PropertyMapClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PropertyMapClassProperties : IPropertyList
+		public class PropertyMapClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -62,7 +62,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "PropertyName";
+				public string Name => "propertyName";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -113,7 +113,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "StereotypeName";
+				public string Name => "stereotypeName";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -164,7 +164,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "ColumnIndex";
+				public string Name => "columnIndex";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

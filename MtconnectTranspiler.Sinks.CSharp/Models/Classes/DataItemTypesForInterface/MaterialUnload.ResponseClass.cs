@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
 	/// <summary>
 	/// operating state of the <i>response</i> to a <i>request</i> to unload a piece of material or product.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623846333302_943133_2729">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MaterialUnloadResponseClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to unload a piece of material or product.";
 
 		/// <inheritdoc />
-		public string Name => "MaterialUnload.ResponseClass";
+		public string Name => "MaterialUnload.Response";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580378218354_760416_1932";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580378218354_760416_1932
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.MaterialUnloadClass);
 
 		/// <inheritdoc />
 		public MaterialUnloadResponseClassProperties Properties { get; } = new MaterialUnloadResponseClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MaterialUnloadResponseClassProperties : IPropertyList
+		public class MaterialUnloadResponseClassProperties : Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.MaterialUnloadClass.MaterialUnloadClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to unload a piece of material or product.";
@@ -94,7 +98,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "RESPONSE";
 			}
 			/// <summary>
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public System.Type Type => typeof(Mtconnect.DataTypes.ResponseStateEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to unload a piece of material or product.";

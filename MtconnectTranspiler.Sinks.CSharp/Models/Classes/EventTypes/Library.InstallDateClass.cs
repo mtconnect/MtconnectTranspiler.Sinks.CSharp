@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// date the hardware or software was installed.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587751252599_980795_2580">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LibraryInstallDateClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// date the hardware or software was installed.";
 
 		/// <inheritdoc />
-		public string Name => "Library.InstallDateClass";
+		public string Name => "Library.InstallDate";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_91b028d_1587751252597_838265_2577";
+		/// <remarks>
+		/// Original Type: _19_0_3_91b028d_1587751252597_838265_2577
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LibraryClass);
 
 		/// <inheritdoc />
 		public LibraryInstallDateClassProperties Properties { get; } = new LibraryInstallDateClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class LibraryInstallDateClassProperties : IPropertyList
+		public class LibraryInstallDateClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LibraryClass.LibraryClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// date the hardware or software was installed.";
@@ -94,7 +98,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "INSTALL_DATE";
 			}
 			/// <summary>
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// date the hardware or software was installed.";

@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
 	/// C Scale weighting factor
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218445_300012_2181">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SoundLevelCScaleClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public string Summary => @"/// C Scale weighting factor";
 
 		/// <inheritdoc />
-		public string Name => "SoundLevel.CScaleClass";
+		public string Name => "SoundLevel.CScale";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580378218442_613083_2169";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580378218442_613083_2169
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.SoundLevelClass);
 
 		/// <inheritdoc />
 		public SoundLevelCScaleClassProperties Properties { get; } = new SoundLevelCScaleClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class SoundLevelCScaleClassProperties : IPropertyList
+		public class SoundLevelCScaleClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.SoundLevelClass.SoundLevelClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// C Scale weighting factor";

@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// phase of a recipe process.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1640702975251_53241_197">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessOccurrenceIdSegmentClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// phase of a recipe process.";
 
 		/// <inheritdoc />
-		public string Name => "ProcessOccurrenceId.SegmentClass";
+		public string Name => "ProcessOccurrenceId.Segment";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1605549692001_598671_1420";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1605549692001_598671_1420
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessOccurrenceIdClass);
 
 		/// <inheritdoc />
 		public ProcessOccurrenceIdSegmentClassProperties Properties { get; } = new ProcessOccurrenceIdSegmentClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ProcessOccurrenceIdSegmentClassProperties : IPropertyList
+		public class ProcessOccurrenceIdSegmentClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessOccurrenceIdClass.ProcessOccurrenceIdClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// phase of a recipe process.";
@@ -93,7 +97,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "SEGMENT";
 			}
 		};
 

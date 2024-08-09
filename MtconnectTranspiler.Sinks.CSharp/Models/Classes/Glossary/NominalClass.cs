@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// ideal or desired value for a variable.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375175_247387_2048">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class NominalClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// ideal or desired value for a variable.";
 
 		/// <inheritdoc />
-		public string Name => "NominalClass";
+		public string Name => "nominal";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public NominalClassProperties Properties { get; } = new NominalClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class NominalClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
 	/// <see cref="SampleEnum::Z_DIMENSION">SampleEnum::Z_DIMENSION</see>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587735921521_446335_1060">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ZDimensionClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public string Summary => @"/// <see cref=""SampleEnum::Z_DIMENSION"">SampleEnum::Z_DIMENSION</see>";
 
 		/// <inheritdoc />
-		public string Name => "ZDimensionClass";
+		public string Name => "ZDimension";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531116_175117_25733";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531116_175117_25733
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
 		public ZDimensionClassProperties Properties { get; } = new ZDimensionClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ZDimensionClassProperties : IPropertyList
+		public class ZDimensionClassProperties : Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Units,
 				Type,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""SampleEnum::Z_DIMENSION"">SampleEnum::Z_DIMENSION</see>";
@@ -94,7 +98,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "MILLIMETER";
 			}
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.SampleEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""SampleEnum::Z_DIMENSION"">SampleEnum::Z_DIMENSION</see>";
@@ -145,7 +149,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "Z_DIMENSION";
 			}
 		};
 

@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// time and date associated with the completion of an activity or event.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218413_298281_2085">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessTimeCompleteClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// time and date associated with the completion of an activity or event.";
 
 		/// <inheritdoc />
-		public string Name => "ProcessTime.CompleteClass";
+		public string Name => "ProcessTime.Complete";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580378218411_953996_2079";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580378218411_953996_2079
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessTimeClass);
 
 		/// <inheritdoc />
 		public ProcessTimeCompleteClassProperties Properties { get; } = new ProcessTimeCompleteClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ProcessTimeCompleteClassProperties : IPropertyList
+		public class ProcessTimeCompleteClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessTimeClass.ProcessTimeClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// time and date associated with the completion of an activity or event.";

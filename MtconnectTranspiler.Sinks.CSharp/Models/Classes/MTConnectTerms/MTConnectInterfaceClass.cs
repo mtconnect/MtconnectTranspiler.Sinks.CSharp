@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
 	/// <i>interaction model</i> for interoperability between pieces of equipment.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375172_338577_2038">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MTConnectInterfaceClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string Summary => @"/// <i>interaction model</i> for interoperability between pieces of equipment.";
 
 		/// <inheritdoc />
-		public string Name => "MTConnectInterfaceClass";
+		public string Name => "MTConnect Interface";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public MTConnectInterfaceClassProperties Properties { get; } = new MTConnectInterfaceClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class MTConnectInterfaceClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

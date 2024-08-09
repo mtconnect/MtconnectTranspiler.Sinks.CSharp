@@ -6,6 +6,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 {
 	/// <summary>
 	/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_B6A102D0_7CF7_495e_816A_17AC11572B70">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class HeaderClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 		public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";
 
 		/// <inheritdoc />
-		public string Name => "HeaderClass";
+		public string Name => "Header";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public HeaderClassProperties Properties { get; } = new HeaderClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class HeaderClassProperties : IPropertyList
+		public class HeaderClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -73,7 +74,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "DeviceModelChangeTime";
+				public string Name => "deviceModelChangeTime";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";
@@ -127,7 +128,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public System.Type Type => typeof(UInt32);
 				
 				/// <inheritdoc />
-				public string Name => "AssetBufferSize";
+				public string Name => "assetBufferSize";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";
@@ -181,7 +182,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public System.Type Type => typeof(UInt32);
 				
 				/// <inheritdoc />
-				public string Name => "AssetCount";
+				public string Name => "assetCount";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";
@@ -235,7 +236,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "CreationTime";
+				public string Name => "creationTime";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";
@@ -289,7 +290,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public System.Type Type => typeof(UInt64);
 				
 				/// <inheritdoc />
-				public string Name => "InstanceId";
+				public string Name => "instanceId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";
@@ -343,7 +344,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Sender";
+				public string Name => "sender";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";
@@ -397,7 +398,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
-				public string Name => "TestIndicator";
+				public string Name => "testIndicator";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";
@@ -451,7 +452,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Version";
+				public string Name => "version";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.";

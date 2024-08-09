@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
 	/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href="https://www.google.com/search?q=ISO 13399&btnI=I">ISO 13399</seealso>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_37B8CFD0_D728_4841_9A07_B6CF819EC895">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingToolDefinitionClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";
 
 		/// <inheritdoc />
-		public string Name => "CuttingToolDefinitionClass";
+		public string Name => "CuttingToolDefinition";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public CuttingToolDefinitionClassProperties Properties { get; } = new CuttingToolDefinitionClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CuttingToolDefinitionClassProperties : IPropertyList
+		public class CuttingToolDefinitionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -68,7 +68,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(Mtconnect.DataTypes.FormatTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Format";
+				public string Name => "format";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";
@@ -97,7 +97,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "XML";
 			}
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
@@ -122,7 +122,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";

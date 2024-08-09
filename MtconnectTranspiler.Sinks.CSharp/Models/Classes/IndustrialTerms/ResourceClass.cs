@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// physical or logical entity used by an organization
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1637112275744_245123_3488">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ResourceClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// physical or logical entity used by an organization";
 
 		/// <inheritdoc />
-		public string Name => "ResourceClass";
+		public string Name => "resource";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ResourceClassProperties Properties { get; } = new ResourceClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ResourceClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

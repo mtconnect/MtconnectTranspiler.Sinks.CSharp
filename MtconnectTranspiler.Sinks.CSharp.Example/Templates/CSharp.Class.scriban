@@ -2,9 +2,21 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-{{~ namespaces = get_class_namespaces source ~}}
-{{~ for item in namespaces ~}}
-// using {{ to_code_safe item }};
+{{~ if source.generalization != null && source.generalization != "" ~}}
+using System.Linq;
+{{~ generalization_type_namespace = source.generalization_id | get_type_namespace | to_code_safe ~}}
+{{~
+	if generalization_type_namespace
+		generalization_type_name = source.generalization | to_pascal_case | to_code_safe | string.remove "."
+	else
+		generalization_type_name = source.generalization | to_code_safe | string.remove "."
+	end
+
+	if generalization_type_namespace
+		generalization = generalization_type_namespace + "."
+	end
+	generalization = generalization + source.generalization
+~}}
 {{~ end ~}}
 
 namespace {{ to_code_safe source.namespace }}
@@ -12,6 +24,7 @@ namespace {{ to_code_safe source.namespace }}
 {{~ if source?.summary != null && source?.summary != "" ~}}
 	/// <summary>
 	{{ source?.summary }}
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 {{~ end ~}}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
@@ -24,7 +37,7 @@ namespace {{ to_code_safe source.namespace }}
 		public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
 
 		/// <inheritdoc />
-		public string Name => "{{ source.name }}";
+		public string Name => "{{ source.normative_name }}";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "{{ source.access_modifier }}";
@@ -39,13 +52,19 @@ namespace {{ to_code_safe source.namespace }}
 		public string DeprecatedVersion => "{{ source.deprecated_version }}";
 		
 		/// <inheritdoc />
-		public string Generalization => "{{ source.generalization }}";
+		{{~ if source.generalization != null && source.generalization != "" ~}}
+		/// <remarks>
+		/// Original Type: {{ source.generalization_id }}
+		/// </remarks>
+		public Type Generalization => typeof({{ generalization }});
+		{{~ else ~}}
+		public Type Generalization => null;
+		{{~ end ~}}
 
-		{{~ if source.properties.size > 0 ~}}
 		/// <inheritdoc />
 		public {{ code_name }}Properties Properties { get; } = new {{ code_name }}Properties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class {{ code_name }}Properties : IPropertyList
+		public class {{ code_name }}Properties : {{ if source.generalization != null && source.generalization != "" && generalization != null && generalization != "" }}{{ generalization }}.{{ source.generalization }}Properties{{ else }}IPropertyList{{ end }}
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -60,10 +79,10 @@ namespace {{ to_code_safe source.namespace }}
 ~}}
 				{{ item_code_name }}{{ item_suffix }},
 			{{~ end ~}}
-			};
+			}{{ if source.generalization != null && source.generalization != "" }}.Concat(base.Properties).ToArray(){{ end }};
 		{{~ for item in source.properties ~}}
 		{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
-{{~ property_type_namespace = item.type | get_type_namespace | to_code_safe ~}}
+{{~ property_type_namespace = item.original_property_type | get_type_namespace | to_code_safe ~}}
 		{{~
 			if property_type_namespace
 				item_type_name = item.type | to_pascal_case | to_code_safe | string.remove "."
@@ -103,7 +122,7 @@ namespace {{ to_code_safe source.namespace }}
 				public System.Type Type => typeof({{ if property_type_namespace }}{{ property_type_namespace }}.{{ end }}{{ item_type_name }});
 				
 				/// <inheritdoc />
-				public string Name => "{{ item.name }}";
+				public string Name => "{{ item.normative_name }}";
 				
 				/// <inheritdoc />
 				public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
@@ -136,9 +155,6 @@ namespace {{ to_code_safe source.namespace }}
 			}
 		{{~ end ~}}
 		};
-		{{~ else ~}}
-		public IPropertyList Properties => null;
-		{{~ end ~}}
 
 		{{~ if source.constraints.size > 0 ~}}
 		# region Rules

@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
 	/// reference information about the <see cref="Asset::assetId" /> and/or the URL of the data source of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_D4CAAB4A_DE00_489d_ACCA_F00FC7296F0C">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingToolArchetypeReferenceClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string Summary => @"/// reference information about the <see cref=""Asset::assetId"" /> and/or the URL of the data source of <see cref=""CuttingToolArchetype"">CuttingToolArchetype</see>.";
 
 		/// <inheritdoc />
-		public string Name => "CuttingToolArchetypeReferenceClass";
+		public string Name => "CuttingToolArchetypeReference";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public CuttingToolArchetypeReferenceClassProperties Properties { get; } = new CuttingToolArchetypeReferenceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CuttingToolArchetypeReferenceClassProperties : IPropertyList
+		public class CuttingToolArchetypeReferenceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +68,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Source";
+				public string Name => "source";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference information about the <see cref=""Asset::assetId"" /> and/or the URL of the data source of <see cref=""CuttingToolArchetype"">CuttingToolArchetype</see>.";
@@ -121,7 +122,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference information about the <see cref=""Asset::assetId"" /> and/or the URL of the data source of <see cref=""CuttingToolArchetype"">CuttingToolArchetype</see>.";

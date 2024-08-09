@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.MTConnectTerms;
+using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
 	/// <i>configuration</i> for a <i>Component</i>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1635251403887_914466_345">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConfigurationGeneralization : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string Summary => @"/// <i>configuration</i> for a <i>Component</i>";
 
 		/// <inheritdoc />
-		public string Name => "ConfigurationGeneralization";
+		public string Name => "Configuration";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581970391175_482710_6078";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581970391175_482710_6078
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ConfigurationClass);
 
 		/// <inheritdoc />
 		public ConfigurationGeneralizationProperties Properties { get; } = new ConfigurationGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ConfigurationGeneralizationProperties : IPropertyList
+		public class ConfigurationGeneralizationProperties : Mtconnect.Glossary.IndustrialTerms.ConfigurationClass.ConfigurationClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ConfigurationFor,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ConfigurationForProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ConfigurationFor</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ComponentClass);
 				
 				/// <inheritdoc />
-				public string Name => "ConfigurationFor";
+				public string Name => "configuration for";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>configuration</i> for a <i>Component</i>";

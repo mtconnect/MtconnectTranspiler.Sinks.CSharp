@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// <i>key-value pair</i>s where each entry is uniquely identified by the <i>key</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375153_398391_1975">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DataSetClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// <i>key-value pair</i>s where each entry is uniquely identified by the <i>key</i>.";
 
 		/// <inheritdoc />
-		public string Name => "DataSetClass";
+		public string Name => "data set";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public DataSetClassProperties Properties { get; } = new DataSetClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class DataSetClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

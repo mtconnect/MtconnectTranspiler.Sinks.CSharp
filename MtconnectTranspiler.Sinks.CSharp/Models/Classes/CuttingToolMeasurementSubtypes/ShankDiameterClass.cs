@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
 	/// <summary>
 	/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119509_829628_1423">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ShankDiameterClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 		public string Summary => @"/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.";
 
 		/// <inheritdoc />
-		public string Name => "ShankDiameterClass";
+		public string Name => "ShankDiameter";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_C09F377D_8946_421b_B746_E23C01D97EAC";
+		/// <remarks>
+		/// Original Type: EAID_C09F377D_8946_421b_B746_E23C01D97EAC
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
 		public ShankDiameterClassProperties Properties { get; } = new ShankDiameterClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ShankDiameterClassProperties : IPropertyList
+		public class ShankDiameterClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Code,
 				Units,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public System.Type Type => typeof(Mtconnect.DataTypes.CodeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Code";
+				public string Name => "code";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.";
@@ -94,7 +98,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "DMM";
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.";
@@ -145,7 +149,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "MILLIMETER";
 			}
 		};
 

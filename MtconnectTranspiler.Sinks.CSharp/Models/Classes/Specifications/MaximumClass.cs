@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
 	/// numeric upper constraint. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580316467759_200159_47586">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MaximumClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string Summary => @"/// numeric upper constraint. ";
 
 		/// <inheritdoc />
-		public string Name => "MaximumClass";
+		public string Name => "Maximum";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public MaximumClassProperties Properties { get; } = new MaximumClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MaximumClassProperties : IPropertyList
+		public class MaximumClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -63,7 +64,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// numeric upper constraint. ";

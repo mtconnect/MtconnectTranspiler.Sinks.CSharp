@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Process">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605547395898_219029_214">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessOccurrenceClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ProcessOccurrenceClass";
+		public string Name => "ProcessOccurrence";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1605547261014_920934_161";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1605547261014_920934_161
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ProcessClass);
 
 		/// <inheritdoc />
 		public ProcessOccurrenceClassProperties Properties { get; } = new ProcessOccurrenceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ProcessOccurrenceClassProperties : IPropertyList
+		public class ProcessOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.ProcessClass.ProcessClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -49,7 +53,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesUser,
 				ObservesProgram,
 				ObservesPartUniqueId,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesProcessOccurrenceIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessOccurrenceId</remarks>
@@ -70,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessOccurrenceIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesProcessOccurrenceId";
+				public string Name => "observesProcessOccurrenceId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
@@ -121,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessAggregateIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesProcessAggregateId";
+				public string Name => "observesProcessAggregateId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
@@ -172,7 +176,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessTimeClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesProcessTime";
+				public string Name => "observesProcessTime";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
@@ -223,7 +227,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessKindIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesProcessKindId";
+				public string Name => "observesProcessKindId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
@@ -274,7 +278,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.UserClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesUser";
+				public string Name => "observesUser";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
@@ -325,7 +329,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProgramClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesProgram";
+				public string Name => "observesProgram";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
@@ -376,7 +380,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartUniqueIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPartUniqueId";
+				public string Name => "observesPartUniqueId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";

@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790705_382351_163072";
 		
 		/// <inheritdoc />
-		public string Name => "BasicArea";
+		public string Name => "Basic Area";
 
 		/// <inheritdoc />
 		public string Summary => @"";

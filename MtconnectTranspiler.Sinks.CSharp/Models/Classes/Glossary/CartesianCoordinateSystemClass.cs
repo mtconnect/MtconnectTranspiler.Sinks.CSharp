@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// 3D orthogonal coordinate system <seealso href="https://www.google.com/search?q=ISO/IEC 19794-5:2011(en)&btnI=I">ISO/IEC 19794-5:2011(en)</seealso>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1660363224934_593112_802">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CartesianCoordinateSystemClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// 3D orthogonal coordinate system <seealso href=""https://www.google.com/search?q=ISO/IEC 19794-5:2011(en)&btnI=I"">ISO/IEC 19794-5:2011(en)</seealso>.";
 
 		/// <inheritdoc />
-		public string Name => "CartesianCoordinateSystemClass";
+		public string Name => "cartesian coordinate system";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public CartesianCoordinateSystemClassProperties Properties { get; } = new CartesianCoordinateSystemClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class CartesianCoordinateSystemClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

@@ -18,6 +18,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         public string ReferenceId { get; set; }
 
         /// <summary>
+        /// Reference to the <c>name</c> attribute.
+        /// </summary>
+        public string NormativeName { get; set; }
+
+        /// <summary>
         /// Reference to any Comments written in the SysML model to be converted into a C# format <c>&lt;summary /&gt;</c>
         /// </summary>
         public Summary Summary { get; protected set; }
@@ -56,7 +61,15 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public IEnumerable<Constraint> Constraints => _constraints;
 
+        /// <summary>
+        /// Remote type of the generalization
+        /// </summary>
         public string Generalization { get; set; }
+
+        /// <summary>
+        /// Original <c>generalization</c> value from the XMI
+        /// </summary>
+        public string GeneralizationId { get; set; }
 
         private XmiElement _remoteType { get; set; }
 
@@ -107,9 +120,17 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 ?.ToList()
                 ?? new List<Constraint>();
 
-            Generalization = source.Generalization?.Name ?? source.Generalization?.General;
+            GeneralizationId = source.Generalization?.Name ?? source.Generalization?.General;
+            if (!string.IsNullOrEmpty(GeneralizationId))
+            {
+                XmiElement? remoteType = null;
+                Generalization = CSharpHelperMethods.ToPrimitiveType(GeneralizationId)?.Name
+                    ?? CSharpHelperMethods.TypeDeepSearch(model, GeneralizationId, out remoteType)
+                    ?? "";
+            }
 
             Name = GetClassName(model, source);
+            NormativeName = source.Name;
         }
 
         /// <summary>
@@ -122,7 +143,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         public static string GetClassName(XmiDocument model, UmlClass umlClass)
         {
             string name = CSharpHelperMethods.ToPascalCase(umlClass.Name);
-
+            
             string? generalization = umlClass.Generalization?.Name ?? umlClass.Generalization?.Id;
             if (!string.IsNullOrEmpty(generalization))
             {

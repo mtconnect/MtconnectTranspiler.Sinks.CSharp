@@ -10,37 +10,65 @@ namespace Mtconnect.DataTypes
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
-	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_">v</see></item>
-	/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_">v</see></item>
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 	/// </list>
 	/// </remarks>
-	[Obsolete("Deprecated in v according to https://model.mtconnect.org/#_Version_")]
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public enum ProcessStateEnum
 	{
 		/// <summary>
 		/// device is preparing to execute the process occurrence.
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
 		INITIALIZING,
 		/// <summary>
 		/// process occurrence is ready to be executed.
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
 		READY,
 		/// <summary>
 		/// process occurrence is actively executing.
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
 		ACTIVE,
 		/// <summary>
 		/// process occurrence is now finished.
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
 		COMPLETE,
 		/// <summary>
 		/// process occurrence has been stopped and may be resumed.
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
 		INTERRUPTED,
 		/// <summary>
 		/// process occurrence has come to a premature end and cannot be resumed.
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
 		ABORTED,
 	}
 }

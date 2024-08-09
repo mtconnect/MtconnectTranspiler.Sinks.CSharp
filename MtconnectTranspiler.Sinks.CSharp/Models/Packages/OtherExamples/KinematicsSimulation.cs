@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation;
-// using Mtconnect;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples
 		public string ReferenceId => "EAPK_C2851860_6C4E_4c7a_AABF_D7D01EA6F98D";
 		
 		/// <inheritdoc />
-		public string Name => "KinematicsSimulation";
+		public string Name => "Kinematics Simulation";
 
 		/// <inheritdoc />
 		public string Summary => @"";

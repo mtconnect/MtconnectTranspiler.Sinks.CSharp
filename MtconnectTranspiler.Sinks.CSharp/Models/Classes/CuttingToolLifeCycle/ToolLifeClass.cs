@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
 	/// cutting tool life as related to the assembly./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_37DECE45_091E_4f0c_AD72_EB481C0C1919">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ToolLifeClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string Summary => @"/// cutting tool life as related to the assembly./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ToolLifeClass";
+		public string Name => "ToolLife";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ToolLifeClassProperties Properties { get; } = new ToolLifeClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ToolLifeClassProperties : IPropertyList
+		public class ToolLifeClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -72,7 +72,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.DataTypes.CountDirectionTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "CountDirection";
+				public string Name => "countDirection";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
@@ -126,7 +126,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Initial";
+				public string Name => "initial";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
@@ -180,7 +180,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Limit";
+				public string Name => "limit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
@@ -234,7 +234,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.DataTypes.ToolLifeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
@@ -288,7 +288,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Warning";
+				public string Name => "warning";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
@@ -342,7 +342,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// cutting tool life as related to the assembly./// Description";

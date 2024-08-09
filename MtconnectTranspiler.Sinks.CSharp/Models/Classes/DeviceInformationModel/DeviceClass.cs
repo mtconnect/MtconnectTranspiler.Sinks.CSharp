@@ -1,17 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components.ComponentTypes;
-// using Mtconnect.Glossary;
-// using Mtconnect.Glossary.IndustrialTerms;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes;
-// using Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel
 {
 	/// <summary>
 	/// <see cref="Component">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1620240839406_285612_1596">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DeviceClass : IClass
@@ -23,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel
 		public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
 
 		/// <inheritdoc />
-		public string Name => "DeviceClass";
+		public string Name => "Device";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -38,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_8548C620_467A_4f50_9A22_58D84B7E8779";
+		/// <remarks>
+		/// Original Type: EAID_8548C620_467A_4f50_9A22_58D84B7E8779
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
 		public DeviceClassProperties Properties { get; } = new DeviceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DeviceClassProperties : IPropertyList
+		public class DeviceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -65,7 +64,7 @@ namespace Mtconnect.DeviceInformationModel
 				ObservesAssetChanged,
 				ObservesAssetRemoved,
 				Hash,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasAuxiliaryPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAuxiliary</remarks>
@@ -86,7 +85,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.AuxiliaryClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasAuxiliary";
+				public string Name => "hasAuxiliary";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -137,7 +136,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ControllerClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasController";
+				public string Name => "hasController";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -181,14 +180,14 @@ namespace Mtconnect.DeviceInformationModel
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579572381996_964170_42252</item>
 				/// <item>Type: InterfaceClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.InterfaceInteractionModel</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.InterfaceClass);
+				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.InterfaceClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasInterface";
+				public string Name => "hasInterface";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -232,14 +231,14 @@ namespace Mtconnect.DeviceInformationModel
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579572382014_307743_42285</item>
 				/// <item>Type: ResourceClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.IndustrialTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Components.ComponentTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.ResourceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ResourceClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasResource";
+				public string Name => "hasResource";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -290,7 +289,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.StructureClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasStructure";
+				public string Name => "hasStructure";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -344,7 +343,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Iso841Class";
+				public string Name => "iso841Class";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -398,7 +397,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Uuid";
+				public string Name => "uuid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -452,7 +451,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "MtconnectVersion";
+				public string Name => "mtconnectVersion";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -496,14 +495,14 @@ namespace Mtconnect.DeviceInformationModel
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579572382020_336298_42297</item>
 				/// <item>Type: SystemClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Components.ComponentTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes.SystemClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasSystem";
+				public string Name => "hasSystem";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -557,7 +556,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -601,14 +600,14 @@ namespace Mtconnect.DeviceInformationModel
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1622456766067_72580_282</item>
 				/// <item>Type: PartClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Components.ComponentTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.PartClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasPart";
+				public string Name => "hasPart";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -659,7 +658,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ProcessClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasProcess";
+				public string Name => "hasProcess";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -703,14 +702,14 @@ namespace Mtconnect.DeviceInformationModel
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579572381972_553005_42207</item>
 				/// <item>Type: AxisClass</item>
-				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Components.ComponentTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AxisClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.AxisClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasAxis";
+				public string Name => "hasAxis";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -754,14 +753,14 @@ namespace Mtconnect.DeviceInformationModel
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605101651646_782838_139</item>
 				/// <item>Type: AdapterClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Components.ComponentTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.AdapterClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.AdapterClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasAdapter";
+				public string Name => "hasAdapter";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -812,7 +811,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.AvailabilityClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesAvailability";
+				public string Name => "observesAvailability";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -863,7 +862,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.AssetChangedClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesAssetChanged";
+				public string Name => "observesAssetChanged";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -914,7 +913,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.AssetRemovedClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesAssetRemoved";
+				public string Name => "observesAssetRemoved";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";
@@ -968,7 +967,7 @@ namespace Mtconnect.DeviceInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Hash";
+				public string Name => "hash";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself./// Description";

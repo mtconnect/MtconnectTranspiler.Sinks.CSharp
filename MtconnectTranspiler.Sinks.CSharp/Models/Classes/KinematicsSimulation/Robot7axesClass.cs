@@ -1,8 +1,6 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation
 {
@@ -16,7 +14,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "Robot7axesClass";
+		public string Name => "robot7axes";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -31,12 +29,12 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public Robot7axesClassProperties Properties { get; } = new Robot7axesClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class Robot7axesClassProperties : IPropertyList
+		public class Robot7axesClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -76,7 +74,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
-				public string Name => "Joint1";
+				public string Name => "joint1";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -127,7 +125,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
-				public string Name => "Joint2";
+				public string Name => "joint2";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -178,7 +176,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
-				public string Name => "Joint3";
+				public string Name => "joint3";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -229,7 +227,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
-				public string Name => "Joint4";
+				public string Name => "joint4";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -280,7 +278,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
-				public string Name => "Joint5";
+				public string Name => "joint5";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -331,7 +329,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
-				public string Name => "Joint6";
+				public string Name => "joint6";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -382,7 +380,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
-				public string Name => "Joint7";
+				public string Name => "joint7";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -426,11 +424,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1582232689807_149219_388</item>
 				/// <item>Type: PositionClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes</item>
+				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PositionClass);
+				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.PositionClass);
 				
 				/// <inheritdoc />
 				public string Name => "Position";
@@ -477,14 +475,14 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1582289110377_617694_24</item>
 				/// <item>Type: AngleClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes</item>
+				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
-				public string Name => "Angle1";
+				public string Name => "angle1";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -528,14 +526,14 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1582289110377_617694_24</item>
 				/// <item>Type: AngleClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes</item>
+				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
-				public string Name => "Angle2";
+				public string Name => "angle2";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -579,14 +577,14 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1582289110377_617694_24</item>
 				/// <item>Type: AngleClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes</item>
+				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
-				public string Name => "Angle3";
+				public string Name => "angle3";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -630,14 +628,14 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1582289110377_617694_24</item>
 				/// <item>Type: AngleClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes</item>
+				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
-				public string Name => "Angle4";
+				public string Name => "angle4";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -681,14 +679,14 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1582289110377_617694_24</item>
 				/// <item>Type: AngleClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes</item>
+				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
-				public string Name => "Angle5";
+				public string Name => "angle5";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -732,14 +730,14 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1582289110377_617694_24</item>
 				/// <item>Type: AngleClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes</item>
+				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
-				public string Name => "Angle6";
+				public string Name => "angle6";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -783,14 +781,14 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1582289110377_617694_24</item>
 				/// <item>Type: AngleClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes</item>
+				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
-				public string Name => "Angle7";
+				public string Name => "angle7";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

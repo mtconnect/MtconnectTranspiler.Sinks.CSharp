@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
-// using Mtconnect.ObservationInformationModel;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
 	/// <see cref="Observation">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531115_47447_25730">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EventClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel
 		public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
 
 		/// <inheritdoc />
-		public string Name => "EventClass";
+		public string Name => "Event";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,19 +34,22 @@ namespace Mtconnect.ObservationInformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531115_47734_25731";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531115_47734_25731
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationGeneralization);
 
 		/// <inheritdoc />
 		public EventClassProperties Properties { get; } = new EventClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class EventClassProperties : IPropertyList
+		public class EventClassProperties : Mtconnect.ObservationInformationModel.ObservationGeneralization.ObservationGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ResetTriggered,
 				OrganizedByComponentStreamPart,
 				Type,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ResetTriggeredProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ResetTriggered</remarks>
@@ -70,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.DataTypes.ResetTriggeredEnum);
 				
 				/// <inheritdoc />
-				public string Name => "ResetTriggered";
+				public string Name => "resetTriggered";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
@@ -121,7 +124,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ComponentStreamClass);
 				
 				/// <inheritdoc />
-				public string Name => "OrganizedByComponentStream";
+				public string Name => "organizedByComponentStream";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
@@ -172,7 +175,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.DataTypes.EventEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";

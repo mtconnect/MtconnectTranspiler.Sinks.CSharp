@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.Configurations.Relationships;
-// using Mtconnect;
 
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="ConfigurationRelationship">ConfigurationRelationship</see> entity.  ![Relationships](figures/Relationships.png "Relationships"){: width="0.8"}  > Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.  ![Relationship Example](figures/Relationship%20Example.png "Relationship Example"){: width="0.8"}  > Note: See {{lst(relationship-example)}} for the <i>XML</i> representation of the same example.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_A055F7A8_3D2C_4a01_8D09_072F34E65044">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class RelationshipsPackage : IPackage

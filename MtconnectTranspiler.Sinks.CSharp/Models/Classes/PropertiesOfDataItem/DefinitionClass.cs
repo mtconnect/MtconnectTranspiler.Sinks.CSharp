@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.PropertiesOfDefinition;
-// using Mtconnect.DeviceInformationModel.Components;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
 	/// defines the meaning of <see cref="Entry">Entry</see> and <see cref="Cell">Cell</see> entities when the associated <see cref="DataItem::representation" /> is either <c>DATA_SET</c> or <c>TABLE</c>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581433165009_756087_158">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DefinitionClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
 
 		/// <inheritdoc />
-		public string Name => "DefinitionClass";
+		public string Name => "Definition";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public DefinitionClassProperties Properties { get; } = new DefinitionClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DefinitionClassProperties : IPropertyList
+		public class DefinitionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +66,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.PropertiesOfDefinition.CellDefinitionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCellDefinition";
+				public string Name => "hasCellDefinition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
@@ -118,7 +117,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDescription";
+				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
@@ -169,7 +168,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.PropertiesOfDefinition.EntryDefinitionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasEntryDefinition";
+				public string Name => "hasEntryDefinition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";

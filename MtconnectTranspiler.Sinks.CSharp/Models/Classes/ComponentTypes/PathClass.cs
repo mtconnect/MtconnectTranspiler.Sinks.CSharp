@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Component">Component</see> that organizes an independent operation or function within a <see cref="Controller">Controller</see>./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382004_482583_42267">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PathClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
 
 		/// <inheritdoc />
-		public string Name => "PathClass";
+		public string Name => "Path";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_8548C620_467A_4f50_9A22_58D84B7E8779";
+		/// <remarks>
+		/// Original Type: EAID_8548C620_467A_4f50_9A22_58D84B7E8779
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
 		public PathClassProperties Properties { get; } = new PathClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PathClassProperties : IPropertyList
+		public class PathClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -50,7 +53,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesRotaryVelocityOverride,
 				ObservesPathFeedrate,
 				ObservesPartCount,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesExecutionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesExecution</remarks>
@@ -71,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ExecutionClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesExecution";
+				public string Name => "observesExecution";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
@@ -122,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProgramClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesProgram";
+				public string Name => "observesProgram";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
@@ -173,7 +176,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PathFeedrateOverrideProgrammedClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPathFeedrateOverrideProgrammed";
+				public string Name => "observesPathFeedrateOverrideProgrammed";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
@@ -224,7 +227,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PathFeedrateOverrideRapidClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPathFeedrateOverrideRapid";
+				public string Name => "observesPathFeedrateOverrideRapid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
@@ -275,7 +278,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.RotaryVelocityOverrideClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesRotaryVelocityOverride";
+				public string Name => "observesRotaryVelocityOverride";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
@@ -326,7 +329,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PathFeedrateClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPathFeedrate";
+				public string Name => "observesPathFeedrate";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
@@ -377,7 +380,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartCountClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPartCount";
+				public string Name => "observesPartCount";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";

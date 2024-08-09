@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605550088194_398416_1794">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessKindIdProcessNameClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. ";
 
 		/// <inheritdoc />
-		public string Name => "ProcessKindId.ProcessNameClass";
+		public string Name => "ProcessKindId.ProcessName";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1605549690346_543437_1404";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1605549690346_543437_1404
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessKindIdClass);
 
 		/// <inheritdoc />
 		public ProcessKindIdProcessNameClassProperties Properties { get; } = new ProcessKindIdProcessNameClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ProcessKindIdProcessNameClassProperties : IPropertyList
+		public class ProcessKindIdProcessNameClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessKindIdClass.ProcessKindIdClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. ";
@@ -93,7 +97,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "PROCESS_NAME";
 			}
 		};
 

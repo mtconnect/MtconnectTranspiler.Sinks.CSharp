@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Component">Component</see> that provides information related to an individual <i>feature</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678029650656_503771_494">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FeatureOccurrenceClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
 
 		/// <inheritdoc />
-		public string Name => "FeatureOccurrenceClass";
+		public string Name => "FeatureOccurrence";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1605547467172_656422_264";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1605547467172_656422_264
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartOccurrenceClass);
 
 		/// <inheritdoc />
 		public FeatureOccurrenceClassProperties Properties { get; } = new FeatureOccurrenceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class FeatureOccurrenceClassProperties : IPropertyList
+		public class FeatureOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartOccurrenceClass.PartOccurrenceClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -51,7 +55,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesUncertaintyType,
 				ObservesMeasurementUnits,
 				ObservesMeasurementValue,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesFeaturePersisitentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesFeaturePersisitentId</remarks>
@@ -72,7 +76,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.FeaturePersisitentIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesFeaturePersisitentId";
+				public string Name => "observesFeaturePersisitentId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
@@ -123,7 +127,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.FeatureMeasurementClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesFeatureMeasurement";
+				public string Name => "observesFeatureMeasurement";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
@@ -174,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.MeasurementTypeClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesMeasurementType";
+				public string Name => "observesMeasurementType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
@@ -225,7 +229,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.CharacteristicPersistentIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesCharacteristicPersistentId";
+				public string Name => "observesCharacteristicPersistentId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
@@ -276,7 +280,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.CharacteristicStatusClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesCharacteristicStatus";
+				public string Name => "observesCharacteristicStatus";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
@@ -327,7 +331,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.UncertaintyClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesUncertainty";
+				public string Name => "observesUncertainty";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
@@ -378,7 +382,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.UncertaintyTypeClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesUncertaintyType";
+				public string Name => "observesUncertaintyType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
@@ -429,7 +433,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.MeasurementUnitsClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesMeasurementUnits";
+				public string Name => "observesMeasurementUnits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
@@ -480,7 +484,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.MeasurementValueClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesMeasurementValue";
+				public string Name => "observesMeasurementValue";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";

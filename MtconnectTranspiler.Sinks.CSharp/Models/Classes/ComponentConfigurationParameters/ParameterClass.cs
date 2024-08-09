@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
 	/// <summary>
 	/// property defining a configuration of a <see cref="Component">Component</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197371649_500788_17992">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ParameterClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
 
 		/// <inheritdoc />
-		public string Name => "ParameterClass";
+		public string Name => "Parameter";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ParameterClassProperties Properties { get; } = new ParameterClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ParameterClassProperties : IPropertyList
+		public class ParameterClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -72,7 +73,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Identifier";
+				public string Name => "identifier";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
@@ -126,7 +127,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
@@ -180,7 +181,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(Double);
 				
 				/// <inheritdoc />
-				public string Name => "Minimum";
+				public string Name => "minimum";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
@@ -234,7 +235,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(Double);
 				
 				/// <inheritdoc />
-				public string Name => "Maximum";
+				public string Name => "maximum";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
@@ -288,7 +289,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(Double);
 				
 				/// <inheritdoc />
-				public string Name => "Nominal";
+				public string Name => "nominal";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
@@ -342,7 +343,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
@@ -396,7 +397,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";

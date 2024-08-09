@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ObservableMeasurementClass";
+		public string Name => "Observable Measurement";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,17 +30,20 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581813486064_528606_4617";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581813486064_528606_4617
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservableSampleClass);
 
 		/// <inheritdoc />
 		public ObservableMeasurementClassProperties Properties { get; } = new ObservableMeasurementClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ObservableMeasurementClassProperties : IPropertyList
+		public class ObservableMeasurementClassProperties : Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservableSampleClass.ObservableSampleClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Units,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
@@ -60,7 +64,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

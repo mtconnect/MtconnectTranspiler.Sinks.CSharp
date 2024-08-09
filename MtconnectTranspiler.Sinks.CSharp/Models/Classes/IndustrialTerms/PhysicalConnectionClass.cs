@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// network transmission technologies that physically interconnect an <i>agent</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375179_395356_2062">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PhysicalConnectionClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// network transmission technologies that physically interconnect an <i>agent</i>.";
 
 		/// <inheritdoc />
-		public string Name => "PhysicalConnectionClass";
+		public string Name => "physical connection";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public PhysicalConnectionClassProperties Properties { get; } = new PhysicalConnectionClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class PhysicalConnectionClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

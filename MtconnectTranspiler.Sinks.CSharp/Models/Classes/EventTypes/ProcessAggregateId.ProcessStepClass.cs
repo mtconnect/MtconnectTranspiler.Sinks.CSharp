@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// identifier of the step in the process plan that this occurrence corresponds to. Synonyms include "operation id".
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605549839127_633081_1596">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessAggregateIdProcessStepClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// identifier of the step in the process plan that this occurrence corresponds to. Synonyms include ""operation id"".";
 
 		/// <inheritdoc />
-		public string Name => "ProcessAggregateId.ProcessStepClass";
+		public string Name => "ProcessAggregateId.ProcessStep";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1605549689754_638221_1396";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1605549689754_638221_1396
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessAggregateIdClass);
 
 		/// <inheritdoc />
 		public ProcessAggregateIdProcessStepClassProperties Properties { get; } = new ProcessAggregateIdProcessStepClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ProcessAggregateIdProcessStepClassProperties : IPropertyList
+		public class ProcessAggregateIdProcessStepClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessAggregateIdClass.ProcessAggregateIdClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// identifier of the step in the process plan that this occurrence corresponds to. Synonyms include ""operation id"".";
@@ -93,7 +97,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "PROCESS_STEP";
 			}
 		};
 

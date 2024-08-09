@@ -14,7 +14,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "KinematicsClass";
+		public string Name => "Kinematics";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public KinematicsClassProperties Properties { get; } = new KinematicsClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class KinematicsClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

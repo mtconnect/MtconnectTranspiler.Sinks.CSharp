@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Glossary.ProtocolTerms;
-// using Mtconnect;
 
 namespace Mtconnect.Glossary
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.Glossary
 		public string ReferenceId => "_19_0_3_68e0225_1623665982544_883035_11209";
 		
 		/// <inheritdoc />
-		public string Name => "ProtocolTerms";
+		public string Name => "Protocol Terms";
 
 		/// <inheritdoc />
 		public string Summary => @"";

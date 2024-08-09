@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
 	/// descriptive identifier contained in both the <c>start-tag</c> and <c>end-tag</c> of an XML element that provides the name of the element.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1638439875096_861809_26">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ElementNameClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string Summary => @"/// descriptive identifier contained in both the <c>start-tag</c> and <c>end-tag</c> of an XML element that provides the name of the element.";
 
 		/// <inheritdoc />
-		public string Name => "ElementNameClass";
+		public string Name => "element name";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ElementNameClassProperties Properties { get; } = new ElementNameClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ElementNameClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

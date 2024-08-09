@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel;
-// using Mtconnect.AssetInformationModel;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 {
 	/// <summary>
 	/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1637708823096_359717_5786">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AgentClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 		public string Summary => @"/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.";
 
 		/// <inheritdoc />
-		public string Name => "AgentClass";
+		public string Name => "Agent";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public AgentClassProperties Properties { get; } = new AgentClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AgentClassProperties : IPropertyList
+		public class AgentClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -74,7 +73,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 				public System.Type Type => typeof(UInt32);
 				
 				/// <inheritdoc />
-				public string Name => "InstanceId";
+				public string Name => "instanceId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.";
@@ -128,7 +127,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 				public System.Type Type => typeof(UInt64);
 				
 				/// <inheritdoc />
-				public string Name => "SequenceNumber";
+				public string Name => "sequenceNumber";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.";
@@ -182,7 +181,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 				public System.Type Type => typeof(UInt32);
 				
 				/// <inheritdoc />
-				public string Name => "BufferSize";
+				public string Name => "bufferSize";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.";
@@ -236,7 +235,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 				public System.Type Type => typeof(UInt32);
 				
 				/// <inheritdoc />
-				public string Name => "MaxAssets";
+				public string Name => "maxAssets";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.";
@@ -290,7 +289,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 				public System.Type Type => typeof(UInt32);
 				
 				/// <inheritdoc />
-				public string Name => "AssetCount";
+				public string Name => "assetCount";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.";
@@ -341,7 +340,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "HasObservation";
+				public string Name => "hasObservation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.";
@@ -392,7 +391,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.AssetClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasAsset";
+				public string Name => "hasAsset";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>agent</i>.  An <i>agent</i> <b>MUST</b> perform the following tasks:  * Collect data from manufacturing equipment. * Generate <i>response document</i>s. * Provide a REST interface using <i>HTTP</i>.  In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.";

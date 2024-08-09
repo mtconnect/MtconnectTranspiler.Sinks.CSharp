@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790698_331490_162876";
 		
 		/// <inheritdoc />
-		public string Name => "BasicLength";
+		public string Name => "Basic Length";
 
 		/// <inheritdoc />
 		public string Summary => @"";

@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.Files
 {
 	/// <summary>
 	/// remark or interpretation for human interpretation associated with a <see cref="File">File</see> or <see cref="FileArchetype">FileArchetype</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605276197212_1938_196">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FileCommentClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string Summary => @"/// remark or interpretation for human interpretation associated with a <see cref=""File"">File</see> or <see cref=""FileArchetype"">FileArchetype</see>.";
 
 		/// <inheritdoc />
-		public string Name => "FileCommentClass";
+		public string Name => "FileComment";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public FileCommentClassProperties Properties { get; } = new FileCommentClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class FileCommentClassProperties : IPropertyList
+		public class FileCommentClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +68,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "Timestamp";
+				public string Name => "timestamp";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// remark or interpretation for human interpretation associated with a <see cref=""File"">File</see> or <see cref=""FileArchetype"">FileArchetype</see>.";
@@ -121,7 +122,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// remark or interpretation for human interpretation associated with a <see cref=""File"">File</see> or <see cref=""FileArchetype"">FileArchetype</see>.";

@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel;
-// using Mtconnect.DeviceInformationModel.Components;
 
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
 	/// organizes the data associated with each <see cref="Component">Component</see> entity defined for a <see cref="Device">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_9057AAF9_4687_42be_BD2B_E2F18DF049DC">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentStreamClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel
 		public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ComponentStreamClass";
+		public string Name => "ComponentStream";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.ObservationInformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ComponentStreamClassProperties Properties { get; } = new ComponentStreamClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ComponentStreamClassProperties : IPropertyList
+		public class ComponentStreamClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -76,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Component";
+				public string Name => "component";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
@@ -130,7 +129,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ComponentId";
+				public string Name => "componentId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
@@ -184,7 +183,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
@@ -238,7 +237,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "NativeName";
+				public string Name => "nativeName";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
@@ -292,7 +291,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Uuid";
+				public string Name => "uuid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
@@ -343,7 +342,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.EventClass);
 				
 				/// <inheritdoc />
-				public string Name => "OrganizesEvent";
+				public string Name => "organizesEvent";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
@@ -394,7 +393,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 				
 				/// <inheritdoc />
-				public string Name => "OrganizesSample";
+				public string Name => "organizesSample";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
@@ -445,7 +444,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ConditionClass);
 				
 				/// <inheritdoc />
-				public string Name => "OrganizesCondition";
+				public string Name => "organizesCondition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
@@ -496,7 +495,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "IsOrganizerFor";
+				public string Name => "isOrganizerFor";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";

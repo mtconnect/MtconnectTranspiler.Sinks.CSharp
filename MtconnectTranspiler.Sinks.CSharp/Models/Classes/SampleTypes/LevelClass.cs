@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
 	/// <see cref="SampleEnum::LEVEL">SampleEnum::LEVEL</see>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218331_809018_1875">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LevelClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public string Summary => @"/// <see cref=""SampleEnum::LEVEL"">SampleEnum::LEVEL</see>";
 
 		/// <inheritdoc />
-		public string Name => "LevelClass";
+		public string Name => "Level";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public string DeprecatedVersion => "1.2";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531116_175117_25733";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531116_175117_25733
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
 		public LevelClassProperties Properties { get; } = new LevelClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class LevelClassProperties : IPropertyList
+		public class LevelClassProperties : Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Type,
 				Units,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.SampleEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""SampleEnum::LEVEL"">SampleEnum::LEVEL</see>";
@@ -94,7 +98,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "LEVEL";
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""SampleEnum::LEVEL"">SampleEnum::LEVEL</see>";

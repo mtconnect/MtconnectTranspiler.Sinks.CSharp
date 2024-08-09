@@ -1,7 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "MaintenanceListResultClass";
+		public string Name => "MaintenanceListResult";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -30,12 +30,15 @@ namespace Mtconnect.DataTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1582846972437_483160_2181";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1582846972437_483160_2181
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.TableClass);
 
 		/// <inheritdoc />
 		public MaintenanceListResultClassProperties Properties { get; } = new MaintenanceListResultClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MaintenanceListResultClassProperties : IPropertyList
+		public class MaintenanceListResultClassProperties : Mtconnect.ObservationInformationModel.Representations.TableClass.TableClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -49,7 +52,7 @@ namespace Mtconnect.DataTypes
 				LastServiceDate,
 				Units,
 				Target,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
@@ -156,7 +159,7 @@ namespace Mtconnect.DataTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "ABSOLUTE";
 			}
 			/// <summary>
 			/// <inheritdoc cref="NextServiceDateProperty" path="/summary" /><br/>
@@ -372,7 +375,7 @@ namespace Mtconnect.DataTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "UP";
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -534,7 +537,7 @@ namespace Mtconnect.DataTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "COUNT";
 			}
 			/// <summary>
 			/// <inheritdoc cref="TargetProperty" path="/summary" /><br/>

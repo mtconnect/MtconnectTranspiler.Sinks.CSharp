@@ -9,6 +9,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
     public class Property : CsharpType
     {
         /// <summary>
+        /// Reference to the <c>name</c> attribute.
+        /// </summary>
+        public string NormativeName { get; set; }
+
+        /// <summary>
         /// Reference to any Comments written in the SysML model to be converted into a C# format <c>&lt;summary /&gt;</c>
         /// </summary>
         public Summary Summary { get; protected set; }
@@ -37,6 +42,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <param name="source"><inheritdoc cref="XmiElement" path="/summary"/></param>
         public Property(XmiDocument model, UmlProperty source) : base(model, source)
         {
+            NormativeName = source.Name;
+
             if (source.Comments?.Length > 0)
                 Summary = new Summary(source.Comments);
 
@@ -54,7 +61,15 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             Aggregation = source.Aggregation;
             Extension = source.Extension?.Extender;
             Association = CSharpHelperMethods.TypeDeepSearch(model, source.Association, out remoteType);
-            DefaultValue = source.DefaultValue?.Name;
+            if (source.DefaultValue is UmlInstanceValue instanceValue)
+            {
+                DefaultValue = CSharpHelperMethods.TypeDeepSearch(model, instanceValue.Instance, out XmiElement instanceType);
+            } else
+            {
+                DefaultValue = source.DefaultValue?.Name;
+            }
+
+            // TODO: Determine multiplicity from lowerValue and upperValue
         }
 
     }

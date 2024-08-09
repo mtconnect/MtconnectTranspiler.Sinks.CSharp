@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// indication that specific content in an <i>MTConnect Document</i> is currently usable but is regarded as being obsolete or superseded. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375155_885919_1978">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DeprecatedClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// indication that specific content in an <i>MTConnect Document</i> is currently usable but is regarded as being obsolete or superseded. ";
 
 		/// <inheritdoc />
-		public string Name => "DeprecatedClass";
+		public string Name => "deprecated";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public DeprecatedClassProperties Properties { get; } = new DeprecatedClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class DeprecatedClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

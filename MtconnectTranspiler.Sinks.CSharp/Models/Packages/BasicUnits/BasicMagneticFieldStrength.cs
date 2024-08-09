@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790700_590856_162930";
 		
 		/// <inheritdoc />
-		public string Name => "BasicMagneticFieldStrength";
+		public string Name => "Basic Magnetic Field Strength";
 
 		/// <inheritdoc />
 		public string Summary => @"";

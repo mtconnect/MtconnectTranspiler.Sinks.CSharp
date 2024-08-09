@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.XMLTerms;
+using System.Linq;
 
 namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
 	/// structured text file encoded using <i>XML</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623669632303_353398_16887">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class XMLDocumentGeneralization : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string Summary => @"/// structured text file encoded using <i>XML</i>.";
 
 		/// <inheritdoc />
-		public string Name => "XMLDocumentGeneralization";
+		public string Name => "XML Document";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +34,15 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1623664375156_660396_1982";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1623664375156_660396_1982
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.DocumentClass);
 
 		/// <inheritdoc />
 		public XMLDocumentGeneralizationProperties Properties { get; } = new XMLDocumentGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class XMLDocumentGeneralizationProperties : IPropertyList
+		public class XMLDocumentGeneralizationProperties : Mtconnect.Glossary.DocumentClass.DocumentClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -46,7 +50,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				HasDocumentBody,
 				HasNamespace,
 				HasXmlSchema,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasDocumentHeaderProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasDocumentHeader</remarks>
@@ -67,7 +71,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.XMLTerms.DocumentHeaderClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDocumentHeader";
+				public string Name => "has document header";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
@@ -118,7 +122,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.XMLTerms.DocumentBodyClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDocumentBody";
+				public string Name => "has document body";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
@@ -169,7 +173,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.XMLTerms.NamespaceClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasNamespace";
+				public string Name => "has namespace";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
@@ -220,7 +224,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.XMLTerms.XMLSchemaGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "HasXmlSchema";
+				public string Name => "has xml schema";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// structured text file encoded using <i>XML</i>.";

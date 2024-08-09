@@ -1,7 +1,6 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AgentArchitecture.InformationModel;
 
 namespace Mtconnect.AgentArchitecture.InformationModel
 {
@@ -15,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ObservationClass";
+		public string Name => "Observation";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -30,12 +29,12 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ObservationClassProperties Properties { get; } = new ObservationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ObservationClassProperties : IPropertyList
+		public class ObservationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -61,7 +60,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 				public System.Type Type => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasValue";
+				public string Name => "hasValue";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

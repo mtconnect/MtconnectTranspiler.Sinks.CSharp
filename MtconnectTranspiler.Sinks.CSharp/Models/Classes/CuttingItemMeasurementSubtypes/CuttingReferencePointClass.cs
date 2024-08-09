@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
 	/// <summary>
 	/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119521_500277_1444">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingReferencePointClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public string Summary => @"/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.";
 
 		/// <inheritdoc />
-		public string Name => "CuttingReferencePointClass";
+		public string Name => "CuttingReferencePoint";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_C09F377D_8946_421b_B746_E23C01D97EAC";
+		/// <remarks>
+		/// Original Type: EAID_C09F377D_8946_421b_B746_E23C01D97EAC
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
 		public CuttingReferencePointClassProperties Properties { get; } = new CuttingReferencePointClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CuttingReferencePointClassProperties : IPropertyList
+		public class CuttingReferencePointClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Code,
 				Units,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public System.Type Type => typeof(Mtconnect.DataTypes.CodeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Code";
+				public string Name => "code";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.";
@@ -94,7 +98,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "CRP";
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.";
@@ -145,7 +149,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "MILLIMETER";
 			}
 		};
 

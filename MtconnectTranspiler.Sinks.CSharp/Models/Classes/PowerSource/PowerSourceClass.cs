@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 {
 	/// <summary>
 	/// potential energy sources for the <see cref="Component">Component</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1696870815347_556704_3251">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PowerSourceClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 		public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
 
 		/// <inheritdoc />
-		public string Name => "PowerSourceClass";
+		public string Name => "PowerSource";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public PowerSourceClassProperties Properties { get; } = new PowerSourceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PowerSourceClassProperties : IPropertyList
+		public class PowerSourceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -70,7 +70,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				public System.Type Type => typeof(Mtconnect.DataTypes.PowerSourceTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
@@ -124,7 +124,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
@@ -178,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ComponentIdRef";
+				public string Name => "componentIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
@@ -232,7 +232,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";

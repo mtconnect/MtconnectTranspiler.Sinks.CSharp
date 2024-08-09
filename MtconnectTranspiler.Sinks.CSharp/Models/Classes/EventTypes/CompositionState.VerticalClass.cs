@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// indication of the position of a mechanism that may move in a vertical direction.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218230_768917_1647">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CompositionStateVerticalClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// indication of the position of a mechanism that may move in a vertical direction.";
 
 		/// <inheritdoc />
-		public string Name => "CompositionState.VerticalClass";
+		public string Name => "CompositionState.Vertical";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580378218222_423849_1632";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580378218222_423849_1632
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.CompositionStateClass);
 
 		/// <inheritdoc />
 		public CompositionStateVerticalClassProperties Properties { get; } = new CompositionStateVerticalClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CompositionStateVerticalClassProperties : IPropertyList
+		public class CompositionStateVerticalClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.CompositionStateClass.CompositionStateClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// indication of the position of a mechanism that may move in a vertical direction.";
@@ -116,7 +120,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.CompositionStateVerticalEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// indication of the position of a mechanism that may move in a vertical direction.";

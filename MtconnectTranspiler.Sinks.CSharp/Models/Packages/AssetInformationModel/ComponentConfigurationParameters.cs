@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.AssetInformationModel.ComponentConfigurationParameters;
-// using Mtconnect;
 
 namespace Mtconnect.AssetInformationModel
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="ComponentConfigurationParameters">ComponentConfigurationParameters</see> model.  ![ComponentConfigurationParameters](figures/ComponentConfigurationParameters.png "ComponentConfigurationParameters"){: width="0.8"} 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1678197141009_35817_17749">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class ComponentConfigurationParametersPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.AssetInformationModel
 		public string ReferenceId => "_19_0_3_68e0225_1678197141009_35817_17749";
 		
 		/// <inheritdoc />
-		public string Name => "ComponentConfigurationParameters";
+		public string Name => "Component Configuration Parameters";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides semantic information for the <see cref=""ComponentConfigurationParameters"">ComponentConfigurationParameters</see> model.  ![ComponentConfigurationParameters](figures/ComponentConfigurationParameters.png ""ComponentConfigurationParameters""){: width=""0.8""} ";

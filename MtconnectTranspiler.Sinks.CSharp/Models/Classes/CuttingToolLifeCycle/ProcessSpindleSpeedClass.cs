@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
 	/// constrained process spindle speed for the tool in revolutions/minute.  The <see cref="ProcessSpindleSpeed::value" /> <b>MAY</b> contain the nominal process target spindle speed if available. If <see cref="ProcessSpindleSpeed">ProcessSpindleSpeed</see> is provided, at least one value of <see cref="ProcessSpindleSpeed::maximum" />, <see cref="ProcessSpindleSpeed::nominal" />, or <see cref="ProcessSpindleSpeed::minimum" /> <b>MUST</b> be specified.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_3B2E47CE_BBF6_4b7a_A0C6_146B2BE8331A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessSpindleSpeedClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string Summary => @"/// constrained process spindle speed for the tool in revolutions/minute.  The <see cref=""ProcessSpindleSpeed::value"" /> <b>MAY</b> contain the nominal process target spindle speed if available. If <see cref=""ProcessSpindleSpeed"">ProcessSpindleSpeed</see> is provided, at least one value of <see cref=""ProcessSpindleSpeed::maximum"" />, <see cref=""ProcessSpindleSpeed::nominal"" />, or <see cref=""ProcessSpindleSpeed::minimum"" /> <b>MUST</b> be specified.";
 
 		/// <inheritdoc />
-		public string Name => "ProcessSpindleSpeedClass";
+		public string Name => "ProcessSpindleSpeed";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ProcessSpindleSpeedClassProperties Properties { get; } = new ProcessSpindleSpeedClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ProcessSpindleSpeedClassProperties : IPropertyList
+		public class ProcessSpindleSpeedClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -69,7 +70,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Maximum";
+				public string Name => "maximum";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained process spindle speed for the tool in revolutions/minute.  The <see cref=""ProcessSpindleSpeed::value"" /> <b>MAY</b> contain the nominal process target spindle speed if available. If <see cref=""ProcessSpindleSpeed"">ProcessSpindleSpeed</see> is provided, at least one value of <see cref=""ProcessSpindleSpeed::maximum"" />, <see cref=""ProcessSpindleSpeed::nominal"" />, or <see cref=""ProcessSpindleSpeed::minimum"" /> <b>MUST</b> be specified.";
@@ -123,7 +124,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Minimum";
+				public string Name => "minimum";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained process spindle speed for the tool in revolutions/minute.  The <see cref=""ProcessSpindleSpeed::value"" /> <b>MAY</b> contain the nominal process target spindle speed if available. If <see cref=""ProcessSpindleSpeed"">ProcessSpindleSpeed</see> is provided, at least one value of <see cref=""ProcessSpindleSpeed::maximum"" />, <see cref=""ProcessSpindleSpeed::nominal"" />, or <see cref=""ProcessSpindleSpeed::minimum"" /> <b>MUST</b> be specified.";
@@ -177,7 +178,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Nominal";
+				public string Name => "nominal";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained process spindle speed for the tool in revolutions/minute.  The <see cref=""ProcessSpindleSpeed::value"" /> <b>MAY</b> contain the nominal process target spindle speed if available. If <see cref=""ProcessSpindleSpeed"">ProcessSpindleSpeed</see> is provided, at least one value of <see cref=""ProcessSpindleSpeed::maximum"" />, <see cref=""ProcessSpindleSpeed::nominal"" />, or <see cref=""ProcessSpindleSpeed::minimum"" /> <b>MUST</b> be specified.";
@@ -228,7 +229,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained process spindle speed for the tool in revolutions/minute.  The <see cref=""ProcessSpindleSpeed::value"" /> <b>MAY</b> contain the nominal process target spindle speed if available. If <see cref=""ProcessSpindleSpeed"">ProcessSpindleSpeed</see> is provided, at least one value of <see cref=""ProcessSpindleSpeed::maximum"" />, <see cref=""ProcessSpindleSpeed::nominal"" />, or <see cref=""ProcessSpindleSpeed::minimum"" /> <b>MUST</b> be specified.";

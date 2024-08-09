@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
 	/// <summary>
 	/// <see cref="InterfaceEventEnum::MATERIAL_CHANGE">InterfaceEventEnum::MATERIAL_CHANGE</see>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218346_379398_1911">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MaterialChangeClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public string Summary => @"/// <see cref=""InterfaceEventEnum::MATERIAL_CHANGE"">InterfaceEventEnum::MATERIAL_CHANGE</see>";
 
 		/// <inheritdoc />
-		public string Name => "MaterialChangeClass";
+		public string Name => "MaterialChange";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531115_47447_25730";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531115_47447_25730
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
 		public MaterialChangeClassProperties Properties { get; } = new MaterialChangeClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MaterialChangeClassProperties : IPropertyList
+		public class MaterialChangeClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Type,
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public System.Type Type => typeof(Mtconnect.DataTypes.InterfaceEventEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""InterfaceEventEnum::MATERIAL_CHANGE"">InterfaceEventEnum::MATERIAL_CHANGE</see>";
@@ -94,7 +98,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "MATERIAL_CHANGE";
 			}
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""InterfaceEventEnum::MATERIAL_CHANGE"">InterfaceEventEnum::MATERIAL_CHANGE</see>";

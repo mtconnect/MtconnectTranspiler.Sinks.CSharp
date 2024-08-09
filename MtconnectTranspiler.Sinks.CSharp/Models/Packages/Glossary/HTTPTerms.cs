@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Glossary.HTTPTerms;
-// using Mtconnect;
 
 namespace Mtconnect.Glossary
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.Glossary
 		public string ReferenceId => "_19_0_3_68e0225_1623664707546_436843_7242";
 		
 		/// <inheritdoc />
-		public string Name => "HTTPTerms";
+		public string Name => "HTTP Terms";
 
 		/// <inheritdoc />
 		public string Summary => @"";

@@ -14,7 +14,7 @@ namespace Mtconnect.Imports.CSVImports
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ImportDescriptorClass";
+		public string Name => "ImportDescriptor";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,12 +29,12 @@ namespace Mtconnect.Imports.CSVImports
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ImportDescriptorClassProperties Properties { get; } = new ImportDescriptorClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ImportDescriptorClassProperties : IPropertyList
+		public class ImportDescriptorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -70,7 +70,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "CsvFileName";
+				public string Name => "csvFileName";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -121,7 +121,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "ElementTypeName";
+				public string Name => "elementTypeName";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -172,7 +172,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "PackageName";
+				public string Name => "packageName";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -223,7 +223,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "DiagramTypeName";
+				public string Name => "diagramTypeName";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -274,7 +274,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "UseFirstRowAsHeaders";
+				public string Name => "useFirstRowAsHeaders";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -325,7 +325,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "UseFindOwnerByTagId";
+				public string Name => "useFindOwnerByTagId";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -376,7 +376,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "StereoTypeNames";
+				public string Name => "stereoTypeNames";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -427,7 +427,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "IdentifierName";
+				public string Name => "identifierName";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -478,7 +478,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "RelationEndIdentifier";
+				public string Name => "relationEndIdentifier";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -529,7 +529,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "PropertyMapNames";
+				public string Name => "propertyMapNames";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -580,7 +580,7 @@ namespace Mtconnect.Imports.CSVImports
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "FieldSeparator";
+				public string Name => "fieldSeparator";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

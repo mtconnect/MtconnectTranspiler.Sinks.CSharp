@@ -7,6 +7,7 @@ namespace Mtconnect.Fundamentals
 {
 	/// <summary>
 	/// The <i>agent</i> <b>MUST</b> support the <see cref="REST Protocol">REST Protocol</see> and produce <i>XML</i> representations of the information models.   All other protocols and representations are optional. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_50B7711E_30AA_4a94_9F73_C74061BA099D">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class MTConnectProtocolPackage : IPackage
@@ -15,7 +16,7 @@ namespace Mtconnect.Fundamentals
 		public string ReferenceId => "EAPK_50B7711E_30AA_4a94_9F73_C74061BA099D";
 		
 		/// <inheritdoc />
-		public string Name => "MTConnectProtocol";
+		public string Name => "MTConnect Protocol";
 
 		/// <inheritdoc />
 		public string Summary => @"/// The <i>agent</i> <b>MUST</b> support the <see cref=""REST Protocol"">REST Protocol</see> and produce <i>XML</i> representations of the information models.   All other protocols and representations are optional. ";

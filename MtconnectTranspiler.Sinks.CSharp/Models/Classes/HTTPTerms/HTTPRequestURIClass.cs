@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 {
 	/// <summary>
 	/// Uniform Resource Identifier that identifies the resource upon which to apply the request. <seealso href="https://www.google.com/search?q=IETF:RFC-2616&btnI=I">IETF:RFC-2616</seealso>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375164_823840_2008">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class HTTPRequestURIClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public string Summary => @"/// Uniform Resource Identifier that identifies the resource upon which to apply the request. <seealso href=""https://www.google.com/search?q=IETF:RFC-2616&btnI=I"">IETF:RFC-2616</seealso>";
 
 		/// <inheritdoc />
-		public string Name => "HTTPRequestURIClass";
+		public string Name => "HTTP Request URI";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public HTTPRequestURIClassProperties Properties { get; } = new HTTPRequestURIClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class HTTPRequestURIClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

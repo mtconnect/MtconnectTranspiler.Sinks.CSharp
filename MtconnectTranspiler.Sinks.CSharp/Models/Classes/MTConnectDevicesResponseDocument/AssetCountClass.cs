@@ -6,6 +6,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 {
 	/// <summary>
 	/// count of each asset type currently in the <i>agent</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1643803275261_762583_709">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetCountClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 		public string Summary => @"/// count of each asset type currently in the <i>agent</i>.";
 
 		/// <inheritdoc />
-		public string Name => "AssetCountClass";
+		public string Name => "AssetCount";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 		public string DeprecatedVersion => "1.4";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public AssetCountClassProperties Properties { get; } = new AssetCountClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AssetCountClassProperties : IPropertyList
+		public class AssetCountClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -66,7 +67,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "AssetType";
+				public string Name => "assetType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// count of each asset type currently in the <i>agent</i>.";

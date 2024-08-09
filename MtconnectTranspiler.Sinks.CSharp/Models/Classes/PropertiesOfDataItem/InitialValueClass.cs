@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
 	/// starting value for a <see cref="DataItem">DataItem</see> as well as the value to be set for the <see cref="DataItem">DataItem</see> after a reset event.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_3F705CFA_0BDC_4dc1_91C8_0A38B91DD3E6">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class InitialValueClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string Summary => @"/// starting value for a <see cref=""DataItem"">DataItem</see> as well as the value to be set for the <see cref=""DataItem"">DataItem</see> after a reset event.";
 
 		/// <inheritdoc />
-		public string Name => "InitialValueClass";
+		public string Name => "InitialValue";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public InitialValueClassProperties Properties { get; } = new InitialValueClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class InitialValueClassProperties : IPropertyList
+		public class InitialValueClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -63,7 +64,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// starting value for a <see cref=""DataItem"">DataItem</see> as well as the value to be set for the <see cref=""DataItem"">DataItem</see> after a reset event.";

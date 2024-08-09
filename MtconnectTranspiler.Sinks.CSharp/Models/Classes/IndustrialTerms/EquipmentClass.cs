@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// represents anything that can publish information and is used in the operations of a manufacturing facility shop floor.    > Note: Examples include machine tools, ovens, sensor units, workstations, software applications, and bar feeders.  
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375158_659038_1988">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EquipmentClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// represents anything that can publish information and is used in the operations of a manufacturing facility shop floor.    > Note: Examples include machine tools, ovens, sensor units, workstations, software applications, and bar feeders.  ";
 
 		/// <inheritdoc />
-		public string Name => "EquipmentClass";
+		public string Name => "equipment";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public EquipmentClassProperties Properties { get; } = new EquipmentClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class EquipmentClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
-// using Mtconnect.Glossary;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
 	/// design characteristics for a piece of equipment. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580315898400_607214_47155">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SpecificationClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string Summary => @"/// design characteristics for a piece of equipment. ";
 
 		/// <inheritdoc />
-		public string Name => "SpecificationClass";
+		public string Name => "Specification";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public SpecificationClassProperties Properties { get; } = new SpecificationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class SpecificationClassProperties : IPropertyList
+		public class SpecificationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -83,7 +82,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -137,7 +136,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -191,7 +190,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "DataItemIdRef";
+				public string Name => "dataItemIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -245,7 +244,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -299,7 +298,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CompositionIdRef";
+				public string Name => "compositionIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -353,7 +352,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -407,7 +406,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CoordinateSystemIdRef";
+				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -461,7 +460,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -515,7 +514,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(Mtconnect.DataTypes.OriginatorEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Originator";
+				public string Name => "originator";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -544,7 +543,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "MANUFACTURER";
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMaximumPartProperty" path="/summary" /><br/>
@@ -559,14 +558,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580316467759_200159_47586</item>
 				/// <item>Type: MaximumClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MaximumClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.MaximumClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasMaximum";
+				public string Name => "hasMaximum";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -610,14 +609,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643508394_491668_626</item>
 				/// <item>Type: UpperLimitClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.UpperLimitClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasUpperLimit";
+				public string Name => "hasUpperLimit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -661,14 +660,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643531502_63450_761</item>
 				/// <item>Type: LowerWarningClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.LowerWarningClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerWarningClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasLowerWarning";
+				public string Name => "hasLowerWarning";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -712,14 +711,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643526040_637158_716</item>
 				/// <item>Type: LowerLimitClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.LowerLimitClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasLowerLimit";
+				public string Name => "hasLowerLimit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -763,14 +762,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643515595_841451_671</item>
 				/// <item>Type: UpperWarningClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.UpperWarningClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperWarningClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasUpperWarning";
+				public string Name => "hasUpperWarning";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -814,14 +813,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580316543777_893941_47725</item>
 				/// <item>Type: NominalClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.NominalClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.NominalClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasNominal";
+				public string Name => "hasNominal";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";
@@ -865,14 +864,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580316498580_886253_47645</item>
 				/// <item>Type: MinimumClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MinimumClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.MinimumClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasMinimum";
+				public string Name => "hasMinimum";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// design characteristics for a piece of equipment. ";

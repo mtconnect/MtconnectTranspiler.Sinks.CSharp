@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
 	/// directive value including adjustments such as an offset or overrides.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218387_765181_2019">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PathFeedratePerRevolutionCommandedClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public string Summary => @"/// directive value including adjustments such as an offset or overrides.";
 
 		/// <inheritdoc />
-		public string Name => "PathFeedratePerRevolution.CommandedClass";
+		public string Name => "PathFeedratePerRevolution.Commanded";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580378218385_361913_2013";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580378218385_361913_2013
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PathFeedratePerRevolutionClass);
 
 		/// <inheritdoc />
 		public PathFeedratePerRevolutionCommandedClassProperties Properties { get; } = new PathFeedratePerRevolutionCommandedClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PathFeedratePerRevolutionCommandedClassProperties : IPropertyList
+		public class PathFeedratePerRevolutionCommandedClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PathFeedratePerRevolutionClass.PathFeedratePerRevolutionClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// directive value including adjustments such as an offset or overrides.";

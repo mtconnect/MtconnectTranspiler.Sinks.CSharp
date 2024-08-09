@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// value of a physical quantity reported by a measuring instrument or controller as an <i>observation</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375185_14541_2087">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SensorDataClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// value of a physical quantity reported by a measuring instrument or controller as an <i>observation</i>.";
 
 		/// <inheritdoc />
-		public string Name => "SensorDataClass";
+		public string Name => "sensor data";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public SensorDataClassProperties Properties { get; } = new SensorDataClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class SensorDataClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

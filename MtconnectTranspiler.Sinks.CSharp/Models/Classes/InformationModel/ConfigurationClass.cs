@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ConfigurationClass";
+		public string Name => "Configuration";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ConfigurationClassProperties Properties { get; } = new ConfigurationClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ConfigurationClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

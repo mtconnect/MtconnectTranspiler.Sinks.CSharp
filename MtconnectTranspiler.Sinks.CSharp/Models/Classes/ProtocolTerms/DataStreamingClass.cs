@@ -1,11 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
 	/// method for an <i>agent</i> to provide a continuous stream of information in response to a single <i>request</i> from a <i>client</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375154_395455_1977">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DataStreamingClass : IClass
@@ -17,7 +19,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public string Summary => @"/// method for an <i>agent</i> to provide a continuous stream of information in response to a single <i>request</i> from a <i>client</i>.";
 
 		/// <inheritdoc />
-		public string Name => "DataStreamingClass";
+		public string Name => "data streaming";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +34,20 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1623664375187_272252_2094";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1623664375187_272252_2094
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.ProtocolTerms.StreamingDataClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public DataStreamingClassProperties Properties { get; } = new DataStreamingClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class DataStreamingClassProperties : Mtconnect.Glossary.ProtocolTerms.StreamingDataClass.StreamingDataClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

@@ -11,7 +11,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples
 		public string ReferenceId => "_19_0_3_68e0225_1690212950458_480210_817";
 		
 		/// <inheritdoc />
-		public string Name => "RobotArms";
+		public string Name => "Robot Arms";
 
 		/// <inheritdoc />
 		public string Summary => @"";

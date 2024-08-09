@@ -1,14 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect.Glossary.IndustrialTerms;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.DeviceInformationModel.Compositions
 {
 	/// <summary>
 	/// functional part of a piece of equipment contained within a <see cref="Component">Component</see>./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1658936424016_561586_139">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CompositionClass : IClass
@@ -20,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 		public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
 
 		/// <inheritdoc />
-		public string Name => "CompositionClass";
+		public string Name => "Composition";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -35,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public CompositionClassProperties Properties { get; } = new CompositionClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CompositionClassProperties : IPropertyList
+		public class CompositionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -72,7 +70,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "IsCompositionOf";
+				public string Name => "isCompositionOf";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
@@ -123,7 +121,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDescription";
+				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
@@ -167,14 +165,14 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_C04DCC77_16E8_4cef_92D4_B777AFC52570</item>
 				/// <item>Type: ConfigurationClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.IndustrialTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.ConfigurationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.ConfigurationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasConfiguration";
+				public string Name => "hasConfiguration";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
@@ -228,7 +226,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
@@ -282,7 +280,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public System.Type Type => typeof(Mtconnect.DataTypes.CompositionTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
@@ -336,7 +334,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
@@ -390,7 +388,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Uuid";
+				public string Name => "uuid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";

@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle;
-// using Mtconnect.AssetInformationModel.CuttingTool.CuttingItem;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
 	/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_D1C82EBD_D828_4e5f_9F46_3337710837FE">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingToolLifeCycleClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";
 
 		/// <inheritdoc />
-		public string Name => "CuttingToolLifeCycleClass";
+		public string Name => "CuttingToolLifeCycle";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public CuttingToolLifeCycleClassProperties Properties { get; } = new CuttingToolLifeCycleClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CuttingToolLifeCycleClassProperties : IPropertyList
+		public class CuttingToolLifeCycleClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -237,7 +236,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ProcessFeedRateClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasProcessFeedRate";
+				public string Name => "hasProcessFeedRate";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";
@@ -288,7 +287,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolLifeClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasToolLife";
+				public string Name => "hasToolLife";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";
@@ -339,7 +338,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ProcessSpindleSpeedClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasProcessSpindleSpeed";
+				public string Name => "hasProcessSpindleSpeed";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";
@@ -390,7 +389,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.StatusClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCutterStatus";
+				public string Name => "hasCutterStatus";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";
@@ -441,7 +440,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCuttingItem";
+				public string Name => "hasCuttingItem";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";
@@ -492,7 +491,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasMeasurement";
+				public string Name => "hasMeasurement";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";
@@ -543,7 +542,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ReconditionCountClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasReconditionCount";
+				public string Name => "hasReconditionCount";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";
@@ -594,7 +593,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.LocationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasLocation";
+				public string Name => "hasLocation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// data regarding the application or use of the tool.  This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.";

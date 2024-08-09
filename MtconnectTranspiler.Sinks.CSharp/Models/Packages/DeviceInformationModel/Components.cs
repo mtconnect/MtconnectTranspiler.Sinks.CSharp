@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect;
 
 namespace Mtconnect.DeviceInformationModel
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="Component">Component</see> entity. {{figure(Components)}} shows the <see cref="Component">Component</see> model.   ![Components](figures/Components.png "Components"){: width="0.8"}  > Note: See <see cref="Components Schema Diagrams">Components Schema Diagrams</see> for XML schema. /// Components Model
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_6F87CB48_AFED_473f_92DF_E7AFDAFD3CAC">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class ComponentsPackage : IPackage

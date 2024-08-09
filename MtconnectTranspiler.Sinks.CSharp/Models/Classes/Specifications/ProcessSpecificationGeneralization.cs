@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
 	/// <see cref="Specification">Specification</see> that provides information used to assess the conformance of a variable to process requirements.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643801279_773776_859">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ProcessSpecificationGeneralization : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
 
 		/// <inheritdoc />
-		public string Name => "ProcessSpecificationGeneralization";
+		public string Name => "ProcessSpecification";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,19 +34,22 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580315898400_607214_47155";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580315898400_607214_47155
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.SpecificationClass);
 
 		/// <inheritdoc />
 		public ProcessSpecificationGeneralizationProperties Properties { get; } = new ProcessSpecificationGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ProcessSpecificationGeneralizationProperties : IPropertyList
+		public class ProcessSpecificationGeneralizationProperties : Mtconnect.DeviceInformationModel.Configurations.Specifications.SpecificationClass.SpecificationClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				HasSpecificationLimitsPart,
 				HasControlLimitsPart,
 				HasAlarmLimitsPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasSpecificationLimitsPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSpecificationLimits</remarks>
@@ -59,14 +63,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643883082_895051_1004</item>
 				/// <item>Type: SpecificationLimitsClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.SpecificationLimitsClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.SpecificationLimitsClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasSpecificationLimits";
+				public string Name => "hasSpecificationLimits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
@@ -110,14 +114,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643876416_54094_959</item>
 				/// <item>Type: ControlLimitsClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ControlLimitsClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.ControlLimitsClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasControlLimits";
+				public string Name => "hasControlLimits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
@@ -161,14 +165,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643893577_939623_1049</item>
 				/// <item>Type: AlarmLimitsClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.AlarmLimitsClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.AlarmLimitsClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasAlarmLimits";
+				public string Name => "hasAlarmLimits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";

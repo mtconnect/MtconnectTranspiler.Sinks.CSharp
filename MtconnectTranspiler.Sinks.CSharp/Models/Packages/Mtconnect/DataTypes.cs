@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DataTypes;
-// using Mtconnect;
 
 namespace Mtconnect
 {
 	/// <summary>
 	/// 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579567325331_179717_33552">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class DataTypesPackage : IPackage

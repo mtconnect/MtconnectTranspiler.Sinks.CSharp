@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// quantity, dimension, or magnitude used in engineering adopted as a standard in terms of which the magnitude of other quantities of the same kind can be expressed or calculated.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375158_68411_1987">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EngineeringUnitsClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// quantity, dimension, or magnitude used in engineering adopted as a standard in terms of which the magnitude of other quantities of the same kind can be expressed or calculated.";
 
 		/// <inheritdoc />
-		public string Name => "EngineeringUnitsClass";
+		public string Name => "engineering units";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public EngineeringUnitsClassProperties Properties { get; } = new EngineeringUnitsClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class EngineeringUnitsClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

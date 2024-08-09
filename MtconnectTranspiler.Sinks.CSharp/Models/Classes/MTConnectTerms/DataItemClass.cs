@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.MTConnectTerms;
+using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
 	/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1635251889215_363828_393">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DataItemClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string Summary => @"/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s";
 
 		/// <inheritdoc />
-		public string Name => "DataItemClass";
+		public string Name => "DataItem";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1629291153288_544363_79";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1629291153288_544363_79
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ObservableClass);
 
 		/// <inheritdoc />
 		public DataItemClassProperties Properties { get; } = new DataItemClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DataItemClassProperties : IPropertyList
+		public class DataItemClassProperties : Mtconnect.Glossary.IndustrialTerms.ObservableClass.ObservableClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ObservedBy,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservedByProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservedBy</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ComponentClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservedBy";
+				public string Name => "observed by";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s";

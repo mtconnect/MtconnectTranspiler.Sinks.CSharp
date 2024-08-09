@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
 	/// portion of the content of an <i>MTConnect Response Document</i> that provides information from an <i>agent</i> defining version information, storage capacity, protocol, and other information associated with the management of the data stored in or retrieved from the <i>agent</i>. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375157_278948_1984">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DocumentHeaderClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string Summary => @"/// portion of the content of an <i>MTConnect Response Document</i> that provides information from an <i>agent</i> defining version information, storage capacity, protocol, and other information associated with the management of the data stored in or retrieved from the <i>agent</i>. ";
 
 		/// <inheritdoc />
-		public string Name => "DocumentHeaderClass";
+		public string Name => "document header";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public DocumentHeaderClassProperties Properties { get; } = new DocumentHeaderClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class DocumentHeaderClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

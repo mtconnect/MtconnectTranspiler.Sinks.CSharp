@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "AssetCommandClass";
+		public string Name => "AssetCommand";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,12 +30,15 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1674406425739_249387_380";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1674406425739_249387_380
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.TimestampedClass);
 
 		/// <inheritdoc />
 		public AssetCommandClassProperties Properties { get; } = new AssetCommandClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AssetCommandClassProperties : IPropertyList
+		public class AssetCommandClassProperties : Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -43,7 +47,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				AssetId,
 				Type,
 				Device,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -115,7 +119,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Source";
+				public string Name => "source";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -166,7 +170,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "AssetId";
+				public string Name => "assetId";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -217,7 +221,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -268,7 +272,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Device";
+				public string Name => "device";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

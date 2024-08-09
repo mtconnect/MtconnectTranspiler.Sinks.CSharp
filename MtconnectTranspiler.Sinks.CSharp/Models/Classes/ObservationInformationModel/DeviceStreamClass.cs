@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel;
 
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
 	/// <i>organize</i>s data reported from a <see cref="Device">Device</see>./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_02192189_58E6_456c_A679_CDDFF559DA00">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DeviceStreamClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel
 		public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
 
 		/// <inheritdoc />
-		public string Name => "DeviceStreamClass";
+		public string Name => "DeviceStream";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.ObservationInformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public DeviceStreamClassProperties Properties { get; } = new DeviceStreamClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DeviceStreamClassProperties : IPropertyList
+		public class DeviceStreamClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -69,7 +69,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
@@ -123,7 +123,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Uuid";
+				public string Name => "uuid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
@@ -174,7 +174,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ComponentStreamClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasComponentStream";
+				public string Name => "hasComponentStream";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";

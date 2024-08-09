@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.Parser
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "JsonParserClass";
+		public string Name => "JsonParser";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture.Parser
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public JsonParserClassProperties Properties { get; } = new JsonParserClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class JsonParserClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

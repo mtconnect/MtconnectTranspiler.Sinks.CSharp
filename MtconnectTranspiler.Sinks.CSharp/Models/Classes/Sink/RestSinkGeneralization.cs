@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Sink
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Sink
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "RestSinkGeneralization";
+		public string Name => "RestSink";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.AgentArchitecture.Sink
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1645213825022_980161_355";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1645213825022_980161_355
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SinkClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public RestSinkGeneralizationProperties Properties { get; } = new RestSinkGeneralizationProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class RestSinkGeneralizationProperties : Mtconnect.AgentArchitecture.SinkClass.SinkClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

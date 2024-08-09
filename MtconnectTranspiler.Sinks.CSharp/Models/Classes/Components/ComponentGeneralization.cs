@@ -1,16 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect.Glossary.MTConnectTerms;
-// using Mtconnect.Glossary.IndustrialTerms;
-// using Mtconnect.ObservationInformationModel;
-// using Mtconnect.AgentArchitecture.InformationModel;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components
 {
 	/// <summary>
 	/// logical or physical entity that provides a capability./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_8548C620_467A_4f50_9A22_58D84B7E8779">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentGeneralization : IClass
@@ -22,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 		public string Summary => @"/// logical or physical entity that provides a capability./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ComponentGeneralization";
+		public string Name => "Component";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -37,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel.Components
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581734537697_742151_1119";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581734537697_742151_1119
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.ComponentClass);
 
 		/// <inheritdoc />
 		public ComponentGeneralizationProperties Properties { get; } = new ComponentGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ComponentGeneralizationProperties : IPropertyList
+		public class ComponentGeneralizationProperties : Mtconnect.Glossary.MTConnectTerms.ComponentClass.ComponentClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -62,7 +62,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				HasReferencePart,
 				CoordinateSystemIdRef,
 				HasComponentStreamPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Id</remarks>
@@ -86,7 +86,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -140,7 +140,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -194,7 +194,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "NativeName";
+				public string Name => "nativeName";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -248,7 +248,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "SampleInterval";
+				public string Name => "sampleInterval";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -302,7 +302,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "SampleRate";
+				public string Name => "sampleRate";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -356,7 +356,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Uuid";
+				public string Name => "uuid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -407,7 +407,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDescription";
+				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -451,14 +451,14 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1658936424016_561586_139</item>
 				/// <item>Type: CompositionClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Compositions</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.CompositionClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Compositions.CompositionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasComposition";
+				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -509,7 +509,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "HasComponent";
+				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -553,14 +553,14 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_C04DCC77_16E8_4cef_92D4_B777AFC52570</item>
 				/// <item>Type: ConfigurationClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.IndustrialTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.ConfigurationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.ConfigurationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasConfiguration";
+				public string Name => "hasConfiguration";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -611,7 +611,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "IsComponentOf";
+				public string Name => "isComponentOf";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -655,14 +655,14 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_002C94B7_1257_49be_8EAA_CE7FCD7AFF8A</item>
 				/// <item>Type: DataItemClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.DataItems</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.DataItemClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.DataItemClass);
 				
 				/// <inheritdoc />
-				public string Name => "Observes";
+				public string Name => "observes";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -713,7 +713,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "MadeObservation";
+				public string Name => "madeObservation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -757,14 +757,14 @@ namespace Mtconnect.DeviceInformationModel.Components
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_25A13743_B12C_4c6c_B1DA_8E2EFDD156EF</item>
 				/// <item>Type: ReferenceClass</item>
-				/// <item>Namespace: Mtconnect.AgentArchitecture.InformationModel</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.References</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AgentArchitecture.InformationModel.ReferenceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.References.ReferenceClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasReference";
+				public string Name => "hasReference";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -818,7 +818,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CoordinateSystemIdRef";
+				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
@@ -869,7 +869,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ComponentStreamClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasComponentStream";
+				public string Name => "hasComponentStream";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that provides a capability./// Description";

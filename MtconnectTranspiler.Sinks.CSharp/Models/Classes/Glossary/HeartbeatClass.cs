@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// function that indicates to a <i>client</i> that the communications connection to an <i>agent</i> is still viable during times when there is no new data available to report  often referred to as a "keep alive" message.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375160_713692_1995">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class HeartbeatClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// function that indicates to a <i>client</i> that the communications connection to an <i>agent</i> is still viable during times when there is no new data available to report  often referred to as a ""keep alive"" message.";
 
 		/// <inheritdoc />
-		public string Name => "HeartbeatClass";
+		public string Name => "heartbeat";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public HeartbeatClassProperties Properties { get; } = new HeartbeatClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class HeartbeatClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

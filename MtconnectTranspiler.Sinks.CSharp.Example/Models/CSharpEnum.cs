@@ -106,7 +106,10 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         /// <param name="item">Reference to <see cref="EnumItem"/> to add to the internal list</param>
         public void Add(EnumItem item)
-            => _items.Add(item);
+        {
+            item.Namespace = $"{this.Namespace}.{this.Name}";
+            _items.Add(item);
+        }
 
         /// <summary>
         /// Adds a new <see cref="EnumItem"/>

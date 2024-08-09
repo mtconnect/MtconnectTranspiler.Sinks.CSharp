@@ -1,7 +1,6 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AgentArchitecture.Pipelines;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -15,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "TransformClass";
+		public string Name => "Transform";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -30,12 +29,12 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public TransformClassProperties Properties { get; } = new TransformClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class TransformClassProperties : IPropertyList
+		public class TransformClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -62,7 +61,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(Mtconnect.AgentArchitecture.Pipelines.GuardClass);
 				
 				/// <inheritdoc />
-				public string Name => "Guard";
+				public string Name => "guard";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -113,7 +112,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(Mtconnect.AgentArchitecture.Pipelines.TransformClass);
 				
 				/// <inheritdoc />
-				public string Name => "Next";
+				public string Name => "next";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

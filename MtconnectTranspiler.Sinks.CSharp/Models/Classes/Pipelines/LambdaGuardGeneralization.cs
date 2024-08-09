@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "LambdaGuardGeneralization";
+		public string Name => "LambdaGuard";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,17 +30,20 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1674414211400_186233_3570";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1674414211400_186233_3570
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.GuardClass);
 
 		/// <inheritdoc />
 		public LambdaGuardGeneralizationProperties Properties { get; } = new LambdaGuardGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class LambdaGuardGeneralizationProperties : IPropertyList
+		public class LambdaGuardGeneralizationProperties : Mtconnect.AgentArchitecture.Pipelines.GuardClass.GuardClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Lambda,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="LambdaProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Lambda</remarks>
@@ -60,7 +64,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Lambda";
+				public string Name => "lambda";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

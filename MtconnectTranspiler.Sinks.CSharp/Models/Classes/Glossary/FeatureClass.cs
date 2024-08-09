@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// topological entity(ies) or design requirements related to a geometric model. <seealso href="https://www.google.com/search?q=QIF 3.0-3.4.59&btnI=I">QIF 3.0-3.4.59</seealso>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1677579525403_572309_444">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FeatureClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// topological entity(ies) or design requirements related to a geometric model. <seealso href=""https://www.google.com/search?q=QIF 3.0-3.4.59&btnI=I"">QIF 3.0-3.4.59</seealso>";
 
 		/// <inheritdoc />
-		public string Name => "FeatureClass";
+		public string Name => "feature";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public FeatureClassProperties Properties { get; } = new FeatureClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class FeatureClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

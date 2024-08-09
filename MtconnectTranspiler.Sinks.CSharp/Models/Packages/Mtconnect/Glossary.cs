@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Glossary;
-// using Mtconnect;
 
 namespace Mtconnect
 {

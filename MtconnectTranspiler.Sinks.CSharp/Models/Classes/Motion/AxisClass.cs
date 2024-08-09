@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 {
 	/// <summary>
 	/// axis along or around which the <see cref="Component">Component</see> moves relative to a coordinate system.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_7D0C7298_9CC4_4c45_A016_310B9A55DD7F">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AxisClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 		public string Summary => @"/// axis along or around which the <see cref=""Component"">Component</see> moves relative to a coordinate system.";
 
 		/// <inheritdoc />
-		public string Name => "AxisClass";
+		public string Name => "Axis";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public AxisClassProperties Properties { get; } = new AxisClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AxisClassProperties : IPropertyList
+		public class AxisClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -66,7 +67,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// axis along or around which the <see cref=""Component"">Component</see> moves relative to a coordinate system.";

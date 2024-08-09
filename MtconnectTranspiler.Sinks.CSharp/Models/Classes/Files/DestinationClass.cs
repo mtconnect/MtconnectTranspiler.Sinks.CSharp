@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.Files
 {
 	/// <summary>
 	/// reference to the target <see cref="Device">Device</see> for this <see cref="File">File</see>. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605277188545_673734_476">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DestinationClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string Summary => @"/// reference to the target <see cref=""Device"">Device</see> for this <see cref=""File"">File</see>. ";
 
 		/// <inheritdoc />
-		public string Name => "DestinationClass";
+		public string Name => "Destination";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public DestinationClassProperties Properties { get; } = new DestinationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DestinationClassProperties : IPropertyList
+		public class DestinationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -66,7 +67,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "DeviceUuid";
+				public string Name => "deviceUuid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference to the target <see cref=""Device"">Device</see> for this <see cref=""File"">File</see>. ";

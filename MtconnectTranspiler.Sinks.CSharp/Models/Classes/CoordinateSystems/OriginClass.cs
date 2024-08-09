@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>
 	/// coordinates of the origin position of a coordinate system.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579107743274_159386_163610">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class OriginClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string Summary => @"/// coordinates of the origin position of a coordinate system.";
 
 		/// <inheritdoc />
-		public string Name => "OriginClass";
+		public string Name => "Origin";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public OriginClassProperties Properties { get; } = new OriginClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class OriginClassProperties : IPropertyList
+		public class OriginClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -66,7 +67,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// coordinates of the origin position of a coordinate system.";

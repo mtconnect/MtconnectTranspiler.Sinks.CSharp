@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 {
 	/// <summary>
 	/// descriptive content./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_64352755_7251_46af_846D_937E5A1E3949">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DescriptionClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 		public string Summary => @"/// descriptive content./// Description";
 
 		/// <inheritdoc />
-		public string Name => "DescriptionClass";
+		public string Name => "Description";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Components
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public DescriptionClassProperties Properties { get; } = new DescriptionClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DescriptionClassProperties : IPropertyList
+		public class DescriptionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -70,7 +71,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Manufacturer";
+				public string Name => "manufacturer";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// descriptive content./// Description";
@@ -124,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Model";
+				public string Name => "model";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// descriptive content./// Description";
@@ -178,7 +179,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "SerialNumber";
+				public string Name => "serialNumber";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// descriptive content./// Description";
@@ -232,7 +233,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Station";
+				public string Name => "station";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// descriptive content./// Description";
@@ -286,7 +287,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// descriptive content./// Description";

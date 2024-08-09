@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.AssetInformationModel.Files;
-// using Mtconnect;
 
 namespace Mtconnect.AssetInformationModel
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="File">File</see> model.  ![Files](figures/Files.png "Files"){: width="0.8"}  > Note: See <see cref="File Schema Diagrams">File Schema Diagrams</see> for XML schema. /// Files Asset Information Model
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1589825226627_349226_496">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class FilesPackage : IPackage

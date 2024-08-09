@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.Configurations.ImageFiles;
-// using Mtconnect;
 
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="ImageFile">ImageFile</see> entity.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1677586007782_145120_733">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class ImageFilesPackage : IPackage

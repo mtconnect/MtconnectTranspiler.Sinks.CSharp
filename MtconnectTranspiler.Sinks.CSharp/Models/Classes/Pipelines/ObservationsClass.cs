@@ -1,7 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -15,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ObservationsClass";
+		public string Name => "Observations";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -30,17 +30,20 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1674406425739_249387_380";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1674406425739_249387_380
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.TimestampedClass);
 
 		/// <inheritdoc />
 		public ObservationsClassProperties Properties { get; } = new ObservationsClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ObservationsClassProperties : IPropertyList
+		public class ObservationsClassProperties : Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Value,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
@@ -61,7 +64,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

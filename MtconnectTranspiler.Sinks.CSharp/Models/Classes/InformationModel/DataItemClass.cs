@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "DataItemClass";
+		public string Name => "DataItem";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public DataItemClassProperties Properties { get; } = new DataItemClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class DataItemClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

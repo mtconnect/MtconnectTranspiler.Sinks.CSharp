@@ -12,7 +12,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public string ReferenceId => "_19_0_3_68e0225_1622718371677_761407_1169";
 		
 		/// <inheritdoc />
-		public string Name => "MultiDeviceInteractionModel";
+		public string Name => "Multi-Device Interaction Model";
 
 		/// <inheritdoc />
 		public string Summary => @"";

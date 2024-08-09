@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790702_649058_163005";
 		
 		/// <inheritdoc />
-		public string Name => "BasicElectricCurrent";
+		public string Name => "Basic Electric Current";
 
 		/// <inheritdoc />
 		public string Summary => @"";

@@ -1,14 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
-// using Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.PropertiesOfDefinition;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.PropertiesOfDefinition
 {
 	/// <summary>
 	/// semantic definition of an <see cref="Entry">Entry</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582939685398_830533_4339">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EntryDefinitionClass : IClass
@@ -20,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 		public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
 
 		/// <inheritdoc />
-		public string Name => "EntryDefinitionClass";
+		public string Name => "EntryDefinition";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -35,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public EntryDefinitionClassProperties Properties { get; } = new EntryDefinitionClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class EntryDefinitionClassProperties : IPropertyList
+		public class EntryDefinitionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -75,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Key";
+				public string Name => "key";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
@@ -129,7 +127,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
@@ -180,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDescription";
+				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
@@ -231,7 +229,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.PropertiesOfDefinition.CellDefinitionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCellDefinition";
+				public string Name => "hasCellDefinition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
@@ -285,7 +283,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
@@ -339,7 +337,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
@@ -393,7 +391,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "KeyType";
+				public string Name => "keyType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";

@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.MTConnectTerms;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Component">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587597358521_716746_1028">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class StructureClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Component"">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.";
 
 		/// <inheritdoc />
-		public string Name => "StructureClass";
+		public string Name => "Structure";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_8548C620_467A_4f50_9A22_58D84B7E8779";
+		/// <remarks>
+		/// Original Type: EAID_8548C620_467A_4f50_9A22_58D84B7E8779
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
 		public StructureClassProperties Properties { get; } = new StructureClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class StructureClassProperties : IPropertyList
+		public class StructureClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				IsStructureOfPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="IsStructureOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsStructureOf</remarks>
@@ -57,14 +61,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1620240839406_285612_1596</item>
 				/// <item>Type: DeviceClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.DeviceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DeviceClass);
 				
 				/// <inheritdoc />
-				public string Name => "IsStructureOf";
+				public string Name => "isStructureOf";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.";

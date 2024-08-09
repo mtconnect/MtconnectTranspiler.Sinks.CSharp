@@ -1,11 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.Glossary.InformationModelTerms
 {
 	/// <summary>
 	/// <i>information model</i> that describes the <i>streaming data</i> reported by a piece of equipment.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375176_664425_2051">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationInformationModelClass : IClass
@@ -17,7 +19,7 @@ namespace Mtconnect.Glossary.InformationModelTerms
 		public string Summary => @"/// <i>information model</i> that describes the <i>streaming data</i> reported by a piece of equipment.";
 
 		/// <inheritdoc />
-		public string Name => "ObservationInformationModelClass";
+		public string Name => "Observation Information Model";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +34,20 @@ namespace Mtconnect.Glossary.InformationModelTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1623664375172_792733_2037";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1623664375172_792733_2037
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.InformationModelTerms.MTConnectInformationModelGeneralization);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ObservationInformationModelClassProperties Properties { get; } = new ObservationInformationModelClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ObservationInformationModelClassProperties : Mtconnect.Glossary.InformationModelTerms.MTConnectInformationModelGeneralization.MTConnectInformationModelGeneralizationProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

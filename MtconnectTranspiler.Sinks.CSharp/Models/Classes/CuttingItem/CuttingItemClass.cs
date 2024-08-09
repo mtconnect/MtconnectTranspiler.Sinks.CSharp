@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle;
-// using Mtconnect.AssetInformationModel.CuttingTool.CuttingItem;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 {
 	/// <summary>
 	/// part of of the tool that physically removes the material from the workpiece by shear deformation.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_99183806_F570_4387_BA6D_34929C20F954">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingItemClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		public string Summary => @"/// part of of the tool that physically removes the material from the workpiece by shear deformation.";
 
 		/// <inheritdoc />
-		public string Name => "CuttingItemClass";
+		public string Name => "CuttingItem";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public CuttingItemClassProperties Properties { get; } = new CuttingItemClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CuttingItemClassProperties : IPropertyList
+		public class CuttingItemClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -131,7 +130,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Grade";
+				public string Name => "grade";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// part of of the tool that physically removes the material from the workpiece by shear deformation.";
@@ -185,7 +184,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Indices";
+				public string Name => "indices";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// part of of the tool that physically removes the material from the workpiece by shear deformation.";
@@ -239,7 +238,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ItemId";
+				public string Name => "itemId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// part of of the tool that physically removes the material from the workpiece by shear deformation.";
@@ -347,7 +346,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Manufacturers";
+				public string Name => "manufacturers";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// part of of the tool that physically removes the material from the workpiece by shear deformation.";
@@ -452,7 +451,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.StatusClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCutterStatus";
+				public string Name => "hasCutterStatus";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// part of of the tool that physically removes the material from the workpiece by shear deformation.";
@@ -506,7 +505,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.ItemLifeClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasItemLife";
+				public string Name => "hasItemLife";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// part of of the tool that physically removes the material from the workpiece by shear deformation.";
@@ -560,7 +559,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasMeasurement";
+				public string Name => "hasMeasurement";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// part of of the tool that physically removes the material from the workpiece by shear deformation.";

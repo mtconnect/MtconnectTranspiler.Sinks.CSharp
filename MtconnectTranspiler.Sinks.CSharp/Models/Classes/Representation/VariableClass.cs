@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_SmoothG.Representation
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "VariableClass";
+		public string Name => "Variable";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531115_47447_25730";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531115_47447_25730
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public VariableClassProperties Properties { get; } = new VariableClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class VariableClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

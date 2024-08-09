@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes;
-// using Mtconnect;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 {
 	/// <summary>
 	/// This section lists the <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingItem">CuttingItem</see>.  These <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingItem">CuttingItem</see> are specific to an individual <see cref="CuttingItem">CuttingItem</see> and <b>MUST NOT</b> be used for the <see cref="Measurement">Measurement</see> pertaining to an assembly. Figures below will be used to for reference for the <see cref="CuttingItem">CuttingItem</see> specific <see cref="Measurement">Measurement</see> types.  ![Cutting Tool](figures/Cutting%20Tool.png "Cutting Tool"){: width="0.8"}  ![Cutting Item](figures/Cutting%20Item.png "Cutting Item"){: width="0.8"}  ![Cutting Item Measurement](figures/Cutting%20Item%20Measurement.png "Cutting Item Measurement"){: width="0.8"}  ![Cutting Item Drive Angle](figures/Cutting%20Item%20Drive%20Angle.png "Cutting Item Drive Angle"){: width="0.8"}
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1582919154044_31808_1537">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class CuttingItemMeasurementSubtypesPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		public string ReferenceId => "_19_0_3_45f01b9_1582919154044_31808_1537";
 		
 		/// <inheritdoc />
-		public string Name => "CuttingItemMeasurementSubtypes";
+		public string Name => "Cutting Item Measurement Subtypes";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section lists the <see cref=""Measurement"">Measurement</see> subtypes for <see cref=""CuttingItem"">CuttingItem</see>.  These <see cref=""Measurement"">Measurement</see> subtypes for <see cref=""CuttingItem"">CuttingItem</see> are specific to an individual <see cref=""CuttingItem"">CuttingItem</see> and <b>MUST NOT</b> be used for the <see cref=""Measurement"">Measurement</see> pertaining to an assembly. Figures below will be used to for reference for the <see cref=""CuttingItem"">CuttingItem</see> specific <see cref=""Measurement"">Measurement</see> types.  ![Cutting Tool](figures/Cutting%20Tool.png ""Cutting Tool""){: width=""0.8""}  ![Cutting Item](figures/Cutting%20Item.png ""Cutting Item""){: width=""0.8""}  ![Cutting Item Measurement](figures/Cutting%20Item%20Measurement.png ""Cutting Item Measurement""){: width=""0.8""}  ![Cutting Item Drive Angle](figures/Cutting%20Item%20Drive%20Angle.png ""Cutting Item Drive Angle""){: width=""0.8""}";

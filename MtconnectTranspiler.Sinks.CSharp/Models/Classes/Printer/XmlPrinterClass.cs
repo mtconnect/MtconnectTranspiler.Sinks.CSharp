@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.Printer
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "XmlPrinterClass";
+		public string Name => "XmlPrinter";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture.Printer
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public XmlPrinterClassProperties Properties { get; } = new XmlPrinterClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class XmlPrinterClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

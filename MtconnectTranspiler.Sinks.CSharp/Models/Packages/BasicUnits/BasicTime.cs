@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790701_727688_162966";
 		
 		/// <inheritdoc />
-		public string Name => "BasicTime";
+		public string Name => "Basic Time";
 
 		/// <inheritdoc />
 		public string Summary => @"";

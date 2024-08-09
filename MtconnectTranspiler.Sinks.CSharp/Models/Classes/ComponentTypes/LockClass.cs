@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Component">Component</see> that physically prohibits a <see cref="Device">Device</see> or <see cref="Component">Component</see> from opening or operating.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622457426342_839834_623">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LockClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Component"">Component</see> that physically prohibits a <see cref=""Device"">Device</see> or <see cref=""Component"">Component</see> from opening or operating.";
 
 		/// <inheritdoc />
-		public string Name => "LockClass";
+		public string Name => "Lock";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_8548C620_467A_4f50_9A22_58D84B7E8779";
+		/// <remarks>
+		/// Original Type: EAID_8548C620_467A_4f50_9A22_58D84B7E8779
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
 		public LockClassProperties Properties { get; } = new LockClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class LockClassProperties : IPropertyList
+		public class LockClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ObservesLockState,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesLockStateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesLockState</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LockStateClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesLockState";
+				public string Name => "observesLockState";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Component"">Component</see> that physically prohibits a <see cref=""Device"">Device</see> or <see cref=""Component"">Component</see> from opening or operating.";

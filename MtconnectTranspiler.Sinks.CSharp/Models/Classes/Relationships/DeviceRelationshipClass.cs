@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
 	/// <summary>
 	/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DeviceRelationshipClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
 
 		/// <inheritdoc />
-		public string Name => "DeviceRelationshipClass";
+		public string Name => "DeviceRelationship";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_28132294_DF39_4e8e_8AE5_B79565F991A2";
+		/// <remarks>
+		/// Original Type: EAID_28132294_DF39_4e8e_8AE5_B79565F991A2
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass);
 
 		/// <inheritdoc />
 		public DeviceRelationshipClassProperties Properties { get; } = new DeviceRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DeviceRelationshipClassProperties : IPropertyList
+		public class DeviceRelationshipClassProperties : Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass.ConfigurationRelationshipClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -46,7 +50,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				Href,
 				Role,
 				Xlink_Type,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="DeviceUuidRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DeviceUuidRef</remarks>
@@ -70,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "DeviceUuidRef";
+				public string Name => "deviceUuidRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
@@ -124,7 +128,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Href";
+				public string Name => "href";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
@@ -178,7 +182,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(Mtconnect.DataTypes.RoleTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Role";
+				public string Name => "role";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
@@ -232,7 +236,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Xlink:Type";
+				public string Name => "xlink:type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";

@@ -1,8 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel;
-// using Mtconnect.AssetInformationModel;
+using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel
 {
@@ -16,7 +15,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "TaskArchetypeClass";
+		public string Name => "TaskArchetype";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -31,12 +30,15 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_C7D39183_23CB_416b_A62D_F60815E08B1A";
+		/// <remarks>
+		/// Original Type: EAID_C7D39183_23CB_416b_A62D_F60815E08B1A
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
 		public TaskArchetypeClassProperties Properties { get; } = new TaskArchetypeClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class TaskArchetypeClassProperties : IPropertyList
+		public class TaskArchetypeClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -47,7 +49,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				HasPriorityPart,
 				IsSubTaskOfPart,
 				HasSubTaskPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasCollaboratorPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasCollaborator</remarks>
@@ -68,7 +70,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.CollaboratorClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCollaborator";
+				public string Name => "hasCollaborator";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -119,7 +121,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.CollaboratorClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCoordinator";
+				public string Name => "hasCoordinator";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -170,7 +172,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.AssetClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasAsset";
+				public string Name => "hasAsset";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -272,7 +274,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.PriorityClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasPriority";
+				public string Name => "hasPriority";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -323,7 +325,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.TaskArchetypeClass);
 				
 				/// <inheritdoc />
-				public string Name => "IsSubTaskOf";
+				public string Name => "isSubTaskOf";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -374,7 +376,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.TaskArchetypeClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasSubTask";
+				public string Name => "hasSubTask";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

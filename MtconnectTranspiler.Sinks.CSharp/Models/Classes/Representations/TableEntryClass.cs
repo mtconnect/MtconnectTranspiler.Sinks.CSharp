@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.Representations;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
 	/// <summary>
 	/// <i>key-value pair</i> published as part of a <see cref="Table">Table</see>.  > Note: In the <i>XML</i> representation, <see cref="TableEntry">TableEntry</see> <b>MUST</b> appear as <see cref="Entry">Entry</see>.  
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1600164112807_45306_44">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TableEntryClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
 
 		/// <inheritdoc />
-		public string Name => "TableEntryClass";
+		public string Name => "TableEntry";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public TableEntryClassProperties Properties { get; } = new TableEntryClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class TableEntryClassProperties : IPropertyList
+		public class TableEntryClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -70,7 +70,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Key";
+				public string Name => "key";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
@@ -124,7 +124,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
-				public string Name => "Removed";
+				public string Name => "removed";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
@@ -175,7 +175,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.Representations.CellClass);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
@@ -226,7 +226,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.Representations.TableClass);
 				
 				/// <inheritdoc />
-				public string Name => "IsEntryFor";
+				public string Name => "isEntryFor";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";

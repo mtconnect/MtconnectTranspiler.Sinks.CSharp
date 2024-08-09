@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "TypeGuardGeneralization";
+		public string Name => "TypeGuard";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,17 +30,20 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1674414211400_186233_3570";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1674414211400_186233_3570
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.GuardClass);
 
 		/// <inheritdoc />
 		public TypeGuardGeneralizationProperties Properties { get; } = new TypeGuardGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class TypeGuardGeneralizationProperties : IPropertyList
+		public class TypeGuardGeneralizationProperties : Mtconnect.AgentArchitecture.Pipelines.GuardClass.GuardClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Type,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
@@ -60,7 +64,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

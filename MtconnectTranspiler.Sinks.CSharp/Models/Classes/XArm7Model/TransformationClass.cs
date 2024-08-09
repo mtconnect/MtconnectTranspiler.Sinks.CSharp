@@ -14,7 +14,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "TransformationClass";
+		public string Name => "Transformation";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,12 +29,12 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public TransformationClassProperties Properties { get; } = new TransformationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class TransformationClassProperties : IPropertyList
+		public class TransformationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -83,7 +83,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Xin";
+				public string Name => "xin";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -134,7 +134,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Yin";
+				public string Name => "yin";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -185,7 +185,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Zin";
+				public string Name => "zin";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -236,7 +236,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Xout";
+				public string Name => "xout";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -287,7 +287,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Yout";
+				public string Name => "yout";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -338,7 +338,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Zout";
+				public string Name => "zout";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -389,7 +389,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Xt";
+				public string Name => "xt";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -440,7 +440,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Yt";
+				public string Name => "yt";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -491,7 +491,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Zt";
+				public string Name => "zt";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -542,7 +542,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Xr";
+				public string Name => "xr";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -593,7 +593,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Yr";
+				public string Name => "yr";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -644,7 +644,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Zr";
+				public string Name => "zr";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -695,7 +695,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Ain";
+				public string Name => "ain";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -746,7 +746,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Bin";
+				public string Name => "bin";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -797,7 +797,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Cin";
+				public string Name => "cin";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -848,7 +848,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Aout";
+				public string Name => "aout";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -899,7 +899,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Bout";
+				public string Name => "bout";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -950,7 +950,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Cout";
+				public string Name => "cout";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -1001,7 +1001,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Xu";
+				public string Name => "xu";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -1052,7 +1052,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Yu";
+				public string Name => "yu";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -1103,7 +1103,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Zu";
+				public string Name => "zu";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -1154,7 +1154,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Ang";
+				public string Name => "ang";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -1205,7 +1205,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Angin";
+				public string Name => "angin";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -1256,7 +1256,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Angout";
+				public string Name => "angout";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

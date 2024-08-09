@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes;
-// using Mtconnect;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
 	/// This section lists the <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingTool">CuttingTool</see>.  These <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingTool">CuttingTool</see> are specific to the entire assembly and <b>MUST NOT</b> be used for the <see cref="Measurement">Measurement</see> pertaining to a <see cref="CuttingItem">CuttingItem</see>. {{figure(Cutting Tool Measurement 1)}} and {{figure(Cutting Tool Measurement 2)}} will be used to reference the assembly specific <see cref="Measurement">Measurement</see> subtypes.  ![Cutting Tool Measurement 1](figures/Cutting%20Tool%20Measurement%201.png "Cutting Tool Measurement 1"){: width="0.8"}  ![Cutting Tool Measurement 2](figures/Cutting%20Tool%20Measurement%202.png "Cutting Tool Measurement 2"){: width="0.8"} 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1582918427874_472723_1238">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class CuttingToolMeasurementSubtypesPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string ReferenceId => "_19_0_3_45f01b9_1582918427874_472723_1238";
 		
 		/// <inheritdoc />
-		public string Name => "CuttingToolMeasurementSubtypes";
+		public string Name => "Cutting Tool Measurement Subtypes";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section lists the <see cref=""Measurement"">Measurement</see> subtypes for <see cref=""CuttingTool"">CuttingTool</see>.  These <see cref=""Measurement"">Measurement</see> subtypes for <see cref=""CuttingTool"">CuttingTool</see> are specific to the entire assembly and <b>MUST NOT</b> be used for the <see cref=""Measurement"">Measurement</see> pertaining to a <see cref=""CuttingItem"">CuttingItem</see>. {{figure(Cutting Tool Measurement 1)}} and {{figure(Cutting Tool Measurement 2)}} will be used to reference the assembly specific <see cref=""Measurement"">Measurement</see> subtypes.  ![Cutting Tool Measurement 1](figures/Cutting%20Tool%20Measurement%201.png ""Cutting Tool Measurement 1""){: width=""0.8""}  ![Cutting Tool Measurement 2](figures/Cutting%20Tool%20Measurement%202.png ""Cutting Tool Measurement 2""){: width=""0.8""} ";

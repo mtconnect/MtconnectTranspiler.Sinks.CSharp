@@ -1,14 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems;
-// using Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>
 	/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href="https://www.google.com/search?q=ISO 10303-218:2004&btnI=I">ISO 10303-218:2004</seealso>/// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579100679936_1279_16310">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CoordinateSystemClass : IClass
@@ -20,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
 
 		/// <inheritdoc />
-		public string Name => "CoordinateSystemClass";
+		public string Name => "CoordinateSystem";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -35,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public CoordinateSystemClassProperties Properties { get; } = new CoordinateSystemClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CoordinateSystemClassProperties : IPropertyList
+		public class CoordinateSystemClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -77,7 +75,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
@@ -131,7 +129,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
@@ -185,7 +183,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "NativeName";
+				public string Name => "nativeName";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
@@ -239,7 +237,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ParentIdRef";
+				public string Name => "parentIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
@@ -290,7 +288,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.OriginClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasOrigin";
+				public string Name => "hasOrigin";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
@@ -334,14 +332,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579103900791_417826_16362</item>
 				/// <item>Type: TransformationClass</item>
-				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.TransformationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.TransformationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasTransformation";
+				public string Name => "hasTransformation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
@@ -395,7 +393,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(Mtconnect.DataTypes.CoordinateSystemTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
@@ -449,7 +447,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Uuid";
+				public string Name => "uuid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";

@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.IndustrialTerms;
-// using Mtconnect.Glossary.MTConnectTerms;
+using System.Linq;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// logical or physical entity that may produce <i>observation</i>s about itself.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1635250812908_628647_270">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EngineeredSystemClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
 
 		/// <inheritdoc />
-		public string Name => "EngineeredSystemClass";
+		public string Name => "engineered system";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +34,15 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581733974550_623533_615";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581733974550_623533_615
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ThingClass);
 
 		/// <inheritdoc />
 		public EngineeredSystemClassProperties Properties { get; } = new EngineeredSystemClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class EngineeredSystemClassProperties : IPropertyList
+		public class EngineeredSystemClassProperties : Mtconnect.Glossary.IndustrialTerms.ThingClass.ThingClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -48,7 +51,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				MakesObservation,
 				Observes,
 				MadeObservation,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="PartOfProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: PartOf</remarks>
@@ -69,7 +72,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.EngineeredSystemClass);
 				
 				/// <inheritdoc />
-				public string Name => "PartOf";
+				public string Name => "part of";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
@@ -120,7 +123,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.EngineeredSystemClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasPart";
+				public string Name => "has part";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
@@ -164,14 +167,14 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1629291060726_222338_26</item>
 				/// <item>Type: ObservationClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.Glossary.IndustrialTerms</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ObservationClass);
+				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.ObservationClass);
 				
 				/// <inheritdoc />
-				public string Name => "MakesObservation";
+				public string Name => "makes observation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
@@ -222,7 +225,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.ObservableClass);
 				
 				/// <inheritdoc />
-				public string Name => "Observes";
+				public string Name => "observes";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
@@ -273,7 +276,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ObservationClass);
 				
 				/// <inheritdoc />
-				public string Name => "MadeObservation";
+				public string Name => "made observation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";

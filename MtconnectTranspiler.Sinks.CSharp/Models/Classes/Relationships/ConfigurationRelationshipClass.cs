@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
 	/// <summary>
 	/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_28132294_DF39_4e8e_8AE5_B79565F991A2">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConfigurationRelationshipClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ConfigurationRelationshipClass";
+		public string Name => "ConfigurationRelationship";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ConfigurationRelationshipClassProperties Properties { get; } = new ConfigurationRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ConfigurationRelationshipClassProperties : IPropertyList
+		public class ConfigurationRelationshipClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -70,7 +70,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
@@ -124,7 +124,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
@@ -178,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(Mtconnect.DataTypes.RelationshipTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";
@@ -232,7 +232,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(Mtconnect.DataTypes.CriticalityTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Criticality";
+				public string Name => "criticality";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// association between two pieces of equipment that function independently but together perform a manufacturing operation./// Description";

@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle;
-// using Mtconnect;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> model.  ![CuttingToolLifeCycle](figures/CuttingToolLifeCycle.png "CuttingToolLifeCycle"){: width="0.8"}  > Note: See <see cref="CuttingToolLifeCycle Schema Diagrams">CuttingToolLifeCycle Schema Diagrams</see> for XML schema. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1612424133851_339632_344">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class CuttingToolLifeCyclePackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string ReferenceId => "_19_0_3_68e0225_1612424133851_339632_344";
 		
 		/// <inheritdoc />
-		public string Name => "CuttingToolLifeCycle";
+		public string Name => "Cutting Tool Life Cycle";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides semantic information for the <see cref=""CuttingToolLifeCycle"">CuttingToolLifeCycle</see> model.  ![CuttingToolLifeCycle](figures/CuttingToolLifeCycle.png ""CuttingToolLifeCycle""){: width=""0.8""}  > Note: See <see cref=""CuttingToolLifeCycle Schema Diagrams"">CuttingToolLifeCycle Schema Diagrams</see> for XML schema. ";

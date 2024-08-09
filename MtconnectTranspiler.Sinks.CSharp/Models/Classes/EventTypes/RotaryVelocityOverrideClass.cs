@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// <see cref="EventEnum::ROTARY_VELOCITY_OVERRIDE">EventEnum::ROTARY_VELOCITY_OVERRIDE</see>  This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref="Rotary">Rotary</see> type axis.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218440_585732_2163">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class RotaryVelocityOverrideClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// <see cref=""EventEnum::ROTARY_VELOCITY_OVERRIDE"">EventEnum::ROTARY_VELOCITY_OVERRIDE</see>  This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref=""Rotary"">Rotary</see> type axis.";
 
 		/// <inheritdoc />
-		public string Name => "RotaryVelocityOverrideClass";
+		public string Name => "RotaryVelocityOverride";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531115_47447_25730";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531115_47447_25730
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
 		public RotaryVelocityOverrideClassProperties Properties { get; } = new RotaryVelocityOverrideClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class RotaryVelocityOverrideClassProperties : IPropertyList
+		public class RotaryVelocityOverrideClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Result,
 				Type,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""EventEnum::ROTARY_VELOCITY_OVERRIDE"">EventEnum::ROTARY_VELOCITY_OVERRIDE</see>  This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref=""Rotary"">Rotary</see> type axis.";
@@ -116,7 +120,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.EventEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""EventEnum::ROTARY_VELOCITY_OVERRIDE"">EventEnum::ROTARY_VELOCITY_OVERRIDE</see>  This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref=""Rotary"">Rotary</see> type axis.";
@@ -145,7 +149,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "ROTARY_VELOCITY_OVERRIDE";
 			}
 		};
 

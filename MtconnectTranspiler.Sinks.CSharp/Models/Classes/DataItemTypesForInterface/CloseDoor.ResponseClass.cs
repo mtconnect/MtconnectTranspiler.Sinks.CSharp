@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
 	/// <summary>
 	/// operating state of the <i>response</i> to a <i>request</i> to close a door.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623846243174_727333_2543">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CloseDoorResponseClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to close a door.";
 
 		/// <inheritdoc />
-		public string Name => "CloseDoor.ResponseClass";
+		public string Name => "CloseDoor.Response";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580378218219_606998_1626";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580378218219_606998_1626
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.CloseDoorClass);
 
 		/// <inheritdoc />
 		public CloseDoorResponseClassProperties Properties { get; } = new CloseDoorResponseClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CloseDoorResponseClassProperties : IPropertyList
+		public class CloseDoorResponseClassProperties : Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.CloseDoorClass.CloseDoorClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to close a door.";
@@ -94,7 +98,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "RESPONSE";
 			}
 			/// <summary>
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public System.Type Type => typeof(Mtconnect.DataTypes.ResponseStateEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to close a door.";

@@ -1,15 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
-// using Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model;
-// using Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems;
-// using Mtconnect.DeviceInformationModel.Components;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 {
 	/// <summary>
 	/// movement of the component relative to a coordinate system. /// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_1F084FBF_2AC7_41f6_8485_C356E6D7A9C1">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MotionClass : IClass
@@ -21,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 		public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
 
 		/// <inheritdoc />
-		public string Name => "MotionClass";
+		public string Name => "Motion";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -36,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public MotionClassProperties Properties { get; } = new MotionClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MotionClassProperties : IPropertyList
+		public class MotionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -78,7 +75,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public System.Type Type => typeof(Mtconnect.DataTypes.MotionActuationTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Actuation";
+				public string Name => "actuation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
@@ -132,7 +129,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CoordinateSystemIdRef";
+				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
@@ -186,7 +183,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
@@ -240,7 +237,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ParentIdRef";
+				public string Name => "parentIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
@@ -294,7 +291,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public System.Type Type => typeof(Mtconnect.DataTypes.MotionTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
@@ -338,14 +335,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_7D0C7298_9CC4_4c45_A016_310B9A55DD7F</item>
 				/// <item>Type: AxisClass</item>
-				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Motion</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AxisClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Motion.AxisClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasAxis";
+				public string Name => "hasAxis";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
@@ -396,7 +393,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.OriginClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasOrigin";
+				public string Name => "hasOrigin";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
@@ -440,14 +437,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579103900791_417826_16362</item>
 				/// <item>Type: TransformationClass</item>
-				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.TransformationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.TransformationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasTransformation";
+				public string Name => "hasTransformation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
@@ -498,7 +495,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDescription";
+				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";

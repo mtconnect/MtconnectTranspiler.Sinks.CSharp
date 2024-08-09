@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
 	/// additional information or property for an <i>element</i>. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375144_459057_1958">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AttributeClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string Summary => @"/// additional information or property for an <i>element</i>. ";
 
 		/// <inheritdoc />
-		public string Name => "AttributeClass";
+		public string Name => "attribute";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public AttributeClassProperties Properties { get; } = new AttributeClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class AttributeClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

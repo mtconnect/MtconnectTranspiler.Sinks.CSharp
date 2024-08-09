@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect.Glossary.IndustrialTerms;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 {
 	/// <summary>
 	/// <i>sensing element</i> of a <see cref="Sensor">Sensor</see>./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_82C852E8_47AD_4b8c_804D_F38FCA663918">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ChannelClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ChannelClass";
+		public string Name => "Channel";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ChannelClassProperties Properties { get; } = new ChannelClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ChannelClassProperties : IPropertyList
+		public class ChannelClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -182,7 +181,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
@@ -290,7 +289,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Number";
+				public string Name => "number";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
@@ -341,7 +340,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDescription";
+				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
@@ -385,14 +384,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE</item>
 				/// <item>Type: SensorConfigurationClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.IndustrialTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Sensor</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.SensorConfigurationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Sensor.SensorConfigurationClass);
 				
 				/// <inheritdoc />
-				public string Name => "IsChannelOf";
+				public string Name => "isChannelOf";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";

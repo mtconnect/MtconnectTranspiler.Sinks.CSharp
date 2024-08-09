@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790700_15924_162934";
 		
 		/// <inheritdoc />
-		public string Name => "BasicVolume";
+		public string Name => "Basic Volume";
 
 		/// <inheritdoc />
 		public string Summary => @"";

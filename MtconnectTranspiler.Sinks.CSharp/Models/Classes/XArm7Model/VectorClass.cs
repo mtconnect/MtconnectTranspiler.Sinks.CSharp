@@ -14,7 +14,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "VectorClass";
+		public string Name => "Vector";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,12 +29,12 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public VectorClassProperties Properties { get; } = new VectorClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class VectorClassProperties : IPropertyList
+		public class VectorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -62,7 +62,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "X";
+				public string Name => "x";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -113,7 +113,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Y";
+				public string Name => "y";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -164,7 +164,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
-				public string Name => "Z";
+				public string Name => "z";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

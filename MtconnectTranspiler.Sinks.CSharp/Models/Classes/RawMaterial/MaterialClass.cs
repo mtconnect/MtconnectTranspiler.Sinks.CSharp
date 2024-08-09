@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 {
 	/// <summary>
 	/// material used as the <see cref="RawMaterial">RawMaterial</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1618831557881_852871_420">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MaterialClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 		public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
 
 		/// <inheritdoc />
-		public string Name => "MaterialClass";
+		public string Name => "Material";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public MaterialClassProperties Properties { get; } = new MaterialClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MaterialClassProperties : IPropertyList
+		public class MaterialClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -73,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
@@ -127,7 +128,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
@@ -181,7 +182,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";

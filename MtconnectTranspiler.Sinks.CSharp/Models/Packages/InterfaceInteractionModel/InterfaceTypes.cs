@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.InterfaceInteractionModel.InterfaceTypes;
-// using Mtconnect;
 
 namespace Mtconnect.InterfaceInteractionModel
 {
 	/// <summary>
 	/// The abstract <see cref="Interface">Interface</see> is realized by the following types listed in this section.   In order to implement the <i>interaction model</i> for <i>interface</i>s, each piece of equipment associated with an <i>interface</i> <b>MUST</b> provide the corresponding <see cref="Interface">Interface</see> type. A piece of equipment <b>MAY</b> support any number of unique <i>interface</i>s./// Interfaces for Device and Observation Information Models
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1622717338882_321462_855">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class InterfaceTypesPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public string ReferenceId => "_19_0_3_68e0225_1622717338882_321462_855";
 		
 		/// <inheritdoc />
-		public string Name => "InterfaceTypes";
+		public string Name => "Interface Types";
 
 		/// <inheritdoc />
 		public string Summary => @"/// The abstract <see cref=""Interface"">Interface</see> is realized by the following types listed in this section.   In order to implement the <i>interaction model</i> for <i>interface</i>s, each piece of equipment associated with an <i>interface</i> <b>MUST</b> provide the corresponding <see cref=""Interface"">Interface</see> type. A piece of equipment <b>MAY</b> support any number of unique <i>interface</i>s./// Interfaces for Device and Observation Information Models";

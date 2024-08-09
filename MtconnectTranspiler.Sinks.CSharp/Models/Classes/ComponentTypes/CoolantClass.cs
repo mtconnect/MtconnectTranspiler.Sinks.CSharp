@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="System">System</see> that provides distribution and management of fluids that remove heat from a piece of equipment.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381979_456626_42219">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CoolantClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""System"">System</see> that provides distribution and management of fluids that remove heat from a piece of equipment.";
 
 		/// <inheritdoc />
-		public string Name => "CoolantClass";
+		public string Name => "Coolant";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579572382020_336298_42297";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579572382020_336298_42297
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 
 		/// <inheritdoc />
 		public CoolantClassProperties Properties { get; } = new CoolantClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CoolantClassProperties : IPropertyList
+		public class CoolantClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass.SystemClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ObservesConcentration,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesConcentrationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesConcentration</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.ConcentrationClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesConcentration";
+				public string Name => "observesConcentration";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that provides distribution and management of fluids that remove heat from a piece of equipment.";

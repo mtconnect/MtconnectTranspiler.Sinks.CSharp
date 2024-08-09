@@ -7,6 +7,7 @@ namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="Observation">Observation</see> types.  <see cref="Observation">Observation</see> entities are instantiated as <see cref="Sample">Sample</see>, <see cref="Event">Event</see> or <see cref="Condition">Condition</see> entities based upon the <see cref="DataItem::category" /> and <see cref="DataItem::type" /> defined for the corresponding <see cref="DataItem">DataItem</see>.  See {{figure(DeviceStream Example)}} for examples on how the <see cref="Observation">Observation</see> types are organized within <see cref="ComponentStream">ComponentStream</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1589897764829_678664_48">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class ObservationTypesPackage : IPackage
@@ -15,7 +16,7 @@ namespace Mtconnect.ObservationInformationModel
 		public string ReferenceId => "_19_0_3_91b028d_1589897764829_678664_48";
 		
 		/// <inheritdoc />
-		public string Name => "ObservationTypes";
+		public string Name => "Observation Types";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides semantic information for the <see cref=""Observation"">Observation</see> types.  <see cref=""Observation"">Observation</see> entities are instantiated as <see cref=""Sample"">Sample</see>, <see cref=""Event"">Event</see> or <see cref=""Condition"">Condition</see> entities based upon the <see cref=""DataItem::category"" /> and <see cref=""DataItem::type"" /> defined for the corresponding <see cref=""DataItem"">DataItem</see>.  See {{figure(DeviceStream Example)}} for examples on how the <see cref=""Observation"">Observation</see> types are organized within <see cref=""ComponentStream"">ComponentStream</see>.";

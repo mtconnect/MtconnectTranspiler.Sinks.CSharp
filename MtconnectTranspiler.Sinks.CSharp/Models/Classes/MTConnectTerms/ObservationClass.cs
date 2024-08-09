@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.IndustrialTerms;
+using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
 	/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581812901326_593856_4168">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string Summary => @"/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.";
 
 		/// <inheritdoc />
-		public string Name => "ObservationClass";
+		public string Name => "Observation";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581733974550_623533_615";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581733974550_623533_615
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ThingClass);
 
 		/// <inheritdoc />
 		public ObservationClassProperties Properties { get; } = new ObservationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ObservationClassProperties : IPropertyList
+		public class ObservationClassProperties : Mtconnect.Glossary.IndustrialTerms.ThingClass.ThingClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				MadeBy,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="MadeByProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeBy</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.EngineeredSystemClass);
 				
 				/// <inheritdoc />
-				public string Name => "MadeBy";
+				public string Name => "made by";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.";

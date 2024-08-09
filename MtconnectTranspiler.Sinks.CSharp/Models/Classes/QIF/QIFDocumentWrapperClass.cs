@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
-// using Mtconnect.AssetInformationModel.QIF;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.QIF
 {
 	/// <summary>
 	/// <see cref="Asset">Asset</see> that carries the QIF Document.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622119541205_751450_1761">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class QIFDocumentWrapperClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 		public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";
 
 		/// <inheritdoc />
-		public string Name => "QIFDocumentWrapperClass";
+		public string Name => "QIFDocumentWrapper";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,18 +34,21 @@ namespace Mtconnect.AssetInformationModel.QIF
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_C7D39183_23CB_416b_A62D_F60815E08B1A";
+		/// <remarks>
+		/// Original Type: EAID_C7D39183_23CB_416b_A62D_F60815E08B1A
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
 		public QIFDocumentWrapperClassProperties Properties { get; } = new QIFDocumentWrapperClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class QIFDocumentWrapperClassProperties : IPropertyList
+		public class QIFDocumentWrapperClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				QifDocumentType,
 				HasQIFDocumentPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="QifDocumentTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: QifDocumentType</remarks>
@@ -69,7 +72,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 				public System.Type Type => typeof(Mtconnect.DataTypes.QIFDocumentTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "QifDocumentType";
+				public string Name => "qifDocumentType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";
@@ -120,7 +123,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.QIF.QIFDocumentClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasQIFDocument";
+				public string Name => "hasQIFDocument";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";

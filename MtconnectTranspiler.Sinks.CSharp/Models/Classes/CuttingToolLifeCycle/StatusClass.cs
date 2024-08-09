@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
 	/// status of the cutting tool.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_2F5EC70A_8269_4c6a_AAB3_7F17B8F22C82">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class StatusClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string Summary => @"/// status of the cutting tool.";
 
 		/// <inheritdoc />
-		public string Name => "StatusClass";
+		public string Name => "Status";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public StatusClassProperties Properties { get; } = new StatusClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class StatusClassProperties : IPropertyList
+		public class StatusClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +67,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.DataTypes.CutterStatusTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// status of the cutting tool.";

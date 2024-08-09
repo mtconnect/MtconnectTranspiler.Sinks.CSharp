@@ -6,6 +6,7 @@ namespace Mtconnect.SupportingDocuments
 {
 	/// <summary>
 	/// Acronyms/// MTConnect Class/// MTConnect Specification and Materials/// MTConnect References/// External References/// Main Template TEX/// Appendix/// Main Template MD
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1596108922525_351463_147">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class CommonDocumentsPackage : IPackage
@@ -14,7 +15,7 @@ namespace Mtconnect.SupportingDocuments
 		public string ReferenceId => "_19_0_3_68e0225_1596108922525_351463_147";
 		
 		/// <inheritdoc />
-		public string Name => "CommonDocuments";
+		public string Name => "Common Documents";
 
 		/// <inheritdoc />
 		public string Summary => @"/// Acronyms/// MTConnect Class/// MTConnect Specification and Materials/// MTConnect References/// External References/// Main Template TEX/// Appendix/// Main Template MD";

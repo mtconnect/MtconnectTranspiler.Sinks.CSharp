@@ -1,14 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model;
-// using Mtconnect.DeviceInformationModel.Configurations.SolidModel;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 {
 	/// <summary>
 	/// references to a file with the three-dimensional geometry of the <see cref="Component">Component</see> or <see cref="Composition">Composition</see>./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587596157073_106480_480">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SolidModelClass : IClass
@@ -20,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 		public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
 
 		/// <inheritdoc />
-		public string Name => "SolidModelClass";
+		public string Name => "SolidModel";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -35,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public SolidModelClassProperties Properties { get; } = new SolidModelClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class SolidModelClassProperties : IPropertyList
+		public class SolidModelClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -78,7 +76,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -122,14 +120,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579103900791_417826_16362</item>
 				/// <item>Type: TransformationClass</item>
-				/// <item>Namespace: Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.TransformationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.TransformationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasTransformation";
+				public string Name => "hasTransformation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -180,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.SolidModel.ScaleClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasScale";
+				public string Name => "hasScale";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -234,7 +232,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "SolidModelIdRef";
+				public string Name => "solidModelIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -288,7 +286,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Href";
+				public string Name => "href";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -342,7 +340,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ItemRef";
+				public string Name => "itemRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -396,7 +394,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(Mtconnect.DataTypes.MediaTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "MediaType";
+				public string Name => "mediaType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -450,7 +448,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CoordinateSystemIdRef";
+				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -504,7 +502,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "NativeUnits";
+				public string Name => "nativeUnits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
@@ -558,7 +556,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";

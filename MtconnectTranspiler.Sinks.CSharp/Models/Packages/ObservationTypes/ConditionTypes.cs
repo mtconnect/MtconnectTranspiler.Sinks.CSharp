@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes;
-// using Mtconnect;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes
 {
 	/// <summary>
 	/// This section provides semantic information for <see cref="Condition">Condition</see> types.  <see cref="Condition">Condition</see> types are reported differently from other <see cref="Observation">Observation</see> types. They are reported based on the <i>condition state</i> for each <see cref="Condition">Condition</see>.  The <see cref="DataItem::type" /> and <see cref="DataItem::subType" /> (where applicable) for a <see cref="Condition">Condition</see> <b>MAY</b> be any of the <see cref="DataItem::type" /> and <see cref="DataItem::subType" /> defined for <see cref="DataItem">DataItem</see>s with <see cref="DataItem::category" /> as <c>SAMPLE</c> or <see cref="DataItem::category" /> as <c>EVENT</c> listed in the <i>Device Information Model</i>.  This section lists additional <see cref="Condition">Condition</see> types that have been defined to represent the health and fault status of <i>Component</i>s.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309879217_713704_44360">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class ConditionTypesPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 		public string ReferenceId => "_19_0_3_45f01b9_1580309879217_713704_44360";
 		
 		/// <inheritdoc />
-		public string Name => "ConditionTypes";
+		public string Name => "Condition Types";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides semantic information for <see cref=""Condition"">Condition</see> types.  <see cref=""Condition"">Condition</see> types are reported differently from other <see cref=""Observation"">Observation</see> types. They are reported based on the <i>condition state</i> for each <see cref=""Condition"">Condition</see>.  The <see cref=""DataItem::type"" /> and <see cref=""DataItem::subType"" /> (where applicable) for a <see cref=""Condition"">Condition</see> <b>MAY</b> be any of the <see cref=""DataItem::type"" /> and <see cref=""DataItem::subType"" /> defined for <see cref=""DataItem"">DataItem</see>s with <see cref=""DataItem::category"" /> as <c>SAMPLE</c> or <see cref=""DataItem::category"" /> as <c>EVENT</c> listed in the <i>Device Information Model</i>.  This section lists additional <see cref=""Condition"">Condition</see> types that have been defined to represent the health and fault status of <i>Component</i>s.";

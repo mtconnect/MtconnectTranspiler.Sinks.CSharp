@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Glossary.InformationModelTerms;
-// using Mtconnect;
 
 namespace Mtconnect.Glossary
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.Glossary
 		public string ReferenceId => "_19_0_3_68e0225_1623665808313_870132_8816";
 		
 		/// <inheritdoc />
-		public string Name => "InformationModelTerms";
+		public string Name => "Information Model Terms";
 
 		/// <inheritdoc />
 		public string Summary => @"";

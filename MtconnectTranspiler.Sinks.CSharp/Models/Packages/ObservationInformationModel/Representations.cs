@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.ObservationInformationModel.Representations;
-// using Mtconnect;
 
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="Representation">Representation</see> model.  ![Representation](figures/Representation.png "Representation"){: width="0.8"}  > Note: See <see cref="Representation Schema Diagrams">Representation Schema Diagrams</see> for XML schema.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1583339330789_426055_14911">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class RepresentationsPackage : IPackage

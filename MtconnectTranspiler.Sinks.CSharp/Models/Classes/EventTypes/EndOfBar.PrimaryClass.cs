@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// specific applications <b>MAY</b> reference one or more locations on a piece of bar stock as the indication for the <see cref="EndOfBar">EndOfBar</see>.   The main or most important location <b>MUST</b> be designated as the <see cref="PRIMARY">PRIMARY</see> indication for the <see cref="EndOfBar">EndOfBar</see>.  If no <see cref="subType">subType</see> is specified, <see cref="PRIMARY">PRIMARY</see> <b>MUST</b> be the default <see cref="EndOfBar">EndOfBar</see> indication.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218289_100730_1779">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EndOfBarPrimaryClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// specific applications <b>MAY</b> reference one or more locations on a piece of bar stock as the indication for the <see cref=""EndOfBar"">EndOfBar</see>.   The main or most important location <b>MUST</b> be designated as the <see cref=""PRIMARY"">PRIMARY</see> indication for the <see cref=""EndOfBar"">EndOfBar</see>.  If no <see cref=""subType"">subType</see> is specified, <see cref=""PRIMARY"">PRIMARY</see> <b>MUST</b> be the default <see cref=""EndOfBar"">EndOfBar</see> indication.";
 
 		/// <inheritdoc />
-		public string Name => "EndOfBar.PrimaryClass";
+		public string Name => "EndOfBar.Primary";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580378218288_775940_1776";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580378218288_775940_1776
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EndOfBarClass);
 
 		/// <inheritdoc />
 		public EndOfBarPrimaryClassProperties Properties { get; } = new EndOfBarPrimaryClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class EndOfBarPrimaryClassProperties : IPropertyList
+		public class EndOfBarPrimaryClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EndOfBarClass.EndOfBarClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// specific applications <b>MAY</b> reference one or more locations on a piece of bar stock as the indication for the <see cref=""EndOfBar"">EndOfBar</see>.   The main or most important location <b>MUST</b> be designated as the <see cref=""PRIMARY"">PRIMARY</see> indication for the <see cref=""EndOfBar"">EndOfBar</see>.  If no <see cref=""subType"">subType</see> is specified, <see cref=""PRIMARY"">PRIMARY</see> <b>MUST</b> be the default <see cref=""EndOfBar"">EndOfBar</see> indication.";

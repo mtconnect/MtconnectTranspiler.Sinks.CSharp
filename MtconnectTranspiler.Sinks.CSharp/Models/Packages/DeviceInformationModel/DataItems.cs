@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.DataItems;
-// using Mtconnect;
 
 namespace Mtconnect.DeviceInformationModel
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="DataItem">DataItem</see> entity. {{figure(DataItems)}} shows the <see cref="DataItem">DataItem</see> model.   ![DataItems](figures/DataItems.png "DataItems"){: width="0.8"}  > Note: See <see cref="DataItems Schema Diagrams">DataItems Schema Diagrams</see> for XML schema./// DataItems Model
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_0FAC31E7_7957_49d2_AD4C_BCFBEF9878FD">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class DataItemsPackage : IPackage

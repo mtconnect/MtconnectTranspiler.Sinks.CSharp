@@ -12,7 +12,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples
 		public string ReferenceId => "_19_0_3_68e0225_1679314832353_767937_2737";
 		
 		/// <inheritdoc />
-		public string Name => "MachineTool";
+		public string Name => "Machine Tool";
 
 		/// <inheritdoc />
 		public string Summary => @"";

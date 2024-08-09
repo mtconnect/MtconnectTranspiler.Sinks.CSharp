@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.MTConnectTerms;
-// using Mtconnect.DeviceInformationModel.Components;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// leaf <see cref="Component">Component</see> composed of interconnected series of objects that band together and are used to transmit motion for a piece of equipment or to convey materials and objects.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580312106462_246830_44378">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ChainClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of interconnected series of objects that band together and are used to transmit motion for a piece of equipment or to convey materials and objects.";
 
 		/// <inheritdoc />
-		public string Name => "ChainClass";
+		public string Name => "Chain";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,18 +34,21 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_8548C620_467A_4f50_9A22_58D84B7E8779";
+		/// <remarks>
+		/// Original Type: EAID_8548C620_467A_4f50_9A22_58D84B7E8779
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
 		public ChainClassProperties Properties { get; } = new ChainClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ChainClassProperties : IPropertyList
+		public class ChainClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				HasComposition,
 				HasComponent,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasCompositionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComposition</remarks>
@@ -59,14 +62,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1658936424016_561586_139</item>
 				/// <item>Type: CompositionClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Compositions</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.CompositionClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Compositions.CompositionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasComposition";
+				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of interconnected series of objects that band together and are used to transmit motion for a piece of equipment or to convey materials and objects.";
@@ -117,7 +120,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "HasComponent";
+				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of interconnected series of objects that band together and are used to transmit motion for a piece of equipment or to convey materials and objects.";

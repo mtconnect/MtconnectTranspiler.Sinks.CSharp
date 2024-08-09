@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
-// using Mtconnect;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes
 {
 	/// <summary>
 	/// This section provides semantic information for <see cref="Event">Event</see> types.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309852285_621670_44358">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class EventTypesPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 		public string ReferenceId => "_19_0_3_45f01b9_1580309852285_621670_44358";
 		
 		/// <inheritdoc />
-		public string Name => "EventTypes";
+		public string Name => "Event Types";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides semantic information for <see cref=""Event"">Event</see> types.";

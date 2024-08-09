@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790697_906422_162854";
 		
 		/// <inheritdoc />
-		public string Name => "BasicAmountOfSubstanceConcentration";
+		public string Name => "Basic Amount of Substance Concentration";
 
 		/// <inheritdoc />
 		public string Summary => @"";

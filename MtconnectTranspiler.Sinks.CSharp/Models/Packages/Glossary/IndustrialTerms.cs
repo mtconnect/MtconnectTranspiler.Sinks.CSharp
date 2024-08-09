@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Glossary.IndustrialTerms;
-// using Mtconnect;
 
 namespace Mtconnect.Glossary
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.Glossary
 		public string ReferenceId => "_19_0_4_45f01b9_1637105844205_327255_1120";
 		
 		/// <inheritdoc />
-		public string Name => "IndustrialTerms";
+		public string Name => "Industrial Terms";
 
 		/// <inheritdoc />
 		public string Summary => @"";

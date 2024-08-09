@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Imports.CSVImports;
-// using Mtconnect;
 
 namespace Mtconnect.Imports
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.Imports
 		public string ReferenceId => "_19_0_3_45f01b9_1579210647400_714066_3582";
 		
 		/// <inheritdoc />
-		public string Name => "CSVImports";
+		public string Name => "CSV Imports";
 
 		/// <inheritdoc />
 		public string Summary => @"";

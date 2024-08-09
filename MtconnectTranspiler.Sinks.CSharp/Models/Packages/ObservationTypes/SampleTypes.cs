@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes;
-// using Mtconnect;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes
 {
 	/// <summary>
 	/// This section provides semantic information for <see cref="Sample">Sample</see> types.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309868367_570061_44359">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class SampleTypesPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 		public string ReferenceId => "_19_0_3_45f01b9_1580309868367_570061_44359";
 		
 		/// <inheritdoc />
-		public string Name => "SampleTypes";
+		public string Name => "Sample Types";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides semantic information for <see cref=""Sample"">Sample</see> types.";

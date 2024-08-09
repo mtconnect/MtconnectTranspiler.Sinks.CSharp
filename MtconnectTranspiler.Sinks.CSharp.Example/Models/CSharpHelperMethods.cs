@@ -101,6 +101,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                         return umlAssociation.Name;
                     case UmlGeneralization umlGeneralization:
                         return TypeDeepSearch(model, umlGeneralization.General, out remoteType);
+                    case UmlEnumerationLiteral umlEnumerationLiteral:
+                        return umlEnumerationLiteral.Name;
                     default:
                         break;
                 }

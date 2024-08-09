@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
 	/// set of limits that is used to indicate whether a process variable is stable and in control.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643876416_54094_959">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ControlLimitsClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
 
 		/// <inheritdoc />
-		public string Name => "ControlLimitsClass";
+		public string Name => "ControlLimits";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ControlLimitsClassProperties Properties { get; } = new ControlLimitsClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ControlLimitsClassProperties : IPropertyList
+		public class ControlLimitsClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -61,14 +61,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643508394_491668_626</item>
 				/// <item>Type: UpperLimitClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.UpperLimitClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "UpperLimit";
+				public string Name => "upperLimit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
@@ -112,14 +112,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643515595_841451_671</item>
 				/// <item>Type: UpperWarningClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.UpperWarningClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperWarningClass);
 				
 				/// <inheritdoc />
-				public string Name => "UpperWarning";
+				public string Name => "upperWarning";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
@@ -163,14 +163,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643531502_63450_761</item>
 				/// <item>Type: LowerWarningClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.LowerWarningClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerWarningClass);
 				
 				/// <inheritdoc />
-				public string Name => "LowerWarning";
+				public string Name => "lowerWarning";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
@@ -214,14 +214,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580316543777_893941_47725</item>
 				/// <item>Type: NominalClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.NominalClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.NominalClass);
 				
 				/// <inheritdoc />
-				public string Name => "Nominal";
+				public string Name => "nominal";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";
@@ -265,14 +265,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643526040_637158_716</item>
 				/// <item>Type: LowerLimitClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.LowerLimitClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "LowerLimit";
+				public string Name => "lowerLimit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to indicate whether a process variable is stable and in control.";

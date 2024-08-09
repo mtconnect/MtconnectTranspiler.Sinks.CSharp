@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "SinkClass";
+		public string Name => "Sink";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public SinkClassProperties Properties { get; } = new SinkClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class SinkClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

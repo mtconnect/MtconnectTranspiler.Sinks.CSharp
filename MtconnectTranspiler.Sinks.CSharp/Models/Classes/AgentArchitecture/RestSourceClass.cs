@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "RestSourceClass";
+		public string Name => "RestSource";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public RestSourceClassProperties Properties { get; } = new RestSourceClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class RestSourceClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

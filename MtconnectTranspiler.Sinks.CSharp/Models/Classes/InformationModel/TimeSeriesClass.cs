@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "TimeSeriesClass";
+		public string Name => "TimeSeries";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public TimeSeriesClassProperties Properties { get; } = new TimeSeriesClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class TimeSeriesClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

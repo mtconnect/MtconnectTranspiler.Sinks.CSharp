@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 {
 	/// <summary>
 	/// portion of a request for information that more precisely defines the specific information to be published in response to the request. <seealso href="https://www.google.com/search?q=IETF:RFC-2616&btnI=I">IETF:RFC-2616</seealso>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375163_768611_2004">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class HTTPQueryClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public string Summary => @"/// portion of a request for information that more precisely defines the specific information to be published in response to the request. <seealso href=""https://www.google.com/search?q=IETF:RFC-2616&btnI=I"">IETF:RFC-2616</seealso>";
 
 		/// <inheritdoc />
-		public string Name => "HTTPQueryClass";
+		public string Name => "HTTP Query";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public HTTPQueryClassProperties Properties { get; } = new HTTPQueryClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class HTTPQueryClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

@@ -11,7 +11,7 @@ namespace Mtconnect
 		public string ReferenceId => "_19_0_3_45f01b9_1585765371629_136997_13";
 		
 		/// <inheritdoc />
-		public string Name => "DevelopmentProcess";
+		public string Name => "Development Process";
 
 		/// <inheritdoc />
 		public string Summary => @"";

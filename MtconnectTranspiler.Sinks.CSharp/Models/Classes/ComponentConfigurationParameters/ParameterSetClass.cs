@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AssetInformationModel.ComponentConfigurationParameters;
 
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
 	/// <summary>
 	/// set of <see cref="Parameter">Parameter</see>s.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197254209_96040_17915">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ParameterSetClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";
 
 		/// <inheritdoc />
-		public string Name => "ParameterSetClass";
+		public string Name => "ParameterSet";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ParameterSetClassProperties Properties { get; } = new ParameterSetClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ParameterSetClassProperties : IPropertyList
+		public class ParameterSetClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -68,7 +68,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";
@@ -119,7 +119,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.ComponentConfigurationParameters.ParameterClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasParameter";
+				public string Name => "hasParameter";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";

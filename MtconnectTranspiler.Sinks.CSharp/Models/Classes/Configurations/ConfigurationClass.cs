@@ -1,21 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect.DeviceInformationModel.Configurations.SolidModel;
-// using Mtconnect.Glossary.IndustrialTerms;
-// using Mtconnect.DeviceInformationModel.Configurations.Motion;
-// using Mtconnect.DeviceInformationModel.Configurations.Relationships;
-// using Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems;
-// using Mtconnect.DeviceInformationModel.Configurations.Specifications;
-// using Mtconnect.Glossary.MTConnectTerms;
-// using Mtconnect.DeviceInformationModel.Configurations.ImageFiles;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
 	/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_C04DCC77_16E8_4cef_92D4_B777AFC52570">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConfigurationClass : IClass
@@ -27,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
 
 		/// <inheritdoc />
-		public string Name => "ConfigurationClass";
+		public string Name => "Configuration";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -42,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1635251403887_914466_345";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1635251403887_914466_345
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.ConfigurationGeneralization);
 
 		/// <inheritdoc />
 		public ConfigurationClassProperties Properties { get; } = new ConfigurationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ConfigurationClassProperties : IPropertyList
+		public class ConfigurationClassProperties : Mtconnect.Glossary.MTConnectTerms.ConfigurationGeneralization.ConfigurationGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -61,7 +56,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				IsConfigurationForCompositionPart,
 				HasImageFilePart,
 				HasPowerSourcePart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="IsConfigurationForPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsConfigurationFor</remarks>
@@ -82,7 +77,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "IsConfigurationFor";
+				public string Name => "isConfigurationFor";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -133,7 +128,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.SolidModel.SolidModelClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasSolidModel";
+				public string Name => "hasSolidModel";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -177,14 +172,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE</item>
 				/// <item>Type: SensorConfigurationClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.IndustrialTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Sensor</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.SensorConfigurationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Sensor.SensorConfigurationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasSensorConfiguration";
+				public string Name => "hasSensorConfiguration";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -235,7 +230,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Motion.MotionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasMotion";
+				public string Name => "hasMotion";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -286,7 +281,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasRelationship";
+				public string Name => "hasRelationship";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -337,7 +332,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.CoordinateSystemClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCoordinateSystem";
+				public string Name => "hasCoordinateSystem";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -388,7 +383,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.SpecificationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasSpecification";
+				public string Name => "hasSpecification";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -432,14 +427,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1658936424016_561586_139</item>
 				/// <item>Type: CompositionClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Compositions</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.CompositionClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Compositions.CompositionClass);
 				
 				/// <inheritdoc />
-				public string Name => "IsConfigurationForComposition";
+				public string Name => "isConfigurationFor";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -490,7 +485,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.ImageFiles.ImageFileClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasImageFile";
+				public string Name => "hasImageFile";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
@@ -534,14 +529,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1696870815347_556704_3251</item>
 				/// <item>Type: PowerSourceClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.PowerSource</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PowerSourceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.PowerSource.PowerSourceClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasPowerSource";
+				public string Name => "hasPowerSource";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";

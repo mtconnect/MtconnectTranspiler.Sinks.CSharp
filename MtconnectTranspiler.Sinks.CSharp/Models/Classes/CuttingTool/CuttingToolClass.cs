@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle;
-// using Mtconnect.AssetInformationModel.CuttingTool;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
 	/// <see cref="Asset">Asset</see> that physically removes the material from the workpiece by shear deformation.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_614061EF_1D50_4989_A935_02492044833A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingToolClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
 
 		/// <inheritdoc />
-		public string Name => "CuttingToolClass";
+		public string Name => "CuttingTool";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +34,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_C7D39183_23CB_416b_A62D_F60815E08B1A";
+		/// <remarks>
+		/// Original Type: EAID_C7D39183_23CB_416b_A62D_F60815E08B1A
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
 		public CuttingToolClassProperties Properties { get; } = new CuttingToolClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CuttingToolClassProperties : IPropertyList
+		public class CuttingToolClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -49,7 +52,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				HasCuttingToolLifeCyclePart,
 				HasCuttingToolArchetypeReferencePart,
 				HasCuttingToolDefinitionPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ManufacturersProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Manufacturers</remarks>
@@ -73,7 +76,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Manufacturers";
+				public string Name => "manufacturers";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
@@ -127,7 +130,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "SerialNumber";
+				public string Name => "serialNumber";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
@@ -181,7 +184,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ToolId";
+				public string Name => "toolId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
@@ -232,7 +235,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.CuttingToolLifeCycleClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCuttingToolLifeCycle";
+				public string Name => "hasCuttingToolLifeCycle";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
@@ -283,7 +286,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolArchetypeReferenceClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCuttingToolArchetypeReference";
+				public string Name => "hasCuttingToolArchetypeReference";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
@@ -337,7 +340,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolDefinitionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCuttingToolDefinition";
+				public string Name => "hasCuttingToolDefinition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";

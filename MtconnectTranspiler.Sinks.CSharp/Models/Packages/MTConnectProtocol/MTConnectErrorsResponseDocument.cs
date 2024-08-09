@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument;
-// using Mtconnect;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="MTConnectErrors">MTConnectErrors</see> entity./// Error Information Model
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579560529522_593444_6515">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class MTConnectErrorsResponseDocumentPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 		public string ReferenceId => "_19_0_3_91b028d_1579560529522_593444_6515";
 		
 		/// <inheritdoc />
-		public string Name => "MTConnectErrorsResponseDocument";
+		public string Name => "MTConnectErrors Response Document";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides semantic information for the <see cref=""MTConnectErrors"">MTConnectErrors</see> entity./// Error Information Model";

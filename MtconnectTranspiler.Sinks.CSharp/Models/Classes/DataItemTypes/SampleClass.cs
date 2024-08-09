@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 {
 	/// <summary>
 	/// abstract <see cref="DataItem">DataItem</see> that is continuously changing or analog data value. /// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_B0781166_9F74_4844_B40C_CA32663868F2">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SampleClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 		public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
 
 		/// <inheritdoc />
-		public string Name => "SampleClass";
+		public string Name => "Sample";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,19 +34,22 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_002C94B7_1257_49be_8EAA_CE7FCD7AFF8A";
+		/// <remarks>
+		/// Original Type: EAID_002C94B7_1257_49be_8EAA_CE7FCD7AFF8A
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DataItems.DataItemClass);
 
 		/// <inheritdoc />
 		public SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class SampleClassProperties : IPropertyList
+		public class SampleClassProperties : Mtconnect.DeviceInformationModel.DataItems.DataItemClass.DataItemClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Category,
 				Type,
 				Units,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="CategoryProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Category</remarks>
@@ -66,7 +70,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.CategoryEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Category";
+				public string Name => "category";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
@@ -117,7 +121,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.SampleEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
@@ -168,7 +172,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";

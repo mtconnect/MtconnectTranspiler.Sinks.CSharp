@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.InformationModel
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ConditionValueClass";
+		public string Name => "ConditionValue";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1585537591558_380255_3580";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1585537591558_380255_3580
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ConditionValueClassProperties Properties { get; } = new ConditionValueClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ConditionValueClassProperties : Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass.ObservationValueClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

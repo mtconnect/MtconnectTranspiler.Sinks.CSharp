@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Source
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Source
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "MQTTDataSourceGeneralization";
+		public string Name => "MQTTDataSource";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.AgentArchitecture.Source
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1645213778421_161707_289";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1645213778421_161707_289
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SourceClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public MQTTDataSourceGeneralizationProperties Properties { get; } = new MQTTDataSourceGeneralizationProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class MQTTDataSourceGeneralizationProperties : Mtconnect.AgentArchitecture.SourceClass.SourceClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

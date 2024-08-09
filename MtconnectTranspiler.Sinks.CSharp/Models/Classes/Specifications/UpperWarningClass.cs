@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
 	/// upper boundary indicating increased concern and supervision may be required.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643515595_841451_671">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class UpperWarningClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string Summary => @"/// upper boundary indicating increased concern and supervision may be required.";
 
 		/// <inheritdoc />
-		public string Name => "UpperWarningClass";
+		public string Name => "UpperWarning";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public UpperWarningClassProperties Properties { get; } = new UpperWarningClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class UpperWarningClassProperties : IPropertyList
+		public class UpperWarningClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -63,7 +64,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// upper boundary indicating increased concern and supervision may be required.";

@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.Representations;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
 	/// <summary>
 	/// <i>key-value pair</i> published as part of a <see cref="DataSet">DataSet</see>./// Constraints for Entry Values
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531114_364030_25729">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EntryClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
 
 		/// <inheritdoc />
-		public string Name => "EntryClass";
+		public string Name => "Entry";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public EntryClassProperties Properties { get; } = new EntryClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class EntryClassProperties : IPropertyList
+		public class EntryClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -70,7 +70,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Key";
+				public string Name => "key";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
@@ -124,7 +124,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
-				public string Name => "Removed";
+				public string Name => "removed";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
@@ -175,7 +175,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.Representations.DataSetClass);
 				
 				/// <inheritdoc />
-				public string Name => "IsEntryFor";
+				public string Name => "isEntryFor";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";
@@ -229,7 +229,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""DataSet"">DataSet</see>./// Constraints for Entry Values";

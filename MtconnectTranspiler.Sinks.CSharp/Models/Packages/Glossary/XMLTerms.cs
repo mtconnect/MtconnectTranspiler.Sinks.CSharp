@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Glossary.XMLTerms;
-// using Mtconnect;
 
 namespace Mtconnect.Glossary
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.Glossary
 		public string ReferenceId => "_19_0_3_68e0225_1623664567542_661579_6860";
 		
 		/// <inheritdoc />
-		public string Name => "XMLTerms";
+		public string Name => "XML Terms";
 
 		/// <inheritdoc />
 		public string Summary => @"";

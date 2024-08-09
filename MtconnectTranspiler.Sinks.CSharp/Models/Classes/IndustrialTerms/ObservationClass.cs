@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.IndustrialTerms;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// observed value of a property at a point in time.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1629291060726_222338_26">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// observed value of a property at a point in time.";
 
 		/// <inheritdoc />
-		public string Name => "ObservationClass";
+		public string Name => "observation";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ObservationClassProperties Properties { get; } = new ObservationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ObservationClassProperties : IPropertyList
+		public class ObservationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -65,7 +65,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.EngineeredSystemClass);
 				
 				/// <inheritdoc />
-				public string Name => "MadeBy";
+				public string Name => "made by";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// observed value of a property at a point in time.";
@@ -116,7 +116,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.ObservableClass);
 				
 				/// <inheritdoc />
-				public string Name => "MadeFor";
+				public string Name => "made for";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// observed value of a property at a point in time.";

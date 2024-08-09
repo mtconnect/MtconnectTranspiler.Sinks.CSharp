@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "TimestampedClass";
+		public string Name => "Timestamped";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,17 +30,20 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1674406002024_615828_206";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1674406002024_615828_206
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.TokensClass);
 
 		/// <inheritdoc />
 		public TimestampedClassProperties Properties { get; } = new TimestampedClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class TimestampedClassProperties : IPropertyList
+		public class TimestampedClassProperties : Mtconnect.AgentArchitecture.Pipelines.TokensClass.TokensClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Timestamp,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="TimestampProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Timestamp</remarks>
@@ -60,7 +64,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "Timestamp";
+				public string Name => "timestamp";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

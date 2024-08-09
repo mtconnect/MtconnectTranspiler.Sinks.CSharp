@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.Configurations;
-// using Mtconnect;
 
 namespace Mtconnect.DeviceInformationModel
 {
 	/// <summary>
 	/// {{figure(Configuration)}} shows the abstract <see cref="Configuration">Configuration</see> and its types.  ![Configuration](figures/Configuration.png "Configuration"){: width="0.8"}  > Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema./// Configurations Model
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579526876433_244855_7626">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class ConfigurationsPackage : IPackage

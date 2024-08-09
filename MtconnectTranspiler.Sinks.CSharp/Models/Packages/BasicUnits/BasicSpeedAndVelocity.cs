@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790696_985314_162830";
 		
 		/// <inheritdoc />
-		public string Name => "BasicSpeedAndVelocity";
+		public string Name => "Basic Speed and Velocity";
 
 		/// <inheritdoc />
 		public string Summary => @"";

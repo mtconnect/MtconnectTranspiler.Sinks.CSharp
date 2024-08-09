@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 {
 	/// <summary>
 	/// association between a <see cref="DataItem">DataItem</see> and another entity./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1658942187874_859516_1061">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AbstractDataItemRelationshipClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 		public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";
 
 		/// <inheritdoc />
-		public string Name => "AbstractDataItemRelationshipClass";
+		public string Name => "AbstractDataItemRelationship";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public AbstractDataItemRelationshipClassProperties Properties { get; } = new AbstractDataItemRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AbstractDataItemRelationshipClassProperties : IPropertyList
+		public class AbstractDataItemRelationshipClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +68,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "IdRef";
+				public string Name => "idRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";
@@ -121,7 +122,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";

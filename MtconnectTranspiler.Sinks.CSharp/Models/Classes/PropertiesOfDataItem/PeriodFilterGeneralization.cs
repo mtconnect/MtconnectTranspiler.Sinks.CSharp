@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
 	/// <see cref="FilterEnum::PERIOD">FilterEnum::PERIOD</see>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1644604750458_164137_46">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PeriodFilterGeneralization : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string Summary => @"/// <see cref=""FilterEnum::PERIOD"">FilterEnum::PERIOD</see>";
 
 		/// <inheritdoc />
-		public string Name => "PeriodFilterGeneralization";
+		public string Name => "PeriodFilter";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_8A5219C3_747D_4904_A58A_A312D13DAEE9";
+		/// <remarks>
+		/// Original Type: EAID_8A5219C3_747D_4904_A58A_A312D13DAEE9
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.FilterClass);
 
 		/// <inheritdoc />
 		public PeriodFilterGeneralizationProperties Properties { get; } = new PeriodFilterGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PeriodFilterGeneralizationProperties : IPropertyList
+		public class PeriodFilterGeneralizationProperties : Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.FilterClass.FilterClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Type,
 				Value,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(Mtconnect.DataTypes.FilterEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""FilterEnum::PERIOD"">FilterEnum::PERIOD</see>";
@@ -94,7 +98,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "PERIOD";
 			}
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""FilterEnum::PERIOD"">FilterEnum::PERIOD</see>";

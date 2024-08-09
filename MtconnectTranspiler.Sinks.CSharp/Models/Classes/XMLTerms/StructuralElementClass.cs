@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
 	/// <i>element</i> that organizes information that represents the physical and logical parts and sub-parts of a piece of equipment.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375187_474833_2095">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class StructuralElementClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string Summary => @"/// <i>element</i> that organizes information that represents the physical and logical parts and sub-parts of a piece of equipment.";
 
 		/// <inheritdoc />
-		public string Name => "StructuralElementClass";
+		public string Name => "structural element";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.XMLTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public StructuralElementClassProperties Properties { get; } = new StructuralElementClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class StructuralElementClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.Files
 {
 	/// <summary>
 	/// <i>URL</i> reference to the file location. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605277122154_664309_406">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FileLocationClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string Summary => @"/// <i>URL</i> reference to the file location. ";
 
 		/// <inheritdoc />
-		public string Name => "FileLocationClass";
+		public string Name => "FileLocation";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public FileLocationClassProperties Properties { get; } = new FileLocationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class FileLocationClassProperties : IPropertyList
+		public class FileLocationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +68,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Href";
+				public string Name => "href";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>URL</i> reference to the file location. ";
@@ -121,7 +122,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Xlink:Type";
+				public string Name => "xlink:type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>URL</i> reference to the file location. ";

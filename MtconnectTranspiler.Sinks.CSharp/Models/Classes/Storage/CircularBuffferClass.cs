@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.Rest.Storage
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "CircularBuffferClass";
+		public string Name => "CircularBufffer";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture.Rest.Storage
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public CircularBuffferClassProperties Properties { get; } = new CircularBuffferClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class CircularBuffferClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

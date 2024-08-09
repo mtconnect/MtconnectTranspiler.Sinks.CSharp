@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
 	/// <summary>
 	/// Something that happens or takes place.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375159_408729_1991">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class EventClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string Summary => @"/// Something that happens or takes place.";
 
 		/// <inheritdoc />
-		public string Name => "EventClass";
+		public string Name => "Event";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public EventClassProperties Properties { get; } = new EventClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class EventClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

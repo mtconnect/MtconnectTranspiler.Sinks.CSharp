@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ObservedWarningClass";
+		public string Name => "Observed Warning";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581814683848_300422_5123";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581814683848_300422_5123
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservedConditionClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ObservedWarningClassProperties Properties { get; } = new ObservedWarningClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ObservedWarningClassProperties : Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservedConditionClass.ObservedConditionClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

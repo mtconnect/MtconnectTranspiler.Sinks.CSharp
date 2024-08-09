@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ConvertSampleClass";
+		public string Name => "ConvertSample";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1674413898061_196217_3470";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1674413898061_196217_3470
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.TransformClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ConvertSampleClassProperties Properties { get; } = new ConvertSampleClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ConvertSampleClassProperties : Mtconnect.AgentArchitecture.Pipelines.TransformClass.TransformClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem;
-// using Mtconnect;
 
 namespace Mtconnect.DeviceInformationModel.DataItems
 {
 	/// <summary>
 	/// This section provides additional semantic information for the Part Properties of <see cref="DataItem">DataItem</see>.  > Note: See <see cref="DataItems Schema Diagrams">DataItems Schema Diagrams</see> for XML schema of the elements for <see cref="DataItem">DataItem</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1589399339634_269147_34">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class PropertiesOfDataItemPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 		public string ReferenceId => "_19_0_3_91b028d_1589399339634_269147_34";
 		
 		/// <inheritdoc />
-		public string Name => "PropertiesOfDataItem";
+		public string Name => "Properties of DataItem";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides additional semantic information for the Part Properties of <see cref=""DataItem"">DataItem</see>.  > Note: See <see cref=""DataItems Schema Diagrams"">DataItems Schema Diagrams</see> for XML schema of the elements for <see cref=""DataItem"">DataItem</see>.";

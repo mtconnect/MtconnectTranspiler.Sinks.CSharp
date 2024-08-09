@@ -1,15 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components.ComponentTypes;
-// using Mtconnect.Glossary.MTConnectTerms;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="System">System</see> that provides regulation or management of a system or component. <seealso href="https://www.google.com/search?q=ISO 16484-5:2017&btnI=I">ISO 16484-5:2017</seealso>/// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381977_283525_42216">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ControllerClass : IClass
@@ -21,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
 
 		/// <inheritdoc />
-		public string Name => "ControllerClass";
+		public string Name => "Controller";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -36,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579572382020_336298_42297";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579572382020_336298_42297
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 
 		/// <inheritdoc />
 		public ControllerClassProperties Properties { get; } = new ControllerClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ControllerClassProperties : IPropertyList
+		public class ControllerClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass.SystemClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -52,7 +53,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesControllerMode,
 				ObservesCommunicationsCondition,
 				ObservesLogicProgramCondition,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasPathPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPath</remarks>
@@ -73,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.PathClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasPath";
+				public string Name => "hasPath";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
@@ -117,14 +118,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1620240839406_285612_1596</item>
 				/// <item>Type: DeviceClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.DeviceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DeviceClass);
 				
 				/// <inheritdoc />
-				public string Name => "IsControllerOf";
+				public string Name => "isControllerOf";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
@@ -175,7 +176,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EmergencyStopClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesEmergencyStop";
+				public string Name => "observesEmergencyStop";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
@@ -226,7 +227,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes.SystemClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesSystemCondition";
+				public string Name => "observesSystemCondition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
@@ -277,7 +278,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ControllerModeClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesControllerMode";
+				public string Name => "observesControllerMode";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
@@ -328,7 +329,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes.CommunicationsClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesCommunicationsCondition";
+				public string Name => "observesCommunicationsCondition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
@@ -379,7 +380,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes.LogicProgramClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesLogicProgramCondition";
+				public string Name => "observesLogicProgramCondition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";

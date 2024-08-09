@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
 	/// identifies the <see cref="Component">Component</see>, <see cref="DataItem">DataItem</see>, or <see cref="Composition">Composition</see> from which a measured value originates.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_A2837EAA_7D27_45c0_B365_BC308844F978">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SourceClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
 
 		/// <inheritdoc />
-		public string Name => "SourceClass";
+		public string Name => "Source";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public SourceClassProperties Properties { get; } = new SourceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class SourceClassProperties : IPropertyList
+		public class SourceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -69,7 +70,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ComponentId";
+				public string Name => "componentId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
@@ -123,7 +124,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CompositionId";
+				public string Name => "compositionId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
@@ -177,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "DataItemId";
+				public string Name => "dataItemId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
@@ -231,7 +232,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";

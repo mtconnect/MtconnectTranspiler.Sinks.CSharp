@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Part">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605547467172_656422_264">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PartOccurrenceClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
 
 		/// <inheritdoc />
-		public string Name => "PartOccurrenceClass";
+		public string Name => "PartOccurrence";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +34,15 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1622456766067_72580_282";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1622456766067_72580_282
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartClass);
 
 		/// <inheritdoc />
 		public PartOccurrenceClassProperties Properties { get; } = new PartOccurrenceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PartOccurrenceClassProperties : IPropertyList
+		public class PartOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartClass.PartClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -51,7 +55,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				ObservesProcessOccurrenceId,
 				ObservesProcessTime,
 				ObservesUser,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesPartIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartId</remarks>
@@ -72,7 +76,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPartId";
+				public string Name => "observesPartId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
@@ -123,7 +127,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartUniqueIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPartUniqueId";
+				public string Name => "observesPartUniqueId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
@@ -174,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartGroupIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPartGroupId";
+				public string Name => "observesPartGroupId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
@@ -225,7 +229,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartKindIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPartKindId";
+				public string Name => "observesPartKindId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
@@ -276,7 +280,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartCountClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPartCount";
+				public string Name => "observesPartCount";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
@@ -327,7 +331,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartStatusClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPartStatus";
+				public string Name => "observesPartStatus";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
@@ -378,7 +382,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessOccurrenceIdClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesProcessOccurrenceId";
+				public string Name => "observesProcessOccurrenceId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
@@ -429,7 +433,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessTimeClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesProcessTime";
+				public string Name => "observesProcessTime";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
@@ -480,7 +484,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.UserClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesUser";
+				public string Name => "observesUser";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";

@@ -11,7 +11,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples.Ope
 		public string ReferenceId => "_19_0_3_68e0225_1679487841084_426569_185";
 		
 		/// <inheritdoc />
-		public string Name => "UseCases";
+		public string Name => "Use Cases";
 
 		/// <inheritdoc />
 		public string Summary => @"";

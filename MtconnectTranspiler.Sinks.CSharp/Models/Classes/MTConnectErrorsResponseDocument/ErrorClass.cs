@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument
 {
 	/// <summary>
 	/// error encountered by an <i>agent</i> when responding to a <i>request</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1579560710732_245440_6708">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ErrorClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 		public string Summary => @"/// error encountered by an <i>agent</i> when responding to a <i>request</i>.";
 
 		/// <inheritdoc />
-		public string Name => "ErrorClass";
+		public string Name => "Error";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ErrorClassProperties Properties { get; } = new ErrorClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ErrorClassProperties : IPropertyList
+		public class ErrorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -68,7 +68,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				public System.Type Type => typeof(Mtconnect.DataTypes.ErrorCodeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "ErrorCode";
+				public string Name => "errorCode";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// error encountered by an <i>agent</i> when responding to a <i>request</i>.";
@@ -122,7 +122,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// error encountered by an <i>agent</i> when responding to a <i>request</i>.";

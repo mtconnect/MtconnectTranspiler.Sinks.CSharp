@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples.OperationalState
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples.Ope
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "MTConnectDeviceWithOperationalStatesClass";
+		public string Name => "MTConnect Device with Operational States";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples.Ope
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1620240839406_285612_1596";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1620240839406_285612_1596
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DeviceClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public MTConnectDeviceWithOperationalStatesClassProperties Properties { get; } = new MTConnectDeviceWithOperationalStatesClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class MTConnectDeviceWithOperationalStatesClassProperties : Mtconnect.DeviceInformationModel.DeviceClass.DeviceClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

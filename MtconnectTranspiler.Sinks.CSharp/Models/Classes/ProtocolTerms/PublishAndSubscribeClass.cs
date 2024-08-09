@@ -1,11 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
 	/// asynchronous communication method in which messages are exchanged between applications without knowing the identity of the sender or recipient.  > Note: In the MTConnect Standard, a communications messaging pattern that may be used to publish <i>streaming data</i> from an <i>agent</i>.   
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375180_561625_2067">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PublishAndSubscribeClass : IClass
@@ -17,7 +19,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public string Summary => @"/// asynchronous communication method in which messages are exchanged between applications without knowing the identity of the sender or recipient.  > Note: In the MTConnect Standard, a communications messaging pattern that may be used to publish <i>streaming data</i> from an <i>agent</i>.   ";
 
 		/// <inheritdoc />
-		public string Name => "PublishAndSubscribeClass";
+		public string Name => "publish and subscribe";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +34,20 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1623664375180_471026_2065";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1623664375180_471026_2065
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.ProtocolTerms.ProtocolClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public PublishAndSubscribeClassProperties Properties { get; } = new PublishAndSubscribeClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class PublishAndSubscribeClassProperties : Mtconnect.Glossary.ProtocolTerms.ProtocolClass.ProtocolClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

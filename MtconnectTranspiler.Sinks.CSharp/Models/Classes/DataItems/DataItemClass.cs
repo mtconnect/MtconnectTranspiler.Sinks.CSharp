@@ -1,18 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
-// using Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect.AgentArchitecture;
-// using Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem;
-// using Mtconnect.DeviceInformationModel.Components.ComponentTypes;
-// using Mtconnect.ObservationInformationModel;
-// using Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.RelationshipTypesForDataItem;
 
 namespace Mtconnect.DeviceInformationModel.DataItems
 {
 	/// <summary>
 	/// information reported about a piece of equipment.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_002C94B7_1257_49be_8EAA_CE7FCD7AFF8A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DataItemClass : IClass
@@ -24,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 		public string Summary => @"/// information reported about a piece of equipment.";
 
 		/// <inheritdoc />
-		public string Name => "DataItemClass";
+		public string Name => "DataItem";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -39,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public DataItemClassProperties Properties { get; } = new DataItemClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DataItemClassProperties : IPropertyList
+		public class DataItemClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -97,7 +91,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DataTypes.CategoryEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Category";
+				public string Name => "category";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -151,7 +145,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CompositionId";
+				public string Name => "compositionId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -205,7 +199,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DataTypes.CoordinateSystemEnum);
 				
 				/// <inheritdoc />
-				public string Name => "CoordinateSystem";
+				public string Name => "coordinateSystem";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -259,7 +253,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
-				public string Name => "Discrete";
+				public string Name => "discrete";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -313,7 +307,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -367,7 +361,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -421,7 +415,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "NativeScale";
+				public string Name => "nativeScale";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -475,7 +469,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "NativeUnits";
+				public string Name => "nativeUnits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -529,7 +523,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "SampleRate";
+				public string Name => "sampleRate";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -583,7 +577,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "SignificantDigits";
+				public string Name => "significantDigits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -637,7 +631,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DataTypes.StatisticEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Statistic";
+				public string Name => "statistic";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -691,7 +685,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -745,7 +739,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -799,7 +793,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -850,7 +844,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "IsObservedBy";
+				public string Name => "isObservedBy";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -904,7 +898,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DataTypes.RepresentationEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Representation";
+				public string Name => "representation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -948,14 +942,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_A2837EAA_7D27_45c0_B365_BC308844F978</item>
 				/// <item>Type: SourceClass</item>
-				/// <item>Namespace: Mtconnect.AgentArchitecture</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AgentArchitecture.SourceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.SourceClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasSource";
+				public string Name => "hasSource";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -1006,7 +1000,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.ConstraintsClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasConstraint";
+				public string Name => "hasConstraint";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -1050,14 +1044,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8A5219C3_747D_4904_A58A_A312D13DAEE9</item>
 				/// <item>Type: FilterClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Components.ComponentTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.FilterClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.FilterClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasFilter";
+				public string Name => "hasFilter";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -1108,7 +1102,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.InitialValueClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasInitialValue";
+				public string Name => "hasInitialValue";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -1159,7 +1153,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.ResetTriggerClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasResetTrigger";
+				public string Name => "hasResetTrigger";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -1210,7 +1204,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "HasObservation";
+				public string Name => "hasObservation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -1261,7 +1255,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.DefinitionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDefinition";
+				public string Name => "hasDefinition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -1315,7 +1309,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CoordinateSystemIdRef";
+				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";
@@ -1366,7 +1360,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.RelationshipTypesForDataItem.AbstractDataItemRelationshipClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasRelationship";
+				public string Name => "hasRelationship";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// information reported about a piece of equipment.";

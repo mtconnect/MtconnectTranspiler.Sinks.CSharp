@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AssetInformationModel.RawMaterial;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.RawMaterial
 {
 	/// <summary>
 	/// <see cref="Asset">Asset</see> that represents <i>raw material</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1618829902716_470188_214">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class RawMaterialClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 		public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
 
 		/// <inheritdoc />
-		public string Name => "RawMaterialClass";
+		public string Name => "RawMaterial";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +34,15 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_C7D39183_23CB_416b_A62D_F60815E08B1A";
+		/// <remarks>
+		/// Original Type: EAID_C7D39183_23CB_416b_A62D_F60815E08B1A
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
 		public RawMaterialClassProperties Properties { get; } = new RawMaterialClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class RawMaterialClassProperties : IPropertyList
+		public class RawMaterialClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -59,7 +62,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				CurrentVolume,
 				CurrentDimension,
 				CurrentQuantity,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
@@ -83,7 +86,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
@@ -137,7 +140,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ContainerType";
+				public string Name => "containerType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
@@ -191,7 +194,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ProcessKind";
+				public string Name => "processKind";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
@@ -245,7 +248,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "SerialNumber";
+				public string Name => "serialNumber";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";
@@ -350,7 +353,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.RawMaterial.MaterialClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasMaterial";
+				public string Name => "hasMaterial";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that represents <i>raw material</i>.";

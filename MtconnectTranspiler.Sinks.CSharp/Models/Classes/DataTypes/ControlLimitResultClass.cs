@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.DataTypes
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ControlLimitResultClass";
+		public string Name => "ControlLimitResult";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,12 +30,15 @@ namespace Mtconnect.DataTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531114_503405_25727";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531114_503405_25727
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.DataSetClass);
 
 		/// <inheritdoc />
 		public ControlLimitResultClassProperties Properties { get; } = new ControlLimitResultClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ControlLimitResultClassProperties : IPropertyList
+		public class ControlLimitResultClassProperties : Mtconnect.ObservationInformationModel.Representations.DataSetClass.DataSetClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -43,7 +47,7 @@ namespace Mtconnect.DataTypes
 				Nominal,
 				LowerWarning,
 				LowerLimit,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="UpperLimitProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperLimit</remarks>

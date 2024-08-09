@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
 	/// <summary>
 	/// The collection of one or more pieces of information.   
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581814695455_317721_5160">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SampleClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string Summary => @"/// The collection of one or more pieces of information.   ";
 
 		/// <inheritdoc />
-		public string Name => "SampleClass";
+		public string Name => "Sample";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class SampleClassProperties : IPropertyList
+		public class SampleClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -63,7 +64,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// The collection of one or more pieces of information.   ";

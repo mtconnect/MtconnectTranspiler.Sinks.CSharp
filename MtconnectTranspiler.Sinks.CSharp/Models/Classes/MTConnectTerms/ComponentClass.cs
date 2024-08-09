@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.MTConnectTerms;
+using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
 	/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581734537697_742151_1119">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
 
 		/// <inheritdoc />
-		public string Name => "ComponentClass";
+		public string Name => "Component";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +34,15 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581733974550_623533_615";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581733974550_623533_615
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ThingClass);
 
 		/// <inheritdoc />
 		public ComponentClassProperties Properties { get; } = new ComponentClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ComponentClassProperties : IPropertyList
+		public class ComponentClassProperties : Mtconnect.Glossary.IndustrialTerms.ThingClass.ThingClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -47,7 +51,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				Observes,
 				HasConfiguration,
 				HasComposition,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasComponentProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComponent</remarks>
@@ -71,7 +75,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ComponentClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasComponent";
+				public string Name => "has component";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
@@ -125,7 +129,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ComponentClass);
 				
 				/// <inheritdoc />
-				public string Name => "BelongsTo";
+				public string Name => "belongs to";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
@@ -176,7 +180,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.DataItemClass);
 				
 				/// <inheritdoc />
-				public string Name => "Observes";
+				public string Name => "observes";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
@@ -227,7 +231,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ConfigurationGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "HasConfiguration";
+				public string Name => "has configuration";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
@@ -278,7 +282,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.CompositionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasComposition";
+				public string Name => "has composition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";

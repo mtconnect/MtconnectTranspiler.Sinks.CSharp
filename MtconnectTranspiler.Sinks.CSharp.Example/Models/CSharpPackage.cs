@@ -16,6 +16,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
         public string ReferenceId { get; set; }
 
         /// <summary>
+        /// Reference to the <c>name</c> attribute.
+        /// </summary>
+        public string NormativeName { get; set; }
+
+        /// <summary>
         /// Internal reference to the class filename.
         /// </summary>
         protected string _filename { get; set; }
@@ -66,6 +71,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
         public CSharpPackage(XmiDocument model, UmlPackage source) : base(model, source)
         {
             _name = CSharpHelperMethods.ToPascalCase(source.Name);
+            NormativeName = source.Name;
 
             ReferenceId = source!.Id;
 

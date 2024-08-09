@@ -6,6 +6,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 {
 	/// <summary>
 	/// <i>key-value pair</i> published as part of a <see cref="TableEntry">TableEntry</see>./// Constraints for Cell Values
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582847071494_298325_2235">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CellClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";
 
 		/// <inheritdoc />
-		public string Name => "CellClass";
+		public string Name => "Cell";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public CellClassProperties Properties { get; } = new CellClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CellClassProperties : IPropertyList
+		public class CellClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Key";
+				public string Name => "key";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";
@@ -121,7 +122,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";

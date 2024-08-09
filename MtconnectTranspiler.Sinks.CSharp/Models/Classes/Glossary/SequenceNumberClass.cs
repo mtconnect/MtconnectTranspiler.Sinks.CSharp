@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// primary key identifier used to manage and locate a specific piece of <i>streaming data</i> in an <i>agent</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375186_193728_2090">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SequenceNumberClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// primary key identifier used to manage and locate a specific piece of <i>streaming data</i> in an <i>agent</i>.";
 
 		/// <inheritdoc />
-		public string Name => "SequenceNumberClass";
+		public string Name => "sequence number";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public SequenceNumberClassProperties Properties { get; } = new SequenceNumberClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class SequenceNumberClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

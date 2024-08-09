@@ -14,7 +14,7 @@ namespace Mtconnect.AgentArchitecture.Printer
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "JsonPrinterClass";
+		public string Name => "JsonPrinter";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +29,17 @@ namespace Mtconnect.AgentArchitecture.Printer
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public JsonPrinterClassProperties Properties { get; } = new JsonPrinterClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class JsonPrinterClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

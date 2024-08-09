@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms;
-// using Mtconnect;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public string ReferenceId => "_19_0_3_68e0225_1635253160701_352708_1245";
 		
 		/// <inheritdoc />
-		public string Name => "AdditionalObservationTerms";
+		public string Name => "Additional Observation Terms";
 
 		/// <inheritdoc />
 		public string Summary => @"";

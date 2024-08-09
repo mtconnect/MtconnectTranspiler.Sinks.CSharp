@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
 {
     /// <summary>
@@ -69,7 +71,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
         /// <summary>
         /// Generalized SysML type, referenced by SysML Id defined in the XMI document.
         /// </summary>
-        string Generalization { get; }
+        Type Generalization { get; }
 
         /// <summary>
         /// Collection of properties associated with the representation of the SysML class entity.

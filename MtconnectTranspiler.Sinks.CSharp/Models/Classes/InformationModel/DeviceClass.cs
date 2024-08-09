@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.InformationModel
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "DeviceClass";
+		public string Name => "Device";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1585538356205_946899_4347";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1585538356205_946899_4347
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ComponentClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public DeviceClassProperties Properties { get; } = new DeviceClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class DeviceClassProperties : Mtconnect.AgentArchitecture.InformationModel.ComponentClass.ComponentClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

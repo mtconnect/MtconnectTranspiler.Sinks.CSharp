@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="System">System</see> that uses compressed gasses to actuate components or do work within the piece of equipment./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382008_658658_42273">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PneumaticClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""System"">System</see> that uses compressed gasses to actuate components or do work within the piece of equipment./// Description";
 
 		/// <inheritdoc />
-		public string Name => "PneumaticClass";
+		public string Name => "Pneumatic";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579572381968_750236_42201";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579572381968_750236_42201
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ActuatorClass);
 
 		/// <inheritdoc />
 		public PneumaticClassProperties Properties { get; } = new PneumaticClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PneumaticClassProperties : IPropertyList
+		public class PneumaticClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.ActuatorClass.ActuatorClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ObservesPressure,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesPressureProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPressure</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PressureClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesPressure";
+				public string Name => "observesPressure";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> that uses compressed gasses to actuate components or do work within the piece of equipment./// Description";

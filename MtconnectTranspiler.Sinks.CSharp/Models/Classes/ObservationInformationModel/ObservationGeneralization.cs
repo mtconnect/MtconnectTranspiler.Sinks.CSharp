@@ -1,14 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
-// using Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect.Glossary.MTConnectTerms;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
 	/// abstract entity that provides telemetry data for a <see cref="DataItem">DataItem</see> at a point in time./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531115_47734_25731">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservationGeneralization : IClass
@@ -20,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel
 		public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ObservationGeneralization";
+		public string Name => "Observation";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -35,12 +34,15 @@ namespace Mtconnect.ObservationInformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581812901326_593856_4168";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581812901326_593856_4168
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.ObservationClass);
 
 		/// <inheritdoc />
 		public ObservationGeneralizationProperties Properties { get; } = new ObservationGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ObservationGeneralizationProperties : IPropertyList
+		public class ObservationGeneralizationProperties : Mtconnect.Glossary.MTConnectTerms.ObservationClass.ObservationClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -56,7 +58,7 @@ namespace Mtconnect.ObservationInformationModel
 				IsUnavailable,
 				Result,
 				MadeForDataItemPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="CompositionIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CompositionId</remarks>
@@ -80,7 +82,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CompositionId";
+				public string Name => "compositionId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -134,7 +136,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "DataItemId";
+				public string Name => "dataItemId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -188,7 +190,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -242,7 +244,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "Sequence";
+				public string Name => "sequence";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -296,7 +298,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -350,7 +352,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "Timestamp";
+				public string Name => "timestamp";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -401,7 +403,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "MadeByComponent";
+				public string Name => "madeByComponent";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -455,7 +457,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -509,7 +511,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -563,7 +565,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
-				public string Name => "IsUnavailable";
+				public string Name => "isUnavailable";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -617,7 +619,7 @@ namespace Mtconnect.ObservationInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";
@@ -661,14 +663,14 @@ namespace Mtconnect.ObservationInformationModel
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_002C94B7_1257_49be_8EAA_CE7FCD7AFF8A</item>
 				/// <item>Type: DataItemClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.DataItems</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.DataItemClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.DataItemClass);
 				
 				/// <inheritdoc />
-				public string Name => "MadeForDataItem";
+				public string Name => "madeForDataItem";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract entity that provides telemetry data for a <see cref=""DataItem"">DataItem</see> at a point in time./// Description";

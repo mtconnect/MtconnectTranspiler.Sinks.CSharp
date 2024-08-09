@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "Entity{Command}Class";
+		public string Name => "Entity{Command}";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,18 +30,21 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1673982182900_756304_302";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1673982182900_756304_302
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.EntityClass);
 
 		/// <inheritdoc />
 		public Entity_Command_ClassProperties Properties { get; } = new Entity_Command_ClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class Entity_Command_ClassProperties : IPropertyList
+		public class Entity_Command_ClassProperties : Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Name,
 				Source,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
@@ -61,7 +65,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -112,7 +116,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Source";
+				public string Name => "source";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

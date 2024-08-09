@@ -22,16 +22,16 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 switch (this)
                 {
                     case CSharpClass csharpClass:
-                        TypeCache.RegisterType(csharpClass.Name, csharpClass.Namespace);
+                        TypeCache.RegisterType(csharpClass.ReferenceId, csharpClass.Name, csharpClass.Namespace);
                         break;
                     case Property csharpProperty:
-                        TypeCache.RegisterType(csharpProperty.Name, csharpProperty.Namespace);
+                        TypeCache.RegisterType(csharpProperty.SysML_ID, csharpProperty.Name, csharpProperty.Namespace);
                         break;
                     case CSharpPackage csharpPackage:
-                        TypeCache.RegisterType(csharpPackage.Name, csharpPackage.Namespace);
+                        TypeCache.RegisterType(csharpPackage.ReferenceId, csharpPackage.Name, csharpPackage.Namespace);
                         break;
                     case CSharpEnum csharpEnum:
-                        TypeCache.RegisterType(csharpEnum.Name, csharpEnum.Namespace);
+                        TypeCache.RegisterType(csharpEnum.ReferenceId, csharpEnum.Name, csharpEnum.Namespace);
                         break;
                     default:
                         break;
@@ -55,7 +55,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 return _name;
             }
             set {
-                TypeCache.ChangeTypeName(_name, value);
+                TypeCache.ChangeTypeName(base.SysML_ID, value);
                 _name = value;
             }
         }

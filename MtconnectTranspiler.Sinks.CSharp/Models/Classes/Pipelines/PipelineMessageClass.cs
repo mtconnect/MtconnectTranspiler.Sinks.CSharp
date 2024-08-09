@@ -1,7 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.MTConnectTerms;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
@@ -15,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "PipelineMessageClass";
+		public string Name => "PipelineMessage";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -30,19 +30,22 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_4_45f01b9_1673982182900_756304_302";
+		/// <remarks>
+		/// Original Type: _19_0_4_45f01b9_1673982182900_756304_302
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.EntityClass);
 
 		/// <inheritdoc />
 		public PipelineMessageClassProperties Properties { get; } = new PipelineMessageClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PipelineMessageClassProperties : IPropertyList
+		public class PipelineMessageClassProperties : Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				DataItem,
 				Device,
 				Name,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="DataItemProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DataItem</remarks>
@@ -56,14 +59,14 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_002C94B7_1257_49be_8EAA_CE7FCD7AFF8A</item>
 				/// <item>Type: DataItemClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.DataItems</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.DataItemClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.DataItemClass);
 				
 				/// <inheritdoc />
-				public string Name => "DataItem";
+				public string Name => "dataItem";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -107,14 +110,14 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1620240839406_285612_1596</item>
 				/// <item>Type: DeviceClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.DeviceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DeviceClass);
 				
 				/// <inheritdoc />
-				public string Name => "Device";
+				public string Name => "device";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -165,7 +168,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

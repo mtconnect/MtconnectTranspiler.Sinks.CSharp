@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790710_210585_163192";
 		
 		/// <inheritdoc />
-		public string Name => "BasicMass";
+		public string Name => "Basic Mass";
 
 		/// <inheritdoc />
 		public string Summary => @"";

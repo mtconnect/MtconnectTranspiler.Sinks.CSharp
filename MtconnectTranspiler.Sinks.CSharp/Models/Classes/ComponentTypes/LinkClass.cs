@@ -1,11 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Structure">Structure</see> that provides a connection between <see cref="Component">Component</see> entities.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587597430378_591532_1084">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LinkClass : IClass
@@ -17,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Structure"">Structure</see> that provides a connection between <see cref=""Component"">Component</see> entities.";
 
 		/// <inheritdoc />
-		public string Name => "LinkClass";
+		public string Name => "Link";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +34,20 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1587597358521_716746_1028";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1587597358521_716746_1028
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.StructureClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public LinkClassProperties Properties { get; } = new LinkClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class LinkClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.StructureClass.StructureClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

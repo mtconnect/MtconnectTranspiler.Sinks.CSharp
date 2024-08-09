@@ -6,15 +6,13 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = {{ to_code_safe source.namespace }}.{{ code_name }};
 {{~ end ~}}
 {{~ namespaces = get_package_namespaces source ~}}
-{{~ for item in namespaces ~}}
-// using {{ to_code_safe item }};
-{{~ end ~}}
 
 namespace {{ to_code_safe source.namespace }}
 {
 {{~ if source?.summary != null && source?.summary != "" ~}}
 	/// <summary>
 	{{ source?.summary }}
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 {{~ end ~}}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
@@ -24,7 +22,7 @@ namespace {{ to_code_safe source.namespace }}
 		public string ReferenceId => "{{ source.reference_id }}";
 		
 		/// <inheritdoc />
-		public string Name => "{{ source.name }}";
+		public string Name => "{{ source.normative_name }}";
 
 		/// <inheritdoc />
 		public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";

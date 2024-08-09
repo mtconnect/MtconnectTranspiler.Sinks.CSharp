@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// data in the <i>MTConnectDevices Response Document</i> that provides the information required for maintenance and support of the <i>sensor unit</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375185_148978_2086">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SensorConfigurationClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// data in the <i>MTConnectDevices Response Document</i> that provides the information required for maintenance and support of the <i>sensor unit</i>.";
 
 		/// <inheritdoc />
-		public string Name => "SensorConfigurationClass";
+		public string Name => "sensor configuration";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public SensorConfigurationClassProperties Properties { get; } = new SensorConfigurationClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class SensorConfigurationClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

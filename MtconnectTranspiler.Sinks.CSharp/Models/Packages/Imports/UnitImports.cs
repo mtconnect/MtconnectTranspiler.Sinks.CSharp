@@ -12,7 +12,7 @@ namespace Mtconnect.Imports
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790694_260747_162771";
 		
 		/// <inheritdoc />
-		public string Name => "UnitImports";
+		public string Name => "Unit Imports";
 
 		/// <inheritdoc />
 		public string Summary => @"";

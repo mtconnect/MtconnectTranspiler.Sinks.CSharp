@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components.ComponentTypes;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
 	/// <i>organize</i>s a set of expected values that can be reported for a <see cref="DataItem">DataItem</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_E6F955EB_46CA_4c72_B547_8F4465A9620A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ConstraintsClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string Summary => @"/// <i>organize</i>s a set of expected values that can be reported for a <see cref=""DataItem"">DataItem</see>.";
 
 		/// <inheritdoc />
-		public string Name => "ConstraintsClass";
+		public string Name => "Constraints";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ConstraintsClassProperties Properties { get; } = new ConstraintsClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ConstraintsClassProperties : IPropertyList
+		public class ConstraintsClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -277,14 +277,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8A5219C3_747D_4904_A58A_A312D13DAEE9</item>
 				/// <item>Type: FilterClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Components.ComponentTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.FilterClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.FilterClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasFilter";
+				public string Name => "hasFilter";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <i>organize</i>s a set of expected values that can be reported for a <see cref=""DataItem"">DataItem</see>.";

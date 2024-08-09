@@ -55,23 +55,23 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             var regex = new Regex(@"\" + String.Join(@"|\", invalidFileCharacters), RegexOptions.Compiled);
             return regex.Replace(input, replaceBy);
         }
-        public static string GetTypeNamespace(string typeName)
-            => TypeCache.GetTypeNamespace(typeName);
+        public static string GetTypeNamespace(string referenceId)
+            => TypeCache.GetTypeNamespaceFromId(referenceId);
         public static string[] GetClassNamespaces(CSharpClass cSharpClass)
         {
-            var namespaces = new List<string>();
+            var result = new List<string>();
             foreach (var property in cSharpClass.Properties)
             {
-                string @namespace = TypeCache.GetTypeNamespace(property.Type);
-                if (!string.IsNullOrEmpty(@namespace))
+                string[] namespaces = TypeCache.GetTypeNamespaceFromName(property.Type);
+                if (namespaces?.Length > 0)
                 {
-                    namespaces.Add(@namespace);
+                    result.AddRange(namespaces);
                 } else
                 {
                     System.Diagnostics.Debug.WriteLine("Missing namespace for '" + property.Type + "'");
                 }
             }
-            return namespaces.Distinct().Where(o => !string.IsNullOrEmpty(o)).ToArray();
+            return result.Distinct().Where(o => !string.IsNullOrEmpty(o)).ToArray();
         }
         public static string[] GetPackageNamespaces(CSharpPackage cSharpPackage)
         {
@@ -112,6 +112,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             var allPackages = new List<CSharpPackage>();
             var allClasses = new List<CSharpClass>();
             var allEnumerations = new List<CSharpEnum>();
+            // TODO: Add Operations; aka functions
             MtconnectModel rootPackage = new MtconnectModel(model, model.Model);
             foreach (var package in model.Model.Packages)
             {

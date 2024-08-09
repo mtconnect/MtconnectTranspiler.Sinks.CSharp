@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Configurations.Sensor;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 {
 	/// <summary>
 	/// configuration for a <see cref="Sensor">Sensor</see>./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SensorConfigurationClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		public string Summary => @"/// configuration for a <see cref=""Sensor"">Sensor</see>./// Description";
 
 		/// <inheritdoc />
-		public string Name => "SensorConfigurationClass";
+		public string Name => "SensorConfiguration";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public SensorConfigurationClassProperties Properties { get; } = new SensorConfigurationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class SensorConfigurationClassProperties : IPropertyList
+		public class SensorConfigurationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -284,7 +284,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Sensor.ChannelClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasChannel";
+				public string Name => "hasChannel";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// configuration for a <see cref=""Sensor"">Sensor</see>./// Description";

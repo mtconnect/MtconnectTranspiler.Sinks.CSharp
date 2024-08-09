@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.References
 {
 	/// <summary>
 	/// <see cref="Reference">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581212139957_418083_223">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentRefClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.References
 		public string Summary => @"/// <see cref=""Reference"">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description";
 
 		/// <inheritdoc />
-		public string Name => "ComponentRefClass";
+		public string Name => "ComponentRef";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.DeviceInformationModel.References
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_25A13743_B12C_4c6c_B1DA_8E2EFDD156EF";
+		/// <remarks>
+		/// Original Type: EAID_25A13743_B12C_4c6c_B1DA_8E2EFDD156EF
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.References.ReferenceClass);
 
 		/// <inheritdoc />
 		public ComponentRefClassProperties Properties { get; } = new ComponentRefClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ComponentRefClassProperties : IPropertyList
+		public class ComponentRefClassProperties : Mtconnect.DeviceInformationModel.References.ReferenceClass.ReferenceClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				IdRef,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="IdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IdRef</remarks>
@@ -67,7 +71,7 @@ namespace Mtconnect.DeviceInformationModel.References
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 				
 				/// <inheritdoc />
-				public string Name => "IdRef";
+				public string Name => "idRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Reference"">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description";

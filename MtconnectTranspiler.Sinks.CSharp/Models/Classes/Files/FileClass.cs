@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
-// using Mtconnect.AssetInformationModel.Files;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.Files
 {
 	/// <summary>
 	/// <see cref="AbstractFile">AbstractFile</see> type that provides information about the <see cref="File">File</see> instance and its <i>URL</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1589825359572_789274_577">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FileClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
 
 		/// <inheritdoc />
-		public string Name => "FileClass";
+		public string Name => "File";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +34,15 @@ namespace Mtconnect.AssetInformationModel.Files
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1589825445428_505818_673";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1589825445428_505818_673
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.Files.AbstractFileClass);
 
 		/// <inheritdoc />
 		public FileClassProperties Properties { get; } = new FileClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class FileClassProperties : IPropertyList
+		public class FileClassProperties : Mtconnect.AssetInformationModel.Files.AbstractFileClass.AbstractFileClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -52,7 +55,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				ModificationTime,
 				HasLocationPart,
 				HasDestinationPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SizeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Size</remarks>
@@ -76,7 +79,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "Size";
+				public string Name => "size";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
@@ -130,7 +133,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "VersionId";
+				public string Name => "versionId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
@@ -184,7 +187,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(Mtconnect.DataTypes.FileStateEnum);
 				
 				/// <inheritdoc />
-				public string Name => "State";
+				public string Name => "state";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
@@ -451,7 +454,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.Files.FileLocationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasLocation";
+				public string Name => "hasLocation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";
@@ -502,7 +505,7 @@ namespace Mtconnect.AssetInformationModel.Files
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.Files.DestinationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDestination";
+				public string Name => "hasDestination";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""AbstractFile"">AbstractFile</see> type that provides information about the <see cref=""File"">File</see> instance and its <i>URL</i>.";

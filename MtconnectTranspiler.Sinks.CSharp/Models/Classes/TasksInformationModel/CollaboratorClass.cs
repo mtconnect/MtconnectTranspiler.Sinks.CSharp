@@ -1,7 +1,6 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel;
 
 namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel
 {
@@ -15,7 +14,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "CollaboratorClass";
+		public string Name => "Collaborator";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -30,12 +29,12 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public CollaboratorClassProperties Properties { get; } = new CollaboratorClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CollaboratorClassProperties : IPropertyList
+		public class CollaboratorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -65,7 +64,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.PriorityClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasPriority";
+				public string Name => "hasPriority";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -116,7 +115,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "CollaboratorId";
+				public string Name => "collaboratorId";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -218,7 +217,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
-				public string Name => "Optional";
+				public string Name => "optional";
 				
 				/// <inheritdoc />
 				public string Summary => @"";
@@ -269,7 +268,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.CapabilityClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCapability";
+				public string Name => "hasCapability";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.References;
-// using Mtconnect;
 
 namespace Mtconnect.DeviceInformationModel
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="Reference">Reference</see> entity. {{figure(References)}} shows the <see cref="Reference">Reference</see> model.   <see cref="Reference">Reference</see> may be modeled as part of a <see cref="Device">Device</see>, <see cref="Component">Component</see> or <see cref="Interface">Interface</see> type.  ![References](figures/References.png "References"){: width="0.8"}  > Note: See <see cref="References Schema Diagrams">References Schema Diagrams</see> for XML schema of <see cref="Reference">Reference</see> and its types./// References Model
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_F54CCA63_E73C_468b_B64E_F97DEE70FFC6">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class ReferencesPackage : IPackage

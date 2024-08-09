@@ -10,21 +10,35 @@ namespace Mtconnect.DataTypes
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
-	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_">v</see></item>
-	/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_">v</see></item>
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+	/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.0">v2.0</see></item>
 	/// </list>
 	/// </remarks>
-	[Obsolete("Deprecated in v according to https://model.mtconnect.org/#_Version_")]
+	[Obsolete("Deprecated in v2.0 according to https://model.mtconnect.org/#_Version_2.0")]
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public enum CoordinateSystemEnum
 	{
 		/// <summary>
 		/// unchangeable coordinate system that has machine zero as its origin.
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.0">v2.0</see></item>
+		/// </list>
+		/// </remarks>
+		[Obsolete("Deprecated in v2.0 according to https://model.mtconnect.org/#_Version_2.0")]
 		MACHINE,
 		/// <summary>
 		/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.  If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.0">v2.0</see></item>
+		/// </list>
+		/// </remarks>
+		[Obsolete("Deprecated in v2.0 according to https://model.mtconnect.org/#_Version_2.0")]
 		WORK,
 	}
 }

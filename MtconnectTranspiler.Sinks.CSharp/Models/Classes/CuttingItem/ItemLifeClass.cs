@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 {
 	/// <summary>
 	/// life of a <see cref="CuttingItem">CuttingItem</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_CC4F8633_BAAC_47e8_9EFB_2BFC62215FC8">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ItemLifeClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
 
 		/// <inheritdoc />
-		public string Name => "ItemLifeClass";
+		public string Name => "ItemLife";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ItemLifeClassProperties Properties { get; } = new ItemLifeClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ItemLifeClassProperties : IPropertyList
+		public class ItemLifeClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -72,7 +72,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Mtconnect.DataTypes.CountDirectionTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "CountDirection";
+				public string Name => "countDirection";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
@@ -126,7 +126,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Initial";
+				public string Name => "initial";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
@@ -180,7 +180,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Limit";
+				public string Name => "limit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
@@ -234,7 +234,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Mtconnect.DataTypes.ToolLifeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
@@ -288,7 +288,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Warning";
+				public string Name => "warning";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
@@ -342,7 +342,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";

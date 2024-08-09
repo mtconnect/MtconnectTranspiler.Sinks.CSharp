@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "RequesterClass";
+		public string Name => "Requester";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.InterfaceInteractionModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579572381996_964170_42252";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579572381996_964170_42252
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.InterfaceClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public RequesterClassProperties Properties { get; } = new RequesterClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class RequesterClassProperties : Mtconnect.InterfaceInteractionModel.InterfaceClass.InterfaceClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

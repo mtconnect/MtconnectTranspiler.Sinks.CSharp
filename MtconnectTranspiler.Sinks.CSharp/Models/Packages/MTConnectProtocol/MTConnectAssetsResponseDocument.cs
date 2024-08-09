@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocument;
-// using Mtconnect;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="MTConnectAssets">MTConnectAssets</see> entity.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_0BE79858_BF36_444b_9C61_811F8D81B62F">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class MTConnectAssetsResponseDocumentPackage : IPackage
@@ -16,7 +16,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 		public string ReferenceId => "EAPK_0BE79858_BF36_444b_9C61_811F8D81B62F";
 		
 		/// <inheritdoc />
-		public string Name => "MTConnectAssetsResponseDocument";
+		public string Name => "MTConnectAssets Response Document";
 
 		/// <inheritdoc />
 		public string Summary => @"/// This section provides semantic information for the <see cref=""MTConnectAssets"">MTConnectAssets</see> entity.";

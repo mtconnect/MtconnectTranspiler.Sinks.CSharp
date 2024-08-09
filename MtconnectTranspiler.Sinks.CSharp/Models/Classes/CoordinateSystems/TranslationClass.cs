@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>
 	/// translations along X, Y, and Z axes are expressed as x,y, and z respectively within a 3-dimensional vector. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1583182362743_846297_4736">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TranslationClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string Summary => @"/// translations along X, Y, and Z axes are expressed as x,y, and z respectively within a 3-dimensional vector. ";
 
 		/// <inheritdoc />
-		public string Name => "TranslationClass";
+		public string Name => "Translation";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public TranslationClassProperties Properties { get; } = new TranslationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class TranslationClassProperties : IPropertyList
+		public class TranslationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -66,7 +67,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// translations along X, Y, and Z axes are expressed as x,y, and z respectively within a 3-dimensional vector. ";

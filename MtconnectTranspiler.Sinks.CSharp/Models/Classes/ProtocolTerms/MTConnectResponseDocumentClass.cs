@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
 	/// <i>response document</i> published by an <i>MTConnect Agent</i>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375173_527411_2040">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MTConnectResponseDocumentClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public string Summary => @"/// <i>response document</i> published by an <i>MTConnect Agent</i>.";
 
 		/// <inheritdoc />
-		public string Name => "MTConnectResponseDocumentClass";
+		public string Name => "MTConnect Response Document";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public MTConnectResponseDocumentClassProperties Properties { get; } = new MTConnectResponseDocumentClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class MTConnectResponseDocumentClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

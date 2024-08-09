@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.IndustrialTerms;
-// using Mtconnect.Glossary.MTConnectTerms;
 
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
 	/// quality, property, or characteristic that can be observed.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1629291153288_544363_79">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ObservableClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string Summary => @"/// quality, property, or characteristic that can be observed.";
 
 		/// <inheritdoc />
-		public string Name => "ObservableClass";
+		public string Name => "observable";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ObservableClassProperties Properties { get; } = new ObservableClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ObservableClassProperties : IPropertyList
+		public class ObservableClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -66,7 +65,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.EngineeredSystemClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservedBy";
+				public string Name => "observed by";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// quality, property, or characteristic that can be observed.";
@@ -110,14 +109,14 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1629291060726_222338_26</item>
 				/// <item>Type: ObservationClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.Glossary.IndustrialTerms</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ObservationClass);
+				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.ObservationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasObservation";
+				public string Name => "has observation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// quality, property, or characteristic that can be observed.";

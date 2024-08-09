@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.AgentArchitecture
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "StorageServiceGeneralization";
+		public string Name => "StorageService";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.AgentArchitecture
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1587352697171_916488_715";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1587352697171_916488_715
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.ServiceClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public StorageServiceGeneralizationProperties Properties { get; } = new StorageServiceGeneralizationProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class StorageServiceGeneralizationProperties : Mtconnect.AgentArchitecture.ServiceClass.ServiceClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

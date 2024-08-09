@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>
 	/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref="Translation">Translation</see> and <see cref="Rotation">Rotation</see>./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579103900791_417826_16362">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class TransformationClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";
 
 		/// <inheritdoc />
-		public string Name => "TransformationClass";
+		public string Name => "Transformation";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public TransformationClassProperties Properties { get; } = new TransformationClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class TransformationClassProperties : IPropertyList
+		public class TransformationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -58,14 +58,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1583182362743_846297_4736</item>
 				/// <item>Type: TranslationClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.TranslationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.TranslationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasTranslation";
+				public string Name => "hasTranslation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";
@@ -109,14 +109,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1583182385473_997250_4783</item>
 				/// <item>Type: RotationClass</item>
-				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.RotationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.RotationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasRotation";
+				public string Name => "hasRotation";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";

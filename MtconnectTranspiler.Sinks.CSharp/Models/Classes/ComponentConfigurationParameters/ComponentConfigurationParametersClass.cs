@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AssetInformationModel.ComponentConfigurationParameters;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
 	/// <summary>
 	/// set of <see cref="ParameterSet">ParameterSet</see>s that govern the functionality of the related <see cref="Component">Component</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197202508_829668_17803">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ComponentConfigurationParametersClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public string Summary => @"/// set of <see cref=""ParameterSet"">ParameterSet</see>s that govern the functionality of the related <see cref=""Component"">Component</see>.";
 
 		/// <inheritdoc />
-		public string Name => "ComponentConfigurationParametersClass";
+		public string Name => "ComponentConfigurationParameters";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_C7D39183_23CB_416b_A62D_F60815E08B1A";
+		/// <remarks>
+		/// Original Type: EAID_C7D39183_23CB_416b_A62D_F60815E08B1A
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
 		public ComponentConfigurationParametersClassProperties Properties { get; } = new ComponentConfigurationParametersClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ComponentConfigurationParametersClassProperties : IPropertyList
+		public class ComponentConfigurationParametersClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				HasParameterSetPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasParameterSetPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasParameterSet</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.ComponentConfigurationParameters.ParameterSetClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasParameterSet";
+				public string Name => "hasParameterSet";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of <see cref=""ParameterSet"">ParameterSet</see>s that govern the functionality of the related <see cref=""Component"">Component</see>.";

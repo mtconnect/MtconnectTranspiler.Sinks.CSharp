@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AssetInformationModel.RawMaterial;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Material">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382018_505205_42294">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class StockClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
 
 		/// <inheritdoc />
-		public string Name => "StockClass";
+		public string Name => "Stock";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,19 +34,22 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579572382002_513291_42264";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579572382002_513291_42264
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.MaterialClass);
 
 		/// <inheritdoc />
 		public StockClassProperties Properties { get; } = new StockClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class StockClassProperties : IPropertyList
+		public class StockClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.MaterialClass.MaterialClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ObservesMaterial,
 				ObservesLengthRemaining,
 				ObservesLengthStandard,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesMaterialProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesMaterial</remarks>
@@ -60,14 +63,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580378218345_971688_1908</item>
 				/// <item>Type: MaterialClass</item>
-				/// <item>Namespace: Mtconnect.AssetInformationModel.RawMaterial</item>
+				/// <item>Namespace: Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AssetInformationModel.RawMaterial.MaterialClass);
+				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.MaterialClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesMaterial";
+				public string Name => "observesMaterial";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
@@ -118,7 +121,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.LengthRemainingClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesLengthRemaining";
+				public string Name => "observesLengthRemaining";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
@@ -169,7 +172,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.LengthStandardClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesLengthStandard";
+				public string Name => "observesLengthStandard";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";

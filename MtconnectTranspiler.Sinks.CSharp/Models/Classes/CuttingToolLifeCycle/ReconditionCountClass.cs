@@ -6,6 +6,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
 	/// number of times the cutter has been reconditioned. /// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_AB33F1B2_493B_4f60_9394_4A69B30576F9">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ReconditionCountClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string Summary => @"/// number of times the cutter has been reconditioned. /// Description";
 
 		/// <inheritdoc />
-		public string Name => "ReconditionCountClass";
+		public string Name => "ReconditionCount";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ReconditionCountClassProperties Properties { get; } = new ReconditionCountClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ReconditionCountClassProperties : IPropertyList
+		public class ReconditionCountClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +68,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "MaximumCount";
+				public string Name => "maximumCount";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// number of times the cutter has been reconditioned. /// Description";
@@ -118,7 +119,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// number of times the cutter has been reconditioned. /// Description";

@@ -1,11 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
 	/// <summary>
 	/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> and an <see cref="Asset">Asset</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1658942745281_216676_1135">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetRelationshipClass : IClass
@@ -17,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
 
 		/// <inheritdoc />
-		public string Name => "AssetRelationshipClass";
+		public string Name => "AssetRelationship";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,19 +34,22 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_28132294_DF39_4e8e_8AE5_B79565F991A2";
+		/// <remarks>
+		/// Original Type: EAID_28132294_DF39_4e8e_8AE5_B79565F991A2
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass);
 
 		/// <inheritdoc />
 		public AssetRelationshipClassProperties Properties { get; } = new AssetRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AssetRelationshipClassProperties : IPropertyList
+		public class AssetRelationshipClassProperties : Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass.ConfigurationRelationshipClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				AssetIdRef,
 				AssetType,
 				Href,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="AssetIdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetIdRef</remarks>
@@ -68,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "AssetIdRef";
+				public string Name => "assetIdRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
@@ -122,7 +127,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "AssetType";
+				public string Name => "assetType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
@@ -176,7 +181,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Href";
+				public string Name => "href";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";

@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.AgentArchitecture;
-// using Mtconnect;
 
 namespace Mtconnect
 {
@@ -13,7 +12,7 @@ namespace Mtconnect
 		public string ReferenceId => "_19_0_3_45f01b9_1584923209945_326350_15088";
 		
 		/// <inheritdoc />
-		public string Name => "AgentArchitecture";
+		public string Name => "Agent Architecture";
 
 		/// <inheritdoc />
 		public string Summary => @"";

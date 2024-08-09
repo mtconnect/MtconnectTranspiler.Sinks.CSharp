@@ -1,6 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
@@ -14,7 +15,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ObservableStateClass";
+		public string Name => "Observable State";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -29,9 +30,20 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581813388630_658160_4475";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581813388630_658160_4475
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservableEventClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ObservableStateClassProperties Properties { get; } = new ObservableStateClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ObservableStateClassProperties : Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservableEventClass.ObservableEventClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples.OperationalState;
-// using Mtconnect;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples
 		public string ReferenceId => "_19_0_3_68e0225_1679487781772_498154_152";
 		
 		/// <inheritdoc />
-		public string Name => "OperationalState";
+		public string Name => "Operational State";
 
 		/// <inheritdoc />
 		public string Summary => @"";

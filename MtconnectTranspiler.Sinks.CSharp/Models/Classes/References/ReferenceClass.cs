@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.References
 {
 	/// <summary>
 	/// pointer to information that is associated with another entity defined elsewhere in the <see cref="MTConnectDevices">MTConnectDevices</see> entity for a piece of equipment./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_25A13743_B12C_4c6c_B1DA_8E2EFDD156EF">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ReferenceClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.References
 		public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ReferenceClass";
+		public string Name => "Reference";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.References
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ReferenceClassProperties Properties { get; } = new ReferenceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ReferenceClassProperties : IPropertyList
+		public class ReferenceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -69,7 +70,7 @@ namespace Mtconnect.DeviceInformationModel.References
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "IdRef";
+				public string Name => "idRef";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
@@ -123,7 +124,7 @@ namespace Mtconnect.DeviceInformationModel.References
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
@@ -177,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.References
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "DataItemId";
+				public string Name => "dataItemId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
@@ -231,7 +232,7 @@ namespace Mtconnect.DeviceInformationModel.References
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "RefDataItemId";
+				public string Name => "refDataItemId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";

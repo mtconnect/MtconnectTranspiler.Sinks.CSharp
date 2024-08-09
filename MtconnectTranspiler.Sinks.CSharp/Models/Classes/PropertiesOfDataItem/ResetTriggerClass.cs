@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
 	/// type of event that may cause a reset to occur.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_3F56D161_E1BD_4fa1_8D7A_1C9C2E15D303">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ResetTriggerClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string Summary => @"/// type of event that may cause a reset to occur.";
 
 		/// <inheritdoc />
-		public string Name => "ResetTriggerClass";
+		public string Name => "ResetTrigger";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ResetTriggerClassProperties Properties { get; } = new ResetTriggerClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ResetTriggerClassProperties : IPropertyList
+		public class ResetTriggerClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -67,7 +67,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(Mtconnect.DataTypes.ResetTriggerEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// type of event that may cause a reset to occur.";

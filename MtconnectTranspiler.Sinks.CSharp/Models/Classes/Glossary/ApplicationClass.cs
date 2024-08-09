@@ -6,6 +6,7 @@ namespace Mtconnect.Glossary
 {
 	/// <summary>
 	/// software or a program that is specific to the solution of an application problem. <seealso href="https://www.google.com/search?q=ISO/IEC 20944-1:2013&btnI=I">ISO/IEC 20944-1:2013</seealso>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375141_18140_1949">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ApplicationClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.Glossary
 		public string Summary => @"/// software or a program that is specific to the solution of an application problem. <seealso href=""https://www.google.com/search?q=ISO/IEC 20944-1:2013&btnI=I"">ISO/IEC 20944-1:2013</seealso>";
 
 		/// <inheritdoc />
-		public string Name => "ApplicationClass";
+		public string Name => "application";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +33,17 @@ namespace Mtconnect.Glossary
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public ApplicationClassProperties Properties { get; } = new ApplicationClassProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class ApplicationClassProperties : IPropertyList
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			};
+		};
 
 	}
 }

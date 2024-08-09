@@ -1,7 +1,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AgentArchitecture.InformationModel;
+using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.InformationModel
 {
@@ -15,7 +15,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string Summary => @"";
 
 		/// <inheritdoc />
-		public string Name => "ContitionClass";
+		public string Name => "Contition";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -30,17 +30,20 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1585536700946_684682_2787";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1585536700946_684682_2787
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationClass);
 
 		/// <inheritdoc />
 		public ContitionClassProperties Properties { get; } = new ContitionClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ContitionClassProperties : IPropertyList
+		public class ContitionClassProperties : Mtconnect.AgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				HasValue,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="HasValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasValue</remarks>
@@ -61,7 +64,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 				public System.Type Type => typeof(Mtconnect.AgentArchitecture.InformationModel.ConditionValueClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasValue";
+				public string Name => "hasValue";
 				
 				/// <inheritdoc />
 				public string Summary => @"";

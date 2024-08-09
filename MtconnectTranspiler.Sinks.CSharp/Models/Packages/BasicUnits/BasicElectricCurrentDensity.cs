@@ -11,7 +11,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 		public string ReferenceId => "_19_0_3_45f01b9_1579105790691_45260_162718";
 		
 		/// <inheritdoc />
-		public string Name => "BasicElectricCurrentDensity";
+		public string Name => "Basic Electric Current Density";
 
 		/// <inheritdoc />
 		public string Summary => @"";

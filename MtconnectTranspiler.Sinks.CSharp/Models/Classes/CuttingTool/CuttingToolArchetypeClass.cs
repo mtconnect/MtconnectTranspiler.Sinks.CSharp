@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.AssetInformationModel.CuttingTool;
-// using Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
 	/// <see cref="Asset">Asset</see> that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_8D60D3F8_AB1A_490b_923B_B978248EF331">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class CuttingToolArchetypeClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string Summary => @"/// <see cref=""Asset"">Asset</see> that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.";
 
 		/// <inheritdoc />
-		public string Name => "CuttingToolArchetypeClass";
+		public string Name => "CuttingToolArchetype";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +34,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_C7D39183_23CB_416b_A62D_F60815E08B1A";
+		/// <remarks>
+		/// Original Type: EAID_C7D39183_23CB_416b_A62D_F60815E08B1A
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
 		public CuttingToolArchetypeClassProperties Properties { get; } = new CuttingToolArchetypeClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class CuttingToolArchetypeClassProperties : IPropertyList
+		public class CuttingToolArchetypeClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -48,7 +51,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				ToolId,
 				HasCuttingToolDefinitionPart,
 				HasCuttingToolLifeCyclePart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ManufacturersProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Manufacturers</remarks>
@@ -72,7 +75,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Manufacturers";
+				public string Name => "manufacturers";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.";
@@ -126,7 +129,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "SerialNumber";
+				public string Name => "serialNumber";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.";
@@ -180,7 +183,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "ToolId";
+				public string Name => "toolId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.";
@@ -231,7 +234,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolDefinitionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCuttingToolDefinition";
+				public string Name => "hasCuttingToolDefinition";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.";
@@ -282,7 +285,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.CuttingToolLifeCycleClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasCuttingToolLifeCycle";
+				public string Name => "hasCuttingToolLifeCycle";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Asset"">Asset</see> that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.";

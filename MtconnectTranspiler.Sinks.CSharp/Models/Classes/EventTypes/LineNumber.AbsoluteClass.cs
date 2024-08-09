@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// position of a block of program code relative to the beginning of the control program.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218340_564692_1896">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class LineNumberAbsoluteClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// position of a block of program code relative to the beginning of the control program.";
 
 		/// <inheritdoc />
-		public string Name => "LineNumber.AbsoluteClass";
+		public string Name => "LineNumber.Absolute";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1580378218338_357401_1893";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1580378218338_357401_1893
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LineNumberClass);
 
 		/// <inheritdoc />
 		public LineNumberAbsoluteClassProperties Properties { get; } = new LineNumberAbsoluteClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class LineNumberAbsoluteClassProperties : IPropertyList
+		public class LineNumberAbsoluteClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LineNumberClass.LineNumberClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				SubType,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "SubType";
+				public string Name => "subType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// position of a block of program code relative to the beginning of the control program.";

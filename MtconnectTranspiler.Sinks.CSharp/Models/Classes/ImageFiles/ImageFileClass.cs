@@ -6,6 +6,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 {
 	/// <summary>
 	/// reference to a file containing an image of the <see cref="Component">Component</see>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1677585025728_765757_660">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ImageFileClass : IClass
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 		public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
 
 		/// <inheritdoc />
-		public string Name => "ImageFileClass";
+		public string Name => "ImageFile";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public ImageFileClassProperties Properties { get; } = new ImageFileClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ImageFileClassProperties : IPropertyList
+		public class ImageFileClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -69,7 +70,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Id";
+				public string Name => "id";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
@@ -123,7 +124,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Href";
+				public string Name => "href";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
@@ -177,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "MediaType";
+				public string Name => "mediaType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";
@@ -231,7 +232,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Name";
+				public string Name => "name";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// reference to a file containing an image of the <see cref=""Component"">Component</see>.";

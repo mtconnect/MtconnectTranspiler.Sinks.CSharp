@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary.MTConnectTerms;
-// using Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface;
+using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel
 {
 	/// <summary>
 	/// abstract <see cref="Component">Component</see> that coordinates actions and activities between pieces of equipment. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381996_964170_42252">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class InterfaceClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public string Summary => @"/// abstract <see cref=""Component"">Component</see> that coordinates actions and activities between pieces of equipment. ";
 
 		/// <inheritdoc />
-		public string Name => "InterfaceClass";
+		public string Name => "Interface";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,18 +34,21 @@ namespace Mtconnect.InterfaceInteractionModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "EAID_8548C620_467A_4f50_9A22_58D84B7E8779";
+		/// <remarks>
+		/// Original Type: EAID_8548C620_467A_4f50_9A22_58D84B7E8779
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
 		public InterfaceClassProperties Properties { get; } = new InterfaceClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class InterfaceClassProperties : IPropertyList
+		public class InterfaceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				IsInterfaceOfPart,
 				ObservesInterfaceState,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="IsInterfaceOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsInterfaceOf</remarks>
@@ -59,14 +62,14 @@ namespace Mtconnect.InterfaceInteractionModel
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1620240839406_285612_1596</item>
 				/// <item>Type: DeviceClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.DeviceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DeviceClass);
 				
 				/// <inheritdoc />
-				public string Name => "IsInterfaceOf";
+				public string Name => "isInterfaceOf";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <see cref=""Component"">Component</see> that coordinates actions and activities between pieces of equipment. ";
@@ -117,7 +120,7 @@ namespace Mtconnect.InterfaceInteractionModel
 				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.InterfaceStateClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesInterfaceState";
+				public string Name => "observesInterfaceState";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <see cref=""Component"">Component</see> that coordinates actions and activities between pieces of equipment. ";

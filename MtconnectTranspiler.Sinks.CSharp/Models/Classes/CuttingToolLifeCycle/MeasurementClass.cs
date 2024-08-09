@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
 	/// constrained scalar value associated with a cutting tool./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_C09F377D_8946_421b_B746_E23C01D97EAC">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MeasurementClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
 
 		/// <inheritdoc />
-		public string Name => "MeasurementClass";
+		public string Name => "Measurement";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public MeasurementClassProperties Properties { get; } = new MeasurementClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MeasurementClassProperties : IPropertyList
+		public class MeasurementClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -74,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.DataTypes.CodeEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Code";
+				public string Name => "code";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
@@ -128,7 +128,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Maximum";
+				public string Name => "maximum";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
@@ -182,7 +182,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Minimum";
+				public string Name => "minimum";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
@@ -236,7 +236,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "NativeUnits";
+				public string Name => "nativeUnits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
@@ -290,7 +290,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Nominal";
+				public string Name => "nominal";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
@@ -344,7 +344,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "SignificantDigits";
+				public string Name => "significantDigits";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
@@ -398,7 +398,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Units";
+				public string Name => "units";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";
@@ -449,7 +449,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// constrained scalar value associated with a cutting tool./// Description";

@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
 	/// provides a means to control when an <i>agent</i> records updated information for a <see cref="DataItem">DataItem</see>. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_8A5219C3_747D_4904_A58A_A312D13DAEE9">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class FilterClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";
 
 		/// <inheritdoc />
-		public string Name => "FilterClass";
+		public string Name => "Filter";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public FilterClassProperties Properties { get; } = new FilterClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class FilterClassProperties : IPropertyList
+		public class FilterClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -68,7 +68,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(Mtconnect.DataTypes.FilterEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";
@@ -119,7 +119,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Value";
+				public string Name => "value";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";

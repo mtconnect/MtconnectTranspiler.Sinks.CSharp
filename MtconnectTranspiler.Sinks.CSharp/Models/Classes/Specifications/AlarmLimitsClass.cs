@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
 	/// set of limits that is used to trigger warning or alarm indicators.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643893577_939623_1049">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AlarmLimitsClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
 
 		/// <inheritdoc />
-		public string Name => "AlarmLimitsClass";
+		public string Name => "AlarmLimits";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public AlarmLimitsClassProperties Properties { get; } = new AlarmLimitsClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AlarmLimitsClassProperties : IPropertyList
+		public class AlarmLimitsClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -60,14 +60,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643508394_491668_626</item>
 				/// <item>Type: UpperLimitClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.UpperLimitClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "UpperLimit";
+				public string Name => "upperLimit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
@@ -111,14 +111,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643515595_841451_671</item>
 				/// <item>Type: UpperWarningClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.UpperWarningClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperWarningClass);
 				
 				/// <inheritdoc />
-				public string Name => "UpperWarning";
+				public string Name => "upperWarning";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
@@ -162,14 +162,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643526040_637158_716</item>
 				/// <item>Type: LowerLimitClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.LowerLimitClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "LowerLimit";
+				public string Name => "lowerLimit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
@@ -213,14 +213,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643531502_63450_761</item>
 				/// <item>Type: LowerWarningClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.LowerWarningClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerWarningClass);
 				
 				/// <inheritdoc />
-				public string Name => "LowerWarning";
+				public string Name => "lowerWarning";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";

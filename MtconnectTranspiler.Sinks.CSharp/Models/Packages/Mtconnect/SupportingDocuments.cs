@@ -7,6 +7,7 @@ namespace Mtconnect
 {
 	/// <summary>
 	/// Assets Appendix/// Assets Introduction/// Devices Introduction/// Devices Appendix/// Observations Introduction/// Observations Appendix/// Interfaces Introduction/// Fundamentals Appendix/// Fundamentals Introduction
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1589301330036_553673_25">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class SupportingDocumentsPackage : IPackage
@@ -15,7 +16,7 @@ namespace Mtconnect
 		public string ReferenceId => "_19_0_3_91b028d_1589301330036_553673_25";
 		
 		/// <inheritdoc />
-		public string Name => "SupportingDocuments";
+		public string Name => "Supporting Documents";
 
 		/// <inheritdoc />
 		public string Summary => @"/// Assets Appendix/// Assets Introduction/// Devices Introduction/// Devices Appendix/// Observations Introduction/// Observations Appendix/// Interfaces Introduction/// Fundamentals Appendix/// Fundamentals Introduction";

@@ -12,7 +12,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples
 		public string ReferenceId => "_19_0_3_68e0225_1679315100755_628356_2764";
 		
 		/// <inheritdoc />
-		public string Name => "OtherExamples";
+		public string Name => "Other Examples";
 
 		/// <inheritdoc />
 		public string Summary => @"";

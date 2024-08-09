@@ -1,12 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Glossary;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
 	/// set of limits that define a range of values designating acceptable performance for a variable.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643883082_895051_1004">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class SpecificationLimitsClass : IClass
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string Summary => @"/// set of limits that define a range of values designating acceptable performance for a variable.";
 
 		/// <inheritdoc />
-		public string Name => "SpecificationLimitsClass";
+		public string Name => "SpecificationLimits";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,12 +33,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public SpecificationLimitsClassProperties Properties { get; } = new SpecificationLimitsClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class SpecificationLimitsClassProperties : IPropertyList
+		public class SpecificationLimitsClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -59,14 +59,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643508394_491668_626</item>
 				/// <item>Type: UpperLimitClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.UpperLimitClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "UpperLimit";
+				public string Name => "upperLimit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that define a range of values designating acceptable performance for a variable.";
@@ -110,14 +110,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580316543777_893941_47725</item>
 				/// <item>Type: NominalClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.NominalClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.NominalClass);
 				
 				/// <inheritdoc />
-				public string Name => "Nominal";
+				public string Name => "nominal";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that define a range of values designating acceptable performance for a variable.";
@@ -161,14 +161,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605643526040_637158_716</item>
 				/// <item>Type: LowerLimitClass</item>
-				/// <item>Namespace: Mtconnect.Glossary</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.LowerLimitClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "LowerLimit";
+				public string Name => "lowerLimit";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// set of limits that define a range of values designating acceptable performance for a variable.";

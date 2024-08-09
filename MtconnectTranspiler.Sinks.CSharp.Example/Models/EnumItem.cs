@@ -1,4 +1,5 @@
-﻿using MtconnectTranspiler.Xmi;
+﻿using MtconnectTranspiler.Sinks.CSharp.Example;
+using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
@@ -32,6 +33,17 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         }
 
         public string OriginalName => base.SysML_Name;
+
+        private string _namespace;
+        public string Namespace
+        {
+            get { return _namespace; }
+            set
+            {
+                _namespace = value;
+                TypeCache.RegisterType(this.SysML_ID, SysML_Name, _namespace);
+            }
+        }
 
         /// <summary>
         /// Constructs an <see cref="EnumItem"/> more generically. <b>NOTE</b>: You'll need to add items manually from here.

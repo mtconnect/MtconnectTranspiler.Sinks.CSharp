@@ -1,13 +1,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocument;
-// using Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument
 {
 	/// <summary>
 	/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png "MTConnectError"){: width="0.8"}  > Note: Additional properties of <see cref="MTConnectError">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1579560579030_994981_6548">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MTConnectErrorClass : IClass
@@ -19,7 +18,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 		public string Summary => @"/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png ""MTConnectError""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectError"">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
 
 		/// <inheritdoc />
-		public string Name => "MTConnectErrorClass";
+		public string Name => "MTConnectError";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +33,12 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "";
+		public Type Generalization => null;
 
 		/// <inheritdoc />
 		public MTConnectErrorClassProperties Properties { get; } = new MTConnectErrorClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class MTConnectErrorClassProperties : IPropertyList
+		public class MTConnectErrorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -60,14 +59,14 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1579560593039_375117_6558</item>
 				/// <item>Type: HeaderClass</item>
-				/// <item>Namespace: Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocument</item>
+				/// <item>Namespace: Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocument.HeaderClass);
+				public System.Type Type => typeof(Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument.HeaderClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasHeader";
+				public string Name => "hasHeader";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png ""MTConnectError""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectError"">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
@@ -118,7 +117,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				public System.Type Type => typeof(Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument.ErrorClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasError";
+				public string Name => "hasError";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png ""MTConnectError""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectError"">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
@@ -169,7 +168,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				public System.Type Type => typeof(Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument.ErrorClass);
 				
 				/// <inheritdoc />
-				public string Name => "Error";
+				public string Name => "error";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// root entity of an <i>MTConnectErrors Response Document</i> that contains the <i>Error Information Model</i>.  ![MTConnectError](figures/MTConnectErrors.png ""MTConnectError""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectError"">MTConnectError</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";

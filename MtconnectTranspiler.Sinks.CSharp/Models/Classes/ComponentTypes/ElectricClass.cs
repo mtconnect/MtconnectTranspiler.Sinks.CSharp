@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="System">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381986_185851_42231">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class ElectricClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""System"">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description";
 
 		/// <inheritdoc />
-		public string Name => "ElectricClass";
+		public string Name => "Electric";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,17 +34,20 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579572382020_336298_42297";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579572382020_336298_42297
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 
 		/// <inheritdoc />
 		public ElectricClassProperties Properties { get; } = new ElectricClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class ElectricClassProperties : IPropertyList
+		public class ElectricClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass.SystemClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ObservesWattage,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesWattageProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesWattage</remarks>
@@ -64,7 +68,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.WattageClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesWattage";
+				public string Name => "observesWattage";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""System"">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description";

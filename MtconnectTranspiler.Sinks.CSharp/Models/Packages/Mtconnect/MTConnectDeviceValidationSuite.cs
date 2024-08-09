@@ -11,7 +11,7 @@ namespace Mtconnect
 		public string ReferenceId => "_19_0_3_68e0225_1620229308606_339618_1068";
 		
 		/// <inheritdoc />
-		public string Name => "MTConnectDeviceValidationSuite";
+		public string Name => "MTConnect Device Validation Suite";
 
 		/// <inheritdoc />
 		public string Summary => @"";

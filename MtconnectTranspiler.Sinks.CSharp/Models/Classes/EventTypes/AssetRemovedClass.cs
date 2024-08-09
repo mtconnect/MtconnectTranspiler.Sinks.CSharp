@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
 	/// <see cref="EventEnum::ASSET_REMOVED">EventEnum::ASSET_REMOVED</see>
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218180_352606_1551">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetRemovedClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string Summary => @"/// <see cref=""EventEnum::ASSET_REMOVED"">EventEnum::ASSET_REMOVED</see>";
 
 		/// <inheritdoc />
-		public string Name => "AssetRemovedClass";
+		public string Name => "AssetRemoved";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,19 +34,22 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531115_47447_25730";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531115_47447_25730
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
 		public AssetRemovedClassProperties Properties { get; } = new AssetRemovedClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AssetRemovedClassProperties : IPropertyList
+		public class AssetRemovedClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				AssetType,
 				Type,
 				Hash,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="AssetTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetType</remarks>
@@ -69,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "AssetType";
+				public string Name => "assetType";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""EventEnum::ASSET_REMOVED"">EventEnum::ASSET_REMOVED</see>";
@@ -120,7 +124,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(Mtconnect.DataTypes.EventEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""EventEnum::ASSET_REMOVED"">EventEnum::ASSET_REMOVED</see>";
@@ -149,7 +153,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "ASSET_REMOVED";
 			}
 			/// <summary>
 			/// <inheritdoc cref="HashProperty" path="/summary" /><br/>
@@ -174,7 +178,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Hash";
+				public string Name => "hash";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""EventEnum::ASSET_REMOVED"">EventEnum::ASSET_REMOVED</see>";

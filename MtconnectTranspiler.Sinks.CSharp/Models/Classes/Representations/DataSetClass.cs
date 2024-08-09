@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.Representations;
+using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
 	/// <summary>
 	/// <see cref="Representation">Representation</see> for an <see cref="Observation">Observation</see> composed of value(s) represented as a set of <i>key-value pair</i>s. /// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531114_503405_25727">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class DataSetClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of value(s) represented as a set of <i>key-value pair</i>s. /// Description";
 
 		/// <inheritdoc />
-		public string Name => "DataSetClass";
+		public string Name => "DataSet";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1633615188301_96457_1251";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1633615188301_96457_1251
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.RepresentationClass);
 
 		/// <inheritdoc />
 		public DataSetClassProperties Properties { get; } = new DataSetClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class DataSetClassProperties : IPropertyList
+		public class DataSetClassProperties : Mtconnect.ObservationInformationModel.Representations.RepresentationClass.RepresentationClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Count,
 				ResultPart,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="CountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Count</remarks>
@@ -68,7 +72,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "Count";
+				public string Name => "count";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of value(s) represented as a set of <i>key-value pair</i>s. /// Description";
@@ -119,7 +123,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.Representations.EntryClass);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of value(s) represented as a set of <i>key-value pair</i>s. /// Description";

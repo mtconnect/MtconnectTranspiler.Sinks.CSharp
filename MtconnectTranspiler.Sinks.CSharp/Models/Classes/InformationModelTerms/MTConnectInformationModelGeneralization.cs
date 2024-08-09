@@ -1,11 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.Glossary.InformationModelTerms
 {
 	/// <summary>
 	/// <i>information model</i> that defines the semantics of the MTConnect Standard.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375172_792733_2037">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class MTConnectInformationModelGeneralization : IClass
@@ -17,7 +19,7 @@ namespace Mtconnect.Glossary.InformationModelTerms
 		public string Summary => @"/// <i>information model</i> that defines the semantics of the MTConnect Standard.";
 
 		/// <inheritdoc />
-		public string Name => "MTConnectInformationModelGeneralization";
+		public string Name => "MTConnect Information Model";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -32,9 +34,20 @@ namespace Mtconnect.Glossary.InformationModelTerms
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_68e0225_1623664375166_600079_2015";
+		/// <remarks>
+		/// Original Type: _19_0_3_68e0225_1623664375166_600079_2015
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.InformationModelClass);
 
-		public IPropertyList Properties => null;
+		/// <inheritdoc />
+		public MTConnectInformationModelGeneralizationProperties Properties { get; } = new MTConnectInformationModelGeneralizationProperties();
+        IPropertyList IClass.Properties => Properties;
+		public class MTConnectInformationModelGeneralizationProperties : Mtconnect.Glossary.InformationModelClass.InformationModelClassProperties
+		{
+			/// <inheritdoc />
+			public IProperty[] Properties => new IProperty[] {
+			}.Concat(base.Properties).ToArray();
+		};
 
 	}
 }

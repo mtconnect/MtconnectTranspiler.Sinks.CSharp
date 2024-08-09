@@ -2,7 +2,6 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel;
-// using Mtconnect;
 
 namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel
 {
@@ -13,7 +12,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel
 		public string ReferenceId => "_19_0_3_68e0225_1622718436806_684422_1202";
 		
 		/// <inheritdoc />
-		public string Name => "TasksInformationModel";
+		public string Name => "Tasks Information Model";
 
 		/// <inheritdoc />
 		public string Summary => @"";

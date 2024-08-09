@@ -2,12 +2,12 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using Package = Mtconnect.DeviceInformationModel.Configurations.Motion;
-// using Mtconnect;
 
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
 	/// This section provides semantic information for the <see cref="Motion">Motion</see> entity.  ![Motion](figures/Motion.png "Motion"){: width="0.8"}  > Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.  ![Motion Example](figures/Motion%20Example.png "Motion Example"){: width="0.8"}  > Note: See {{lst(motion-example)}} for the <i>XML</i> representation of the same example.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579526830201_236256_7625">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public class MotionPackage : IPackage

@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
 	/// <see cref="Resource">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. 
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382005_168835_42270">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class PersonnelClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";
 
 		/// <inheritdoc />
-		public string Name => "PersonnelClass";
+		public string Name => "Personnel";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579572382014_307743_42285";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579572382014_307743_42285
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ResourceClass);
 
 		/// <inheritdoc />
 		public PersonnelClassProperties Properties { get; } = new PersonnelClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class PersonnelClassProperties : IPropertyList
+		public class PersonnelClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.ResourceClass.ResourceClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				ObservesUserOperator,
 				ObservesUserMaintenance,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesUserOperatorProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUserOperator</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.UserOperatorClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesUserOperator";
+				public string Name => "observesUserOperator";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";
@@ -116,7 +120,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public System.Type Type => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.UserMaintenanceClass);
 				
 				/// <inheritdoc />
-				public string Name => "ObservesUserMaintenance";
+				public string Name => "observesUserMaintenance";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";

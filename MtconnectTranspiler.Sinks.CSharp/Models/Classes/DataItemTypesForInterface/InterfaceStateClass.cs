@@ -1,12 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DataTypes;
+using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
 	/// <summary>
 	/// <see cref="InterfaceEventEnum::INTERFACE_STATE">InterfaceEventEnum::INTERFACE_STATE</see>  When the <see cref="InterfaceState">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref="Interface">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218325_627294_1860">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class InterfaceStateClass : IClass
@@ -18,7 +19,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public string Summary => @"/// <see cref=""InterfaceEventEnum::INTERFACE_STATE"">InterfaceEventEnum::INTERFACE_STATE</see>  When the <see cref=""InterfaceState"">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref=""Interface"">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.";
 
 		/// <inheritdoc />
-		public string Name => "InterfaceStateClass";
+		public string Name => "InterfaceState";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -33,18 +34,21 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1579566531115_47447_25730";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1579566531115_47447_25730
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
 		public InterfaceStateClassProperties Properties { get; } = new InterfaceStateClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class InterfaceStateClassProperties : IPropertyList
+		public class InterfaceStateClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
 				Type,
 				Result,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
@@ -65,7 +69,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public System.Type Type => typeof(Mtconnect.DataTypes.InterfaceEventEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Type";
+				public string Name => "type";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""InterfaceEventEnum::INTERFACE_STATE"">InterfaceEventEnum::INTERFACE_STATE</see>  When the <see cref=""InterfaceState"">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref=""Interface"">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.";
@@ -94,7 +98,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => "INTERFACE_STATE";
 			}
 			/// <summary>
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
@@ -116,7 +120,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public System.Type Type => typeof(Mtconnect.DataTypes.InterfaceStateEnum);
 				
 				/// <inheritdoc />
-				public string Name => "Result";
+				public string Name => "result";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// <see cref=""InterfaceEventEnum::INTERFACE_STATE"">InterfaceEventEnum::INTERFACE_STATE</see>  When the <see cref=""InterfaceState"">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref=""Interface"">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.";

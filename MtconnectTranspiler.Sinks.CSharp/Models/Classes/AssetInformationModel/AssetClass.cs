@@ -1,13 +1,13 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-// using Mtconnect.DeviceInformationModel.Components;
-// using Mtconnect.Glossary.IndustrialTerms;
+using System.Linq;
 
 namespace Mtconnect.AssetInformationModel
 {
 	/// <summary>
 	/// abstract <i>Asset</i>. /// Description
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_C7D39183_23CB_416b_A62D_F60815E08B1A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
 	public sealed class AssetClass : IClass
@@ -19,7 +19,7 @@ namespace Mtconnect.AssetInformationModel
 		public string Summary => @"/// abstract <i>Asset</i>. /// Description";
 
 		/// <inheritdoc />
-		public string Name => "AssetClass";
+		public string Name => "Asset";
 		
 		/// <inheritdoc />
 		public string AccessModifier => "public";
@@ -34,12 +34,15 @@ namespace Mtconnect.AssetInformationModel
 		public string DeprecatedVersion => "";
 		
 		/// <inheritdoc />
-		public string Generalization => "_19_0_3_45f01b9_1581734255313_425984_984";
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1581734255313_425984_984
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.AssetGeneralization);
 
 		/// <inheritdoc />
 		public AssetClassProperties Properties { get; } = new AssetClassProperties();
         IPropertyList IClass.Properties => Properties;
-		public sealed class AssetClassProperties : IPropertyList
+		public class AssetClassProperties : Mtconnect.Glossary.MTConnectTerms.AssetGeneralization.AssetGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public IProperty[] Properties => new IProperty[] {
@@ -50,7 +53,7 @@ namespace Mtconnect.AssetInformationModel
 				HasDescriptionPart,
 				HasConfigurationPart,
 				Hash,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="AssetIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetId</remarks>
@@ -74,7 +77,7 @@ namespace Mtconnect.AssetInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "AssetId";
+				public string Name => "assetId";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
@@ -128,7 +131,7 @@ namespace Mtconnect.AssetInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "DeviceUuid";
+				public string Name => "deviceUuid";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
@@ -182,7 +185,7 @@ namespace Mtconnect.AssetInformationModel
 				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
-				public string Name => "Removed";
+				public string Name => "removed";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
@@ -236,7 +239,7 @@ namespace Mtconnect.AssetInformationModel
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "Timestamp";
+				public string Name => "timestamp";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
@@ -290,7 +293,7 @@ namespace Mtconnect.AssetInformationModel
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasDescription";
+				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
@@ -334,14 +337,14 @@ namespace Mtconnect.AssetInformationModel
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_C04DCC77_16E8_4cef_92D4_B777AFC52570</item>
 				/// <item>Type: ConfigurationClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.IndustrialTerms</item>
+				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.Glossary.IndustrialTerms.ConfigurationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.ConfigurationClass);
 				
 				/// <inheritdoc />
-				public string Name => "HasConfiguration";
+				public string Name => "hasConfiguration";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
@@ -395,7 +398,7 @@ namespace Mtconnect.AssetInformationModel
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "Hash";
+				public string Name => "hash";
 				
 				/// <inheritdoc />
 				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
