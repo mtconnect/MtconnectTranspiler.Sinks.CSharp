@@ -179,12 +179,12 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605276722719_257725_310</item>
-				/// <item>Type: FileStateEnum</item>
+				/// <item>Type: FileStateEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.FileStateEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.FileStateEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "state";

@@ -391,12 +391,12 @@ namespace Mtconnect.DataTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1678195723846_572772_17405</item>
-				/// <item>Type: CharacteristicStatusEnum</item>
+				/// <item>Type: CharacteristicStatusEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CharacteristicStatusEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CharacteristicStatusEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "CharacteristicStatus";
@@ -445,12 +445,12 @@ namespace Mtconnect.DataTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1678195766304_380006_17434</item>
-				/// <item>Type: UncertaintyTypeEnum</item>
+				/// <item>Type: UncertaintyTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.UncertaintyTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.UncertaintyTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "UncertaintyType";

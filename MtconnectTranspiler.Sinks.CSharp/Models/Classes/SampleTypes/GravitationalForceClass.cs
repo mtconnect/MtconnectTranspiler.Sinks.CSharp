@@ -61,12 +61,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_678122A4_E8FD_4243_8427_6B7E0E78D5F5</item>
-				/// <item>Type: NativeUnitEnum</item>
+				/// <item>Type: NativeUnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "units";
@@ -112,12 +112,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580398370126_672808_12777</item>
-				/// <item>Type: SampleEnum</item>
+				/// <item>Type: SampleEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.SampleEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.SampleEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

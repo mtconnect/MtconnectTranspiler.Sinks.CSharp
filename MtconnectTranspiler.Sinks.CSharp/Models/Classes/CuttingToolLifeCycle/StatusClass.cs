@@ -59,12 +59,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_782BD14C_FE49_4276_B7D0_7B42DA63B37F</item>
-				/// <item>Type: CutterStatusTypeEnum</item>
+				/// <item>Type: CutterStatusTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CutterStatusTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CutterStatusTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "value";

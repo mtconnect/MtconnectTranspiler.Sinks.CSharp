@@ -62,12 +62,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580378417663_685842_2877</item>
-				/// <item>Type: EndOfBarEnum</item>
+				/// <item>Type: EndOfBarEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.EndOfBarEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.EndOfBarEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "result";
@@ -113,12 +113,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580398379726_606068_12802</item>
-				/// <item>Type: EventEnum</item>
+				/// <item>Type: EventEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.EventEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.EventEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";
@@ -164,12 +164,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579563592155_977172_22064</item>
-				/// <item>Type: DataItemSubTypeEnum</item>
+				/// <item>Type: DataItemSubTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "subType";

@@ -64,12 +64,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A</item>
-				/// <item>Type: UnitEnum</item>
+				/// <item>Type: UnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "units";
@@ -223,12 +223,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579563576485_587701_22033</item>
-				/// <item>Type: DataItemTypeEnum</item>
+				/// <item>Type: DataItemTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";
@@ -277,12 +277,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579563592155_977172_22064</item>
-				/// <item>Type: DataItemSubTypeEnum</item>
+				/// <item>Type: DataItemSubTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "subType";
@@ -331,12 +331,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579563576485_587701_22033</item>
-				/// <item>Type: DataItemTypeEnum</item>
+				/// <item>Type: DataItemTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "keyType";

@@ -60,12 +60,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_EF8EFACB_B3D8_4199_B5D5_84735797D463</item>
-				/// <item>Type: FilterEnum</item>
+				/// <item>Type: FilterEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.FilterEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.FilterEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

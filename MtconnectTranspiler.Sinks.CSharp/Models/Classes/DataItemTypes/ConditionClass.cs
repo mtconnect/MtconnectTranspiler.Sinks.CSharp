@@ -61,12 +61,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1579277872728_249968_3735</item>
-				/// <item>Type: CategoryEnum</item>
+				/// <item>Type: CategoryEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CategoryEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CategoryEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "category";
@@ -112,12 +112,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580398386435_855466_12827</item>
-				/// <item>Type: ConditionEnum</item>
+				/// <item>Type: ConditionEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

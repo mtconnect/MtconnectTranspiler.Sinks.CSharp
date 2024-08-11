@@ -59,12 +59,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8616CF52_2918_4462_A494_9F4A3EEFD597</item>
-				/// <item>Type: ResetTriggerEnum</item>
+				/// <item>Type: ResetTriggerEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ResetTriggerEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ResetTriggerEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "value";

@@ -122,12 +122,12 @@ namespace Mtconnect.DataTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1640604472459_23562_405</item>
-				/// <item>Type: MaintenanceListIntervalEnum</item>
+				/// <item>Type: MaintenanceListIntervalEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.MaintenanceListIntervalEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.MaintenanceListIntervalEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "Interval";
@@ -338,12 +338,12 @@ namespace Mtconnect.DataTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1640604423161_7561_376</item>
-				/// <item>Type: MaintenanceListDirectionEnum</item>
+				/// <item>Type: MaintenanceListDirectionEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.MaintenanceListDirectionEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.MaintenanceListDirectionEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "Direction";
@@ -500,12 +500,12 @@ namespace Mtconnect.DataTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A</item>
-				/// <item>Type: UnitEnum</item>
+				/// <item>Type: UnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "Units";

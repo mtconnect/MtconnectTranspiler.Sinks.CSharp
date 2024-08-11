@@ -174,12 +174,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1579301039819_63145_6975</item>
-				/// <item>Type: RoleTypeEnum</item>
+				/// <item>Type: RoleTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.RoleTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.RoleTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "role";

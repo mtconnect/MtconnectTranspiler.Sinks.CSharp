@@ -158,12 +158,12 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1622723031886_684761_3039</item>
-				/// <item>Type: CollaboratorTypeEnum</item>
+				/// <item>Type: CollaboratorTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.CollaboratorTypeEnum);
+				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.CollaboratorTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "CollaboratorType";

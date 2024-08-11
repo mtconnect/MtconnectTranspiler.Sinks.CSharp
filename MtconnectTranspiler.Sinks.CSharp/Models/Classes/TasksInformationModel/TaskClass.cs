@@ -318,12 +318,12 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1622719977582_803160_1892</item>
-				/// <item>Type: TaskTypeEnum</item>
+				/// <item>Type: TaskTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.TaskTypeEnum);
+				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.TaskTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "TaskType";
@@ -369,12 +369,12 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1622721899109_23146_2663</item>
-				/// <item>Type: TaskStateEnum</item>
+				/// <item>Type: TaskStateEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.TaskStateEnum);
+				public System.Type Type => typeof(Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel.TaskStateEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "State";

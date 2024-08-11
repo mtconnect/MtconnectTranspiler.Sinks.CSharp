@@ -176,12 +176,12 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1589825603246_243967_772</item>
-				/// <item>Type: ApplicationCategoryEnum</item>
+				/// <item>Type: ApplicationCategoryEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ApplicationCategoryEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ApplicationCategoryEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "applicationCategory";
@@ -230,12 +230,12 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1589825656758_905757_799</item>
-				/// <item>Type: ApplicationTypeEnum</item>
+				/// <item>Type: ApplicationTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ApplicationTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ApplicationTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "applicationType";

@@ -272,12 +272,12 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580312281115_595828_44604</item>
-				/// <item>Type: CompositionTypeEnum</item>
+				/// <item>Type: CompositionTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CompositionTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CompositionTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

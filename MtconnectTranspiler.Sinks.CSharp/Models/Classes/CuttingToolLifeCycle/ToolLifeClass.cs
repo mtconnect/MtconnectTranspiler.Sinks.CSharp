@@ -64,12 +64,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_CFE5DAF7_7F0E_40ce_B920_5151D846B636</item>
-				/// <item>Type: CountDirectionTypeEnum</item>
+				/// <item>Type: CountDirectionTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CountDirectionTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CountDirectionTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "countDirection";
@@ -226,12 +226,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1634824001211_966890_187</item>
-				/// <item>Type: ToolLifeEnum</item>
+				/// <item>Type: ToolLifeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ToolLifeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ToolLifeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

@@ -64,12 +64,12 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1622119656767_412574_1812</item>
-				/// <item>Type: QIFDocumentTypeEnum</item>
+				/// <item>Type: QIFDocumentTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.QIFDocumentTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.QIFDocumentTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "qifDocumentType";

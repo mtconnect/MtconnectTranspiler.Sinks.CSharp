@@ -63,12 +63,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605645712659_8263_2990</item>
-				/// <item>Type: DataItemRelationshipTypeEnum</item>
+				/// <item>Type: DataItemRelationshipTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemRelationshipTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemRelationshipTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

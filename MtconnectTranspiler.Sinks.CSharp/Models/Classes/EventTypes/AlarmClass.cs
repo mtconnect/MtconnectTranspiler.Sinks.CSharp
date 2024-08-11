@@ -65,12 +65,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580398379726_606068_12802</item>
-				/// <item>Type: EventEnum</item>
+				/// <item>Type: EventEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.EventEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.EventEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";
@@ -119,12 +119,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1643968895333_107274_240</item>
-				/// <item>Type: AlarmCodeEnum</item>
+				/// <item>Type: AlarmCodeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.AlarmCodeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.AlarmCodeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "code";
@@ -173,12 +173,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1643968830721_843713_164</item>
-				/// <item>Type: AlarmSeverityEnum</item>
+				/// <item>Type: AlarmSeverityEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.AlarmSeverityEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.AlarmSeverityEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "severity";
@@ -281,12 +281,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1643968859511_302406_203</item>
-				/// <item>Type: AlarmStateEnum</item>
+				/// <item>Type: AlarmStateEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.AlarmStateEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.AlarmStateEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "state";

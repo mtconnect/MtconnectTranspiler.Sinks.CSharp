@@ -399,12 +399,12 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1618830616283_5956_278</item>
-				/// <item>Type: FormEnum</item>
+				/// <item>Type: FormEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.FormEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.FormEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "Form";

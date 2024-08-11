@@ -179,12 +179,12 @@ namespace Mtconnect.ObservationInformationModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579566531117_877396_25735</item>
-				/// <item>Type: QualifierEnum</item>
+				/// <item>Type: QualifierEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.QualifierEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.QualifierEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "qualifier";
@@ -233,12 +233,12 @@ namespace Mtconnect.ObservationInformationModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_51F1600E_2F14_4045_86C0_42B336850079</item>
-				/// <item>Type: StatisticEnum</item>
+				/// <item>Type: StatisticEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.StatisticEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.StatisticEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "statistic";
@@ -392,12 +392,12 @@ namespace Mtconnect.ObservationInformationModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1633610276495_636137_441</item>
-				/// <item>Type: ConditionStateEnum</item>
+				/// <item>Type: ConditionStateEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionStateEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionStateEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "state";
@@ -443,12 +443,12 @@ namespace Mtconnect.ObservationInformationModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580398386435_855466_12827</item>
-				/// <item>Type: ConditionEnum</item>
+				/// <item>Type: ConditionEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

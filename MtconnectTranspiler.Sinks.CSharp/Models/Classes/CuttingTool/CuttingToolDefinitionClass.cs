@@ -60,12 +60,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1579537199908_332626_9197</item>
-				/// <item>Type: FormatTypeEnum</item>
+				/// <item>Type: FormatTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.FormatTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.FormatTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "format";

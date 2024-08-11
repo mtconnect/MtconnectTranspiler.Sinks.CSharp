@@ -61,12 +61,12 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1646992208875_933134_35</item>
-				/// <item>Type: InterfaceEventEnum</item>
+				/// <item>Type: InterfaceEventEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.InterfaceEventEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.InterfaceEventEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";
@@ -112,12 +112,12 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580378417666_27713_2880</item>
-				/// <item>Type: InterfaceStateEnum</item>
+				/// <item>Type: InterfaceStateEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.InterfaceStateEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.InterfaceStateEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "result";

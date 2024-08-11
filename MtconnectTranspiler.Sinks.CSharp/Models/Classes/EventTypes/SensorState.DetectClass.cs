@@ -61,12 +61,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1677589978293_52377_922</item>
-				/// <item>Type: SensorStateDetectEnum</item>
+				/// <item>Type: SensorStateDetectEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.SensorStateDetectEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.SensorStateDetectEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "subType";
@@ -112,12 +112,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1612550781451_530503_112</item>
-				/// <item>Type: CompositionStateSwitchedEnum</item>
+				/// <item>Type: CompositionStateSwitchedEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CompositionStateSwitchedEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CompositionStateSwitchedEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "result";

@@ -175,12 +175,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_0167FC5F_C61F_4bc7_A1B3_C724FE8865BA</item>
-				/// <item>Type: LocationTypeEnum</item>
+				/// <item>Type: LocationTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.LocationTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.LocationTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

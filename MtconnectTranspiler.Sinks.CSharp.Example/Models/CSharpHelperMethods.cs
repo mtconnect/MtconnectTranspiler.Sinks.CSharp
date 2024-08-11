@@ -79,7 +79,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 {
                     case UmlEnumeration umlEnum:
                         remoteType = umlEnum;
-                        return umlEnum.Name;
+                        return $"{umlEnum.Name}MetaClass";
                     case UmlClass umlClass:
                         remoteType = umlClass;
                         return CSharpClass.GetClassName(model, umlClass);// $"{umlClass.Name}Class";

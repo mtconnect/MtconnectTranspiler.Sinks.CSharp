@@ -385,12 +385,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579107560604_392738_163543</item>
-				/// <item>Type: CoordinateSystemTypeEnum</item>
+				/// <item>Type: CoordinateSystemTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CoordinateSystemTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CoordinateSystemTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

@@ -61,12 +61,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1582919522403_926879_1581</item>
-				/// <item>Type: CodeEnum</item>
+				/// <item>Type: CodeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CodeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CodeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "code";
@@ -112,12 +112,12 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A</item>
-				/// <item>Type: UnitEnum</item>
+				/// <item>Type: UnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "units";

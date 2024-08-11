@@ -386,12 +386,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1605297694306_501792_610</item>
-				/// <item>Type: MediaTypeEnum</item>
+				/// <item>Type: MediaTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.MediaTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.MediaTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "mediaType";
@@ -494,12 +494,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_678122A4_E8FD_4243_8427_6B7E0E78D5F5</item>
-				/// <item>Type: NativeUnitEnum</item>
+				/// <item>Type: NativeUnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "nativeUnits";
@@ -548,12 +548,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A</item>
-				/// <item>Type: UnitEnum</item>
+				/// <item>Type: UnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "units";

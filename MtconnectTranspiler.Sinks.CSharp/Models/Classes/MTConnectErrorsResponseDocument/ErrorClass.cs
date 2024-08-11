@@ -60,12 +60,12 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1579560813203_683279_6795</item>
-				/// <item>Type: ErrorCodeEnum</item>
+				/// <item>Type: ErrorCodeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ErrorCodeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ErrorCodeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "errorCode";

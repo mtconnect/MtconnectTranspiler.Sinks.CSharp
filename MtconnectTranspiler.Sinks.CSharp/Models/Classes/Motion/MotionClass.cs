@@ -67,12 +67,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_C5CA1571_EA21_4123_942E_7329B6C61618</item>
-				/// <item>Type: MotionActuationTypeEnum</item>
+				/// <item>Type: MotionActuationTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.MotionActuationTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.MotionActuationTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "actuation";
@@ -283,12 +283,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_4BA8528B_F152_49aa_BEFD_2574649F9F1A</item>
-				/// <item>Type: MotionTypeEnum</item>
+				/// <item>Type: MotionTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.MotionTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.MotionTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

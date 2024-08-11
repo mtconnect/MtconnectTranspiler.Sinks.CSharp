@@ -170,12 +170,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_17E78CC7_671B_40bb_91A0_1F7CC06799BF</item>
-				/// <item>Type: RelationshipTypeEnum</item>
+				/// <item>Type: RelationshipTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.RelationshipTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.RelationshipTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";
@@ -224,12 +224,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_9E68B125_F907_4cd0_9198_CC77ADBB8C75</item>
-				/// <item>Type: CriticalityTypeEnum</item>
+				/// <item>Type: CriticalityTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CriticalityTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CriticalityTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "criticality";

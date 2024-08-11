@@ -83,12 +83,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_91b028d_1579277872728_249968_3735</item>
-				/// <item>Type: CategoryEnum</item>
+				/// <item>Type: CategoryEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CategoryEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CategoryEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "category";
@@ -191,12 +191,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_6B22B6F6_7073_4fa7_961B_B05AD4C7EF81</item>
-				/// <item>Type: CoordinateSystemEnum</item>
+				/// <item>Type: CoordinateSystemEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.CoordinateSystemEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.CoordinateSystemEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "coordinateSystem";
@@ -461,12 +461,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_678122A4_E8FD_4243_8427_6B7E0E78D5F5</item>
-				/// <item>Type: NativeUnitEnum</item>
+				/// <item>Type: NativeUnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.NativeUnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "nativeUnits";
@@ -623,12 +623,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_51F1600E_2F14_4045_86C0_42B336850079</item>
-				/// <item>Type: StatisticEnum</item>
+				/// <item>Type: StatisticEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.StatisticEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.StatisticEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "statistic";
@@ -677,12 +677,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579563592155_977172_22064</item>
-				/// <item>Type: DataItemSubTypeEnum</item>
+				/// <item>Type: DataItemSubTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "subType";
@@ -731,12 +731,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579563576485_587701_22033</item>
-				/// <item>Type: DataItemTypeEnum</item>
+				/// <item>Type: DataItemTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";
@@ -785,12 +785,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A</item>
-				/// <item>Type: UnitEnum</item>
+				/// <item>Type: UnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "units";
@@ -890,12 +890,12 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_67CD6E1B_53E3_45c1_B84F_B0732F79528D</item>
-				/// <item>Type: RepresentationEnum</item>
+				/// <item>Type: RepresentationEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.RepresentationEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.RepresentationEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "representation";

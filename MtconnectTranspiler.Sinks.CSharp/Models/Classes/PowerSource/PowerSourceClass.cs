@@ -62,12 +62,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_68e0225_1696871537426_335818_3541</item>
-				/// <item>Type: PowerSourceTypeEnum</item>
+				/// <item>Type: PowerSourceTypeEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.PowerSourceTypeEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.PowerSourceTypeEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

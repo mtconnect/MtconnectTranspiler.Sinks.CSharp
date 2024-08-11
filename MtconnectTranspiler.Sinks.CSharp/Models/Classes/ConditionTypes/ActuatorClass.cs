@@ -60,12 +60,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580398386435_855466_12827</item>
-				/// <item>Type: ConditionEnum</item>
+				/// <item>Type: ConditionEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";

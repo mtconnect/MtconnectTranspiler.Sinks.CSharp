@@ -124,12 +124,12 @@ namespace Mtconnect.ObservationInformationModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1579566531118_10952_25736</item>
-				/// <item>Type: ResetTriggeredEnum</item>
+				/// <item>Type: ResetTriggeredEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.ResetTriggeredEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.ResetTriggeredEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "resetTriggered";
@@ -232,12 +232,12 @@ namespace Mtconnect.ObservationInformationModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_51F1600E_2F14_4045_86C0_42B336850079</item>
-				/// <item>Type: StatisticEnum</item>
+				/// <item>Type: StatisticEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.StatisticEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.StatisticEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "statistic";
@@ -385,12 +385,12 @@ namespace Mtconnect.ObservationInformationModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A</item>
-				/// <item>Type: UnitEnum</item>
+				/// <item>Type: UnitEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "units";
@@ -436,12 +436,12 @@ namespace Mtconnect.ObservationInformationModel
 				/// <remarks>
 				/// <list type="bullet">
 				/// <item>Original Type: _19_0_3_45f01b9_1580398370126_672808_12777</item>
-				/// <item>Type: SampleEnum</item>
+				/// <item>Type: SampleEnumMetaClass</item>
 				/// <item>Namespace: Mtconnect.DataTypes</item>
 				/// </list>
 				/// </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.SampleEnum);
+				public System.Type Type => typeof(Mtconnect.DataTypes.SampleEnumMetaClass);
 				
 				/// <inheritdoc />
 				public string Name => "type";
