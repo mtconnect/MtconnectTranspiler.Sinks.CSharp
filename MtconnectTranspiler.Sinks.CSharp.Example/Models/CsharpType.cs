@@ -31,7 +31,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                         TypeCache.RegisterType(csharpPackage.ReferenceId, csharpPackage.Name, csharpPackage.Namespace);
                         break;
                     case CSharpEnum csharpEnum:
-                        TypeCache.RegisterType(csharpEnum.ReferenceId, csharpEnum.Name, csharpEnum.Namespace);
+                        TypeCache.RegisterType(csharpEnum.ReferenceId, $"{csharpEnum.Name}MetaClass", csharpEnum.Namespace);
                         break;
                     default:
                         break;

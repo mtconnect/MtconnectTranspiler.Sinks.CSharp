@@ -1,7 +1,5 @@
-#pragma warning disable 0618
-#pragma warning disable 1574
 using System;
-using System.CodeDom.Compiler;
+using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
@@ -34,5 +32,88 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OFF,
+	}
+
+	/// <summary>
+	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417661_25421_2875">model.mtconnect.org</seealso>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public sealed class ControllerModeOverrideEnumMetaClass : IEnum
+	{
+		/// <inheritdoc />
+		public string Name => "ControllerModeOverrideEnum";
+		
+		/// <inheritdoc />
+		public Type DataType => null;
+		
+		public Type Instance => typeof(ControllerModeOverrideEnum);
+
+		/// <inheritdoc />
+		public string NormativeVersion => "1.4";
+		
+		/// <inheritdoc />
+		public string DeprecatedVersion => "";
+		
+		/// <inheritdoc />
+		public string Summary => @"";
+		
+		/// <inheritdoc />
+		public IEnumInstance[] Values => new IEnumInstance[] {
+		ON,
+		OFF,
+		};
+
+		private ONValue _ON;
+		/// <summary>
+		/// <see cref="ControllerModeOverride">ControllerModeOverride</see> is in the <c>ON</c> state and the mode override is active.
+		/// </summary>
+		public ONValue ON => _ON ?? (_ON = new ONValue());
+
+		/// <summary>
+		/// <see cref="ControllerModeOverride">ControllerModeOverride</see> is in the <c>ON</c> state and the mode override is active.
+		/// </summary>
+		public sealed class ONValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "ON";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.4";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// <see cref=""ControllerModeOverride"">ControllerModeOverride</see> is in the <c>ON</c> state and the mode override is active.";
+		}
+		private OFFValue _OFF;
+		/// <summary>
+		/// <see cref="ControllerModeOverride">ControllerModeOverride</see> is in the <c>OFF</c> state and the mode override is inactive.
+		/// </summary>
+		public OFFValue OFF => _OFF ?? (_OFF = new OFFValue());
+
+		/// <summary>
+		/// <see cref="ControllerModeOverride">ControllerModeOverride</see> is in the <c>OFF</c> state and the mode override is inactive.
+		/// </summary>
+		public sealed class OFFValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "OFF";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.4";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// <see cref=""ControllerModeOverride"">ControllerModeOverride</see> is in the <c>OFF</c> state and the mode override is inactive.";
+		}
 	}
 }

@@ -1,7 +1,5 @@
-#pragma warning disable 0618
-#pragma warning disable 1574
 using System;
-using System.CodeDom.Compiler;
+using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
@@ -25,5 +23,61 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LIMIT,
+	}
+
+	/// <summary>
+	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605646000929_248969_3052">model.mtconnect.org</seealso>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public sealed class SpecificationRelationshipTypeEnumMetaClass : IEnum
+	{
+		/// <inheritdoc />
+		public string Name => "SpecificationRelationshipTypeEnum";
+		
+		/// <inheritdoc />
+		public Type DataType => null;
+		
+		public Type Instance => typeof(SpecificationRelationshipTypeEnum);
+
+		/// <inheritdoc />
+		public string NormativeVersion => "1.7";
+		
+		/// <inheritdoc />
+		public string DeprecatedVersion => "";
+		
+		/// <inheritdoc />
+		public string Summary => @"";
+		
+		/// <inheritdoc />
+		public IEnumInstance[] Values => new IEnumInstance[] {
+		LIMIT,
+		};
+
+		private LIMITValue _LIMIT;
+		/// <summary>
+		/// referenced <see cref="Specification">Specification</see> provides process limits. 
+		/// </summary>
+		public LIMITValue LIMIT => _LIMIT ?? (_LIMIT = new LIMITValue());
+
+		/// <summary>
+		/// referenced <see cref="Specification">Specification</see> provides process limits. 
+		/// </summary>
+		public sealed class LIMITValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "LIMIT";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.7";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// referenced <see cref=""Specification"">Specification</see> provides process limits. ";
+		}
 	}
 }

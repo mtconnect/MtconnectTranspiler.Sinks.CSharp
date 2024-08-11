@@ -1,7 +1,5 @@
-#pragma warning disable 0618
-#pragma warning disable 1574
 using System;
-using System.CodeDom.Compiler;
+using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
@@ -34,5 +32,88 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		NOT_DETECTED,
+	}
+
+	/// <summary>
+	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1659073241126_204554_44">model.mtconnect.org</seealso>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public sealed class LeakDetectEnumMetaClass : IEnum
+	{
+		/// <inheritdoc />
+		public string Name => "LeakDetectEnum";
+		
+		/// <inheritdoc />
+		public Type DataType => null;
+		
+		public Type Instance => typeof(LeakDetectEnum);
+
+		/// <inheritdoc />
+		public string NormativeVersion => "2.1";
+		
+		/// <inheritdoc />
+		public string DeprecatedVersion => "";
+		
+		/// <inheritdoc />
+		public string Summary => @"";
+		
+		/// <inheritdoc />
+		public IEnumInstance[] Values => new IEnumInstance[] {
+		DETECTED,
+		NOT_DETECTED,
+		};
+
+		private DETECTEDValue _DETECTED;
+		/// <summary>
+		/// leak is currently being detected.
+		/// </summary>
+		public DETECTEDValue DETECTED => _DETECTED ?? (_DETECTED = new DETECTEDValue());
+
+		/// <summary>
+		/// leak is currently being detected.
+		/// </summary>
+		public sealed class DETECTEDValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "DETECTED";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "2.1";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// leak is currently being detected.";
+		}
+		private NOT_DETECTEDValue _NOT_DETECTED;
+		/// <summary>
+		/// leak is currently not being detected.
+		/// </summary>
+		public NOT_DETECTEDValue NOT_DETECTED => _NOT_DETECTED ?? (_NOT_DETECTED = new NOT_DETECTEDValue());
+
+		/// <summary>
+		/// leak is currently not being detected.
+		/// </summary>
+		public sealed class NOT_DETECTEDValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "NOT_DETECTED";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "2.1";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// leak is currently not being detected.";
+		}
 	}
 }

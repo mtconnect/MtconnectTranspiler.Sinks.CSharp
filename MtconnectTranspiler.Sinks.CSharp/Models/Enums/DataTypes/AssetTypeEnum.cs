@@ -1,7 +1,5 @@
-#pragma warning disable 0618
-#pragma warning disable 1574
 using System;
-using System.CodeDom.Compiler;
+using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
@@ -54,17 +52,200 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RAWMATERIAL,
+		/// <summary>
+		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
 		CUTTINGTOOLARCHETYPE,
+		/// <summary>
+		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 		/// </list>
 		/// </remarks>
 		FILEARCHETYPE,
+	}
+
+	/// <summary>
+	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612349180903_336283_32">model.mtconnect.org</seealso>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public sealed class AssetTypeEnumMetaClass : IEnum
+	{
+		/// <inheritdoc />
+		public string Name => "AssetTypeEnum";
+		
+		/// <inheritdoc />
+		public Type DataType => null;
+		
+		public Type Instance => typeof(AssetTypeEnum);
+
+		/// <inheritdoc />
+		public string NormativeVersion => "1.2";
+		
+		/// <inheritdoc />
+		public string DeprecatedVersion => "2.1";
+		
+		/// <inheritdoc />
+		public string Summary => @"";
+		
+		/// <inheritdoc />
+		public IEnumInstance[] Values => new IEnumInstance[] {
+		CuttingTool,
+		File,
+		QIFDocumentWrapper,
+		RawMaterial,
+		CuttingToolArchetype,
+		FileArchetype,
+		};
+
+		private CuttingToolValue _CuttingTool;
+		/// <summary>
+		/// <see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.
+		/// </summary>
+		public CuttingToolValue CuttingTool => _CuttingTool ?? (_CuttingTool = new CuttingToolValue());
+
+		/// <summary>
+		/// <see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.
+		/// </summary>
+		public sealed class CuttingToolValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "CuttingTool";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.2";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// <see cref=""CuttingTool"">CuttingTool</see> <see cref=""Asset"">Asset</see> type.";
+		}
+		private FileValue _File;
+		/// <summary>
+		/// <see cref="File">File</see> <see cref="Asset">Asset</see> type. 
+		/// </summary>
+		public FileValue File => _File ?? (_File = new FileValue());
+
+		/// <summary>
+		/// <see cref="File">File</see> <see cref="Asset">Asset</see> type. 
+		/// </summary>
+		public sealed class FileValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "File";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.7";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// <see cref=""File"">File</see> <see cref=""Asset"">Asset</see> type. ";
+		}
+		private QIFDocumentWrapperValue _QIFDocumentWrapper;
+		/// <summary>
+		/// <see cref="QIFDocumentWrapper">QIFDocumentWrapper</see> <see cref="Asset">Asset</see> type. 
+		/// </summary>
+		public QIFDocumentWrapperValue QIFDocumentWrapper => _QIFDocumentWrapper ?? (_QIFDocumentWrapper = new QIFDocumentWrapperValue());
+
+		/// <summary>
+		/// <see cref="QIFDocumentWrapper">QIFDocumentWrapper</see> <see cref="Asset">Asset</see> type. 
+		/// </summary>
+		public sealed class QIFDocumentWrapperValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "QIFDocumentWrapper";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.8";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// <see cref=""QIFDocumentWrapper"">QIFDocumentWrapper</see> <see cref=""Asset"">Asset</see> type. ";
+		}
+		private RawMaterialValue _RawMaterial;
+		/// <summary>
+		/// <see cref="RawMaterial">RawMaterial</see> <see cref="Asset">Asset</see> type. 
+		/// </summary>
+		public RawMaterialValue RawMaterial => _RawMaterial ?? (_RawMaterial = new RawMaterialValue());
+
+		/// <summary>
+		/// <see cref="RawMaterial">RawMaterial</see> <see cref="Asset">Asset</see> type. 
+		/// </summary>
+		public sealed class RawMaterialValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "RawMaterial";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.8";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// <see cref=""RawMaterial"">RawMaterial</see> <see cref=""Asset"">Asset</see> type. ";
+		}
+		private CuttingToolArchetypeValue _CuttingToolArchetype;
+		public CuttingToolArchetypeValue CuttingToolArchetype => _CuttingToolArchetype ?? (_CuttingToolArchetype = new CuttingToolArchetypeValue());
+
+		public sealed class CuttingToolArchetypeValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "CuttingToolArchetype";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.2";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"";
+		}
+		private FileArchetypeValue _FileArchetype;
+		public FileArchetypeValue FileArchetype => _FileArchetype ?? (_FileArchetype = new FileArchetypeValue());
+
+		public sealed class FileArchetypeValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "FileArchetype";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.7";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"";
+		}
 	}
 }

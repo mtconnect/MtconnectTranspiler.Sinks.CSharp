@@ -1,7 +1,5 @@
-#pragma warning disable 0618
-#pragma warning disable 1574
 using System;
-using System.CodeDom.Compiler;
+using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
@@ -34,5 +32,88 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		UNAVAILABLE,
+	}
+
+	/// <summary>
+	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417656_729564_2870">model.mtconnect.org</seealso>
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	public sealed class AvailabilityEnumMetaClass : IEnum
+	{
+		/// <inheritdoc />
+		public string Name => "AvailabilityEnum";
+		
+		/// <inheritdoc />
+		public Type DataType => null;
+		
+		public Type Instance => typeof(AvailabilityEnum);
+
+		/// <inheritdoc />
+		public string NormativeVersion => "1.1";
+		
+		/// <inheritdoc />
+		public string DeprecatedVersion => "";
+		
+		/// <inheritdoc />
+		public string Summary => @"";
+		
+		/// <inheritdoc />
+		public IEnumInstance[] Values => new IEnumInstance[] {
+		AVAILABLE,
+		UNAVAILABLE,
+		};
+
+		private AVAILABLEValue _AVAILABLE;
+		/// <summary>
+		/// data source is active and capable of providing data.
+		/// </summary>
+		public AVAILABLEValue AVAILABLE => _AVAILABLE ?? (_AVAILABLE = new AVAILABLEValue());
+
+		/// <summary>
+		/// data source is active and capable of providing data.
+		/// </summary>
+		public sealed class AVAILABLEValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "AVAILABLE";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.1";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// data source is active and capable of providing data.";
+		}
+		private UNAVAILABLEValue _UNAVAILABLE;
+		/// <summary>
+		/// data source is either inactive or not capable of providing data.
+		/// </summary>
+		public UNAVAILABLEValue UNAVAILABLE => _UNAVAILABLE ?? (_UNAVAILABLE = new UNAVAILABLEValue());
+
+		/// <summary>
+		/// data source is either inactive or not capable of providing data.
+		/// </summary>
+		public sealed class UNAVAILABLEValue : IEnumInstance
+		{
+			/// <inheritdoc />
+			public string Name => "UNAVAILABLE";
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => "1.1";
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => "";
+			
+			/// <inheritdoc />
+			public string Summary => @"/// data source is either inactive or not capable of providing data.";
+		}
 	}
 }
