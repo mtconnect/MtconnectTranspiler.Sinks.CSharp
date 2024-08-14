@@ -7,7 +7,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
     /// </summary>
     public class SummaryItem
     {
-        private OwnedComment _source;
+        internal OwnedComment _source;
 
         /// <summary>
         /// Constructs the content for <c>&lt;summary /&gt;</c>

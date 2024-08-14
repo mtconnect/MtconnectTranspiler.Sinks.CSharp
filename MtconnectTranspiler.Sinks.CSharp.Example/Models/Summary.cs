@@ -16,6 +16,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public SummaryItem[] Items { get; }
 
+        public string OriginalValue { get; }
+
         /// <summary>
         /// Constructs a <c>&lt;summary /&gt;</c>
         /// </summary>
@@ -23,6 +25,25 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         public Summary(OwnedComment[] comments)
         {
             Items = comments?.Select(o => new SummaryItem(o))?.ToArray();
+
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in Items)
+            {
+                sb.AppendLine(composeComment(item._source));
+            }
+            OriginalValue = sb.ToString();
+        }
+
+        private string composeComment(OwnedComment comment)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(comment.Name);
+            sb.AppendLine(comment.Body);
+            if (comment.SubComment != null)
+            {
+                sb.AppendLine(composeComment(comment.SubComment));
+            }
+            return sb.ToString();
         }
 
         /// <inheritdoc />

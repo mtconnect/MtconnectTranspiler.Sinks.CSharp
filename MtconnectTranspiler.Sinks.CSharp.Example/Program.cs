@@ -4,8 +4,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MtconnectTranspiler;
 using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
-using MtconnectTranspiler.Sinks;
+using MtconnectTranspiler.CodeGenerators.ScribanTemplates.Formatters;
+using MtconnectTranspiler.Extensions;
+using MtconnectTranspiler.Interpreters;
 using MtconnectTranspiler.Sinks.CSharp.Example;
+using MtconnectTranspiler.XmiOptions;
 
 internal class Program
 {
@@ -33,11 +36,19 @@ internal class Program
                 builder.AddConsoulLogger();
             });
         var serviceProvider = services
-            .AddSingleton<ScribanTemplateGenerator>((builder) =>
-            {
-                return new ScribanTemplateGenerator(configuration["OutputPath"], builder.GetService<ILoggerFactory>().CreateLogger<ScribanTemplateGenerator>());
-            })
             .AddSingleton(configuration)
+            .AddScribanServices(builder =>
+            {
+                builder
+                    // Use the local "/Templates" directory to store ".scriban" files
+                    .UseTemplatesPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates"))
+                    // If using embedded resources to store ".scriban" files, then provide the assembly
+                    .UseResourceAssembly(typeof(Transpiler).Assembly, "MtconnectTranspiler.Sinks.CSharp.Example")
+                    // Configure a Scriban ScriptObject capable of interpreting SysML comment contents into other formats.
+                    .AddMarkdownInterpreter("csharp_docs", new VisualStudioSummaryInterpreter())
+                    // Configure a Scriban ScriptObject capable of formatting strings into code safe formats.
+                    .AddCodeFormatter("csharp_formatter", new CSharpCodeFormatter());
+            })
             .AddSingleton<Transpiler>()
             .BuildServiceProvider();
 
