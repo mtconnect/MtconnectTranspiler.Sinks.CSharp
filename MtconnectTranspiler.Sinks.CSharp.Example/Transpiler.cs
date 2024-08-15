@@ -87,13 +87,13 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
     {
         private readonly ILogger<ITranspilerSink> _logger;
 
-        private readonly ScribanTemplateGenerator _generator;
+        private readonly IScribanTemplateGenerator _generator;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="projectPath"></param>
-        public Transpiler(ScribanTemplateGenerator generator, ILogger<ITranspilerSink>? logger = default)
+        public Transpiler(IScribanTemplateGenerator generator, ILogger<ITranspilerSink>? logger = default)
         {
             _logger = logger;
 
@@ -158,11 +158,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                 }
             }
 
-            _generator.ProcessTemplate(allPackages, Path.Combine(_generator.ProjectPath, "Packages"), true);
-            _generator.ProcessTemplate(allClasses, Path.Combine(_generator.ProjectPath, "Classes"), true);
-            _generator.ProcessTemplate(allEnumerations, Path.Combine(_generator.ProjectPath, "Enums"), true);
+            _generator.ProcessTemplate(allPackages, Path.Combine(_generator.OutputPath, "Packages"), true);
+            _generator.ProcessTemplate(allClasses, Path.Combine(_generator.OutputPath, "Classes"), true);
+            _generator.ProcessTemplate(allEnumerations, Path.Combine(_generator.OutputPath, "Enums"), true);
 
-            _generator.ProcessTemplate(rootPackage, _generator.ProjectPath, true);
+            _generator.ProcessTemplate(rootPackage, _generator.OutputPath, true);
         }
 
         private IEnumerable<CSharpPackage> getPackages(XmiDocument model, UmlPackage package, string namespacePrefix = "Mtconnect")
