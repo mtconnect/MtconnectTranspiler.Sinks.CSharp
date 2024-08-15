@@ -17,11 +17,5 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         {
             _source = source;
         }
-
-        /// <inheritdoc />
-        public override string ToString()
-        {
-            return $"/// {CSharpHelperMethods.ToSummary(_source.Body)}";
-        }
     }
 }
