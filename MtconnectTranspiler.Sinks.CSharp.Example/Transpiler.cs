@@ -158,10 +158,14 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
                 }
             }
 
+            _logger?.LogInformation("Saving Packages...");
             _generator.ProcessTemplate(allPackages, Path.Combine(_generator.OutputPath, "Packages"), true);
+            _logger?.LogInformation("Saving Classes...");
             _generator.ProcessTemplate(allClasses, Path.Combine(_generator.OutputPath, "Classes"), true);
+            _logger?.LogInformation("Saving Enums...");
             _generator.ProcessTemplate(allEnumerations, Path.Combine(_generator.OutputPath, "Enums"), true);
 
+            _logger?.LogInformation("Saving Root Package...");
             _generator.ProcessTemplate(rootPackage, _generator.OutputPath, true);
         }
 

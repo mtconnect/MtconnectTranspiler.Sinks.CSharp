@@ -39,10 +39,10 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("&#10;" + comment.Name + "&#10;");
-            sb.AppendLine("&#10;" + comment.Body + "&#10;");
+            sb.Append("&#10;" + comment.Body + "&#10;");
             if (comment.SubComment != null)
             {
-                sb.AppendLine(composeComment(comment.SubComment));
+                sb.Append(composeComment(comment.SubComment));
             }
             return sb.ToString();
         }
