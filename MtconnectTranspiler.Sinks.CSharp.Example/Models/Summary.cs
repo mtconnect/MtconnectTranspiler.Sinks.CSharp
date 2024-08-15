@@ -17,6 +17,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public SummaryItem[] Items { get; }
 
+        public OwnedComment[] Comments => Items.Select(o => o._source).ToArray();
+
         public string OriginalValue { get; }
 
         /// <summary>
@@ -46,9 +48,6 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             }
             return sb.ToString();
         }
-
-        public string ToXmlSummary(VisualStudioSummaryInterpreter interpreter)
-            => interpreter.Interpret(Items.Select(o => o._source).ToArray());
 
         /// <inheritdoc />
         public override string ToString()
