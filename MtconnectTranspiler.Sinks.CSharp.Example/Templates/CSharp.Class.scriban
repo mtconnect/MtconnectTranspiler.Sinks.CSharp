@@ -23,7 +23,7 @@ namespace {{ to_code_safe source.namespace }}
 {
 {{~ if source?.summary != null && source?.summary != "" ~}}
 	/// <summary>
-	{{ source?.summary.items | csharp_docs.interpret }}
+	{{ source?.summary.items | csharp_docs.Interpret }}
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 {{~ end ~}}
