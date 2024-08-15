@@ -49,7 +49,7 @@ internal class Program
                 // Configure a Scriban ScriptObject capable of formatting strings into code safe formats.
                 .AddCodeFormatter("csharp_formatter", new CSharpCodeFormatter())
                 .ConfigureGenerator((options) => {
-                    options.OutputPath = configuration["Output"];
+                    options.OutputPath = configuration["OutputPath"];
                 });
             })
             .AddScoped<Transpiler>()
