@@ -15,19 +15,23 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <param name="category">Observation category</param>
         /// <returns>Collection of type classes.</returns>
         /// <exception cref="NotSupportedException"></exception>
-        public static IEnumerable<IClass> GetObservationTypes(CategoryEnum category)
+        public static IEnumerable<ObservationType> GetObservationTypes(CategoryEnum category)
         {
+            Type superClass = null;
             IPackage package = null;
             switch (category)
             {
                 case CategoryEnum.CONDITION:
                     package = Mtconnect.MtconnectModel.ObservationInformationModelPackage.ObservationTypesPackage.ConditionTypesPackage;
+                    superClass = typeof(Mtconnect.ObservationInformationModel.ConditionClass);
                     break;
                 case CategoryEnum.EVENT:
                     package = Mtconnect.MtconnectModel.ObservationInformationModelPackage.ObservationTypesPackage.EventTypesPackage;
+                    superClass = typeof(Mtconnect.ObservationInformationModel.EventClass);
                     break;
                 case CategoryEnum.SAMPLE:
                     package = Mtconnect.MtconnectModel.ObservationInformationModelPackage.ObservationTypesPackage.SampleTypesPackage;
+                    superClass = typeof(Mtconnect.ObservationInformationModel.SampleClass);
                     break;
                 default:
                     break;
@@ -35,14 +39,24 @@ namespace MtconnectTranspiler.Sinks.CSharp
             if (package == null)
                 throw new NotSupportedException("Unknown category '" + category.ToString() + "' is not supported");
 
-            return package.Classes.Where(o => !o.Name.Contains("."));
+            return package.Classes.Where(o => !o.Name.Contains("."))
+                .Select(o => new ObservationType()
+                {
+                    SuperClass = superClass,
+                    Name = o.Name,
+                    Definition = o.Summary,
+                    Introduced = o.NormativeVersion,
+                    Deprecated = o.DeprecatedVersion,
+                    Properties = o.Properties.Properties,
+                    SubTypes = GetObservationSubTypes(o)?.ToArray(),
+                });
         }
         
         /// <summary>
         /// Returns all observation types, excluding sub-types.
         /// </summary>
         /// <returns>Collection of type classes.</returns>
-        public static IEnumerable<IClass> GetObservationTypes()
+        public static IEnumerable<ObservationType> GetObservationTypes()
             => GetObservationTypes(CategoryEnum.CONDITION)
                 .Concat(GetObservationTypes(CategoryEnum.EVENT))
                 .Concat(GetObservationTypes(CategoryEnum.SAMPLE));
