@@ -11,7 +11,7 @@ namespace {{ to_code_safe source.namespace }}
 {
 {{~ if source?.summary != null && source?.summary != "" ~}}
 	/// <summary>
-	/// {{ source?.summary.comments | csharp_docs.interpret_comments_array | string.replace "\r\n" "///" }}
+	{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 {{~ end ~}}
