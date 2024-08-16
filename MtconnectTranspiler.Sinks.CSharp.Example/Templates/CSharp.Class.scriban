@@ -23,7 +23,7 @@ namespace {{ to_code_safe source.namespace }}
 {
 {{~ if source?.summary != null && source?.summary != "" ~}}
 	/// <summary>
-	{{ source?.summary.comments | csharp_docs.interpret_comments_array }}
+	{{ source?.summary.comments | csharp_docs.interpret_comments_array | string.replace "\r\n" "///" }}
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 {{~ end ~}}
@@ -104,7 +104,7 @@ namespace {{ to_code_safe source.namespace }}
 			public {{ item_code_name }}{{ item_suffix }} {{ item_code_name }}{{ if item.association }}Part{{ end }} { get; } = new {{ item_code_name }}{{ item_suffix }}();
 {{~ if item?.summary != null && item?.summary != "" ~}}
 			/// <summary>
-			{{ item?.summary }}
+			{{ item?.summary.comments | csharp_docs.interpret_comments_array | string.replace "\r\n" "///" }}
 			/// </summary>
 {{~ end ~}}
 			public sealed class {{ item_code_name }}{{ item_suffix }} : IProperty
@@ -125,7 +125,7 @@ namespace {{ to_code_safe source.namespace }}
 				public string Name => "{{ item.normative_name }}";
 				
 				/// <inheritdoc />
-				public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+				public string Summary => @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
 
 				/// <inheritdoc />
 				public string AccessModifier => "{{ item.access_modifier }}";

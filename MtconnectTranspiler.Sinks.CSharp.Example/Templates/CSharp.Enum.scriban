@@ -9,7 +9,7 @@ namespace {{ to_code_safe source.namespace }}
 	{{~ end ~}}
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso>
 	{{~ if source?.summary != null && source?.summary != "" ~}}
-	{{ source?.summary }}
+	{{ source?.summary.comments | csharp_docs.interpret_comments_array | string.replace "\r\n" "///" }}
 	{{~ end ~}}
 	/// </summary>
 	{{~ if source.normative_version != "" || source.deprecated_version != "" ~}}
@@ -33,7 +33,7 @@ namespace {{ to_code_safe source.namespace }}
 		{{~ for item in source.items ~}}
 		/// <summary>
 		{{~ if item?.summary != null && item?.summary != "" ~}}
-		{{ item?.summary }}
+		{{ item?.summary.comments | csharp_docs.interpret_comments_array | string.replace "\r\n" "///" }}
 		{{~ end ~}}
 		/// </summary>
 			{{~ if item?.normative_version != "" || item?.deprecated_version != "" ~}}
@@ -58,7 +58,7 @@ namespace {{ to_code_safe source.namespace }}
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso>
 	{{~ if source?.summary != null && source?.summary != "" ~}}
-	{{ source?.summary }}
+	{{ source?.summary.comments | csharp_docs.interpret_comments_array | string.replace "\r\n" "///" }}
 	{{~ end ~}}
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
@@ -93,14 +93,14 @@ namespace {{ to_code_safe source.namespace }}
 		private {{ item_code_name }}Value _{{ item_code_name }};
 		{{~ if item?.summary != null && item?.summary != "" ~}}
 		/// <summary>
-		{{ item?.summary }}
+		{{ item?.summary.comments | csharp_docs.interpret_comments_array | string.replace "\r\n" "///" }}
 		/// </summary>
 		{{~ end ~}}
 		public {{ item_code_name }}Value {{ item_code_name }} => _{{ item_code_name }} ?? (_{{ item_code_name }} = new {{ item_code_name }}Value());
 
 		{{~ if item?.summary != null && item?.summary != "" ~}}
 		/// <summary>
-		{{ item?.summary }}
+		{{ item?.summary.comments | csharp_docs.interpret_comments_array | string.replace "\r\n" "///" }}
 		/// </summary>
 		{{~ end ~}}
 		public sealed class {{ item.original_name | to_code_safe }}Value : IEnumInstance
