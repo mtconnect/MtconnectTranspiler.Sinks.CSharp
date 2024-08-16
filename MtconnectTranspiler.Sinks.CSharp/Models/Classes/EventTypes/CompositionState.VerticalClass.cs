@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// indication of the position of a mechanism that may move in a vertical direction.
+	﻿/// indication of the position of a mechanism that may move in a vertical direction.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218230_768917_1647">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionStateVerticalClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218230_768917_1647";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// indication of the position of a mechanism that may move in a vertical direction.";
+		public string Summary => @"&#10;&#10;&#10;indication of the position of a mechanism that may move in a vertical direction.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CompositionState.Vertical";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// indication of the position of a mechanism that may move in a vertical direction.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// indication of the position of a mechanism that may move in a vertical direction.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

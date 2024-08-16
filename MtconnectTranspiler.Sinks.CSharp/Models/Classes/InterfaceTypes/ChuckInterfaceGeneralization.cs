@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.InterfaceInteractionModel.InterfaceTypes
 {
 	/// <summary>
-	/// <see cref="Interface">Interface</see> that coordinates the operations between two pieces of equipment, one of which controls the operation of a chuck.  The piece of equipment that is controlling the chuck <b>MUST</b> provide the data item <see cref="ChuckState">ChuckState</see> as part of the set of information provided.
+	﻿/// <see cref="Interface">Interface</see> that coordinates the operations between two pieces of equipment, one of which controls the operation of a chuck.<br /><br />The piece of equipment that is controlling the chuck <b>MUST</b> provide the data item <see cref="ChuckState">ChuckState</see> as part of the set of information provided.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622717445425_648389_1075">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ChuckInterfaceGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622717445425_648389_1075";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Interface"">Interface</see> that coordinates the operations between two pieces of equipment, one of which controls the operation of a chuck.  The piece of equipment that is controlling the chuck <b>MUST</b> provide the data item <see cref=""ChuckState"">ChuckState</see> as part of the set of information provided.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Interface)}} that coordinates the operations between two pieces of equipment, one of which controls the operation of a chuck.
+
+The piece of equipment that is controlling the chuck **MUST** provide the data item {{block(ChuckState)}} as part of the set of information provided.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ChuckInterface";

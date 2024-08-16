@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// directive value including adjustments such as an offset or overrides.
+	﻿/// directive value including adjustments such as an offset or overrides.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622458715149_155134_1069">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AngularAccelerationCommandedClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622458715149_155134_1069";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// directive value including adjustments such as an offset or overrides.";
+		public string Summary => @"&#10;&#10;&#10;directive value including adjustments such as an offset or overrides.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "AngularAcceleration.Commanded";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// directive value including adjustments such as an offset or overrides.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

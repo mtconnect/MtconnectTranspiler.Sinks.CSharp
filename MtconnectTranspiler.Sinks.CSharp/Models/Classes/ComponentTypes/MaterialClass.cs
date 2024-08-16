@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Resource">Resource</see> composed of material that is consumed or used by the piece of equipment for production of parts, materials, or other types of goods.
+	﻿/// <see cref="Resource">Resource</see> composed of material that is consumed or used by the piece of equipment for production of parts, materials, or other types of goods.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382002_513291_42264">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaterialClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382002_513291_42264";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of material that is consumed or used by the piece of equipment for production of parts, materials, or other types of goods.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Resource)}} composed of material that is consumed or used by the piece of equipment for production of parts, materials, or other types of goods.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Material";

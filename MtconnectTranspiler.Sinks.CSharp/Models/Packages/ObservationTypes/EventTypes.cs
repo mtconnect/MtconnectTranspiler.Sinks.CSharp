@@ -6,10 +6,11 @@ using Package = Mtconnect.ObservationInformationModel.ObservationTypes.EventType
 namespace Mtconnect.ObservationInformationModel.ObservationTypes
 {
 	/// <summary>
-	/// This section provides semantic information for <see cref="Event">Event</see> types.
+	﻿/// This section provides semantic information for <see cref="Event">Event</see> types.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309852285_621670_44358">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class EventTypesPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 		public string Name => "Event Types";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for <see cref=""Event"">Event</see> types.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for {{block(Event)}} types.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::ROTATION">EventEnum::ROTATION</see>
+	﻿/// <see cref="EventEnum.ROTATION">EventEnum.ROTATION</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587752488096_459350_4104">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RotationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587752488096_459350_4104";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::ROTATION"">EventEnum::ROTATION</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::ROTATION)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Rotation";
@@ -73,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::ROTATION"">EventEnum::ROTATION</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +126,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::ROTATION"">EventEnum::ROTATION</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +177,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::ROTATION"">EventEnum::ROTATION</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::MESSAGE">EventEnum::MESSAGE</see>
+	﻿/// <see cref="EventEnum.MESSAGE">EventEnum.MESSAGE</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218355_525053_1935">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MessageClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218355_525053_1935";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::MESSAGE"">EventEnum::MESSAGE</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::MESSAGE)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Message";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::MESSAGE"">EventEnum::MESSAGE</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -106,7 +108,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// </summary>
 			public NativeCodeProperty NativeCode { get; } = new NativeCodeProperty();
 			/// <summary>
-			/// control system local identification of the information being transferred.
+			﻿/// control system local identification of the information being transferred.<br/><br />
+
 			/// </summary>
 			public sealed class NativeCodeProperty : IProperty
 			{
@@ -126,7 +129,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "nativeCode";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::MESSAGE"">EventEnum::MESSAGE</see>";
+				public string Summary => @"&#10;&#10;&#10;control system local identification of the information being transferred.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

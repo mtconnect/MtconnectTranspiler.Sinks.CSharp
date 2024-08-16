@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.References
 {
 	/// <summary>
-	/// <see cref="Reference">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description
+	﻿/// <see cref="Reference">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment.<br /><br/><br />Description<br/><see cref="ComponentRef">ComponentRef</see> allows all of the information of (<i>lower level</i> <see cref="Component">Component</see> entities that is associated with the other entity to be directly associated with this entity.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581212139957_418083_223">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ComponentRefClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581212139957_418083_223";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Reference"">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Reference)}} that is a pointer to all of the information associated with another entity defined for a piece of equipment.
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(ComponentRef)}} allows all of the information of ({{term(lower level)}} {{block(Component)}} entities that is associated with the other entity to be directly associated with this entity.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ComponentRef";
@@ -54,7 +58,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
 			/// <summary>
-			/// pointer to the <see cref="Component::id" /> that contains the information to be associated with this entity.
+			﻿/// pointer to the <see cref="Component.id">id in Component</see> that contains the information to be associated with this entity.<br/><br />
+
 			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
@@ -74,7 +79,8 @@ namespace Mtconnect.DeviceInformationModel.References
 				public string Name => "idRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Reference"">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment. /// Description";
+				public string Summary => @"&#10;&#10;&#10;pointer to the {{property(Component::id)}} that contains the information to be associated with this entity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

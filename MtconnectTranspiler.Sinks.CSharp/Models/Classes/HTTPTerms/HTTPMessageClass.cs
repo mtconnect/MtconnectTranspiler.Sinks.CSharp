@@ -5,17 +5,23 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary.HTTPTerms
 {
 	/// <summary>
-	/// consist of requests from client to server and responses from server to client. <seealso href="https://www.google.com/search?q=IETF:RFC-2616&btnI=I">IETF:RFC-2616</seealso>  > Note: In MTConnect Standard, it describes the information that is exchanged between an <i>agent</i> and a <i>client</i>.  
+	﻿/// consist of requests from client to server and responses from server to client. <seealso href="https://www.google.com/search?q=IETF:RFC-2616&btnI=I">IETF:RFC-2616</seealso><br /><br />> Note: In MTConnect Standard, it describes the information that is exchanged between an <i>agent</i> and a <i>client</i>.<br /><br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375162_687247_2001">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HTTPMessageClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375162_687247_2001";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// consist of requests from client to server and responses from server to client. <seealso href=""https://www.google.com/search?q=IETF:RFC-2616&btnI=I"">IETF:RFC-2616</seealso>  > Note: In MTConnect Standard, it describes the information that is exchanged between an <i>agent</i> and a <i>client</i>.  ";
+		public string Summary => @"&#10;&#10;&#10;consist of requests from client to server and responses from server to client. {{cite(IETF:RFC-2616)}}
+
+> Note: In MTConnect Standard, it describes the information that is exchanged between an {{term(agent)}} and a {{term(client)}}.
+
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "HTTP Message";

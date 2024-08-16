@@ -6,10 +6,11 @@ using Package = Mtconnect.DeviceInformationModel.Configurations.CoordinateSystem
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="CoordinateSystem">CoordinateSystem</see> entity.  ![CoordinateSystem](figures/CoordinateSystem.png "CoordinateSystem"){: width="0.8"}  > Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.  ![CoordinateSystem Example](figures/CoordinateSystem%20Example.png "CoordinateSystem Example"){: width="0.8"}  > Note: See {{lst(coordinatesystem-example)}} for the <i>XML</i> representation of the same example.
+	﻿/// This section provides semantic information for the <see cref="CoordinateSystem">CoordinateSystem</see> entity.<br /><br />![CoordinateSystem](figures/CoordinateSystem.png "CoordinateSystem"){: width="0.8"}<br /><br />> Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![CoordinateSystem Example](figures/CoordinateSystem%20Example.png "CoordinateSystem Example"){: width="0.8"}<br /><br />> Note: See {{lst(coordinatesystem-example)}} for the <i>XML</i> representation of the same example.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579100640484_17380_16262">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class CoordinateSystemsPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,16 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		public string Name => "CoordinateSystems";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""CoordinateSystem"">CoordinateSystem</see> entity.  ![CoordinateSystem](figures/CoordinateSystem.png ""CoordinateSystem""){: width=""0.8""}  > Note: See <see cref=""Configuration Schema Diagrams"">Configuration Schema Diagrams</see> for XML schema.  ![CoordinateSystem Example](figures/CoordinateSystem%20Example.png ""CoordinateSystem Example""){: width=""0.8""}  > Note: See {{lst(coordinatesystem-example)}} for the <i>XML</i> representation of the same example.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(CoordinateSystem)}} entity.
+
+![CoordinateSystem](figures/CoordinateSystem.png ""CoordinateSystem""){: width=""0.8""}
+
+> Note: See {{sect(Configuration Schema Diagrams)}} for XML schema.
+
+![CoordinateSystem Example](figures/CoordinateSystem%20Example.png ""CoordinateSystem Example""){: width=""0.8""}
+
+> Note: See {{lst(coordinatesystem-example)}} for the {{term(XML)}} representation of the same example.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

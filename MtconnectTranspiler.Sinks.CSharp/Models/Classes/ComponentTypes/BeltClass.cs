@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// leaf <see cref="Component">Component</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.
+	﻿/// leaf <see cref="Component">Component</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580312106461_211983_44372">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class BeltClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580312106461_211983_44372";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.";
+		public string Summary => @"&#10;&#10;&#10;leaf {{block(Component)}} composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Belt";
@@ -72,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

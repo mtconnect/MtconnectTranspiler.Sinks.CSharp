@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417660_348819_2874">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ControllerModeEnum
 	{
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is configured to automatically execute a program.
+		﻿/// <see cref="Controller">Controller</see> is configured to automatically execute a program.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AUTOMATIC,
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is not executing an active program.   It is capable of receiving instructions from an external source – typically an operator. The <see cref="Controller">Controller</see> executes operations based on the instructions received from the external source.
+		﻿/// <see cref="Controller">Controller</see> is not executing an active program. <br /><br />It is capable of receiving instructions from an external source – typically an operator. The <see cref="Controller">Controller</see> executes operations based on the instructions received from the external source.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MANUAL,
 		/// <summary>
-		/// operator can enter a series of operations for the <see cref="Controller">Controller</see> to perform.  The <see cref="Controller">Controller</see> will execute this specific series of operations and then stop.
+		﻿/// operator can enter a series of operations for the <see cref="Controller">Controller</see> to perform.<br /><br />The <see cref="Controller">Controller</see> will execute this specific series of operations and then stop.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MANUAL_DATA_INPUT,
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is operating in a mode that restricts the active program from processing its next process step without operator intervention.
+		﻿/// <see cref="Controller">Controller</see> is operating in a mode that restricts the active program from processing its next process step without operator intervention.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SEMI_AUTOMATIC,
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is currently functioning as a programming device and is not capable of executing an active program.
+		﻿/// <see cref="Controller">Controller</see> is currently functioning as a programming device and is not capable of executing an active program.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EDIT,
 		/// <summary>
-		/// axes of the device are commanded to stop, but the spindle continues to function.
+		﻿/// axes of the device are commanded to stop, but the spindle continues to function.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -74,8 +81,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417660_348819_2874">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ControllerModeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -107,12 +115,14 @@ namespace Mtconnect.DataTypes
 
 		private AUTOMATICValue _AUTOMATIC;
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is configured to automatically execute a program.
+		﻿/// <see cref="Controller">Controller</see> is configured to automatically execute a program.<br/><br />
+
 		/// </summary>
 		public AUTOMATICValue AUTOMATIC => _AUTOMATIC ?? (_AUTOMATIC = new AUTOMATICValue());
 
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is configured to automatically execute a program.
+		﻿/// <see cref="Controller">Controller</see> is configured to automatically execute a program.<br/><br />
+
 		/// </summary>
 		public sealed class AUTOMATICValue : IEnumInstance
 		{
@@ -129,16 +139,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Controller"">Controller</see> is configured to automatically execute a program.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Controller)}} is configured to automatically execute a program.&#10;
+";
 		}
 		private MANUALValue _MANUAL;
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is not executing an active program.   It is capable of receiving instructions from an external source – typically an operator. The <see cref="Controller">Controller</see> executes operations based on the instructions received from the external source.
+		﻿/// <see cref="Controller">Controller</see> is not executing an active program. <br /><br />It is capable of receiving instructions from an external source – typically an operator. The <see cref="Controller">Controller</see> executes operations based on the instructions received from the external source.<br/><br />
+
 		/// </summary>
 		public MANUALValue MANUAL => _MANUAL ?? (_MANUAL = new MANUALValue());
 
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is not executing an active program.   It is capable of receiving instructions from an external source – typically an operator. The <see cref="Controller">Controller</see> executes operations based on the instructions received from the external source.
+		﻿/// <see cref="Controller">Controller</see> is not executing an active program. <br /><br />It is capable of receiving instructions from an external source – typically an operator. The <see cref="Controller">Controller</see> executes operations based on the instructions received from the external source.<br/><br />
+
 		/// </summary>
 		public sealed class MANUALValue : IEnumInstance
 		{
@@ -155,16 +168,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Controller"">Controller</see> is not executing an active program.   It is capable of receiving instructions from an external source – typically an operator. The <see cref=""Controller"">Controller</see> executes operations based on the instructions received from the external source.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Controller)}} is not executing an active program. 
+
+It is capable of receiving instructions from an external source – typically an operator. The {{block(Controller)}} executes operations based on the instructions received from the external source.&#10;
+";
 		}
 		private MANUAL_DATA_INPUTValue _MANUAL_DATA_INPUT;
 		/// <summary>
-		/// operator can enter a series of operations for the <see cref="Controller">Controller</see> to perform.  The <see cref="Controller">Controller</see> will execute this specific series of operations and then stop.
+		﻿/// operator can enter a series of operations for the <see cref="Controller">Controller</see> to perform.<br /><br />The <see cref="Controller">Controller</see> will execute this specific series of operations and then stop.<br/><br />
+
 		/// </summary>
 		public MANUAL_DATA_INPUTValue MANUAL_DATA_INPUT => _MANUAL_DATA_INPUT ?? (_MANUAL_DATA_INPUT = new MANUAL_DATA_INPUTValue());
 
 		/// <summary>
-		/// operator can enter a series of operations for the <see cref="Controller">Controller</see> to perform.  The <see cref="Controller">Controller</see> will execute this specific series of operations and then stop.
+		﻿/// operator can enter a series of operations for the <see cref="Controller">Controller</see> to perform.<br /><br />The <see cref="Controller">Controller</see> will execute this specific series of operations and then stop.<br/><br />
+
 		/// </summary>
 		public sealed class MANUAL_DATA_INPUTValue : IEnumInstance
 		{
@@ -181,16 +199,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// operator can enter a series of operations for the <see cref=""Controller"">Controller</see> to perform.  The <see cref=""Controller"">Controller</see> will execute this specific series of operations and then stop.";
+			public string Summary => @"&#10;&#10;&#10;operator can enter a series of operations for the {{block(Controller)}} to perform.
+
+The {{block(Controller)}} will execute this specific series of operations and then stop.&#10;
+";
 		}
 		private SEMI_AUTOMATICValue _SEMI_AUTOMATIC;
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is operating in a mode that restricts the active program from processing its next process step without operator intervention.
+		﻿/// <see cref="Controller">Controller</see> is operating in a mode that restricts the active program from processing its next process step without operator intervention.<br/><br />
+
 		/// </summary>
 		public SEMI_AUTOMATICValue SEMI_AUTOMATIC => _SEMI_AUTOMATIC ?? (_SEMI_AUTOMATIC = new SEMI_AUTOMATICValue());
 
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is operating in a mode that restricts the active program from processing its next process step without operator intervention.
+		﻿/// <see cref="Controller">Controller</see> is operating in a mode that restricts the active program from processing its next process step without operator intervention.<br/><br />
+
 		/// </summary>
 		public sealed class SEMI_AUTOMATICValue : IEnumInstance
 		{
@@ -207,16 +230,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Controller"">Controller</see> is operating in a mode that restricts the active program from processing its next process step without operator intervention.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Controller)}} is operating in a mode that restricts the active program from processing its next process step without operator intervention.&#10;
+";
 		}
 		private EDITValue _EDIT;
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is currently functioning as a programming device and is not capable of executing an active program.
+		﻿/// <see cref="Controller">Controller</see> is currently functioning as a programming device and is not capable of executing an active program.<br/><br />
+
 		/// </summary>
 		public EDITValue EDIT => _EDIT ?? (_EDIT = new EDITValue());
 
 		/// <summary>
-		/// <see cref="Controller">Controller</see> is currently functioning as a programming device and is not capable of executing an active program.
+		﻿/// <see cref="Controller">Controller</see> is currently functioning as a programming device and is not capable of executing an active program.<br/><br />
+
 		/// </summary>
 		public sealed class EDITValue : IEnumInstance
 		{
@@ -233,16 +259,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Controller"">Controller</see> is currently functioning as a programming device and is not capable of executing an active program.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Controller)}} is currently functioning as a programming device and is not capable of executing an active program.&#10;
+";
 		}
 		private FEED_HOLDValue _FEED_HOLD;
 		/// <summary>
-		/// axes of the device are commanded to stop, but the spindle continues to function.
+		﻿/// axes of the device are commanded to stop, but the spindle continues to function.<br/><br />
+
 		/// </summary>
 		public FEED_HOLDValue FEED_HOLD => _FEED_HOLD ?? (_FEED_HOLD = new FEED_HOLDValue());
 
 		/// <summary>
-		/// axes of the device are commanded to stop, but the spindle continues to function.
+		﻿/// axes of the device are commanded to stop, but the spindle continues to function.<br/><br />
+
 		/// </summary>
 		public sealed class FEED_HOLDValue : IEnumInstance
 		{
@@ -259,7 +288,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.3";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axes of the device are commanded to stop, but the spindle continues to function.";
+			public string Summary => @"&#10;&#10;&#10;axes of the device are commanded to stop, but the spindle continues to function.&#10;
+";
 		}
 	}
 }

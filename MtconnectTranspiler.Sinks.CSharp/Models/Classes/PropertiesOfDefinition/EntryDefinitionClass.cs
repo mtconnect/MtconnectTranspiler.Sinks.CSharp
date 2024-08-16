@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.PropertiesOfDefinition
 {
 	/// <summary>
-	/// semantic definition of an <see cref="Entry">Entry</see>.
+	﻿/// semantic definition of an <see cref="Entry">Entry</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582939685398_830533_4339">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EntryDefinitionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582939685398_830533_4339";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
+		public string Summary => @"&#10;&#10;&#10;semantic definition of an {{block(Entry)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "EntryDefinition";
@@ -56,7 +58,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 			/// </summary>
 			public KeyProperty Key { get; } = new KeyProperty();
 			/// <summary>
-			/// unique identification of the <see cref="Entry">Entry</see> in the <see cref="Definition">Definition</see>.   The description applies to all <see cref="Entry">Entry</see> <i>observation</i>s having this <see cref="EntryDefinition::key" />.
+			﻿/// unique identification of the <see cref="Entry">Entry</see> in the <see cref="Definition">Definition</see>. <br /><br />The description applies to all <see cref="Entry">Entry</see> <i>observation</i>s having this <see cref="EntryDefinition.key">key in EntryDefinition</see>.<br/><br />
+
 			/// </summary>
 			public sealed class KeyProperty : IProperty
 			{
@@ -76,7 +79,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public string Name => "key";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
+				public string Summary => @"&#10;&#10;&#10;unique identification of the {{block(Entry)}} in the {{block(Definition)}}. 
+
+The description applies to all {{block(Entry)}} {{termplural(observation)}} having this {{property(EntryDefinition::key)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -110,7 +116,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::units" />. See <see cref="Value Properties of DataItem">Value Properties of DataItem</see>.
+			﻿/// same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="Value Properties of DataItem">Value Properties of DataItem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
@@ -130,7 +137,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::units)}}. See {{sect(Value Properties of DataItem)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -181,7 +189,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -232,7 +240,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public string Name => "hasCellDefinition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -266,7 +274,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::type" />. See <see cref="DataItem Types">DataItem Types</see>.
+			﻿/// same as <see cref="DataItem.type">type in DataItem</see>. See <see cref="DataItem Types">DataItem Types</see>.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -286,7 +295,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::type)}}. See {{package(DataItem Types)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -320,7 +330,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::subType" />. See <see cref="DataItem">DataItem</see>.
+			﻿/// same as <see cref="DataItem.subType">subType in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -340,7 +351,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::subType)}}. See {{sect(DataItem)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -374,7 +386,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 			/// </summary>
 			public KeyTypeProperty KeyType { get; } = new KeyTypeProperty();
 			/// <summary>
-			/// <see cref="DataItem::type" /> that defines the meaning of <see cref="EntryDefinition::key" />.
+			﻿/// <see cref="DataItem.type">type in DataItem</see> that defines the meaning of <see cref="EntryDefinition.key">key in EntryDefinition</see>.<br/><br />
+
 			/// </summary>
 			public sealed class KeyTypeProperty : IProperty
 			{
@@ -394,7 +407,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 				public string Name => "keyType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// semantic definition of an <see cref=""Entry"">Entry</see>.";
+				public string Summary => @"&#10;&#10;&#10;{{property(DataItem::type)}} that defines the meaning of {{property(EntryDefinition::key)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

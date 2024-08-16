@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::WAIT_STATE">EventEnum::WAIT_STATE</see>  When <see cref="Execution::result" /> is not <c>WAIT</c>, <see cref="Observation::isUnavailable" /> of <see cref="WaitState">WaitState</see> <b>MUST</b> be <c>true</c>.
+	﻿/// <see cref="EventEnum.WAIT_STATE">EventEnum.WAIT_STATE</see><br /><br />When <see cref="Execution.result">result in Execution</see> is not <c>WAIT</c>, <see cref="Observation.isUnavailable">isUnavailable in Observation</see> of <see cref="WaitState">WaitState</see> <b>MUST</b> be <c>true</c>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218483_193774_2298">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class WaitStateClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218483_193774_2298";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::WAIT_STATE"">EventEnum::WAIT_STATE</see>  When <see cref=""Execution::result"" /> is not <c>WAIT</c>, <see cref=""Observation::isUnavailable"" /> of <see cref=""WaitState"">WaitState</see> <b>MUST</b> be <c>true</c>.";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::WAIT_STATE)}}
+
+When {{property(Execution::result)}} is not `WAIT`, {{property(Observation::isUnavailable)}} of {{block(WaitState)}} **MUST** be `true`.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "WaitState";
@@ -72,7 +76,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::WAIT_STATE"">EventEnum::WAIT_STATE</see>  When <see cref=""Execution::result"" /> is not <c>WAIT</c>, <see cref=""Observation::isUnavailable"" /> of <see cref=""WaitState"">WaitState</see> <b>MUST</b> be <c>true</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::WAIT_STATE"">EventEnum::WAIT_STATE</see>  When <see cref=""Execution::result"" /> is not <c>WAIT</c>, <see cref=""Observation::isUnavailable"" /> of <see cref=""WaitState"">WaitState</see> <b>MUST</b> be <c>true</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

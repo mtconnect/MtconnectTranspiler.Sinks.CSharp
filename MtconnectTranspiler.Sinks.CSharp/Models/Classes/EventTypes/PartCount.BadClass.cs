@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// accumulation of actions, items, or activities being counted that do not conform to specification or expectation.
+	﻿/// accumulation of actions, items, or activities being counted that do not conform to specification or expectation.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218366_272395_1962">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartCountBadClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218366_272395_1962";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// accumulation of actions, items, or activities being counted that do not conform to specification or expectation.";
+		public string Summary => @"&#10;&#10;&#10;accumulation of actions, items, or activities being counted that do not conform to specification or expectation.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PartCount.Bad";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// accumulation of actions, items, or activities being counted that do not conform to specification or expectation.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
 	/// <summary>
-	/// operating state of the <i>response</i> to a <i>request</i> to advance material or feed product to a piece of equipment from a continuous or bulk source.
+	﻿/// operating state of the <i>response</i> to a <i>request</i> to advance material or feed product to a piece of equipment from a continuous or bulk source.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623846333720_744944_2749">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaterialFeedResponseClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623846333720_744944_2749";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to advance material or feed product to a piece of equipment from a continuous or bulk source.";
+		public string Summary => @"&#10;&#10;&#10;operating state of the {{term(response)}} to a {{term(request)}} to advance material or feed product to a piece of equipment from a continuous or bulk source.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MaterialFeed.Response";
@@ -72,7 +74,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to advance material or feed product to a piece of equipment from a continuous or bulk source.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to advance material or feed product to a piece of equipment from a continuous or bulk source.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 {
 	/// <summary>
-	/// <i>sensing element</i> of a <see cref="Sensor">Sensor</see>./// Description
+	﻿/// <i>sensing element</i> of a <see cref="Sensor">Sensor</see>.<br/><br />Description<br/>When <see cref="Sensor">Sensor</see> has multiple <i>sensing element</i>s, each <i>sensing element</i> is modeled as a <see cref="Channel">Channel</see> for the <see cref="Sensor">Sensor</see>. <br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_82C852E8_47AD_4b8c_804D_F38FCA663918">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ChannelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_82C852E8_47AD_4b8c_804D_F38FCA663918";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{term(sensing element)}} of a {{block(Sensor)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;When {{block(Sensor)}} has multiple {{termplural(sensing element)}}, each {{term(sensing element)}} is modeled as a {{block(Channel)}} for the {{block(Sensor)}}. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Channel";
@@ -56,7 +59,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// </summary>
 			public CalibrationDateProperty CalibrationDate { get; } = new CalibrationDateProperty();
 			/// <summary>
-			/// Date upon which the <i>sensor unit</i> was last calibrated to the <i>sensor element</i>.
+			﻿/// Date upon which the <i>sensor unit</i> was last calibrated to the <i>sensor element</i>.<br/><br />
+
 			/// </summary>
 			public sealed class CalibrationDateProperty : IProperty
 			{
@@ -76,7 +80,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public string Name => "CalibrationDate";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;Date upon which the {{term(sensor unit)}} was last calibrated to the {{term(sensor element)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -110,7 +115,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// </summary>
 			public CalibrationInitialsProperty CalibrationInitials { get; } = new CalibrationInitialsProperty();
 			/// <summary>
-			/// The initials of the person verifying the validity of the calibration data.
+			﻿/// The initials of the person verifying the validity of the calibration data.<br/><br />
+
 			/// </summary>
 			public sealed class CalibrationInitialsProperty : IProperty
 			{
@@ -130,7 +136,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public string Name => "CalibrationInitials";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;The initials of the person verifying the validity of the calibration data.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -164,7 +171,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// name of the specific <i>sensing element</i>.
+			﻿/// name of the specific <i>sensing element</i>.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -184,7 +192,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;name of the specific {{term(sensing element)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -218,7 +227,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// </summary>
 			public NextCalibrationDateProperty NextCalibrationDate { get; } = new NextCalibrationDateProperty();
 			/// <summary>
-			/// Date upon which the <i>sensor element</i> is next scheduled to be calibrated with the <i>sensor unit</i>. 
+			﻿/// Date upon which the <i>sensor element</i> is next scheduled to be calibrated with the <i>sensor unit</i>.<br /><br/><br />
+
 			/// </summary>
 			public sealed class NextCalibrationDateProperty : IProperty
 			{
@@ -238,7 +248,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public string Name => "NextCalibrationDate";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;Date upon which the {{term(sensor element)}} is next scheduled to be calibrated with the {{term(sensor unit)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -272,7 +283,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// </summary>
 			public NumberProperty Number { get; } = new NumberProperty();
 			/// <summary>
-			/// unique identifier that will only refer to a specific <i>sensing element</i>.
+			﻿/// unique identifier that will only refer to a specific <i>sensing element</i>.<br/><br />
+
 			/// </summary>
 			public sealed class NumberProperty : IProperty
 			{
@@ -292,7 +304,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public string Name => "number";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;unique identifier that will only refer to a specific {{term(sensing element)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -343,7 +356,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -394,7 +407,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public string Name => "isChannelOf";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>sensing element</i> of a <see cref=""Sensor"">Sensor</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

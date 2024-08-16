@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// leaf <see cref="Component">Component</see> composed of one or more cells in which chemical energy is converted into electricity and used as a source of power. 
+	﻿/// leaf <see cref="Component">Component</see> composed of one or more cells in which chemical energy is converted into electricity and used as a source of power. <br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580312106475_664974_44456">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StorageBatteryClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580312106475_664974_44456";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of one or more cells in which chemical energy is converted into electricity and used as a source of power. ";
+		public string Summary => @"&#10;&#10;&#10;leaf {{block(Component)}} composed of one or more cells in which chemical energy is converted into electricity and used as a source of power. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "StorageBattery";
@@ -72,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of one or more cells in which chemical energy is converted into electricity and used as a source of power. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of one or more cells in which chemical energy is converted into electricity and used as a source of power. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
 	/// <summary>
-	/// <see cref="InterfaceEventEnum::INTERFACE_STATE">InterfaceEventEnum::INTERFACE_STATE</see>  When the <see cref="InterfaceState">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref="Interface">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.
+	﻿/// <see cref="InterfaceEventEnum.INTERFACE_STATE">InterfaceEventEnum.INTERFACE_STATE</see><br /><br />When the <see cref="InterfaceState">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref="Interface">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218325_627294_1860">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class InterfaceStateClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218325_627294_1860";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""InterfaceEventEnum::INTERFACE_STATE"">InterfaceEventEnum::INTERFACE_STATE</see>  When the <see cref=""InterfaceState"">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref=""Interface"">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.";
+		public string Summary => @"&#10;&#10;&#10;{{def(InterfaceEventEnum::INTERFACE_STATE)}}
+
+When the {{block(InterfaceState)}} is `DISABLED`, the state of all data items that are specific for the {{term(interaction model)}} associated with that {{block(Interface)}} **MUST** be set to `NOT_READY`.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "InterfaceState";
@@ -72,7 +76,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""InterfaceEventEnum::INTERFACE_STATE"">InterfaceEventEnum::INTERFACE_STATE</see>  When the <see cref=""InterfaceState"">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref=""Interface"">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""InterfaceEventEnum::INTERFACE_STATE"">InterfaceEventEnum::INTERFACE_STATE</see>  When the <see cref=""InterfaceState"">InterfaceState</see> is <c>DISABLED</c>, the state of all data items that are specific for the <i>interaction model</i> associated with that <see cref=""Interface"">Interface</see> <b>MUST</b> be set to <c>NOT_READY</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

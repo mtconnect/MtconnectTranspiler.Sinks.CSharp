@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1582919522403_926879_1581">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CodeEnum
 	{
 		/// <summary>
-		/// largest diameter of the body of a tool item.
+		﻿/// largest diameter of the body of a tool item.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BDX,
 		/// <summary>
-		/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.
+		﻿/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LBX,
 		/// <summary>
-		/// maximum engagement of the cutting edge or edges with the workpiece measured perpendicular to the feed motion.
+		﻿/// maximum engagement of the cutting edge or edges with the workpiece measured perpendicular to the feed motion.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		APMX,
 		/// <summary>
-		/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. The normal of the machined peripheral surface points towards the axis of the cutting tool.
+		﻿/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. The normal of the machined peripheral surface points towards the axis of the cutting tool.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DC,
 		/// <summary>
-		/// dimension between two parallel tangents on the outside edge of a flange.
+		﻿/// dimension between two parallel tangents on the outside edge of a flange.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DF,
 		/// <summary>
-		/// largest length dimension of the cutting tool including the master insert where applicable.
+		﻿/// largest length dimension of the cutting tool including the master insert where applicable.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,7 +76,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OAL,
 		/// <summary>
-		/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.
+		﻿/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,7 +86,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DMM,
 		/// <summary>
-		/// dimension of the height of the shank.
+		﻿/// dimension of the height of the shank.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,7 +96,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		H,
 		/// <summary>
-		/// dimension of the length of the shank.
+		﻿/// dimension of the length of the shank.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -96,7 +106,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LS,
 		/// <summary>
-		/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.
+		﻿/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,7 +116,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LUX,
 		/// <summary>
-		/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.
+		﻿/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -114,7 +126,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LPR,
 		/// <summary>
-		/// total weight of the cutting tool in grams.   The force exerted by the mass of the cutting tool.
+		﻿/// total weight of the cutting tool in grams. <br /><br />The force exerted by the mass of the cutting tool.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -123,7 +136,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WT,
 		/// <summary>
-		/// distance from the gauge plane or from the end of the shank to the furthest point on the tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool.   The <see cref="CuttingTool">CuttingTool</see> functional length will be the length of the entire tool, not a single cutting item. Each <see cref="CuttingItem">CuttingItem</see> can have an independent <see cref="FunctionalLength">FunctionalLength</see> represented in its measurements. 
+		﻿/// distance from the gauge plane or from the end of the shank to the furthest point on the tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool. <br /><br />The <see cref="CuttingTool">CuttingTool</see> functional length will be the length of the entire tool, not a single cutting item. Each <see cref="CuttingItem">CuttingItem</see> can have an independent <see cref="FunctionalLength">FunctionalLength</see> represented in its measurements. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -132,7 +146,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LF,
 		/// <summary>
-		/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.
+		﻿/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -141,7 +156,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CRP,
 		/// <summary>
-		/// theoretical length of the cutting edge of a cutting item over sharp corners.
+		﻿/// theoretical length of the cutting edge of a cutting item over sharp corners.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -150,7 +166,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		L,
 		/// <summary>
-		/// angle between the driving mechanism locator on a tool item and the main cutting edge.
+		﻿/// angle between the driving mechanism locator on a tool item and the main cutting edge.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -159,7 +176,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DRVA,
 		/// <summary>
-		/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.
+		﻿/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -168,7 +186,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WF,
 		/// <summary>
-		/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.
+		﻿/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -177,7 +196,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		IC,
 		/// <summary>
-		/// angle between the major cutting edge and the same cutting edge rotated by 180 degrees about the tool axis.
+		﻿/// angle between the major cutting edge and the same cutting edge rotated by 180 degrees about the tool axis.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -186,7 +206,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SIG,
 		/// <summary>
-		/// angle between the tool cutting edge plane and the tool feed plane measured in a plane parallel the xy-plane.
+		﻿/// angle between the tool cutting edge plane and the tool feed plane measured in a plane parallel the xy-plane.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -195,7 +216,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		KAPR,
 		/// <summary>
-		/// angle between the tool cutting edge plane and a plane perpendicular to the tool feed plane measured in a plane parallel the xy-plane.
+		﻿/// angle between the tool cutting edge plane and a plane perpendicular to the tool feed plane measured in a plane parallel the xy-plane.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -204,7 +226,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PSIR,
 		/// <summary>
-		/// angle of the tool with respect to the workpiece for a given process.   The value is application specific.
+		﻿/// angle of the tool with respect to the workpiece for a given process. <br /><br />The value is application specific.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -213,7 +236,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		N_PER_A,
 		/// <summary>
-		/// measure of the length of a wiper edge of a cutting item.
+		﻿/// measure of the length of a wiper edge of a cutting item.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -222,7 +246,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BS,
 		/// <summary>
-		/// length of a portion of a stepped tool that is related to a corresponding cutting diameter measured from the cutting reference point of that cutting diameter to the point on the next cutting edge at which the diameter starts to change.
+		﻿/// length of a portion of a stepped tool that is related to a corresponding cutting diameter measured from the cutting reference point of that cutting diameter to the point on the next cutting edge at which the diameter starts to change.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -231,7 +256,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SDLX,
 		/// <summary>
-		/// angle between a major edge on a step of a stepped tool and the same cutting edge rotated 180 degrees about its tool axis.
+		﻿/// angle between a major edge on a step of a stepped tool and the same cutting edge rotated 180 degrees about its tool axis.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -240,7 +266,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		STAX,
 		/// <summary>
-		/// diameter of a circle on which the defined point Pk located on this cutting tool.  The normal of the machined peripheral surface points towards the axis of the cutting tool.
+		﻿/// diameter of a circle on which the defined point Pk located on this cutting tool.<br /><br />The normal of the machined peripheral surface points towards the axis of the cutting tool.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -249,7 +276,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DCX,
 		/// <summary>
-		/// distance from the basal plane of the tool item to the cutting point.
+		﻿/// distance from the basal plane of the tool item to the cutting point.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -258,7 +286,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HF,
 		/// <summary>
-		/// nominal radius of a rounded corner measured in the X Y-plane.
+		﻿/// nominal radius of a rounded corner measured in the X Y-plane.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -267,7 +296,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RE,
 		/// <summary>
-		/// distance from the gauge plane or from the end of the shank of the cutting tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool.   This measurement will be with reference to the cutting tool and <b>MUST NOT</b> exist without a cutting tool.
+		﻿/// distance from the gauge plane or from the end of the shank of the cutting tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool. <br /><br />This measurement will be with reference to the cutting tool and <b>MUST NOT</b> exist without a cutting tool.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -276,7 +306,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LFX,
 		/// <summary>
-		/// flat length of a chamfer.
+		﻿/// flat length of a chamfer.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -285,7 +316,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BCH,
 		/// <summary>
-		/// width of the chamfer.
+		﻿/// width of the chamfer.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -294,7 +326,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHW,
 		/// <summary>
-		/// insert width when an inscribed circle diameter is not practical.
+		﻿/// insert width when an inscribed circle diameter is not practical.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -306,8 +339,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1582919522403_926879_1581">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CodeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -365,12 +399,14 @@ namespace Mtconnect.DataTypes
 
 		private BDXValue _BDX;
 		/// <summary>
-		/// largest diameter of the body of a tool item.
+		﻿/// largest diameter of the body of a tool item.<br/><br />
+
 		/// </summary>
 		public BDXValue BDX => _BDX ?? (_BDX = new BDXValue());
 
 		/// <summary>
-		/// largest diameter of the body of a tool item.
+		﻿/// largest diameter of the body of a tool item.<br/><br />
+
 		/// </summary>
 		public sealed class BDXValue : IEnumInstance
 		{
@@ -387,16 +423,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// largest diameter of the body of a tool item.";
+			public string Summary => @"&#10;&#10;&#10;largest diameter of the body of a tool item.&#10;
+";
 		}
 		private LBXValue _LBX;
 		/// <summary>
-		/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.
+		﻿/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.<br/><br />
+
 		/// </summary>
 		public LBXValue LBX => _LBX ?? (_LBX = new LBXValue());
 
 		/// <summary>
-		/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.
+		﻿/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.<br/><br />
+
 		/// </summary>
 		public sealed class LBXValue : IEnumInstance
 		{
@@ -413,16 +452,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.";
+			public string Summary => @"&#10;&#10;&#10;distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.&#10;
+";
 		}
 		private APMXValue _APMX;
 		/// <summary>
-		/// maximum engagement of the cutting edge or edges with the workpiece measured perpendicular to the feed motion.
+		﻿/// maximum engagement of the cutting edge or edges with the workpiece measured perpendicular to the feed motion.<br/><br />
+
 		/// </summary>
 		public APMXValue APMX => _APMX ?? (_APMX = new APMXValue());
 
 		/// <summary>
-		/// maximum engagement of the cutting edge or edges with the workpiece measured perpendicular to the feed motion.
+		﻿/// maximum engagement of the cutting edge or edges with the workpiece measured perpendicular to the feed motion.<br/><br />
+
 		/// </summary>
 		public sealed class APMXValue : IEnumInstance
 		{
@@ -439,16 +481,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// maximum engagement of the cutting edge or edges with the workpiece measured perpendicular to the feed motion.";
+			public string Summary => @"&#10;&#10;&#10;maximum engagement of the cutting edge or edges with the workpiece measured perpendicular to the feed motion.&#10;
+";
 		}
 		private DCValue _DC;
 		/// <summary>
-		/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. The normal of the machined peripheral surface points towards the axis of the cutting tool.
+		﻿/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. The normal of the machined peripheral surface points towards the axis of the cutting tool.<br/><br />
+
 		/// </summary>
 		public DCValue DC => _DC ?? (_DC = new DCValue());
 
 		/// <summary>
-		/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. The normal of the machined peripheral surface points towards the axis of the cutting tool.
+		﻿/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. The normal of the machined peripheral surface points towards the axis of the cutting tool.<br/><br />
+
 		/// </summary>
 		public sealed class DCValue : IEnumInstance
 		{
@@ -465,16 +510,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. The normal of the machined peripheral surface points towards the axis of the cutting tool.";
+			public string Summary => @"&#10;&#10;&#10;maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. The normal of the machined peripheral surface points towards the axis of the cutting tool.&#10;
+";
 		}
 		private DFValue _DF;
 		/// <summary>
-		/// dimension between two parallel tangents on the outside edge of a flange.
+		﻿/// dimension between two parallel tangents on the outside edge of a flange.<br/><br />
+
 		/// </summary>
 		public DFValue DF => _DF ?? (_DF = new DFValue());
 
 		/// <summary>
-		/// dimension between two parallel tangents on the outside edge of a flange.
+		﻿/// dimension between two parallel tangents on the outside edge of a flange.<br/><br />
+
 		/// </summary>
 		public sealed class DFValue : IEnumInstance
 		{
@@ -491,16 +539,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// dimension between two parallel tangents on the outside edge of a flange.";
+			public string Summary => @"&#10;&#10;&#10;dimension between two parallel tangents on the outside edge of a flange.&#10;
+";
 		}
 		private OALValue _OAL;
 		/// <summary>
-		/// largest length dimension of the cutting tool including the master insert where applicable.
+		﻿/// largest length dimension of the cutting tool including the master insert where applicable.<br/><br />
+
 		/// </summary>
 		public OALValue OAL => _OAL ?? (_OAL = new OALValue());
 
 		/// <summary>
-		/// largest length dimension of the cutting tool including the master insert where applicable.
+		﻿/// largest length dimension of the cutting tool including the master insert where applicable.<br/><br />
+
 		/// </summary>
 		public sealed class OALValue : IEnumInstance
 		{
@@ -517,16 +568,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// largest length dimension of the cutting tool including the master insert where applicable.";
+			public string Summary => @"&#10;&#10;&#10;largest length dimension of the cutting tool including the master insert where applicable.&#10;
+";
 		}
 		private DMMValue _DMM;
 		/// <summary>
-		/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.
+		﻿/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.<br/><br />
+
 		/// </summary>
 		public DMMValue DMM => _DMM ?? (_DMM = new DMMValue());
 
 		/// <summary>
-		/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.
+		﻿/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.<br/><br />
+
 		/// </summary>
 		public sealed class DMMValue : IEnumInstance
 		{
@@ -543,16 +597,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.";
+			public string Summary => @"&#10;&#10;&#10;dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.&#10;
+";
 		}
 		private HValue _H;
 		/// <summary>
-		/// dimension of the height of the shank.
+		﻿/// dimension of the height of the shank.<br/><br />
+
 		/// </summary>
 		public HValue H => _H ?? (_H = new HValue());
 
 		/// <summary>
-		/// dimension of the height of the shank.
+		﻿/// dimension of the height of the shank.<br/><br />
+
 		/// </summary>
 		public sealed class HValue : IEnumInstance
 		{
@@ -569,16 +626,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// dimension of the height of the shank.";
+			public string Summary => @"&#10;&#10;&#10;dimension of the height of the shank.&#10;
+";
 		}
 		private LSValue _LS;
 		/// <summary>
-		/// dimension of the length of the shank.
+		﻿/// dimension of the length of the shank.<br/><br />
+
 		/// </summary>
 		public LSValue LS => _LS ?? (_LS = new LSValue());
 
 		/// <summary>
-		/// dimension of the length of the shank.
+		﻿/// dimension of the length of the shank.<br/><br />
+
 		/// </summary>
 		public sealed class LSValue : IEnumInstance
 		{
@@ -595,16 +655,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// dimension of the length of the shank.";
+			public string Summary => @"&#10;&#10;&#10;dimension of the length of the shank.&#10;
+";
 		}
 		private LUXValue _LUX;
 		/// <summary>
-		/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.
+		﻿/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.<br/><br />
+
 		/// </summary>
 		public LUXValue LUX => _LUX ?? (_LUX = new LUXValue());
 
 		/// <summary>
-		/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.
+		﻿/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.<br/><br />
+
 		/// </summary>
 		public sealed class LUXValue : IEnumInstance
 		{
@@ -621,16 +684,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.";
+			public string Summary => @"&#10;&#10;&#10;maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.&#10;
+";
 		}
 		private LPRValue _LPR;
 		/// <summary>
-		/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.
+		﻿/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.<br/><br />
+
 		/// </summary>
 		public LPRValue LPR => _LPR ?? (_LPR = new LPRValue());
 
 		/// <summary>
-		/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.
+		﻿/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.<br/><br />
+
 		/// </summary>
 		public sealed class LPRValue : IEnumInstance
 		{
@@ -647,16 +713,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.";
+			public string Summary => @"&#10;&#10;&#10;dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.&#10;
+";
 		}
 		private WTValue _WT;
 		/// <summary>
-		/// total weight of the cutting tool in grams.   The force exerted by the mass of the cutting tool.
+		﻿/// total weight of the cutting tool in grams. <br /><br />The force exerted by the mass of the cutting tool.<br/><br />
+
 		/// </summary>
 		public WTValue WT => _WT ?? (_WT = new WTValue());
 
 		/// <summary>
-		/// total weight of the cutting tool in grams.   The force exerted by the mass of the cutting tool.
+		﻿/// total weight of the cutting tool in grams. <br /><br />The force exerted by the mass of the cutting tool.<br/><br />
+
 		/// </summary>
 		public sealed class WTValue : IEnumInstance
 		{
@@ -673,16 +742,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// total weight of the cutting tool in grams.   The force exerted by the mass of the cutting tool.";
+			public string Summary => @"&#10;&#10;&#10;total weight of the cutting tool in grams. 
+
+The force exerted by the mass of the cutting tool.&#10;
+";
 		}
 		private LFValue _LF;
 		/// <summary>
-		/// distance from the gauge plane or from the end of the shank to the furthest point on the tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool.   The <see cref="CuttingTool">CuttingTool</see> functional length will be the length of the entire tool, not a single cutting item. Each <see cref="CuttingItem">CuttingItem</see> can have an independent <see cref="FunctionalLength">FunctionalLength</see> represented in its measurements. 
+		﻿/// distance from the gauge plane or from the end of the shank to the furthest point on the tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool. <br /><br />The <see cref="CuttingTool">CuttingTool</see> functional length will be the length of the entire tool, not a single cutting item. Each <see cref="CuttingItem">CuttingItem</see> can have an independent <see cref="FunctionalLength">FunctionalLength</see> represented in its measurements. <br/><br />
+
 		/// </summary>
 		public LFValue LF => _LF ?? (_LF = new LFValue());
 
 		/// <summary>
-		/// distance from the gauge plane or from the end of the shank to the furthest point on the tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool.   The <see cref="CuttingTool">CuttingTool</see> functional length will be the length of the entire tool, not a single cutting item. Each <see cref="CuttingItem">CuttingItem</see> can have an independent <see cref="FunctionalLength">FunctionalLength</see> represented in its measurements. 
+		﻿/// distance from the gauge plane or from the end of the shank to the furthest point on the tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool. <br /><br />The <see cref="CuttingTool">CuttingTool</see> functional length will be the length of the entire tool, not a single cutting item. Each <see cref="CuttingItem">CuttingItem</see> can have an independent <see cref="FunctionalLength">FunctionalLength</see> represented in its measurements. <br/><br />
+
 		/// </summary>
 		public sealed class LFValue : IEnumInstance
 		{
@@ -699,16 +773,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// distance from the gauge plane or from the end of the shank to the furthest point on the tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool.   The <see cref=""CuttingTool"">CuttingTool</see> functional length will be the length of the entire tool, not a single cutting item. Each <see cref=""CuttingItem"">CuttingItem</see> can have an independent <see cref=""FunctionalLength"">FunctionalLength</see> represented in its measurements. ";
+			public string Summary => @"&#10;&#10;&#10;distance from the gauge plane or from the end of the shank to the furthest point on the tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool. 
+
+The {{block(CuttingTool)}} functional length will be the length of the entire tool, not a single cutting item. Each {{block(CuttingItem)}} can have an independent {{block(FunctionalLength)}} represented in its measurements. &#10;
+";
 		}
 		private CRPValue _CRP;
 		/// <summary>
-		/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.
+		﻿/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.<br/><br />
+
 		/// </summary>
 		public CRPValue CRP => _CRP ?? (_CRP = new CRPValue());
 
 		/// <summary>
-		/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.
+		﻿/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.<br/><br />
+
 		/// </summary>
 		public sealed class CRPValue : IEnumInstance
 		{
@@ -725,16 +804,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// theoretical sharp point of the cutting tool from which the major functional dimensions are taken.";
+			public string Summary => @"&#10;&#10;&#10;theoretical sharp point of the cutting tool from which the major functional dimensions are taken.&#10;
+";
 		}
 		private LValue _L;
 		/// <summary>
-		/// theoretical length of the cutting edge of a cutting item over sharp corners.
+		﻿/// theoretical length of the cutting edge of a cutting item over sharp corners.<br/><br />
+
 		/// </summary>
 		public LValue L => _L ?? (_L = new LValue());
 
 		/// <summary>
-		/// theoretical length of the cutting edge of a cutting item over sharp corners.
+		﻿/// theoretical length of the cutting edge of a cutting item over sharp corners.<br/><br />
+
 		/// </summary>
 		public sealed class LValue : IEnumInstance
 		{
@@ -751,16 +833,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// theoretical length of the cutting edge of a cutting item over sharp corners.";
+			public string Summary => @"&#10;&#10;&#10;theoretical length of the cutting edge of a cutting item over sharp corners.&#10;
+";
 		}
 		private DRVAValue _DRVA;
 		/// <summary>
-		/// angle between the driving mechanism locator on a tool item and the main cutting edge.
+		﻿/// angle between the driving mechanism locator on a tool item and the main cutting edge.<br/><br />
+
 		/// </summary>
 		public DRVAValue DRVA => _DRVA ?? (_DRVA = new DRVAValue());
 
 		/// <summary>
-		/// angle between the driving mechanism locator on a tool item and the main cutting edge.
+		﻿/// angle between the driving mechanism locator on a tool item and the main cutting edge.<br/><br />
+
 		/// </summary>
 		public sealed class DRVAValue : IEnumInstance
 		{
@@ -777,16 +862,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// angle between the driving mechanism locator on a tool item and the main cutting edge.";
+			public string Summary => @"&#10;&#10;&#10;angle between the driving mechanism locator on a tool item and the main cutting edge.&#10;
+";
 		}
 		private WFValue _WF;
 		/// <summary>
-		/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.
+		﻿/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.<br/><br />
+
 		/// </summary>
 		public WFValue WF => _WF ?? (_WF = new WFValue());
 
 		/// <summary>
-		/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.
+		﻿/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.<br/><br />
+
 		/// </summary>
 		public sealed class WFValue : IEnumInstance
 		{
@@ -803,16 +891,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.";
+			public string Summary => @"&#10;&#10;&#10;distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.&#10;
+";
 		}
 		private ICValue _IC;
 		/// <summary>
-		/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.
+		﻿/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.<br/><br />
+
 		/// </summary>
 		public ICValue IC => _IC ?? (_IC = new ICValue());
 
 		/// <summary>
-		/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.
+		﻿/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.<br/><br />
+
 		/// </summary>
 		public sealed class ICValue : IEnumInstance
 		{
@@ -829,16 +920,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.";
+			public string Summary => @"&#10;&#10;&#10;diameter of a circle to which all edges of a equilateral and round regular insert are tangential.&#10;
+";
 		}
 		private SIGValue _SIG;
 		/// <summary>
-		/// angle between the major cutting edge and the same cutting edge rotated by 180 degrees about the tool axis.
+		﻿/// angle between the major cutting edge and the same cutting edge rotated by 180 degrees about the tool axis.<br/><br />
+
 		/// </summary>
 		public SIGValue SIG => _SIG ?? (_SIG = new SIGValue());
 
 		/// <summary>
-		/// angle between the major cutting edge and the same cutting edge rotated by 180 degrees about the tool axis.
+		﻿/// angle between the major cutting edge and the same cutting edge rotated by 180 degrees about the tool axis.<br/><br />
+
 		/// </summary>
 		public sealed class SIGValue : IEnumInstance
 		{
@@ -855,16 +949,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// angle between the major cutting edge and the same cutting edge rotated by 180 degrees about the tool axis.";
+			public string Summary => @"&#10;&#10;&#10;angle between the major cutting edge and the same cutting edge rotated by 180 degrees about the tool axis.&#10;
+";
 		}
 		private KAPRValue _KAPR;
 		/// <summary>
-		/// angle between the tool cutting edge plane and the tool feed plane measured in a plane parallel the xy-plane.
+		﻿/// angle between the tool cutting edge plane and the tool feed plane measured in a plane parallel the xy-plane.<br/><br />
+
 		/// </summary>
 		public KAPRValue KAPR => _KAPR ?? (_KAPR = new KAPRValue());
 
 		/// <summary>
-		/// angle between the tool cutting edge plane and the tool feed plane measured in a plane parallel the xy-plane.
+		﻿/// angle between the tool cutting edge plane and the tool feed plane measured in a plane parallel the xy-plane.<br/><br />
+
 		/// </summary>
 		public sealed class KAPRValue : IEnumInstance
 		{
@@ -881,16 +978,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// angle between the tool cutting edge plane and the tool feed plane measured in a plane parallel the xy-plane.";
+			public string Summary => @"&#10;&#10;&#10;angle between the tool cutting edge plane and the tool feed plane measured in a plane parallel the xy-plane.&#10;
+";
 		}
 		private PSIRValue _PSIR;
 		/// <summary>
-		/// angle between the tool cutting edge plane and a plane perpendicular to the tool feed plane measured in a plane parallel the xy-plane.
+		﻿/// angle between the tool cutting edge plane and a plane perpendicular to the tool feed plane measured in a plane parallel the xy-plane.<br/><br />
+
 		/// </summary>
 		public PSIRValue PSIR => _PSIR ?? (_PSIR = new PSIRValue());
 
 		/// <summary>
-		/// angle between the tool cutting edge plane and a plane perpendicular to the tool feed plane measured in a plane parallel the xy-plane.
+		﻿/// angle between the tool cutting edge plane and a plane perpendicular to the tool feed plane measured in a plane parallel the xy-plane.<br/><br />
+
 		/// </summary>
 		public sealed class PSIRValue : IEnumInstance
 		{
@@ -907,16 +1007,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// angle between the tool cutting edge plane and a plane perpendicular to the tool feed plane measured in a plane parallel the xy-plane.";
+			public string Summary => @"&#10;&#10;&#10;angle between the tool cutting edge plane and a plane perpendicular to the tool feed plane measured in a plane parallel the xy-plane.&#10;
+";
 		}
 		private N_PER_AValue _N_PER_A;
 		/// <summary>
-		/// angle of the tool with respect to the workpiece for a given process.   The value is application specific.
+		﻿/// angle of the tool with respect to the workpiece for a given process. <br /><br />The value is application specific.<br/><br />
+
 		/// </summary>
 		public N_PER_AValue N_PER_A => _N_PER_A ?? (_N_PER_A = new N_PER_AValue());
 
 		/// <summary>
-		/// angle of the tool with respect to the workpiece for a given process.   The value is application specific.
+		﻿/// angle of the tool with respect to the workpiece for a given process. <br /><br />The value is application specific.<br/><br />
+
 		/// </summary>
 		public sealed class N_PER_AValue : IEnumInstance
 		{
@@ -933,16 +1036,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// angle of the tool with respect to the workpiece for a given process.   The value is application specific.";
+			public string Summary => @"&#10;&#10;&#10;angle of the tool with respect to the workpiece for a given process. 
+
+The value is application specific.&#10;
+";
 		}
 		private BSValue _BS;
 		/// <summary>
-		/// measure of the length of a wiper edge of a cutting item.
+		﻿/// measure of the length of a wiper edge of a cutting item.<br/><br />
+
 		/// </summary>
 		public BSValue BS => _BS ?? (_BS = new BSValue());
 
 		/// <summary>
-		/// measure of the length of a wiper edge of a cutting item.
+		﻿/// measure of the length of a wiper edge of a cutting item.<br/><br />
+
 		/// </summary>
 		public sealed class BSValue : IEnumInstance
 		{
@@ -959,16 +1067,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measure of the length of a wiper edge of a cutting item.";
+			public string Summary => @"&#10;&#10;&#10;measure of the length of a wiper edge of a cutting item.&#10;
+";
 		}
 		private SDLxValue _SDLx;
 		/// <summary>
-		/// length of a portion of a stepped tool that is related to a corresponding cutting diameter measured from the cutting reference point of that cutting diameter to the point on the next cutting edge at which the diameter starts to change.
+		﻿/// length of a portion of a stepped tool that is related to a corresponding cutting diameter measured from the cutting reference point of that cutting diameter to the point on the next cutting edge at which the diameter starts to change.<br/><br />
+
 		/// </summary>
 		public SDLxValue SDLx => _SDLx ?? (_SDLx = new SDLxValue());
 
 		/// <summary>
-		/// length of a portion of a stepped tool that is related to a corresponding cutting diameter measured from the cutting reference point of that cutting diameter to the point on the next cutting edge at which the diameter starts to change.
+		﻿/// length of a portion of a stepped tool that is related to a corresponding cutting diameter measured from the cutting reference point of that cutting diameter to the point on the next cutting edge at which the diameter starts to change.<br/><br />
+
 		/// </summary>
 		public sealed class SDLxValue : IEnumInstance
 		{
@@ -985,16 +1096,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// length of a portion of a stepped tool that is related to a corresponding cutting diameter measured from the cutting reference point of that cutting diameter to the point on the next cutting edge at which the diameter starts to change.";
+			public string Summary => @"&#10;&#10;&#10;length of a portion of a stepped tool that is related to a corresponding cutting diameter measured from the cutting reference point of that cutting diameter to the point on the next cutting edge at which the diameter starts to change.&#10;
+";
 		}
 		private STAxValue _STAx;
 		/// <summary>
-		/// angle between a major edge on a step of a stepped tool and the same cutting edge rotated 180 degrees about its tool axis.
+		﻿/// angle between a major edge on a step of a stepped tool and the same cutting edge rotated 180 degrees about its tool axis.<br/><br />
+
 		/// </summary>
 		public STAxValue STAx => _STAx ?? (_STAx = new STAxValue());
 
 		/// <summary>
-		/// angle between a major edge on a step of a stepped tool and the same cutting edge rotated 180 degrees about its tool axis.
+		﻿/// angle between a major edge on a step of a stepped tool and the same cutting edge rotated 180 degrees about its tool axis.<br/><br />
+
 		/// </summary>
 		public sealed class STAxValue : IEnumInstance
 		{
@@ -1011,16 +1125,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// angle between a major edge on a step of a stepped tool and the same cutting edge rotated 180 degrees about its tool axis.";
+			public string Summary => @"&#10;&#10;&#10;angle between a major edge on a step of a stepped tool and the same cutting edge rotated 180 degrees about its tool axis.&#10;
+";
 		}
 		private DCxValue _DCx;
 		/// <summary>
-		/// diameter of a circle on which the defined point Pk located on this cutting tool.  The normal of the machined peripheral surface points towards the axis of the cutting tool.
+		﻿/// diameter of a circle on which the defined point Pk located on this cutting tool.<br /><br />The normal of the machined peripheral surface points towards the axis of the cutting tool.<br/><br />
+
 		/// </summary>
 		public DCxValue DCx => _DCx ?? (_DCx = new DCxValue());
 
 		/// <summary>
-		/// diameter of a circle on which the defined point Pk located on this cutting tool.  The normal of the machined peripheral surface points towards the axis of the cutting tool.
+		﻿/// diameter of a circle on which the defined point Pk located on this cutting tool.<br /><br />The normal of the machined peripheral surface points towards the axis of the cutting tool.<br/><br />
+
 		/// </summary>
 		public sealed class DCxValue : IEnumInstance
 		{
@@ -1037,16 +1154,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// diameter of a circle on which the defined point Pk located on this cutting tool.  The normal of the machined peripheral surface points towards the axis of the cutting tool.";
+			public string Summary => @"&#10;&#10;&#10;diameter of a circle on which the defined point Pk located on this cutting tool.
+
+The normal of the machined peripheral surface points towards the axis of the cutting tool.&#10;
+";
 		}
 		private HFValue _HF;
 		/// <summary>
-		/// distance from the basal plane of the tool item to the cutting point.
+		﻿/// distance from the basal plane of the tool item to the cutting point.<br/><br />
+
 		/// </summary>
 		public HFValue HF => _HF ?? (_HF = new HFValue());
 
 		/// <summary>
-		/// distance from the basal plane of the tool item to the cutting point.
+		﻿/// distance from the basal plane of the tool item to the cutting point.<br/><br />
+
 		/// </summary>
 		public sealed class HFValue : IEnumInstance
 		{
@@ -1063,16 +1185,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// distance from the basal plane of the tool item to the cutting point.";
+			public string Summary => @"&#10;&#10;&#10;distance from the basal plane of the tool item to the cutting point.&#10;
+";
 		}
 		private REValue _RE;
 		/// <summary>
-		/// nominal radius of a rounded corner measured in the X Y-plane.
+		﻿/// nominal radius of a rounded corner measured in the X Y-plane.<br/><br />
+
 		/// </summary>
 		public REValue RE => _RE ?? (_RE = new REValue());
 
 		/// <summary>
-		/// nominal radius of a rounded corner measured in the X Y-plane.
+		﻿/// nominal radius of a rounded corner measured in the X Y-plane.<br/><br />
+
 		/// </summary>
 		public sealed class REValue : IEnumInstance
 		{
@@ -1089,16 +1214,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// nominal radius of a rounded corner measured in the X Y-plane.";
+			public string Summary => @"&#10;&#10;&#10;nominal radius of a rounded corner measured in the X Y-plane.&#10;
+";
 		}
 		private LFxValue _LFx;
 		/// <summary>
-		/// distance from the gauge plane or from the end of the shank of the cutting tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool.   This measurement will be with reference to the cutting tool and <b>MUST NOT</b> exist without a cutting tool.
+		﻿/// distance from the gauge plane or from the end of the shank of the cutting tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool. <br /><br />This measurement will be with reference to the cutting tool and <b>MUST NOT</b> exist without a cutting tool.<br/><br />
+
 		/// </summary>
 		public LFxValue LFx => _LFx ?? (_LFx = new LFxValue());
 
 		/// <summary>
-		/// distance from the gauge plane or from the end of the shank of the cutting tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool.   This measurement will be with reference to the cutting tool and <b>MUST NOT</b> exist without a cutting tool.
+		﻿/// distance from the gauge plane or from the end of the shank of the cutting tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool. <br /><br />This measurement will be with reference to the cutting tool and <b>MUST NOT</b> exist without a cutting tool.<br/><br />
+
 		/// </summary>
 		public sealed class LFxValue : IEnumInstance
 		{
@@ -1115,16 +1243,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// distance from the gauge plane or from the end of the shank of the cutting tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool.   This measurement will be with reference to the cutting tool and <b>MUST NOT</b> exist without a cutting tool.";
+			public string Summary => @"&#10;&#10;&#10;distance from the gauge plane or from the end of the shank of the cutting tool, if a gauge plane does not exist, to the cutting reference point determined by the main function of the tool. 
+
+This measurement will be with reference to the cutting tool and **MUST NOT** exist without a cutting tool.&#10;
+";
 		}
 		private BCHValue _BCH;
 		/// <summary>
-		/// flat length of a chamfer.
+		﻿/// flat length of a chamfer.<br/><br />
+
 		/// </summary>
 		public BCHValue BCH => _BCH ?? (_BCH = new BCHValue());
 
 		/// <summary>
-		/// flat length of a chamfer.
+		﻿/// flat length of a chamfer.<br/><br />
+
 		/// </summary>
 		public sealed class BCHValue : IEnumInstance
 		{
@@ -1141,16 +1274,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// flat length of a chamfer.";
+			public string Summary => @"&#10;&#10;&#10;flat length of a chamfer.&#10;
+";
 		}
 		private CHWValue _CHW;
 		/// <summary>
-		/// width of the chamfer.
+		﻿/// width of the chamfer.<br/><br />
+
 		/// </summary>
 		public CHWValue CHW => _CHW ?? (_CHW = new CHWValue());
 
 		/// <summary>
-		/// width of the chamfer.
+		﻿/// width of the chamfer.<br/><br />
+
 		/// </summary>
 		public sealed class CHWValue : IEnumInstance
 		{
@@ -1167,16 +1303,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// width of the chamfer.";
+			public string Summary => @"&#10;&#10;&#10;width of the chamfer.&#10;
+";
 		}
 		private W1Value _W1;
 		/// <summary>
-		/// insert width when an inscribed circle diameter is not practical.
+		﻿/// insert width when an inscribed circle diameter is not practical.<br/><br />
+
 		/// </summary>
 		public W1Value W1 => _W1 ?? (_W1 = new W1Value());
 
 		/// <summary>
-		/// insert width when an inscribed circle diameter is not practical.
+		﻿/// insert width when an inscribed circle diameter is not practical.<br/><br />
+
 		/// </summary>
 		public sealed class W1Value : IEnumInstance
 		{
@@ -1193,7 +1332,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// insert width when an inscribed circle diameter is not practical.";
+			public string Summary => @"&#10;&#10;&#10;insert width when an inscribed circle diameter is not practical.&#10;
+";
 		}
 	}
 }

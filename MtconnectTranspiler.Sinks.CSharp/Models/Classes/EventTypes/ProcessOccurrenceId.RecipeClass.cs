@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// process as part of product production; can be a subprocess of a larger process.
+	﻿/// process as part of product production; can be a subprocess of a larger process.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1640702975917_50205_205">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessOccurrenceIdRecipeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1640702975917_50205_205";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// process as part of product production; can be a subprocess of a larger process.";
+		public string Summary => @"&#10;&#10;&#10;process as part of product production; can be a subprocess of a larger process.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessOccurrenceId.Recipe";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// process as part of product production; can be a subprocess of a larger process.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

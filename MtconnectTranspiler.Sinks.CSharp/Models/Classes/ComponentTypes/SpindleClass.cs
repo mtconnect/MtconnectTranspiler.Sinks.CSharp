@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> that provides an axis of rotation for the purpose of rapidly rotating a part or a tool to provide sufficient surface speed for cutting operations.  <see cref="Spindle">Spindle</see> was <b>DEPRECATED</b> in <i>MTConnect Version 1.1</i>s and was replaced by <see cref="RotaryMode">RotaryMode</see>.
+	﻿/// <see cref="Component">Component</see> that provides an axis of rotation for the purpose of rapidly rotating a part or a tool to provide sufficient surface speed for cutting operations.<br /><br /><see cref="Spindle">Spindle</see> was <b>DEPRECATED</b> in <i>MTConnect Version 1.1</i> and was replaced by <see cref="RotaryMode">RotaryMode</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1643678227814_87818_1410">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SpindleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1643678227814_87818_1410";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> that provides an axis of rotation for the purpose of rapidly rotating a part or a tool to provide sufficient surface speed for cutting operations.  <see cref=""Spindle"">Spindle</see> was <b>DEPRECATED</b> in <i>MTConnect Version 1.1</i>s and was replaced by <see cref=""RotaryMode"">RotaryMode</see>.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} that provides an axis of rotation for the purpose of rapidly rotating a part or a tool to provide sufficient surface speed for cutting operations.
+
+{{block(Spindle)}} was **DEPRECATED** in *MTConnect Version 1.1* and was replaced by {{block(RotaryMode)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Spindle";

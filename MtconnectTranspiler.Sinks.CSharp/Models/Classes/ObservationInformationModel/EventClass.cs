@@ -6,17 +6,30 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
-	/// <see cref="Observation">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description
+	﻿/// <see cref="Observation">Observation</see> that is a discrete piece of information from a piece of equipment.<br /><br/><br />Description<br/><br />It provides the information and data reported from a piece of equipment for those <see cref="DataItem">DataItem</see> entities defined with <see cref="DataItem.category">category in DataItem</see> as <c>EVENT</c> in the <i>MTConnectDevices Response Document</i>.<br /><br />{{figure(Event Example)}} shows <see cref="Event">Event</see> type examples. It also shows an example for when the <see cref="Observation.result">result in Observation</see> is not available (<c>dataItemId</c>=<c>d1_asset_rem</c>).<br /><br />![Event Example](figures/Event%20Example.png "Event Example"){: width="0.8"}<br /><br />> Note: See {{lst(event-example)}} for the <i>XML</i> representation of the same example.<br /><br />The following <see cref="Value Properties of Event">Value Properties of Event</see> lists the additional and/or updated attributes for <see cref="Event">Event</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531115_47447_25730">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EventClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531115_47447_25730";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Observation)}} that is a discrete piece of information from a piece of equipment.
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;
+It provides the information and data reported from a piece of equipment for those {{block(DataItem)}} entities defined with {{property(DataItem::category)}} as `EVENT` in the {{term(MTConnectDevices Response Document)}}.
+
+{{figure(Event Example)}} shows {{block(Event)}} type examples. It also shows an example for when the {{property(Observation::result)}} is not available (`dataItemId`=`d1_asset_rem`).
+
+![Event Example](figures/Event%20Example.png ""Event Example""){: width=""0.8""}
+
+> Note: See {{lst(event-example)}} for the {{term(XML)}} representation of the same example.
+
+The following {{sect(Value Properties of Event)}} lists the additional and/or updated attributes for {{block(Event)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Event";
@@ -56,7 +69,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public ResetTriggeredProperty ResetTriggered { get; } = new ResetTriggeredProperty();
 			/// <summary>
-			/// identifies when a reported value has been reset and what has caused that reset to occur for those <see cref="DataItem">DataItem</see> entities that may be periodically reset to an initial value.  <c>resetTriggered</c> <b>MUST</b> only be provided for the specific occurrence of a <see cref="DataItem">DataItem</see> reported in the <i>MTConnectStreams Response Document</i> when the reset occurred.
+			﻿/// identifies when a reported value has been reset and what has caused that reset to occur for those <see cref="DataItem">DataItem</see> entities that may be periodically reset to an initial value.<br /><br /><c>resetTriggered</c> <b>MUST</b> only be provided for the specific occurrence of a <see cref="DataItem">DataItem</see> reported in the <i>MTConnectStreams Response Document</i> when the reset occurred.<br/><br />
+
 			/// </summary>
 			public sealed class ResetTriggeredProperty : IProperty
 			{
@@ -76,7 +90,10 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "resetTriggered";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
+				public string Summary => @"&#10;&#10;&#10;identifies when a reported value has been reset and what has caused that reset to occur for those {{block(DataItem)}} entities that may be periodically reset to an initial value.
+
+`resetTriggered` **MUST** only be provided for the specific occurrence of a {{block(DataItem)}} reported in the {{term(MTConnectStreams Response Document)}} when the reset occurred.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -127,7 +144,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "organizedByComponentStream";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -178,7 +195,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is a discrete piece of information from a piece of equipment. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

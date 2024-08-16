@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
-	/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href="https://www.google.com/search?q=ISO 13399&btnI=I">ISO 13399</seealso>.
+	﻿/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href="https://www.google.com/search?q=ISO 13399&btnI=I">ISO 13399</seealso>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_37B8CFD0_D728_4841_9A07_B6CF819EC895">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CuttingToolDefinitionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_37B8CFD0_D728_4841_9A07_B6CF819EC895";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";
+		public string Summary => @"&#10;&#10;&#10;detailed structure of the cutting tool which is static during its lifecycle. {{cite(ISO 13399)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CuttingToolDefinition";
@@ -51,7 +53,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public FormatProperty Format { get; } = new FormatProperty();
 			/// <summary>
-			/// identifies the expected representation of the enclosed data.
+			﻿/// identifies the expected representation of the enclosed data.<br/><br />
+
 			/// </summary>
 			public sealed class FormatProperty : IProperty
 			{
@@ -71,7 +74,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "format";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";
+				public string Summary => @"&#10;&#10;&#10;identifies the expected representation of the enclosed data.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -105,7 +109,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// text of the <see cref="CuttingToolDefinition">CuttingToolDefinition</see> in format defined by <see cref="CuttingToolDefinition::format" />.
+			﻿/// text of the <see cref="CuttingToolDefinition">CuttingToolDefinition</see> in format defined by <see cref="CuttingToolDefinition.format">format in CuttingToolDefinition</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -125,7 +130,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href=""https://www.google.com/search?q=ISO 13399&btnI=I"">ISO 13399</seealso>.";
+				public string Summary => @"&#10;&#10;&#10;text of the {{block(CuttingToolDefinition)}} in format defined by {{property(CuttingToolDefinition::format)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

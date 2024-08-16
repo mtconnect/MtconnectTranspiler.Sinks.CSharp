@@ -5,28 +5,34 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622723031886_684761_3039">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CollaboratorTypeEnum
 	{
 		/// <summary>
+		﻿
 		/// </summary>
 		ROBOT,
 		/// <summary>
+		﻿
 		/// </summary>
 		CONVEYOR,
 		/// <summary>
+		﻿
 		/// </summary>
 		CNC,
 		/// <summary>
+		﻿
 		/// </summary>
 		BUFFER,
 	}
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622723031886_684761_3039">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CollaboratorTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />

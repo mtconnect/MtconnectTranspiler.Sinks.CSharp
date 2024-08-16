@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Process">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description
+	﻿/// <see cref="Process">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp.<br/><br />Description<br/><see cref="ProcessOccurrenceId">ProcessOccurrenceId</see> <b>MUST</b> be defined for <see cref="ProcessOccurrence">ProcessOccurrence</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605547395898_219029_214">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessOccurrenceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605547395898_219029_214";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Process)}} that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(ProcessOccurrenceId)}} **MUST** be defined for {{block(ProcessOccurrence)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessOccurrence";
@@ -77,7 +80,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesProcessOccurrenceId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -128,7 +131,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesProcessAggregateId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -179,7 +182,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesProcessTime";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -230,7 +233,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesProcessKindId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -281,7 +284,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesUser";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -332,7 +335,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesProgram";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -383,7 +386,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPartUniqueId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Process"">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

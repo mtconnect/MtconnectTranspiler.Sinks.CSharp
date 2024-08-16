@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1587753036369_787594_4254">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum DirectionRotaryEnum
 	{
 		/// <summary>
-		/// clockwise rotation using the right-hand rule.
+		﻿/// clockwise rotation using the right-hand rule.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CLOCKWISE,
 		/// <summary>
-		/// counter-clockwise rotation using the right-hand rule.
+		﻿/// counter-clockwise rotation using the right-hand rule.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COUNTER_CLOCKWISE,
 		/// <summary>
-		/// no direction.
+		﻿/// no direction.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1587753036369_787594_4254">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DirectionRotaryEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private CLOCKWISEValue _CLOCKWISE;
 		/// <summary>
-		/// clockwise rotation using the right-hand rule.
+		﻿/// clockwise rotation using the right-hand rule.<br/><br />
+
 		/// </summary>
 		public CLOCKWISEValue CLOCKWISE => _CLOCKWISE ?? (_CLOCKWISE = new CLOCKWISEValue());
 
 		/// <summary>
-		/// clockwise rotation using the right-hand rule.
+		﻿/// clockwise rotation using the right-hand rule.<br/><br />
+
 		/// </summary>
 		public sealed class CLOCKWISEValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// clockwise rotation using the right-hand rule.";
+			public string Summary => @"&#10;&#10;&#10;clockwise rotation using the right-hand rule.&#10;
+";
 		}
 		private COUNTER_CLOCKWISEValue _COUNTER_CLOCKWISE;
 		/// <summary>
-		/// counter-clockwise rotation using the right-hand rule.
+		﻿/// counter-clockwise rotation using the right-hand rule.<br/><br />
+
 		/// </summary>
 		public COUNTER_CLOCKWISEValue COUNTER_CLOCKWISE => _COUNTER_CLOCKWISE ?? (_COUNTER_CLOCKWISE = new COUNTER_CLOCKWISEValue());
 
 		/// <summary>
-		/// counter-clockwise rotation using the right-hand rule.
+		﻿/// counter-clockwise rotation using the right-hand rule.<br/><br />
+
 		/// </summary>
 		public sealed class COUNTER_CLOCKWISEValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// counter-clockwise rotation using the right-hand rule.";
+			public string Summary => @"&#10;&#10;&#10;counter-clockwise rotation using the right-hand rule.&#10;
+";
 		}
 		private NONEValue _NONE;
 		/// <summary>
-		/// no direction.
+		﻿/// no direction.<br/><br />
+
 		/// </summary>
 		public NONEValue NONE => _NONE ?? (_NONE = new NONEValue());
 
 		/// <summary>
-		/// no direction.
+		﻿/// no direction.<br/><br />
+
 		/// </summary>
 		public sealed class NONEValue : IEnumInstance
 		{
@@ -149,7 +162,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// no direction.";
+			public string Summary => @"&#10;&#10;&#10;no direction.&#10;
+";
 		}
 	}
 }

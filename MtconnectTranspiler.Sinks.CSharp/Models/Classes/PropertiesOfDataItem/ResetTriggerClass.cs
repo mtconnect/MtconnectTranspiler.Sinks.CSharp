@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
-	/// type of event that may cause a reset to occur.
+	﻿/// type of event that may cause a reset to occur.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_3F56D161_E1BD_4fa1_8D7A_1C9C2E15D303">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ResetTriggerClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_3F56D161_E1BD_4fa1_8D7A_1C9C2E15D303";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// type of event that may cause a reset to occur.";
+		public string Summary => @"&#10;&#10;&#10;type of event that may cause a reset to occur.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ResetTrigger";
@@ -50,7 +52,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// type of <see cref="ResetTrigger">ResetTrigger</see>.
+			﻿/// type of <see cref="ResetTrigger">ResetTrigger</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -70,7 +73,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// type of event that may cause a reset to occur.";
+				public string Summary => @"&#10;&#10;&#10;type of {{block(ResetTrigger)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

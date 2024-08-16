@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
 	/// <summary>
-	/// set of <see cref="Parameter">Parameter</see>s.
+	﻿/// set of <see cref="Parameter">Parameter</see>s.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197254209_96040_17915">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ParameterSetClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678197254209_96040_17915";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";
+		public string Summary => @"&#10;&#10;&#10;set of {{block(Parameter)}}s.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ParameterSet";
@@ -51,7 +53,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// name of the parameter set if more than one exists.
+			﻿/// name of the parameter set if more than one exists.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -71,7 +74,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";
+				public string Summary => @"&#10;&#10;&#10;name of the parameter set if more than one exists.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -122,7 +126,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "hasParameter";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// set of <see cref=""Parameter"">Parameter</see>s.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

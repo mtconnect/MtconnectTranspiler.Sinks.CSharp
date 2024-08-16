@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.InformationModelTerms
 {
 	/// <summary>
-	/// <i>information model</i> that provides semantic models for <i>Asset</i>s.
+	﻿/// <i>information model</i> that provides semantic models for <i>Asset</i>s.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375143_753891_1954">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AssetInformationModelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375143_753891_1954";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>information model</i> that provides semantic models for <i>Asset</i>s.";
+		public string Summary => @"&#10;&#10;&#10;{{term(information model)}} that provides semantic models for {{termplural(Asset)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Asset Information Model";

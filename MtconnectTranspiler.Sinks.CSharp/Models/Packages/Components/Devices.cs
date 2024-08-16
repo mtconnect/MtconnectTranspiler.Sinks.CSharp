@@ -6,10 +6,11 @@ using Package = Mtconnect.DeviceInformationModel.Components.Devices;
 namespace Mtconnect.DeviceInformationModel.Components
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="Device">Device</see> types.
+	﻿/// This section provides semantic information for the <see cref="Device">Device</see> types.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1588604708900_376505_13">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class DevicesPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 		public string Name => "Devices";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""Device"">Device</see> types.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(Device)}} types.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

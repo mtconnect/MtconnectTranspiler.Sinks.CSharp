@@ -5,25 +5,30 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622719977582_803160_1892">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum TaskTypeEnum
 	{
 		/// <summary>
+		﻿
 		/// </summary>
 		MOVE_MATERIAL,
 		/// <summary>
+		﻿
 		/// </summary>
 		MATERIAL_UNLOAD,
 		/// <summary>
+		﻿
 		/// </summary>
 		TOOL_CHANGE,
 	}
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622719977582_803160_1892">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TaskTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />

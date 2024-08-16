@@ -6,10 +6,11 @@ using Package = Mtconnect.ObservationInformationModel.Representations;
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="Representation">Representation</see> model.  ![Representation](figures/Representation.png "Representation"){: width="0.8"}  > Note: See <see cref="Representation Schema Diagrams">Representation Schema Diagrams</see> for XML schema.
+	﻿/// This section provides semantic information for the <see cref="Representation">Representation</see> model.<br /><br />![Representation](figures/Representation.png "Representation"){: width="0.8"}<br /><br />> Note: See <see cref="Representation Schema Diagrams">Representation Schema Diagrams</see> for XML schema.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1583339330789_426055_14911">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class RepresentationsPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,12 @@ namespace Mtconnect.ObservationInformationModel
 		public string Name => "Representations";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""Representation"">Representation</see> model.  ![Representation](figures/Representation.png ""Representation""){: width=""0.8""}  > Note: See <see cref=""Representation Schema Diagrams"">Representation Schema Diagrams</see> for XML schema.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(Representation)}} model.
+
+![Representation](figures/Representation.png ""Representation""){: width=""0.8""}
+
+> Note: See {{sect(Representation Schema Diagrams)}} for XML schema.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

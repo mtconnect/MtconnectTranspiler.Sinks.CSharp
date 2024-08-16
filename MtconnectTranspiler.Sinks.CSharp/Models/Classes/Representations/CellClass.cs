@@ -5,17 +5,26 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.ObservationInformationModel.Representations
 {
 	/// <summary>
-	/// <i>key-value pair</i> published as part of a <see cref="TableEntry">TableEntry</see>./// Constraints for Cell Values
+	﻿/// <i>key-value pair</i> published as part of a <see cref="TableEntry">TableEntry</see>.<br/><br />Constraints for Cell Values<br/>#### Constraints for Cell Values<br /><br />The value of each <see cref="Cell">Cell</see> <b>MUST</b> have the same restrictions as the value of an <i>observation</i> with <see cref="DataItem.representation">representation in DataItem</see> as <c>VALUE</c>.<br /><br />An <see cref="Cell">Cell</see> <b>MAY</b> be further constrained by the <see cref="DataItem">DataItem</see> definition (see <see cref="Device Information Model">Device Information Model</see>), for example a <c>VariableDataSet</c> having a string value <b>MAY</b> have a floating-point <see cref="Temperature">Temperature</see> value. A restriction <b>MUST NOT</b> be broadened or removed, for example, the value <c>READY</c> <b>MUST NOT</b> occur with a <c>TemperatureDataSet</c> constrained limited to floating-point numbers.<br /><br /><see cref="CellDefinition">CellDefinition</see> <b>MAY</b> provide type and units of a <see cref="Cell.key">key in Cell</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582847071494_298325_2235">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CellClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582847071494_298325_2235";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";
+		public string Summary => @"&#10;&#10;&#10;{{term(key-value pair)}} published as part of a {{block(TableEntry)}}.&#10;
+&#10;&#10;&#10;Constraints for Cell Values&#10;&#10;&#10;&#10;#### Constraints for Cell Values
+
+The value of each {{block(Cell)}} **MUST** have the same restrictions as the value of an {{term(observation)}} with {{property(DataItem::representation)}} as `VALUE`.
+
+An {{block(Cell)}} **MAY** be further constrained by the {{block(DataItem)}} definition (see {{package(Device Information Model)}}), for example a `VariableDataSet` having a string value **MAY** have a floating-point {{block(Temperature)}} value. A restriction **MUST NOT** be broadened or removed, for example, the value `READY` **MUST NOT** occur with a `TemperatureDataSet` constrained limited to floating-point numbers.
+
+{{block(CellDefinition)}} **MAY** provide type and units of a {{property(Cell::key)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Cell";
@@ -51,7 +60,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// </summary>
 			public KeyProperty Key { get; } = new KeyProperty();
 			/// <summary>
-			/// unique identifier for each <i>key-value pair</i>.
+			﻿/// unique identifier for each <i>key-value pair</i>.<br/><br />
+
 			/// </summary>
 			public sealed class KeyProperty : IProperty
 			{
@@ -71,7 +81,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "key";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for each {{term(key-value pair)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -105,7 +116,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
 			/// <summary>
-			/// value of the <see cref="Cell">Cell</see>.
+			﻿/// value of the <see cref="Cell">Cell</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ResultProperty : IProperty
 			{
@@ -125,7 +137,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""TableEntry"">TableEntry</see>./// Constraints for Cell Values";
+				public string Summary => @"&#10;&#10;&#10;value of the {{block(Cell)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

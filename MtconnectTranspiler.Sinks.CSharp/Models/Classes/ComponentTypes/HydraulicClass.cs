@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> that provides movement and distribution of pressurized liquid throughout the piece of equipment.
+	﻿/// <see cref="System">System</see> that provides movement and distribution of pressurized liquid throughout the piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381993_131470_42246">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HydraulicClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381993_131470_42246";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> that provides movement and distribution of pressurized liquid throughout the piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} that provides movement and distribution of pressurized liquid throughout the piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Hydraulic";
@@ -71,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPressure";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides movement and distribution of pressurized liquid throughout the piece of equipment.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

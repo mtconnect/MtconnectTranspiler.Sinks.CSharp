@@ -5,7 +5,7 @@ using Package = Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.Kinematics
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class KinematicsSimulationPackage : IPackage
 	{
 		/// <inheritdoc />

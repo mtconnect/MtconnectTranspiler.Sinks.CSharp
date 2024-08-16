@@ -6,17 +6,23 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// setting or operator selection that changes the behavior of the controller on a piece of equipment.    Program execution is paused when a command is executed requesting a cutting tool to be changed.   <see cref="Execution">Execution</see> <b>MUST</b> change to <c>INTERRUPTED</c> after completion of the command requesting a cutting tool to be changed and <c>TOOL_CHANGE_STOP</c> is <c>ON</c>.
+	﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.  <br /><br />Program execution is paused when a command is executed requesting a cutting tool to be changed. <br /><br /><see cref="Execution">Execution</see> <b>MUST</b> change to <c>INTERRUPTED</c> after completion of the command requesting a cutting tool to be changed and <c>TOOL_CHANGE_STOP</c> is <c>ON</c>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218244_835736_1674">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ControllerModeOverrideToolChangeStopClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218244_835736_1674";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// setting or operator selection that changes the behavior of the controller on a piece of equipment.    Program execution is paused when a command is executed requesting a cutting tool to be changed.   <see cref=""Execution"">Execution</see> <b>MUST</b> change to <c>INTERRUPTED</c> after completion of the command requesting a cutting tool to be changed and <c>TOOL_CHANGE_STOP</c> is <c>ON</c>.";
+		public string Summary => @"&#10;&#10;&#10;setting or operator selection that changes the behavior of the controller on a piece of equipment.  
+
+Program execution is paused when a command is executed requesting a cutting tool to be changed. 
+
+{{block(Execution)}} **MUST** change to `INTERRUPTED` after completion of the command requesting a cutting tool to be changed and `TOOL_CHANGE_STOP` is `ON`.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ControllerModeOverride.ToolChangeStop";
@@ -71,7 +77,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// setting or operator selection that changes the behavior of the controller on a piece of equipment.    Program execution is paused when a command is executed requesting a cutting tool to be changed.   <see cref=""Execution"">Execution</see> <b>MUST</b> change to <c>INTERRUPTED</c> after completion of the command requesting a cutting tool to be changed and <c>TOOL_CHANGE_STOP</c> is <c>ON</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

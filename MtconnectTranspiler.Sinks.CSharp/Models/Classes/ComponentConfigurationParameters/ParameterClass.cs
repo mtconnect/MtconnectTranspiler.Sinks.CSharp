@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
 	/// <summary>
-	/// property defining a configuration of a <see cref="Component">Component</see>.
+	﻿/// property defining a configuration of a <see cref="Component">Component</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197371649_500788_17992">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ParameterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678197371649_500788_17992";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+		public string Summary => @"&#10;&#10;&#10;property defining a configuration of a {{block(Component)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Parameter";
@@ -56,7 +58,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// </summary>
 			public IdentifierProperty Identifier { get; } = new IdentifierProperty();
 			/// <summary>
-			/// internal identifier, register, or address.
+			﻿/// internal identifier, register, or address.<br/><br />
+
 			/// </summary>
 			public sealed class IdentifierProperty : IProperty
 			{
@@ -76,7 +79,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "identifier";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;internal identifier, register, or address.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -110,7 +114,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// descriptive name.
+			﻿/// descriptive name.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -130,7 +135,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;descriptive name.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -164,7 +170,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// </summary>
 			public MinimumProperty Minimum { get; } = new MinimumProperty();
 			/// <summary>
-			/// minimal allowed value.
+			﻿/// minimal allowed value.<br/><br />
+
 			/// </summary>
 			public sealed class MinimumProperty : IProperty
 			{
@@ -184,7 +191,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "minimum";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;minimal allowed value.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -218,7 +226,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// </summary>
 			public MaximumProperty Maximum { get; } = new MaximumProperty();
 			/// <summary>
-			/// maximum allowed value.
+			﻿/// maximum allowed value.<br/><br />
+
 			/// </summary>
 			public sealed class MaximumProperty : IProperty
 			{
@@ -238,7 +247,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "maximum";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;maximum allowed value.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -272,7 +282,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
 			/// <summary>
-			/// nominal value.
+			﻿/// nominal value.<br/><br />
+
 			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
@@ -292,7 +303,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "nominal";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;nominal value.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -326,7 +338,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// configured value.
+			﻿/// configured value.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -346,7 +359,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;configured value.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -380,7 +394,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			/// <summary>
-			/// engineering units.  <see cref="Parameter::units" /> <b>SHOULD</b> be SI or MTConnect Units.
+			﻿/// engineering units.<br /><br /><see cref="Parameter.units">units in Parameter</see> <b>SHOULD</b> be SI or MTConnect Units.<br/><br />
+
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
@@ -400,7 +415,10 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// property defining a configuration of a <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;engineering units.
+
+{{property(Parameter::units)}} **SHOULD** be SI or MTConnect Units.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

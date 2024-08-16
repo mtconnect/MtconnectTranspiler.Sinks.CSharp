@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632489430362_282150_112">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PowerStateEnum
 	{
 		/// <summary>
-		/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.
+		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ON,
 		/// <summary>
-		/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.
+		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632489430362_282150_112">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PowerStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private ONValue _ON;
 		/// <summary>
-		/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.
+		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.<br/><br />
+
 		/// </summary>
 		public ONValue ON => _ON ?? (_ON = new ONValue());
 
 		/// <summary>
-		/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.
+		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.<br/><br />
+
 		/// </summary>
 		public sealed class ONValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.";
+			public string Summary => @"&#10;&#10;&#10;source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.&#10;
+";
 		}
 		private OFFValue _OFF;
 		/// <summary>
-		/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.
+		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.<br/><br />
+
 		/// </summary>
 		public OFFValue OFF => _OFF ?? (_OFF = new OFFValue());
 
 		/// <summary>
-		/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.
+		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.<br/><br />
+
 		/// </summary>
 		public sealed class OFFValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.";
+			public string Summary => @"&#10;&#10;&#10;source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.&#10;
+";
 		}
 	}
 }

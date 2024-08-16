@@ -5,16 +5,18 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1618830616283_5956_278">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FormEnum
 	{
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -23,6 +25,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BAR,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -31,6 +34,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SHEET,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -39,6 +43,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BLOCK,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,6 +52,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CASTING,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,6 +61,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POWDER,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -63,6 +70,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LIQUID,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -71,6 +79,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		GEL,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -79,6 +88,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FILAMENT,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -90,8 +100,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1618830616283_5956_278">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FormEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />

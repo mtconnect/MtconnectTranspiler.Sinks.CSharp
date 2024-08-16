@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// operator's overridden value.  <b>DEPRECATED</b> in <i>Version 1.3</i>s.
+	﻿/// operator's overridden value.<br /><br /><b>DEPRECATED</b> in <i>Version 1.3</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218380_769380_1998">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PathFeedrateOverrideClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218380_769380_1998";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// operator's overridden value.  <b>DEPRECATED</b> in <i>Version 1.3</i>s.";
+		public string Summary => @"&#10;&#10;&#10;operator's overridden value.
+
+**DEPRECATED** in *Version 1.3*.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PathFeedrate.Override";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// operator's overridden value.  <b>DEPRECATED</b> in <i>Version 1.3</i>s.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

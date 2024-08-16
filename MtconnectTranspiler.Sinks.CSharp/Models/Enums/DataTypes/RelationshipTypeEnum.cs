@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_17E78CC7_671B_40bb_91A0_1F7CC06799BF">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum RelationshipTypeEnum
 	{
 		/// <summary>
-		/// functions as a parent in the relationship with the associated element.
+		﻿/// functions as a parent in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PARENT,
 		/// <summary>
-		/// functions as a child in the relationship with the associated element.
+		﻿/// functions as a child in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHILD,
 		/// <summary>
-		/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.
+		﻿/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_17E78CC7_671B_40bb_91A0_1F7CC06799BF">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RelationshipTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private PARENTValue _PARENT;
 		/// <summary>
-		/// functions as a parent in the relationship with the associated element.
+		﻿/// functions as a parent in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		public PARENTValue PARENT => _PARENT ?? (_PARENT = new PARENTValue());
 
 		/// <summary>
-		/// functions as a parent in the relationship with the associated element.
+		﻿/// functions as a parent in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		public sealed class PARENTValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// functions as a parent in the relationship with the associated element.";
+			public string Summary => @"&#10;&#10;&#10;functions as a parent in the relationship with the associated element.&#10;
+";
 		}
 		private CHILDValue _CHILD;
 		/// <summary>
-		/// functions as a child in the relationship with the associated element.
+		﻿/// functions as a child in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		public CHILDValue CHILD => _CHILD ?? (_CHILD = new CHILDValue());
 
 		/// <summary>
-		/// functions as a child in the relationship with the associated element.
+		﻿/// functions as a child in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		public sealed class CHILDValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// functions as a child in the relationship with the associated element.";
+			public string Summary => @"&#10;&#10;&#10;functions as a child in the relationship with the associated element.&#10;
+";
 		}
 		private PEERValue _PEER;
 		/// <summary>
-		/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.
+		﻿/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		public PEERValue PEER => _PEER ?? (_PEER = new PEERValue());
 
 		/// <summary>
-		/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.
+		﻿/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.<br/><br />
+
 		/// </summary>
 		public sealed class PEERValue : IEnumInstance
 		{
@@ -149,7 +162,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.";
+			public string Summary => @"&#10;&#10;&#10;functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.&#10;
+";
 		}
 	}
 }

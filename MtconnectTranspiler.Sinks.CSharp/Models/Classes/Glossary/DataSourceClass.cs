@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// piece of equipment that can produce data that is published to an <i>agent</i>. 
+	﻿/// piece of equipment that can produce data that is published to an <i>agent</i>.<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375154_273498_1976">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DataSourceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375154_273498_1976";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// piece of equipment that can produce data that is published to an <i>agent</i>. ";
+		public string Summary => @"&#10;&#10;&#10;piece of equipment that can produce data that is published to an {{term(agent)}}.
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "data source";

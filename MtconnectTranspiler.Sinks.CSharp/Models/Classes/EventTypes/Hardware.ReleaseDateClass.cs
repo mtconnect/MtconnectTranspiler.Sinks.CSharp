@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// date the hardware or software was released for general use.  
+	﻿/// date the hardware or software was released for general use. <br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587751253561_14971_2624">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HardwareReleaseDateClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587751253561_14971_2624";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// date the hardware or software was released for general use.  ";
+		public string Summary => @"&#10;&#10;&#10;date the hardware or software was released for general use. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Hardware.ReleaseDate";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// date the hardware or software was released for general use.  ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// date the hardware or software was released for general use.  ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

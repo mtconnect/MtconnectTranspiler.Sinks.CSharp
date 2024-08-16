@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="ToolingDelivery">ToolingDelivery</see> composed of a tool storage mechanism that holds any number of tools.  /// Description
+	﻿/// <see cref="ToolingDelivery">ToolingDelivery</see> composed of a tool storage mechanism that holds any number of tools. <br /><br/><br />Description<br/>Tools are located in <see cref="Pot">Pot</see>s. <see cref="Pot">Pot</see>s are moved into position to transfer tools into or out of the <see cref="ToolMagazine">ToolMagazine</see> by an <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605551866030_769452_2402">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ToolMagazineClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605551866030_769452_2402";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""ToolingDelivery"">ToolingDelivery</see> composed of a tool storage mechanism that holds any number of tools.  /// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(ToolingDelivery)}} composed of a tool storage mechanism that holds any number of tools. 
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;Tools are located in {{block(Pot)}}s. {{block(Pot)}}s are moved into position to transfer tools into or out of the {{block(ToolMagazine)}} by an {{block(AutomaticToolChanger)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ToolMagazine";

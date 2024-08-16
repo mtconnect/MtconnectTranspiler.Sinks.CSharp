@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LocationAddressResultClass : IClass
 	{
 		/// <inheritdoc />
@@ -67,7 +67,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public GivenNameProperty GivenName { get; } = new GivenNameProperty();
 			/// <summary>
-			/// element specifying the name used to distinguish between persons having the same surname(s) and who may have access to a particular delivery point.
+			﻿/// element specifying the name used to distinguish between persons having the same surname(s) and who may have access to a particular delivery point.<br/><br />
+
 			/// </summary>
 			public sealed class GivenNameProperty : IProperty
 			{
@@ -87,7 +88,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "GivenName";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element specifying the name used to distinguish between persons having the same surname(s) and who may have access to a particular delivery point.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -121,7 +123,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public SurnameProperty Surname { get; } = new SurnameProperty();
 			/// <summary>
-			/// element which identifies the family or parentage of an individual.
+			﻿/// element which identifies the family or parentage of an individual.<br/><br />
+
 			/// </summary>
 			public sealed class SurnameProperty : IProperty
 			{
@@ -141,7 +144,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Surname";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element which identifies the family or parentage of an individual.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +179,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public QualificationProperty Qualification { get; } = new QualificationProperty();
 			/// <summary>
-			/// element indicating an individual’s professional or academic qualification or rank in a professional group or society (e.g. PhD, Fellow of the Royal Society, FRS, Barrister at Law).
+			﻿/// element indicating an individual’s professional or academic qualification or rank in a professional group or society (e.g. PhD, Fellow of the Royal Society, FRS, Barrister at Law).<br/><br />
+
 			/// </summary>
 			public sealed class QualificationProperty : IProperty
 			{
@@ -195,7 +200,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Qualification";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element indicating an individual’s professional or academic qualification or rank in a professional group or society (e.g. PhD, Fellow of the Royal Society, FRS, Barrister at Law).&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -229,7 +235,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public NameQualifierProperty NameQualifier { get; } = new NameQualifierProperty();
 			/// <summary>
-			/// element used in some countries to distinguish between persons with the same surname(s) who have similar given names or initials (e.g.III, Senior, the Third.).
+			﻿/// element used in some countries to distinguish between persons with the same surname(s) who have similar given names or initials (e.g.III, Senior, the Third.).<br/><br />
+
 			/// </summary>
 			public sealed class NameQualifierProperty : IProperty
 			{
@@ -249,7 +256,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "NameQualifier";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element used in some countries to distinguish between persons with the same surname(s) who have similar given names or initials (e.g.III, Senior, the Third.).&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -283,7 +291,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public OrganizationNameProperty OrganizationName { get; } = new OrganizationNameProperty();
 			/// <summary>
-			/// element giving the official name, the registered business name or other official designation of an organization.
+			﻿/// element giving the official name, the registered business name or other official designation of an organization.<br/><br />
+
 			/// </summary>
 			public sealed class OrganizationNameProperty : IProperty
 			{
@@ -303,7 +312,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "OrganizationName";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element giving the official name, the registered business name or other official designation of an organization.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -337,7 +347,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public LegalStatusProperty LegalStatus { get; } = new LegalStatusProperty();
 			/// <summary>
-			/// element indicating the formal registration of an organization (e.g. GmbH, Inc., Ltd.).
+			﻿/// element indicating the formal registration of an organization (e.g. GmbH, Inc., Ltd.).<br/><br />
+
 			/// </summary>
 			public sealed class LegalStatusProperty : IProperty
 			{
@@ -357,7 +368,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "LegalStatus";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element indicating the formal registration of an organization (e.g. GmbH, Inc., Ltd.).&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -391,7 +403,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public OrganizationUnitProperty OrganizationUnit { get; } = new OrganizationUnitProperty();
 			/// <summary>
-			/// element identifying a subdivision of an organization.
+			﻿/// element identifying a subdivision of an organization.<br/><br />
+
 			/// </summary>
 			public sealed class OrganizationUnitProperty : IProperty
 			{
@@ -411,7 +424,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "OrganizationUnit";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element identifying a subdivision of an organization.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -445,7 +459,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public BuildingProperty Building { get; } = new BuildingProperty();
 			/// <summary>
-			/// element identifying the number or name and type of the edifice or construction in or adjacent to which a delivery point is located.
+			﻿/// element identifying the number or name and type of the edifice or construction in or adjacent to which a delivery point is located.<br/><br />
+
 			/// </summary>
 			public sealed class BuildingProperty : IProperty
 			{
@@ -465,7 +480,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Building";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element identifying the number or name and type of the edifice or construction in or adjacent to which a delivery point is located.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -499,7 +515,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public FloorProperty Floor { get; } = new FloorProperty();
 			/// <summary>
-			/// element indicating the floor or level on which a delivery point is located in a multi-story building.
+			﻿/// element indicating the floor or level on which a delivery point is located in a multi-story building.<br/><br />
+
 			/// </summary>
 			public sealed class FloorProperty : IProperty
 			{
@@ -519,7 +536,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Floor";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element indicating the floor or level on which a delivery point is located in a multi-story building.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -553,7 +571,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public DoorProperty Door { get; } = new DoorProperty();
 			/// <summary>
-			/// element indicating the apartment, room or office in, at or adjacent to which a delivery point, situated within a building, is located.
+			﻿/// element indicating the apartment, room or office in, at or adjacent to which a delivery point, situated within a building, is located.<br/><br />
+
 			/// </summary>
 			public sealed class DoorProperty : IProperty
 			{
@@ -573,7 +592,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Door";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element indicating the apartment, room or office in, at or adjacent to which a delivery point, situated within a building, is located.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -607,7 +627,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public ThoroughfareProperty Thoroughfare { get; } = new ThoroughfareProperty();
 			/// <summary>
-			/// element which identifies the road or part of a road or other access route along which a delivery point can be accessed, either directly or via a secondary or tertiary road or access route.
+			﻿/// element which identifies the road or part of a road or other access route along which a delivery point can be accessed, either directly or via a secondary or tertiary road or access route.<br/><br />
+
 			/// </summary>
 			public sealed class ThoroughfareProperty : IProperty
 			{
@@ -627,7 +648,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Thoroughfare";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element which identifies the road or part of a road or other access route along which a delivery point can be accessed, either directly or via a secondary or tertiary road or access route.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -661,7 +683,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public PremiseIdentifierProperty PremiseIdentifier { get; } = new PremiseIdentifierProperty();
 			/// <summary>
-			/// element designating the area or the object on an area, adjacent to thoroughfare, in which the delivery point or delivery point access is located.
+			﻿/// element designating the area or the object on an area, adjacent to thoroughfare, in which the delivery point or delivery point access is located.<br/><br />
+
 			/// </summary>
 			public sealed class PremiseIdentifierProperty : IProperty
 			{
@@ -681,7 +704,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "PremiseIdentifier";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element designating the area or the object on an area, adjacent to thoroughfare, in which the delivery point or delivery point access is located.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -715,7 +739,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public TownProperty Town { get; } = new TownProperty();
 			/// <summary>
-			/// element indicating the name of the populated place in which a delivery point is located, or the populated.
+			﻿/// element indicating the name of the populated place in which a delivery point is located, or the populated.<br/><br />
+
 			/// </summary>
 			public sealed class TownProperty : IProperty
 			{
@@ -735,7 +760,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Town";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element indicating the name of the populated place in which a delivery point is located, or the populated.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -769,7 +795,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public RegionProperty Region { get; } = new RegionProperty();
 			/// <summary>
-			/// element specifying the geographic or administrative area of the country in which the town is situated.
+			﻿/// element specifying the geographic or administrative area of the country in which the town is situated.<br/><br />
+
 			/// </summary>
 			public sealed class RegionProperty : IProperty
 			{
@@ -789,7 +816,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Region";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element specifying the geographic or administrative area of the country in which the town is situated.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -823,7 +851,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public DistrictProperty District { get; } = new DistrictProperty();
 			/// <summary>
-			/// element indicating the name of the area within or adjacent to the town in which a delivery point is located, or via which it is accessed.
+			﻿/// element indicating the name of the area within or adjacent to the town in which a delivery point is located, or via which it is accessed.<br/><br />
+
 			/// </summary>
 			public sealed class DistrictProperty : IProperty
 			{
@@ -843,7 +872,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "District";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element indicating the name of the area within or adjacent to the town in which a delivery point is located, or via which it is accessed.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -877,7 +907,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public CountryNameProperty CountryName { get; } = new CountryNameProperty();
 			/// <summary>
-			/// element designating the country, dependency or area of geopolitical interest, in which a delivery point is located or via which the delivery point is accessed.
+			﻿/// element designating the country, dependency or area of geopolitical interest, in which a delivery point is located or via which the delivery point is accessed.<br/><br />
+
 			/// </summary>
 			public sealed class CountryNameProperty : IProperty
 			{
@@ -897,7 +928,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "CountryName";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element designating the country, dependency or area of geopolitical interest, in which a delivery point is located or via which the delivery point is accessed.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -931,7 +963,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public CountryCodeProperty CountryCode { get; } = new CountryCodeProperty();
 			/// <summary>
-			/// interest, in which a delivery point is located or via which the delivery point is accessed.
+			﻿/// interest, in which a delivery point is located or via which the delivery point is accessed.<br/><br />
+
 			/// </summary>
 			public sealed class CountryCodeProperty : IProperty
 			{
@@ -951,7 +984,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "CountryCode";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;interest, in which a delivery point is located or via which the delivery point is accessed.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -985,7 +1019,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public PostCodeProperty PostCode { get; } = new PostCodeProperty();
 			/// <summary>
-			/// element designating the code used for the sorting of mail.
+			﻿/// element designating the code used for the sorting of mail.<br/><br />
+
 			/// </summary>
 			public sealed class PostCodeProperty : IProperty
 			{
@@ -1005,7 +1040,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "PostCode";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;element designating the code used for the sorting of mail.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

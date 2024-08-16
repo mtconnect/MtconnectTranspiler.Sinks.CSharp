@@ -6,17 +6,28 @@ using System.Linq;
 namespace Mtconnect.InterfaceInteractionModel.InterfaceTypes
 {
 	/// <summary>
-	/// <see cref="Interface">Interface</see> that coordinates the operations between a piece of equipment and another associated piece of equipment used to automatically handle various types of materials or services associated with the original piece of equipment.  A material handler is a piece of equipment capable of providing any one, or more, of a variety of support services for another piece of equipment or a process like:  * Loading/unloading material or tooling * Part inspection * Testing * Cleaning  A robot is a common example of a material handler.
+	﻿/// <see cref="Interface">Interface</see> that coordinates the operations between a piece of equipment and another associated piece of equipment used to automatically handle various types of materials or services associated with the original piece of equipment.<br /><br />A material handler is a piece of equipment capable of providing any one, or more, of a variety of support services for another piece of equipment or a process like:<br /><br />* Loading/unloading material or tooling<br />* Part inspection<br />* Testing<br />* Cleaning<br /><br />A robot is a common example of a material handler.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622717400199_925921_979">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaterialHandlerInterfaceGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622717400199_925921_979";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Interface"">Interface</see> that coordinates the operations between a piece of equipment and another associated piece of equipment used to automatically handle various types of materials or services associated with the original piece of equipment.  A material handler is a piece of equipment capable of providing any one, or more, of a variety of support services for another piece of equipment or a process like:  * Loading/unloading material or tooling * Part inspection * Testing * Cleaning  A robot is a common example of a material handler.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Interface)}} that coordinates the operations between a piece of equipment and another associated piece of equipment used to automatically handle various types of materials or services associated with the original piece of equipment.
+
+A material handler is a piece of equipment capable of providing any one, or more, of a variety of support services for another piece of equipment or a process like:
+
+* Loading/unloading material or tooling
+* Part inspection
+* Testing
+* Cleaning
+
+A robot is a common example of a material handler.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MaterialHandlerInterface";

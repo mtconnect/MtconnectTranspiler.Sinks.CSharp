@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>
-	/// coordinates of the origin position of a coordinate system.
+	﻿/// coordinates of the origin position of a coordinate system.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579107743274_159386_163610">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class OriginClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579107743274_159386_163610";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// coordinates of the origin position of a coordinate system.";
+		public string Summary => @"&#10;&#10;&#10;coordinates of the origin position of a coordinate system.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Origin";
@@ -50,7 +52,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// The value of <see cref="Origin">Origin</see> in <c>MILLIMETER_3D</c>.
+			﻿/// The value of <see cref="Origin">Origin</see> in <c>MILLIMETER_3D</c>.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -70,7 +73,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// coordinates of the origin position of a coordinate system.";
+				public string Summary => @"&#10;&#10;&#10;The value of {{block(Origin)}} in `MILLIMETER_3D`.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

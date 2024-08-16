@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1660318869483_263921_172">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.1">v2.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum BatteryStateEnum
 	{
 		/// <summary>
-		/// <see cref="Component">Component</see> is at it's maximum rated charge level.
+		﻿/// <see cref="Component">Component</see> is at it's maximum rated charge level.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHARGED,
 		/// <summary>
-		/// <see cref="Component">Component</see>'s charge is increasing.
+		﻿/// <see cref="Component">Component</see>'s charge is increasing.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHARGING,
 		/// <summary>
-		/// <see cref="Component">Component</see>'s charge is decreasing.
+		﻿/// <see cref="Component">Component</see>'s charge is decreasing.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DISCHARGING,
 		/// <summary>
-		/// <see cref="Component">Component</see> is at it's minimum charge level.
+		﻿/// <see cref="Component">Component</see> is at it's minimum charge level.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -54,8 +59,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1660318869483_263921_172">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class BatteryStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -85,12 +91,14 @@ namespace Mtconnect.DataTypes
 
 		private CHARGEDValue _CHARGED;
 		/// <summary>
-		/// <see cref="Component">Component</see> is at it's maximum rated charge level.
+		﻿/// <see cref="Component">Component</see> is at it's maximum rated charge level.<br/><br />
+
 		/// </summary>
 		public CHARGEDValue CHARGED => _CHARGED ?? (_CHARGED = new CHARGEDValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see> is at it's maximum rated charge level.
+		﻿/// <see cref="Component">Component</see> is at it's maximum rated charge level.<br/><br />
+
 		/// </summary>
 		public sealed class CHARGEDValue : IEnumInstance
 		{
@@ -107,16 +115,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see> is at it's maximum rated charge level.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}} is at it's maximum rated charge level.&#10;
+";
 		}
 		private CHARGINGValue _CHARGING;
 		/// <summary>
-		/// <see cref="Component">Component</see>'s charge is increasing.
+		﻿/// <see cref="Component">Component</see>'s charge is increasing.<br/><br />
+
 		/// </summary>
 		public CHARGINGValue CHARGING => _CHARGING ?? (_CHARGING = new CHARGINGValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see>'s charge is increasing.
+		﻿/// <see cref="Component">Component</see>'s charge is increasing.<br/><br />
+
 		/// </summary>
 		public sealed class CHARGINGValue : IEnumInstance
 		{
@@ -133,16 +144,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see>'s charge is increasing.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}}'s charge is increasing.&#10;
+";
 		}
 		private DISCHARGINGValue _DISCHARGING;
 		/// <summary>
-		/// <see cref="Component">Component</see>'s charge is decreasing.
+		﻿/// <see cref="Component">Component</see>'s charge is decreasing.<br/><br />
+
 		/// </summary>
 		public DISCHARGINGValue DISCHARGING => _DISCHARGING ?? (_DISCHARGING = new DISCHARGINGValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see>'s charge is decreasing.
+		﻿/// <see cref="Component">Component</see>'s charge is decreasing.<br/><br />
+
 		/// </summary>
 		public sealed class DISCHARGINGValue : IEnumInstance
 		{
@@ -159,16 +173,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see>'s charge is decreasing.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}}'s charge is decreasing.&#10;
+";
 		}
 		private DISCHARGEDValue _DISCHARGED;
 		/// <summary>
-		/// <see cref="Component">Component</see> is at it's minimum charge level.
+		﻿/// <see cref="Component">Component</see> is at it's minimum charge level.<br/><br />
+
 		/// </summary>
 		public DISCHARGEDValue DISCHARGED => _DISCHARGED ?? (_DISCHARGED = new DISCHARGEDValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see> is at it's minimum charge level.
+		﻿/// <see cref="Component">Component</see> is at it's minimum charge level.<br/><br />
+
 		/// </summary>
 		public sealed class DISCHARGEDValue : IEnumInstance
 		{
@@ -185,7 +202,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see> is at it's minimum charge level.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}} is at it's minimum charge level.&#10;
+";
 		}
 	}
 }

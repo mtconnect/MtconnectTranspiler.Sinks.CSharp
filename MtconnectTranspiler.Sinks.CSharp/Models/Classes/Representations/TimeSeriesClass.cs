@@ -6,17 +6,36 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.Representations
 {
 	/// <summary>
-	/// <see cref="Representation">Representation</see> for an <see cref="Observation">Observation</see> composed of a series of sampled data. /// Description
+	﻿/// <see cref="Representation">Representation</see> for an <see cref="Observation">Observation</see> composed of a series of sampled data.<br /><br/><br />Description<br/><br /><see cref="TimeSeries">TimeSeries</see> for an <see cref="Observation">Observation</see> is defined by the associated <see cref="DataItem.representation">representation in DataItem</see> as <c>TIME_SERIES</c>.<br /><br /><see cref="DataItem.representation">representation in DataItem</see> as <c>TIME_SERIES</c> <b>MUST</b> have <see cref="DataItem.category">category in DataItem</see> of <c>SAMPLE</c>.<br /><br />{{figure(TemperatureTimeSeries)}} shows the model for <see cref="Temperature">Temperature</see> (<see cref="Sample">Sample</see> type) with a <see cref="Representation">Representation</see> type of <see cref="TimeSeries">TimeSeries</see>. <br /><br />![TemperatureTimeSeries](figures/TemperatureTimeSeries.png "TemperatureTimeSeries"){: width="0.8"}<br /><br />> Note: See <see cref="Representation Schema Diagrams">Representation Schema Diagrams</see> for XML schema.<br /><br /><see cref="TimeSeries">TimeSeries</see> <b>MUST</b> report multiple values at fixed intervals in a single <see cref="Observation">Observation</see>. At minimum, one of <see cref="DataItem.sampleRate">sampleRate in DataItem</see> or <see cref="Sample.sampleRate">sampleRate in Sample</see> <b>MUST</b> be specified. When both are specified, the <see cref="Sample.sampleRate">sampleRate in Sample</see> supersedes the <see cref="DataItem.sampleRate">sampleRate in DataItem</see>.<br /><br /><see cref="Observation.timestamp">timestamp in Observation</see> <b>MUST</b> be set to the time the last value was observed. The <see cref="Sample.duration">duration in Sample</see> <b>MAY</b> indicate the time interval from the first to the last value in the series.<br /><br /><see cref="Value Properties of TimeSeries">Value Properties of TimeSeries</see> defines additional attributes for an <see cref="Observation">Observation</see> with <see cref="TimeSeries">TimeSeries</see> <see cref="Representation">Representation</see> type.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531117_257703_25734">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TimeSeriesClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531117_257703_25734";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of a series of sampled data. /// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Representation)}} for an {{block(Observation)}} composed of a series of sampled data.
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;
+{{block(TimeSeries)}} for an {{block(Observation)}} is defined by the associated {{property(DataItem::representation)}} as `TIME_SERIES`.
+
+{{property(DataItem::representation)}} as `TIME_SERIES` **MUST** have {{property(DataItem::category)}} of `SAMPLE`.
+
+{{figure(TemperatureTimeSeries)}} shows the model for {{block(Temperature)}} ({{block(Sample)}} type) with a {{block(Representation)}} type of {{block(TimeSeries)}}. 
+
+![TemperatureTimeSeries](figures/TemperatureTimeSeries.png ""TemperatureTimeSeries""){: width=""0.8""}
+
+> Note: See {{sect(Representation Schema Diagrams)}} for XML schema.
+
+{{block(TimeSeries)}} **MUST** report multiple values at fixed intervals in a single {{block(Observation)}}. At minimum, one of {{property(DataItem::sampleRate)}} or {{property(Sample::sampleRate)}} **MUST** be specified. When both are specified, the {{property(Sample::sampleRate)}} supersedes the {{property(DataItem::sampleRate)}}.
+
+{{property(Observation::timestamp)}} **MUST** be set to the time the last value was observed. The {{property(Sample::duration)}} **MAY** indicate the time interval from the first to the last value in the series.
+
+{{sect(Value Properties of TimeSeries)}} defines additional attributes for an {{block(Observation)}} with {{block(TimeSeries)}} {{block(Representation)}} type.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "TimeSeries";
@@ -55,7 +74,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// </summary>
 			public SampleCountProperty SampleCount { get; } = new SampleCountProperty();
 			/// <summary>
-			/// number of values given for the <see cref="Observation">Observation</see>.
+			﻿/// number of values given for the <see cref="Observation">Observation</see>.<br/><br />
+
 			/// </summary>
 			public sealed class SampleCountProperty : IProperty
 			{
@@ -75,7 +95,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "sampleCount";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of a series of sampled data. /// Description";
+				public string Summary => @"&#10;&#10;&#10;number of values given for the {{block(Observation)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -126,7 +147,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> composed of a series of sampled data. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

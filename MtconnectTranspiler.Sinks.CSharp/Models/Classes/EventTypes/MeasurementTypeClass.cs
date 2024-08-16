@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::MEASUREMENT_TYPE">EventEnum::MEASUREMENT_TYPE</see>  Examples: <c>POINT</c>, <c>RADIUS</c>, <c>ANGLE</c>, <c>LENGTH</c>, etc.
+	﻿/// <see cref="EventEnum.MEASUREMENT_TYPE">EventEnum.MEASUREMENT_TYPE</see><br /><br />Examples: <c>POINT</c>, <c>RADIUS</c>, <c>ANGLE</c>, <c>LENGTH</c>, etc.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678250722376_138912_18550">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MeasurementTypeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678250722376_138912_18550";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::MEASUREMENT_TYPE"">EventEnum::MEASUREMENT_TYPE</see>  Examples: <c>POINT</c>, <c>RADIUS</c>, <c>ANGLE</c>, <c>LENGTH</c>, etc.";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::MEASUREMENT_TYPE)}}
+
+Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MeasurementType";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::MEASUREMENT_TYPE"">EventEnum::MEASUREMENT_TYPE</see>  Examples: <c>POINT</c>, <c>RADIUS</c>, <c>ANGLE</c>, <c>LENGTH</c>, etc.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

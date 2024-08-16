@@ -5,7 +5,7 @@ using Package = Mtconnect.Imports.UnitImports;
 
 namespace Mtconnect.Imports
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class UnitImportsPackage : IPackage
 	{
 		/// <inheritdoc />

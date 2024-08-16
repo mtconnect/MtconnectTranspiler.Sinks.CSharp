@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>agent</i> for the <i>MTConnect Information Model</i>.
+	﻿/// <i>agent</i> for the <i>MTConnect Information Model</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375170_484237_2032">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MTConnectAgentGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375170_484237_2032";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>agent</i> for the <i>MTConnect Information Model</i>.";
+		public string Summary => @"&#10;&#10;&#10;{{term(agent)}} for the {{term(MTConnect Information Model)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MTConnect Agent";

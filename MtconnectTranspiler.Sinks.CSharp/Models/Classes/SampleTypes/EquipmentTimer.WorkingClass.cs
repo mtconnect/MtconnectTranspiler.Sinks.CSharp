@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// time that a piece of equipment is performing any activity the equipment is active and performing a function under load or not.  Example: For traditional machine tools, this includes <c>LOADED</c>, plus rapid moves, tool changes, etc.
+	﻿/// time that a piece of equipment is performing any activity the equipment is active and performing a function under load or not.<br /><br />Example: For traditional machine tools, this includes <c>LOADED</c>, plus rapid moves, tool changes, etc.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218301_334225_1809">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EquipmentTimerWorkingClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218301_334225_1809";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// time that a piece of equipment is performing any activity the equipment is active and performing a function under load or not.  Example: For traditional machine tools, this includes <c>LOADED</c>, plus rapid moves, tool changes, etc.";
+		public string Summary => @"&#10;&#10;&#10;time that a piece of equipment is performing any activity the equipment is active and performing a function under load or not.
+
+Example: For traditional machine tools, this includes `LOADED`, plus rapid moves, tool changes, etc.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "EquipmentTimer.Working";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// time that a piece of equipment is performing any activity the equipment is active and performing a function under load or not.  Example: For traditional machine tools, this includes <c>LOADED</c>, plus rapid moves, tool changes, etc.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

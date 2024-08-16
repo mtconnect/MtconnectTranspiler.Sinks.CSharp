@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> that provides information related to an individual <i>feature</i>.
+	﻿/// <see cref="Component">Component</see> that provides information related to an individual <i>feature</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678029650656_503771_494">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FeatureOccurrenceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678029650656_503771_494";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} that provides information related to an individual {{term(feature)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "FeatureOccurrence";
@@ -79,7 +81,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesFeaturePersisitentId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -130,7 +132,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesFeatureMeasurement";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -181,7 +183,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesMeasurementType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -232,7 +234,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesCharacteristicPersistentId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -283,7 +285,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesCharacteristicStatus";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -334,7 +336,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesUncertainty";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -385,7 +387,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesUncertaintyType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -436,7 +438,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesMeasurementUnits";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -487,7 +489,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesMeasurementValue";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information related to an individual <i>feature</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

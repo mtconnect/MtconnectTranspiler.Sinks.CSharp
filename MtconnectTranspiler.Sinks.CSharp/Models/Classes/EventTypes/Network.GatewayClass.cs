@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// Gateway for the component network.
+	﻿/// Gateway for the component network.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587752236920_181237_3803">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class NetworkGatewayClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587752236920_181237_3803";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// Gateway for the component network.";
+		public string Summary => @"&#10;&#10;&#10;Gateway for the component network.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Network.Gateway";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// Gateway for the component network.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

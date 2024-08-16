@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
 	/// <summary>
-	/// total weight of the cutting tool in grams.   The force exerted by the mass of the cutting tool.
+	﻿/// total weight of the cutting tool in grams. <br /><br />The force exerted by the mass of the cutting tool.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119518_35850_1438">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class WeightClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119518_35850_1438";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// total weight of the cutting tool in grams.   The force exerted by the mass of the cutting tool.";
+		public string Summary => @"&#10;&#10;&#10;total weight of the cutting tool in grams. 
+
+The force exerted by the mass of the cutting tool.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Weight";
@@ -72,7 +76,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// total weight of the cutting tool in grams.   The force exerted by the mass of the cutting tool.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// total weight of the cutting tool in grams.   The force exerted by the mass of the cutting tool.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

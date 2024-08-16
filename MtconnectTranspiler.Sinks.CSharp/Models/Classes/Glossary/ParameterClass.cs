@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// variable that must be given a value during the execution of a program or a communications command.
+	﻿/// variable that must be given a value during the execution of a program or a communications command.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375178_564885_2057">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ParameterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375178_564885_2057";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// variable that must be given a value during the execution of a program or a communications command.";
+		public string Summary => @"&#10;&#10;&#10;variable that must be given a value during the execution of a program or a communications command.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "parameter";

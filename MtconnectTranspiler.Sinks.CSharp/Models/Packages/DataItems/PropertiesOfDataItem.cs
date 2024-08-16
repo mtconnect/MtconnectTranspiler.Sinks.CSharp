@@ -6,10 +6,11 @@ using Package = Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem;
 namespace Mtconnect.DeviceInformationModel.DataItems
 {
 	/// <summary>
-	/// This section provides additional semantic information for the Part Properties of <see cref="DataItem">DataItem</see>.  > Note: See <see cref="DataItems Schema Diagrams">DataItems Schema Diagrams</see> for XML schema of the elements for <see cref="DataItem">DataItem</see>.
+	﻿/// This section provides additional semantic information for the Part Properties of <see cref="DataItem">DataItem</see>.<br /><br />> Note: See <see cref="DataItems Schema Diagrams">DataItems Schema Diagrams</see> for XML schema of the elements for <see cref="DataItem">DataItem</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1589399339634_269147_34">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class PropertiesOfDataItemPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 		public string Name => "Properties of DataItem";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides additional semantic information for the Part Properties of <see cref=""DataItem"">DataItem</see>.  > Note: See <see cref=""DataItems Schema Diagrams"">DataItems Schema Diagrams</see> for XML schema of the elements for <see cref=""DataItem"">DataItem</see>.";
+		public string Summary => @"&#10;&#10;&#10;This section provides additional semantic information for the Part Properties of {{block(DataItem)}}.
+
+> Note: See {{sect(DataItems Schema Diagrams)}} for XML schema of the elements for {{block(DataItem)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

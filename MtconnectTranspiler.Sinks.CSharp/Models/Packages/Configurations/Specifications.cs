@@ -6,10 +6,11 @@ using Package = Mtconnect.DeviceInformationModel.Configurations.Specifications;
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="Specification">Specification</see> entity.  ![Specifications](figures/Specifications.png "Specifications"){: width="0.8"}  > Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.  ![Specification Example](figures/Specification%20Example.png "Specification Example"){: width="0.8"}  > Note: See {{lst(specification-example)}} for the <i>XML</i> representation of the same example.
+	﻿/// This section provides semantic information for the <see cref="Specification">Specification</see> entity.<br /><br />![Specifications](figures/Specifications.png "Specifications"){: width="0.8"}<br /><br />> Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![Specification Example](figures/Specification%20Example.png "Specification Example"){: width="0.8"}<br /><br />> Note: See {{lst(specification-example)}} for the <i>XML</i> representation of the same example.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579301667133_392891_7355">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class SpecificationsPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,16 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		public string Name => "Specifications";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""Specification"">Specification</see> entity.  ![Specifications](figures/Specifications.png ""Specifications""){: width=""0.8""}  > Note: See <see cref=""Configuration Schema Diagrams"">Configuration Schema Diagrams</see> for XML schema.  ![Specification Example](figures/Specification%20Example.png ""Specification Example""){: width=""0.8""}  > Note: See {{lst(specification-example)}} for the <i>XML</i> representation of the same example.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(Specification)}} entity.
+
+![Specifications](figures/Specifications.png ""Specifications""){: width=""0.8""}
+
+> Note: See {{sect(Configuration Schema Diagrams)}} for XML schema.
+
+![Specification Example](figures/Specification%20Example.png ""Specification Example""){: width=""0.8""}
+
+> Note: See {{lst(specification-example)}} for the {{term(XML)}} representation of the same example.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

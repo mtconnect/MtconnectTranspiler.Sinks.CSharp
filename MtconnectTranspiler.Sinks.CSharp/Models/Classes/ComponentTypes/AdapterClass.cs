@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> that provides information about the data source for an <i>MTConnect Agent</i>./// Description
+	﻿/// <see cref="Component">Component</see> that provides information about the data source for an <i>MTConnect Agent</i>.<br/><br />Description<br/>It <b>MAY</b> contain connectivity state of the data source and additional telemetry about the data source and source-specific information.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605101651646_782838_139">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AdapterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605101651646_782838_139";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> that provides information about the data source for an <i>MTConnect Agent</i>./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} that provides information about the data source for an {{term(MTConnect Agent)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;It **MAY** contain connectivity state of the data source and additional telemetry about the data source and source-specific information.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Adapter";
@@ -71,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "isAdapterOf";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that provides information about the data source for an <i>MTConnect Agent</i>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

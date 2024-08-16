@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// position provided by a measurement probe.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.
+	﻿/// position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218396_223513_2040">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PathPositionProbeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218396_223513_2040";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// position provided by a measurement probe.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.";
+		public string Summary => @"&#10;&#10;&#10;position provided by a measurement probe.
+
+**DEPRECATION WARNING**: May be deprecated in the future.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PathPosition.Probe";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// position provided by a measurement probe.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

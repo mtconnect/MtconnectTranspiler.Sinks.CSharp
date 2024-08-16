@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
 	/// <summary>
-	/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.
+	﻿/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119528_340813_1456">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FunctionalWidthClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119528_340813_1456";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.";
+		public string Summary => @"&#10;&#10;&#10;distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "FunctionalWidth";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// distance between the cutting reference point and the rear backing surface of a turning tool or the axis of a boring bar.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

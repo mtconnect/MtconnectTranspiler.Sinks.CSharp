@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> composed of functions that form the last link segment of a piece of equipment./// Description
+	﻿/// <see cref="System">System</see> composed of functions that form the last link segment of a piece of equipment.<br/><br />Description<br/>It is the part of a piece of equipment that interacts with the manufacturing process.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381988_757487_42237">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EndEffectorClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381988_757487_42237";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> composed of functions that form the last link segment of a piece of equipment./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} composed of functions that form the last link segment of a piece of equipment.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;It is the part of a piece of equipment that interacts with the manufacturing process.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "EndEffector";

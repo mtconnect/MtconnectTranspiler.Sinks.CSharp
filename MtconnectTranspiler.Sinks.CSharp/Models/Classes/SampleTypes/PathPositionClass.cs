@@ -6,17 +6,50 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// <see cref="SampleEnum::PATH_POSITION">SampleEnum::PATH_POSITION</see>  /// Example
+	﻿/// <see cref="SampleEnum.PATH_POSITION">SampleEnum.PATH_POSITION</see><br /><br /><br/><br />Example<br/>~~~~xml<br /><DataItem type='PATH_POSITION' id='pathposit1' units="MILLIMETER_3D"/><br />~~~~<br />{: caption="XML Device Model Example for <c>PathPosition</c> using <c>MILLIMETER_3D</c> unit"}<br /><br />~~~~xml<br /><PathPosition>10.0 0.0 20.0</PathPosition><br />~~~~<br />{: caption="XML Streams Response Example for <c>PathPosition</c> using <c>MILLIMETER_3D</c> unit"}<br /><br /><br />~~~~xml<br /><DataItem type='PATH_POSITION' id='pathposit1' representation="DATA_SET"><br />  <Definition><br />    <EntryDefinition key='X' units='MILLIMETER'><br />    <EntryDefinition key='Y' units='MILLIMETER'><br />    <EntryDefinition key='Z' units='MILLIMETER'><br />  </Definition><br /></DataItem><br />~~~~<br />{: caption="XML Device Model Example for <c>PathPosition</c> to demonstrate multi-dimensional representation using <c>DataSet</c> representation"}<br /><br />~~~~xml<br /><PathPositionDataSet id='pathposit1'><br />  <Entry key='X'>10.0</Entry><br />  <Entry key='Z'>20.0</Entry><br /></PathPositionDataSet><br />~~~~<br />{: caption="XML Streams Response Example for <c>PathPosition</c> to demonstrate multi-dimensional representation using <c>DataSet</c> representation"}<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218391_280410_2028">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PathPositionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218391_280410_2028";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""SampleEnum::PATH_POSITION"">SampleEnum::PATH_POSITION</see>  /// Example";
+		public string Summary => @"&#10;&#10;&#10;{{def(SampleEnum::PATH_POSITION)}}
+
+&#10;
+&#10;&#10;&#10;Example&#10;&#10;&#10;&#10;~~~~xml
+<DataItem type='PATH_POSITION' id='pathposit1' units=""MILLIMETER_3D""/>
+~~~~
+{: caption=""XML Device Model Example for `PathPosition` using `MILLIMETER_3D` unit""}
+
+~~~~xml
+<PathPosition>10.0 0.0 20.0</PathPosition>
+~~~~
+{: caption=""XML Streams Response Example for `PathPosition` using `MILLIMETER_3D` unit""}
+
+
+~~~~xml
+<DataItem type='PATH_POSITION' id='pathposit1' representation=""DATA_SET"">
+  <Definition>
+    <EntryDefinition key='X' units='MILLIMETER'>
+    <EntryDefinition key='Y' units='MILLIMETER'>
+    <EntryDefinition key='Z' units='MILLIMETER'>
+  </Definition>
+</DataItem>
+~~~~
+{: caption=""XML Device Model Example for `PathPosition` to demonstrate multi-dimensional representation using `DataSet` representation""}
+
+~~~~xml
+<PathPositionDataSet id='pathposit1'>
+  <Entry key='X'>10.0</Entry>
+  <Entry key='Z'>20.0</Entry>
+</PathPositionDataSet>
+~~~~
+{: caption=""XML Streams Response Example for `PathPosition` to demonstrate multi-dimensional representation using `DataSet` representation""}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PathPosition";
@@ -73,7 +106,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::PATH_POSITION"">SampleEnum::PATH_POSITION</see>  /// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +157,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::PATH_POSITION"">SampleEnum::PATH_POSITION</see>  /// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +208,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::PATH_POSITION"">SampleEnum::PATH_POSITION</see>  /// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

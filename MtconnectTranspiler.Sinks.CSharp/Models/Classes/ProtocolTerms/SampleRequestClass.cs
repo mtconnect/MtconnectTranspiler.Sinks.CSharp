@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectStreams Response Document</i> containing the <i>Observation Information Model</i> for a set of timestamped <i>observation</i>s made by <i>Component</i>s.
+	﻿/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectStreams Response Document</i> containing the <i>Observation Information Model</i> for a set of timestamped <i>observation</i>s made by <i>Component</i>s.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375184_107893_2081">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SampleRequestClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375184_107893_2081";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectStreams Response Document</i> containing the <i>Observation Information Model</i> for a set of timestamped <i>observation</i>s made by <i>Component</i>s.";
+		public string Summary => @"&#10;&#10;&#10;{{term(request)}} to an {{term(agent)}} to produce an {{term(MTConnectStreams Response Document)}} containing the {{term(Observation Information Model)}} for a set of timestamped {{termplural(observation)}} made by {{termplural(Component)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "sample request";

@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// constituent part or a basic unit of identifiable and definable data.
+	﻿/// constituent part or a basic unit of identifiable and definable data.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375158_867680_1986">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ElementClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375158_867680_1986";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// constituent part or a basic unit of identifiable and definable data.";
+		public string Summary => @"&#10;&#10;&#10;constituent part or a basic unit of identifiable and definable data.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "element";

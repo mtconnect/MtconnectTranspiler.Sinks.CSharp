@@ -6,17 +6,28 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components
 {
 	/// <summary>
-	/// logical or physical entity that provides a capability./// Description
+	﻿/// logical or physical entity that provides a capability.<br/><br />Description<br/><see cref="Component">Component</see> is an abstract entity and will be realized by specific <see cref="Component">Component</see> types for an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="Component Types">Component Types</see> for more details on the <see cref="Component">Component</see> types.<br /><br /><see cref="Component">Component</see> also provides structure for describing the <i>lower level</i> entities associated with it.<br /><br />At least one of <see cref="Component">Component</see>, <see cref="DataItem">DataItem</see>, or <see cref="Reference">Reference</see> entities <b>MUST</b> be provided for a <see cref="Component">Component</see>.<br /><br />![Component Example](figures/Component%20Example.png "Component Example"){: width="0.8"}<br /><br />> Note: See {{lst(component-example)}} for the <i>XML</i> representation of the same example.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_8548C620_467A_4f50_9A22_58D84B7E8779">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ComponentGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_8548C620_467A_4f50_9A22_58D84B7E8779";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+		public string Summary => @"&#10;&#10;&#10;logical or physical entity that provides a capability.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(Component)}} is an abstract entity and will be realized by specific {{block(Component)}} types for an {{block(MTConnectDevices)}} entity. See {{package(Component Types)}} for more details on the {{block(Component)}} types.
+
+{{block(Component)}} also provides structure for describing the {{term(lower level)}} entities associated with it.
+
+At least one of {{block(Component)}}, {{block(DataItem)}}, or {{block(Reference)}} entities **MUST** be provided for a {{block(Component)}}.
+
+![Component Example](figures/Component%20Example.png ""Component Example""){: width=""0.8""}
+
+> Note: See {{lst(component-example)}} for the {{term(XML)}} representation of the same example.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Component";
@@ -69,7 +80,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
 			/// <summary>
-			/// unique identifier for the <see cref="Component">Component</see>.
+			﻿/// unique identifier for the <see cref="Component">Component</see>.<br/><br />
+
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -89,7 +101,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "id";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for the {{block(Component)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +136,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// name of the <see cref="Component">Component</see>.  When provided, <see cref="Component::name" /> <b>MUST</b> be unique for all child <see cref="Component">Component</see> entities of a parent <see cref="Component">Component</see>.
+			﻿/// name of the <see cref="Component">Component</see>.<br /><br />When provided, <see cref="Component.name">name in Component</see> <b>MUST</b> be unique for all child <see cref="Component">Component</see> entities of a parent <see cref="Component">Component</see>.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -143,7 +157,10 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"&#10;&#10;&#10;name of the {{block(Component)}}.
+
+When provided, {{property(Component::name)}} **MUST** be unique for all child {{block(Component)}} entities of a parent {{block(Component)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -177,7 +194,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public NativeNameProperty NativeName { get; } = new NativeNameProperty();
 			/// <summary>
-			/// common name associated with <see cref="Component">Component</see>.
+			﻿/// common name associated with <see cref="Component">Component</see>.<br/><br />
+
 			/// </summary>
 			public sealed class NativeNameProperty : IProperty
 			{
@@ -197,7 +215,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "nativeName";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"&#10;&#10;&#10;common name associated with {{block(Component)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -231,7 +250,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public SampleIntervalProperty SampleInterval { get; } = new SampleIntervalProperty();
 			/// <summary>
-			/// interval in milliseconds between the completion of the reading of the data associated with the <see cref="Component">Component</see> until the beginning of the next sampling of that data.  This information may be used by client software applications to understand how often information from a <see cref="Component">Component</see> is expected to be refreshed.  The refresh rate for data from all child <see cref="Component">Component</see> entities will be the same as for the parent <see cref="Component">Component</see> element unless specifically overridden by another <see cref="Component::sampleInterval" /> provided for the child <see cref="Component">Component</see>.
+			﻿/// interval in milliseconds between the completion of the reading of the data associated with the <see cref="Component">Component</see> until the beginning of the next sampling of that data.<br /><br />This information may be used by client software applications to understand how often information from a <see cref="Component">Component</see> is expected to be refreshed.<br /><br />The refresh rate for data from all child <see cref="Component">Component</see> entities will be the<br />same as for the parent <see cref="Component">Component</see> element unless specifically overridden by another <see cref="Component.sampleInterval">sampleInterval in Component</see> provided for the child <see cref="Component">Component</see>.<br/><br />
+
 			/// </summary>
 			public sealed class SampleIntervalProperty : IProperty
 			{
@@ -251,7 +271,13 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "sampleInterval";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"&#10;&#10;&#10;interval in milliseconds between the completion of the reading of the data associated with the {{block(Component)}} until the beginning of the next sampling of that data.
+
+This information may be used by client software applications to understand how often information from a {{block(Component)}} is expected to be refreshed.
+
+The refresh rate for data from all child {{block(Component)}} entities will be the
+same as for the parent {{block(Component)}} element unless specifically overridden by another {{property(Component::sampleInterval)}} provided for the child {{block(Component)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -285,7 +311,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public SampleRateProperty SampleRate { get; } = new SampleRateProperty();
 			/// <summary>
-			/// <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>s. Replaced by <see cref="Component::sampleInterval" />.
+			﻿/// <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>. Replaced by <see cref="Component.sampleInterval">sampleInterval in Component</see>.<br/><br />
+
 			/// </summary>
 			public sealed class SampleRateProperty : IProperty
 			{
@@ -305,7 +332,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "sampleRate";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"&#10;&#10;&#10;**DEPRECATED** in *MTConnect Version 1.2*. Replaced by {{property(Component::sampleInterval)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -339,7 +367,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
 			/// <summary>
-			/// universally unique identifier for the <see cref="Component">Component</see>.
+			﻿/// universally unique identifier for the <see cref="Component">Component</see>.<br/><br />
+
 			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
@@ -359,7 +388,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "uuid";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"&#10;&#10;&#10;universally unique identifier for the {{block(Component)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -410,7 +440,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -461,7 +491,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -512,7 +542,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -563,7 +593,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "hasConfiguration";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -614,7 +644,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "isComponentOf";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -665,7 +695,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "observes";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -716,7 +746,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "madeObservation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -767,7 +797,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "hasReference";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -801,7 +831,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
 			/// <summary>
-			/// specifies the <see cref="CoordinateSystem">CoordinateSystem</see> for this <see cref="Component">Component</see> and its children.
+			﻿/// specifies the <see cref="CoordinateSystem">CoordinateSystem</see> for this <see cref="Component">Component</see> and its children.<br/><br />
+
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
@@ -821,7 +852,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"&#10;&#10;&#10;specifies the {{block(CoordinateSystem)}} for this {{block(Component)}} and its children.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -872,7 +904,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "hasComponentStream";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that provides a capability./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

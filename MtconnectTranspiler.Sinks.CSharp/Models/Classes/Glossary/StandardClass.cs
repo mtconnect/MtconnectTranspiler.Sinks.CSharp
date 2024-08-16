@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// <i>document</i> established by consensus that provides rules, guidelines, or characteristics for activities or their results.. <seealso href="https://www.google.com/search?q=ISO/IEC Guide 2:2004&btnI=I">ISO/IEC Guide 2:2004</seealso>
+	﻿/// <i>document</i> established by consensus that provides rules, guidelines, or characteristics for activities or their results.. <seealso href="https://www.google.com/search?q=ISO/IEC Guide 2:2004&btnI=I">ISO/IEC Guide 2:2004</seealso><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375187_860452_2093">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StandardClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375187_860452_2093";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>document</i> established by consensus that provides rules, guidelines, or characteristics for activities or their results.. <seealso href=""https://www.google.com/search?q=ISO/IEC Guide 2:2004&btnI=I"">ISO/IEC Guide 2:2004</seealso>";
+		public string Summary => @"&#10;&#10;&#10;{{term(document)}} established by consensus that provides rules, guidelines, or characteristics for activities or their results.. {{cite(ISO/IEC Guide 2:2004)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "standard";

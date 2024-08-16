@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1589825656758_905757_799">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ApplicationTypeEnum
 	{
 		/// <summary>
-		/// computer aided design files or drawings. 
+		﻿/// computer aided design files or drawings.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DESIGN,
 		/// <summary>
-		/// generic data.
+		﻿/// generic data.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DATA,
 		/// <summary>
-		/// documentation regarding a category of file.
+		﻿/// documentation regarding a category of file.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DOCUMENTATION,
 		/// <summary>
-		/// user instructions regarding the execution of a task. 
+		﻿/// user instructions regarding the execution of a task.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INSTRUCTIONS,
 		/// <summary>
-		/// data related to the history of a machine or process.
+		﻿/// data related to the history of a machine or process.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LOG,
 		/// <summary>
-		/// machine instructions to perform a process. 
+		﻿/// machine instructions to perform a process.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -72,8 +79,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1589825656758_905757_799">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ApplicationTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -105,12 +113,14 @@ namespace Mtconnect.DataTypes
 
 		private DESIGNValue _DESIGN;
 		/// <summary>
-		/// computer aided design files or drawings. 
+		﻿/// computer aided design files or drawings.<br /><br/><br />
+
 		/// </summary>
 		public DESIGNValue DESIGN => _DESIGN ?? (_DESIGN = new DESIGNValue());
 
 		/// <summary>
-		/// computer aided design files or drawings. 
+		﻿/// computer aided design files or drawings.<br /><br/><br />
+
 		/// </summary>
 		public sealed class DESIGNValue : IEnumInstance
 		{
@@ -127,16 +137,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// computer aided design files or drawings. ";
+			public string Summary => @"&#10;&#10;&#10;computer aided design files or drawings.&#10;
+";
 		}
 		private DATAValue _DATA;
 		/// <summary>
-		/// generic data.
+		﻿/// generic data.<br/><br />
+
 		/// </summary>
 		public DATAValue DATA => _DATA ?? (_DATA = new DATAValue());
 
 		/// <summary>
-		/// generic data.
+		﻿/// generic data.<br/><br />
+
 		/// </summary>
 		public sealed class DATAValue : IEnumInstance
 		{
@@ -153,16 +166,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// generic data.";
+			public string Summary => @"&#10;&#10;&#10;generic data.&#10;
+";
 		}
 		private DOCUMENTATIONValue _DOCUMENTATION;
 		/// <summary>
-		/// documentation regarding a category of file.
+		﻿/// documentation regarding a category of file.<br/><br />
+
 		/// </summary>
 		public DOCUMENTATIONValue DOCUMENTATION => _DOCUMENTATION ?? (_DOCUMENTATION = new DOCUMENTATIONValue());
 
 		/// <summary>
-		/// documentation regarding a category of file.
+		﻿/// documentation regarding a category of file.<br/><br />
+
 		/// </summary>
 		public sealed class DOCUMENTATIONValue : IEnumInstance
 		{
@@ -179,16 +195,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// documentation regarding a category of file.";
+			public string Summary => @"&#10;&#10;&#10;documentation regarding a category of file.&#10;
+";
 		}
 		private INSTRUCTIONSValue _INSTRUCTIONS;
 		/// <summary>
-		/// user instructions regarding the execution of a task. 
+		﻿/// user instructions regarding the execution of a task.<br /><br/><br />
+
 		/// </summary>
 		public INSTRUCTIONSValue INSTRUCTIONS => _INSTRUCTIONS ?? (_INSTRUCTIONS = new INSTRUCTIONSValue());
 
 		/// <summary>
-		/// user instructions regarding the execution of a task. 
+		﻿/// user instructions regarding the execution of a task.<br /><br/><br />
+
 		/// </summary>
 		public sealed class INSTRUCTIONSValue : IEnumInstance
 		{
@@ -205,16 +224,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// user instructions regarding the execution of a task. ";
+			public string Summary => @"&#10;&#10;&#10;user instructions regarding the execution of a task.&#10;
+";
 		}
 		private LOGValue _LOG;
 		/// <summary>
-		/// data related to the history of a machine or process.
+		﻿/// data related to the history of a machine or process.<br/><br />
+
 		/// </summary>
 		public LOGValue LOG => _LOG ?? (_LOG = new LOGValue());
 
 		/// <summary>
-		/// data related to the history of a machine or process.
+		﻿/// data related to the history of a machine or process.<br/><br />
+
 		/// </summary>
 		public sealed class LOGValue : IEnumInstance
 		{
@@ -231,16 +253,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// data related to the history of a machine or process.";
+			public string Summary => @"&#10;&#10;&#10;data related to the history of a machine or process.&#10;
+";
 		}
 		private PRODUCTION_PROGRAMValue _PRODUCTION_PROGRAM;
 		/// <summary>
-		/// machine instructions to perform a process. 
+		﻿/// machine instructions to perform a process.<br /><br/><br />
+
 		/// </summary>
 		public PRODUCTION_PROGRAMValue PRODUCTION_PROGRAM => _PRODUCTION_PROGRAM ?? (_PRODUCTION_PROGRAM = new PRODUCTION_PROGRAMValue());
 
 		/// <summary>
-		/// machine instructions to perform a process. 
+		﻿/// machine instructions to perform a process.<br /><br/><br />
+
 		/// </summary>
 		public sealed class PRODUCTION_PROGRAMValue : IEnumInstance
 		{
@@ -257,7 +282,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// machine instructions to perform a process. ";
+			public string Summary => @"&#10;&#10;&#10;machine instructions to perform a process.&#10;
+";
 		}
 	}
 }

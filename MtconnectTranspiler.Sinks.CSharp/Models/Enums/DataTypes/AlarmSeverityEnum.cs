@@ -5,6 +5,7 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968830721_843713_164">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -13,10 +14,11 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 	[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AlarmSeverityEnum
 	{
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -27,6 +29,7 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		CRITICAL,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,6 +40,7 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		ERROR,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,6 +51,7 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		WARNING,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,8 +65,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968830721_843713_164">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmSeverityEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />

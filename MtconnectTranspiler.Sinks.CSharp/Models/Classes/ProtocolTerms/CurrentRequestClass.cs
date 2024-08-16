@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectStreams Response Document</i> containing the <i>Observation Information Model</i> for a snapshot of the latest <i>observation</i>s at the moment of the <i>request</i> or at a given <i>sequence number</i>.
+	﻿/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectStreams Response Document</i> containing the <i>Observation Information Model</i> for a snapshot of the latest <i>observation</i>s at the moment of the <i>request</i> or at a given <i>sequence number</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375151_897599_1970">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CurrentRequestClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375151_897599_1970";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectStreams Response Document</i> containing the <i>Observation Information Model</i> for a snapshot of the latest <i>observation</i>s at the moment of the <i>request</i> or at a given <i>sequence number</i>.";
+		public string Summary => @"&#10;&#10;&#10;{{term(request)}} to an {{term(agent)}} to produce an {{term(MTConnectStreams Response Document)}} containing the {{term(Observation Information Model)}} for a snapshot of the latest {{termplural(observation)}} at the moment of the {{term(request)}} or at a given {{term(sequence number)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "current request";

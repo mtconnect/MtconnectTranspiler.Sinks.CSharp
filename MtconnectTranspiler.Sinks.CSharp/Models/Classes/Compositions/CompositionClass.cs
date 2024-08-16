@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Compositions
 {
 	/// <summary>
-	/// functional part of a piece of equipment contained within a <see cref="Component">Component</see>./// Description
+	﻿/// functional part of a piece of equipment contained within a <see cref="Component">Component</see>.<br/><br />Description<br/><see cref="Composition">Composition</see> <b>MUST NOT</b> have child <see cref="Component">Component</see>, <see cref="Composition">Composition</see>, or <see cref="DataItems">DataItems</see> elements.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1658936424016_561586_139">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1658936424016_561586_139";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
+		public string Summary => @"&#10;&#10;&#10;functional part of a piece of equipment contained within a {{block(Component)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(Composition)}} **MUST NOT** have child {{block(Component)}}, {{block(Composition)}}, or {{block(DataItems)}} elements.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Composition";
@@ -73,7 +76,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public string Name => "isCompositionOf";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -124,7 +127,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public string Name => "hasConfiguration";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -209,7 +212,8 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
 			/// <summary>
-			/// unique identifier for the <see cref="Composition">Composition</see> element.
+			﻿/// unique identifier for the <see cref="Composition">Composition</see> element.<br/><br />
+
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -229,7 +233,8 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public string Name => "id";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for the {{block(Composition)}} element.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -263,7 +268,8 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of <see cref="Composition">Composition</see>.
+			﻿/// type of <see cref="Composition">Composition</see>.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -283,7 +289,8 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;type of {{block(Composition)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -317,7 +324,8 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// name of the <see cref="Composition">Composition</see> element.
+			﻿/// name of the <see cref="Composition">Composition</see> element.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -337,7 +345,8 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;name of the {{block(Composition)}} element.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -371,7 +380,8 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
 			/// <summary>
-			/// universally unique identifier for the <see cref="Composition">Composition</see>.
+			﻿/// universally unique identifier for the <see cref="Composition">Composition</see>.<br/><br />
+
 			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
@@ -391,7 +401,8 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 				public string Name => "uuid";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// functional part of a piece of equipment contained within a <see cref=""Component"">Component</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;universally unique identifier for the {{block(Composition)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

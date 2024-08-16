@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
-	/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.
+	﻿/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_C04DCC77_16E8_4cef_92D4_B777AFC52570">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConfigurationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_C04DCC77_16E8_4cef_92D4_B777AFC52570";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+		public string Summary => @"&#10;&#10;&#10;technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Configuration";
@@ -80,7 +82,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "isConfigurationFor";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -131,7 +133,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "hasSolidModel";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -182,7 +184,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "hasSensorConfiguration";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -233,7 +235,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "hasMotion";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -284,7 +286,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "hasRelationship";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -335,7 +337,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "hasCoordinateSystem";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -386,7 +388,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "hasSpecification";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -437,7 +439,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "isConfigurationFor";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -488,7 +490,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "hasImageFile";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -539,7 +541,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				public string Name => "hasPowerSource";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

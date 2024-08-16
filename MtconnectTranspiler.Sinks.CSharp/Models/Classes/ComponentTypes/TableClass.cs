@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// leaf <see cref="Component">Component</see> composed of a surface for holding an object or material.
+	﻿/// leaf <see cref="Component">Component</see> composed of a surface for holding an object or material.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580312106476_995417_44462">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TableClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580312106476_995417_44462";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a surface for holding an object or material.";
+		public string Summary => @"&#10;&#10;&#10;leaf {{block(Component)}} composed of a surface for holding an object or material.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Table";
@@ -72,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a surface for holding an object or material.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a surface for holding an object or material.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

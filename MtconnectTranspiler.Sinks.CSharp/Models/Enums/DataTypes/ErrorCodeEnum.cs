@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579560813203_683279_6795">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ErrorCodeEnum
 	{
 		/// <summary>
-		/// <i>request</i> for information specifies an <see cref="Asset">Asset</see> that is not recognized by the <i>agent</i>.
+		﻿/// <i>request</i> for information specifies an <see cref="Asset">Asset</see> that is not recognized by the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ASSET_NOT_FOUND,
 		/// <summary>
-		/// <i>agent</i> experienced an error while attempting to published the requested information.
+		﻿/// <i>agent</i> experienced an error while attempting to published the requested information.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INTERNAL_ERROR,
 		/// <summary>
-		/// <i>request</i> contains information that was not recognized by the <i>agent</i>.
+		﻿/// <i>request</i> contains information that was not recognized by the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INVALID_REQUEST,
 		/// <summary>
-		/// <i>URI</i> provided was incorrect.
+		﻿/// <i>URI</i> provided was incorrect.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INVALID_URI,
 		/// <summary>
-		/// <i>XPath</i> identified in the <i>request</i> for information could not be parsed correctly by the <i>agent</i>.  This could be caused by an invalid syntax or the <i>XPath</i> did not match a valid identify for any information stored in the <i>agent</i>. 
+		﻿/// <i>XPath</i> identified in the <i>request</i> for information could not be parsed correctly by the <i>agent</i>.<br /><br />This could be caused by an invalid syntax or the <i>XPath</i> did not match a valid identify for any information stored in the <i>agent</i>. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INVALID_XPATH,
 		/// <summary>
-		/// identity of the <see cref="Device">Device</see> specified in the <i>request</i> for information is not associated with the <i>agent</i>.
+		﻿/// identity of the <see cref="Device">Device</see> specified in the <i>request</i> for information is not associated with the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,7 +76,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NO_DEVICE,
 		/// <summary>
-		/// <i>request</i> for information specifies <i>streaming data</i> that includes sequence number(s) for pieces of data that are beyond the end of the <i>buffer</i>.
+		﻿/// <i>request</i> for information specifies <i>streaming data</i> that includes sequence number(s) for pieces of data that are beyond the end of the <i>buffer</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,7 +86,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OUT_OF_RANGE,
 		/// <summary>
-		/// <i>agent</i> was unable to interpret the query.  The query parameters do not contain valid values or include an invalid parameter.
+		﻿/// <i>agent</i> was unable to interpret the query.<br /><br />The query parameters do not contain valid values or include an invalid parameter.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,7 +96,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		QUERY_ERROR,
 		/// <summary>
-		/// <c>count</c> parameter provided in the <i>request</i> for information requires either of the following:  * <i>streaming data</i> that includes more pieces of data than the <i>agent</i> is capable of organizing in an <i>MTConnectStreams Response Document</i>.   * <see cref="Assets">Assets</see> that include more <see cref="Asset">Asset</see> in an <i>MTConnectAssets Response Document</i> than the <i>agent</i> is capable of handling. 
+		﻿/// <c>count</c> parameter provided in the <i>request</i> for information requires either of the following:<br /><br />* <i>streaming data</i> that includes more pieces of data than the <i>agent</i> is capable of organizing in an <i>MTConnectStreams Response Document</i>. <br /><br />* <see cref="Assets">Assets</see> that include more <see cref="Asset">Asset</see> in an <i>MTConnectAssets Response Document</i> than the <i>agent</i> is capable of handling. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -96,7 +106,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOO_MANY,
 		/// <summary>
-		/// <i>requester</i> does not have sufficient permissions to access the requested information.
+		﻿/// <i>requester</i> does not have sufficient permissions to access the requested information.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,7 +116,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UNAUTHORIZED,
 		/// <summary>
-		/// valid <i>request</i> was provided, but the <i>agent</i> does not support the feature or type of <i>request</i>.
+		﻿/// valid <i>request</i> was provided, but the <i>agent</i> does not support the feature or type of <i>request</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -117,8 +129,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579560813203_683279_6795">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ErrorCodeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -155,12 +168,14 @@ namespace Mtconnect.DataTypes
 
 		private ASSET_NOT_FOUNDValue _ASSET_NOT_FOUND;
 		/// <summary>
-		/// <i>request</i> for information specifies an <see cref="Asset">Asset</see> that is not recognized by the <i>agent</i>.
+		﻿/// <i>request</i> for information specifies an <see cref="Asset">Asset</see> that is not recognized by the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		public ASSET_NOT_FOUNDValue ASSET_NOT_FOUND => _ASSET_NOT_FOUND ?? (_ASSET_NOT_FOUND = new ASSET_NOT_FOUNDValue());
 
 		/// <summary>
-		/// <i>request</i> for information specifies an <see cref="Asset">Asset</see> that is not recognized by the <i>agent</i>.
+		﻿/// <i>request</i> for information specifies an <see cref="Asset">Asset</see> that is not recognized by the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		public sealed class ASSET_NOT_FOUNDValue : IEnumInstance
 		{
@@ -177,16 +192,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>request</i> for information specifies an <see cref=""Asset"">Asset</see> that is not recognized by the <i>agent</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(request)}} for information specifies an {{block(Asset)}} that is not recognized by the {{term(agent)}}.&#10;
+";
 		}
 		private INTERNAL_ERRORValue _INTERNAL_ERROR;
 		/// <summary>
-		/// <i>agent</i> experienced an error while attempting to published the requested information.
+		﻿/// <i>agent</i> experienced an error while attempting to published the requested information.<br/><br />
+
 		/// </summary>
 		public INTERNAL_ERRORValue INTERNAL_ERROR => _INTERNAL_ERROR ?? (_INTERNAL_ERROR = new INTERNAL_ERRORValue());
 
 		/// <summary>
-		/// <i>agent</i> experienced an error while attempting to published the requested information.
+		﻿/// <i>agent</i> experienced an error while attempting to published the requested information.<br/><br />
+
 		/// </summary>
 		public sealed class INTERNAL_ERRORValue : IEnumInstance
 		{
@@ -203,16 +221,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>agent</i> experienced an error while attempting to published the requested information.";
+			public string Summary => @"&#10;&#10;&#10;{{term(agent)}} experienced an error while attempting to published the requested information.&#10;
+";
 		}
 		private INVALID_REQUESTValue _INVALID_REQUEST;
 		/// <summary>
-		/// <i>request</i> contains information that was not recognized by the <i>agent</i>.
+		﻿/// <i>request</i> contains information that was not recognized by the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		public INVALID_REQUESTValue INVALID_REQUEST => _INVALID_REQUEST ?? (_INVALID_REQUEST = new INVALID_REQUESTValue());
 
 		/// <summary>
-		/// <i>request</i> contains information that was not recognized by the <i>agent</i>.
+		﻿/// <i>request</i> contains information that was not recognized by the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		public sealed class INVALID_REQUESTValue : IEnumInstance
 		{
@@ -229,16 +250,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>request</i> contains information that was not recognized by the <i>agent</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(request)}} contains information that was not recognized by the {{term(agent)}}.&#10;
+";
 		}
 		private INVALID_URIValue _INVALID_URI;
 		/// <summary>
-		/// <i>URI</i> provided was incorrect.
+		﻿/// <i>URI</i> provided was incorrect.<br/><br />
+
 		/// </summary>
 		public INVALID_URIValue INVALID_URI => _INVALID_URI ?? (_INVALID_URI = new INVALID_URIValue());
 
 		/// <summary>
-		/// <i>URI</i> provided was incorrect.
+		﻿/// <i>URI</i> provided was incorrect.<br/><br />
+
 		/// </summary>
 		public sealed class INVALID_URIValue : IEnumInstance
 		{
@@ -255,16 +279,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>URI</i> provided was incorrect.";
+			public string Summary => @"&#10;&#10;&#10;{{term(URI)}} provided was incorrect.&#10;
+";
 		}
 		private INVALID_XPATHValue _INVALID_XPATH;
 		/// <summary>
-		/// <i>XPath</i> identified in the <i>request</i> for information could not be parsed correctly by the <i>agent</i>.  This could be caused by an invalid syntax or the <i>XPath</i> did not match a valid identify for any information stored in the <i>agent</i>. 
+		﻿/// <i>XPath</i> identified in the <i>request</i> for information could not be parsed correctly by the <i>agent</i>.<br /><br />This could be caused by an invalid syntax or the <i>XPath</i> did not match a valid identify for any information stored in the <i>agent</i>. <br/><br />
+
 		/// </summary>
 		public INVALID_XPATHValue INVALID_XPATH => _INVALID_XPATH ?? (_INVALID_XPATH = new INVALID_XPATHValue());
 
 		/// <summary>
-		/// <i>XPath</i> identified in the <i>request</i> for information could not be parsed correctly by the <i>agent</i>.  This could be caused by an invalid syntax or the <i>XPath</i> did not match a valid identify for any information stored in the <i>agent</i>. 
+		﻿/// <i>XPath</i> identified in the <i>request</i> for information could not be parsed correctly by the <i>agent</i>.<br /><br />This could be caused by an invalid syntax or the <i>XPath</i> did not match a valid identify for any information stored in the <i>agent</i>. <br/><br />
+
 		/// </summary>
 		public sealed class INVALID_XPATHValue : IEnumInstance
 		{
@@ -281,16 +308,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>XPath</i> identified in the <i>request</i> for information could not be parsed correctly by the <i>agent</i>.  This could be caused by an invalid syntax or the <i>XPath</i> did not match a valid identify for any information stored in the <i>agent</i>. ";
+			public string Summary => @"&#10;&#10;&#10;{{term(XPath)}} identified in the {{term(request)}} for information could not be parsed correctly by the {{term(agent)}}.
+
+This could be caused by an invalid syntax or the {{term(XPath)}} did not match a valid identify for any information stored in the {{term(agent)}}. &#10;
+";
 		}
 		private NO_DEVICEValue _NO_DEVICE;
 		/// <summary>
-		/// identity of the <see cref="Device">Device</see> specified in the <i>request</i> for information is not associated with the <i>agent</i>.
+		﻿/// identity of the <see cref="Device">Device</see> specified in the <i>request</i> for information is not associated with the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		public NO_DEVICEValue NO_DEVICE => _NO_DEVICE ?? (_NO_DEVICE = new NO_DEVICEValue());
 
 		/// <summary>
-		/// identity of the <see cref="Device">Device</see> specified in the <i>request</i> for information is not associated with the <i>agent</i>.
+		﻿/// identity of the <see cref="Device">Device</see> specified in the <i>request</i> for information is not associated with the <i>agent</i>.<br/><br />
+
 		/// </summary>
 		public sealed class NO_DEVICEValue : IEnumInstance
 		{
@@ -307,16 +339,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identity of the <see cref=""Device"">Device</see> specified in the <i>request</i> for information is not associated with the <i>agent</i>.";
+			public string Summary => @"&#10;&#10;&#10;identity of the {{block(Device)}} specified in the {{term(request)}} for information is not associated with the {{term(agent)}}.&#10;
+";
 		}
 		private OUT_OF_RANGEValue _OUT_OF_RANGE;
 		/// <summary>
-		/// <i>request</i> for information specifies <i>streaming data</i> that includes sequence number(s) for pieces of data that are beyond the end of the <i>buffer</i>.
+		﻿/// <i>request</i> for information specifies <i>streaming data</i> that includes sequence number(s) for pieces of data that are beyond the end of the <i>buffer</i>.<br/><br />
+
 		/// </summary>
 		public OUT_OF_RANGEValue OUT_OF_RANGE => _OUT_OF_RANGE ?? (_OUT_OF_RANGE = new OUT_OF_RANGEValue());
 
 		/// <summary>
-		/// <i>request</i> for information specifies <i>streaming data</i> that includes sequence number(s) for pieces of data that are beyond the end of the <i>buffer</i>.
+		﻿/// <i>request</i> for information specifies <i>streaming data</i> that includes sequence number(s) for pieces of data that are beyond the end of the <i>buffer</i>.<br/><br />
+
 		/// </summary>
 		public sealed class OUT_OF_RANGEValue : IEnumInstance
 		{
@@ -333,16 +368,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>request</i> for information specifies <i>streaming data</i> that includes sequence number(s) for pieces of data that are beyond the end of the <i>buffer</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(request)}} for information specifies {{term(streaming data)}} that includes sequence number(s) for pieces of data that are beyond the end of the {{term(buffer)}}.&#10;
+";
 		}
 		private QUERY_ERRORValue _QUERY_ERROR;
 		/// <summary>
-		/// <i>agent</i> was unable to interpret the query.  The query parameters do not contain valid values or include an invalid parameter.
+		﻿/// <i>agent</i> was unable to interpret the query.<br /><br />The query parameters do not contain valid values or include an invalid parameter.<br/><br />
+
 		/// </summary>
 		public QUERY_ERRORValue QUERY_ERROR => _QUERY_ERROR ?? (_QUERY_ERROR = new QUERY_ERRORValue());
 
 		/// <summary>
-		/// <i>agent</i> was unable to interpret the query.  The query parameters do not contain valid values or include an invalid parameter.
+		﻿/// <i>agent</i> was unable to interpret the query.<br /><br />The query parameters do not contain valid values or include an invalid parameter.<br/><br />
+
 		/// </summary>
 		public sealed class QUERY_ERRORValue : IEnumInstance
 		{
@@ -359,16 +397,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>agent</i> was unable to interpret the query.  The query parameters do not contain valid values or include an invalid parameter.";
+			public string Summary => @"&#10;&#10;&#10;{{term(agent)}} was unable to interpret the query.
+
+The query parameters do not contain valid values or include an invalid parameter.&#10;
+";
 		}
 		private TOO_MANYValue _TOO_MANY;
 		/// <summary>
-		/// <c>count</c> parameter provided in the <i>request</i> for information requires either of the following:  * <i>streaming data</i> that includes more pieces of data than the <i>agent</i> is capable of organizing in an <i>MTConnectStreams Response Document</i>.   * <see cref="Assets">Assets</see> that include more <see cref="Asset">Asset</see> in an <i>MTConnectAssets Response Document</i> than the <i>agent</i> is capable of handling. 
+		﻿/// <c>count</c> parameter provided in the <i>request</i> for information requires either of the following:<br /><br />* <i>streaming data</i> that includes more pieces of data than the <i>agent</i> is capable of organizing in an <i>MTConnectStreams Response Document</i>. <br /><br />* <see cref="Assets">Assets</see> that include more <see cref="Asset">Asset</see> in an <i>MTConnectAssets Response Document</i> than the <i>agent</i> is capable of handling. <br/><br />
+
 		/// </summary>
 		public TOO_MANYValue TOO_MANY => _TOO_MANY ?? (_TOO_MANY = new TOO_MANYValue());
 
 		/// <summary>
-		/// <c>count</c> parameter provided in the <i>request</i> for information requires either of the following:  * <i>streaming data</i> that includes more pieces of data than the <i>agent</i> is capable of organizing in an <i>MTConnectStreams Response Document</i>.   * <see cref="Assets">Assets</see> that include more <see cref="Asset">Asset</see> in an <i>MTConnectAssets Response Document</i> than the <i>agent</i> is capable of handling. 
+		﻿/// <c>count</c> parameter provided in the <i>request</i> for information requires either of the following:<br /><br />* <i>streaming data</i> that includes more pieces of data than the <i>agent</i> is capable of organizing in an <i>MTConnectStreams Response Document</i>. <br /><br />* <see cref="Assets">Assets</see> that include more <see cref="Asset">Asset</see> in an <i>MTConnectAssets Response Document</i> than the <i>agent</i> is capable of handling. <br/><br />
+
 		/// </summary>
 		public sealed class TOO_MANYValue : IEnumInstance
 		{
@@ -385,16 +428,23 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <c>count</c> parameter provided in the <i>request</i> for information requires either of the following:  * <i>streaming data</i> that includes more pieces of data than the <i>agent</i> is capable of organizing in an <i>MTConnectStreams Response Document</i>.   * <see cref=""Assets"">Assets</see> that include more <see cref=""Asset"">Asset</see> in an <i>MTConnectAssets Response Document</i> than the <i>agent</i> is capable of handling. ";
+			public string Summary => @"&#10;&#10;&#10;`count` parameter provided in the {{term(request)}} for information requires either of the following:
+
+* {{term(streaming data)}} that includes more pieces of data than the {{term(agent)}} is capable of organizing in an {{term(MTConnectStreams Response Document)}}. 
+
+* {{block(Assets)}} that include more {{block(Asset)}} in an {{term(MTConnectAssets Response Document)}} than the {{term(agent)}} is capable of handling. &#10;
+";
 		}
 		private UNAUTHORIZEDValue _UNAUTHORIZED;
 		/// <summary>
-		/// <i>requester</i> does not have sufficient permissions to access the requested information.
+		﻿/// <i>requester</i> does not have sufficient permissions to access the requested information.<br/><br />
+
 		/// </summary>
 		public UNAUTHORIZEDValue UNAUTHORIZED => _UNAUTHORIZED ?? (_UNAUTHORIZED = new UNAUTHORIZEDValue());
 
 		/// <summary>
-		/// <i>requester</i> does not have sufficient permissions to access the requested information.
+		﻿/// <i>requester</i> does not have sufficient permissions to access the requested information.<br/><br />
+
 		/// </summary>
 		public sealed class UNAUTHORIZEDValue : IEnumInstance
 		{
@@ -411,16 +461,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>requester</i> does not have sufficient permissions to access the requested information.";
+			public string Summary => @"&#10;&#10;&#10;{{term(requester)}} does not have sufficient permissions to access the requested information.&#10;
+";
 		}
 		private UNSUPPORTEDValue _UNSUPPORTED;
 		/// <summary>
-		/// valid <i>request</i> was provided, but the <i>agent</i> does not support the feature or type of <i>request</i>.
+		﻿/// valid <i>request</i> was provided, but the <i>agent</i> does not support the feature or type of <i>request</i>.<br/><br />
+
 		/// </summary>
 		public UNSUPPORTEDValue UNSUPPORTED => _UNSUPPORTED ?? (_UNSUPPORTED = new UNSUPPORTEDValue());
 
 		/// <summary>
-		/// valid <i>request</i> was provided, but the <i>agent</i> does not support the feature or type of <i>request</i>.
+		﻿/// valid <i>request</i> was provided, but the <i>agent</i> does not support the feature or type of <i>request</i>.<br/><br />
+
 		/// </summary>
 		public sealed class UNSUPPORTEDValue : IEnumInstance
 		{
@@ -437,7 +490,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// valid <i>request</i> was provided, but the <i>agent</i> does not support the feature or type of <i>request</i>.";
+			public string Summary => @"&#10;&#10;&#10;valid {{term(request)}} was provided, but the {{term(agent)}} does not support the feature or type of {{term(request)}}.&#10;
+";
 		}
 	}
 }

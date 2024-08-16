@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
 	/// <summary>
-	/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.
+	﻿/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119517_195399_1435">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProtrudingLengthClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119517_195399_1435";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.";
+		public string Summary => @"&#10;&#10;&#10;dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProtrudingLength";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// dimension from the yz-plane to the furthest point of the tool item or adaptive item measured in the -X direction.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

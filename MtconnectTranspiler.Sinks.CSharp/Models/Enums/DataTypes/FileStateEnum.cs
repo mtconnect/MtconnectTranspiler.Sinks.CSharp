@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605276722719_257725_310">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FileStateEnum
 	{
 		/// <summary>
-		/// used for processes other than production or otherwise defined.
+		﻿/// used for processes other than production or otherwise defined.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EXPERIMENTAL,
 		/// <summary>
-		/// used for production processes. 
+		﻿/// used for production processes.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PRODUCTION,
 		/// <summary>
-		/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>. 
+		﻿/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605276722719_257725_310">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FileStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private EXPERIMENTALValue _EXPERIMENTAL;
 		/// <summary>
-		/// used for processes other than production or otherwise defined.
+		﻿/// used for processes other than production or otherwise defined.<br/><br />
+
 		/// </summary>
 		public EXPERIMENTALValue EXPERIMENTAL => _EXPERIMENTAL ?? (_EXPERIMENTAL = new EXPERIMENTALValue());
 
 		/// <summary>
-		/// used for processes other than production or otherwise defined.
+		﻿/// used for processes other than production or otherwise defined.<br/><br />
+
 		/// </summary>
 		public sealed class EXPERIMENTALValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// used for processes other than production or otherwise defined.";
+			public string Summary => @"&#10;&#10;&#10;used for processes other than production or otherwise defined.&#10;
+";
 		}
 		private PRODUCTIONValue _PRODUCTION;
 		/// <summary>
-		/// used for production processes. 
+		﻿/// used for production processes.<br /><br/><br />
+
 		/// </summary>
 		public PRODUCTIONValue PRODUCTION => _PRODUCTION ?? (_PRODUCTION = new PRODUCTIONValue());
 
 		/// <summary>
-		/// used for production processes. 
+		﻿/// used for production processes.<br /><br/><br />
+
 		/// </summary>
 		public sealed class PRODUCTIONValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// used for production processes. ";
+			public string Summary => @"&#10;&#10;&#10;used for production processes.&#10;
+";
 		}
 		private REVISIONValue _REVISION;
 		/// <summary>
-		/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>. 
+		﻿/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>.<br /><br/><br />
+
 		/// </summary>
 		public REVISIONValue REVISION => _REVISION ?? (_REVISION = new REVISIONValue());
 
 		/// <summary>
-		/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>. 
+		﻿/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>.<br /><br/><br />
+
 		/// </summary>
 		public sealed class REVISIONValue : IEnumInstance
 		{
@@ -149,7 +162,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>. ";
+			public string Summary => @"&#10;&#10;&#10;content is modified from `PRODUCTION` or `EXPERIMENTAL`.&#10;
+";
 		}
 	}
 }

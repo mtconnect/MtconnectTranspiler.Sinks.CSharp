@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// secondary or subordinate type of categorization or classification of information.
+	﻿/// secondary or subordinate type of categorization or classification of information.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375188_150085_2097">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SubtypeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375188_150085_2097";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// secondary or subordinate type of categorization or classification of information.";
+		public string Summary => @"&#10;&#10;&#10;secondary or subordinate type of categorization or classification of information.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "subtype";

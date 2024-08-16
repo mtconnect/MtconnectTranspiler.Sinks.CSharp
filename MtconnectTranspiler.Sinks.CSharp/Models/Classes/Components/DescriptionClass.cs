@@ -5,17 +5,22 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Components
 {
 	/// <summary>
-	/// descriptive content./// Description
+	﻿/// descriptive content.<br/><br />Description<br/>> Note 1 to entry: See {{figure(Component Example)}} for an example.<br /><br />> Note 2 to entry: See {{lst(component-example)}} for the <i>XML</i> representation of the same example.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_64352755_7251_46af_846D_937E5A1E3949">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DescriptionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_64352755_7251_46af_846D_937E5A1E3949";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// descriptive content./// Description";
+		public string Summary => @"&#10;&#10;&#10;descriptive content.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;> Note 1 to entry: See {{figure(Component Example)}} for an example.
+
+> Note 2 to entry: See {{lst(component-example)}} for the {{term(XML)}} representation of the same example.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Description";
@@ -54,7 +59,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public ManufacturerProperty Manufacturer { get; } = new ManufacturerProperty();
 			/// <summary>
-			/// name of the manufacturer of the physical or logical part of a piece of equipment represented by this element.
+			﻿/// name of the manufacturer of the physical or logical part of a piece of equipment represented by this element.<br/><br />
+
 			/// </summary>
 			public sealed class ManufacturerProperty : IProperty
 			{
@@ -74,7 +80,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "manufacturer";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// descriptive content./// Description";
+				public string Summary => @"&#10;&#10;&#10;name of the manufacturer of the physical or logical part of a piece of equipment represented by this element.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -108,7 +115,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public ModelProperty Model { get; } = new ModelProperty();
 			/// <summary>
-			/// model description of the physical part or logical function of a piece of equipment represented by this element.
+			﻿/// model description of the physical part or logical function of a piece of equipment represented by this element.<br/><br />
+
 			/// </summary>
 			public sealed class ModelProperty : IProperty
 			{
@@ -128,7 +136,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "model";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// descriptive content./// Description";
+				public string Summary => @"&#10;&#10;&#10;model description of the physical part or logical function of a piece of equipment represented by this element.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -162,7 +171,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public SerialNumberProperty SerialNumber { get; } = new SerialNumberProperty();
 			/// <summary>
-			/// serial number associated with a piece of equipment.
+			﻿/// serial number associated with a piece of equipment.<br/><br />
+
 			/// </summary>
 			public sealed class SerialNumberProperty : IProperty
 			{
@@ -182,7 +192,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "serialNumber";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// descriptive content./// Description";
+				public string Summary => @"&#10;&#10;&#10;serial number associated with a piece of equipment.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -216,7 +227,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public StationProperty Station { get; } = new StationProperty();
 			/// <summary>
-			/// identifier where a manufacturing function takes place.
+			﻿/// identifier where a manufacturing function takes place.<br/><br />
+
 			/// </summary>
 			public sealed class StationProperty : IProperty
 			{
@@ -236,7 +248,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "station";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// descriptive content./// Description";
+				public string Summary => @"&#10;&#10;&#10;identifier where a manufacturing function takes place.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -270,7 +283,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// description of the element.
+			﻿/// description of the element.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -290,7 +304,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// descriptive content./// Description";
+				public string Summary => @"&#10;&#10;&#10;description of the element.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
-	/// observed value of a property at a point in time.
+	﻿/// observed value of a property at a point in time.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1629291060726_222338_26">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ObservationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1629291060726_222338_26";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// observed value of a property at a point in time.";
+		public string Summary => @"&#10;&#10;&#10;observed value of a property at a point in time.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "observation";
@@ -68,7 +70,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "made by";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// observed value of a property at a point in time.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -119,7 +121,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "made for";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// observed value of a property at a point in time.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

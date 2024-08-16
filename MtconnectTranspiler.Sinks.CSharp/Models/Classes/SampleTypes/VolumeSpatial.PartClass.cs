@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// reported or measured value of amount included in the <i>part</i>.
+	﻿/// reported or measured value of amount included in the <i>part</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622200475634_271803_3370">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class VolumeSpatialPartClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622200475634_271803_3370";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// reported or measured value of amount included in the <i>part</i>.";
+		public string Summary => @"&#10;&#10;&#10;reported or measured value of amount included in the {{term(part)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "VolumeSpatial.Part";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reported or measured value of amount included in the <i>part</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
-	/// limit used to indicate whether a process variable is stable and in control.
+	﻿/// limit used to indicate whether a process variable is stable and in control.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375149_263613_1967">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ControlLimitClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375149_263613_1967";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// limit used to indicate whether a process variable is stable and in control.";
+		public string Summary => @"&#10;&#10;&#10;limit used to indicate whether a process variable is stable and in control.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "control limit";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
 	/// <summary>
-	/// flat length of a chamfer.
+	﻿/// flat length of a chamfer.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119552_156074_1492">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ChamferFlatLengthClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119552_156074_1492";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// flat length of a chamfer.";
+		public string Summary => @"&#10;&#10;&#10;flat length of a chamfer.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ChamferFlatLength";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// flat length of a chamfer.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// flat length of a chamfer.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

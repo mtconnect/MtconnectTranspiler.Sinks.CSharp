@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> that observes the surroundings of another <see cref="Component">Component</see>.  > Note: <see cref="Environmental">Environmental</see> <b>SHOULD</b> be organized by <see cref="Auxillaries">Auxillaries</see>, <see cref="Systems">Systems</see> or <see cref="Parts">Parts</see> depending on the relationship to the <see cref="Component">Component</see>.
+	﻿/// <see cref="Component">Component</see> that observes the surroundings of another <see cref="Component">Component</see>.<br /><br />> Note: <see cref="Environmental">Environmental</see> <b>SHOULD</b> be organized by <see cref="Auxillaries">Auxillaries</see>, <see cref="Systems">Systems</see> or <see cref="Parts">Parts</see> depending on the relationship to the <see cref="Component">Component</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381990_149427_42240">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EnvironmentalClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381990_149427_42240";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> that observes the surroundings of another <see cref=""Component"">Component</see>.  > Note: <see cref=""Environmental"">Environmental</see> <b>SHOULD</b> be organized by <see cref=""Auxillaries"">Auxillaries</see>, <see cref=""Systems"">Systems</see> or <see cref=""Parts"">Parts</see> depending on the relationship to the <see cref=""Component"">Component</see>.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} that observes the surroundings of another {{block(Component)}}.
+
+> Note: {{block(Environmental)}} **SHOULD** be organized by {{block(Auxillaries)}}, {{block(Systems)}} or {{block(Parts)}} depending on the relationship to the {{block(Component)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Environmental";

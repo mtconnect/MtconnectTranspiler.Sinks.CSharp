@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> composed of a physical apparatus that moves or controls a mechanism or system. /// Description
+	﻿/// <see cref="Component">Component</see> composed of a physical apparatus that moves or controls a mechanism or system. <br/><br />Description<br/>It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381968_750236_42201">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ActuatorClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381968_750236_42201";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> composed of a physical apparatus that moves or controls a mechanism or system. /// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} composed of a physical apparatus that moves or controls a mechanism or system. &#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Actuator";

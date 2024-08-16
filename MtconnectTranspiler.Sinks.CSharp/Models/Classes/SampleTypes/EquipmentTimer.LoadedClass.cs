@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// time that the sub-parts of a piece of equipment are under load.  Example: For traditional machine tools, this is a measurement of the time that the cutting tool is assumed to be engaged with the part.
+	﻿/// time that the sub-parts of a piece of equipment are under load.<br /><br />Example: For traditional machine tools, this is a measurement of the time that the cutting tool is assumed to be engaged with the part.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218300_959883_1806">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EquipmentTimerLoadedClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218300_959883_1806";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// time that the sub-parts of a piece of equipment are under load.  Example: For traditional machine tools, this is a measurement of the time that the cutting tool is assumed to be engaged with the part.";
+		public string Summary => @"&#10;&#10;&#10;time that the sub-parts of a piece of equipment are under load.
+
+Example: For traditional machine tools, this is a measurement of the time that the cutting tool is assumed to be engaged with the part.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "EquipmentTimer.Loaded";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// time that the sub-parts of a piece of equipment are under load.  Example: For traditional machine tools, this is a measurement of the time that the cutting tool is assumed to be engaged with the part.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

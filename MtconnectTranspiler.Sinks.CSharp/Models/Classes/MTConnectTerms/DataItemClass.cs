@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s
+	﻿/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1635251889215_363828_393">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DataItemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1635251889215_363828_393";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s";
+		public string Summary => @"&#10;&#10;&#10;{{term(observable)}} observed by a {{term(Component)}} that may make {{termplural(Observation)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "DataItem";
@@ -71,7 +73,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "observed by";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>observable</i> observed by a <i>Component</i> that may make <i>Observation</i>s";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

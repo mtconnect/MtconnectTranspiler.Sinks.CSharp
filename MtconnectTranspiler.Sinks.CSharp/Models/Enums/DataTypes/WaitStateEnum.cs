@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1581143980612_724749_76">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum WaitStateEnum
 	{
 		/// <summary>
-		/// execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.
+		﻿/// execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POWERING_UP,
 		/// <summary>
-		/// execution is waiting while the equipment is powering down but has not fully reached a stopped state.
+		﻿/// execution is waiting while the equipment is powering down but has not fully reached a stopped state.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POWERING_DOWN,
 		/// <summary>
-		/// execution is waiting while one or more discrete workpieces are being loaded.
+		﻿/// execution is waiting while one or more discrete workpieces are being loaded.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_LOAD,
 		/// <summary>
-		/// execution is waiting while one or more discrete workpieces are being unloaded.
+		﻿/// execution is waiting while one or more discrete workpieces are being unloaded.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_UNLOAD,
 		/// <summary>
-		/// execution is waiting while a tool or tooling is being loaded.
+		﻿/// execution is waiting while a tool or tooling is being loaded.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_LOAD,
 		/// <summary>
-		/// execution is waiting while a tool or tooling is being unloaded.
+		﻿/// execution is waiting while a tool or tooling is being unloaded.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,7 +76,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_UNLOAD,
 		/// <summary>
-		/// execution is waiting while material is being loaded.
+		﻿/// execution is waiting while material is being loaded.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,7 +86,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MATERIAL_LOAD,
 		/// <summary>
-		/// execution is waiting while material is being unloaded.
+		﻿/// execution is waiting while material is being unloaded.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,7 +96,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MATERIAL_UNLOAD,
 		/// <summary>
-		/// execution is waiting while another process is completed before the execution can resume.
+		﻿/// execution is waiting while another process is completed before the execution can resume.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -96,7 +106,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SECONDARY_PROCESS,
 		/// <summary>
-		/// execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.
+		﻿/// execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,7 +116,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PAUSING,
 		/// <summary>
-		/// execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.
+		﻿/// execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -117,8 +129,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1581143980612_724749_76">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class WaitStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -155,12 +168,14 @@ namespace Mtconnect.DataTypes
 
 		private POWERING_UPValue _POWERING_UP;
 		/// <summary>
-		/// execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.
+		﻿/// execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.<br/><br />
+
 		/// </summary>
 		public POWERING_UPValue POWERING_UP => _POWERING_UP ?? (_POWERING_UP = new POWERING_UPValue());
 
 		/// <summary>
-		/// execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.
+		﻿/// execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.<br/><br />
+
 		/// </summary>
 		public sealed class POWERING_UPValue : IEnumInstance
 		{
@@ -177,16 +192,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.&#10;
+";
 		}
 		private POWERING_DOWNValue _POWERING_DOWN;
 		/// <summary>
-		/// execution is waiting while the equipment is powering down but has not fully reached a stopped state.
+		﻿/// execution is waiting while the equipment is powering down but has not fully reached a stopped state.<br/><br />
+
 		/// </summary>
 		public POWERING_DOWNValue POWERING_DOWN => _POWERING_DOWN ?? (_POWERING_DOWN = new POWERING_DOWNValue());
 
 		/// <summary>
-		/// execution is waiting while the equipment is powering down but has not fully reached a stopped state.
+		﻿/// execution is waiting while the equipment is powering down but has not fully reached a stopped state.<br/><br />
+
 		/// </summary>
 		public sealed class POWERING_DOWNValue : IEnumInstance
 		{
@@ -203,16 +221,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while the equipment is powering down but has not fully reached a stopped state.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while the equipment is powering down but has not fully reached a stopped state.&#10;
+";
 		}
 		private PART_LOADValue _PART_LOAD;
 		/// <summary>
-		/// execution is waiting while one or more discrete workpieces are being loaded.
+		﻿/// execution is waiting while one or more discrete workpieces are being loaded.<br/><br />
+
 		/// </summary>
 		public PART_LOADValue PART_LOAD => _PART_LOAD ?? (_PART_LOAD = new PART_LOADValue());
 
 		/// <summary>
-		/// execution is waiting while one or more discrete workpieces are being loaded.
+		﻿/// execution is waiting while one or more discrete workpieces are being loaded.<br/><br />
+
 		/// </summary>
 		public sealed class PART_LOADValue : IEnumInstance
 		{
@@ -229,16 +250,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while one or more discrete workpieces are being loaded.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while one or more discrete workpieces are being loaded.&#10;
+";
 		}
 		private PART_UNLOADValue _PART_UNLOAD;
 		/// <summary>
-		/// execution is waiting while one or more discrete workpieces are being unloaded.
+		﻿/// execution is waiting while one or more discrete workpieces are being unloaded.<br/><br />
+
 		/// </summary>
 		public PART_UNLOADValue PART_UNLOAD => _PART_UNLOAD ?? (_PART_UNLOAD = new PART_UNLOADValue());
 
 		/// <summary>
-		/// execution is waiting while one or more discrete workpieces are being unloaded.
+		﻿/// execution is waiting while one or more discrete workpieces are being unloaded.<br/><br />
+
 		/// </summary>
 		public sealed class PART_UNLOADValue : IEnumInstance
 		{
@@ -255,16 +279,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while one or more discrete workpieces are being unloaded.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while one or more discrete workpieces are being unloaded.&#10;
+";
 		}
 		private TOOL_LOADValue _TOOL_LOAD;
 		/// <summary>
-		/// execution is waiting while a tool or tooling is being loaded.
+		﻿/// execution is waiting while a tool or tooling is being loaded.<br/><br />
+
 		/// </summary>
 		public TOOL_LOADValue TOOL_LOAD => _TOOL_LOAD ?? (_TOOL_LOAD = new TOOL_LOADValue());
 
 		/// <summary>
-		/// execution is waiting while a tool or tooling is being loaded.
+		﻿/// execution is waiting while a tool or tooling is being loaded.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_LOADValue : IEnumInstance
 		{
@@ -281,16 +308,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while a tool or tooling is being loaded.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while a tool or tooling is being loaded.&#10;
+";
 		}
 		private TOOL_UNLOADValue _TOOL_UNLOAD;
 		/// <summary>
-		/// execution is waiting while a tool or tooling is being unloaded.
+		﻿/// execution is waiting while a tool or tooling is being unloaded.<br/><br />
+
 		/// </summary>
 		public TOOL_UNLOADValue TOOL_UNLOAD => _TOOL_UNLOAD ?? (_TOOL_UNLOAD = new TOOL_UNLOADValue());
 
 		/// <summary>
-		/// execution is waiting while a tool or tooling is being unloaded.
+		﻿/// execution is waiting while a tool or tooling is being unloaded.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_UNLOADValue : IEnumInstance
 		{
@@ -307,16 +337,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while a tool or tooling is being unloaded.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while a tool or tooling is being unloaded.&#10;
+";
 		}
 		private MATERIAL_LOADValue _MATERIAL_LOAD;
 		/// <summary>
-		/// execution is waiting while material is being loaded.
+		﻿/// execution is waiting while material is being loaded.<br/><br />
+
 		/// </summary>
 		public MATERIAL_LOADValue MATERIAL_LOAD => _MATERIAL_LOAD ?? (_MATERIAL_LOAD = new MATERIAL_LOADValue());
 
 		/// <summary>
-		/// execution is waiting while material is being loaded.
+		﻿/// execution is waiting while material is being loaded.<br/><br />
+
 		/// </summary>
 		public sealed class MATERIAL_LOADValue : IEnumInstance
 		{
@@ -333,16 +366,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while material is being loaded.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while material is being loaded.&#10;
+";
 		}
 		private MATERIAL_UNLOADValue _MATERIAL_UNLOAD;
 		/// <summary>
-		/// execution is waiting while material is being unloaded.
+		﻿/// execution is waiting while material is being unloaded.<br/><br />
+
 		/// </summary>
 		public MATERIAL_UNLOADValue MATERIAL_UNLOAD => _MATERIAL_UNLOAD ?? (_MATERIAL_UNLOAD = new MATERIAL_UNLOADValue());
 
 		/// <summary>
-		/// execution is waiting while material is being unloaded.
+		﻿/// execution is waiting while material is being unloaded.<br/><br />
+
 		/// </summary>
 		public sealed class MATERIAL_UNLOADValue : IEnumInstance
 		{
@@ -359,16 +395,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while material is being unloaded.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while material is being unloaded.&#10;
+";
 		}
 		private SECONDARY_PROCESSValue _SECONDARY_PROCESS;
 		/// <summary>
-		/// execution is waiting while another process is completed before the execution can resume.
+		﻿/// execution is waiting while another process is completed before the execution can resume.<br/><br />
+
 		/// </summary>
 		public SECONDARY_PROCESSValue SECONDARY_PROCESS => _SECONDARY_PROCESS ?? (_SECONDARY_PROCESS = new SECONDARY_PROCESSValue());
 
 		/// <summary>
-		/// execution is waiting while another process is completed before the execution can resume.
+		﻿/// execution is waiting while another process is completed before the execution can resume.<br/><br />
+
 		/// </summary>
 		public sealed class SECONDARY_PROCESSValue : IEnumInstance
 		{
@@ -385,16 +424,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while another process is completed before the execution can resume.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while another process is completed before the execution can resume.&#10;
+";
 		}
 		private PAUSINGValue _PAUSING;
 		/// <summary>
-		/// execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.
+		﻿/// execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.<br/><br />
+
 		/// </summary>
 		public PAUSINGValue PAUSING => _PAUSING ?? (_PAUSING = new PAUSINGValue());
 
 		/// <summary>
-		/// execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.
+		﻿/// execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.<br/><br />
+
 		/// </summary>
 		public sealed class PAUSINGValue : IEnumInstance
 		{
@@ -411,16 +453,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.&#10;
+";
 		}
 		private RESUMINGValue _RESUMING;
 		/// <summary>
-		/// execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.
+		﻿/// execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.<br/><br />
+
 		/// </summary>
 		public RESUMINGValue RESUMING => _RESUMING ?? (_RESUMING = new RESUMINGValue());
 
 		/// <summary>
-		/// execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.
+		﻿/// execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.<br/><br />
+
 		/// </summary>
 		public sealed class RESUMINGValue : IEnumInstance
 		{
@@ -437,7 +482,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.";
+			public string Summary => @"&#10;&#10;&#10;execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.&#10;
+";
 		}
 	}
 }

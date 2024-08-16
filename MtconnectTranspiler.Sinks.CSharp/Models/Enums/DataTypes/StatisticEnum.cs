@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_51F1600E_2F14_4045_86C0_42B336850079">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum StatisticEnum
 	{
 		/// <summary>
-		/// mathematical average value calculated for the data item during the calculation period.
+		﻿/// mathematical average value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AVERAGE,
 		/// <summary>
-		/// <b>DEPRECATED</b> in <i>Version 1.6</i>s. ~~A measure of the "peakedness" of a probability distribution; i.e., the shape of the distribution curve.~~
+		﻿/// <b>DEPRECATED</b> in <i>Version 1.6</i>. ~~A measure of the "peakedness" of a probability distribution; i.e., the shape of the distribution curve.~~<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,7 +38,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.6 according to https://model.mtconnect.org/#_Version_1.6")]
 		KURTOSIS,
 		/// <summary>
-		/// maximum or peak value recorded for the data item during the calculation period.
+		﻿/// maximum or peak value recorded for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -44,7 +48,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MAXIMUM,
 		/// <summary>
-		/// middle number of a series of numbers.
+		﻿/// middle number of a series of numbers.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -53,7 +58,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MEDIAN,
 		/// <summary>
-		/// minimum value recorded for the data item during the calculation period.
+		﻿/// minimum value recorded for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -62,7 +68,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MINIMUM,
 		/// <summary>
-		/// number in a series of numbers that occurs most often.
+		﻿/// number in a series of numbers that occurs most often.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -71,7 +78,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MODE,
 		/// <summary>
-		/// difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.
+		﻿/// difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -80,7 +88,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RANGE,
 		/// <summary>
-		/// mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.
+		﻿/// mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -89,7 +98,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ROOT_MEAN_SQUARE,
 		/// <summary>
-		/// statistical Standard Deviation value calculated for the data item during the calculation period.
+		﻿/// statistical Standard Deviation value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -101,8 +111,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_51F1600E_2F14_4045_86C0_42B336850079">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StatisticEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -137,12 +148,14 @@ namespace Mtconnect.DataTypes
 
 		private AVERAGEValue _AVERAGE;
 		/// <summary>
-		/// mathematical average value calculated for the data item during the calculation period.
+		﻿/// mathematical average value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public AVERAGEValue AVERAGE => _AVERAGE ?? (_AVERAGE = new AVERAGEValue());
 
 		/// <summary>
-		/// mathematical average value calculated for the data item during the calculation period.
+		﻿/// mathematical average value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public sealed class AVERAGEValue : IEnumInstance
 		{
@@ -159,16 +172,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// mathematical average value calculated for the data item during the calculation period.";
+			public string Summary => @"&#10;&#10;&#10;mathematical average value calculated for the data item during the calculation period.&#10;
+";
 		}
 		private KURTOSISValue _KURTOSIS;
 		/// <summary>
-		/// <b>DEPRECATED</b> in <i>Version 1.6</i>s. ~~A measure of the "peakedness" of a probability distribution; i.e., the shape of the distribution curve.~~
+		﻿/// <b>DEPRECATED</b> in <i>Version 1.6</i>. ~~A measure of the "peakedness" of a probability distribution; i.e., the shape of the distribution curve.~~<br/><br />
+
 		/// </summary>
 		public KURTOSISValue KURTOSIS => _KURTOSIS ?? (_KURTOSIS = new KURTOSISValue());
 
 		/// <summary>
-		/// <b>DEPRECATED</b> in <i>Version 1.6</i>s. ~~A measure of the "peakedness" of a probability distribution; i.e., the shape of the distribution curve.~~
+		﻿/// <b>DEPRECATED</b> in <i>Version 1.6</i>. ~~A measure of the "peakedness" of a probability distribution; i.e., the shape of the distribution curve.~~<br/><br />
+
 		/// </summary>
 		public sealed class KURTOSISValue : IEnumInstance
 		{
@@ -185,16 +201,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.6";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <b>DEPRECATED</b> in <i>Version 1.6</i>s. ~~A measure of the ""peakedness"" of a probability distribution; i.e., the shape of the distribution curve.~~";
+			public string Summary => @"&#10;&#10;&#10;**DEPRECATED** in *Version 1.6*. ~~A measure of the ""peakedness"" of a probability distribution; i.e., the shape of the distribution curve.~~&#10;
+";
 		}
 		private MAXIMUMValue _MAXIMUM;
 		/// <summary>
-		/// maximum or peak value recorded for the data item during the calculation period.
+		﻿/// maximum or peak value recorded for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public MAXIMUMValue MAXIMUM => _MAXIMUM ?? (_MAXIMUM = new MAXIMUMValue());
 
 		/// <summary>
-		/// maximum or peak value recorded for the data item during the calculation period.
+		﻿/// maximum or peak value recorded for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public sealed class MAXIMUMValue : IEnumInstance
 		{
@@ -211,16 +230,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// maximum or peak value recorded for the data item during the calculation period.";
+			public string Summary => @"&#10;&#10;&#10;maximum or peak value recorded for the data item during the calculation period.&#10;
+";
 		}
 		private MEDIANValue _MEDIAN;
 		/// <summary>
-		/// middle number of a series of numbers.
+		﻿/// middle number of a series of numbers.<br/><br />
+
 		/// </summary>
 		public MEDIANValue MEDIAN => _MEDIAN ?? (_MEDIAN = new MEDIANValue());
 
 		/// <summary>
-		/// middle number of a series of numbers.
+		﻿/// middle number of a series of numbers.<br/><br />
+
 		/// </summary>
 		public sealed class MEDIANValue : IEnumInstance
 		{
@@ -237,16 +259,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// middle number of a series of numbers.";
+			public string Summary => @"&#10;&#10;&#10;middle number of a series of numbers.&#10;
+";
 		}
 		private MINIMUMValue _MINIMUM;
 		/// <summary>
-		/// minimum value recorded for the data item during the calculation period.
+		﻿/// minimum value recorded for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public MINIMUMValue MINIMUM => _MINIMUM ?? (_MINIMUM = new MINIMUMValue());
 
 		/// <summary>
-		/// minimum value recorded for the data item during the calculation period.
+		﻿/// minimum value recorded for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public sealed class MINIMUMValue : IEnumInstance
 		{
@@ -263,16 +288,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// minimum value recorded for the data item during the calculation period.";
+			public string Summary => @"&#10;&#10;&#10;minimum value recorded for the data item during the calculation period.&#10;
+";
 		}
 		private MODEValue _MODE;
 		/// <summary>
-		/// number in a series of numbers that occurs most often.
+		﻿/// number in a series of numbers that occurs most often.<br/><br />
+
 		/// </summary>
 		public MODEValue MODE => _MODE ?? (_MODE = new MODEValue());
 
 		/// <summary>
-		/// number in a series of numbers that occurs most often.
+		﻿/// number in a series of numbers that occurs most often.<br/><br />
+
 		/// </summary>
 		public sealed class MODEValue : IEnumInstance
 		{
@@ -289,16 +317,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// number in a series of numbers that occurs most often.";
+			public string Summary => @"&#10;&#10;&#10;number in a series of numbers that occurs most often.&#10;
+";
 		}
 		private RANGEValue _RANGE;
 		/// <summary>
-		/// difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.
+		﻿/// difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.<br/><br />
+
 		/// </summary>
 		public RANGEValue RANGE => _RANGE ?? (_RANGE = new RANGEValue());
 
 		/// <summary>
-		/// difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.
+		﻿/// difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.<br/><br />
+
 		/// </summary>
 		public sealed class RANGEValue : IEnumInstance
 		{
@@ -315,16 +346,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.";
+			public string Summary => @"&#10;&#10;&#10;difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.&#10;
+";
 		}
 		private ROOT_MEAN_SQUAREValue _ROOT_MEAN_SQUARE;
 		/// <summary>
-		/// mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.
+		﻿/// mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public ROOT_MEAN_SQUAREValue ROOT_MEAN_SQUARE => _ROOT_MEAN_SQUARE ?? (_ROOT_MEAN_SQUARE = new ROOT_MEAN_SQUAREValue());
 
 		/// <summary>
-		/// mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.
+		﻿/// mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public sealed class ROOT_MEAN_SQUAREValue : IEnumInstance
 		{
@@ -341,16 +375,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.";
+			public string Summary => @"&#10;&#10;&#10;mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.&#10;
+";
 		}
 		private STANDARD_DEVIATIONValue _STANDARD_DEVIATION;
 		/// <summary>
-		/// statistical Standard Deviation value calculated for the data item during the calculation period.
+		﻿/// statistical Standard Deviation value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public STANDARD_DEVIATIONValue STANDARD_DEVIATION => _STANDARD_DEVIATION ?? (_STANDARD_DEVIATION = new STANDARD_DEVIATIONValue());
 
 		/// <summary>
-		/// statistical Standard Deviation value calculated for the data item during the calculation period.
+		﻿/// statistical Standard Deviation value calculated for the data item during the calculation period.<br/><br />
+
 		/// </summary>
 		public sealed class STANDARD_DEVIATIONValue : IEnumInstance
 		{
@@ -367,7 +404,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// statistical Standard Deviation value calculated for the data item during the calculation period.";
+			public string Summary => @"&#10;&#10;&#10;statistical Standard Deviation value calculated for the data item during the calculation period.&#10;
+";
 		}
 	}
 }

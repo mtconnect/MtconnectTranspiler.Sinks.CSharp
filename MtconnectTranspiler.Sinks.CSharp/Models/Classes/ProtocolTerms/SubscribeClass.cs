@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// receiving messages in a <i>publish and subscribe</i> pattern.
+	﻿/// receiving messages in a <i>publish and subscribe</i> pattern.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375188_852098_2096">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SubscribeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375188_852098_2096";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// receiving messages in a <i>publish and subscribe</i> pattern.";
+		public string Summary => @"&#10;&#10;&#10;receiving messages in a {{term(publish and subscribe)}} pattern.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "subscribe";

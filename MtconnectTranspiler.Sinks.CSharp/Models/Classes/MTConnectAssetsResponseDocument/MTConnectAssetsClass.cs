@@ -5,17 +5,23 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocument
 {
 	/// <summary>
-	/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref="Asset">Asset</see> types.  ![MTConnectAssets](figures/MTConnectAssets.png "MTConnectAssets"){: width="0.8"}  > Note: Additional properties of <see cref="MTConnectAssets">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.
+	﻿/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref="Asset">Asset</see> types.<br /><br />![MTConnectAssets](figures/MTConnectAssets.png "MTConnectAssets"){: width="0.8"}<br /><br />> Note: Additional properties of <see cref="MTConnectAssets">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_AD98C122_E276_4506_AD69_B82107CB3802">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MTConnectAssetsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_AD98C122_E276_4506_AD69_B82107CB3802";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref=""Asset"">Asset</see> types.  ![MTConnectAssets](figures/MTConnectAssets.png ""MTConnectAssets""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectAssets"">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+		public string Summary => @"&#10;&#10;&#10;root entity of an {{term(MTConnectAssets Response Document)}} that contains the {{term(Asset Information Model)}} of {{block(Asset)}} types.
+
+![MTConnectAssets](figures/MTConnectAssets.png ""MTConnectAssets""){: width=""0.8""}
+
+> Note: Additional properties of {{block(MTConnectAssets)}} **MAY** be defined for schema and namespace declaration. See {{sect(Schema and Namespace Declaration Information)}} for an {{term(XML)}} example.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MTConnectAssets";
@@ -68,7 +74,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public string Name => "hasHeader";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref=""Asset"">Asset</see> types.  ![MTConnectAssets](figures/MTConnectAssets.png ""MTConnectAssets""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectAssets"">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -119,7 +125,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public string Name => "hasAsset";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref=""Asset"">Asset</see> types.  ![MTConnectAssets](figures/MTConnectAssets.png ""MTConnectAssets""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectAssets"">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

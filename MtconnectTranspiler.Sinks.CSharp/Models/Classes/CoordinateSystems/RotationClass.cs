@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>
-	/// rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector.  
+	﻿/// rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector. <br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1583182385473_997250_4783">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RotationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1583182385473_997250_4783";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector.  ";
+		public string Summary => @"&#10;&#10;&#10;rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector. 
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Rotation";
@@ -50,7 +53,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// The value of <see cref="Rotation">Rotation</see> in <c>DEGREE_3D</c>.
+			﻿/// The value of <see cref="Rotation">Rotation</see> in <c>DEGREE_3D</c>.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -70,7 +74,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector.  ";
+				public string Summary => @"&#10;&#10;&#10;The value of {{block(Rotation)}} in `DEGREE_3D`.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

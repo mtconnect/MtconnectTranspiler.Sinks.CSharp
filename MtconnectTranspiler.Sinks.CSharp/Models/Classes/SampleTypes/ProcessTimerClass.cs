@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// <see cref="SampleEnum::PROCESS_TIMER">SampleEnum::PROCESS_TIMER</see>
+	﻿/// <see cref="SampleEnum.PROCESS_TIMER">SampleEnum.PROCESS_TIMER</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218416_705945_2091">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessTimerClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218416_705945_2091";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""SampleEnum::PROCESS_TIMER"">SampleEnum::PROCESS_TIMER</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(SampleEnum::PROCESS_TIMER)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessTimer";
@@ -73,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::PROCESS_TIMER"">SampleEnum::PROCESS_TIMER</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +126,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::PROCESS_TIMER"">SampleEnum::PROCESS_TIMER</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +177,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::PROCESS_TIMER"">SampleEnum::PROCESS_TIMER</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

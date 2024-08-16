@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
-	/// design characteristics for a piece of equipment. 
+	﻿/// design characteristics for a piece of equipment.<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580315898400_607214_47155">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SpecificationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580315898400_607214_47155";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// design characteristics for a piece of equipment. ";
+		public string Summary => @"&#10;&#10;&#10;design characteristics for a piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Specification";
@@ -65,7 +67,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::type" />. See <see cref="DataItem Types">DataItem Types</see>.
+			﻿/// same as <see cref="DataItem.type">type in DataItem</see>. See <see cref="DataItem Types">DataItem Types</see>.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -85,7 +88,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::type)}}. See {{package(DataItem Types)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -119,7 +123,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::subType" />. See <see cref="DataItem">DataItem</see>.
+			﻿/// same as <see cref="DataItem.subType">subType in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -139,7 +144,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::subType)}}. See {{sect(DataItem)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -173,7 +179,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public DataItemIdRefProperty DataItemIdRef { get; } = new DataItemIdRefProperty();
 			/// <summary>
-			/// reference to the <see cref="DataItem::id" /> associated with this entity.
+			﻿/// reference to the <see cref="DataItem.id">id in DataItem</see> associated with this entity.<br/><br />
+
 			/// </summary>
 			public sealed class DataItemIdRefProperty : IProperty
 			{
@@ -193,7 +200,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "dataItemIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;reference to the {{property(DataItem::id)}} associated with this entity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -227,7 +235,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::units" />. See <see cref="DataItem">DataItem</see>.
+			﻿/// same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
@@ -247,7 +256,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::units)}}. See {{sect(DataItem)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -281,7 +291,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public CompositionIdRefProperty CompositionIdRef { get; } = new CompositionIdRefProperty();
 			/// <summary>
-			/// reference to the <see cref="Composition::id" /> associated with this entity.
+			﻿/// reference to the <see cref="Composition.id">id in Composition</see> associated with this entity.<br/><br />
+
 			/// </summary>
 			public sealed class CompositionIdRefProperty : IProperty
 			{
@@ -301,7 +312,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "compositionIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;reference to the {{property(Composition::id)}} associated with this entity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -335,7 +347,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// <see cref="Specification::name" /> provides additional meaning and differentiates between <see cref="Specification">Specification</see> entities.
+			﻿/// <see cref="Specification.name">name in Specification</see> provides additional meaning and differentiates between <see cref="Specification">Specification</see> entities.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -355,7 +368,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;{{property(Specification::name)}} provides additional meaning and differentiates between {{block(Specification)}} entities.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -389,7 +403,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
 			/// <summary>
-			/// references the <see cref="CoordinateSystem">CoordinateSystem</see> for geometric <see cref="Specification">Specification</see> elements.
+			﻿/// references the <see cref="CoordinateSystem">CoordinateSystem</see> for geometric <see cref="Specification">Specification</see> elements.<br/><br />
+
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
@@ -409,7 +424,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;references the {{block(CoordinateSystem)}} for geometric {{block(Specification)}} elements.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -443,7 +459,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
 			/// <summary>
-			/// unique identifier for this <see cref="Specification">Specification</see>.
+			﻿/// unique identifier for this <see cref="Specification">Specification</see>.<br/><br />
+
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -463,7 +480,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "id";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for this {{block(Specification)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -497,7 +515,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public OriginatorProperty Originator { get; } = new OriginatorProperty();
 			/// <summary>
-			/// reference to the creator of the <see cref="Specification">Specification</see>.
+			﻿/// reference to the creator of the <see cref="Specification">Specification</see>.<br/><br />
+
 			/// </summary>
 			public sealed class OriginatorProperty : IProperty
 			{
@@ -517,7 +536,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "originator";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"&#10;&#10;&#10;reference to the creator of the {{block(Specification)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -568,7 +588,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasMaximum";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -619,7 +639,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasUpperLimit";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -670,7 +690,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasLowerWarning";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -721,7 +741,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasLowerLimit";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -772,7 +792,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasUpperWarning";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -823,7 +843,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasNominal";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -874,7 +894,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasMinimum";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// design characteristics for a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

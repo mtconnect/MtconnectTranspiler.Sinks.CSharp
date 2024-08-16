@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// methodology for defining the structure and meaning for data in a specific logical way that can be interpreted by a software system. 
+	﻿/// methodology for defining the structure and meaning for data in a specific logical way that can be interpreted by a software system. <br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375185_374500_2083">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SemanticDataModelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375185_374500_2083";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// methodology for defining the structure and meaning for data in a specific logical way that can be interpreted by a software system. ";
+		public string Summary => @"&#10;&#10;&#10;methodology for defining the structure and meaning for data in a specific logical way that can be interpreted by a software system. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "semantic data model";

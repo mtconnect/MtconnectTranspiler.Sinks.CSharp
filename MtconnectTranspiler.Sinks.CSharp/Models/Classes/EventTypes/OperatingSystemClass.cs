@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::OPERATING_SYSTEM">EventEnum::OPERATING_SYSTEM</see>
+	﻿/// <see cref="EventEnum.OPERATING_SYSTEM">EventEnum.OPERATING_SYSTEM</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587749356759_918178_2174">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class OperatingSystemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587749356759_918178_2174";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::OPERATING_SYSTEM"">EventEnum::OPERATING_SYSTEM</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::OPERATING_SYSTEM)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "OperatingSystem";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::OPERATING_SYSTEM"">EventEnum::OPERATING_SYSTEM</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::OPERATING_SYSTEM"">EventEnum::OPERATING_SYSTEM</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

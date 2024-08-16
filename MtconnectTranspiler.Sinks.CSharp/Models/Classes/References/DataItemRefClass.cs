@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.References
 {
 	/// <summary>
-	/// <see cref="Reference">Reference</see> that is a pointer to a <see cref="DataItem">DataItem</see> associated with another entity defined for a piece of equipment./// Description
+	﻿/// <see cref="Reference">Reference</see> that is a pointer to a <see cref="DataItem">DataItem</see> associated with another entity defined for a piece of equipment.<br/><br />Description<br/><see cref="DataItemRef">DataItemRef</see> allows the data associated with a <see cref="DataItem">DataItem</see> defined in another entity to be directly associated with this entity.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581212127193_199949_213">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DataItemRefClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581212127193_199949_213";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Reference"">Reference</see> that is a pointer to a <see cref=""DataItem"">DataItem</see> associated with another entity defined for a piece of equipment./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Reference)}} that is a pointer to a {{block(DataItem)}} associated with another entity defined for a piece of equipment.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(DataItemRef)}} allows the data associated with a {{block(DataItem)}} defined in another entity to be directly associated with this entity.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "DataItemRef";
@@ -54,7 +57,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
 			/// <summary>
-			/// pointer to the <see cref="DataItem::id" /> that contains the information to be associated with this entity.
+			﻿/// pointer to the <see cref="DataItem.id">id in DataItem</see> that contains the information to be associated with this entity.<br/><br />
+
 			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
@@ -74,7 +78,8 @@ namespace Mtconnect.DeviceInformationModel.References
 				public string Name => "idRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Reference"">Reference</see> that is a pointer to a <see cref=""DataItem"">DataItem</see> associated with another entity defined for a piece of equipment./// Description";
+				public string Summary => @"&#10;&#10;&#10;pointer to the {{property(DataItem::id)}} that contains the information to be associated with this entity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

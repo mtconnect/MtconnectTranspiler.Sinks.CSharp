@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417668_463137_2883">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum RotaryModeEnum
 	{
 		/// <summary>
-		/// axis is functioning as a spindle.
+		﻿/// axis is functioning as a spindle.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SPINDLE,
 		/// <summary>
-		/// axis is configured to index.
+		﻿/// axis is configured to index.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INDEX,
 		/// <summary>
-		/// position of the axis is being interpolated.
+		﻿/// position of the axis is being interpolated.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417668_463137_2883">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RotaryModeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private SPINDLEValue _SPINDLE;
 		/// <summary>
-		/// axis is functioning as a spindle.
+		﻿/// axis is functioning as a spindle.<br/><br />
+
 		/// </summary>
 		public SPINDLEValue SPINDLE => _SPINDLE ?? (_SPINDLE = new SPINDLEValue());
 
 		/// <summary>
-		/// axis is functioning as a spindle.
+		﻿/// axis is functioning as a spindle.<br/><br />
+
 		/// </summary>
 		public sealed class SPINDLEValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axis is functioning as a spindle.";
+			public string Summary => @"&#10;&#10;&#10;axis is functioning as a spindle.&#10;
+";
 		}
 		private INDEXValue _INDEX;
 		/// <summary>
-		/// axis is configured to index.
+		﻿/// axis is configured to index.<br/><br />
+
 		/// </summary>
 		public INDEXValue INDEX => _INDEX ?? (_INDEX = new INDEXValue());
 
 		/// <summary>
-		/// axis is configured to index.
+		﻿/// axis is configured to index.<br/><br />
+
 		/// </summary>
 		public sealed class INDEXValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axis is configured to index.";
+			public string Summary => @"&#10;&#10;&#10;axis is configured to index.&#10;
+";
 		}
 		private CONTOURValue _CONTOUR;
 		/// <summary>
-		/// position of the axis is being interpolated.
+		﻿/// position of the axis is being interpolated.<br/><br />
+
 		/// </summary>
 		public CONTOURValue CONTOUR => _CONTOUR ?? (_CONTOUR = new CONTOURValue());
 
 		/// <summary>
-		/// position of the axis is being interpolated.
+		﻿/// position of the axis is being interpolated.<br/><br />
+
 		/// </summary>
 		public sealed class CONTOURValue : IEnumInstance
 		{
@@ -149,7 +162,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position of the axis is being interpolated.";
+			public string Summary => @"&#10;&#10;&#10;position of the axis is being interpolated.&#10;
+";
 		}
 	}
 }

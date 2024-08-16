@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
 	/// <summary>
-	/// dimension of the length of the shank.
+	﻿/// dimension of the length of the shank.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119512_81707_1429">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ShankLengthClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119512_81707_1429";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// dimension of the length of the shank.";
+		public string Summary => @"&#10;&#10;&#10;dimension of the length of the shank.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ShankLength";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// dimension of the length of the shank.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// dimension of the length of the shank.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

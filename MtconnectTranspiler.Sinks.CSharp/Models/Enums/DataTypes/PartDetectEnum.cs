@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1581206093299_877100_76">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PartDetectEnum
 	{
 		/// <summary>
-		/// part or work piece is detected or is present.
+		﻿/// part or work piece is detected or is present.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PRESENT,
 		/// <summary>
-		/// part or work piece is not detected or is not present.
+		﻿/// part or work piece is not detected or is not present.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1581206093299_877100_76">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartDetectEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private PRESENTValue _PRESENT;
 		/// <summary>
-		/// part or work piece is detected or is present.
+		﻿/// part or work piece is detected or is present.<br/><br />
+
 		/// </summary>
 		public PRESENTValue PRESENT => _PRESENT ?? (_PRESENT = new PRESENTValue());
 
 		/// <summary>
-		/// part or work piece is detected or is present.
+		﻿/// part or work piece is detected or is present.<br/><br />
+
 		/// </summary>
 		public sealed class PRESENTValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part or work piece is detected or is present.";
+			public string Summary => @"&#10;&#10;&#10;part or work piece is detected or is present.&#10;
+";
 		}
 		private NOT_PRESENTValue _NOT_PRESENT;
 		/// <summary>
-		/// part or work piece is not detected or is not present.
+		﻿/// part or work piece is not detected or is not present.<br/><br />
+
 		/// </summary>
 		public NOT_PRESENTValue NOT_PRESENT => _NOT_PRESENT ?? (_NOT_PRESENT = new NOT_PRESENTValue());
 
 		/// <summary>
-		/// part or work piece is not detected or is not present.
+		﻿/// part or work piece is not detected or is not present.<br/><br />
+
 		/// </summary>
 		public sealed class NOT_PRESENTValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part or work piece is not detected or is not present.";
+			public string Summary => @"&#10;&#10;&#10;part or work piece is not detected or is not present.&#10;
+";
 		}
 	}
 }

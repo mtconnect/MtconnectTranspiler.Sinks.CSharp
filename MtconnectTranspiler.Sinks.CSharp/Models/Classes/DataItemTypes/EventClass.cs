@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 {
 	/// <summary>
-	/// abstract <see cref="DataItem">DataItem</see> that is a discrete piece of information from a piece of equipment. It does not have intermediate values that vary over time. /// Description
+	﻿/// abstract <see cref="DataItem">DataItem</see> that is a discrete piece of information from a piece of equipment. It does not have intermediate values that vary over time.<br /><br/><br />Description<br/>An <see cref="Event">Event</see> is information that, when provided at any specific point in time, represents the current state of the piece of equipment.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_ED83840A_A210_4afb_B987_376C88EC8B17">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EventClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_ED83840A_A210_4afb_B987_376C88EC8B17";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is a discrete piece of information from a piece of equipment. It does not have intermediate values that vary over time. /// Description";
+		public string Summary => @"&#10;&#10;&#10;abstract {{block(DataItem)}} that is a discrete piece of information from a piece of equipment. It does not have intermediate values that vary over time.
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;An {{block(Event)}} is information that, when provided at any specific point in time, represents the current state of the piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Event";
@@ -72,7 +76,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "category";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is a discrete piece of information from a piece of equipment. It does not have intermediate values that vary over time. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is a discrete piece of information from a piece of equipment. It does not have intermediate values that vary over time. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

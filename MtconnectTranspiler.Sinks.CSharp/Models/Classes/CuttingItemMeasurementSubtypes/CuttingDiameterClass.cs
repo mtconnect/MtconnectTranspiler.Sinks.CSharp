@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
 	/// <summary>
-	/// diameter of a circle on which the defined point Pk located on this cutting tool.   The normal of the machined peripheral surface points towards the axis of the cutting tool.
+	﻿/// diameter of a circle on which the defined point Pk located on this cutting tool. <br /><br />The normal of the machined peripheral surface points towards the axis of the cutting tool.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119546_393506_1483">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CuttingDiameterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119546_393506_1483";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// diameter of a circle on which the defined point Pk located on this cutting tool.   The normal of the machined peripheral surface points towards the axis of the cutting tool.";
+		public string Summary => @"&#10;&#10;&#10;diameter of a circle on which the defined point Pk located on this cutting tool. 
+
+The normal of the machined peripheral surface points towards the axis of the cutting tool.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CuttingDiameter";
@@ -72,7 +76,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// diameter of a circle on which the defined point Pk located on this cutting tool.   The normal of the machined peripheral surface points towards the axis of the cutting tool.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// diameter of a circle on which the defined point Pk located on this cutting tool.   The normal of the machined peripheral surface points towards the axis of the cutting tool.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

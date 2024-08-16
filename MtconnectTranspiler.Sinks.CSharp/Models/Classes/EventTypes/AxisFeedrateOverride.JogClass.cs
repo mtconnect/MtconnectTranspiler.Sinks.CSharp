@@ -6,17 +6,23 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// relating to momentary activation of a function or a movement.  <b>DEPRECATION WARNING</b>: May be deprecated in the future./// Description
+	﻿/// relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />Description<br/>When the <c>JOG</c> subtype of <c>AxisFeedrateOverride</c> is applied, the resulting commanded feedrate for the axis is limited to the value of the original <c>JOG</c> subtype of the <c>AxisFeedrate</c> multiplied by the value of the <c>JOG</c> subtype of<br /><c>AxisFeedrateOverride</c>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218199_242402_1584">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AxisFeedrateOverrideJogClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218199_242402_1584";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// relating to momentary activation of a function or a movement.  <b>DEPRECATION WARNING</b>: May be deprecated in the future./// Description";
+		public string Summary => @"&#10;&#10;&#10;relating to momentary activation of a function or a movement.
+
+**DEPRECATION WARNING**: May be deprecated in the future.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;When the `JOG` subtype of `AxisFeedrateOverride` is applied, the resulting commanded feedrate for the axis is limited to the value of the original `JOG` subtype of the `AxisFeedrate` multiplied by the value of the `JOG` subtype of
+`AxisFeedrateOverride`.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "AxisFeedrateOverride.Jog";
@@ -71,7 +77,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// relating to momentary activation of a function or a movement.  <b>DEPRECATION WARNING</b>: May be deprecated in the future./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

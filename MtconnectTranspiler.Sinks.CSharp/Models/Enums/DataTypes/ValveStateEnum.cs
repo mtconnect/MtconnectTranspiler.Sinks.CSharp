@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622456100008_63209_110">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ValveStateEnum
 	{
 		/// <summary>
-		/// <see cref="ValveState">ValveState</see> where flow is allowed and the aperture is static.  > Note: For a binary value, <c>OPEN</c> indicates the valve has the maximum possible aperture.
+		﻿/// <see cref="ValveState">ValveState</see> where flow is allowed and the aperture is static.<br /><br />> Note: For a binary value, <c>OPEN</c> indicates the valve has the maximum possible aperture.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPEN,
 		/// <summary>
-		/// valve is transitioning from a <c>CLOSED</c> state to an <c>OPEN</c> state.
+		﻿/// valve is transitioning from a <c>CLOSED</c> state to an <c>OPEN</c> state.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPENING,
 		/// <summary>
-		/// <see cref="ValveState">ValveState</see> where flow is not possible, the aperture is static, and the valve is completely shut.
+		﻿/// <see cref="ValveState">ValveState</see> where flow is not possible, the aperture is static, and the valve is completely shut.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CLOSED,
 		/// <summary>
-		/// valve is transitioning from an <c>OPEN</c> state to a <c>CLOSED</c> state.
+		﻿/// valve is transitioning from an <c>OPEN</c> state to a <c>CLOSED</c> state.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -54,8 +59,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622456100008_63209_110">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ValveStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -85,12 +91,14 @@ namespace Mtconnect.DataTypes
 
 		private OPENValue _OPEN;
 		/// <summary>
-		/// <see cref="ValveState">ValveState</see> where flow is allowed and the aperture is static.  > Note: For a binary value, <c>OPEN</c> indicates the valve has the maximum possible aperture.
+		﻿/// <see cref="ValveState">ValveState</see> where flow is allowed and the aperture is static.<br /><br />> Note: For a binary value, <c>OPEN</c> indicates the valve has the maximum possible aperture.<br/><br />
+
 		/// </summary>
 		public OPENValue OPEN => _OPEN ?? (_OPEN = new OPENValue());
 
 		/// <summary>
-		/// <see cref="ValveState">ValveState</see> where flow is allowed and the aperture is static.  > Note: For a binary value, <c>OPEN</c> indicates the valve has the maximum possible aperture.
+		﻿/// <see cref="ValveState">ValveState</see> where flow is allowed and the aperture is static.<br /><br />> Note: For a binary value, <c>OPEN</c> indicates the valve has the maximum possible aperture.<br/><br />
+
 		/// </summary>
 		public sealed class OPENValue : IEnumInstance
 		{
@@ -107,16 +115,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""ValveState"">ValveState</see> where flow is allowed and the aperture is static.  > Note: For a binary value, <c>OPEN</c> indicates the valve has the maximum possible aperture.";
+			public string Summary => @"&#10;&#10;&#10;{{block(ValveState)}} where flow is allowed and the aperture is static.
+
+> Note: For a binary value, `OPEN` indicates the valve has the maximum possible aperture.&#10;
+";
 		}
 		private OPENINGValue _OPENING;
 		/// <summary>
-		/// valve is transitioning from a <c>CLOSED</c> state to an <c>OPEN</c> state.
+		﻿/// valve is transitioning from a <c>CLOSED</c> state to an <c>OPEN</c> state.<br/><br />
+
 		/// </summary>
 		public OPENINGValue OPENING => _OPENING ?? (_OPENING = new OPENINGValue());
 
 		/// <summary>
-		/// valve is transitioning from a <c>CLOSED</c> state to an <c>OPEN</c> state.
+		﻿/// valve is transitioning from a <c>CLOSED</c> state to an <c>OPEN</c> state.<br/><br />
+
 		/// </summary>
 		public sealed class OPENINGValue : IEnumInstance
 		{
@@ -133,16 +146,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// valve is transitioning from a <c>CLOSED</c> state to an <c>OPEN</c> state.";
+			public string Summary => @"&#10;&#10;&#10;valve is transitioning from a `CLOSED` state to an `OPEN` state.&#10;
+";
 		}
 		private CLOSEDValue _CLOSED;
 		/// <summary>
-		/// <see cref="ValveState">ValveState</see> where flow is not possible, the aperture is static, and the valve is completely shut.
+		﻿/// <see cref="ValveState">ValveState</see> where flow is not possible, the aperture is static, and the valve is completely shut.<br/><br />
+
 		/// </summary>
 		public CLOSEDValue CLOSED => _CLOSED ?? (_CLOSED = new CLOSEDValue());
 
 		/// <summary>
-		/// <see cref="ValveState">ValveState</see> where flow is not possible, the aperture is static, and the valve is completely shut.
+		﻿/// <see cref="ValveState">ValveState</see> where flow is not possible, the aperture is static, and the valve is completely shut.<br/><br />
+
 		/// </summary>
 		public sealed class CLOSEDValue : IEnumInstance
 		{
@@ -159,16 +175,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""ValveState"">ValveState</see> where flow is not possible, the aperture is static, and the valve is completely shut.";
+			public string Summary => @"&#10;&#10;&#10;{{block(ValveState)}} where flow is not possible, the aperture is static, and the valve is completely shut.&#10;
+";
 		}
 		private CLOSINGValue _CLOSING;
 		/// <summary>
-		/// valve is transitioning from an <c>OPEN</c> state to a <c>CLOSED</c> state.
+		﻿/// valve is transitioning from an <c>OPEN</c> state to a <c>CLOSED</c> state.<br/><br />
+
 		/// </summary>
 		public CLOSINGValue CLOSING => _CLOSING ?? (_CLOSING = new CLOSINGValue());
 
 		/// <summary>
-		/// valve is transitioning from an <c>OPEN</c> state to a <c>CLOSED</c> state.
+		﻿/// valve is transitioning from an <c>OPEN</c> state to a <c>CLOSED</c> state.<br/><br />
+
 		/// </summary>
 		public sealed class CLOSINGValue : IEnumInstance
 		{
@@ -185,7 +204,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// valve is transitioning from an <c>OPEN</c> state to a <c>CLOSED</c> state.";
+			public string Summary => @"&#10;&#10;&#10;valve is transitioning from an `OPEN` state to a `CLOSED` state.&#10;
+";
 		}
 	}
 }

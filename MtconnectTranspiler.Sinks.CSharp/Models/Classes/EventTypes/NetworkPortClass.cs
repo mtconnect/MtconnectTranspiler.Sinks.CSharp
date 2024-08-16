@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::NETWORK_PORT">EventEnum::NETWORK_PORT</see>
+	﻿/// <see cref="EventEnum.NETWORK_PORT">EventEnum.NETWORK_PORT</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1659031598181_501424_69">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class NetworkPortClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1659031598181_501424_69";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::NETWORK_PORT"">EventEnum::NETWORK_PORT</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::NETWORK_PORT)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "NetworkPort";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::NETWORK_PORT"">EventEnum::NETWORK_PORT</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::NETWORK_PORT"">EventEnum::NETWORK_PORT</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

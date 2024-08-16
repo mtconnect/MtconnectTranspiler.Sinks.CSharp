@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
-	/// information about an <i>engineered system</i> describing its physical layout, functional characteristics, and relationships with other <i>engineered system</i>s
+	﻿/// information about an <i>engineered system</i> describing its physical layout, functional characteristics, and relationships with other <i>engineered system</i>s<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581970391175_482710_6078">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConfigurationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581970391175_482710_6078";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// information about an <i>engineered system</i> describing its physical layout, functional characteristics, and relationships with other <i>engineered system</i>s";
+		public string Summary => @"&#10;&#10;&#10;information about an {{term(engineered system)}} describing its physical layout, functional characteristics, and relationships with other {{termplural(engineered system)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "configuration";

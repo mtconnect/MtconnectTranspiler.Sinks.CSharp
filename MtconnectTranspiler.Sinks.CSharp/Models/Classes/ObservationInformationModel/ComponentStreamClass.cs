@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
-	/// organizes the data associated with each <see cref="Component">Component</see> entity defined for a <see cref="Device">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description
+	﻿/// organizes the data associated with each <see cref="Component">Component</see> entity defined for a <see cref="Device">Device</see> in the associated <i>MTConnectDevices Response Document</i>.<br/><br />Description<br/>At least one of <see cref="Sample">Sample</see>, <see cref="Event">Event</see>, or <see cref="Condition">Condition</see> <b>MUST</b> be organized by a <see cref="ComponentStream">ComponentStream</see> entity.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_9057AAF9_4687_42be_BD2B_E2F18DF049DC">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ComponentStreamClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_9057AAF9_4687_42be_BD2B_E2F18DF049DC";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+		public string Summary => @"&#10;&#10;&#10;organizes the data associated with each {{block(Component)}} entity defined for a {{block(Device)}} in the associated {{term(MTConnectDevices Response Document)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;At least one of {{block(Sample)}}, {{block(Event)}}, or {{block(Condition)}} **MUST** be organized by a {{block(ComponentStream)}} entity.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ComponentStream";
@@ -58,7 +61,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public ComponentProperty Component { get; } = new ComponentProperty();
 			/// <summary>
-			/// identifies the <see cref="Component">Component</see> type associated with the <see cref="ComponentStream">ComponentStream</see>.  Examples of <see cref="ComponentStream::component" /> are <see cref="Device">Device</see>, <see cref="Controller">Controller</see>, <see cref="Linear">Linear</see> and <see cref="Loader">Loader</see>.
+			﻿/// identifies the <see cref="Component">Component</see> type associated with the <see cref="ComponentStream">ComponentStream</see>.<br /><br />Examples of <see cref="ComponentStream.component">component in ComponentStream</see> are <see cref="Device">Device</see>, <see cref="Controller">Controller</see>, <see cref="Linear">Linear</see> and <see cref="Loader">Loader</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ComponentProperty : IProperty
 			{
@@ -78,7 +82,10 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "component";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"&#10;&#10;&#10;identifies the {{block(Component)}} type associated with the {{block(ComponentStream)}}.
+
+Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{block(Controller)}}, {{block(Linear)}} and {{block(Loader)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -112,7 +119,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public ComponentIdProperty ComponentId { get; } = new ComponentIdProperty();
 			/// <summary>
-			/// identifier of the <see cref="Component">Component</see> as defined by the <see cref="Component::id" /> in the <i>MTConnectDevices Response Document</i>.
+			﻿/// identifier of the <see cref="Component">Component</see> as defined by the <see cref="Component.id">id in Component</see> in the <i>MTConnectDevices Response Document</i>.<br/><br />
+
 			/// </summary>
 			public sealed class ComponentIdProperty : IProperty
 			{
@@ -132,7 +140,8 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "componentId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"&#10;&#10;&#10;identifier of the {{block(Component)}} as defined by the {{property(Component::id)}} in the {{term(MTConnectDevices Response Document)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -166,7 +175,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.
+			﻿/// name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -186,7 +196,8 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"&#10;&#10;&#10;name of the {{block(Component)}} associated with the {{block(ComponentStream)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -220,7 +231,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public NativeNameProperty NativeName { get; } = new NativeNameProperty();
 			/// <summary>
-			/// common name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.
+			﻿/// common name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br/><br />
+
 			/// </summary>
 			public sealed class NativeNameProperty : IProperty
 			{
@@ -240,7 +252,8 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "nativeName";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"&#10;&#10;&#10;common name of the {{block(Component)}} associated with the {{block(ComponentStream)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -274,7 +287,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
 			/// <summary>
-			/// uuid of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.
+			﻿/// uuid of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br/><br />
+
 			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
@@ -294,7 +308,8 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "uuid";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"&#10;&#10;&#10;uuid of the {{block(Component)}} associated with the {{block(ComponentStream)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -345,7 +360,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "organizesEvent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -396,7 +411,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "organizesSample";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -447,7 +462,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "organizesCondition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -498,7 +513,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "isOrganizerFor";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// organizes the data associated with each <see cref=""Component"">Component</see> entity defined for a <see cref=""Device"">Device</see> in the associated <i>MTConnectDevices Response Document</i>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::BATTERY_STATE">EventEnum::BATTERY_STATE</see>
+	﻿/// <see cref="EventEnum.BATTERY_STATE">EventEnum.BATTERY_STATE</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1660319644994_162266_445">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class BatteryStateClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1660319644994_162266_445";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::BATTERY_STATE"">EventEnum::BATTERY_STATE</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::BATTERY_STATE)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "BatteryState";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::BATTERY_STATE"">EventEnum::BATTERY_STATE</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::BATTERY_STATE"">EventEnum::BATTERY_STATE</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

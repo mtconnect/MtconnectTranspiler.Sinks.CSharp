@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// leaf <see cref="Component">Component</see> that is a <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.
+	﻿/// leaf <see cref="Component">Component</see> that is a <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605552258379_348093_2712">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ExpiredPotClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605552258379_348093_2712";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// leaf <see cref=""Component"">Component</see> that is a <see cref=""Pot"">Pot</see> for a tool that is no longer usable for removal from a <see cref=""ToolMagazine"">ToolMagazine</see> or <see cref=""Turret"">Turret</see>.";
+		public string Summary => @"&#10;&#10;&#10;leaf {{block(Component)}} that is a {{block(Pot)}} for a tool that is no longer usable for removal from a {{block(ToolMagazine)}} or {{block(Turret)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ExpiredPot";
@@ -72,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> that is a <see cref=""Pot"">Pot</see> for a tool that is no longer usable for removal from a <see cref=""ToolMagazine"">ToolMagazine</see> or <see cref=""Turret"">Turret</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> that is a <see cref=""Pot"">Pot</see> for a tool that is no longer usable for removal from a <see cref=""ToolMagazine"">ToolMagazine</see> or <see cref=""Turret"">Turret</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// leaf <see cref="Component">Component</see> that measures linear motion or position.  <b>DEPRECATION WARNING</b> : May be deprecated in the future. Recommend using <see cref="Encoder">Encoder</see>.
+	﻿/// leaf <see cref="Component">Component</see> that measures linear motion or position.<br /><br /><b>DEPRECATION WARNING</b> : May be deprecated in the future. Recommend using <see cref="Encoder">Encoder</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580312106471_40319_44429">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LinearPositionFeedbackClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580312106471_40319_44429";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// leaf <see cref=""Component"">Component</see> that measures linear motion or position.  <b>DEPRECATION WARNING</b> : May be deprecated in the future. Recommend using <see cref=""Encoder"">Encoder</see>.";
+		public string Summary => @"&#10;&#10;&#10;leaf {{block(Component)}} that measures linear motion or position.
+
+**DEPRECATION WARNING** : May be deprecated in the future. Recommend using {{block(Encoder)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "LinearPositionFeedback";
@@ -72,7 +76,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> that measures linear motion or position.  <b>DEPRECATION WARNING</b> : May be deprecated in the future. Recommend using <see cref=""Encoder"">Encoder</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> that measures linear motion or position.  <b>DEPRECATION WARNING</b> : May be deprecated in the future. Recommend using <see cref=""Encoder"">Encoder</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

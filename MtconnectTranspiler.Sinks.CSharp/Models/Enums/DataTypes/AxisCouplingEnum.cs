@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417657_726565_2871">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AxisCouplingEnum
 	{
 		/// <summary>
-		/// axes are physically connected to each other and operate as a single unit.
+		﻿/// axes are physically connected to each other and operate as a single unit.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TANDEM,
 		/// <summary>
-		/// axes are not physically connected to each other but are operating together in lockstep.
+		﻿/// axes are not physically connected to each other but are operating together in lockstep.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SYNCHRONOUS,
 		/// <summary>
-		/// axis is the master of the <see cref="CoupledAxes">CoupledAxes</see>.
+		﻿/// axis is the master of the <see cref="CoupledAxes">CoupledAxes</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MASTER,
 		/// <summary>
-		/// axis is a slave to the <see cref="CoupledAxes">CoupledAxes</see>.
+		﻿/// axis is a slave to the <see cref="CoupledAxes">CoupledAxes</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -54,8 +59,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417657_726565_2871">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AxisCouplingEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -85,12 +91,14 @@ namespace Mtconnect.DataTypes
 
 		private TANDEMValue _TANDEM;
 		/// <summary>
-		/// axes are physically connected to each other and operate as a single unit.
+		﻿/// axes are physically connected to each other and operate as a single unit.<br/><br />
+
 		/// </summary>
 		public TANDEMValue TANDEM => _TANDEM ?? (_TANDEM = new TANDEMValue());
 
 		/// <summary>
-		/// axes are physically connected to each other and operate as a single unit.
+		﻿/// axes are physically connected to each other and operate as a single unit.<br/><br />
+
 		/// </summary>
 		public sealed class TANDEMValue : IEnumInstance
 		{
@@ -107,16 +115,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axes are physically connected to each other and operate as a single unit.";
+			public string Summary => @"&#10;&#10;&#10;axes are physically connected to each other and operate as a single unit.&#10;
+";
 		}
 		private SYNCHRONOUSValue _SYNCHRONOUS;
 		/// <summary>
-		/// axes are not physically connected to each other but are operating together in lockstep.
+		﻿/// axes are not physically connected to each other but are operating together in lockstep.<br/><br />
+
 		/// </summary>
 		public SYNCHRONOUSValue SYNCHRONOUS => _SYNCHRONOUS ?? (_SYNCHRONOUS = new SYNCHRONOUSValue());
 
 		/// <summary>
-		/// axes are not physically connected to each other but are operating together in lockstep.
+		﻿/// axes are not physically connected to each other but are operating together in lockstep.<br/><br />
+
 		/// </summary>
 		public sealed class SYNCHRONOUSValue : IEnumInstance
 		{
@@ -133,16 +144,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axes are not physically connected to each other but are operating together in lockstep.";
+			public string Summary => @"&#10;&#10;&#10;axes are not physically connected to each other but are operating together in lockstep.&#10;
+";
 		}
 		private MASTERValue _MASTER;
 		/// <summary>
-		/// axis is the master of the <see cref="CoupledAxes">CoupledAxes</see>.
+		﻿/// axis is the master of the <see cref="CoupledAxes">CoupledAxes</see>.<br/><br />
+
 		/// </summary>
 		public MASTERValue MASTER => _MASTER ?? (_MASTER = new MASTERValue());
 
 		/// <summary>
-		/// axis is the master of the <see cref="CoupledAxes">CoupledAxes</see>.
+		﻿/// axis is the master of the <see cref="CoupledAxes">CoupledAxes</see>.<br/><br />
+
 		/// </summary>
 		public sealed class MASTERValue : IEnumInstance
 		{
@@ -159,16 +173,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axis is the master of the <see cref=""CoupledAxes"">CoupledAxes</see>.";
+			public string Summary => @"&#10;&#10;&#10;axis is the master of the {{block(CoupledAxes)}}.&#10;
+";
 		}
 		private SLAVEValue _SLAVE;
 		/// <summary>
-		/// axis is a slave to the <see cref="CoupledAxes">CoupledAxes</see>.
+		﻿/// axis is a slave to the <see cref="CoupledAxes">CoupledAxes</see>.<br/><br />
+
 		/// </summary>
 		public SLAVEValue SLAVE => _SLAVE ?? (_SLAVE = new SLAVEValue());
 
 		/// <summary>
-		/// axis is a slave to the <see cref="CoupledAxes">CoupledAxes</see>.
+		﻿/// axis is a slave to the <see cref="CoupledAxes">CoupledAxes</see>.<br/><br />
+
 		/// </summary>
 		public sealed class SLAVEValue : IEnumInstance
 		{
@@ -185,7 +202,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axis is a slave to the <see cref=""CoupledAxes"">CoupledAxes</see>.";
+			public string Summary => @"&#10;&#10;&#10;axis is a slave to the {{block(CoupledAxes)}}.&#10;
+";
 		}
 	}
 }

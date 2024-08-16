@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579566531117_877396_25735">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum QualifierEnum
 	{
 		/// <summary>
-		/// measured value is greater than the expected value for a process variable.
+		﻿/// measured value is greater than the expected value for a process variable.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HIGH,
 		/// <summary>
-		/// measured value is less than the expected value for a process variable.
+		﻿/// measured value is less than the expected value for a process variable.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579566531117_877396_25735">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class QualifierEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private HIGHValue _HIGH;
 		/// <summary>
-		/// measured value is greater than the expected value for a process variable.
+		﻿/// measured value is greater than the expected value for a process variable.<br/><br />
+
 		/// </summary>
 		public HIGHValue HIGH => _HIGH ?? (_HIGH = new HIGHValue());
 
 		/// <summary>
-		/// measured value is greater than the expected value for a process variable.
+		﻿/// measured value is greater than the expected value for a process variable.<br/><br />
+
 		/// </summary>
 		public sealed class HIGHValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measured value is greater than the expected value for a process variable.";
+			public string Summary => @"&#10;&#10;&#10;measured value is greater than the expected value for a process variable.&#10;
+";
 		}
 		private LOWValue _LOW;
 		/// <summary>
-		/// measured value is less than the expected value for a process variable.
+		﻿/// measured value is less than the expected value for a process variable.<br/><br />
+
 		/// </summary>
 		public LOWValue LOW => _LOW ?? (_LOW = new LOWValue());
 
 		/// <summary>
-		/// measured value is less than the expected value for a process variable.
+		﻿/// measured value is less than the expected value for a process variable.<br/><br />
+
 		/// </summary>
 		public sealed class LOWValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measured value is less than the expected value for a process variable.";
+			public string Summary => @"&#10;&#10;&#10;measured value is less than the expected value for a process variable.&#10;
+";
 		}
 	}
 }

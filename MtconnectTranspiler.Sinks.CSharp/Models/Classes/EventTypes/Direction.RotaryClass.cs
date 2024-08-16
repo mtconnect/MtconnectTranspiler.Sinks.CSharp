@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// rotational direction of a rotary motion using the right hand rule convention.
+	﻿/// rotational direction of a rotary motion using the right hand rule convention.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218280_535236_1758">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DirectionRotaryClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218280_535236_1758";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// rotational direction of a rotary motion using the right hand rule convention.";
+		public string Summary => @"&#10;&#10;&#10;rotational direction of a rotary motion using the right hand rule convention.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Direction.Rotary";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// rotational direction of a rotary motion using the right hand rule convention.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// rotational direction of a rotary motion using the right hand rule convention.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

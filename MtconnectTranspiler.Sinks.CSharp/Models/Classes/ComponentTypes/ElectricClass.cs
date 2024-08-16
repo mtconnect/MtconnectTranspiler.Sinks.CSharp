@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description
+	﻿/// <see cref="System">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment.<br/><br />Description<br/>The electric system will provide all the data with regard to electric current, voltage, frequency, etc. that applies to the piece of equipment as a functional unit. Data regarding electric power that is specific to a <see cref="Component">Component</see> will be reported for that specific <see cref="Component">Component</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381986_185851_42231">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ElectricClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381986_185851_42231";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;The electric system will provide all the data with regard to electric current, voltage, frequency, etc. that applies to the piece of equipment as a functional unit. Data regarding electric power that is specific to a {{block(Component)}} will be reported for that specific {{block(Component)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Electric";
@@ -71,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesWattage";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> composed of the main power supply for the piece of equipment that provides distribution of that power throughout the equipment./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

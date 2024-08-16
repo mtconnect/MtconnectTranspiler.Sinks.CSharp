@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
 	/// <summary>
-	/// The collection of one or more pieces of information.   
+	﻿/// The collection of one or more pieces of information.  <br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581814695455_317721_5160">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SampleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581814695455_317721_5160";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// The collection of one or more pieces of information.   ";
+		public string Summary => @"&#10;&#10;&#10;The collection of one or more pieces of information.  
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Sample";
@@ -67,7 +70,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// The collection of one or more pieces of information.   ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

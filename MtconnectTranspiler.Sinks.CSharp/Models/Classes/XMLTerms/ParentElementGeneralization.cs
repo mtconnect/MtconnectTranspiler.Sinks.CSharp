@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
-	/// <i>element</i> of a data modeling structure that illustrates the relationship between itself and the lower-level <i>child element</i>.
+	﻿/// <i>element</i> of a data modeling structure that illustrates the relationship between itself and the lower-level <i>child element</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375178_894466_2058">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ParentElementGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375178_894466_2058";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>element</i> of a data modeling structure that illustrates the relationship between itself and the lower-level <i>child element</i>.";
+		public string Summary => @"&#10;&#10;&#10;{{term(element)}} of a data modeling structure that illustrates the relationship between itself and the lower-level {{term(child element)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "parent element";

@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Auxiliary">Auxiliary</see> that manages the addition of material or state change of material being performed in an additive manufacturing process./// Description
+	﻿/// <see cref="Auxiliary">Auxiliary</see> that manages the addition of material or state change of material being performed in an additive manufacturing process.<br/><br />Description<br/>For example, this could describe the portion of a piece of equipment that manages a material extrusion process or a vat polymerization process.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381981_362854_42222">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DepositionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381981_362854_42222";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Auxiliary"">Auxiliary</see> that manages the addition of material or state change of material being performed in an additive manufacturing process./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Auxiliary)}} that manages the addition of material or state change of material being performed in an additive manufacturing process.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;For example, this could describe the portion of a piece of equipment that manages a material extrusion process or a vat polymerization process.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Deposition";

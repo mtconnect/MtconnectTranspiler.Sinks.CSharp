@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 {
 	/// <summary>
-	/// <see cref="ConditionEnum::DATA_RANGE">ConditionEnum::DATA_RANGE</see>
+	﻿/// <see cref="ConditionEnum.DATA_RANGE">ConditionEnum.DATA_RANGE</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1598552902597_214436_552">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DataRangeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1598552902597_214436_552";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""ConditionEnum::DATA_RANGE"">ConditionEnum::DATA_RANGE</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(ConditionEnum::DATA_RANGE)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "DataRange";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConditionEnum::DATA_RANGE"">ConditionEnum::DATA_RANGE</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1633610276495_636137_441">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ConditionStateEnum
 	{
 		/// <summary>
-		/// <i>condition state</i> that indicates operation within specified limits.
+		﻿/// <i>condition state</i> that indicates operation within specified limits.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NORMAL,
 		/// <summary>
-		/// <i>condition state</i> that requires concern and supervision and may become hazardous if no action is taken.
+		﻿/// <i>condition state</i> that requires concern and supervision and may become hazardous if no action is taken.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WARNING,
 		/// <summary>
-		/// <i>condition state</i> that requires intervention to continue operation to function properly.
+		﻿/// <i>condition state</i> that requires intervention to continue operation to function properly.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1633610276495_636137_441">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConditionStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private NormalValue _Normal;
 		/// <summary>
-		/// <i>condition state</i> that indicates operation within specified limits.
+		﻿/// <i>condition state</i> that indicates operation within specified limits.<br/><br />
+
 		/// </summary>
 		public NormalValue Normal => _Normal ?? (_Normal = new NormalValue());
 
 		/// <summary>
-		/// <i>condition state</i> that indicates operation within specified limits.
+		﻿/// <i>condition state</i> that indicates operation within specified limits.<br/><br />
+
 		/// </summary>
 		public sealed class NormalValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>condition state</i> that indicates operation within specified limits.";
+			public string Summary => @"&#10;&#10;&#10;{{term(condition state)}} that indicates operation within specified limits.&#10;
+";
 		}
 		private WarningValue _Warning;
 		/// <summary>
-		/// <i>condition state</i> that requires concern and supervision and may become hazardous if no action is taken.
+		﻿/// <i>condition state</i> that requires concern and supervision and may become hazardous if no action is taken.<br/><br />
+
 		/// </summary>
 		public WarningValue Warning => _Warning ?? (_Warning = new WarningValue());
 
 		/// <summary>
-		/// <i>condition state</i> that requires concern and supervision and may become hazardous if no action is taken.
+		﻿/// <i>condition state</i> that requires concern and supervision and may become hazardous if no action is taken.<br/><br />
+
 		/// </summary>
 		public sealed class WarningValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>condition state</i> that requires concern and supervision and may become hazardous if no action is taken.";
+			public string Summary => @"&#10;&#10;&#10;{{term(condition state)}} that requires concern and supervision and may become hazardous if no action is taken.&#10;
+";
 		}
 		private FaultValue _Fault;
 		/// <summary>
-		/// <i>condition state</i> that requires intervention to continue operation to function properly.
+		﻿/// <i>condition state</i> that requires intervention to continue operation to function properly.<br/><br />
+
 		/// </summary>
 		public FaultValue Fault => _Fault ?? (_Fault = new FaultValue());
 
 		/// <summary>
-		/// <i>condition state</i> that requires intervention to continue operation to function properly.
+		﻿/// <i>condition state</i> that requires intervention to continue operation to function properly.<br/><br />
+
 		/// </summary>
 		public sealed class FaultValue : IEnumInstance
 		{
@@ -149,7 +162,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>condition state</i> that requires intervention to continue operation to function properly.";
+			public string Summary => @"&#10;&#10;&#10;{{term(condition state)}} that requires intervention to continue operation to function properly.&#10;
+";
 		}
 	}
 }

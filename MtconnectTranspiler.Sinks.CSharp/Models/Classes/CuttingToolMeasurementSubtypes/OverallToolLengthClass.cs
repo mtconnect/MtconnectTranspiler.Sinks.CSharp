@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
 	/// <summary>
-	/// largest length dimension of the cutting tool including the master insert where applicable.
+	﻿/// largest length dimension of the cutting tool including the master insert where applicable.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119507_120351_1420">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class OverallToolLengthClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119507_120351_1420";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// largest length dimension of the cutting tool including the master insert where applicable.";
+		public string Summary => @"&#10;&#10;&#10;largest length dimension of the cutting tool including the master insert where applicable.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "OverallToolLength";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// largest length dimension of the cutting tool including the master insert where applicable.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// largest length dimension of the cutting tool including the master insert where applicable.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

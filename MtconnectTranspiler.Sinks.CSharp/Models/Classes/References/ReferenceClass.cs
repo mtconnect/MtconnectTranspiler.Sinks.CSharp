@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.References
 {
 	/// <summary>
-	/// pointer to information that is associated with another entity defined elsewhere in the <see cref="MTConnectDevices">MTConnectDevices</see> entity for a piece of equipment./// Description
+	﻿/// pointer to information that is associated with another entity defined elsewhere in the <see cref="MTConnectDevices">MTConnectDevices</see> entity for a piece of equipment.<br/><br />Description<br/><see cref="Reference">Reference</see> is an abstract entity and will be realized by a specific <see cref="Reference">Reference</see> type for an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="ComponentRef">ComponentRef</see> and <see cref="DataItemRef">DataItemRef</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_25A13743_B12C_4c6c_B1DA_8E2EFDD156EF">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ReferenceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_25A13743_B12C_4c6c_B1DA_8E2EFDD156EF";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
+		public string Summary => @"&#10;&#10;&#10;pointer to information that is associated with another entity defined elsewhere in the {{block(MTConnectDevices)}} entity for a piece of equipment.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(Reference)}} is an abstract entity and will be realized by a specific {{block(Reference)}} type for an {{block(MTConnectDevices)}} entity. See {{sect(ComponentRef)}} and {{sect(DataItemRef)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Reference";
@@ -53,7 +56,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
 			/// <summary>
-			/// pointer to the <c>id</c> of an entity that contains the information to be associated with this entity.
+			﻿/// pointer to the <c>id</c> of an entity that contains the information to be associated with this entity.<br/><br />
+
 			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
@@ -73,7 +77,8 @@ namespace Mtconnect.DeviceInformationModel.References
 				public string Name => "idRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
+				public string Summary => @"&#10;&#10;&#10;pointer to the `id` of an entity that contains the information to be associated with this entity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -107,7 +112,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			///  name of an element or a piece of equipment.
+			﻿///  name of an element or a piece of equipment.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -127,7 +133,8 @@ namespace Mtconnect.DeviceInformationModel.References
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
+				public string Summary => @"&#10;&#10;&#10; name of an element or a piece of equipment.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -161,7 +168,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// </summary>
 			public DataItemIdProperty DataItemId { get; } = new DataItemIdProperty();
 			/// <summary>
-			/// pointer to the <see cref="DataItem::id" /> that contains the information to be associated with this entity.
+			﻿/// pointer to the <see cref="DataItem.id">id in DataItem</see> that contains the information to be associated with this entity.<br/><br />
+
 			/// </summary>
 			public sealed class DataItemIdProperty : IProperty
 			{
@@ -181,7 +189,8 @@ namespace Mtconnect.DeviceInformationModel.References
 				public string Name => "dataItemId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
+				public string Summary => @"&#10;&#10;&#10;pointer to the {{property(DataItem::id)}} that contains the information to be associated with this entity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -215,7 +224,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// </summary>
 			public RefDataItemIdProperty RefDataItemId { get; } = new RefDataItemIdProperty();
 			/// <summary>
-			/// pointer to the <see cref="DataItem::id" /> that contains the information to be associated with this entity.
+			﻿/// pointer to the <see cref="DataItem.id">id in DataItem</see> that contains the information to be associated with this entity.<br/><br />
+
 			/// </summary>
 			public sealed class RefDataItemIdProperty : IProperty
 			{
@@ -235,7 +245,8 @@ namespace Mtconnect.DeviceInformationModel.References
 				public string Name => "refDataItemId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// pointer to information that is associated with another entity defined elsewhere in the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity for a piece of equipment./// Description";
+				public string Summary => @"&#10;&#10;&#10;pointer to the {{property(DataItem::id)}} that contains the information to be associated with this entity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

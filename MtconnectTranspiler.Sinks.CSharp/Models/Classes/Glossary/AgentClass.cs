@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// software that collects data published from one or more piece(s) of equipment, organizes that data in a structured manner, and responds to requests for data from client software systems by providing a structured response in the form of a <i>response document</i> that is constructed using the <i>semantic data model</i> of a Standard.  
+	﻿/// software that collects data published from one or more piece(s) of equipment, organizes that data in a structured manner, and responds to requests for data from client software systems by providing a structured response in the form of a <i>response document</i> that is constructed using the <i>semantic data model</i> of a Standard. <br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375139_475436_1947">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AgentClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375139_475436_1947";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// software that collects data published from one or more piece(s) of equipment, organizes that data in a structured manner, and responds to requests for data from client software systems by providing a structured response in the form of a <i>response document</i> that is constructed using the <i>semantic data model</i> of a Standard.  ";
+		public string Summary => @"&#10;&#10;&#10;software that collects data published from one or more piece(s) of equipment, organizes that data in a structured manner, and responds to requests for data from client software systems by providing a structured response in the form of a {{term(response document)}} that is constructed using the {{term(semantic data model)}} of a Standard. 
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "agent";

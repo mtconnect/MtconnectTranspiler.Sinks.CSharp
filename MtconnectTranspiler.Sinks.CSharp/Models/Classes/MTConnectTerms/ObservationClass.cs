@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.
+	﻿/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581812901326_593856_4168">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ObservationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581812901326_593856_4168";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.";
+		public string Summary => @"&#10;&#10;&#10;{{term(observation)}} that provides telemetry data for a {{term(DataItem)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Observation";
@@ -71,7 +73,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "made by";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>observation</i> that provides telemetry data for a <i>DataItem</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

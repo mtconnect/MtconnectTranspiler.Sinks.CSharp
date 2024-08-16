@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// time and date associated with the completion of an activity or event.
+	﻿/// time and date associated with the completion of an activity or event.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218413_298281_2085">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessTimeCompleteClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218413_298281_2085";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// time and date associated with the completion of an activity or event.";
+		public string Summary => @"&#10;&#10;&#10;time and date associated with the completion of an activity or event.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessTime.Complete";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// time and date associated with the completion of an activity or event.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

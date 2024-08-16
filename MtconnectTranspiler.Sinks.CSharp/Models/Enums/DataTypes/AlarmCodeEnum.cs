@@ -5,6 +5,7 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968895333_107274_240">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -13,11 +14,12 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 	[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AlarmCodeEnum
 	{
 		/// <summary>
-		/// spindle crashed.
+		﻿/// spindle crashed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -28,7 +30,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		CRASH,
 		/// <summary>
-		/// component jammed.
+		﻿/// component jammed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -39,7 +42,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		JAM,
 		/// <summary>
-		/// component failed.
+		﻿/// component failed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -50,7 +54,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		FAILURE,
 		/// <summary>
-		/// fault occurred on the component.
+		﻿/// fault occurred on the component.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -61,7 +66,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		FAULT,
 		/// <summary>
-		/// component has stalled and cannot move.
+		﻿/// component has stalled and cannot move.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -72,7 +78,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		STALLED,
 		/// <summary>
-		/// component is overloaded.
+		﻿/// component is overloaded.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -83,7 +90,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		OVERLOAD,
 		/// <summary>
-		/// ESTOP button was pressed.
+		﻿/// ESTOP button was pressed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -94,7 +102,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		ESTOP,
 		/// <summary>
-		/// problem with the material.
+		﻿/// problem with the material.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,7 +114,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		MATERIAL,
 		/// <summary>
-		/// system message.
+		﻿/// system message.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -116,7 +126,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		MESSAGE,
 		/// <summary>
-		/// alarm is not in any of the above categories.
+		﻿/// alarm is not in any of the above categories.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -130,8 +141,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968895333_107274_240">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmCodeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -167,12 +179,14 @@ namespace Mtconnect.DataTypes
 
 		private CRASHValue _CRASH;
 		/// <summary>
-		/// spindle crashed.
+		﻿/// spindle crashed.<br/><br />
+
 		/// </summary>
 		public CRASHValue CRASH => _CRASH ?? (_CRASH = new CRASHValue());
 
 		/// <summary>
-		/// spindle crashed.
+		﻿/// spindle crashed.<br/><br />
+
 		/// </summary>
 		public sealed class CRASHValue : IEnumInstance
 		{
@@ -189,16 +203,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// spindle crashed.";
+			public string Summary => @"&#10;&#10;&#10;spindle crashed.&#10;
+";
 		}
 		private JAMValue _JAM;
 		/// <summary>
-		/// component jammed.
+		﻿/// component jammed.<br/><br />
+
 		/// </summary>
 		public JAMValue JAM => _JAM ?? (_JAM = new JAMValue());
 
 		/// <summary>
-		/// component jammed.
+		﻿/// component jammed.<br/><br />
+
 		/// </summary>
 		public sealed class JAMValue : IEnumInstance
 		{
@@ -215,16 +232,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// component jammed.";
+			public string Summary => @"&#10;&#10;&#10;component jammed.&#10;
+";
 		}
 		private FAILUREValue _FAILURE;
 		/// <summary>
-		/// component failed.
+		﻿/// component failed.<br/><br />
+
 		/// </summary>
 		public FAILUREValue FAILURE => _FAILURE ?? (_FAILURE = new FAILUREValue());
 
 		/// <summary>
-		/// component failed.
+		﻿/// component failed.<br/><br />
+
 		/// </summary>
 		public sealed class FAILUREValue : IEnumInstance
 		{
@@ -241,16 +261,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// component failed.";
+			public string Summary => @"&#10;&#10;&#10;component failed.&#10;
+";
 		}
 		private FAULTValue _FAULT;
 		/// <summary>
-		/// fault occurred on the component.
+		﻿/// fault occurred on the component.<br/><br />
+
 		/// </summary>
 		public FAULTValue FAULT => _FAULT ?? (_FAULT = new FAULTValue());
 
 		/// <summary>
-		/// fault occurred on the component.
+		﻿/// fault occurred on the component.<br/><br />
+
 		/// </summary>
 		public sealed class FAULTValue : IEnumInstance
 		{
@@ -267,16 +290,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// fault occurred on the component.";
+			public string Summary => @"&#10;&#10;&#10;fault occurred on the component.&#10;
+";
 		}
 		private STALLEDValue _STALLED;
 		/// <summary>
-		/// component has stalled and cannot move.
+		﻿/// component has stalled and cannot move.<br/><br />
+
 		/// </summary>
 		public STALLEDValue STALLED => _STALLED ?? (_STALLED = new STALLEDValue());
 
 		/// <summary>
-		/// component has stalled and cannot move.
+		﻿/// component has stalled and cannot move.<br/><br />
+
 		/// </summary>
 		public sealed class STALLEDValue : IEnumInstance
 		{
@@ -293,16 +319,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// component has stalled and cannot move.";
+			public string Summary => @"&#10;&#10;&#10;component has stalled and cannot move.&#10;
+";
 		}
 		private OVERLOADValue _OVERLOAD;
 		/// <summary>
-		/// component is overloaded.
+		﻿/// component is overloaded.<br/><br />
+
 		/// </summary>
 		public OVERLOADValue OVERLOAD => _OVERLOAD ?? (_OVERLOAD = new OVERLOADValue());
 
 		/// <summary>
-		/// component is overloaded.
+		﻿/// component is overloaded.<br/><br />
+
 		/// </summary>
 		public sealed class OVERLOADValue : IEnumInstance
 		{
@@ -319,16 +348,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// component is overloaded.";
+			public string Summary => @"&#10;&#10;&#10;component is overloaded.&#10;
+";
 		}
 		private ESTOPValue _ESTOP;
 		/// <summary>
-		/// ESTOP button was pressed.
+		﻿/// ESTOP button was pressed.<br/><br />
+
 		/// </summary>
 		public ESTOPValue ESTOP => _ESTOP ?? (_ESTOP = new ESTOPValue());
 
 		/// <summary>
-		/// ESTOP button was pressed.
+		﻿/// ESTOP button was pressed.<br/><br />
+
 		/// </summary>
 		public sealed class ESTOPValue : IEnumInstance
 		{
@@ -345,16 +377,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// ESTOP button was pressed.";
+			public string Summary => @"&#10;&#10;&#10;ESTOP button was pressed.&#10;
+";
 		}
 		private MATERIALValue _MATERIAL;
 		/// <summary>
-		/// problem with the material.
+		﻿/// problem with the material.<br/><br />
+
 		/// </summary>
 		public MATERIALValue MATERIAL => _MATERIAL ?? (_MATERIAL = new MATERIALValue());
 
 		/// <summary>
-		/// problem with the material.
+		﻿/// problem with the material.<br/><br />
+
 		/// </summary>
 		public sealed class MATERIALValue : IEnumInstance
 		{
@@ -371,16 +406,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// problem with the material.";
+			public string Summary => @"&#10;&#10;&#10;problem with the material.&#10;
+";
 		}
 		private MESSAGEValue _MESSAGE;
 		/// <summary>
-		/// system message.
+		﻿/// system message.<br/><br />
+
 		/// </summary>
 		public MESSAGEValue MESSAGE => _MESSAGE ?? (_MESSAGE = new MESSAGEValue());
 
 		/// <summary>
-		/// system message.
+		﻿/// system message.<br/><br />
+
 		/// </summary>
 		public sealed class MESSAGEValue : IEnumInstance
 		{
@@ -397,16 +435,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// system message.";
+			public string Summary => @"&#10;&#10;&#10;system message.&#10;
+";
 		}
 		private OTHERValue _OTHER;
 		/// <summary>
-		/// alarm is not in any of the above categories.
+		﻿/// alarm is not in any of the above categories.<br/><br />
+
 		/// </summary>
 		public OTHERValue OTHER => _OTHER ?? (_OTHER = new OTHERValue());
 
 		/// <summary>
-		/// alarm is not in any of the above categories.
+		﻿/// alarm is not in any of the above categories.<br/><br />
+
 		/// </summary>
 		public sealed class OTHERValue : IEnumInstance
 		{
@@ -423,7 +464,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// alarm is not in any of the above categories.";
+			public string Summary => @"&#10;&#10;&#10;alarm is not in any of the above categories.&#10;
+";
 		}
 	}
 }

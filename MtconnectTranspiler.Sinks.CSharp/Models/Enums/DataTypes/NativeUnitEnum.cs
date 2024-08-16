@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_678122A4_E8FD_4243_8427_6B7E0E78D5F5">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum NativeUnitEnum
 	{
 		/// <summary>
-		/// measure of viscosity.
+		﻿/// measure of viscosity.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CENTIPOISE,
 		/// <summary>
-		/// rotational velocity in degrees per minute.
+		﻿/// rotational velocity in degrees per minute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DEGREE_PER_MINUTE,
 		/// <summary>
-		/// temperature in Fahrenheit.
+		﻿/// temperature in Fahrenheit.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FAHRENHEIT,
 		/// <summary>
-		/// feet.
+		﻿/// feet.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FOOT,
 		/// <summary>
-		/// feet per minute.
+		﻿/// feet per minute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FOOT_PER_MINUTE,
 		/// <summary>
-		/// feet per second.
+		﻿/// feet per second.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,7 +76,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FOOT_PER_SECOND,
 		/// <summary>
-		/// acceleration in feet per second squared.
+		﻿/// acceleration in feet per second squared.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,7 +86,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FOOT_PER_SECOND_SQUARED,
 		/// <summary>
-		/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.
+		﻿/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,7 +96,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FOOT_3D,
 		/// <summary>
-		/// gallons per minute.
+		﻿/// gallons per minute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -96,7 +106,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		GALLON_PER_MINUTE,
 		/// <summary>
-		/// measurement of time in hours.
+		﻿/// measurement of time in hours.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,7 +116,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HOUR,
 		/// <summary>
-		/// inches.
+		﻿/// inches.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -114,7 +126,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INCH,
 		/// <summary>
-		/// inches per minute.
+		﻿/// inches per minute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -123,7 +136,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INCH_PER_MINUTE,
 		/// <summary>
-		/// inches per second.
+		﻿/// inches per second.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -132,7 +146,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INCH_PER_SECOND,
 		/// <summary>
-		/// acceleration in inches per second squared.
+		﻿/// acceleration in inches per second squared.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -141,7 +156,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INCH_PER_SECOND_SQUARED,
 		/// <summary>
-		/// measure of torque in inch pounds.
+		﻿/// measure of torque in inch pounds.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -150,7 +166,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INCH_POUND,
 		/// <summary>
-		/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.
+		﻿/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -159,7 +176,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INCH_3D,
 		/// <summary>
-		/// measurement of temperature.
+		﻿/// measurement of temperature.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -168,7 +186,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		KELVIN,
 		/// <summary>
-		/// measurement in kilowatt.
+		﻿/// measurement in kilowatt.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -177,7 +196,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		KILOWATT,
 		/// <summary>
-		/// kilowatt hours which is 3.6 mega joules.
+		﻿/// kilowatt hours which is 3.6 mega joules.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -186,7 +206,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		KILOWATT_HOUR,
 		/// <summary>
-		/// measurement of rate of flow of a fluid.
+		﻿/// measurement of rate of flow of a fluid.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -195,7 +216,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LITER_PER_MINUTE,
 		/// <summary>
-		/// velocity in millimeters per minute.
+		﻿/// velocity in millimeters per minute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -204,7 +226,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MILLIMETER_PER_MINUTE,
 		/// <summary>
-		/// measurement of time in minutes.
+		﻿/// measurement of time in minutes.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -213,7 +236,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MINUTE,
 		/// <summary>
-		/// unsupported unit.
+		﻿/// unsupported unit.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -222,7 +246,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OTHER,
 		/// <summary>
-		/// US pounds.
+		﻿/// US pounds.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -231,7 +256,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POUND,
 		/// <summary>
-		/// pressure in pounds per square inch (PSI).
+		﻿/// pressure in pounds per square inch (PSI).<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -240,7 +266,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POUND_PER_INCH_SQUARED,
 		/// <summary>
-		/// angle in radians.
+		﻿/// angle in radians.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -249,7 +276,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RADIAN,
 		/// <summary>
-		/// velocity in radians per minute.
+		﻿/// velocity in radians per minute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -258,7 +286,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RADIAN_PER_MINUTE,
 		/// <summary>
-		/// rotational acceleration in radian per second squared.
+		﻿/// rotational acceleration in radian per second squared.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -267,7 +296,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RADIAN_PER_SECOND,
 		/// <summary>
-		/// rotational acceleration in radian per second squared.
+		﻿/// rotational acceleration in radian per second squared.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -276,7 +306,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RADIAN_PER_SECOND_SQUARED,
 		/// <summary>
-		/// pressure in Bar.
+		﻿/// pressure in Bar.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -285,7 +316,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BAR,
 		/// <summary>
-		/// pressure in Torr.
+		﻿/// pressure in Torr.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -294,7 +326,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TORR,
 		/// <summary>
-		/// pressure in Millimeter of Mercury (mmHg).
+		﻿/// pressure in Millimeter of Mercury (mmHg).<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -303,7 +336,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MILLIMETER_MERCURY,
 		/// <summary>
-		/// pascal per minute.
+		﻿/// pascal per minute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -312,7 +346,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PASCAL_PER_MINUTE,
 		/// <summary>
-		/// <i>MASS\times GRAVITATIONAL_ACCELERATION</i>s (g) given in <c>METER/SECOND^2</c>.
+		﻿/// <i>MASS\times GRAVITATIONAL_ACCELERATION</i> (g) given in <c>METER/SECOND^2</c>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -321,7 +356,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		GRAVITATIONAL_FORCE,
 		/// <summary>
-		/// acceleration relative to earth's gravity given in <c>METER/SECOND^2</c>.  > Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.  > Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.
+		﻿/// acceleration relative to earth's gravity given in <c>METER/SECOND^2</c>.<br /><br />> Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.<br /><br />> Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -330,7 +366,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		GRAVITATIONAL_ACCELERATION,
 		/// <summary>
-		/// electric charge in ampere hour.
+		﻿/// electric charge in ampere hour.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -339,7 +376,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AMPERE_HOUR,
 		/// <summary>
-		/// change of geometric volume in cubic foot per hour.
+		﻿/// change of geometric volume in cubic foot per hour.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -348,7 +386,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CUBIC_FOOT_PER_HOUR,
 		/// <summary>
-		/// change of geometric volume in cubic foot per minute.
+		﻿/// change of geometric volume in cubic foot per minute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -360,8 +399,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_678122A4_E8FD_4243_8427_6B7E0E78D5F5">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class NativeUnitEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -425,12 +465,14 @@ namespace Mtconnect.DataTypes
 
 		private CENTIPOISEValue _CENTIPOISE;
 		/// <summary>
-		/// measure of viscosity.
+		﻿/// measure of viscosity.<br/><br />
+
 		/// </summary>
 		public CENTIPOISEValue CENTIPOISE => _CENTIPOISE ?? (_CENTIPOISE = new CENTIPOISEValue());
 
 		/// <summary>
-		/// measure of viscosity.
+		﻿/// measure of viscosity.<br/><br />
+
 		/// </summary>
 		public sealed class CENTIPOISEValue : IEnumInstance
 		{
@@ -447,16 +489,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measure of viscosity.";
+			public string Summary => @"&#10;&#10;&#10;measure of viscosity.&#10;
+";
 		}
 		private DEGREE_PER_MINUTEValue _DEGREE_PER_MINUTE;
 		/// <summary>
-		/// rotational velocity in degrees per minute.
+		﻿/// rotational velocity in degrees per minute.<br/><br />
+
 		/// </summary>
 		public DEGREE_PER_MINUTEValue DEGREE_PER_MINUTE => _DEGREE_PER_MINUTE ?? (_DEGREE_PER_MINUTE = new DEGREE_PER_MINUTEValue());
 
 		/// <summary>
-		/// rotational velocity in degrees per minute.
+		﻿/// rotational velocity in degrees per minute.<br/><br />
+
 		/// </summary>
 		public sealed class DEGREE_PER_MINUTEValue : IEnumInstance
 		{
@@ -473,16 +518,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// rotational velocity in degrees per minute.";
+			public string Summary => @"&#10;&#10;&#10;rotational velocity in degrees per minute.&#10;
+";
 		}
 		private FAHRENHEITValue _FAHRENHEIT;
 		/// <summary>
-		/// temperature in Fahrenheit.
+		﻿/// temperature in Fahrenheit.<br/><br />
+
 		/// </summary>
 		public FAHRENHEITValue FAHRENHEIT => _FAHRENHEIT ?? (_FAHRENHEIT = new FAHRENHEITValue());
 
 		/// <summary>
-		/// temperature in Fahrenheit.
+		﻿/// temperature in Fahrenheit.<br/><br />
+
 		/// </summary>
 		public sealed class FAHRENHEITValue : IEnumInstance
 		{
@@ -499,16 +547,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// temperature in Fahrenheit.";
+			public string Summary => @"&#10;&#10;&#10;temperature in Fahrenheit.&#10;
+";
 		}
 		private FOOTValue _FOOT;
 		/// <summary>
-		/// feet.
+		﻿/// feet.<br/><br />
+
 		/// </summary>
 		public FOOTValue FOOT => _FOOT ?? (_FOOT = new FOOTValue());
 
 		/// <summary>
-		/// feet.
+		﻿/// feet.<br/><br />
+
 		/// </summary>
 		public sealed class FOOTValue : IEnumInstance
 		{
@@ -525,16 +576,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// feet.";
+			public string Summary => @"&#10;&#10;&#10;feet.&#10;
+";
 		}
 		private FOOT_PER_MINUTEValue _FOOT_PER_MINUTE;
 		/// <summary>
-		/// feet per minute.
+		﻿/// feet per minute.<br/><br />
+
 		/// </summary>
 		public FOOT_PER_MINUTEValue FOOT_PER_MINUTE => _FOOT_PER_MINUTE ?? (_FOOT_PER_MINUTE = new FOOT_PER_MINUTEValue());
 
 		/// <summary>
-		/// feet per minute.
+		﻿/// feet per minute.<br/><br />
+
 		/// </summary>
 		public sealed class FOOT_PER_MINUTEValue : IEnumInstance
 		{
@@ -551,16 +605,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// feet per minute.";
+			public string Summary => @"&#10;&#10;&#10;feet per minute.&#10;
+";
 		}
 		private FOOT_PER_SECONDValue _FOOT_PER_SECOND;
 		/// <summary>
-		/// feet per second.
+		﻿/// feet per second.<br/><br />
+
 		/// </summary>
 		public FOOT_PER_SECONDValue FOOT_PER_SECOND => _FOOT_PER_SECOND ?? (_FOOT_PER_SECOND = new FOOT_PER_SECONDValue());
 
 		/// <summary>
-		/// feet per second.
+		﻿/// feet per second.<br/><br />
+
 		/// </summary>
 		public sealed class FOOT_PER_SECONDValue : IEnumInstance
 		{
@@ -577,16 +634,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// feet per second.";
+			public string Summary => @"&#10;&#10;&#10;feet per second.&#10;
+";
 		}
 		private FOOT_PER_SECOND_SQUAREDValue _FOOT_PER_SECOND_SQUARED;
 		/// <summary>
-		/// acceleration in feet per second squared.
+		﻿/// acceleration in feet per second squared.<br/><br />
+
 		/// </summary>
 		public FOOT_PER_SECOND_SQUAREDValue FOOT_PER_SECOND_SQUARED => _FOOT_PER_SECOND_SQUARED ?? (_FOOT_PER_SECOND_SQUARED = new FOOT_PER_SECOND_SQUAREDValue());
 
 		/// <summary>
-		/// acceleration in feet per second squared.
+		﻿/// acceleration in feet per second squared.<br/><br />
+
 		/// </summary>
 		public sealed class FOOT_PER_SECOND_SQUAREDValue : IEnumInstance
 		{
@@ -603,16 +663,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// acceleration in feet per second squared.";
+			public string Summary => @"&#10;&#10;&#10;acceleration in feet per second squared.&#10;
+";
 		}
 		private FOOT_3DValue _FOOT_3D;
 		/// <summary>
-		/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.
+		﻿/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.<br/><br />
+
 		/// </summary>
 		public FOOT_3DValue FOOT_3D => _FOOT_3D ?? (_FOOT_3D = new FOOT_3DValue());
 
 		/// <summary>
-		/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.
+		﻿/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.<br/><br />
+
 		/// </summary>
 		public sealed class FOOT_3DValue : IEnumInstance
 		{
@@ -629,16 +692,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.";
+			public string Summary => @"&#10;&#10;&#10;point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.&#10;
+";
 		}
 		private GALLON_PER_MINUTEValue _GALLON_PER_MINUTE;
 		/// <summary>
-		/// gallons per minute.
+		﻿/// gallons per minute.<br/><br />
+
 		/// </summary>
 		public GALLON_PER_MINUTEValue GALLON_PER_MINUTE => _GALLON_PER_MINUTE ?? (_GALLON_PER_MINUTE = new GALLON_PER_MINUTEValue());
 
 		/// <summary>
-		/// gallons per minute.
+		﻿/// gallons per minute.<br/><br />
+
 		/// </summary>
 		public sealed class GALLON_PER_MINUTEValue : IEnumInstance
 		{
@@ -655,16 +721,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// gallons per minute.";
+			public string Summary => @"&#10;&#10;&#10;gallons per minute.&#10;
+";
 		}
 		private HOURValue _HOUR;
 		/// <summary>
-		/// measurement of time in hours.
+		﻿/// measurement of time in hours.<br/><br />
+
 		/// </summary>
 		public HOURValue HOUR => _HOUR ?? (_HOUR = new HOURValue());
 
 		/// <summary>
-		/// measurement of time in hours.
+		﻿/// measurement of time in hours.<br/><br />
+
 		/// </summary>
 		public sealed class HOURValue : IEnumInstance
 		{
@@ -681,16 +750,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement of time in hours.";
+			public string Summary => @"&#10;&#10;&#10;measurement of time in hours.&#10;
+";
 		}
 		private INCHValue _INCH;
 		/// <summary>
-		/// inches.
+		﻿/// inches.<br/><br />
+
 		/// </summary>
 		public INCHValue INCH => _INCH ?? (_INCH = new INCHValue());
 
 		/// <summary>
-		/// inches.
+		﻿/// inches.<br/><br />
+
 		/// </summary>
 		public sealed class INCHValue : IEnumInstance
 		{
@@ -707,16 +779,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// inches.";
+			public string Summary => @"&#10;&#10;&#10;inches.&#10;
+";
 		}
 		private INCH_PER_MINUTEValue _INCH_PER_MINUTE;
 		/// <summary>
-		/// inches per minute.
+		﻿/// inches per minute.<br/><br />
+
 		/// </summary>
 		public INCH_PER_MINUTEValue INCH_PER_MINUTE => _INCH_PER_MINUTE ?? (_INCH_PER_MINUTE = new INCH_PER_MINUTEValue());
 
 		/// <summary>
-		/// inches per minute.
+		﻿/// inches per minute.<br/><br />
+
 		/// </summary>
 		public sealed class INCH_PER_MINUTEValue : IEnumInstance
 		{
@@ -733,16 +808,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// inches per minute.";
+			public string Summary => @"&#10;&#10;&#10;inches per minute.&#10;
+";
 		}
 		private INCH_PER_SECONDValue _INCH_PER_SECOND;
 		/// <summary>
-		/// inches per second.
+		﻿/// inches per second.<br/><br />
+
 		/// </summary>
 		public INCH_PER_SECONDValue INCH_PER_SECOND => _INCH_PER_SECOND ?? (_INCH_PER_SECOND = new INCH_PER_SECONDValue());
 
 		/// <summary>
-		/// inches per second.
+		﻿/// inches per second.<br/><br />
+
 		/// </summary>
 		public sealed class INCH_PER_SECONDValue : IEnumInstance
 		{
@@ -759,16 +837,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// inches per second.";
+			public string Summary => @"&#10;&#10;&#10;inches per second.&#10;
+";
 		}
 		private INCH_PER_SECOND_SQUAREDValue _INCH_PER_SECOND_SQUARED;
 		/// <summary>
-		/// acceleration in inches per second squared.
+		﻿/// acceleration in inches per second squared.<br/><br />
+
 		/// </summary>
 		public INCH_PER_SECOND_SQUAREDValue INCH_PER_SECOND_SQUARED => _INCH_PER_SECOND_SQUARED ?? (_INCH_PER_SECOND_SQUARED = new INCH_PER_SECOND_SQUAREDValue());
 
 		/// <summary>
-		/// acceleration in inches per second squared.
+		﻿/// acceleration in inches per second squared.<br/><br />
+
 		/// </summary>
 		public sealed class INCH_PER_SECOND_SQUAREDValue : IEnumInstance
 		{
@@ -785,16 +866,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// acceleration in inches per second squared.";
+			public string Summary => @"&#10;&#10;&#10;acceleration in inches per second squared.&#10;
+";
 		}
 		private INCH_POUNDValue _INCH_POUND;
 		/// <summary>
-		/// measure of torque in inch pounds.
+		﻿/// measure of torque in inch pounds.<br/><br />
+
 		/// </summary>
 		public INCH_POUNDValue INCH_POUND => _INCH_POUND ?? (_INCH_POUND = new INCH_POUNDValue());
 
 		/// <summary>
-		/// measure of torque in inch pounds.
+		﻿/// measure of torque in inch pounds.<br/><br />
+
 		/// </summary>
 		public sealed class INCH_POUNDValue : IEnumInstance
 		{
@@ -811,16 +895,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measure of torque in inch pounds.";
+			public string Summary => @"&#10;&#10;&#10;measure of torque in inch pounds.&#10;
+";
 		}
 		private INCH_3DValue _INCH_3D;
 		/// <summary>
-		/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.
+		﻿/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.<br/><br />
+
 		/// </summary>
 		public INCH_3DValue INCH_3D => _INCH_3D ?? (_INCH_3D = new INCH_3DValue());
 
 		/// <summary>
-		/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.
+		﻿/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.<br/><br />
+
 		/// </summary>
 		public sealed class INCH_3DValue : IEnumInstance
 		{
@@ -837,16 +924,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.";
+			public string Summary => @"&#10;&#10;&#10;point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.&#10;
+";
 		}
 		private KELVINValue _KELVIN;
 		/// <summary>
-		/// measurement of temperature.
+		﻿/// measurement of temperature.<br/><br />
+
 		/// </summary>
 		public KELVINValue KELVIN => _KELVIN ?? (_KELVIN = new KELVINValue());
 
 		/// <summary>
-		/// measurement of temperature.
+		﻿/// measurement of temperature.<br/><br />
+
 		/// </summary>
 		public sealed class KELVINValue : IEnumInstance
 		{
@@ -863,16 +953,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement of temperature.";
+			public string Summary => @"&#10;&#10;&#10;measurement of temperature.&#10;
+";
 		}
 		private KILOWATTValue _KILOWATT;
 		/// <summary>
-		/// measurement in kilowatt.
+		﻿/// measurement in kilowatt.<br/><br />
+
 		/// </summary>
 		public KILOWATTValue KILOWATT => _KILOWATT ?? (_KILOWATT = new KILOWATTValue());
 
 		/// <summary>
-		/// measurement in kilowatt.
+		﻿/// measurement in kilowatt.<br/><br />
+
 		/// </summary>
 		public sealed class KILOWATTValue : IEnumInstance
 		{
@@ -889,16 +982,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement in kilowatt.";
+			public string Summary => @"&#10;&#10;&#10;measurement in kilowatt.&#10;
+";
 		}
 		private KILOWATT_HOURValue _KILOWATT_HOUR;
 		/// <summary>
-		/// kilowatt hours which is 3.6 mega joules.
+		﻿/// kilowatt hours which is 3.6 mega joules.<br/><br />
+
 		/// </summary>
 		public KILOWATT_HOURValue KILOWATT_HOUR => _KILOWATT_HOUR ?? (_KILOWATT_HOUR = new KILOWATT_HOURValue());
 
 		/// <summary>
-		/// kilowatt hours which is 3.6 mega joules.
+		﻿/// kilowatt hours which is 3.6 mega joules.<br/><br />
+
 		/// </summary>
 		public sealed class KILOWATT_HOURValue : IEnumInstance
 		{
@@ -915,16 +1011,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// kilowatt hours which is 3.6 mega joules.";
+			public string Summary => @"&#10;&#10;&#10;kilowatt hours which is 3.6 mega joules.&#10;
+";
 		}
 		private LITER_PER_MINUTEValue _LITER_PER_MINUTE;
 		/// <summary>
-		/// measurement of rate of flow of a fluid.
+		﻿/// measurement of rate of flow of a fluid.<br/><br />
+
 		/// </summary>
 		public LITER_PER_MINUTEValue LITER_PER_MINUTE => _LITER_PER_MINUTE ?? (_LITER_PER_MINUTE = new LITER_PER_MINUTEValue());
 
 		/// <summary>
-		/// measurement of rate of flow of a fluid.
+		﻿/// measurement of rate of flow of a fluid.<br/><br />
+
 		/// </summary>
 		public sealed class LITER_PER_MINUTEValue : IEnumInstance
 		{
@@ -941,16 +1040,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement of rate of flow of a fluid.";
+			public string Summary => @"&#10;&#10;&#10;measurement of rate of flow of a fluid.&#10;
+";
 		}
 		private MILLIMETER_PER_MINUTEValue _MILLIMETER_PER_MINUTE;
 		/// <summary>
-		/// velocity in millimeters per minute.
+		﻿/// velocity in millimeters per minute.<br/><br />
+
 		/// </summary>
 		public MILLIMETER_PER_MINUTEValue MILLIMETER_PER_MINUTE => _MILLIMETER_PER_MINUTE ?? (_MILLIMETER_PER_MINUTE = new MILLIMETER_PER_MINUTEValue());
 
 		/// <summary>
-		/// velocity in millimeters per minute.
+		﻿/// velocity in millimeters per minute.<br/><br />
+
 		/// </summary>
 		public sealed class MILLIMETER_PER_MINUTEValue : IEnumInstance
 		{
@@ -967,16 +1069,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// velocity in millimeters per minute.";
+			public string Summary => @"&#10;&#10;&#10;velocity in millimeters per minute.&#10;
+";
 		}
 		private MINUTEValue _MINUTE;
 		/// <summary>
-		/// measurement of time in minutes.
+		﻿/// measurement of time in minutes.<br/><br />
+
 		/// </summary>
 		public MINUTEValue MINUTE => _MINUTE ?? (_MINUTE = new MINUTEValue());
 
 		/// <summary>
-		/// measurement of time in minutes.
+		﻿/// measurement of time in minutes.<br/><br />
+
 		/// </summary>
 		public sealed class MINUTEValue : IEnumInstance
 		{
@@ -993,16 +1098,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement of time in minutes.";
+			public string Summary => @"&#10;&#10;&#10;measurement of time in minutes.&#10;
+";
 		}
 		private OTHERValue _OTHER;
 		/// <summary>
-		/// unsupported unit.
+		﻿/// unsupported unit.<br/><br />
+
 		/// </summary>
 		public OTHERValue OTHER => _OTHER ?? (_OTHER = new OTHERValue());
 
 		/// <summary>
-		/// unsupported unit.
+		﻿/// unsupported unit.<br/><br />
+
 		/// </summary>
 		public sealed class OTHERValue : IEnumInstance
 		{
@@ -1019,16 +1127,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// unsupported unit.";
+			public string Summary => @"&#10;&#10;&#10;unsupported unit.&#10;
+";
 		}
 		private POUNDValue _POUND;
 		/// <summary>
-		/// US pounds.
+		﻿/// US pounds.<br/><br />
+
 		/// </summary>
 		public POUNDValue POUND => _POUND ?? (_POUND = new POUNDValue());
 
 		/// <summary>
-		/// US pounds.
+		﻿/// US pounds.<br/><br />
+
 		/// </summary>
 		public sealed class POUNDValue : IEnumInstance
 		{
@@ -1045,16 +1156,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// US pounds.";
+			public string Summary => @"&#10;&#10;&#10;US pounds.&#10;
+";
 		}
 		private POUND_PER_INCH_SQUAREDValue _POUND_PER_INCH_SQUARED;
 		/// <summary>
-		/// pressure in pounds per square inch (PSI).
+		﻿/// pressure in pounds per square inch (PSI).<br/><br />
+
 		/// </summary>
 		public POUND_PER_INCH_SQUAREDValue POUND_PER_INCH_SQUARED => _POUND_PER_INCH_SQUARED ?? (_POUND_PER_INCH_SQUARED = new POUND_PER_INCH_SQUAREDValue());
 
 		/// <summary>
-		/// pressure in pounds per square inch (PSI).
+		﻿/// pressure in pounds per square inch (PSI).<br/><br />
+
 		/// </summary>
 		public sealed class POUND_PER_INCH_SQUAREDValue : IEnumInstance
 		{
@@ -1071,16 +1185,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// pressure in pounds per square inch (PSI).";
+			public string Summary => @"&#10;&#10;&#10;pressure in pounds per square inch (PSI).&#10;
+";
 		}
 		private RADIANValue _RADIAN;
 		/// <summary>
-		/// angle in radians.
+		﻿/// angle in radians.<br/><br />
+
 		/// </summary>
 		public RADIANValue RADIAN => _RADIAN ?? (_RADIAN = new RADIANValue());
 
 		/// <summary>
-		/// angle in radians.
+		﻿/// angle in radians.<br/><br />
+
 		/// </summary>
 		public sealed class RADIANValue : IEnumInstance
 		{
@@ -1097,16 +1214,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// angle in radians.";
+			public string Summary => @"&#10;&#10;&#10;angle in radians.&#10;
+";
 		}
 		private RADIAN_PER_MINUTEValue _RADIAN_PER_MINUTE;
 		/// <summary>
-		/// velocity in radians per minute.
+		﻿/// velocity in radians per minute.<br/><br />
+
 		/// </summary>
 		public RADIAN_PER_MINUTEValue RADIAN_PER_MINUTE => _RADIAN_PER_MINUTE ?? (_RADIAN_PER_MINUTE = new RADIAN_PER_MINUTEValue());
 
 		/// <summary>
-		/// velocity in radians per minute.
+		﻿/// velocity in radians per minute.<br/><br />
+
 		/// </summary>
 		public sealed class RADIAN_PER_MINUTEValue : IEnumInstance
 		{
@@ -1123,16 +1243,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// velocity in radians per minute.";
+			public string Summary => @"&#10;&#10;&#10;velocity in radians per minute.&#10;
+";
 		}
 		private RADIAN_PER_SECONDValue _RADIAN_PER_SECOND;
 		/// <summary>
-		/// rotational acceleration in radian per second squared.
+		﻿/// rotational acceleration in radian per second squared.<br/><br />
+
 		/// </summary>
 		public RADIAN_PER_SECONDValue RADIAN_PER_SECOND => _RADIAN_PER_SECOND ?? (_RADIAN_PER_SECOND = new RADIAN_PER_SECONDValue());
 
 		/// <summary>
-		/// rotational acceleration in radian per second squared.
+		﻿/// rotational acceleration in radian per second squared.<br/><br />
+
 		/// </summary>
 		public sealed class RADIAN_PER_SECONDValue : IEnumInstance
 		{
@@ -1149,16 +1272,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// rotational acceleration in radian per second squared.";
+			public string Summary => @"&#10;&#10;&#10;rotational acceleration in radian per second squared.&#10;
+";
 		}
 		private RADIAN_PER_SECOND_SQUAREDValue _RADIAN_PER_SECOND_SQUARED;
 		/// <summary>
-		/// rotational acceleration in radian per second squared.
+		﻿/// rotational acceleration in radian per second squared.<br/><br />
+
 		/// </summary>
 		public RADIAN_PER_SECOND_SQUAREDValue RADIAN_PER_SECOND_SQUARED => _RADIAN_PER_SECOND_SQUARED ?? (_RADIAN_PER_SECOND_SQUARED = new RADIAN_PER_SECOND_SQUAREDValue());
 
 		/// <summary>
-		/// rotational acceleration in radian per second squared.
+		﻿/// rotational acceleration in radian per second squared.<br/><br />
+
 		/// </summary>
 		public sealed class RADIAN_PER_SECOND_SQUAREDValue : IEnumInstance
 		{
@@ -1175,16 +1301,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// rotational acceleration in radian per second squared.";
+			public string Summary => @"&#10;&#10;&#10;rotational acceleration in radian per second squared.&#10;
+";
 		}
 		private BARValue _BAR;
 		/// <summary>
-		/// pressure in Bar.
+		﻿/// pressure in Bar.<br/><br />
+
 		/// </summary>
 		public BARValue BAR => _BAR ?? (_BAR = new BARValue());
 
 		/// <summary>
-		/// pressure in Bar.
+		﻿/// pressure in Bar.<br/><br />
+
 		/// </summary>
 		public sealed class BARValue : IEnumInstance
 		{
@@ -1201,16 +1330,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// pressure in Bar.";
+			public string Summary => @"&#10;&#10;&#10;pressure in Bar.&#10;
+";
 		}
 		private TORRValue _TORR;
 		/// <summary>
-		/// pressure in Torr.
+		﻿/// pressure in Torr.<br/><br />
+
 		/// </summary>
 		public TORRValue TORR => _TORR ?? (_TORR = new TORRValue());
 
 		/// <summary>
-		/// pressure in Torr.
+		﻿/// pressure in Torr.<br/><br />
+
 		/// </summary>
 		public sealed class TORRValue : IEnumInstance
 		{
@@ -1227,16 +1359,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// pressure in Torr.";
+			public string Summary => @"&#10;&#10;&#10;pressure in Torr.&#10;
+";
 		}
 		private MILLIMETER_MERCURYValue _MILLIMETER_MERCURY;
 		/// <summary>
-		/// pressure in Millimeter of Mercury (mmHg).
+		﻿/// pressure in Millimeter of Mercury (mmHg).<br/><br />
+
 		/// </summary>
 		public MILLIMETER_MERCURYValue MILLIMETER_MERCURY => _MILLIMETER_MERCURY ?? (_MILLIMETER_MERCURY = new MILLIMETER_MERCURYValue());
 
 		/// <summary>
-		/// pressure in Millimeter of Mercury (mmHg).
+		﻿/// pressure in Millimeter of Mercury (mmHg).<br/><br />
+
 		/// </summary>
 		public sealed class MILLIMETER_MERCURYValue : IEnumInstance
 		{
@@ -1253,16 +1388,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// pressure in Millimeter of Mercury (mmHg).";
+			public string Summary => @"&#10;&#10;&#10;pressure in Millimeter of Mercury (mmHg).&#10;
+";
 		}
 		private PASCAL_PER_MINUTEValue _PASCAL_PER_MINUTE;
 		/// <summary>
-		/// pascal per minute.
+		﻿/// pascal per minute.<br/><br />
+
 		/// </summary>
 		public PASCAL_PER_MINUTEValue PASCAL_PER_MINUTE => _PASCAL_PER_MINUTE ?? (_PASCAL_PER_MINUTE = new PASCAL_PER_MINUTEValue());
 
 		/// <summary>
-		/// pascal per minute.
+		﻿/// pascal per minute.<br/><br />
+
 		/// </summary>
 		public sealed class PASCAL_PER_MINUTEValue : IEnumInstance
 		{
@@ -1279,16 +1417,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// pascal per minute.";
+			public string Summary => @"&#10;&#10;&#10;pascal per minute.&#10;
+";
 		}
 		private GRAVITATIONAL_FORCEValue _GRAVITATIONAL_FORCE;
 		/// <summary>
-		/// <i>MASS\times GRAVITATIONAL_ACCELERATION</i>s (g) given in <c>METER/SECOND^2</c>.
+		﻿/// <i>MASS\times GRAVITATIONAL_ACCELERATION</i> (g) given in <c>METER/SECOND^2</c>.<br/><br />
+
 		/// </summary>
 		public GRAVITATIONAL_FORCEValue GRAVITATIONAL_FORCE => _GRAVITATIONAL_FORCE ?? (_GRAVITATIONAL_FORCE = new GRAVITATIONAL_FORCEValue());
 
 		/// <summary>
-		/// <i>MASS\times GRAVITATIONAL_ACCELERATION</i>s (g) given in <c>METER/SECOND^2</c>.
+		﻿/// <i>MASS\times GRAVITATIONAL_ACCELERATION</i> (g) given in <c>METER/SECOND^2</c>.<br/><br />
+
 		/// </summary>
 		public sealed class GRAVITATIONAL_FORCEValue : IEnumInstance
 		{
@@ -1305,16 +1446,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>MASS\\times GRAVITATIONAL_ACCELERATION</i>s (g) given in <c>METER/SECOND^2</c>.";
+			public string Summary => @"&#10;&#10;&#10;$$MASS\\times GRAVITATIONAL_ACCELERATION$$ (g) given in `METER/SECOND^2`.&#10;
+";
 		}
 		private GRAVITATIONAL_ACCELERATIONValue _GRAVITATIONAL_ACCELERATION;
 		/// <summary>
-		/// acceleration relative to earth's gravity given in <c>METER/SECOND^2</c>.  > Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.  > Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.
+		﻿/// acceleration relative to earth's gravity given in <c>METER/SECOND^2</c>.<br /><br />> Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.<br /><br />> Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.<br/><br />
+
 		/// </summary>
 		public GRAVITATIONAL_ACCELERATIONValue GRAVITATIONAL_ACCELERATION => _GRAVITATIONAL_ACCELERATION ?? (_GRAVITATIONAL_ACCELERATION = new GRAVITATIONAL_ACCELERATIONValue());
 
 		/// <summary>
-		/// acceleration relative to earth's gravity given in <c>METER/SECOND^2</c>.  > Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.  > Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.
+		﻿/// acceleration relative to earth's gravity given in <c>METER/SECOND^2</c>.<br /><br />> Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.<br /><br />> Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.<br/><br />
+
 		/// </summary>
 		public sealed class GRAVITATIONAL_ACCELERATIONValue : IEnumInstance
 		{
@@ -1331,16 +1475,23 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// acceleration relative to earth's gravity given in <c>METER/SECOND^2</c>.  > Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.  > Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.";
+			public string Summary => @"&#10;&#10;&#10;acceleration relative to earth's gravity given in `METER/SECOND^2`.
+
+> Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.
+
+> Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.&#10;
+";
 		}
 		private AMPERE_HOURValue _AMPERE_HOUR;
 		/// <summary>
-		/// electric charge in ampere hour.
+		﻿/// electric charge in ampere hour.<br/><br />
+
 		/// </summary>
 		public AMPERE_HOURValue AMPERE_HOUR => _AMPERE_HOUR ?? (_AMPERE_HOUR = new AMPERE_HOURValue());
 
 		/// <summary>
-		/// electric charge in ampere hour.
+		﻿/// electric charge in ampere hour.<br/><br />
+
 		/// </summary>
 		public sealed class AMPERE_HOURValue : IEnumInstance
 		{
@@ -1357,16 +1508,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// electric charge in ampere hour.";
+			public string Summary => @"&#10;&#10;&#10;electric charge in ampere hour.&#10;
+";
 		}
 		private CUBIC_FOOT_PER_HOURValue _CUBIC_FOOT_PER_HOUR;
 		/// <summary>
-		/// change of geometric volume in cubic foot per hour.
+		﻿/// change of geometric volume in cubic foot per hour.<br/><br />
+
 		/// </summary>
 		public CUBIC_FOOT_PER_HOURValue CUBIC_FOOT_PER_HOUR => _CUBIC_FOOT_PER_HOUR ?? (_CUBIC_FOOT_PER_HOUR = new CUBIC_FOOT_PER_HOURValue());
 
 		/// <summary>
-		/// change of geometric volume in cubic foot per hour.
+		﻿/// change of geometric volume in cubic foot per hour.<br/><br />
+
 		/// </summary>
 		public sealed class CUBIC_FOOT_PER_HOURValue : IEnumInstance
 		{
@@ -1383,16 +1537,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// change of geometric volume in cubic foot per hour.";
+			public string Summary => @"&#10;&#10;&#10;change of geometric volume in cubic foot per hour.&#10;
+";
 		}
 		private CUBIC_FOOT_PER_MINUTEValue _CUBIC_FOOT_PER_MINUTE;
 		/// <summary>
-		/// change of geometric volume in cubic foot per minute.
+		﻿/// change of geometric volume in cubic foot per minute.<br/><br />
+
 		/// </summary>
 		public CUBIC_FOOT_PER_MINUTEValue CUBIC_FOOT_PER_MINUTE => _CUBIC_FOOT_PER_MINUTE ?? (_CUBIC_FOOT_PER_MINUTE = new CUBIC_FOOT_PER_MINUTEValue());
 
 		/// <summary>
-		/// change of geometric volume in cubic foot per minute.
+		﻿/// change of geometric volume in cubic foot per minute.<br/><br />
+
 		/// </summary>
 		public sealed class CUBIC_FOOT_PER_MINUTEValue : IEnumInstance
 		{
@@ -1409,7 +1566,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// change of geometric volume in cubic foot per minute.";
+			public string Summary => @"&#10;&#10;&#10;change of geometric volume in cubic foot per minute.&#10;
+";
 		}
 	}
 }

@@ -5,17 +5,24 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
-	/// location of the pot or spindle the cutting tool currently resides in.  If <see cref="Location::negativeOverlap" /> or <see cref="Location::positiveOverlap" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref="Location::positiveOverlap" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description
+	﻿/// location of the pot or spindle the cutting tool currently resides in.<br /><br />If <see cref="Location.negativeOverlap">negativeOverlap in Location</see> or <see cref="Location.positiveOverlap">positiveOverlap in Location</see> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.<br /><br />If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref="Location.positiveOverlap">positiveOverlap in Location</see> of 1, the first pot <b>MAY</b> be occupied as well.<br/><br />Description<br/><see cref="Location">Location</see> <b>MUST</b> be defined only for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingTool">CuttingTool</see> and <b>MUST NOT</b> be defined for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_A012A42B_DBEC_4334_891D_5B45D7A7E340">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LocationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_A012A42B_DBEC_4334_891D_5B45D7A7E340";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+		public string Summary => @"&#10;&#10;&#10;location of the pot or spindle the cutting tool currently resides in.
+
+If {{property(Location::negativeOverlap)}} or {{property(Location::positiveOverlap)}} is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.
+
+If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a {{property(Location::positiveOverlap)}} of 1, the first pot **MAY** be occupied as well.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(Location)}} **MUST** be defined only for the {{block(CuttingToolLifeCycle)}} of {{block(CuttingTool)}} and **MUST NOT** be defined for the {{block(CuttingToolLifeCycle)}} of {{block(CuttingToolArchetype)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Location";
@@ -58,7 +65,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public NegativeOverlapProperty NegativeOverlap { get; } = new NegativeOverlapProperty();
 			/// <summary>
-			/// number of locations at lower index values from this location.
+			﻿/// number of locations at lower index values from this location.<br/><br />
+
 			/// </summary>
 			public sealed class NegativeOverlapProperty : IProperty
 			{
@@ -78,7 +86,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "negativeOverlap";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"&#10;&#10;&#10;number of locations at lower index values from this location.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -112,7 +121,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public PositiveOverlapProperty PositiveOverlap { get; } = new PositiveOverlapProperty();
 			/// <summary>
-			/// number of locations at higher index value from this location. 
+			﻿/// number of locations at higher index value from this location.<br /><br/><br />
+
 			/// </summary>
 			public sealed class PositiveOverlapProperty : IProperty
 			{
@@ -132,7 +142,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "positiveOverlap";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"&#10;&#10;&#10;number of locations at higher index value from this location.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -166,7 +177,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of location being identified.   When a <c>POT</c> or <c>STATION</c> type is used, <see cref="Location::value" /><b>MUST</b> be a numeric value.
+			﻿/// type of location being identified. <br /><br />When a <c>POT</c> or <c>STATION</c> type is used, <see cref="Location.value">value in Location</see><b>MUST</b> be a numeric value.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -186,7 +198,10 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"&#10;&#10;&#10;type of location being identified. 
+
+When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be a numeric value.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -220,7 +235,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public TurretProperty Turret { get; } = new TurretProperty();
 			/// <summary>
-			/// turret associated with a tool.
+			﻿/// turret associated with a tool.<br/><br />
+
 			/// </summary>
 			public sealed class TurretProperty : IProperty
 			{
@@ -240,7 +256,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "turret";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"&#10;&#10;&#10;turret associated with a tool.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -274,7 +291,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public ToolMagazineProperty ToolMagazine { get; } = new ToolMagazineProperty();
 			/// <summary>
-			/// tool magazine associated with a tool. 
+			﻿/// tool magazine associated with a tool.<br /><br/><br />
+
 			/// </summary>
 			public sealed class ToolMagazineProperty : IProperty
 			{
@@ -294,7 +312,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "toolMagazine";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"&#10;&#10;&#10;tool magazine associated with a tool.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -328,7 +347,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public ToolBarProperty ToolBar { get; } = new ToolBarProperty();
 			/// <summary>
-			/// tool bar associated with a tool.
+			﻿/// tool bar associated with a tool.<br/><br />
+
 			/// </summary>
 			public sealed class ToolBarProperty : IProperty
 			{
@@ -348,7 +368,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "toolBar";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"&#10;&#10;&#10;tool bar associated with a tool.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -382,7 +403,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public ToolRackProperty ToolRack { get; } = new ToolRackProperty();
 			/// <summary>
-			/// tool rack associated with a tool.
+			﻿/// tool rack associated with a tool.<br/><br />
+
 			/// </summary>
 			public sealed class ToolRackProperty : IProperty
 			{
@@ -402,7 +424,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "toolRack";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"&#10;&#10;&#10;tool rack associated with a tool.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -436,7 +459,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public AutomaticToolChangerProperty AutomaticToolChanger { get; } = new AutomaticToolChangerProperty();
 			/// <summary>
-			/// automatic tool changer associated with a tool.
+			﻿/// automatic tool changer associated with a tool.<br/><br />
+
 			/// </summary>
 			public sealed class AutomaticToolChangerProperty : IProperty
 			{
@@ -456,7 +480,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "automaticToolChanger";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"&#10;&#10;&#10;automatic tool changer associated with a tool.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -507,7 +532,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// location of the pot or spindle the cutting tool currently resides in.  If <see cref=""Location::negativeOverlap"" /> or <see cref=""Location::positiveOverlap"" /> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.  If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref=""Location::positiveOverlap"" /> of 1, the first pot <b>MAY</b> be occupied as well./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

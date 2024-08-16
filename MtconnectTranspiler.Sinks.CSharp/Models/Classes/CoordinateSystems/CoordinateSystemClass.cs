@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>
-	/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href="https://www.google.com/search?q=ISO 10303-218:2004&btnI=I">ISO 10303-218:2004</seealso>/// Description
+	﻿/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href="https://www.google.com/search?q=ISO 10303-218:2004&btnI=I">ISO 10303-218:2004</seealso><br/><br />Description<br/>At most only one of <see cref="Origin">Origin</see> or <see cref="Transformation">Transformation</see> <b>MUST</b> be defined for a <see cref="CoordinateSystem">CoordinateSystem</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579100679936_1279_16310">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CoordinateSystemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579100679936_1279_16310";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+		public string Summary => @"&#10;&#10;&#10;reference system that associates a unique set of n parameters with each point in an n-dimensional space. {{cite(ISO 10303-218:2004)}}&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be defined for a {{block(CoordinateSystem)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CoordinateSystem";
@@ -58,7 +61,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
 			/// <summary>
-			/// unique identifier for the coordinate system.
+			﻿/// unique identifier for the coordinate system.<br/><br />
+
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -78,7 +82,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "id";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for the coordinate system.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -112,7 +117,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// name of the coordinate system.
+			﻿/// name of the coordinate system.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -132,7 +138,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"&#10;&#10;&#10;name of the coordinate system.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -166,7 +173,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public NativeNameProperty NativeName { get; } = new NativeNameProperty();
 			/// <summary>
-			/// manufacturer's name or users name for the coordinate system.
+			﻿/// manufacturer's name or users name for the coordinate system.<br/><br />
+
 			/// </summary>
 			public sealed class NativeNameProperty : IProperty
 			{
@@ -186,7 +194,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "nativeName";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"&#10;&#10;&#10;manufacturer's name or users name for the coordinate system.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -220,7 +229,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public ParentIdRefProperty ParentIdRef { get; } = new ParentIdRefProperty();
 			/// <summary>
-			/// pointer to the <see cref="CoordinateSystem::id" />.
+			﻿/// pointer to the <see cref="CoordinateSystem.id">id in CoordinateSystem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ParentIdRefProperty : IProperty
 			{
@@ -240,7 +250,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "parentIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"&#10;&#10;&#10;pointer to the {{property(CoordinateSystem::id)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -291,7 +302,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "hasOrigin";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -342,7 +353,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "hasTransformation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -376,7 +387,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of coordinate system.
+			﻿/// type of coordinate system.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -396,7 +408,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"&#10;&#10;&#10;type of coordinate system.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -430,7 +443,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
 			/// <summary>
-			/// <i>UUID</i> for the coordinate system.
+			﻿/// <i>UUID</i> for the coordinate system.<br/><br />
+
 			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
@@ -450,7 +464,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "uuid";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"&#10;&#10;&#10;{{term(UUID)}} for the coordinate system.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -484,7 +499,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public DescriptionProperty Description { get; } = new DescriptionProperty();
 			/// <summary>
-			/// natural language description of the <see cref="CoordinateSystem">CoordinateSystem</see>.
+			﻿/// natural language description of the <see cref="CoordinateSystem">CoordinateSystem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class DescriptionProperty : IProperty
 			{
@@ -504,7 +520,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "Description";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href=""https://www.google.com/search?q=ISO 10303-218:2004&btnI=I"">ISO 10303-218:2004</seealso>/// Description";
+				public string Summary => @"&#10;&#10;&#10;natural language description of the {{block(CoordinateSystem)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

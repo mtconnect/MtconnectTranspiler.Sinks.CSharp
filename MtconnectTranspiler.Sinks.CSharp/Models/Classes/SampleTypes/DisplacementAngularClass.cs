@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// <see cref="SampleEnum::DISPLACEMENT_ANGULAR">SampleEnum::DISPLACEMENT_ANGULAR</see>  > Note: The displacement vector <b>MAY</b> be defined by the motion of the owning <see cref="Component">Component</see>.
+	﻿/// <see cref="SampleEnum.DISPLACEMENT_ANGULAR">SampleEnum.DISPLACEMENT_ANGULAR</see><br /><br />> Note: The displacement vector <b>MAY</b> be defined by the motion of the owning <see cref="Component">Component</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1660362465264_70518_748">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DisplacementAngularClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1660362465264_70518_748";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""SampleEnum::DISPLACEMENT_ANGULAR"">SampleEnum::DISPLACEMENT_ANGULAR</see>  > Note: The displacement vector <b>MAY</b> be defined by the motion of the owning <see cref=""Component"">Component</see>.";
+		public string Summary => @"&#10;&#10;&#10;{{def(SampleEnum::DISPLACEMENT_ANGULAR)}}
+
+> Note: The displacement vector **MAY** be defined by the motion of the owning {{block(Component)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "DisplacementAngular";
@@ -72,7 +76,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::DISPLACEMENT_ANGULAR"">SampleEnum::DISPLACEMENT_ANGULAR</see>  > Note: The displacement vector <b>MAY</b> be defined by the motion of the owning <see cref=""Component"">Component</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::DISPLACEMENT_ANGULAR"">SampleEnum::DISPLACEMENT_ANGULAR</see>  > Note: The displacement vector <b>MAY</b> be defined by the motion of the owning <see cref=""Component"">Component</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

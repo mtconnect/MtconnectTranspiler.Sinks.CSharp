@@ -6,17 +6,22 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 {
 	/// <summary>
-	/// abstract <see cref="DataItem">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range./// Description
+	﻿/// abstract <see cref="DataItem">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range.<br/><br />Description<br/><see cref="Condition">Condition</see> is reported differently than <see cref="Sample">Sample</see> or <see cref="Event">Event</see>.  <see cref="Condition">Condition</see> <b>MUST</b> be reported as <see cref="Normal">Normal</see>, <see cref="Warning">Warning</see>, or <see cref="Fault">Fault</see>.<br /><br />All <see cref="Sample">Sample</see>s <b>MAY</b> have associated <see cref="Condition">Condition</see> states.  <see cref="Condition">Condition</see> states indicate whether the value for the data is within an expected range and <b>MUST</b> be reported as <see cref="Normal">Normal</see>, or the value is unexpected or out of tolerance for the data and a <see cref="Warning">Warning</see> or <see cref="Fault">Fault</see> <b>MUST</b> be provided.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_3F5927FF_5B8D_4307_8D27_9654F724A657">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConditionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_3F5927FF_5B8D_4307_8D27_9654F724A657";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range./// Description";
+		public string Summary => @"&#10;&#10;&#10;abstract {{block(DataItem)}} that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(Condition)}} is reported differently than {{block(Sample)}} or {{block(Event)}}.  {{block(Condition)}} **MUST** be reported as {{block(Normal)}}, {{block(Warning)}}, or {{block(Fault)}}.
+
+All {{block(Sample)}}s **MAY** have associated {{block(Condition)}} states.  {{block(Condition)}} states indicate whether the value for the data is within an expected range and **MUST** be reported as {{block(Normal)}}, or the value is unexpected or out of tolerance for the data and a {{block(Warning)}} or {{block(Fault)}} **MUST** be provided.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Condition";
@@ -72,7 +77,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "category";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +128,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

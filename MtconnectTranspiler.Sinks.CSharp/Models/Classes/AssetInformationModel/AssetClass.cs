@@ -6,17 +6,25 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel
 {
 	/// <summary>
-	/// abstract <i>Asset</i>. /// Description
+	﻿/// abstract <i>Asset</i>. <br/><br />Description<br/>It is used in the manufacturing process, but is not permanently associated with a single piece of equipment. It can be removed from the piece of equipment without compromising its function, and can be associated with other pieces of equipment during its lifecycle.<br /><br /><br />![Asset](figures/Asset.png "Asset"){: width="0.8"}<br /><br />> Note: See <see cref="Assets Schema Diagrams">Assets Schema Diagrams</see> for XML schema.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_C7D39183_23CB_416b_A62D_F60815E08B1A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AssetClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_C7D39183_23CB_416b_A62D_F60815E08B1A";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+		public string Summary => @"&#10;&#10;&#10;abstract {{term(Asset)}}. &#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;It is used in the manufacturing process, but is not permanently associated with a single piece of equipment. It can be removed from the piece of equipment without compromising its function, and can be associated with other pieces of equipment during its lifecycle.
+
+
+![Asset](figures/Asset.png ""Asset""){: width=""0.8""}
+
+> Note: See {{sect(Assets Schema Diagrams)}} for XML schema.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Asset";
@@ -60,7 +68,8 @@ namespace Mtconnect.AssetInformationModel
 			/// </summary>
 			public AssetIdProperty AssetId { get; } = new AssetIdProperty();
 			/// <summary>
-			/// unique identifier for an <see cref="Asset">Asset</see>.
+			﻿/// unique identifier for an <see cref="Asset">Asset</see>.<br/><br />
+
 			/// </summary>
 			public sealed class AssetIdProperty : IProperty
 			{
@@ -80,7 +89,8 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "assetId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for an {{block(Asset)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -114,7 +124,8 @@ namespace Mtconnect.AssetInformationModel
 			/// </summary>
 			public DeviceUuidProperty DeviceUuid { get; } = new DeviceUuidProperty();
 			/// <summary>
-			/// associated piece of equipment's <i>UUID</i> that supplied the <see cref="Asset">Asset</see>'s data.  It references to <see cref="Device::uuid" /> defined in <see cref="Device Information Model">Device Information Model</see>.
+			﻿/// associated piece of equipment's <i>UUID</i> that supplied the <see cref="Asset">Asset</see>'s data.<br /><br />It references to <see cref="Device.uuid">uuid in Device</see> defined in <see cref="Device Information Model">Device Information Model</see>.<br/><br />
+
 			/// </summary>
 			public sealed class DeviceUuidProperty : IProperty
 			{
@@ -134,7 +145,10 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "deviceUuid";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+				public string Summary => @"&#10;&#10;&#10;associated piece of equipment's {{term(UUID)}} that supplied the {{block(Asset)}}'s data.
+
+It references to {{property(Device::uuid)}} defined in {{package(Device Information Model)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -168,7 +182,8 @@ namespace Mtconnect.AssetInformationModel
 			/// </summary>
 			public RemovedProperty Removed { get; } = new RemovedProperty();
 			/// <summary>
-			/// indicator that the <see cref="Asset">Asset</see> has been removed from the piece of equipment.
+			﻿/// indicator that the <see cref="Asset">Asset</see> has been removed from the piece of equipment.<br/><br />
+
 			/// </summary>
 			public sealed class RemovedProperty : IProperty
 			{
@@ -188,7 +203,8 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "removed";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+				public string Summary => @"&#10;&#10;&#10;indicator that the {{block(Asset)}} has been removed from the piece of equipment.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -222,7 +238,8 @@ namespace Mtconnect.AssetInformationModel
 			/// </summary>
 			public TimestampProperty Timestamp { get; } = new TimestampProperty();
 			/// <summary>
-			/// time the <see cref="Asset">Asset</see> data was last modified.
+			﻿/// time the <see cref="Asset">Asset</see> data was last modified.<br/><br />
+
 			/// </summary>
 			public sealed class TimestampProperty : IProperty
 			{
@@ -242,7 +259,8 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "timestamp";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+				public string Summary => @"&#10;&#10;&#10;time the {{block(Asset)}} data was last modified.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -276,7 +294,8 @@ namespace Mtconnect.AssetInformationModel
 			/// </summary>
 			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
 			/// <summary>
-			/// Description can contain any descriptive content about the Asset.
+			﻿/// Description can contain any descriptive content about the Asset.<br/><br />
+
 			/// </summary>
 			public sealed class HasDescriptionPartProperty : IProperty
 			{
@@ -296,7 +315,8 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+				public string Summary => @"&#10;&#10;&#10;Description can contain any descriptive content about the Asset.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -347,7 +367,7 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "hasConfiguration";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -381,7 +401,8 @@ namespace Mtconnect.AssetInformationModel
 			/// </summary>
 			public HashProperty Hash { get; } = new HashProperty();
 			/// <summary>
-			/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso>
+			﻿/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso><br/><br />
+
 			/// </summary>
 			public sealed class HashProperty : IProperty
 			{
@@ -401,7 +422,8 @@ namespace Mtconnect.AssetInformationModel
 				public string Name => "hash";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <i>Asset</i>. /// Description";
+				public string Summary => @"&#10;&#10;&#10;condensed message digest from a secure one-way hash function. {{cite(FIPS PUB 180-4)}}&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

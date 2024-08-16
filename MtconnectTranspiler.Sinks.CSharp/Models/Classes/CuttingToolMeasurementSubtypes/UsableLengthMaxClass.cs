@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
 	/// <summary>
-	/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.
+	﻿/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119515_469091_1432">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class UsableLengthMaxClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119515_469091_1432";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.";
+		public string Summary => @"&#10;&#10;&#10;maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "UsableLengthMax";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// maximum length of a cutting tool that can be used in a particular cutting operation including the non-cutting portions of the tool.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

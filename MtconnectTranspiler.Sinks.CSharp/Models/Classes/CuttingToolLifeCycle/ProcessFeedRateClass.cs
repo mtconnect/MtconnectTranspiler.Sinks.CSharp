@@ -5,17 +5,21 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
-	/// constrained process feed rate for the tool in mm/s.  The <see cref="ProcessFeedRate::value" /> <b>MAY</b> contain the nominal process target feed rate if available. If <see cref="ProcessFeedRate">ProcessFeedRate</see> is provided, at least one value of <see cref="ProcessFeedRate::maximum" />, <see cref="ProcessFeedRate::nominal" />, or <see cref="ProcessFeedRate::minimum" /> <b>MUST</b> be specified.
+	﻿/// constrained process feed rate for the tool in mm/s.<br /><br />The <see cref="ProcessFeedRate.value">value in ProcessFeedRate</see> <b>MAY</b> contain the nominal process target feed rate if available. If <see cref="ProcessFeedRate">ProcessFeedRate</see> is provided, at least one value of <see cref="ProcessFeedRate.maximum">maximum in ProcessFeedRate</see>, <see cref="ProcessFeedRate.nominal">nominal in ProcessFeedRate</see>, or <see cref="ProcessFeedRate.minimum">minimum in ProcessFeedRate</see> <b>MUST</b> be specified.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_07E81F95_CE0D_4404_9384_30E428006C48">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessFeedRateClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_07E81F95_CE0D_4404_9384_30E428006C48";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// constrained process feed rate for the tool in mm/s.  The <see cref=""ProcessFeedRate::value"" /> <b>MAY</b> contain the nominal process target feed rate if available. If <see cref=""ProcessFeedRate"">ProcessFeedRate</see> is provided, at least one value of <see cref=""ProcessFeedRate::maximum"" />, <see cref=""ProcessFeedRate::nominal"" />, or <see cref=""ProcessFeedRate::minimum"" /> <b>MUST</b> be specified.";
+		public string Summary => @"&#10;&#10;&#10;constrained process feed rate for the tool in mm/s.
+
+The {{property(ProcessFeedRate::value)}} **MAY** contain the nominal process target feed rate if available. If {{block(ProcessFeedRate)}} is provided, at least one value of {{property(ProcessFeedRate::maximum)}}, {{property(ProcessFeedRate::nominal)}}, or {{property(ProcessFeedRate::minimum)}} **MUST** be specified.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessFeedRate";
@@ -53,7 +57,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public MaximumProperty Maximum { get; } = new MaximumProperty();
 			/// <summary>
-			/// upper bound for the tool’s process target feedrate.
+			﻿/// upper bound for the tool’s process target feedrate.<br/><br />
+
 			/// </summary>
 			public sealed class MaximumProperty : IProperty
 			{
@@ -73,7 +78,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "maximum";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// constrained process feed rate for the tool in mm/s.  The <see cref=""ProcessFeedRate::value"" /> <b>MAY</b> contain the nominal process target feed rate if available. If <see cref=""ProcessFeedRate"">ProcessFeedRate</see> is provided, at least one value of <see cref=""ProcessFeedRate::maximum"" />, <see cref=""ProcessFeedRate::nominal"" />, or <see cref=""ProcessFeedRate::minimum"" /> <b>MUST</b> be specified.";
+				public string Summary => @"&#10;&#10;&#10;upper bound for the tool’s process target feedrate.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -107,7 +113,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public MinimumProperty Minimum { get; } = new MinimumProperty();
 			/// <summary>
-			/// lower bound for the tool's feedrate.
+			﻿/// lower bound for the tool's feedrate.<br/><br />
+
 			/// </summary>
 			public sealed class MinimumProperty : IProperty
 			{
@@ -127,7 +134,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "minimum";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// constrained process feed rate for the tool in mm/s.  The <see cref=""ProcessFeedRate::value"" /> <b>MAY</b> contain the nominal process target feed rate if available. If <see cref=""ProcessFeedRate"">ProcessFeedRate</see> is provided, at least one value of <see cref=""ProcessFeedRate::maximum"" />, <see cref=""ProcessFeedRate::nominal"" />, or <see cref=""ProcessFeedRate::minimum"" /> <b>MUST</b> be specified.";
+				public string Summary => @"&#10;&#10;&#10;lower bound for the tool's feedrate.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -161,7 +169,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
 			/// <summary>
-			/// nominal feedrate the tool is designed to operate at. 
+			﻿/// nominal feedrate the tool is designed to operate at.<br /><br/><br />
+
 			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
@@ -181,7 +190,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "nominal";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// constrained process feed rate for the tool in mm/s.  The <see cref=""ProcessFeedRate::value"" /> <b>MAY</b> contain the nominal process target feed rate if available. If <see cref=""ProcessFeedRate"">ProcessFeedRate</see> is provided, at least one value of <see cref=""ProcessFeedRate::maximum"" />, <see cref=""ProcessFeedRate::nominal"" />, or <see cref=""ProcessFeedRate::minimum"" /> <b>MUST</b> be specified.";
+				public string Summary => @"&#10;&#10;&#10;nominal feedrate the tool is designed to operate at.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -232,7 +242,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// constrained process feed rate for the tool in mm/s.  The <see cref=""ProcessFeedRate::value"" /> <b>MAY</b> contain the nominal process target feed rate if available. If <see cref=""ProcessFeedRate"">ProcessFeedRate</see> is provided, at least one value of <see cref=""ProcessFeedRate::maximum"" />, <see cref=""ProcessFeedRate::nominal"" />, or <see cref=""ProcessFeedRate::minimum"" /> <b>MUST</b> be specified.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

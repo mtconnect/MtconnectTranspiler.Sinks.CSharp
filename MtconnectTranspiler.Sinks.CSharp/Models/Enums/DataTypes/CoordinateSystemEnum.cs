@@ -5,6 +5,7 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_6B22B6F6_7073_4fa7_961B_B05AD4C7EF81">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -13,11 +14,12 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 	[Obsolete("Deprecated in v2.0 according to https://model.mtconnect.org/#_Version_2.0")]
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CoordinateSystemEnum
 	{
 		/// <summary>
-		/// unchangeable coordinate system that has machine zero as its origin.
+		﻿/// unchangeable coordinate system that has machine zero as its origin.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -28,7 +30,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v2.0 according to https://model.mtconnect.org/#_Version_2.0")]
 		MACHINE,
 		/// <summary>
-		/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.  If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.
+		﻿/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.<br /><br />If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,8 +45,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_6B22B6F6_7073_4fa7_961B_B05AD4C7EF81">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CoordinateSystemEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -71,12 +75,14 @@ namespace Mtconnect.DataTypes
 
 		private MACHINEValue _MACHINE;
 		/// <summary>
-		/// unchangeable coordinate system that has machine zero as its origin.
+		﻿/// unchangeable coordinate system that has machine zero as its origin.<br/><br />
+
 		/// </summary>
 		public MACHINEValue MACHINE => _MACHINE ?? (_MACHINE = new MACHINEValue());
 
 		/// <summary>
-		/// unchangeable coordinate system that has machine zero as its origin.
+		﻿/// unchangeable coordinate system that has machine zero as its origin.<br/><br />
+
 		/// </summary>
 		public sealed class MACHINEValue : IEnumInstance
 		{
@@ -93,16 +99,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "2.0";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// unchangeable coordinate system that has machine zero as its origin.";
+			public string Summary => @"&#10;&#10;&#10;unchangeable coordinate system that has machine zero as its origin.&#10;
+";
 		}
 		private WORKValue _WORK;
 		/// <summary>
-		/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.  If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.
+		﻿/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.<br /><br />If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.<br/><br />
+
 		/// </summary>
 		public WORKValue WORK => _WORK ?? (_WORK = new WORKValue());
 
 		/// <summary>
-		/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.  If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.
+		﻿/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.<br /><br />If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.<br/><br />
+
 		/// </summary>
 		public sealed class WORKValue : IEnumInstance
 		{
@@ -119,7 +128,10 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "2.0";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.  If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.";
+			public string Summary => @"&#10;&#10;&#10;coordinate system that represents the working area for a particular workpiece whose origin is shifted within the `MACHINE` coordinate system.
+
+If the `WORK` coordinates are not currently defined in the piece of equipment, the `MACHINE` coordinates will be used.&#10;
+";
 		}
 	}
 }

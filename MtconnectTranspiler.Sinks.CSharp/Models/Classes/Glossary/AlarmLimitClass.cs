@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// limit used to trigger warning or alarm indicators.
+	﻿/// limit used to trigger warning or alarm indicators.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375140_922873_1948">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmLimitClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375140_922873_1948";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// limit used to trigger warning or alarm indicators.";
+		public string Summary => @"&#10;&#10;&#10;limit used to trigger warning or alarm indicators.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "alarm limit";

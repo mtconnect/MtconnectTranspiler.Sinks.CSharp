@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// leaf <see cref="Component">Component</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.
+	﻿/// leaf <see cref="Component">Component</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605117477013_561048_2109">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CoolingTowerClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605117477013_561048_2109";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.";
+		public string Summary => @"&#10;&#10;&#10;leaf {{block(Component)}} composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CoolingTower";
@@ -72,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

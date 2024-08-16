@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> that physically prohibits a <see cref="Device">Device</see> or <see cref="Component">Component</see> from opening or operating.
+	﻿/// <see cref="Component">Component</see> that physically prohibits a <see cref="Device">Device</see> or <see cref="Component">Component</see> from opening or operating.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622457426342_839834_623">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LockClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622457426342_839834_623";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> that physically prohibits a <see cref=""Device"">Device</see> or <see cref=""Component"">Component</see> from opening or operating.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} that physically prohibits a {{block(Device)}} or {{block(Component)}} from opening or operating.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Lock";
@@ -71,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesLockState";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that physically prohibits a <see cref=""Device"">Device</see> or <see cref=""Component"">Component</see> from opening or operating.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

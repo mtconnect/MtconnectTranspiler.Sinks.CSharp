@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// identity of the logic or motion program currently executing.
+	﻿/// identity of the logic or motion program currently executing.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1643281649143_793563_12">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProgramActiveClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1643281649143_793563_12";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// identity of the logic or motion program currently executing.";
+		public string Summary => @"&#10;&#10;&#10;identity of the logic or motion program currently executing.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Program.Active";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identity of the logic or motion program currently executing.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

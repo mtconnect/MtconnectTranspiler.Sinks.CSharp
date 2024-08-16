@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417665_982246_2879">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FunctionalModeEnum
 	{
 		/// <summary>
-		/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.
+		﻿/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PRODUCTION,
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.   It is being prepared or modified to begin production of product.
+		﻿/// <see cref="Component">Component</see> is not currently producing product. <br /><br />It is being prepared or modified to begin production of product.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SETUP,
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.  Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.
+		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TEARDOWN,
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.  It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.
+		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MAINTENANCE,
 		/// <summary>
-		/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.
+		﻿/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -63,8 +69,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417665_982246_2879">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FunctionalModeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -95,12 +102,14 @@ namespace Mtconnect.DataTypes
 
 		private PRODUCTIONValue _PRODUCTION;
 		/// <summary>
-		/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.
+		﻿/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br/><br />
+
 		/// </summary>
 		public PRODUCTIONValue PRODUCTION => _PRODUCTION ?? (_PRODUCTION = new PRODUCTIONValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.
+		﻿/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br/><br />
+
 		/// </summary>
 		public sealed class PRODUCTIONValue : IEnumInstance
 		{
@@ -117,16 +126,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}} is currently producing product, ready to produce product, or its current intended use is to be producing product.&#10;
+";
 		}
 		private SETUPValue _SETUP;
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.   It is being prepared or modified to begin production of product.
+		﻿/// <see cref="Component">Component</see> is not currently producing product. <br /><br />It is being prepared or modified to begin production of product.<br/><br />
+
 		/// </summary>
 		public SETUPValue SETUP => _SETUP ?? (_SETUP = new SETUPValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.   It is being prepared or modified to begin production of product.
+		﻿/// <see cref="Component">Component</see> is not currently producing product. <br /><br />It is being prepared or modified to begin production of product.<br/><br />
+
 		/// </summary>
 		public sealed class SETUPValue : IEnumInstance
 		{
@@ -143,16 +155,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see> is not currently producing product.   It is being prepared or modified to begin production of product.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}} is not currently producing product. 
+
+It is being prepared or modified to begin production of product.&#10;
+";
 		}
 		private TEARDOWNValue _TEARDOWN;
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.  Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.
+		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.<br/><br />
+
 		/// </summary>
 		public TEARDOWNValue TEARDOWN => _TEARDOWN ?? (_TEARDOWN = new TEARDOWNValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.  Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.
+		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.<br/><br />
+
 		/// </summary>
 		public sealed class TEARDOWNValue : IEnumInstance
 		{
@@ -169,16 +186,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see> is not currently producing product.  Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}} is not currently producing product.
+
+Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.&#10;
+";
 		}
 		private MAINTENANCEValue _MAINTENANCE;
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.  It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.
+		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.<br/><br />
+
 		/// </summary>
 		public MAINTENANCEValue MAINTENANCE => _MAINTENANCE ?? (_MAINTENANCE = new MAINTENANCEValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see> is not currently producing product.  It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.
+		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.<br/><br />
+
 		/// </summary>
 		public sealed class MAINTENANCEValue : IEnumInstance
 		{
@@ -195,16 +217,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see> is not currently producing product.  It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}} is not currently producing product.
+
+It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.&#10;
+";
 		}
 		private PROCESS_DEVELOPMENTValue _PROCESS_DEVELOPMENT;
 		/// <summary>
-		/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.
+		﻿/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.<br/><br />
+
 		/// </summary>
 		public PROCESS_DEVELOPMENTValue PROCESS_DEVELOPMENT => _PROCESS_DEVELOPMENT ?? (_PROCESS_DEVELOPMENT = new PROCESS_DEVELOPMENTValue());
 
 		/// <summary>
-		/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.
+		﻿/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_DEVELOPMENTValue : IEnumInstance
 		{
@@ -221,7 +248,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Component"">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Component)}} is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.&#10;
+";
 		}
 	}
 }

@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
-	/// provides a signal or measured value.
+	﻿/// provides a signal or measured value.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375186_504629_2088">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SensorElementClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375186_504629_2088";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// provides a signal or measured value.";
+		public string Summary => @"&#10;&#10;&#10;provides a signal or measured value.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "sensor element";

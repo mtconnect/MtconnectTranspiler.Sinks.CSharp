@@ -6,17 +6,77 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Part">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example
+	﻿/// <see cref="Part">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp.<br/><br />Description<br/><see cref="PartId">PartId</see> <b>MUST</b> be defined for <see cref="PartOccurrence">PartOccurrence</see>.<br/><br/><br />Example<br/><br />~~~~xml<br /><Parts id="partOccSet"><br />   <Components><br />	   <PartOccurrence id="partOccur"><br />		 <DataItems><br />		   <DataItem id="partSet" category="EVENT" representation="TABLE" type ="COMPONENT_DATA"><br />			  <Definition><br />				 <EntryDefinitions><br />					  <EntryDefinition keyType="PART_UNIQUE_ID"/><br />				 </EntryDefinitions><br />				 <CellDefinitions><br />					<CellDefinition key="partNumber" type="PART_KIND_ID" subType="PART_NUMBER"/><br />					<CellDefinition key="batchId" type="PART_GROUP_ID" subType="BATCH"/><br />					<CellDefinition key="quantity" type="PART_COUNT" subType="TARGET"/><br />					<CellDefinition key="actualCompleteTime" type="PROCESS_TIME" subType="COMPLETE"/><br />					<CellDefinition key="partState" type="PROCESS_STATE"/><br />				</CellDefinitions><br />			  </Definition><br />			</DataItem><br />		 </DataItems><br />	   </PartOccurrence><br />	</Components><br /></Parts><br />~~~~<br />{: caption="XML Device Model Example for PartOccurrence and ComponentData"}<br /><br /><br />~~~~xml<br /><?xml version="1.0" encoding="UTF-8"?><br /><?xml-stylesheet type="text/xsl" href="/styles/Streams.xsl"?><br /><MTConnectStreams><br />  <Streams><br />    <DeviceStream name="VMC-3Axis" uuid="test_27MAY"><br />      <ComponentStream component="PartOccurrence" name="partSet" componentId="partOccur"><br />        <Events><br />          <ComponentDataTable dataItemId="partSet" timestamp="2020-10-28T19:45:43.070010Z" sequence="95" count="2"><br />            <Entry key="part1"><br />              <Cell key="actualStartTime">2009-06-15T00:00:00.000000</Cell><br />              <Cell key="partId">part1</Cell><br />              <Cell key="partName">SomeName</Cell><br />              <Cell key="uniqueID">abc-123</Cell><br />            </Entry><br />            <Entry key="part2"><br />              <Cell key="actualStartTime">2009-06-15T00:00:00.007925</Cell><br />              <Cell key="partId">part2</Cell><br />              <Cell key="partName">AnotherName</Cell><br />              <Cell key="uniqueID">def-123</Cell><br />            </Entry><br />          </ComponentDataTable><br />        </Events><br />      </ComponentStream><br />    </DeviceStream><br />  </Streams><br /></MTConnectStreams><br />~~~~<br />{: caption="XML Streams Response Example for PartOccurrence and ComponentData"}<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605547467172_656422_264">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartOccurrenceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605547467172_656422_264";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+		public string Summary => @"&#10;&#10;&#10;{{block(Part)}} that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(PartId)}} **MUST** be defined for {{block(PartOccurrence)}}.&#10;
+&#10;&#10;&#10;Example&#10;&#10;&#10;&#10;
+~~~~xml
+<Parts id=""partOccSet"">
+   <Components>
+	   <PartOccurrence id=""partOccur"">
+		 <DataItems>
+		   <DataItem id=""partSet"" category=""EVENT"" representation=""TABLE"" type =""COMPONENT_DATA"">
+			  <Definition>
+				 <EntryDefinitions>
+					  <EntryDefinition keyType=""PART_UNIQUE_ID""/>
+				 </EntryDefinitions>
+				 <CellDefinitions>
+					<CellDefinition key=""partNumber"" type=""PART_KIND_ID"" subType=""PART_NUMBER""/>
+					<CellDefinition key=""batchId"" type=""PART_GROUP_ID"" subType=""BATCH""/>
+					<CellDefinition key=""quantity"" type=""PART_COUNT"" subType=""TARGET""/>
+					<CellDefinition key=""actualCompleteTime"" type=""PROCESS_TIME"" subType=""COMPLETE""/>
+					<CellDefinition key=""partState"" type=""PROCESS_STATE""/>
+				</CellDefinitions>
+			  </Definition>
+			</DataItem>
+		 </DataItems>
+	   </PartOccurrence>
+	</Components>
+</Parts>
+~~~~
+{: caption=""XML Device Model Example for PartOccurrence and ComponentData""}
+
+
+~~~~xml
+<?xml version=""1.0"" encoding=""UTF-8""?>
+<?xml-stylesheet type=""text/xsl"" href=""/styles/Streams.xsl""?>
+<MTConnectStreams>
+  <Streams>
+    <DeviceStream name=""VMC-3Axis"" uuid=""test_27MAY"">
+      <ComponentStream component=""PartOccurrence"" name=""partSet"" componentId=""partOccur"">
+        <Events>
+          <ComponentDataTable dataItemId=""partSet"" timestamp=""2020-10-28T19:45:43.070010Z"" sequence=""95"" count=""2"">
+            <Entry key=""part1"">
+              <Cell key=""actualStartTime"">2009-06-15T00:00:00.000000</Cell>
+              <Cell key=""partId"">part1</Cell>
+              <Cell key=""partName"">SomeName</Cell>
+              <Cell key=""uniqueID"">abc-123</Cell>
+            </Entry>
+            <Entry key=""part2"">
+              <Cell key=""actualStartTime"">2009-06-15T00:00:00.007925</Cell>
+              <Cell key=""partId"">part2</Cell>
+              <Cell key=""partName"">AnotherName</Cell>
+              <Cell key=""uniqueID"">def-123</Cell>
+            </Entry>
+          </ComponentDataTable>
+        </Events>
+      </ComponentStream>
+    </DeviceStream>
+  </Streams>
+</MTConnectStreams>
+~~~~
+{: caption=""XML Streams Response Example for PartOccurrence and ComponentData""}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PartOccurrence";
@@ -79,7 +139,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPartId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -130,7 +190,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPartUniqueId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -181,7 +241,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPartGroupId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -232,7 +292,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPartKindId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -283,7 +343,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPartCount";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -334,7 +394,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPartStatus";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -385,7 +445,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesProcessOccurrenceId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -436,7 +496,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesProcessTime";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -487,7 +547,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesUser";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Part"">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp./// Description/// Example";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

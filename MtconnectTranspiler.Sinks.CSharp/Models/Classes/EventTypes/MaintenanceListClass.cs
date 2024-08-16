@@ -6,17 +6,25 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::MAINTENANCE_LIST">EventEnum::MAINTENANCE_LIST</see>  If <see cref="MaintenanceList::result::Interval" /> <c>key</c> is not provided, it is assumed <c>ABSOLUTE</c>.  If <see cref="MaintenanceList::result::Direction" /> <c>key</c> is not provided, it is assumed <c>UP</c>.  If <see cref="MaintenanceList::result::Units" /> <c>key</c> is not provided, it is assumed to be <c>COUNT</c>.
+	﻿/// <see cref="EventEnum.MAINTENANCE_LIST">EventEnum.MAINTENANCE_LIST</see><br /><br />If <see cref="MaintenanceList.result::Interval">result::Interval in MaintenanceList</see> <c>key</c> is not provided, it is assumed <c>ABSOLUTE</c>.<br /><br />If <see cref="MaintenanceList.result::Direction">result::Direction in MaintenanceList</see> <c>key</c> is not provided, it is assumed <c>UP</c>.<br /><br />If <see cref="MaintenanceList.result::Units">result::Units in MaintenanceList</see> <c>key</c> is not provided, it is assumed to be <c>COUNT</c>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1640604216330_942815_196">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaintenanceListClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1640604216330_942815_196";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::MAINTENANCE_LIST"">EventEnum::MAINTENANCE_LIST</see>  If <see cref=""MaintenanceList::result::Interval"" /> <c>key</c> is not provided, it is assumed <c>ABSOLUTE</c>.  If <see cref=""MaintenanceList::result::Direction"" /> <c>key</c> is not provided, it is assumed <c>UP</c>.  If <see cref=""MaintenanceList::result::Units"" /> <c>key</c> is not provided, it is assumed to be <c>COUNT</c>.";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::MAINTENANCE_LIST)}}
+
+If {{property(MaintenanceList::result::Interval)}} `key` is not provided, it is assumed `ABSOLUTE`.
+
+If {{property(MaintenanceList::result::Direction)}} `key` is not provided, it is assumed `UP`.
+
+If {{property(MaintenanceList::result::Units)}} `key` is not provided, it is assumed to be `COUNT`.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MaintenanceList";
@@ -72,7 +80,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::MAINTENANCE_LIST"">EventEnum::MAINTENANCE_LIST</see>  If <see cref=""MaintenanceList::result::Interval"" /> <c>key</c> is not provided, it is assumed <c>ABSOLUTE</c>.  If <see cref=""MaintenanceList::result::Direction"" /> <c>key</c> is not provided, it is assumed <c>UP</c>.  If <see cref=""MaintenanceList::result::Units"" /> <c>key</c> is not provided, it is assumed to be <c>COUNT</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +131,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::MAINTENANCE_LIST"">EventEnum::MAINTENANCE_LIST</see>  If <see cref=""MaintenanceList::result::Interval"" /> <c>key</c> is not provided, it is assumed <c>ABSOLUTE</c>.  If <see cref=""MaintenanceList::result::Direction"" /> <c>key</c> is not provided, it is assumed <c>UP</c>.  If <see cref=""MaintenanceList::result::Units"" /> <c>key</c> is not provided, it is assumed to be <c>COUNT</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

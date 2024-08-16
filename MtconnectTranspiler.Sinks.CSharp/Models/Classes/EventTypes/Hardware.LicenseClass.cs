@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// license code to validate or activate the hardware or software.
+	﻿/// license code to validate or activate the hardware or software.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587751253564_817208_2627">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HardwareLicenseClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587751253564_817208_2627";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// license code to validate or activate the hardware or software.";
+		public string Summary => @"&#10;&#10;&#10;license code to validate or activate the hardware or software.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Hardware.License";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// license code to validate or activate the hardware or software.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 {
 	/// <summary>
-	/// <see cref="ConditionEnum::LOGIC_PROGRAM">ConditionEnum::LOGIC_PROGRAM</see>
+	﻿/// <see cref="ConditionEnum.LOGIC_PROGRAM">ConditionEnum.LOGIC_PROGRAM</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1598552904415_200781_584">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LogicProgramClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1598552904415_200781_584";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""ConditionEnum::LOGIC_PROGRAM"">ConditionEnum::LOGIC_PROGRAM</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(ConditionEnum::LOGIC_PROGRAM)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "LogicProgram";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConditionEnum::LOGIC_PROGRAM"">ConditionEnum::LOGIC_PROGRAM</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

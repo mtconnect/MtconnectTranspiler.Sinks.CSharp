@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 {
 	/// <summary>
-	/// axis along or around which the <see cref="Component">Component</see> moves relative to a coordinate system.
+	﻿/// axis along or around which the <see cref="Component">Component</see> moves relative to a coordinate system.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_7D0C7298_9CC4_4c45_A016_310B9A55DD7F">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AxisClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_7D0C7298_9CC4_4c45_A016_310B9A55DD7F";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// axis along or around which the <see cref=""Component"">Component</see> moves relative to a coordinate system.";
+		public string Summary => @"&#10;&#10;&#10;axis along or around which the {{block(Component)}} moves relative to a coordinate system.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Axis";
@@ -50,7 +52,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// unit vector defining the axis of motion.
+			﻿/// unit vector defining the axis of motion.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -70,7 +73,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// axis along or around which the <see cref=""Component"">Component</see> moves relative to a coordinate system.";
+				public string Summary => @"&#10;&#10;&#10;unit vector defining the axis of motion.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

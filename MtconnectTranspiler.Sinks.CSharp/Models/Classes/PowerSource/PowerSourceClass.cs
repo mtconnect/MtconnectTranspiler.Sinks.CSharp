@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 {
 	/// <summary>
-	/// potential energy sources for the <see cref="Component">Component</see>.
+	﻿/// potential energy sources for the <see cref="Component">Component</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1696870815347_556704_3251">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PowerSourceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1696870815347_556704_3251";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
+		public string Summary => @"&#10;&#10;&#10;potential energy sources for the {{block(Component)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PowerSource";
@@ -53,7 +55,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of the power source.
+			﻿/// type of the power source.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -73,7 +76,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;type of the power source.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -107,7 +111,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
 			/// <summary>
-			/// unique identifier for the power source.
+			﻿/// unique identifier for the power source.<br/><br />
+
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -127,7 +132,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				public string Name => "id";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for the power source.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -161,7 +167,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 			/// </summary>
 			public ComponentIdRefProperty ComponentIdRef { get; } = new ComponentIdRefProperty();
 			/// <summary>
-			/// reference to the <see cref="Component">Component</see> providing observations about the power source.
+			﻿/// reference to the <see cref="Component">Component</see> providing observations about the power source.<br/><br />
+
 			/// </summary>
 			public sealed class ComponentIdRefProperty : IProperty
 			{
@@ -181,7 +188,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				public string Name => "componentIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;reference to the {{block(Component)}} providing observations about the power source.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -215,7 +223,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// name of the power source.
+			﻿/// name of the power source.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -235,7 +244,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// potential energy sources for the <see cref=""Component"">Component</see>.";
+				public string Summary => @"&#10;&#10;&#10;name of the power source.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

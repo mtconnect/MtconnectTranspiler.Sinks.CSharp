@@ -5,17 +5,23 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocument
 {
 	/// <summary>
-	/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref="Device">Device</see> entities.  ![MTConnectDevices](figures/MTConnectDevices.png "MTConnectDevices"){: width="0.8"}  > Note: Additional properties of <see cref="MTConnectDevices">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.
+	﻿/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref="Device">Device</see> entities.<br /><br />![MTConnectDevices](figures/MTConnectDevices.png "MTConnectDevices"){: width="0.8"}<br /><br />> Note: Additional properties of <see cref="MTConnectDevices">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_76BFE349_267B_45b3_B5FF_3C89D29AE715">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MTConnectDevicesClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_76BFE349_267B_45b3_B5FF_3C89D29AE715";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref=""Device"">Device</see> entities.  ![MTConnectDevices](figures/MTConnectDevices.png ""MTConnectDevices""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectDevices"">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+		public string Summary => @"&#10;&#10;&#10;root entity of an {{term(MTConnectDevices Response Document)}} that contains the {{term(Device Information Model)}} of one or more {{block(Device)}} entities.
+
+![MTConnectDevices](figures/MTConnectDevices.png ""MTConnectDevices""){: width=""0.8""}
+
+> Note: Additional properties of {{block(MTConnectDevices)}} **MAY** be defined for schema and namespace declaration. See {{sect(Schema and Namespace Declaration Information)}} for an {{term(XML)}} example.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MTConnectDevices";
@@ -68,7 +74,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				public string Name => "hasHeader";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref=""Device"">Device</see> entities.  ![MTConnectDevices](figures/MTConnectDevices.png ""MTConnectDevices""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectDevices"">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -119,7 +125,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				public string Name => "hasDevice";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// root entity of an <i>MTConnectDevices Response Document</i> that contains the <i>Device Information Model</i> of one or more <see cref=""Device"">Device</see> entities.  ![MTConnectDevices](figures/MTConnectDevices.png ""MTConnectDevices""){: width=""0.8""}  > Note: Additional properties of <see cref=""MTConnectDevices"">MTConnectDevices</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref=""Schema and Namespace Declaration Information"">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

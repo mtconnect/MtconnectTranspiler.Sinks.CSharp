@@ -5,7 +5,7 @@ using Package = Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel;
 
 namespace Mtconnect.InterfaceInteractionModel
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MultiDeviceInteractionModelPackage : IPackage
 	{
 		/// <inheritdoc />

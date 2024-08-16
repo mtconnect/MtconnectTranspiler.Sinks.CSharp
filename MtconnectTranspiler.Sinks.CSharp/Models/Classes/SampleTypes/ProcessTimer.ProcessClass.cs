@@ -6,17 +6,22 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// time from the beginning of production of a part or product on a piece of equipment until the time that production is complete for that part or product on that piece of equipment.  This includes the time that the piece of equipment is running, producing parts or products, or in the process of producing parts.
+	﻿/// time from the beginning of production of a part or product on a piece of equipment until the time that production is complete for that part or product on<br />that piece of equipment.<br /><br />This includes the time that the piece of equipment is running, producing parts or products, or in the process of producing parts.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218418_463201_2094">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessTimerProcessClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218418_463201_2094";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// time from the beginning of production of a part or product on a piece of equipment until the time that production is complete for that part or product on that piece of equipment.  This includes the time that the piece of equipment is running, producing parts or products, or in the process of producing parts.";
+		public string Summary => @"&#10;&#10;&#10;time from the beginning of production of a part or product on a piece of equipment until the time that production is complete for that part or product on
+that piece of equipment.
+
+This includes the time that the piece of equipment is running, producing parts or products, or in the process of producing parts.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessTimer.Process";
@@ -71,7 +76,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// time from the beginning of production of a part or product on a piece of equipment until the time that production is complete for that part or product on that piece of equipment.  This includes the time that the piece of equipment is running, producing parts or products, or in the process of producing parts.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

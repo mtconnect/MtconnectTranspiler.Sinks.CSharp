@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
 	/// <summary>
-	/// operating state of the <i>response</i> to a <i>request</i> to change the type of material or product being loaded or fed to a piece of equipment.
+	﻿/// operating state of the <i>response</i> to a <i>request</i> to change the type of material or product being loaded or fed to a piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623846334158_582703_2769">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaterialChangeResponseClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623846334158_582703_2769";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to change the type of material or product being loaded or fed to a piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;operating state of the {{term(response)}} to a {{term(request)}} to change the type of material or product being loaded or fed to a piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MaterialChange.Response";
@@ -72,7 +74,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to change the type of material or product being loaded or fed to a piece of equipment.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// operating state of the <i>response</i> to a <i>request</i> to change the type of material or product being loaded or fed to a piece of equipment.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

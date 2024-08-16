@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_CFE5DAF7_7F0E_40ce_B920_5151D846B636">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CountDirectionTypeEnum
 	{
 		/// <summary>
-		/// tool life counts up from zero to the maximum. 
+		﻿/// tool life counts up from zero to the maximum.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UP,
 		/// <summary>
-		/// tool life counts down from the maximum to zero.
+		﻿/// tool life counts down from the maximum to zero.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_CFE5DAF7_7F0E_40ce_B920_5151D846B636">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CountDirectionTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private UPValue _UP;
 		/// <summary>
-		/// tool life counts up from zero to the maximum. 
+		﻿/// tool life counts up from zero to the maximum.<br /><br/><br />
+
 		/// </summary>
 		public UPValue UP => _UP ?? (_UP = new UPValue());
 
 		/// <summary>
-		/// tool life counts up from zero to the maximum. 
+		﻿/// tool life counts up from zero to the maximum.<br /><br/><br />
+
 		/// </summary>
 		public sealed class UPValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// tool life counts up from zero to the maximum. ";
+			public string Summary => @"&#10;&#10;&#10;tool life counts up from zero to the maximum.&#10;
+";
 		}
 		private DOWNValue _DOWN;
 		/// <summary>
-		/// tool life counts down from the maximum to zero.
+		﻿/// tool life counts down from the maximum to zero.<br/><br />
+
 		/// </summary>
 		public DOWNValue DOWN => _DOWN ?? (_DOWN = new DOWNValue());
 
 		/// <summary>
-		/// tool life counts down from the maximum to zero.
+		﻿/// tool life counts down from the maximum to zero.<br/><br />
+
 		/// </summary>
 		public sealed class DOWNValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// tool life counts down from the maximum to zero.";
+			public string Summary => @"&#10;&#10;&#10;tool life counts down from the maximum to zero.&#10;
+";
 		}
 	}
 }

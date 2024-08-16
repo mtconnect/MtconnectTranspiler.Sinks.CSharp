@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// identifier of the step in the process plan that this occurrence corresponds to. Synonyms include "operation id".
+	﻿/// identifier of the step in the process plan that this occurrence corresponds to. Synonyms include "operation id".<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605549839127_633081_1596">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessAggregateIdProcessStepClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605549839127_633081_1596";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// identifier of the step in the process plan that this occurrence corresponds to. Synonyms include ""operation id"".";
+		public string Summary => @"&#10;&#10;&#10;identifier of the step in the process plan that this occurrence corresponds to. Synonyms include ""operation id"".&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessAggregateId.ProcessStep";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identifier of the step in the process plan that this occurrence corresponds to. Synonyms include ""operation id"".";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

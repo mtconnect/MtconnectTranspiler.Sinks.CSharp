@@ -6,17 +6,24 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> that organizes an independent operation or function within a <see cref="Controller">Controller</see>./// Description
+	﻿/// <see cref="Component">Component</see> that organizes an independent operation or function within a <see cref="Controller">Controller</see>.<br/><br />Description<br/>For many types of equipment, <see cref="Path">Path</see> organizes a set of <see cref="Axes">Axes</see>, one or more Program elements, and the data associated with the motion of a control point as it moves through space. However, it <b>MAY</b> also represent any independent function within a <see cref="Controller">Controller</see> that has unique data associated with that function.<br /> <br /><see cref="Path">Path</see> <b>SHOULD</b> provide an <see cref="Execution">Execution</see> data item to define the operational state of the <see cref="Controller">Controller</see> of the piece of equipment.<br /><br />If the <see cref="Controller">Controller</see> is capable of performing more than one independent operation or function simultaneously, a separate <see cref="Path">Path</see> <b>MUST</b> be used to organize the data associated with each independent operation or function.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382004_482583_42267">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PathClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382004_482583_42267";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} that organizes an independent operation or function within a {{block(Controller)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;For many types of equipment, {{block(Path)}} organizes a set of {{block(Axes)}}, one or more Program elements, and the data associated with the motion of a control point as it moves through space. However, it **MAY** also represent any independent function within a {{block(Controller)}} that has unique data associated with that function.
+ 
+{{block(Path)}} **SHOULD** provide an {{block(Execution)}} data item to define the operational state of the {{block(Controller)}} of the piece of equipment.
+
+If the {{block(Controller)}} is capable of performing more than one independent operation or function simultaneously, a separate {{block(Path)}} **MUST** be used to organize the data associated with each independent operation or function.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Path";
@@ -77,7 +84,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesExecution";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -128,7 +135,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesProgram";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -179,7 +186,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPathFeedrateOverrideProgrammed";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -230,7 +237,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPathFeedrateOverrideRapid";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -281,7 +288,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesRotaryVelocityOverride";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -332,7 +339,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPathFeedrate";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -383,7 +390,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPartCount";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> that organizes an independent operation or function within a <see cref=""Controller"">Controller</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

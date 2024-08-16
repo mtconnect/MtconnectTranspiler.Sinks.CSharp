@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> that uses compressed gasses to actuate components or do work within the piece of equipment./// Description
+	﻿/// <see cref="System">System</see> that uses compressed gasses to actuate components or do work within the piece of equipment.<br/><br />Description<br/>> Note: Actuation is usually performed using a cylinder.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382008_658658_42273">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PneumaticClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382008_658658_42273";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> that uses compressed gasses to actuate components or do work within the piece of equipment./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} that uses compressed gasses to actuate components or do work within the piece of equipment.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;> Note: Actuation is usually performed using a cylinder.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Pneumatic";
@@ -71,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesPressure";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that uses compressed gasses to actuate components or do work within the piece of equipment./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

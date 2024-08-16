@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.InformationModelTerms
 {
 	/// <summary>
-	/// <i>information model</i> that describes the <i>response document</i> returned by an <i>agent</i> when it encounters an error while interpreting a <i>request</i> for information from a <i>client</i> or when an <i>agent</i> experiences an error while publishing the <i>response</i> to a <i>request</i> for information.
+	﻿/// <i>information model</i> that describes the <i>response document</i> returned by an <i>agent</i> when it encounters an error while interpreting a <i>request</i> for information from a <i>client</i> or when an <i>agent</i> experiences an error while publishing the <i>response</i> to a <i>request</i> for information.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375159_827377_1990">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ErrorInformationModelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375159_827377_1990";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>information model</i> that describes the <i>response document</i> returned by an <i>agent</i> when it encounters an error while interpreting a <i>request</i> for information from a <i>client</i> or when an <i>agent</i> experiences an error while publishing the <i>response</i> to a <i>request</i> for information.";
+		public string Summary => @"&#10;&#10;&#10;{{term(information model)}} that describes the {{term(response document)}} returned by an {{term(agent)}} when it encounters an error while interpreting a {{term(request)}} for information from a {{term(client)}} or when an {{term(agent)}} experiences an error while publishing the {{term(response)}} to a {{term(request)}} for information.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Error Information Model";

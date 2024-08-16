@@ -6,17 +6,23 @@ using System.Linq;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// <i>application</i> that sends <i>request</i> for information to an <i>agent</i>.  > Note: Examples include software applications or a function that implements the <i>request</i> portion of an <i>interface</i> <i>interaction model</i>.  
+	﻿/// <i>application</i> that sends <i>request</i> for information to an <i>agent</i>.<br /><br />> Note: Examples include software applications or a function that implements the <i>request</i> portion of an <i>interface</i> <i>interaction model</i>.<br /><br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375146_487077_1962">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ClientClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375146_487077_1962";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>application</i> that sends <i>request</i> for information to an <i>agent</i>.  > Note: Examples include software applications or a function that implements the <i>request</i> portion of an <i>interface</i> <i>interaction model</i>.  ";
+		public string Summary => @"&#10;&#10;&#10;{{term(application)}} that sends {{term(request)}} for information to an {{term(agent)}}.
+
+> Note: Examples include software applications or a function that implements the {{term(request)}} portion of an {{term(interface)}} {{term(interaction model)}}.
+
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "client";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.InformationModelTerms
 {
 	/// <summary>
-	/// <i>information model</i> that defines the semantics of the MTConnect Standard.
+	﻿/// <i>information model</i> that defines the semantics of the MTConnect Standard.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375172_792733_2037">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MTConnectInformationModelGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375172_792733_2037";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>information model</i> that defines the semantics of the MTConnect Standard.";
+		public string Summary => @"&#10;&#10;&#10;{{term(information model)}} that defines the semantics of the MTConnect Standard.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MTConnect Information Model";

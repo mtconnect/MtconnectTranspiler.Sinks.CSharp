@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ObservedFaultClass : IClass
 	{
 		/// <inheritdoc />

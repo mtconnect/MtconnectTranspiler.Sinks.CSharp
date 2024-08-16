@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1678195723846_572772_17405">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.2">v2.2</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CharacteristicStatusEnum
 	{
 		/// <summary>
-		/// measurement is within acceptable tolerances.
+		﻿/// measurement is within acceptable tolerances.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PASS,
 		/// <summary>
-		/// measurement is not within acceptable tolerances.
+		﻿/// measurement is not within acceptable tolerances.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FAIL,
 		/// <summary>
-		/// failed, but acceptable constraints achievable by utilizing additional manufacturing processes.
+		﻿/// failed, but acceptable constraints achievable by utilizing additional manufacturing processes.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		REWORK,
 		/// <summary>
-		/// measurement is indeterminate due to an equipment failure.
+		﻿/// measurement is indeterminate due to an equipment failure.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SYSTEM_ERROR,
 		/// <summary>
-		/// measurement cannot be determined.
+		﻿/// measurement cannot be determined.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INDETERMINATE,
 		/// <summary>
-		/// measurement cannot be evaluated.
+		﻿/// measurement cannot be evaluated.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,7 +76,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NOT_ANALYZED,
 		/// <summary>
-		/// nominal provided without tolerance limits. <seealso href="https://www.google.com/search?q=QIF 3:2018 5.10.2.6&btnI=I">QIF 3:2018 5.10.2.6</seealso>
+		﻿/// nominal provided without tolerance limits. <seealso href="https://www.google.com/search?q=QIF 3:2018 5.10.2.6&btnI=I">QIF 3:2018 5.10.2.6</seealso><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,7 +86,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BASIC_OR_THEORETIC_EXACT_DIMENSION,
 		/// <summary>
-		/// status of measurement cannot be determined.
+		﻿/// status of measurement cannot be determined.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -90,8 +99,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1678195723846_572772_17405">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CharacteristicStatusEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -125,12 +135,14 @@ namespace Mtconnect.DataTypes
 
 		private PASSValue _PASS;
 		/// <summary>
-		/// measurement is within acceptable tolerances.
+		﻿/// measurement is within acceptable tolerances.<br/><br />
+
 		/// </summary>
 		public PASSValue PASS => _PASS ?? (_PASS = new PASSValue());
 
 		/// <summary>
-		/// measurement is within acceptable tolerances.
+		﻿/// measurement is within acceptable tolerances.<br/><br />
+
 		/// </summary>
 		public sealed class PASSValue : IEnumInstance
 		{
@@ -147,16 +159,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement is within acceptable tolerances.";
+			public string Summary => @"&#10;&#10;&#10;measurement is within acceptable tolerances.&#10;
+";
 		}
 		private FAILValue _FAIL;
 		/// <summary>
-		/// measurement is not within acceptable tolerances.
+		﻿/// measurement is not within acceptable tolerances.<br/><br />
+
 		/// </summary>
 		public FAILValue FAIL => _FAIL ?? (_FAIL = new FAILValue());
 
 		/// <summary>
-		/// measurement is not within acceptable tolerances.
+		﻿/// measurement is not within acceptable tolerances.<br/><br />
+
 		/// </summary>
 		public sealed class FAILValue : IEnumInstance
 		{
@@ -173,16 +188,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement is not within acceptable tolerances.";
+			public string Summary => @"&#10;&#10;&#10;measurement is not within acceptable tolerances.&#10;
+";
 		}
 		private REWORKValue _REWORK;
 		/// <summary>
-		/// failed, but acceptable constraints achievable by utilizing additional manufacturing processes.
+		﻿/// failed, but acceptable constraints achievable by utilizing additional manufacturing processes.<br/><br />
+
 		/// </summary>
 		public REWORKValue REWORK => _REWORK ?? (_REWORK = new REWORKValue());
 
 		/// <summary>
-		/// failed, but acceptable constraints achievable by utilizing additional manufacturing processes.
+		﻿/// failed, but acceptable constraints achievable by utilizing additional manufacturing processes.<br/><br />
+
 		/// </summary>
 		public sealed class REWORKValue : IEnumInstance
 		{
@@ -199,16 +217,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// failed, but acceptable constraints achievable by utilizing additional manufacturing processes.";
+			public string Summary => @"&#10;&#10;&#10;failed, but acceptable constraints achievable by utilizing additional manufacturing processes.&#10;
+";
 		}
 		private SYSTEM_ERRORValue _SYSTEM_ERROR;
 		/// <summary>
-		/// measurement is indeterminate due to an equipment failure.
+		﻿/// measurement is indeterminate due to an equipment failure.<br/><br />
+
 		/// </summary>
 		public SYSTEM_ERRORValue SYSTEM_ERROR => _SYSTEM_ERROR ?? (_SYSTEM_ERROR = new SYSTEM_ERRORValue());
 
 		/// <summary>
-		/// measurement is indeterminate due to an equipment failure.
+		﻿/// measurement is indeterminate due to an equipment failure.<br/><br />
+
 		/// </summary>
 		public sealed class SYSTEM_ERRORValue : IEnumInstance
 		{
@@ -225,16 +246,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement is indeterminate due to an equipment failure.";
+			public string Summary => @"&#10;&#10;&#10;measurement is indeterminate due to an equipment failure.&#10;
+";
 		}
 		private INDETERMINATEValue _INDETERMINATE;
 		/// <summary>
-		/// measurement cannot be determined.
+		﻿/// measurement cannot be determined.<br/><br />
+
 		/// </summary>
 		public INDETERMINATEValue INDETERMINATE => _INDETERMINATE ?? (_INDETERMINATE = new INDETERMINATEValue());
 
 		/// <summary>
-		/// measurement cannot be determined.
+		﻿/// measurement cannot be determined.<br/><br />
+
 		/// </summary>
 		public sealed class INDETERMINATEValue : IEnumInstance
 		{
@@ -251,16 +275,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement cannot be determined.";
+			public string Summary => @"&#10;&#10;&#10;measurement cannot be determined.&#10;
+";
 		}
 		private NOT_ANALYZEDValue _NOT_ANALYZED;
 		/// <summary>
-		/// measurement cannot be evaluated.
+		﻿/// measurement cannot be evaluated.<br/><br />
+
 		/// </summary>
 		public NOT_ANALYZEDValue NOT_ANALYZED => _NOT_ANALYZED ?? (_NOT_ANALYZED = new NOT_ANALYZEDValue());
 
 		/// <summary>
-		/// measurement cannot be evaluated.
+		﻿/// measurement cannot be evaluated.<br/><br />
+
 		/// </summary>
 		public sealed class NOT_ANALYZEDValue : IEnumInstance
 		{
@@ -277,16 +304,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement cannot be evaluated.";
+			public string Summary => @"&#10;&#10;&#10;measurement cannot be evaluated.&#10;
+";
 		}
 		private BASIC_OR_THEORETIC_EXACT_DIMENSIONValue _BASIC_OR_THEORETIC_EXACT_DIMENSION;
 		/// <summary>
-		/// nominal provided without tolerance limits. <seealso href="https://www.google.com/search?q=QIF 3:2018 5.10.2.6&btnI=I">QIF 3:2018 5.10.2.6</seealso>
+		﻿/// nominal provided without tolerance limits. <seealso href="https://www.google.com/search?q=QIF 3:2018 5.10.2.6&btnI=I">QIF 3:2018 5.10.2.6</seealso><br/><br />
+
 		/// </summary>
 		public BASIC_OR_THEORETIC_EXACT_DIMENSIONValue BASIC_OR_THEORETIC_EXACT_DIMENSION => _BASIC_OR_THEORETIC_EXACT_DIMENSION ?? (_BASIC_OR_THEORETIC_EXACT_DIMENSION = new BASIC_OR_THEORETIC_EXACT_DIMENSIONValue());
 
 		/// <summary>
-		/// nominal provided without tolerance limits. <seealso href="https://www.google.com/search?q=QIF 3:2018 5.10.2.6&btnI=I">QIF 3:2018 5.10.2.6</seealso>
+		﻿/// nominal provided without tolerance limits. <seealso href="https://www.google.com/search?q=QIF 3:2018 5.10.2.6&btnI=I">QIF 3:2018 5.10.2.6</seealso><br/><br />
+
 		/// </summary>
 		public sealed class BASIC_OR_THEORETIC_EXACT_DIMENSIONValue : IEnumInstance
 		{
@@ -303,16 +333,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// nominal provided without tolerance limits. <seealso href=""https://www.google.com/search?q=QIF 3:2018 5.10.2.6&btnI=I"">QIF 3:2018 5.10.2.6</seealso>";
+			public string Summary => @"&#10;&#10;&#10;nominal provided without tolerance limits. {{cite(QIF 3:2018 5.10.2.6)}}&#10;
+";
 		}
 		private UNDEFINEDValue _UNDEFINED;
 		/// <summary>
-		/// status of measurement cannot be determined.
+		﻿/// status of measurement cannot be determined.<br/><br />
+
 		/// </summary>
 		public UNDEFINEDValue UNDEFINED => _UNDEFINED ?? (_UNDEFINED = new UNDEFINEDValue());
 
 		/// <summary>
-		/// status of measurement cannot be determined.
+		﻿/// status of measurement cannot be determined.<br/><br />
+
 		/// </summary>
 		public sealed class UNDEFINEDValue : IEnumInstance
 		{
@@ -329,7 +362,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// status of measurement cannot be determined.";
+			public string Summary => @"&#10;&#10;&#10;status of measurement cannot be determined.&#10;
+";
 		}
 	}
 }

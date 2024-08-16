@@ -5,34 +5,42 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622723044206_884589_3064">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CapabilityTypeEnum
 	{
 		/// <summary>
+		﻿
 		/// </summary>
 		REACH,
 		/// <summary>
+		﻿
 		/// </summary>
 		LOAD,
 		/// <summary>
+		﻿
 		/// </summary>
 		CAPACITY,
 		/// <summary>
+		﻿
 		/// </summary>
 		VOLUME,
 		/// <summary>
+		﻿
 		/// </summary>
 		ROTARY_VELOCITY,
 		/// <summary>
+		﻿
 		/// </summary>
 		TOLERANCE,
 	}
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622723044206_884589_3064">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CapabilityTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />

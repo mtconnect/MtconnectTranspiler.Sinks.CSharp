@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
 	/// <summary>
-	/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.
+	﻿/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119531_697760_1459">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class IncribedCircleDiameterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119531_697760_1459";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.";
+		public string Summary => @"&#10;&#10;&#10;diameter of a circle to which all edges of a equilateral and round regular insert are tangential.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "IncribedCircleDiameter";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// diameter of a circle to which all edges of a equilateral and round regular insert are tangential.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

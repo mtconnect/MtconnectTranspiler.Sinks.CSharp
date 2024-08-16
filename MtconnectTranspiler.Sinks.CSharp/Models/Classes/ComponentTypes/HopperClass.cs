@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// leaf <see cref="Component">Component</see> composed of a chamber or bin in which materials are stored temporarily, typically being filled through the top and dispensed through the bottom.
+	﻿/// leaf <see cref="Component">Component</see> composed of a chamber or bin in which materials are stored temporarily, typically being filled through the top and dispensed through the bottom.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580312106470_968785_44426">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HopperClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580312106470_968785_44426";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a chamber or bin in which materials are stored temporarily, typically being filled through the top and dispensed through the bottom.";
+		public string Summary => @"&#10;&#10;&#10;leaf {{block(Component)}} composed of a chamber or bin in which materials are stored temporarily, typically being filled through the top and dispensed through the bottom.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Hopper";
@@ -72,7 +74,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComposition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a chamber or bin in which materials are stored temporarily, typically being filled through the top and dispensed through the bottom.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasComponent";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// leaf <see cref=""Component"">Component</see> composed of a chamber or bin in which materials are stored temporarily, typically being filled through the top and dispensed through the bottom.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

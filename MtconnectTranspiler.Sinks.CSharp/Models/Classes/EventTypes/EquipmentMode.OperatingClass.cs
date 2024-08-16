@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// indication that the major sub-parts of a piece of equipment are powered or performing any activity whether producing a part or product or not.  Example: For traditional machine tools, this includes when the piece of equipment is <c>WORKING</c> or it is idle.
+	﻿/// indication that the major sub-parts of a piece of equipment are powered or performing any activity whether producing a part or product or not.<br /><br />Example: For traditional machine tools, this includes when the piece of equipment is <c>WORKING</c> or it is idle.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218295_856400_1794">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EquipmentModeOperatingClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218295_856400_1794";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// indication that the major sub-parts of a piece of equipment are powered or performing any activity whether producing a part or product or not.  Example: For traditional machine tools, this includes when the piece of equipment is <c>WORKING</c> or it is idle.";
+		public string Summary => @"&#10;&#10;&#10;indication that the major sub-parts of a piece of equipment are powered or performing any activity whether producing a part or product or not.
+
+Example: For traditional machine tools, this includes when the piece of equipment is `WORKING` or it is idle.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "EquipmentMode.Operating";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// indication that the major sub-parts of a piece of equipment are powered or performing any activity whether producing a part or product or not.  Example: For traditional machine tools, this includes when the piece of equipment is <c>WORKING</c> or it is idle.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

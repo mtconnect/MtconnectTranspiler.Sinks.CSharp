@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// universally unique identifier as specified in ISO 11578 or RFC 4122.
+	﻿/// universally unique identifier as specified in ISO 11578 or RFC 4122.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605548887970_584693_507">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartGroupIdUuidClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605548887970_584693_507";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// universally unique identifier as specified in ISO 11578 or RFC 4122.";
+		public string Summary => @"&#10;&#10;&#10;universally unique identifier as specified in ISO 11578 or RFC 4122.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PartGroupId.Uuid";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// universally unique identifier as specified in ISO 11578 or RFC 4122.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

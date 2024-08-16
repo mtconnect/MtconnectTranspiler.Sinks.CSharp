@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// abstract <see cref="Component">Component</see> that is permanently integrated into the piece of equipment.
+	﻿/// abstract <see cref="Component">Component</see> that is permanently integrated into the piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382020_336298_42297">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SystemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382020_336298_42297";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// abstract <see cref=""Component"">Component</see> that is permanently integrated into the piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;abstract {{block(Component)}} that is permanently integrated into the piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "System";
@@ -71,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "isSystemOf";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""Component"">Component</see> that is permanently integrated into the piece of equipment.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

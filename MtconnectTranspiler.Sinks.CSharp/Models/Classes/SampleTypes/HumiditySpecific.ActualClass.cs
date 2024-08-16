@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// measured or reported value of an <i>observation</i>.
+	﻿/// measured or reported value of an <i>observation</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587736930760_4780_1602">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HumiditySpecificActualClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587736930760_4780_1602";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// measured or reported value of an <i>observation</i>.";
+		public string Summary => @"&#10;&#10;&#10;measured or reported value of an {{term(observation)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "HumiditySpecific.Actual";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// measured or reported value of an <i>observation</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

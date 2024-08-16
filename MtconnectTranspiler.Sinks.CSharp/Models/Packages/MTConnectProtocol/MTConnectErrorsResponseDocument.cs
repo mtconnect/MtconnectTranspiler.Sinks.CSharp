@@ -6,10 +6,11 @@ using Package = Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponse
 namespace Mtconnect.Fundamentals.MTConnectProtocol
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="MTConnectErrors">MTConnectErrors</see> entity./// Error Information Model
+	﻿/// This section provides semantic information for the <see cref="MTConnectErrors">MTConnectErrors</see> entity.<br/><br />Error Information Model<br/>The <i>Error Information Model</i> establishes the rules and terminology that describes the <i>response document</i> returned by an <i>agent</i> when it encounters an error while interpreting a <i>request</i> for information from a client software application or when an <i>agent</i> experiences an error while publishing the <i>response</i> to a <i>request</i> for information.      <br /><br />An <i>agent</i> provides the information regarding errors encountered when processing a <i>request</i> for information by publishing an <i>MTConnectErrors Response Document</i> to the client software application that made the <i>request</i> for information.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579560529522_593444_6515">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MTConnectErrorsResponseDocumentPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,11 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 		public string Name => "MTConnectErrors Response Document";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""MTConnectErrors"">MTConnectErrors</see> entity./// Error Information Model";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(MTConnectErrors)}} entity.&#10;
+&#10;&#10;&#10;Error Information Model&#10;&#10;&#10;&#10;The {{term(Error Information Model)}} establishes the rules and terminology that describes the {{term(response document)}} returned by an {{term(agent)}} when it encounters an error while interpreting a {{term(request)}} for information from a client software application or when an {{term(agent)}} experiences an error while publishing the {{term(response)}} to a {{term(request)}} for information.      
+
+An {{term(agent)}} provides the information regarding errors encountered when processing a {{term(request)}} for information by publishing an {{term(MTConnectErrors Response Document)}} to the client software application that made the {{term(request)}} for information.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
-	/// numeric lower constraint.
+	﻿/// numeric lower constraint.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580316498580_886253_47645">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MinimumClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580316498580_886253_47645";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// numeric lower constraint.";
+		public string Summary => @"&#10;&#10;&#10;numeric lower constraint.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Minimum";
@@ -67,7 +69,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// numeric lower constraint.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

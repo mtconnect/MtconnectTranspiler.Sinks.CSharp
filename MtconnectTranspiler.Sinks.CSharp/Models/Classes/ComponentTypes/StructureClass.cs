@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.
+	﻿/// <see cref="Component">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587597358521_716746_1028">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StructureClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1587597358521_716746_1028";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} composed of part(s) comprising the rigid bodies of the piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Structure";
@@ -71,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "isStructureOf";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component"">Component</see> composed of part(s) comprising the rigid bodies of the piece of equipment.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

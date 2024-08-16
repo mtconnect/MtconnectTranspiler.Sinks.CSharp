@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// abstract <see cref="Component">Component</see> composed of a <i>part</i> being processed by a piece of equipment.
+	﻿/// abstract <see cref="Component">Component</see> composed of a <i>part</i> being processed by a piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622456766067_72580_282">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622456766067_72580_282";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// abstract <see cref=""Component"">Component</see> composed of a <i>part</i> being processed by a piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;abstract {{block(Component)}} composed of a {{term(part)}} being processed by a piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Part";
@@ -71,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "isWorkedOn";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""Component"">Component</see> composed of a <i>part</i> being processed by a piece of equipment.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

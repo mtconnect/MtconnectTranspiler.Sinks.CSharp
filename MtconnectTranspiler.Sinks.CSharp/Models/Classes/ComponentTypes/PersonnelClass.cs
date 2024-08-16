@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Resource">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. 
+	﻿/// <see cref="Resource">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment.<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382005_168835_42270">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PersonnelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382005_168835_42270";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";
+		public string Summary => @"&#10;&#10;&#10;{{block(Resource)}} composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment.
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Personnel";
@@ -72,7 +75,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesUserOperator";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +126,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesUserMaintenance";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Resource"">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::TOOL_OFFSET">EventEnum::TOOL_OFFSET</see>
+	﻿/// <see cref="EventEnum.TOOL_OFFSET">EventEnum.TOOL_OFFSET</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218458_345999_2226">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ToolOffsetClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218458_345999_2226";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::TOOL_OFFSET"">EventEnum::TOOL_OFFSET</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::TOOL_OFFSET)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ToolOffset";
@@ -73,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::TOOL_OFFSET"">EventEnum::TOOL_OFFSET</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +126,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::TOOL_OFFSET"">EventEnum::TOOL_OFFSET</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +177,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::TOOL_OFFSET"">EventEnum::TOOL_OFFSET</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

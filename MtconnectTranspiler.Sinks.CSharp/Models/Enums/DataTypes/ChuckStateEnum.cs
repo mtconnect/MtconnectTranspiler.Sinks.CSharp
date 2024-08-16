@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417659_742691_2873">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ChuckStateEnum
 	{
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is open to the point of a positive confirmation.
+		﻿/// <see cref="Chuck">Chuck</see> is open to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPEN,
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is closed to the point of a positive confirmation.
+		﻿/// <see cref="Chuck">Chuck</see> is closed to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CLOSED,
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is not closed to the point of a positive confirmation and not open to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// <see cref="Chuck">Chuck</see> is not closed to the point of a positive confirmation and not open to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417659_742691_2873">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ChuckStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private OPENValue _OPEN;
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is open to the point of a positive confirmation.
+		﻿/// <see cref="Chuck">Chuck</see> is open to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public OPENValue OPEN => _OPEN ?? (_OPEN = new OPENValue());
 
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is open to the point of a positive confirmation.
+		﻿/// <see cref="Chuck">Chuck</see> is open to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public sealed class OPENValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Chuck"">Chuck</see> is open to the point of a positive confirmation.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Chuck)}} is open to the point of a positive confirmation.&#10;
+";
 		}
 		private CLOSEDValue _CLOSED;
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is closed to the point of a positive confirmation.
+		﻿/// <see cref="Chuck">Chuck</see> is closed to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public CLOSEDValue CLOSED => _CLOSED ?? (_CLOSED = new CLOSEDValue());
 
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is closed to the point of a positive confirmation.
+		﻿/// <see cref="Chuck">Chuck</see> is closed to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public sealed class CLOSEDValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Chuck"">Chuck</see> is closed to the point of a positive confirmation.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Chuck)}} is closed to the point of a positive confirmation.&#10;
+";
 		}
 		private UNLATCHEDValue _UNLATCHED;
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is not closed to the point of a positive confirmation and not open to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// <see cref="Chuck">Chuck</see> is not closed to the point of a positive confirmation and not open to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		public UNLATCHEDValue UNLATCHED => _UNLATCHED ?? (_UNLATCHED = new UNLATCHEDValue());
 
 		/// <summary>
-		/// <see cref="Chuck">Chuck</see> is not closed to the point of a positive confirmation and not open to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// <see cref="Chuck">Chuck</see> is not closed to the point of a positive confirmation and not open to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		public sealed class UNLATCHEDValue : IEnumInstance
 		{
@@ -149,7 +162,10 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Chuck"">Chuck</see> is not closed to the point of a positive confirmation and not open to the point of a positive confirmation.   It is in an intermediate position.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Chuck)}} is not closed to the point of a positive confirmation and not open to the point of a positive confirmation. 
+
+It is in an intermediate position.&#10;
+";
 		}
 	}
 }

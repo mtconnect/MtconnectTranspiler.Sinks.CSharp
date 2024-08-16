@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// <see cref="SampleEnum::GRAVITATIONAL_FORCE">SampleEnum::GRAVITATIONAL_FORCE</see>  > Note: <i>Mass\times GravitationalAcceleration</i>s
+	﻿/// <see cref="SampleEnum.GRAVITATIONAL_FORCE">SampleEnum.GRAVITATIONAL_FORCE</see><br /><br />> Note: <i>Mass\times GravitationalAcceleration</i><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1660317516642_837590_88">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class GravitationalForceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1660317516642_837590_88";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""SampleEnum::GRAVITATIONAL_FORCE"">SampleEnum::GRAVITATIONAL_FORCE</see>  > Note: <i>Mass\\times GravitationalAcceleration</i>s";
+		public string Summary => @"&#10;&#10;&#10;{{def(SampleEnum::GRAVITATIONAL_FORCE)}}
+
+> Note: $$Mass\\times GravitationalAcceleration$$&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "GravitationalForce";
@@ -72,7 +76,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::GRAVITATIONAL_FORCE"">SampleEnum::GRAVITATIONAL_FORCE</see>  > Note: <i>Mass\\times GravitationalAcceleration</i>s";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::GRAVITATIONAL_FORCE"">SampleEnum::GRAVITATIONAL_FORCE</see>  > Note: <i>Mass\\times GravitationalAcceleration</i>s";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

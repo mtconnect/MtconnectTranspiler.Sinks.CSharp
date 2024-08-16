@@ -6,17 +6,32 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
-	/// <see cref="Observation">Observation</see> that is continuously changing or analog data value. /// Description
+	﻿/// <see cref="Observation">Observation</see> that is continuously changing or analog data value.<br /><br/><br />Description<br/><br />It provides the information and data reported from a piece of equipment for those <see cref="DataItem">DataItem</see> entities defined with <see cref="DataItem.category">category in DataItem</see> as <c>SAMPLE</c> in the <i>MTConnectDevices Response Document</i>.<br /><br /><see cref="Sample">Sample</see> <b>MUST</b> always be reported in <c>float</c>.<br /><br />{{figure(Sample Example)}} shows <see cref="Sample">Sample</see> type examples. It also shows an example for when the <see cref="Observation.result">result in Observation</see> is not available (<c>dataItemId</c>=<c>cspeed</c>).<br /><br />![Sample Example](figures/Sample%20Example.png "Sample Example"){: width="0.8"}<br /><br />> Note: See {{lst(sample-example)}} for the <i>XML</i> representation of the same example.<br /><br />The following <see cref="Value Properties of Sample">Value Properties of Sample</see> lists the additional and/or updated attributes for <see cref="Sample">Sample</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531116_175117_25733">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SampleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531116_175117_25733";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Observation)}} that is continuously changing or analog data value.
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;
+It provides the information and data reported from a piece of equipment for those {{block(DataItem)}} entities defined with {{property(DataItem::category)}} as `SAMPLE` in the {{term(MTConnectDevices Response Document)}}.
+
+{{block(Sample)}} **MUST** always be reported in `float`.
+
+{{figure(Sample Example)}} shows {{block(Sample)}} type examples. It also shows an example for when the {{property(Observation::result)}} is not available (`dataItemId`=`cspeed`).
+
+![Sample Example](figures/Sample%20Example.png ""Sample Example""){: width=""0.8""}
+
+> Note: See {{lst(sample-example)}} for the {{term(XML)}} representation of the same example.
+
+The following {{sect(Value Properties of Sample)}} lists the additional and/or updated attributes for {{block(Sample)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Sample";
@@ -61,7 +76,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public DurationProperty Duration { get; } = new DurationProperty();
 			/// <summary>
-			/// time-period over which the data was collected.  <see cref="Sample::duration" /> <b>MUST</b> be provided when the <see cref="DataItem::statistic" /> is defined in the <i>MTConnectDevices Response Document</i>.
+			﻿/// time-period over which the data was collected.<br /><br /><see cref="Sample.duration">duration in Sample</see> <b>MUST</b> be provided when the <see cref="DataItem.statistic">statistic in DataItem</see> is defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
+
 			/// </summary>
 			public sealed class DurationProperty : IProperty
 			{
@@ -81,7 +97,10 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "duration";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"&#10;&#10;&#10;time-period over which the data was collected.
+
+{{property(Sample::duration)}} **MUST** be provided when the {{property(DataItem::statistic)}} is defined in the {{term(MTConnectDevices Response Document)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -115,7 +134,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public ResetTriggeredProperty ResetTriggered { get; } = new ResetTriggeredProperty();
 			/// <summary>
-			/// identifies when a reported value has been reset and what has caused that reset to occur for those <see cref="DataItem">DataItem</see> entities that may be periodically reset to an initial value.  <c>resetTriggered</c> <b>MUST</b> only be provided for the specific occurrence of a <see cref="DataItem">DataItem</see> reported in the <i>MTConnectStreams Response Document</i> when the reset occurred.
+			﻿/// identifies when a reported value has been reset and what has caused that reset to occur for those <see cref="DataItem">DataItem</see> entities that may be periodically reset to an initial value.<br /><br /><c>resetTriggered</c> <b>MUST</b> only be provided for the specific occurrence of a <see cref="DataItem">DataItem</see> reported in the <i>MTConnectStreams Response Document</i> when the reset occurred.<br/><br />
+
 			/// </summary>
 			public sealed class ResetTriggeredProperty : IProperty
 			{
@@ -135,7 +155,10 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "resetTriggered";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"&#10;&#10;&#10;identifies when a reported value has been reset and what has caused that reset to occur for those {{block(DataItem)}} entities that may be periodically reset to an initial value.
+
+`resetTriggered` **MUST** only be provided for the specific occurrence of a {{block(DataItem)}} reported in the {{term(MTConnectStreams Response Document)}} when the reset occurred.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -169,7 +192,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public SampleRateProperty SampleRate { get; } = new SampleRateProperty();
 			/// <summary>
-			/// rate at which successive samples of the value are recorded. /// Description
+			﻿/// rate at which successive samples of the value are recorded.<br /><br/><br />Description<br/><see cref="Sample.sampleRate">sampleRate in Sample</see> is expressed in terms of samples per second.<br /><br />If <see cref="Sample.sampleRate">sampleRate in Sample</see> is smaller than one, the number can be represented as a decimal type floating-point number. For example, a rate of 1 per 10 seconds would be 0.1 <see cref="Sample.sampleRate">sampleRate in Sample</see> <b>MUST</b> be provided when <see cref="DataItem.representation">representation in DataItem</see> defined in the <i>MTConnectDevices Response Document</i> is <c>TIME_SERIES</c>.<br /><br />When <see cref="DataItem.representation">representation in DataItem</see> is not <c>TIME_SERIES</c>, it <b>MUST</b> be assumed that the data reported is represented by a single value and <see cref="Sample.sampleRate">sampleRate in Sample</see> <b>MUST NOT</b> be reported in the <i>MTConnectStreams Response Document</i>.<br/><br/><br />
+
 			/// </summary>
 			public sealed class SampleRateProperty : IProperty
 			{
@@ -189,7 +213,14 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "sampleRate";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"&#10;&#10;&#10;rate at which successive samples of the value are recorded.
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{property(Sample::sampleRate)}} is expressed in terms of samples per second.
+
+If {{property(Sample::sampleRate)}} is smaller than one, the number can be represented as a decimal type floating-point number. For example, a rate of 1 per 10 seconds would be 0.1 {{property(Sample::sampleRate)}} **MUST** be provided when {{property(DataItem::representation)}} defined in the {{term(MTConnectDevices Response Document)}} is `TIME_SERIES`.
+
+When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be assumed that the data reported is represented by a single value and {{property(Sample::sampleRate)}} **MUST NOT** be reported in the {{term(MTConnectStreams Response Document)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -223,7 +254,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public StatisticProperty Statistic { get; } = new StatisticProperty();
 			/// <summary>
-			/// type of statistical calculation defined by the <see cref="DataItem::statistic" /> defined in the <i>MTConnectDevices Response Document</i>.
+			﻿/// type of statistical calculation defined by the <see cref="DataItem.statistic">statistic in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
+
 			/// </summary>
 			public sealed class StatisticProperty : IProperty
 			{
@@ -243,7 +275,8 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "statistic";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"&#10;&#10;&#10;type of statistical calculation defined by the {{property(DataItem::statistic)}} defined in the {{term(MTConnectDevices Response Document)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -294,7 +327,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "organizedByComponentStream";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -345,7 +378,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -396,7 +429,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -447,7 +480,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Observation"">Observation</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>configuration</i> for a <i>Component</i>
+	﻿/// <i>configuration</i> for a <i>Component</i><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1635251403887_914466_345">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConfigurationGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1635251403887_914466_345";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>configuration</i> for a <i>Component</i>";
+		public string Summary => @"&#10;&#10;&#10;{{term(configuration)}} for a {{term(Component)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Configuration";
@@ -71,7 +73,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "configuration for";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>configuration</i> for a <i>Component</i>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

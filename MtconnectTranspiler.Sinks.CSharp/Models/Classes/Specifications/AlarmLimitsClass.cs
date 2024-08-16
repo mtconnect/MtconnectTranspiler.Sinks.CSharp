@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
-	/// set of limits that is used to trigger warning or alarm indicators.
+	﻿/// set of limits that is used to trigger warning or alarm indicators.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643893577_939623_1049">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmLimitsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605643893577_939623_1049";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
+		public string Summary => @"&#10;&#10;&#10;set of limits that is used to trigger warning or alarm indicators.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "AlarmLimits";
@@ -70,7 +72,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "upperLimit";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -121,7 +123,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "upperWarning";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -172,7 +174,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "lowerLimit";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -223,7 +225,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "lowerWarning";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// set of limits that is used to trigger warning or alarm indicators.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>
-	/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref="Translation">Translation</see> and <see cref="Rotation">Rotation</see>./// Description
+	﻿/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref="Translation">Translation</see> and <see cref="Rotation">Rotation</see>.<br/><br />Description<br/>At a minimum, a <see cref="Translation">Translation</see> or a <see cref="Rotation">Rotation</see> <b>MUST</b> be defined for a <see cref="Transformation">Transformation</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579103900791_417826_16362">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TransformationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579103900791_417826_16362";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";
+		public string Summary => @"&#10;&#10;&#10;process of transforming to the origin position of the coordinate system from a parent coordinate system using {{block(Translation)}} and {{block(Rotation)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;At a minimum, a {{block(Translation)}} or a {{block(Rotation)}} **MUST** be defined for a {{block(Transformation)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Transformation";
@@ -68,7 +71,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "hasTranslation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -119,7 +122,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public string Name => "hasRotation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// process of transforming to the origin position of the coordinate system from a parent coordinate system using <see cref=""Translation"">Translation</see> and <see cref=""Rotation"">Rotation</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

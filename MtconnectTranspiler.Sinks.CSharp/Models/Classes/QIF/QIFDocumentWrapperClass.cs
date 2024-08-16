@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.QIF
 {
 	/// <summary>
-	/// <see cref="Asset">Asset</see> that carries the QIF Document.
+	﻿/// <see cref="Asset">Asset</see> that carries the QIF Document.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622119541205_751450_1761">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class QIFDocumentWrapperClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622119541205_751450_1761";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Asset)}} that carries the QIF Document.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "QIFDocumentWrapper";
@@ -55,7 +57,8 @@ namespace Mtconnect.AssetInformationModel.QIF
 			/// </summary>
 			public QifDocumentTypeProperty QifDocumentType { get; } = new QifDocumentTypeProperty();
 			/// <summary>
-			/// contained QIF Document type as defined in the <i>QIF</i> Standard.
+			﻿/// contained QIF Document type as defined in the <i>QIF</i> Standard.<br/><br />
+
 			/// </summary>
 			public sealed class QifDocumentTypeProperty : IProperty
 			{
@@ -75,7 +78,8 @@ namespace Mtconnect.AssetInformationModel.QIF
 				public string Name => "qifDocumentType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";
+				public string Summary => @"&#10;&#10;&#10;contained QIF Document type as defined in the {{term(QIF)}} Standard.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -126,7 +130,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 				public string Name => "hasQIFDocument";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Asset"">Asset</see> that carries the QIF Document.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

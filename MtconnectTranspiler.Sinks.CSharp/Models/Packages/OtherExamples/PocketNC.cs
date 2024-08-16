@@ -4,7 +4,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class PocketNCPackage : IPackage
 	{
 		/// <inheritdoc />

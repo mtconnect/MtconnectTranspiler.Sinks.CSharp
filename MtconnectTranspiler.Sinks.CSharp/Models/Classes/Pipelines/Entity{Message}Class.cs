@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class Entity_Message_Class : IClass
 	{
 		/// <inheritdoc />

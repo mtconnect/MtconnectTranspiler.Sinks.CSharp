@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_SmoothG.Representation
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class WorkOffsetsClass : IClass
 	{
 		/// <inheritdoc />
@@ -50,7 +50,8 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 			/// </summary>
 			public CountProperty Count { get; } = new CountProperty();
 			/// <summary>
-			/// number of <see cref="Entry">Entry</see> elements for the <see cref="Observation">Observation</see>.
+			﻿/// number of <see cref="Entry">Entry</see> elements for the <see cref="Observation">Observation</see>.<br/><br />
+
 			/// </summary>
 			public sealed class CountProperty : IProperty
 			{
@@ -70,7 +71,8 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 				public string Name => "count";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;number of {{block(Entry)}} elements for the {{block(Observation)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

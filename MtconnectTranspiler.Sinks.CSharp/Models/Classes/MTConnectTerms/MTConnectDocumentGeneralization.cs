@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>document</i> that represents a Part(s) of the MTConnect Standard.
+	﻿/// <i>document</i> that represents a Part(s) of the MTConnect Standard.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375171_473670_2035">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MTConnectDocumentGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375171_473670_2035";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>document</i> that represents a Part(s) of the MTConnect Standard.";
+		public string Summary => @"&#10;&#10;&#10;{{term(document)}} that represents a Part(s) of the MTConnect Standard.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MTConnect Document";

@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1678195766304_380006_17434">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.2">v2.2</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum UncertaintyTypeEnum
 	{
 		/// <summary>
-		/// <i>combined standard uncertainty</i>.
+		﻿/// <i>combined standard uncertainty</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COMBINED,
 		/// <summary>
-		/// <i>standard uncertainty</i> using arithmetic mean or average the observations. <seealso href="https://www.google.com/search?q=JCGM 100:2008 4.2&btnI=I">JCGM 100:2008 4.2</seealso>
+		﻿/// <i>standard uncertainty</i> using arithmetic mean or average the observations. <seealso href="https://www.google.com/search?q=JCGM 100:2008 4.2&btnI=I">JCGM 100:2008 4.2</seealso><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1678195766304_380006_17434">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class UncertaintyTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private COMBINEDValue _COMBINED;
 		/// <summary>
-		/// <i>combined standard uncertainty</i>.
+		﻿/// <i>combined standard uncertainty</i>.<br/><br />
+
 		/// </summary>
 		public COMBINEDValue COMBINED => _COMBINED ?? (_COMBINED = new COMBINEDValue());
 
 		/// <summary>
-		/// <i>combined standard uncertainty</i>.
+		﻿/// <i>combined standard uncertainty</i>.<br/><br />
+
 		/// </summary>
 		public sealed class COMBINEDValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>combined standard uncertainty</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(combined standard uncertainty)}}.&#10;
+";
 		}
 		private MEANValue _MEAN;
 		/// <summary>
-		/// <i>standard uncertainty</i> using arithmetic mean or average the observations. <seealso href="https://www.google.com/search?q=JCGM 100:2008 4.2&btnI=I">JCGM 100:2008 4.2</seealso>
+		﻿/// <i>standard uncertainty</i> using arithmetic mean or average the observations. <seealso href="https://www.google.com/search?q=JCGM 100:2008 4.2&btnI=I">JCGM 100:2008 4.2</seealso><br/><br />
+
 		/// </summary>
 		public MEANValue MEAN => _MEAN ?? (_MEAN = new MEANValue());
 
 		/// <summary>
-		/// <i>standard uncertainty</i> using arithmetic mean or average the observations. <seealso href="https://www.google.com/search?q=JCGM 100:2008 4.2&btnI=I">JCGM 100:2008 4.2</seealso>
+		﻿/// <i>standard uncertainty</i> using arithmetic mean or average the observations. <seealso href="https://www.google.com/search?q=JCGM 100:2008 4.2&btnI=I">JCGM 100:2008 4.2</seealso><br/><br />
+
 		/// </summary>
 		public sealed class MEANValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>standard uncertainty</i> using arithmetic mean or average the observations. <seealso href=""https://www.google.com/search?q=JCGM 100:2008 4.2&btnI=I"">JCGM 100:2008 4.2</seealso>";
+			public string Summary => @"&#10;&#10;&#10;{{term(standard uncertainty)}} using arithmetic mean or average the observations. {{cite(JCGM 100:2008 4.2)}}&#10;
+";
 		}
 	}
 }

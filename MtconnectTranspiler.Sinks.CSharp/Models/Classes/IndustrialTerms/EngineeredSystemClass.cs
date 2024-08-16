@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
-	/// logical or physical entity that may produce <i>observation</i>s about itself.
+	﻿/// logical or physical entity that may produce <i>observation</i>s about itself.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1635250812908_628647_270">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EngineeredSystemClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1635250812908_628647_270";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+		public string Summary => @"&#10;&#10;&#10;logical or physical entity that may produce {{termplural(observation)}} about itself.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "engineered system";
@@ -75,7 +77,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "part of";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -126,7 +128,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "has part";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -177,7 +179,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "makes observation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -228,7 +230,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "observes";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -279,7 +281,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public string Name => "made observation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// logical or physical entity that may produce <i>observation</i>s about itself.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

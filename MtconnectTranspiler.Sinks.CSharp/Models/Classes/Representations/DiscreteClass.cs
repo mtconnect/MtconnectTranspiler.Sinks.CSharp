@@ -6,17 +6,30 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.Representations
 {
 	/// <summary>
-	/// <b>DEPRECATED</b> <see cref="Representation">Representation</see> for an <see cref="Observation">Observation</see> where each discrete occurrence of the data may have the same value as the previous occurrence of the data. /// Description
+	﻿/// <b>DEPRECATED</b> <see cref="Representation">Representation</see> for an <see cref="Observation">Observation</see> where each discrete occurrence of the data may have the same value as the previous occurrence of the data.<br /><br/><br />Description<br/><br /><see cref="Discrete">Discrete</see> for an <see cref="Observation">Observation</see> is defined by the associated <see cref="DataItem.representation">representation in DataItem</see> as <c>DISCRETE</c>.<br /><br /><see cref="DataItem.representation">representation in DataItem</see> as <c>DISCRETE</c> <b>MUST</b> have <see cref="DataItem.category">category in DataItem</see> as <c>EVENT</c>.<br /><br /><i>MTConnect Version 1.5</i> replaced <see cref="DataItem.representation">representation in DataItem</see> as <c>DISCRETE</c> with <see cref="DataItem.discrete">discrete in DataItem</see>.<br /><br />Each occurrence of the <see cref="Observation">Observation</see> <b>MAY</b> have the same value as the previous occurrence, and <b>MUST NOT</b> suppress duplicates.<br /><br />Examples of <see cref="Discrete">Discrete</see>: A <c>PartCount</c> reporting the completion of each part using a 1 to indicate completion of a single part, a <c>Message</c> that occurs each time a door opens. <br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531114_595827_25728">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DiscreteClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579566531114_595827_25728";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <b>DEPRECATED</b> <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> where each discrete occurrence of the data may have the same value as the previous occurrence of the data. /// Description";
+		public string Summary => @"&#10;&#10;&#10;**DEPRECATED** {{block(Representation)}} for an {{block(Observation)}} where each discrete occurrence of the data may have the same value as the previous occurrence of the data.
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;
+{{block(Discrete)}} for an {{block(Observation)}} is defined by the associated {{property(DataItem::representation)}} as `DISCRETE`.
+
+{{property(DataItem::representation)}} as `DISCRETE` **MUST** have {{property(DataItem::category)}} as `EVENT`.
+
+*MTConnect Version 1.5* replaced {{property(DataItem::representation)}} as `DISCRETE` with {{property(DataItem::discrete)}}.
+
+Each occurrence of the {{block(Observation)}} **MAY** have the same value as the previous occurrence, and **MUST NOT** suppress duplicates.
+
+Examples of {{block(Discrete)}}: A `PartCount` reporting the completion of each part using a 1 to indicate completion of a single part, a `Message` that occurs each time a door opens. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Discrete";
@@ -71,7 +84,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <b>DEPRECATED</b> <see cref=""Representation"">Representation</see> for an <see cref=""Observation"">Observation</see> where each discrete occurrence of the data may have the same value as the previous occurrence of the data. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

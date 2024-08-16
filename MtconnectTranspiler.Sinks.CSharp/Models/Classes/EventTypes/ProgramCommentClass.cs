@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::PROGRAM_COMMENT">EventEnum::PROGRAM_COMMENT</see>
+	﻿/// <see cref="EventEnum.PROGRAM_COMMENT">EventEnum.PROGRAM_COMMENT</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218421_695516_2103">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProgramCommentClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218421_695516_2103";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::PROGRAM_COMMENT"">EventEnum::PROGRAM_COMMENT</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::PROGRAM_COMMENT)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProgramComment";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::PROGRAM_COMMENT"">EventEnum::PROGRAM_COMMENT</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

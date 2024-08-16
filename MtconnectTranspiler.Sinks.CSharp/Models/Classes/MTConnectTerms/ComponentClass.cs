@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s
+	﻿/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581734537697_742151_1119">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ComponentClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581734537697_742151_1119";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
+		public string Summary => @"&#10;&#10;&#10;{{term(engineered system)}}  part of a {{term(Device)}} composed of zero or more {{termplural(Component)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Component";
@@ -58,7 +60,8 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			/// </summary>
 			public HasComponentProperty HasComponent { get; } = new HasComponentProperty();
 			/// <summary>
-			/// a component relationship that inheres other components.
+			﻿/// a component relationship that inheres other components.<br/><br />
+
 			/// </summary>
 			public sealed class HasComponentProperty : IProperty
 			{
@@ -78,7 +81,8 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "has component";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
+				public string Summary => @"&#10;&#10;&#10;a component relationship that inheres other components.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -112,7 +116,8 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			/// </summary>
 			public BelongsToProperty BelongsTo { get; } = new BelongsToProperty();
 			/// <summary>
-			/// the owner of a component. a device may not belong to any other component.
+			﻿/// the owner of a component. a device may not belong to any other component.<br/><br />
+
 			/// </summary>
 			public sealed class BelongsToProperty : IProperty
 			{
@@ -132,7 +137,8 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "belongs to";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
+				public string Summary => @"&#10;&#10;&#10;the owner of a component. a device may not belong to any other component.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -183,7 +189,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "observes";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -234,7 +240,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "has configuration";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -285,7 +291,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "has composition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

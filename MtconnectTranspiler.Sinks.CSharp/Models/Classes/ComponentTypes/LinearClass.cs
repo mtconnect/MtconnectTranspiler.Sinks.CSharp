@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component Types::Axis">Component Types::Axis</see> that provides prismatic motion along a fixed axis.
+	﻿/// <see cref="Component Types::Axis">Component Types::Axis</see> that provides prismatic motion along a fixed axis.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381997_851399_42255">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LinearClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381997_851399_42255";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides prismatic motion along a fixed axis.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component Types::Axis)}} that provides prismatic motion along a fixed axis.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Linear";
@@ -73,7 +75,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesLoad";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides prismatic motion along a fixed axis.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +126,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesTemperature";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides prismatic motion along a fixed axis.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +177,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesAxisFeedrateActual";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Component Types::Axis"">Component Types::Axis</see> that provides prismatic motion along a fixed axis.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// <see cref="SampleEnum::CHARGE_RATE">SampleEnum::CHARGE_RATE</see>
+	﻿/// <see cref="SampleEnum.CHARGE_RATE">SampleEnum.CHARGE_RATE</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1660319471493_20110_373">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ChargeRateClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1660319471493_20110_373";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""SampleEnum::CHARGE_RATE"">SampleEnum::CHARGE_RATE</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(SampleEnum::CHARGE_RATE)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ChargeRate";
@@ -73,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::CHARGE_RATE"">SampleEnum::CHARGE_RATE</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +126,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::CHARGE_RATE"">SampleEnum::CHARGE_RATE</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +177,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::CHARGE_RATE"">SampleEnum::CHARGE_RATE</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
 	/// <summary>
-	/// largest diameter of the body of a tool item.
+	﻿/// largest diameter of the body of a tool item.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119441_400816_1405">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class BodyDiameterMaxClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119441_400816_1405";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// largest diameter of the body of a tool item.";
+		public string Summary => @"&#10;&#10;&#10;largest diameter of the body of a tool item.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "BodyDiameterMax";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// largest diameter of the body of a tool item.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// largest diameter of the body of a tool item.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

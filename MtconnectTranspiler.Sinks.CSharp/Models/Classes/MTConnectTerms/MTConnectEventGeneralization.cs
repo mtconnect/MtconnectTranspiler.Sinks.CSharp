@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>observation</i> of either a state or discrete value of the <i>Component</i>. 
+	﻿/// <i>observation</i> of either a state or discrete value of the <i>Component</i>. <br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375172_390471_2036">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MTConnectEventGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375172_390471_2036";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>observation</i> of either a state or discrete value of the <i>Component</i>. ";
+		public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of either a state or discrete value of the {{term(Component)}}. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MTConnect Event";

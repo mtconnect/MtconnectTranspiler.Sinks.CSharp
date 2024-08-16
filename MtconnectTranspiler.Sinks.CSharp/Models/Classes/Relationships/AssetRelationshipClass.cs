@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
 	/// <summary>
-	/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> and an <see cref="Asset">Asset</see>.
+	﻿/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> and an <see cref="Asset">Asset</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1658942745281_216676_1135">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AssetRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1658942745281_216676_1135";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
+		public string Summary => @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between a {{block(Component)}} and an {{block(Asset)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "AssetRelationship";
@@ -56,7 +58,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// </summary>
 			public AssetIdRefProperty AssetIdRef { get; } = new AssetIdRefProperty();
 			/// <summary>
-			/// uuid of the related <see cref="Asset">Asset</see>.
+			﻿/// uuid of the related <see cref="Asset">Asset</see>.<br/><br />
+
 			/// </summary>
 			public sealed class AssetIdRefProperty : IProperty
 			{
@@ -76,7 +79,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "assetIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
+				public string Summary => @"&#10;&#10;&#10;uuid of the related {{block(Asset)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -110,7 +114,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// </summary>
 			public AssetTypeProperty AssetType { get; } = new AssetTypeProperty();
 			/// <summary>
-			/// type of <see cref="Asset">Asset</see> being referenced.
+			﻿/// type of <see cref="Asset">Asset</see> being referenced.<br/><br />
+
 			/// </summary>
 			public sealed class AssetTypeProperty : IProperty
 			{
@@ -130,7 +135,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "assetType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
+				public string Summary => @"&#10;&#10;&#10;type of {{block(Asset)}} being referenced.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -164,7 +170,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
 			/// <summary>
-			/// <i>URI</i> reference to the associated <see cref="Asset">Asset</see>./// Description
+			﻿/// <i>URI</i> reference to the associated <see cref="Asset">Asset</see>.<br/><br />Description<br/><see cref="AssetRelationship.href">href in AssetRelationship</see> <b>MUST</b> also include the <see cref="Device.uuid">uuid in Device</see> for that specific piece of equipment.<br /><br /><see cref="AssetRelationship.href">href in AssetRelationship</see> is of type <c>xlink:href</c> from the W3C XLink specification: <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br/><br/><br />
+
 			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
@@ -184,7 +191,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "href";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between a <see cref=""Component"">Component</see> and an <see cref=""Asset"">Asset</see>.";
+				public string Summary => @"&#10;&#10;&#10;{{term(URI)}} reference to the associated {{block(Asset)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{property(AssetRelationship::href)}} **MUST** also include the {{property(Device::uuid)}} for that specific piece of equipment.
+
+{{property(AssetRelationship::href)}} is of type `xlink:href` from the W3C XLink specification: {{cite(https://www.w3.org/TR/xlink11/)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

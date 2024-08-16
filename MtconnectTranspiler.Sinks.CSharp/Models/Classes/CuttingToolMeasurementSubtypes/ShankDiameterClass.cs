@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
 	/// <summary>
-	/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.
+	﻿/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119509_829628_1423">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ShankDiameterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119509_829628_1423";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.";
+		public string Summary => @"&#10;&#10;&#10;dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ShankDiameter";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// dimension of the diameter of a cylindrical portion of a tool item or an adaptive item that can participate in a connection.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

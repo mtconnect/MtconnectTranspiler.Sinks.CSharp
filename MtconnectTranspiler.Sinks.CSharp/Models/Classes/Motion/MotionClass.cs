@@ -5,17 +5,22 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 {
 	/// <summary>
-	/// movement of the component relative to a coordinate system. /// Description
+	﻿/// movement of the component relative to a coordinate system. <br/><br />Description<br/><see cref="Motion">Motion</see> specifies the kinematic chain of the <see cref="component">component</see> entities.<br /><br />At most only one of <see cref="Origin">Origin</see> or <see cref="Transformation">Transformation</see> <b>MUST</b> be defined for a <see cref="Motion">Motion</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_1F084FBF_2AC7_41f6_8485_C356E6D7A9C1">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MotionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_1F084FBF_2AC7_41f6_8485_C356E6D7A9C1";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+		public string Summary => @"&#10;&#10;&#10;movement of the component relative to a coordinate system. &#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(Motion)}} specifies the kinematic chain of the {{block(component)}} entities.
+
+At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be defined for a {{block(Motion)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Motion";
@@ -58,7 +63,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 			/// </summary>
 			public ActuationProperty Actuation { get; } = new ActuationProperty();
 			/// <summary>
-			/// describes if this component is actuated directly or indirectly as a result of other motion.
+			﻿/// describes if this component is actuated directly or indirectly as a result of other motion.<br/><br />
+
 			/// </summary>
 			public sealed class ActuationProperty : IProperty
 			{
@@ -78,7 +84,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "actuation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"&#10;&#10;&#10;describes if this component is actuated directly or indirectly as a result of other motion.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -112,7 +119,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
 			/// <summary>
-			/// coordinate system within which the kinematic motion occurs.
+			﻿/// coordinate system within which the kinematic motion occurs.<br/><br />
+
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
@@ -132,7 +140,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"&#10;&#10;&#10;coordinate system within which the kinematic motion occurs.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -166,7 +175,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
 			/// <summary>
-			/// unique identifier for this element.
+			﻿/// unique identifier for this element.<br/><br />
+
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -186,7 +196,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "id";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for this element.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -220,7 +231,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 			/// </summary>
 			public ParentIdRefProperty ParentIdRef { get; } = new ParentIdRefProperty();
 			/// <summary>
-			/// pointer to the <see cref="Motion::id" />.  The kinematic chain connects all components using the parent relations. All motion is connected to the motion of the parent. The first node in the chain will not have a parent.
+			﻿/// pointer to the <see cref="Motion.id">id in Motion</see>.<br /><br />The kinematic chain connects all components using the parent relations. All motion is connected to the motion of the parent. The first node in the chain will not have a parent.<br/><br />
+
 			/// </summary>
 			public sealed class ParentIdRefProperty : IProperty
 			{
@@ -240,7 +252,10 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "parentIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"&#10;&#10;&#10;pointer to the {{property(Motion::id)}}.
+
+The kinematic chain connects all components using the parent relations. All motion is connected to the motion of the parent. The first node in the chain will not have a parent.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -274,7 +289,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of motion.
+			﻿/// type of motion.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -294,7 +310,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"&#10;&#10;&#10;type of motion.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -345,7 +362,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "hasAxis";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -396,7 +413,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "hasOrigin";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -447,7 +464,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "hasTransformation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -498,7 +515,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// movement of the component relative to a coordinate system. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
-	/// defines the meaning of <see cref="Entry">Entry</see> and <see cref="Cell">Cell</see> entities when the associated <see cref="DataItem::representation" /> is either <c>DATA_SET</c> or <c>TABLE</c>.
+	﻿/// defines the meaning of <see cref="Entry">Entry</see> and <see cref="Cell">Cell</see> entities when the associated <see cref="DataItem.representation">representation in DataItem</see> is either <c>DATA_SET</c> or <c>TABLE</c>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581433165009_756087_158">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DefinitionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581433165009_756087_158";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
+		public string Summary => @"&#10;&#10;&#10;defines the meaning of {{block(Entry)}} and {{block(Cell)}} entities when the associated {{property(DataItem::representation)}} is either `DATA_SET` or `TABLE`.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Definition";
@@ -69,7 +71,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "hasCellDefinition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -120,7 +122,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "hasDescription";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -171,7 +173,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "hasEntryDefinition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// defines the meaning of <see cref=""Entry"">Entry</see> and <see cref=""Cell"">Cell</see> entities when the associated <see cref=""DataItem::representation"" /> is either <c>DATA_SET</c> or <c>TABLE</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

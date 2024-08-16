@@ -5,6 +5,7 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612349180903_336283_32">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -13,11 +14,12 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 	[Obsolete("Deprecated in v2.1 according to https://model.mtconnect.org/#_Version_2.1")]
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AssetTypeEnum
 	{
 		/// <summary>
-		/// <see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.
+		﻿/// <see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -26,7 +28,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CUTTINGTOOL,
 		/// <summary>
-		/// <see cref="File">File</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="File">File</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,7 +38,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FILE,
 		/// <summary>
-		/// <see cref="QIFDocumentWrapper">QIFDocumentWrapper</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="QIFDocumentWrapper">QIFDocumentWrapper</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -44,7 +48,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		QIFDOCUMENTWRAPPER,
 		/// <summary>
-		/// <see cref="RawMaterial">RawMaterial</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="RawMaterial">RawMaterial</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -53,6 +58,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RAWMATERIAL,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -61,6 +67,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CUTTINGTOOLARCHETYPE,
 		/// <summary>
+		﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -72,8 +79,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612349180903_336283_32">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AssetTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -105,12 +113,14 @@ namespace Mtconnect.DataTypes
 
 		private CuttingToolValue _CuttingTool;
 		/// <summary>
-		/// <see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.
+		﻿/// <see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.<br/><br />
+
 		/// </summary>
 		public CuttingToolValue CuttingTool => _CuttingTool ?? (_CuttingTool = new CuttingToolValue());
 
 		/// <summary>
-		/// <see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.
+		﻿/// <see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.<br/><br />
+
 		/// </summary>
 		public sealed class CuttingToolValue : IEnumInstance
 		{
@@ -127,16 +137,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""CuttingTool"">CuttingTool</see> <see cref=""Asset"">Asset</see> type.";
+			public string Summary => @"&#10;&#10;&#10;{{block(CuttingTool)}} {{block(Asset)}} type.&#10;
+";
 		}
 		private FileValue _File;
 		/// <summary>
-		/// <see cref="File">File</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="File">File</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		public FileValue File => _File ?? (_File = new FileValue());
 
 		/// <summary>
-		/// <see cref="File">File</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="File">File</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		public sealed class FileValue : IEnumInstance
 		{
@@ -153,16 +166,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""File"">File</see> <see cref=""Asset"">Asset</see> type. ";
+			public string Summary => @"&#10;&#10;&#10;{{block(File)}} {{block(Asset)}} type. &#10;
+";
 		}
 		private QIFDocumentWrapperValue _QIFDocumentWrapper;
 		/// <summary>
-		/// <see cref="QIFDocumentWrapper">QIFDocumentWrapper</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="QIFDocumentWrapper">QIFDocumentWrapper</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		public QIFDocumentWrapperValue QIFDocumentWrapper => _QIFDocumentWrapper ?? (_QIFDocumentWrapper = new QIFDocumentWrapperValue());
 
 		/// <summary>
-		/// <see cref="QIFDocumentWrapper">QIFDocumentWrapper</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="QIFDocumentWrapper">QIFDocumentWrapper</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		public sealed class QIFDocumentWrapperValue : IEnumInstance
 		{
@@ -179,16 +195,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""QIFDocumentWrapper"">QIFDocumentWrapper</see> <see cref=""Asset"">Asset</see> type. ";
+			public string Summary => @"&#10;&#10;&#10;{{block(QIFDocumentWrapper)}} {{block(Asset)}} type. &#10;
+";
 		}
 		private RawMaterialValue _RawMaterial;
 		/// <summary>
-		/// <see cref="RawMaterial">RawMaterial</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="RawMaterial">RawMaterial</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		public RawMaterialValue RawMaterial => _RawMaterial ?? (_RawMaterial = new RawMaterialValue());
 
 		/// <summary>
-		/// <see cref="RawMaterial">RawMaterial</see> <see cref="Asset">Asset</see> type. 
+		﻿/// <see cref="RawMaterial">RawMaterial</see> <see cref="Asset">Asset</see> type. <br/><br />
+
 		/// </summary>
 		public sealed class RawMaterialValue : IEnumInstance
 		{
@@ -205,7 +224,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""RawMaterial"">RawMaterial</see> <see cref=""Asset"">Asset</see> type. ";
+			public string Summary => @"&#10;&#10;&#10;{{block(RawMaterial)}} {{block(Asset)}} type. &#10;
+";
 		}
 		private CuttingToolArchetypeValue _CuttingToolArchetype;
 		public CuttingToolArchetypeValue CuttingToolArchetype => _CuttingToolArchetype ?? (_CuttingToolArchetype = new CuttingToolArchetypeValue());

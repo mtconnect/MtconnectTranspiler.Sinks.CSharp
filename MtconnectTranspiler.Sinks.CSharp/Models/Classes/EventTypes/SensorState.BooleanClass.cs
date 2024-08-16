@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::SENSOR_STATE">EventEnum::SENSOR_STATE</see> where the state is <see cref="DataItemSubTypeEnum::BOOLEAN">DataItemSubTypeEnum::BOOLEAN</see>
+	﻿/// <see cref="EventEnum.SENSOR_STATE">EventEnum.SENSOR_STATE</see> where the state is <see cref="DataItemSubTypeEnum.BOOLEAN">DataItemSubTypeEnum.BOOLEAN</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1677588817279_198819_782">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SensorStateBooleanClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1677588817279_198819_782";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::SENSOR_STATE"">EventEnum::SENSOR_STATE</see> where the state is <see cref=""DataItemSubTypeEnum::BOOLEAN"">DataItemSubTypeEnum::BOOLEAN</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::SENSOR_STATE)}} where the state is {{def(DataItemSubTypeEnum::BOOLEAN)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "SensorState.Boolean";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::SENSOR_STATE"">EventEnum::SENSOR_STATE</see> where the state is <see cref=""DataItemSubTypeEnum::BOOLEAN"">DataItemSubTypeEnum::BOOLEAN</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::SENSOR_STATE"">EventEnum::SENSOR_STATE</see> where the state is <see cref=""DataItemSubTypeEnum::BOOLEAN"">DataItemSubTypeEnum::BOOLEAN</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

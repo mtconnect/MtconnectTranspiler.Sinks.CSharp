@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
 	/// <summary>
-	/// <see cref="InterfaceEventEnum::CLOSE_DOOR">InterfaceEventEnum::CLOSE_DOOR</see>
+	﻿/// <see cref="InterfaceEventEnum.CLOSE_DOOR">InterfaceEventEnum.CLOSE_DOOR</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218219_606998_1626">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CloseDoorClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218219_606998_1626";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""InterfaceEventEnum::CLOSE_DOOR"">InterfaceEventEnum::CLOSE_DOOR</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(InterfaceEventEnum::CLOSE_DOOR)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CloseDoor";
@@ -72,7 +74,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""InterfaceEventEnum::CLOSE_DOOR"">InterfaceEventEnum::CLOSE_DOOR</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""InterfaceEventEnum::CLOSE_DOOR"">InterfaceEventEnum::CLOSE_DOOR</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

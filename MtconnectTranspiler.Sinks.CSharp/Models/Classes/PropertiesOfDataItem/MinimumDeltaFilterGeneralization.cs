@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
-	/// <see cref="FilterEnum::MINIMUM_DELTA">FilterEnum::MINIMUM_DELTA</see>
+	﻿/// <see cref="FilterEnum.MINIMUM_DELTA">FilterEnum.MINIMUM_DELTA</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1644604760483_617184_91">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MinimumDeltaFilterGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1644604760483_617184_91";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""FilterEnum::MINIMUM_DELTA"">FilterEnum::MINIMUM_DELTA</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(FilterEnum::MINIMUM_DELTA)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MinimumDeltaFilter";
@@ -71,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""FilterEnum::MINIMUM_DELTA"">FilterEnum::MINIMUM_DELTA</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

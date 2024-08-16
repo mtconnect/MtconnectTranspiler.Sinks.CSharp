@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::DEVICE_REMOVED">EventEnum::DEVICE_REMOVED</see>
+	﻿/// <see cref="EventEnum.DEVICE_REMOVED">EventEnum.DEVICE_REMOVED</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605104021126_502092_735">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DeviceRemovedClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605104021126_502092_735";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::DEVICE_REMOVED"">EventEnum::DEVICE_REMOVED</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::DEVICE_REMOVED)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "DeviceRemoved";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::DEVICE_REMOVED"">EventEnum::DEVICE_REMOVED</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -106,7 +108,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// </summary>
 			public HashProperty Hash { get; } = new HashProperty();
 			/// <summary>
-			/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso>
+			﻿/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso><br/><br />
+
 			/// </summary>
 			public sealed class HashProperty : IProperty
 			{
@@ -126,7 +129,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "hash";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::DEVICE_REMOVED"">EventEnum::DEVICE_REMOVED</see>";
+				public string Summary => @"&#10;&#10;&#10;condensed message digest from a secure one-way hash function. {{cite(FIPS PUB 180-4)}}&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

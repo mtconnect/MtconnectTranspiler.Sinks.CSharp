@@ -6,10 +6,11 @@ using Package = Mtconnect.Fundamentals.MTConnectProtocol;
 namespace Mtconnect.Fundamentals
 {
 	/// <summary>
-	/// The <i>agent</i> <b>MUST</b> support the <see cref="REST Protocol">REST Protocol</see> and produce <i>XML</i> representations of the information models.   All other protocols and representations are optional. 
+	﻿/// The <i>agent</i> <b>MUST</b> support the <see cref="REST Protocol">REST Protocol</see> and produce <i>XML</i> representations of the information models. <br /><br />All other protocols and representations are optional.<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_50B7711E_30AA_4a94_9F73_C74061BA099D">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MTConnectProtocolPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,11 @@ namespace Mtconnect.Fundamentals
 		public string Name => "MTConnect Protocol";
 
 		/// <inheritdoc />
-		public string Summary => @"/// The <i>agent</i> <b>MUST</b> support the <see cref=""REST Protocol"">REST Protocol</see> and produce <i>XML</i> representations of the information models.   All other protocols and representations are optional. ";
+		public string Summary => @"&#10;&#10;&#10;The {{term(agent)}} **MUST** support the {{package(REST Protocol)}} and produce {{term(XML)}} representations of the information models. 
+
+All other protocols and representations are optional.
+&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

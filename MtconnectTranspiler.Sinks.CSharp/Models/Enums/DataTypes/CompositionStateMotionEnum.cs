@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550811680_794757_187">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CompositionStateMotionEnum
 	{
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is open to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> is open to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPEN,
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is not open to the point of a positive confirmation and is not closed to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// position of the <see cref="Composition">Composition</see> is not open to the<br />point of a positive confirmation and is not closed to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UNLATCHED,
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is closed to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> is closed to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550811680_794757_187">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionStateMotionEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private OPENValue _OPEN;
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is open to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> is open to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public OPENValue OPEN => _OPEN ?? (_OPEN = new OPENValue());
 
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is open to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> is open to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public sealed class OPENValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position of the <see cref=""Composition"">Composition</see> is open to the point of a positive confirmation.";
+			public string Summary => @"&#10;&#10;&#10;position of the {{block(Composition)}} is open to the point of a positive confirmation.&#10;
+";
 		}
 		private UNLATCHEDValue _UNLATCHED;
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is not open to the point of a positive confirmation and is not closed to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// position of the <see cref="Composition">Composition</see> is not open to the<br />point of a positive confirmation and is not closed to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		public UNLATCHEDValue UNLATCHED => _UNLATCHED ?? (_UNLATCHED = new UNLATCHEDValue());
 
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is not open to the point of a positive confirmation and is not closed to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// position of the <see cref="Composition">Composition</see> is not open to the<br />point of a positive confirmation and is not closed to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		public sealed class UNLATCHEDValue : IEnumInstance
 		{
@@ -123,16 +133,22 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position of the <see cref=""Composition"">Composition</see> is not open to the point of a positive confirmation and is not closed to the point of a positive confirmation.   It is in an intermediate position.";
+			public string Summary => @"&#10;&#10;&#10;position of the {{block(Composition)}} is not open to the
+point of a positive confirmation and is not closed to the point of a positive confirmation. 
+
+It is in an intermediate position.&#10;
+";
 		}
 		private CLOSEDValue _CLOSED;
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is closed to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> is closed to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public CLOSEDValue CLOSED => _CLOSED ?? (_CLOSED = new CLOSEDValue());
 
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> is closed to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> is closed to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public sealed class CLOSEDValue : IEnumInstance
 		{
@@ -149,7 +165,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position of the <see cref=""Composition"">Composition</see> is closed to the point of a positive confirmation.";
+			public string Summary => @"&#10;&#10;&#10;position of the {{block(Composition)}} is closed to the point of a positive confirmation.&#10;
+";
 		}
 	}
 }

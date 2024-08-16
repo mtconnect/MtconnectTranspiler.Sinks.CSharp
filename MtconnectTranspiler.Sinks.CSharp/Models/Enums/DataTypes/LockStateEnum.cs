@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622457615279_962450_700">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum LockStateEnum
 	{
 		/// <summary>
-		/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.
+		﻿/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LOCKED,
 		/// <summary>
-		/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.
+		﻿/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622457615279_962450_700">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LockStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private LOCKEDValue _LOCKED;
 		/// <summary>
-		/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.
+		﻿/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.<br/><br />
+
 		/// </summary>
 		public LOCKEDValue LOCKED => _LOCKED ?? (_LOCKED = new LOCKEDValue());
 
 		/// <summary>
-		/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.
+		﻿/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.<br/><br />
+
 		/// </summary>
 		public sealed class LOCKEDValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// mechanism is engaged and preventing the associated <see cref=""Component"">Component</see> from being opened or operated.";
+			public string Summary => @"&#10;&#10;&#10;mechanism is engaged and preventing the associated {{block(Component)}} from being opened or operated.&#10;
+";
 		}
 		private UNLOCKEDValue _UNLOCKED;
 		/// <summary>
-		/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.
+		﻿/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.<br/><br />
+
 		/// </summary>
 		public UNLOCKEDValue UNLOCKED => _UNLOCKED ?? (_UNLOCKED = new UNLOCKEDValue());
 
 		/// <summary>
-		/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.
+		﻿/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.<br/><br />
+
 		/// </summary>
 		public sealed class UNLOCKEDValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// mechanism is disengaged and the associated <see cref=""Component"">Component</see> is able to be opened or operated.";
+			public string Summary => @"&#10;&#10;&#10;mechanism is disengaged and the associated {{block(Component)}} is able to be opened or operated.&#10;
+";
 		}
 	}
 }

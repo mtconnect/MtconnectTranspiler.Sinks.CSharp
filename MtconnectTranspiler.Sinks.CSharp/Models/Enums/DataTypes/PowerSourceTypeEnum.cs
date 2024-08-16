@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1696871537426_335818_3541">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.3">v2.3</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PowerSourceTypeEnum
 	{
 		/// <summary>
-		/// main or most important location of a piece of bar stock.
+		﻿/// main or most important location of a piece of bar stock.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PRIMARY,
 		/// <summary>
-		/// alternate or not primary.
+		﻿/// alternate or not primary.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SECONDARY,
 		/// <summary>
-		/// uninterruptible or generator power supply.
+		﻿/// uninterruptible or generator power supply.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1696871537426_335818_3541">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PowerSourceTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private PRIMARYValue _PRIMARY;
 		/// <summary>
-		/// main or most important location of a piece of bar stock.
+		﻿/// main or most important location of a piece of bar stock.<br/><br />
+
 		/// </summary>
 		public PRIMARYValue PRIMARY => _PRIMARY ?? (_PRIMARY = new PRIMARYValue());
 
 		/// <summary>
-		/// main or most important location of a piece of bar stock.
+		﻿/// main or most important location of a piece of bar stock.<br/><br />
+
 		/// </summary>
 		public sealed class PRIMARYValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// main or most important location of a piece of bar stock.";
+			public string Summary => @"&#10;&#10;&#10;main or most important location of a piece of bar stock.&#10;
+";
 		}
 		private SECONDARYValue _SECONDARY;
 		/// <summary>
-		/// alternate or not primary.
+		﻿/// alternate or not primary.<br/><br />
+
 		/// </summary>
 		public SECONDARYValue SECONDARY => _SECONDARY ?? (_SECONDARY = new SECONDARYValue());
 
 		/// <summary>
-		/// alternate or not primary.
+		﻿/// alternate or not primary.<br/><br />
+
 		/// </summary>
 		public sealed class SECONDARYValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// alternate or not primary.";
+			public string Summary => @"&#10;&#10;&#10;alternate or not primary.&#10;
+";
 		}
 		private STANDBYValue _STANDBY;
 		/// <summary>
-		/// uninterruptible or generator power supply.
+		﻿/// uninterruptible or generator power supply.<br/><br />
+
 		/// </summary>
 		public STANDBYValue STANDBY => _STANDBY ?? (_STANDBY = new STANDBYValue());
 
 		/// <summary>
-		/// uninterruptible or generator power supply.
+		﻿/// uninterruptible or generator power supply.<br/><br />
+
 		/// </summary>
 		public sealed class STANDBYValue : IEnumInstance
 		{
@@ -149,7 +162,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// uninterruptible or generator power supply.";
+			public string Summary => @"&#10;&#10;&#10;uninterruptible or generator power supply.&#10;
+";
 		}
 	}
 }

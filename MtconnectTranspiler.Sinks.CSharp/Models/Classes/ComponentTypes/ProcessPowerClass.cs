@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> composed of a power source associated with a piece of equipment that supplies energy to the manufacturing process separate from the <see cref="Electric">Electric</see> system./// Description
+	﻿/// <see cref="System">System</see> composed of a power source associated with a piece of equipment that supplies energy to the manufacturing process separate from the <see cref="Electric">Electric</see> system.<br/><br />Description<br/>For example, this could be the power source for an EDM machining process, an electroplating line, or a welding system.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382012_290973_42279">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessPowerClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382012_290973_42279";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> composed of a power source associated with a piece of equipment that supplies energy to the manufacturing process separate from the <see cref=""Electric"">Electric</see> system./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} composed of a power source associated with a piece of equipment that supplies energy to the manufacturing process separate from the {{block(Electric)}} system.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;For example, this could be the power source for an EDM machining process, an electroplating line, or a welding system.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessPower";

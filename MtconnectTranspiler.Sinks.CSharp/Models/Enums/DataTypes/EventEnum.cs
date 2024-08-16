@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398379726_606068_12802">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum EventEnum
 	{
 		/// <summary>
-		/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.
+		﻿/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTIVE_AXES,
 		/// <summary>
-		/// operational state of an apparatus for moving or controlling a mechanism or system.
+		﻿/// operational state of an apparatus for moving or controlling a mechanism or system.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTUATOR_STATE,
 		/// <summary>
-		/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.
+		﻿/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -44,7 +48,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		ALARM,
 		/// <summary>
-		/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.
+		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -53,7 +58,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ASSET_CHANGED,
 		/// <summary>
-		/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.
+		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -62,7 +68,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ASSET_REMOVED,
 		/// <summary>
-		/// <i>agent</i>'s ability to communicate with the data source.
+		﻿/// <i>agent</i>'s ability to communicate with the data source.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -71,7 +78,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AVAILABILITY,
 		/// <summary>
-		/// describes the way the axes will be associated to each other.     This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.
+		﻿/// describes the way the axes will be associated to each other. <br />  <br />This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -80,7 +88,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AXIS_COUPLING,
 		/// <summary>
-		/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.
+		﻿/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -89,7 +98,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AXIS_FEEDRATE_OVERRIDE,
 		/// <summary>
-		/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.
+		﻿/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -98,7 +108,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AXIS_INTERLOCK,
 		/// <summary>
-		/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.
+		﻿/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -107,7 +118,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AXIS_STATE,
 		/// <summary>
-		/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.
+		﻿/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -116,7 +128,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BLOCK,
 		/// <summary>
-		/// total count of the number of blocks of program code that have been executed since execution started.
+		﻿/// total count of the number of blocks of program code that have been executed since execution started.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -125,7 +138,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BLOCK_COUNT,
 		/// <summary>
-		/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.
+		﻿/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -134,7 +148,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHUCK_INTERLOCK,
 		/// <summary>
-		/// operating state of a mechanism that holds a part or stock material during a manufacturing process.   It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.
+		﻿/// operating state of a mechanism that holds a part or stock material during a manufacturing process. <br /><br />It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -143,7 +158,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHUCK_STATE,
 		/// <summary>
-		/// programmatic code being executed.  <b>DEPRECATED</b> in <i>Version 1.1</i>s.
+		﻿/// programmatic code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -154,7 +170,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		CODE,
 		/// <summary>
-		/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.
+		﻿/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -163,7 +180,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COMPOSITION_STATE,
 		/// <summary>
-		/// current mode of the <see cref="Controller">Controller</see> component.
+		﻿/// current mode of the <see cref="Controller">Controller</see> component.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -172,7 +190,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CONTROLLER_MODE,
 		/// <summary>
-		/// setting or operator selection that changes the behavior of a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -181,7 +200,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CONTROLLER_MODE_OVERRIDE,
 		/// <summary>
-		/// set of associated axes.
+		﻿/// set of associated axes.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -190,7 +210,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COUPLED_AXES,
 		/// <summary>
-		/// time and date code associated with a material or other physical item.
+		﻿/// time and date code associated with a material or other physical item.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -199,7 +220,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DATE_CODE,
 		/// <summary>
-		/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.
+		﻿/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -208,7 +230,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DEVICE_UUID,
 		/// <summary>
-		/// direction of motion.
+		﻿/// direction of motion.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -217,7 +240,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DIRECTION,
 		/// <summary>
-		/// operational state of a <see cref="Door">Door</see> component or composition element.
+		﻿/// operational state of a <see cref="Door">Door</see> component or composition element.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -226,7 +250,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DOOR_STATE,
 		/// <summary>
-		/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.
+		﻿/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -235,7 +260,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EMERGENCY_STOP,
 		/// <summary>
-		/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.
+		﻿/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -244,7 +270,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		END_OF_BAR,
 		/// <summary>
-		/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.
+		﻿/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -253,7 +280,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EQUIPMENT_MODE,
 		/// <summary>
-		/// operating state of a <see cref="Component">Component</see>.
+		﻿/// operating state of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -262,7 +290,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EXECUTION,
 		/// <summary>
-		/// current intended production status of the <see cref="Component">Component</see>.
+		﻿/// current intended production status of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -271,7 +300,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FUNCTIONAL_MODE,
 		/// <summary>
-		/// hardness of a material.
+		﻿/// hardness of a material.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -280,7 +310,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HARDNESS,
 		/// <summary>
-		/// current line of code being executed.  <b>DEPRECATED</b> in <i>Version 1.4.0</i>s.
+		﻿/// current line of code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.4.0</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -291,7 +322,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 		LINE,
 		/// <summary>
-		/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.
+		﻿/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -300,7 +332,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LINE_LABEL,
 		/// <summary>
-		/// position of a block of program code within a control program.
+		﻿/// position of a block of program code within a control program.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -309,7 +342,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LINE_NUMBER,
 		/// <summary>
-		/// identifier of a material used or consumed in the manufacturing process.
+		﻿/// identifier of a material used or consumed in the manufacturing process.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -318,7 +352,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MATERIAL,
 		/// <summary>
-		/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.
+		﻿/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -327,7 +362,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MATERIAL_LAYER,
 		/// <summary>
-		/// information to be transferred from a piece of equipment to a client software application.
+		﻿/// information to be transferred from a piece of equipment to a client software application.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -336,7 +372,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MESSAGE,
 		/// <summary>
-		/// identifier of the person currently responsible for operating the piece of equipment.
+		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -345,7 +382,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPERATOR_ID,
 		/// <summary>
-		/// identifier for a pallet.
+		﻿/// identifier for a pallet.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -354,7 +392,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PALLET_ID,
 		/// <summary>
-		/// aggregate count of parts.
+		﻿/// aggregate count of parts.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -363,7 +402,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_COUNT,
 		/// <summary>
-		/// indication designating whether a part or work piece has been detected or is present.
+		﻿/// indication designating whether a part or work piece has been detected or is present.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -372,7 +412,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_DETECT,
 		/// <summary>
-		/// identifier of a part in a manufacturing operation.
+		﻿/// identifier of a part in a manufacturing operation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -381,7 +422,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_ID,
 		/// <summary>
-		/// identifier of a part or product moving through the manufacturing process.  <b>DEPRECATED</b> in <i>Version 1.7</i>s. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.
+		﻿/// identifier of a part or product moving through the manufacturing process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.7</i>. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -392,7 +434,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.7 according to https://model.mtconnect.org/#_Version_1.7")]
 		PART_NUMBER,
 		/// <summary>
-		/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.
+		﻿/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -401,7 +444,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PATH_FEEDRATE_OVERRIDE,
 		/// <summary>
-		/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.
+		﻿/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -410,7 +454,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PATH_MODE,
 		/// <summary>
-		/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.
+		﻿/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -419,7 +464,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POWER_STATE,
 		/// <summary>
-		/// status of the <see cref="Component">Component</see>.  <b>DEPRECATED</b> in <i>Version 1.1.0</i>s.
+		﻿/// status of the <see cref="Component">Component</see>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1.0</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -430,7 +476,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		POWER_STATUS,
 		/// <summary>
-		/// time and date associated with an activity or event.
+		﻿/// time and date associated with an activity or event.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -439,7 +486,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS_TIME,
 		/// <summary>
-		/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.
+		﻿/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -448,7 +496,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAM,
 		/// <summary>
-		/// comment or non-executable statement in the control program.
+		﻿/// comment or non-executable statement in the control program.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -457,7 +506,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAM_COMMENT,
 		/// <summary>
-		/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.  A program may be edited while another is executed.
+		﻿/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.<br /><br />A program may be edited while another is executed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -466,7 +516,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAM_EDIT,
 		/// <summary>
-		/// name of the program being edited.   This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. 
+		﻿/// name of the program being edited. <br /><br />This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -475,7 +526,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAM_EDIT_NAME,
 		/// <summary>
-		/// non-executable header section of the control program.
+		﻿/// non-executable header section of the control program.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -484,7 +536,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAM_HEADER,
 		/// <summary>
-		/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.
+		﻿/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -493,7 +546,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAM_LOCATION,
 		/// <summary>
-		/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.
+		﻿/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -502,7 +556,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAM_LOCATION_TYPE,
 		/// <summary>
-		/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.
+		﻿/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -511,7 +566,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAM_NEST_LEVEL,
 		/// <summary>
-		/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.
+		﻿/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -520,7 +576,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ROTARY_MODE,
 		/// <summary>
-		/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.
+		﻿/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -529,7 +586,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ROTARY_VELOCITY_OVERRIDE,
 		/// <summary>
-		/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.
+		﻿/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -538,7 +596,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SERIAL_NUMBER,
 		/// <summary>
-		/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.
+		﻿/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -547,7 +606,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SPINDLE_INTERLOCK,
 		/// <summary>
-		/// identifier of an individual tool asset.
+		﻿/// identifier of an individual tool asset.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -556,7 +616,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_ASSET_ID,
 		/// <summary>
-		/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.
+		﻿/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -565,7 +626,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_GROUP,
 		/// <summary>
-		/// identifier of the tool currently in use for a given <c>Path</c>.  <b>DEPRECATED</b> in <i>Version 1.2.0</i>s.   See <c>TOOL_ASSET_ID</c>.
+		﻿/// identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -576,7 +638,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.2 according to https://model.mtconnect.org/#_Version_1.2")]
 		TOOL_ID,
 		/// <summary>
-		/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.
+		﻿/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -585,7 +648,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_NUMBER,
 		/// <summary>
-		/// reference to the tool offset variables applied to the active cutting tool.
+		﻿/// reference to the tool offset variables applied to the active cutting tool.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -594,7 +658,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_OFFSET,
 		/// <summary>
-		/// identifier of the person currently responsible for operating the piece of equipment.
+		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -603,7 +668,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		USER,
 		/// <summary>
-		/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.
+		﻿/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -612,7 +678,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VARIABLE,
 		/// <summary>
-		/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.
+		﻿/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -621,7 +688,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WAIT_STATE,
 		/// <summary>
-		/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.
+		﻿/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -630,7 +698,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WIRE,
 		/// <summary>
-		/// identifier for the current workholding or part clamp in use by a piece of equipment.  <b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.
+		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -639,7 +708,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WORKHOLDING_ID,
 		/// <summary>
-		/// reference to offset variables for a work piece or part.
+		﻿/// reference to offset variables for a work piece or part.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -648,7 +718,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WORK_OFFSET,
 		/// <summary>
-		/// Operating System (OS) of a <see cref="Component">Component</see>.
+		﻿/// Operating System (OS) of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -657,7 +728,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPERATING_SYSTEM,
 		/// <summary>
-		/// embedded software of a <see cref="Component">Component</see> .
+		﻿/// embedded software of a <see cref="Component">Component</see><br />.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -666,7 +738,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FIRMWARE,
 		/// <summary>
-		/// application on a <see cref="Component">Component</see>.
+		﻿/// application on a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -675,7 +748,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		APPLICATION,
 		/// <summary>
-		/// software library on a <see cref="Component">Component</see>
+		﻿/// software library on a <see cref="Component">Component</see><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -684,7 +758,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LIBRARY,
 		/// <summary>
-		/// hardware of a <see cref="Component">Component</see>.
+		﻿/// hardware of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -693,7 +768,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HARDWARE,
 		/// <summary>
-		/// network details of a <see cref="Component">Component</see>.
+		﻿/// network details of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -702,7 +778,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NETWORK,
 		/// <summary>
-		/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.
+		﻿/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -711,7 +788,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ROTATION,
 		/// <summary>
-		/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.
+		﻿/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -720,7 +798,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TRANSLATION,
 		/// <summary>
-		/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.
+		﻿/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -729,7 +808,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DEVICE_ADDED,
 		/// <summary>
-		/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.
+		﻿/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -738,7 +818,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DEVICE_REMOVED,
 		/// <summary>
-		/// <i>UUID</i> of the device whose <i>metadata</i> has changed.
+		﻿/// <i>UUID</i> of the device whose <i>metadata</i> has changed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -747,7 +828,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DEVICE_CHANGED,
 		/// <summary>
-		/// status of the connection between an <i>adapter</i> and an <i>agent</i>.
+		﻿/// status of the connection between an <i>adapter</i> and an <i>agent</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -756,7 +838,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CONNECTION_STATUS,
 		/// <summary>
-		/// originator’s software version of the <i>adapter</i>.
+		﻿/// originator’s software version of the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -765,7 +848,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ADAPTER_SOFTWARE_VERSION,
 		/// <summary>
-		/// <i>URI</i> of the <i>adapter</i>.
+		﻿/// <i>URI</i> of the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -774,7 +858,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ADAPTER_URI,
 		/// <summary>
-		/// reference version of the MTConnect Standard supported by the <i>adapter</i>.
+		﻿/// reference version of the MTConnect Standard supported by the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -783,7 +868,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MTCONNECT_VERSION,
 		/// <summary>
-		/// <i>attachment</i> between a sensor and an entity.
+		﻿/// <i>attachment</i> between a sensor and an entity.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -792,7 +878,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SENSOR_ATTACHMENT,
 		/// <summary>
-		/// state or condition of a part.
+		﻿/// state or condition of a part.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -801,7 +888,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_STATUS,
 		/// <summary>
-		/// identifier of a process being executed by the device.
+		﻿/// identifier of a process being executed by the device.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -810,7 +898,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS_OCCURRENCE_ID,
 		/// <summary>
-		/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.
+		﻿/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -819,7 +908,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS_AGGREGATE_ID,
 		/// <summary>
-		/// identifier given to link the individual occurrence to a class of processes or process definition. 
+		﻿/// identifier given to link the individual occurrence to a class of processes or process definition.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -828,7 +918,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS_KIND_ID,
 		/// <summary>
-		/// identifier given to a collection of individual parts. 
+		﻿/// identifier given to a collection of individual parts. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -837,7 +928,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_GROUP_ID,
 		/// <summary>
-		/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.
+		﻿/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -846,7 +938,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_KIND_ID,
 		/// <summary>
-		/// identifier given to a distinguishable, individual part. 
+		﻿/// identifier given to a distinguishable, individual part. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -855,7 +948,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_UNIQUE_ID,
 		/// <summary>
-		/// set of limits used to indicate whether a process variable is stable and in control.  <b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.
+		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -864,7 +958,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CONTROL_LIMIT,
 		/// <summary>
-		/// set of limits defining a range of values designating acceptable performance for a variable.  <b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.
+		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -873,7 +968,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SPECIFICATION_LIMIT,
 		/// <summary>
-		/// set of limits used to trigger warning or alarm indicators.  <b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.
+		﻿/// set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -882,7 +978,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ALARM_LIMIT,
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -891,7 +988,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LOAD_COUNT,
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -900,7 +998,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UNLOAD_COUNT,
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -909,7 +1008,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TRANSFER_COUNT,
 		/// <summary>
-		/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.
+		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -918,7 +1018,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTIVATION_COUNT,
 		/// <summary>
-		/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.
+		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -927,7 +1028,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DEACTIVATION_COUNT,
 		/// <summary>
-		/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.
+		﻿/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -936,7 +1038,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CYCLE_COUNT,
 		/// <summary>
-		/// state of a valve is one of open, closed, or transitioning between the states.
+		﻿/// state of a valve is one of open, closed, or transitioning between the states.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -945,7 +1048,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VALVE_STATE,
 		/// <summary>
-		/// state or operating mode of a <see cref="Lock">Lock</see>.
+		﻿/// state or operating mode of a <see cref="Lock">Lock</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -954,7 +1058,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LOCK_STATE,
 		/// <summary>
-		/// particular condition of the process occurrence at a specific time.
+		﻿/// particular condition of the process occurrence at a specific time.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -963,7 +1068,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS_STATE,
 		/// <summary>
-		/// particular condition of the part occurrence at a specific time.
+		﻿/// particular condition of the part occurrence at a specific time.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -972,7 +1078,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_PROCESSING_STATE,
 		/// <summary>
-		/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.
+		﻿/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -981,7 +1088,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPERATING_MODE,
 		/// <summary>
-		/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.
+		﻿/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -990,7 +1098,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ASSET_COUNT,
 		/// <summary>
-		/// actions or activities to be performed in support of a piece of equipment.
+		﻿/// actions or activities to be performed in support of a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -999,7 +1108,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MAINTENANCE_LIST,
 		/// <summary>
-		/// identifier for the current workholding or part clamp in use by a piece of equipment.
+		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1008,7 +1118,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FIXTURE_ID,
 		/// <summary>
-		/// interpretation of <c>PART_COUNT</c>.
+		﻿/// interpretation of <c>PART_COUNT</c>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1017,7 +1128,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_COUNT_TYPE,
 		/// <summary>
-		/// time provided by a timing device at a specific point in time.
+		﻿/// time provided by a timing device at a specific point in time.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1026,7 +1138,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CLOCK_TIME,
 		/// <summary>
-		/// name of the host computer supplying data.
+		﻿/// name of the host computer supplying data.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1035,7 +1148,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HOST_NAME,
 		/// <summary>
-		/// number of the TCP/IP or UDP/IP port for the connection endpoint.
+		﻿/// number of the TCP/IP or UDP/IP port for the connection endpoint.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1044,7 +1158,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NETWORK_PORT,
 		/// <summary>
-		/// indication designating whether a leak has been detected.
+		﻿/// indication designating whether a leak has been detected.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1053,7 +1168,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LEAK_DETECT,
 		/// <summary>
-		/// present status of the battery.
+		﻿/// present status of the battery.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1062,7 +1178,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BATTERY_STATE,
 		/// <summary>
-		/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.
+		﻿/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1071,7 +1188,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FEATURE_PERSISTENT_ID,
 		/// <summary>
-		/// detection result of a sensor.
+		﻿/// detection result of a sensor.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1080,7 +1198,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SENSOR_STATE,
 		/// <summary>
-		/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.
+		﻿/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1089,7 +1208,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COMPONENT_DATA,
 		/// <summary>
-		/// properties of each addressable work offset.
+		﻿/// properties of each addressable work offset.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1098,7 +1218,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WORK_OFFSETS,
 		/// <summary>
-		/// properties of each addressable tool offset.
+		﻿/// properties of each addressable tool offset.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1107,7 +1228,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_OFFSETS,
 		/// <summary>
-		/// assessing elements of a <i>feature</i>.
+		﻿/// assessing elements of a <i>feature</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1116,7 +1238,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FEATURE_MEASUREMENT,
 		/// <summary>
-		/// <i>UUID</i> of the <i>characteristic</i>.
+		﻿/// <i>UUID</i> of the <i>characteristic</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1125,7 +1248,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHARACTERISTIC_PERSISTENT_ID,
 		/// <summary>
-		/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso>
+		﻿/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1134,7 +1258,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MEASUREMENT_TYPE,
 		/// <summary>
-		/// measurement based on the measurement type.
+		﻿/// measurement based on the measurement type.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1143,7 +1268,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MEASUREMENT_VALUE,
 		/// <summary>
-		/// engineering units of the measurement.
+		﻿/// engineering units of the measurement.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1152,7 +1278,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MEASUREMENT_UNITS,
 		/// <summary>
-		/// pass/fail result of the measurement.
+		﻿/// pass/fail result of the measurement.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1161,7 +1288,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHARACTERISTIC_STATUS,
 		/// <summary>
-		/// method used to compute <i>standard uncertainty</i>.
+		﻿/// method used to compute <i>standard uncertainty</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1170,7 +1298,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UNCERTAINTY_TYPE,
 		/// <summary>
-		/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.
+		﻿/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1179,7 +1308,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UNCERTAINTY,
 		/// <summary>
-		/// set of limits defining a range of values designating acceptable performance for a variable.
+		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1188,7 +1318,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SPECIFICATION_LIMITS,
 		/// <summary>
-		/// set of limits used to indicate whether a process variable is stable and in control.
+		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1197,7 +1328,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CONTROL_LIMITS,
 		/// <summary>
-		/// set of limits used to trigger warning or alarm indicators.
+		﻿/// set of limits used to trigger warning or alarm indicators.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1206,7 +1338,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ALARM_LIMITS,
 		/// <summary>
-		/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem::indices" /> of the currently active cutting tool edge.
+		﻿/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem.indices">indices in CuttingItem</see> of the currently active cutting tool edge.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1215,7 +1348,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_CUTTING_ITEM,
 		/// <summary>
-		/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso>
+		﻿/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1224,7 +1358,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LOCATION_ADDRESS,
 		/// <summary>
-		/// active energy source for the <see cref="Component">Component</see>.
+		﻿/// active energy source for the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1236,8 +1371,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398379726_606068_12802">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EventEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -1397,12 +1533,14 @@ namespace Mtconnect.DataTypes
 
 		private ACTIVE_AXESValue _ACTIVE_AXES;
 		/// <summary>
-		/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.
+		﻿/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br/><br />
+
 		/// </summary>
 		public ACTIVE_AXESValue ACTIVE_AXES => _ACTIVE_AXES ?? (_ACTIVE_AXES = new ACTIVE_AXESValue());
 
 		/// <summary>
-		/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.
+		﻿/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br/><br />
+
 		/// </summary>
 		public sealed class ACTIVE_AXESValue : IEnumInstance
 		{
@@ -1419,16 +1557,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// set of axes currently associated with a <see cref=""Path"">Path</see> or <see cref=""Controller"">Controller</see>.";
+			public string Summary => @"&#10;&#10;&#10;set of axes currently associated with a {{block(Path)}} or {{block(Controller)}}.&#10;
+";
 		}
 		private ACTUATOR_STATEValue _ACTUATOR_STATE;
 		/// <summary>
-		/// operational state of an apparatus for moving or controlling a mechanism or system.
+		﻿/// operational state of an apparatus for moving or controlling a mechanism or system.<br/><br />
+
 		/// </summary>
 		public ACTUATOR_STATEValue ACTUATOR_STATE => _ACTUATOR_STATE ?? (_ACTUATOR_STATE = new ACTUATOR_STATEValue());
 
 		/// <summary>
-		/// operational state of an apparatus for moving or controlling a mechanism or system.
+		﻿/// operational state of an apparatus for moving or controlling a mechanism or system.<br/><br />
+
 		/// </summary>
 		public sealed class ACTUATOR_STATEValue : IEnumInstance
 		{
@@ -1445,16 +1586,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// operational state of an apparatus for moving or controlling a mechanism or system.";
+			public string Summary => @"&#10;&#10;&#10;operational state of an apparatus for moving or controlling a mechanism or system.&#10;
+";
 		}
 		private ALARMValue _ALARM;
 		/// <summary>
-		/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.
+		﻿/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.<br/><br />
+
 		/// </summary>
 		public ALARMValue ALARM => _ALARM ?? (_ALARM = new ALARMValue());
 
 		/// <summary>
-		/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.
+		﻿/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.<br/><br />
+
 		/// </summary>
 		public sealed class ALARMValue : IEnumInstance
 		{
@@ -1471,16 +1615,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.";
+			public string Summary => @"&#10;&#10;&#10;**DEPRECATED:** Replaced with `CONDITION` category data items in Version 1.1.0.&#10;
+";
 		}
 		private ASSET_CHANGEDValue _ASSET_CHANGED;
 		/// <summary>
-		/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.
+		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br/><br />
+
 		/// </summary>
 		public ASSET_CHANGEDValue ASSET_CHANGED => _ASSET_CHANGED ?? (_ASSET_CHANGED = new ASSET_CHANGEDValue());
 
 		/// <summary>
-		/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.
+		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br/><br />
+
 		/// </summary>
 		public sealed class ASSET_CHANGEDValue : IEnumInstance
 		{
@@ -1497,16 +1644,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""assetId"">assetId</see> of the <i>Asset</i> that has been added or changed.";
+			public string Summary => @"&#10;&#10;&#10;{{block(assetId)}} of the {{term(Asset)}} that has been added or changed.&#10;
+";
 		}
 		private ASSET_REMOVEDValue _ASSET_REMOVED;
 		/// <summary>
-		/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.
+		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br/><br />
+
 		/// </summary>
 		public ASSET_REMOVEDValue ASSET_REMOVED => _ASSET_REMOVED ?? (_ASSET_REMOVED = new ASSET_REMOVEDValue());
 
 		/// <summary>
-		/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.
+		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br/><br />
+
 		/// </summary>
 		public sealed class ASSET_REMOVEDValue : IEnumInstance
 		{
@@ -1523,16 +1673,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""assetId"">assetId</see> of the <i>Asset</i> that has been removed.";
+			public string Summary => @"&#10;&#10;&#10;{{block(assetId)}} of the {{term(Asset)}} that has been removed.&#10;
+";
 		}
 		private AVAILABILITYValue _AVAILABILITY;
 		/// <summary>
-		/// <i>agent</i>'s ability to communicate with the data source.
+		﻿/// <i>agent</i>'s ability to communicate with the data source.<br/><br />
+
 		/// </summary>
 		public AVAILABILITYValue AVAILABILITY => _AVAILABILITY ?? (_AVAILABILITY = new AVAILABILITYValue());
 
 		/// <summary>
-		/// <i>agent</i>'s ability to communicate with the data source.
+		﻿/// <i>agent</i>'s ability to communicate with the data source.<br/><br />
+
 		/// </summary>
 		public sealed class AVAILABILITYValue : IEnumInstance
 		{
@@ -1549,16 +1702,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>agent</i>'s ability to communicate with the data source.";
+			public string Summary => @"&#10;&#10;&#10;{{term(agent)}}'s ability to communicate with the data source.&#10;
+";
 		}
 		private AXIS_COUPLINGValue _AXIS_COUPLING;
 		/// <summary>
-		/// describes the way the axes will be associated to each other.     This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.
+		﻿/// describes the way the axes will be associated to each other. <br />  <br />This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.<br/><br />
+
 		/// </summary>
 		public AXIS_COUPLINGValue AXIS_COUPLING => _AXIS_COUPLING ?? (_AXIS_COUPLING = new AXIS_COUPLINGValue());
 
 		/// <summary>
-		/// describes the way the axes will be associated to each other.     This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.
+		﻿/// describes the way the axes will be associated to each other. <br />  <br />This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.<br/><br />
+
 		/// </summary>
 		public sealed class AXIS_COUPLINGValue : IEnumInstance
 		{
@@ -1575,16 +1731,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// describes the way the axes will be associated to each other.     This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.";
+			public string Summary => @"&#10;&#10;&#10;describes the way the axes will be associated to each other. 
+  
+This is used in conjunction with `COUPLED_AXES` to indicate the way they are interacting.&#10;
+";
 		}
 		private AXIS_FEEDRATE_OVERRIDEValue _AXIS_FEEDRATE_OVERRIDE;
 		/// <summary>
-		/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.
+		﻿/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.<br/><br />
+
 		/// </summary>
 		public AXIS_FEEDRATE_OVERRIDEValue AXIS_FEEDRATE_OVERRIDE => _AXIS_FEEDRATE_OVERRIDE ?? (_AXIS_FEEDRATE_OVERRIDE = new AXIS_FEEDRATE_OVERRIDEValue());
 
 		/// <summary>
-		/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.
+		﻿/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.<br/><br />
+
 		/// </summary>
 		public sealed class AXIS_FEEDRATE_OVERRIDEValue : IEnumInstance
 		{
@@ -1601,16 +1762,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.";
+			public string Summary => @"&#10;&#10;&#10;value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.&#10;
+";
 		}
 		private AXIS_INTERLOCKValue _AXIS_INTERLOCK;
 		/// <summary>
-		/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.
+		﻿/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.<br/><br />
+
 		/// </summary>
 		public AXIS_INTERLOCKValue AXIS_INTERLOCK => _AXIS_INTERLOCK ?? (_AXIS_INTERLOCK = new AXIS_INTERLOCKValue());
 
 		/// <summary>
-		/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.
+		﻿/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.<br/><br />
+
 		/// </summary>
 		public sealed class AXIS_INTERLOCKValue : IEnumInstance
 		{
@@ -1627,16 +1791,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.";
+			public string Summary => @"&#10;&#10;&#10;state of the axis lockout function when power has been removed and the axis is allowed to move freely.&#10;
+";
 		}
 		private AXIS_STATEValue _AXIS_STATE;
 		/// <summary>
-		/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.
+		﻿/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.<br/><br />
+
 		/// </summary>
 		public AXIS_STATEValue AXIS_STATE => _AXIS_STATE ?? (_AXIS_STATE = new AXIS_STATEValue());
 
 		/// <summary>
-		/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.
+		﻿/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.<br/><br />
+
 		/// </summary>
 		public sealed class AXIS_STATEValue : IEnumInstance
 		{
@@ -1653,16 +1820,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state of a <see cref=""Linear"">Linear</see> or <see cref=""Rotary"">Rotary</see> component representing an axis.";
+			public string Summary => @"&#10;&#10;&#10;state of a {{block(Linear)}} or {{block(Rotary)}} component representing an axis.&#10;
+";
 		}
 		private BLOCKValue _BLOCK;
 		/// <summary>
-		/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.
+		﻿/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.<br/><br />
+
 		/// </summary>
 		public BLOCKValue BLOCK => _BLOCK ?? (_BLOCK = new BLOCKValue());
 
 		/// <summary>
-		/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.
+		﻿/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.<br/><br />
+
 		/// </summary>
 		public sealed class BLOCKValue : IEnumInstance
 		{
@@ -1679,16 +1849,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// line of code or command being executed by a <see cref=""Controller"">Controller</see> entity.";
+			public string Summary => @"&#10;&#10;&#10;line of code or command being executed by a {{block(Controller)}} entity.&#10;
+";
 		}
 		private BLOCK_COUNTValue _BLOCK_COUNT;
 		/// <summary>
-		/// total count of the number of blocks of program code that have been executed since execution started.
+		﻿/// total count of the number of blocks of program code that have been executed since execution started.<br/><br />
+
 		/// </summary>
 		public BLOCK_COUNTValue BLOCK_COUNT => _BLOCK_COUNT ?? (_BLOCK_COUNT = new BLOCK_COUNTValue());
 
 		/// <summary>
-		/// total count of the number of blocks of program code that have been executed since execution started.
+		﻿/// total count of the number of blocks of program code that have been executed since execution started.<br/><br />
+
 		/// </summary>
 		public sealed class BLOCK_COUNTValue : IEnumInstance
 		{
@@ -1705,16 +1878,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// total count of the number of blocks of program code that have been executed since execution started.";
+			public string Summary => @"&#10;&#10;&#10;total count of the number of blocks of program code that have been executed since execution started.&#10;
+";
 		}
 		private CHUCK_INTERLOCKValue _CHUCK_INTERLOCK;
 		/// <summary>
-		/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.
+		﻿/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.<br/><br />
+
 		/// </summary>
 		public CHUCK_INTERLOCKValue CHUCK_INTERLOCK => _CHUCK_INTERLOCK ?? (_CHUCK_INTERLOCK = new CHUCK_INTERLOCKValue());
 
 		/// <summary>
-		/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.
+		﻿/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.<br/><br />
+
 		/// </summary>
 		public sealed class CHUCK_INTERLOCKValue : IEnumInstance
 		{
@@ -1731,16 +1907,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state of an interlock function or control logic state intended to prevent the associated <see cref=""Chuck"">Chuck</see> component from being operated.";
+			public string Summary => @"&#10;&#10;&#10;state of an interlock function or control logic state intended to prevent the associated {{block(Chuck)}} component from being operated.&#10;
+";
 		}
 		private CHUCK_STATEValue _CHUCK_STATE;
 		/// <summary>
-		/// operating state of a mechanism that holds a part or stock material during a manufacturing process.   It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.
+		﻿/// operating state of a mechanism that holds a part or stock material during a manufacturing process. <br /><br />It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.<br/><br />
+
 		/// </summary>
 		public CHUCK_STATEValue CHUCK_STATE => _CHUCK_STATE ?? (_CHUCK_STATE = new CHUCK_STATEValue());
 
 		/// <summary>
-		/// operating state of a mechanism that holds a part or stock material during a manufacturing process.   It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.
+		﻿/// operating state of a mechanism that holds a part or stock material during a manufacturing process. <br /><br />It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class CHUCK_STATEValue : IEnumInstance
 		{
@@ -1757,16 +1936,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// operating state of a mechanism that holds a part or stock material during a manufacturing process.   It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;operating state of a mechanism that holds a part or stock material during a manufacturing process. 
+
+It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.&#10;
+";
 		}
 		private CODEValue _CODE;
 		/// <summary>
-		/// programmatic code being executed.  <b>DEPRECATED</b> in <i>Version 1.1</i>s.
+		﻿/// programmatic code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1</i>.<br/><br />
+
 		/// </summary>
 		public CODEValue CODE => _CODE ?? (_CODE = new CODEValue());
 
 		/// <summary>
-		/// programmatic code being executed.  <b>DEPRECATED</b> in <i>Version 1.1</i>s.
+		﻿/// programmatic code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1</i>.<br/><br />
+
 		/// </summary>
 		public sealed class CODEValue : IEnumInstance
 		{
@@ -1783,16 +1967,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// programmatic code being executed.  <b>DEPRECATED</b> in <i>Version 1.1</i>s.";
+			public string Summary => @"&#10;&#10;&#10;programmatic code being executed.
+
+**DEPRECATED** in *Version 1.1*.&#10;
+";
 		}
 		private COMPOSITION_STATEValue _COMPOSITION_STATE;
 		/// <summary>
-		/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.
+		﻿/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.<br/><br />
+
 		/// </summary>
 		public COMPOSITION_STATEValue COMPOSITION_STATE => _COMPOSITION_STATE ?? (_COMPOSITION_STATE = new COMPOSITION_STATEValue());
 
 		/// <summary>
-		/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.
+		﻿/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.<br/><br />
+
 		/// </summary>
 		public sealed class COMPOSITION_STATEValue : IEnumInstance
 		{
@@ -1809,16 +1998,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// operating state of a mechanism represented by a <see cref=""Composition"">Composition</see> entity.";
+			public string Summary => @"&#10;&#10;&#10;operating state of a mechanism represented by a {{block(Composition)}} entity.&#10;
+";
 		}
 		private CONTROLLER_MODEValue _CONTROLLER_MODE;
 		/// <summary>
-		/// current mode of the <see cref="Controller">Controller</see> component.
+		﻿/// current mode of the <see cref="Controller">Controller</see> component.<br/><br />
+
 		/// </summary>
 		public CONTROLLER_MODEValue CONTROLLER_MODE => _CONTROLLER_MODE ?? (_CONTROLLER_MODE = new CONTROLLER_MODEValue());
 
 		/// <summary>
-		/// current mode of the <see cref="Controller">Controller</see> component.
+		﻿/// current mode of the <see cref="Controller">Controller</see> component.<br/><br />
+
 		/// </summary>
 		public sealed class CONTROLLER_MODEValue : IEnumInstance
 		{
@@ -1835,16 +2027,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// current mode of the <see cref=""Controller"">Controller</see> component.";
+			public string Summary => @"&#10;&#10;&#10;current mode of the {{block(Controller)}} component.&#10;
+";
 		}
 		private CONTROLLER_MODE_OVERRIDEValue _CONTROLLER_MODE_OVERRIDE;
 		/// <summary>
-		/// setting or operator selection that changes the behavior of a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of a piece of equipment.<br/><br />
+
 		/// </summary>
 		public CONTROLLER_MODE_OVERRIDEValue CONTROLLER_MODE_OVERRIDE => _CONTROLLER_MODE_OVERRIDE ?? (_CONTROLLER_MODE_OVERRIDE = new CONTROLLER_MODE_OVERRIDEValue());
 
 		/// <summary>
-		/// setting or operator selection that changes the behavior of a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class CONTROLLER_MODE_OVERRIDEValue : IEnumInstance
 		{
@@ -1861,16 +2056,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// setting or operator selection that changes the behavior of a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;setting or operator selection that changes the behavior of a piece of equipment.&#10;
+";
 		}
 		private COUPLED_AXESValue _COUPLED_AXES;
 		/// <summary>
-		/// set of associated axes.
+		﻿/// set of associated axes.<br/><br />
+
 		/// </summary>
 		public COUPLED_AXESValue COUPLED_AXES => _COUPLED_AXES ?? (_COUPLED_AXES = new COUPLED_AXESValue());
 
 		/// <summary>
-		/// set of associated axes.
+		﻿/// set of associated axes.<br/><br />
+
 		/// </summary>
 		public sealed class COUPLED_AXESValue : IEnumInstance
 		{
@@ -1887,16 +2085,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// set of associated axes.";
+			public string Summary => @"&#10;&#10;&#10;set of associated axes.&#10;
+";
 		}
 		private DATE_CODEValue _DATE_CODE;
 		/// <summary>
-		/// time and date code associated with a material or other physical item.
+		﻿/// time and date code associated with a material or other physical item.<br/><br />
+
 		/// </summary>
 		public DATE_CODEValue DATE_CODE => _DATE_CODE ?? (_DATE_CODE = new DATE_CODEValue());
 
 		/// <summary>
-		/// time and date code associated with a material or other physical item.
+		﻿/// time and date code associated with a material or other physical item.<br/><br />
+
 		/// </summary>
 		public sealed class DATE_CODEValue : IEnumInstance
 		{
@@ -1913,16 +2114,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// time and date code associated with a material or other physical item.";
+			public string Summary => @"&#10;&#10;&#10;time and date code associated with a material or other physical item.&#10;
+";
 		}
 		private DEVICE_UUIDValue _DEVICE_UUID;
 		/// <summary>
-		/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.
+		﻿/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.<br/><br />
+
 		/// </summary>
 		public DEVICE_UUIDValue DEVICE_UUID => _DEVICE_UUID ?? (_DEVICE_UUID = new DEVICE_UUIDValue());
 
 		/// <summary>
-		/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.
+		﻿/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.<br/><br />
+
 		/// </summary>
 		public sealed class DEVICE_UUIDValue : IEnumInstance
 		{
@@ -1939,16 +2143,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.";
+			public string Summary => @"&#10;&#10;&#10;identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.&#10;
+";
 		}
 		private DIRECTIONValue _DIRECTION;
 		/// <summary>
-		/// direction of motion.
+		﻿/// direction of motion.<br/><br />
+
 		/// </summary>
 		public DIRECTIONValue DIRECTION => _DIRECTION ?? (_DIRECTION = new DIRECTIONValue());
 
 		/// <summary>
-		/// direction of motion.
+		﻿/// direction of motion.<br/><br />
+
 		/// </summary>
 		public sealed class DIRECTIONValue : IEnumInstance
 		{
@@ -1965,16 +2172,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// direction of motion.";
+			public string Summary => @"&#10;&#10;&#10;direction of motion.&#10;
+";
 		}
 		private DOOR_STATEValue _DOOR_STATE;
 		/// <summary>
-		/// operational state of a <see cref="Door">Door</see> component or composition element.
+		﻿/// operational state of a <see cref="Door">Door</see> component or composition element.<br/><br />
+
 		/// </summary>
 		public DOOR_STATEValue DOOR_STATE => _DOOR_STATE ?? (_DOOR_STATE = new DOOR_STATEValue());
 
 		/// <summary>
-		/// operational state of a <see cref="Door">Door</see> component or composition element.
+		﻿/// operational state of a <see cref="Door">Door</see> component or composition element.<br/><br />
+
 		/// </summary>
 		public sealed class DOOR_STATEValue : IEnumInstance
 		{
@@ -1991,16 +2201,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// operational state of a <see cref=""Door"">Door</see> component or composition element.";
+			public string Summary => @"&#10;&#10;&#10;operational state of a {{block(Door)}} component or composition element.&#10;
+";
 		}
 		private EMERGENCY_STOPValue _EMERGENCY_STOP;
 		/// <summary>
-		/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.
+		﻿/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.<br/><br />
+
 		/// </summary>
 		public EMERGENCY_STOPValue EMERGENCY_STOP => _EMERGENCY_STOP ?? (_EMERGENCY_STOP = new EMERGENCY_STOPValue());
 
 		/// <summary>
-		/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.
+		﻿/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class EMERGENCY_STOPValue : IEnumInstance
 		{
@@ -2017,16 +2230,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.&#10;
+";
 		}
 		private END_OF_BARValue _END_OF_BAR;
 		/// <summary>
-		/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.
+		﻿/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.<br/><br />
+
 		/// </summary>
 		public END_OF_BARValue END_OF_BAR => _END_OF_BAR ?? (_END_OF_BAR = new END_OF_BARValue());
 
 		/// <summary>
-		/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.
+		﻿/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.<br/><br />
+
 		/// </summary>
 		public sealed class END_OF_BARValue : IEnumInstance
 		{
@@ -2043,16 +2259,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.";
+			public string Summary => @"&#10;&#10;&#10;indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.&#10;
+";
 		}
 		private EQUIPMENT_MODEValue _EQUIPMENT_MODE;
 		/// <summary>
-		/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.
+		﻿/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.<br/><br />
+
 		/// </summary>
 		public EQUIPMENT_MODEValue EQUIPMENT_MODE => _EQUIPMENT_MODE ?? (_EQUIPMENT_MODE = new EQUIPMENT_MODEValue());
 
 		/// <summary>
-		/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.
+		﻿/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.<br/><br />
+
 		/// </summary>
 		public sealed class EQUIPMENT_MODEValue : IEnumInstance
 		{
@@ -2069,16 +2288,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.";
+			public string Summary => @"&#10;&#10;&#10;indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.&#10;
+";
 		}
 		private EXECUTIONValue _EXECUTION;
 		/// <summary>
-		/// operating state of a <see cref="Component">Component</see>.
+		﻿/// operating state of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public EXECUTIONValue EXECUTION => _EXECUTION ?? (_EXECUTION = new EXECUTIONValue());
 
 		/// <summary>
-		/// operating state of a <see cref="Component">Component</see>.
+		﻿/// operating state of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class EXECUTIONValue : IEnumInstance
 		{
@@ -2095,16 +2317,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// operating state of a <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;operating state of a {{block(Component)}}.&#10;
+";
 		}
 		private FUNCTIONAL_MODEValue _FUNCTIONAL_MODE;
 		/// <summary>
-		/// current intended production status of the <see cref="Component">Component</see>.
+		﻿/// current intended production status of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public FUNCTIONAL_MODEValue FUNCTIONAL_MODE => _FUNCTIONAL_MODE ?? (_FUNCTIONAL_MODE = new FUNCTIONAL_MODEValue());
 
 		/// <summary>
-		/// current intended production status of the <see cref="Component">Component</see>.
+		﻿/// current intended production status of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class FUNCTIONAL_MODEValue : IEnumInstance
 		{
@@ -2121,16 +2346,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// current intended production status of the <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;current intended production status of the {{block(Component)}}.&#10;
+";
 		}
 		private HARDNESSValue _HARDNESS;
 		/// <summary>
-		/// hardness of a material.
+		﻿/// hardness of a material.<br/><br />
+
 		/// </summary>
 		public HARDNESSValue HARDNESS => _HARDNESS ?? (_HARDNESS = new HARDNESSValue());
 
 		/// <summary>
-		/// hardness of a material.
+		﻿/// hardness of a material.<br/><br />
+
 		/// </summary>
 		public sealed class HARDNESSValue : IEnumInstance
 		{
@@ -2147,16 +2375,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// hardness of a material.";
+			public string Summary => @"&#10;&#10;&#10;hardness of a material.&#10;
+";
 		}
 		private LINEValue _LINE;
 		/// <summary>
-		/// current line of code being executed.  <b>DEPRECATED</b> in <i>Version 1.4.0</i>s.
+		﻿/// current line of code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.4.0</i>.<br/><br />
+
 		/// </summary>
 		public LINEValue LINE => _LINE ?? (_LINE = new LINEValue());
 
 		/// <summary>
-		/// current line of code being executed.  <b>DEPRECATED</b> in <i>Version 1.4.0</i>s.
+		﻿/// current line of code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.4.0</i>.<br/><br />
+
 		/// </summary>
 		public sealed class LINEValue : IEnumInstance
 		{
@@ -2173,16 +2404,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.4";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// current line of code being executed.  <b>DEPRECATED</b> in <i>Version 1.4.0</i>s.";
+			public string Summary => @"&#10;&#10;&#10;current line of code being executed.
+
+**DEPRECATED** in *Version 1.4.0*.&#10;
+";
 		}
 		private LINE_LABELValue _LINE_LABEL;
 		/// <summary>
-		/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.
+		﻿/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.<br/><br />
+
 		/// </summary>
 		public LINE_LABELValue LINE_LABEL => _LINE_LABEL ?? (_LINE_LABEL = new LINE_LABELValue());
 
 		/// <summary>
-		/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.
+		﻿/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.<br/><br />
+
 		/// </summary>
 		public sealed class LINE_LABELValue : IEnumInstance
 		{
@@ -2199,16 +2435,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier for a <see cref=""Block"">Block</see> of code in a <see cref=""Program"">Program</see>.";
+			public string Summary => @"&#10;&#10;&#10;identifier for a {{block(Block)}} of code in a {{block(Program)}}.&#10;
+";
 		}
 		private LINE_NUMBERValue _LINE_NUMBER;
 		/// <summary>
-		/// position of a block of program code within a control program.
+		﻿/// position of a block of program code within a control program.<br/><br />
+
 		/// </summary>
 		public LINE_NUMBERValue LINE_NUMBER => _LINE_NUMBER ?? (_LINE_NUMBER = new LINE_NUMBERValue());
 
 		/// <summary>
-		/// position of a block of program code within a control program.
+		﻿/// position of a block of program code within a control program.<br/><br />
+
 		/// </summary>
 		public sealed class LINE_NUMBERValue : IEnumInstance
 		{
@@ -2225,16 +2464,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position of a block of program code within a control program.";
+			public string Summary => @"&#10;&#10;&#10;position of a block of program code within a control program.&#10;
+";
 		}
 		private MATERIALValue _MATERIAL;
 		/// <summary>
-		/// identifier of a material used or consumed in the manufacturing process.
+		﻿/// identifier of a material used or consumed in the manufacturing process.<br/><br />
+
 		/// </summary>
 		public MATERIALValue MATERIAL => _MATERIAL ?? (_MATERIAL = new MATERIALValue());
 
 		/// <summary>
-		/// identifier of a material used or consumed in the manufacturing process.
+		﻿/// identifier of a material used or consumed in the manufacturing process.<br/><br />
+
 		/// </summary>
 		public sealed class MATERIALValue : IEnumInstance
 		{
@@ -2251,16 +2493,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of a material used or consumed in the manufacturing process.";
+			public string Summary => @"&#10;&#10;&#10;identifier of a material used or consumed in the manufacturing process.&#10;
+";
 		}
 		private MATERIAL_LAYERValue _MATERIAL_LAYER;
 		/// <summary>
-		/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.
+		﻿/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.<br/><br />
+
 		/// </summary>
 		public MATERIAL_LAYERValue MATERIAL_LAYER => _MATERIAL_LAYER ?? (_MATERIAL_LAYER = new MATERIAL_LAYERValue());
 
 		/// <summary>
-		/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.
+		﻿/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.<br/><br />
+
 		/// </summary>
 		public sealed class MATERIAL_LAYERValue : IEnumInstance
 		{
@@ -2277,16 +2522,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.";
+			public string Summary => @"&#10;&#10;&#10;identifies the layers of material applied to a part or product as part of an additive manufacturing process.&#10;
+";
 		}
 		private MESSAGEValue _MESSAGE;
 		/// <summary>
-		/// information to be transferred from a piece of equipment to a client software application.
+		﻿/// information to be transferred from a piece of equipment to a client software application.<br/><br />
+
 		/// </summary>
 		public MESSAGEValue MESSAGE => _MESSAGE ?? (_MESSAGE = new MESSAGEValue());
 
 		/// <summary>
-		/// information to be transferred from a piece of equipment to a client software application.
+		﻿/// information to be transferred from a piece of equipment to a client software application.<br/><br />
+
 		/// </summary>
 		public sealed class MESSAGEValue : IEnumInstance
 		{
@@ -2303,16 +2551,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// information to be transferred from a piece of equipment to a client software application.";
+			public string Summary => @"&#10;&#10;&#10;information to be transferred from a piece of equipment to a client software application.&#10;
+";
 		}
 		private OPERATOR_IDValue _OPERATOR_ID;
 		/// <summary>
-		/// identifier of the person currently responsible for operating the piece of equipment.
+		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		public OPERATOR_IDValue OPERATOR_ID => _OPERATOR_ID ?? (_OPERATOR_ID = new OPERATOR_IDValue());
 
 		/// <summary>
-		/// identifier of the person currently responsible for operating the piece of equipment.
+		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class OPERATOR_IDValue : IEnumInstance
 		{
@@ -2329,16 +2580,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of the person currently responsible for operating the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;identifier of the person currently responsible for operating the piece of equipment.&#10;
+";
 		}
 		private PALLET_IDValue _PALLET_ID;
 		/// <summary>
-		/// identifier for a pallet.
+		﻿/// identifier for a pallet.<br/><br />
+
 		/// </summary>
 		public PALLET_IDValue PALLET_ID => _PALLET_ID ?? (_PALLET_ID = new PALLET_IDValue());
 
 		/// <summary>
-		/// identifier for a pallet.
+		﻿/// identifier for a pallet.<br/><br />
+
 		/// </summary>
 		public sealed class PALLET_IDValue : IEnumInstance
 		{
@@ -2355,16 +2609,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier for a pallet.";
+			public string Summary => @"&#10;&#10;&#10;identifier for a pallet.&#10;
+";
 		}
 		private PART_COUNTValue _PART_COUNT;
 		/// <summary>
-		/// aggregate count of parts.
+		﻿/// aggregate count of parts.<br/><br />
+
 		/// </summary>
 		public PART_COUNTValue PART_COUNT => _PART_COUNT ?? (_PART_COUNT = new PART_COUNTValue());
 
 		/// <summary>
-		/// aggregate count of parts.
+		﻿/// aggregate count of parts.<br/><br />
+
 		/// </summary>
 		public sealed class PART_COUNTValue : IEnumInstance
 		{
@@ -2381,16 +2638,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// aggregate count of parts.";
+			public string Summary => @"&#10;&#10;&#10;aggregate count of parts.&#10;
+";
 		}
 		private PART_DETECTValue _PART_DETECT;
 		/// <summary>
-		/// indication designating whether a part or work piece has been detected or is present.
+		﻿/// indication designating whether a part or work piece has been detected or is present.<br/><br />
+
 		/// </summary>
 		public PART_DETECTValue PART_DETECT => _PART_DETECT ?? (_PART_DETECT = new PART_DETECTValue());
 
 		/// <summary>
-		/// indication designating whether a part or work piece has been detected or is present.
+		﻿/// indication designating whether a part or work piece has been detected or is present.<br/><br />
+
 		/// </summary>
 		public sealed class PART_DETECTValue : IEnumInstance
 		{
@@ -2407,16 +2667,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication designating whether a part or work piece has been detected or is present.";
+			public string Summary => @"&#10;&#10;&#10;indication designating whether a part or work piece has been detected or is present.&#10;
+";
 		}
 		private PART_IDValue _PART_ID;
 		/// <summary>
-		/// identifier of a part in a manufacturing operation.
+		﻿/// identifier of a part in a manufacturing operation.<br/><br />
+
 		/// </summary>
 		public PART_IDValue PART_ID => _PART_ID ?? (_PART_ID = new PART_IDValue());
 
 		/// <summary>
-		/// identifier of a part in a manufacturing operation.
+		﻿/// identifier of a part in a manufacturing operation.<br/><br />
+
 		/// </summary>
 		public sealed class PART_IDValue : IEnumInstance
 		{
@@ -2433,16 +2696,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of a part in a manufacturing operation.";
+			public string Summary => @"&#10;&#10;&#10;identifier of a part in a manufacturing operation.&#10;
+";
 		}
 		private PART_NUMBERValue _PART_NUMBER;
 		/// <summary>
-		/// identifier of a part or product moving through the manufacturing process.  <b>DEPRECATED</b> in <i>Version 1.7</i>s. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.
+		﻿/// identifier of a part or product moving through the manufacturing process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.7</i>. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.<br/><br />
+
 		/// </summary>
 		public PART_NUMBERValue PART_NUMBER => _PART_NUMBER ?? (_PART_NUMBER = new PART_NUMBERValue());
 
 		/// <summary>
-		/// identifier of a part or product moving through the manufacturing process.  <b>DEPRECATED</b> in <i>Version 1.7</i>s. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.
+		﻿/// identifier of a part or product moving through the manufacturing process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.7</i>. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.<br/><br />
+
 		/// </summary>
 		public sealed class PART_NUMBERValue : IEnumInstance
 		{
@@ -2459,16 +2725,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.7";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of a part or product moving through the manufacturing process.  <b>DEPRECATED</b> in <i>Version 1.7</i>s. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.";
+			public string Summary => @"&#10;&#10;&#10;identifier of a part or product moving through the manufacturing process.
+
+**DEPRECATED** in *Version 1.7*. `PART_NUMBER` is now a `subType` of `PART_KIND_ID`.&#10;
+";
 		}
 		private PATH_FEEDRATE_OVERRIDEValue _PATH_FEEDRATE_OVERRIDE;
 		/// <summary>
-		/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.
+		﻿/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.<br/><br />
+
 		/// </summary>
 		public PATH_FEEDRATE_OVERRIDEValue PATH_FEEDRATE_OVERRIDE => _PATH_FEEDRATE_OVERRIDE ?? (_PATH_FEEDRATE_OVERRIDE = new PATH_FEEDRATE_OVERRIDEValue());
 
 		/// <summary>
-		/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.
+		﻿/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.<br/><br />
+
 		/// </summary>
 		public sealed class PATH_FEEDRATE_OVERRIDEValue : IEnumInstance
 		{
@@ -2485,16 +2756,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref=""Path"">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.";
+			public string Summary => @"&#10;&#10;&#10;value of a signal or calculation issued to adjust the feedrate for the axes associated with a {{block(Path)}} component that may represent a single axis or the coordinated movement of multiple axes.&#10;
+";
 		}
 		private PATH_MODEValue _PATH_MODE;
 		/// <summary>
-		/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.
+		﻿/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.<br/><br />
+
 		/// </summary>
 		public PATH_MODEValue PATH_MODE => _PATH_MODE ?? (_PATH_MODE = new PATH_MODEValue());
 
 		/// <summary>
-		/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.
+		﻿/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.<br/><br />
+
 		/// </summary>
 		public sealed class PATH_MODEValue : IEnumInstance
 		{
@@ -2511,16 +2785,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// describes the operational relationship between a <see cref=""Path"">Path</see> entity and another <see cref=""Path"">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.";
+			public string Summary => @"&#10;&#10;&#10;describes the operational relationship between a {{block(Path)}} entity and another {{block(Path)}} entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.&#10;
+";
 		}
 		private POWER_STATEValue _POWER_STATE;
 		/// <summary>
-		/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.
+		﻿/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.<br/><br />
+
 		/// </summary>
 		public POWER_STATEValue POWER_STATE => _POWER_STATE ?? (_POWER_STATE = new POWER_STATEValue());
 
 		/// <summary>
-		/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.
+		﻿/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.<br/><br />
+
 		/// </summary>
 		public sealed class POWER_STATEValue : IEnumInstance
 		{
@@ -2537,16 +2814,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.";
+			public string Summary => @"&#10;&#10;&#10;indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.&#10;
+";
 		}
 		private POWER_STATUSValue _POWER_STATUS;
 		/// <summary>
-		/// status of the <see cref="Component">Component</see>.  <b>DEPRECATED</b> in <i>Version 1.1.0</i>s.
+		﻿/// status of the <see cref="Component">Component</see>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1.0</i>.<br/><br />
+
 		/// </summary>
 		public POWER_STATUSValue POWER_STATUS => _POWER_STATUS ?? (_POWER_STATUS = new POWER_STATUSValue());
 
 		/// <summary>
-		/// status of the <see cref="Component">Component</see>.  <b>DEPRECATED</b> in <i>Version 1.1.0</i>s.
+		﻿/// status of the <see cref="Component">Component</see>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1.0</i>.<br/><br />
+
 		/// </summary>
 		public sealed class POWER_STATUSValue : IEnumInstance
 		{
@@ -2563,16 +2843,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.1";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// status of the <see cref=""Component"">Component</see>.  <b>DEPRECATED</b> in <i>Version 1.1.0</i>s.";
+			public string Summary => @"&#10;&#10;&#10;status of the {{block(Component)}}.
+
+**DEPRECATED** in *Version 1.1.0*.&#10;
+";
 		}
 		private PROCESS_TIMEValue _PROCESS_TIME;
 		/// <summary>
-		/// time and date associated with an activity or event.
+		﻿/// time and date associated with an activity or event.<br/><br />
+
 		/// </summary>
 		public PROCESS_TIMEValue PROCESS_TIME => _PROCESS_TIME ?? (_PROCESS_TIME = new PROCESS_TIMEValue());
 
 		/// <summary>
-		/// time and date associated with an activity or event.
+		﻿/// time and date associated with an activity or event.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_TIMEValue : IEnumInstance
 		{
@@ -2589,16 +2874,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// time and date associated with an activity or event.";
+			public string Summary => @"&#10;&#10;&#10;time and date associated with an activity or event.&#10;
+";
 		}
 		private PROGRAMValue _PROGRAM;
 		/// <summary>
-		/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.
+		﻿/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.<br/><br />
+
 		/// </summary>
 		public PROGRAMValue PROGRAM => _PROGRAM ?? (_PROGRAM = new PROGRAMValue());
 
 		/// <summary>
-		/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.
+		﻿/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.<br/><br />
+
 		/// </summary>
 		public sealed class PROGRAMValue : IEnumInstance
 		{
@@ -2615,16 +2903,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// name of the logic or motion program being executed by the <see cref=""Controller"">Controller</see> component.";
+			public string Summary => @"&#10;&#10;&#10;name of the logic or motion program being executed by the {{block(Controller)}} component.&#10;
+";
 		}
 		private PROGRAM_COMMENTValue _PROGRAM_COMMENT;
 		/// <summary>
-		/// comment or non-executable statement in the control program.
+		﻿/// comment or non-executable statement in the control program.<br/><br />
+
 		/// </summary>
 		public PROGRAM_COMMENTValue PROGRAM_COMMENT => _PROGRAM_COMMENT ?? (_PROGRAM_COMMENT = new PROGRAM_COMMENTValue());
 
 		/// <summary>
-		/// comment or non-executable statement in the control program.
+		﻿/// comment or non-executable statement in the control program.<br/><br />
+
 		/// </summary>
 		public sealed class PROGRAM_COMMENTValue : IEnumInstance
 		{
@@ -2641,16 +2932,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// comment or non-executable statement in the control program.";
+			public string Summary => @"&#10;&#10;&#10;comment or non-executable statement in the control program.&#10;
+";
 		}
 		private PROGRAM_EDITValue _PROGRAM_EDIT;
 		/// <summary>
-		/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.  A program may be edited while another is executed.
+		﻿/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.<br /><br />A program may be edited while another is executed.<br/><br />
+
 		/// </summary>
 		public PROGRAM_EDITValue PROGRAM_EDIT => _PROGRAM_EDIT ?? (_PROGRAM_EDIT = new PROGRAM_EDITValue());
 
 		/// <summary>
-		/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.  A program may be edited while another is executed.
+		﻿/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.<br /><br />A program may be edited while another is executed.<br/><br />
+
 		/// </summary>
 		public sealed class PROGRAM_EDITValue : IEnumInstance
 		{
@@ -2667,16 +2961,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the status of the <see cref=""Controller"">Controller</see> components program editing mode.  A program may be edited while another is executed.";
+			public string Summary => @"&#10;&#10;&#10;indication of the status of the {{block(Controller)}} components program editing mode.
+
+A program may be edited while another is executed.&#10;
+";
 		}
 		private PROGRAM_EDIT_NAMEValue _PROGRAM_EDIT_NAME;
 		/// <summary>
-		/// name of the program being edited.   This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. 
+		﻿/// name of the program being edited. <br /><br />This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. <br/><br />
+
 		/// </summary>
 		public PROGRAM_EDIT_NAMEValue PROGRAM_EDIT_NAME => _PROGRAM_EDIT_NAME ?? (_PROGRAM_EDIT_NAME = new PROGRAM_EDIT_NAMEValue());
 
 		/// <summary>
-		/// name of the program being edited.   This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. 
+		﻿/// name of the program being edited. <br /><br />This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. <br/><br />
+
 		/// </summary>
 		public sealed class PROGRAM_EDIT_NAMEValue : IEnumInstance
 		{
@@ -2693,16 +2992,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// name of the program being edited.   This is used in conjunction with <see cref=""ProgramEdit"">ProgramEdit</see> when in <c>ACTIVE</c> state. ";
+			public string Summary => @"&#10;&#10;&#10;name of the program being edited. 
+
+This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. &#10;
+";
 		}
 		private PROGRAM_HEADERValue _PROGRAM_HEADER;
 		/// <summary>
-		/// non-executable header section of the control program.
+		﻿/// non-executable header section of the control program.<br/><br />
+
 		/// </summary>
 		public PROGRAM_HEADERValue PROGRAM_HEADER => _PROGRAM_HEADER ?? (_PROGRAM_HEADER = new PROGRAM_HEADERValue());
 
 		/// <summary>
-		/// non-executable header section of the control program.
+		﻿/// non-executable header section of the control program.<br/><br />
+
 		/// </summary>
 		public sealed class PROGRAM_HEADERValue : IEnumInstance
 		{
@@ -2719,16 +3023,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// non-executable header section of the control program.";
+			public string Summary => @"&#10;&#10;&#10;non-executable header section of the control program.&#10;
+";
 		}
 		private PROGRAM_LOCATIONValue _PROGRAM_LOCATION;
 		/// <summary>
-		/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.
+		﻿/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.<br/><br />
+
 		/// </summary>
 		public PROGRAM_LOCATIONValue PROGRAM_LOCATION => _PROGRAM_LOCATION ?? (_PROGRAM_LOCATION = new PROGRAM_LOCATIONValue());
 
 		/// <summary>
-		/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.
+		﻿/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.<br/><br />
+
 		/// </summary>
 		public sealed class PROGRAM_LOCATIONValue : IEnumInstance
 		{
@@ -2745,16 +3052,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>URI</i> for the source file associated with <see cref=""Program"">Program</see>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(URI)}} for the source file associated with {{block(Program)}}.&#10;
+";
 		}
 		private PROGRAM_LOCATION_TYPEValue _PROGRAM_LOCATION_TYPE;
 		/// <summary>
-		/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.
+		﻿/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.<br/><br />
+
 		/// </summary>
 		public PROGRAM_LOCATION_TYPEValue PROGRAM_LOCATION_TYPE => _PROGRAM_LOCATION_TYPE ?? (_PROGRAM_LOCATION_TYPE = new PROGRAM_LOCATION_TYPEValue());
 
 		/// <summary>
-		/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.
+		﻿/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.<br/><br />
+
 		/// </summary>
 		public sealed class PROGRAM_LOCATION_TYPEValue : IEnumInstance
 		{
@@ -2771,16 +3081,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// defines whether the logic or motion program defined by <see cref=""Program"">Program</see> is being executed from the local memory of the controller or from an outside source.";
+			public string Summary => @"&#10;&#10;&#10;defines whether the logic or motion program defined by {{block(Program)}} is being executed from the local memory of the controller or from an outside source.&#10;
+";
 		}
 		private PROGRAM_NEST_LEVELValue _PROGRAM_NEST_LEVEL;
 		/// <summary>
-		/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.
+		﻿/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.<br/><br />
+
 		/// </summary>
 		public PROGRAM_NEST_LEVELValue PROGRAM_NEST_LEVEL => _PROGRAM_NEST_LEVEL ?? (_PROGRAM_NEST_LEVEL = new PROGRAM_NEST_LEVELValue());
 
 		/// <summary>
-		/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.
+		﻿/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.<br/><br />
+
 		/// </summary>
 		public sealed class PROGRAM_NEST_LEVELValue : IEnumInstance
 		{
@@ -2797,16 +3110,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.";
+			public string Summary => @"&#10;&#10;&#10;indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.&#10;
+";
 		}
 		private ROTARY_MODEValue _ROTARY_MODE;
 		/// <summary>
-		/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.
+		﻿/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.<br/><br />
+
 		/// </summary>
 		public ROTARY_MODEValue ROTARY_MODE => _ROTARY_MODE ?? (_ROTARY_MODE = new ROTARY_MODEValue());
 
 		/// <summary>
-		/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.
+		﻿/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.<br/><br />
+
 		/// </summary>
 		public sealed class ROTARY_MODEValue : IEnumInstance
 		{
@@ -2823,16 +3139,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// current operating mode for a <see cref=""Rotary"">Rotary</see> type axis.";
+			public string Summary => @"&#10;&#10;&#10;current operating mode for a {{block(Rotary)}} type axis.&#10;
+";
 		}
 		private ROTARY_VELOCITY_OVERRIDEValue _ROTARY_VELOCITY_OVERRIDE;
 		/// <summary>
-		/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.
+		﻿/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.<br/><br />
+
 		/// </summary>
 		public ROTARY_VELOCITY_OVERRIDEValue ROTARY_VELOCITY_OVERRIDE => _ROTARY_VELOCITY_OVERRIDE ?? (_ROTARY_VELOCITY_OVERRIDE = new ROTARY_VELOCITY_OVERRIDEValue());
 
 		/// <summary>
-		/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.
+		﻿/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.<br/><br />
+
 		/// </summary>
 		public sealed class ROTARY_VELOCITY_OVERRIDEValue : IEnumInstance
 		{
@@ -2849,16 +3168,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// percentage change to the velocity of the programmed velocity for a <see cref=""Rotary"">Rotary</see> axis.";
+			public string Summary => @"&#10;&#10;&#10;percentage change to the velocity of the programmed velocity for a {{block(Rotary)}} axis.&#10;
+";
 		}
 		private SERIAL_NUMBERValue _SERIAL_NUMBER;
 		/// <summary>
-		/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.
+		﻿/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.<br/><br />
+
 		/// </summary>
 		public SERIAL_NUMBERValue SERIAL_NUMBER => _SERIAL_NUMBER ?? (_SERIAL_NUMBER = new SERIAL_NUMBERValue());
 
 		/// <summary>
-		/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.
+		﻿/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.<br/><br />
+
 		/// </summary>
 		public sealed class SERIAL_NUMBERValue : IEnumInstance
 		{
@@ -2875,16 +3197,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// serial number associated with a <see cref=""Component"">Component</see>, <see cref=""Asset"">Asset</see>, or <see cref=""Device"">Device</see>.";
+			public string Summary => @"&#10;&#10;&#10;serial number associated with a {{block(Component)}}, {{block(Asset)}}, or {{block(Device)}}.&#10;
+";
 		}
 		private SPINDLE_INTERLOCKValue _SPINDLE_INTERLOCK;
 		/// <summary>
-		/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.
+		﻿/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.<br/><br />
+
 		/// </summary>
 		public SPINDLE_INTERLOCKValue SPINDLE_INTERLOCK => _SPINDLE_INTERLOCK ?? (_SPINDLE_INTERLOCK = new SPINDLE_INTERLOCKValue());
 
 		/// <summary>
-		/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.
+		﻿/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.<br/><br />
+
 		/// </summary>
 		public sealed class SPINDLE_INTERLOCKValue : IEnumInstance
 		{
@@ -2901,16 +3226,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.";
+			public string Summary => @"&#10;&#10;&#10;indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.&#10;
+";
 		}
 		private TOOL_ASSET_IDValue _TOOL_ASSET_ID;
 		/// <summary>
-		/// identifier of an individual tool asset.
+		﻿/// identifier of an individual tool asset.<br/><br />
+
 		/// </summary>
 		public TOOL_ASSET_IDValue TOOL_ASSET_ID => _TOOL_ASSET_ID ?? (_TOOL_ASSET_ID = new TOOL_ASSET_IDValue());
 
 		/// <summary>
-		/// identifier of an individual tool asset.
+		﻿/// identifier of an individual tool asset.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_ASSET_IDValue : IEnumInstance
 		{
@@ -2927,16 +3255,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of an individual tool asset.";
+			public string Summary => @"&#10;&#10;&#10;identifier of an individual tool asset.&#10;
+";
 		}
 		private TOOL_GROUPValue _TOOL_GROUP;
 		/// <summary>
-		/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.
+		﻿/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.<br/><br />
+
 		/// </summary>
 		public TOOL_GROUPValue TOOL_GROUP => _TOOL_GROUP ?? (_TOOL_GROUP = new TOOL_GROUPValue());
 
 		/// <summary>
-		/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.
+		﻿/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_GROUPValue : IEnumInstance
 		{
@@ -2953,16 +3284,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.";
+			public string Summary => @"&#10;&#10;&#10;identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.&#10;
+";
 		}
 		private TOOL_IDValue _TOOL_ID;
 		/// <summary>
-		/// identifier of the tool currently in use for a given <c>Path</c>.  <b>DEPRECATED</b> in <i>Version 1.2.0</i>s.   See <c>TOOL_ASSET_ID</c>.
+		﻿/// identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br/><br />
+
 		/// </summary>
 		public TOOL_IDValue TOOL_ID => _TOOL_ID ?? (_TOOL_ID = new TOOL_IDValue());
 
 		/// <summary>
-		/// identifier of the tool currently in use for a given <c>Path</c>.  <b>DEPRECATED</b> in <i>Version 1.2.0</i>s.   See <c>TOOL_ASSET_ID</c>.
+		﻿/// identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_IDValue : IEnumInstance
 		{
@@ -2979,16 +3313,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.2";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of the tool currently in use for a given <c>Path</c>.  <b>DEPRECATED</b> in <i>Version 1.2.0</i>s.   See <c>TOOL_ASSET_ID</c>.";
+			public string Summary => @"&#10;&#10;&#10;identifier of the tool currently in use for a given `Path`.
+
+**DEPRECATED** in *Version 1.2.0*.   See `TOOL_ASSET_ID`.&#10;
+";
 		}
 		private TOOL_NUMBERValue _TOOL_NUMBER;
 		/// <summary>
-		/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.
+		﻿/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.<br/><br />
+
 		/// </summary>
 		public TOOL_NUMBERValue TOOL_NUMBER => _TOOL_NUMBER ?? (_TOOL_NUMBER = new TOOL_NUMBERValue());
 
 		/// <summary>
-		/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.
+		﻿/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_NUMBERValue : IEnumInstance
 		{
@@ -3005,16 +3344,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier assigned by the <see cref=""Controller"">Controller</see> component to a cutting tool when in use by a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;identifier assigned by the {{block(Controller)}} component to a cutting tool when in use by a piece of equipment.&#10;
+";
 		}
 		private TOOL_OFFSETValue _TOOL_OFFSET;
 		/// <summary>
-		/// reference to the tool offset variables applied to the active cutting tool.
+		﻿/// reference to the tool offset variables applied to the active cutting tool.<br/><br />
+
 		/// </summary>
 		public TOOL_OFFSETValue TOOL_OFFSET => _TOOL_OFFSET ?? (_TOOL_OFFSET = new TOOL_OFFSETValue());
 
 		/// <summary>
-		/// reference to the tool offset variables applied to the active cutting tool.
+		﻿/// reference to the tool offset variables applied to the active cutting tool.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_OFFSETValue : IEnumInstance
 		{
@@ -3031,16 +3373,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// reference to the tool offset variables applied to the active cutting tool.";
+			public string Summary => @"&#10;&#10;&#10;reference to the tool offset variables applied to the active cutting tool.&#10;
+";
 		}
 		private USERValue _USER;
 		/// <summary>
-		/// identifier of the person currently responsible for operating the piece of equipment.
+		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		public USERValue USER => _USER ?? (_USER = new USERValue());
 
 		/// <summary>
-		/// identifier of the person currently responsible for operating the piece of equipment.
+		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class USERValue : IEnumInstance
 		{
@@ -3057,16 +3402,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of the person currently responsible for operating the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;identifier of the person currently responsible for operating the piece of equipment.&#10;
+";
 		}
 		private VARIABLEValue _VARIABLE;
 		/// <summary>
-		/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.
+		﻿/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.<br/><br />
+
 		/// </summary>
 		public VARIABLEValue VARIABLE => _VARIABLE ?? (_VARIABLE = new VARIABLEValue());
 
 		/// <summary>
-		/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.
+		﻿/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class VARIABLEValue : IEnumInstance
 		{
@@ -3083,16 +3431,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.&#10;
+";
 		}
 		private WAIT_STATEValue _WAIT_STATE;
 		/// <summary>
-		/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.
+		﻿/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.<br/><br />
+
 		/// </summary>
 		public WAIT_STATEValue WAIT_STATE => _WAIT_STATE ?? (_WAIT_STATE = new WAIT_STATEValue());
 
 		/// <summary>
-		/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.
+		﻿/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.<br/><br />
+
 		/// </summary>
 		public sealed class WAIT_STATEValue : IEnumInstance
 		{
@@ -3109,16 +3460,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the reason that <see cref=""Execution"">Execution</see> is reporting a value of <c>WAIT</c>.";
+			public string Summary => @"&#10;&#10;&#10;indication of the reason that {{block(Execution)}} is reporting a value of `WAIT`.&#10;
+";
 		}
 		private WIREValue _WIRE;
 		/// <summary>
-		/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.
+		﻿/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.<br/><br />
+
 		/// </summary>
 		public WIREValue WIRE => _WIRE ?? (_WIRE = new WIREValue());
 
 		/// <summary>
-		/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.
+		﻿/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.<br/><br />
+
 		/// </summary>
 		public sealed class WIREValue : IEnumInstance
 		{
@@ -3135,16 +3489,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.";
+			public string Summary => @"&#10;&#10;&#10;identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.&#10;
+";
 		}
 		private WORKHOLDING_IDValue _WORKHOLDING_ID;
 		/// <summary>
-		/// identifier for the current workholding or part clamp in use by a piece of equipment.  <b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.
+		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.<br/><br />
+
 		/// </summary>
 		public WORKHOLDING_IDValue WORKHOLDING_ID => _WORKHOLDING_ID ?? (_WORKHOLDING_ID = new WORKHOLDING_IDValue());
 
 		/// <summary>
-		/// identifier for the current workholding or part clamp in use by a piece of equipment.  <b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.
+		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.<br/><br />
+
 		/// </summary>
 		public sealed class WORKHOLDING_IDValue : IEnumInstance
 		{
@@ -3161,16 +3518,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier for the current workholding or part clamp in use by a piece of equipment.  <b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.";
+			public string Summary => @"&#10;&#10;&#10;identifier for the current workholding or part clamp in use by a piece of equipment.
+
+**DEPRECATION WARNING**: Recommend using `FIXTURE_ID` instead.&#10;
+";
 		}
 		private WORK_OFFSETValue _WORK_OFFSET;
 		/// <summary>
-		/// reference to offset variables for a work piece or part.
+		﻿/// reference to offset variables for a work piece or part.<br/><br />
+
 		/// </summary>
 		public WORK_OFFSETValue WORK_OFFSET => _WORK_OFFSET ?? (_WORK_OFFSET = new WORK_OFFSETValue());
 
 		/// <summary>
-		/// reference to offset variables for a work piece or part.
+		﻿/// reference to offset variables for a work piece or part.<br/><br />
+
 		/// </summary>
 		public sealed class WORK_OFFSETValue : IEnumInstance
 		{
@@ -3187,16 +3549,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// reference to offset variables for a work piece or part.";
+			public string Summary => @"&#10;&#10;&#10;reference to offset variables for a work piece or part.&#10;
+";
 		}
 		private OPERATING_SYSTEMValue _OPERATING_SYSTEM;
 		/// <summary>
-		/// Operating System (OS) of a <see cref="Component">Component</see>.
+		﻿/// Operating System (OS) of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public OPERATING_SYSTEMValue OPERATING_SYSTEM => _OPERATING_SYSTEM ?? (_OPERATING_SYSTEM = new OPERATING_SYSTEMValue());
 
 		/// <summary>
-		/// Operating System (OS) of a <see cref="Component">Component</see>.
+		﻿/// Operating System (OS) of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class OPERATING_SYSTEMValue : IEnumInstance
 		{
@@ -3213,16 +3578,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// Operating System (OS) of a <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;Operating System (OS) of a {{block(Component)}}.&#10;
+";
 		}
 		private FIRMWAREValue _FIRMWARE;
 		/// <summary>
-		/// embedded software of a <see cref="Component">Component</see> .
+		﻿/// embedded software of a <see cref="Component">Component</see><br />.<br/><br />
+
 		/// </summary>
 		public FIRMWAREValue FIRMWARE => _FIRMWARE ?? (_FIRMWARE = new FIRMWAREValue());
 
 		/// <summary>
-		/// embedded software of a <see cref="Component">Component</see> .
+		﻿/// embedded software of a <see cref="Component">Component</see><br />.<br/><br />
+
 		/// </summary>
 		public sealed class FIRMWAREValue : IEnumInstance
 		{
@@ -3239,16 +3607,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// embedded software of a <see cref=""Component"">Component</see> .";
+			public string Summary => @"&#10;&#10;&#10;embedded software of a {{block(Component)}}.&#10;
+";
 		}
 		private APPLICATIONValue _APPLICATION;
 		/// <summary>
-		/// application on a <see cref="Component">Component</see>.
+		﻿/// application on a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public APPLICATIONValue APPLICATION => _APPLICATION ?? (_APPLICATION = new APPLICATIONValue());
 
 		/// <summary>
-		/// application on a <see cref="Component">Component</see>.
+		﻿/// application on a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class APPLICATIONValue : IEnumInstance
 		{
@@ -3265,16 +3636,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// application on a <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;application on a {{block(Component)}}.&#10;
+";
 		}
 		private LIBRARYValue _LIBRARY;
 		/// <summary>
-		/// software library on a <see cref="Component">Component</see>
+		﻿/// software library on a <see cref="Component">Component</see><br/><br />
+
 		/// </summary>
 		public LIBRARYValue LIBRARY => _LIBRARY ?? (_LIBRARY = new LIBRARYValue());
 
 		/// <summary>
-		/// software library on a <see cref="Component">Component</see>
+		﻿/// software library on a <see cref="Component">Component</see><br/><br />
+
 		/// </summary>
 		public sealed class LIBRARYValue : IEnumInstance
 		{
@@ -3291,16 +3665,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// software library on a <see cref=""Component"">Component</see>";
+			public string Summary => @"&#10;&#10;&#10;software library on a {{block(Component)}}&#10;
+";
 		}
 		private HARDWAREValue _HARDWARE;
 		/// <summary>
-		/// hardware of a <see cref="Component">Component</see>.
+		﻿/// hardware of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public HARDWAREValue HARDWARE => _HARDWARE ?? (_HARDWARE = new HARDWAREValue());
 
 		/// <summary>
-		/// hardware of a <see cref="Component">Component</see>.
+		﻿/// hardware of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class HARDWAREValue : IEnumInstance
 		{
@@ -3317,16 +3694,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// hardware of a <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;hardware of a {{block(Component)}}.&#10;
+";
 		}
 		private NETWORKValue _NETWORK;
 		/// <summary>
-		/// network details of a <see cref="Component">Component</see>.
+		﻿/// network details of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public NETWORKValue NETWORK => _NETWORK ?? (_NETWORK = new NETWORKValue());
 
 		/// <summary>
-		/// network details of a <see cref="Component">Component</see>.
+		﻿/// network details of a <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class NETWORKValue : IEnumInstance
 		{
@@ -3343,16 +3723,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// network details of a <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;network details of a {{block(Component)}}.&#10;
+";
 		}
 		private ROTATIONValue _ROTATION;
 		/// <summary>
-		/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.
+		﻿/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
+
 		/// </summary>
 		public ROTATIONValue ROTATION => _ROTATION ?? (_ROTATION = new ROTATIONValue());
 
 		/// <summary>
-		/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.
+		﻿/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
+
 		/// </summary>
 		public sealed class ROTATIONValue : IEnumInstance
 		{
@@ -3369,16 +3752,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.";
+			public string Summary => @"&#10;&#10;&#10;three space angular displacement of an object or coordinate system relative to a {{term(cartesian coordinate system)}}.&#10;
+";
 		}
 		private TRANSLATIONValue _TRANSLATION;
 		/// <summary>
-		/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.
+		﻿/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
+
 		/// </summary>
 		public TRANSLATIONValue TRANSLATION => _TRANSLATION ?? (_TRANSLATION = new TRANSLATIONValue());
 
 		/// <summary>
-		/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.
+		﻿/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
+
 		/// </summary>
 		public sealed class TRANSLATIONValue : IEnumInstance
 		{
@@ -3395,16 +3781,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.";
+			public string Summary => @"&#10;&#10;&#10;three space linear displacement of an object or coordinate system relative to a {{term(cartesian coordinate system)}}.&#10;
+";
 		}
 		private DEVICE_ADDEDValue _DEVICE_ADDED;
 		/// <summary>
-		/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.
+		﻿/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.<br/><br />
+
 		/// </summary>
 		public DEVICE_ADDEDValue DEVICE_ADDED => _DEVICE_ADDED ?? (_DEVICE_ADDED = new DEVICE_ADDEDValue());
 
 		/// <summary>
-		/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.
+		﻿/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.<br/><br />
+
 		/// </summary>
 		public sealed class DEVICE_ADDEDValue : IEnumInstance
 		{
@@ -3421,16 +3810,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(UUID)}} of new device added to an {{term(MTConnect Agent)}}.&#10;
+";
 		}
 		private DEVICE_REMOVEDValue _DEVICE_REMOVED;
 		/// <summary>
-		/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.
+		﻿/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.<br/><br />
+
 		/// </summary>
 		public DEVICE_REMOVEDValue DEVICE_REMOVED => _DEVICE_REMOVED ?? (_DEVICE_REMOVED = new DEVICE_REMOVEDValue());
 
 		/// <summary>
-		/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.
+		﻿/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.<br/><br />
+
 		/// </summary>
 		public sealed class DEVICE_REMOVEDValue : IEnumInstance
 		{
@@ -3447,16 +3839,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(UUID)}} of a device removed from an {{term(MTConnect Agent)}}.&#10;
+";
 		}
 		private DEVICE_CHANGEDValue _DEVICE_CHANGED;
 		/// <summary>
-		/// <i>UUID</i> of the device whose <i>metadata</i> has changed.
+		﻿/// <i>UUID</i> of the device whose <i>metadata</i> has changed.<br/><br />
+
 		/// </summary>
 		public DEVICE_CHANGEDValue DEVICE_CHANGED => _DEVICE_CHANGED ?? (_DEVICE_CHANGED = new DEVICE_CHANGEDValue());
 
 		/// <summary>
-		/// <i>UUID</i> of the device whose <i>metadata</i> has changed.
+		﻿/// <i>UUID</i> of the device whose <i>metadata</i> has changed.<br/><br />
+
 		/// </summary>
 		public sealed class DEVICE_CHANGEDValue : IEnumInstance
 		{
@@ -3473,16 +3868,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>UUID</i> of the device whose <i>metadata</i> has changed.";
+			public string Summary => @"&#10;&#10;&#10;{{term(UUID)}} of the device whose {{term(metadata)}} has changed.&#10;
+";
 		}
 		private CONNECTION_STATUSValue _CONNECTION_STATUS;
 		/// <summary>
-		/// status of the connection between an <i>adapter</i> and an <i>agent</i>.
+		﻿/// status of the connection between an <i>adapter</i> and an <i>agent</i>.<br/><br />
+
 		/// </summary>
 		public CONNECTION_STATUSValue CONNECTION_STATUS => _CONNECTION_STATUS ?? (_CONNECTION_STATUS = new CONNECTION_STATUSValue());
 
 		/// <summary>
-		/// status of the connection between an <i>adapter</i> and an <i>agent</i>.
+		﻿/// status of the connection between an <i>adapter</i> and an <i>agent</i>.<br/><br />
+
 		/// </summary>
 		public sealed class CONNECTION_STATUSValue : IEnumInstance
 		{
@@ -3499,16 +3897,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// status of the connection between an <i>adapter</i> and an <i>agent</i>.";
+			public string Summary => @"&#10;&#10;&#10;status of the connection between an {{term(adapter)}} and an {{term(agent)}}.&#10;
+";
 		}
 		private ADAPTER_SOFTWARE_VERSIONValue _ADAPTER_SOFTWARE_VERSION;
 		/// <summary>
-		/// originator’s software version of the <i>adapter</i>.
+		﻿/// originator’s software version of the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		public ADAPTER_SOFTWARE_VERSIONValue ADAPTER_SOFTWARE_VERSION => _ADAPTER_SOFTWARE_VERSION ?? (_ADAPTER_SOFTWARE_VERSION = new ADAPTER_SOFTWARE_VERSIONValue());
 
 		/// <summary>
-		/// originator’s software version of the <i>adapter</i>.
+		﻿/// originator’s software version of the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		public sealed class ADAPTER_SOFTWARE_VERSIONValue : IEnumInstance
 		{
@@ -3525,16 +3926,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// originator’s software version of the <i>adapter</i>.";
+			public string Summary => @"&#10;&#10;&#10;originator’s software version of the {{term(adapter)}}.&#10;
+";
 		}
 		private ADAPTER_URIValue _ADAPTER_URI;
 		/// <summary>
-		/// <i>URI</i> of the <i>adapter</i>.
+		﻿/// <i>URI</i> of the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		public ADAPTER_URIValue ADAPTER_URI => _ADAPTER_URI ?? (_ADAPTER_URI = new ADAPTER_URIValue());
 
 		/// <summary>
-		/// <i>URI</i> of the <i>adapter</i>.
+		﻿/// <i>URI</i> of the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		public sealed class ADAPTER_URIValue : IEnumInstance
 		{
@@ -3551,16 +3955,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>URI</i> of the <i>adapter</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(URI)}} of the {{term(adapter)}}.&#10;
+";
 		}
 		private MTCONNECT_VERSIONValue _MTCONNECT_VERSION;
 		/// <summary>
-		/// reference version of the MTConnect Standard supported by the <i>adapter</i>.
+		﻿/// reference version of the MTConnect Standard supported by the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		public MTCONNECT_VERSIONValue MTCONNECT_VERSION => _MTCONNECT_VERSION ?? (_MTCONNECT_VERSION = new MTCONNECT_VERSIONValue());
 
 		/// <summary>
-		/// reference version of the MTConnect Standard supported by the <i>adapter</i>.
+		﻿/// reference version of the MTConnect Standard supported by the <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		public sealed class MTCONNECT_VERSIONValue : IEnumInstance
 		{
@@ -3577,16 +3984,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// reference version of the MTConnect Standard supported by the <i>adapter</i>.";
+			public string Summary => @"&#10;&#10;&#10;reference version of the MTConnect Standard supported by the {{term(adapter)}}.&#10;
+";
 		}
 		private SENSOR_ATTACHMENTValue _SENSOR_ATTACHMENT;
 		/// <summary>
-		/// <i>attachment</i> between a sensor and an entity.
+		﻿/// <i>attachment</i> between a sensor and an entity.<br/><br />
+
 		/// </summary>
 		public SENSOR_ATTACHMENTValue SENSOR_ATTACHMENT => _SENSOR_ATTACHMENT ?? (_SENSOR_ATTACHMENT = new SENSOR_ATTACHMENTValue());
 
 		/// <summary>
-		/// <i>attachment</i> between a sensor and an entity.
+		﻿/// <i>attachment</i> between a sensor and an entity.<br/><br />
+
 		/// </summary>
 		public sealed class SENSOR_ATTACHMENTValue : IEnumInstance
 		{
@@ -3603,16 +4013,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>attachment</i> between a sensor and an entity.";
+			public string Summary => @"&#10;&#10;&#10;{{term(attachment)}} between a sensor and an entity.&#10;
+";
 		}
 		private PART_STATUSValue _PART_STATUS;
 		/// <summary>
-		/// state or condition of a part.
+		﻿/// state or condition of a part.<br/><br />
+
 		/// </summary>
 		public PART_STATUSValue PART_STATUS => _PART_STATUS ?? (_PART_STATUS = new PART_STATUSValue());
 
 		/// <summary>
-		/// state or condition of a part.
+		﻿/// state or condition of a part.<br/><br />
+
 		/// </summary>
 		public sealed class PART_STATUSValue : IEnumInstance
 		{
@@ -3629,16 +4042,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state or condition of a part.";
+			public string Summary => @"&#10;&#10;&#10;state or condition of a part.&#10;
+";
 		}
 		private PROCESS_OCCURRENCE_IDValue _PROCESS_OCCURRENCE_ID;
 		/// <summary>
-		/// identifier of a process being executed by the device.
+		﻿/// identifier of a process being executed by the device.<br/><br />
+
 		/// </summary>
 		public PROCESS_OCCURRENCE_IDValue PROCESS_OCCURRENCE_ID => _PROCESS_OCCURRENCE_ID ?? (_PROCESS_OCCURRENCE_ID = new PROCESS_OCCURRENCE_IDValue());
 
 		/// <summary>
-		/// identifier of a process being executed by the device.
+		﻿/// identifier of a process being executed by the device.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_OCCURRENCE_IDValue : IEnumInstance
 		{
@@ -3655,16 +4071,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier of a process being executed by the device.";
+			public string Summary => @"&#10;&#10;&#10;identifier of a process being executed by the device.&#10;
+";
 		}
 		private PROCESS_AGGREGATE_IDValue _PROCESS_AGGREGATE_ID;
 		/// <summary>
-		/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.
+		﻿/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.<br/><br />
+
 		/// </summary>
 		public PROCESS_AGGREGATE_IDValue PROCESS_AGGREGATE_ID => _PROCESS_AGGREGATE_ID ?? (_PROCESS_AGGREGATE_ID = new PROCESS_AGGREGATE_IDValue());
 
 		/// <summary>
-		/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.
+		﻿/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_AGGREGATE_IDValue : IEnumInstance
 		{
@@ -3681,16 +4100,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.";
+			public string Summary => @"&#10;&#10;&#10;identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.&#10;
+";
 		}
 		private PROCESS_KIND_IDValue _PROCESS_KIND_ID;
 		/// <summary>
-		/// identifier given to link the individual occurrence to a class of processes or process definition. 
+		﻿/// identifier given to link the individual occurrence to a class of processes or process definition.<br /><br/><br />
+
 		/// </summary>
 		public PROCESS_KIND_IDValue PROCESS_KIND_ID => _PROCESS_KIND_ID ?? (_PROCESS_KIND_ID = new PROCESS_KIND_IDValue());
 
 		/// <summary>
-		/// identifier given to link the individual occurrence to a class of processes or process definition. 
+		﻿/// identifier given to link the individual occurrence to a class of processes or process definition.<br /><br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_KIND_IDValue : IEnumInstance
 		{
@@ -3707,16 +4129,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier given to link the individual occurrence to a class of processes or process definition. ";
+			public string Summary => @"&#10;&#10;&#10;identifier given to link the individual occurrence to a class of processes or process definition.&#10;
+";
 		}
 		private PART_GROUP_IDValue _PART_GROUP_ID;
 		/// <summary>
-		/// identifier given to a collection of individual parts. 
+		﻿/// identifier given to a collection of individual parts. <br/><br />
+
 		/// </summary>
 		public PART_GROUP_IDValue PART_GROUP_ID => _PART_GROUP_ID ?? (_PART_GROUP_ID = new PART_GROUP_IDValue());
 
 		/// <summary>
-		/// identifier given to a collection of individual parts. 
+		﻿/// identifier given to a collection of individual parts. <br/><br />
+
 		/// </summary>
 		public sealed class PART_GROUP_IDValue : IEnumInstance
 		{
@@ -3733,16 +4158,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier given to a collection of individual parts. ";
+			public string Summary => @"&#10;&#10;&#10;identifier given to a collection of individual parts. &#10;
+";
 		}
 		private PART_KIND_IDValue _PART_KIND_ID;
 		/// <summary>
-		/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.
+		﻿/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.<br/><br />
+
 		/// </summary>
 		public PART_KIND_IDValue PART_KIND_ID => _PART_KIND_ID ?? (_PART_KIND_ID = new PART_KIND_IDValue());
 
 		/// <summary>
-		/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.
+		﻿/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.<br/><br />
+
 		/// </summary>
 		public sealed class PART_KIND_IDValue : IEnumInstance
 		{
@@ -3759,16 +4187,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.";
+			public string Summary => @"&#10;&#10;&#10;identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.&#10;
+";
 		}
 		private PART_UNIQUE_IDValue _PART_UNIQUE_ID;
 		/// <summary>
-		/// identifier given to a distinguishable, individual part. 
+		﻿/// identifier given to a distinguishable, individual part. <br/><br />
+
 		/// </summary>
 		public PART_UNIQUE_IDValue PART_UNIQUE_ID => _PART_UNIQUE_ID ?? (_PART_UNIQUE_ID = new PART_UNIQUE_IDValue());
 
 		/// <summary>
-		/// identifier given to a distinguishable, individual part. 
+		﻿/// identifier given to a distinguishable, individual part. <br/><br />
+
 		/// </summary>
 		public sealed class PART_UNIQUE_IDValue : IEnumInstance
 		{
@@ -3785,16 +4216,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier given to a distinguishable, individual part. ";
+			public string Summary => @"&#10;&#10;&#10;identifier given to a distinguishable, individual part. &#10;
+";
 		}
 		private CONTROL_LIMITValue _CONTROL_LIMIT;
 		/// <summary>
-		/// set of limits used to indicate whether a process variable is stable and in control.  <b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.
+		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		public CONTROL_LIMITValue CONTROL_LIMIT => _CONTROL_LIMIT ?? (_CONTROL_LIMIT = new CONTROL_LIMITValue());
 
 		/// <summary>
-		/// set of limits used to indicate whether a process variable is stable and in control.  <b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.
+		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		public sealed class CONTROL_LIMITValue : IEnumInstance
 		{
@@ -3811,16 +4245,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// set of limits used to indicate whether a process variable is stable and in control.  <b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.";
+			public string Summary => @"&#10;&#10;&#10;set of limits used to indicate whether a process variable is stable and in control.
+
+**DEPRECATION WARNING**. Recommend using `CONTROL_LIMITS`.&#10;
+";
 		}
 		private SPECIFICATION_LIMITValue _SPECIFICATION_LIMIT;
 		/// <summary>
-		/// set of limits defining a range of values designating acceptable performance for a variable.  <b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.
+		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		public SPECIFICATION_LIMITValue SPECIFICATION_LIMIT => _SPECIFICATION_LIMIT ?? (_SPECIFICATION_LIMIT = new SPECIFICATION_LIMITValue());
 
 		/// <summary>
-		/// set of limits defining a range of values designating acceptable performance for a variable.  <b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.
+		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		public sealed class SPECIFICATION_LIMITValue : IEnumInstance
 		{
@@ -3837,16 +4276,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// set of limits defining a range of values designating acceptable performance for a variable.  <b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.";
+			public string Summary => @"&#10;&#10;&#10;set of limits defining a range of values designating acceptable performance for a variable.
+
+**DEPRECATION WARNING**. Recommend using `SPECIFICATION_LIMITS`.&#10;
+";
 		}
 		private ALARM_LIMITValue _ALARM_LIMIT;
 		/// <summary>
-		/// set of limits used to trigger warning or alarm indicators.  <b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.
+		﻿/// set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		public ALARM_LIMITValue ALARM_LIMIT => _ALARM_LIMIT ?? (_ALARM_LIMIT = new ALARM_LIMITValue());
 
 		/// <summary>
-		/// set of limits used to trigger warning or alarm indicators.  <b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.
+		﻿/// set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br/><br />
+
 		/// </summary>
 		public sealed class ALARM_LIMITValue : IEnumInstance
 		{
@@ -3863,16 +4307,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// set of limits used to trigger warning or alarm indicators.  <b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.";
+			public string Summary => @"&#10;&#10;&#10;set of limits used to trigger warning or alarm indicators.
+
+**DEPRECATION WARNING**. Recommend using `ALARM_LIMITS`.&#10;
+";
 		}
 		private LOAD_COUNTValue _LOAD_COUNT;
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.<br/><br />
+
 		/// </summary>
 		public LOAD_COUNTValue LOAD_COUNT => _LOAD_COUNT ?? (_LOAD_COUNT = new LOAD_COUNTValue());
 
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.<br/><br />
+
 		/// </summary>
 		public sealed class LOAD_COUNTValue : IEnumInstance
 		{
@@ -3889,16 +4338,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.";
+			public string Summary => @"&#10;&#10;&#10;accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.&#10;
+";
 		}
 		private UNLOAD_COUNTValue _UNLOAD_COUNT;
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.<br/><br />
+
 		/// </summary>
 		public UNLOAD_COUNTValue UNLOAD_COUNT => _UNLOAD_COUNT ?? (_UNLOAD_COUNT = new UNLOAD_COUNTValue());
 
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.<br/><br />
+
 		/// </summary>
 		public sealed class UNLOAD_COUNTValue : IEnumInstance
 		{
@@ -3915,16 +4367,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.";
+			public string Summary => @"&#10;&#10;&#10;accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.&#10;
+";
 		}
 		private TRANSFER_COUNTValue _TRANSFER_COUNT;
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.<br/><br />
+
 		/// </summary>
 		public TRANSFER_COUNTValue TRANSFER_COUNT => _TRANSFER_COUNT ?? (_TRANSFER_COUNT = new TRANSFER_COUNTValue());
 
 		/// <summary>
-		/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.
+		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.<br/><br />
+
 		/// </summary>
 		public sealed class TRANSFER_COUNTValue : IEnumInstance
 		{
@@ -3941,16 +4396,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.";
+			public string Summary => @"&#10;&#10;&#10;accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.&#10;
+";
 		}
 		private ACTIVATION_COUNTValue _ACTIVATION_COUNT;
 		/// <summary>
-		/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.
+		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.<br/><br />
+
 		/// </summary>
 		public ACTIVATION_COUNTValue ACTIVATION_COUNT => _ACTIVATION_COUNT ?? (_ACTIVATION_COUNT = new ACTIVATION_COUNTValue());
 
 		/// <summary>
-		/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.
+		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.<br/><br />
+
 		/// </summary>
 		public sealed class ACTIVATION_COUNTValue : IEnumInstance
 		{
@@ -3967,16 +4425,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.";
+			public string Summary => @"&#10;&#10;&#10;accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.&#10;
+";
 		}
 		private DEACTIVATION_COUNTValue _DEACTIVATION_COUNT;
 		/// <summary>
-		/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.
+		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.<br/><br />
+
 		/// </summary>
 		public DEACTIVATION_COUNTValue DEACTIVATION_COUNT => _DEACTIVATION_COUNT ?? (_DEACTIVATION_COUNT = new DEACTIVATION_COUNTValue());
 
 		/// <summary>
-		/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.
+		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.<br/><br />
+
 		/// </summary>
 		public sealed class DEACTIVATION_COUNTValue : IEnumInstance
 		{
@@ -3993,16 +4454,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.";
+			public string Summary => @"&#10;&#10;&#10;accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.&#10;
+";
 		}
 		private CYCLE_COUNTValue _CYCLE_COUNT;
 		/// <summary>
-		/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.
+		﻿/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.<br/><br />
+
 		/// </summary>
 		public CYCLE_COUNTValue CYCLE_COUNT => _CYCLE_COUNT ?? (_CYCLE_COUNT = new CYCLE_COUNTValue());
 
 		/// <summary>
-		/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.
+		﻿/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.<br/><br />
+
 		/// </summary>
 		public sealed class CYCLE_COUNTValue : IEnumInstance
 		{
@@ -4019,16 +4483,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.";
+			public string Summary => @"&#10;&#10;&#10;accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.&#10;
+";
 		}
 		private VALVE_STATEValue _VALVE_STATE;
 		/// <summary>
-		/// state of a valve is one of open, closed, or transitioning between the states.
+		﻿/// state of a valve is one of open, closed, or transitioning between the states.<br/><br />
+
 		/// </summary>
 		public VALVE_STATEValue VALVE_STATE => _VALVE_STATE ?? (_VALVE_STATE = new VALVE_STATEValue());
 
 		/// <summary>
-		/// state of a valve is one of open, closed, or transitioning between the states.
+		﻿/// state of a valve is one of open, closed, or transitioning between the states.<br/><br />
+
 		/// </summary>
 		public sealed class VALVE_STATEValue : IEnumInstance
 		{
@@ -4045,16 +4512,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state of a valve is one of open, closed, or transitioning between the states.";
+			public string Summary => @"&#10;&#10;&#10;state of a valve is one of open, closed, or transitioning between the states.&#10;
+";
 		}
 		private LOCK_STATEValue _LOCK_STATE;
 		/// <summary>
-		/// state or operating mode of a <see cref="Lock">Lock</see>.
+		﻿/// state or operating mode of a <see cref="Lock">Lock</see>.<br/><br />
+
 		/// </summary>
 		public LOCK_STATEValue LOCK_STATE => _LOCK_STATE ?? (_LOCK_STATE = new LOCK_STATEValue());
 
 		/// <summary>
-		/// state or operating mode of a <see cref="Lock">Lock</see>.
+		﻿/// state or operating mode of a <see cref="Lock">Lock</see>.<br/><br />
+
 		/// </summary>
 		public sealed class LOCK_STATEValue : IEnumInstance
 		{
@@ -4071,16 +4541,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state or operating mode of a <see cref=""Lock"">Lock</see>.";
+			public string Summary => @"&#10;&#10;&#10;state or operating mode of a {{block(Lock)}}.&#10;
+";
 		}
 		private PROCESS_STATEValue _PROCESS_STATE;
 		/// <summary>
-		/// particular condition of the process occurrence at a specific time.
+		﻿/// particular condition of the process occurrence at a specific time.<br/><br />
+
 		/// </summary>
 		public PROCESS_STATEValue PROCESS_STATE => _PROCESS_STATE ?? (_PROCESS_STATE = new PROCESS_STATEValue());
 
 		/// <summary>
-		/// particular condition of the process occurrence at a specific time.
+		﻿/// particular condition of the process occurrence at a specific time.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_STATEValue : IEnumInstance
 		{
@@ -4097,16 +4570,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// particular condition of the process occurrence at a specific time.";
+			public string Summary => @"&#10;&#10;&#10;particular condition of the process occurrence at a specific time.&#10;
+";
 		}
 		private PART_PROCESSING_STATEValue _PART_PROCESSING_STATE;
 		/// <summary>
-		/// particular condition of the part occurrence at a specific time.
+		﻿/// particular condition of the part occurrence at a specific time.<br/><br />
+
 		/// </summary>
 		public PART_PROCESSING_STATEValue PART_PROCESSING_STATE => _PART_PROCESSING_STATE ?? (_PART_PROCESSING_STATE = new PART_PROCESSING_STATEValue());
 
 		/// <summary>
-		/// particular condition of the part occurrence at a specific time.
+		﻿/// particular condition of the part occurrence at a specific time.<br/><br />
+
 		/// </summary>
 		public sealed class PART_PROCESSING_STATEValue : IEnumInstance
 		{
@@ -4123,16 +4599,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// particular condition of the part occurrence at a specific time.";
+			public string Summary => @"&#10;&#10;&#10;particular condition of the part occurrence at a specific time.&#10;
+";
 		}
 		private OPERATING_MODEValue _OPERATING_MODE;
 		/// <summary>
-		/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.
+		﻿/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.<br/><br />
+
 		/// </summary>
 		public OPERATING_MODEValue OPERATING_MODE => _OPERATING_MODE ?? (_OPERATING_MODE = new OPERATING_MODEValue());
 
 		/// <summary>
-		/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.
+		﻿/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.<br/><br />
+
 		/// </summary>
 		public sealed class OPERATING_MODEValue : IEnumInstance
 		{
@@ -4149,16 +4628,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state of <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see> that describes the automatic or manual operation of the entity.";
+			public string Summary => @"&#10;&#10;&#10;state of {{block(Component)}} or {{block(Composition)}} that describes the automatic or manual operation of the entity.&#10;
+";
 		}
 		private ASSET_COUNTValue _ASSET_COUNT;
 		/// <summary>
-		/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.
+		﻿/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.<br/><br />
+
 		/// </summary>
 		public ASSET_COUNTValue ASSET_COUNT => _ASSET_COUNT ?? (_ASSET_COUNT = new ASSET_COUNTValue());
 
 		/// <summary>
-		/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.
+		﻿/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.<br/><br />
+
 		/// </summary>
 		public sealed class ASSET_COUNTValue : IEnumInstance
 		{
@@ -4175,16 +4657,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(data set)}} of the number of {{termplural(Asset)}} of a given type for a {{term(Device)}}.&#10;
+";
 		}
 		private MAINTENANCE_LISTValue _MAINTENANCE_LIST;
 		/// <summary>
-		/// actions or activities to be performed in support of a piece of equipment.
+		﻿/// actions or activities to be performed in support of a piece of equipment.<br/><br />
+
 		/// </summary>
 		public MAINTENANCE_LISTValue MAINTENANCE_LIST => _MAINTENANCE_LIST ?? (_MAINTENANCE_LIST = new MAINTENANCE_LISTValue());
 
 		/// <summary>
-		/// actions or activities to be performed in support of a piece of equipment.
+		﻿/// actions or activities to be performed in support of a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class MAINTENANCE_LISTValue : IEnumInstance
 		{
@@ -4201,16 +4686,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// actions or activities to be performed in support of a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;actions or activities to be performed in support of a piece of equipment.&#10;
+";
 		}
 		private FIXTURE_IDValue _FIXTURE_ID;
 		/// <summary>
-		/// identifier for the current workholding or part clamp in use by a piece of equipment.
+		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br/><br />
+
 		/// </summary>
 		public FIXTURE_IDValue FIXTURE_ID => _FIXTURE_ID ?? (_FIXTURE_ID = new FIXTURE_IDValue());
 
 		/// <summary>
-		/// identifier for the current workholding or part clamp in use by a piece of equipment.
+		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class FIXTURE_IDValue : IEnumInstance
 		{
@@ -4227,16 +4715,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifier for the current workholding or part clamp in use by a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;identifier for the current workholding or part clamp in use by a piece of equipment.&#10;
+";
 		}
 		private PART_COUNT_TYPEValue _PART_COUNT_TYPE;
 		/// <summary>
-		/// interpretation of <c>PART_COUNT</c>.
+		﻿/// interpretation of <c>PART_COUNT</c>.<br/><br />
+
 		/// </summary>
 		public PART_COUNT_TYPEValue PART_COUNT_TYPE => _PART_COUNT_TYPE ?? (_PART_COUNT_TYPE = new PART_COUNT_TYPEValue());
 
 		/// <summary>
-		/// interpretation of <c>PART_COUNT</c>.
+		﻿/// interpretation of <c>PART_COUNT</c>.<br/><br />
+
 		/// </summary>
 		public sealed class PART_COUNT_TYPEValue : IEnumInstance
 		{
@@ -4253,16 +4744,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// interpretation of <c>PART_COUNT</c>.";
+			public string Summary => @"&#10;&#10;&#10;interpretation of `PART_COUNT`.&#10;
+";
 		}
 		private CLOCK_TIMEValue _CLOCK_TIME;
 		/// <summary>
-		/// time provided by a timing device at a specific point in time.
+		﻿/// time provided by a timing device at a specific point in time.<br/><br />
+
 		/// </summary>
 		public CLOCK_TIMEValue CLOCK_TIME => _CLOCK_TIME ?? (_CLOCK_TIME = new CLOCK_TIMEValue());
 
 		/// <summary>
-		/// time provided by a timing device at a specific point in time.
+		﻿/// time provided by a timing device at a specific point in time.<br/><br />
+
 		/// </summary>
 		public sealed class CLOCK_TIMEValue : IEnumInstance
 		{
@@ -4279,16 +4773,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// time provided by a timing device at a specific point in time.";
+			public string Summary => @"&#10;&#10;&#10;time provided by a timing device at a specific point in time.&#10;
+";
 		}
 		private HOST_NAMEValue _HOST_NAME;
 		/// <summary>
-		/// name of the host computer supplying data.
+		﻿/// name of the host computer supplying data.<br/><br />
+
 		/// </summary>
 		public HOST_NAMEValue HOST_NAME => _HOST_NAME ?? (_HOST_NAME = new HOST_NAMEValue());
 
 		/// <summary>
-		/// name of the host computer supplying data.
+		﻿/// name of the host computer supplying data.<br/><br />
+
 		/// </summary>
 		public sealed class HOST_NAMEValue : IEnumInstance
 		{
@@ -4305,16 +4802,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// name of the host computer supplying data.";
+			public string Summary => @"&#10;&#10;&#10;name of the host computer supplying data.&#10;
+";
 		}
 		private NETWORK_PORTValue _NETWORK_PORT;
 		/// <summary>
-		/// number of the TCP/IP or UDP/IP port for the connection endpoint.
+		﻿/// number of the TCP/IP or UDP/IP port for the connection endpoint.<br/><br />
+
 		/// </summary>
 		public NETWORK_PORTValue NETWORK_PORT => _NETWORK_PORT ?? (_NETWORK_PORT = new NETWORK_PORTValue());
 
 		/// <summary>
-		/// number of the TCP/IP or UDP/IP port for the connection endpoint.
+		﻿/// number of the TCP/IP or UDP/IP port for the connection endpoint.<br/><br />
+
 		/// </summary>
 		public sealed class NETWORK_PORTValue : IEnumInstance
 		{
@@ -4331,16 +4831,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// number of the TCP/IP or UDP/IP port for the connection endpoint.";
+			public string Summary => @"&#10;&#10;&#10;number of the TCP/IP or UDP/IP port for the connection endpoint.&#10;
+";
 		}
 		private LEAK_DETECTValue _LEAK_DETECT;
 		/// <summary>
-		/// indication designating whether a leak has been detected.
+		﻿/// indication designating whether a leak has been detected.<br/><br />
+
 		/// </summary>
 		public LEAK_DETECTValue LEAK_DETECT => _LEAK_DETECT ?? (_LEAK_DETECT = new LEAK_DETECTValue());
 
 		/// <summary>
-		/// indication designating whether a leak has been detected.
+		﻿/// indication designating whether a leak has been detected.<br/><br />
+
 		/// </summary>
 		public sealed class LEAK_DETECTValue : IEnumInstance
 		{
@@ -4357,16 +4860,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication designating whether a leak has been detected.";
+			public string Summary => @"&#10;&#10;&#10;indication designating whether a leak has been detected.&#10;
+";
 		}
 		private BATTERY_STATEValue _BATTERY_STATE;
 		/// <summary>
-		/// present status of the battery.
+		﻿/// present status of the battery.<br/><br />
+
 		/// </summary>
 		public BATTERY_STATEValue BATTERY_STATE => _BATTERY_STATE ?? (_BATTERY_STATE = new BATTERY_STATEValue());
 
 		/// <summary>
-		/// present status of the battery.
+		﻿/// present status of the battery.<br/><br />
+
 		/// </summary>
 		public sealed class BATTERY_STATEValue : IEnumInstance
 		{
@@ -4383,16 +4889,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// present status of the battery.";
+			public string Summary => @"&#10;&#10;&#10;present status of the battery.&#10;
+";
 		}
 		private FEATURE_PERSISTENT_IDValue _FEATURE_PERSISTENT_ID;
 		/// <summary>
-		/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.
+		﻿/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.<br/><br />
+
 		/// </summary>
 		public FEATURE_PERSISTENT_IDValue FEATURE_PERSISTENT_ID => _FEATURE_PERSISTENT_ID ?? (_FEATURE_PERSISTENT_ID = new FEATURE_PERSISTENT_IDValue());
 
 		/// <summary>
-		/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.
+		﻿/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.<br/><br />
+
 		/// </summary>
 		public sealed class FEATURE_PERSISTENT_IDValue : IEnumInstance
 		{
@@ -4409,16 +4918,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>UUID</i> of a <i>feature</i>. <seealso href=""https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I"">ISO 10303 AP 242/239</seealso>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(UUID)}} of a {{term(feature)}}. {{cite(ISO 10303 AP 242/239)}}.&#10;
+";
 		}
 		private SENSOR_STATEValue _SENSOR_STATE;
 		/// <summary>
-		/// detection result of a sensor.
+		﻿/// detection result of a sensor.<br/><br />
+
 		/// </summary>
 		public SENSOR_STATEValue SENSOR_STATE => _SENSOR_STATE ?? (_SENSOR_STATE = new SENSOR_STATEValue());
 
 		/// <summary>
-		/// detection result of a sensor.
+		﻿/// detection result of a sensor.<br/><br />
+
 		/// </summary>
 		public sealed class SENSOR_STATEValue : IEnumInstance
 		{
@@ -4435,16 +4947,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// detection result of a sensor.";
+			public string Summary => @"&#10;&#10;&#10;detection result of a sensor.&#10;
+";
 		}
 		private COMPONENT_DATAValue _COMPONENT_DATA;
 		/// <summary>
-		/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.
+		﻿/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.<br/><br />
+
 		/// </summary>
 		public COMPONENT_DATAValue COMPONENT_DATA => _COMPONENT_DATA ?? (_COMPONENT_DATA = new COMPONENT_DATAValue());
 
 		/// <summary>
-		/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.
+		﻿/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.<br/><br />
+
 		/// </summary>
 		public sealed class COMPONENT_DATAValue : IEnumInstance
 		{
@@ -4461,16 +4976,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Event"">Event</see> that represents a <see cref=""Component"">Component</see> where the <see cref=""EntryDefinition"">EntryDefinition</see> identifies the <see cref=""Component"">Component</see> and the <see cref=""CellDefinition"">CellDefinition</see>s define the <see cref=""Component"">Component</see>'s observed <see cref=""DataItem"">DataItem</see>s.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Event)}} that represents a {{block(Component)}} where the {{block(EntryDefinition)}} identifies the {{block(Component)}} and the {{block(CellDefinition)}}s define the {{block(Component)}}'s observed {{block(DataItem)}}s.&#10;
+";
 		}
 		private WORK_OFFSETSValue _WORK_OFFSETS;
 		/// <summary>
-		/// properties of each addressable work offset.
+		﻿/// properties of each addressable work offset.<br/><br />
+
 		/// </summary>
 		public WORK_OFFSETSValue WORK_OFFSETS => _WORK_OFFSETS ?? (_WORK_OFFSETS = new WORK_OFFSETSValue());
 
 		/// <summary>
-		/// properties of each addressable work offset.
+		﻿/// properties of each addressable work offset.<br/><br />
+
 		/// </summary>
 		public sealed class WORK_OFFSETSValue : IEnumInstance
 		{
@@ -4487,16 +5005,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// properties of each addressable work offset.";
+			public string Summary => @"&#10;&#10;&#10;properties of each addressable work offset.&#10;
+";
 		}
 		private TOOL_OFFSETSValue _TOOL_OFFSETS;
 		/// <summary>
-		/// properties of each addressable tool offset.
+		﻿/// properties of each addressable tool offset.<br/><br />
+
 		/// </summary>
 		public TOOL_OFFSETSValue TOOL_OFFSETS => _TOOL_OFFSETS ?? (_TOOL_OFFSETS = new TOOL_OFFSETSValue());
 
 		/// <summary>
-		/// properties of each addressable tool offset.
+		﻿/// properties of each addressable tool offset.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_OFFSETSValue : IEnumInstance
 		{
@@ -4513,16 +5034,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// properties of each addressable tool offset.";
+			public string Summary => @"&#10;&#10;&#10;properties of each addressable tool offset.&#10;
+";
 		}
 		private FEATURE_MEASUREMENTValue _FEATURE_MEASUREMENT;
 		/// <summary>
-		/// assessing elements of a <i>feature</i>.
+		﻿/// assessing elements of a <i>feature</i>.<br/><br />
+
 		/// </summary>
 		public FEATURE_MEASUREMENTValue FEATURE_MEASUREMENT => _FEATURE_MEASUREMENT ?? (_FEATURE_MEASUREMENT = new FEATURE_MEASUREMENTValue());
 
 		/// <summary>
-		/// assessing elements of a <i>feature</i>.
+		﻿/// assessing elements of a <i>feature</i>.<br/><br />
+
 		/// </summary>
 		public sealed class FEATURE_MEASUREMENTValue : IEnumInstance
 		{
@@ -4539,16 +5063,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// assessing elements of a <i>feature</i>.";
+			public string Summary => @"&#10;&#10;&#10;assessing elements of a {{term(feature)}}.&#10;
+";
 		}
 		private CHARACTERISTIC_PERSISTENT_IDValue _CHARACTERISTIC_PERSISTENT_ID;
 		/// <summary>
-		/// <i>UUID</i> of the <i>characteristic</i>.
+		﻿/// <i>UUID</i> of the <i>characteristic</i>.<br/><br />
+
 		/// </summary>
 		public CHARACTERISTIC_PERSISTENT_IDValue CHARACTERISTIC_PERSISTENT_ID => _CHARACTERISTIC_PERSISTENT_ID ?? (_CHARACTERISTIC_PERSISTENT_ID = new CHARACTERISTIC_PERSISTENT_IDValue());
 
 		/// <summary>
-		/// <i>UUID</i> of the <i>characteristic</i>.
+		﻿/// <i>UUID</i> of the <i>characteristic</i>.<br/><br />
+
 		/// </summary>
 		public sealed class CHARACTERISTIC_PERSISTENT_IDValue : IEnumInstance
 		{
@@ -4565,16 +5092,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>UUID</i> of the <i>characteristic</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(UUID)}} of the {{term(characteristic)}}.&#10;
+";
 		}
 		private MEASUREMENT_TYPEValue _MEASUREMENT_TYPE;
 		/// <summary>
-		/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso>
+		﻿/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br/><br />
+
 		/// </summary>
 		public MEASUREMENT_TYPEValue MEASUREMENT_TYPE => _MEASUREMENT_TYPE ?? (_MEASUREMENT_TYPE = new MEASUREMENT_TYPEValue());
 
 		/// <summary>
-		/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso>
+		﻿/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br/><br />
+
 		/// </summary>
 		public sealed class MEASUREMENT_TYPEValue : IEnumInstance
 		{
@@ -4591,16 +5121,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// class of measurement being performed. <seealso href=""https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I"">QIF 3:2018 Section 6.3</seealso>";
+			public string Summary => @"&#10;&#10;&#10;class of measurement being performed. {{cite(QIF 3:2018 Section 6.3)}}&#10;
+";
 		}
 		private MEASUREMENT_VALUEValue _MEASUREMENT_VALUE;
 		/// <summary>
-		/// measurement based on the measurement type.
+		﻿/// measurement based on the measurement type.<br/><br />
+
 		/// </summary>
 		public MEASUREMENT_VALUEValue MEASUREMENT_VALUE => _MEASUREMENT_VALUE ?? (_MEASUREMENT_VALUE = new MEASUREMENT_VALUEValue());
 
 		/// <summary>
-		/// measurement based on the measurement type.
+		﻿/// measurement based on the measurement type.<br/><br />
+
 		/// </summary>
 		public sealed class MEASUREMENT_VALUEValue : IEnumInstance
 		{
@@ -4617,16 +5150,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement based on the measurement type.";
+			public string Summary => @"&#10;&#10;&#10;measurement based on the measurement type.&#10;
+";
 		}
 		private MEASUREMENT_UNITSValue _MEASUREMENT_UNITS;
 		/// <summary>
-		/// engineering units of the measurement.
+		﻿/// engineering units of the measurement.<br/><br />
+
 		/// </summary>
 		public MEASUREMENT_UNITSValue MEASUREMENT_UNITS => _MEASUREMENT_UNITS ?? (_MEASUREMENT_UNITS = new MEASUREMENT_UNITSValue());
 
 		/// <summary>
-		/// engineering units of the measurement.
+		﻿/// engineering units of the measurement.<br/><br />
+
 		/// </summary>
 		public sealed class MEASUREMENT_UNITSValue : IEnumInstance
 		{
@@ -4643,16 +5179,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// engineering units of the measurement.";
+			public string Summary => @"&#10;&#10;&#10;engineering units of the measurement.&#10;
+";
 		}
 		private CHARACTERISTIC_STATUSValue _CHARACTERISTIC_STATUS;
 		/// <summary>
-		/// pass/fail result of the measurement.
+		﻿/// pass/fail result of the measurement.<br/><br />
+
 		/// </summary>
 		public CHARACTERISTIC_STATUSValue CHARACTERISTIC_STATUS => _CHARACTERISTIC_STATUS ?? (_CHARACTERISTIC_STATUS = new CHARACTERISTIC_STATUSValue());
 
 		/// <summary>
-		/// pass/fail result of the measurement.
+		﻿/// pass/fail result of the measurement.<br/><br />
+
 		/// </summary>
 		public sealed class CHARACTERISTIC_STATUSValue : IEnumInstance
 		{
@@ -4669,16 +5208,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// pass/fail result of the measurement.";
+			public string Summary => @"&#10;&#10;&#10;pass/fail result of the measurement.&#10;
+";
 		}
 		private UNCERTAINTY_TYPEValue _UNCERTAINTY_TYPE;
 		/// <summary>
-		/// method used to compute <i>standard uncertainty</i>.
+		﻿/// method used to compute <i>standard uncertainty</i>.<br/><br />
+
 		/// </summary>
 		public UNCERTAINTY_TYPEValue UNCERTAINTY_TYPE => _UNCERTAINTY_TYPE ?? (_UNCERTAINTY_TYPE = new UNCERTAINTY_TYPEValue());
 
 		/// <summary>
-		/// method used to compute <i>standard uncertainty</i>.
+		﻿/// method used to compute <i>standard uncertainty</i>.<br/><br />
+
 		/// </summary>
 		public sealed class UNCERTAINTY_TYPEValue : IEnumInstance
 		{
@@ -4695,16 +5237,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// method used to compute <i>standard uncertainty</i>.";
+			public string Summary => @"&#10;&#10;&#10;method used to compute {{term(standard uncertainty)}}.&#10;
+";
 		}
 		private UNCERTAINTYValue _UNCERTAINTY;
 		/// <summary>
-		/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.
+		﻿/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.<br/><br />
+
 		/// </summary>
 		public UNCERTAINTYValue UNCERTAINTY => _UNCERTAINTY ?? (_UNCERTAINTY = new UNCERTAINTYValue());
 
 		/// <summary>
-		/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.
+		﻿/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.<br/><br />
+
 		/// </summary>
 		public sealed class UNCERTAINTYValue : IEnumInstance
 		{
@@ -4721,16 +5266,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>uncertainty</i> specified by <see cref=""UncertaintyType"">UncertaintyType</see>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(uncertainty)}} specified by {{block(UncertaintyType)}}.&#10;
+";
 		}
 		private SPECIFICATION_LIMITSValue _SPECIFICATION_LIMITS;
 		/// <summary>
-		/// set of limits defining a range of values designating acceptable performance for a variable.
+		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br/><br />
+
 		/// </summary>
 		public SPECIFICATION_LIMITSValue SPECIFICATION_LIMITS => _SPECIFICATION_LIMITS ?? (_SPECIFICATION_LIMITS = new SPECIFICATION_LIMITSValue());
 
 		/// <summary>
-		/// set of limits defining a range of values designating acceptable performance for a variable.
+		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br/><br />
+
 		/// </summary>
 		public sealed class SPECIFICATION_LIMITSValue : IEnumInstance
 		{
@@ -4747,16 +5295,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// set of limits defining a range of values designating acceptable performance for a variable.";
+			public string Summary => @"&#10;&#10;&#10;set of limits defining a range of values designating acceptable performance for a variable.&#10;
+";
 		}
 		private CONTROL_LIMITSValue _CONTROL_LIMITS;
 		/// <summary>
-		/// set of limits used to indicate whether a process variable is stable and in control.
+		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br/><br />
+
 		/// </summary>
 		public CONTROL_LIMITSValue CONTROL_LIMITS => _CONTROL_LIMITS ?? (_CONTROL_LIMITS = new CONTROL_LIMITSValue());
 
 		/// <summary>
-		/// set of limits used to indicate whether a process variable is stable and in control.
+		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br/><br />
+
 		/// </summary>
 		public sealed class CONTROL_LIMITSValue : IEnumInstance
 		{
@@ -4773,16 +5324,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// set of limits used to indicate whether a process variable is stable and in control.";
+			public string Summary => @"&#10;&#10;&#10;set of limits used to indicate whether a process variable is stable and in control.&#10;
+";
 		}
 		private ALARM_LIMITSValue _ALARM_LIMITS;
 		/// <summary>
-		/// set of limits used to trigger warning or alarm indicators.
+		﻿/// set of limits used to trigger warning or alarm indicators.<br/><br />
+
 		/// </summary>
 		public ALARM_LIMITSValue ALARM_LIMITS => _ALARM_LIMITS ?? (_ALARM_LIMITS = new ALARM_LIMITSValue());
 
 		/// <summary>
-		/// set of limits used to trigger warning or alarm indicators.
+		﻿/// set of limits used to trigger warning or alarm indicators.<br/><br />
+
 		/// </summary>
 		public sealed class ALARM_LIMITSValue : IEnumInstance
 		{
@@ -4799,16 +5353,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// set of limits used to trigger warning or alarm indicators.";
+			public string Summary => @"&#10;&#10;&#10;set of limits used to trigger warning or alarm indicators.&#10;
+";
 		}
 		private TOOL_CUTTING_ITEMValue _TOOL_CUTTING_ITEM;
 		/// <summary>
-		/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem::indices" /> of the currently active cutting tool edge.
+		﻿/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem.indices">indices in CuttingItem</see> of the currently active cutting tool edge.<br/><br />
+
 		/// </summary>
 		public TOOL_CUTTING_ITEMValue TOOL_CUTTING_ITEM => _TOOL_CUTTING_ITEM ?? (_TOOL_CUTTING_ITEM = new TOOL_CUTTING_ITEMValue());
 
 		/// <summary>
-		/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem::indices" /> of the currently active cutting tool edge.
+		﻿/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem.indices">indices in CuttingItem</see> of the currently active cutting tool edge.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_CUTTING_ITEMValue : IEnumInstance
 		{
@@ -4825,16 +5382,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// references the <see cref=""CuttingToolLifeCycle"">CuttingToolLifeCycle</see> <see cref=""CuttingItem"">CuttingItem</see> index related to the <see cref=""CuttingItem::indices"" /> of the currently active cutting tool edge.";
+			public string Summary => @"&#10;&#10;&#10;references the {{block(CuttingToolLifeCycle)}} {{block(CuttingItem)}} index related to the {{property(CuttingItem::indices)}} of the currently active cutting tool edge.&#10;
+";
 		}
 		private LOCATION_ADDRESSValue _LOCATION_ADDRESS;
 		/// <summary>
-		/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso>
+		﻿/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso><br/><br />
+
 		/// </summary>
 		public LOCATION_ADDRESSValue LOCATION_ADDRESS => _LOCATION_ADDRESS ?? (_LOCATION_ADDRESS = new LOCATION_ADDRESSValue());
 
 		/// <summary>
-		/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso>
+		﻿/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso><br/><br />
+
 		/// </summary>
 		public sealed class LOCATION_ADDRESSValue : IEnumInstance
 		{
@@ -4851,16 +5411,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href=""https://www.google.com/search?q=ISO 19160-4:2017&btnI=I"">ISO 19160-4:2017</seealso>";
+			public string Summary => @"&#10;&#10;&#10;structured information that allows the unambiguous determination of an object for purposes of identification and location. {{cite(ISO 19160-4:2017)}}&#10;
+";
 		}
 		private POWER_SOURCEValue _POWER_SOURCE;
 		/// <summary>
-		/// active energy source for the <see cref="Component">Component</see>.
+		﻿/// active energy source for the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public POWER_SOURCEValue POWER_SOURCE => _POWER_SOURCE ?? (_POWER_SOURCE = new POWER_SOURCEValue());
 
 		/// <summary>
-		/// active energy source for the <see cref="Component">Component</see>.
+		﻿/// active energy source for the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class POWER_SOURCEValue : IEnumInstance
 		{
@@ -4877,7 +5440,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// active energy source for the <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;active energy source for the {{block(Component)}}.&#10;
+";
 		}
 	}
 }

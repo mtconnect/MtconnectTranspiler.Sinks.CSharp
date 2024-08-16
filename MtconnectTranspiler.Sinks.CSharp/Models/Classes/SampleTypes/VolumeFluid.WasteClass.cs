@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// reported or measured value of the amount discarded.
+	﻿/// reported or measured value of the amount discarded.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622200130807_921533_3311">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class VolumeFluidWasteClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622200130807_921533_3311";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// reported or measured value of the amount discarded.";
+		public string Summary => @"&#10;&#10;&#10;reported or measured value of the amount discarded.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "VolumeFluid.Waste";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reported or measured value of the amount discarded.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

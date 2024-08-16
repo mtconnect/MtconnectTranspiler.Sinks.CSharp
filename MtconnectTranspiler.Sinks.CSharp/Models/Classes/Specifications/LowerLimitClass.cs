@@ -5,17 +5,21 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
-	/// lower conformance boundary for a variable.  > Note: immediate concern or action may be required.
+	﻿/// lower conformance boundary for a variable.<br /><br />> Note: immediate concern or action may be required.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643526040_637158_716">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LowerLimitClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605643526040_637158_716";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// lower conformance boundary for a variable.  > Note: immediate concern or action may be required.";
+		public string Summary => @"&#10;&#10;&#10;lower conformance boundary for a variable.
+
+> Note: immediate concern or action may be required.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "LowerLimit";
@@ -67,7 +71,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// lower conformance boundary for a variable.  > Note: immediate concern or action may be required.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

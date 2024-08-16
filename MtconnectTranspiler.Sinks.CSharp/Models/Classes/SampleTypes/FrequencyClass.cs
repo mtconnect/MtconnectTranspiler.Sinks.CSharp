@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// <see cref="SampleEnum::FREQUENCY">SampleEnum::FREQUENCY</see>
+	﻿/// <see cref="SampleEnum.FREQUENCY">SampleEnum.FREQUENCY</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218311_52693_1830">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FrequencyClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218311_52693_1830";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""SampleEnum::FREQUENCY"">SampleEnum::FREQUENCY</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(SampleEnum::FREQUENCY)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Frequency";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::FREQUENCY"">SampleEnum::FREQUENCY</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::FREQUENCY"">SampleEnum::FREQUENCY</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

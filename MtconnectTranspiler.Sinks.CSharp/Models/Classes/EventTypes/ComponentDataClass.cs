@@ -6,17 +6,23 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// tabular <see cref="EventEnum::COMPONENT_DATA">EventEnum::COMPONENT_DATA</see>  If the <see cref="Component">Component</see> multiplicity can be determined, the device model <b>MUST</b> use a fixed set of <see cref="Component">Component</see>s.  <see cref="ComponentData">ComponentData</see> <b>MUST</b> provide a <see cref="DataItem">DataItem</see> <see cref="Definition">Definition</see>.
+	﻿/// tabular <see cref="EventEnum.COMPONENT_DATA">EventEnum.COMPONENT_DATA</see><br /><br />If the <see cref="Component">Component</see> multiplicity can be determined, the device model <b>MUST</b> use a fixed set of <see cref="Component">Component</see>s.<br /><br /><see cref="ComponentData">ComponentData</see> <b>MUST</b> provide a <see cref="DataItem">DataItem</see> <see cref="Definition">Definition</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678101504782_455626_16476">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ComponentDataClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678101504782_455626_16476";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// tabular <see cref=""EventEnum::COMPONENT_DATA"">EventEnum::COMPONENT_DATA</see>  If the <see cref=""Component"">Component</see> multiplicity can be determined, the device model <b>MUST</b> use a fixed set of <see cref=""Component"">Component</see>s.  <see cref=""ComponentData"">ComponentData</see> <b>MUST</b> provide a <see cref=""DataItem"">DataItem</see> <see cref=""Definition"">Definition</see>.";
+		public string Summary => @"&#10;&#10;&#10;tabular {{def(EventEnum::COMPONENT_DATA)}}
+
+If the {{block(Component)}} multiplicity can be determined, the device model **MUST** use a fixed set of {{block(Component)}}s.
+
+{{block(ComponentData)}} **MUST** provide a {{block(DataItem)}} {{block(Definition)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ComponentData";
@@ -71,7 +77,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// tabular <see cref=""EventEnum::COMPONENT_DATA"">EventEnum::COMPONENT_DATA</see>  If the <see cref=""Component"">Component</see> multiplicity can be determined, the device model <b>MUST</b> use a fixed set of <see cref=""Component"">Component</see>s.  <see cref=""ComponentData"">ComponentData</see> <b>MUST</b> provide a <see cref=""DataItem"">DataItem</see> <see cref=""Definition"">Definition</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

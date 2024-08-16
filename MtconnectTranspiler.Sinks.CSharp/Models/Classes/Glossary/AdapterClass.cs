@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// optional piece of hardware or software that transforms information provided by a piece of equipment into a form that can be received by an <i>agent</i>.
+	﻿/// optional piece of hardware or software that transforms information provided by a piece of equipment into a form that can be received by an <i>agent</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375138_661037_1946">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AdapterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375138_661037_1946";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// optional piece of hardware or software that transforms information provided by a piece of equipment into a form that can be received by an <i>agent</i>.";
+		public string Summary => @"&#10;&#10;&#10;optional piece of hardware or software that transforms information provided by a piece of equipment into a form that can be received by an {{term(agent)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "adapter";

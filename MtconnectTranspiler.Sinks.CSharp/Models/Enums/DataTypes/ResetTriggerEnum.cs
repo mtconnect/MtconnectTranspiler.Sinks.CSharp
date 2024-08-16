@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_8616CF52_2918_4462_A494_9F4A3EEFD597">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ResetTriggerEnum
 	{
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> that is measuring an action or operation is to be reset upon completion of that action or operation.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> that is measuring an action or operation is to be reset upon completion of that action or operation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTION_COMPLETE,
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 12-month period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 12-month period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ANNUAL,
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 24-hour period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 24-hour period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DAY,
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is not reset and accumulates for the entire life of the piece of equipment.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is not reset and accumulates for the entire life of the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LIFE,
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset upon completion of a maintenance event.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset upon completion of a maintenance event.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MAINTENANCE,
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a monthly period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a monthly period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,7 +76,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MONTH,
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset when power was applied to the piece of equipment after a planned or unplanned interruption of power has occurred.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset when power was applied to the piece of equipment after a planned or unplanned interruption of power has occurred.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,7 +86,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POWER_ON,
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a work shift.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a work shift.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,7 +96,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SHIFT,
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 7-day period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 7-day period.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -99,8 +109,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_8616CF52_2918_4462_A494_9F4A3EEFD597">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ResetTriggerEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -135,12 +146,14 @@ namespace Mtconnect.DataTypes
 
 		private ACTION_COMPLETEValue _ACTION_COMPLETE;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> that is measuring an action or operation is to be reset upon completion of that action or operation.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> that is measuring an action or operation is to be reset upon completion of that action or operation.<br/><br />
+
 		/// </summary>
 		public ACTION_COMPLETEValue ACTION_COMPLETE => _ACTION_COMPLETE ?? (_ACTION_COMPLETE = new ACTION_COMPLETEValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> that is measuring an action or operation is to be reset upon completion of that action or operation.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> that is measuring an action or operation is to be reset upon completion of that action or operation.<br/><br />
+
 		/// </summary>
 		public sealed class ACTION_COMPLETEValue : IEnumInstance
 		{
@@ -157,16 +170,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> that is measuring an action or operation is to be reset upon completion of that action or operation.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} that is measuring an action or operation is to be reset upon completion of that action or operation.&#10;
+";
 		}
 		private ANNUALValue _ANNUAL;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 12-month period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 12-month period.<br/><br />
+
 		/// </summary>
 		public ANNUALValue ANNUAL => _ANNUAL ?? (_ANNUAL = new ANNUALValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 12-month period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 12-month period.<br/><br />
+
 		/// </summary>
 		public sealed class ANNUALValue : IEnumInstance
 		{
@@ -183,16 +199,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> is to be reset at the end of a 12-month period.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} is to be reset at the end of a 12-month period.&#10;
+";
 		}
 		private DAYValue _DAY;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 24-hour period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 24-hour period.<br/><br />
+
 		/// </summary>
 		public DAYValue DAY => _DAY ?? (_DAY = new DAYValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 24-hour period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 24-hour period.<br/><br />
+
 		/// </summary>
 		public sealed class DAYValue : IEnumInstance
 		{
@@ -209,16 +228,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> is to be reset at the end of a 24-hour period.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} is to be reset at the end of a 24-hour period.&#10;
+";
 		}
 		private LIFEValue _LIFE;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is not reset and accumulates for the entire life of the piece of equipment.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is not reset and accumulates for the entire life of the piece of equipment.<br/><br />
+
 		/// </summary>
 		public LIFEValue LIFE => _LIFE ?? (_LIFE = new LIFEValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is not reset and accumulates for the entire life of the piece of equipment.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is not reset and accumulates for the entire life of the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class LIFEValue : IEnumInstance
 		{
@@ -235,16 +257,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> is not reset and accumulates for the entire life of the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} is not reset and accumulates for the entire life of the piece of equipment.&#10;
+";
 		}
 		private MAINTENANCEValue _MAINTENANCE;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset upon completion of a maintenance event.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset upon completion of a maintenance event.<br/><br />
+
 		/// </summary>
 		public MAINTENANCEValue MAINTENANCE => _MAINTENANCE ?? (_MAINTENANCE = new MAINTENANCEValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset upon completion of a maintenance event.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset upon completion of a maintenance event.<br/><br />
+
 		/// </summary>
 		public sealed class MAINTENANCEValue : IEnumInstance
 		{
@@ -261,16 +286,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> is to be reset upon completion of a maintenance event.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} is to be reset upon completion of a maintenance event.&#10;
+";
 		}
 		private MONTHValue _MONTH;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a monthly period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a monthly period.<br/><br />
+
 		/// </summary>
 		public MONTHValue MONTH => _MONTH ?? (_MONTH = new MONTHValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a monthly period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a monthly period.<br/><br />
+
 		/// </summary>
 		public sealed class MONTHValue : IEnumInstance
 		{
@@ -287,16 +315,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> is to be reset at the end of a monthly period.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} is to be reset at the end of a monthly period.&#10;
+";
 		}
 		private POWER_ONValue _POWER_ON;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset when power was applied to the piece of equipment after a planned or unplanned interruption of power has occurred.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset when power was applied to the piece of equipment after a planned or unplanned interruption of power has occurred.<br/><br />
+
 		/// </summary>
 		public POWER_ONValue POWER_ON => _POWER_ON ?? (_POWER_ON = new POWER_ONValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset when power was applied to the piece of equipment after a planned or unplanned interruption of power has occurred.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset when power was applied to the piece of equipment after a planned or unplanned interruption of power has occurred.<br/><br />
+
 		/// </summary>
 		public sealed class POWER_ONValue : IEnumInstance
 		{
@@ -313,16 +344,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> is to be reset when power was applied to the piece of equipment after a planned or unplanned interruption of power has occurred.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} is to be reset when power was applied to the piece of equipment after a planned or unplanned interruption of power has occurred.&#10;
+";
 		}
 		private SHIFTValue _SHIFT;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a work shift.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a work shift.<br/><br />
+
 		/// </summary>
 		public SHIFTValue SHIFT => _SHIFT ?? (_SHIFT = new SHIFTValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a work shift.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a work shift.<br/><br />
+
 		/// </summary>
 		public sealed class SHIFTValue : IEnumInstance
 		{
@@ -339,16 +373,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> is to be reset at the end of a work shift.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} is to be reset at the end of a work shift.&#10;
+";
 		}
 		private WEEKValue _WEEK;
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 7-day period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 7-day period.<br/><br />
+
 		/// </summary>
 		public WEEKValue WEEK => _WEEK ?? (_WEEK = new WEEKValue());
 
 		/// <summary>
-		/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 7-day period.
+		﻿/// <i>observation</i> of the <see cref="DataItem">DataItem</see> is to be reset at the end of a 7-day period.<br/><br />
+
 		/// </summary>
 		public sealed class WEEKValue : IEnumInstance
 		{
@@ -365,7 +402,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>observation</i> of the <see cref=""DataItem"">DataItem</see> is to be reset at the end of a 7-day period.";
+			public string Summary => @"&#10;&#10;&#10;{{term(observation)}} of the {{block(DataItem)}} is to be reset at the end of a 7-day period.&#10;
+";
 		}
 	}
 }

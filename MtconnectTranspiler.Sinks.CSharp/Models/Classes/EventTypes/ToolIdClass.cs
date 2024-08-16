@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::TOOL_ID">EventEnum::TOOL_ID</see>
+	﻿/// <see cref="EventEnum.TOOL_ID">EventEnum.TOOL_ID</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218456_275899_2220">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ToolIdClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218456_275899_2220";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::TOOL_ID"">EventEnum::TOOL_ID</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::TOOL_ID)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ToolId";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::TOOL_ID"">EventEnum::TOOL_ID</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

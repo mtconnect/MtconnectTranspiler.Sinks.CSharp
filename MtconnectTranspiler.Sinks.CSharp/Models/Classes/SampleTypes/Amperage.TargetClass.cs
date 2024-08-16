@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// goal of the operation or process.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.
+	﻿/// goal of the operation or process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218162_48762_1530">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AmperageTargetClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218162_48762_1530";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// goal of the operation or process.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.";
+		public string Summary => @"&#10;&#10;&#10;goal of the operation or process.
+
+**DEPRECATED** in *Version 1.6*.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Amperage.Target";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// goal of the operation or process.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

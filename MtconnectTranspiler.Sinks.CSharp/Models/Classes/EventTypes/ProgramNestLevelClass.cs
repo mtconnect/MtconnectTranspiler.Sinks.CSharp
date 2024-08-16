@@ -6,17 +6,22 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::PROGRAM_NEST_LEVEL">EventEnum::PROGRAM_NEST_LEVEL</see>  If an initial value is not defined, the nesting level associated with the highest or initial nesting level of the program <b>MUST</b> default to zero (0). 
+	﻿/// <see cref="EventEnum.PROGRAM_NEST_LEVEL">EventEnum.PROGRAM_NEST_LEVEL</see><br /><br />If an initial value is not defined, the nesting level associated with the highest or initial nesting level of the program <b>MUST</b> default to zero (0).<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218433_608443_2139">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProgramNestLevelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218433_608443_2139";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::PROGRAM_NEST_LEVEL"">EventEnum::PROGRAM_NEST_LEVEL</see>  If an initial value is not defined, the nesting level associated with the highest or initial nesting level of the program <b>MUST</b> default to zero (0). ";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::PROGRAM_NEST_LEVEL)}}
+
+If an initial value is not defined, the nesting level associated with the highest or initial nesting level of the program **MUST** default to zero (0).
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProgramNestLevel";
@@ -72,7 +77,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::PROGRAM_NEST_LEVEL"">EventEnum::PROGRAM_NEST_LEVEL</see>  If an initial value is not defined, the nesting level associated with the highest or initial nesting level of the program <b>MUST</b> default to zero (0). ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +128,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::PROGRAM_NEST_LEVEL"">EventEnum::PROGRAM_NEST_LEVEL</see>  If an initial value is not defined, the nesting level associated with the highest or initial nesting level of the program <b>MUST</b> default to zero (0). ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

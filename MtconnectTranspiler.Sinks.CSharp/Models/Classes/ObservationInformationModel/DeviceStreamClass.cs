@@ -5,17 +5,22 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.ObservationInformationModel
 {
 	/// <summary>
-	/// <i>organize</i>s data reported from a <see cref="Device">Device</see>./// Description
+	﻿/// <i>organize</i>s data reported from a <see cref="Device">Device</see>.<br/><br />Description<br/><see cref="DeviceStream">DeviceStream</see> <b>MUST</b> be provided for each <see cref="Device">Device</see> reporting data in an <i>MTConnectStreams Response Document</i>.<br /><br />If the response to the request for data from an <i>agent</i> does not contain any data for a specific <see cref="Device">Device</see>, an empty <see cref="DeviceStream">DeviceStream</see> entity <b>MAY</b> be created to indicate that the <see cref="Device">Device</see> exists, but there was no data available.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_02192189_58E6_456c_A679_CDDFF559DA00">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DeviceStreamClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_02192189_58E6_456c_A679_CDDFF559DA00";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{termplural(organize)}} data reported from a {{block(Device)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(DeviceStream)}} **MUST** be provided for each {{block(Device)}} reporting data in an {{term(MTConnectStreams Response Document)}}.
+
+If the response to the request for data from an {{term(agent)}} does not contain any data for a specific {{block(Device)}}, an empty {{block(DeviceStream)}} entity **MAY** be created to indicate that the {{block(Device)}} exists, but there was no data available.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "DeviceStream";
@@ -52,7 +57,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// name of the <see cref="Device">Device</see>.  The value reported for <see cref="DeviceStream::name" /> <b>MUST</b> be the same as the value defined for the <see cref="Device::name" /> in the <i>MTConnectDevices Response Document</i>.
+			﻿/// name of the <see cref="Device">Device</see>.<br /><br />The value reported for <see cref="DeviceStream.name">name in DeviceStream</see> <b>MUST</b> be the same as the value defined for the <see cref="Device.name">name in Device</see> in the <i>MTConnectDevices Response Document</i>.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -72,7 +78,10 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;name of the {{block(Device)}}.
+
+The value reported for {{property(DeviceStream::name)}} **MUST** be the same as the value defined for the {{property(Device::name)}} in the {{term(MTConnectDevices Response Document)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -106,7 +115,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
 			/// <summary>
-			/// uuid of the <see cref="Device">Device</see>.  The value reported for <see cref="DeviceStream::uuid" /> <b>MUST</b> be the same as the value defined for the <see cref="Device::uuid" /> of the same <see cref="Device">Device</see> in the <i>MTConnectDevices Response Document</i>.
+			﻿/// uuid of the <see cref="Device">Device</see>.  The value reported for <see cref="DeviceStream.uuid">uuid in DeviceStream</see> <b>MUST</b> be the same as the value defined for the <see cref="Device.uuid">uuid in Device</see> of the same <see cref="Device">Device</see> in the <i>MTConnectDevices Response Document</i>.<br/><br />
+
 			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
@@ -126,7 +136,8 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "uuid";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;uuid of the {{block(Device)}}.  The value reported for {{property(DeviceStream::uuid)}} **MUST** be the same as the value defined for the {{property(Device::uuid)}} of the same {{block(Device)}} in the {{term(MTConnectDevices Response Document)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -177,7 +188,7 @@ namespace Mtconnect.ObservationInformationModel
 				public string Name => "hasComponentStream";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>organize</i>s data reported from a <see cref=""Device"">Device</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

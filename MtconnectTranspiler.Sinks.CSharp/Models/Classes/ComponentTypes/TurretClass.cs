@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="ToolingDelivery">ToolingDelivery</see> composed of a tool mounting mechanism that holds any number of tools./// Description
+	﻿/// <see cref="ToolingDelivery">ToolingDelivery</see> composed of a tool mounting mechanism that holds any number of tools.<br/><br />Description<br/>Tools are positioned for use in the manufacturing process by rotating the <see cref="Turret">Turret</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605551876111_523604_2450">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TurretClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605551876111_523604_2450";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""ToolingDelivery"">ToolingDelivery</see> composed of a tool mounting mechanism that holds any number of tools./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(ToolingDelivery)}} composed of a tool mounting mechanism that holds any number of tools.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;Tools are positioned for use in the manufacturing process by rotating the {{block(Turret)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Turret";

@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.InterfaceInteractionModel.InterfaceTypes
 {
 	/// <summary>
-	/// <see cref="Interface">Interface</see> that coordinates the operations between two pieces of equipment, one of which controls the operation of a door.  The piece of equipment that is controlling the door <b>MUST</b> provide data item <see cref="DoorState">DoorState</see> as part of the set of information provided.
+	﻿/// <see cref="Interface">Interface</see> that coordinates the operations between two pieces of equipment, one of which controls the operation of a door.<br /><br />The piece of equipment that is controlling the door <b>MUST</b> provide data item <see cref="DoorState">DoorState</see> as part of the set of information provided.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622717425705_537671_1027">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DoorInterfaceGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622717425705_537671_1027";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Interface"">Interface</see> that coordinates the operations between two pieces of equipment, one of which controls the operation of a door.  The piece of equipment that is controlling the door <b>MUST</b> provide data item <see cref=""DoorState"">DoorState</see> as part of the set of information provided.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Interface)}} that coordinates the operations between two pieces of equipment, one of which controls the operation of a door.
+
+The piece of equipment that is controlling the door **MUST** provide data item {{block(DoorState)}} as part of the set of information provided.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "DoorInterface";

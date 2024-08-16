@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// set of capabilities that provide the rules and procedures used to transport information between an <i>agent</i> and a client software application through a <i>physical connection</i>.
+	﻿/// set of capabilities that provide the rules and procedures used to transport information between an <i>agent</i> and a client software application through a <i>physical connection</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375190_52478_2104">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TransportProtocolGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375190_52478_2104";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// set of capabilities that provide the rules and procedures used to transport information between an <i>agent</i> and a client software application through a <i>physical connection</i>.";
+		public string Summary => @"&#10;&#10;&#10;set of capabilities that provide the rules and procedures used to transport information between an {{term(agent)}} and a client software application through a {{term(physical connection)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "transport protocol";

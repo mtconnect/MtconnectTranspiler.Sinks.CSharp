@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// tabular representation of <see cref="EventEnum::FEATURE_MEASUREMENT">EventEnum::FEATURE_MEASUREMENT</see>  <see cref="FeatureMeasurement">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.
+	﻿/// tabular representation of <see cref="EventEnum.FEATURE_MEASUREMENT">EventEnum.FEATURE_MEASUREMENT</see><br /><br /><see cref="FeatureMeasurement">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678194652938_418535_17145">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FeatureMeasurementClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678194652938_418535_17145";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// tabular representation of <see cref=""EventEnum::FEATURE_MEASUREMENT"">EventEnum::FEATURE_MEASUREMENT</see>  <see cref=""FeatureMeasurement"">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.";
+		public string Summary => @"&#10;&#10;&#10;tabular representation of {{def(EventEnum::FEATURE_MEASUREMENT)}}
+
+{{block(FeatureMeasurement)}} **MAY** include a {{term(characteristic)}} in which case it **MAY** include a `CHARACTERISTIC_STATUS`.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "FeatureMeasurement";
@@ -72,7 +76,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// tabular representation of <see cref=""EventEnum::FEATURE_MEASUREMENT"">EventEnum::FEATURE_MEASUREMENT</see>  <see cref=""FeatureMeasurement"">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// tabular representation of <see cref=""EventEnum::FEATURE_MEASUREMENT"">EventEnum::FEATURE_MEASUREMENT</see>  <see cref=""FeatureMeasurement"">FeatureMeasurement</see> <b>MAY</b> include a <i>characteristic</i> in which case it <b>MAY</b> include a <c>CHARACTERISTIC_STATUS</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Structure">Structure</see> that provides a connection between <see cref="Component">Component</see> entities.
+	﻿/// <see cref="Structure">Structure</see> that provides a connection between <see cref="Component">Component</see> entities.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587597430378_591532_1084">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LinkClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1587597430378_591532_1084";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Structure"">Structure</see> that provides a connection between <see cref=""Component"">Component</see> entities.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Structure)}} that provides a connection between {{block(Component)}} entities.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Link";

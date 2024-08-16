@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> that extracts controlled amounts of heat to achieve a target temperature at a specified cooling rate./// Description
+	﻿/// <see cref="System">System</see> that extracts controlled amounts of heat to achieve a target temperature at a specified cooling rate.<br/><br />Description<br/>> Note: As an example, Energy Extraction Method can be via cooling water pipes running through the chamber.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605117088875_728711_1893">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CoolingClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605117088875_728711_1893";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> that extracts controlled amounts of heat to achieve a target temperature at a specified cooling rate./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} that extracts controlled amounts of heat to achieve a target temperature at a specified cooling rate.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;> Note: As an example, Energy Extraction Method can be via cooling water pipes running through the chamber.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Cooling";

@@ -5,17 +5,24 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 {
 	/// <summary>
-	/// references to a file with the three-dimensional geometry of the <see cref="Component">Component</see> or <see cref="Composition">Composition</see>./// Description
+	﻿/// references to a file with the three-dimensional geometry of the <see cref="Component">Component</see> or <see cref="Composition">Composition</see>.<br/><br />Description<br/>The geometry <b>MAY</b> have a transformation and a scale to position the <see cref="Component">Component</see> with respect to the other <see cref="Component">Component</see>s. A geometry file can contain a set of assembled items, in this case, the <see cref="SolidModel">SolidModel</see> references the <see cref="SolidModel.id">id in SolidModel</see> of the assembly model file and the specific item within that file.<br /><br />The <see cref="SolidModel">SolidModel</see> <b>MAY</b> provide a translation, rotation, and scale to correctly place it relative to the other geometries in the machine. If the <see cref="Component">Component</see> can move and has a <see cref="Motion">Motion</see> <see cref="Configuration">Configuration</see>, the <see cref="SolidModel">SolidModel</see> will move when the <see cref="Component">Component</see> or <see cref="Composition">Composition</see> moves.<br /><br />Either an <see cref="SolidModel.href">href in SolidModel</see> or a <see cref="SolidModel.modelIdRef">modelIdRef in SolidModel</see> and an <see cref="SolidModel.itemRef">itemRef in SolidModel</see> <b>MUST</b> be specified.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587596157073_106480_480">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SolidModelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1587596157073_106480_480";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+		public string Summary => @"&#10;&#10;&#10;references to a file with the three-dimensional geometry of the {{block(Component)}} or {{block(Composition)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;The geometry **MAY** have a transformation and a scale to position the {{block(Component)}} with respect to the other {{block(Component)}}s. A geometry file can contain a set of assembled items, in this case, the {{block(SolidModel)}} references the {{property(SolidModel::id)}} of the assembly model file and the specific item within that file.
+
+The {{block(SolidModel)}} **MAY** provide a translation, rotation, and scale to correctly place it relative to the other geometries in the machine. If the {{block(Component)}} can move and has a {{block(Motion)}} {{block(Configuration)}}, the {{block(SolidModel)}} will move when the {{block(Component)}} or {{block(Composition)}} moves.
+
+Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)}} and an {{property(SolidModel::itemRef)}} **MUST** be specified.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "SolidModel";
@@ -59,7 +66,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
 			/// <summary>
-			/// unique identifier for this element.
+			﻿/// unique identifier for this element.<br/><br />
+
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -79,7 +87,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "id";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for this element.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -130,7 +139,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "hasTransformation";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -181,7 +190,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "hasScale";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -215,7 +224,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// </summary>
 			public SolidModelIdRefProperty SolidModelIdRef { get; } = new SolidModelIdRefProperty();
 			/// <summary>
-			/// associated model file if an item reference is used.
+			﻿/// associated model file if an item reference is used.<br/><br />
+
 			/// </summary>
 			public sealed class SolidModelIdRefProperty : IProperty
 			{
@@ -235,7 +245,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "solidModelIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;associated model file if an item reference is used.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -269,7 +280,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
 			/// <summary>
-			/// <i>URL</i> giving the location of the <see cref="SolidModel">SolidModel</see>.   If not present, the model referenced in the <see cref="SolidModel::solidModelIdRef" /> is used.  <see cref="SolidModel::href" /> is of type <c>xlink:href</c> from the W3C XLink specification.
+			﻿/// <i>URL</i> giving the location of the <see cref="SolidModel">SolidModel</see>. <br /><br />If not present, the model referenced in the <see cref="SolidModel.solidModelIdRef">solidModelIdRef in SolidModel</see> is used.<br /><br /><br /><see cref="SolidModel.href">href in SolidModel</see> is of type <c>xlink:href</c> from the W3C XLink specification.<br/><br />
+
 			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
@@ -289,7 +301,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "href";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;{{term(URL)}} giving the location of the {{block(SolidModel)}}. 
+
+If not present, the model referenced in the {{property(SolidModel::solidModelIdRef)}} is used.
+
+{{property(SolidModel::href)}} is of type `xlink:href` from the W3C XLink specification.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -323,7 +340,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// </summary>
 			public ItemRefProperty ItemRef { get; } = new ItemRefProperty();
 			/// <summary>
-			/// reference to the item within the model within the related geometry. A <see cref="SolidModel::solidModelIdRef" /> <b>MUST</b> be given.   > Note: <c>Item</c> defined in ASME Y14.100 - A nonspecific term used to denote any unit or product, including materials, parts, assemblies, equipment, accessories, and computer software.
+			﻿/// reference to the item within the model within the related geometry. A <see cref="SolidModel.solidModelIdRef">solidModelIdRef in SolidModel</see> <b>MUST</b> be given. <br /><br />> Note: <c>Item</c> defined in ASME Y14.100 - A nonspecific term used to denote any unit or product, including materials, parts, assemblies, equipment, accessories, and computer software.<br/><br />
+
 			/// </summary>
 			public sealed class ItemRefProperty : IProperty
 			{
@@ -343,7 +361,10 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "itemRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;reference to the item within the model within the related geometry. A {{property(SolidModel::solidModelIdRef)}} **MUST** be given. 
+
+> Note: `Item` defined in ASME Y14.100 - A nonspecific term used to denote any unit or product, including materials, parts, assemblies, equipment, accessories, and computer software.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -377,7 +398,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// </summary>
 			public MediaTypeProperty MediaType { get; } = new MediaTypeProperty();
 			/// <summary>
-			/// format of the referenced document.
+			﻿/// format of the referenced document.<br/><br />
+
 			/// </summary>
 			public sealed class MediaTypeProperty : IProperty
 			{
@@ -397,7 +419,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "mediaType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;format of the referenced document.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -431,7 +454,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
 			/// <summary>
-			/// reference to the coordinate system for this <see cref="SolidModel">SolidModel</see>. 
+			﻿/// reference to the coordinate system for this <see cref="SolidModel">SolidModel</see>.<br /><br/><br />
+
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
@@ -451,7 +475,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "coordinateSystemIdRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;reference to the coordinate system for this {{block(SolidModel)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -485,7 +510,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// </summary>
 			public NativeUnitsProperty NativeUnits { get; } = new NativeUnitsProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::nativeUnits" />. See <see cref="DataItem">DataItem</see>.
+			﻿/// same as <see cref="DataItem.nativeUnits">nativeUnits in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class NativeUnitsProperty : IProperty
 			{
@@ -505,7 +531,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "nativeUnits";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::nativeUnits)}}. See {{sect(DataItem)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -539,7 +566,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::units" />. See <see cref="DataItem">DataItem</see>.
+			﻿/// same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
@@ -559,7 +587,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// references to a file with the three-dimensional geometry of the <see cref=""Component"">Component</see> or <see cref=""Composition"">Composition</see>./// Description";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::units)}}. See {{sect(DataItem)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

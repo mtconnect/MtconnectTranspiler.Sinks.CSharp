@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
-	/// <i>schema</i> defining a specific document encoded in XML. 
+	﻿/// <i>schema</i> defining a specific document encoded in XML.<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375192_452303_2110">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class XMLSchemaGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375192_452303_2110";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>schema</i> defining a specific document encoded in XML. ";
+		public string Summary => @"&#10;&#10;&#10;{{term(schema)}} defining a specific document encoded in XML.
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "XML Schema";

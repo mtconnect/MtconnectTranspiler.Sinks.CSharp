@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// identifier of the process plan that this occurrence belongs to. Synonyms include "routing id", "job id". 
+	﻿/// identifier of the process plan that this occurrence belongs to. Synonyms include "routing id", "job id".<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605549941144_813107_1698">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessAggregateIdProcessPlanClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605549941144_813107_1698";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// identifier of the process plan that this occurrence belongs to. Synonyms include ""routing id"", ""job id"". ";
+		public string Summary => @"&#10;&#10;&#10;identifier of the process plan that this occurrence belongs to. Synonyms include ""routing id"", ""job id"".&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessAggregateId.ProcessPlan";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identifier of the process plan that this occurrence belongs to. Synonyms include ""routing id"", ""job id"". ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

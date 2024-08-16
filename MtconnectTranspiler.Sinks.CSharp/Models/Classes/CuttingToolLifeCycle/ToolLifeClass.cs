@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
 	/// <summary>
-	/// cutting tool life as related to the assembly./// Description
+	﻿/// cutting tool life as related to the assembly.<br/><br />Description<br/><see cref="ToolLife">ToolLife</see> <b>MUST</b> be defined only for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingTool">CuttingTool</see> and <b>MUST NOT</b> be defined for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_37DECE45_091E_4f0c_AD72_EB481C0C1919">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ToolLifeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_37DECE45_091E_4f0c_AD72_EB481C0C1919";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// cutting tool life as related to the assembly./// Description";
+		public string Summary => @"&#10;&#10;&#10;cutting tool life as related to the assembly.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(ToolLife)}} **MUST** be defined only for the {{block(CuttingToolLifeCycle)}} of {{block(CuttingTool)}} and **MUST NOT** be defined for the {{block(CuttingToolLifeCycle)}} of {{block(CuttingToolArchetype)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ToolLife";
@@ -55,7 +58,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public CountDirectionProperty CountDirection { get; } = new CountDirectionProperty();
 			/// <summary>
-			/// indicates if the tool life counts from zero to maximum or maximum to zero.
+			﻿/// indicates if the tool life counts from zero to maximum or maximum to zero.<br/><br />
+
 			/// </summary>
 			public sealed class CountDirectionProperty : IProperty
 			{
@@ -75,7 +79,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "countDirection";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
+				public string Summary => @"&#10;&#10;&#10;indicates if the tool life counts from zero to maximum or maximum to zero.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -109,7 +114,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public InitialProperty Initial { get; } = new InitialProperty();
 			/// <summary>
-			/// initial life of the tool when it is new.
+			﻿/// initial life of the tool when it is new.<br/><br />
+
 			/// </summary>
 			public sealed class InitialProperty : IProperty
 			{
@@ -129,7 +135,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "initial";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
+				public string Summary => @"&#10;&#10;&#10;initial life of the tool when it is new.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -163,7 +170,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public LimitProperty Limit { get; } = new LimitProperty();
 			/// <summary>
-			/// end of life limit for the tool.
+			﻿/// end of life limit for the tool.<br/><br />
+
 			/// </summary>
 			public sealed class LimitProperty : IProperty
 			{
@@ -183,7 +191,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "limit";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
+				public string Summary => @"&#10;&#10;&#10;end of life limit for the tool.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -217,7 +226,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of tool life being accumulated.
+			﻿/// type of tool life being accumulated.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -237,7 +247,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
+				public string Summary => @"&#10;&#10;&#10;type of tool life being accumulated.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -271,7 +282,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public WarningProperty Warning { get; } = new WarningProperty();
 			/// <summary>
-			/// point at which a tool life warning will be raised.
+			﻿/// point at which a tool life warning will be raised.<br/><br />
+
 			/// </summary>
 			public sealed class WarningProperty : IProperty
 			{
@@ -291,7 +303,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "warning";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
+				public string Summary => @"&#10;&#10;&#10;point at which a tool life warning will be raised.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -325,7 +338,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// value of <see cref="ToolLife">ToolLife</see>.
+			﻿/// value of <see cref="ToolLife">ToolLife</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -345,7 +359,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// cutting tool life as related to the assembly./// Description";
+				public string Summary => @"&#10;&#10;&#10;value of {{block(ToolLife)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// word or set of words by which a part is known, addressed, or referred to.
+	﻿/// word or set of words by which a part is known, addressed, or referred to.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605549487494_183842_1168">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartKindIdPartNameClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605549487494_183842_1168";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// word or set of words by which a part is known, addressed, or referred to.";
+		public string Summary => @"&#10;&#10;&#10;word or set of words by which a part is known, addressed, or referred to.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PartKindId.PartName";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// word or set of words by which a part is known, addressed, or referred to.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

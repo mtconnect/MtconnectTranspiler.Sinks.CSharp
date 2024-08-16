@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// Media Access Control Address.   The unique physical address of the network hardware. 
+	﻿/// Media Access Control Address. <br /><br />The unique physical address of the network hardware.<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587752238592_527923_3821">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class NetworkMacAddressClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587752238592_527923_3821";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// Media Access Control Address.   The unique physical address of the network hardware. ";
+		public string Summary => @"&#10;&#10;&#10;Media Access Control Address. 
+
+The unique physical address of the network hardware.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Network.MacAddress";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// Media Access Control Address.   The unique physical address of the network hardware. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,7 +5,7 @@ using Package = Mtconnect.WIP_BestPracticesWithExamples.MachineTool;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MachineToolPackage : IPackage
 	{
 		/// <inheritdoc />

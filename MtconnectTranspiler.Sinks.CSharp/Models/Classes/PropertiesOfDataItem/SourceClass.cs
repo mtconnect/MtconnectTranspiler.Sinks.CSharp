@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
-	/// identifies the <see cref="Component">Component</see>, <see cref="DataItem">DataItem</see>, or <see cref="Composition">Composition</see> from which a measured value originates.
+	﻿/// identifies the <see cref="Component">Component</see>, <see cref="DataItem">DataItem</see>, or <see cref="Composition">Composition</see> from which a measured value originates.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_A2837EAA_7D27_45c0_B365_BC308844F978">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SourceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_A2837EAA_7D27_45c0_B365_BC308844F978";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
+		public string Summary => @"&#10;&#10;&#10;identifies the {{block(Component)}}, {{block(DataItem)}}, or {{block(Composition)}} from which a measured value originates.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Source";
@@ -53,7 +55,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public ComponentIdProperty ComponentId { get; } = new ComponentIdProperty();
 			/// <summary>
-			/// identifier of the <see cref="Component">Component</see> that represents the physical part of a piece of equipment where the data represented by the <see cref="DataItem">DataItem</see> originated.
+			﻿/// identifier of the <see cref="Component">Component</see> that represents the physical part of a piece of equipment where the data represented by the <see cref="DataItem">DataItem</see> originated.<br/><br />
+
 			/// </summary>
 			public sealed class ComponentIdProperty : IProperty
 			{
@@ -73,7 +76,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "componentId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
+				public string Summary => @"&#10;&#10;&#10;identifier of the {{block(Component)}} that represents the physical part of a piece of equipment where the data represented by the {{block(DataItem)}} originated.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -107,7 +111,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public CompositionIdProperty CompositionId { get; } = new CompositionIdProperty();
 			/// <summary>
-			/// identifier of the <see cref="Composition">Composition</see> that represents the physical part of a piece of equipment where the data represented by the <see cref="DataItem">DataItem</see> originated.
+			﻿/// identifier of the <see cref="Composition">Composition</see> that represents the physical part of a piece of equipment where the data represented by the <see cref="DataItem">DataItem</see> originated.<br/><br />
+
 			/// </summary>
 			public sealed class CompositionIdProperty : IProperty
 			{
@@ -127,7 +132,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "compositionId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
+				public string Summary => @"&#10;&#10;&#10;identifier of the {{block(Composition)}} that represents the physical part of a piece of equipment where the data represented by the {{block(DataItem)}} originated.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -161,7 +167,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public DataItemIdProperty DataItemId { get; } = new DataItemIdProperty();
 			/// <summary>
-			/// identifier of the <see cref="DataItem">DataItem</see> that represents the originally measured value of the data referenced by this <see cref="DataItem">DataItem</see>.
+			﻿/// identifier of the <see cref="DataItem">DataItem</see> that represents the originally measured value of the data referenced by this <see cref="DataItem">DataItem</see>.<br/><br />
+
 			/// </summary>
 			public sealed class DataItemIdProperty : IProperty
 			{
@@ -181,7 +188,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "dataItemId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
+				public string Summary => @"&#10;&#10;&#10;identifier of the {{block(DataItem)}} that represents the originally measured value of the data referenced by this {{block(DataItem)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -215,7 +223,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// identifier of the source entity.
+			﻿/// identifier of the source entity.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -235,7 +244,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identifies the <see cref=""Component"">Component</see>, <see cref=""DataItem"">DataItem</see>, or <see cref=""Composition"">Composition</see> from which a measured value originates.";
+				public string Summary => @"&#10;&#10;&#10;identifier of the source entity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

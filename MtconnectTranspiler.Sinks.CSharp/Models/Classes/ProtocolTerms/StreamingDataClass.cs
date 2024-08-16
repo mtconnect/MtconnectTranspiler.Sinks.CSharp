@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// <i>observation</i>s published by a piece of equipment defined by the <i>equipment metadata</i>.
+	﻿/// <i>observation</i>s published by a piece of equipment defined by the <i>equipment metadata</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375187_272252_2094">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StreamingDataClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375187_272252_2094";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>observation</i>s published by a piece of equipment defined by the <i>equipment metadata</i>.";
+		public string Summary => @"&#10;&#10;&#10;{{termplural(observation)}} published by a piece of equipment defined by the {{term(equipment metadata)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "streaming data";

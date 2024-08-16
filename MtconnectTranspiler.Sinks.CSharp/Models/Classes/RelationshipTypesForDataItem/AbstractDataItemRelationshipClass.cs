@@ -5,17 +5,20 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.RelationshipTypesForDataItem
 {
 	/// <summary>
-	/// association between a <see cref="DataItem">DataItem</see> and another entity./// Description
+	﻿/// association between a <see cref="DataItem">DataItem</see> and another entity.<br/><br />Description<br/><see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see> is an abstract entity and hence will be realized by specific <see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see> types in an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="Relationship Types for DataItem">Relationship Types for DataItem</see>.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1658942187874_859516_1061">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AbstractDataItemRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1658942187874_859516_1061";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";
+		public string Summary => @"&#10;&#10;&#10;association between a {{block(DataItem)}} and another entity.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(AbstractDataItemRelationship)}} is an abstract entity and hence will be realized by specific {{block(AbstractDataItemRelationship)}} types in an {{block(MTConnectDevices)}} entity. See {{package(Relationship Types for DataItem)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "AbstractDataItemRelationship";
@@ -51,7 +54,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
 			/// <summary>
-			/// reference to the related entity's <c>id</c>. 
+			﻿/// reference to the related entity's <c>id</c>.<br /><br/><br />
+
 			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
@@ -71,7 +75,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				public string Name => "idRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";
+				public string Summary => @"&#10;&#10;&#10;reference to the related entity's `id`.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -105,7 +110,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// descriptive name associated with this <see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see>.
+			﻿/// descriptive name associated with this <see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see>.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -125,7 +131,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// association between a <see cref=""DataItem"">DataItem</see> and another entity./// Description";
+				public string Summary => @"&#10;&#10;&#10;descriptive name associated with this {{block(AbstractDataItemRelationship)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

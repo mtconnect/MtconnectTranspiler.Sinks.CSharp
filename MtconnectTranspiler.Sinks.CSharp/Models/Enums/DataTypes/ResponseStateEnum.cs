@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845159692_780642_2366">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ResponseStateEnum
 	{
 		/// <summary>
-		/// <i>responder</i> is not ready to perform a service.
+		﻿/// <i>responder</i> is not ready to perform a service.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NOT_READY,
 		/// <summary>
-		/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.
+		﻿/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		READY,
 		/// <summary>
-		/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet been completed.
+		﻿/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet<br />been completed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTIVE,
 		/// <summary>
-		/// <i>responder</i> has completed the actions required to perform the service.
+		﻿/// <i>responder</i> has completed the actions required to perform the service.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COMPLETE,
 		/// <summary>
-		/// <i>responder</i> has detected a failure condition.
+		﻿/// <i>responder</i> has detected a failure condition.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -63,8 +69,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845159692_780642_2366">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ResponseStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -95,12 +102,14 @@ namespace Mtconnect.DataTypes
 
 		private NOT_READYValue _NOT_READY;
 		/// <summary>
-		/// <i>responder</i> is not ready to perform a service.
+		﻿/// <i>responder</i> is not ready to perform a service.<br/><br />
+
 		/// </summary>
 		public NOT_READYValue NOT_READY => _NOT_READY ?? (_NOT_READY = new NOT_READYValue());
 
 		/// <summary>
-		/// <i>responder</i> is not ready to perform a service.
+		﻿/// <i>responder</i> is not ready to perform a service.<br/><br />
+
 		/// </summary>
 		public sealed class NOT_READYValue : IEnumInstance
 		{
@@ -117,16 +126,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>responder</i> is not ready to perform a service.";
+			public string Summary => @"&#10;&#10;&#10;{{term(responder)}} is not ready to perform a service.&#10;
+";
 		}
 		private READYValue _READY;
 		/// <summary>
-		/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.
+		﻿/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.<br/><br />
+
 		/// </summary>
 		public READYValue READY => _READY ?? (_READY = new READYValue());
 
 		/// <summary>
-		/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.
+		﻿/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.<br/><br />
+
 		/// </summary>
 		public sealed class READYValue : IEnumInstance
 		{
@@ -143,16 +155,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.";
+			public string Summary => @"&#10;&#10;&#10;{{term(responder)}} is prepared to react to a {{term(request)}}, but no {{term(request)}} for service has been detected.&#10;
+";
 		}
 		private ACTIVEValue _ACTIVE;
 		/// <summary>
-		/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet been completed.
+		﻿/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet<br />been completed.<br/><br />
+
 		/// </summary>
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
 		/// <summary>
-		/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet been completed.
+		﻿/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet<br />been completed.<br/><br />
+
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -169,16 +184,20 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet been completed.";
+			public string Summary => @"&#10;&#10;&#10;{{term(responder)}} has detected and accepted a {{term(request)}} for a service and is in the process of performing the service, but the service has not yet
+been completed.&#10;
+";
 		}
 		private COMPLETEValue _COMPLETE;
 		/// <summary>
-		/// <i>responder</i> has completed the actions required to perform the service.
+		﻿/// <i>responder</i> has completed the actions required to perform the service.<br/><br />
+
 		/// </summary>
 		public COMPLETEValue COMPLETE => _COMPLETE ?? (_COMPLETE = new COMPLETEValue());
 
 		/// <summary>
-		/// <i>responder</i> has completed the actions required to perform the service.
+		﻿/// <i>responder</i> has completed the actions required to perform the service.<br/><br />
+
 		/// </summary>
 		public sealed class COMPLETEValue : IEnumInstance
 		{
@@ -195,16 +214,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>responder</i> has completed the actions required to perform the service.";
+			public string Summary => @"&#10;&#10;&#10;{{term(responder)}} has completed the actions required to perform the service.&#10;
+";
 		}
 		private FAILValue _FAIL;
 		/// <summary>
-		/// <i>responder</i> has detected a failure condition.
+		﻿/// <i>responder</i> has detected a failure condition.<br/><br />
+
 		/// </summary>
 		public FAILValue FAIL => _FAIL ?? (_FAIL = new FAILValue());
 
 		/// <summary>
-		/// <i>responder</i> has detected a failure condition.
+		﻿/// <i>responder</i> has detected a failure condition.<br/><br />
+
 		/// </summary>
 		public sealed class FAILValue : IEnumInstance
 		{
@@ -221,7 +243,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>responder</i> has detected a failure condition.";
+			public string Summary => @"&#10;&#10;&#10;{{term(responder)}} has detected a failure condition.&#10;
+";
 		}
 	}
 }

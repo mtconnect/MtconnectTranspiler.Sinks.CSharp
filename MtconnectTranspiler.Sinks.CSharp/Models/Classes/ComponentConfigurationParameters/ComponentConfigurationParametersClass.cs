@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
 	/// <summary>
-	/// set of <see cref="ParameterSet">ParameterSet</see>s that govern the functionality of the related <see cref="Component">Component</see>.
+	﻿/// set of <see cref="ParameterSet">ParameterSet</see>s that govern the functionality of the related <see cref="Component">Component</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197202508_829668_17803">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ComponentConfigurationParametersClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678197202508_829668_17803";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// set of <see cref=""ParameterSet"">ParameterSet</see>s that govern the functionality of the related <see cref=""Component"">Component</see>.";
+		public string Summary => @"&#10;&#10;&#10;set of {{block(ParameterSet)}}s that govern the functionality of the related {{block(Component)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ComponentConfigurationParameters";
@@ -71,7 +73,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public string Name => "hasParameterSet";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// set of <see cref=""ParameterSet"">ParameterSet</see>s that govern the functionality of the related <see cref=""Component"">Component</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

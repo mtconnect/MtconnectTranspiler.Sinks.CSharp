@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// communications method where a <i>client</i> transmits a message to an <i>agent</i>.  That message instructs the <i>agent</i> to respond with specific information.
+	﻿/// communications method where a <i>client</i> transmits a message to an <i>agent</i>.  That message instructs the <i>agent</i> to respond with specific information.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375181_991321_2071">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RequestClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375181_991321_2071";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// communications method where a <i>client</i> transmits a message to an <i>agent</i>.  That message instructs the <i>agent</i> to respond with specific information.";
+		public string Summary => @"&#10;&#10;&#10;communications method where a {{term(client)}} transmits a message to an {{term(agent)}}.  That message instructs the {{term(agent)}} to respond with specific information.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "request";

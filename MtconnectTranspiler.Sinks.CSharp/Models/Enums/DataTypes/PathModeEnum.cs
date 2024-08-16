@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_174664_2881">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PathModeEnum
 	{
 		/// <summary>
-		/// path is operating independently and without the influence of another path.
+		﻿/// path is operating independently and without the influence of another path.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INDEPENDENT,
 		/// <summary>
-		/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.
+		﻿/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MASTER,
 		/// <summary>
-		/// physical or logical parts which are not physically connected to each other but are operating together.
+		﻿/// physical or logical parts which are not physically connected to each other but are operating together.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SYNCHRONOUS,
 		/// <summary>
-		/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.
+		﻿/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -54,8 +59,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_174664_2881">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PathModeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -85,12 +91,14 @@ namespace Mtconnect.DataTypes
 
 		private INDEPENDENTValue _INDEPENDENT;
 		/// <summary>
-		/// path is operating independently and without the influence of another path.
+		﻿/// path is operating independently and without the influence of another path.<br/><br />
+
 		/// </summary>
 		public INDEPENDENTValue INDEPENDENT => _INDEPENDENT ?? (_INDEPENDENT = new INDEPENDENTValue());
 
 		/// <summary>
-		/// path is operating independently and without the influence of another path.
+		﻿/// path is operating independently and without the influence of another path.<br/><br />
+
 		/// </summary>
 		public sealed class INDEPENDENTValue : IEnumInstance
 		{
@@ -107,16 +115,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// path is operating independently and without the influence of another path.";
+			public string Summary => @"&#10;&#10;&#10;path is operating independently and without the influence of another path.&#10;
+";
 		}
 		private MASTERValue _MASTER;
 		/// <summary>
-		/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.
+		﻿/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.<br/><br />
+
 		/// </summary>
 		public MASTERValue MASTER => _MASTER ?? (_MASTER = new MASTERValue());
 
 		/// <summary>
-		/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.
+		﻿/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.<br/><br />
+
 		/// </summary>
 		public sealed class MASTERValue : IEnumInstance
 		{
@@ -133,16 +144,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// path provides information or state values that influences the operation of other <see cref=""DataItem"">DataItem</see> of similar type.";
+			public string Summary => @"&#10;&#10;&#10;path provides information or state values that influences the operation of other {{block(DataItem)}} of similar type.&#10;
+";
 		}
 		private SYNCHRONOUSValue _SYNCHRONOUS;
 		/// <summary>
-		/// physical or logical parts which are not physically connected to each other but are operating together.
+		﻿/// physical or logical parts which are not physically connected to each other but are operating together.<br/><br />
+
 		/// </summary>
 		public SYNCHRONOUSValue SYNCHRONOUS => _SYNCHRONOUS ?? (_SYNCHRONOUS = new SYNCHRONOUSValue());
 
 		/// <summary>
-		/// physical or logical parts which are not physically connected to each other but are operating together.
+		﻿/// physical or logical parts which are not physically connected to each other but are operating together.<br/><br />
+
 		/// </summary>
 		public sealed class SYNCHRONOUSValue : IEnumInstance
 		{
@@ -159,16 +173,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// physical or logical parts which are not physically connected to each other but are operating together.";
+			public string Summary => @"&#10;&#10;&#10;physical or logical parts which are not physically connected to each other but are operating together.&#10;
+";
 		}
 		private MIRRORValue _MIRROR;
 		/// <summary>
-		/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.
+		﻿/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.<br/><br />
+
 		/// </summary>
 		public MIRRORValue MIRROR => _MIRROR ?? (_MIRROR = new MIRRORValue());
 
 		/// <summary>
-		/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.
+		﻿/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.<br/><br />
+
 		/// </summary>
 		public sealed class MIRRORValue : IEnumInstance
 		{
@@ -185,7 +202,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.";
+			public string Summary => @"&#10;&#10;&#10;axes associated with the path are mirroring the motion of the `MASTER` path.&#10;
+";
 		}
 	}
 }

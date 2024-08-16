@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// subdivision of a <i>table</i> containing a set of <i>key-value pair</i>s representing <i>table cell</i>s.
+	﻿/// subdivision of a <i>table</i> containing a set of <i>key-value pair</i>s representing <i>table cell</i>s.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375189_248272_2100">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TableEntryClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375189_248272_2100";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// subdivision of a <i>table</i> containing a set of <i>key-value pair</i>s representing <i>table cell</i>s.";
+		public string Summary => @"&#10;&#10;&#10;subdivision of a {{term(table)}} containing a set of {{termplural(key-value pair)}} representing {{termplural(table cell)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "table entry";

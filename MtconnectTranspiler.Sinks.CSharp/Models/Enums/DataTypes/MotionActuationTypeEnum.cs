@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_C5CA1571_EA21_4123_942E_7329B6C61618">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum MotionActuationTypeEnum
 	{
 		/// <summary>
-		/// movement is initiated by the component.
+		﻿/// movement is initiated by the component.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DIRECT,
 		/// <summary>
-		/// motion is computed and is used for expressing an imaginary movement.
+		﻿/// motion is computed and is used for expressing an imaginary movement.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VIRTUAL,
 		/// <summary>
-		/// no actuation of this axis.  > Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.
+		﻿/// no actuation of this axis.<br /><br />> Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_C5CA1571_EA21_4123_942E_7329B6C61618">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MotionActuationTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private DIRECTValue _DIRECT;
 		/// <summary>
-		/// movement is initiated by the component.
+		﻿/// movement is initiated by the component.<br/><br />
+
 		/// </summary>
 		public DIRECTValue DIRECT => _DIRECT ?? (_DIRECT = new DIRECTValue());
 
 		/// <summary>
-		/// movement is initiated by the component.
+		﻿/// movement is initiated by the component.<br/><br />
+
 		/// </summary>
 		public sealed class DIRECTValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// movement is initiated by the component.";
+			public string Summary => @"&#10;&#10;&#10;movement is initiated by the component.&#10;
+";
 		}
 		private VIRTUALValue _VIRTUAL;
 		/// <summary>
-		/// motion is computed and is used for expressing an imaginary movement.
+		﻿/// motion is computed and is used for expressing an imaginary movement.<br/><br />
+
 		/// </summary>
 		public VIRTUALValue VIRTUAL => _VIRTUAL ?? (_VIRTUAL = new VIRTUALValue());
 
 		/// <summary>
-		/// motion is computed and is used for expressing an imaginary movement.
+		﻿/// motion is computed and is used for expressing an imaginary movement.<br/><br />
+
 		/// </summary>
 		public sealed class VIRTUALValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// motion is computed and is used for expressing an imaginary movement.";
+			public string Summary => @"&#10;&#10;&#10;motion is computed and is used for expressing an imaginary movement.&#10;
+";
 		}
 		private NONEValue _NONE;
 		/// <summary>
-		/// no actuation of this axis.  > Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.
+		﻿/// no actuation of this axis.<br /><br />> Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.<br/><br />
+
 		/// </summary>
 		public NONEValue NONE => _NONE ?? (_NONE = new NONEValue());
 
 		/// <summary>
-		/// no actuation of this axis.  > Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.
+		﻿/// no actuation of this axis.<br /><br />> Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.<br/><br />
+
 		/// </summary>
 		public sealed class NONEValue : IEnumInstance
 		{
@@ -149,7 +162,10 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// no actuation of this axis.  > Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.";
+			public string Summary => @"&#10;&#10;&#10;no actuation of this axis.
+
+> Note: Actuation of `NONE` can be either a derived `REVOLUTE` or `PRISMATIC` motion or static `FIXED` relationship.&#10;
+";
 		}
 	}
 }

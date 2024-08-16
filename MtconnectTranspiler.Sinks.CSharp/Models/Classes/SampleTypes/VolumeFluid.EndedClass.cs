@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// boundary when an activity or an event terminates.
+	﻿/// boundary when an activity or an event terminates.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622200129015_119874_3303">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class VolumeFluidEndedClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622200129015_119874_3303";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// boundary when an activity or an event terminates.";
+		public string Summary => @"&#10;&#10;&#10;boundary when an activity or an event terminates.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "VolumeFluid.Ended";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// boundary when an activity or an event terminates.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

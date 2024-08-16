@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// identifier of the person currently responsible for performing maintenance on the piece of equipment.
+	﻿/// identifier of the person currently responsible for performing maintenance on the piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218464_860925_2244">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class UserMaintenanceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218464_860925_2244";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// identifier of the person currently responsible for performing maintenance on the piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;identifier of the person currently responsible for performing maintenance on the piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "User.Maintenance";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identifier of the person currently responsible for performing maintenance on the piece of equipment.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

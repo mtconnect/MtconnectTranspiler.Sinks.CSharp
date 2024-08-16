@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::POWER_SOURCE">EventEnum::POWER_SOURCE</see> that is <see cref="DataItemSubTypeEnum::SECONDARY">DataItemSubTypeEnum::SECONDARY</see>
+	﻿/// <see cref="EventEnum.POWER_SOURCE">EventEnum.POWER_SOURCE</see> that is <see cref="DataItemSubTypeEnum.SECONDARY">DataItemSubTypeEnum.SECONDARY</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1696872166479_807394_3679">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PowerSourceSecondaryClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1696872166479_807394_3679";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::POWER_SOURCE"">EventEnum::POWER_SOURCE</see> that is <see cref=""DataItemSubTypeEnum::SECONDARY"">DataItemSubTypeEnum::SECONDARY</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::POWER_SOURCE)}} that is {{def(DataItemSubTypeEnum::SECONDARY)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PowerSource.Secondary";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::POWER_SOURCE"">EventEnum::POWER_SOURCE</see> that is <see cref=""DataItemSubTypeEnum::SECONDARY"">DataItemSubTypeEnum::SECONDARY</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

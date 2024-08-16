@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
-	/// structured text file encoded using <i>XML</i>.
+	﻿/// structured text file encoded using <i>XML</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623669632303_353398_16887">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class XMLDocumentGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623669632303_353398_16887";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+		public string Summary => @"&#10;&#10;&#10;structured text file encoded using {{term(XML)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "XML Document";
@@ -74,7 +76,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				public string Name => "has document header";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -125,7 +127,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				public string Name => "has document body";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -176,7 +178,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				public string Name => "has namespace";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -227,7 +229,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				public string Name => "has xml schema";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// structured text file encoded using <i>XML</i>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

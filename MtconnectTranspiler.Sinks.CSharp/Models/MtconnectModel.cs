@@ -7,7 +7,7 @@ namespace Mtconnect
 	/// <summary>
 	/// Static root for the MTConnect SysML model.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public static class MtconnectModel
 	{
 		/// <summary>

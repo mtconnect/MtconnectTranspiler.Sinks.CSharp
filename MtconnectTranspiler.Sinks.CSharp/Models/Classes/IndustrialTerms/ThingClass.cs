@@ -5,17 +5,25 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
-	/// property holder.  > Note 1 to entry: Property holders are used to define properties that have no specific owner, or “top level” properties. These properties are generally referenced by other properties. <seealso href="https://www.google.com/search?q=https://www.omg.org/spec/NIEM-UML/1.0&btnI=I">https://www.omg.org/spec/NIEM-UML/1.0</seealso>  > Note 2 to entry: Property holder is equivalent to one topmost class of which all other classes are subclasses.  !MTConnect Terms.png!
+	﻿/// property holder.<br /><br />> Note 1 to entry: Property holders are used to define properties that have no specific owner, or “top level” properties. These properties are generally referenced by other properties. <seealso href="https://www.google.com/search?q=https://www.omg.org/spec/NIEM-UML/1.0&btnI=I">https://www.omg.org/spec/NIEM-UML/1.0</seealso><br /><br />> Note 2 to entry: Property holder is equivalent to one topmost class of which all other classes are subclasses.<br /><br />!MTConnect Terms.png!<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581733974550_623533_615">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ThingClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1581733974550_623533_615";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// property holder.  > Note 1 to entry: Property holders are used to define properties that have no specific owner, or “top level” properties. These properties are generally referenced by other properties. <seealso href=""https://www.google.com/search?q=https://www.omg.org/spec/NIEM-UML/1.0&btnI=I"">https://www.omg.org/spec/NIEM-UML/1.0</seealso>  > Note 2 to entry: Property holder is equivalent to one topmost class of which all other classes are subclasses.  !MTConnect Terms.png!";
+		public string Summary => @"&#10;&#10;&#10;property holder.
+
+> Note 1 to entry: Property holders are used to define properties that have no specific owner, or “top level” properties. These properties are generally referenced by other properties. {{cite(https://www.omg.org/spec/NIEM-UML/1.0)}}
+
+> Note 2 to entry: Property holder is equivalent to one topmost class of which all other classes are subclasses.
+
+!MTConnect Terms.png!&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Thing";

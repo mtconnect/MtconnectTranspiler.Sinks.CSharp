@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// accumulation of actions or activities that were attempted, but terminated before they could be completed.
+	﻿/// accumulation of actions or activities that were attempted, but terminated before they could be completed.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622197600320_62104_719">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TransferCountAbortedClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622197600320_62104_719";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// accumulation of actions or activities that were attempted, but terminated before they could be completed.";
+		public string Summary => @"&#10;&#10;&#10;accumulation of actions or activities that were attempted, but terminated before they could be completed.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "TransferCount.Aborted";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// accumulation of actions or activities that were attempted, but terminated before they could be completed.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

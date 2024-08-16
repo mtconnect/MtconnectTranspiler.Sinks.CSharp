@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.RelationshipTypesForDataItem
 {
 	/// <summary>
-	/// <see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see> that provides a semantic reference to another <see cref="Specification">Specification</see> described by <see cref="SpecificationRelationship::type" /> and <see cref="SpecificationRelationship::idRef" />.
+	﻿/// <see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see> that provides a semantic reference to another <see cref="Specification">Specification</see> described by <see cref="SpecificationRelationship.type">type in SpecificationRelationship</see> and <see cref="SpecificationRelationship.idRef">idRef in SpecificationRelationship</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605645496116_206752_2923">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SpecificationRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605645496116_206752_2923";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""AbstractDataItemRelationship"">AbstractDataItemRelationship</see> that provides a semantic reference to another <see cref=""Specification"">Specification</see> described by <see cref=""SpecificationRelationship::type"" /> and <see cref=""SpecificationRelationship::idRef"" />.";
+		public string Summary => @"&#10;&#10;&#10;{{block(AbstractDataItemRelationship)}} that provides a semantic reference to another {{block(Specification)}} described by {{property(SpecificationRelationship::type)}} and {{property(SpecificationRelationship::idRef)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "SpecificationRelationship";
@@ -54,7 +56,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// specifies how the <see cref="Specification">Specification</see> is related.
+			﻿/// specifies how the <see cref="Specification">Specification</see> is related.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -74,7 +77,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""AbstractDataItemRelationship"">AbstractDataItemRelationship</see> that provides a semantic reference to another <see cref=""Specification"">Specification</see> described by <see cref=""SpecificationRelationship::type"" /> and <see cref=""SpecificationRelationship::idRef"" />.";
+				public string Summary => @"&#10;&#10;&#10;specifies how the {{block(Specification)}} is related.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

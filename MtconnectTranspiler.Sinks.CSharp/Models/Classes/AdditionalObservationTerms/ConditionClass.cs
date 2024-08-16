@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
 	/// <summary>
-	/// An indicator of the ability of a piece of equipment or <i>Component</i> to function to specification.
+	﻿/// An indicator of the ability of a piece of equipment or <i>Component</i> to function to specification.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375148_768097_1965">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConditionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375148_768097_1965";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// An indicator of the ability of a piece of equipment or <i>Component</i> to function to specification.";
+		public string Summary => @"&#10;&#10;&#10;An indicator of the ability of a piece of equipment or {{term(Component)}} to function to specification.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Condition";

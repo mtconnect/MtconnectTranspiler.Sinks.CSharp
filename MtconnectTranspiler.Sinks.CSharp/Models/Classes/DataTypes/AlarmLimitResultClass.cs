@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmLimitResultClass : IClass
 	{
 		/// <inheritdoc />
@@ -53,7 +53,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public UpperLimitProperty UpperLimit { get; } = new UpperLimitProperty();
 			/// <summary>
-			/// upper conformance boundary for a variable.  > Note: immediate concern or action may be required.  
+			﻿/// upper conformance boundary for a variable.<br /><br />> Note: immediate concern or action may be required.<br /><br /><br/><br />
+
 			/// </summary>
 			public sealed class UpperLimitProperty : IProperty
 			{
@@ -73,7 +74,12 @@ namespace Mtconnect.DataTypes
 				public string Name => "UpperLimit";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;upper conformance boundary for a variable.
+
+> Note: immediate concern or action may be required.
+
+&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -107,7 +113,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public UpperWarningProperty UpperWarning { get; } = new UpperWarningProperty();
 			/// <summary>
-			/// upper boundary indicating increased concern and supervision may be required.
+			﻿/// upper boundary indicating increased concern and supervision may be required.<br/><br />
+
 			/// </summary>
 			public sealed class UpperWarningProperty : IProperty
 			{
@@ -127,7 +134,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "UpperWarning";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;upper boundary indicating increased concern and supervision may be required.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -161,7 +169,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public LowerWarningProperty LowerWarning { get; } = new LowerWarningProperty();
 			/// <summary>
-			/// lower boundary indicating increased concern and supervision may be required.
+			﻿/// lower boundary indicating increased concern and supervision may be required.<br/><br />
+
 			/// </summary>
 			public sealed class LowerWarningProperty : IProperty
 			{
@@ -181,7 +190,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "LowerWarning";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;lower boundary indicating increased concern and supervision may be required.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -215,7 +225,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public LowerLimitProperty LowerLimit { get; } = new LowerLimitProperty();
 			/// <summary>
-			/// lower conformance boundary for a variable.  > Note: immediate concern or action may be required.  
+			﻿/// lower conformance boundary for a variable.<br /><br />> Note: immediate concern or action may be required.<br /><br /><br/><br />
+
 			/// </summary>
 			public sealed class LowerLimitProperty : IProperty
 			{
@@ -235,7 +246,12 @@ namespace Mtconnect.DataTypes
 				public string Name => "LowerLimit";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;lower conformance boundary for a variable.
+
+> Note: immediate concern or action may be required.
+
+&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

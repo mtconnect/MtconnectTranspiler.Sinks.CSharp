@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
 	/// <summary>
-	/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.
+	﻿/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_2D0A9D8F_2538_4f46_8B83_6B1988818511">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ComponentRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_2D0A9D8F_2538_4f46_8B83_6B1988818511";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ComponentRelationship";
@@ -54,7 +56,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
 			/// <summary>
-			/// reference to the associated <see cref="Component">Component</see>.
+			﻿/// reference to the associated <see cref="Component">Component</see>.<br/><br />
+
 			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
@@ -74,7 +77,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "idRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.";
+				public string Summary => @"&#10;&#10;&#10;reference to the associated {{block(Component)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1587753011315_305832_4223">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum DirectionLinearEnum
 	{
 		/// <summary>
-		/// linear position is increasing.
+		﻿/// linear position is increasing.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POSITIVE,
 		/// <summary>
-		/// linear position is decreasing.
+		﻿/// linear position is decreasing.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NEGATIVE,
 		/// <summary>
-		/// no direction.
+		﻿/// no direction.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1587753011315_305832_4223">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DirectionLinearEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private POSITIVEValue _POSITIVE;
 		/// <summary>
-		/// linear position is increasing.
+		﻿/// linear position is increasing.<br/><br />
+
 		/// </summary>
 		public POSITIVEValue POSITIVE => _POSITIVE ?? (_POSITIVE = new POSITIVEValue());
 
 		/// <summary>
-		/// linear position is increasing.
+		﻿/// linear position is increasing.<br/><br />
+
 		/// </summary>
 		public sealed class POSITIVEValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// linear position is increasing.";
+			public string Summary => @"&#10;&#10;&#10;linear position is increasing.&#10;
+";
 		}
 		private NEGATIVEValue _NEGATIVE;
 		/// <summary>
-		/// linear position is decreasing.
+		﻿/// linear position is decreasing.<br/><br />
+
 		/// </summary>
 		public NEGATIVEValue NEGATIVE => _NEGATIVE ?? (_NEGATIVE = new NEGATIVEValue());
 
 		/// <summary>
-		/// linear position is decreasing.
+		﻿/// linear position is decreasing.<br/><br />
+
 		/// </summary>
 		public sealed class NEGATIVEValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// linear position is decreasing.";
+			public string Summary => @"&#10;&#10;&#10;linear position is decreasing.&#10;
+";
 		}
 		private NONEValue _NONE;
 		/// <summary>
-		/// no direction.
+		﻿/// no direction.<br/><br />
+
 		/// </summary>
 		public NONEValue NONE => _NONE ?? (_NONE = new NONEValue());
 
 		/// <summary>
-		/// no direction.
+		﻿/// no direction.<br/><br />
+
 		/// </summary>
 		public sealed class NONEValue : IEnumInstance
 		{
@@ -149,7 +162,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// no direction.";
+			public string Summary => @"&#10;&#10;&#10;no direction.&#10;
+";
 		}
 	}
 }

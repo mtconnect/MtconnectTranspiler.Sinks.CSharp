@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.XMLTerms
 {
 	/// <summary>
-	/// first <i>structural element</i> provided in a <i>response document</i> encoded using XML. 
+	﻿/// first <i>structural element</i> provided in a <i>response document</i> encoded using XML. <br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375184_560597_2079">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RootElementGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375184_560597_2079";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// first <i>structural element</i> provided in a <i>response document</i> encoded using XML. ";
+		public string Summary => @"&#10;&#10;&#10;first {{term(structural element)}} provided in a {{term(response document)}} encoded using XML. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "root element";

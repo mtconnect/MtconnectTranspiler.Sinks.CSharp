@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary.IndustrialTerms
 {
 	/// <summary>
-	/// indicator of the <i>condition</i>.
+	﻿/// indicator of the <i>condition</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1629890116098_235774_26">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConditionStateClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1629890116098_235774_26";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// indicator of the <i>condition</i>.";
+		public string Summary => @"&#10;&#10;&#10;indicator of the {{term(condition)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "condition state";

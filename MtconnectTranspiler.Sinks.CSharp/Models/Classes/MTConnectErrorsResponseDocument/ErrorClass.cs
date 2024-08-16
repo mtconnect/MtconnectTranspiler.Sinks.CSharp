@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument
 {
 	/// <summary>
-	/// error encountered by an <i>agent</i> when responding to a <i>request</i>.
+	﻿/// error encountered by an <i>agent</i> when responding to a <i>request</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1579560710732_245440_6708">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ErrorClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1579560710732_245440_6708";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// error encountered by an <i>agent</i> when responding to a <i>request</i>.";
+		public string Summary => @"&#10;&#10;&#10;error encountered by an {{term(agent)}} when responding to a {{term(request)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Error";
@@ -51,7 +53,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 			/// </summary>
 			public ErrorCodeProperty ErrorCode { get; } = new ErrorCodeProperty();
 			/// <summary>
-			/// descriptive code that indicates the type of error that was encountered by an <i>agent</i>.
+			﻿/// descriptive code that indicates the type of error that was encountered by an <i>agent</i>.<br/><br />
+
 			/// </summary>
 			public sealed class ErrorCodeProperty : IProperty
 			{
@@ -71,7 +74,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				public string Name => "errorCode";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// error encountered by an <i>agent</i> when responding to a <i>request</i>.";
+				public string Summary => @"&#10;&#10;&#10;descriptive code that indicates the type of error that was encountered by an {{term(agent)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -105,7 +109,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// textual description of the error and any additional information an <i>agent</i> is capable of providing regarding a specific error.
+			﻿/// textual description of the error and any additional information an <i>agent</i> is capable of providing regarding a specific error.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -125,7 +130,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// error encountered by an <i>agent</i> when responding to a <i>request</i>.";
+				public string Summary => @"&#10;&#10;&#10;textual description of the error and any additional information an {{term(agent)}} is capable of providing regarding a specific error.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1634824001211_966890_187">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ToolLifeEnum
 	{
 		/// <summary>
-		/// tool life measured in minutes.   All units for minimum, maximum, and nominal <b>MUST</b> be provided in minutes.
+		﻿/// tool life measured in minutes. <br /><br />All units for minimum, maximum, and nominal <b>MUST</b> be provided in minutes.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MINUTES,
 		/// <summary>
-		/// tool life measured in parts.   All units for minimum, maximum, and nominal <b>MUST</b> be provided as the number of parts.
+		﻿/// tool life measured in parts. <br /><br />All units for minimum, maximum, and nominal <b>MUST</b> be provided as the number of parts.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_COUNT,
 		/// <summary>
-		/// tool life measured in tool wear.   Wear <b>MUST</b> be provided in millimeters as an offset to nominal. All units for minimum, maximum, and nominal <b>MUST</b> be given as millimeter offsets as well. The standard will only consider dimensional wear at this time.
+		﻿/// tool life measured in tool wear. <br /><br />Wear <b>MUST</b> be provided in millimeters as an offset to nominal. All units for minimum, maximum, and nominal <b>MUST</b> be given as millimeter offsets as<br />well. The standard will only consider dimensional wear at this time.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1634824001211_966890_187">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ToolLifeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private MINUTESValue _MINUTES;
 		/// <summary>
-		/// tool life measured in minutes.   All units for minimum, maximum, and nominal <b>MUST</b> be provided in minutes.
+		﻿/// tool life measured in minutes. <br /><br />All units for minimum, maximum, and nominal <b>MUST</b> be provided in minutes.<br/><br />
+
 		/// </summary>
 		public MINUTESValue MINUTES => _MINUTES ?? (_MINUTES = new MINUTESValue());
 
 		/// <summary>
-		/// tool life measured in minutes.   All units for minimum, maximum, and nominal <b>MUST</b> be provided in minutes.
+		﻿/// tool life measured in minutes. <br /><br />All units for minimum, maximum, and nominal <b>MUST</b> be provided in minutes.<br/><br />
+
 		/// </summary>
 		public sealed class MINUTESValue : IEnumInstance
 		{
@@ -97,16 +104,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// tool life measured in minutes.   All units for minimum, maximum, and nominal <b>MUST</b> be provided in minutes.";
+			public string Summary => @"&#10;&#10;&#10;tool life measured in minutes. 
+
+All units for minimum, maximum, and nominal **MUST** be provided in minutes.&#10;
+";
 		}
 		private PART_COUNTValue _PART_COUNT;
 		/// <summary>
-		/// tool life measured in parts.   All units for minimum, maximum, and nominal <b>MUST</b> be provided as the number of parts.
+		﻿/// tool life measured in parts. <br /><br />All units for minimum, maximum, and nominal <b>MUST</b> be provided as the number of parts.<br/><br />
+
 		/// </summary>
 		public PART_COUNTValue PART_COUNT => _PART_COUNT ?? (_PART_COUNT = new PART_COUNTValue());
 
 		/// <summary>
-		/// tool life measured in parts.   All units for minimum, maximum, and nominal <b>MUST</b> be provided as the number of parts.
+		﻿/// tool life measured in parts. <br /><br />All units for minimum, maximum, and nominal <b>MUST</b> be provided as the number of parts.<br/><br />
+
 		/// </summary>
 		public sealed class PART_COUNTValue : IEnumInstance
 		{
@@ -123,16 +135,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// tool life measured in parts.   All units for minimum, maximum, and nominal <b>MUST</b> be provided as the number of parts.";
+			public string Summary => @"&#10;&#10;&#10;tool life measured in parts. 
+
+All units for minimum, maximum, and nominal **MUST** be provided as the number of parts.&#10;
+";
 		}
 		private WEARValue _WEAR;
 		/// <summary>
-		/// tool life measured in tool wear.   Wear <b>MUST</b> be provided in millimeters as an offset to nominal. All units for minimum, maximum, and nominal <b>MUST</b> be given as millimeter offsets as well. The standard will only consider dimensional wear at this time.
+		﻿/// tool life measured in tool wear. <br /><br />Wear <b>MUST</b> be provided in millimeters as an offset to nominal. All units for minimum, maximum, and nominal <b>MUST</b> be given as millimeter offsets as<br />well. The standard will only consider dimensional wear at this time.<br/><br />
+
 		/// </summary>
 		public WEARValue WEAR => _WEAR ?? (_WEAR = new WEARValue());
 
 		/// <summary>
-		/// tool life measured in tool wear.   Wear <b>MUST</b> be provided in millimeters as an offset to nominal. All units for minimum, maximum, and nominal <b>MUST</b> be given as millimeter offsets as well. The standard will only consider dimensional wear at this time.
+		﻿/// tool life measured in tool wear. <br /><br />Wear <b>MUST</b> be provided in millimeters as an offset to nominal. All units for minimum, maximum, and nominal <b>MUST</b> be given as millimeter offsets as<br />well. The standard will only consider dimensional wear at this time.<br/><br />
+
 		/// </summary>
 		public sealed class WEARValue : IEnumInstance
 		{
@@ -149,7 +166,11 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// tool life measured in tool wear.   Wear <b>MUST</b> be provided in millimeters as an offset to nominal. All units for minimum, maximum, and nominal <b>MUST</b> be given as millimeter offsets as well. The standard will only consider dimensional wear at this time.";
+			public string Summary => @"&#10;&#10;&#10;tool life measured in tool wear. 
+
+Wear **MUST** be provided in millimeters as an offset to nominal. All units for minimum, maximum, and nominal **MUST** be given as millimeter offsets as
+well. The standard will only consider dimensional wear at this time.&#10;
+";
 		}
 	}
 }

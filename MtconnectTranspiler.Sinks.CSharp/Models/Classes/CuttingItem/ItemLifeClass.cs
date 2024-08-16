@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 {
 	/// <summary>
-	/// life of a <see cref="CuttingItem">CuttingItem</see>.
+	﻿/// life of a <see cref="CuttingItem">CuttingItem</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_CC4F8633_BAAC_47e8_9EFB_2BFC62215FC8">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ItemLifeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_CC4F8633_BAAC_47e8_9EFB_2BFC62215FC8";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
+		public string Summary => @"&#10;&#10;&#10;life of a {{block(CuttingItem)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ItemLife";
@@ -55,7 +57,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// </summary>
 			public CountDirectionProperty CountDirection { get; } = new CountDirectionProperty();
 			/// <summary>
-			/// indicates if the item life counts from zero to maximum or maximum to zero.
+			﻿/// indicates if the item life counts from zero to maximum or maximum to zero.<br/><br />
+
 			/// </summary>
 			public sealed class CountDirectionProperty : IProperty
 			{
@@ -75,7 +78,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public string Name => "countDirection";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;indicates if the item life counts from zero to maximum or maximum to zero.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -109,7 +113,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// </summary>
 			public InitialProperty Initial { get; } = new InitialProperty();
 			/// <summary>
-			/// initial life of the item when it is new.
+			﻿/// initial life of the item when it is new.<br/><br />
+
 			/// </summary>
 			public sealed class InitialProperty : IProperty
 			{
@@ -129,7 +134,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public string Name => "initial";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;initial life of the item when it is new.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -163,7 +169,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// </summary>
 			public LimitProperty Limit { get; } = new LimitProperty();
 			/// <summary>
-			/// end of life limit for this item.
+			﻿/// end of life limit for this item.<br/><br />
+
 			/// </summary>
 			public sealed class LimitProperty : IProperty
 			{
@@ -183,7 +190,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public string Name => "limit";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;end of life limit for this item.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -217,7 +225,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of item life being accumulated.
+			﻿/// type of item life being accumulated.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -237,7 +246,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;type of item life being accumulated.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -271,7 +281,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// </summary>
 			public WarningProperty Warning { get; } = new WarningProperty();
 			/// <summary>
-			/// point at which a item life warning will be raised. 
+			﻿/// point at which a item life warning will be raised.<br /><br/><br />
+
 			/// </summary>
 			public sealed class WarningProperty : IProperty
 			{
@@ -291,7 +302,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public string Name => "warning";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;point at which a item life warning will be raised.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -325,7 +337,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// value of <see cref="ItemLife">ItemLife</see>.
+			﻿/// value of <see cref="ItemLife">ItemLife</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -345,7 +358,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// life of a <see cref=""CuttingItem"">CuttingItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;value of {{block(ItemLife)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>Component</i> belonging to a <i>Component</i> and not composed of any <i>Component</i>s.
+	﻿/// <i>Component</i> belonging to a <i>Component</i> and not composed of any <i>Component</i>s.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375147_715142_1964">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375147_715142_1964";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>Component</i> belonging to a <i>Component</i> and not composed of any <i>Component</i>s.";
+		public string Summary => @"&#10;&#10;&#10;{{term(Component)}} belonging to a {{term(Component)}} and not composed of any {{termplural(Component)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Composition";
@@ -71,7 +73,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "belongs to";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>Component</i> belonging to a <i>Component</i> and not composed of any <i>Component</i>s.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
-	/// numeric target or expected value.
+	﻿/// numeric target or expected value.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580316543777_893941_47725">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class NominalClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580316543777_893941_47725";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// numeric target or expected value.";
+		public string Summary => @"&#10;&#10;&#10;numeric target or expected value.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Nominal";
@@ -67,7 +69,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// numeric target or expected value.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

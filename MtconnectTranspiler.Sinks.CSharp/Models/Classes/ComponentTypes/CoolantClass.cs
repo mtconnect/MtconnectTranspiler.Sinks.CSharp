@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> that provides distribution and management of fluids that remove heat from a piece of equipment.
+	﻿/// <see cref="System">System</see> that provides distribution and management of fluids that remove heat from a piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381979_456626_42219">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CoolantClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381979_456626_42219";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> that provides distribution and management of fluids that remove heat from a piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} that provides distribution and management of fluids that remove heat from a piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Coolant";
@@ -71,7 +73,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesConcentration";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides distribution and management of fluids that remove heat from a piece of equipment.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

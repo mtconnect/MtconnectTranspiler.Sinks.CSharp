@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579537199908_332626_9197">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FormatTypeEnum
 	{
 		/// <summary>
-		/// document will confirm to the ISO 10303 Part 21 standard. 
+		﻿/// document will confirm to the ISO 10303 Part 21 standard.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EXPRESS,
 		/// <summary>
-		/// document will be a text representation of the tool data. 
+		﻿/// document will be a text representation of the tool data.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TEXT,
 		/// <summary>
-		/// document will be provided in an undefined format.
+		﻿/// document will be provided in an undefined format.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UNDEFINED,
 		/// <summary>
-		/// default value for the definition. The content will be an <i>XML</i> document.
+		﻿/// default value for the definition. The content will be an <i>XML</i> document.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -54,8 +59,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579537199908_332626_9197">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FormatTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -85,12 +91,14 @@ namespace Mtconnect.DataTypes
 
 		private EXPRESSValue _EXPRESS;
 		/// <summary>
-		/// document will confirm to the ISO 10303 Part 21 standard. 
+		﻿/// document will confirm to the ISO 10303 Part 21 standard.<br /><br/><br />
+
 		/// </summary>
 		public EXPRESSValue EXPRESS => _EXPRESS ?? (_EXPRESS = new EXPRESSValue());
 
 		/// <summary>
-		/// document will confirm to the ISO 10303 Part 21 standard. 
+		﻿/// document will confirm to the ISO 10303 Part 21 standard.<br /><br/><br />
+
 		/// </summary>
 		public sealed class EXPRESSValue : IEnumInstance
 		{
@@ -107,16 +115,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// document will confirm to the ISO 10303 Part 21 standard. ";
+			public string Summary => @"&#10;&#10;&#10;document will confirm to the ISO 10303 Part 21 standard.&#10;
+";
 		}
 		private TEXTValue _TEXT;
 		/// <summary>
-		/// document will be a text representation of the tool data. 
+		﻿/// document will be a text representation of the tool data.<br /><br/><br />
+
 		/// </summary>
 		public TEXTValue TEXT => _TEXT ?? (_TEXT = new TEXTValue());
 
 		/// <summary>
-		/// document will be a text representation of the tool data. 
+		﻿/// document will be a text representation of the tool data.<br /><br/><br />
+
 		/// </summary>
 		public sealed class TEXTValue : IEnumInstance
 		{
@@ -133,16 +144,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// document will be a text representation of the tool data. ";
+			public string Summary => @"&#10;&#10;&#10;document will be a text representation of the tool data.&#10;
+";
 		}
 		private UNDEFINEDValue _UNDEFINED;
 		/// <summary>
-		/// document will be provided in an undefined format.
+		﻿/// document will be provided in an undefined format.<br/><br />
+
 		/// </summary>
 		public UNDEFINEDValue UNDEFINED => _UNDEFINED ?? (_UNDEFINED = new UNDEFINEDValue());
 
 		/// <summary>
-		/// document will be provided in an undefined format.
+		﻿/// document will be provided in an undefined format.<br/><br />
+
 		/// </summary>
 		public sealed class UNDEFINEDValue : IEnumInstance
 		{
@@ -159,16 +173,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// document will be provided in an undefined format.";
+			public string Summary => @"&#10;&#10;&#10;document will be provided in an undefined format.&#10;
+";
 		}
 		private XMLValue _XML;
 		/// <summary>
-		/// default value for the definition. The content will be an <i>XML</i> document.
+		﻿/// default value for the definition. The content will be an <i>XML</i> document.<br/><br />
+
 		/// </summary>
 		public XMLValue XML => _XML ?? (_XML = new XMLValue());
 
 		/// <summary>
-		/// default value for the definition. The content will be an <i>XML</i> document.
+		﻿/// default value for the definition. The content will be an <i>XML</i> document.<br/><br />
+
 		/// </summary>
 		public sealed class XMLValue : IEnumInstance
 		{
@@ -185,7 +202,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// default value for the definition. The content will be an <i>XML</i> document.";
+			public string Summary => @"&#10;&#10;&#10;default value for the definition. The content will be an {{term(XML)}} document.&#10;
+";
 		}
 	}
 }

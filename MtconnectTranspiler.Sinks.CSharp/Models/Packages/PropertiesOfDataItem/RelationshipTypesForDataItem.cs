@@ -6,10 +6,11 @@ using Package = Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
-	/// This section provides semantic information for the types of <see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see> that can be defined for a <see cref="DataItem">DataItem</see>.
+	﻿/// This section provides semantic information for the types of <see cref="AbstractDataItemRelationship">AbstractDataItemRelationship</see> that can be defined for a <see cref="DataItem">DataItem</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1605645450472_400925_2872">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class RelationshipTypesForDataItemPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public string Name => "Relationship Types for DataItem";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the types of <see cref=""AbstractDataItemRelationship"">AbstractDataItemRelationship</see> that can be defined for a <see cref=""DataItem"">DataItem</see>.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the types of {{block(AbstractDataItemRelationship)}} that can be defined for a {{block(DataItem)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

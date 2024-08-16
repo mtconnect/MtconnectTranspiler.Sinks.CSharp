@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
-	/// <i>organize</i>s a set of expected values that can be reported for a <see cref="DataItem">DataItem</see>.
+	﻿/// <i>organize</i>s a set of expected values that can be reported for a <see cref="DataItem">DataItem</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_E6F955EB_46CA_4c72_B547_8F4465A9620A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConstraintsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_E6F955EB_46CA_4c72_B547_8F4465A9620A";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>organize</i>s a set of expected values that can be reported for a <see cref=""DataItem"">DataItem</see>.";
+		public string Summary => @"&#10;&#10;&#10;{{termplural(organize)}} a set of expected values that can be reported for a {{block(DataItem)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Constraints";
@@ -54,7 +56,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public MaximumProperty Maximum { get; } = new MaximumProperty();
 			/// <summary>
-			/// numeric upper constraint.  If the data reported for a data item is a range of numeric values, the expected value reported <b>MAY</b> be described with an upper limit defined by this constraint.
+			﻿/// numeric upper constraint.<br /><br /><br />If the data reported for a data item is a range of numeric values, the expected value reported <b>MAY</b> be described with an upper limit defined by this constraint.<br/><br />
+
 			/// </summary>
 			public sealed class MaximumProperty : IProperty
 			{
@@ -74,7 +77,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "Maximum";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>organize</i>s a set of expected values that can be reported for a <see cref=""DataItem"">DataItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;numeric upper constraint.
+
+If the data reported for a data item is a range of numeric values, the expected value reported **MAY** be described with an upper limit defined by this constraint.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -108,7 +114,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public MinimumProperty Minimum { get; } = new MinimumProperty();
 			/// <summary>
-			/// numeric lower constraint.  If the data reported for a data item is a range of numeric values, the expected value reported <b>MAY</b> be described with a lower limit defined by this constraint.
+			﻿/// numeric lower constraint.<br /><br />If the data reported for a data item is a range of numeric values, the expected value reported <b>MAY</b> be described with a lower limit defined by this constraint.<br/><br />
+
 			/// </summary>
 			public sealed class MinimumProperty : IProperty
 			{
@@ -128,7 +135,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "Minimum";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>organize</i>s a set of expected values that can be reported for a <see cref=""DataItem"">DataItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;numeric lower constraint.
+
+If the data reported for a data item is a range of numeric values, the expected value reported **MAY** be described with a lower limit defined by this constraint.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -162,7 +172,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
 			/// <summary>
-			/// numeric target or expected value.
+			﻿/// numeric target or expected value.<br/><br />
+
 			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
@@ -182,7 +193,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "Nominal";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>organize</i>s a set of expected values that can be reported for a <see cref=""DataItem"">DataItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;numeric target or expected value.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -216,7 +228,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// single data value that is expected to be reported for a <see cref="DataItem">DataItem</see>.  <see cref="Constraints::Value" /> <b>MUST NOT</b> be used in conjunction with any other <see cref="Constraint">Constraint</see> elements.
+			﻿/// single data value that is expected to be reported for a <see cref="DataItem">DataItem</see>.<br /><br /><see cref="Constraints.Value">Value in Constraints</see> <b>MUST NOT</b> be used in conjunction with any other <see cref="Constraint">Constraint</see> elements.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -236,7 +249,10 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "Value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>organize</i>s a set of expected values that can be reported for a <see cref=""DataItem"">DataItem</see>.";
+				public string Summary => @"&#10;&#10;&#10;single data value that is expected to be reported for a {{block(DataItem)}}.
+
+{{property(Constraints::Value)}} **MUST NOT** be used in conjunction with any other {{block(Constraint)}} elements.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -287,7 +303,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "hasFilter";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>organize</i>s a set of expected values that can be reported for a <see cref=""DataItem"">DataItem</see>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

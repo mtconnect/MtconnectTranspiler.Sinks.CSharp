@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// accumulation of actions or activities that were attempted, but failed to complete or resulted in an unexpected or unacceptable outcome.
+	﻿/// accumulation of actions or activities that were attempted, but failed to complete or resulted in an unexpected or unacceptable outcome.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622197602625_399618_996">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CycleCountFailedClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622197602625_399618_996";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// accumulation of actions or activities that were attempted, but failed to complete or resulted in an unexpected or unacceptable outcome.";
+		public string Summary => @"&#10;&#10;&#10;accumulation of actions or activities that were attempted, but failed to complete or resulted in an unexpected or unacceptable outcome.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CycleCount.Failed";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// accumulation of actions or activities that were attempted, but failed to complete or resulted in an unexpected or unacceptable outcome.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

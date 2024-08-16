@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary.HTTPTerms
 {
 	/// <summary>
-	/// server that accepts <i>HTTP Request</i> from <i>client</i> and publishes <i>HTTP Response</i> as a reply to those <i>HTTP Request</i>. <seealso href="https://www.google.com/search?q=IETF:RFC-2616&btnI=I">IETF:RFC-2616</seealso>
+	﻿/// server that accepts <i>HTTP Request</i> from <i>client</i> and publishes <i>HTTP Response</i> as a reply to those <i>HTTP Request</i>. <seealso href="https://www.google.com/search?q=IETF:RFC-2616&btnI=I">IETF:RFC-2616</seealso><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375164_923890_2010">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HTTPServerClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375164_923890_2010";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// server that accepts <i>HTTP Request</i> from <i>client</i> and publishes <i>HTTP Response</i> as a reply to those <i>HTTP Request</i>. <seealso href=""https://www.google.com/search?q=IETF:RFC-2616&btnI=I"">IETF:RFC-2616</seealso>";
+		public string Summary => @"&#10;&#10;&#10;server that accepts {{term(HTTP Request)}} from {{term(client)}} and publishes {{term(HTTP Response)}} as a reply to those {{term(HTTP Request)}}. {{cite(IETF:RFC-2616)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "HTTP Server";

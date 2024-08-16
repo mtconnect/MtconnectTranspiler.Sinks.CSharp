@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// DC current or voltage.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.
+	﻿/// DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218471_721088_2265">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class VoltageDirectClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218471_721088_2265";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// DC current or voltage.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.";
+		public string Summary => @"&#10;&#10;&#10;DC current or voltage.
+
+**DEPRECATED** in *Version 1.6*.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Voltage.Direct";
@@ -71,7 +75,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// DC current or voltage.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

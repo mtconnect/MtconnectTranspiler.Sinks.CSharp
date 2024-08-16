@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622460092329_383445_1384">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PartProcessingStateEnum
 	{
 		/// <summary>
-		/// part occurrence is not actively being processed, but the processing has not ended.   Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.
+		﻿/// part occurrence is not actively being processed, but the processing has not ended. <br /><br />Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NEEDS_PROCESSING,
 		/// <summary>
-		/// part occurrence is actively being processed.
+		﻿/// part occurrence is actively being processed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		IN_PROCESS,
 		/// <summary>
-		/// part occurrence is no longer being processed.   A general state when the reason for termination is unknown.
+		﻿/// part occurrence is no longer being processed. <br /><br />A general state when the reason for termination is unknown.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESSING_ENDED,
 		/// <summary>
-		/// part occurrence has completed processing successfully.
+		﻿/// part occurrence has completed processing successfully.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESSING_ENDED_COMPLETE,
 		/// <summary>
-		/// process has been stopped during the processing.   The part occurrence will require special treatment.
+		﻿/// process has been stopped during the processing. <br /><br />The part occurrence will require special treatment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESSING_ENDED_STOPPED,
 		/// <summary>
-		/// processing of the part occurrence has come to a premature end.
+		﻿/// processing of the part occurrence has come to a premature end.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,7 +76,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESSING_ENDED_ABORTED,
 		/// <summary>
-		/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.
+		﻿/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,7 +86,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESSING_ENDED_LOST,
 		/// <summary>
-		/// part occurrence has been skipped for processing on the piece of equipment.
+		﻿/// part occurrence has been skipped for processing on the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,7 +96,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESSING_ENDED_SKIPPED,
 		/// <summary>
-		/// part occurrence has been processed completely. However, the processing may have a problem.
+		﻿/// part occurrence has been processed completely. However, the processing may have a problem.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -96,7 +106,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESSING_ENDED_REJECTED,
 		/// <summary>
-		/// part occurrence is waiting for transit.
+		﻿/// part occurrence is waiting for transit.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,7 +116,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WAITING_FOR_TRANSIT,
 		/// <summary>
-		/// part occurrence is being transported to its destination.
+		﻿/// part occurrence is being transported to its destination.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -114,7 +126,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		IN_TRANSIT,
 		/// <summary>
-		/// part occurrence has been placed at its designated destination.
+		﻿/// part occurrence has been placed at its designated destination.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -126,8 +139,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622460092329_383445_1384">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartProcessingStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -165,12 +179,14 @@ namespace Mtconnect.DataTypes
 
 		private NEEDS_PROCESSINGValue _NEEDS_PROCESSING;
 		/// <summary>
-		/// part occurrence is not actively being processed, but the processing has not ended.   Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.
+		﻿/// part occurrence is not actively being processed, but the processing has not ended. <br /><br />Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.<br/><br />
+
 		/// </summary>
 		public NEEDS_PROCESSINGValue NEEDS_PROCESSING => _NEEDS_PROCESSING ?? (_NEEDS_PROCESSING = new NEEDS_PROCESSINGValue());
 
 		/// <summary>
-		/// part occurrence is not actively being processed, but the processing has not ended.   Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.
+		﻿/// part occurrence is not actively being processed, but the processing has not ended. <br /><br />Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.<br/><br />
+
 		/// </summary>
 		public sealed class NEEDS_PROCESSINGValue : IEnumInstance
 		{
@@ -187,16 +203,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence is not actively being processed, but the processing has not ended.   Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence is not actively being processed, but the processing has not ended. 
+
+Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.&#10;
+";
 		}
 		private IN_PROCESSValue _IN_PROCESS;
 		/// <summary>
-		/// part occurrence is actively being processed.
+		﻿/// part occurrence is actively being processed.<br/><br />
+
 		/// </summary>
 		public IN_PROCESSValue IN_PROCESS => _IN_PROCESS ?? (_IN_PROCESS = new IN_PROCESSValue());
 
 		/// <summary>
-		/// part occurrence is actively being processed.
+		﻿/// part occurrence is actively being processed.<br/><br />
+
 		/// </summary>
 		public sealed class IN_PROCESSValue : IEnumInstance
 		{
@@ -213,16 +234,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence is actively being processed.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence is actively being processed.&#10;
+";
 		}
 		private PROCESSING_ENDEDValue _PROCESSING_ENDED;
 		/// <summary>
-		/// part occurrence is no longer being processed.   A general state when the reason for termination is unknown.
+		﻿/// part occurrence is no longer being processed. <br /><br />A general state when the reason for termination is unknown.<br/><br />
+
 		/// </summary>
 		public PROCESSING_ENDEDValue PROCESSING_ENDED => _PROCESSING_ENDED ?? (_PROCESSING_ENDED = new PROCESSING_ENDEDValue());
 
 		/// <summary>
-		/// part occurrence is no longer being processed.   A general state when the reason for termination is unknown.
+		﻿/// part occurrence is no longer being processed. <br /><br />A general state when the reason for termination is unknown.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESSING_ENDEDValue : IEnumInstance
 		{
@@ -239,16 +263,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence is no longer being processed.   A general state when the reason for termination is unknown.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence is no longer being processed. 
+
+A general state when the reason for termination is unknown.&#10;
+";
 		}
 		private PROCESSING_ENDED_COMPLETEValue _PROCESSING_ENDED_COMPLETE;
 		/// <summary>
-		/// part occurrence has completed processing successfully.
+		﻿/// part occurrence has completed processing successfully.<br/><br />
+
 		/// </summary>
 		public PROCESSING_ENDED_COMPLETEValue PROCESSING_ENDED_COMPLETE => _PROCESSING_ENDED_COMPLETE ?? (_PROCESSING_ENDED_COMPLETE = new PROCESSING_ENDED_COMPLETEValue());
 
 		/// <summary>
-		/// part occurrence has completed processing successfully.
+		﻿/// part occurrence has completed processing successfully.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESSING_ENDED_COMPLETEValue : IEnumInstance
 		{
@@ -265,16 +294,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence has completed processing successfully.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence has completed processing successfully.&#10;
+";
 		}
 		private PROCESSING_ENDED_STOPPEDValue _PROCESSING_ENDED_STOPPED;
 		/// <summary>
-		/// process has been stopped during the processing.   The part occurrence will require special treatment.
+		﻿/// process has been stopped during the processing. <br /><br />The part occurrence will require special treatment.<br/><br />
+
 		/// </summary>
 		public PROCESSING_ENDED_STOPPEDValue PROCESSING_ENDED_STOPPED => _PROCESSING_ENDED_STOPPED ?? (_PROCESSING_ENDED_STOPPED = new PROCESSING_ENDED_STOPPEDValue());
 
 		/// <summary>
-		/// process has been stopped during the processing.   The part occurrence will require special treatment.
+		﻿/// process has been stopped during the processing. <br /><br />The part occurrence will require special treatment.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESSING_ENDED_STOPPEDValue : IEnumInstance
 		{
@@ -291,16 +323,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// process has been stopped during the processing.   The part occurrence will require special treatment.";
+			public string Summary => @"&#10;&#10;&#10;process has been stopped during the processing. 
+
+The part occurrence will require special treatment.&#10;
+";
 		}
 		private PROCESSING_ENDED_ABORTEDValue _PROCESSING_ENDED_ABORTED;
 		/// <summary>
-		/// processing of the part occurrence has come to a premature end.
+		﻿/// processing of the part occurrence has come to a premature end.<br/><br />
+
 		/// </summary>
 		public PROCESSING_ENDED_ABORTEDValue PROCESSING_ENDED_ABORTED => _PROCESSING_ENDED_ABORTED ?? (_PROCESSING_ENDED_ABORTED = new PROCESSING_ENDED_ABORTEDValue());
 
 		/// <summary>
-		/// processing of the part occurrence has come to a premature end.
+		﻿/// processing of the part occurrence has come to a premature end.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESSING_ENDED_ABORTEDValue : IEnumInstance
 		{
@@ -317,16 +354,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// processing of the part occurrence has come to a premature end.";
+			public string Summary => @"&#10;&#10;&#10;processing of the part occurrence has come to a premature end.&#10;
+";
 		}
 		private PROCESSING_ENDED_LOSTValue _PROCESSING_ENDED_LOST;
 		/// <summary>
-		/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.
+		﻿/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.<br/><br />
+
 		/// </summary>
 		public PROCESSING_ENDED_LOSTValue PROCESSING_ENDED_LOST => _PROCESSING_ENDED_LOST ?? (_PROCESSING_ENDED_LOST = new PROCESSING_ENDED_LOSTValue());
 
 		/// <summary>
-		/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.
+		﻿/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESSING_ENDED_LOSTValue : IEnumInstance
 		{
@@ -343,16 +383,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.";
+			public string Summary => @"&#10;&#10;&#10;terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.&#10;
+";
 		}
 		private PROCESSING_ENDED_SKIPPEDValue _PROCESSING_ENDED_SKIPPED;
 		/// <summary>
-		/// part occurrence has been skipped for processing on the piece of equipment.
+		﻿/// part occurrence has been skipped for processing on the piece of equipment.<br/><br />
+
 		/// </summary>
 		public PROCESSING_ENDED_SKIPPEDValue PROCESSING_ENDED_SKIPPED => _PROCESSING_ENDED_SKIPPED ?? (_PROCESSING_ENDED_SKIPPED = new PROCESSING_ENDED_SKIPPEDValue());
 
 		/// <summary>
-		/// part occurrence has been skipped for processing on the piece of equipment.
+		﻿/// part occurrence has been skipped for processing on the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESSING_ENDED_SKIPPEDValue : IEnumInstance
 		{
@@ -369,16 +412,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence has been skipped for processing on the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence has been skipped for processing on the piece of equipment.&#10;
+";
 		}
 		private PROCESSING_ENDED_REJECTEDValue _PROCESSING_ENDED_REJECTED;
 		/// <summary>
-		/// part occurrence has been processed completely. However, the processing may have a problem.
+		﻿/// part occurrence has been processed completely. However, the processing may have a problem.<br/><br />
+
 		/// </summary>
 		public PROCESSING_ENDED_REJECTEDValue PROCESSING_ENDED_REJECTED => _PROCESSING_ENDED_REJECTED ?? (_PROCESSING_ENDED_REJECTED = new PROCESSING_ENDED_REJECTEDValue());
 
 		/// <summary>
-		/// part occurrence has been processed completely. However, the processing may have a problem.
+		﻿/// part occurrence has been processed completely. However, the processing may have a problem.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESSING_ENDED_REJECTEDValue : IEnumInstance
 		{
@@ -395,16 +441,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence has been processed completely. However, the processing may have a problem.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence has been processed completely. However, the processing may have a problem.&#10;
+";
 		}
 		private WAITING_FOR_TRANSITValue _WAITING_FOR_TRANSIT;
 		/// <summary>
-		/// part occurrence is waiting for transit.
+		﻿/// part occurrence is waiting for transit.<br/><br />
+
 		/// </summary>
 		public WAITING_FOR_TRANSITValue WAITING_FOR_TRANSIT => _WAITING_FOR_TRANSIT ?? (_WAITING_FOR_TRANSIT = new WAITING_FOR_TRANSITValue());
 
 		/// <summary>
-		/// part occurrence is waiting for transit.
+		﻿/// part occurrence is waiting for transit.<br/><br />
+
 		/// </summary>
 		public sealed class WAITING_FOR_TRANSITValue : IEnumInstance
 		{
@@ -421,16 +470,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence is waiting for transit.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence is waiting for transit.&#10;
+";
 		}
 		private IN_TRANSITValue _IN_TRANSIT;
 		/// <summary>
-		/// part occurrence is being transported to its destination.
+		﻿/// part occurrence is being transported to its destination.<br/><br />
+
 		/// </summary>
 		public IN_TRANSITValue IN_TRANSIT => _IN_TRANSIT ?? (_IN_TRANSIT = new IN_TRANSITValue());
 
 		/// <summary>
-		/// part occurrence is being transported to its destination.
+		﻿/// part occurrence is being transported to its destination.<br/><br />
+
 		/// </summary>
 		public sealed class IN_TRANSITValue : IEnumInstance
 		{
@@ -447,16 +499,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence is being transported to its destination.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence is being transported to its destination.&#10;
+";
 		}
 		private TRANSIT_COMPLETEValue _TRANSIT_COMPLETE;
 		/// <summary>
-		/// part occurrence has been placed at its designated destination.
+		﻿/// part occurrence has been placed at its designated destination.<br/><br />
+
 		/// </summary>
 		public TRANSIT_COMPLETEValue TRANSIT_COMPLETE => _TRANSIT_COMPLETE ?? (_TRANSIT_COMPLETE = new TRANSIT_COMPLETEValue());
 
 		/// <summary>
-		/// part occurrence has been placed at its designated destination.
+		﻿/// part occurrence has been placed at its designated destination.<br/><br />
+
 		/// </summary>
 		public sealed class TRANSIT_COMPLETEValue : IEnumInstance
 		{
@@ -473,7 +528,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// part occurrence has been placed at its designated destination.";
+			public string Summary => @"&#10;&#10;&#10;part occurrence has been placed at its designated destination.&#10;
+";
 		}
 	}
 }

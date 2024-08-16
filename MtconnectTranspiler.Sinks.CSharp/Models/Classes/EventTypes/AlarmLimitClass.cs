@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::ALARM_LIMIT">EventEnum::ALARM_LIMIT</see>
+	﻿/// <see cref="EventEnum.ALARM_LIMIT">EventEnum.ALARM_LIMIT</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605646964681_939072_3338">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmLimitClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605646964681_939072_3338";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::ALARM_LIMIT"">EventEnum::ALARM_LIMIT</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::ALARM_LIMIT)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "AlarmLimit";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::ALARM_LIMIT"">EventEnum::ALARM_LIMIT</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::ALARM_LIMIT"">EventEnum::ALARM_LIMIT</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

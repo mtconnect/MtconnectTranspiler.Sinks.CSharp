@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// performing an operation faster or in less time than nominal rate.
+	﻿/// performing an operation faster or in less time than nominal rate.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218384_46527_2010">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PathFeedrateOverrideRapidClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218384_46527_2010";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// performing an operation faster or in less time than nominal rate.";
+		public string Summary => @"&#10;&#10;&#10;performing an operation faster or in less time than nominal rate.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PathFeedrateOverride.Rapid";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// performing an operation faster or in less time than nominal rate.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

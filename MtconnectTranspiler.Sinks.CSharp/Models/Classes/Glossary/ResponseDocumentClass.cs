@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// electronic <i>document</i> published by an <i>MTConnect Agent</i> in response to a <i>probe request</i>, <i>current request</i>, <i>sample request</i> or <i>asset request</i>.
+	﻿/// electronic <i>document</i> published by an <i>MTConnect Agent</i> in response to a <i>probe request</i>, <i>current request</i>, <i>sample request</i> or <i>asset request</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375183_185849_2077">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ResponseDocumentClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375183_185849_2077";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// electronic <i>document</i> published by an <i>MTConnect Agent</i> in response to a <i>probe request</i>, <i>current request</i>, <i>sample request</i> or <i>asset request</i>.";
+		public string Summary => @"&#10;&#10;&#10;electronic {{term(document)}} published by an {{term(MTConnect Agent)}} in response to a {{term(probe request)}}, {{term(current request)}}, {{term(sample request)}} or {{term(asset request)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "response document";

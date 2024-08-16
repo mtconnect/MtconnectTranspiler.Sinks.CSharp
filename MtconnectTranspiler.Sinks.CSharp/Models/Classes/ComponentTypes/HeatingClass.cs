@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> that delivers controlled amounts of heat to achieve a target temperature at a specified heating rate./// Description
+	﻿/// <see cref="System">System</see> that delivers controlled amounts of heat to achieve a target temperature at a specified heating rate.<br/><br />Description<br/>> Note: As an example, Energy Delivery Method can be either through Electric heaters or Gas burners.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605117125123_371301_1943">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HeatingClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605117125123_371301_1943";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> that delivers controlled amounts of heat to achieve a target temperature at a specified heating rate./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} that delivers controlled amounts of heat to achieve a target temperature at a specified heating rate.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;> Note: As an example, Energy Delivery Method can be either through Electric heaters or Gas burners.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Heating";

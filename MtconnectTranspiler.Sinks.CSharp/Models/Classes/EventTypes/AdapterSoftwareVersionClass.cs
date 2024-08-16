@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::ADAPTER_SOFTWARE_VERSION">EventEnum::ADAPTER_SOFTWARE_VERSION</see>
+	﻿/// <see cref="EventEnum.ADAPTER_SOFTWARE_VERSION">EventEnum.ADAPTER_SOFTWARE_VERSION</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605104021797_851627_751">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AdapterSoftwareVersionClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605104021797_851627_751";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::ADAPTER_SOFTWARE_VERSION"">EventEnum::ADAPTER_SOFTWARE_VERSION</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::ADAPTER_SOFTWARE_VERSION)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "AdapterSoftwareVersion";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::ADAPTER_SOFTWARE_VERSION"">EventEnum::ADAPTER_SOFTWARE_VERSION</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

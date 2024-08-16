@@ -6,10 +6,11 @@ using Package = Mtconnect.DataTypes;
 namespace Mtconnect
 {
 	/// <summary>
-	/// 
+	﻿/// <br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579567325331_179717_33552">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class DataTypesPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,8 @@ namespace Mtconnect
 		public string Name => "DataTypes";
 
 		/// <inheritdoc />
-		public string Summary => @"/// ";
+		public string Summary => @"&#10;&#10;&#10;&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

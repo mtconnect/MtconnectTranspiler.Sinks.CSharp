@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
 	/// <summary>
-	/// W1 is used for the insert width when an inscribed circle diameter is not practical.
+	﻿/// W1 is used for the insert width when an inscribed circle diameter is not practical.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119555_438468_1498">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class InsertWidthClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119555_438468_1498";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// W1 is used for the insert width when an inscribed circle diameter is not practical.";
+		public string Summary => @"&#10;&#10;&#10;W1 is used for the insert width when an inscribed circle diameter is not practical.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "InsertWidth";
@@ -72,7 +74,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// W1 is used for the insert width when an inscribed circle diameter is not practical.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// W1 is used for the insert width when an inscribed circle diameter is not practical.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

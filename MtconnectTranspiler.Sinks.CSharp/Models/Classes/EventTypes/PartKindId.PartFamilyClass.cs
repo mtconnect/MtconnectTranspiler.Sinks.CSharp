@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// identifier given to a group of parts having similarities in geometry, manufacturing process, and/or functions.
+	﻿/// identifier given to a group of parts having similarities in geometry, manufacturing process, and/or functions.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605549487194_494116_1162">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartKindIdPartFamilyClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605549487194_494116_1162";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// identifier given to a group of parts having similarities in geometry, manufacturing process, and/or functions.";
+		public string Summary => @"&#10;&#10;&#10;identifier given to a group of parts having similarities in geometry, manufacturing process, and/or functions.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PartKindId.PartFamily";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// identifier given to a group of parts having similarities in geometry, manufacturing process, and/or functions.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::LINE_NUMBER">EventEnum::LINE_NUMBER</see>
+	﻿/// <see cref="EventEnum.LINE_NUMBER">EventEnum.LINE_NUMBER</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218338_357401_1893">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LineNumberClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218338_357401_1893";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::LINE_NUMBER"">EventEnum::LINE_NUMBER</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::LINE_NUMBER)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "LineNumber";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::LINE_NUMBER"">EventEnum::LINE_NUMBER</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::LINE_NUMBER"">EventEnum::LINE_NUMBER</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

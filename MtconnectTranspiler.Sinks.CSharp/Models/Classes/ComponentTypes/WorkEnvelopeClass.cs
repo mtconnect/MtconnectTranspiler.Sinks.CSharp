@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> composed of the physical process execution space within a piece of equipment./// Description
+	﻿/// <see cref="System">System</see> composed of the physical process execution space within a piece of equipment.<br/><br />Description<br/><see cref="WorkEnvelope">WorkEnvelope</see> <b>MAY</b> provide information regarding the physical workspace and the conditions within that workspace.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587649840347_727529_300">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class WorkEnvelopeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587649840347_727529_300";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> composed of the physical process execution space within a piece of equipment./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} composed of the physical process execution space within a piece of equipment.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(WorkEnvelope)}} **MAY** provide information regarding the physical workspace and the conditions within that workspace.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "WorkEnvelope";

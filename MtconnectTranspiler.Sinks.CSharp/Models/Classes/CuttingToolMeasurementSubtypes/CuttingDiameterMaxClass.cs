@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
 	/// <summary>
-	/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item.   The normal of the machined peripheral surface points towards the axis of the cutting tool.
+	﻿/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. <br /><br />The normal of the machined peripheral surface points towards the axis of the cutting tool.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119503_763396_1414">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CuttingDiameterMaxClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1582919119503_763396_1414";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item.   The normal of the machined peripheral surface points towards the axis of the cutting tool.";
+		public string Summary => @"&#10;&#10;&#10;maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item. 
+
+The normal of the machined peripheral surface points towards the axis of the cutting tool.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CuttingDiameterMax";
@@ -72,7 +76,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "code";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item.   The normal of the machined peripheral surface points towards the axis of the cutting tool.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// maximum diameter of a circle on which the defined point Pk of each of the master inserts is located on a tool item.   The normal of the machined peripheral surface points towards the axis of the cutting tool.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

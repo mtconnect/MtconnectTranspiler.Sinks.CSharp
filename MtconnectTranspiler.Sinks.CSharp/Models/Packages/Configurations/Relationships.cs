@@ -6,10 +6,11 @@ using Package = Mtconnect.DeviceInformationModel.Configurations.Relationships;
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="ConfigurationRelationship">ConfigurationRelationship</see> entity.  ![Relationships](figures/Relationships.png "Relationships"){: width="0.8"}  > Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.  ![Relationship Example](figures/Relationship%20Example.png "Relationship Example"){: width="0.8"}  > Note: See {{lst(relationship-example)}} for the <i>XML</i> representation of the same example.
+	﻿/// This section provides semantic information for the <see cref="ConfigurationRelationship">ConfigurationRelationship</see> entity.<br /><br />![Relationships](figures/Relationships.png "Relationships"){: width="0.8"}<br /><br />> Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![Relationship Example](figures/Relationship%20Example.png "Relationship Example"){: width="0.8"}<br /><br />> Note: See {{lst(relationship-example)}} for the <i>XML</i> representation of the same example.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_A055F7A8_3D2C_4a01_8D09_072F34E65044">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class RelationshipsPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,16 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		public string Name => "Relationships";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> entity.  ![Relationships](figures/Relationships.png ""Relationships""){: width=""0.8""}  > Note: See <see cref=""Configuration Schema Diagrams"">Configuration Schema Diagrams</see> for XML schema.  ![Relationship Example](figures/Relationship%20Example.png ""Relationship Example""){: width=""0.8""}  > Note: See {{lst(relationship-example)}} for the <i>XML</i> representation of the same example.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(ConfigurationRelationship)}} entity.
+
+![Relationships](figures/Relationships.png ""Relationships""){: width=""0.8""}
+
+> Note: See {{sect(Configuration Schema Diagrams)}} for XML schema.
+
+![Relationship Example](figures/Relationship%20Example.png ""Relationship Example""){: width=""0.8""}
+
+> Note: See {{lst(relationship-example)}} for the {{term(XML)}} representation of the same example.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

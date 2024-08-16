@@ -6,10 +6,11 @@ using Package = Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesRespons
 namespace Mtconnect.Fundamentals.MTConnectProtocol
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="MTConnectDevices">MTConnectDevices</see> entity.
+	﻿/// This section provides semantic information for the <see cref="MTConnectDevices">MTConnectDevices</see> entity.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_1812F5DC_90C0_47d9_B731_2E752A6D72A0">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MTConnectDevicesResponseDocumentPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 		public string Name => "MTConnectDevices Response Document";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""MTConnectDevices"">MTConnectDevices</see> entity.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(MTConnectDevices)}} entity.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

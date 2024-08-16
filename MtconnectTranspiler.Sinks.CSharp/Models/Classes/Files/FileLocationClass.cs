@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.Files
 {
 	/// <summary>
-	/// <i>URL</i> reference to the file location. 
+	﻿/// <i>URL</i> reference to the file location. <br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605277122154_664309_406">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FileLocationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605277122154_664309_406";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>URL</i> reference to the file location. ";
+		public string Summary => @"&#10;&#10;&#10;{{term(URL)}} reference to the file location. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "FileLocation";
@@ -51,7 +53,8 @@ namespace Mtconnect.AssetInformationModel.Files
 			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
 			/// <summary>
-			/// <i>URL</i> reference to the file.  <c>href</c> is of type <c>xlink:href</c> from the W3C XLink specification. 
+			﻿/// <i>URL</i> reference to the file.<br /><br /><c>href</c> is of type <c>xlink:href</c> from the W3C XLink specification.<br /><br/><br />
+
 			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
@@ -71,7 +74,10 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "href";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>URL</i> reference to the file location. ";
+				public string Summary => @"&#10;&#10;&#10;{{term(URL)}} reference to the file.
+
+`href` is of type `xlink:href` from the W3C XLink specification.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -105,7 +111,8 @@ namespace Mtconnect.AssetInformationModel.Files
 			/// </summary>
 			public Xlink_TypeProperty Xlink_Type { get; } = new Xlink_TypeProperty();
 			/// <summary>
-			/// type of href for the xlink href type.   <b>MUST</b> be <c>locator</c> referring to a <i>URL</i> .
+			﻿/// type of href for the xlink href type. <br /><br /><b>MUST</b> be <c>locator</c> referring to a <i>URL</i><br />.<br/><br />
+
 			/// </summary>
 			public sealed class Xlink_TypeProperty : IProperty
 			{
@@ -125,7 +132,10 @@ namespace Mtconnect.AssetInformationModel.Files
 				public string Name => "xlink:type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>URL</i> reference to the file location. ";
+				public string Summary => @"&#10;&#10;&#10;type of href for the xlink href type. 
+
+**MUST** be `locator` referring to a {{term(URL)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

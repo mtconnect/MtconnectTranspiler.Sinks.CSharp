@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// <i>uncertainty</i> of the result of a measurement expressed as a standard deviation. <seealso href="https://www.google.com/search?q=JCGM 100:2008 2.3.1&btnI=I">JCGM 100:2008 2.3.1</seealso>
+	﻿/// <i>uncertainty</i> of the result of a measurement expressed as a standard deviation. <seealso href="https://www.google.com/search?q=JCGM 100:2008 2.3.1&btnI=I">JCGM 100:2008 2.3.1</seealso><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678196842084_529316_17608">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StandardUncertaintyGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678196842084_529316_17608";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>uncertainty</i> of the result of a measurement expressed as a standard deviation. <seealso href=""https://www.google.com/search?q=JCGM 100:2008 2.3.1&btnI=I"">JCGM 100:2008 2.3.1</seealso>";
+		public string Summary => @"&#10;&#10;&#10;{{term(uncertainty)}} of the result of a measurement expressed as a standard deviation. {{cite(JCGM 100:2008 2.3.1)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "standard uncertainty";

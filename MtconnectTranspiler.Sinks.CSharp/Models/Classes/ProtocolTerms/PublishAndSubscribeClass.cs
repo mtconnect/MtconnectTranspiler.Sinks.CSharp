@@ -6,17 +6,23 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// asynchronous communication method in which messages are exchanged between applications without knowing the identity of the sender or recipient.  > Note: In the MTConnect Standard, a communications messaging pattern that may be used to publish <i>streaming data</i> from an <i>agent</i>.   
+	﻿/// asynchronous communication method in which messages are exchanged between applications without knowing the identity of the sender or recipient.<br /><br />> Note: In the MTConnect Standard, a communications messaging pattern that may be used to publish <i>streaming data</i> from an <i>agent</i>. <br /><br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375180_561625_2067">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PublishAndSubscribeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375180_561625_2067";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// asynchronous communication method in which messages are exchanged between applications without knowing the identity of the sender or recipient.  > Note: In the MTConnect Standard, a communications messaging pattern that may be used to publish <i>streaming data</i> from an <i>agent</i>.   ";
+		public string Summary => @"&#10;&#10;&#10;asynchronous communication method in which messages are exchanged between applications without knowing the identity of the sender or recipient.
+
+> Note: In the MTConnect Standard, a communications messaging pattern that may be used to publish {{term(streaming data)}} from an {{term(agent)}}. 
+
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "publish and subscribe";

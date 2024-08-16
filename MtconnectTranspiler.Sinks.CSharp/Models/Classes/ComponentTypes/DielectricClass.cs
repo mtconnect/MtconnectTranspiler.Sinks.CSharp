@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> that manages a chemical mixture used in a manufacturing process being performed at that piece of equipment./// Description
+	﻿/// <see cref="System">System</see> that manages a chemical mixture used in a manufacturing process being performed at that piece of equipment.<br/><br />Description<br/>For example, this could describe the dielectric system for an EDM process or the chemical bath used in a plating process.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381982_394383_42225">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DielectricClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381982_394383_42225";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> that manages a chemical mixture used in a manufacturing process being performed at that piece of equipment./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} that manages a chemical mixture used in a manufacturing process being performed at that piece of equipment.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;For example, this could describe the dielectric system for an EDM process or the chemical bath used in a plating process.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Dielectric";

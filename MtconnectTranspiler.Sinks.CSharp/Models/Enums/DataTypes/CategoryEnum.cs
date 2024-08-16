@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579277872728_249968_3735">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CategoryEnum
 	{
 		/// <summary>
-		/// continuously variable or analog data value.   A continuous value can be measured at any point-in-time and will always produce a result.
+		﻿/// continuously variable or analog data value. <br /><br />A continuous value can be measured at any point-in-time and will always produce a result.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SAMPLE,
 		/// <summary>
-		/// discrete piece of information from the piece of equipment.
+		﻿/// discrete piece of information from the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EVENT,
 		/// <summary>
-		/// information about the health of a piece of equipment and its ability to function.
+		﻿/// information about the health of a piece of equipment and its ability to function.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579277872728_249968_3735">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CategoryEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private SAMPLEValue _SAMPLE;
 		/// <summary>
-		/// continuously variable or analog data value.   A continuous value can be measured at any point-in-time and will always produce a result.
+		﻿/// continuously variable or analog data value. <br /><br />A continuous value can be measured at any point-in-time and will always produce a result.<br/><br />
+
 		/// </summary>
 		public SAMPLEValue SAMPLE => _SAMPLE ?? (_SAMPLE = new SAMPLEValue());
 
 		/// <summary>
-		/// continuously variable or analog data value.   A continuous value can be measured at any point-in-time and will always produce a result.
+		﻿/// continuously variable or analog data value. <br /><br />A continuous value can be measured at any point-in-time and will always produce a result.<br/><br />
+
 		/// </summary>
 		public sealed class SAMPLEValue : IEnumInstance
 		{
@@ -97,16 +104,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// continuously variable or analog data value.   A continuous value can be measured at any point-in-time and will always produce a result.";
+			public string Summary => @"&#10;&#10;&#10;continuously variable or analog data value. 
+
+A continuous value can be measured at any point-in-time and will always produce a result.&#10;
+";
 		}
 		private EVENTValue _EVENT;
 		/// <summary>
-		/// discrete piece of information from the piece of equipment.
+		﻿/// discrete piece of information from the piece of equipment.<br/><br />
+
 		/// </summary>
 		public EVENTValue EVENT => _EVENT ?? (_EVENT = new EVENTValue());
 
 		/// <summary>
-		/// discrete piece of information from the piece of equipment.
+		﻿/// discrete piece of information from the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class EVENTValue : IEnumInstance
 		{
@@ -123,16 +135,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// discrete piece of information from the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;discrete piece of information from the piece of equipment.&#10;
+";
 		}
 		private CONDITIONValue _CONDITION;
 		/// <summary>
-		/// information about the health of a piece of equipment and its ability to function.
+		﻿/// information about the health of a piece of equipment and its ability to function.<br/><br />
+
 		/// </summary>
 		public CONDITIONValue CONDITION => _CONDITION ?? (_CONDITION = new CONDITIONValue());
 
 		/// <summary>
-		/// information about the health of a piece of equipment and its ability to function.
+		﻿/// information about the health of a piece of equipment and its ability to function.<br/><br />
+
 		/// </summary>
 		public sealed class CONDITIONValue : IEnumInstance
 		{
@@ -149,7 +164,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// information about the health of a piece of equipment and its ability to function.";
+			public string Summary => @"&#10;&#10;&#10;information about the health of a piece of equipment and its ability to function.&#10;
+";
 		}
 	}
 }

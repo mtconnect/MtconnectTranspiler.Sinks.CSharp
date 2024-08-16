@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579563592155_977172_22064">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum DataItemSubTypeEnum
 	{
 		/// <summary>
-		/// relating to or derived in the simplest manner from the fundamental units or measurements.
+		﻿/// relating to or derived in the simplest manner from the fundamental units or measurements.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ABSOLUTE,
 		/// <summary>
-		/// indication of the operating state of a mechanism.
+		﻿/// indication of the operating state of a mechanism.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTION,
 		/// <summary>
-		/// measured or reported value of an <i>observation</i>.
+		﻿/// measured or reported value of an <i>observation</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTUAL,
 		/// <summary>
-		/// all actions, items, or activities being counted independent of the outcome.
+		﻿/// all actions, items, or activities being counted independent of the outcome.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ALL,
 		/// <summary>
-		/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage.   <b>DEPRECATED</b> in <i>Version 1.6</i>s.
+		﻿/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. <br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -62,7 +68,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.6 according to https://model.mtconnect.org/#_Version_1.6")]
 		ALTERNATING,
 		/// <summary>
-		/// A-Scale weighting factor on the frequency scale.
+		﻿/// A-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -71,7 +78,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		A_SCALE,
 		/// <summary>
-		/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.
+		﻿/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -80,7 +88,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AUXILIARY,
 		/// <summary>
-		/// actions, items, or activities being counted that do not conform to specification or expectation.
+		﻿/// actions, items, or activities being counted that do not conform to specification or expectation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -89,7 +98,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BAD,
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -98,7 +108,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BRINELL,
 		/// <summary>
-		/// B-Scale weighting factor on the frequency scale.
+		﻿/// B-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -107,7 +118,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		B_SCALE,
 		/// <summary>
-		/// directive value including adjustments such as an offset or overrides.
+		﻿/// directive value including adjustments such as an offset or overrides.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -116,7 +128,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COMMANDED,
 		/// <summary>
-		/// amount of material consumed from an object or container during a manufacturing process.
+		﻿/// amount of material consumed from an object or container during a manufacturing process.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -125,7 +138,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CONSUMED,
 		/// <summary>
-		/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.
+		﻿/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -134,7 +148,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CONTROL,
 		/// <summary>
-		/// C-Scale weighting factor on the frequency scale.
+		﻿/// C-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -143,7 +158,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		C_SCALE,
 		/// <summary>
-		/// elapsed time of a temporary halt of action.
+		﻿/// elapsed time of a temporary halt of action.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -152,7 +168,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DELAY,
 		/// <summary>
-		/// DC current or voltage.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.
+		﻿/// DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -163,7 +180,8 @@ namespace Mtconnect.DataTypes
 		[Obsolete("Deprecated in v1.6 according to https://model.mtconnect.org/#_Version_1.6")]
 		DIRECT,
 		/// <summary>
-		/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.
+		﻿/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -172,7 +190,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DRY_RUN,
 		/// <summary>
-		/// D-Scale weighting factor on the frequency scale.
+		﻿/// D-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -181,7 +200,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		D_SCALE,
 		/// <summary>
-		/// relating to the expiration or end of useful life for a material or other physical item.
+		﻿/// relating to the expiration or end of useful life for a material or other physical item.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -190,7 +210,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EXPIRATION,
 		/// <summary>
-		/// relating to the first use of a material or other physical item.
+		﻿/// relating to the first use of a material or other physical item.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -199,7 +220,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FIRST_USE,
 		/// <summary>
-		/// actions, items, or activities being counted that conform to specification or expectation.
+		﻿/// actions, items, or activities being counted that conform to specification or expectation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -208,7 +230,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		GOOD,
 		/// <summary>
-		/// relating to or derived from the last <i>observation</i>.
+		﻿/// relating to or derived from the last <i>observation</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -217,7 +240,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INCREMENTAL,
 		/// <summary>
-		/// relating to momentary activation of a function or a movement.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.
+		﻿/// relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -226,7 +250,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		JOG,
 		/// <summary>
-		/// indication of the position of a mechanism that may move in a lateral direction.
+		﻿/// indication of the position of a mechanism that may move in a lateral direction.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -235,7 +260,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LATERAL,
 		/// <summary>
-		/// scale to measure the elasticity of a surface.
+		﻿/// scale to measure the elasticity of a surface.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -244,7 +270,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LEEB,
 		/// <summary>
-		/// reference to a length type tool offset variable.
+		﻿/// reference to a length type tool offset variable.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -253,7 +280,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LENGTH,
 		/// <summary>
-		/// state of the power source.
+		﻿/// state of the power source.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -262,7 +290,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LINE,
 		/// <summary>
-		/// direction of motion of a linear motion.
+		﻿/// direction of motion of a linear motion.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -271,7 +300,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LINEAR,
 		/// <summary>
-		/// indication that the subparts of a piece of equipment are under load.
+		﻿/// indication that the subparts of a piece of equipment are under load.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -280,7 +310,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LOADED,
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -289,7 +320,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MACHINE_AXIS_LOCK,
 		/// <summary>
-		/// relating to the primary logic or motion program currently being executed.
+		﻿/// relating to the primary logic or motion program currently being executed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -298,7 +330,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MAIN,
 		/// <summary>
-		/// relating to maintenance on the piece of equipment.
+		﻿/// relating to maintenance on the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -307,7 +340,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MAINTENANCE,
 		/// <summary>
-		/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.
+		﻿/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -316,7 +350,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MANUAL_UNCLAMP,
 		/// <summary>
-		/// related to the production of a material or other physical item.
+		﻿/// related to the production of a material or other physical item.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -325,7 +360,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MANUFACTURE,
 		/// <summary>
-		/// maximum value.
+		﻿/// maximum value.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -334,7 +370,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MAXIMUM,
 		/// <summary>
-		/// minimum value.
+		﻿/// minimum value.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -343,7 +380,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MINIMUM,
 		/// <summary>
-		/// scale to measure the resistance to scratching of a surface.
+		﻿/// scale to measure the resistance to scratching of a surface.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -352,7 +390,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MOHS,
 		/// <summary>
-		/// indication of the open or closed state of a mechanism.
+		﻿/// indication of the open or closed state of a mechanism.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -361,7 +400,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MOTION,
 		/// <summary>
-		/// no weighting factor on the frequency scale.
+		﻿/// no weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -370,7 +410,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		NO_SCALE,
 		/// <summary>
-		/// piece of equipment that is powered or performing any activity.
+		﻿/// piece of equipment that is powered or performing any activity.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -379,7 +420,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPERATING,
 		/// <summary>
-		/// relating to the person currently responsible for operating the piece of equipment.
+		﻿/// relating to the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -388,7 +430,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPERATOR,
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment. 
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -397,7 +440,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPTIONAL_STOP,
 		/// <summary>
-		/// overridden value.
+		﻿/// overridden value.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -406,7 +450,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OVERRIDE,
 		/// <summary>
-		/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.
+		﻿/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -415,7 +460,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POWERED,
 		/// <summary>
-		/// main or most important.
+		﻿/// main or most important.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -424,7 +470,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PRIMARY,
 		/// <summary>
-		/// position provided by a measurement probe.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.
+		﻿/// position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -433,7 +480,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROBE,
 		/// <summary>
-		/// relating to production of a part or product on a piece of equipment.
+		﻿/// relating to production of a part or product on a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -442,7 +490,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS,
 		/// <summary>
-		/// directive value without offsets and adjustments.
+		﻿/// directive value without offsets and adjustments.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -451,7 +500,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROGRAMMED,
 		/// <summary>
-		/// reference to a radial type tool offset variable.
+		﻿/// reference to a radial type tool offset variable.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -460,7 +510,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RADIAL,
 		/// <summary>
-		/// performing an operation faster or in less time than nominal rate.
+		﻿/// performing an operation faster or in less time than nominal rate.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -469,7 +520,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RAPID,
 		/// <summary>
-		/// remaining measure or count of an action, object or activity.
+		﻿/// remaining measure or count of an action, object or activity.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -478,7 +530,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		REMAINING,
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -487,7 +540,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ROCKWELL,
 		/// <summary>
-		/// direction of a rotary motion using the right hand rule convention.
+		﻿/// direction of a rotary motion using the right hand rule convention.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -496,7 +550,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ROTARY,
 		/// <summary>
-		/// identity of a control program that is used to specify the order of execution of other programs.
+		﻿/// identity of a control program that is used to specify the order of execution of other programs.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -505,7 +560,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SCHEDULE,
 		/// <summary>
-		/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.
+		﻿/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -514,7 +570,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SET_UP,
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -523,7 +580,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SHORE,
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment. 
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -532,7 +590,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SINGLE_BLOCK,
 		/// <summary>
-		/// standard measure of an object or an action.
+		﻿/// standard measure of an object or an action.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -541,7 +600,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		STANDARD,
 		/// <summary>
-		/// boundary when an activity or an event commences.
+		﻿/// boundary when an activity or an event commences.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -550,7 +610,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		START,
 		/// <summary>
-		/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.
+		﻿/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -559,7 +620,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SWITCHED,
 		/// <summary>
-		/// goal of the operation or process.
+		﻿/// goal of the operation or process.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -568,7 +630,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TARGET,
 		/// <summary>
-		/// relating to the end or completion of an activity or event.
+		﻿/// relating to the end or completion of an activity or event.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -577,7 +640,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TARGET_COMPLETION,
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -586,7 +650,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TOOL_CHANGE_STOP,
 		/// <summary>
-		/// remaining usable measure of an object or action.
+		﻿/// remaining usable measure of an object or action.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -595,7 +660,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		USEABLE,
 		/// <summary>
-		/// indication of the position of a mechanism that may move in a vertical direction.
+		﻿/// indication of the position of a mechanism that may move in a vertical direction.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -604,7 +670,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VERTICAL,
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -613,7 +680,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VICKERS,
 		/// <summary>
-		/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.
+		﻿/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -622,7 +690,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WORKING,
 		/// <summary>
-		/// IPV4 network address of the <see cref="Component">Component</see>.
+		﻿/// IPV4 network address of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -631,7 +700,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		IPV4_ADDRESS,
 		/// <summary>
-		/// IPV6 network address of the <see cref="Component">Component</see>.
+		﻿/// IPV6 network address of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -640,7 +710,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		IPV6_ADDRESS,
 		/// <summary>
-		/// Gateway for the <see cref="Component">Component</see> network.
+		﻿/// Gateway for the <see cref="Component">Component</see> network.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -649,7 +720,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		GATEWAY,
 		/// <summary>
-		/// SubNet mask for the <see cref="Component">Component</see> network. 
+		﻿/// SubNet mask for the <see cref="Component">Component</see> network.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -658,7 +730,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SUBNET_MASK,
 		/// <summary>
-		/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.
+		﻿/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -667,7 +740,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VLAN_ID,
 		/// <summary>
-		/// Media Access Control Address. The unique physical address of the network hardware.
+		﻿/// Media Access Control Address. The unique physical address of the network hardware.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -676,7 +750,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MAC_ADDRESS,
 		/// <summary>
-		/// identifies whether the connection type is wireless.
+		﻿/// identifies whether the connection type is wireless.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -685,7 +760,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WIRELESS,
 		/// <summary>
-		/// license code to validate or activate the hardware or software.
+		﻿/// license code to validate or activate the hardware or software.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -694,7 +770,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LICENSE,
 		/// <summary>
-		/// version of the hardware or software. 
+		﻿/// version of the hardware or software.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -703,7 +780,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VERSION,
 		/// <summary>
-		/// date the hardware or software was released for general use.
+		﻿/// date the hardware or software was released for general use.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -712,7 +790,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RELEASE_DATE,
 		/// <summary>
-		/// date the hardware or software was installed.
+		﻿/// date the hardware or software was installed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -721,7 +800,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		INSTALL_DATE,
 		/// <summary>
-		/// corporate identity for the maker of the hardware or software.
+		﻿/// corporate identity for the maker of the hardware or software.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -730,7 +810,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MANUFACTURER,
 		/// <summary>
-		/// universally unique identifier as specified in ISO 11578 or RFC 4122.
+		﻿/// universally unique identifier as specified in ISO 11578 or RFC 4122.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -739,7 +820,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UUID,
 		/// <summary>
-		/// serial number that uniquely identifies a specific part.
+		﻿/// serial number that uniquely identifies a specific part.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -748,7 +830,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SERIAL_NUMBER,
 		/// <summary>
-		/// material that is used to produce parts.
+		﻿/// material that is used to produce parts.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -757,7 +840,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RAW_MATERIAL,
 		/// <summary>
-		/// group of parts tracked as a lot.
+		﻿/// group of parts tracked as a lot.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -766,7 +850,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LOT,
 		/// <summary>
-		/// group of parts produced in a batch.
+		﻿/// group of parts produced in a batch.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -775,7 +860,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BATCH,
 		/// <summary>
-		/// material heat number.
+		﻿/// material heat number.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -784,7 +870,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HEAT_TREAT,
 		/// <summary>
-		/// particular part design or model.
+		﻿/// particular part design or model.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -793,7 +880,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_NUMBER,
 		/// <summary>
-		/// group of parts having similarities in geometry, manufacturing process, and/or functions.
+		﻿/// group of parts having similarities in geometry, manufacturing process, and/or functions.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -802,7 +890,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_FAMILY,
 		/// <summary>
-		/// word or set of words by which a part is known, addressed, or referred to.
+		﻿/// word or set of words by which a part is known, addressed, or referred to.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -811,7 +900,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART_NAME,
 		/// <summary>
-		/// step in the process plan that this occurrence corresponds to. 
+		﻿/// step in the process plan that this occurrence corresponds to. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -820,7 +910,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS_STEP,
 		/// <summary>
-		/// process plan that a process occurrence belongs to.
+		﻿/// process plan that a process occurrence belongs to.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -829,7 +920,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS_PLAN,
 		/// <summary>
-		/// authorization of a process occurrence.
+		﻿/// authorization of a process occurrence.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -838,7 +930,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ORDER_NUMBER,
 		/// <summary>
-		/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. 
+		﻿/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -847,7 +940,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PROCESS_NAME,
 		/// <summary>
-		/// reference to a ISO 10303 Executable.
+		﻿/// reference to a ISO 10303 Executable.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -856,7 +950,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ISO_STEP_EXECUTABLE,
 		/// <summary>
-		/// associated with the completion of an activity or event.
+		﻿/// associated with the completion of an activity or event.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -865,7 +960,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COMPLETE,
 		/// <summary>
-		/// relating to logic or motion program currently executing.
+		﻿/// relating to logic or motion program currently executing.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -874,7 +970,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTIVE,
 		/// <summary>
-		/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.
+		﻿/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -883,7 +980,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FAILED,
 		/// <summary>
-		/// actions or activities that were attempted, but terminated before they could be completed.
+		﻿/// actions or activities that were attempted, but terminated before they could be completed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -892,7 +990,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ABORTED,
 		/// <summary>
-		/// boundary when an activity or an event terminates.
+		﻿/// boundary when an activity or an event terminates.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -901,7 +1000,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ENDED,
 		/// <summary>
-		/// amount discarded.
+		﻿/// amount discarded.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -910,7 +1010,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WASTE,
 		/// <summary>
-		/// amount included in the <i>part</i>.
+		﻿/// amount included in the <i>part</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -919,7 +1020,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PART,
 		/// <summary>
-		/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.
+		﻿/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -928,7 +1030,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		REQUEST,
 		/// <summary>
-		/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.
+		﻿/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -937,7 +1040,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RESPONSE,
 		/// <summary>
-		/// phase or segment of a recipe or program.
+		﻿/// phase or segment of a recipe or program.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -946,7 +1050,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTIVITY,
 		/// <summary>
-		/// phase of a recipe process.
+		﻿/// phase of a recipe process.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -955,7 +1060,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SEGMENT,
 		/// <summary>
-		/// process as part of product production; can be a subprocess of a larger process.
+		﻿/// process as part of product production; can be a subprocess of a larger process.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -964,7 +1070,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RECIPE,
 		/// <summary>
-		/// step of a discrete manufacturing process.
+		﻿/// step of a discrete manufacturing process.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -973,7 +1080,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OPERATION,
 		/// <summary>
-		/// observed as a binary data type.
+		﻿/// observed as a binary data type.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -982,7 +1090,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BINARY,
 		/// <summary>
-		/// observed as a boolean data type.
+		﻿/// observed as a boolean data type.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -991,7 +1100,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BOOLEAN,
 		/// <summary>
-		/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique. <seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso>
+		﻿/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique.<br /><seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1000,7 +1110,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ENUMERATED,
 		/// <summary>
-		/// indicated by the presence or existence of something.
+		﻿/// indicated by the presence or existence of something.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1009,7 +1120,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DETECT,
 		/// <summary>
-		/// model info of the hardware or software.
+		﻿/// model info of the hardware or software.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1018,7 +1130,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MODEL,
 		/// <summary>
-		/// alternate or not primary.
+		﻿/// alternate or not primary.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1027,7 +1140,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SECONDARY,
 		/// <summary>
-		/// held near at hand and ready for use.
+		﻿/// held near at hand and ready for use.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1039,8 +1153,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579563592155_977172_22064">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DataItemSubTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -1179,12 +1294,14 @@ namespace Mtconnect.DataTypes
 
 		private ABSOLUTEValue _ABSOLUTE;
 		/// <summary>
-		/// relating to or derived in the simplest manner from the fundamental units or measurements.
+		﻿/// relating to or derived in the simplest manner from the fundamental units or measurements.<br/><br />
+
 		/// </summary>
 		public ABSOLUTEValue ABSOLUTE => _ABSOLUTE ?? (_ABSOLUTE = new ABSOLUTEValue());
 
 		/// <summary>
-		/// relating to or derived in the simplest manner from the fundamental units or measurements.
+		﻿/// relating to or derived in the simplest manner from the fundamental units or measurements.<br/><br />
+
 		/// </summary>
 		public sealed class ABSOLUTEValue : IEnumInstance
 		{
@@ -1201,16 +1318,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to or derived in the simplest manner from the fundamental units or measurements.";
+			public string Summary => @"&#10;&#10;&#10;relating to or derived in the simplest manner from the fundamental units or measurements.&#10;
+";
 		}
 		private ACTIONValue _ACTION;
 		/// <summary>
-		/// indication of the operating state of a mechanism.
+		﻿/// indication of the operating state of a mechanism.<br/><br />
+
 		/// </summary>
 		public ACTIONValue ACTION => _ACTION ?? (_ACTION = new ACTIONValue());
 
 		/// <summary>
-		/// indication of the operating state of a mechanism.
+		﻿/// indication of the operating state of a mechanism.<br/><br />
+
 		/// </summary>
 		public sealed class ACTIONValue : IEnumInstance
 		{
@@ -1227,16 +1347,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the operating state of a mechanism.";
+			public string Summary => @"&#10;&#10;&#10;indication of the operating state of a mechanism.&#10;
+";
 		}
 		private ACTUALValue _ACTUAL;
 		/// <summary>
-		/// measured or reported value of an <i>observation</i>.
+		﻿/// measured or reported value of an <i>observation</i>.<br/><br />
+
 		/// </summary>
 		public ACTUALValue ACTUAL => _ACTUAL ?? (_ACTUAL = new ACTUALValue());
 
 		/// <summary>
-		/// measured or reported value of an <i>observation</i>.
+		﻿/// measured or reported value of an <i>observation</i>.<br/><br />
+
 		/// </summary>
 		public sealed class ACTUALValue : IEnumInstance
 		{
@@ -1253,16 +1376,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measured or reported value of an <i>observation</i>.";
+			public string Summary => @"&#10;&#10;&#10;measured or reported value of an {{term(observation)}}.&#10;
+";
 		}
 		private ALLValue _ALL;
 		/// <summary>
-		/// all actions, items, or activities being counted independent of the outcome.
+		﻿/// all actions, items, or activities being counted independent of the outcome.<br/><br />
+
 		/// </summary>
 		public ALLValue ALL => _ALL ?? (_ALL = new ALLValue());
 
 		/// <summary>
-		/// all actions, items, or activities being counted independent of the outcome.
+		﻿/// all actions, items, or activities being counted independent of the outcome.<br/><br />
+
 		/// </summary>
 		public sealed class ALLValue : IEnumInstance
 		{
@@ -1279,16 +1405,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// all actions, items, or activities being counted independent of the outcome.";
+			public string Summary => @"&#10;&#10;&#10;all actions, items, or activities being counted independent of the outcome.&#10;
+";
 		}
 		private ALTERNATINGValue _ALTERNATING;
 		/// <summary>
-		/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage.   <b>DEPRECATED</b> in <i>Version 1.6</i>s.
+		﻿/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. <br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
+
 		/// </summary>
 		public ALTERNATINGValue ALTERNATING => _ALTERNATING ?? (_ALTERNATING = new ALTERNATINGValue());
 
 		/// <summary>
-		/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage.   <b>DEPRECATED</b> in <i>Version 1.6</i>s.
+		﻿/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. <br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
+
 		/// </summary>
 		public sealed class ALTERNATINGValue : IEnumInstance
 		{
@@ -1305,16 +1434,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.6";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage.   <b>DEPRECATED</b> in <i>Version 1.6</i>s.";
+			public string Summary => @"&#10;&#10;&#10;measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. 
+
+**DEPRECATED** in *Version 1.6*.&#10;
+";
 		}
 		private A_SCALEValue _A_SCALE;
 		/// <summary>
-		/// A-Scale weighting factor on the frequency scale.
+		﻿/// A-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public A_SCALEValue A_SCALE => _A_SCALE ?? (_A_SCALE = new A_SCALEValue());
 
 		/// <summary>
-		/// A-Scale weighting factor on the frequency scale.
+		﻿/// A-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public sealed class A_SCALEValue : IEnumInstance
 		{
@@ -1331,16 +1465,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// A-Scale weighting factor on the frequency scale.";
+			public string Summary => @"&#10;&#10;&#10;A-Scale weighting factor on the frequency scale.&#10;
+";
 		}
 		private AUXILIARYValue _AUXILIARY;
 		/// <summary>
-		/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.
+		﻿/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.<br/><br />
+
 		/// </summary>
 		public AUXILIARYValue AUXILIARY => _AUXILIARY ?? (_AUXILIARY = new AUXILIARYValue());
 
 		/// <summary>
-		/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.
+		﻿/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.<br/><br />
+
 		/// </summary>
 		public sealed class AUXILIARYValue : IEnumInstance
 		{
@@ -1357,16 +1494,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.";
+			public string Summary => @"&#10;&#10;&#10;when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.&#10;
+";
 		}
 		private BADValue _BAD;
 		/// <summary>
-		/// actions, items, or activities being counted that do not conform to specification or expectation.
+		﻿/// actions, items, or activities being counted that do not conform to specification or expectation.<br/><br />
+
 		/// </summary>
 		public BADValue BAD => _BAD ?? (_BAD = new BADValue());
 
 		/// <summary>
-		/// actions, items, or activities being counted that do not conform to specification or expectation.
+		﻿/// actions, items, or activities being counted that do not conform to specification or expectation.<br/><br />
+
 		/// </summary>
 		public sealed class BADValue : IEnumInstance
 		{
@@ -1383,16 +1523,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// actions, items, or activities being counted that do not conform to specification or expectation.";
+			public string Summary => @"&#10;&#10;&#10;actions, items, or activities being counted that do not conform to specification or expectation.&#10;
+";
 		}
 		private BRINELLValue _BRINELL;
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		public BRINELLValue BRINELL => _BRINELL ?? (_BRINELL = new BRINELLValue());
 
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		public sealed class BRINELLValue : IEnumInstance
 		{
@@ -1409,16 +1552,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// scale to measure the resistance to deformation of a surface.";
+			public string Summary => @"&#10;&#10;&#10;scale to measure the resistance to deformation of a surface.&#10;
+";
 		}
 		private B_SCALEValue _B_SCALE;
 		/// <summary>
-		/// B-Scale weighting factor on the frequency scale.
+		﻿/// B-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public B_SCALEValue B_SCALE => _B_SCALE ?? (_B_SCALE = new B_SCALEValue());
 
 		/// <summary>
-		/// B-Scale weighting factor on the frequency scale.
+		﻿/// B-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public sealed class B_SCALEValue : IEnumInstance
 		{
@@ -1435,16 +1581,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// B-Scale weighting factor on the frequency scale.";
+			public string Summary => @"&#10;&#10;&#10;B-Scale weighting factor on the frequency scale.&#10;
+";
 		}
 		private COMMANDEDValue _COMMANDED;
 		/// <summary>
-		/// directive value including adjustments such as an offset or overrides.
+		﻿/// directive value including adjustments such as an offset or overrides.<br/><br />
+
 		/// </summary>
 		public COMMANDEDValue COMMANDED => _COMMANDED ?? (_COMMANDED = new COMMANDEDValue());
 
 		/// <summary>
-		/// directive value including adjustments such as an offset or overrides.
+		﻿/// directive value including adjustments such as an offset or overrides.<br/><br />
+
 		/// </summary>
 		public sealed class COMMANDEDValue : IEnumInstance
 		{
@@ -1461,16 +1610,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// directive value including adjustments such as an offset or overrides.";
+			public string Summary => @"&#10;&#10;&#10;directive value including adjustments such as an offset or overrides.&#10;
+";
 		}
 		private CONSUMEDValue _CONSUMED;
 		/// <summary>
-		/// amount of material consumed from an object or container during a manufacturing process.
+		﻿/// amount of material consumed from an object or container during a manufacturing process.<br/><br />
+
 		/// </summary>
 		public CONSUMEDValue CONSUMED => _CONSUMED ?? (_CONSUMED = new CONSUMEDValue());
 
 		/// <summary>
-		/// amount of material consumed from an object or container during a manufacturing process.
+		﻿/// amount of material consumed from an object or container during a manufacturing process.<br/><br />
+
 		/// </summary>
 		public sealed class CONSUMEDValue : IEnumInstance
 		{
@@ -1487,16 +1639,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// amount of material consumed from an object or container during a manufacturing process.";
+			public string Summary => @"&#10;&#10;&#10;amount of material consumed from an object or container during a manufacturing process.&#10;
+";
 		}
 		private CONTROLValue _CONTROL;
 		/// <summary>
-		/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.
+		﻿/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.<br/><br />
+
 		/// </summary>
 		public CONTROLValue CONTROL => _CONTROL ?? (_CONTROL = new CONTROLValue());
 
 		/// <summary>
-		/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.
+		﻿/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.<br/><br />
+
 		/// </summary>
 		public sealed class CONTROLValue : IEnumInstance
 		{
@@ -1513,16 +1668,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.";
+			public string Summary => @"&#10;&#10;&#10;state of the enabling signal or control logic that enables or disables the function or operation of the entity.&#10;
+";
 		}
 		private C_SCALEValue _C_SCALE;
 		/// <summary>
-		/// C-Scale weighting factor on the frequency scale.
+		﻿/// C-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public C_SCALEValue C_SCALE => _C_SCALE ?? (_C_SCALE = new C_SCALEValue());
 
 		/// <summary>
-		/// C-Scale weighting factor on the frequency scale.
+		﻿/// C-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public sealed class C_SCALEValue : IEnumInstance
 		{
@@ -1539,16 +1697,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// C-Scale weighting factor on the frequency scale.";
+			public string Summary => @"&#10;&#10;&#10;C-Scale weighting factor on the frequency scale.&#10;
+";
 		}
 		private DELAYValue _DELAY;
 		/// <summary>
-		/// elapsed time of a temporary halt of action.
+		﻿/// elapsed time of a temporary halt of action.<br/><br />
+
 		/// </summary>
 		public DELAYValue DELAY => _DELAY ?? (_DELAY = new DELAYValue());
 
 		/// <summary>
-		/// elapsed time of a temporary halt of action.
+		﻿/// elapsed time of a temporary halt of action.<br/><br />
+
 		/// </summary>
 		public sealed class DELAYValue : IEnumInstance
 		{
@@ -1565,16 +1726,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// elapsed time of a temporary halt of action.";
+			public string Summary => @"&#10;&#10;&#10;elapsed time of a temporary halt of action.&#10;
+";
 		}
 		private DIRECTValue _DIRECT;
 		/// <summary>
-		/// DC current or voltage.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.
+		﻿/// DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
+
 		/// </summary>
 		public DIRECTValue DIRECT => _DIRECT ?? (_DIRECT = new DIRECTValue());
 
 		/// <summary>
-		/// DC current or voltage.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.
+		﻿/// DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
+
 		/// </summary>
 		public sealed class DIRECTValue : IEnumInstance
 		{
@@ -1591,16 +1755,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "1.6";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// DC current or voltage.  <b>DEPRECATED</b> in <i>Version 1.6</i>s.";
+			public string Summary => @"&#10;&#10;&#10;DC current or voltage.
+
+**DEPRECATED** in *Version 1.6*.&#10;
+";
 		}
 		private DRY_RUNValue _DRY_RUN;
 		/// <summary>
-		/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.
+		﻿/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.<br/><br />
+
 		/// </summary>
 		public DRY_RUNValue DRY_RUN => _DRY_RUN ?? (_DRY_RUN = new DRY_RUNValue());
 
 		/// <summary>
-		/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.
+		﻿/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.<br/><br />
+
 		/// </summary>
 		public sealed class DRY_RUNValue : IEnumInstance
 		{
@@ -1617,16 +1786,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.";
+			public string Summary => @"&#10;&#10;&#10;setting or operator selection used to execute a test mode to confirm the execution of machine functions.&#10;
+";
 		}
 		private D_SCALEValue _D_SCALE;
 		/// <summary>
-		/// D-Scale weighting factor on the frequency scale.
+		﻿/// D-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public D_SCALEValue D_SCALE => _D_SCALE ?? (_D_SCALE = new D_SCALEValue());
 
 		/// <summary>
-		/// D-Scale weighting factor on the frequency scale.
+		﻿/// D-Scale weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public sealed class D_SCALEValue : IEnumInstance
 		{
@@ -1643,16 +1815,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// D-Scale weighting factor on the frequency scale.";
+			public string Summary => @"&#10;&#10;&#10;D-Scale weighting factor on the frequency scale.&#10;
+";
 		}
 		private EXPIRATIONValue _EXPIRATION;
 		/// <summary>
-		/// relating to the expiration or end of useful life for a material or other physical item.
+		﻿/// relating to the expiration or end of useful life for a material or other physical item.<br/><br />
+
 		/// </summary>
 		public EXPIRATIONValue EXPIRATION => _EXPIRATION ?? (_EXPIRATION = new EXPIRATIONValue());
 
 		/// <summary>
-		/// relating to the expiration or end of useful life for a material or other physical item.
+		﻿/// relating to the expiration or end of useful life for a material or other physical item.<br/><br />
+
 		/// </summary>
 		public sealed class EXPIRATIONValue : IEnumInstance
 		{
@@ -1669,16 +1844,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to the expiration or end of useful life for a material or other physical item.";
+			public string Summary => @"&#10;&#10;&#10;relating to the expiration or end of useful life for a material or other physical item.&#10;
+";
 		}
 		private FIRST_USEValue _FIRST_USE;
 		/// <summary>
-		/// relating to the first use of a material or other physical item.
+		﻿/// relating to the first use of a material or other physical item.<br/><br />
+
 		/// </summary>
 		public FIRST_USEValue FIRST_USE => _FIRST_USE ?? (_FIRST_USE = new FIRST_USEValue());
 
 		/// <summary>
-		/// relating to the first use of a material or other physical item.
+		﻿/// relating to the first use of a material or other physical item.<br/><br />
+
 		/// </summary>
 		public sealed class FIRST_USEValue : IEnumInstance
 		{
@@ -1695,16 +1873,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to the first use of a material or other physical item.";
+			public string Summary => @"&#10;&#10;&#10;relating to the first use of a material or other physical item.&#10;
+";
 		}
 		private GOODValue _GOOD;
 		/// <summary>
-		/// actions, items, or activities being counted that conform to specification or expectation.
+		﻿/// actions, items, or activities being counted that conform to specification or expectation.<br/><br />
+
 		/// </summary>
 		public GOODValue GOOD => _GOOD ?? (_GOOD = new GOODValue());
 
 		/// <summary>
-		/// actions, items, or activities being counted that conform to specification or expectation.
+		﻿/// actions, items, or activities being counted that conform to specification or expectation.<br/><br />
+
 		/// </summary>
 		public sealed class GOODValue : IEnumInstance
 		{
@@ -1721,16 +1902,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// actions, items, or activities being counted that conform to specification or expectation.";
+			public string Summary => @"&#10;&#10;&#10;actions, items, or activities being counted that conform to specification or expectation.&#10;
+";
 		}
 		private INCREMENTALValue _INCREMENTAL;
 		/// <summary>
-		/// relating to or derived from the last <i>observation</i>.
+		﻿/// relating to or derived from the last <i>observation</i>.<br/><br />
+
 		/// </summary>
 		public INCREMENTALValue INCREMENTAL => _INCREMENTAL ?? (_INCREMENTAL = new INCREMENTALValue());
 
 		/// <summary>
-		/// relating to or derived from the last <i>observation</i>.
+		﻿/// relating to or derived from the last <i>observation</i>.<br/><br />
+
 		/// </summary>
 		public sealed class INCREMENTALValue : IEnumInstance
 		{
@@ -1747,16 +1931,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to or derived from the last <i>observation</i>.";
+			public string Summary => @"&#10;&#10;&#10;relating to or derived from the last {{term(observation)}}.&#10;
+";
 		}
 		private JOGValue _JOG;
 		/// <summary>
-		/// relating to momentary activation of a function or a movement.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.
+		﻿/// relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
+
 		/// </summary>
 		public JOGValue JOG => _JOG ?? (_JOG = new JOGValue());
 
 		/// <summary>
-		/// relating to momentary activation of a function or a movement.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.
+		﻿/// relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
+
 		/// </summary>
 		public sealed class JOGValue : IEnumInstance
 		{
@@ -1773,16 +1960,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to momentary activation of a function or a movement.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.";
+			public string Summary => @"&#10;&#10;&#10;relating to momentary activation of a function or a movement.
+
+**DEPRECATION WARNING**: May be deprecated in the future.&#10;
+";
 		}
 		private LATERALValue _LATERAL;
 		/// <summary>
-		/// indication of the position of a mechanism that may move in a lateral direction.
+		﻿/// indication of the position of a mechanism that may move in a lateral direction.<br/><br />
+
 		/// </summary>
 		public LATERALValue LATERAL => _LATERAL ?? (_LATERAL = new LATERALValue());
 
 		/// <summary>
-		/// indication of the position of a mechanism that may move in a lateral direction.
+		﻿/// indication of the position of a mechanism that may move in a lateral direction.<br/><br />
+
 		/// </summary>
 		public sealed class LATERALValue : IEnumInstance
 		{
@@ -1799,16 +1991,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the position of a mechanism that may move in a lateral direction.";
+			public string Summary => @"&#10;&#10;&#10;indication of the position of a mechanism that may move in a lateral direction.&#10;
+";
 		}
 		private LEEBValue _LEEB;
 		/// <summary>
-		/// scale to measure the elasticity of a surface.
+		﻿/// scale to measure the elasticity of a surface.<br/><br />
+
 		/// </summary>
 		public LEEBValue LEEB => _LEEB ?? (_LEEB = new LEEBValue());
 
 		/// <summary>
-		/// scale to measure the elasticity of a surface.
+		﻿/// scale to measure the elasticity of a surface.<br/><br />
+
 		/// </summary>
 		public sealed class LEEBValue : IEnumInstance
 		{
@@ -1825,16 +2020,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// scale to measure the elasticity of a surface.";
+			public string Summary => @"&#10;&#10;&#10;scale to measure the elasticity of a surface.&#10;
+";
 		}
 		private LENGTHValue _LENGTH;
 		/// <summary>
-		/// reference to a length type tool offset variable.
+		﻿/// reference to a length type tool offset variable.<br/><br />
+
 		/// </summary>
 		public LENGTHValue LENGTH => _LENGTH ?? (_LENGTH = new LENGTHValue());
 
 		/// <summary>
-		/// reference to a length type tool offset variable.
+		﻿/// reference to a length type tool offset variable.<br/><br />
+
 		/// </summary>
 		public sealed class LENGTHValue : IEnumInstance
 		{
@@ -1851,16 +2049,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// reference to a length type tool offset variable.";
+			public string Summary => @"&#10;&#10;&#10;reference to a length type tool offset variable.&#10;
+";
 		}
 		private LINEValue _LINE;
 		/// <summary>
-		/// state of the power source.
+		﻿/// state of the power source.<br/><br />
+
 		/// </summary>
 		public LINEValue LINE => _LINE ?? (_LINE = new LINEValue());
 
 		/// <summary>
-		/// state of the power source.
+		﻿/// state of the power source.<br/><br />
+
 		/// </summary>
 		public sealed class LINEValue : IEnumInstance
 		{
@@ -1877,16 +2078,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// state of the power source.";
+			public string Summary => @"&#10;&#10;&#10;state of the power source.&#10;
+";
 		}
 		private LINEARValue _LINEAR;
 		/// <summary>
-		/// direction of motion of a linear motion.
+		﻿/// direction of motion of a linear motion.<br/><br />
+
 		/// </summary>
 		public LINEARValue LINEAR => _LINEAR ?? (_LINEAR = new LINEARValue());
 
 		/// <summary>
-		/// direction of motion of a linear motion.
+		﻿/// direction of motion of a linear motion.<br/><br />
+
 		/// </summary>
 		public sealed class LINEARValue : IEnumInstance
 		{
@@ -1903,16 +2107,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// direction of motion of a linear motion.";
+			public string Summary => @"&#10;&#10;&#10;direction of motion of a linear motion.&#10;
+";
 		}
 		private LOADEDValue _LOADED;
 		/// <summary>
-		/// indication that the subparts of a piece of equipment are under load.
+		﻿/// indication that the subparts of a piece of equipment are under load.<br/><br />
+
 		/// </summary>
 		public LOADEDValue LOADED => _LOADED ?? (_LOADED = new LOADEDValue());
 
 		/// <summary>
-		/// indication that the subparts of a piece of equipment are under load.
+		﻿/// indication that the subparts of a piece of equipment are under load.<br/><br />
+
 		/// </summary>
 		public sealed class LOADEDValue : IEnumInstance
 		{
@@ -1929,16 +2136,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication that the subparts of a piece of equipment are under load.";
+			public string Summary => @"&#10;&#10;&#10;indication that the subparts of a piece of equipment are under load.&#10;
+";
 		}
 		private MACHINE_AXIS_LOCKValue _MACHINE_AXIS_LOCK;
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
+
 		/// </summary>
 		public MACHINE_AXIS_LOCKValue MACHINE_AXIS_LOCK => _MACHINE_AXIS_LOCK ?? (_MACHINE_AXIS_LOCK = new MACHINE_AXIS_LOCKValue());
 
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class MACHINE_AXIS_LOCKValue : IEnumInstance
 		{
@@ -1955,16 +2165,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// setting or operator selection that changes the behavior of the controller on a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;setting or operator selection that changes the behavior of the controller on a piece of equipment.&#10;
+";
 		}
 		private MAINValue _MAIN;
 		/// <summary>
-		/// relating to the primary logic or motion program currently being executed.
+		﻿/// relating to the primary logic or motion program currently being executed.<br/><br />
+
 		/// </summary>
 		public MAINValue MAIN => _MAIN ?? (_MAIN = new MAINValue());
 
 		/// <summary>
-		/// relating to the primary logic or motion program currently being executed.
+		﻿/// relating to the primary logic or motion program currently being executed.<br/><br />
+
 		/// </summary>
 		public sealed class MAINValue : IEnumInstance
 		{
@@ -1981,16 +2194,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to the primary logic or motion program currently being executed.";
+			public string Summary => @"&#10;&#10;&#10;relating to the primary logic or motion program currently being executed.&#10;
+";
 		}
 		private MAINTENANCEValue _MAINTENANCE;
 		/// <summary>
-		/// relating to maintenance on the piece of equipment.
+		﻿/// relating to maintenance on the piece of equipment.<br/><br />
+
 		/// </summary>
 		public MAINTENANCEValue MAINTENANCE => _MAINTENANCE ?? (_MAINTENANCE = new MAINTENANCEValue());
 
 		/// <summary>
-		/// relating to maintenance on the piece of equipment.
+		﻿/// relating to maintenance on the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class MAINTENANCEValue : IEnumInstance
 		{
@@ -2007,16 +2223,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to maintenance on the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;relating to maintenance on the piece of equipment.&#10;
+";
 		}
 		private MANUAL_UNCLAMPValue _MANUAL_UNCLAMP;
 		/// <summary>
-		/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.
+		﻿/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.<br/><br />
+
 		/// </summary>
 		public MANUAL_UNCLAMPValue MANUAL_UNCLAMP => _MANUAL_UNCLAMP ?? (_MANUAL_UNCLAMP = new MANUAL_UNCLAMPValue());
 
 		/// <summary>
-		/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.
+		﻿/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.<br/><br />
+
 		/// </summary>
 		public sealed class MANUAL_UNCLAMPValue : IEnumInstance
 		{
@@ -2033,16 +2252,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.";
+			public string Summary => @"&#10;&#10;&#10;indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.&#10;
+";
 		}
 		private MANUFACTUREValue _MANUFACTURE;
 		/// <summary>
-		/// related to the production of a material or other physical item.
+		﻿/// related to the production of a material or other physical item.<br/><br />
+
 		/// </summary>
 		public MANUFACTUREValue MANUFACTURE => _MANUFACTURE ?? (_MANUFACTURE = new MANUFACTUREValue());
 
 		/// <summary>
-		/// related to the production of a material or other physical item.
+		﻿/// related to the production of a material or other physical item.<br/><br />
+
 		/// </summary>
 		public sealed class MANUFACTUREValue : IEnumInstance
 		{
@@ -2059,16 +2281,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// related to the production of a material or other physical item.";
+			public string Summary => @"&#10;&#10;&#10;related to the production of a material or other physical item.&#10;
+";
 		}
 		private MAXIMUMValue _MAXIMUM;
 		/// <summary>
-		/// maximum value.
+		﻿/// maximum value.<br/><br />
+
 		/// </summary>
 		public MAXIMUMValue MAXIMUM => _MAXIMUM ?? (_MAXIMUM = new MAXIMUMValue());
 
 		/// <summary>
-		/// maximum value.
+		﻿/// maximum value.<br/><br />
+
 		/// </summary>
 		public sealed class MAXIMUMValue : IEnumInstance
 		{
@@ -2085,16 +2310,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// maximum value.";
+			public string Summary => @"&#10;&#10;&#10;maximum value.&#10;
+";
 		}
 		private MINIMUMValue _MINIMUM;
 		/// <summary>
-		/// minimum value.
+		﻿/// minimum value.<br/><br />
+
 		/// </summary>
 		public MINIMUMValue MINIMUM => _MINIMUM ?? (_MINIMUM = new MINIMUMValue());
 
 		/// <summary>
-		/// minimum value.
+		﻿/// minimum value.<br/><br />
+
 		/// </summary>
 		public sealed class MINIMUMValue : IEnumInstance
 		{
@@ -2111,16 +2339,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// minimum value.";
+			public string Summary => @"&#10;&#10;&#10;minimum value.&#10;
+";
 		}
 		private MOHSValue _MOHS;
 		/// <summary>
-		/// scale to measure the resistance to scratching of a surface.
+		﻿/// scale to measure the resistance to scratching of a surface.<br/><br />
+
 		/// </summary>
 		public MOHSValue MOHS => _MOHS ?? (_MOHS = new MOHSValue());
 
 		/// <summary>
-		/// scale to measure the resistance to scratching of a surface.
+		﻿/// scale to measure the resistance to scratching of a surface.<br/><br />
+
 		/// </summary>
 		public sealed class MOHSValue : IEnumInstance
 		{
@@ -2137,16 +2368,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// scale to measure the resistance to scratching of a surface.";
+			public string Summary => @"&#10;&#10;&#10;scale to measure the resistance to scratching of a surface.&#10;
+";
 		}
 		private MOTIONValue _MOTION;
 		/// <summary>
-		/// indication of the open or closed state of a mechanism.
+		﻿/// indication of the open or closed state of a mechanism.<br/><br />
+
 		/// </summary>
 		public MOTIONValue MOTION => _MOTION ?? (_MOTION = new MOTIONValue());
 
 		/// <summary>
-		/// indication of the open or closed state of a mechanism.
+		﻿/// indication of the open or closed state of a mechanism.<br/><br />
+
 		/// </summary>
 		public sealed class MOTIONValue : IEnumInstance
 		{
@@ -2163,16 +2397,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the open or closed state of a mechanism.";
+			public string Summary => @"&#10;&#10;&#10;indication of the open or closed state of a mechanism.&#10;
+";
 		}
 		private NO_SCALEValue _NO_SCALE;
 		/// <summary>
-		/// no weighting factor on the frequency scale.
+		﻿/// no weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public NO_SCALEValue NO_SCALE => _NO_SCALE ?? (_NO_SCALE = new NO_SCALEValue());
 
 		/// <summary>
-		/// no weighting factor on the frequency scale.
+		﻿/// no weighting factor on the frequency scale.<br/><br />
+
 		/// </summary>
 		public sealed class NO_SCALEValue : IEnumInstance
 		{
@@ -2189,16 +2426,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// no weighting factor on the frequency scale.";
+			public string Summary => @"&#10;&#10;&#10;no weighting factor on the frequency scale.&#10;
+";
 		}
 		private OPERATINGValue _OPERATING;
 		/// <summary>
-		/// piece of equipment that is powered or performing any activity.
+		﻿/// piece of equipment that is powered or performing any activity.<br/><br />
+
 		/// </summary>
 		public OPERATINGValue OPERATING => _OPERATING ?? (_OPERATING = new OPERATINGValue());
 
 		/// <summary>
-		/// piece of equipment that is powered or performing any activity.
+		﻿/// piece of equipment that is powered or performing any activity.<br/><br />
+
 		/// </summary>
 		public sealed class OPERATINGValue : IEnumInstance
 		{
@@ -2215,16 +2455,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// piece of equipment that is powered or performing any activity.";
+			public string Summary => @"&#10;&#10;&#10;piece of equipment that is powered or performing any activity.&#10;
+";
 		}
 		private OPERATORValue _OPERATOR;
 		/// <summary>
-		/// relating to the person currently responsible for operating the piece of equipment.
+		﻿/// relating to the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		public OPERATORValue OPERATOR => _OPERATOR ?? (_OPERATOR = new OPERATORValue());
 
 		/// <summary>
-		/// relating to the person currently responsible for operating the piece of equipment.
+		﻿/// relating to the person currently responsible for operating the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class OPERATORValue : IEnumInstance
 		{
@@ -2241,16 +2484,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to the person currently responsible for operating the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;relating to the person currently responsible for operating the piece of equipment.&#10;
+";
 		}
 		private OPTIONAL_STOPValue _OPTIONAL_STOP;
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment. 
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
+
 		/// </summary>
 		public OPTIONAL_STOPValue OPTIONAL_STOP => _OPTIONAL_STOP ?? (_OPTIONAL_STOP = new OPTIONAL_STOPValue());
 
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment. 
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
+
 		/// </summary>
 		public sealed class OPTIONAL_STOPValue : IEnumInstance
 		{
@@ -2267,16 +2513,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// setting or operator selection that changes the behavior of the controller on a piece of equipment. ";
+			public string Summary => @"&#10;&#10;&#10;setting or operator selection that changes the behavior of the controller on a piece of equipment. &#10;
+";
 		}
 		private OVERRIDEValue _OVERRIDE;
 		/// <summary>
-		/// overridden value.
+		﻿/// overridden value.<br/><br />
+
 		/// </summary>
 		public OVERRIDEValue OVERRIDE => _OVERRIDE ?? (_OVERRIDE = new OVERRIDEValue());
 
 		/// <summary>
-		/// overridden value.
+		﻿/// overridden value.<br/><br />
+
 		/// </summary>
 		public sealed class OVERRIDEValue : IEnumInstance
 		{
@@ -2293,16 +2542,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// overridden value.";
+			public string Summary => @"&#10;&#10;&#10;overridden value.&#10;
+";
 		}
 		private POWEREDValue _POWERED;
 		/// <summary>
-		/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.
+		﻿/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.<br/><br />
+
 		/// </summary>
 		public POWEREDValue POWERED => _POWERED ?? (_POWERED = new POWEREDValue());
 
 		/// <summary>
-		/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.
+		﻿/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.<br/><br />
+
 		/// </summary>
 		public sealed class POWEREDValue : IEnumInstance
 		{
@@ -2319,16 +2571,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// piece of equipment is powered and functioning or <see cref=""Component"">Component</see> that are required to remain on are powered.";
+			public string Summary => @"&#10;&#10;&#10;piece of equipment is powered and functioning or {{block(Component)}} that are required to remain on are powered.&#10;
+";
 		}
 		private PRIMARYValue _PRIMARY;
 		/// <summary>
-		/// main or most important.
+		﻿/// main or most important.<br/><br />
+
 		/// </summary>
 		public PRIMARYValue PRIMARY => _PRIMARY ?? (_PRIMARY = new PRIMARYValue());
 
 		/// <summary>
-		/// main or most important.
+		﻿/// main or most important.<br/><br />
+
 		/// </summary>
 		public sealed class PRIMARYValue : IEnumInstance
 		{
@@ -2345,16 +2600,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// main or most important.";
+			public string Summary => @"&#10;&#10;&#10;main or most important.&#10;
+";
 		}
 		private PROBEValue _PROBE;
 		/// <summary>
-		/// position provided by a measurement probe.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.
+		﻿/// position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
+
 		/// </summary>
 		public PROBEValue PROBE => _PROBE ?? (_PROBE = new PROBEValue());
 
 		/// <summary>
-		/// position provided by a measurement probe.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.
+		﻿/// position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
+
 		/// </summary>
 		public sealed class PROBEValue : IEnumInstance
 		{
@@ -2371,16 +2629,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position provided by a measurement probe.  <b>DEPRECATION WARNING</b>: May be deprecated in the future.";
+			public string Summary => @"&#10;&#10;&#10;position provided by a measurement probe.
+
+**DEPRECATION WARNING**: May be deprecated in the future.&#10;
+";
 		}
 		private PROCESSValue _PROCESS;
 		/// <summary>
-		/// relating to production of a part or product on a piece of equipment.
+		﻿/// relating to production of a part or product on a piece of equipment.<br/><br />
+
 		/// </summary>
 		public PROCESSValue PROCESS => _PROCESS ?? (_PROCESS = new PROCESSValue());
 
 		/// <summary>
-		/// relating to production of a part or product on a piece of equipment.
+		﻿/// relating to production of a part or product on a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESSValue : IEnumInstance
 		{
@@ -2397,16 +2660,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to production of a part or product on a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;relating to production of a part or product on a piece of equipment.&#10;
+";
 		}
 		private PROGRAMMEDValue _PROGRAMMED;
 		/// <summary>
-		/// directive value without offsets and adjustments.
+		﻿/// directive value without offsets and adjustments.<br/><br />
+
 		/// </summary>
 		public PROGRAMMEDValue PROGRAMMED => _PROGRAMMED ?? (_PROGRAMMED = new PROGRAMMEDValue());
 
 		/// <summary>
-		/// directive value without offsets and adjustments.
+		﻿/// directive value without offsets and adjustments.<br/><br />
+
 		/// </summary>
 		public sealed class PROGRAMMEDValue : IEnumInstance
 		{
@@ -2423,16 +2689,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// directive value without offsets and adjustments.";
+			public string Summary => @"&#10;&#10;&#10;directive value without offsets and adjustments.&#10;
+";
 		}
 		private RADIALValue _RADIAL;
 		/// <summary>
-		/// reference to a radial type tool offset variable.
+		﻿/// reference to a radial type tool offset variable.<br/><br />
+
 		/// </summary>
 		public RADIALValue RADIAL => _RADIAL ?? (_RADIAL = new RADIALValue());
 
 		/// <summary>
-		/// reference to a radial type tool offset variable.
+		﻿/// reference to a radial type tool offset variable.<br/><br />
+
 		/// </summary>
 		public sealed class RADIALValue : IEnumInstance
 		{
@@ -2449,16 +2718,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// reference to a radial type tool offset variable.";
+			public string Summary => @"&#10;&#10;&#10;reference to a radial type tool offset variable.&#10;
+";
 		}
 		private RAPIDValue _RAPID;
 		/// <summary>
-		/// performing an operation faster or in less time than nominal rate.
+		﻿/// performing an operation faster or in less time than nominal rate.<br/><br />
+
 		/// </summary>
 		public RAPIDValue RAPID => _RAPID ?? (_RAPID = new RAPIDValue());
 
 		/// <summary>
-		/// performing an operation faster or in less time than nominal rate.
+		﻿/// performing an operation faster or in less time than nominal rate.<br/><br />
+
 		/// </summary>
 		public sealed class RAPIDValue : IEnumInstance
 		{
@@ -2475,16 +2747,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// performing an operation faster or in less time than nominal rate.";
+			public string Summary => @"&#10;&#10;&#10;performing an operation faster or in less time than nominal rate.&#10;
+";
 		}
 		private REMAININGValue _REMAINING;
 		/// <summary>
-		/// remaining measure or count of an action, object or activity.
+		﻿/// remaining measure or count of an action, object or activity.<br/><br />
+
 		/// </summary>
 		public REMAININGValue REMAINING => _REMAINING ?? (_REMAINING = new REMAININGValue());
 
 		/// <summary>
-		/// remaining measure or count of an action, object or activity.
+		﻿/// remaining measure or count of an action, object or activity.<br/><br />
+
 		/// </summary>
 		public sealed class REMAININGValue : IEnumInstance
 		{
@@ -2501,16 +2776,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// remaining measure or count of an action, object or activity.";
+			public string Summary => @"&#10;&#10;&#10;remaining measure or count of an action, object or activity.&#10;
+";
 		}
 		private ROCKWELLValue _ROCKWELL;
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		public ROCKWELLValue ROCKWELL => _ROCKWELL ?? (_ROCKWELL = new ROCKWELLValue());
 
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		public sealed class ROCKWELLValue : IEnumInstance
 		{
@@ -2527,16 +2805,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// scale to measure the resistance to deformation of a surface.";
+			public string Summary => @"&#10;&#10;&#10;scale to measure the resistance to deformation of a surface.&#10;
+";
 		}
 		private ROTARYValue _ROTARY;
 		/// <summary>
-		/// direction of a rotary motion using the right hand rule convention.
+		﻿/// direction of a rotary motion using the right hand rule convention.<br/><br />
+
 		/// </summary>
 		public ROTARYValue ROTARY => _ROTARY ?? (_ROTARY = new ROTARYValue());
 
 		/// <summary>
-		/// direction of a rotary motion using the right hand rule convention.
+		﻿/// direction of a rotary motion using the right hand rule convention.<br/><br />
+
 		/// </summary>
 		public sealed class ROTARYValue : IEnumInstance
 		{
@@ -2553,16 +2834,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// direction of a rotary motion using the right hand rule convention.";
+			public string Summary => @"&#10;&#10;&#10;direction of a rotary motion using the right hand rule convention.&#10;
+";
 		}
 		private SCHEDULEValue _SCHEDULE;
 		/// <summary>
-		/// identity of a control program that is used to specify the order of execution of other programs.
+		﻿/// identity of a control program that is used to specify the order of execution of other programs.<br/><br />
+
 		/// </summary>
 		public SCHEDULEValue SCHEDULE => _SCHEDULE ?? (_SCHEDULE = new SCHEDULEValue());
 
 		/// <summary>
-		/// identity of a control program that is used to specify the order of execution of other programs.
+		﻿/// identity of a control program that is used to specify the order of execution of other programs.<br/><br />
+
 		/// </summary>
 		public sealed class SCHEDULEValue : IEnumInstance
 		{
@@ -2579,16 +2863,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identity of a control program that is used to specify the order of execution of other programs.";
+			public string Summary => @"&#10;&#10;&#10;identity of a control program that is used to specify the order of execution of other programs.&#10;
+";
 		}
 		private SET_UPValue _SET_UP;
 		/// <summary>
-		/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.
+		﻿/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.<br/><br />
+
 		/// </summary>
 		public SET_UPValue SET_UP => _SET_UP ?? (_SET_UP = new SET_UPValue());
 
 		/// <summary>
-		/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.
+		﻿/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.<br/><br />
+
 		/// </summary>
 		public sealed class SET_UPValue : IEnumInstance
 		{
@@ -2605,16 +2892,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.";
+			public string Summary => @"&#10;&#10;&#10;relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.&#10;
+";
 		}
 		private SHOREValue _SHORE;
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		public SHOREValue SHORE => _SHORE ?? (_SHORE = new SHOREValue());
 
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		public sealed class SHOREValue : IEnumInstance
 		{
@@ -2631,16 +2921,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// scale to measure the resistance to deformation of a surface.";
+			public string Summary => @"&#10;&#10;&#10;scale to measure the resistance to deformation of a surface.&#10;
+";
 		}
 		private SINGLE_BLOCKValue _SINGLE_BLOCK;
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment. 
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
+
 		/// </summary>
 		public SINGLE_BLOCKValue SINGLE_BLOCK => _SINGLE_BLOCK ?? (_SINGLE_BLOCK = new SINGLE_BLOCKValue());
 
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment. 
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
+
 		/// </summary>
 		public sealed class SINGLE_BLOCKValue : IEnumInstance
 		{
@@ -2657,16 +2950,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// setting or operator selection that changes the behavior of the controller on a piece of equipment. ";
+			public string Summary => @"&#10;&#10;&#10;setting or operator selection that changes the behavior of the controller on a piece of equipment. &#10;
+";
 		}
 		private STANDARDValue _STANDARD;
 		/// <summary>
-		/// standard measure of an object or an action.
+		﻿/// standard measure of an object or an action.<br/><br />
+
 		/// </summary>
 		public STANDARDValue STANDARD => _STANDARD ?? (_STANDARD = new STANDARDValue());
 
 		/// <summary>
-		/// standard measure of an object or an action.
+		﻿/// standard measure of an object or an action.<br/><br />
+
 		/// </summary>
 		public sealed class STANDARDValue : IEnumInstance
 		{
@@ -2683,16 +2979,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// standard measure of an object or an action.";
+			public string Summary => @"&#10;&#10;&#10;standard measure of an object or an action.&#10;
+";
 		}
 		private STARTValue _START;
 		/// <summary>
-		/// boundary when an activity or an event commences.
+		﻿/// boundary when an activity or an event commences.<br/><br />
+
 		/// </summary>
 		public STARTValue START => _START ?? (_START = new STARTValue());
 
 		/// <summary>
-		/// boundary when an activity or an event commences.
+		﻿/// boundary when an activity or an event commences.<br/><br />
+
 		/// </summary>
 		public sealed class STARTValue : IEnumInstance
 		{
@@ -2709,16 +3008,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// boundary when an activity or an event commences.";
+			public string Summary => @"&#10;&#10;&#10;boundary when an activity or an event commences.&#10;
+";
 		}
 		private SWITCHEDValue _SWITCHED;
 		/// <summary>
-		/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.
+		﻿/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.<br/><br />
+
 		/// </summary>
 		public SWITCHEDValue SWITCHED => _SWITCHED ?? (_SWITCHED = new SWITCHEDValue());
 
 		/// <summary>
-		/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.
+		﻿/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.<br/><br />
+
 		/// </summary>
 		public sealed class SWITCHEDValue : IEnumInstance
 		{
@@ -2735,16 +3037,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the activation state of a mechanism represented by a <see cref=""Composition"">Composition</see>.";
+			public string Summary => @"&#10;&#10;&#10;indication of the activation state of a mechanism represented by a {{block(Composition)}}.&#10;
+";
 		}
 		private TARGETValue _TARGET;
 		/// <summary>
-		/// goal of the operation or process.
+		﻿/// goal of the operation or process.<br/><br />
+
 		/// </summary>
 		public TARGETValue TARGET => _TARGET ?? (_TARGET = new TARGETValue());
 
 		/// <summary>
-		/// goal of the operation or process.
+		﻿/// goal of the operation or process.<br/><br />
+
 		/// </summary>
 		public sealed class TARGETValue : IEnumInstance
 		{
@@ -2761,16 +3066,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// goal of the operation or process.";
+			public string Summary => @"&#10;&#10;&#10;goal of the operation or process.&#10;
+";
 		}
 		private TARGET_COMPLETIONValue _TARGET_COMPLETION;
 		/// <summary>
-		/// relating to the end or completion of an activity or event.
+		﻿/// relating to the end or completion of an activity or event.<br/><br />
+
 		/// </summary>
 		public TARGET_COMPLETIONValue TARGET_COMPLETION => _TARGET_COMPLETION ?? (_TARGET_COMPLETION = new TARGET_COMPLETIONValue());
 
 		/// <summary>
-		/// relating to the end or completion of an activity or event.
+		﻿/// relating to the end or completion of an activity or event.<br/><br />
+
 		/// </summary>
 		public sealed class TARGET_COMPLETIONValue : IEnumInstance
 		{
@@ -2787,16 +3095,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to the end or completion of an activity or event.";
+			public string Summary => @"&#10;&#10;&#10;relating to the end or completion of an activity or event.&#10;
+";
 		}
 		private TOOL_CHANGE_STOPValue _TOOL_CHANGE_STOP;
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
+
 		/// </summary>
 		public TOOL_CHANGE_STOPValue TOOL_CHANGE_STOP => _TOOL_CHANGE_STOP ?? (_TOOL_CHANGE_STOP = new TOOL_CHANGE_STOPValue());
 
 		/// <summary>
-		/// setting or operator selection that changes the behavior of the controller on a piece of equipment.
+		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class TOOL_CHANGE_STOPValue : IEnumInstance
 		{
@@ -2813,16 +3124,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// setting or operator selection that changes the behavior of the controller on a piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;setting or operator selection that changes the behavior of the controller on a piece of equipment.&#10;
+";
 		}
 		private USEABLEValue _USEABLE;
 		/// <summary>
-		/// remaining usable measure of an object or action.
+		﻿/// remaining usable measure of an object or action.<br/><br />
+
 		/// </summary>
 		public USEABLEValue USEABLE => _USEABLE ?? (_USEABLE = new USEABLEValue());
 
 		/// <summary>
-		/// remaining usable measure of an object or action.
+		﻿/// remaining usable measure of an object or action.<br/><br />
+
 		/// </summary>
 		public sealed class USEABLEValue : IEnumInstance
 		{
@@ -2839,16 +3153,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// remaining usable measure of an object or action.";
+			public string Summary => @"&#10;&#10;&#10;remaining usable measure of an object or action.&#10;
+";
 		}
 		private VERTICALValue _VERTICAL;
 		/// <summary>
-		/// indication of the position of a mechanism that may move in a vertical direction.
+		﻿/// indication of the position of a mechanism that may move in a vertical direction.<br/><br />
+
 		/// </summary>
 		public VERTICALValue VERTICAL => _VERTICAL ?? (_VERTICAL = new VERTICALValue());
 
 		/// <summary>
-		/// indication of the position of a mechanism that may move in a vertical direction.
+		﻿/// indication of the position of a mechanism that may move in a vertical direction.<br/><br />
+
 		/// </summary>
 		public sealed class VERTICALValue : IEnumInstance
 		{
@@ -2865,16 +3182,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indication of the position of a mechanism that may move in a vertical direction.";
+			public string Summary => @"&#10;&#10;&#10;indication of the position of a mechanism that may move in a vertical direction.&#10;
+";
 		}
 		private VICKERSValue _VICKERS;
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		public VICKERSValue VICKERS => _VICKERS ?? (_VICKERS = new VICKERSValue());
 
 		/// <summary>
-		/// scale to measure the resistance to deformation of a surface.
+		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
+
 		/// </summary>
 		public sealed class VICKERSValue : IEnumInstance
 		{
@@ -2891,16 +3211,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// scale to measure the resistance to deformation of a surface.";
+			public string Summary => @"&#10;&#10;&#10;scale to measure the resistance to deformation of a surface.&#10;
+";
 		}
 		private WORKINGValue _WORKING;
 		/// <summary>
-		/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.
+		﻿/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.<br/><br />
+
 		/// </summary>
 		public WORKINGValue WORKING => _WORKING ?? (_WORKING = new WORKINGValue());
 
 		/// <summary>
-		/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.
+		﻿/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.<br/><br />
+
 		/// </summary>
 		public sealed class WORKINGValue : IEnumInstance
 		{
@@ -2917,16 +3240,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.";
+			public string Summary => @"&#10;&#10;&#10;piece of equipment performing any activity, the equipment is active and performing a function under load or not.&#10;
+";
 		}
 		private IPV4_ADDRESSValue _IPV4_ADDRESS;
 		/// <summary>
-		/// IPV4 network address of the <see cref="Component">Component</see>.
+		﻿/// IPV4 network address of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public IPV4_ADDRESSValue IPV4_ADDRESS => _IPV4_ADDRESS ?? (_IPV4_ADDRESS = new IPV4_ADDRESSValue());
 
 		/// <summary>
-		/// IPV4 network address of the <see cref="Component">Component</see>.
+		﻿/// IPV4 network address of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class IPV4_ADDRESSValue : IEnumInstance
 		{
@@ -2943,16 +3269,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// IPV4 network address of the <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;IPV4 network address of the {{block(Component)}}.&#10;
+";
 		}
 		private IPV6_ADDRESSValue _IPV6_ADDRESS;
 		/// <summary>
-		/// IPV6 network address of the <see cref="Component">Component</see>.
+		﻿/// IPV6 network address of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public IPV6_ADDRESSValue IPV6_ADDRESS => _IPV6_ADDRESS ?? (_IPV6_ADDRESS = new IPV6_ADDRESSValue());
 
 		/// <summary>
-		/// IPV6 network address of the <see cref="Component">Component</see>.
+		﻿/// IPV6 network address of the <see cref="Component">Component</see>.<br/><br />
+
 		/// </summary>
 		public sealed class IPV6_ADDRESSValue : IEnumInstance
 		{
@@ -2969,16 +3298,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// IPV6 network address of the <see cref=""Component"">Component</see>.";
+			public string Summary => @"&#10;&#10;&#10;IPV6 network address of the {{block(Component)}}.&#10;
+";
 		}
 		private GATEWAYValue _GATEWAY;
 		/// <summary>
-		/// Gateway for the <see cref="Component">Component</see> network.
+		﻿/// Gateway for the <see cref="Component">Component</see> network.<br/><br />
+
 		/// </summary>
 		public GATEWAYValue GATEWAY => _GATEWAY ?? (_GATEWAY = new GATEWAYValue());
 
 		/// <summary>
-		/// Gateway for the <see cref="Component">Component</see> network.
+		﻿/// Gateway for the <see cref="Component">Component</see> network.<br/><br />
+
 		/// </summary>
 		public sealed class GATEWAYValue : IEnumInstance
 		{
@@ -2995,16 +3327,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// Gateway for the <see cref=""Component"">Component</see> network.";
+			public string Summary => @"&#10;&#10;&#10;Gateway for the {{block(Component)}} network.&#10;
+";
 		}
 		private SUBNET_MASKValue _SUBNET_MASK;
 		/// <summary>
-		/// SubNet mask for the <see cref="Component">Component</see> network. 
+		﻿/// SubNet mask for the <see cref="Component">Component</see> network.<br /><br/><br />
+
 		/// </summary>
 		public SUBNET_MASKValue SUBNET_MASK => _SUBNET_MASK ?? (_SUBNET_MASK = new SUBNET_MASKValue());
 
 		/// <summary>
-		/// SubNet mask for the <see cref="Component">Component</see> network. 
+		﻿/// SubNet mask for the <see cref="Component">Component</see> network.<br /><br/><br />
+
 		/// </summary>
 		public sealed class SUBNET_MASKValue : IEnumInstance
 		{
@@ -3021,16 +3356,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// SubNet mask for the <see cref=""Component"">Component</see> network. ";
+			public string Summary => @"&#10;&#10;&#10;SubNet mask for the {{block(Component)}} network.&#10;
+";
 		}
 		private VLAN_IDValue _VLAN_ID;
 		/// <summary>
-		/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.
+		﻿/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.<br/><br />
+
 		/// </summary>
 		public VLAN_IDValue VLAN_ID => _VLAN_ID ?? (_VLAN_ID = new VLAN_IDValue());
 
 		/// <summary>
-		/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.
+		﻿/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.<br/><br />
+
 		/// </summary>
 		public sealed class VLAN_IDValue : IEnumInstance
 		{
@@ -3047,16 +3385,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// layer2 Virtual Local Network (VLAN) ID for the <see cref=""Component"">Component</see> network.";
+			public string Summary => @"&#10;&#10;&#10;layer2 Virtual Local Network (VLAN) ID for the {{block(Component)}} network.&#10;
+";
 		}
 		private MAC_ADDRESSValue _MAC_ADDRESS;
 		/// <summary>
-		/// Media Access Control Address. The unique physical address of the network hardware.
+		﻿/// Media Access Control Address. The unique physical address of the network hardware.<br/><br />
+
 		/// </summary>
 		public MAC_ADDRESSValue MAC_ADDRESS => _MAC_ADDRESS ?? (_MAC_ADDRESS = new MAC_ADDRESSValue());
 
 		/// <summary>
-		/// Media Access Control Address. The unique physical address of the network hardware.
+		﻿/// Media Access Control Address. The unique physical address of the network hardware.<br/><br />
+
 		/// </summary>
 		public sealed class MAC_ADDRESSValue : IEnumInstance
 		{
@@ -3073,16 +3414,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// Media Access Control Address. The unique physical address of the network hardware.";
+			public string Summary => @"&#10;&#10;&#10;Media Access Control Address. The unique physical address of the network hardware.&#10;
+";
 		}
 		private WIRELESSValue _WIRELESS;
 		/// <summary>
-		/// identifies whether the connection type is wireless.
+		﻿/// identifies whether the connection type is wireless.<br/><br />
+
 		/// </summary>
 		public WIRELESSValue WIRELESS => _WIRELESS ?? (_WIRELESS = new WIRELESSValue());
 
 		/// <summary>
-		/// identifies whether the connection type is wireless.
+		﻿/// identifies whether the connection type is wireless.<br/><br />
+
 		/// </summary>
 		public sealed class WIRELESSValue : IEnumInstance
 		{
@@ -3099,16 +3443,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// identifies whether the connection type is wireless.";
+			public string Summary => @"&#10;&#10;&#10;identifies whether the connection type is wireless.&#10;
+";
 		}
 		private LICENSEValue _LICENSE;
 		/// <summary>
-		/// license code to validate or activate the hardware or software.
+		﻿/// license code to validate or activate the hardware or software.<br/><br />
+
 		/// </summary>
 		public LICENSEValue LICENSE => _LICENSE ?? (_LICENSE = new LICENSEValue());
 
 		/// <summary>
-		/// license code to validate or activate the hardware or software.
+		﻿/// license code to validate or activate the hardware or software.<br/><br />
+
 		/// </summary>
 		public sealed class LICENSEValue : IEnumInstance
 		{
@@ -3125,16 +3472,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// license code to validate or activate the hardware or software.";
+			public string Summary => @"&#10;&#10;&#10;license code to validate or activate the hardware or software.&#10;
+";
 		}
 		private VERSIONValue _VERSION;
 		/// <summary>
-		/// version of the hardware or software. 
+		﻿/// version of the hardware or software.<br /><br/><br />
+
 		/// </summary>
 		public VERSIONValue VERSION => _VERSION ?? (_VERSION = new VERSIONValue());
 
 		/// <summary>
-		/// version of the hardware or software. 
+		﻿/// version of the hardware or software.<br /><br/><br />
+
 		/// </summary>
 		public sealed class VERSIONValue : IEnumInstance
 		{
@@ -3151,16 +3501,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// version of the hardware or software. ";
+			public string Summary => @"&#10;&#10;&#10;version of the hardware or software.&#10;
+";
 		}
 		private RELEASE_DATEValue _RELEASE_DATE;
 		/// <summary>
-		/// date the hardware or software was released for general use.
+		﻿/// date the hardware or software was released for general use.<br/><br />
+
 		/// </summary>
 		public RELEASE_DATEValue RELEASE_DATE => _RELEASE_DATE ?? (_RELEASE_DATE = new RELEASE_DATEValue());
 
 		/// <summary>
-		/// date the hardware or software was released for general use.
+		﻿/// date the hardware or software was released for general use.<br/><br />
+
 		/// </summary>
 		public sealed class RELEASE_DATEValue : IEnumInstance
 		{
@@ -3177,16 +3530,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// date the hardware or software was released for general use.";
+			public string Summary => @"&#10;&#10;&#10;date the hardware or software was released for general use.&#10;
+";
 		}
 		private INSTALL_DATEValue _INSTALL_DATE;
 		/// <summary>
-		/// date the hardware or software was installed.
+		﻿/// date the hardware or software was installed.<br/><br />
+
 		/// </summary>
 		public INSTALL_DATEValue INSTALL_DATE => _INSTALL_DATE ?? (_INSTALL_DATE = new INSTALL_DATEValue());
 
 		/// <summary>
-		/// date the hardware or software was installed.
+		﻿/// date the hardware or software was installed.<br/><br />
+
 		/// </summary>
 		public sealed class INSTALL_DATEValue : IEnumInstance
 		{
@@ -3203,16 +3559,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// date the hardware or software was installed.";
+			public string Summary => @"&#10;&#10;&#10;date the hardware or software was installed.&#10;
+";
 		}
 		private MANUFACTURERValue _MANUFACTURER;
 		/// <summary>
-		/// corporate identity for the maker of the hardware or software.
+		﻿/// corporate identity for the maker of the hardware or software.<br/><br />
+
 		/// </summary>
 		public MANUFACTURERValue MANUFACTURER => _MANUFACTURER ?? (_MANUFACTURER = new MANUFACTURERValue());
 
 		/// <summary>
-		/// corporate identity for the maker of the hardware or software.
+		﻿/// corporate identity for the maker of the hardware or software.<br/><br />
+
 		/// </summary>
 		public sealed class MANUFACTURERValue : IEnumInstance
 		{
@@ -3229,16 +3588,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// corporate identity for the maker of the hardware or software.";
+			public string Summary => @"&#10;&#10;&#10;corporate identity for the maker of the hardware or software.&#10;
+";
 		}
 		private UUIDValue _UUID;
 		/// <summary>
-		/// universally unique identifier as specified in ISO 11578 or RFC 4122.
+		﻿/// universally unique identifier as specified in ISO 11578 or RFC 4122.<br/><br />
+
 		/// </summary>
 		public UUIDValue UUID => _UUID ?? (_UUID = new UUIDValue());
 
 		/// <summary>
-		/// universally unique identifier as specified in ISO 11578 or RFC 4122.
+		﻿/// universally unique identifier as specified in ISO 11578 or RFC 4122.<br/><br />
+
 		/// </summary>
 		public sealed class UUIDValue : IEnumInstance
 		{
@@ -3255,16 +3617,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// universally unique identifier as specified in ISO 11578 or RFC 4122.";
+			public string Summary => @"&#10;&#10;&#10;universally unique identifier as specified in ISO 11578 or RFC 4122.&#10;
+";
 		}
 		private SERIAL_NUMBERValue _SERIAL_NUMBER;
 		/// <summary>
-		/// serial number that uniquely identifies a specific part.
+		﻿/// serial number that uniquely identifies a specific part.<br/><br />
+
 		/// </summary>
 		public SERIAL_NUMBERValue SERIAL_NUMBER => _SERIAL_NUMBER ?? (_SERIAL_NUMBER = new SERIAL_NUMBERValue());
 
 		/// <summary>
-		/// serial number that uniquely identifies a specific part.
+		﻿/// serial number that uniquely identifies a specific part.<br/><br />
+
 		/// </summary>
 		public sealed class SERIAL_NUMBERValue : IEnumInstance
 		{
@@ -3281,16 +3646,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// serial number that uniquely identifies a specific part.";
+			public string Summary => @"&#10;&#10;&#10;serial number that uniquely identifies a specific part.&#10;
+";
 		}
 		private RAW_MATERIALValue _RAW_MATERIAL;
 		/// <summary>
-		/// material that is used to produce parts.
+		﻿/// material that is used to produce parts.<br/><br />
+
 		/// </summary>
 		public RAW_MATERIALValue RAW_MATERIAL => _RAW_MATERIAL ?? (_RAW_MATERIAL = new RAW_MATERIALValue());
 
 		/// <summary>
-		/// material that is used to produce parts.
+		﻿/// material that is used to produce parts.<br/><br />
+
 		/// </summary>
 		public sealed class RAW_MATERIALValue : IEnumInstance
 		{
@@ -3307,16 +3675,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// material that is used to produce parts.";
+			public string Summary => @"&#10;&#10;&#10;material that is used to produce parts.&#10;
+";
 		}
 		private LOTValue _LOT;
 		/// <summary>
-		/// group of parts tracked as a lot.
+		﻿/// group of parts tracked as a lot.<br/><br />
+
 		/// </summary>
 		public LOTValue LOT => _LOT ?? (_LOT = new LOTValue());
 
 		/// <summary>
-		/// group of parts tracked as a lot.
+		﻿/// group of parts tracked as a lot.<br/><br />
+
 		/// </summary>
 		public sealed class LOTValue : IEnumInstance
 		{
@@ -3333,16 +3704,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// group of parts tracked as a lot.";
+			public string Summary => @"&#10;&#10;&#10;group of parts tracked as a lot.&#10;
+";
 		}
 		private BATCHValue _BATCH;
 		/// <summary>
-		/// group of parts produced in a batch.
+		﻿/// group of parts produced in a batch.<br/><br />
+
 		/// </summary>
 		public BATCHValue BATCH => _BATCH ?? (_BATCH = new BATCHValue());
 
 		/// <summary>
-		/// group of parts produced in a batch.
+		﻿/// group of parts produced in a batch.<br/><br />
+
 		/// </summary>
 		public sealed class BATCHValue : IEnumInstance
 		{
@@ -3359,16 +3733,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// group of parts produced in a batch.";
+			public string Summary => @"&#10;&#10;&#10;group of parts produced in a batch.&#10;
+";
 		}
 		private HEAT_TREATValue _HEAT_TREAT;
 		/// <summary>
-		/// material heat number.
+		﻿/// material heat number.<br/><br />
+
 		/// </summary>
 		public HEAT_TREATValue HEAT_TREAT => _HEAT_TREAT ?? (_HEAT_TREAT = new HEAT_TREATValue());
 
 		/// <summary>
-		/// material heat number.
+		﻿/// material heat number.<br/><br />
+
 		/// </summary>
 		public sealed class HEAT_TREATValue : IEnumInstance
 		{
@@ -3385,16 +3762,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// material heat number.";
+			public string Summary => @"&#10;&#10;&#10;material heat number.&#10;
+";
 		}
 		private PART_NUMBERValue _PART_NUMBER;
 		/// <summary>
-		/// particular part design or model.
+		﻿/// particular part design or model.<br/><br />
+
 		/// </summary>
 		public PART_NUMBERValue PART_NUMBER => _PART_NUMBER ?? (_PART_NUMBER = new PART_NUMBERValue());
 
 		/// <summary>
-		/// particular part design or model.
+		﻿/// particular part design or model.<br/><br />
+
 		/// </summary>
 		public sealed class PART_NUMBERValue : IEnumInstance
 		{
@@ -3411,16 +3791,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// particular part design or model.";
+			public string Summary => @"&#10;&#10;&#10;particular part design or model.&#10;
+";
 		}
 		private PART_FAMILYValue _PART_FAMILY;
 		/// <summary>
-		/// group of parts having similarities in geometry, manufacturing process, and/or functions.
+		﻿/// group of parts having similarities in geometry, manufacturing process, and/or functions.<br/><br />
+
 		/// </summary>
 		public PART_FAMILYValue PART_FAMILY => _PART_FAMILY ?? (_PART_FAMILY = new PART_FAMILYValue());
 
 		/// <summary>
-		/// group of parts having similarities in geometry, manufacturing process, and/or functions.
+		﻿/// group of parts having similarities in geometry, manufacturing process, and/or functions.<br/><br />
+
 		/// </summary>
 		public sealed class PART_FAMILYValue : IEnumInstance
 		{
@@ -3437,16 +3820,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// group of parts having similarities in geometry, manufacturing process, and/or functions.";
+			public string Summary => @"&#10;&#10;&#10;group of parts having similarities in geometry, manufacturing process, and/or functions.&#10;
+";
 		}
 		private PART_NAMEValue _PART_NAME;
 		/// <summary>
-		/// word or set of words by which a part is known, addressed, or referred to.
+		﻿/// word or set of words by which a part is known, addressed, or referred to.<br/><br />
+
 		/// </summary>
 		public PART_NAMEValue PART_NAME => _PART_NAME ?? (_PART_NAME = new PART_NAMEValue());
 
 		/// <summary>
-		/// word or set of words by which a part is known, addressed, or referred to.
+		﻿/// word or set of words by which a part is known, addressed, or referred to.<br/><br />
+
 		/// </summary>
 		public sealed class PART_NAMEValue : IEnumInstance
 		{
@@ -3463,16 +3849,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// word or set of words by which a part is known, addressed, or referred to.";
+			public string Summary => @"&#10;&#10;&#10;word or set of words by which a part is known, addressed, or referred to.&#10;
+";
 		}
 		private PROCESS_STEPValue _PROCESS_STEP;
 		/// <summary>
-		/// step in the process plan that this occurrence corresponds to. 
+		﻿/// step in the process plan that this occurrence corresponds to. <br/><br />
+
 		/// </summary>
 		public PROCESS_STEPValue PROCESS_STEP => _PROCESS_STEP ?? (_PROCESS_STEP = new PROCESS_STEPValue());
 
 		/// <summary>
-		/// step in the process plan that this occurrence corresponds to. 
+		﻿/// step in the process plan that this occurrence corresponds to. <br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_STEPValue : IEnumInstance
 		{
@@ -3489,16 +3878,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// step in the process plan that this occurrence corresponds to. ";
+			public string Summary => @"&#10;&#10;&#10;step in the process plan that this occurrence corresponds to. &#10;
+";
 		}
 		private PROCESS_PLANValue _PROCESS_PLAN;
 		/// <summary>
-		/// process plan that a process occurrence belongs to.
+		﻿/// process plan that a process occurrence belongs to.<br/><br />
+
 		/// </summary>
 		public PROCESS_PLANValue PROCESS_PLAN => _PROCESS_PLAN ?? (_PROCESS_PLAN = new PROCESS_PLANValue());
 
 		/// <summary>
-		/// process plan that a process occurrence belongs to.
+		﻿/// process plan that a process occurrence belongs to.<br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_PLANValue : IEnumInstance
 		{
@@ -3515,16 +3907,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// process plan that a process occurrence belongs to.";
+			public string Summary => @"&#10;&#10;&#10;process plan that a process occurrence belongs to.&#10;
+";
 		}
 		private ORDER_NUMBERValue _ORDER_NUMBER;
 		/// <summary>
-		/// authorization of a process occurrence.
+		﻿/// authorization of a process occurrence.<br/><br />
+
 		/// </summary>
 		public ORDER_NUMBERValue ORDER_NUMBER => _ORDER_NUMBER ?? (_ORDER_NUMBER = new ORDER_NUMBERValue());
 
 		/// <summary>
-		/// authorization of a process occurrence.
+		﻿/// authorization of a process occurrence.<br/><br />
+
 		/// </summary>
 		public sealed class ORDER_NUMBERValue : IEnumInstance
 		{
@@ -3541,16 +3936,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// authorization of a process occurrence.";
+			public string Summary => @"&#10;&#10;&#10;authorization of a process occurrence.&#10;
+";
 		}
 		private PROCESS_NAMEValue _PROCESS_NAME;
 		/// <summary>
-		/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. 
+		﻿/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br/><br />
+
 		/// </summary>
 		public PROCESS_NAMEValue PROCESS_NAME => _PROCESS_NAME ?? (_PROCESS_NAME = new PROCESS_NAMEValue());
 
 		/// <summary>
-		/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. 
+		﻿/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br/><br />
+
 		/// </summary>
 		public sealed class PROCESS_NAMEValue : IEnumInstance
 		{
@@ -3567,16 +3965,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. ";
+			public string Summary => @"&#10;&#10;&#10;word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.&#10;
+";
 		}
 		private ISO_STEP_EXECUTABLEValue _ISO_STEP_EXECUTABLE;
 		/// <summary>
-		/// reference to a ISO 10303 Executable.
+		﻿/// reference to a ISO 10303 Executable.<br/><br />
+
 		/// </summary>
 		public ISO_STEP_EXECUTABLEValue ISO_STEP_EXECUTABLE => _ISO_STEP_EXECUTABLE ?? (_ISO_STEP_EXECUTABLE = new ISO_STEP_EXECUTABLEValue());
 
 		/// <summary>
-		/// reference to a ISO 10303 Executable.
+		﻿/// reference to a ISO 10303 Executable.<br/><br />
+
 		/// </summary>
 		public sealed class ISO_STEP_EXECUTABLEValue : IEnumInstance
 		{
@@ -3593,16 +3994,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// reference to a ISO 10303 Executable.";
+			public string Summary => @"&#10;&#10;&#10;reference to a ISO 10303 Executable.&#10;
+";
 		}
 		private COMPLETEValue _COMPLETE;
 		/// <summary>
-		/// associated with the completion of an activity or event.
+		﻿/// associated with the completion of an activity or event.<br/><br />
+
 		/// </summary>
 		public COMPLETEValue COMPLETE => _COMPLETE ?? (_COMPLETE = new COMPLETEValue());
 
 		/// <summary>
-		/// associated with the completion of an activity or event.
+		﻿/// associated with the completion of an activity or event.<br/><br />
+
 		/// </summary>
 		public sealed class COMPLETEValue : IEnumInstance
 		{
@@ -3619,16 +4023,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// associated with the completion of an activity or event.";
+			public string Summary => @"&#10;&#10;&#10;associated with the completion of an activity or event.&#10;
+";
 		}
 		private ACTIVEValue _ACTIVE;
 		/// <summary>
-		/// relating to logic or motion program currently executing.
+		﻿/// relating to logic or motion program currently executing.<br/><br />
+
 		/// </summary>
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
 		/// <summary>
-		/// relating to logic or motion program currently executing.
+		﻿/// relating to logic or motion program currently executing.<br/><br />
+
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -3645,16 +4052,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// relating to logic or motion program currently executing.";
+			public string Summary => @"&#10;&#10;&#10;relating to logic or motion program currently executing.&#10;
+";
 		}
 		private FAILEDValue _FAILED;
 		/// <summary>
-		/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.
+		﻿/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.<br/><br />
+
 		/// </summary>
 		public FAILEDValue FAILED => _FAILED ?? (_FAILED = new FAILEDValue());
 
 		/// <summary>
-		/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.
+		﻿/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.<br/><br />
+
 		/// </summary>
 		public sealed class FAILEDValue : IEnumInstance
 		{
@@ -3671,16 +4081,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.";
+			public string Summary => @"&#10;&#10;&#10;actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.&#10;
+";
 		}
 		private ABORTEDValue _ABORTED;
 		/// <summary>
-		/// actions or activities that were attempted, but terminated before they could be completed.
+		﻿/// actions or activities that were attempted, but terminated before they could be completed.<br/><br />
+
 		/// </summary>
 		public ABORTEDValue ABORTED => _ABORTED ?? (_ABORTED = new ABORTEDValue());
 
 		/// <summary>
-		/// actions or activities that were attempted, but terminated before they could be completed.
+		﻿/// actions or activities that were attempted, but terminated before they could be completed.<br/><br />
+
 		/// </summary>
 		public sealed class ABORTEDValue : IEnumInstance
 		{
@@ -3697,16 +4110,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// actions or activities that were attempted, but terminated before they could be completed.";
+			public string Summary => @"&#10;&#10;&#10;actions or activities that were attempted, but terminated before they could be completed.&#10;
+";
 		}
 		private ENDEDValue _ENDED;
 		/// <summary>
-		/// boundary when an activity or an event terminates.
+		﻿/// boundary when an activity or an event terminates.<br/><br />
+
 		/// </summary>
 		public ENDEDValue ENDED => _ENDED ?? (_ENDED = new ENDEDValue());
 
 		/// <summary>
-		/// boundary when an activity or an event terminates.
+		﻿/// boundary when an activity or an event terminates.<br/><br />
+
 		/// </summary>
 		public sealed class ENDEDValue : IEnumInstance
 		{
@@ -3723,16 +4139,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// boundary when an activity or an event terminates.";
+			public string Summary => @"&#10;&#10;&#10;boundary when an activity or an event terminates.&#10;
+";
 		}
 		private WASTEValue _WASTE;
 		/// <summary>
-		/// amount discarded.
+		﻿/// amount discarded.<br/><br />
+
 		/// </summary>
 		public WASTEValue WASTE => _WASTE ?? (_WASTE = new WASTEValue());
 
 		/// <summary>
-		/// amount discarded.
+		﻿/// amount discarded.<br/><br />
+
 		/// </summary>
 		public sealed class WASTEValue : IEnumInstance
 		{
@@ -3749,16 +4168,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// amount discarded.";
+			public string Summary => @"&#10;&#10;&#10;amount discarded.&#10;
+";
 		}
 		private PARTValue _PART;
 		/// <summary>
-		/// amount included in the <i>part</i>.
+		﻿/// amount included in the <i>part</i>.<br/><br />
+
 		/// </summary>
 		public PARTValue PART => _PART ?? (_PART = new PARTValue());
 
 		/// <summary>
-		/// amount included in the <i>part</i>.
+		﻿/// amount included in the <i>part</i>.<br/><br />
+
 		/// </summary>
 		public sealed class PARTValue : IEnumInstance
 		{
@@ -3775,16 +4197,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// amount included in the <i>part</i>.";
+			public string Summary => @"&#10;&#10;&#10;amount included in the {{term(part)}}.&#10;
+";
 		}
 		private REQUESTValue _REQUEST;
 		/// <summary>
-		/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.
+		﻿/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.<br/><br />
+
 		/// </summary>
 		public REQUESTValue REQUEST => _REQUEST ?? (_REQUEST = new REQUESTValue());
 
 		/// <summary>
-		/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.
+		﻿/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.<br/><br />
+
 		/// </summary>
 		public sealed class REQUESTValue : IEnumInstance
 		{
@@ -3801,16 +4226,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>request</i> by an <see cref=""Interface"">Interface</see> for a task.";
+			public string Summary => @"&#10;&#10;&#10;{{term(request)}} by an {{block(Interface)}} for a task.&#10;
+";
 		}
 		private RESPONSEValue _RESPONSE;
 		/// <summary>
-		/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.
+		﻿/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.<br/><br />
+
 		/// </summary>
 		public RESPONSEValue RESPONSE => _RESPONSE ?? (_RESPONSE = new RESPONSEValue());
 
 		/// <summary>
-		/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.
+		﻿/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.<br/><br />
+
 		/// </summary>
 		public sealed class RESPONSEValue : IEnumInstance
 		{
@@ -3827,16 +4255,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>response</i> by an <see cref=""Interface"">Interface</see> to a <i>request</i> for a task.";
+			public string Summary => @"&#10;&#10;&#10;{{term(response)}} by an {{block(Interface)}} to a {{term(request)}} for a task.&#10;
+";
 		}
 		private ACTIVITYValue _ACTIVITY;
 		/// <summary>
-		/// phase or segment of a recipe or program.
+		﻿/// phase or segment of a recipe or program.<br/><br />
+
 		/// </summary>
 		public ACTIVITYValue ACTIVITY => _ACTIVITY ?? (_ACTIVITY = new ACTIVITYValue());
 
 		/// <summary>
-		/// phase or segment of a recipe or program.
+		﻿/// phase or segment of a recipe or program.<br/><br />
+
 		/// </summary>
 		public sealed class ACTIVITYValue : IEnumInstance
 		{
@@ -3853,16 +4284,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// phase or segment of a recipe or program.";
+			public string Summary => @"&#10;&#10;&#10;phase or segment of a recipe or program.&#10;
+";
 		}
 		private SEGMENTValue _SEGMENT;
 		/// <summary>
-		/// phase of a recipe process.
+		﻿/// phase of a recipe process.<br/><br />
+
 		/// </summary>
 		public SEGMENTValue SEGMENT => _SEGMENT ?? (_SEGMENT = new SEGMENTValue());
 
 		/// <summary>
-		/// phase of a recipe process.
+		﻿/// phase of a recipe process.<br/><br />
+
 		/// </summary>
 		public sealed class SEGMENTValue : IEnumInstance
 		{
@@ -3879,16 +4313,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// phase of a recipe process.";
+			public string Summary => @"&#10;&#10;&#10;phase of a recipe process.&#10;
+";
 		}
 		private RECIPEValue _RECIPE;
 		/// <summary>
-		/// process as part of product production; can be a subprocess of a larger process.
+		﻿/// process as part of product production; can be a subprocess of a larger process.<br/><br />
+
 		/// </summary>
 		public RECIPEValue RECIPE => _RECIPE ?? (_RECIPE = new RECIPEValue());
 
 		/// <summary>
-		/// process as part of product production; can be a subprocess of a larger process.
+		﻿/// process as part of product production; can be a subprocess of a larger process.<br/><br />
+
 		/// </summary>
 		public sealed class RECIPEValue : IEnumInstance
 		{
@@ -3905,16 +4342,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// process as part of product production; can be a subprocess of a larger process.";
+			public string Summary => @"&#10;&#10;&#10;process as part of product production; can be a subprocess of a larger process.&#10;
+";
 		}
 		private OPERATIONValue _OPERATION;
 		/// <summary>
-		/// step of a discrete manufacturing process.
+		﻿/// step of a discrete manufacturing process.<br/><br />
+
 		/// </summary>
 		public OPERATIONValue OPERATION => _OPERATION ?? (_OPERATION = new OPERATIONValue());
 
 		/// <summary>
-		/// step of a discrete manufacturing process.
+		﻿/// step of a discrete manufacturing process.<br/><br />
+
 		/// </summary>
 		public sealed class OPERATIONValue : IEnumInstance
 		{
@@ -3931,16 +4371,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// step of a discrete manufacturing process.";
+			public string Summary => @"&#10;&#10;&#10;step of a discrete manufacturing process.&#10;
+";
 		}
 		private BINARYValue _BINARY;
 		/// <summary>
-		/// observed as a binary data type.
+		﻿/// observed as a binary data type.<br/><br />
+
 		/// </summary>
 		public BINARYValue BINARY => _BINARY ?? (_BINARY = new BINARYValue());
 
 		/// <summary>
-		/// observed as a binary data type.
+		﻿/// observed as a binary data type.<br/><br />
+
 		/// </summary>
 		public sealed class BINARYValue : IEnumInstance
 		{
@@ -3957,16 +4400,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// observed as a binary data type.";
+			public string Summary => @"&#10;&#10;&#10;observed as a binary data type.&#10;
+";
 		}
 		private BOOLEANValue _BOOLEAN;
 		/// <summary>
-		/// observed as a boolean data type.
+		﻿/// observed as a boolean data type.<br/><br />
+
 		/// </summary>
 		public BOOLEANValue BOOLEAN => _BOOLEAN ?? (_BOOLEAN = new BOOLEANValue());
 
 		/// <summary>
-		/// observed as a boolean data type.
+		﻿/// observed as a boolean data type.<br/><br />
+
 		/// </summary>
 		public sealed class BOOLEANValue : IEnumInstance
 		{
@@ -3983,16 +4429,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// observed as a boolean data type.";
+			public string Summary => @"&#10;&#10;&#10;observed as a boolean data type.&#10;
+";
 		}
 		private ENUMERATEDValue _ENUMERATED;
 		/// <summary>
-		/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique. <seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso>
+		﻿/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique.<br /><seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso><br/><br />
+
 		/// </summary>
 		public ENUMERATEDValue ENUMERATED => _ENUMERATED ?? (_ENUMERATED = new ENUMERATEDValue());
 
 		/// <summary>
-		/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique. <seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso>
+		﻿/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique.<br /><seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso><br/><br />
+
 		/// </summary>
 		public sealed class ENUMERATEDValue : IEnumInstance
 		{
@@ -4009,16 +4458,20 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique. <seealso href=""https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I"">ISO 21961:2003, 013</seealso>";
+			public string Summary => @"&#10;&#10;&#10;observed as a set containing a restricted number of discrete values where each discrete value is named and unique.
+{{cite(ISO 21961:2003, 013)}}&#10;
+";
 		}
 		private DETECTValue _DETECT;
 		/// <summary>
-		/// indicated by the presence or existence of something.
+		﻿/// indicated by the presence or existence of something.<br/><br />
+
 		/// </summary>
 		public DETECTValue DETECT => _DETECT ?? (_DETECT = new DETECTValue());
 
 		/// <summary>
-		/// indicated by the presence or existence of something.
+		﻿/// indicated by the presence or existence of something.<br/><br />
+
 		/// </summary>
 		public sealed class DETECTValue : IEnumInstance
 		{
@@ -4035,16 +4488,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// indicated by the presence or existence of something.";
+			public string Summary => @"&#10;&#10;&#10;indicated by the presence or existence of something.&#10;
+";
 		}
 		private MODELValue _MODEL;
 		/// <summary>
-		/// model info of the hardware or software.
+		﻿/// model info of the hardware or software.<br/><br />
+
 		/// </summary>
 		public MODELValue MODEL => _MODEL ?? (_MODEL = new MODELValue());
 
 		/// <summary>
-		/// model info of the hardware or software.
+		﻿/// model info of the hardware or software.<br/><br />
+
 		/// </summary>
 		public sealed class MODELValue : IEnumInstance
 		{
@@ -4061,16 +4517,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// model info of the hardware or software.";
+			public string Summary => @"&#10;&#10;&#10;model info of the hardware or software.&#10;
+";
 		}
 		private SECONDARYValue _SECONDARY;
 		/// <summary>
-		/// alternate or not primary.
+		﻿/// alternate or not primary.<br/><br />
+
 		/// </summary>
 		public SECONDARYValue SECONDARY => _SECONDARY ?? (_SECONDARY = new SECONDARYValue());
 
 		/// <summary>
-		/// alternate or not primary.
+		﻿/// alternate or not primary.<br/><br />
+
 		/// </summary>
 		public sealed class SECONDARYValue : IEnumInstance
 		{
@@ -4087,16 +4546,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// alternate or not primary.";
+			public string Summary => @"&#10;&#10;&#10;alternate or not primary.&#10;
+";
 		}
 		private STANDBYValue _STANDBY;
 		/// <summary>
-		/// held near at hand and ready for use.
+		﻿/// held near at hand and ready for use.<br/><br />
+
 		/// </summary>
 		public STANDBYValue STANDBY => _STANDBY ?? (_STANDBY = new STANDBYValue());
 
 		/// <summary>
-		/// held near at hand and ready for use.
+		﻿/// held near at hand and ready for use.<br/><br />
+
 		/// </summary>
 		public sealed class STANDBYValue : IEnumInstance
 		{
@@ -4113,7 +4575,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// held near at hand and ready for use.";
+			public string Summary => @"&#10;&#10;&#10;held near at hand and ready for use.&#10;
+";
 		}
 	}
 }

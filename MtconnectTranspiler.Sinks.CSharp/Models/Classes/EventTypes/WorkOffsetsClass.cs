@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// tabular representation of <see cref="EventEnum::WORK_OFFSETS">EventEnum::WORK_OFFSETS</see>
+	﻿/// tabular representation of <see cref="EventEnum.WORK_OFFSETS">EventEnum.WORK_OFFSETS</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678189715894_143339_17099">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class WorkOffsetsClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1678189715894_143339_17099";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// tabular representation of <see cref=""EventEnum::WORK_OFFSETS"">EventEnum::WORK_OFFSETS</see>";
+		public string Summary => @"&#10;&#10;&#10;tabular representation of {{def(EventEnum::WORK_OFFSETS)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "WorkOffsets";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// tabular representation of <see cref=""EventEnum::WORK_OFFSETS"">EventEnum::WORK_OFFSETS</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

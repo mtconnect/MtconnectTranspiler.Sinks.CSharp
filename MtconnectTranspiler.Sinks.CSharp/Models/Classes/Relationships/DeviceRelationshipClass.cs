@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
 	/// <summary>
-	/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.
+	﻿/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DeviceRelationshipClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+		public string Summary => @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "DeviceRelationship";
@@ -57,7 +59,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// </summary>
 			public DeviceUuidRefProperty DeviceUuidRef { get; } = new DeviceUuidRefProperty();
 			/// <summary>
-			/// reference to the <see cref="Device::uuid" /> of the associated piece of equipment.
+			﻿/// reference to the <see cref="Device.uuid">uuid in Device</see> of the associated piece of equipment.<br/><br />
+
 			/// </summary>
 			public sealed class DeviceUuidRefProperty : IProperty
 			{
@@ -77,7 +80,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "deviceUuidRef";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+				public string Summary => @"&#10;&#10;&#10;reference to the {{property(Device::uuid)}} of the associated piece of equipment.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -111,7 +115,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
 			/// <summary>
-			/// <i>URI</i> identifying the <i>agent</i> that is publishing information for the associated piece of equipment. /// Description
+			﻿/// <i>URI</i> identifying the <i>agent</i> that is publishing information for the associated piece of equipment. <br/><br />Description<br/><see cref="DeviceRelationship.href">href in DeviceRelationship</see> <b>MUST</b> also include the <see cref="Device.uuid">uuid in Device</see> for that specific piece of equipment.<br /><br />{{property(href)}} is of type <c>xlink:href</c> from the W3C XLink specification: <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br/><br/><br />
+
 			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
@@ -131,7 +136,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "href";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+				public string Summary => @"&#10;&#10;&#10;{{term(URI)}} identifying the {{term(agent)}} that is publishing information for the associated piece of equipment. &#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{property(DeviceRelationship::href)}} **MUST** also include the {{property(Device::uuid)}} for that specific piece of equipment.
+
+{{property(href)}} is of type `xlink:href` from the W3C XLink specification: {{cite(https://www.w3.org/TR/xlink11/)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -165,7 +174,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// </summary>
 			public RoleProperty Role { get; } = new RoleProperty();
 			/// <summary>
-			/// defines the services or capabilities that the referenced piece of equipment provides relative to this piece of equipment.
+			﻿/// defines the services or capabilities that the referenced piece of equipment provides relative to this piece of equipment.<br/><br />
+
 			/// </summary>
 			public sealed class RoleProperty : IProperty
 			{
@@ -185,7 +195,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "role";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+				public string Summary => @"&#10;&#10;&#10;defines the services or capabilities that the referenced piece of equipment provides relative to this piece of equipment.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -219,7 +230,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// </summary>
 			public Xlink_TypeProperty Xlink_Type { get; } = new Xlink_TypeProperty();
 			/// <summary>
-			/// <c>xlink:type</c><b>MUST</b> have a fixed value of <c>locator</c> as defined in W3C XLink 1.1 <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>./// Description
+			﻿/// <c>xlink:type</c><b>MUST</b> have a fixed value of <c>locator</c> as defined in W3C XLink 1.1 <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br/><br />Description<br/>If the <see cref="DeviceRelationship.href">href in DeviceRelationship</see> is provided, it <b>MUST</b> conform to the <i>URI</i> syntactic rules as defined in IETF RFC 3986 for Uniform Resource Identifiers. <seealso href="https://www.google.com/search?q=https://www.ietf.org/rfc/rfc3986.txt&btnI=I">https://www.ietf.org/rfc/rfc3986.txt</seealso><br/><br/><br />
+
 			/// </summary>
 			public sealed class Xlink_TypeProperty : IProperty
 			{
@@ -239,7 +251,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				public string Name => "xlink:type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""ConfigurationRelationship"">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.";
+				public string Summary => @"&#10;&#10;&#10;`xlink:type`**MUST** have a fixed value of `locator` as defined in W3C XLink 1.1 {{cite(https://www.w3.org/TR/xlink11/)}}.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;If the {{property(DeviceRelationship::href)}} is provided, it **MUST** conform to the {{term(URI)}} syntactic rules as defined in IETF RFC 3986 for Uniform Resource Identifiers. {{cite(https://www.ietf.org/rfc/rfc3986.txt)}}&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

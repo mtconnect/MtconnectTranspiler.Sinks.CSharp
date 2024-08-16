@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// element that represents the most significant physical or logical functions of a piece of equipment.
+	﻿/// element that represents the most significant physical or logical functions of a piece of equipment.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375190_831127_2103">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TopLevelClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375190_831127_2103";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// element that represents the most significant physical or logical functions of a piece of equipment.";
+		public string Summary => @"&#10;&#10;&#10;element that represents the most significant physical or logical functions of a piece of equipment.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "top level";

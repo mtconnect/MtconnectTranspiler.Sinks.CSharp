@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605104600701_22176_1030">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ConnectionStatusEnum
 	{
 		/// <summary>
-		/// no connection at all.
+		﻿/// no connection at all.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CLOSED,
 		/// <summary>
-		/// <i>agent</i> is waiting for a connection request from an <i>adapter</i>.
+		﻿/// <i>agent</i> is waiting for a connection request from an <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LISTEN,
 		/// <summary>
-		/// open connection.  The normal state for the data transfer phase of the connection.
+		﻿/// open connection.<br /><br />The normal state for the data transfer phase of the connection.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605104600701_22176_1030">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConnectionStatusEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private CLOSEDValue _CLOSED;
 		/// <summary>
-		/// no connection at all.
+		﻿/// no connection at all.<br/><br />
+
 		/// </summary>
 		public CLOSEDValue CLOSED => _CLOSED ?? (_CLOSED = new CLOSEDValue());
 
 		/// <summary>
-		/// no connection at all.
+		﻿/// no connection at all.<br/><br />
+
 		/// </summary>
 		public sealed class CLOSEDValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// no connection at all.";
+			public string Summary => @"&#10;&#10;&#10;no connection at all.&#10;
+";
 		}
 		private LISTENValue _LISTEN;
 		/// <summary>
-		/// <i>agent</i> is waiting for a connection request from an <i>adapter</i>.
+		﻿/// <i>agent</i> is waiting for a connection request from an <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		public LISTENValue LISTEN => _LISTEN ?? (_LISTEN = new LISTENValue());
 
 		/// <summary>
-		/// <i>agent</i> is waiting for a connection request from an <i>adapter</i>.
+		﻿/// <i>agent</i> is waiting for a connection request from an <i>adapter</i>.<br/><br />
+
 		/// </summary>
 		public sealed class LISTENValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <i>agent</i> is waiting for a connection request from an <i>adapter</i>.";
+			public string Summary => @"&#10;&#10;&#10;{{term(agent)}} is waiting for a connection request from an {{term(adapter)}}.&#10;
+";
 		}
 		private ESTABLISHEDValue _ESTABLISHED;
 		/// <summary>
-		/// open connection.  The normal state for the data transfer phase of the connection.
+		﻿/// open connection.<br /><br />The normal state for the data transfer phase of the connection.<br/><br />
+
 		/// </summary>
 		public ESTABLISHEDValue ESTABLISHED => _ESTABLISHED ?? (_ESTABLISHED = new ESTABLISHEDValue());
 
 		/// <summary>
-		/// open connection.  The normal state for the data transfer phase of the connection.
+		﻿/// open connection.<br /><br />The normal state for the data transfer phase of the connection.<br/><br />
+
 		/// </summary>
 		public sealed class ESTABLISHEDValue : IEnumInstance
 		{
@@ -149,7 +162,10 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// open connection.  The normal state for the data transfer phase of the connection.";
+			public string Summary => @"&#10;&#10;&#10;open connection.
+
+The normal state for the data transfer phase of the connection.&#10;
+";
 		}
 	}
 }

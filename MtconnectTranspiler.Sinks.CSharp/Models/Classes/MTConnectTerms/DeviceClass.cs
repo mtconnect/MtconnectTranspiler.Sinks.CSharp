@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.MTConnectTerms
 {
 	/// <summary>
-	/// <i>Component</i> not belonging to any <i>Component</i> that may have <i>asset</i>s
+	﻿/// <i>Component</i> not belonging to any <i>Component</i> that may have <i>asset</i>s<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375171_197977_2034">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DeviceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375171_197977_2034";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>Component</i> not belonging to any <i>Component</i> that may have <i>asset</i>s";
+		public string Summary => @"&#10;&#10;&#10;{{term(Component)}} not belonging to any {{term(Component)}} that may have {{termplural(asset)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Device";
@@ -71,7 +73,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public string Name => "has asset";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>Component</i> not belonging to any <i>Component</i> that may have <i>asset</i>s";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

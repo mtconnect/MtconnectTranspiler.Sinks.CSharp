@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// means by which communication is achieved between independent systems.
+	﻿/// means by which communication is achieved between independent systems.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375167_231496_2018">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class InterfaceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375167_231496_2018";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// means by which communication is achieved between independent systems.";
+		public string Summary => @"&#10;&#10;&#10;means by which communication is achieved between independent systems.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "interface";

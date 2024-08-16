@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
 	/// <summary>
-	/// <see cref="Specification">Specification</see> that provides information used to assess the conformance of a variable to process requirements.
+	﻿/// <see cref="Specification">Specification</see> that provides information used to assess the conformance of a variable to process requirements.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643801279_773776_859">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessSpecificationGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605643801279_773776_859";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Specification)}} that provides information used to assess the conformance of a variable to process requirements.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessSpecification";
@@ -73,7 +75,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasSpecificationLimits";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +126,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasControlLimits";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +177,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public string Name => "hasAlarmLimits";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Specification"">Specification</see> that provides information used to assess the conformance of a variable to process requirements.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

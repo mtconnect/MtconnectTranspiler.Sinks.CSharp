@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// <see cref="SampleEnum::HUMIDITY_SPECIFIC">SampleEnum::HUMIDITY_SPECIFIC</see>
+	﻿/// <see cref="SampleEnum.HUMIDITY_SPECIFIC">SampleEnum.HUMIDITY_SPECIFIC</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587736930758_553256_1601">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class HumiditySpecificClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587736930758_553256_1601";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""SampleEnum::HUMIDITY_SPECIFIC"">SampleEnum::HUMIDITY_SPECIFIC</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(SampleEnum::HUMIDITY_SPECIFIC)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "HumiditySpecific";
@@ -72,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::HUMIDITY_SPECIFIC"">SampleEnum::HUMIDITY_SPECIFIC</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +125,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SampleEnum::HUMIDITY_SPECIFIC"">SampleEnum::HUMIDITY_SPECIFIC</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

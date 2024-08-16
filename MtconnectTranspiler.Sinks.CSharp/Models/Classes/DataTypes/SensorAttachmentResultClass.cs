@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.DataTypes
 {
 	/// <summary>
-	/// <see cref="SensorAttachment::result" /> <b>MUST</b> be of a <see cref="Table">Table</see>, <see cref="DataSet">DataSet</see> or <see cref="Value">Value</see> <see cref="Representation">Representation</see> type.
+	﻿/// <see cref="SensorAttachment.result">result in SensorAttachment</see> <b>MUST</b> be of a <see cref="Table">Table</see>, <see cref="DataSet">DataSet</see> or <see cref="Value">Value</see> <see cref="Representation">Representation</see> type.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1620207520256_148935_1073">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SensorAttachmentResultClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1620207520256_148935_1073";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""SensorAttachment::result"" /> <b>MUST</b> be of a <see cref=""Table"">Table</see>, <see cref=""DataSet"">DataSet</see> or <see cref=""Value"">Value</see> <see cref=""Representation"">Representation</see> type.";
+		public string Summary => @"&#10;&#10;&#10;{{property(SensorAttachment::result)}} **MUST** be of a {{block(Table)}}, {{block(DataSet)}} or {{block(Value)}} {{block(Representation)}} type.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "SensorAttachmentResult";
@@ -54,7 +56,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public SensorIdProperty SensorId { get; } = new SensorIdProperty();
 			/// <summary>
-			/// identity of a sensor used to observe some measurement of an item.
+			﻿/// identity of a sensor used to observe some measurement of an item.<br/><br />
+
 			/// </summary>
 			public sealed class SensorIdProperty : IProperty
 			{
@@ -74,7 +77,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "SensorId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""SensorAttachment::result"" /> <b>MUST</b> be of a <see cref=""Table"">Table</see>, <see cref=""DataSet"">DataSet</see> or <see cref=""Value"">Value</see> <see cref=""Representation"">Representation</see> type.";
+				public string Summary => @"&#10;&#10;&#10;identity of a sensor used to observe some measurement of an item.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

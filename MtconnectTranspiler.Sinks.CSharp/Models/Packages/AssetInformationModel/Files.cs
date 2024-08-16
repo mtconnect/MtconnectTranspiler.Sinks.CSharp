@@ -6,10 +6,11 @@ using Package = Mtconnect.AssetInformationModel.Files;
 namespace Mtconnect.AssetInformationModel
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="File">File</see> model.  ![Files](figures/Files.png "Files"){: width="0.8"}  > Note: See <see cref="File Schema Diagrams">File Schema Diagrams</see> for XML schema. /// Files Asset Information Model
+	﻿/// This section provides semantic information for the <see cref="File">File</see> model.<br /><br />![Files](figures/Files.png "Files"){: width="0.8"}<br /><br />> Note: See <see cref="File Schema Diagrams">File Schema Diagrams</see> for XML schema.<br /><br/><br />Files Asset Information Model<br/>Manufacturing processes require various documents, programs, setup sheets, and digital media available at the device for a given process. The <see cref="File">File</see> and <see cref="FileArchetype">FileArchetype</see> <see cref="Asset">Asset</see>s provide a mechanism to communicate specific "Files" that are relevant to a process where the media is located on a server and represented by a Universal Resource Locator (URL).<br /><br />The <see cref="FileArchetype">FileArchetype</see> contains metadata common to all <see cref="File">File</see> <see cref="Asset">Asset</see>s for a certain purpose. The <see cref="File">File</see> <see cref="Asset">Asset</see> references the file specific to a given device or set of devices. The <see cref="File">File</see> <see cref="Asset">Asset</see> does not hold the contents of the file, it contains a reference to the location (URL) used to access the information. The metadata associated with the <see cref="File">File</see> provides semantic information about the representation (mime-type) and the application associated with the <see cref="File">File</see>. The application of the file is an extensible controlled vocabulary with common manufacturing uses provided.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1589825226627_349226_496">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class FilesPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,16 @@ namespace Mtconnect.AssetInformationModel
 		public string Name => "Files";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""File"">File</see> model.  ![Files](figures/Files.png ""Files""){: width=""0.8""}  > Note: See <see cref=""File Schema Diagrams"">File Schema Diagrams</see> for XML schema. /// Files Asset Information Model";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(File)}} model.
+
+![Files](figures/Files.png ""Files""){: width=""0.8""}
+
+> Note: See {{sect(File Schema Diagrams)}} for XML schema.
+&#10;
+&#10;&#10;&#10;Files Asset Information Model&#10;&#10;&#10;&#10;Manufacturing processes require various documents, programs, setup sheets, and digital media available at the device for a given process. The {{block(File)}} and {{block(FileArchetype)}} {{block(Asset)}}s provide a mechanism to communicate specific ""Files"" that are relevant to a process where the media is located on a server and represented by a Universal Resource Locator (URL).
+
+The {{block(FileArchetype)}} contains metadata common to all {{block(File)}} {{block(Asset)}}s for a certain purpose. The {{block(File)}} {{block(Asset)}} references the file specific to a given device or set of devices. The {{block(File)}} {{block(Asset)}} does not hold the contents of the file, it contains a reference to the location (URL) used to access the information. The metadata associated with the {{block(File)}} provides semantic information about the representation (mime-type) and the application associated with the {{block(File)}}. The application of the file is an extensible controlled vocabulary with common manufacturing uses provided.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

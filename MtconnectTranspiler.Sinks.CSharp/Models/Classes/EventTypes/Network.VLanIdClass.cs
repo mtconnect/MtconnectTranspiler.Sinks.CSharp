@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// layer2 Virtual Local Network (VLAN) ID for the component network.
+	﻿/// layer2 Virtual Local Network (VLAN) ID for the component network.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1587752238033_807415_3815">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class NetworkVLanIdClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_91b028d_1587752238033_807415_3815";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// layer2 Virtual Local Network (VLAN) ID for the component network.";
+		public string Summary => @"&#10;&#10;&#10;layer2 Virtual Local Network (VLAN) ID for the component network.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Network.VLanId";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// layer2 Virtual Local Network (VLAN) ID for the component network.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

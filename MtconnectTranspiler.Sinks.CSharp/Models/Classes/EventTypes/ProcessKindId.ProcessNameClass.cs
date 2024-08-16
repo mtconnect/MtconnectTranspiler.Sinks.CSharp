@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. 
+	﻿/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605550088194_398416_1794">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessKindIdProcessNameClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1605550088194_398416_1794";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. ";
+		public string Summary => @"&#10;&#10;&#10;word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ProcessKindId.ProcessName";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

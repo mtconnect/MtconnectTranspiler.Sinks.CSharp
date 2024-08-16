@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
-	/// <see cref="Asset">Asset</see> that physically removes the material from the workpiece by shear deformation.
+	﻿/// <see cref="Asset">Asset</see> that physically removes the material from the workpiece by shear deformation.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_614061EF_1D50_4989_A935_02492044833A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CuttingToolClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_614061EF_1D50_4989_A935_02492044833A";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Asset)}} that physically removes the material from the workpiece by shear deformation.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CuttingTool";
@@ -59,7 +61,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public ManufacturersProperty Manufacturers { get; } = new ManufacturersProperty();
 			/// <summary>
-			/// manufacturers of the cutting tool.  This will reference the tool item and adaptive items specifically. The cutting items manufacturers’ will be a property of <see cref="CuttingItem">CuttingItem</see>.  > Note: In <i>XML</i>, the representation <b>MUST</b> be a comma(,) delimited list of manufacturer names. See <see cref="CuttingTool Schema Diagrams">CuttingTool Schema Diagrams</see>.
+			﻿/// manufacturers of the cutting tool.<br /><br />This will reference the tool item and adaptive items specifically. The cutting items<br />manufacturers’ will be a property of <see cref="CuttingItem">CuttingItem</see>.<br /><br />> Note: In <i>XML</i>, the representation <b>MUST</b> be a comma(,) delimited list of manufacturer names. See <see cref="CuttingTool Schema Diagrams">CuttingTool Schema Diagrams</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ManufacturersProperty : IProperty
 			{
@@ -79,7 +82,13 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "manufacturers";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
+				public string Summary => @"&#10;&#10;&#10;manufacturers of the cutting tool.
+
+This will reference the tool item and adaptive items specifically. The cutting items
+manufacturers’ will be a property of {{block(CuttingItem)}}.
+
+> Note: In {{term(XML)}}, the representation **MUST** be a comma(,) delimited list of manufacturer names. See {{sect(CuttingTool Schema Diagrams)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -113,7 +122,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public SerialNumberProperty SerialNumber { get; } = new SerialNumberProperty();
 			/// <summary>
-			/// unique identifier for this assembly.
+			﻿/// unique identifier for this assembly.<br/><br />
+
 			/// </summary>
 			public sealed class SerialNumberProperty : IProperty
 			{
@@ -133,7 +143,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "serialNumber";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for this assembly.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -167,7 +178,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public ToolIdProperty ToolId { get; } = new ToolIdProperty();
 			/// <summary>
-			/// identifier for a class of cutting tools.
+			﻿/// identifier for a class of cutting tools.<br/><br />
+
 			/// </summary>
 			public sealed class ToolIdProperty : IProperty
 			{
@@ -187,7 +199,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "toolId";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
+				public string Summary => @"&#10;&#10;&#10;identifier for a class of cutting tools.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -238,7 +251,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "hasCuttingToolLifeCycle";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -289,7 +302,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "hasCuttingToolArchetypeReference";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -323,7 +336,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public HasCuttingToolDefinitionPartProperty HasCuttingToolDefinitionPart { get; } = new HasCuttingToolDefinitionPartProperty();
 			/// <summary>
-			/// 
+			﻿/// <br/><br />
+
 			/// </summary>
 			public sealed class HasCuttingToolDefinitionPartProperty : IProperty
 			{
@@ -343,7 +357,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "hasCuttingToolDefinition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Asset"">Asset</see> that physically removes the material from the workpiece by shear deformation.";
+				public string Summary => @"&#10;&#10;&#10;&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

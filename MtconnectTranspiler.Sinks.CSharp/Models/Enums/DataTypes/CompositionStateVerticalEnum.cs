@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550799197_550203_137">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CompositionStateVerticalEnum
 	{
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is oriented in an upward direction to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> element is oriented in an upward direction to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		UP,
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is oriented in a downward direction to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> element is oriented in a downward direction to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DOWN,
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is not oriented in an upward direction to the point of a positive confirmation and is not oriented in a downward direction to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// position of the <see cref="Composition">Composition</see> element is not oriented in an upward direction to the point of a positive confirmation and is not oriented in a downward direction to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,8 +49,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550799197_550203_137">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionStateVerticalEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -75,12 +80,14 @@ namespace Mtconnect.DataTypes
 
 		private UPValue _UP;
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is oriented in an upward direction to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> element is oriented in an upward direction to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public UPValue UP => _UP ?? (_UP = new UPValue());
 
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is oriented in an upward direction to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> element is oriented in an upward direction to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public sealed class UPValue : IEnumInstance
 		{
@@ -97,16 +104,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position of the <see cref=""Composition"">Composition</see> element is oriented in an upward direction to the point of a positive confirmation.";
+			public string Summary => @"&#10;&#10;&#10;position of the {{block(Composition)}} element is oriented in an upward direction to the point of a positive confirmation.&#10;
+";
 		}
 		private DOWNValue _DOWN;
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is oriented in a downward direction to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> element is oriented in a downward direction to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public DOWNValue DOWN => _DOWN ?? (_DOWN = new DOWNValue());
 
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is oriented in a downward direction to the point of a positive confirmation.
+		﻿/// position of the <see cref="Composition">Composition</see> element is oriented in a downward direction to the point of a positive confirmation.<br/><br />
+
 		/// </summary>
 		public sealed class DOWNValue : IEnumInstance
 		{
@@ -123,16 +133,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position of the <see cref=""Composition"">Composition</see> element is oriented in a downward direction to the point of a positive confirmation.";
+			public string Summary => @"&#10;&#10;&#10;position of the {{block(Composition)}} element is oriented in a downward direction to the point of a positive confirmation.&#10;
+";
 		}
 		private TRANSITIONINGValue _TRANSITIONING;
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is not oriented in an upward direction to the point of a positive confirmation and is not oriented in a downward direction to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// position of the <see cref="Composition">Composition</see> element is not oriented in an upward direction to the point of a positive confirmation and is not oriented in a downward direction to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		public TRANSITIONINGValue TRANSITIONING => _TRANSITIONING ?? (_TRANSITIONING = new TRANSITIONINGValue());
 
 		/// <summary>
-		/// position of the <see cref="Composition">Composition</see> element is not oriented in an upward direction to the point of a positive confirmation and is not oriented in a downward direction to the point of a positive confirmation.   It is in an intermediate position.
+		﻿/// position of the <see cref="Composition">Composition</see> element is not oriented in an upward direction to the point of a positive confirmation and is not oriented in a downward direction to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
+
 		/// </summary>
 		public sealed class TRANSITIONINGValue : IEnumInstance
 		{
@@ -149,7 +162,10 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// position of the <see cref=""Composition"">Composition</see> element is not oriented in an upward direction to the point of a positive confirmation and is not oriented in a downward direction to the point of a positive confirmation.   It is in an intermediate position.";
+			public string Summary => @"&#10;&#10;&#10;position of the {{block(Composition)}} element is not oriented in an upward direction to the point of a positive confirmation and is not oriented in a downward direction to the point of a positive confirmation. 
+
+It is in an intermediate position.&#10;
+";
 		}
 	}
 }

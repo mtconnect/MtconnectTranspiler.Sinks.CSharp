@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Material">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description
+	﻿/// <see cref="Material">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts.<br/><br />Description<br/><see cref="Stock">Stock</see> may be either a continuous piece of material from which multiple parts may be produced or it may be a discrete piece of material that will be made into a part or a set of parts.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382018_505205_42294">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StockClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572382018_505205_42294";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(Material)}} that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(Stock)}} may be either a continuous piece of material from which multiple parts may be produced or it may be a discrete piece of material that will be made into a part or a set of parts.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Stock";
@@ -73,7 +76,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesMaterial";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +127,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesLengthRemaining";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesLengthStandard";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""Material"">Material</see> that is used in a manufacturing process and to which work is applied in a machine or piece of equipment to produce parts./// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

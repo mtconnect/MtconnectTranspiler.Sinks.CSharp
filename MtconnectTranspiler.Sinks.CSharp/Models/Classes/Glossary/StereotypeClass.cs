@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// defines how an existing <i>UML</i> metaclass may be extended as part of a <i>profile</i>.
+	﻿/// defines how an existing <i>UML</i> metaclass may be extended as part of a <i>profile</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1630404681033_826443_46">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StereotypeClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1630404681033_826443_46";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// defines how an existing <i>UML</i> metaclass may be extended as part of a <i>profile</i>.";
+		public string Summary => @"&#10;&#10;&#10;defines how an existing {{term(UML)}} metaclass may be extended as part of a {{term(profile)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "stereotype";

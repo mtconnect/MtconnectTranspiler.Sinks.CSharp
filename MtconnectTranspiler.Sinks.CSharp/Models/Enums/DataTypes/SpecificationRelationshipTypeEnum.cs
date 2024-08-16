@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605646000929_248969_3052">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum SpecificationRelationshipTypeEnum
 	{
 		/// <summary>
-		/// referenced <see cref="Specification">Specification</see> provides process limits. 
+		﻿/// referenced <see cref="Specification">Specification</see> provides process limits.<br /><br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -27,8 +29,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605646000929_248969_3052">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SpecificationRelationshipTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -55,12 +58,14 @@ namespace Mtconnect.DataTypes
 
 		private LIMITValue _LIMIT;
 		/// <summary>
-		/// referenced <see cref="Specification">Specification</see> provides process limits. 
+		﻿/// referenced <see cref="Specification">Specification</see> provides process limits.<br /><br/><br />
+
 		/// </summary>
 		public LIMITValue LIMIT => _LIMIT ?? (_LIMIT = new LIMITValue());
 
 		/// <summary>
-		/// referenced <see cref="Specification">Specification</see> provides process limits. 
+		﻿/// referenced <see cref="Specification">Specification</see> provides process limits.<br /><br/><br />
+
 		/// </summary>
 		public sealed class LIMITValue : IEnumInstance
 		{
@@ -77,7 +82,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// referenced <see cref=""Specification"">Specification</see> provides process limits. ";
+			public string Summary => @"&#10;&#10;&#10;referenced {{block(Specification)}} provides process limits.&#10;
+";
 		}
 	}
 }

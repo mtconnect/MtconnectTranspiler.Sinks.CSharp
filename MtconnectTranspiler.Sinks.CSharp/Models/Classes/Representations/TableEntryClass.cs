@@ -5,17 +5,23 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.ObservationInformationModel.Representations
 {
 	/// <summary>
-	/// <i>key-value pair</i> published as part of a <see cref="Table">Table</see>.  > Note: In the <i>XML</i> representation, <see cref="TableEntry">TableEntry</see> <b>MUST</b> appear as <see cref="Entry">Entry</see>.  
+	﻿/// <i>key-value pair</i> published as part of a <see cref="Table">Table</see>.<br /><br />> Note: In the <i>XML</i> representation, <see cref="TableEntry">TableEntry</see> <b>MUST</b> appear as <see cref="Entry">Entry</see>.<br /><br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1600164112807_45306_44">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TableEntryClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1600164112807_45306_44";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
+		public string Summary => @"&#10;&#10;&#10;{{term(key-value pair)}} published as part of a {{block(Table)}}.
+
+> Note: In the {{term(XML)}} representation, {{block(TableEntry)}} **MUST** appear as {{block(Entry)}}.
+
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "TableEntry";
@@ -53,7 +59,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// </summary>
 			public KeyProperty Key { get; } = new KeyProperty();
 			/// <summary>
-			/// unique identifier for each <i>key-value pair</i>.
+			﻿/// unique identifier for each <i>key-value pair</i>.<br/><br />
+
 			/// </summary>
 			public sealed class KeyProperty : IProperty
 			{
@@ -73,7 +80,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "key";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for each {{term(key-value pair)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -107,7 +115,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// </summary>
 			public RemovedProperty Removed { get; } = new RemovedProperty();
 			/// <summary>
-			/// removal indicator of a <i>key-value pair</i>.
+			﻿/// removal indicator of a <i>key-value pair</i>.<br/><br />
+
 			/// </summary>
 			public sealed class RemovedProperty : IProperty
 			{
@@ -127,7 +136,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "removed";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
+				public string Summary => @"&#10;&#10;&#10;removal indicator of a {{term(key-value pair)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -178,7 +188,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -229,7 +239,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				public string Name => "isEntryFor";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <i>key-value pair</i> published as part of a <see cref=""Table"">Table</see>.  > Note: In the <i>XML</i> representation, <see cref=""TableEntry"">TableEntry</see> <b>MUST</b> appear as <see cref=""Entry"">Entry</see>.  ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";

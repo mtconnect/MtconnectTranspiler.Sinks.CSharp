@@ -6,10 +6,11 @@ using Package = Mtconnect.DeviceInformationModel.Configurations.ImageFiles;
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
 	/// <summary>
-	/// This section provides semantic information for the <see cref="ImageFile">ImageFile</see> entity.
+	﻿/// This section provides semantic information for the <see cref="ImageFile">ImageFile</see> entity.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1677586007782_145120_733">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class ImageFilesPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		public string Name => "ImageFiles";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section provides semantic information for the <see cref=""ImageFile"">ImageFile</see> entity.";
+		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(ImageFile)}} entity.&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

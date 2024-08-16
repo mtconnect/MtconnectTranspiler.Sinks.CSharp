@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.RawMaterial
 {
 	/// <summary>
-	/// material used as the <see cref="RawMaterial">RawMaterial</see>.
+	﻿/// material used as the <see cref="RawMaterial">RawMaterial</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1618831557881_852871_420">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaterialClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1618831557881_852871_420";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+		public string Summary => @"&#10;&#10;&#10;material used as the {{block(RawMaterial)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Material";
@@ -57,7 +59,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
 			/// <summary>
-			/// unique identifier for the material.
+			﻿/// unique identifier for the material.<br/><br />
+
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -77,7 +80,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "id";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+				public string Summary => @"&#10;&#10;&#10;unique identifier for the material.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -111,7 +115,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// name of the material.   Examples: <c>ULTM9085</c>, <c>ABS</c>, <c>4140</c>.
+			﻿/// name of the material. <br /><br />Examples: <c>ULTM9085</c>, <c>ABS</c>, <c>4140</c>.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -131,7 +136,10 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "name";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+				public string Summary => @"&#10;&#10;&#10;name of the material. 
+
+Examples: `ULTM9085`, `ABS`, `4140`.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -165,7 +173,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of material.   Examples: <c>Metal</c>, <c>Polymer</c>, <c>Wood</c>, <c>4140</c>, <c>Recycled</c>, <c>Prestine</c> and <c>Used</c>.
+			﻿/// type of material. <br /><br />Examples: <c>Metal</c>, <c>Polymer</c>, <c>Wood</c>, <c>4140</c>, <c>Recycled</c>, <c>Prestine</c> and <c>Used</c>.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -185,7 +194,10 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+				public string Summary => @"&#10;&#10;&#10;type of material. 
+
+Examples: `Metal`, `Polymer`, `Wood`, `4140`, `Recycled`, `Prestine` and `Used`.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -219,7 +231,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public LotProperty Lot { get; } = new LotProperty();
 			/// <summary>
-			/// manufacturer's lot code of the material.
+			﻿/// manufacturer's lot code of the material.<br/><br />
+
 			/// </summary>
 			public sealed class LotProperty : IProperty
 			{
@@ -239,7 +252,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "Lot";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+				public string Summary => @"&#10;&#10;&#10;manufacturer's lot code of the material.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -273,7 +287,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public ManufacturerProperty Manufacturer { get; } = new ManufacturerProperty();
 			/// <summary>
-			/// name of the material manufacturer.
+			﻿/// name of the material manufacturer.<br/><br />
+
 			/// </summary>
 			public sealed class ManufacturerProperty : IProperty
 			{
@@ -293,7 +308,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "Manufacturer";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+				public string Summary => @"&#10;&#10;&#10;name of the material manufacturer.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -327,7 +343,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public ManufacturingDateProperty ManufacturingDate { get; } = new ManufacturingDateProperty();
 			/// <summary>
-			/// manufacturing date of the material from the material manufacturer.
+			﻿/// manufacturing date of the material from the material manufacturer.<br/><br />
+
 			/// </summary>
 			public sealed class ManufacturingDateProperty : IProperty
 			{
@@ -347,7 +364,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "ManufacturingDate";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+				public string Summary => @"&#10;&#10;&#10;manufacturing date of the material from the material manufacturer.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -381,7 +399,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public ManufacturingCodeProperty ManufacturingCode { get; } = new ManufacturingCodeProperty();
 			/// <summary>
-			/// lot code of the raw feed stock for the material, from the feed stock manufacturer.
+			﻿/// lot code of the raw feed stock for the material, from the feed stock manufacturer.<br/><br />
+
 			/// </summary>
 			public sealed class ManufacturingCodeProperty : IProperty
 			{
@@ -401,7 +420,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "ManufacturingCode";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+				public string Summary => @"&#10;&#10;&#10;lot code of the raw feed stock for the material, from the feed stock manufacturer.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -435,7 +455,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public MaterialCodeProperty MaterialCode { get; } = new MaterialCodeProperty();
 			/// <summary>
-			/// <i>ASTM</i> standard code that the material complies with.
+			﻿/// <i>ASTM</i> standard code that the material complies with.<br/><br />
+
 			/// </summary>
 			public sealed class MaterialCodeProperty : IProperty
 			{
@@ -455,7 +476,8 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 				public string Name => "MaterialCode";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// material used as the <see cref=""RawMaterial"">RawMaterial</see>.";
+				public string Summary => @"&#10;&#10;&#10;{{term(ASTM)}} standard code that the material complies with.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.InterfaceInteractionModel.InterfaceTypes
 {
 	/// <summary>
-	/// <see cref="Interface">Interface</see> that coordinates the operations between a bar feeder and another piece of equipment.  Bar feeder is a piece of equipment that pushes bar stock (i.e., long pieces of material of various shapes) into an associated piece of equipment – most typically a lathe or turning center.
+	﻿/// <see cref="Interface">Interface</see> that coordinates the operations between a bar feeder and another piece of equipment.<br /><br />Bar feeder is a piece of equipment that pushes bar stock (i.e., long pieces of material of various shapes) into an associated piece of equipment – most typically a lathe or turning center.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622717386025_755435_931">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class BarFeederInterfaceGeneralization : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1622717386025_755435_931";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Interface"">Interface</see> that coordinates the operations between a bar feeder and another piece of equipment.  Bar feeder is a piece of equipment that pushes bar stock (i.e., long pieces of material of various shapes) into an associated piece of equipment – most typically a lathe or turning center.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Interface)}} that coordinates the operations between a bar feeder and another piece of equipment.
+
+Bar feeder is a piece of equipment that pushes bar stock (i.e., long pieces of material of various shapes) into an associated piece of equipment – most typically a lathe or turning center.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "BarFeederInterface";

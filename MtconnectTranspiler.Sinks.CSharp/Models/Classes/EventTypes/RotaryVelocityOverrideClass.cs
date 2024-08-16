@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::ROTARY_VELOCITY_OVERRIDE">EventEnum::ROTARY_VELOCITY_OVERRIDE</see>  This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref="Rotary">Rotary</see> type axis.
+	﻿/// <see cref="EventEnum.ROTARY_VELOCITY_OVERRIDE">EventEnum.ROTARY_VELOCITY_OVERRIDE</see><br /><br />This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref="Rotary">Rotary</see> type axis.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218440_585732_2163">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RotaryVelocityOverrideClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218440_585732_2163";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::ROTARY_VELOCITY_OVERRIDE"">EventEnum::ROTARY_VELOCITY_OVERRIDE</see>  This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref=""Rotary"">Rotary</see> type axis.";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::ROTARY_VELOCITY_OVERRIDE)}}
+
+This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a {{block(Rotary)}} type axis.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "RotaryVelocityOverride";
@@ -72,7 +76,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "result";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::ROTARY_VELOCITY_OVERRIDE"">EventEnum::ROTARY_VELOCITY_OVERRIDE</see>  This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref=""Rotary"">Rotary</see> type axis.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -123,7 +127,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::ROTARY_VELOCITY_OVERRIDE"">EventEnum::ROTARY_VELOCITY_OVERRIDE</see>  This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref=""Rotary"">Rotary</see> type axis.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

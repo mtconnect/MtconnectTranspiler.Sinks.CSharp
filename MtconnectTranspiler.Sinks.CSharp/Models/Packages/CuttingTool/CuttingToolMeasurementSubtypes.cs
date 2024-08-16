@@ -6,10 +6,11 @@ using Package = Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasureme
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
-	/// This section lists the <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingTool">CuttingTool</see>.  These <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingTool">CuttingTool</see> are specific to the entire assembly and <b>MUST NOT</b> be used for the <see cref="Measurement">Measurement</see> pertaining to a <see cref="CuttingItem">CuttingItem</see>. {{figure(Cutting Tool Measurement 1)}} and {{figure(Cutting Tool Measurement 2)}} will be used to reference the assembly specific <see cref="Measurement">Measurement</see> subtypes.  ![Cutting Tool Measurement 1](figures/Cutting%20Tool%20Measurement%201.png "Cutting Tool Measurement 1"){: width="0.8"}  ![Cutting Tool Measurement 2](figures/Cutting%20Tool%20Measurement%202.png "Cutting Tool Measurement 2"){: width="0.8"} 
+	﻿/// This section lists the <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingTool">CuttingTool</see>.<br /><br />These <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingTool">CuttingTool</see> are specific to the entire assembly and <b>MUST NOT</b> be used for the <see cref="Measurement">Measurement</see> pertaining to a <see cref="CuttingItem">CuttingItem</see>. {{figure(Cutting Tool Measurement 1)}} and {{figure(Cutting Tool Measurement 2)}} will be used to reference the assembly specific <see cref="Measurement">Measurement</see> subtypes.<br /><br />![Cutting Tool Measurement 1](figures/Cutting%20Tool%20Measurement%201.png "Cutting Tool Measurement 1"){: width="0.8"}<br /><br />![Cutting Tool Measurement 2](figures/Cutting%20Tool%20Measurement%202.png "Cutting Tool Measurement 2"){: width="0.8"}<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1582918427874_472723_1238">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class CuttingToolMeasurementSubtypesPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public string Name => "Cutting Tool Measurement Subtypes";
 
 		/// <inheritdoc />
-		public string Summary => @"/// This section lists the <see cref=""Measurement"">Measurement</see> subtypes for <see cref=""CuttingTool"">CuttingTool</see>.  These <see cref=""Measurement"">Measurement</see> subtypes for <see cref=""CuttingTool"">CuttingTool</see> are specific to the entire assembly and <b>MUST NOT</b> be used for the <see cref=""Measurement"">Measurement</see> pertaining to a <see cref=""CuttingItem"">CuttingItem</see>. {{figure(Cutting Tool Measurement 1)}} and {{figure(Cutting Tool Measurement 2)}} will be used to reference the assembly specific <see cref=""Measurement"">Measurement</see> subtypes.  ![Cutting Tool Measurement 1](figures/Cutting%20Tool%20Measurement%201.png ""Cutting Tool Measurement 1""){: width=""0.8""}  ![Cutting Tool Measurement 2](figures/Cutting%20Tool%20Measurement%202.png ""Cutting Tool Measurement 2""){: width=""0.8""} ";
+		public string Summary => @"&#10;&#10;&#10;This section lists the {{block(Measurement)}} subtypes for {{block(CuttingTool)}}.
+
+These {{block(Measurement)}} subtypes for {{block(CuttingTool)}} are specific to the entire assembly and **MUST NOT** be used for the {{block(Measurement)}} pertaining to a {{block(CuttingItem)}}. {{figure(Cutting Tool Measurement 1)}} and {{figure(Cutting Tool Measurement 2)}} will be used to reference the assembly specific {{block(Measurement)}} subtypes.
+
+![Cutting Tool Measurement 1](figures/Cutting%20Tool%20Measurement%201.png ""Cutting Tool Measurement 1""){: width=""0.8""}
+
+![Cutting Tool Measurement 2](figures/Cutting%20Tool%20Measurement%202.png ""Cutting Tool Measurement 2""){: width=""0.8""}
+&#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

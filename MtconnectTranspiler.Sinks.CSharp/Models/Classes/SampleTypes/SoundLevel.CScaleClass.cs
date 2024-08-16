@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
 	/// <summary>
-	/// C Scale weighting factor
+	﻿/// C Scale weighting factor<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218445_300012_2181">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SoundLevelCScaleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218445_300012_2181";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// C Scale weighting factor";
+		public string Summary => @"&#10;&#10;&#10;C Scale weighting factor&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "SoundLevel.CScale";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// C Scale weighting factor";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

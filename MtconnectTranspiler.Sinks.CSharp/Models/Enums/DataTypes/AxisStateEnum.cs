@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417658_841501_2872">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AxisStateEnum
 	{
 		/// <summary>
-		/// axis is in its home position.
+		﻿/// axis is in its home position.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HOME,
 		/// <summary>
-		/// axis is in motion.
+		﻿/// axis is in motion.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TRAVEL,
 		/// <summary>
-		/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically.   Action is required to release the axis from this position.
+		﻿/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. <br /><br />Action is required to release the axis from this position.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PARKED,
 		/// <summary>
-		/// axis is stopped.
+		﻿/// axis is stopped.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -54,8 +59,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417658_841501_2872">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AxisStateEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -85,12 +91,14 @@ namespace Mtconnect.DataTypes
 
 		private HOMEValue _HOME;
 		/// <summary>
-		/// axis is in its home position.
+		﻿/// axis is in its home position.<br/><br />
+
 		/// </summary>
 		public HOMEValue HOME => _HOME ?? (_HOME = new HOMEValue());
 
 		/// <summary>
-		/// axis is in its home position.
+		﻿/// axis is in its home position.<br/><br />
+
 		/// </summary>
 		public sealed class HOMEValue : IEnumInstance
 		{
@@ -107,16 +115,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axis is in its home position.";
+			public string Summary => @"&#10;&#10;&#10;axis is in its home position.&#10;
+";
 		}
 		private TRAVELValue _TRAVEL;
 		/// <summary>
-		/// axis is in motion.
+		﻿/// axis is in motion.<br/><br />
+
 		/// </summary>
 		public TRAVELValue TRAVEL => _TRAVEL ?? (_TRAVEL = new TRAVELValue());
 
 		/// <summary>
-		/// axis is in motion.
+		﻿/// axis is in motion.<br/><br />
+
 		/// </summary>
 		public sealed class TRAVELValue : IEnumInstance
 		{
@@ -133,16 +144,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axis is in motion.";
+			public string Summary => @"&#10;&#10;&#10;axis is in motion.&#10;
+";
 		}
 		private PARKEDValue _PARKED;
 		/// <summary>
-		/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically.   Action is required to release the axis from this position.
+		﻿/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. <br /><br />Action is required to release the axis from this position.<br/><br />
+
 		/// </summary>
 		public PARKEDValue PARKED => _PARKED ?? (_PARKED = new PARKEDValue());
 
 		/// <summary>
-		/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically.   Action is required to release the axis from this position.
+		﻿/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. <br /><br />Action is required to release the axis from this position.<br/><br />
+
 		/// </summary>
 		public sealed class PARKEDValue : IEnumInstance
 		{
@@ -159,16 +173,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically.   Action is required to release the axis from this position.";
+			public string Summary => @"&#10;&#10;&#10;axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. 
+
+Action is required to release the axis from this position.&#10;
+";
 		}
 		private STOPPEDValue _STOPPED;
 		/// <summary>
-		/// axis is stopped.
+		﻿/// axis is stopped.<br/><br />
+
 		/// </summary>
 		public STOPPEDValue STOPPED => _STOPPED ?? (_STOPPED = new STOPPEDValue());
 
 		/// <summary>
-		/// axis is stopped.
+		﻿/// axis is stopped.<br/><br />
+
 		/// </summary>
 		public sealed class STOPPEDValue : IEnumInstance
 		{
@@ -185,7 +204,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// axis is stopped.";
+			public string Summary => @"&#10;&#10;&#10;axis is stopped.&#10;
+";
 		}
 	}
 }

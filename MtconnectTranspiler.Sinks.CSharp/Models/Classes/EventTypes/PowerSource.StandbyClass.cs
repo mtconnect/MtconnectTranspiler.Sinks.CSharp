@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::POWER_SOURCE">EventEnum::POWER_SOURCE</see> that is <see cref="DataItemSubTypeEnum::STANDBY">DataItemSubTypeEnum::STANDBY</see> that is uninterruptible or generator power supply. 
+	﻿/// <see cref="EventEnum.POWER_SOURCE">EventEnum.POWER_SOURCE</see> that is <see cref="DataItemSubTypeEnum.STANDBY">DataItemSubTypeEnum.STANDBY</see> that is uninterruptible or generator power supply.<br /><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1696872166479_98872_3678">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PowerSourceStandbyClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1696872166479_98872_3678";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::POWER_SOURCE"">EventEnum::POWER_SOURCE</see> that is <see cref=""DataItemSubTypeEnum::STANDBY"">DataItemSubTypeEnum::STANDBY</see> that is uninterruptible or generator power supply. ";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::POWER_SOURCE)}} that is {{def(DataItemSubTypeEnum::STANDBY)}} that is uninterruptible or generator power supply.
+&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "PowerSource.Standby";
@@ -71,7 +74,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::POWER_SOURCE"">EventEnum::POWER_SOURCE</see> that is <see cref=""DataItemSubTypeEnum::STANDBY"">DataItemSubTypeEnum::STANDBY</see> that is uninterruptible or generator power supply. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

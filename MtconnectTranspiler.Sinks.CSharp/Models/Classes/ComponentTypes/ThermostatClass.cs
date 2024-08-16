@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="Component">Component</see> composed of a sensor or an instrument that measures temperature.  <see cref="Thermostat">Thermostat</see> was <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>s and was replaced by <see cref="Temperature">Temperature</see>.
+	﻿/// <see cref="Component">Component</see> composed of a sensor or an instrument that measures temperature.<br /><br /><see cref="Thermostat">Thermostat</see> was <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i> and was replaced by <see cref="Temperature">Temperature</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1643678703742_369144_1539">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ThermostatClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_4_45f01b9_1643678703742_369144_1539";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""Component"">Component</see> composed of a sensor or an instrument that measures temperature.  <see cref=""Thermostat"">Thermostat</see> was <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>s and was replaced by <see cref=""Temperature"">Temperature</see>.";
+		public string Summary => @"&#10;&#10;&#10;{{block(Component)}} composed of a sensor or an instrument that measures temperature.
+
+{{block(Thermostat)}} was **DEPRECATED** in *MTConnect Version 1.2* and was replaced by {{block(Temperature)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Thermostat";

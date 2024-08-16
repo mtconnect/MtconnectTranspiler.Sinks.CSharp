@@ -6,17 +6,21 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 {
 	/// <summary>
-	/// abstract <see cref="DataItem">DataItem</see> that is continuously changing or analog data value. /// Description
+	﻿/// abstract <see cref="DataItem">DataItem</see> that is continuously changing or analog data value.<br /><br/><br />Description<br/>This data can be measured at any point-in-time and will always produce a result.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_B0781166_9F74_4844_B40C_CA32663868F2">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SampleClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_B0781166_9F74_4844_B40C_CA32663868F2";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
+		public string Summary => @"&#10;&#10;&#10;abstract {{block(DataItem)}} that is continuously changing or analog data value.
+&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;This data can be measured at any point-in-time and will always produce a result.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Sample";
@@ -73,7 +77,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "category";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -124,7 +128,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -175,7 +179,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				public string Name => "units";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// abstract <see cref=""DataItem"">DataItem</see> that is continuously changing or analog data value. /// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

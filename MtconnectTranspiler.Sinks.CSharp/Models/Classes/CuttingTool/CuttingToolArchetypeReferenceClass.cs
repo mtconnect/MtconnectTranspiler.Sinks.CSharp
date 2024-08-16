@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
 	/// <summary>
-	/// reference information about the <see cref="Asset::assetId" /> and/or the URL of the data source of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.
+	﻿/// reference information about the <see cref="Asset.assetId">assetId in Asset</see> and/or the URL of the data source of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_D4CAAB4A_DE00_489d_ACCA_F00FC7296F0C">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CuttingToolArchetypeReferenceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_D4CAAB4A_DE00_489d_ACCA_F00FC7296F0C";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// reference information about the <see cref=""Asset::assetId"" /> and/or the URL of the data source of <see cref=""CuttingToolArchetype"">CuttingToolArchetype</see>.";
+		public string Summary => @"&#10;&#10;&#10;reference information about the {{property(Asset::assetId)}} and/or the URL of the data source of {{block(CuttingToolArchetype)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "CuttingToolArchetypeReference";
@@ -51,7 +53,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public SourceProperty Source { get; } = new SourceProperty();
 			/// <summary>
-			/// <i>URL</i> of the <see cref="CuttingToolArchetype">CuttingToolArchetype</see> <i>information model</i>. 
+			﻿/// <i>URL</i> of the <see cref="CuttingToolArchetype">CuttingToolArchetype</see> <i>information model</i>.<br /><br/><br />
+
 			/// </summary>
 			public sealed class SourceProperty : IProperty
 			{
@@ -71,7 +74,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "source";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference information about the <see cref=""Asset::assetId"" /> and/or the URL of the data source of <see cref=""CuttingToolArchetype"">CuttingToolArchetype</see>.";
+				public string Summary => @"&#10;&#10;&#10;{{term(URL)}} of the {{block(CuttingToolArchetype)}} {{term(information model)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -105,7 +109,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// <c>assetId</c> of the related <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.
+			﻿/// <c>assetId</c> of the related <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -125,7 +130,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// reference information about the <see cref=""Asset::assetId"" /> and/or the URL of the data source of <see cref=""CuttingToolArchetype"">CuttingToolArchetype</see>.";
+				public string Summary => @"&#10;&#10;&#10;`assetId` of the related {{block(CuttingToolArchetype)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

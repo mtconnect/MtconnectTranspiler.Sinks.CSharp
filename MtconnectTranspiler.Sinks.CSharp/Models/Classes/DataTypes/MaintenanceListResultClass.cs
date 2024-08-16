@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaintenanceListResultClass : IClass
 	{
 		/// <inheritdoc />
@@ -59,7 +59,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			/// <summary>
-			/// current interval value of the activity.
+			﻿/// current interval value of the activity.<br/><br />
+
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -79,7 +80,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Value";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;current interval value of the activity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -113,7 +115,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public IntervalProperty Interval { get; } = new IntervalProperty();
 			/// <summary>
-			/// interval of the value observed.
+			﻿/// interval of the value observed.<br/><br />
+
 			/// </summary>
 			public sealed class IntervalProperty : IProperty
 			{
@@ -133,7 +136,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Interval";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;interval of the value observed.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -167,7 +171,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public NextServiceDateProperty NextServiceDate { get; } = new NextServiceDateProperty();
 			/// <summary>
-			/// next date/time stamp that maintenance should be performed.
+			﻿/// next date/time stamp that maintenance should be performed.<br/><br />
+
 			/// </summary>
 			public sealed class NextServiceDateProperty : IProperty
 			{
@@ -187,7 +192,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "NextServiceDate";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;next date/time stamp that maintenance should be performed.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -221,7 +227,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public ResetProperty Reset { get; } = new ResetProperty();
 			/// <summary>
-			/// last date/time stamp of the <i>observation</i> was reset.
+			﻿/// last date/time stamp of the <i>observation</i> was reset.<br/><br />
+
 			/// </summary>
 			public sealed class ResetProperty : IProperty
 			{
@@ -241,7 +248,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Reset";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;last date/time stamp of the {{term(observation)}} was reset.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -275,7 +283,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public SeverityProperty Severity { get; } = new SeverityProperty();
 			/// <summary>
-			/// level of severity on a scale of 1-10.
+			﻿/// level of severity on a scale of 1-10.<br/><br />
+
 			/// </summary>
 			public sealed class SeverityProperty : IProperty
 			{
@@ -295,7 +304,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Severity";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;level of severity on a scale of 1-10.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -329,7 +339,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public DirectionProperty Direction { get; } = new DirectionProperty();
 			/// <summary>
-			/// direction of the value observed.
+			﻿/// direction of the value observed.<br/><br />
+
 			/// </summary>
 			public sealed class DirectionProperty : IProperty
 			{
@@ -349,7 +360,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Direction";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;direction of the value observed.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -383,7 +395,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
 			/// <summary>
-			/// identifier of the maintenance activity.
+			﻿/// identifier of the maintenance activity.<br/><br />
+
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -403,7 +416,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Name";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;identifier of the maintenance activity.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -437,7 +451,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public LastServiceDateProperty LastServiceDate { get; } = new LastServiceDateProperty();
 			/// <summary>
-			/// last date/time stamp that maintenance was performed.
+			﻿/// last date/time stamp that maintenance was performed.<br/><br />
+
 			/// </summary>
 			public sealed class LastServiceDateProperty : IProperty
 			{
@@ -457,7 +472,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "LastServiceDate";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;last date/time stamp that maintenance was performed.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -491,7 +507,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
 			/// <summary>
-			/// same as <see cref="DataItem::units" />. See <see cref="Device Information Model">Device Information Model</see>.
+			﻿/// same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="Device Information Model">Device Information Model</see>.<br/><br />
+
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
@@ -511,7 +528,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Units";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::units)}}. See {{package(Device Information Model)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -545,7 +563,8 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public TargetProperty Target { get; } = new TargetProperty();
 			/// <summary>
-			/// target value of the next maintenance.
+			﻿/// target value of the next maintenance.<br/><br />
+
 			/// </summary>
 			public sealed class TargetProperty : IProperty
 			{
@@ -565,7 +584,8 @@ namespace Mtconnect.DataTypes
 				public string Name => "Target";
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => @"&#10;&#10;&#10;target value of the next maintenance.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

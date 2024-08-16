@@ -6,17 +6,20 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> that manages the delivery of materials within a piece of equipment./// Description
+	﻿/// <see cref="System">System</see> that manages the delivery of materials within a piece of equipment.<br/><br />Description<br/>For example, this could describe the wire delivery system for an EDM or welding process; conveying system or pump and valve system distributing material to a blending station; or a fuel delivery system feeding a furnace.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381991_562093_42243">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FeederClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381991_562093_42243";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> that manages the delivery of materials within a piece of equipment./// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} that manages the delivery of materials within a piece of equipment.&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;For example, this could describe the wire delivery system for an EDM or welding process; conveying system or pump and valve system distributing material to a blending station; or a fuel delivery system feeding a furnace.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Feeder";

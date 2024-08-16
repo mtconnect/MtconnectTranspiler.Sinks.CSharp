@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// push or pull on a mass which results in an acceleration.
+	﻿/// push or pull on a mass which results in an acceleration.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375160_295789_1993">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ForceClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375160_295789_1993";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// push or pull on a mass which results in an acceleration.";
+		public string Summary => @"&#10;&#10;&#10;push or pull on a mass which results in an acceleration.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "force";

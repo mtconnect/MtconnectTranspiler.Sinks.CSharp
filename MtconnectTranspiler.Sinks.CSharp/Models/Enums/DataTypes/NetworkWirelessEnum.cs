@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643979384902_745208_1916">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.6">v1.6</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum NetworkWirelessEnum
 	{
 		/// <summary>
-		/// 
+		﻿/// <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		YES,
 		/// <summary>
-		/// 
+		﻿/// <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643979384902_745208_1916">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class NetworkWirelessEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private YESValue _YES;
 		/// <summary>
-		/// 
+		﻿/// <br/><br />
+
 		/// </summary>
 		public YESValue YES => _YES ?? (_YES = new YESValue());
 
 		/// <summary>
-		/// 
+		﻿/// <br/><br />
+
 		/// </summary>
 		public sealed class YESValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// ";
+			public string Summary => @"&#10;&#10;&#10;&#10;
+";
 		}
 		private NOValue _NO;
 		/// <summary>
-		/// 
+		﻿/// <br/><br />
+
 		/// </summary>
 		public NOValue NO => _NO ?? (_NO = new NOValue());
 
 		/// <summary>
-		/// 
+		﻿/// <br/><br />
+
 		/// </summary>
 		public sealed class NOValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// ";
+			public string Summary => @"&#10;&#10;&#10;&#10;
+";
 		}
 	}
 }

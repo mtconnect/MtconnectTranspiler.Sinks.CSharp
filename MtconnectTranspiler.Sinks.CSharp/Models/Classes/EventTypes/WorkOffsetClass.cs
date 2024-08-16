@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// <see cref="EventEnum::WORK_OFFSET">EventEnum::WORK_OFFSET</see>
+	﻿/// <see cref="EventEnum.WORK_OFFSET">EventEnum.WORK_OFFSET</see><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218488_839923_2316">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class WorkOffsetClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218488_839923_2316";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""EventEnum::WORK_OFFSET"">EventEnum::WORK_OFFSET</see>";
+		public string Summary => @"&#10;&#10;&#10;{{def(EventEnum::WORK_OFFSET)}}&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "WorkOffset";
@@ -71,7 +73,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""EventEnum::WORK_OFFSET"">EventEnum::WORK_OFFSET</see>";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

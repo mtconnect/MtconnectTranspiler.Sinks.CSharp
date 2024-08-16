@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// <i>response document</i> published by an <i>MTConnect Agent</i> whenever it encounters an error while interpreting an <i>MTConnect Request</i>.
+	﻿/// <i>response document</i> published by an <i>MTConnect Agent</i> whenever it encounters an error while interpreting an <i>MTConnect Request</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375174_389187_2045">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MTConnectErrorsResponseDocumentClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375174_389187_2045";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>response document</i> published by an <i>MTConnect Agent</i> whenever it encounters an error while interpreting an <i>MTConnect Request</i>.";
+		public string Summary => @"&#10;&#10;&#10;{{term(response document)}} published by an {{term(MTConnect Agent)}} whenever it encounters an error while interpreting an {{term(MTConnect Request)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "MTConnectErrors Response Document";

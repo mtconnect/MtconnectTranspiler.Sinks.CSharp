@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
 	/// <summary>
-	/// provides a means to control when an <i>agent</i> records updated information for a <see cref="DataItem">DataItem</see>. 
+	﻿/// provides a means to control when an <i>agent</i> records updated information for a <see cref="DataItem">DataItem</see>. <br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_8A5219C3_747D_4904_A58A_A312D13DAEE9">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FilterClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "EAID_8A5219C3_747D_4904_A58A_A312D13DAEE9";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";
+		public string Summary => @"&#10;&#10;&#10;provides a means to control when an {{term(agent)}} records updated information for a {{block(DataItem)}}. &#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Filter";
@@ -51,7 +53,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
 			/// <summary>
-			/// type of <see cref="Filter">Filter</see>.
+			﻿/// type of <see cref="Filter">Filter</see>.<br/><br />
+
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -71,7 +74,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "type";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";
+				public string Summary => @"&#10;&#10;&#10;type of {{block(Filter)}}.&#10;
+";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -122,7 +126,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Name => "value";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// provides a means to control when an <i>agent</i> records updated information for a <see cref=""DataItem"">DataItem</see>. ";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

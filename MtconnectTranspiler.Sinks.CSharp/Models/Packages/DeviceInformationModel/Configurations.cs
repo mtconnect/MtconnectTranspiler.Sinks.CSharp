@@ -6,10 +6,11 @@ using Package = Mtconnect.DeviceInformationModel.Configurations;
 namespace Mtconnect.DeviceInformationModel
 {
 	/// <summary>
-	/// {{figure(Configuration)}} shows the abstract <see cref="Configuration">Configuration</see> and its types.  ![Configuration](figures/Configuration.png "Configuration"){: width="0.8"}  > Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema./// Configurations Model
+	﻿/// {{figure(Configuration)}} shows the abstract <see cref="Configuration">Configuration</see> and its types.<br /><br />![Configuration](figures/Configuration.png "Configuration"){: width="0.8"}<br /><br />> Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br/><br />Configurations Model<br/>This section provides semantic information for the <see cref="Configuration">Configuration</see> entity that is used to model technical information about a <see cref="Component">Component</see>. <br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579526876433_244855_7626">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class ConfigurationsPackage : IPackage
 	{
 		/// <inheritdoc />
@@ -19,7 +20,13 @@ namespace Mtconnect.DeviceInformationModel
 		public string Name => "Configurations";
 
 		/// <inheritdoc />
-		public string Summary => @"/// {{figure(Configuration)}} shows the abstract <see cref=""Configuration"">Configuration</see> and its types.  ![Configuration](figures/Configuration.png ""Configuration""){: width=""0.8""}  > Note: See <see cref=""Configuration Schema Diagrams"">Configuration Schema Diagrams</see> for XML schema./// Configurations Model";
+		public string Summary => @"&#10;&#10;&#10;{{figure(Configuration)}} shows the abstract {{block(Configuration)}} and its types.
+
+![Configuration](figures/Configuration.png ""Configuration""){: width=""0.8""}
+
+> Note: See {{sect(Configuration Schema Diagrams)}} for XML schema.&#10;
+&#10;&#10;&#10;Configurations Model&#10;&#10;&#10;&#10;This section provides semantic information for the {{block(Configuration)}} entity that is used to model technical information about a {{block(Component)}}. &#10;
+";
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

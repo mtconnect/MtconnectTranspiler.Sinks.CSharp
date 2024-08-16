@@ -6,17 +6,22 @@ using System.Linq;
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
 	/// <summary>
-	/// <see cref="System">System</see> that provides regulation or management of a system or component. <seealso href="https://www.google.com/search?q=ISO 16484-5:2017&btnI=I">ISO 16484-5:2017</seealso>/// Description
+	﻿/// <see cref="System">System</see> that provides regulation or management of a system or component. <seealso href="https://www.google.com/search?q=ISO 16484-5:2017&btnI=I">ISO 16484-5:2017</seealso><br/><br />Description<br/>Typical types of controllers for a piece of equipment include CNC (Computer Numerical Control), PAC (Programmable Automation Control), IPC (Industrialized Computer), or IC (Imbedded Computer).<br /><br />> Note: In <i>XML</i> representation, <see cref="Controller">Controller</see> is a <i>top level</i> element.<br/><br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381977_283525_42216">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ControllerClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1579572381977_283525_42216";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+		public string Summary => @"&#10;&#10;&#10;{{block(System)}} that provides regulation or management of a system or component. {{cite(ISO 16484-5:2017)}}&#10;
+&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;Typical types of controllers for a piece of equipment include CNC (Computer Numerical Control), PAC (Programmable Automation Control), IPC (Industrialized Computer), or IC (Imbedded Computer).
+
+> Note: In {{term(XML)}} representation, {{block(Controller)}} is a {{term(top level)}} element.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "Controller";
@@ -77,7 +82,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "hasPath";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -128,7 +133,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "isControllerOf";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "private";
@@ -179,7 +184,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesEmergencyStop";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -230,7 +235,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesSystemCondition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -281,7 +286,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesControllerMode";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -332,7 +337,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesCommunicationsCondition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";
@@ -383,7 +388,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public string Name => "observesLogicProgramCondition";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// <see cref=""System"">System</see> that provides regulation or management of a system or component. <seealso href=""https://www.google.com/search?q=ISO 16484-5:2017&btnI=I"">ISO 16484-5:2017</seealso>/// Description";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

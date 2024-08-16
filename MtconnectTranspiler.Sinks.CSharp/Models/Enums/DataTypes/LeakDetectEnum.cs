@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1659073241126_204554_44">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.1">v2.1</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum LeakDetectEnum
 	{
 		/// <summary>
-		/// leak is currently being detected.
+		﻿/// leak is currently being detected.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DETECTED,
 		/// <summary>
-		/// leak is currently not being detected.
+		﻿/// leak is currently not being detected.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1659073241126_204554_44">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LeakDetectEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private DETECTEDValue _DETECTED;
 		/// <summary>
-		/// leak is currently being detected.
+		﻿/// leak is currently being detected.<br/><br />
+
 		/// </summary>
 		public DETECTEDValue DETECTED => _DETECTED ?? (_DETECTED = new DETECTEDValue());
 
 		/// <summary>
-		/// leak is currently being detected.
+		﻿/// leak is currently being detected.<br/><br />
+
 		/// </summary>
 		public sealed class DETECTEDValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// leak is currently being detected.";
+			public string Summary => @"&#10;&#10;&#10;leak is currently being detected.&#10;
+";
 		}
 		private NOT_DETECTEDValue _NOT_DETECTED;
 		/// <summary>
-		/// leak is currently not being detected.
+		﻿/// leak is currently not being detected.<br/><br />
+
 		/// </summary>
 		public NOT_DETECTEDValue NOT_DETECTED => _NOT_DETECTED ?? (_NOT_DETECTED = new NOT_DETECTEDValue());
 
 		/// <summary>
-		/// leak is currently not being detected.
+		﻿/// leak is currently not being detected.<br/><br />
+
 		/// </summary>
 		public sealed class NOT_DETECTEDValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// leak is currently not being detected.";
+			public string Summary => @"&#10;&#10;&#10;leak is currently not being detected.&#10;
+";
 		}
 	}
 }

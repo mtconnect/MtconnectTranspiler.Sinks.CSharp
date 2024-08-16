@@ -6,17 +6,25 @@ using System.Linq;
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
 	/// <summary>
-	/// setting or operator selection that changes the behavior of the controller on a piece of equipment.   The program execution is stopped after a specific program block is executed when <c>OPTIONAL_STOP</c> is <c>ON</c>.      In the case of a G-Code program, a program block containing a M01 code designates the command for an <c>OPTIONAL_STOP</c>.   <see cref="Execution">Execution</see> <b>MUST</b> change to <c>OPTIONAL_STOP</c> after a program block specifying an optional stop is executed and the <see cref="ControllerModeOverride">ControllerModeOverride</see> <c>OPTIONAL_STOP</c> selection is <c>ON</c>.
+	﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br /><br />The program execution is stopped after a specific program block is executed when <c>OPTIONAL_STOP</c> is <c>ON</c>.    <br /><br />In the case of a G-Code program, a program block containing a M01 code designates the command for an <c>OPTIONAL_STOP</c>. <br /><br /><see cref="Execution">Execution</see> <b>MUST</b> change to <c>OPTIONAL_STOP</c> after a program block specifying an optional stop is executed and the <see cref="ControllerModeOverride">ControllerModeOverride</see> <c>OPTIONAL_STOP</c> selection is <c>ON</c>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218242_341536_1671">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ControllerModeOverrideOptionalStopClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_45f01b9_1580378218242_341536_1671";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// setting or operator selection that changes the behavior of the controller on a piece of equipment.   The program execution is stopped after a specific program block is executed when <c>OPTIONAL_STOP</c> is <c>ON</c>.      In the case of a G-Code program, a program block containing a M01 code designates the command for an <c>OPTIONAL_STOP</c>.   <see cref=""Execution"">Execution</see> <b>MUST</b> change to <c>OPTIONAL_STOP</c> after a program block specifying an optional stop is executed and the <see cref=""ControllerModeOverride"">ControllerModeOverride</see> <c>OPTIONAL_STOP</c> selection is <c>ON</c>.";
+		public string Summary => @"&#10;&#10;&#10;setting or operator selection that changes the behavior of the controller on a piece of equipment. 
+
+The program execution is stopped after a specific program block is executed when `OPTIONAL_STOP` is `ON`.    
+
+In the case of a G-Code program, a program block containing a M01 code designates the command for an `OPTIONAL_STOP`. 
+
+{{block(Execution)}} **MUST** change to `OPTIONAL_STOP` after a program block specifying an optional stop is executed and the {{block(ControllerModeOverride)}} `OPTIONAL_STOP` selection is `ON`.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "ControllerModeOverride.OptionalStop";
@@ -71,7 +79,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public string Name => "subType";
 				
 				/// <inheritdoc />
-				public string Summary => @"/// setting or operator selection that changes the behavior of the controller on a piece of equipment.   The program execution is stopped after a specific program block is executed when <c>OPTIONAL_STOP</c> is <c>ON</c>.      In the case of a G-Code program, a program block containing a M01 code designates the command for an <c>OPTIONAL_STOP</c>.   <see cref=""Execution"">Execution</see> <b>MUST</b> change to <c>OPTIONAL_STOP</c> after a program block specifying an optional stop is executed and the <see cref=""ControllerModeOverride"">ControllerModeOverride</see> <c>OPTIONAL_STOP</c> selection is <c>ON</c>.";
+				public string Summary => @"";
 
 				/// <inheritdoc />
 				public string AccessModifier => "public";

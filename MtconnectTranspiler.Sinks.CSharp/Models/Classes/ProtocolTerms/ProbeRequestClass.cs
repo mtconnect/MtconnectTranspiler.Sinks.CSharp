@@ -6,17 +6,19 @@ using System.Linq;
 namespace Mtconnect.Glossary.ProtocolTerms
 {
 	/// <summary>
-	/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectDevices Response Document</i> containing the <i>Device Information Model</i>.
+	﻿/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectDevices Response Document</i> containing the <i>Device Information Model</i>.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375179_316583_2064">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProbeRequestClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375179_316583_2064";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// <i>request</i> to an <i>agent</i> to produce an <i>MTConnectDevices Response Document</i> containing the <i>Device Information Model</i>.";
+		public string Summary => @"&#10;&#10;&#10;{{term(request)}} to an {{term(agent)}} to produce an {{term(MTConnectDevices Response Document)}} containing the {{term(Device Information Model)}}.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "probe request";

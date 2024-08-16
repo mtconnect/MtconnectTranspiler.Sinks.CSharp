@@ -5,17 +5,19 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 namespace Mtconnect.Glossary
 {
 	/// <summary>
-	/// specific instantiation of the MTConnect Standard.
+	﻿/// specific instantiation of the MTConnect Standard.<br/><br />
+
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375166_886692_2014">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ImplementationClass : IClass
 	{
 		/// <inheritdoc />
 		public string ReferenceId => "_19_0_3_68e0225_1623664375166_886692_2014";
 		
 		/// <inheritdoc />
-		public string Summary => @"/// specific instantiation of the MTConnect Standard.";
+		public string Summary => @"&#10;&#10;&#10;specific instantiation of the MTConnect Standard.&#10;
+";
 
 		/// <inheritdoc />
 		public string Name => "implementation";

@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580312281115_595828_44604">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CompositionTypeEnum
 	{
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.  It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. 
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTUATOR,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.
+		﻿/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,7 +36,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		AMPLIFIER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,7 +46,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BALLSCREW,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.
+		﻿/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,7 +56,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BELT,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,7 +66,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		BRAKE,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.
+		﻿/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,7 +76,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHAIN,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,7 +86,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHOPPER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,7 +96,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHUCK,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.
+		﻿/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -96,7 +106,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CHUTE,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,7 +116,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CIRCUIT_BREAKER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -114,7 +126,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		CLAMP,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.
+		﻿/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -123,7 +136,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COMPRESSOR,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -132,7 +146,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DOOR,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -141,7 +156,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		DRAIN,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -150,7 +166,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ENCODER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -159,7 +176,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EXPOSURE_UNIT,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -168,7 +186,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		EXTRUSION_UNIT,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -177,7 +196,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FAN,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.
+		﻿/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -186,7 +206,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		FILTER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.
+		﻿/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -195,7 +216,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		GALVANOMOTOR,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -204,7 +226,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		GRIPPER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.
+		﻿/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -213,7 +236,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		HOPPER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -222,7 +246,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		LINEAR_POSITION_FEEDBACK,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -231,7 +256,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		MOTOR,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a viscous liquid.
+		﻿/// <see cref="Composition">Composition</see> composed of a viscous liquid.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -240,7 +266,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		OIL,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.
+		﻿/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -249,7 +276,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POWER_SUPPLY,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -258,7 +286,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PULLEY,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.
+		﻿/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -267,7 +296,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		PUMP,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.
+		﻿/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -276,7 +306,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		REEL,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -285,7 +316,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SENSING_ELEMENT,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -294,7 +326,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SPREADER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. 
+		﻿/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. <br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -303,7 +336,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		STORAGE_BATTERY,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -312,7 +346,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		SWITCH,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.
+		﻿/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -321,7 +356,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TABLE,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.
+		﻿/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -330,7 +366,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TANK,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -339,7 +376,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TENSIONER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -348,7 +386,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TRANSFORMER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -357,7 +396,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VALVE,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -366,7 +406,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		VAT,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a fluid.
+		﻿/// <see cref="Composition">Composition</see> composed of a fluid.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -375,7 +416,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WATER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.
+		﻿/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -384,7 +426,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WIRE,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.
+		﻿/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -393,7 +436,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		WORKPIECE,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.
+		﻿/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -402,7 +446,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		COOLING_TOWER,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.
+		﻿/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -411,7 +456,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		POT,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.
+		﻿/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -420,7 +466,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		STATION,
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -429,7 +476,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TRANSFER_ARM,
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -438,7 +486,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		TRANSFER_POT,
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -447,7 +496,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		RETURN_POT,
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.
+		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -456,7 +506,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		STAGING_POT,
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.
+		﻿/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -465,7 +516,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		REMOVAL_POT,
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -477,8 +529,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580312281115_595828_44604">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionTypeEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -555,12 +608,14 @@ namespace Mtconnect.DataTypes
 
 		private ACTUATORValue _ACTUATOR;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.  It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. 
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br/><br />
+
 		/// </summary>
 		public ACTUATORValue ACTUATOR => _ACTUATOR ?? (_ACTUATOR = new ACTUATORValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.  It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. 
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br/><br />
+
 		/// </summary>
 		public sealed class ACTUATORValue : IEnumInstance
 		{
@@ -577,16 +632,21 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.  It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. ";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that moves or controls a mechanical part of a piece of equipment.
+
+It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. &#10;
+";
 		}
 		private AMPLIFIERValue _AMPLIFIER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.
+		﻿/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.<br/><br />
+
 		/// </summary>
 		public AMPLIFIERValue AMPLIFIER => _AMPLIFIER ?? (_AMPLIFIER = new AMPLIFIERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.
+		﻿/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.<br/><br />
+
 		/// </summary>
 		public sealed class AMPLIFIERValue : IEnumInstance
 		{
@@ -603,16 +663,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of an electronic component or circuit that amplifies power, electric current, or voltage.&#10;
+";
 		}
 		private BALLSCREWValue _BALLSCREW;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.<br/><br />
+
 		/// </summary>
 		public BALLSCREWValue BALLSCREW => _BALLSCREW ?? (_BALLSCREW = new BALLSCREWValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.<br/><br />
+
 		/// </summary>
 		public sealed class BALLSCREWValue : IEnumInstance
 		{
@@ -629,16 +692,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanical structure that transforms rotary motion into linear motion.&#10;
+";
 		}
 		private BELTValue _BELT;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.
+		﻿/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br/><br />
+
 		/// </summary>
 		public BELTValue BELT => _BELT ?? (_BELT = new BELTValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.
+		﻿/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br/><br />
+
 		/// </summary>
 		public sealed class BELTValue : IEnumInstance
 		{
@@ -655,16 +721,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.&#10;
+";
 		}
 		private BRAKEValue _BRAKE;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.<br/><br />
+
 		/// </summary>
 		public BRAKEValue BRAKE => _BRAKE ?? (_BRAKE = new BRAKEValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.<br/><br />
+
 		/// </summary>
 		public sealed class BRAKEValue : IEnumInstance
 		{
@@ -681,16 +750,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.&#10;
+";
 		}
 		private CHAINValue _CHAIN;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.
+		﻿/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.<br/><br />
+
 		/// </summary>
 		public CHAINValue CHAIN => _CHAIN ?? (_CHAIN = new CHAINValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.
+		﻿/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.<br/><br />
+
 		/// </summary>
 		public sealed class CHAINValue : IEnumInstance
 		{
@@ -707,16 +779,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.&#10;
+";
 		}
 		private CHOPPERValue _CHOPPER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.<br/><br />
+
 		/// </summary>
 		public CHOPPERValue CHOPPER => _CHOPPER ?? (_CHOPPER = new CHOPPERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.<br/><br />
+
 		/// </summary>
 		public sealed class CHOPPERValue : IEnumInstance
 		{
@@ -733,16 +808,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that breaks material into smaller pieces.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that breaks material into smaller pieces.&#10;
+";
 		}
 		private CHUCKValue _CHUCK;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
+
 		/// </summary>
 		public CHUCKValue CHUCK => _CHUCK ?? (_CHUCK = new CHUCKValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
+
 		/// </summary>
 		public sealed class CHUCKValue : IEnumInstance
 		{
@@ -759,16 +837,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that holds a part, stock material, or any other item in place.&#10;
+";
 		}
 		private CHUTEValue _CHUTE;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.
+		﻿/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.<br/><br />
+
 		/// </summary>
 		public CHUTEValue CHUTE => _CHUTE ?? (_CHUTE = new CHUTEValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.
+		﻿/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.<br/><br />
+
 		/// </summary>
 		public sealed class CHUTEValue : IEnumInstance
 		{
@@ -785,16 +866,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of an inclined channel that conveys material.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of an inclined channel that conveys material.&#10;
+";
 		}
 		private CIRCUIT_BREAKERValue _CIRCUIT_BREAKER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.<br/><br />
+
 		/// </summary>
 		public CIRCUIT_BREAKERValue CIRCUIT_BREAKER => _CIRCUIT_BREAKER ?? (_CIRCUIT_BREAKER = new CIRCUIT_BREAKERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.<br/><br />
+
 		/// </summary>
 		public sealed class CIRCUIT_BREAKERValue : IEnumInstance
 		{
@@ -811,16 +895,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that interrupts an electric circuit.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that interrupts an electric circuit.&#10;
+";
 		}
 		private CLAMPValue _CLAMP;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.<br/><br />
+
 		/// </summary>
 		public CLAMPValue CLAMP => _CLAMP ?? (_CLAMP = new CLAMPValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.<br/><br />
+
 		/// </summary>
 		public sealed class CLAMPValue : IEnumInstance
 		{
@@ -837,16 +924,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that strengthens, supports, or fastens objects in place.&#10;
+";
 		}
 		private COMPRESSORValue _COMPRESSOR;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.
+		﻿/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.<br/><br />
+
 		/// </summary>
 		public COMPRESSORValue COMPRESSOR => _COMPRESSOR ?? (_COMPRESSOR = new COMPRESSORValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.
+		﻿/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class COMPRESSORValue : IEnumInstance
 		{
@@ -863,16 +953,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.&#10;
+";
 		}
 		private DOORValue _DOOR;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br/><br />
+
 		/// </summary>
 		public DOORValue DOOR => _DOOR ?? (_DOOR = new DOORValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br/><br />
+
 		/// </summary>
 		public sealed class DOORValue : IEnumInstance
 		{
@@ -889,16 +982,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.&#10;
+";
 		}
 		private DRAINValue _DRAIN;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.<br/><br />
+
 		/// </summary>
 		public DRAINValue DRAIN => _DRAIN ?? (_DRAIN = new DRAINValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.<br/><br />
+
 		/// </summary>
 		public sealed class DRAINValue : IEnumInstance
 		{
@@ -915,16 +1011,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.&#10;
+";
 		}
 		private ENCODERValue _ENCODER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.<br/><br />
+
 		/// </summary>
 		public ENCODERValue ENCODER => _ENCODER ?? (_ENCODER = new ENCODERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.<br/><br />
+
 		/// </summary>
 		public sealed class ENCODERValue : IEnumInstance
 		{
@@ -941,16 +1040,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that measures rotary position.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that measures rotary position.&#10;
+";
 		}
 		private EXPOSURE_UNITValue _EXPOSURE_UNIT;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.<br/><br />
+
 		/// </summary>
 		public EXPOSURE_UNITValue EXPOSURE_UNIT => _EXPOSURE_UNIT ?? (_EXPOSURE_UNIT = new EXPOSURE_UNITValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.<br/><br />
+
 		/// </summary>
 		public sealed class EXPOSURE_UNITValue : IEnumInstance
 		{
@@ -967,16 +1069,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that emits a type of radiation.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that emits a type of radiation.&#10;
+";
 		}
 		private EXTRUSION_UNITValue _EXTRUSION_UNIT;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.<br/><br />
+
 		/// </summary>
 		public EXTRUSION_UNITValue EXTRUSION_UNIT => _EXTRUSION_UNIT ?? (_EXTRUSION_UNIT = new EXTRUSION_UNITValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.<br/><br />
+
 		/// </summary>
 		public sealed class EXTRUSION_UNITValue : IEnumInstance
 		{
@@ -993,16 +1098,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that dispenses liquid or powered materials.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that dispenses liquid or powered materials.&#10;
+";
 		}
 		private FANValue _FAN;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.<br/><br />
+
 		/// </summary>
 		public FANValue FAN => _FAN ?? (_FAN = new FANValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.<br/><br />
+
 		/// </summary>
 		public sealed class FANValue : IEnumInstance
 		{
@@ -1019,16 +1127,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that produces a current of air.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that produces a current of air.&#10;
+";
 		}
 		private FILTERValue _FILTER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.
+		﻿/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.<br/><br />
+
 		/// </summary>
 		public FILTERValue FILTER => _FILTER ?? (_FILTER = new FILTERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.
+		﻿/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.<br/><br />
+
 		/// </summary>
 		public sealed class FILTERValue : IEnumInstance
 		{
@@ -1045,16 +1156,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.&#10;
+";
 		}
 		private GALVANOMOTORValue _GALVANOMOTOR;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.
+		﻿/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.<br/><br />
+
 		/// </summary>
 		public GALVANOMOTORValue GALVANOMOTOR => _GALVANOMOTOR ?? (_GALVANOMOTOR = new GALVANOMOTORValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.
+		﻿/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.<br/><br />
+
 		/// </summary>
 		public sealed class GALVANOMOTORValue : IEnumInstance
 		{
@@ -1071,16 +1185,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.&#10;
+";
 		}
 		private GRIPPERValue _GRIPPER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
+
 		/// </summary>
 		public GRIPPERValue GRIPPER => _GRIPPER ?? (_GRIPPER = new GRIPPERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
+
 		/// </summary>
 		public sealed class GRIPPERValue : IEnumInstance
 		{
@@ -1097,16 +1214,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that holds a part, stock material, or any other item in place.&#10;
+";
 		}
 		private HOPPERValue _HOPPER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.
+		﻿/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.<br/><br />
+
 		/// </summary>
 		public HOPPERValue HOPPER => _HOPPER ?? (_HOPPER = new HOPPERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.
+		﻿/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.<br/><br />
+
 		/// </summary>
 		public sealed class HOPPERValue : IEnumInstance
 		{
@@ -1123,16 +1243,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.&#10;
+";
 		}
 		private LINEAR_POSITION_FEEDBACKValue _LINEAR_POSITION_FEEDBACK;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.<br/><br />
+
 		/// </summary>
 		public LINEAR_POSITION_FEEDBACKValue LINEAR_POSITION_FEEDBACK => _LINEAR_POSITION_FEEDBACK ?? (_LINEAR_POSITION_FEEDBACK = new LINEAR_POSITION_FEEDBACKValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.<br/><br />
+
 		/// </summary>
 		public sealed class LINEAR_POSITION_FEEDBACKValue : IEnumInstance
 		{
@@ -1149,16 +1272,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that measures linear motion or position.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that measures linear motion or position.&#10;
+";
 		}
 		private MOTORValue _MOTOR;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.<br/><br />
+
 		/// </summary>
 		public MOTORValue MOTOR => _MOTOR ?? (_MOTOR = new MOTORValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.<br/><br />
+
 		/// </summary>
 		public sealed class MOTORValue : IEnumInstance
 		{
@@ -1175,16 +1301,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.&#10;
+";
 		}
 		private OILValue _OIL;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a viscous liquid.
+		﻿/// <see cref="Composition">Composition</see> composed of a viscous liquid.<br/><br />
+
 		/// </summary>
 		public OILValue OIL => _OIL ?? (_OIL = new OILValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a viscous liquid.
+		﻿/// <see cref="Composition">Composition</see> composed of a viscous liquid.<br/><br />
+
 		/// </summary>
 		public sealed class OILValue : IEnumInstance
 		{
@@ -1201,16 +1330,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a viscous liquid.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a viscous liquid.&#10;
+";
 		}
 		private POWER_SUPPLYValue _POWER_SUPPLY;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.
+		﻿/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.<br/><br />
+
 		/// </summary>
 		public POWER_SUPPLYValue POWER_SUPPLY => _POWER_SUPPLY ?? (_POWER_SUPPLY = new POWER_SUPPLYValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.
+		﻿/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.<br/><br />
+
 		/// </summary>
 		public sealed class POWER_SUPPLYValue : IEnumInstance
 		{
@@ -1227,16 +1359,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a unit that provides power to electric mechanisms.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a unit that provides power to electric mechanisms.&#10;
+";
 		}
 		private PULLEYValue _PULLEY;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.<br/><br />
+
 		/// </summary>
 		public PULLEYValue PULLEY => _PULLEY ?? (_PULLEY = new PULLEYValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.<br/><br />
+
 		/// </summary>
 		public sealed class PULLEYValue : IEnumInstance
 		{
@@ -1253,16 +1388,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.&#10;
+";
 		}
 		private PUMPValue _PUMP;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.
+		﻿/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.<br/><br />
+
 		/// </summary>
 		public PUMPValue PUMP => _PUMP ?? (_PUMP = new PUMPValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.
+		﻿/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.<br/><br />
+
 		/// </summary>
 		public sealed class PUMPValue : IEnumInstance
 		{
@@ -1279,16 +1417,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.&#10;
+";
 		}
 		private REELValue _REEL;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.
+		﻿/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.<br/><br />
+
 		/// </summary>
 		public REELValue REEL => _REEL ?? (_REEL = new REELValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.
+		﻿/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.<br/><br />
+
 		/// </summary>
 		public sealed class REELValue : IEnumInstance
 		{
@@ -1305,16 +1446,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a rotary storage unit for material.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a rotary storage unit for material.&#10;
+";
 		}
 		private SENSING_ELEMENTValue _SENSING_ELEMENT;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.<br/><br />
+
 		/// </summary>
 		public SENSING_ELEMENTValue SENSING_ELEMENT => _SENSING_ELEMENT ?? (_SENSING_ELEMENT = new SENSING_ELEMENTValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.<br/><br />
+
 		/// </summary>
 		public sealed class SENSING_ELEMENTValue : IEnumInstance
 		{
@@ -1331,16 +1475,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that provides a signal or measured value.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that provides a signal or measured value.&#10;
+";
 		}
 		private SPREADERValue _SPREADER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.<br/><br />
+
 		/// </summary>
 		public SPREADERValue SPREADER => _SPREADER ?? (_SPREADER = new SPREADERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.<br/><br />
+
 		/// </summary>
 		public sealed class SPREADERValue : IEnumInstance
 		{
@@ -1357,16 +1504,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that flattens or spreads materials.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that flattens or spreads materials.&#10;
+";
 		}
 		private STORAGE_BATTERYValue _STORAGE_BATTERY;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. 
+		﻿/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. <br/><br />
+
 		/// </summary>
 		public STORAGE_BATTERYValue STORAGE_BATTERY => _STORAGE_BATTERY ?? (_STORAGE_BATTERY = new STORAGE_BATTERYValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. 
+		﻿/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. <br/><br />
+
 		/// </summary>
 		public sealed class STORAGE_BATTERYValue : IEnumInstance
 		{
@@ -1383,16 +1533,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. ";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of one or more cells that converts chemical energy to electricity and serves as a source of power. &#10;
+";
 		}
 		private SWITCHValue _SWITCH;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.<br/><br />
+
 		/// </summary>
 		public SWITCHValue SWITCH => _SWITCH ?? (_SWITCH = new SWITCHValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.<br/><br />
+
 		/// </summary>
 		public sealed class SWITCHValue : IEnumInstance
 		{
@@ -1409,16 +1562,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.&#10;
+";
 		}
 		private TABLEValue _TABLE;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.
+		﻿/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.<br/><br />
+
 		/// </summary>
 		public TABLEValue TABLE => _TABLE ?? (_TABLE = new TABLEValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.
+		﻿/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.<br/><br />
+
 		/// </summary>
 		public sealed class TABLEValue : IEnumInstance
 		{
@@ -1435,16 +1591,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a surface that holds an object or material.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a surface that holds an object or material.&#10;
+";
 		}
 		private TANKValue _TANK;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.
+		﻿/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.<br/><br />
+
 		/// </summary>
 		public TANKValue TANK => _TANK ?? (_TANK = new TANKValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.
+		﻿/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.<br/><br />
+
 		/// </summary>
 		public sealed class TANKValue : IEnumInstance
 		{
@@ -1461,16 +1620,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a receptacle or container that holds material.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a receptacle or container that holds material.&#10;
+";
 		}
 		private TENSIONERValue _TENSIONER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.<br/><br />
+
 		/// </summary>
 		public TENSIONERValue TENSIONER => _TENSIONER ?? (_TENSIONER = new TENSIONERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.<br/><br />
+
 		/// </summary>
 		public sealed class TENSIONERValue : IEnumInstance
 		{
@@ -1487,16 +1649,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that provides or applies a stretch or strain to another mechanism.&#10;
+";
 		}
 		private TRANSFORMERValue _TRANSFORMER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.<br/><br />
+
 		/// </summary>
 		public TRANSFORMERValue TRANSFORMER => _TRANSFORMER ?? (_TRANSFORMER = new TRANSFORMERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.<br/><br />
+
 		/// </summary>
 		public sealed class TRANSFORMERValue : IEnumInstance
 		{
@@ -1513,16 +1678,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that transforms electric energy from a source to a secondary circuit.&#10;
+";
 		}
 		private VALVEValue _VALVE;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.<br/><br />
+
 		/// </summary>
 		public VALVEValue VALVE => _VALVE ?? (_VALVE = new VALVEValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.<br/><br />
+
 		/// </summary>
 		public sealed class VALVEValue : IEnumInstance
 		{
@@ -1539,16 +1707,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.&#10;
+";
 		}
 		private VATValue _VAT;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.<br/><br />
+
 		/// </summary>
 		public VATValue VAT => _VAT ?? (_VAT = new VATValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.
+		﻿/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.<br/><br />
+
 		/// </summary>
 		public sealed class VATValue : IEnumInstance
 		{
@@ -1565,16 +1736,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a container for liquid or powdered materials.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a container for liquid or powdered materials.&#10;
+";
 		}
 		private WATERValue _WATER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a fluid.
+		﻿/// <see cref="Composition">Composition</see> composed of a fluid.<br/><br />
+
 		/// </summary>
 		public WATERValue WATER => _WATER ?? (_WATER = new WATERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a fluid.
+		﻿/// <see cref="Composition">Composition</see> composed of a fluid.<br/><br />
+
 		/// </summary>
 		public sealed class WATERValue : IEnumInstance
 		{
@@ -1591,16 +1765,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a fluid.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a fluid.&#10;
+";
 		}
 		private WIREValue _WIRE;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.
+		﻿/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.<br/><br />
+
 		/// </summary>
 		public WIREValue WIRE => _WIRE ?? (_WIRE = new WIREValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.
+		﻿/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.<br/><br />
+
 		/// </summary>
 		public sealed class WIREValue : IEnumInstance
 		{
@@ -1617,16 +1794,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.&#10;
+";
 		}
 		private WORKPIECEValue _WORKPIECE;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.
+		﻿/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.<br/><br />
+
 		/// </summary>
 		public WORKPIECEValue WORKPIECE => _WORKPIECE ?? (_WORKPIECE = new WORKPIECEValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.
+		﻿/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.<br/><br />
+
 		/// </summary>
 		public sealed class WORKPIECEValue : IEnumInstance
 		{
@@ -1643,16 +1823,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of an object or material on which a form of work is performed.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of an object or material on which a form of work is performed.&#10;
+";
 		}
 		private COOLING_TOWERValue _COOLING_TOWER;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.
+		﻿/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br/><br />
+
 		/// </summary>
 		public COOLING_TOWERValue COOLING_TOWER => _COOLING_TOWER ?? (_COOLING_TOWER = new COOLING_TOWERValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.
+		﻿/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br/><br />
+
 		/// </summary>
 		public sealed class COOLING_TOWERValue : IEnumInstance
 		{
@@ -1669,16 +1852,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.&#10;
+";
 		}
 		private POTValue _POT;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.
+		﻿/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br/><br />
+
 		/// </summary>
 		public POTValue POT => _POT ?? (_POT = new POTValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.
+		﻿/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br/><br />
+
 		/// </summary>
 		public sealed class POTValue : IEnumInstance
 		{
@@ -1695,16 +1881,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a tool storage location associated with a <see cref=""ToolMagazine"">ToolMagazine</see> or <see cref=""AutomaticToolChanger"">AutomaticToolChanger</see>.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a tool storage location associated with a {{block(ToolMagazine)}} or {{block(AutomaticToolChanger)}}.&#10;
+";
 		}
 		private STATIONValue _STATION;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.
+		﻿/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.<br/><br />
+
 		/// </summary>
 		public STATIONValue STATION => _STATION ?? (_STATION = new STATIONValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.
+		﻿/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.<br/><br />
+
 		/// </summary>
 		public sealed class STATIONValue : IEnumInstance
 		{
@@ -1721,16 +1910,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref=""Turret"">Turret</see>, <see cref=""GangToolBar"">GangToolBar</see>, or <see cref=""ToolRack"">ToolRack</see>.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a storage or mounting location for a tool associated with a {{block(Turret)}}, {{block(GangToolBar)}}, or {{block(ToolRack)}}.&#10;
+";
 		}
 		private TRANSFER_ARMValue _TRANSFER_ARM;
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.<br/><br />
+
 		/// </summary>
 		public TRANSFER_ARMValue TRANSFER_ARM => _TRANSFER_ARM ?? (_TRANSFER_ARM = new TRANSFER_ARMValue());
 
 		/// <summary>
-		/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.
+		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.<br/><br />
+
 		/// </summary>
 		public sealed class TRANSFER_ARMValue : IEnumInstance
 		{
@@ -1747,16 +1939,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Composition"">Composition</see> composed of a mechanism that physically moves a tool from one location to another.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Composition)}} composed of a mechanism that physically moves a tool from one location to another.&#10;
+";
 		}
 		private TRANSFER_POTValue _TRANSFER_POT;
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.<br/><br />
+
 		/// </summary>
 		public TRANSFER_POTValue TRANSFER_POT => _TRANSFER_POT ?? (_TRANSFER_POT = new TRANSFER_POTValue());
 
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.<br/><br />
+
 		/// </summary>
 		public sealed class TRANSFER_POTValue : IEnumInstance
 		{
@@ -1773,16 +1968,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Pot"">Pot</see> for a tool awaiting transfer from a <see cref=""ToolMagazine"">ToolMagazine</see> to <i>spindle</i> or <see cref=""Turret"">Turret</see>.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Pot)}} for a tool awaiting transfer from a {{block(ToolMagazine)}} to {{term(spindle)}} or {{block(Turret)}}.&#10;
+";
 		}
 		private RETURN_POTValue _RETURN_POT;
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.<br/><br />
+
 		/// </summary>
 		public RETURN_POTValue RETURN_POT => _RETURN_POT ?? (_RETURN_POT = new RETURN_POTValue());
 
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.<br/><br />
+
 		/// </summary>
 		public sealed class RETURN_POTValue : IEnumInstance
 		{
@@ -1799,16 +1997,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Pot"">Pot</see> for a tool removed from <i>spindle</i> or <see cref=""Turret"">Turret</see> and awaiting for return to a <see cref=""ToolMagazine"">ToolMagazine</see>.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Pot)}} for a tool removed from {{term(spindle)}} or {{block(Turret)}} and awaiting for return to a {{block(ToolMagazine)}}.&#10;
+";
 		}
 		private STAGING_POTValue _STAGING_POT;
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.
+		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.<br/><br />
+
 		/// </summary>
 		public STAGING_POTValue STAGING_POT => _STAGING_POT ?? (_STAGING_POT = new STAGING_POTValue());
 
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.
+		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class STAGING_POTValue : IEnumInstance
 		{
@@ -1825,16 +2026,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Pot"">Pot</see> for a tool awaiting transfer to a <see cref=""ToolMagazine"">ToolMagazine</see> or <see cref=""Turret"">Turret</see> from outside of the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Pot)}} for a tool awaiting transfer to a {{block(ToolMagazine)}} or {{block(Turret)}} from outside of the piece of equipment.&#10;
+";
 		}
 		private REMOVAL_POTValue _REMOVAL_POT;
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.
+		﻿/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.<br/><br />
+
 		/// </summary>
 		public REMOVAL_POTValue REMOVAL_POT => _REMOVAL_POT ?? (_REMOVAL_POT = new REMOVAL_POTValue());
 
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.
+		﻿/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.<br/><br />
+
 		/// </summary>
 		public sealed class REMOVAL_POTValue : IEnumInstance
 		{
@@ -1851,16 +2055,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Pot"">Pot</see> for a tool to be removed from a <see cref=""ToolMagazine"">ToolMagazine</see> or <see cref=""Turret"">Turret</see> to a location outside of the piece of equipment.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Pot)}} for a tool to be removed from a {{block(ToolMagazine)}} or {{block(Turret)}} to a location outside of the piece of equipment.&#10;
+";
 		}
 		private EXPIRED_POTValue _EXPIRED_POT;
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br/><br />
+
 		/// </summary>
 		public EXPIRED_POTValue EXPIRED_POT => _EXPIRED_POT ?? (_EXPIRED_POT = new EXPIRED_POTValue());
 
 		/// <summary>
-		/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.
+		﻿/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br/><br />
+
 		/// </summary>
 		public sealed class EXPIRED_POTValue : IEnumInstance
 		{
@@ -1877,7 +2084,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// <see cref=""Pot"">Pot</see> for a tool that is no longer usable for removal from a <see cref=""ToolMagazine"">ToolMagazine</see> or <see cref=""Turret"">Turret</see>.";
+			public string Summary => @"&#10;&#10;&#10;{{block(Pot)}} for a tool that is no longer usable for removal from a {{block(ToolMagazine)}} or {{block(Turret)}}.&#10;
+";
 		}
 	}
 }

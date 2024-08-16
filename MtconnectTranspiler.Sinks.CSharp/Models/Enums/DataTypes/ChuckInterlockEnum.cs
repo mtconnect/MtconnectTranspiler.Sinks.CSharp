@@ -5,17 +5,19 @@ namespace Mtconnect.DataTypes
 {
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632486692761_582059_81">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
 	/// </list>
 	/// </remarks>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ChuckInterlockEnum
 	{
 		/// <summary>
-		/// chuck cannot be unclamped.
+		﻿/// chuck cannot be unclamped.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,7 +26,8 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		ACTIVE,
 		/// <summary>
-		/// chuck can be unclamped.
+		﻿/// chuck can be unclamped.<br/><br />
+
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,8 +39,9 @@ namespace Mtconnect.DataTypes
 
 	/// <summary>
 	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632486692761_582059_81">model.mtconnect.org</seealso>
+	﻿
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.3.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ChuckInterlockEnumMetaClass : IEnum
 	{
 		/// <inheritdoc />
@@ -65,12 +69,14 @@ namespace Mtconnect.DataTypes
 
 		private ACTIVEValue _ACTIVE;
 		/// <summary>
-		/// chuck cannot be unclamped.
+		﻿/// chuck cannot be unclamped.<br/><br />
+
 		/// </summary>
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
 		/// <summary>
-		/// chuck cannot be unclamped.
+		﻿/// chuck cannot be unclamped.<br/><br />
+
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -87,16 +93,19 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// chuck cannot be unclamped.";
+			public string Summary => @"&#10;&#10;&#10;chuck cannot be unclamped.&#10;
+";
 		}
 		private INACTIVEValue _INACTIVE;
 		/// <summary>
-		/// chuck can be unclamped.
+		﻿/// chuck can be unclamped.<br/><br />
+
 		/// </summary>
 		public INACTIVEValue INACTIVE => _INACTIVE ?? (_INACTIVE = new INACTIVEValue());
 
 		/// <summary>
-		/// chuck can be unclamped.
+		﻿/// chuck can be unclamped.<br/><br />
+
 		/// </summary>
 		public sealed class INACTIVEValue : IEnumInstance
 		{
@@ -113,7 +122,8 @@ namespace Mtconnect.DataTypes
 			public string DeprecatedVersion => "";
 			
 			/// <inheritdoc />
-			public string Summary => @"/// chuck can be unclamped.";
+			public string Summary => @"&#10;&#10;&#10;chuck can be unclamped.&#10;
+";
 		}
 	}
 }
