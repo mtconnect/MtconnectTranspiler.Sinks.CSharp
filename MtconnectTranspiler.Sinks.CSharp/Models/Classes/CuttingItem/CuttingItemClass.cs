@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 {
-	/// <summary>
-	﻿/// part of of the tool that physically removes the material from the workpiece by shear deformation.<br/><br />
-
+	/// <summary>﻿part of of the tool that physically removes the material from the workpiece by shear deformation.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_99183806_F570_4387_BA6D_34929C20F954">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		/// <inheritdoc />
 		public CuttingItemClassProperties Properties { get; } = new CuttingItemClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="CuttingItemClass" />.
+		/// </summary>
 		public class CuttingItemClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -60,9 +64,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: Description</remarks>
 			/// </summary>
 			public DescriptionProperty Description { get; } = new DescriptionProperty();
-			/// <summary>
-			﻿/// free-form description of the cutting item.<br/><br />
-
+			
+			/// <summary>﻿free-form description of the cutting item.<br /><br /><br />
 			/// </summary>
 			public sealed class DescriptionProperty : IProperty
 			{
@@ -116,9 +119,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: Grade</remarks>
 			/// </summary>
 			public GradeProperty Grade { get; } = new GradeProperty();
-			/// <summary>
-			﻿/// material composition for this cutting item.<br /><br/><br />
-
+			
+			/// <summary>﻿material composition for this cutting item.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class GradeProperty : IProperty
 			{
@@ -172,9 +174,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: Indices</remarks>
 			/// </summary>
 			public IndicesProperty Indices { get; } = new IndicesProperty();
-			/// <summary>
-			﻿/// number or numbers representing the individual cutting item or items on the tool.<br /><br /><br />Indices <b>SHOULD</b> start numbering with the inserts or <see cref="CuttingItem">CuttingItem</see> furthest from the gauge line and increasing in value as the items get closer to the gauge line. Items at the same distance <b>MAY</b> be arbitrarily numbered.<br /><br />> Note: In <i>XML</i>, the representation <b>MUST</b> be a single number ("1") or a comma separated set of individual elements ("1,2,3,4"), or as a inclusive range of values as in ("1-10") or any combination of ranges and numbers as in "1-4,6-10,22". There <b>MUST NOT</b> be spaces or non-integer values in the text representation.<br/><br />
-
+			
+			/// <summary>﻿number or numbers representing the individual cutting item or items on the tool.<br /><br /><br />Indices <b>SHOULD</b> start numbering with the inserts or <see cref="CuttingItem">CuttingItem</see> furthest from the gauge line and increasing in value as the items get closer to the gauge line. Items at the same distance <b>MAY</b> be arbitrarily numbered.<br /><br />&gt; Note: In <i>XML</i>, the representation <b>MUST</b> be a single number ("1") or a comma separated set of individual elements ("1,2,3,4"), or as a inclusive range of values as in ("1-10") or any combination of ranges and numbers as in "1-4,6-10,22". There <b>MUST NOT</b> be spaces or non-integer values in the text representation.<br /><br /><br />
 			/// </summary>
 			public sealed class IndicesProperty : IProperty
 			{
@@ -232,9 +233,8 @@ Indices **SHOULD** start numbering with the inserts or {{block(CuttingItem)}} fu
 			/// <remarks>Original Name: ItemId</remarks>
 			/// </summary>
 			public ItemIdProperty ItemId { get; } = new ItemIdProperty();
-			/// <summary>
-			﻿/// manufacturer identifier of this cutting item.<br/><br />
-
+			
+			/// <summary>﻿manufacturer identifier of this cutting item.<br /><br /><br />
 			/// </summary>
 			public sealed class ItemIdProperty : IProperty
 			{
@@ -288,9 +288,8 @@ Indices **SHOULD** start numbering with the inserts or {{block(CuttingItem)}} fu
 			/// <remarks>Original Name: Locus</remarks>
 			/// </summary>
 			public LocusProperty Locus { get; } = new LocusProperty();
-			/// <summary>
-			﻿/// free form description of the location on the cutting tool.<br /><br />For clarity, the words <c>FLUTE</c>, <c>INSERT</c>, and <c>CARTRIDGE</c> <b>SHOULD</b> be used to assist in noting the location of a <see cref="CuttingItem">CuttingItem</see>. <see cref="CuttingItem.Locus">Locus in CuttingItem</see> <b>MAY</b> be any free form string, but <b>SHOULD</b> adhere to the following rules:<br /><br />* The location numbering <b>SHOULD</b> start at the furthest <see cref="CuttingItem">CuttingItem</see> and work it’s way back to the <see cref="CuttingItem">CuttingItem</see> closest to the gauge line.<br /><br />* Flutes <b>SHOULD</b> be identified as such using the word <c>FLUTE</c>:. For example: <c>FLUTE</c>: 1, <c>INSERT</c>: 2 - would indicate the first flute and the second furthest insert from the end of the tool on that flute.<br /><br />* Other designations such as <c>CARTRIDGE</c> <b>MAY</b> be included, but should be identified using upper case and followed by a colon (:).<br/><br />
-
+			
+			/// <summary>﻿free form description of the location on the cutting tool.<br /><br />For clarity, the words <c>FLUTE</c>, <c>INSERT</c>, and <c>CARTRIDGE</c> <b>SHOULD</b> be used to assist in noting the location of a <see cref="CuttingItem">CuttingItem</see>. <see cref="CuttingItem.Locus">Locus in CuttingItem</see> <b>MAY</b> be any free form string, but <b>SHOULD</b> adhere to the following rules:<br /><br />* The location numbering <b>SHOULD</b> start at the furthest <see cref="CuttingItem">CuttingItem</see> and work it’s way back to the <see cref="CuttingItem">CuttingItem</see> closest to the gauge line.<br /><br />* Flutes <b>SHOULD</b> be identified as such using the word <c>FLUTE</c>:. For example: <c>FLUTE</c>: 1, <c>INSERT</c>: 2 - would indicate the first flute and the second furthest insert from the end of the tool on that flute.<br /><br />* Other designations such as <c>CARTRIDGE</c> <b>MAY</b> be included, but should be identified using upper case and followed by a colon (:).<br /><br /><br />
 			/// </summary>
 			public sealed class LocusProperty : IProperty
 			{
@@ -352,9 +351,8 @@ For clarity, the words `FLUTE`, `INSERT`, and `CARTRIDGE` **SHOULD** be used to 
 			/// <remarks>Original Name: Manufacturers</remarks>
 			/// </summary>
 			public ManufacturersProperty Manufacturers { get; } = new ManufacturersProperty();
-			/// <summary>
-			﻿/// manufacturers of the cutting item.<br /><br />This will reference the tool item and adaptive items specifically. The cutting items<br />manufacturers’ will be a property of <see cref="CuttingItem">CuttingItem</see>.<br /><br />> Note: In <i>XML</i>, the representation <b>MUST</b> be a comma(,) delimited list of manufacturer names. See <see cref="CuttingItem Schema Diagrams">CuttingItem Schema Diagrams</see>.<br/><br />
-
+			
+			/// <summary>﻿manufacturers of the cutting item.<br /><br />This will reference the tool item and adaptive items specifically. The cutting items<br />manufacturers’ will be a property of <see cref="CuttingItem">CuttingItem</see>.<br /><br />&gt; Note: In <i>XML</i>, the representation <b>MUST</b> be a comma(,) delimited list of manufacturer names. See <see cref="CuttingItem Schema Diagrams">CuttingItem Schema Diagrams</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ManufacturersProperty : IProperty
 			{
@@ -413,9 +411,8 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 			/// <remarks>Original Name: ProgramToolGroup</remarks>
 			/// </summary>
 			public ProgramToolGroupProperty ProgramToolGroup { get; } = new ProgramToolGroupProperty();
-			/// <summary>
-			﻿/// tool group this item is assigned in the part program.<br/><br />
-
+			
+			/// <summary>﻿tool group this item is assigned in the part program.<br /><br /><br />
 			/// </summary>
 			public sealed class ProgramToolGroupProperty : IProperty
 			{
@@ -469,6 +466,9 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 			/// <remarks>Original Name: HasCutterStatus</remarks>
 			/// </summary>
 			public HasCutterStatusPartProperty HasCutterStatusPart { get; } = new HasCutterStatusPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasCutterStatusPartProperty : IProperty
 			{
 				/// <summary>
@@ -520,9 +520,8 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 			/// <remarks>Original Name: HasItemLife</remarks>
 			/// </summary>
 			public HasItemLifePartProperty HasItemLifePart { get; } = new HasItemLifePartProperty();
-			/// <summary>
-			﻿/// The tool life measured in tool wear.<br/><br />
-
+			
+			/// <summary>﻿The tool life measured in tool wear.<br /><br /><br />
 			/// </summary>
 			public sealed class HasItemLifePartProperty : IProperty
 			{
@@ -576,9 +575,8 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 			/// <remarks>Original Name: HasMeasurement</remarks>
 			/// </summary>
 			public HasMeasurementPartProperty HasMeasurementPart { get; } = new HasMeasurementPartProperty();
-			/// <summary>
-			﻿/// A collection of measurements relating to this cutting item.<br/><br />
-
+			
+			/// <summary>﻿A collection of measurements relating to this cutting item.<br /><br /><br />
 			/// </summary>
 			public sealed class HasMeasurementPartProperty : IProperty
 			{

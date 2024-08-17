@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	/// <summary>
-	﻿/// <see cref="Component">Component</see> that provides information related to an individual <i>feature</i>.<br/><br />
-
+	/// <summary>﻿<see cref="Component">Component</see> that provides information related to an individual <i>feature</i>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678029650656_503771_494">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		/// <inheritdoc />
 		public FeatureOccurrenceClassProperties Properties { get; } = new FeatureOccurrenceClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="FeatureOccurrenceClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartOccurrenceClass.PartOccurrenceClassProperties" />.
+		/// </summary>
 		public class FeatureOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartOccurrenceClass.PartOccurrenceClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				ObservesFeaturePersisitentId,
 				ObservesFeatureMeasurement,
 				ObservesMeasurementType,
@@ -62,8 +67,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesFeaturePersisitentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesFeaturePersisitentId</remarks>
 			/// </summary>
-			public ObservesFeaturePersisitentIdProperty ObservesFeaturePersisitentId { get; } = new ObservesFeaturePersisitentIdProperty();
-			public sealed class ObservesFeaturePersisitentIdProperty : IProperty
+			public new ObservesFeaturePersisitentIdProperty ObservesFeaturePersisitentId { get; } = new ObservesFeaturePersisitentIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesFeaturePersisitentIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -113,8 +121,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesFeatureMeasurementProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesFeatureMeasurement</remarks>
 			/// </summary>
-			public ObservesFeatureMeasurementProperty ObservesFeatureMeasurement { get; } = new ObservesFeatureMeasurementProperty();
-			public sealed class ObservesFeatureMeasurementProperty : IProperty
+			public new ObservesFeatureMeasurementProperty ObservesFeatureMeasurement { get; } = new ObservesFeatureMeasurementProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesFeatureMeasurementProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -164,8 +175,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesMeasurementTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesMeasurementType</remarks>
 			/// </summary>
-			public ObservesMeasurementTypeProperty ObservesMeasurementType { get; } = new ObservesMeasurementTypeProperty();
-			public sealed class ObservesMeasurementTypeProperty : IProperty
+			public new ObservesMeasurementTypeProperty ObservesMeasurementType { get; } = new ObservesMeasurementTypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesMeasurementTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -215,8 +229,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesCharacteristicPersistentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesCharacteristicPersistentId</remarks>
 			/// </summary>
-			public ObservesCharacteristicPersistentIdProperty ObservesCharacteristicPersistentId { get; } = new ObservesCharacteristicPersistentIdProperty();
-			public sealed class ObservesCharacteristicPersistentIdProperty : IProperty
+			public new ObservesCharacteristicPersistentIdProperty ObservesCharacteristicPersistentId { get; } = new ObservesCharacteristicPersistentIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesCharacteristicPersistentIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -266,8 +283,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesCharacteristicStatusProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesCharacteristicStatus</remarks>
 			/// </summary>
-			public ObservesCharacteristicStatusProperty ObservesCharacteristicStatus { get; } = new ObservesCharacteristicStatusProperty();
-			public sealed class ObservesCharacteristicStatusProperty : IProperty
+			public new ObservesCharacteristicStatusProperty ObservesCharacteristicStatus { get; } = new ObservesCharacteristicStatusProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesCharacteristicStatusProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -317,8 +337,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesUncertaintyProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUncertainty</remarks>
 			/// </summary>
-			public ObservesUncertaintyProperty ObservesUncertainty { get; } = new ObservesUncertaintyProperty();
-			public sealed class ObservesUncertaintyProperty : IProperty
+			public new ObservesUncertaintyProperty ObservesUncertainty { get; } = new ObservesUncertaintyProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesUncertaintyProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -368,8 +391,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesUncertaintyTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUncertaintyType</remarks>
 			/// </summary>
-			public ObservesUncertaintyTypeProperty ObservesUncertaintyType { get; } = new ObservesUncertaintyTypeProperty();
-			public sealed class ObservesUncertaintyTypeProperty : IProperty
+			public new ObservesUncertaintyTypeProperty ObservesUncertaintyType { get; } = new ObservesUncertaintyTypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesUncertaintyTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -419,8 +445,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesMeasurementUnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesMeasurementUnits</remarks>
 			/// </summary>
-			public ObservesMeasurementUnitsProperty ObservesMeasurementUnits { get; } = new ObservesMeasurementUnitsProperty();
-			public sealed class ObservesMeasurementUnitsProperty : IProperty
+			public new ObservesMeasurementUnitsProperty ObservesMeasurementUnits { get; } = new ObservesMeasurementUnitsProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesMeasurementUnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -470,8 +499,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesMeasurementValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesMeasurementValue</remarks>
 			/// </summary>
-			public ObservesMeasurementValueProperty ObservesMeasurementValue { get; } = new ObservesMeasurementValueProperty();
-			public sealed class ObservesMeasurementValueProperty : IProperty
+			public new ObservesMeasurementValueProperty ObservesMeasurementValue { get; } = new ObservesMeasurementValueProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesMeasurementValueProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

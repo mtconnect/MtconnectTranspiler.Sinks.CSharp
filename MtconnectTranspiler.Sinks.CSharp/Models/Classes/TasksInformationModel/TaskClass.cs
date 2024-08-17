@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622718586034_177739_1376">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TaskClass : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		/// <inheritdoc />
 		public TaskClassProperties Properties { get; } = new TaskClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="TaskClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties" />.
+		/// </summary>
 		public class TaskClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				HasTaskArchetypePart,
 				HasCollaboratorPart,
 				HasCoordinatorPart,
@@ -55,8 +65,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <inheritdoc cref="HasTaskArchetypePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasTaskArchetype</remarks>
 			/// </summary>
-			public HasTaskArchetypePartProperty HasTaskArchetypePart { get; } = new HasTaskArchetypePartProperty();
-			public sealed class HasTaskArchetypePartProperty : IProperty
+			public new HasTaskArchetypePartProperty HasTaskArchetypePart { get; } = new HasTaskArchetypePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasTaskArchetypePartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -106,8 +119,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <inheritdoc cref="HasCollaboratorPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasCollaborator</remarks>
 			/// </summary>
-			public HasCollaboratorPartProperty HasCollaboratorPart { get; } = new HasCollaboratorPartProperty();
-			public sealed class HasCollaboratorPartProperty : IProperty
+			public new HasCollaboratorPartProperty HasCollaboratorPart { get; } = new HasCollaboratorPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasCollaboratorPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -157,8 +173,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <inheritdoc cref="HasCoordinatorPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasCoordinator</remarks>
 			/// </summary>
-			public HasCoordinatorPartProperty HasCoordinatorPart { get; } = new HasCoordinatorPartProperty();
-			public sealed class HasCoordinatorPartProperty : IProperty
+			public new HasCoordinatorPartProperty HasCoordinatorPart { get; } = new HasCoordinatorPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasCoordinatorPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -208,8 +227,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <inheritdoc cref="HasParentPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasParent</remarks>
 			/// </summary>
-			public HasParentPartProperty HasParentPart { get; } = new HasParentPartProperty();
-			public sealed class HasParentPartProperty : IProperty
+			public new HasParentPartProperty HasParentPart { get; } = new HasParentPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasParentPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -259,8 +281,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <inheritdoc cref="HasAssetPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAsset</remarks>
 			/// </summary>
-			public HasAssetPartProperty HasAssetPart { get; } = new HasAssetPartProperty();
-			public sealed class HasAssetPartProperty : IProperty
+			public new HasAssetPartProperty HasAssetPart { get; } = new HasAssetPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasAssetPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -310,8 +335,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <inheritdoc cref="TaskTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: TaskType</remarks>
 			/// </summary>
-			public TaskTypeProperty TaskType { get; } = new TaskTypeProperty();
-			public sealed class TaskTypeProperty : IProperty
+			public new TaskTypeProperty TaskType { get; } = new TaskTypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TaskTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -361,8 +389,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <inheritdoc cref="StateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: State</remarks>
 			/// </summary>
-			public StateProperty State { get; } = new StateProperty();
-			public sealed class StateProperty : IProperty
+			public new StateProperty State { get; } = new StateProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class StateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -412,8 +443,11 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <inheritdoc cref="HasPriorityPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPriority</remarks>
 			/// </summary>
-			public HasPriorityPartProperty HasPriorityPart { get; } = new HasPriorityPartProperty();
-			public sealed class HasPriorityPartProperty : IProperty
+			public new HasPriorityPartProperty HasPriorityPart { get; } = new HasPriorityPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasPriorityPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

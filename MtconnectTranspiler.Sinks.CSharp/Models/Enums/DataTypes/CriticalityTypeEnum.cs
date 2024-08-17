@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_9E68B125_F907_4cd0_9198_CC77ADBB8C75">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_9E68B125_F907_4cd0_9198_CC77ADBB8C75">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CriticalityTypeEnum
 	{
-		/// <summary>
-		﻿/// services or functions provided by the associated element is required for the operation of this element.<br/><br />
-
+		/// <summary>﻿services or functions provided by the associated element is required for the operation of this element.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CRITICAL,
-		/// <summary>
-		﻿/// services or functions provided by the associated element is not required for the operation of this element.<br/><br />
-
+		/// <summary>﻿services or functions provided by the associated element is not required for the operation of this element.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		NONCRITICAL,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_9E68B125_F907_4cd0_9198_CC77ADBB8C75">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_9E68B125_F907_4cd0_9198_CC77ADBB8C75">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CriticalityTypeEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(CriticalityTypeEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private CRITICALValue _CRITICAL;
-		/// <summary>
-		﻿/// services or functions provided by the associated element is required for the operation of this element.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CRITICALValue" path="/summary" />
 		public CRITICALValue CRITICAL => _CRITICAL ?? (_CRITICAL = new CRITICALValue());
 
-		/// <summary>
-		﻿/// services or functions provided by the associated element is required for the operation of this element.<br/><br />
-
+		/// <summary>﻿services or functions provided by the associated element is required for the operation of this element.<br /><br /><br />
+		/// Value for CriticalityTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CriticalityTypeEnum">CriticalityTypeEnum</seealso>
 		/// </summary>
 		public sealed class CRITICALValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private NONCRITICALValue _NONCRITICAL;
-		/// <summary>
-		﻿/// services or functions provided by the associated element is not required for the operation of this element.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NONCRITICALValue" path="/summary" />
 		public NONCRITICALValue NONCRITICAL => _NONCRITICAL ?? (_NONCRITICAL = new NONCRITICALValue());
 
-		/// <summary>
-		﻿/// services or functions provided by the associated element is not required for the operation of this element.<br/><br />
-
+		/// <summary>﻿services or functions provided by the associated element is not required for the operation of this element.<br /><br /><br />
+		/// Value for CriticalityTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CriticalityTypeEnum">CriticalityTypeEnum</seealso>
 		/// </summary>
 		public sealed class NONCRITICALValue : IEnumInstance
 		{

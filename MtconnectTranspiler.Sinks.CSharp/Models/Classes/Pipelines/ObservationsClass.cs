@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674406832907_5231_497">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ObservationsClass : IClass
 	{
@@ -38,18 +44,25 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <inheritdoc />
 		public ObservationsClassProperties Properties { get; } = new ObservationsClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ObservationsClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties" />.
+		/// </summary>
 		public class ObservationsClassProperties : Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Value,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
-			public ValueProperty Value { get; } = new ValueProperty();
-			public sealed class ValueProperty : IProperty
+			public new ValueProperty Value { get; } = new ValueProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ValueProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

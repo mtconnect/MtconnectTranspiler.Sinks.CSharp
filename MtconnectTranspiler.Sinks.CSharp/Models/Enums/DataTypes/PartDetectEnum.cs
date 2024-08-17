@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1581206093299_877100_76">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1581206093299_877100_76">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PartDetectEnum
 	{
-		/// <summary>
-		﻿/// part or work piece is detected or is present.<br/><br />
-
+		/// <summary>﻿part or work piece is detected or is present.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PRESENT,
-		/// <summary>
-		﻿/// part or work piece is not detected or is not present.<br/><br />
-
+		/// <summary>﻿part or work piece is not detected or is not present.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		NOT_PRESENT,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1581206093299_877100_76">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1581206093299_877100_76">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartDetectEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(PartDetectEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private PRESENTValue _PRESENT;
-		/// <summary>
-		﻿/// part or work piece is detected or is present.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PRESENTValue" path="/summary" />
 		public PRESENTValue PRESENT => _PRESENT ?? (_PRESENT = new PRESENTValue());
 
-		/// <summary>
-		﻿/// part or work piece is detected or is present.<br/><br />
-
+		/// <summary>﻿part or work piece is detected or is present.<br /><br /><br />
+		/// Value for PartDetectEnum.<br/>
+		/// <br/>See also <seealso cref="PartDetectEnum">PartDetectEnum</seealso>
 		/// </summary>
 		public sealed class PRESENTValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private NOT_PRESENTValue _NOT_PRESENT;
-		/// <summary>
-		﻿/// part or work piece is not detected or is not present.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NOT_PRESENTValue" path="/summary" />
 		public NOT_PRESENTValue NOT_PRESENT => _NOT_PRESENT ?? (_NOT_PRESENT = new NOT_PRESENTValue());
 
-		/// <summary>
-		﻿/// part or work piece is not detected or is not present.<br/><br />
-
+		/// <summary>﻿part or work piece is not detected or is not present.<br /><br /><br />
+		/// Value for PartDetectEnum.<br/>
+		/// <br/>See also <seealso cref="PartDetectEnum">PartDetectEnum</seealso>
 		/// </summary>
 		public sealed class NOT_PRESENTValue : IEnumInstance
 		{

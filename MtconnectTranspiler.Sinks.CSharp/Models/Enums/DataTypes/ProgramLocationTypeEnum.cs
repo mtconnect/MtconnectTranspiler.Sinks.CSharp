@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643980698480_209668_2427">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643980698480_209668_2427">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ProgramLocationTypeEnum
 	{
-		/// <summary>
-		﻿/// managed by the controller.<br/><br />
-
+		/// <summary>﻿managed by the controller.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LOCAL,
-		/// <summary>
-		﻿/// not managed by the controller.<br/><br />
-
+		/// <summary>﻿not managed by the controller.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		EXTERNAL,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643980698480_209668_2427">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643980698480_209668_2427">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProgramLocationTypeEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(ProgramLocationTypeEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private LOCALValue _LOCAL;
-		/// <summary>
-		﻿/// managed by the controller.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LOCALValue" path="/summary" />
 		public LOCALValue LOCAL => _LOCAL ?? (_LOCAL = new LOCALValue());
 
-		/// <summary>
-		﻿/// managed by the controller.<br/><br />
-
+		/// <summary>﻿managed by the controller.<br /><br /><br />
+		/// Value for ProgramLocationTypeEnum.<br/>
+		/// <br/>See also <seealso cref="ProgramLocationTypeEnum">ProgramLocationTypeEnum</seealso>
 		/// </summary>
 		public sealed class LOCALValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private EXTERNALValue _EXTERNAL;
-		/// <summary>
-		﻿/// not managed by the controller.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EXTERNALValue" path="/summary" />
 		public EXTERNALValue EXTERNAL => _EXTERNAL ?? (_EXTERNAL = new EXTERNALValue());
 
-		/// <summary>
-		﻿/// not managed by the controller.<br/><br />
-
+		/// <summary>﻿not managed by the controller.<br /><br /><br />
+		/// Value for ProgramLocationTypeEnum.<br/>
+		/// <br/>See also <seealso cref="ProgramLocationTypeEnum">ProgramLocationTypeEnum</seealso>
 		/// </summary>
 		public sealed class EXTERNALValue : IEnumInstance
 		{

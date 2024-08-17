@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674410939127_88235_2773">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PipelineMessageClass : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <inheritdoc />
 		public PipelineMessageClassProperties Properties { get; } = new PipelineMessageClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="PipelineMessageClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties" />.
+		/// </summary>
 		public class PipelineMessageClassProperties : Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				DataItem,
 				Device,
 				Name,
@@ -50,8 +60,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="DataItemProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DataItem</remarks>
 			/// </summary>
-			public DataItemProperty DataItem { get; } = new DataItemProperty();
-			public sealed class DataItemProperty : IProperty
+			public new DataItemProperty DataItem { get; } = new DataItemProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class DataItemProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -101,8 +114,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="DeviceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Device</remarks>
 			/// </summary>
-			public DeviceProperty Device { get; } = new DeviceProperty();
-			public sealed class DeviceProperty : IProperty
+			public new DeviceProperty Device { get; } = new DeviceProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class DeviceProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -152,8 +168,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
-			public NameProperty Name { get; } = new NameProperty();
-			public sealed class NameProperty : IProperty
+			public new NameProperty Name { get; } = new NameProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class NameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_174664_2881">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_174664_2881">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PathModeEnum
 	{
-		/// <summary>
-		﻿/// path is operating independently and without the influence of another path.<br/><br />
-
+		/// <summary>﻿path is operating independently and without the influence of another path.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		INDEPENDENT,
-		/// <summary>
-		﻿/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.<br/><br />
-
+		/// <summary>﻿path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MASTER,
-		/// <summary>
-		﻿/// physical or logical parts which are not physically connected to each other but are operating together.<br/><br />
-
+		/// <summary>﻿physical or logical parts which are not physically connected to each other but are operating together.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SYNCHRONOUS,
-		/// <summary>
-		﻿/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.<br/><br />
-
+		/// <summary>﻿axes associated with the path are mirroring the motion of the <c>MASTER</c> path.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -57,9 +50,8 @@ namespace Mtconnect.DataTypes
 		MIRROR,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_174664_2881">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_174664_2881">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PathModeEnumMetaClass : IEnum
@@ -70,6 +62,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(PathModeEnum);
 
 		/// <inheritdoc />
@@ -90,15 +83,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private INDEPENDENTValue _INDEPENDENT;
-		/// <summary>
-		﻿/// path is operating independently and without the influence of another path.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="INDEPENDENTValue" path="/summary" />
 		public INDEPENDENTValue INDEPENDENT => _INDEPENDENT ?? (_INDEPENDENT = new INDEPENDENTValue());
 
-		/// <summary>
-		﻿/// path is operating independently and without the influence of another path.<br/><br />
-
+		/// <summary>﻿path is operating independently and without the influence of another path.<br /><br /><br />
+		/// Value for PathModeEnum.<br/>
+		/// <br/>See also <seealso cref="PathModeEnum">PathModeEnum</seealso>
 		/// </summary>
 		public sealed class INDEPENDENTValue : IEnumInstance
 		{
@@ -119,15 +109,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MASTERValue _MASTER;
-		/// <summary>
-		﻿/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MASTERValue" path="/summary" />
 		public MASTERValue MASTER => _MASTER ?? (_MASTER = new MASTERValue());
 
-		/// <summary>
-		﻿/// path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.<br/><br />
-
+		/// <summary>﻿path provides information or state values that influences the operation of other <see cref="DataItem">DataItem</see> of similar type.<br /><br /><br />
+		/// Value for PathModeEnum.<br/>
+		/// <br/>See also <seealso cref="PathModeEnum">PathModeEnum</seealso>
 		/// </summary>
 		public sealed class MASTERValue : IEnumInstance
 		{
@@ -148,15 +135,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SYNCHRONOUSValue _SYNCHRONOUS;
-		/// <summary>
-		﻿/// physical or logical parts which are not physically connected to each other but are operating together.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SYNCHRONOUSValue" path="/summary" />
 		public SYNCHRONOUSValue SYNCHRONOUS => _SYNCHRONOUS ?? (_SYNCHRONOUS = new SYNCHRONOUSValue());
 
-		/// <summary>
-		﻿/// physical or logical parts which are not physically connected to each other but are operating together.<br/><br />
-
+		/// <summary>﻿physical or logical parts which are not physically connected to each other but are operating together.<br /><br /><br />
+		/// Value for PathModeEnum.<br/>
+		/// <br/>See also <seealso cref="PathModeEnum">PathModeEnum</seealso>
 		/// </summary>
 		public sealed class SYNCHRONOUSValue : IEnumInstance
 		{
@@ -177,15 +161,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MIRRORValue _MIRROR;
-		/// <summary>
-		﻿/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MIRRORValue" path="/summary" />
 		public MIRRORValue MIRROR => _MIRROR ?? (_MIRROR = new MIRRORValue());
 
-		/// <summary>
-		﻿/// axes associated with the path are mirroring the motion of the <c>MASTER</c> path.<br/><br />
-
+		/// <summary>﻿axes associated with the path are mirroring the motion of the <c>MASTER</c> path.<br /><br /><br />
+		/// Value for PathModeEnum.<br/>
+		/// <br/>See also <seealso cref="PathModeEnum">PathModeEnum</seealso>
 		/// </summary>
 		public sealed class MIRRORValue : IEnumInstance
 		{

@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.ObservationInformationModel.ObservationTypes.EventType
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes
 {
-	/// <summary>
-	﻿/// This section provides semantic information for <see cref="Event">Event</see> types.<br/><br />
-
+	/// <summary>﻿This section provides semantic information for <see cref="Event">Event</see> types.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309852285_621670_44358">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -354,6 +354,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			PowerSourceSecondaryClass,
 			PowerSourcePrimaryClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -2302,6 +2307,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// </summary>
 	public Package.PowerSourcePrimaryClass PowerSourcePrimaryClass => _PowerSourcePrimaryClass ?? (_PowerSourcePrimaryClass = new Package.PowerSourcePrimaryClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

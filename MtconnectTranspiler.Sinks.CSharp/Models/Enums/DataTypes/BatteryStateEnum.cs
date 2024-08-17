@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1660318869483_263921_172">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1660318869483_263921_172">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum BatteryStateEnum
 	{
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is at it's maximum rated charge level.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is at it's maximum rated charge level.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHARGED,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see>'s charge is increasing.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see>'s charge is increasing.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHARGING,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see>'s charge is decreasing.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see>'s charge is decreasing.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DISCHARGING,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is at it's minimum charge level.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is at it's minimum charge level.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -57,9 +50,8 @@ namespace Mtconnect.DataTypes
 		DISCHARGED,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1660318869483_263921_172">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1660318869483_263921_172">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class BatteryStateEnumMetaClass : IEnum
@@ -70,6 +62,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(BatteryStateEnum);
 
 		/// <inheritdoc />
@@ -90,15 +83,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private CHARGEDValue _CHARGED;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is at it's maximum rated charge level.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHARGEDValue" path="/summary" />
 		public CHARGEDValue CHARGED => _CHARGED ?? (_CHARGED = new CHARGEDValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is at it's maximum rated charge level.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is at it's maximum rated charge level.<br /><br /><br />
+		/// Value for BatteryStateEnum.<br/>
+		/// <br/>See also <seealso cref="BatteryStateEnum">BatteryStateEnum</seealso>
 		/// </summary>
 		public sealed class CHARGEDValue : IEnumInstance
 		{
@@ -119,15 +109,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private CHARGINGValue _CHARGING;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see>'s charge is increasing.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHARGINGValue" path="/summary" />
 		public CHARGINGValue CHARGING => _CHARGING ?? (_CHARGING = new CHARGINGValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see>'s charge is increasing.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see>'s charge is increasing.<br /><br /><br />
+		/// Value for BatteryStateEnum.<br/>
+		/// <br/>See also <seealso cref="BatteryStateEnum">BatteryStateEnum</seealso>
 		/// </summary>
 		public sealed class CHARGINGValue : IEnumInstance
 		{
@@ -148,15 +135,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private DISCHARGINGValue _DISCHARGING;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see>'s charge is decreasing.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DISCHARGINGValue" path="/summary" />
 		public DISCHARGINGValue DISCHARGING => _DISCHARGING ?? (_DISCHARGING = new DISCHARGINGValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see>'s charge is decreasing.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see>'s charge is decreasing.<br /><br /><br />
+		/// Value for BatteryStateEnum.<br/>
+		/// <br/>See also <seealso cref="BatteryStateEnum">BatteryStateEnum</seealso>
 		/// </summary>
 		public sealed class DISCHARGINGValue : IEnumInstance
 		{
@@ -177,15 +161,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private DISCHARGEDValue _DISCHARGED;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is at it's minimum charge level.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DISCHARGEDValue" path="/summary" />
 		public DISCHARGEDValue DISCHARGED => _DISCHARGED ?? (_DISCHARGED = new DISCHARGEDValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is at it's minimum charge level.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is at it's minimum charge level.<br /><br /><br />
+		/// Value for BatteryStateEnum.<br/>
+		/// <br/>See also <seealso cref="BatteryStateEnum">BatteryStateEnum</seealso>
 		/// </summary>
 		public sealed class DISCHARGEDValue : IEnumInstance
 		{

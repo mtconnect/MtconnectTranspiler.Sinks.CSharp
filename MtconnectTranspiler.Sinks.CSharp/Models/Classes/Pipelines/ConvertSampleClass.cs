@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674414640162_550569_3845">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConvertSampleClass : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <inheritdoc />
 		public ConvertSampleClassProperties Properties { get; } = new ConvertSampleClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ConvertSampleClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.TransformClass.TransformClassProperties" />.
+		/// </summary>
 		public class ConvertSampleClassProperties : Mtconnect.AgentArchitecture.Pipelines.TransformClass.TransformClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

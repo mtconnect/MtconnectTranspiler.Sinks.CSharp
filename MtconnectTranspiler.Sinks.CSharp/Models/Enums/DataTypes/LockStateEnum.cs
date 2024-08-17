@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622457615279_962450_700">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622457615279_962450_700">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum LockStateEnum
 	{
-		/// <summary>
-		﻿/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.<br/><br />
-
+		/// <summary>﻿mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LOCKED,
-		/// <summary>
-		﻿/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.<br/><br />
-
+		/// <summary>﻿mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		UNLOCKED,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622457615279_962450_700">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622457615279_962450_700">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LockStateEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(LockStateEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private LOCKEDValue _LOCKED;
-		/// <summary>
-		﻿/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LOCKEDValue" path="/summary" />
 		public LOCKEDValue LOCKED => _LOCKED ?? (_LOCKED = new LOCKEDValue());
 
-		/// <summary>
-		﻿/// mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.<br/><br />
-
+		/// <summary>﻿mechanism is engaged and preventing the associated <see cref="Component">Component</see> from being opened or operated.<br /><br /><br />
+		/// Value for LockStateEnum.<br/>
+		/// <br/>See also <seealso cref="LockStateEnum">LockStateEnum</seealso>
 		/// </summary>
 		public sealed class LOCKEDValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private UNLOCKEDValue _UNLOCKED;
-		/// <summary>
-		﻿/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UNLOCKEDValue" path="/summary" />
 		public UNLOCKEDValue UNLOCKED => _UNLOCKED ?? (_UNLOCKED = new UNLOCKEDValue());
 
-		/// <summary>
-		﻿/// mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.<br/><br />
-
+		/// <summary>﻿mechanism is disengaged and the associated <see cref="Component">Component</see> is able to be opened or operated.<br /><br /><br />
+		/// Value for LockStateEnum.<br/>
+		/// <br/>See also <seealso cref="LockStateEnum">LockStateEnum</seealso>
 		/// </summary>
 		public sealed class UNLOCKEDValue : IEnumInstance
 		{

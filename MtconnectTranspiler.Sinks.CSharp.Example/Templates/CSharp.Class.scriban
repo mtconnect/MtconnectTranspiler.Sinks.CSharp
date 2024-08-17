@@ -1,4 +1,9 @@
-{{~ code_name = source.name | to_code_safe | string.remove "." ~}}
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+{{~ code_name = source.name | to_code_safe | string.remove "."
+has_generalization = false
+~}}
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -16,17 +21,15 @@ using System.Linq;
 		generalization = generalization_type_namespace + "."
 	end
 	generalization = generalization + source.generalization
+	has_generalization = source.generalization != null && source.generalization != "" && generalization != null && generalization != ""
 ~}}
 {{~ end ~}}
 
 namespace {{ to_code_safe source.namespace }}
 {
-{{~ if source?.summary != null && source?.summary != "" ~}}
-	/// <summary>
-	{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
+	/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-{{~ end ~}}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public sealed class {{ code_name }} : IClass
 	{
@@ -64,10 +67,16 @@ namespace {{ to_code_safe source.namespace }}
 		/// <inheritdoc />
 		public {{ code_name }}Properties Properties { get; } = new {{ code_name }}Properties();
         IPropertyList IClass.Properties => Properties;
-		public class {{ code_name }}Properties : {{ if source.generalization != null && source.generalization != "" && generalization != null && generalization != "" }}{{ generalization }}.{{ source.generalization }}Properties{{ else }}IPropertyList{{ end }}
+		/// <summary>
+		/// Property list for <see cref="{{ code_name }}" />.
+		{{~ if has_generalization ~}}
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="{{ generalization }}.{{ source.generalization }}Properties" />.
+		{{~ end ~}}
+		/// </summary>
+		public class {{ code_name }}Properties : {{ if has_generalization == true }}{{ generalization }}.{{ source.generalization }}Properties{{ else }}IPropertyList{{ end }}
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public {{ if has_generalization }}new {{ end }}IProperty[] Properties => new IProperty[] {
 			{{~ for item in source.properties ~}}
 {{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
 {{~
@@ -79,7 +88,7 @@ namespace {{ to_code_safe source.namespace }}
 ~}}
 				{{ item_code_name }}{{ item_suffix }},
 			{{~ end ~}}
-			}{{ if source.generalization != null && source.generalization != "" }}.Concat(base.Properties).ToArray(){{ end }};
+			}{{ if has_generalization }}.Concat(base.Properties).ToArray(){{ end }};
 		{{~ for item in source.properties ~}}
 		{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
 {{~ property_type_namespace = item.original_property_type | get_type_namespace | to_code_safe ~}}
@@ -101,13 +110,11 @@ namespace {{ to_code_safe source.namespace }}
 			/// <inheritdoc cref="{{ item_code_name}}{{ item_suffix }}" path="/summary" /><br/>
 			/// <remarks>Original Name: {{ item.name }}</remarks>
 			/// </summary>
-			public {{ item_code_name }}{{ item_suffix }} {{ item_code_name }}{{ if item.association }}Part{{ end }} { get; } = new {{ item_code_name }}{{ item_suffix }}();
-{{~ if item?.summary != null && item?.summary != "" ~}}
-			/// <summary>
-			{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
+			public {{ if has_generalization }}new {{ end }}{{ item_code_name }}{{ item_suffix }} {{ item_code_name }}{{ if item.association }}Part{{ end }} { get; } = new {{ item_code_name }}{{ item_suffix }}();
+			
+			/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
 			/// </summary>
-{{~ end ~}}
-			public sealed class {{ item_code_name }}{{ item_suffix }} : IProperty
+			public {{ if has_generalization }}new {{ end }}sealed class {{ item_code_name }}{{ item_suffix }} : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

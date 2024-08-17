@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
-	/// <summary>
-	﻿/// measured or reported value of an <i>observation</i>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.3</i>.<br/><br />
-
+	/// <summary>﻿measured or reported value of an <i>observation</i>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.3</i>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218448_53515_2193">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -46,18 +47,25 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		/// <inheritdoc />
 		public SpindleSpeedActualClassProperties Properties { get; } = new SpindleSpeedActualClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="SpindleSpeedActualClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.SpindleSpeedClass.SpindleSpeedClassProperties" />.
+		/// </summary>
 		public class SpindleSpeedActualClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.SpindleSpeedClass.SpindleSpeedClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
 			/// </summary>
-			public SubTypeProperty SubType { get; } = new SubTypeProperty();
-			public sealed class SubTypeProperty : IProperty
+			public new SubTypeProperty SubType { get; } = new SubTypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class SubTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

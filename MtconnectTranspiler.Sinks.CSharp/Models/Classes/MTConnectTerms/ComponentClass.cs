@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
-	/// <summary>
-	﻿/// <i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s<br/><br />
-
+	/// <summary>﻿<i>engineered system</i>  part of a <i>Device</i> composed of zero or more <i>Component</i>s<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581734537697_742151_1119">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		/// <inheritdoc />
 		public ComponentClassProperties Properties { get; } = new ComponentClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ComponentClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.Glossary.IndustrialTerms.ThingClass.ThingClassProperties" />.
+		/// </summary>
 		public class ComponentClassProperties : Mtconnect.Glossary.IndustrialTerms.ThingClass.ThingClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				HasComponent,
 				BelongsTo,
 				Observes,
@@ -58,12 +63,11 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			/// <inheritdoc cref="HasComponentProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComponent</remarks>
 			/// </summary>
-			public HasComponentProperty HasComponent { get; } = new HasComponentProperty();
-			/// <summary>
-			﻿/// a component relationship that inheres other components.<br/><br />
-
+			public new HasComponentProperty HasComponent { get; } = new HasComponentProperty();
+			
+			/// <summary>﻿a component relationship that inheres other components.<br /><br /><br />
 			/// </summary>
-			public sealed class HasComponentProperty : IProperty
+			public new sealed class HasComponentProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -114,12 +118,11 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			/// <inheritdoc cref="BelongsToProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: BelongsTo</remarks>
 			/// </summary>
-			public BelongsToProperty BelongsTo { get; } = new BelongsToProperty();
-			/// <summary>
-			﻿/// the owner of a component. a device may not belong to any other component.<br/><br />
-
+			public new BelongsToProperty BelongsTo { get; } = new BelongsToProperty();
+			
+			/// <summary>﻿the owner of a component. a device may not belong to any other component.<br /><br /><br />
 			/// </summary>
-			public sealed class BelongsToProperty : IProperty
+			public new sealed class BelongsToProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -170,8 +173,11 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			/// <inheritdoc cref="ObservesProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Observes</remarks>
 			/// </summary>
-			public ObservesProperty Observes { get; } = new ObservesProperty();
-			public sealed class ObservesProperty : IProperty
+			public new ObservesProperty Observes { get; } = new ObservesProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -221,8 +227,11 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			/// <inheritdoc cref="HasConfigurationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasConfiguration</remarks>
 			/// </summary>
-			public HasConfigurationProperty HasConfiguration { get; } = new HasConfigurationProperty();
-			public sealed class HasConfigurationProperty : IProperty
+			public new HasConfigurationProperty HasConfiguration { get; } = new HasConfigurationProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasConfigurationProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -272,8 +281,11 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			/// <inheritdoc cref="HasCompositionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasComposition</remarks>
 			/// </summary>
-			public HasCompositionProperty HasComposition { get; } = new HasCompositionProperty();
-			public sealed class HasCompositionProperty : IProperty
+			public new HasCompositionProperty HasComposition { get; } = new HasCompositionProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasCompositionProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

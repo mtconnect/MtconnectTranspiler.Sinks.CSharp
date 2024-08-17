@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +7,9 @@ using Package = Mtconnect.AgentArchitecture.Printer;
 
 namespace Mtconnect.AgentArchitecture
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1585535835198_757615_2085">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class PrinterPackage : IPackage
 	{
@@ -26,6 +31,11 @@ namespace Mtconnect.AgentArchitecture
 			XmlPrinterClass,
 			JsonPrinterClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -42,6 +52,9 @@ namespace Mtconnect.AgentArchitecture
 	/// </summary>
 	public Package.JsonPrinterClass JsonPrinterClass => _JsonPrinterClass ?? (_JsonPrinterClass = new Package.JsonPrinterClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

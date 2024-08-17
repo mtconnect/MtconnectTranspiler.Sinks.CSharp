@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550701661_755056_78">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550701661_755056_78">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CompositionStateActionEnum
 	{
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> is operating.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> is operating.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVE,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> is not operating.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> is not operating.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		INACTIVE,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550701661_755056_78">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550701661_755056_78">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionStateActionEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(CompositionStateActionEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ACTIVEValue _ACTIVE;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> is operating.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVEValue" path="/summary" />
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> is operating.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> is operating.<br /><br /><br />
+		/// Value for CompositionStateActionEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionStateActionEnum">CompositionStateActionEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private INACTIVEValue _INACTIVE;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> is not operating.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="INACTIVEValue" path="/summary" />
 		public INACTIVEValue INACTIVE => _INACTIVE ?? (_INACTIVE = new INACTIVEValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> is not operating.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> is not operating.<br /><br /><br />
+		/// Value for CompositionStateActionEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionStateActionEnum">CompositionStateActionEnum</seealso>
 		/// </summary>
 		public sealed class INACTIVEValue : IEnumInstance
 		{

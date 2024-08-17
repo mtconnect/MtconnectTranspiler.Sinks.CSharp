@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 {
-	/// <summary>
-	﻿/// operating state of the <i>response</i> to a <i>request</i> to open a chuck.<br/><br />
-
+	/// <summary>﻿operating state of the <i>response</i> to a <i>request</i> to open a chuck.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623846314912_181643_2649">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		/// <inheritdoc />
 		public OpenChuckResponseClassProperties Properties { get; } = new OpenChuckResponseClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="OpenChuckResponseClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.OpenChuckClass.OpenChuckClassProperties" />.
+		/// </summary>
 		public class OpenChuckResponseClassProperties : Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.OpenChuckClass.OpenChuckClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
 			}.Concat(base.Properties).ToArray();
@@ -55,8 +60,11 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
 			/// </summary>
-			public SubTypeProperty SubType { get; } = new SubTypeProperty();
-			public sealed class SubTypeProperty : IProperty
+			public new SubTypeProperty SubType { get; } = new SubTypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class SubTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -106,8 +114,11 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
-			public ResultProperty Result { get; } = new ResultProperty();
-			public sealed class ResultProperty : IProperty
+			public new ResultProperty Result { get; } = new ResultProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ResultProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

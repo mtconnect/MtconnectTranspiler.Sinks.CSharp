@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605645712659_8263_2990">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605645712659_8263_2990">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum DataItemRelationshipTypeEnum
 	{
-		/// <summary>
-		﻿/// reference to a <see cref="DataItem">DataItem</see> that associates the values with an external entity.<br /><br/><br />
-
+		/// <summary>﻿reference to a <see cref="DataItem">DataItem</see> that associates the values with an external entity.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ATTACHMENT,
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides the <c>id</c> of the effective Coordinate System.<br /><br/><br />
-
+		/// <summary>﻿referenced <see cref="DataItem">DataItem</see> provides the <c>id</c> of the effective Coordinate System.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COORDINATE_SYSTEM,
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides process limits.<br /><br/><br />
-
+		/// <summary>﻿referenced <see cref="DataItem">DataItem</see> provides process limits.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LIMIT,
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides the observed values.<br /><br/><br />
-
+		/// <summary>﻿referenced <see cref="DataItem">DataItem</see> provides the observed values.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -57,9 +50,8 @@ namespace Mtconnect.DataTypes
 		OBSERVATION,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605645712659_8263_2990">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605645712659_8263_2990">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DataItemRelationshipTypeEnumMetaClass : IEnum
@@ -70,6 +62,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(DataItemRelationshipTypeEnum);
 
 		/// <inheritdoc />
@@ -90,15 +83,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ATTACHMENTValue _ATTACHMENT;
-		/// <summary>
-		﻿/// reference to a <see cref="DataItem">DataItem</see> that associates the values with an external entity.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ATTACHMENTValue" path="/summary" />
 		public ATTACHMENTValue ATTACHMENT => _ATTACHMENT ?? (_ATTACHMENT = new ATTACHMENTValue());
 
-		/// <summary>
-		﻿/// reference to a <see cref="DataItem">DataItem</see> that associates the values with an external entity.<br /><br/><br />
-
+		/// <summary>﻿reference to a <see cref="DataItem">DataItem</see> that associates the values with an external entity.<br /><br /><br /><br />
+		/// Value for DataItemRelationshipTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemRelationshipTypeEnum">DataItemRelationshipTypeEnum</seealso>
 		/// </summary>
 		public sealed class ATTACHMENTValue : IEnumInstance
 		{
@@ -119,15 +109,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private COORDINATE_SYSTEMValue _COORDINATE_SYSTEM;
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides the <c>id</c> of the effective Coordinate System.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COORDINATE_SYSTEMValue" path="/summary" />
 		public COORDINATE_SYSTEMValue COORDINATE_SYSTEM => _COORDINATE_SYSTEM ?? (_COORDINATE_SYSTEM = new COORDINATE_SYSTEMValue());
 
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides the <c>id</c> of the effective Coordinate System.<br /><br/><br />
-
+		/// <summary>﻿referenced <see cref="DataItem">DataItem</see> provides the <c>id</c> of the effective Coordinate System.<br /><br /><br /><br />
+		/// Value for DataItemRelationshipTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemRelationshipTypeEnum">DataItemRelationshipTypeEnum</seealso>
 		/// </summary>
 		public sealed class COORDINATE_SYSTEMValue : IEnumInstance
 		{
@@ -148,15 +135,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LIMITValue _LIMIT;
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides process limits.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LIMITValue" path="/summary" />
 		public LIMITValue LIMIT => _LIMIT ?? (_LIMIT = new LIMITValue());
 
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides process limits.<br /><br/><br />
-
+		/// <summary>﻿referenced <see cref="DataItem">DataItem</see> provides process limits.<br /><br /><br /><br />
+		/// Value for DataItemRelationshipTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemRelationshipTypeEnum">DataItemRelationshipTypeEnum</seealso>
 		/// </summary>
 		public sealed class LIMITValue : IEnumInstance
 		{
@@ -177,15 +161,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OBSERVATIONValue _OBSERVATION;
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides the observed values.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OBSERVATIONValue" path="/summary" />
 		public OBSERVATIONValue OBSERVATION => _OBSERVATION ?? (_OBSERVATION = new OBSERVATIONValue());
 
-		/// <summary>
-		﻿/// referenced <see cref="DataItem">DataItem</see> provides the observed values.<br /><br/><br />
-
+		/// <summary>﻿referenced <see cref="DataItem">DataItem</see> provides the observed values.<br /><br /><br /><br />
+		/// Value for DataItemRelationshipTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemRelationshipTypeEnum">DataItemRelationshipTypeEnum</seealso>
 		/// </summary>
 		public sealed class OBSERVATIONValue : IEnumInstance
 		{

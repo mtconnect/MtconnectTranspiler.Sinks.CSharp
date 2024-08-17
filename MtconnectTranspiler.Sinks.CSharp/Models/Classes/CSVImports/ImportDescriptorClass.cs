@@ -1,9 +1,15 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Imports.CSVImports
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579210647410_88327_3587">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ImportDescriptorClass : IClass
 	{
@@ -34,6 +40,9 @@ namespace Mtconnect.Imports.CSVImports
 		/// <inheritdoc />
 		public ImportDescriptorClassProperties Properties { get; } = new ImportDescriptorClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ImportDescriptorClass" />.
+		/// </summary>
 		public class ImportDescriptorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -55,6 +64,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: CsvFileName</remarks>
 			/// </summary>
 			public CsvFileNameProperty CsvFileName { get; } = new CsvFileNameProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class CsvFileNameProperty : IProperty
 			{
 				/// <summary>
@@ -106,6 +118,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: ElementTypeName</remarks>
 			/// </summary>
 			public ElementTypeNameProperty ElementTypeName { get; } = new ElementTypeNameProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ElementTypeNameProperty : IProperty
 			{
 				/// <summary>
@@ -157,6 +172,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: PackageName</remarks>
 			/// </summary>
 			public PackageNameProperty PackageName { get; } = new PackageNameProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class PackageNameProperty : IProperty
 			{
 				/// <summary>
@@ -208,6 +226,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: DiagramTypeName</remarks>
 			/// </summary>
 			public DiagramTypeNameProperty DiagramTypeName { get; } = new DiagramTypeNameProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class DiagramTypeNameProperty : IProperty
 			{
 				/// <summary>
@@ -259,6 +280,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: UseFirstRowAsHeaders</remarks>
 			/// </summary>
 			public UseFirstRowAsHeadersProperty UseFirstRowAsHeaders { get; } = new UseFirstRowAsHeadersProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class UseFirstRowAsHeadersProperty : IProperty
 			{
 				/// <summary>
@@ -310,6 +334,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: UseFindOwnerByTagId</remarks>
 			/// </summary>
 			public UseFindOwnerByTagIdProperty UseFindOwnerByTagId { get; } = new UseFindOwnerByTagIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class UseFindOwnerByTagIdProperty : IProperty
 			{
 				/// <summary>
@@ -361,6 +388,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: StereoTypeNames</remarks>
 			/// </summary>
 			public StereoTypeNamesProperty StereoTypeNames { get; } = new StereoTypeNamesProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class StereoTypeNamesProperty : IProperty
 			{
 				/// <summary>
@@ -412,6 +442,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: IdentifierName</remarks>
 			/// </summary>
 			public IdentifierNameProperty IdentifierName { get; } = new IdentifierNameProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class IdentifierNameProperty : IProperty
 			{
 				/// <summary>
@@ -463,6 +496,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: RelationEndIdentifier</remarks>
 			/// </summary>
 			public RelationEndIdentifierProperty RelationEndIdentifier { get; } = new RelationEndIdentifierProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class RelationEndIdentifierProperty : IProperty
 			{
 				/// <summary>
@@ -514,6 +550,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: PropertyMapNames</remarks>
 			/// </summary>
 			public PropertyMapNamesProperty PropertyMapNames { get; } = new PropertyMapNamesProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class PropertyMapNamesProperty : IProperty
 			{
 				/// <summary>
@@ -565,6 +604,9 @@ namespace Mtconnect.Imports.CSVImports
 			/// <remarks>Original Name: FieldSeparator</remarks>
 			/// </summary>
 			public FieldSeparatorProperty FieldSeparator { get; } = new FieldSeparatorProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class FieldSeparatorProperty : IProperty
 			{
 				/// <summary>

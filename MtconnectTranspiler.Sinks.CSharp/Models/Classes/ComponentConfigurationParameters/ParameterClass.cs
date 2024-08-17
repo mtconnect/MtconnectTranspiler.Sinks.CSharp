@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
-	/// <summary>
-	﻿/// property defining a configuration of a <see cref="Component">Component</see>.<br/><br />
-
+	/// <summary>﻿property defining a configuration of a <see cref="Component">Component</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197371649_500788_17992">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		/// <inheritdoc />
 		public ParameterClassProperties Properties { get; } = new ParameterClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ParameterClass" />.
+		/// </summary>
 		public class ParameterClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -57,9 +61,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// <remarks>Original Name: Identifier</remarks>
 			/// </summary>
 			public IdentifierProperty Identifier { get; } = new IdentifierProperty();
-			/// <summary>
-			﻿/// internal identifier, register, or address.<br/><br />
-
+			
+			/// <summary>﻿internal identifier, register, or address.<br /><br /><br />
 			/// </summary>
 			public sealed class IdentifierProperty : IProperty
 			{
@@ -113,9 +116,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// descriptive name.<br/><br />
-
+			
+			/// <summary>﻿descriptive name.<br /><br /><br />
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -169,9 +171,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// <remarks>Original Name: Minimum</remarks>
 			/// </summary>
 			public MinimumProperty Minimum { get; } = new MinimumProperty();
-			/// <summary>
-			﻿/// minimal allowed value.<br/><br />
-
+			
+			/// <summary>﻿minimal allowed value.<br /><br /><br />
 			/// </summary>
 			public sealed class MinimumProperty : IProperty
 			{
@@ -225,9 +226,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// <remarks>Original Name: Maximum</remarks>
 			/// </summary>
 			public MaximumProperty Maximum { get; } = new MaximumProperty();
-			/// <summary>
-			﻿/// maximum allowed value.<br/><br />
-
+			
+			/// <summary>﻿maximum allowed value.<br /><br /><br />
 			/// </summary>
 			public sealed class MaximumProperty : IProperty
 			{
@@ -281,9 +281,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// <remarks>Original Name: Nominal</remarks>
 			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
-			/// <summary>
-			﻿/// nominal value.<br/><br />
-
+			
+			/// <summary>﻿nominal value.<br /><br /><br />
 			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
@@ -337,9 +336,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// configured value.<br/><br />
-
+			
+			/// <summary>﻿configured value.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -393,9 +391,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
-			/// <summary>
-			﻿/// engineering units.<br /><br /><see cref="Parameter.units">units in Parameter</see> <b>SHOULD</b> be SI or MTConnect Units.<br/><br />
-
+			
+			/// <summary>﻿engineering units.<br /><br /><see cref="Parameter.units">units in Parameter</see> <b>SHOULD</b> be SI or MTConnect Units.<br /><br /><br />
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{

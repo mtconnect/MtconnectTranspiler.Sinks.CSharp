@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1696871537426_335818_3541">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1696871537426_335818_3541">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PowerSourceTypeEnum
 	{
-		/// <summary>
-		﻿/// main or most important location of a piece of bar stock.<br/><br />
-
+		/// <summary>﻿main or most important location of a piece of bar stock.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PRIMARY,
-		/// <summary>
-		﻿/// alternate or not primary.<br/><br />
-
+		/// <summary>﻿alternate or not primary.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SECONDARY,
-		/// <summary>
-		﻿/// uninterruptible or generator power supply.<br/><br />
-
+		/// <summary>﻿uninterruptible or generator power supply.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,8 @@ namespace Mtconnect.DataTypes
 		STANDBY,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1696871537426_335818_3541">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1696871537426_335818_3541">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PowerSourceTypeEnumMetaClass : IEnum
@@ -60,6 +54,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(PowerSourceTypeEnum);
 
 		/// <inheritdoc />
@@ -79,15 +74,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private PRIMARYValue _PRIMARY;
-		/// <summary>
-		﻿/// main or most important location of a piece of bar stock.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PRIMARYValue" path="/summary" />
 		public PRIMARYValue PRIMARY => _PRIMARY ?? (_PRIMARY = new PRIMARYValue());
 
-		/// <summary>
-		﻿/// main or most important location of a piece of bar stock.<br/><br />
-
+		/// <summary>﻿main or most important location of a piece of bar stock.<br /><br /><br />
+		/// Value for PowerSourceTypeEnum.<br/>
+		/// <br/>See also <seealso cref="PowerSourceTypeEnum">PowerSourceTypeEnum</seealso>
 		/// </summary>
 		public sealed class PRIMARYValue : IEnumInstance
 		{
@@ -108,15 +100,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SECONDARYValue _SECONDARY;
-		/// <summary>
-		﻿/// alternate or not primary.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SECONDARYValue" path="/summary" />
 		public SECONDARYValue SECONDARY => _SECONDARY ?? (_SECONDARY = new SECONDARYValue());
 
-		/// <summary>
-		﻿/// alternate or not primary.<br/><br />
-
+		/// <summary>﻿alternate or not primary.<br /><br /><br />
+		/// Value for PowerSourceTypeEnum.<br/>
+		/// <br/>See also <seealso cref="PowerSourceTypeEnum">PowerSourceTypeEnum</seealso>
 		/// </summary>
 		public sealed class SECONDARYValue : IEnumInstance
 		{
@@ -137,15 +126,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private STANDBYValue _STANDBY;
-		/// <summary>
-		﻿/// uninterruptible or generator power supply.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STANDBYValue" path="/summary" />
 		public STANDBYValue STANDBY => _STANDBY ?? (_STANDBY = new STANDBYValue());
 
-		/// <summary>
-		﻿/// uninterruptible or generator power supply.<br/><br />
-
+		/// <summary>﻿uninterruptible or generator power supply.<br /><br /><br />
+		/// Value for PowerSourceTypeEnum.<br/>
+		/// <br/>See also <seealso cref="PowerSourceTypeEnum">PowerSourceTypeEnum</seealso>
 		/// </summary>
 		public sealed class STANDBYValue : IEnumInstance
 		{

@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	/// <summary>
-	﻿/// <i>key-value pair</i> published as part of a <see cref="DataSet">DataSet</see>.<br/><br />Constraints for Entry Values<br/>#### Constraints for Entry Values<br /><br />The value of each <see cref="Entry">Entry</see> <b>MUST</b> have the same restrictions as the value of an <i>observation</i> with <see cref="DataItem.representation">representation in DataItem</see> as <c>VALUE</c>.<br /><br />An <see cref="Entry">Entry</see> <b>MAY</b> be further constrained by the <see cref="DataItem">DataItem</see> definition (see <see cref="Device Information Model">Device Information Model</see>), for example a <c>VariableDataSet</c> having a string value <b>MAY</b> have a floating-point <see cref="Temperature">Temperature</see> value. A restriction <b>MUST NOT</b> be broadened or removed, for example, the value "READY" <b>MUST NOT</b> occur with a <c>TemperatureDataSet</c> constrained to floating-point numbers.<br /><br /><see cref="EntryDefinition">EntryDefinition</see> <b>MAY</b> provide the type and units of an <see cref="Entry.key">key in Entry</see>.<br /><br/><br/><br />
-
+	/// <summary>﻿<i>key-value pair</i> published as part of a <see cref="DataSet">DataSet</see>.<br /><br /><br />Constraints for Entry Values<br /><br />#### Constraints for Entry Values<br /><br />The value of each <see cref="Entry">Entry</see> <b>MUST</b> have the same restrictions as the value of an <i>observation</i> with <see cref="DataItem.representation">representation in DataItem</see> as <c>VALUE</c>.<br /><br />An <see cref="Entry">Entry</see> <b>MAY</b> be further constrained by the <see cref="DataItem">DataItem</see> definition (see <see cref="Device Information Model">Device Information Model</see>), for example a <c>VariableDataSet</c> having a string value <b>MAY</b> have a floating-point <see cref="Temperature">Temperature</see> value. A restriction <b>MUST NOT</b> be broadened or removed, for example, the value "READY" <b>MUST NOT</b> occur with a <c>TemperatureDataSet</c> constrained to floating-point numbers.<br /><br /><see cref="EntryDefinition">EntryDefinition</see> <b>MAY</b> provide the type and units of an <see cref="Entry.key">key in Entry</see>.<br /><br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531114_364030_25729">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -48,6 +49,9 @@ An {{block(Entry)}} **MAY** be further constrained by the {{block(DataItem)}} de
 		/// <inheritdoc />
 		public EntryClassProperties Properties { get; } = new EntryClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="EntryClass" />.
+		/// </summary>
 		public class EntryClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -62,9 +66,8 @@ An {{block(Entry)}} **MAY** be further constrained by the {{block(DataItem)}} de
 			/// <remarks>Original Name: Key</remarks>
 			/// </summary>
 			public KeyProperty Key { get; } = new KeyProperty();
-			/// <summary>
-			﻿/// unique identifier for each <i>key-value pair</i>.<br/><br />
-
+			
+			/// <summary>﻿unique identifier for each <i>key-value pair</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class KeyProperty : IProperty
 			{
@@ -118,9 +121,8 @@ An {{block(Entry)}} **MAY** be further constrained by the {{block(DataItem)}} de
 			/// <remarks>Original Name: Removed</remarks>
 			/// </summary>
 			public RemovedProperty Removed { get; } = new RemovedProperty();
-			/// <summary>
-			﻿/// removal indicator of a <i>key-value pair</i>.<br/><br />
-
+			
+			/// <summary>﻿removal indicator of a <i>key-value pair</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class RemovedProperty : IProperty
 			{
@@ -174,6 +176,9 @@ An {{block(Entry)}} **MAY** be further constrained by the {{block(DataItem)}} de
 			/// <remarks>Original Name: IsEntryFor</remarks>
 			/// </summary>
 			public IsEntryForPartProperty IsEntryForPart { get; } = new IsEntryForPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class IsEntryForPartProperty : IProperty
 			{
 				/// <summary>
@@ -225,9 +230,8 @@ An {{block(Entry)}} **MAY** be further constrained by the {{block(DataItem)}} de
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
-			/// <summary>
-			﻿/// value of the <see cref="Entry">Entry</see>.<br/><br />
-
+			
+			/// <summary>﻿value of the <see cref="Entry">Entry</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ResultProperty : IProperty
 			{

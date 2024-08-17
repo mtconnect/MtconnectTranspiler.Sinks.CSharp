@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605550283222_680737_1925">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605550283222_680737_1925">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ProcessStateEnum
 	{
-		/// <summary>
-		﻿/// device is preparing to execute the process occurrence.<br/><br />
-
+		/// <summary>﻿device is preparing to execute the process occurrence.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		INITIALIZING,
-		/// <summary>
-		﻿/// process occurrence is ready to be executed.<br/><br />
-
+		/// <summary>﻿process occurrence is ready to be executed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		READY,
-		/// <summary>
-		﻿/// process occurrence is actively executing.<br/><br />
-
+		/// <summary>﻿process occurrence is actively executing.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVE,
-		/// <summary>
-		﻿/// process occurrence is now finished.<br/><br />
-
+		/// <summary>﻿process occurrence is now finished.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COMPLETE,
-		/// <summary>
-		﻿/// process occurrence has been stopped and may be resumed.<br/><br />
-
+		/// <summary>﻿process occurrence has been stopped and may be resumed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		INTERRUPTED,
-		/// <summary>
-		﻿/// process occurrence has come to a premature end and cannot be resumed.<br/><br />
-
+		/// <summary>﻿process occurrence has come to a premature end and cannot be resumed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -77,9 +66,8 @@ namespace Mtconnect.DataTypes
 		ABORTED,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605550283222_680737_1925">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605550283222_680737_1925">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProcessStateEnumMetaClass : IEnum
@@ -90,6 +78,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(ProcessStateEnum);
 
 		/// <inheritdoc />
@@ -112,15 +101,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private INITIALIZINGValue _INITIALIZING;
-		/// <summary>
-		﻿/// device is preparing to execute the process occurrence.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="INITIALIZINGValue" path="/summary" />
 		public INITIALIZINGValue INITIALIZING => _INITIALIZING ?? (_INITIALIZING = new INITIALIZINGValue());
 
-		/// <summary>
-		﻿/// device is preparing to execute the process occurrence.<br/><br />
-
+		/// <summary>﻿device is preparing to execute the process occurrence.<br /><br /><br />
+		/// Value for ProcessStateEnum.<br/>
+		/// <br/>See also <seealso cref="ProcessStateEnum">ProcessStateEnum</seealso>
 		/// </summary>
 		public sealed class INITIALIZINGValue : IEnumInstance
 		{
@@ -141,15 +127,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private READYValue _READY;
-		/// <summary>
-		﻿/// process occurrence is ready to be executed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="READYValue" path="/summary" />
 		public READYValue READY => _READY ?? (_READY = new READYValue());
 
-		/// <summary>
-		﻿/// process occurrence is ready to be executed.<br/><br />
-
+		/// <summary>﻿process occurrence is ready to be executed.<br /><br /><br />
+		/// Value for ProcessStateEnum.<br/>
+		/// <br/>See also <seealso cref="ProcessStateEnum">ProcessStateEnum</seealso>
 		/// </summary>
 		public sealed class READYValue : IEnumInstance
 		{
@@ -170,15 +153,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTIVEValue _ACTIVE;
-		/// <summary>
-		﻿/// process occurrence is actively executing.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVEValue" path="/summary" />
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
-		/// <summary>
-		﻿/// process occurrence is actively executing.<br/><br />
-
+		/// <summary>﻿process occurrence is actively executing.<br /><br /><br />
+		/// Value for ProcessStateEnum.<br/>
+		/// <br/>See also <seealso cref="ProcessStateEnum">ProcessStateEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -199,15 +179,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private COMPLETEValue _COMPLETE;
-		/// <summary>
-		﻿/// process occurrence is now finished.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COMPLETEValue" path="/summary" />
 		public COMPLETEValue COMPLETE => _COMPLETE ?? (_COMPLETE = new COMPLETEValue());
 
-		/// <summary>
-		﻿/// process occurrence is now finished.<br/><br />
-
+		/// <summary>﻿process occurrence is now finished.<br /><br /><br />
+		/// Value for ProcessStateEnum.<br/>
+		/// <br/>See also <seealso cref="ProcessStateEnum">ProcessStateEnum</seealso>
 		/// </summary>
 		public sealed class COMPLETEValue : IEnumInstance
 		{
@@ -228,15 +205,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private INTERRUPTEDValue _INTERRUPTED;
-		/// <summary>
-		﻿/// process occurrence has been stopped and may be resumed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="INTERRUPTEDValue" path="/summary" />
 		public INTERRUPTEDValue INTERRUPTED => _INTERRUPTED ?? (_INTERRUPTED = new INTERRUPTEDValue());
 
-		/// <summary>
-		﻿/// process occurrence has been stopped and may be resumed.<br/><br />
-
+		/// <summary>﻿process occurrence has been stopped and may be resumed.<br /><br /><br />
+		/// Value for ProcessStateEnum.<br/>
+		/// <br/>See also <seealso cref="ProcessStateEnum">ProcessStateEnum</seealso>
 		/// </summary>
 		public sealed class INTERRUPTEDValue : IEnumInstance
 		{
@@ -257,15 +231,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ABORTEDValue _ABORTED;
-		/// <summary>
-		﻿/// process occurrence has come to a premature end and cannot be resumed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ABORTEDValue" path="/summary" />
 		public ABORTEDValue ABORTED => _ABORTED ?? (_ABORTED = new ABORTEDValue());
 
-		/// <summary>
-		﻿/// process occurrence has come to a premature end and cannot be resumed.<br/><br />
-
+		/// <summary>﻿process occurrence has come to a premature end and cannot be resumed.<br /><br /><br />
+		/// Value for ProcessStateEnum.<br/>
+		/// <br/>See also <seealso cref="ProcessStateEnum">ProcessStateEnum</seealso>
 		/// </summary>
 		public sealed class ABORTEDValue : IEnumInstance
 		{

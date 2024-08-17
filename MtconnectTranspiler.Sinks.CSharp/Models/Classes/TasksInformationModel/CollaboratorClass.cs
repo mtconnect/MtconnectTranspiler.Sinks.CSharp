@@ -1,9 +1,15 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622718569783_691547_1331">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CollaboratorClass : IClass
 	{
@@ -34,6 +40,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		/// <inheritdoc />
 		public CollaboratorClassProperties Properties { get; } = new CollaboratorClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="CollaboratorClass" />.
+		/// </summary>
 		public class CollaboratorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -49,6 +58,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <remarks>Original Name: HasPriority</remarks>
 			/// </summary>
 			public HasPriorityPartProperty HasPriorityPart { get; } = new HasPriorityPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasPriorityPartProperty : IProperty
 			{
 				/// <summary>
@@ -100,6 +112,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <remarks>Original Name: CollaboratorId</remarks>
 			/// </summary>
 			public CollaboratorIdProperty CollaboratorId { get; } = new CollaboratorIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class CollaboratorIdProperty : IProperty
 			{
 				/// <summary>
@@ -151,6 +166,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <remarks>Original Name: CollaboratorType</remarks>
 			/// </summary>
 			public CollaboratorTypeProperty CollaboratorType { get; } = new CollaboratorTypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class CollaboratorTypeProperty : IProperty
 			{
 				/// <summary>
@@ -202,6 +220,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <remarks>Original Name: Optional</remarks>
 			/// </summary>
 			public OptionalProperty Optional { get; } = new OptionalProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class OptionalProperty : IProperty
 			{
 				/// <summary>
@@ -253,6 +274,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			/// <remarks>Original Name: HasCapability</remarks>
 			/// </summary>
 			public HasCapabilityPartProperty HasCapabilityPart { get; } = new HasCapabilityPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasCapabilityPartProperty : IProperty
 			{
 				/// <summary>

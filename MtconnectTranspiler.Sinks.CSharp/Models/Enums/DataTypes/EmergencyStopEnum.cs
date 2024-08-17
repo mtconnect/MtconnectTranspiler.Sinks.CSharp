@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417662_889824_2876">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417662_889824_2876">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum EmergencyStopEnum
 	{
-		/// <summary>
-		﻿/// emergency stop circuit is complete and the piece of equipment, component, or composition is allowed to operate. <br/><br />
-
+		/// <summary>﻿emergency stop circuit is complete and the piece of equipment, component, or composition is allowed to operate. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ARMED,
-		/// <summary>
-		﻿/// operation of the piece of equipment, component, or composition is inhibited.<br/><br />
-
+		/// <summary>﻿operation of the piece of equipment, component, or composition is inhibited.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		TRIGGERED,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417662_889824_2876">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417662_889824_2876">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EmergencyStopEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(EmergencyStopEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ARMEDValue _ARMED;
-		/// <summary>
-		﻿/// emergency stop circuit is complete and the piece of equipment, component, or composition is allowed to operate. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ARMEDValue" path="/summary" />
 		public ARMEDValue ARMED => _ARMED ?? (_ARMED = new ARMEDValue());
 
-		/// <summary>
-		﻿/// emergency stop circuit is complete and the piece of equipment, component, or composition is allowed to operate. <br/><br />
-
+		/// <summary>﻿emergency stop circuit is complete and the piece of equipment, component, or composition is allowed to operate. <br /><br /><br />
+		/// Value for EmergencyStopEnum.<br/>
+		/// <br/>See also <seealso cref="EmergencyStopEnum">EmergencyStopEnum</seealso>
 		/// </summary>
 		public sealed class ARMEDValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private TRIGGEREDValue _TRIGGERED;
-		/// <summary>
-		﻿/// operation of the piece of equipment, component, or composition is inhibited.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRIGGEREDValue" path="/summary" />
 		public TRIGGEREDValue TRIGGERED => _TRIGGERED ?? (_TRIGGERED = new TRIGGEREDValue());
 
-		/// <summary>
-		﻿/// operation of the piece of equipment, component, or composition is inhibited.<br/><br />
-
+		/// <summary>﻿operation of the piece of equipment, component, or composition is inhibited.<br /><br /><br />
+		/// Value for EmergencyStopEnum.<br/>
+		/// <br/>See also <seealso cref="EmergencyStopEnum">EmergencyStopEnum</seealso>
 		/// </summary>
 		public sealed class TRIGGEREDValue : IEnumInstance
 		{

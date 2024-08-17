@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +7,9 @@ using Package = Mtconnect.Glossary.HTTPTerms;
 
 namespace Mtconnect.Glossary
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1623664707546_436843_7242">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class HTTPTermsPackage : IPackage
 	{
@@ -40,6 +45,11 @@ namespace Mtconnect.Glossary
 			HTTPRequestLineClass,
 			HTTPMethodClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -140,6 +150,9 @@ namespace Mtconnect.Glossary
 	/// </summary>
 	public Package.HTTPMethodClass HTTPMethodClass => _HTTPMethodClass ?? (_HTTPMethodClass = new Package.HTTPMethodClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

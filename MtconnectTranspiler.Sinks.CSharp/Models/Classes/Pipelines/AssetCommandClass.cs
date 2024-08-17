@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674407471082_127917_768">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AssetCommandClass : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <inheritdoc />
 		public AssetCommandClassProperties Properties { get; } = new AssetCommandClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="AssetCommandClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties" />.
+		/// </summary>
 		public class AssetCommandClassProperties : Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Name,
 				Source,
 				AssetId,
@@ -52,8 +62,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
-			public NameProperty Name { get; } = new NameProperty();
-			public sealed class NameProperty : IProperty
+			public new NameProperty Name { get; } = new NameProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class NameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -103,8 +116,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="SourceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Source</remarks>
 			/// </summary>
-			public SourceProperty Source { get; } = new SourceProperty();
-			public sealed class SourceProperty : IProperty
+			public new SourceProperty Source { get; } = new SourceProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class SourceProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -154,8 +170,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="AssetIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetId</remarks>
 			/// </summary>
-			public AssetIdProperty AssetId { get; } = new AssetIdProperty();
-			public sealed class AssetIdProperty : IProperty
+			public new AssetIdProperty AssetId { get; } = new AssetIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class AssetIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -205,8 +224,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -256,8 +278,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="DeviceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Device</remarks>
 			/// </summary>
-			public DeviceProperty Device { get; } = new DeviceProperty();
-			public sealed class DeviceProperty : IProperty
+			public new DeviceProperty Device { get; } = new DeviceProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class DeviceProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

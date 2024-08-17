@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	/// <summary>
-	﻿/// function that indicates to a <i>client</i> that the communications connection to an <i>agent</i> is still viable during times when there is no new data available to report  often referred to as a "keep alive" message.<br/><br />
-
+	/// <summary>﻿function that indicates to a <i>client</i> that the communications connection to an <i>agent</i> is still viable during times when there is no new data available to report  often referred to as a "keep alive" message.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375160_713692_1995">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.Glossary
 		/// <inheritdoc />
 		public HeartbeatClassProperties Properties { get; } = new HeartbeatClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="HeartbeatClass" />.
+		/// </summary>
 		public class HeartbeatClassProperties : IPropertyList
 		{
 			/// <inheritdoc />

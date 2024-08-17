@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.ObservationInformationModel.ObservationTypes.SampleTyp
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes
 {
-	/// <summary>
-	﻿/// This section provides semantic information for <see cref="Sample">Sample</see> types.<br/><br />
-
+	/// <summary>﻿This section provides semantic information for <see cref="Sample">Sample</see> types.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309868367_570061_44359">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -253,6 +253,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			DisplacementAngularClass,
 			PositionCartesianClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -1595,6 +1600,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// </summary>
 	public Package.PositionCartesianClass PositionCartesianClass => _PositionCartesianClass ?? (_PositionCartesianClass = new Package.PositionCartesianClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417668_463137_2883">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417668_463137_2883">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum RotaryModeEnum
 	{
-		/// <summary>
-		﻿/// axis is functioning as a spindle.<br/><br />
-
+		/// <summary>﻿axis is functioning as a spindle.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SPINDLE,
-		/// <summary>
-		﻿/// axis is configured to index.<br/><br />
-
+		/// <summary>﻿axis is configured to index.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		INDEX,
-		/// <summary>
-		﻿/// position of the axis is being interpolated.<br/><br />
-
+		/// <summary>﻿position of the axis is being interpolated.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,8 @@ namespace Mtconnect.DataTypes
 		CONTOUR,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417668_463137_2883">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417668_463137_2883">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RotaryModeEnumMetaClass : IEnum
@@ -60,6 +54,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(RotaryModeEnum);
 
 		/// <inheritdoc />
@@ -79,15 +74,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private SPINDLEValue _SPINDLE;
-		/// <summary>
-		﻿/// axis is functioning as a spindle.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SPINDLEValue" path="/summary" />
 		public SPINDLEValue SPINDLE => _SPINDLE ?? (_SPINDLE = new SPINDLEValue());
 
-		/// <summary>
-		﻿/// axis is functioning as a spindle.<br/><br />
-
+		/// <summary>﻿axis is functioning as a spindle.<br /><br /><br />
+		/// Value for RotaryModeEnum.<br/>
+		/// <br/>See also <seealso cref="RotaryModeEnum">RotaryModeEnum</seealso>
 		/// </summary>
 		public sealed class SPINDLEValue : IEnumInstance
 		{
@@ -108,15 +100,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private INDEXValue _INDEX;
-		/// <summary>
-		﻿/// axis is configured to index.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="INDEXValue" path="/summary" />
 		public INDEXValue INDEX => _INDEX ?? (_INDEX = new INDEXValue());
 
-		/// <summary>
-		﻿/// axis is configured to index.<br/><br />
-
+		/// <summary>﻿axis is configured to index.<br /><br /><br />
+		/// Value for RotaryModeEnum.<br/>
+		/// <br/>See also <seealso cref="RotaryModeEnum">RotaryModeEnum</seealso>
 		/// </summary>
 		public sealed class INDEXValue : IEnumInstance
 		{
@@ -137,15 +126,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private CONTOURValue _CONTOUR;
-		/// <summary>
-		﻿/// position of the axis is being interpolated.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CONTOURValue" path="/summary" />
 		public CONTOURValue CONTOUR => _CONTOUR ?? (_CONTOUR = new CONTOURValue());
 
-		/// <summary>
-		﻿/// position of the axis is being interpolated.<br/><br />
-
+		/// <summary>﻿position of the axis is being interpolated.<br /><br /><br />
+		/// Value for RotaryModeEnum.<br/>
+		/// <br/>See also <seealso cref="RotaryModeEnum">RotaryModeEnum</seealso>
 		/// </summary>
 		public sealed class CONTOURValue : IEnumInstance
 		{

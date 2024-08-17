@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
-	/// <summary>
-	﻿/// <see cref="SampleEnum.PATH_POSITION">SampleEnum.PATH_POSITION</see><br /><br /><br/><br />Example<br/>~~~~xml<br /><DataItem type='PATH_POSITION' id='pathposit1' units="MILLIMETER_3D"/><br />~~~~<br />{: caption="XML Device Model Example for <c>PathPosition</c> using <c>MILLIMETER_3D</c> unit"}<br /><br />~~~~xml<br /><PathPosition>10.0 0.0 20.0</PathPosition><br />~~~~<br />{: caption="XML Streams Response Example for <c>PathPosition</c> using <c>MILLIMETER_3D</c> unit"}<br /><br /><br />~~~~xml<br /><DataItem type='PATH_POSITION' id='pathposit1' representation="DATA_SET"><br />  <Definition><br />    <EntryDefinition key='X' units='MILLIMETER'><br />    <EntryDefinition key='Y' units='MILLIMETER'><br />    <EntryDefinition key='Z' units='MILLIMETER'><br />  </Definition><br /></DataItem><br />~~~~<br />{: caption="XML Device Model Example for <c>PathPosition</c> to demonstrate multi-dimensional representation using <c>DataSet</c> representation"}<br /><br />~~~~xml<br /><PathPositionDataSet id='pathposit1'><br />  <Entry key='X'>10.0</Entry><br />  <Entry key='Z'>20.0</Entry><br /></PathPositionDataSet><br />~~~~<br />{: caption="XML Streams Response Example for <c>PathPosition</c> to demonstrate multi-dimensional representation using <c>DataSet</c> representation"}<br/><br/><br />
-
+	/// <summary>﻿<see cref="SampleEnum.PATH_POSITION">SampleEnum.PATH_POSITION</see><br /><br /><br /><br /><br />Example<br /><br />~~~~xml<br />&lt;DataItem type='PATH_POSITION' id='pathposit1' units="MILLIMETER_3D"/&gt;<br />~~~~<br />{: caption="XML Device Model Example for <c>PathPosition</c> using <c>MILLIMETER_3D</c> unit"}<br /><br />~~~~xml<br />&lt;PathPosition&gt;10.0 0.0 20.0&lt;/PathPosition&gt;<br />~~~~<br />{: caption="XML Streams Response Example for <c>PathPosition</c> using <c>MILLIMETER_3D</c> unit"}<br /><br /><br />~~~~xml<br />&lt;DataItem type='PATH_POSITION' id='pathposit1' representation="DATA_SET"&gt;<br />  &lt;Definition&gt;<br />    &lt;EntryDefinition key='X' units='MILLIMETER'&gt;<br />    &lt;EntryDefinition key='Y' units='MILLIMETER'&gt;<br />    &lt;EntryDefinition key='Z' units='MILLIMETER'&gt;<br />  &lt;/Definition&gt;<br />&lt;/DataItem&gt;<br />~~~~<br />{: caption="XML Device Model Example for <c>PathPosition</c> to demonstrate multi-dimensional representation using <c>DataSet</c> representation"}<br /><br />~~~~xml<br />&lt;PathPositionDataSet id='pathposit1'&gt;<br />  &lt;Entry key='X'&gt;10.0&lt;/Entry&gt;<br />  &lt;Entry key='Z'&gt;20.0&lt;/Entry&gt;<br />&lt;/PathPositionDataSet&gt;<br />~~~~<br />{: caption="XML Streams Response Example for <c>PathPosition</c> to demonstrate multi-dimensional representation using <c>DataSet</c> representation"}<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218391_280410_2028">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -75,10 +76,14 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		/// <inheritdoc />
 		public PathPositionClassProperties Properties { get; } = new PathPositionClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="PathPositionClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties" />.
+		/// </summary>
 		public class PathPositionClassProperties : Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Units,
 				Type,
 				Result,
@@ -87,8 +92,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
-			public UnitsProperty Units { get; } = new UnitsProperty();
-			public sealed class UnitsProperty : IProperty
+			public new UnitsProperty Units { get; } = new UnitsProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -138,8 +146,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -189,8 +200,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
-			public ResultProperty Result { get; } = new ResultProperty();
-			public sealed class ResultProperty : IProperty
+			public new ResultProperty Result { get; } = new ResultProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ResultProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

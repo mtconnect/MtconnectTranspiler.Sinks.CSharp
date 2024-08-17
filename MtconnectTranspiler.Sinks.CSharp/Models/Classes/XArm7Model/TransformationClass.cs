@@ -1,9 +1,15 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1582233160564_921570_689">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TransformationClass : IClass
 	{
@@ -34,6 +40,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		/// <inheritdoc />
 		public TransformationClassProperties Properties { get; } = new TransformationClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="TransformationClass" />.
+		/// </summary>
 		public class TransformationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -68,6 +77,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Xin</remarks>
 			/// </summary>
 			public XinProperty Xin { get; } = new XinProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class XinProperty : IProperty
 			{
 				/// <summary>
@@ -119,6 +131,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Yin</remarks>
 			/// </summary>
 			public YinProperty Yin { get; } = new YinProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class YinProperty : IProperty
 			{
 				/// <summary>
@@ -170,6 +185,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Zin</remarks>
 			/// </summary>
 			public ZinProperty Zin { get; } = new ZinProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ZinProperty : IProperty
 			{
 				/// <summary>
@@ -221,6 +239,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Xout</remarks>
 			/// </summary>
 			public XoutProperty Xout { get; } = new XoutProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class XoutProperty : IProperty
 			{
 				/// <summary>
@@ -272,6 +293,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Yout</remarks>
 			/// </summary>
 			public YoutProperty Yout { get; } = new YoutProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class YoutProperty : IProperty
 			{
 				/// <summary>
@@ -323,6 +347,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Zout</remarks>
 			/// </summary>
 			public ZoutProperty Zout { get; } = new ZoutProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ZoutProperty : IProperty
 			{
 				/// <summary>
@@ -374,6 +401,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Xt</remarks>
 			/// </summary>
 			public XtProperty Xt { get; } = new XtProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class XtProperty : IProperty
 			{
 				/// <summary>
@@ -425,6 +455,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Yt</remarks>
 			/// </summary>
 			public YtProperty Yt { get; } = new YtProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class YtProperty : IProperty
 			{
 				/// <summary>
@@ -476,6 +509,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Zt</remarks>
 			/// </summary>
 			public ZtProperty Zt { get; } = new ZtProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ZtProperty : IProperty
 			{
 				/// <summary>
@@ -527,6 +563,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Xr</remarks>
 			/// </summary>
 			public XrProperty Xr { get; } = new XrProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class XrProperty : IProperty
 			{
 				/// <summary>
@@ -578,6 +617,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Yr</remarks>
 			/// </summary>
 			public YrProperty Yr { get; } = new YrProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class YrProperty : IProperty
 			{
 				/// <summary>
@@ -629,6 +671,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Zr</remarks>
 			/// </summary>
 			public ZrProperty Zr { get; } = new ZrProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ZrProperty : IProperty
 			{
 				/// <summary>
@@ -680,6 +725,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Ain</remarks>
 			/// </summary>
 			public AinProperty Ain { get; } = new AinProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class AinProperty : IProperty
 			{
 				/// <summary>
@@ -731,6 +779,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Bin</remarks>
 			/// </summary>
 			public BinProperty Bin { get; } = new BinProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class BinProperty : IProperty
 			{
 				/// <summary>
@@ -782,6 +833,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Cin</remarks>
 			/// </summary>
 			public CinProperty Cin { get; } = new CinProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class CinProperty : IProperty
 			{
 				/// <summary>
@@ -833,6 +887,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Aout</remarks>
 			/// </summary>
 			public AoutProperty Aout { get; } = new AoutProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class AoutProperty : IProperty
 			{
 				/// <summary>
@@ -884,6 +941,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Bout</remarks>
 			/// </summary>
 			public BoutProperty Bout { get; } = new BoutProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class BoutProperty : IProperty
 			{
 				/// <summary>
@@ -935,6 +995,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Cout</remarks>
 			/// </summary>
 			public CoutProperty Cout { get; } = new CoutProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class CoutProperty : IProperty
 			{
 				/// <summary>
@@ -986,6 +1049,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Xu</remarks>
 			/// </summary>
 			public XuProperty Xu { get; } = new XuProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class XuProperty : IProperty
 			{
 				/// <summary>
@@ -1037,6 +1103,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Yu</remarks>
 			/// </summary>
 			public YuProperty Yu { get; } = new YuProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class YuProperty : IProperty
 			{
 				/// <summary>
@@ -1088,6 +1157,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Zu</remarks>
 			/// </summary>
 			public ZuProperty Zu { get; } = new ZuProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ZuProperty : IProperty
 			{
 				/// <summary>
@@ -1139,6 +1211,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Ang</remarks>
 			/// </summary>
 			public AngProperty Ang { get; } = new AngProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class AngProperty : IProperty
 			{
 				/// <summary>
@@ -1190,6 +1265,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Angin</remarks>
 			/// </summary>
 			public AnginProperty Angin { get; } = new AnginProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class AnginProperty : IProperty
 			{
 				/// <summary>
@@ -1241,6 +1319,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Angout</remarks>
 			/// </summary>
 			public AngoutProperty Angout { get; } = new AngoutProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class AngoutProperty : IProperty
 			{
 				/// <summary>

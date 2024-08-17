@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
-	/// <summary>
-	﻿/// detailed structure of the cutting tool which is static during its lifecycle. <seealso href="https://www.google.com/search?q=ISO 13399&btnI=I">ISO 13399</seealso>.<br/><br />
-
+	/// <summary>﻿detailed structure of the cutting tool which is static during its lifecycle. <seealso href="https://www.google.com/search?q=ISO 13399&btnI=I">ISO 13399</seealso>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_37B8CFD0_D728_4841_9A07_B6CF819EC895">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		/// <inheritdoc />
 		public CuttingToolDefinitionClassProperties Properties { get; } = new CuttingToolDefinitionClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="CuttingToolDefinitionClass" />.
+		/// </summary>
 		public class CuttingToolDefinitionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -52,9 +56,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// <remarks>Original Name: Format</remarks>
 			/// </summary>
 			public FormatProperty Format { get; } = new FormatProperty();
-			/// <summary>
-			﻿/// identifies the expected representation of the enclosed data.<br/><br />
-
+			
+			/// <summary>﻿identifies the expected representation of the enclosed data.<br /><br /><br />
 			/// </summary>
 			public sealed class FormatProperty : IProperty
 			{
@@ -108,9 +111,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// text of the <see cref="CuttingToolDefinition">CuttingToolDefinition</see> in format defined by <see cref="CuttingToolDefinition.format">format in CuttingToolDefinition</see>.<br/><br />
-
+			
+			/// <summary>﻿text of the <see cref="CuttingToolDefinition">CuttingToolDefinition</see> in format defined by <see cref="CuttingToolDefinition.format">format in CuttingToolDefinition</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{

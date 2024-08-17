@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +7,9 @@ using Package = Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.Kinematics
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_C2851860_6C4E_4c7a_AABF_D7D01EA6F98D">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class KinematicsSimulationPackage : IPackage
 	{
@@ -28,6 +33,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples
 		public IClass[] Classes => new IClass[] {
 			Robot7axesClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.SimulationPackage _SimulationPackage;
 	/// <summary>
@@ -56,6 +66,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples
 	/// </summary>
 	public Package.Robot7axesClass Robot7axesClass => _Robot7axesClass ?? (_Robot7axesClass = new Package.Robot7axesClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 {
-	/// <summary>
-	﻿/// <i>sensing element</i> of a <see cref="Sensor">Sensor</see>.<br/><br />Description<br/>When <see cref="Sensor">Sensor</see> has multiple <i>sensing element</i>s, each <i>sensing element</i> is modeled as a <see cref="Channel">Channel</see> for the <see cref="Sensor">Sensor</see>. <br/><br/><br />
-
+	/// <summary>﻿<i>sensing element</i> of a <see cref="Sensor">Sensor</see>.<br /><br /><br />Description<br /><br />When <see cref="Sensor">Sensor</see> has multiple <i>sensing element</i>s, each <i>sensing element</i> is modeled as a <see cref="Channel">Channel</see> for the <see cref="Sensor">Sensor</see>. <br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_82C852E8_47AD_4b8c_804D_F38FCA663918">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -41,6 +42,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		/// <inheritdoc />
 		public ChannelClassProperties Properties { get; } = new ChannelClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ChannelClass" />.
+		/// </summary>
 		public class ChannelClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -58,9 +62,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// <remarks>Original Name: CalibrationDate</remarks>
 			/// </summary>
 			public CalibrationDateProperty CalibrationDate { get; } = new CalibrationDateProperty();
-			/// <summary>
-			﻿/// Date upon which the <i>sensor unit</i> was last calibrated to the <i>sensor element</i>.<br/><br />
-
+			
+			/// <summary>﻿Date upon which the <i>sensor unit</i> was last calibrated to the <i>sensor element</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class CalibrationDateProperty : IProperty
 			{
@@ -114,9 +117,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// <remarks>Original Name: CalibrationInitials</remarks>
 			/// </summary>
 			public CalibrationInitialsProperty CalibrationInitials { get; } = new CalibrationInitialsProperty();
-			/// <summary>
-			﻿/// The initials of the person verifying the validity of the calibration data.<br/><br />
-
+			
+			/// <summary>﻿The initials of the person verifying the validity of the calibration data.<br /><br /><br />
 			/// </summary>
 			public sealed class CalibrationInitialsProperty : IProperty
 			{
@@ -170,9 +172,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// name of the specific <i>sensing element</i>.<br/><br />
-
+			
+			/// <summary>﻿name of the specific <i>sensing element</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -226,9 +227,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// <remarks>Original Name: NextCalibrationDate</remarks>
 			/// </summary>
 			public NextCalibrationDateProperty NextCalibrationDate { get; } = new NextCalibrationDateProperty();
-			/// <summary>
-			﻿/// Date upon which the <i>sensor element</i> is next scheduled to be calibrated with the <i>sensor unit</i>.<br /><br/><br />
-
+			
+			/// <summary>﻿Date upon which the <i>sensor element</i> is next scheduled to be calibrated with the <i>sensor unit</i>.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class NextCalibrationDateProperty : IProperty
 			{
@@ -282,9 +282,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// <remarks>Original Name: Number</remarks>
 			/// </summary>
 			public NumberProperty Number { get; } = new NumberProperty();
-			/// <summary>
-			﻿/// unique identifier that will only refer to a specific <i>sensing element</i>.<br/><br />
-
+			
+			/// <summary>﻿unique identifier that will only refer to a specific <i>sensing element</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class NumberProperty : IProperty
 			{
@@ -338,6 +337,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// <remarks>Original Name: HasDescription</remarks>
 			/// </summary>
 			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasDescriptionPartProperty : IProperty
 			{
 				/// <summary>
@@ -389,6 +391,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 			/// <remarks>Original Name: IsChannelOf</remarks>
 			/// </summary>
 			public IsChannelOfPartProperty IsChannelOfPart { get; } = new IsChannelOfPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class IsChannelOfPartProperty : IProperty
 			{
 				/// <summary>

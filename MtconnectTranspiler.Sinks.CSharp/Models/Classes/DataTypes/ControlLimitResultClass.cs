@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1620206731259_178927_703">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ControlLimitResultClass : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public ControlLimitResultClassProperties Properties { get; } = new ControlLimitResultClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ControlLimitResultClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.Representations.DataSetClass.DataSetClassProperties" />.
+		/// </summary>
 		public class ControlLimitResultClassProperties : Mtconnect.ObservationInformationModel.Representations.DataSetClass.DataSetClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				UpperLimit,
 				UpperWarning,
 				Nominal,
@@ -52,12 +62,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="UpperLimitProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperLimit</remarks>
 			/// </summary>
-			public UpperLimitProperty UpperLimit { get; } = new UpperLimitProperty();
-			/// <summary>
-			﻿/// upper conformance boundary for a variable.<br /><br />> Note: immediate concern or action may be required.<br /><br /><br/><br />
-
+			public new UpperLimitProperty UpperLimit { get; } = new UpperLimitProperty();
+			
+			/// <summary>﻿upper conformance boundary for a variable.<br /><br />&gt; Note: immediate concern or action may be required.<br /><br /><br /><br /><br />
 			/// </summary>
-			public sealed class UpperLimitProperty : IProperty
+			public new sealed class UpperLimitProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -112,12 +121,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="UpperWarningProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UpperWarning</remarks>
 			/// </summary>
-			public UpperWarningProperty UpperWarning { get; } = new UpperWarningProperty();
-			/// <summary>
-			﻿/// upper boundary indicating increased concern and supervision may be required.<br/><br />
-
+			public new UpperWarningProperty UpperWarning { get; } = new UpperWarningProperty();
+			
+			/// <summary>﻿upper boundary indicating increased concern and supervision may be required.<br /><br /><br />
 			/// </summary>
-			public sealed class UpperWarningProperty : IProperty
+			public new sealed class UpperWarningProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -168,12 +176,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="NominalProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Nominal</remarks>
 			/// </summary>
-			public NominalProperty Nominal { get; } = new NominalProperty();
-			/// <summary>
-			﻿/// ideal or desired value for a variable.<br/><br />
-
+			public new NominalProperty Nominal { get; } = new NominalProperty();
+			
+			/// <summary>﻿ideal or desired value for a variable.<br /><br /><br />
 			/// </summary>
-			public sealed class NominalProperty : IProperty
+			public new sealed class NominalProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -224,12 +231,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="LowerWarningProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LowerWarning</remarks>
 			/// </summary>
-			public LowerWarningProperty LowerWarning { get; } = new LowerWarningProperty();
-			/// <summary>
-			﻿/// lower boundary indicating increased concern and supervision may be required.<br/><br />
-
+			public new LowerWarningProperty LowerWarning { get; } = new LowerWarningProperty();
+			
+			/// <summary>﻿lower boundary indicating increased concern and supervision may be required.<br /><br /><br />
 			/// </summary>
-			public sealed class LowerWarningProperty : IProperty
+			public new sealed class LowerWarningProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -280,12 +286,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="LowerLimitProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LowerLimit</remarks>
 			/// </summary>
-			public LowerLimitProperty LowerLimit { get; } = new LowerLimitProperty();
-			/// <summary>
-			﻿/// lower conformance boundary for a variable.<br /><br />> Note: immediate concern or action may be required.<br /><br /><br/><br />
-
+			public new LowerLimitProperty LowerLimit { get; } = new LowerLimitProperty();
+			
+			/// <summary>﻿lower conformance boundary for a variable.<br /><br />&gt; Note: immediate concern or action may be required.<br /><br /><br /><br /><br />
 			/// </summary>
-			public sealed class LowerLimitProperty : IProperty
+			public new sealed class LowerLimitProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

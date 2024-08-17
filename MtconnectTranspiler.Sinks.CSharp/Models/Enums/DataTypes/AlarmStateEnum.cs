@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968859511_302406_203">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968859511_302406_203">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -17,8 +18,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AlarmStateEnum
 	{
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -28,8 +28,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		INSTANT,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -39,8 +38,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		ACTIVE,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -52,9 +50,8 @@ namespace Mtconnect.DataTypes
 		CLEARED,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968859511_302406_203">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968859511_302406_203">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmStateEnumMetaClass : IEnum
@@ -65,6 +62,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(AlarmStateEnum);
 
 		/// <inheritdoc />
@@ -84,8 +82,13 @@ namespace Mtconnect.DataTypes
 		};
 
 		private INSTANTValue _INSTANT;
+		/// <inheritdoc cref="INSTANTValue" path="/summary" />
 		public INSTANTValue INSTANT => _INSTANT ?? (_INSTANT = new INSTANTValue());
 
+		/// <summary>﻿
+		/// Value for AlarmStateEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmStateEnum">AlarmStateEnum</seealso>
+		/// </summary>
 		public sealed class INSTANTValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -104,8 +107,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private ACTIVEValue _ACTIVE;
+		/// <inheritdoc cref="ACTIVEValue" path="/summary" />
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
+		/// <summary>﻿
+		/// Value for AlarmStateEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmStateEnum">AlarmStateEnum</seealso>
+		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -124,8 +132,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private CLEAREDValue _CLEARED;
+		/// <inheritdoc cref="CLEAREDValue" path="/summary" />
 		public CLEAREDValue CLEARED => _CLEARED ?? (_CLEARED = new CLEAREDValue());
 
+		/// <summary>﻿
+		/// Value for AlarmStateEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmStateEnum">AlarmStateEnum</seealso>
+		/// </summary>
 		public sealed class CLEAREDValue : IEnumInstance
 		{
 			/// <inheritdoc />

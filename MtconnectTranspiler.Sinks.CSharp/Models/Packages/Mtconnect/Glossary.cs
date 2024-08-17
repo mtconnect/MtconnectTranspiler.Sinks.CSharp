@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +7,9 @@ using Package = Mtconnect.Glossary;
 
 namespace Mtconnect
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1581733974382_65435_581">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class GlossaryPackage : IPackage
 	{
@@ -110,6 +115,11 @@ namespace Mtconnect
 			CombinedStandardUncertaintyClass,
 			ConditionActivationClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.XMLTermsPackage _XMLTermsPackage;
 	/// <summary>
@@ -630,6 +640,9 @@ namespace Mtconnect
 	/// </summary>
 	public Package.ConditionActivationClass ConditionActivationClass => _ConditionActivationClass ?? (_ConditionActivationClass = new Package.ConditionActivationClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579107560604_392738_163543">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579107560604_392738_163543">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CoordinateSystemTypeEnum
 	{
-		/// <summary>
-		﻿/// stationary coordinate system referenced to earth, which is independent of the robot motion. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, stationary coordinate system referenced to earth, which is independent of the motion of a piece of equipment.<br/><br />
-
+		/// <summary>﻿stationary coordinate system referenced to earth, which is independent of the robot motion. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, stationary coordinate system referenced to earth, which is independent of the motion of a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WORLD,
-		/// <summary>
-		﻿/// coordinate system referenced to the base mounting surface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />A base mounting surface is a connection surface between the arm and its supporting structure.<seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, it is the connection surface between the device and its supporting structure.<br/><br />
-
+		/// <summary>﻿coordinate system referenced to the base mounting surface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />A base mounting surface is a connection surface between the arm and its supporting structure.<seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, it is the connection surface between the device and its supporting structure.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BASE,
-		/// <summary>
-		﻿/// coordinate system referenced to the object. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the object. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OBJECT,
-		/// <summary>
-		﻿/// coordinate system referenced to the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TASK,
-		/// <summary>
-		﻿/// coordinate system referenced to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MECHANICAL_INTERFACE,
-		/// <summary>
-		﻿/// coordinate system referenced to the tool or to the end effector attached to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the tool or to the end effector attached to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -75,9 +64,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TOOL,
-		/// <summary>
-		﻿/// coordinate system referenced to one of the components of a mobile platform. <seealso href="https://www.google.com/search?q=ISO 8373:2012&btnI=I">ISO 8373:2012</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to one of the components of a mobile platform. <seealso href="https://www.google.com/search?q=ISO 8373:2012&btnI=I">ISO 8373:2012</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -85,9 +72,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MOBILE_PLATFORM,
-		/// <summary>
-		﻿/// coordinate system referenced to the home position and orientation of the primary axes of a piece of equipment.<br/><br />
-
+		/// <summary>﻿coordinate system referenced to the home position and orientation of the primary axes of a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -95,9 +80,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MACHINE,
-		/// <summary>
-		﻿/// coordinate system referenced to the sensor which monitors the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the sensor which monitors the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -107,9 +90,8 @@ namespace Mtconnect.DataTypes
 		CAMERA,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579107560604_392738_163543">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579107560604_392738_163543">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CoordinateSystemTypeEnumMetaClass : IEnum
@@ -120,6 +102,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(CoordinateSystemTypeEnum);
 
 		/// <inheritdoc />
@@ -145,15 +128,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private WORLDValue _WORLD;
-		/// <summary>
-		﻿/// stationary coordinate system referenced to earth, which is independent of the robot motion. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, stationary coordinate system referenced to earth, which is independent of the motion of a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WORLDValue" path="/summary" />
 		public WORLDValue WORLD => _WORLD ?? (_WORLD = new WORLDValue());
 
-		/// <summary>
-		﻿/// stationary coordinate system referenced to earth, which is independent of the robot motion. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, stationary coordinate system referenced to earth, which is independent of the motion of a piece of equipment.<br/><br />
-
+		/// <summary>﻿stationary coordinate system referenced to earth, which is independent of the robot motion. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, stationary coordinate system referenced to earth, which is independent of the motion of a piece of equipment.<br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class WORLDValue : IEnumInstance
 		{
@@ -176,15 +156,12 @@ For non-robotic devices, stationary coordinate system referenced to earth, which
 ";
 		}
 		private BASEValue _BASE;
-		/// <summary>
-		﻿/// coordinate system referenced to the base mounting surface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />A base mounting surface is a connection surface between the arm and its supporting structure.<seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, it is the connection surface between the device and its supporting structure.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BASEValue" path="/summary" />
 		public BASEValue BASE => _BASE ?? (_BASE = new BASEValue());
 
-		/// <summary>
-		﻿/// coordinate system referenced to the base mounting surface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />A base mounting surface is a connection surface between the arm and its supporting structure.<seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, it is the connection surface between the device and its supporting structure.<br/><br />
-
+		/// <summary>﻿coordinate system referenced to the base mounting surface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />A base mounting surface is a connection surface between the arm and its supporting structure.<seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br />For non-robotic devices, it is the connection surface between the device and its supporting structure.<br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class BASEValue : IEnumInstance
 		{
@@ -209,15 +186,12 @@ For non-robotic devices, it is the connection surface between the device and its
 ";
 		}
 		private OBJECTValue _OBJECT;
-		/// <summary>
-		﻿/// coordinate system referenced to the object. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OBJECTValue" path="/summary" />
 		public OBJECTValue OBJECT => _OBJECT ?? (_OBJECT = new OBJECTValue());
 
-		/// <summary>
-		﻿/// coordinate system referenced to the object. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the object. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class OBJECTValue : IEnumInstance
 		{
@@ -238,15 +212,12 @@ For non-robotic devices, it is the connection surface between the device and its
 ";
 		}
 		private TASKValue _TASK;
-		/// <summary>
-		﻿/// coordinate system referenced to the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TASKValue" path="/summary" />
 		public TASKValue TASK => _TASK ?? (_TASK = new TASKValue());
 
-		/// <summary>
-		﻿/// coordinate system referenced to the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class TASKValue : IEnumInstance
 		{
@@ -267,15 +238,12 @@ For non-robotic devices, it is the connection surface between the device and its
 ";
 		}
 		private MECHANICAL_INTERFACEValue _MECHANICAL_INTERFACE;
-		/// <summary>
-		﻿/// coordinate system referenced to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MECHANICAL_INTERFACEValue" path="/summary" />
 		public MECHANICAL_INTERFACEValue MECHANICAL_INTERFACE => _MECHANICAL_INTERFACE ?? (_MECHANICAL_INTERFACE = new MECHANICAL_INTERFACEValue());
 
-		/// <summary>
-		﻿/// coordinate system referenced to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class MECHANICAL_INTERFACEValue : IEnumInstance
 		{
@@ -296,15 +264,12 @@ For non-robotic devices, it is the connection surface between the device and its
 ";
 		}
 		private TOOLValue _TOOL;
-		/// <summary>
-		﻿/// coordinate system referenced to the tool or to the end effector attached to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOLValue" path="/summary" />
 		public TOOLValue TOOL => _TOOL ?? (_TOOL = new TOOLValue());
 
-		/// <summary>
-		﻿/// coordinate system referenced to the tool or to the end effector attached to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the tool or to the end effector attached to the mechanical interface. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class TOOLValue : IEnumInstance
 		{
@@ -325,15 +290,12 @@ For non-robotic devices, it is the connection surface between the device and its
 ";
 		}
 		private MOBILE_PLATFORMValue _MOBILE_PLATFORM;
-		/// <summary>
-		﻿/// coordinate system referenced to one of the components of a mobile platform. <seealso href="https://www.google.com/search?q=ISO 8373:2012&btnI=I">ISO 8373:2012</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MOBILE_PLATFORMValue" path="/summary" />
 		public MOBILE_PLATFORMValue MOBILE_PLATFORM => _MOBILE_PLATFORM ?? (_MOBILE_PLATFORM = new MOBILE_PLATFORMValue());
 
-		/// <summary>
-		﻿/// coordinate system referenced to one of the components of a mobile platform. <seealso href="https://www.google.com/search?q=ISO 8373:2012&btnI=I">ISO 8373:2012</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to one of the components of a mobile platform. <seealso href="https://www.google.com/search?q=ISO 8373:2012&btnI=I">ISO 8373:2012</seealso><br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class MOBILE_PLATFORMValue : IEnumInstance
 		{
@@ -354,15 +316,12 @@ For non-robotic devices, it is the connection surface between the device and its
 ";
 		}
 		private MACHINEValue _MACHINE;
-		/// <summary>
-		﻿/// coordinate system referenced to the home position and orientation of the primary axes of a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MACHINEValue" path="/summary" />
 		public MACHINEValue MACHINE => _MACHINE ?? (_MACHINE = new MACHINEValue());
 
-		/// <summary>
-		﻿/// coordinate system referenced to the home position and orientation of the primary axes of a piece of equipment.<br/><br />
-
+		/// <summary>﻿coordinate system referenced to the home position and orientation of the primary axes of a piece of equipment.<br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class MACHINEValue : IEnumInstance
 		{
@@ -383,15 +342,12 @@ For non-robotic devices, it is the connection surface between the device and its
 ";
 		}
 		private CAMERAValue _CAMERA;
-		/// <summary>
-		﻿/// coordinate system referenced to the sensor which monitors the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CAMERAValue" path="/summary" />
 		public CAMERAValue CAMERA => _CAMERA ?? (_CAMERA = new CAMERAValue());
 
-		/// <summary>
-		﻿/// coordinate system referenced to the sensor which monitors the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br/><br />
-
+		/// <summary>﻿coordinate system referenced to the sensor which monitors the site of the task. <seealso href="https://www.google.com/search?q=ISO 9787:2013&btnI=I">ISO 9787:2013</seealso><br /><br /><br />
+		/// Value for CoordinateSystemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemTypeEnum">CoordinateSystemTypeEnum</seealso>
 		/// </summary>
 		public sealed class CAMERAValue : IEnumInstance
 		{

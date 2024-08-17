@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417658_841501_2872">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417658_841501_2872">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AxisStateEnum
 	{
-		/// <summary>
-		﻿/// axis is in its home position.<br/><br />
-
+		/// <summary>﻿axis is in its home position.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		HOME,
-		/// <summary>
-		﻿/// axis is in motion.<br/><br />
-
+		/// <summary>﻿axis is in motion.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TRAVEL,
-		/// <summary>
-		﻿/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. <br /><br />Action is required to release the axis from this position.<br/><br />
-
+		/// <summary>﻿axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. <br /><br />Action is required to release the axis from this position.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PARKED,
-		/// <summary>
-		﻿/// axis is stopped.<br/><br />
-
+		/// <summary>﻿axis is stopped.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -57,9 +50,8 @@ namespace Mtconnect.DataTypes
 		STOPPED,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417658_841501_2872">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417658_841501_2872">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AxisStateEnumMetaClass : IEnum
@@ -70,6 +62,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(AxisStateEnum);
 
 		/// <inheritdoc />
@@ -90,15 +83,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private HOMEValue _HOME;
-		/// <summary>
-		﻿/// axis is in its home position.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="HOMEValue" path="/summary" />
 		public HOMEValue HOME => _HOME ?? (_HOME = new HOMEValue());
 
-		/// <summary>
-		﻿/// axis is in its home position.<br/><br />
-
+		/// <summary>﻿axis is in its home position.<br /><br /><br />
+		/// Value for AxisStateEnum.<br/>
+		/// <br/>See also <seealso cref="AxisStateEnum">AxisStateEnum</seealso>
 		/// </summary>
 		public sealed class HOMEValue : IEnumInstance
 		{
@@ -119,15 +109,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private TRAVELValue _TRAVEL;
-		/// <summary>
-		﻿/// axis is in motion.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRAVELValue" path="/summary" />
 		public TRAVELValue TRAVEL => _TRAVEL ?? (_TRAVEL = new TRAVELValue());
 
-		/// <summary>
-		﻿/// axis is in motion.<br/><br />
-
+		/// <summary>﻿axis is in motion.<br /><br /><br />
+		/// Value for AxisStateEnum.<br/>
+		/// <br/>See also <seealso cref="AxisStateEnum">AxisStateEnum</seealso>
 		/// </summary>
 		public sealed class TRAVELValue : IEnumInstance
 		{
@@ -148,15 +135,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PARKEDValue _PARKED;
-		/// <summary>
-		﻿/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. <br /><br />Action is required to release the axis from this position.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PARKEDValue" path="/summary" />
 		public PARKEDValue PARKED => _PARKED ?? (_PARKED = new PARKEDValue());
 
-		/// <summary>
-		﻿/// axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. <br /><br />Action is required to release the axis from this position.<br/><br />
-
+		/// <summary>﻿axis has been moved to a fixed position and is being maintained in that position either electrically or mechanically. <br /><br />Action is required to release the axis from this position.<br /><br /><br />
+		/// Value for AxisStateEnum.<br/>
+		/// <br/>See also <seealso cref="AxisStateEnum">AxisStateEnum</seealso>
 		/// </summary>
 		public sealed class PARKEDValue : IEnumInstance
 		{
@@ -179,15 +163,12 @@ Action is required to release the axis from this position.&#10;
 ";
 		}
 		private STOPPEDValue _STOPPED;
-		/// <summary>
-		﻿/// axis is stopped.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STOPPEDValue" path="/summary" />
 		public STOPPEDValue STOPPED => _STOPPED ?? (_STOPPED = new STOPPEDValue());
 
-		/// <summary>
-		﻿/// axis is stopped.<br/><br />
-
+		/// <summary>﻿axis is stopped.<br /><br /><br />
+		/// Value for AxisStateEnum.<br/>
+		/// <br/>See also <seealso cref="AxisStateEnum">AxisStateEnum</seealso>
 		/// </summary>
 		public sealed class STOPPEDValue : IEnumInstance
 		{

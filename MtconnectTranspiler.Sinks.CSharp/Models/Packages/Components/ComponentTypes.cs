@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.DeviceInformationModel.Components.ComponentTypes;
 
 namespace Mtconnect.DeviceInformationModel.Components
 {
-	/// <summary>
-	﻿/// This section provides semantic information for the types of <see cref="Component">Component</see>. <br /><br />> Note: In the <i>XML</i> representation, <see cref="Component">Component</see> entities are defined into two major categories:<br /><br />> * <i>top level</i> <see cref="Component">Component</see> entities that <i>organize</i>s the most significant physical or logical functions of a piece of equipment (see <see cref="Part Properties of Device">Part Properties of Device</see>).  They <b>MAY</b> also be used as <i>lower level</i> <see cref="Component">Component</see> entities; as required. See <see cref="Component Organizer Types">Component Organizer Types</see>.<br /><br />> * <i>lower level</i> <see cref="Component">Component</see> entities composed of the sub-parts of the parent <see cref="Component">Component</see> to provide more clarity and granularity to the physical or logical structure of the <i>top level</i> <see cref="Component">Component</see> entities.<br /><br />This section provides guidance for the most common relationships between <see cref="Component">Component</see> types.  However, all <see cref="Component">Component</see> types <b>MAY</b> be used in any configuration, as required, to fully describe a piece of equipment.<br /><br />As described in <see cref="Components">Components</see>, <see cref="Component">Component</see> is an abstract entity and will be always realized by a specific <see cref="Component">Component</see> type.<br/><br />
-
+	/// <summary>﻿This section provides semantic information for the types of <see cref="Component">Component</see>. <br /><br />&gt; Note: In the <i>XML</i> representation, <see cref="Component">Component</see> entities are defined into two major categories:<br /><br />&gt; * <i>top level</i> <see cref="Component">Component</see> entities that <i>organize</i>s the most significant physical or logical functions of a piece of equipment (see <see cref="Part Properties of Device">Part Properties of Device</see>).  They <b>MAY</b> also be used as <i>lower level</i> <see cref="Component">Component</see> entities; as required. See <see cref="Component Organizer Types">Component Organizer Types</see>.<br /><br />&gt; * <i>lower level</i> <see cref="Component">Component</see> entities composed of the sub-parts of the parent <see cref="Component">Component</see> to provide more clarity and granularity to the physical or logical structure of the <i>top level</i> <see cref="Component">Component</see> entities.<br /><br />This section provides guidance for the most common relationships between <see cref="Component">Component</see> types.  However, all <see cref="Component">Component</see> types <b>MAY</b> be used in any configuration, as required, to fully describe a piece of equipment.<br /><br />As described in <see cref="Components">Components</see>, <see cref="Component">Component</see> is an abstract entity and will be always realized by a specific <see cref="Component">Component</see> type.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_6BEE6977_1698_498c_87A6_34B5E656F773">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -145,6 +145,11 @@ As described in {{package(Components)}}, {{block(Component)}} is an abstract ent
 			FeatureOccurrenceClass,
 			AirHandlerClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.ComponentOrganizerTypesPackage _ComponentOrganizerTypesPackage;
 	/// <summary>
@@ -779,6 +784,9 @@ As described in {{package(Components)}}, {{block(Component)}} is an abstract ent
 	/// </summary>
 	public Package.AirHandlerClass AirHandlerClass => _AirHandlerClass ?? (_AirHandlerClass = new Package.AirHandlerClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

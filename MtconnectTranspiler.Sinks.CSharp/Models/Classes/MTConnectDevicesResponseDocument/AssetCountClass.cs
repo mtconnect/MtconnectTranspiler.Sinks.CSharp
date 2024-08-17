@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocument
 {
-	/// <summary>
-	﻿/// count of each asset type currently in the <i>agent</i>.<br/><br />
-
+	/// <summary>﻿count of each asset type currently in the <i>agent</i>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1643803275261_762583_709">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 		/// <inheritdoc />
 		public AssetCountClassProperties Properties { get; } = new AssetCountClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="AssetCountClass" />.
+		/// </summary>
 		public class AssetCountClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -51,9 +55,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 			/// <remarks>Original Name: AssetType</remarks>
 			/// </summary>
 			public AssetTypeProperty AssetType { get; } = new AssetTypeProperty();
-			/// <summary>
-			﻿/// type of <i>Asset</i>.<br/><br />
-
+			
+			/// <summary>﻿type of <i>Asset</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class AssetTypeProperty : IProperty
 			{

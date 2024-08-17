@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 {
-	/// <summary>
-	﻿/// abstract <see cref="DataItem">DataItem</see> that is continuously changing or analog data value.<br /><br/><br />Description<br/>This data can be measured at any point-in-time and will always produce a result.<br/><br/><br />
-
+	/// <summary>﻿abstract <see cref="DataItem">DataItem</see> that is continuously changing or analog data value.<br /><br /><br /><br />Description<br /><br />This data can be measured at any point-in-time and will always produce a result.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_B0781166_9F74_4844_B40C_CA32663868F2">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -46,10 +47,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 		/// <inheritdoc />
 		public SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="SampleClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.DataItems.DataItemClass.DataItemClassProperties" />.
+		/// </summary>
 		public class SampleClassProperties : Mtconnect.DeviceInformationModel.DataItems.DataItemClass.DataItemClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Category,
 				Type,
 				Units,
@@ -58,8 +63,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 			/// <inheritdoc cref="CategoryProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Category</remarks>
 			/// </summary>
-			public CategoryProperty Category { get; } = new CategoryProperty();
-			public sealed class CategoryProperty : IProperty
+			public new CategoryProperty Category { get; } = new CategoryProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class CategoryProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -109,8 +117,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -160,8 +171,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
-			public UnitsProperty Units { get; } = new UnitsProperty();
-			public sealed class UnitsProperty : IProperty
+			public new UnitsProperty Units { get; } = new UnitsProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

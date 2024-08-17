@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	/// <summary>
-	﻿/// <see cref="EventEnum.ASSET_REMOVED">EventEnum.ASSET_REMOVED</see><br/><br />
-
+	/// <summary>﻿<see cref="EventEnum.ASSET_REMOVED">EventEnum.ASSET_REMOVED</see><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218180_352606_1551">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		/// <inheritdoc />
 		public AssetRemovedClassProperties Properties { get; } = new AssetRemovedClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="AssetRemovedClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.EventClass.EventClassProperties" />.
+		/// </summary>
 		public class AssetRemovedClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				AssetType,
 				Type,
 				Hash,
@@ -56,12 +61,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="AssetTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetType</remarks>
 			/// </summary>
-			public AssetTypeProperty AssetType { get; } = new AssetTypeProperty();
-			/// <summary>
-			﻿/// type of <see cref="Asset">Asset</see> removed. See <see cref="Asset Information Model">Asset Information Model</see> for details on the <see cref="Asset">Asset</see> model.<br/><br />
-
+			public new AssetTypeProperty AssetType { get; } = new AssetTypeProperty();
+			
+			/// <summary>﻿type of <see cref="Asset">Asset</see> removed. See <see cref="Asset Information Model">Asset Information Model</see> for details on the <see cref="Asset">Asset</see> model.<br /><br /><br />
 			/// </summary>
-			public sealed class AssetTypeProperty : IProperty
+			public new sealed class AssetTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -112,8 +116,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -163,12 +170,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="HashProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Hash</remarks>
 			/// </summary>
-			public HashProperty Hash { get; } = new HashProperty();
-			/// <summary>
-			﻿/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso><br/><br />
-
+			public new HashProperty Hash { get; } = new HashProperty();
+			
+			/// <summary>﻿condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso><br /><br /><br />
 			/// </summary>
-			public sealed class HashProperty : IProperty
+			public new sealed class HashProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622460092329_383445_1384">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622460092329_383445_1384">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PartProcessingStateEnum
 	{
-		/// <summary>
-		﻿/// part occurrence is not actively being processed, but the processing has not ended. <br /><br />Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.<br/><br />
-
+		/// <summary>﻿part occurrence is not actively being processed, but the processing has not ended. <br /><br />Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		NEEDS_PROCESSING,
-		/// <summary>
-		﻿/// part occurrence is actively being processed.<br/><br />
-
+		/// <summary>﻿part occurrence is actively being processed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		IN_PROCESS,
-		/// <summary>
-		﻿/// part occurrence is no longer being processed. <br /><br />A general state when the reason for termination is unknown.<br/><br />
-
+		/// <summary>﻿part occurrence is no longer being processed. <br /><br />A general state when the reason for termination is unknown.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESSING_ENDED,
-		/// <summary>
-		﻿/// part occurrence has completed processing successfully.<br/><br />
-
+		/// <summary>﻿part occurrence has completed processing successfully.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESSING_ENDED_COMPLETE,
-		/// <summary>
-		﻿/// process has been stopped during the processing. <br /><br />The part occurrence will require special treatment.<br/><br />
-
+		/// <summary>﻿process has been stopped during the processing. <br /><br />The part occurrence will require special treatment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESSING_ENDED_STOPPED,
-		/// <summary>
-		﻿/// processing of the part occurrence has come to a premature end.<br/><br />
-
+		/// <summary>﻿processing of the part occurrence has come to a premature end.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -75,9 +64,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESSING_ENDED_ABORTED,
-		/// <summary>
-		﻿/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.<br/><br />
-
+		/// <summary>﻿terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -85,9 +72,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESSING_ENDED_LOST,
-		/// <summary>
-		﻿/// part occurrence has been skipped for processing on the piece of equipment.<br/><br />
-
+		/// <summary>﻿part occurrence has been skipped for processing on the piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -95,9 +80,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESSING_ENDED_SKIPPED,
-		/// <summary>
-		﻿/// part occurrence has been processed completely. However, the processing may have a problem.<br/><br />
-
+		/// <summary>﻿part occurrence has been processed completely. However, the processing may have a problem.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,9 +88,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESSING_ENDED_REJECTED,
-		/// <summary>
-		﻿/// part occurrence is waiting for transit.<br/><br />
-
+		/// <summary>﻿part occurrence is waiting for transit.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -115,9 +96,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WAITING_FOR_TRANSIT,
-		/// <summary>
-		﻿/// part occurrence is being transported to its destination.<br/><br />
-
+		/// <summary>﻿part occurrence is being transported to its destination.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -125,9 +104,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		IN_TRANSIT,
-		/// <summary>
-		﻿/// part occurrence has been placed at its designated destination.<br/><br />
-
+		/// <summary>﻿part occurrence has been placed at its designated destination.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -137,9 +114,8 @@ namespace Mtconnect.DataTypes
 		TRANSIT_COMPLETE,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622460092329_383445_1384">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622460092329_383445_1384">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartProcessingStateEnumMetaClass : IEnum
@@ -150,6 +126,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(PartProcessingStateEnum);
 
 		/// <inheritdoc />
@@ -178,15 +155,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private NEEDS_PROCESSINGValue _NEEDS_PROCESSING;
-		/// <summary>
-		﻿/// part occurrence is not actively being processed, but the processing has not ended. <br /><br />Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NEEDS_PROCESSINGValue" path="/summary" />
 		public NEEDS_PROCESSINGValue NEEDS_PROCESSING => _NEEDS_PROCESSING ?? (_NEEDS_PROCESSING = new NEEDS_PROCESSINGValue());
 
-		/// <summary>
-		﻿/// part occurrence is not actively being processed, but the processing has not ended. <br /><br />Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.<br/><br />
-
+		/// <summary>﻿part occurrence is not actively being processed, but the processing has not ended. <br /><br />Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class NEEDS_PROCESSINGValue : IEnumInstance
 		{
@@ -209,15 +183,12 @@ Processing requirements exist that have not yet been fulfilled. This is the defa
 ";
 		}
 		private IN_PROCESSValue _IN_PROCESS;
-		/// <summary>
-		﻿/// part occurrence is actively being processed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="IN_PROCESSValue" path="/summary" />
 		public IN_PROCESSValue IN_PROCESS => _IN_PROCESS ?? (_IN_PROCESS = new IN_PROCESSValue());
 
-		/// <summary>
-		﻿/// part occurrence is actively being processed.<br/><br />
-
+		/// <summary>﻿part occurrence is actively being processed.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class IN_PROCESSValue : IEnumInstance
 		{
@@ -238,15 +209,12 @@ Processing requirements exist that have not yet been fulfilled. This is the defa
 ";
 		}
 		private PROCESSING_ENDEDValue _PROCESSING_ENDED;
-		/// <summary>
-		﻿/// part occurrence is no longer being processed. <br /><br />A general state when the reason for termination is unknown.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESSING_ENDEDValue" path="/summary" />
 		public PROCESSING_ENDEDValue PROCESSING_ENDED => _PROCESSING_ENDED ?? (_PROCESSING_ENDED = new PROCESSING_ENDEDValue());
 
-		/// <summary>
-		﻿/// part occurrence is no longer being processed. <br /><br />A general state when the reason for termination is unknown.<br/><br />
-
+		/// <summary>﻿part occurrence is no longer being processed. <br /><br />A general state when the reason for termination is unknown.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class PROCESSING_ENDEDValue : IEnumInstance
 		{
@@ -269,15 +237,12 @@ A general state when the reason for termination is unknown.&#10;
 ";
 		}
 		private PROCESSING_ENDED_COMPLETEValue _PROCESSING_ENDED_COMPLETE;
-		/// <summary>
-		﻿/// part occurrence has completed processing successfully.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESSING_ENDED_COMPLETEValue" path="/summary" />
 		public PROCESSING_ENDED_COMPLETEValue PROCESSING_ENDED_COMPLETE => _PROCESSING_ENDED_COMPLETE ?? (_PROCESSING_ENDED_COMPLETE = new PROCESSING_ENDED_COMPLETEValue());
 
-		/// <summary>
-		﻿/// part occurrence has completed processing successfully.<br/><br />
-
+		/// <summary>﻿part occurrence has completed processing successfully.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class PROCESSING_ENDED_COMPLETEValue : IEnumInstance
 		{
@@ -298,15 +263,12 @@ A general state when the reason for termination is unknown.&#10;
 ";
 		}
 		private PROCESSING_ENDED_STOPPEDValue _PROCESSING_ENDED_STOPPED;
-		/// <summary>
-		﻿/// process has been stopped during the processing. <br /><br />The part occurrence will require special treatment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESSING_ENDED_STOPPEDValue" path="/summary" />
 		public PROCESSING_ENDED_STOPPEDValue PROCESSING_ENDED_STOPPED => _PROCESSING_ENDED_STOPPED ?? (_PROCESSING_ENDED_STOPPED = new PROCESSING_ENDED_STOPPEDValue());
 
-		/// <summary>
-		﻿/// process has been stopped during the processing. <br /><br />The part occurrence will require special treatment.<br/><br />
-
+		/// <summary>﻿process has been stopped during the processing. <br /><br />The part occurrence will require special treatment.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class PROCESSING_ENDED_STOPPEDValue : IEnumInstance
 		{
@@ -329,15 +291,12 @@ The part occurrence will require special treatment.&#10;
 ";
 		}
 		private PROCESSING_ENDED_ABORTEDValue _PROCESSING_ENDED_ABORTED;
-		/// <summary>
-		﻿/// processing of the part occurrence has come to a premature end.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESSING_ENDED_ABORTEDValue" path="/summary" />
 		public PROCESSING_ENDED_ABORTEDValue PROCESSING_ENDED_ABORTED => _PROCESSING_ENDED_ABORTED ?? (_PROCESSING_ENDED_ABORTED = new PROCESSING_ENDED_ABORTEDValue());
 
-		/// <summary>
-		﻿/// processing of the part occurrence has come to a premature end.<br/><br />
-
+		/// <summary>﻿processing of the part occurrence has come to a premature end.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class PROCESSING_ENDED_ABORTEDValue : IEnumInstance
 		{
@@ -358,15 +317,12 @@ The part occurrence will require special treatment.&#10;
 ";
 		}
 		private PROCESSING_ENDED_LOSTValue _PROCESSING_ENDED_LOST;
-		/// <summary>
-		﻿/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESSING_ENDED_LOSTValue" path="/summary" />
 		public PROCESSING_ENDED_LOSTValue PROCESSING_ENDED_LOST => _PROCESSING_ENDED_LOST ?? (_PROCESSING_ENDED_LOST = new PROCESSING_ENDED_LOSTValue());
 
-		/// <summary>
-		﻿/// terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.<br/><br />
-
+		/// <summary>﻿terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class PROCESSING_ENDED_LOSTValue : IEnumInstance
 		{
@@ -387,15 +343,12 @@ The part occurrence will require special treatment.&#10;
 ";
 		}
 		private PROCESSING_ENDED_SKIPPEDValue _PROCESSING_ENDED_SKIPPED;
-		/// <summary>
-		﻿/// part occurrence has been skipped for processing on the piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESSING_ENDED_SKIPPEDValue" path="/summary" />
 		public PROCESSING_ENDED_SKIPPEDValue PROCESSING_ENDED_SKIPPED => _PROCESSING_ENDED_SKIPPED ?? (_PROCESSING_ENDED_SKIPPED = new PROCESSING_ENDED_SKIPPEDValue());
 
-		/// <summary>
-		﻿/// part occurrence has been skipped for processing on the piece of equipment.<br/><br />
-
+		/// <summary>﻿part occurrence has been skipped for processing on the piece of equipment.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class PROCESSING_ENDED_SKIPPEDValue : IEnumInstance
 		{
@@ -416,15 +369,12 @@ The part occurrence will require special treatment.&#10;
 ";
 		}
 		private PROCESSING_ENDED_REJECTEDValue _PROCESSING_ENDED_REJECTED;
-		/// <summary>
-		﻿/// part occurrence has been processed completely. However, the processing may have a problem.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESSING_ENDED_REJECTEDValue" path="/summary" />
 		public PROCESSING_ENDED_REJECTEDValue PROCESSING_ENDED_REJECTED => _PROCESSING_ENDED_REJECTED ?? (_PROCESSING_ENDED_REJECTED = new PROCESSING_ENDED_REJECTEDValue());
 
-		/// <summary>
-		﻿/// part occurrence has been processed completely. However, the processing may have a problem.<br/><br />
-
+		/// <summary>﻿part occurrence has been processed completely. However, the processing may have a problem.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class PROCESSING_ENDED_REJECTEDValue : IEnumInstance
 		{
@@ -445,15 +395,12 @@ The part occurrence will require special treatment.&#10;
 ";
 		}
 		private WAITING_FOR_TRANSITValue _WAITING_FOR_TRANSIT;
-		/// <summary>
-		﻿/// part occurrence is waiting for transit.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WAITING_FOR_TRANSITValue" path="/summary" />
 		public WAITING_FOR_TRANSITValue WAITING_FOR_TRANSIT => _WAITING_FOR_TRANSIT ?? (_WAITING_FOR_TRANSIT = new WAITING_FOR_TRANSITValue());
 
-		/// <summary>
-		﻿/// part occurrence is waiting for transit.<br/><br />
-
+		/// <summary>﻿part occurrence is waiting for transit.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class WAITING_FOR_TRANSITValue : IEnumInstance
 		{
@@ -474,15 +421,12 @@ The part occurrence will require special treatment.&#10;
 ";
 		}
 		private IN_TRANSITValue _IN_TRANSIT;
-		/// <summary>
-		﻿/// part occurrence is being transported to its destination.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="IN_TRANSITValue" path="/summary" />
 		public IN_TRANSITValue IN_TRANSIT => _IN_TRANSIT ?? (_IN_TRANSIT = new IN_TRANSITValue());
 
-		/// <summary>
-		﻿/// part occurrence is being transported to its destination.<br/><br />
-
+		/// <summary>﻿part occurrence is being transported to its destination.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class IN_TRANSITValue : IEnumInstance
 		{
@@ -503,15 +447,12 @@ The part occurrence will require special treatment.&#10;
 ";
 		}
 		private TRANSIT_COMPLETEValue _TRANSIT_COMPLETE;
-		/// <summary>
-		﻿/// part occurrence has been placed at its designated destination.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRANSIT_COMPLETEValue" path="/summary" />
 		public TRANSIT_COMPLETEValue TRANSIT_COMPLETE => _TRANSIT_COMPLETE ?? (_TRANSIT_COMPLETE = new TRANSIT_COMPLETEValue());
 
-		/// <summary>
-		﻿/// part occurrence has been placed at its designated destination.<br/><br />
-
+		/// <summary>﻿part occurrence has been placed at its designated destination.<br /><br /><br />
+		/// Value for PartProcessingStateEnum.<br/>
+		/// <br/>See also <seealso cref="PartProcessingStateEnum">PartProcessingStateEnum</seealso>
 		/// </summary>
 		public sealed class TRANSIT_COMPLETEValue : IEnumInstance
 		{

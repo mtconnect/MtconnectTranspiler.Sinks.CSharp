@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622119656767_412574_1812">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622119656767_412574_1812">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,8 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum QIFDocumentTypeEnum
 	{
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,8 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MEASUREMENT_RESOURCE,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,8 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PLAN,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,8 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PRODUCT,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,8 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RESULTS,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,8 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RULES,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -71,9 +66,8 @@ namespace Mtconnect.DataTypes
 		STATISTICS,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622119656767_412574_1812">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622119656767_412574_1812">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class QIFDocumentTypeEnumMetaClass : IEnum
@@ -84,6 +78,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(QIFDocumentTypeEnum);
 
 		/// <inheritdoc />
@@ -106,8 +101,13 @@ namespace Mtconnect.DataTypes
 		};
 
 		private MEASUREMENT_RESOURCEValue _MEASUREMENT_RESOURCE;
+		/// <inheritdoc cref="MEASUREMENT_RESOURCEValue" path="/summary" />
 		public MEASUREMENT_RESOURCEValue MEASUREMENT_RESOURCE => _MEASUREMENT_RESOURCE ?? (_MEASUREMENT_RESOURCE = new MEASUREMENT_RESOURCEValue());
 
+		/// <summary>﻿
+		/// Value for QIFDocumentTypeEnum.<br/>
+		/// <br/>See also <seealso cref="QIFDocumentTypeEnum">QIFDocumentTypeEnum</seealso>
+		/// </summary>
 		public sealed class MEASUREMENT_RESOURCEValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -126,8 +126,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private PLANValue _PLAN;
+		/// <inheritdoc cref="PLANValue" path="/summary" />
 		public PLANValue PLAN => _PLAN ?? (_PLAN = new PLANValue());
 
+		/// <summary>﻿
+		/// Value for QIFDocumentTypeEnum.<br/>
+		/// <br/>See also <seealso cref="QIFDocumentTypeEnum">QIFDocumentTypeEnum</seealso>
+		/// </summary>
 		public sealed class PLANValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -146,8 +151,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private PRODUCTValue _PRODUCT;
+		/// <inheritdoc cref="PRODUCTValue" path="/summary" />
 		public PRODUCTValue PRODUCT => _PRODUCT ?? (_PRODUCT = new PRODUCTValue());
 
+		/// <summary>﻿
+		/// Value for QIFDocumentTypeEnum.<br/>
+		/// <br/>See also <seealso cref="QIFDocumentTypeEnum">QIFDocumentTypeEnum</seealso>
+		/// </summary>
 		public sealed class PRODUCTValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -166,8 +176,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private RESULTSValue _RESULTS;
+		/// <inheritdoc cref="RESULTSValue" path="/summary" />
 		public RESULTSValue RESULTS => _RESULTS ?? (_RESULTS = new RESULTSValue());
 
+		/// <summary>﻿
+		/// Value for QIFDocumentTypeEnum.<br/>
+		/// <br/>See also <seealso cref="QIFDocumentTypeEnum">QIFDocumentTypeEnum</seealso>
+		/// </summary>
 		public sealed class RESULTSValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -186,8 +201,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private RULESValue _RULES;
+		/// <inheritdoc cref="RULESValue" path="/summary" />
 		public RULESValue RULES => _RULES ?? (_RULES = new RULESValue());
 
+		/// <summary>﻿
+		/// Value for QIFDocumentTypeEnum.<br/>
+		/// <br/>See also <seealso cref="QIFDocumentTypeEnum">QIFDocumentTypeEnum</seealso>
+		/// </summary>
 		public sealed class RULESValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -206,8 +226,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private STATISTICSValue _STATISTICS;
+		/// <inheritdoc cref="STATISTICSValue" path="/summary" />
 		public STATISTICSValue STATISTICS => _STATISTICS ?? (_STATISTICS = new STATISTICSValue());
 
+		/// <summary>﻿
+		/// Value for QIFDocumentTypeEnum.<br/>
+		/// <br/>See also <seealso cref="QIFDocumentTypeEnum">QIFDocumentTypeEnum</seealso>
+		/// </summary>
 		public sealed class STATISTICSValue : IEnumInstance
 		{
 			/// <inheritdoc />

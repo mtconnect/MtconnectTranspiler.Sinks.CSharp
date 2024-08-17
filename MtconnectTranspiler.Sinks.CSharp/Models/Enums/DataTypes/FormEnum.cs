@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1618830616283_5956_278">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1618830616283_5956_278">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,8 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FormEnum
 	{
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,8 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BAR,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -33,8 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SHEET,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -42,8 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BLOCK,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -51,8 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CASTING,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -60,8 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		POWDER,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -69,8 +64,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LIQUID,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -78,8 +72,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		GEL,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,8 +80,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FILAMENT,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -98,9 +90,8 @@ namespace Mtconnect.DataTypes
 		GAS,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1618830616283_5956_278">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1618830616283_5956_278">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FormEnumMetaClass : IEnum
@@ -111,6 +102,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(FormEnum);
 
 		/// <inheritdoc />
@@ -136,8 +128,13 @@ namespace Mtconnect.DataTypes
 		};
 
 		private BARValue _BAR;
+		/// <inheritdoc cref="BARValue" path="/summary" />
 		public BARValue BAR => _BAR ?? (_BAR = new BARValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class BARValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -156,8 +153,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private SHEETValue _SHEET;
+		/// <inheritdoc cref="SHEETValue" path="/summary" />
 		public SHEETValue SHEET => _SHEET ?? (_SHEET = new SHEETValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class SHEETValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -176,8 +178,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private BLOCKValue _BLOCK;
+		/// <inheritdoc cref="BLOCKValue" path="/summary" />
 		public BLOCKValue BLOCK => _BLOCK ?? (_BLOCK = new BLOCKValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class BLOCKValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -196,8 +203,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private CASTINGValue _CASTING;
+		/// <inheritdoc cref="CASTINGValue" path="/summary" />
 		public CASTINGValue CASTING => _CASTING ?? (_CASTING = new CASTINGValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class CASTINGValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -216,8 +228,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private POWDERValue _POWDER;
+		/// <inheritdoc cref="POWDERValue" path="/summary" />
 		public POWDERValue POWDER => _POWDER ?? (_POWDER = new POWDERValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class POWDERValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -236,8 +253,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private LIQUIDValue _LIQUID;
+		/// <inheritdoc cref="LIQUIDValue" path="/summary" />
 		public LIQUIDValue LIQUID => _LIQUID ?? (_LIQUID = new LIQUIDValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class LIQUIDValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -256,8 +278,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private GELValue _GEL;
+		/// <inheritdoc cref="GELValue" path="/summary" />
 		public GELValue GEL => _GEL ?? (_GEL = new GELValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class GELValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -276,8 +303,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private FILAMENTValue _FILAMENT;
+		/// <inheritdoc cref="FILAMENTValue" path="/summary" />
 		public FILAMENTValue FILAMENT => _FILAMENT ?? (_FILAMENT = new FILAMENTValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class FILAMENTValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -296,8 +328,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private GASValue _GAS;
+		/// <inheritdoc cref="GASValue" path="/summary" />
 		public GASValue GAS => _GAS ?? (_GAS = new GASValue());
 
+		/// <summary>﻿
+		/// Value for FormEnum.<br/>
+		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
+		/// </summary>
 		public sealed class GASValue : IEnumInstance
 		{
 			/// <inheritdoc />

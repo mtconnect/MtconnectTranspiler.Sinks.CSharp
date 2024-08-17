@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.QIF
 {
-	/// <summary>
-	﻿/// <see cref="Asset">Asset</see> that carries the QIF Document.<br/><br />
-
+	/// <summary>﻿<see cref="Asset">Asset</see> that carries the QIF Document.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1622119541205_751450_1761">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.AssetInformationModel.QIF
 		/// <inheritdoc />
 		public QIFDocumentWrapperClassProperties Properties { get; } = new QIFDocumentWrapperClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="QIFDocumentWrapperClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties" />.
+		/// </summary>
 		public class QIFDocumentWrapperClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				QifDocumentType,
 				HasQIFDocumentPart,
 			}.Concat(base.Properties).ToArray();
@@ -55,12 +60,11 @@ namespace Mtconnect.AssetInformationModel.QIF
 			/// <inheritdoc cref="QifDocumentTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: QifDocumentType</remarks>
 			/// </summary>
-			public QifDocumentTypeProperty QifDocumentType { get; } = new QifDocumentTypeProperty();
-			/// <summary>
-			﻿/// contained QIF Document type as defined in the <i>QIF</i> Standard.<br/><br />
-
+			public new QifDocumentTypeProperty QifDocumentType { get; } = new QifDocumentTypeProperty();
+			
+			/// <summary>﻿contained QIF Document type as defined in the <i>QIF</i> Standard.<br /><br /><br />
 			/// </summary>
-			public sealed class QifDocumentTypeProperty : IProperty
+			public new sealed class QifDocumentTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -111,8 +115,11 @@ namespace Mtconnect.AssetInformationModel.QIF
 			/// <inheritdoc cref="HasQIFDocumentPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasQIFDocument</remarks>
 			/// </summary>
-			public HasQIFDocumentPartProperty HasQIFDocumentPart { get; } = new HasQIFDocumentPartProperty();
-			public sealed class HasQIFDocumentPartProperty : IProperty
+			public new HasQIFDocumentPartProperty HasQIFDocumentPart { get; } = new HasQIFDocumentPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasQIFDocumentPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

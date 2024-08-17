@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.ObservationInformationModel.ObservationTypes;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	/// <summary>
-	﻿/// This section provides semantic information for the <see cref="Observation">Observation</see> types.<br /><br /><see cref="Observation">Observation</see> entities are instantiated as <see cref="Sample">Sample</see>, <see cref="Event">Event</see> or <see cref="Condition">Condition</see> entities based upon the <see cref="DataItem.category">category in DataItem</see> and <see cref="DataItem.type">type in DataItem</see> defined for the corresponding <see cref="DataItem">DataItem</see>.<br /><br />See {{figure(DeviceStream Example)}} for examples on how the <see cref="Observation">Observation</see> types are organized within <see cref="ComponentStream">ComponentStream</see>.<br/><br />
-
+	/// <summary>﻿This section provides semantic information for the <see cref="Observation">Observation</see> types.<br /><br /><see cref="Observation">Observation</see> entities are instantiated as <see cref="Sample">Sample</see>, <see cref="Event">Event</see> or <see cref="Condition">Condition</see> entities based upon the <see cref="DataItem.category">category in DataItem</see> and <see cref="DataItem.type">type in DataItem</see> defined for the corresponding <see cref="DataItem">DataItem</see>.<br /><br />See {{figure(DeviceStream Example)}} for examples on how the <see cref="Observation">Observation</see> types are organized within <see cref="ComponentStream">ComponentStream</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1589897764829_678664_48">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -37,6 +37,11 @@ See {{figure(DeviceStream Example)}} for examples on how the {{block(Observation
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.SampleTypesPackage _SampleTypesPackage;
 	/// <summary>
@@ -59,6 +64,9 @@ See {{figure(DeviceStream Example)}} for examples on how the {{block(Observation
 	#endregion
 
 	#region Classes
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

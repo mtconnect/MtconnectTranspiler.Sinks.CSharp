@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubtypes
 {
-	/// <summary>
-	﻿/// distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.<br/><br />
-
+	/// <summary>﻿distance measured along the X axis from that point of the item closest to the workpiece, including the cutting item for a tool item but excluding a protruding locking mechanism for an adaptive item, to either the front of the flange on a flanged body or the beginning of the connection interface feature on the machine side for cylindrical or prismatic shanks.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119498_219776_1408">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 		/// <inheritdoc />
 		public BodyLengthMaxClassProperties Properties { get; } = new BodyLengthMaxClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="BodyLengthMaxClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties" />.
+		/// </summary>
 		public class BodyLengthMaxClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Code,
 				Units,
 			}.Concat(base.Properties).ToArray();
@@ -55,8 +60,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
 			/// </summary>
-			public CodeProperty Code { get; } = new CodeProperty();
-			public sealed class CodeProperty : IProperty
+			public new CodeProperty Code { get; } = new CodeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class CodeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -106,8 +114,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
-			public UnitsProperty Units { get; } = new UnitsProperty();
-			public sealed class UnitsProperty : IProperty
+			public new UnitsProperty Units { get; } = new UnitsProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

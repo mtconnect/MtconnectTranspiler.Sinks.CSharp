@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.DeviceInformationModel.Configurations;
 
 namespace Mtconnect.DeviceInformationModel
 {
-	/// <summary>
-	﻿/// {{figure(Configuration)}} shows the abstract <see cref="Configuration">Configuration</see> and its types.<br /><br />![Configuration](figures/Configuration.png "Configuration"){: width="0.8"}<br /><br />> Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br/><br />Configurations Model<br/>This section provides semantic information for the <see cref="Configuration">Configuration</see> entity that is used to model technical information about a <see cref="Component">Component</see>. <br/><br/><br />
-
+	/// <summary>﻿{{figure(Configuration)}} shows the abstract <see cref="Configuration">Configuration</see> and its types.<br /><br />![Configuration](figures/Configuration.png "Configuration"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br /><br />Configurations Model<br /><br />This section provides semantic information for the <see cref="Configuration">Configuration</see> entity that is used to model technical information about a <see cref="Component">Component</see>. <br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579526876433_244855_7626">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,6 +44,11 @@ namespace Mtconnect.DeviceInformationModel
 		public IClass[] Classes => new IClass[] {
 			ConfigurationClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.CoordinateSystemsPackage _CoordinateSystemsPackage;
 	/// <summary>
@@ -102,6 +107,9 @@ namespace Mtconnect.DeviceInformationModel
 	/// </summary>
 	public Package.ConfigurationClass ConfigurationClass => _ConfigurationClass ?? (_ConfigurationClass = new Package.ConfigurationClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 {
-	/// <summary>
-	﻿/// <i>agent</i>.<br /><br />An <i>agent</i> <b>MUST</b> perform the following tasks:<br /><br />* Collect data from manufacturing equipment.<br />* Generate <i>response document</i>s.<br />* Provide a REST interface using <i>HTTP</i>.<br /><br />In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.<br/><br />
-
+	/// <summary>﻿<i>agent</i>.<br /><br />An <i>agent</i> <b>MUST</b> perform the following tasks:<br /><br />* Collect data from manufacturing equipment.<br />* Generate <i>response document</i>s.<br />* Provide a REST interface using <i>HTTP</i>.<br /><br />In addition to <i>XML</i> and <i>HTTP</i>, An <i>agent</i> <b>MAY</b> provide additional protocols and representations. Some representations <b>MAY</b> have companion specifications.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1637708823096_359717_5786">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -48,6 +49,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 		/// <inheritdoc />
 		public AgentClassProperties Properties { get; } = new AgentClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="AgentClass" />.
+		/// </summary>
 		public class AgentClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -65,9 +69,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 			/// <remarks>Original Name: InstanceId</remarks>
 			/// </summary>
 			public InstanceIdProperty InstanceId { get; } = new InstanceIdProperty();
-			/// <summary>
-			﻿/// identifier for an <i>instance</i> of the <i>agent</i>.<br />     <br /><see cref="Header.instanceId">instanceId in Header</see> <b>MUST</b> be changed to a different unique number each time the <i>buffer</i> is cleared and a new set of data begins to be collected.<br/><br />
-
+			
+			/// <summary>﻿identifier for an <i>instance</i> of the <i>agent</i>.<br />     <br /><see cref="Header.instanceId">instanceId in Header</see> <b>MUST</b> be changed to a different unique number each time the <i>buffer</i> is cleared and a new set of data begins to be collected.<br /><br /><br />
 			/// </summary>
 			public sealed class InstanceIdProperty : IProperty
 			{
@@ -123,9 +126,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 			/// <remarks>Original Name: SequenceNumber</remarks>
 			/// </summary>
 			public SequenceNumberProperty SequenceNumber { get; } = new SequenceNumberProperty();
-			/// <summary>
-			﻿/// <i>sequence number</i>.<br/><br />
-
+			
+			/// <summary>﻿<i>sequence number</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class SequenceNumberProperty : IProperty
 			{
@@ -179,9 +181,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 			/// <remarks>Original Name: BufferSize</remarks>
 			/// </summary>
 			public BufferSizeProperty BufferSize { get; } = new BufferSizeProperty();
-			/// <summary>
-			﻿/// maximum number of <i>Observation</i>s that <b>MAY</b> be retained in the <i>agent</i> that published the <i>response document</i> at any point in time.<br/><br />
-
+			
+			/// <summary>﻿maximum number of <i>Observation</i>s that <b>MAY</b> be retained in the <i>agent</i> that published the <i>response document</i> at any point in time.<br /><br /><br />
 			/// </summary>
 			public sealed class BufferSizeProperty : IProperty
 			{
@@ -235,9 +236,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 			/// <remarks>Original Name: MaxAssets</remarks>
 			/// </summary>
 			public MaxAssetsProperty MaxAssets { get; } = new MaxAssetsProperty();
-			/// <summary>
-			﻿/// maximum number of <i>Asset</i>s that <b>MAY</b> be retained in the <i>agent</i> that published the <i>response document</i> at any point in time.<br/><br />
-
+			
+			/// <summary>﻿maximum number of <i>Asset</i>s that <b>MAY</b> be retained in the <i>agent</i> that published the <i>response document</i> at any point in time.<br /><br /><br />
 			/// </summary>
 			public sealed class MaxAssetsProperty : IProperty
 			{
@@ -291,9 +291,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 			/// <remarks>Original Name: AssetCount</remarks>
 			/// </summary>
 			public AssetCountProperty AssetCount { get; } = new AssetCountProperty();
-			/// <summary>
-			﻿/// current number of <i>Asset</i>s that are currently stored in the <i>agent</i> as of the <see cref="Header.creationTime">creationTime in Header</see> that the <i>agent</i> published the <i>response document</i>.<br/><br />
-
+			
+			/// <summary>﻿current number of <i>Asset</i>s that are currently stored in the <i>agent</i> as of the <see cref="Header.creationTime">creationTime in Header</see> that the <i>agent</i> published the <i>response document</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class AssetCountProperty : IProperty
 			{
@@ -347,6 +346,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 			/// <remarks>Original Name: HasObservation</remarks>
 			/// </summary>
 			public HasObservationPartProperty HasObservationPart { get; } = new HasObservationPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasObservationPartProperty : IProperty
 			{
 				/// <summary>
@@ -398,6 +400,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 			/// <remarks>Original Name: HasAsset</remarks>
 			/// </summary>
 			public HasAssetPartProperty HasAssetPart { get; } = new HasAssetPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasAssetPartProperty : IProperty
 			{
 				/// <summary>

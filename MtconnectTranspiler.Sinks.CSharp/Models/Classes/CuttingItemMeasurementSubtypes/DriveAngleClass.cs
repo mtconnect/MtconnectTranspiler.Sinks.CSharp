@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMeasurementSubtypes
 {
-	/// <summary>
-	﻿/// angle between the driving mechanism locator on a tool item and the main cutting edge.<br/><br />
-
+	/// <summary>﻿angle between the driving mechanism locator on a tool item and the main cutting edge.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1582919119525_506701_1450">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		/// <inheritdoc />
 		public DriveAngleClassProperties Properties { get; } = new DriveAngleClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DriveAngleClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties" />.
+		/// </summary>
 		public class DriveAngleClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Code,
 				Units,
 			}.Concat(base.Properties).ToArray();
@@ -55,8 +60,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
 			/// </summary>
-			public CodeProperty Code { get; } = new CodeProperty();
-			public sealed class CodeProperty : IProperty
+			public new CodeProperty Code { get; } = new CodeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class CodeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -106,8 +114,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
-			public UnitsProperty Units { get; } = new UnitsProperty();
-			public sealed class UnitsProperty : IProperty
+			public new UnitsProperty Units { get; } = new UnitsProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

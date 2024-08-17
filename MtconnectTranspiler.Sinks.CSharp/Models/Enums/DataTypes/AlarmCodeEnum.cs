@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968895333_107274_240">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968895333_107274_240">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -17,9 +18,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AlarmCodeEnum
 	{
-		/// <summary>
-		﻿/// spindle crashed.<br/><br />
-
+		/// <summary>﻿spindle crashed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -29,9 +28,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		CRASH,
-		/// <summary>
-		﻿/// component jammed.<br/><br />
-
+		/// <summary>﻿component jammed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -41,9 +38,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		JAM,
-		/// <summary>
-		﻿/// component failed.<br/><br />
-
+		/// <summary>﻿component failed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -53,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		FAILURE,
-		/// <summary>
-		﻿/// fault occurred on the component.<br/><br />
-
+		/// <summary>﻿fault occurred on the component.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +58,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		FAULT,
-		/// <summary>
-		﻿/// component has stalled and cannot move.<br/><br />
-
+		/// <summary>﻿component has stalled and cannot move.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -77,9 +68,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		STALLED,
-		/// <summary>
-		﻿/// component is overloaded.<br/><br />
-
+		/// <summary>﻿component is overloaded.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -89,9 +78,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		OVERLOAD,
-		/// <summary>
-		﻿/// ESTOP button was pressed.<br/><br />
-
+		/// <summary>﻿ESTOP button was pressed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -101,9 +88,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		ESTOP,
-		/// <summary>
-		﻿/// problem with the material.<br/><br />
-
+		/// <summary>﻿problem with the material.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -113,9 +98,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		MATERIAL,
-		/// <summary>
-		﻿/// system message.<br/><br />
-
+		/// <summary>﻿system message.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -125,9 +108,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		MESSAGE,
-		/// <summary>
-		﻿/// alarm is not in any of the above categories.<br/><br />
-
+		/// <summary>﻿alarm is not in any of the above categories.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -139,9 +120,8 @@ namespace Mtconnect.DataTypes
 		OTHER,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968895333_107274_240">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968895333_107274_240">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmCodeEnumMetaClass : IEnum
@@ -152,6 +132,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(AlarmCodeEnum);
 
 		/// <inheritdoc />
@@ -178,15 +159,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private CRASHValue _CRASH;
-		/// <summary>
-		﻿/// spindle crashed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CRASHValue" path="/summary" />
 		public CRASHValue CRASH => _CRASH ?? (_CRASH = new CRASHValue());
 
-		/// <summary>
-		﻿/// spindle crashed.<br/><br />
-
+		/// <summary>﻿spindle crashed.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class CRASHValue : IEnumInstance
 		{
@@ -207,15 +185,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private JAMValue _JAM;
-		/// <summary>
-		﻿/// component jammed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="JAMValue" path="/summary" />
 		public JAMValue JAM => _JAM ?? (_JAM = new JAMValue());
 
-		/// <summary>
-		﻿/// component jammed.<br/><br />
-
+		/// <summary>﻿component jammed.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class JAMValue : IEnumInstance
 		{
@@ -236,15 +211,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private FAILUREValue _FAILURE;
-		/// <summary>
-		﻿/// component failed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FAILUREValue" path="/summary" />
 		public FAILUREValue FAILURE => _FAILURE ?? (_FAILURE = new FAILUREValue());
 
-		/// <summary>
-		﻿/// component failed.<br/><br />
-
+		/// <summary>﻿component failed.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class FAILUREValue : IEnumInstance
 		{
@@ -265,15 +237,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private FAULTValue _FAULT;
-		/// <summary>
-		﻿/// fault occurred on the component.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FAULTValue" path="/summary" />
 		public FAULTValue FAULT => _FAULT ?? (_FAULT = new FAULTValue());
 
-		/// <summary>
-		﻿/// fault occurred on the component.<br/><br />
-
+		/// <summary>﻿fault occurred on the component.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class FAULTValue : IEnumInstance
 		{
@@ -294,15 +263,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private STALLEDValue _STALLED;
-		/// <summary>
-		﻿/// component has stalled and cannot move.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STALLEDValue" path="/summary" />
 		public STALLEDValue STALLED => _STALLED ?? (_STALLED = new STALLEDValue());
 
-		/// <summary>
-		﻿/// component has stalled and cannot move.<br/><br />
-
+		/// <summary>﻿component has stalled and cannot move.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class STALLEDValue : IEnumInstance
 		{
@@ -323,15 +289,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OVERLOADValue _OVERLOAD;
-		/// <summary>
-		﻿/// component is overloaded.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OVERLOADValue" path="/summary" />
 		public OVERLOADValue OVERLOAD => _OVERLOAD ?? (_OVERLOAD = new OVERLOADValue());
 
-		/// <summary>
-		﻿/// component is overloaded.<br/><br />
-
+		/// <summary>﻿component is overloaded.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class OVERLOADValue : IEnumInstance
 		{
@@ -352,15 +315,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ESTOPValue _ESTOP;
-		/// <summary>
-		﻿/// ESTOP button was pressed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ESTOPValue" path="/summary" />
 		public ESTOPValue ESTOP => _ESTOP ?? (_ESTOP = new ESTOPValue());
 
-		/// <summary>
-		﻿/// ESTOP button was pressed.<br/><br />
-
+		/// <summary>﻿ESTOP button was pressed.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class ESTOPValue : IEnumInstance
 		{
@@ -381,15 +341,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MATERIALValue _MATERIAL;
-		/// <summary>
-		﻿/// problem with the material.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MATERIALValue" path="/summary" />
 		public MATERIALValue MATERIAL => _MATERIAL ?? (_MATERIAL = new MATERIALValue());
 
-		/// <summary>
-		﻿/// problem with the material.<br/><br />
-
+		/// <summary>﻿problem with the material.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class MATERIALValue : IEnumInstance
 		{
@@ -410,15 +367,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MESSAGEValue _MESSAGE;
-		/// <summary>
-		﻿/// system message.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MESSAGEValue" path="/summary" />
 		public MESSAGEValue MESSAGE => _MESSAGE ?? (_MESSAGE = new MESSAGEValue());
 
-		/// <summary>
-		﻿/// system message.<br/><br />
-
+		/// <summary>﻿system message.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class MESSAGEValue : IEnumInstance
 		{
@@ -439,15 +393,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OTHERValue _OTHER;
-		/// <summary>
-		﻿/// alarm is not in any of the above categories.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OTHERValue" path="/summary" />
 		public OTHERValue OTHER => _OTHER ?? (_OTHER = new OTHERValue());
 
-		/// <summary>
-		﻿/// alarm is not in any of the above categories.<br/><br />
-
+		/// <summary>﻿alarm is not in any of the above categories.<br /><br /><br />
+		/// Value for AlarmCodeEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmCodeEnum">AlarmCodeEnum</seealso>
 		/// </summary>
 		public sealed class OTHERValue : IEnumInstance
 		{

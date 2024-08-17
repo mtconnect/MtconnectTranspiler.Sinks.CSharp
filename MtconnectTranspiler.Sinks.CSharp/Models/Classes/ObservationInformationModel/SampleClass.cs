@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	/// <summary>
-	﻿/// <see cref="Observation">Observation</see> that is continuously changing or analog data value.<br /><br/><br />Description<br/><br />It provides the information and data reported from a piece of equipment for those <see cref="DataItem">DataItem</see> entities defined with <see cref="DataItem.category">category in DataItem</see> as <c>SAMPLE</c> in the <i>MTConnectDevices Response Document</i>.<br /><br /><see cref="Sample">Sample</see> <b>MUST</b> always be reported in <c>float</c>.<br /><br />{{figure(Sample Example)}} shows <see cref="Sample">Sample</see> type examples. It also shows an example for when the <see cref="Observation.result">result in Observation</see> is not available (<c>dataItemId</c>=<c>cspeed</c>).<br /><br />![Sample Example](figures/Sample%20Example.png "Sample Example"){: width="0.8"}<br /><br />> Note: See {{lst(sample-example)}} for the <i>XML</i> representation of the same example.<br /><br />The following <see cref="Value Properties of Sample">Value Properties of Sample</see> lists the additional and/or updated attributes for <see cref="Sample">Sample</see>.<br/><br/><br />
-
+	/// <summary>﻿<see cref="Observation">Observation</see> that is continuously changing or analog data value.<br /><br /><br /><br />Description<br /><br /><br />It provides the information and data reported from a piece of equipment for those <see cref="DataItem">DataItem</see> entities defined with <see cref="DataItem.category">category in DataItem</see> as <c>SAMPLE</c> in the <i>MTConnectDevices Response Document</i>.<br /><br /><see cref="Sample">Sample</see> <b>MUST</b> always be reported in <c>float</c>.<br /><br />{{figure(Sample Example)}} shows <see cref="Sample">Sample</see> type examples. It also shows an example for when the <see cref="Observation.result">result in Observation</see> is not available (<c>dataItemId</c>=<c>cspeed</c>).<br /><br />![Sample Example](figures/Sample%20Example.png "Sample Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(sample-example)}} for the <i>XML</i> representation of the same example.<br /><br />The following <see cref="Value Properties of Sample">Value Properties of Sample</see> lists the additional and/or updated attributes for <see cref="Sample">Sample</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531116_175117_25733">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -57,10 +58,14 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 		/// <inheritdoc />
 		public SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="SampleClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.ObservationGeneralization.ObservationGeneralizationProperties" />.
+		/// </summary>
 		public class SampleClassProperties : Mtconnect.ObservationInformationModel.ObservationGeneralization.ObservationGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Duration,
 				ResetTriggered,
 				SampleRate,
@@ -74,12 +79,11 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 			/// <inheritdoc cref="DurationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Duration</remarks>
 			/// </summary>
-			public DurationProperty Duration { get; } = new DurationProperty();
-			/// <summary>
-			﻿/// time-period over which the data was collected.<br /><br /><see cref="Sample.duration">duration in Sample</see> <b>MUST</b> be provided when the <see cref="DataItem.statistic">statistic in DataItem</see> is defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			public new DurationProperty Duration { get; } = new DurationProperty();
+			
+			/// <summary>﻿time-period over which the data was collected.<br /><br /><see cref="Sample.duration">duration in Sample</see> <b>MUST</b> be provided when the <see cref="DataItem.statistic">statistic in DataItem</see> is defined in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class DurationProperty : IProperty
+			public new sealed class DurationProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -132,12 +136,11 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 			/// <inheritdoc cref="ResetTriggeredProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ResetTriggered</remarks>
 			/// </summary>
-			public ResetTriggeredProperty ResetTriggered { get; } = new ResetTriggeredProperty();
-			/// <summary>
-			﻿/// identifies when a reported value has been reset and what has caused that reset to occur for those <see cref="DataItem">DataItem</see> entities that may be periodically reset to an initial value.<br /><br /><c>resetTriggered</c> <b>MUST</b> only be provided for the specific occurrence of a <see cref="DataItem">DataItem</see> reported in the <i>MTConnectStreams Response Document</i> when the reset occurred.<br/><br />
-
+			public new ResetTriggeredProperty ResetTriggered { get; } = new ResetTriggeredProperty();
+			
+			/// <summary>﻿identifies when a reported value has been reset and what has caused that reset to occur for those <see cref="DataItem">DataItem</see> entities that may be periodically reset to an initial value.<br /><br /><c>resetTriggered</c> <b>MUST</b> only be provided for the specific occurrence of a <see cref="DataItem">DataItem</see> reported in the <i>MTConnectStreams Response Document</i> when the reset occurred.<br /><br /><br />
 			/// </summary>
-			public sealed class ResetTriggeredProperty : IProperty
+			public new sealed class ResetTriggeredProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -190,12 +193,11 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 			/// <inheritdoc cref="SampleRateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SampleRate</remarks>
 			/// </summary>
-			public SampleRateProperty SampleRate { get; } = new SampleRateProperty();
-			/// <summary>
-			﻿/// rate at which successive samples of the value are recorded.<br /><br/><br />Description<br/><see cref="Sample.sampleRate">sampleRate in Sample</see> is expressed in terms of samples per second.<br /><br />If <see cref="Sample.sampleRate">sampleRate in Sample</see> is smaller than one, the number can be represented as a decimal type floating-point number. For example, a rate of 1 per 10 seconds would be 0.1 <see cref="Sample.sampleRate">sampleRate in Sample</see> <b>MUST</b> be provided when <see cref="DataItem.representation">representation in DataItem</see> defined in the <i>MTConnectDevices Response Document</i> is <c>TIME_SERIES</c>.<br /><br />When <see cref="DataItem.representation">representation in DataItem</see> is not <c>TIME_SERIES</c>, it <b>MUST</b> be assumed that the data reported is represented by a single value and <see cref="Sample.sampleRate">sampleRate in Sample</see> <b>MUST NOT</b> be reported in the <i>MTConnectStreams Response Document</i>.<br/><br/><br />
-
+			public new SampleRateProperty SampleRate { get; } = new SampleRateProperty();
+			
+			/// <summary>﻿rate at which successive samples of the value are recorded.<br /><br /><br /><br />Description<br /><br /><see cref="Sample.sampleRate">sampleRate in Sample</see> is expressed in terms of samples per second.<br /><br />If <see cref="Sample.sampleRate">sampleRate in Sample</see> is smaller than one, the number can be represented as a decimal type floating-point number. For example, a rate of 1 per 10 seconds would be 0.1 <see cref="Sample.sampleRate">sampleRate in Sample</see> <b>MUST</b> be provided when <see cref="DataItem.representation">representation in DataItem</see> defined in the <i>MTConnectDevices Response Document</i> is <c>TIME_SERIES</c>.<br /><br />When <see cref="DataItem.representation">representation in DataItem</see> is not <c>TIME_SERIES</c>, it <b>MUST</b> be assumed that the data reported is represented by a single value and <see cref="Sample.sampleRate">sampleRate in Sample</see> <b>MUST NOT</b> be reported in the <i>MTConnectStreams Response Document</i>.<br /><br /><br /><br /><br />
 			/// </summary>
-			public sealed class SampleRateProperty : IProperty
+			public new sealed class SampleRateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -252,12 +254,11 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 			/// <inheritdoc cref="StatisticProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Statistic</remarks>
 			/// </summary>
-			public StatisticProperty Statistic { get; } = new StatisticProperty();
-			/// <summary>
-			﻿/// type of statistical calculation defined by the <see cref="DataItem.statistic">statistic in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			public new StatisticProperty Statistic { get; } = new StatisticProperty();
+			
+			/// <summary>﻿type of statistical calculation defined by the <see cref="DataItem.statistic">statistic in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class StatisticProperty : IProperty
+			public new sealed class StatisticProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -308,8 +309,11 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 			/// <inheritdoc cref="OrganizedByComponentStreamPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizedByComponentStream</remarks>
 			/// </summary>
-			public OrganizedByComponentStreamPartProperty OrganizedByComponentStreamPart { get; } = new OrganizedByComponentStreamPartProperty();
-			public sealed class OrganizedByComponentStreamPartProperty : IProperty
+			public new OrganizedByComponentStreamPartProperty OrganizedByComponentStreamPart { get; } = new OrganizedByComponentStreamPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class OrganizedByComponentStreamPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -359,8 +363,11 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
-			public ResultProperty Result { get; } = new ResultProperty();
-			public sealed class ResultProperty : IProperty
+			public new ResultProperty Result { get; } = new ResultProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ResultProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -410,8 +417,11 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
-			public UnitsProperty Units { get; } = new UnitsProperty();
-			public sealed class UnitsProperty : IProperty
+			public new UnitsProperty Units { get; } = new UnitsProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -461,8 +471,11 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

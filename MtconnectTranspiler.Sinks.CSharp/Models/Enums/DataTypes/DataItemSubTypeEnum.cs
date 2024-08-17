@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579563592155_977172_22064">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579563592155_977172_22064">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum DataItemSubTypeEnum
 	{
-		/// <summary>
-		﻿/// relating to or derived in the simplest manner from the fundamental units or measurements.<br/><br />
-
+		/// <summary>﻿relating to or derived in the simplest manner from the fundamental units or measurements.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ABSOLUTE,
-		/// <summary>
-		﻿/// indication of the operating state of a mechanism.<br/><br />
-
+		/// <summary>﻿indication of the operating state of a mechanism.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTION,
-		/// <summary>
-		﻿/// measured or reported value of an <i>observation</i>.<br/><br />
-
+		/// <summary>﻿measured or reported value of an <i>observation</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTUAL,
-		/// <summary>
-		﻿/// all actions, items, or activities being counted independent of the outcome.<br/><br />
-
+		/// <summary>﻿all actions, items, or activities being counted independent of the outcome.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ALL,
-		/// <summary>
-		﻿/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. <br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
-
+		/// <summary>﻿measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. <br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -67,9 +58,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.6 according to https://model.mtconnect.org/#_Version_1.6")]
 		ALTERNATING,
-		/// <summary>
-		﻿/// A-Scale weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿A-Scale weighting factor on the frequency scale.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -77,9 +66,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		A_SCALE,
-		/// <summary>
-		﻿/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.<br/><br />
-
+		/// <summary>﻿when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,9 +74,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		AUXILIARY,
-		/// <summary>
-		﻿/// actions, items, or activities being counted that do not conform to specification or expectation.<br/><br />
-
+		/// <summary>﻿actions, items, or activities being counted that do not conform to specification or expectation.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -97,9 +82,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BAD,
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to deformation of a surface.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -107,9 +90,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BRINELL,
-		/// <summary>
-		﻿/// B-Scale weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿B-Scale weighting factor on the frequency scale.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -117,9 +98,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		B_SCALE,
-		/// <summary>
-		﻿/// directive value including adjustments such as an offset or overrides.<br/><br />
-
+		/// <summary>﻿directive value including adjustments such as an offset or overrides.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -127,9 +106,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COMMANDED,
-		/// <summary>
-		﻿/// amount of material consumed from an object or container during a manufacturing process.<br/><br />
-
+		/// <summary>﻿amount of material consumed from an object or container during a manufacturing process.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -137,9 +114,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CONSUMED,
-		/// <summary>
-		﻿/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.<br/><br />
-
+		/// <summary>﻿state of the enabling signal or control logic that enables or disables the function or operation of the entity.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -147,9 +122,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CONTROL,
-		/// <summary>
-		﻿/// C-Scale weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿C-Scale weighting factor on the frequency scale.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -157,9 +130,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		C_SCALE,
-		/// <summary>
-		﻿/// elapsed time of a temporary halt of action.<br/><br />
-
+		/// <summary>﻿elapsed time of a temporary halt of action.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -167,9 +138,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DELAY,
-		/// <summary>
-		﻿/// DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
-
+		/// <summary>﻿DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -179,9 +148,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.6 according to https://model.mtconnect.org/#_Version_1.6")]
 		DIRECT,
-		/// <summary>
-		﻿/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.<br/><br />
-
+		/// <summary>﻿setting or operator selection used to execute a test mode to confirm the execution of machine functions.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -189,9 +156,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DRY_RUN,
-		/// <summary>
-		﻿/// D-Scale weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿D-Scale weighting factor on the frequency scale.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -199,9 +164,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		D_SCALE,
-		/// <summary>
-		﻿/// relating to the expiration or end of useful life for a material or other physical item.<br/><br />
-
+		/// <summary>﻿relating to the expiration or end of useful life for a material or other physical item.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -209,9 +172,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EXPIRATION,
-		/// <summary>
-		﻿/// relating to the first use of a material or other physical item.<br/><br />
-
+		/// <summary>﻿relating to the first use of a material or other physical item.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -219,9 +180,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FIRST_USE,
-		/// <summary>
-		﻿/// actions, items, or activities being counted that conform to specification or expectation.<br/><br />
-
+		/// <summary>﻿actions, items, or activities being counted that conform to specification or expectation.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -229,9 +188,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		GOOD,
-		/// <summary>
-		﻿/// relating to or derived from the last <i>observation</i>.<br/><br />
-
+		/// <summary>﻿relating to or derived from the last <i>observation</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -239,9 +196,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		INCREMENTAL,
-		/// <summary>
-		﻿/// relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
-
+		/// <summary>﻿relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -249,9 +204,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		JOG,
-		/// <summary>
-		﻿/// indication of the position of a mechanism that may move in a lateral direction.<br/><br />
-
+		/// <summary>﻿indication of the position of a mechanism that may move in a lateral direction.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -259,9 +212,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LATERAL,
-		/// <summary>
-		﻿/// scale to measure the elasticity of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the elasticity of a surface.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -269,9 +220,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LEEB,
-		/// <summary>
-		﻿/// reference to a length type tool offset variable.<br/><br />
-
+		/// <summary>﻿reference to a length type tool offset variable.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -279,9 +228,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LENGTH,
-		/// <summary>
-		﻿/// state of the power source.<br/><br />
-
+		/// <summary>﻿state of the power source.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -289,9 +236,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LINE,
-		/// <summary>
-		﻿/// direction of motion of a linear motion.<br/><br />
-
+		/// <summary>﻿direction of motion of a linear motion.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -299,9 +244,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LINEAR,
-		/// <summary>
-		﻿/// indication that the subparts of a piece of equipment are under load.<br/><br />
-
+		/// <summary>﻿indication that the subparts of a piece of equipment are under load.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -309,9 +252,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LOADED,
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of the controller on a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -319,9 +260,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MACHINE_AXIS_LOCK,
-		/// <summary>
-		﻿/// relating to the primary logic or motion program currently being executed.<br/><br />
-
+		/// <summary>﻿relating to the primary logic or motion program currently being executed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -329,9 +268,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MAIN,
-		/// <summary>
-		﻿/// relating to maintenance on the piece of equipment.<br/><br />
-
+		/// <summary>﻿relating to maintenance on the piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -339,9 +276,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MAINTENANCE,
-		/// <summary>
-		﻿/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.<br/><br />
-
+		/// <summary>﻿indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -349,9 +284,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MANUAL_UNCLAMP,
-		/// <summary>
-		﻿/// related to the production of a material or other physical item.<br/><br />
-
+		/// <summary>﻿related to the production of a material or other physical item.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -359,9 +292,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MANUFACTURE,
-		/// <summary>
-		﻿/// maximum value.<br/><br />
-
+		/// <summary>﻿maximum value.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -369,9 +300,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MAXIMUM,
-		/// <summary>
-		﻿/// minimum value.<br/><br />
-
+		/// <summary>﻿minimum value.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -379,9 +308,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MINIMUM,
-		/// <summary>
-		﻿/// scale to measure the resistance to scratching of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to scratching of a surface.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -389,9 +316,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MOHS,
-		/// <summary>
-		﻿/// indication of the open or closed state of a mechanism.<br/><br />
-
+		/// <summary>﻿indication of the open or closed state of a mechanism.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -399,9 +324,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MOTION,
-		/// <summary>
-		﻿/// no weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿no weighting factor on the frequency scale.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -409,9 +332,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		NO_SCALE,
-		/// <summary>
-		﻿/// piece of equipment that is powered or performing any activity.<br/><br />
-
+		/// <summary>﻿piece of equipment that is powered or performing any activity.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -419,9 +340,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OPERATING,
-		/// <summary>
-		﻿/// relating to the person currently responsible for operating the piece of equipment.<br/><br />
-
+		/// <summary>﻿relating to the person currently responsible for operating the piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -429,9 +348,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OPERATOR,
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of the controller on a piece of equipment. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -439,9 +356,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OPTIONAL_STOP,
-		/// <summary>
-		﻿/// overridden value.<br/><br />
-
+		/// <summary>﻿overridden value.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -449,9 +364,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OVERRIDE,
-		/// <summary>
-		﻿/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.<br/><br />
-
+		/// <summary>﻿piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -459,9 +372,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		POWERED,
-		/// <summary>
-		﻿/// main or most important.<br/><br />
-
+		/// <summary>﻿main or most important.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -469,9 +380,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PRIMARY,
-		/// <summary>
-		﻿/// position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
-
+		/// <summary>﻿position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -479,9 +388,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROBE,
-		/// <summary>
-		﻿/// relating to production of a part or product on a piece of equipment.<br/><br />
-
+		/// <summary>﻿relating to production of a part or product on a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -489,9 +396,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS,
-		/// <summary>
-		﻿/// directive value without offsets and adjustments.<br/><br />
-
+		/// <summary>﻿directive value without offsets and adjustments.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -499,9 +404,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAMMED,
-		/// <summary>
-		﻿/// reference to a radial type tool offset variable.<br/><br />
-
+		/// <summary>﻿reference to a radial type tool offset variable.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -509,9 +412,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RADIAL,
-		/// <summary>
-		﻿/// performing an operation faster or in less time than nominal rate.<br/><br />
-
+		/// <summary>﻿performing an operation faster or in less time than nominal rate.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -519,9 +420,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RAPID,
-		/// <summary>
-		﻿/// remaining measure or count of an action, object or activity.<br/><br />
-
+		/// <summary>﻿remaining measure or count of an action, object or activity.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -529,9 +428,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		REMAINING,
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to deformation of a surface.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -539,9 +436,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ROCKWELL,
-		/// <summary>
-		﻿/// direction of a rotary motion using the right hand rule convention.<br/><br />
-
+		/// <summary>﻿direction of a rotary motion using the right hand rule convention.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -549,9 +444,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ROTARY,
-		/// <summary>
-		﻿/// identity of a control program that is used to specify the order of execution of other programs.<br/><br />
-
+		/// <summary>﻿identity of a control program that is used to specify the order of execution of other programs.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -559,9 +452,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SCHEDULE,
-		/// <summary>
-		﻿/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.<br/><br />
-
+		/// <summary>﻿relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -569,9 +460,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SET_UP,
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to deformation of a surface.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -579,9 +468,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SHORE,
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of the controller on a piece of equipment. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -589,9 +476,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SINGLE_BLOCK,
-		/// <summary>
-		﻿/// standard measure of an object or an action.<br/><br />
-
+		/// <summary>﻿standard measure of an object or an action.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -599,9 +484,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		STANDARD,
-		/// <summary>
-		﻿/// boundary when an activity or an event commences.<br/><br />
-
+		/// <summary>﻿boundary when an activity or an event commences.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -609,9 +492,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		START,
-		/// <summary>
-		﻿/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.<br/><br />
-
+		/// <summary>﻿indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -619,9 +500,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SWITCHED,
-		/// <summary>
-		﻿/// goal of the operation or process.<br/><br />
-
+		/// <summary>﻿goal of the operation or process.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -629,9 +508,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TARGET,
-		/// <summary>
-		﻿/// relating to the end or completion of an activity or event.<br/><br />
-
+		/// <summary>﻿relating to the end or completion of an activity or event.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -639,9 +516,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TARGET_COMPLETION,
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of the controller on a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -649,9 +524,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TOOL_CHANGE_STOP,
-		/// <summary>
-		﻿/// remaining usable measure of an object or action.<br/><br />
-
+		/// <summary>﻿remaining usable measure of an object or action.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -659,9 +532,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		USEABLE,
-		/// <summary>
-		﻿/// indication of the position of a mechanism that may move in a vertical direction.<br/><br />
-
+		/// <summary>﻿indication of the position of a mechanism that may move in a vertical direction.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -669,9 +540,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VERTICAL,
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to deformation of a surface.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -679,9 +548,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VICKERS,
-		/// <summary>
-		﻿/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.<br/><br />
-
+		/// <summary>﻿piece of equipment performing any activity, the equipment is active and performing a function under load or not.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -689,9 +556,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WORKING,
-		/// <summary>
-		﻿/// IPV4 network address of the <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿IPV4 network address of the <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -699,9 +564,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		IPV4_ADDRESS,
-		/// <summary>
-		﻿/// IPV6 network address of the <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿IPV6 network address of the <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -709,9 +572,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		IPV6_ADDRESS,
-		/// <summary>
-		﻿/// Gateway for the <see cref="Component">Component</see> network.<br/><br />
-
+		/// <summary>﻿Gateway for the <see cref="Component">Component</see> network.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -719,9 +580,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		GATEWAY,
-		/// <summary>
-		﻿/// SubNet mask for the <see cref="Component">Component</see> network.<br /><br/><br />
-
+		/// <summary>﻿SubNet mask for the <see cref="Component">Component</see> network.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -729,9 +588,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SUBNET_MASK,
-		/// <summary>
-		﻿/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.<br/><br />
-
+		/// <summary>﻿layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -739,9 +596,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VLAN_ID,
-		/// <summary>
-		﻿/// Media Access Control Address. The unique physical address of the network hardware.<br/><br />
-
+		/// <summary>﻿Media Access Control Address. The unique physical address of the network hardware.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -749,9 +604,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MAC_ADDRESS,
-		/// <summary>
-		﻿/// identifies whether the connection type is wireless.<br/><br />
-
+		/// <summary>﻿identifies whether the connection type is wireless.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -759,9 +612,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WIRELESS,
-		/// <summary>
-		﻿/// license code to validate or activate the hardware or software.<br/><br />
-
+		/// <summary>﻿license code to validate or activate the hardware or software.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -769,9 +620,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LICENSE,
-		/// <summary>
-		﻿/// version of the hardware or software.<br /><br/><br />
-
+		/// <summary>﻿version of the hardware or software.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -779,9 +628,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VERSION,
-		/// <summary>
-		﻿/// date the hardware or software was released for general use.<br/><br />
-
+		/// <summary>﻿date the hardware or software was released for general use.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -789,9 +636,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RELEASE_DATE,
-		/// <summary>
-		﻿/// date the hardware or software was installed.<br/><br />
-
+		/// <summary>﻿date the hardware or software was installed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -799,9 +644,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		INSTALL_DATE,
-		/// <summary>
-		﻿/// corporate identity for the maker of the hardware or software.<br/><br />
-
+		/// <summary>﻿corporate identity for the maker of the hardware or software.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -809,9 +652,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MANUFACTURER,
-		/// <summary>
-		﻿/// universally unique identifier as specified in ISO 11578 or RFC 4122.<br/><br />
-
+		/// <summary>﻿universally unique identifier as specified in ISO 11578 or RFC 4122.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -819,9 +660,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		UUID,
-		/// <summary>
-		﻿/// serial number that uniquely identifies a specific part.<br/><br />
-
+		/// <summary>﻿serial number that uniquely identifies a specific part.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -829,9 +668,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SERIAL_NUMBER,
-		/// <summary>
-		﻿/// material that is used to produce parts.<br/><br />
-
+		/// <summary>﻿material that is used to produce parts.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -839,9 +676,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RAW_MATERIAL,
-		/// <summary>
-		﻿/// group of parts tracked as a lot.<br/><br />
-
+		/// <summary>﻿group of parts tracked as a lot.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -849,9 +684,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LOT,
-		/// <summary>
-		﻿/// group of parts produced in a batch.<br/><br />
-
+		/// <summary>﻿group of parts produced in a batch.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -859,9 +692,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BATCH,
-		/// <summary>
-		﻿/// material heat number.<br/><br />
-
+		/// <summary>﻿material heat number.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -869,9 +700,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		HEAT_TREAT,
-		/// <summary>
-		﻿/// particular part design or model.<br/><br />
-
+		/// <summary>﻿particular part design or model.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -879,9 +708,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_NUMBER,
-		/// <summary>
-		﻿/// group of parts having similarities in geometry, manufacturing process, and/or functions.<br/><br />
-
+		/// <summary>﻿group of parts having similarities in geometry, manufacturing process, and/or functions.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -889,9 +716,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_FAMILY,
-		/// <summary>
-		﻿/// word or set of words by which a part is known, addressed, or referred to.<br/><br />
-
+		/// <summary>﻿word or set of words by which a part is known, addressed, or referred to.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -899,9 +724,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_NAME,
-		/// <summary>
-		﻿/// step in the process plan that this occurrence corresponds to. <br/><br />
-
+		/// <summary>﻿step in the process plan that this occurrence corresponds to. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -909,9 +732,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS_STEP,
-		/// <summary>
-		﻿/// process plan that a process occurrence belongs to.<br/><br />
-
+		/// <summary>﻿process plan that a process occurrence belongs to.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -919,9 +740,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS_PLAN,
-		/// <summary>
-		﻿/// authorization of a process occurrence.<br/><br />
-
+		/// <summary>﻿authorization of a process occurrence.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -929,9 +748,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ORDER_NUMBER,
-		/// <summary>
-		﻿/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br/><br />
-
+		/// <summary>﻿word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -939,9 +756,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS_NAME,
-		/// <summary>
-		﻿/// reference to a ISO 10303 Executable.<br/><br />
-
+		/// <summary>﻿reference to a ISO 10303 Executable.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -949,9 +764,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ISO_STEP_EXECUTABLE,
-		/// <summary>
-		﻿/// associated with the completion of an activity or event.<br/><br />
-
+		/// <summary>﻿associated with the completion of an activity or event.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -959,9 +772,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COMPLETE,
-		/// <summary>
-		﻿/// relating to logic or motion program currently executing.<br/><br />
-
+		/// <summary>﻿relating to logic or motion program currently executing.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -969,9 +780,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVE,
-		/// <summary>
-		﻿/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.<br/><br />
-
+		/// <summary>﻿actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -979,9 +788,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FAILED,
-		/// <summary>
-		﻿/// actions or activities that were attempted, but terminated before they could be completed.<br/><br />
-
+		/// <summary>﻿actions or activities that were attempted, but terminated before they could be completed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -989,9 +796,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ABORTED,
-		/// <summary>
-		﻿/// boundary when an activity or an event terminates.<br/><br />
-
+		/// <summary>﻿boundary when an activity or an event terminates.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -999,9 +804,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ENDED,
-		/// <summary>
-		﻿/// amount discarded.<br/><br />
-
+		/// <summary>﻿amount discarded.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1009,9 +812,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WASTE,
-		/// <summary>
-		﻿/// amount included in the <i>part</i>.<br/><br />
-
+		/// <summary>﻿amount included in the <i>part</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1019,9 +820,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART,
-		/// <summary>
-		﻿/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.<br/><br />
-
+		/// <summary>﻿<i>request</i> by an <see cref="Interface">Interface</see> for a task.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1029,9 +828,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		REQUEST,
-		/// <summary>
-		﻿/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.<br/><br />
-
+		/// <summary>﻿<i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1039,9 +836,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RESPONSE,
-		/// <summary>
-		﻿/// phase or segment of a recipe or program.<br/><br />
-
+		/// <summary>﻿phase or segment of a recipe or program.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1049,9 +844,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVITY,
-		/// <summary>
-		﻿/// phase of a recipe process.<br/><br />
-
+		/// <summary>﻿phase of a recipe process.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1059,9 +852,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SEGMENT,
-		/// <summary>
-		﻿/// process as part of product production; can be a subprocess of a larger process.<br/><br />
-
+		/// <summary>﻿process as part of product production; can be a subprocess of a larger process.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1069,9 +860,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RECIPE,
-		/// <summary>
-		﻿/// step of a discrete manufacturing process.<br/><br />
-
+		/// <summary>﻿step of a discrete manufacturing process.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1079,9 +868,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OPERATION,
-		/// <summary>
-		﻿/// observed as a binary data type.<br/><br />
-
+		/// <summary>﻿observed as a binary data type.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1089,9 +876,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BINARY,
-		/// <summary>
-		﻿/// observed as a boolean data type.<br/><br />
-
+		/// <summary>﻿observed as a boolean data type.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1099,9 +884,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BOOLEAN,
-		/// <summary>
-		﻿/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique.<br /><seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso><br/><br />
-
+		/// <summary>﻿observed as a set containing a restricted number of discrete values where each discrete value is named and unique.<br /><seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1109,9 +892,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ENUMERATED,
-		/// <summary>
-		﻿/// indicated by the presence or existence of something.<br/><br />
-
+		/// <summary>﻿indicated by the presence or existence of something.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1119,9 +900,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DETECT,
-		/// <summary>
-		﻿/// model info of the hardware or software.<br/><br />
-
+		/// <summary>﻿model info of the hardware or software.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1129,9 +908,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MODEL,
-		/// <summary>
-		﻿/// alternate or not primary.<br/><br />
-
+		/// <summary>﻿alternate or not primary.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1139,9 +916,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SECONDARY,
-		/// <summary>
-		﻿/// held near at hand and ready for use.<br/><br />
-
+		/// <summary>﻿held near at hand and ready for use.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1151,9 +926,8 @@ namespace Mtconnect.DataTypes
 		STANDBY,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579563592155_977172_22064">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579563592155_977172_22064">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DataItemSubTypeEnumMetaClass : IEnum
@@ -1164,6 +938,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(DataItemSubTypeEnum);
 
 		/// <inheritdoc />
@@ -1293,15 +1068,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ABSOLUTEValue _ABSOLUTE;
-		/// <summary>
-		﻿/// relating to or derived in the simplest manner from the fundamental units or measurements.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ABSOLUTEValue" path="/summary" />
 		public ABSOLUTEValue ABSOLUTE => _ABSOLUTE ?? (_ABSOLUTE = new ABSOLUTEValue());
 
-		/// <summary>
-		﻿/// relating to or derived in the simplest manner from the fundamental units or measurements.<br/><br />
-
+		/// <summary>﻿relating to or derived in the simplest manner from the fundamental units or measurements.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ABSOLUTEValue : IEnumInstance
 		{
@@ -1322,15 +1094,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTIONValue _ACTION;
-		/// <summary>
-		﻿/// indication of the operating state of a mechanism.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIONValue" path="/summary" />
 		public ACTIONValue ACTION => _ACTION ?? (_ACTION = new ACTIONValue());
 
-		/// <summary>
-		﻿/// indication of the operating state of a mechanism.<br/><br />
-
+		/// <summary>﻿indication of the operating state of a mechanism.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ACTIONValue : IEnumInstance
 		{
@@ -1351,15 +1120,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTUALValue _ACTUAL;
-		/// <summary>
-		﻿/// measured or reported value of an <i>observation</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTUALValue" path="/summary" />
 		public ACTUALValue ACTUAL => _ACTUAL ?? (_ACTUAL = new ACTUALValue());
 
-		/// <summary>
-		﻿/// measured or reported value of an <i>observation</i>.<br/><br />
-
+		/// <summary>﻿measured or reported value of an <i>observation</i>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ACTUALValue : IEnumInstance
 		{
@@ -1380,15 +1146,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ALLValue _ALL;
-		/// <summary>
-		﻿/// all actions, items, or activities being counted independent of the outcome.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ALLValue" path="/summary" />
 		public ALLValue ALL => _ALL ?? (_ALL = new ALLValue());
 
-		/// <summary>
-		﻿/// all actions, items, or activities being counted independent of the outcome.<br/><br />
-
+		/// <summary>﻿all actions, items, or activities being counted independent of the outcome.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ALLValue : IEnumInstance
 		{
@@ -1409,15 +1172,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ALTERNATINGValue _ALTERNATING;
-		/// <summary>
-		﻿/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. <br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ALTERNATINGValue" path="/summary" />
 		public ALTERNATINGValue ALTERNATING => _ALTERNATING ?? (_ALTERNATING = new ALTERNATINGValue());
 
-		/// <summary>
-		﻿/// measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. <br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
-
+		/// <summary>﻿measurement of alternating voltage or current. If not specified further in statistic, defaults to RMS voltage. <br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ALTERNATINGValue : IEnumInstance
 		{
@@ -1440,15 +1200,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private A_SCALEValue _A_SCALE;
-		/// <summary>
-		﻿/// A-Scale weighting factor on the frequency scale.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="A_SCALEValue" path="/summary" />
 		public A_SCALEValue A_SCALE => _A_SCALE ?? (_A_SCALE = new A_SCALEValue());
 
-		/// <summary>
-		﻿/// A-Scale weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿A-Scale weighting factor on the frequency scale.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class A_SCALEValue : IEnumInstance
 		{
@@ -1469,15 +1226,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private AUXILIARYValue _AUXILIARY;
-		/// <summary>
-		﻿/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="AUXILIARYValue" path="/summary" />
 		public AUXILIARYValue AUXILIARY => _AUXILIARY ?? (_AUXILIARY = new AUXILIARYValue());
 
-		/// <summary>
-		﻿/// when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.<br/><br />
-
+		/// <summary>﻿when multiple locations on a piece of bar stock being feed by a bar feeder are referenced as the indication of whether the end of that piece of bar stock has been reached.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class AUXILIARYValue : IEnumInstance
 		{
@@ -1498,15 +1252,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private BADValue _BAD;
-		/// <summary>
-		﻿/// actions, items, or activities being counted that do not conform to specification or expectation.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BADValue" path="/summary" />
 		public BADValue BAD => _BAD ?? (_BAD = new BADValue());
 
-		/// <summary>
-		﻿/// actions, items, or activities being counted that do not conform to specification or expectation.<br/><br />
-
+		/// <summary>﻿actions, items, or activities being counted that do not conform to specification or expectation.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class BADValue : IEnumInstance
 		{
@@ -1527,15 +1278,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private BRINELLValue _BRINELL;
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BRINELLValue" path="/summary" />
 		public BRINELLValue BRINELL => _BRINELL ?? (_BRINELL = new BRINELLValue());
 
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to deformation of a surface.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class BRINELLValue : IEnumInstance
 		{
@@ -1556,15 +1304,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private B_SCALEValue _B_SCALE;
-		/// <summary>
-		﻿/// B-Scale weighting factor on the frequency scale.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="B_SCALEValue" path="/summary" />
 		public B_SCALEValue B_SCALE => _B_SCALE ?? (_B_SCALE = new B_SCALEValue());
 
-		/// <summary>
-		﻿/// B-Scale weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿B-Scale weighting factor on the frequency scale.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class B_SCALEValue : IEnumInstance
 		{
@@ -1585,15 +1330,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private COMMANDEDValue _COMMANDED;
-		/// <summary>
-		﻿/// directive value including adjustments such as an offset or overrides.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COMMANDEDValue" path="/summary" />
 		public COMMANDEDValue COMMANDED => _COMMANDED ?? (_COMMANDED = new COMMANDEDValue());
 
-		/// <summary>
-		﻿/// directive value including adjustments such as an offset or overrides.<br/><br />
-
+		/// <summary>﻿directive value including adjustments such as an offset or overrides.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class COMMANDEDValue : IEnumInstance
 		{
@@ -1614,15 +1356,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private CONSUMEDValue _CONSUMED;
-		/// <summary>
-		﻿/// amount of material consumed from an object or container during a manufacturing process.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CONSUMEDValue" path="/summary" />
 		public CONSUMEDValue CONSUMED => _CONSUMED ?? (_CONSUMED = new CONSUMEDValue());
 
-		/// <summary>
-		﻿/// amount of material consumed from an object or container during a manufacturing process.<br/><br />
-
+		/// <summary>﻿amount of material consumed from an object or container during a manufacturing process.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class CONSUMEDValue : IEnumInstance
 		{
@@ -1643,15 +1382,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private CONTROLValue _CONTROL;
-		/// <summary>
-		﻿/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CONTROLValue" path="/summary" />
 		public CONTROLValue CONTROL => _CONTROL ?? (_CONTROL = new CONTROLValue());
 
-		/// <summary>
-		﻿/// state of the enabling signal or control logic that enables or disables the function or operation of the entity.<br/><br />
-
+		/// <summary>﻿state of the enabling signal or control logic that enables or disables the function or operation of the entity.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class CONTROLValue : IEnumInstance
 		{
@@ -1672,15 +1408,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private C_SCALEValue _C_SCALE;
-		/// <summary>
-		﻿/// C-Scale weighting factor on the frequency scale.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="C_SCALEValue" path="/summary" />
 		public C_SCALEValue C_SCALE => _C_SCALE ?? (_C_SCALE = new C_SCALEValue());
 
-		/// <summary>
-		﻿/// C-Scale weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿C-Scale weighting factor on the frequency scale.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class C_SCALEValue : IEnumInstance
 		{
@@ -1701,15 +1434,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private DELAYValue _DELAY;
-		/// <summary>
-		﻿/// elapsed time of a temporary halt of action.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DELAYValue" path="/summary" />
 		public DELAYValue DELAY => _DELAY ?? (_DELAY = new DELAYValue());
 
-		/// <summary>
-		﻿/// elapsed time of a temporary halt of action.<br/><br />
-
+		/// <summary>﻿elapsed time of a temporary halt of action.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class DELAYValue : IEnumInstance
 		{
@@ -1730,15 +1460,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private DIRECTValue _DIRECT;
-		/// <summary>
-		﻿/// DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DIRECTValue" path="/summary" />
 		public DIRECTValue DIRECT => _DIRECT ?? (_DIRECT = new DIRECTValue());
 
-		/// <summary>
-		﻿/// DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br/><br />
-
+		/// <summary>﻿DC current or voltage.<br /><br /><b>DEPRECATED</b> in <i>Version 1.6</i>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class DIRECTValue : IEnumInstance
 		{
@@ -1761,15 +1488,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private DRY_RUNValue _DRY_RUN;
-		/// <summary>
-		﻿/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DRY_RUNValue" path="/summary" />
 		public DRY_RUNValue DRY_RUN => _DRY_RUN ?? (_DRY_RUN = new DRY_RUNValue());
 
-		/// <summary>
-		﻿/// setting or operator selection used to execute a test mode to confirm the execution of machine functions.<br/><br />
-
+		/// <summary>﻿setting or operator selection used to execute a test mode to confirm the execution of machine functions.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class DRY_RUNValue : IEnumInstance
 		{
@@ -1790,15 +1514,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private D_SCALEValue _D_SCALE;
-		/// <summary>
-		﻿/// D-Scale weighting factor on the frequency scale.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="D_SCALEValue" path="/summary" />
 		public D_SCALEValue D_SCALE => _D_SCALE ?? (_D_SCALE = new D_SCALEValue());
 
-		/// <summary>
-		﻿/// D-Scale weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿D-Scale weighting factor on the frequency scale.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class D_SCALEValue : IEnumInstance
 		{
@@ -1819,15 +1540,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private EXPIRATIONValue _EXPIRATION;
-		/// <summary>
-		﻿/// relating to the expiration or end of useful life for a material or other physical item.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EXPIRATIONValue" path="/summary" />
 		public EXPIRATIONValue EXPIRATION => _EXPIRATION ?? (_EXPIRATION = new EXPIRATIONValue());
 
-		/// <summary>
-		﻿/// relating to the expiration or end of useful life for a material or other physical item.<br/><br />
-
+		/// <summary>﻿relating to the expiration or end of useful life for a material or other physical item.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class EXPIRATIONValue : IEnumInstance
 		{
@@ -1848,15 +1566,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private FIRST_USEValue _FIRST_USE;
-		/// <summary>
-		﻿/// relating to the first use of a material or other physical item.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FIRST_USEValue" path="/summary" />
 		public FIRST_USEValue FIRST_USE => _FIRST_USE ?? (_FIRST_USE = new FIRST_USEValue());
 
-		/// <summary>
-		﻿/// relating to the first use of a material or other physical item.<br/><br />
-
+		/// <summary>﻿relating to the first use of a material or other physical item.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class FIRST_USEValue : IEnumInstance
 		{
@@ -1877,15 +1592,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private GOODValue _GOOD;
-		/// <summary>
-		﻿/// actions, items, or activities being counted that conform to specification or expectation.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="GOODValue" path="/summary" />
 		public GOODValue GOOD => _GOOD ?? (_GOOD = new GOODValue());
 
-		/// <summary>
-		﻿/// actions, items, or activities being counted that conform to specification or expectation.<br/><br />
-
+		/// <summary>﻿actions, items, or activities being counted that conform to specification or expectation.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class GOODValue : IEnumInstance
 		{
@@ -1906,15 +1618,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private INCREMENTALValue _INCREMENTAL;
-		/// <summary>
-		﻿/// relating to or derived from the last <i>observation</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="INCREMENTALValue" path="/summary" />
 		public INCREMENTALValue INCREMENTAL => _INCREMENTAL ?? (_INCREMENTAL = new INCREMENTALValue());
 
-		/// <summary>
-		﻿/// relating to or derived from the last <i>observation</i>.<br/><br />
-
+		/// <summary>﻿relating to or derived from the last <i>observation</i>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class INCREMENTALValue : IEnumInstance
 		{
@@ -1935,15 +1644,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private JOGValue _JOG;
-		/// <summary>
-		﻿/// relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="JOGValue" path="/summary" />
 		public JOGValue JOG => _JOG ?? (_JOG = new JOGValue());
 
-		/// <summary>
-		﻿/// relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
-
+		/// <summary>﻿relating to momentary activation of a function or a movement.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class JOGValue : IEnumInstance
 		{
@@ -1966,15 +1672,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LATERALValue _LATERAL;
-		/// <summary>
-		﻿/// indication of the position of a mechanism that may move in a lateral direction.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LATERALValue" path="/summary" />
 		public LATERALValue LATERAL => _LATERAL ?? (_LATERAL = new LATERALValue());
 
-		/// <summary>
-		﻿/// indication of the position of a mechanism that may move in a lateral direction.<br/><br />
-
+		/// <summary>﻿indication of the position of a mechanism that may move in a lateral direction.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class LATERALValue : IEnumInstance
 		{
@@ -1995,15 +1698,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LEEBValue _LEEB;
-		/// <summary>
-		﻿/// scale to measure the elasticity of a surface.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LEEBValue" path="/summary" />
 		public LEEBValue LEEB => _LEEB ?? (_LEEB = new LEEBValue());
 
-		/// <summary>
-		﻿/// scale to measure the elasticity of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the elasticity of a surface.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class LEEBValue : IEnumInstance
 		{
@@ -2024,15 +1724,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LENGTHValue _LENGTH;
-		/// <summary>
-		﻿/// reference to a length type tool offset variable.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LENGTHValue" path="/summary" />
 		public LENGTHValue LENGTH => _LENGTH ?? (_LENGTH = new LENGTHValue());
 
-		/// <summary>
-		﻿/// reference to a length type tool offset variable.<br/><br />
-
+		/// <summary>﻿reference to a length type tool offset variable.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class LENGTHValue : IEnumInstance
 		{
@@ -2053,15 +1750,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LINEValue _LINE;
-		/// <summary>
-		﻿/// state of the power source.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LINEValue" path="/summary" />
 		public LINEValue LINE => _LINE ?? (_LINE = new LINEValue());
 
-		/// <summary>
-		﻿/// state of the power source.<br/><br />
-
+		/// <summary>﻿state of the power source.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class LINEValue : IEnumInstance
 		{
@@ -2082,15 +1776,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LINEARValue _LINEAR;
-		/// <summary>
-		﻿/// direction of motion of a linear motion.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LINEARValue" path="/summary" />
 		public LINEARValue LINEAR => _LINEAR ?? (_LINEAR = new LINEARValue());
 
-		/// <summary>
-		﻿/// direction of motion of a linear motion.<br/><br />
-
+		/// <summary>﻿direction of motion of a linear motion.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class LINEARValue : IEnumInstance
 		{
@@ -2111,15 +1802,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LOADEDValue _LOADED;
-		/// <summary>
-		﻿/// indication that the subparts of a piece of equipment are under load.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LOADEDValue" path="/summary" />
 		public LOADEDValue LOADED => _LOADED ?? (_LOADED = new LOADEDValue());
 
-		/// <summary>
-		﻿/// indication that the subparts of a piece of equipment are under load.<br/><br />
-
+		/// <summary>﻿indication that the subparts of a piece of equipment are under load.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class LOADEDValue : IEnumInstance
 		{
@@ -2140,15 +1828,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MACHINE_AXIS_LOCKValue _MACHINE_AXIS_LOCK;
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MACHINE_AXIS_LOCKValue" path="/summary" />
 		public MACHINE_AXIS_LOCKValue MACHINE_AXIS_LOCK => _MACHINE_AXIS_LOCK ?? (_MACHINE_AXIS_LOCK = new MACHINE_AXIS_LOCKValue());
 
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of the controller on a piece of equipment.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MACHINE_AXIS_LOCKValue : IEnumInstance
 		{
@@ -2169,15 +1854,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MAINValue _MAIN;
-		/// <summary>
-		﻿/// relating to the primary logic or motion program currently being executed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MAINValue" path="/summary" />
 		public MAINValue MAIN => _MAIN ?? (_MAIN = new MAINValue());
 
-		/// <summary>
-		﻿/// relating to the primary logic or motion program currently being executed.<br/><br />
-
+		/// <summary>﻿relating to the primary logic or motion program currently being executed.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MAINValue : IEnumInstance
 		{
@@ -2198,15 +1880,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MAINTENANCEValue _MAINTENANCE;
-		/// <summary>
-		﻿/// relating to maintenance on the piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MAINTENANCEValue" path="/summary" />
 		public MAINTENANCEValue MAINTENANCE => _MAINTENANCE ?? (_MAINTENANCE = new MAINTENANCEValue());
 
-		/// <summary>
-		﻿/// relating to maintenance on the piece of equipment.<br/><br />
-
+		/// <summary>﻿relating to maintenance on the piece of equipment.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MAINTENANCEValue : IEnumInstance
 		{
@@ -2227,15 +1906,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MANUAL_UNCLAMPValue _MANUAL_UNCLAMP;
-		/// <summary>
-		﻿/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MANUAL_UNCLAMPValue" path="/summary" />
 		public MANUAL_UNCLAMPValue MANUAL_UNCLAMP => _MANUAL_UNCLAMP ?? (_MANUAL_UNCLAMP = new MANUAL_UNCLAMPValue());
 
-		/// <summary>
-		﻿/// indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.<br/><br />
-
+		/// <summary>﻿indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MANUAL_UNCLAMPValue : IEnumInstance
 		{
@@ -2256,15 +1932,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MANUFACTUREValue _MANUFACTURE;
-		/// <summary>
-		﻿/// related to the production of a material or other physical item.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MANUFACTUREValue" path="/summary" />
 		public MANUFACTUREValue MANUFACTURE => _MANUFACTURE ?? (_MANUFACTURE = new MANUFACTUREValue());
 
-		/// <summary>
-		﻿/// related to the production of a material or other physical item.<br/><br />
-
+		/// <summary>﻿related to the production of a material or other physical item.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MANUFACTUREValue : IEnumInstance
 		{
@@ -2285,15 +1958,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MAXIMUMValue _MAXIMUM;
-		/// <summary>
-		﻿/// maximum value.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MAXIMUMValue" path="/summary" />
 		public MAXIMUMValue MAXIMUM => _MAXIMUM ?? (_MAXIMUM = new MAXIMUMValue());
 
-		/// <summary>
-		﻿/// maximum value.<br/><br />
-
+		/// <summary>﻿maximum value.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MAXIMUMValue : IEnumInstance
 		{
@@ -2314,15 +1984,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MINIMUMValue _MINIMUM;
-		/// <summary>
-		﻿/// minimum value.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MINIMUMValue" path="/summary" />
 		public MINIMUMValue MINIMUM => _MINIMUM ?? (_MINIMUM = new MINIMUMValue());
 
-		/// <summary>
-		﻿/// minimum value.<br/><br />
-
+		/// <summary>﻿minimum value.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MINIMUMValue : IEnumInstance
 		{
@@ -2343,15 +2010,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MOHSValue _MOHS;
-		/// <summary>
-		﻿/// scale to measure the resistance to scratching of a surface.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MOHSValue" path="/summary" />
 		public MOHSValue MOHS => _MOHS ?? (_MOHS = new MOHSValue());
 
-		/// <summary>
-		﻿/// scale to measure the resistance to scratching of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to scratching of a surface.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MOHSValue : IEnumInstance
 		{
@@ -2372,15 +2036,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MOTIONValue _MOTION;
-		/// <summary>
-		﻿/// indication of the open or closed state of a mechanism.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MOTIONValue" path="/summary" />
 		public MOTIONValue MOTION => _MOTION ?? (_MOTION = new MOTIONValue());
 
-		/// <summary>
-		﻿/// indication of the open or closed state of a mechanism.<br/><br />
-
+		/// <summary>﻿indication of the open or closed state of a mechanism.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MOTIONValue : IEnumInstance
 		{
@@ -2401,15 +2062,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private NO_SCALEValue _NO_SCALE;
-		/// <summary>
-		﻿/// no weighting factor on the frequency scale.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NO_SCALEValue" path="/summary" />
 		public NO_SCALEValue NO_SCALE => _NO_SCALE ?? (_NO_SCALE = new NO_SCALEValue());
 
-		/// <summary>
-		﻿/// no weighting factor on the frequency scale.<br/><br />
-
+		/// <summary>﻿no weighting factor on the frequency scale.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class NO_SCALEValue : IEnumInstance
 		{
@@ -2430,15 +2088,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OPERATINGValue _OPERATING;
-		/// <summary>
-		﻿/// piece of equipment that is powered or performing any activity.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OPERATINGValue" path="/summary" />
 		public OPERATINGValue OPERATING => _OPERATING ?? (_OPERATING = new OPERATINGValue());
 
-		/// <summary>
-		﻿/// piece of equipment that is powered or performing any activity.<br/><br />
-
+		/// <summary>﻿piece of equipment that is powered or performing any activity.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class OPERATINGValue : IEnumInstance
 		{
@@ -2459,15 +2114,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OPERATORValue _OPERATOR;
-		/// <summary>
-		﻿/// relating to the person currently responsible for operating the piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OPERATORValue" path="/summary" />
 		public OPERATORValue OPERATOR => _OPERATOR ?? (_OPERATOR = new OPERATORValue());
 
-		/// <summary>
-		﻿/// relating to the person currently responsible for operating the piece of equipment.<br/><br />
-
+		/// <summary>﻿relating to the person currently responsible for operating the piece of equipment.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class OPERATORValue : IEnumInstance
 		{
@@ -2488,15 +2140,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OPTIONAL_STOPValue _OPTIONAL_STOP;
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OPTIONAL_STOPValue" path="/summary" />
 		public OPTIONAL_STOPValue OPTIONAL_STOP => _OPTIONAL_STOP ?? (_OPTIONAL_STOP = new OPTIONAL_STOPValue());
 
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of the controller on a piece of equipment. <br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class OPTIONAL_STOPValue : IEnumInstance
 		{
@@ -2517,15 +2166,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OVERRIDEValue _OVERRIDE;
-		/// <summary>
-		﻿/// overridden value.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OVERRIDEValue" path="/summary" />
 		public OVERRIDEValue OVERRIDE => _OVERRIDE ?? (_OVERRIDE = new OVERRIDEValue());
 
-		/// <summary>
-		﻿/// overridden value.<br/><br />
-
+		/// <summary>﻿overridden value.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class OVERRIDEValue : IEnumInstance
 		{
@@ -2546,15 +2192,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private POWEREDValue _POWERED;
-		/// <summary>
-		﻿/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="POWEREDValue" path="/summary" />
 		public POWEREDValue POWERED => _POWERED ?? (_POWERED = new POWEREDValue());
 
-		/// <summary>
-		﻿/// piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.<br/><br />
-
+		/// <summary>﻿piece of equipment is powered and functioning or <see cref="Component">Component</see> that are required to remain on are powered.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class POWEREDValue : IEnumInstance
 		{
@@ -2575,15 +2218,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PRIMARYValue _PRIMARY;
-		/// <summary>
-		﻿/// main or most important.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PRIMARYValue" path="/summary" />
 		public PRIMARYValue PRIMARY => _PRIMARY ?? (_PRIMARY = new PRIMARYValue());
 
-		/// <summary>
-		﻿/// main or most important.<br/><br />
-
+		/// <summary>﻿main or most important.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PRIMARYValue : IEnumInstance
 		{
@@ -2604,15 +2244,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PROBEValue _PROBE;
-		/// <summary>
-		﻿/// position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROBEValue" path="/summary" />
 		public PROBEValue PROBE => _PROBE ?? (_PROBE = new PROBEValue());
 
-		/// <summary>
-		﻿/// position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br/><br />
-
+		/// <summary>﻿position provided by a measurement probe.<br /><br /><b>DEPRECATION WARNING</b>: May be deprecated in the future.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PROBEValue : IEnumInstance
 		{
@@ -2635,15 +2272,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PROCESSValue _PROCESS;
-		/// <summary>
-		﻿/// relating to production of a part or product on a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESSValue" path="/summary" />
 		public PROCESSValue PROCESS => _PROCESS ?? (_PROCESS = new PROCESSValue());
 
-		/// <summary>
-		﻿/// relating to production of a part or product on a piece of equipment.<br/><br />
-
+		/// <summary>﻿relating to production of a part or product on a piece of equipment.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PROCESSValue : IEnumInstance
 		{
@@ -2664,15 +2298,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PROGRAMMEDValue _PROGRAMMED;
-		/// <summary>
-		﻿/// directive value without offsets and adjustments.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAMMEDValue" path="/summary" />
 		public PROGRAMMEDValue PROGRAMMED => _PROGRAMMED ?? (_PROGRAMMED = new PROGRAMMEDValue());
 
-		/// <summary>
-		﻿/// directive value without offsets and adjustments.<br/><br />
-
+		/// <summary>﻿directive value without offsets and adjustments.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAMMEDValue : IEnumInstance
 		{
@@ -2693,15 +2324,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private RADIALValue _RADIAL;
-		/// <summary>
-		﻿/// reference to a radial type tool offset variable.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="RADIALValue" path="/summary" />
 		public RADIALValue RADIAL => _RADIAL ?? (_RADIAL = new RADIALValue());
 
-		/// <summary>
-		﻿/// reference to a radial type tool offset variable.<br/><br />
-
+		/// <summary>﻿reference to a radial type tool offset variable.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class RADIALValue : IEnumInstance
 		{
@@ -2722,15 +2350,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private RAPIDValue _RAPID;
-		/// <summary>
-		﻿/// performing an operation faster or in less time than nominal rate.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="RAPIDValue" path="/summary" />
 		public RAPIDValue RAPID => _RAPID ?? (_RAPID = new RAPIDValue());
 
-		/// <summary>
-		﻿/// performing an operation faster or in less time than nominal rate.<br/><br />
-
+		/// <summary>﻿performing an operation faster or in less time than nominal rate.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class RAPIDValue : IEnumInstance
 		{
@@ -2751,15 +2376,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private REMAININGValue _REMAINING;
-		/// <summary>
-		﻿/// remaining measure or count of an action, object or activity.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="REMAININGValue" path="/summary" />
 		public REMAININGValue REMAINING => _REMAINING ?? (_REMAINING = new REMAININGValue());
 
-		/// <summary>
-		﻿/// remaining measure or count of an action, object or activity.<br/><br />
-
+		/// <summary>﻿remaining measure or count of an action, object or activity.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class REMAININGValue : IEnumInstance
 		{
@@ -2780,15 +2402,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ROCKWELLValue _ROCKWELL;
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ROCKWELLValue" path="/summary" />
 		public ROCKWELLValue ROCKWELL => _ROCKWELL ?? (_ROCKWELL = new ROCKWELLValue());
 
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to deformation of a surface.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ROCKWELLValue : IEnumInstance
 		{
@@ -2809,15 +2428,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ROTARYValue _ROTARY;
-		/// <summary>
-		﻿/// direction of a rotary motion using the right hand rule convention.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ROTARYValue" path="/summary" />
 		public ROTARYValue ROTARY => _ROTARY ?? (_ROTARY = new ROTARYValue());
 
-		/// <summary>
-		﻿/// direction of a rotary motion using the right hand rule convention.<br/><br />
-
+		/// <summary>﻿direction of a rotary motion using the right hand rule convention.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ROTARYValue : IEnumInstance
 		{
@@ -2838,15 +2454,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SCHEDULEValue _SCHEDULE;
-		/// <summary>
-		﻿/// identity of a control program that is used to specify the order of execution of other programs.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SCHEDULEValue" path="/summary" />
 		public SCHEDULEValue SCHEDULE => _SCHEDULE ?? (_SCHEDULE = new SCHEDULEValue());
 
-		/// <summary>
-		﻿/// identity of a control program that is used to specify the order of execution of other programs.<br/><br />
-
+		/// <summary>﻿identity of a control program that is used to specify the order of execution of other programs.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SCHEDULEValue : IEnumInstance
 		{
@@ -2867,15 +2480,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SET_UPValue _SET_UP;
-		/// <summary>
-		﻿/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SET_UPValue" path="/summary" />
 		public SET_UPValue SET_UP => _SET_UP ?? (_SET_UP = new SET_UPValue());
 
-		/// <summary>
-		﻿/// relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.<br/><br />
-
+		/// <summary>﻿relating to the preparation of a piece of equipment for production or restoring the piece of equipment to a neutral state after production.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SET_UPValue : IEnumInstance
 		{
@@ -2896,15 +2506,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SHOREValue _SHORE;
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SHOREValue" path="/summary" />
 		public SHOREValue SHORE => _SHORE ?? (_SHORE = new SHOREValue());
 
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to deformation of a surface.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SHOREValue : IEnumInstance
 		{
@@ -2925,15 +2532,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SINGLE_BLOCKValue _SINGLE_BLOCK;
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SINGLE_BLOCKValue" path="/summary" />
 		public SINGLE_BLOCKValue SINGLE_BLOCK => _SINGLE_BLOCK ?? (_SINGLE_BLOCK = new SINGLE_BLOCKValue());
 
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment. <br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of the controller on a piece of equipment. <br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SINGLE_BLOCKValue : IEnumInstance
 		{
@@ -2954,15 +2558,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private STANDARDValue _STANDARD;
-		/// <summary>
-		﻿/// standard measure of an object or an action.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STANDARDValue" path="/summary" />
 		public STANDARDValue STANDARD => _STANDARD ?? (_STANDARD = new STANDARDValue());
 
-		/// <summary>
-		﻿/// standard measure of an object or an action.<br/><br />
-
+		/// <summary>﻿standard measure of an object or an action.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class STANDARDValue : IEnumInstance
 		{
@@ -2983,15 +2584,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private STARTValue _START;
-		/// <summary>
-		﻿/// boundary when an activity or an event commences.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STARTValue" path="/summary" />
 		public STARTValue START => _START ?? (_START = new STARTValue());
 
-		/// <summary>
-		﻿/// boundary when an activity or an event commences.<br/><br />
-
+		/// <summary>﻿boundary when an activity or an event commences.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class STARTValue : IEnumInstance
 		{
@@ -3012,15 +2610,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SWITCHEDValue _SWITCHED;
-		/// <summary>
-		﻿/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SWITCHEDValue" path="/summary" />
 		public SWITCHEDValue SWITCHED => _SWITCHED ?? (_SWITCHED = new SWITCHEDValue());
 
-		/// <summary>
-		﻿/// indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.<br/><br />
-
+		/// <summary>﻿indication of the activation state of a mechanism represented by a <see cref="Composition">Composition</see>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SWITCHEDValue : IEnumInstance
 		{
@@ -3041,15 +2636,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private TARGETValue _TARGET;
-		/// <summary>
-		﻿/// goal of the operation or process.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TARGETValue" path="/summary" />
 		public TARGETValue TARGET => _TARGET ?? (_TARGET = new TARGETValue());
 
-		/// <summary>
-		﻿/// goal of the operation or process.<br/><br />
-
+		/// <summary>﻿goal of the operation or process.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class TARGETValue : IEnumInstance
 		{
@@ -3070,15 +2662,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private TARGET_COMPLETIONValue _TARGET_COMPLETION;
-		/// <summary>
-		﻿/// relating to the end or completion of an activity or event.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TARGET_COMPLETIONValue" path="/summary" />
 		public TARGET_COMPLETIONValue TARGET_COMPLETION => _TARGET_COMPLETION ?? (_TARGET_COMPLETION = new TARGET_COMPLETIONValue());
 
-		/// <summary>
-		﻿/// relating to the end or completion of an activity or event.<br/><br />
-
+		/// <summary>﻿relating to the end or completion of an activity or event.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class TARGET_COMPLETIONValue : IEnumInstance
 		{
@@ -3099,15 +2688,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private TOOL_CHANGE_STOPValue _TOOL_CHANGE_STOP;
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOL_CHANGE_STOPValue" path="/summary" />
 		public TOOL_CHANGE_STOPValue TOOL_CHANGE_STOP => _TOOL_CHANGE_STOP ?? (_TOOL_CHANGE_STOP = new TOOL_CHANGE_STOPValue());
 
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of the controller on a piece of equipment.<br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of the controller on a piece of equipment.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class TOOL_CHANGE_STOPValue : IEnumInstance
 		{
@@ -3128,15 +2714,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private USEABLEValue _USEABLE;
-		/// <summary>
-		﻿/// remaining usable measure of an object or action.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="USEABLEValue" path="/summary" />
 		public USEABLEValue USEABLE => _USEABLE ?? (_USEABLE = new USEABLEValue());
 
-		/// <summary>
-		﻿/// remaining usable measure of an object or action.<br/><br />
-
+		/// <summary>﻿remaining usable measure of an object or action.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class USEABLEValue : IEnumInstance
 		{
@@ -3157,15 +2740,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private VERTICALValue _VERTICAL;
-		/// <summary>
-		﻿/// indication of the position of a mechanism that may move in a vertical direction.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VERTICALValue" path="/summary" />
 		public VERTICALValue VERTICAL => _VERTICAL ?? (_VERTICAL = new VERTICALValue());
 
-		/// <summary>
-		﻿/// indication of the position of a mechanism that may move in a vertical direction.<br/><br />
-
+		/// <summary>﻿indication of the position of a mechanism that may move in a vertical direction.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class VERTICALValue : IEnumInstance
 		{
@@ -3186,15 +2766,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private VICKERSValue _VICKERS;
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VICKERSValue" path="/summary" />
 		public VICKERSValue VICKERS => _VICKERS ?? (_VICKERS = new VICKERSValue());
 
-		/// <summary>
-		﻿/// scale to measure the resistance to deformation of a surface.<br/><br />
-
+		/// <summary>﻿scale to measure the resistance to deformation of a surface.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class VICKERSValue : IEnumInstance
 		{
@@ -3215,15 +2792,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private WORKINGValue _WORKING;
-		/// <summary>
-		﻿/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WORKINGValue" path="/summary" />
 		public WORKINGValue WORKING => _WORKING ?? (_WORKING = new WORKINGValue());
 
-		/// <summary>
-		﻿/// piece of equipment performing any activity, the equipment is active and performing a function under load or not.<br/><br />
-
+		/// <summary>﻿piece of equipment performing any activity, the equipment is active and performing a function under load or not.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class WORKINGValue : IEnumInstance
 		{
@@ -3244,15 +2818,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private IPV4_ADDRESSValue _IPV4_ADDRESS;
-		/// <summary>
-		﻿/// IPV4 network address of the <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="IPV4_ADDRESSValue" path="/summary" />
 		public IPV4_ADDRESSValue IPV4_ADDRESS => _IPV4_ADDRESS ?? (_IPV4_ADDRESS = new IPV4_ADDRESSValue());
 
-		/// <summary>
-		﻿/// IPV4 network address of the <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿IPV4 network address of the <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class IPV4_ADDRESSValue : IEnumInstance
 		{
@@ -3273,15 +2844,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private IPV6_ADDRESSValue _IPV6_ADDRESS;
-		/// <summary>
-		﻿/// IPV6 network address of the <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="IPV6_ADDRESSValue" path="/summary" />
 		public IPV6_ADDRESSValue IPV6_ADDRESS => _IPV6_ADDRESS ?? (_IPV6_ADDRESS = new IPV6_ADDRESSValue());
 
-		/// <summary>
-		﻿/// IPV6 network address of the <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿IPV6 network address of the <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class IPV6_ADDRESSValue : IEnumInstance
 		{
@@ -3302,15 +2870,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private GATEWAYValue _GATEWAY;
-		/// <summary>
-		﻿/// Gateway for the <see cref="Component">Component</see> network.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="GATEWAYValue" path="/summary" />
 		public GATEWAYValue GATEWAY => _GATEWAY ?? (_GATEWAY = new GATEWAYValue());
 
-		/// <summary>
-		﻿/// Gateway for the <see cref="Component">Component</see> network.<br/><br />
-
+		/// <summary>﻿Gateway for the <see cref="Component">Component</see> network.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class GATEWAYValue : IEnumInstance
 		{
@@ -3331,15 +2896,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SUBNET_MASKValue _SUBNET_MASK;
-		/// <summary>
-		﻿/// SubNet mask for the <see cref="Component">Component</see> network.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SUBNET_MASKValue" path="/summary" />
 		public SUBNET_MASKValue SUBNET_MASK => _SUBNET_MASK ?? (_SUBNET_MASK = new SUBNET_MASKValue());
 
-		/// <summary>
-		﻿/// SubNet mask for the <see cref="Component">Component</see> network.<br /><br/><br />
-
+		/// <summary>﻿SubNet mask for the <see cref="Component">Component</see> network.<br /><br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SUBNET_MASKValue : IEnumInstance
 		{
@@ -3360,15 +2922,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private VLAN_IDValue _VLAN_ID;
-		/// <summary>
-		﻿/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VLAN_IDValue" path="/summary" />
 		public VLAN_IDValue VLAN_ID => _VLAN_ID ?? (_VLAN_ID = new VLAN_IDValue());
 
-		/// <summary>
-		﻿/// layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.<br/><br />
-
+		/// <summary>﻿layer2 Virtual Local Network (VLAN) ID for the <see cref="Component">Component</see> network.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class VLAN_IDValue : IEnumInstance
 		{
@@ -3389,15 +2948,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MAC_ADDRESSValue _MAC_ADDRESS;
-		/// <summary>
-		﻿/// Media Access Control Address. The unique physical address of the network hardware.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MAC_ADDRESSValue" path="/summary" />
 		public MAC_ADDRESSValue MAC_ADDRESS => _MAC_ADDRESS ?? (_MAC_ADDRESS = new MAC_ADDRESSValue());
 
-		/// <summary>
-		﻿/// Media Access Control Address. The unique physical address of the network hardware.<br/><br />
-
+		/// <summary>﻿Media Access Control Address. The unique physical address of the network hardware.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MAC_ADDRESSValue : IEnumInstance
 		{
@@ -3418,15 +2974,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private WIRELESSValue _WIRELESS;
-		/// <summary>
-		﻿/// identifies whether the connection type is wireless.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WIRELESSValue" path="/summary" />
 		public WIRELESSValue WIRELESS => _WIRELESS ?? (_WIRELESS = new WIRELESSValue());
 
-		/// <summary>
-		﻿/// identifies whether the connection type is wireless.<br/><br />
-
+		/// <summary>﻿identifies whether the connection type is wireless.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class WIRELESSValue : IEnumInstance
 		{
@@ -3447,15 +3000,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LICENSEValue _LICENSE;
-		/// <summary>
-		﻿/// license code to validate or activate the hardware or software.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LICENSEValue" path="/summary" />
 		public LICENSEValue LICENSE => _LICENSE ?? (_LICENSE = new LICENSEValue());
 
-		/// <summary>
-		﻿/// license code to validate or activate the hardware or software.<br/><br />
-
+		/// <summary>﻿license code to validate or activate the hardware or software.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class LICENSEValue : IEnumInstance
 		{
@@ -3476,15 +3026,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private VERSIONValue _VERSION;
-		/// <summary>
-		﻿/// version of the hardware or software.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VERSIONValue" path="/summary" />
 		public VERSIONValue VERSION => _VERSION ?? (_VERSION = new VERSIONValue());
 
-		/// <summary>
-		﻿/// version of the hardware or software.<br /><br/><br />
-
+		/// <summary>﻿version of the hardware or software.<br /><br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class VERSIONValue : IEnumInstance
 		{
@@ -3505,15 +3052,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private RELEASE_DATEValue _RELEASE_DATE;
-		/// <summary>
-		﻿/// date the hardware or software was released for general use.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="RELEASE_DATEValue" path="/summary" />
 		public RELEASE_DATEValue RELEASE_DATE => _RELEASE_DATE ?? (_RELEASE_DATE = new RELEASE_DATEValue());
 
-		/// <summary>
-		﻿/// date the hardware or software was released for general use.<br/><br />
-
+		/// <summary>﻿date the hardware or software was released for general use.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class RELEASE_DATEValue : IEnumInstance
 		{
@@ -3534,15 +3078,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private INSTALL_DATEValue _INSTALL_DATE;
-		/// <summary>
-		﻿/// date the hardware or software was installed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="INSTALL_DATEValue" path="/summary" />
 		public INSTALL_DATEValue INSTALL_DATE => _INSTALL_DATE ?? (_INSTALL_DATE = new INSTALL_DATEValue());
 
-		/// <summary>
-		﻿/// date the hardware or software was installed.<br/><br />
-
+		/// <summary>﻿date the hardware or software was installed.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class INSTALL_DATEValue : IEnumInstance
 		{
@@ -3563,15 +3104,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MANUFACTURERValue _MANUFACTURER;
-		/// <summary>
-		﻿/// corporate identity for the maker of the hardware or software.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MANUFACTURERValue" path="/summary" />
 		public MANUFACTURERValue MANUFACTURER => _MANUFACTURER ?? (_MANUFACTURER = new MANUFACTURERValue());
 
-		/// <summary>
-		﻿/// corporate identity for the maker of the hardware or software.<br/><br />
-
+		/// <summary>﻿corporate identity for the maker of the hardware or software.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MANUFACTURERValue : IEnumInstance
 		{
@@ -3592,15 +3130,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private UUIDValue _UUID;
-		/// <summary>
-		﻿/// universally unique identifier as specified in ISO 11578 or RFC 4122.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UUIDValue" path="/summary" />
 		public UUIDValue UUID => _UUID ?? (_UUID = new UUIDValue());
 
-		/// <summary>
-		﻿/// universally unique identifier as specified in ISO 11578 or RFC 4122.<br/><br />
-
+		/// <summary>﻿universally unique identifier as specified in ISO 11578 or RFC 4122.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class UUIDValue : IEnumInstance
 		{
@@ -3621,15 +3156,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SERIAL_NUMBERValue _SERIAL_NUMBER;
-		/// <summary>
-		﻿/// serial number that uniquely identifies a specific part.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SERIAL_NUMBERValue" path="/summary" />
 		public SERIAL_NUMBERValue SERIAL_NUMBER => _SERIAL_NUMBER ?? (_SERIAL_NUMBER = new SERIAL_NUMBERValue());
 
-		/// <summary>
-		﻿/// serial number that uniquely identifies a specific part.<br/><br />
-
+		/// <summary>﻿serial number that uniquely identifies a specific part.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SERIAL_NUMBERValue : IEnumInstance
 		{
@@ -3650,15 +3182,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private RAW_MATERIALValue _RAW_MATERIAL;
-		/// <summary>
-		﻿/// material that is used to produce parts.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="RAW_MATERIALValue" path="/summary" />
 		public RAW_MATERIALValue RAW_MATERIAL => _RAW_MATERIAL ?? (_RAW_MATERIAL = new RAW_MATERIALValue());
 
-		/// <summary>
-		﻿/// material that is used to produce parts.<br/><br />
-
+		/// <summary>﻿material that is used to produce parts.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class RAW_MATERIALValue : IEnumInstance
 		{
@@ -3679,15 +3208,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LOTValue _LOT;
-		/// <summary>
-		﻿/// group of parts tracked as a lot.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LOTValue" path="/summary" />
 		public LOTValue LOT => _LOT ?? (_LOT = new LOTValue());
 
-		/// <summary>
-		﻿/// group of parts tracked as a lot.<br/><br />
-
+		/// <summary>﻿group of parts tracked as a lot.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class LOTValue : IEnumInstance
 		{
@@ -3708,15 +3234,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private BATCHValue _BATCH;
-		/// <summary>
-		﻿/// group of parts produced in a batch.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BATCHValue" path="/summary" />
 		public BATCHValue BATCH => _BATCH ?? (_BATCH = new BATCHValue());
 
-		/// <summary>
-		﻿/// group of parts produced in a batch.<br/><br />
-
+		/// <summary>﻿group of parts produced in a batch.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class BATCHValue : IEnumInstance
 		{
@@ -3737,15 +3260,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private HEAT_TREATValue _HEAT_TREAT;
-		/// <summary>
-		﻿/// material heat number.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="HEAT_TREATValue" path="/summary" />
 		public HEAT_TREATValue HEAT_TREAT => _HEAT_TREAT ?? (_HEAT_TREAT = new HEAT_TREATValue());
 
-		/// <summary>
-		﻿/// material heat number.<br/><br />
-
+		/// <summary>﻿material heat number.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class HEAT_TREATValue : IEnumInstance
 		{
@@ -3766,15 +3286,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PART_NUMBERValue _PART_NUMBER;
-		/// <summary>
-		﻿/// particular part design or model.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_NUMBERValue" path="/summary" />
 		public PART_NUMBERValue PART_NUMBER => _PART_NUMBER ?? (_PART_NUMBER = new PART_NUMBERValue());
 
-		/// <summary>
-		﻿/// particular part design or model.<br/><br />
-
+		/// <summary>﻿particular part design or model.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PART_NUMBERValue : IEnumInstance
 		{
@@ -3795,15 +3312,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PART_FAMILYValue _PART_FAMILY;
-		/// <summary>
-		﻿/// group of parts having similarities in geometry, manufacturing process, and/or functions.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_FAMILYValue" path="/summary" />
 		public PART_FAMILYValue PART_FAMILY => _PART_FAMILY ?? (_PART_FAMILY = new PART_FAMILYValue());
 
-		/// <summary>
-		﻿/// group of parts having similarities in geometry, manufacturing process, and/or functions.<br/><br />
-
+		/// <summary>﻿group of parts having similarities in geometry, manufacturing process, and/or functions.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PART_FAMILYValue : IEnumInstance
 		{
@@ -3824,15 +3338,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PART_NAMEValue _PART_NAME;
-		/// <summary>
-		﻿/// word or set of words by which a part is known, addressed, or referred to.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_NAMEValue" path="/summary" />
 		public PART_NAMEValue PART_NAME => _PART_NAME ?? (_PART_NAME = new PART_NAMEValue());
 
-		/// <summary>
-		﻿/// word or set of words by which a part is known, addressed, or referred to.<br/><br />
-
+		/// <summary>﻿word or set of words by which a part is known, addressed, or referred to.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PART_NAMEValue : IEnumInstance
 		{
@@ -3853,15 +3364,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PROCESS_STEPValue _PROCESS_STEP;
-		/// <summary>
-		﻿/// step in the process plan that this occurrence corresponds to. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_STEPValue" path="/summary" />
 		public PROCESS_STEPValue PROCESS_STEP => _PROCESS_STEP ?? (_PROCESS_STEP = new PROCESS_STEPValue());
 
-		/// <summary>
-		﻿/// step in the process plan that this occurrence corresponds to. <br/><br />
-
+		/// <summary>﻿step in the process plan that this occurrence corresponds to. <br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_STEPValue : IEnumInstance
 		{
@@ -3882,15 +3390,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PROCESS_PLANValue _PROCESS_PLAN;
-		/// <summary>
-		﻿/// process plan that a process occurrence belongs to.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_PLANValue" path="/summary" />
 		public PROCESS_PLANValue PROCESS_PLAN => _PROCESS_PLAN ?? (_PROCESS_PLAN = new PROCESS_PLANValue());
 
-		/// <summary>
-		﻿/// process plan that a process occurrence belongs to.<br/><br />
-
+		/// <summary>﻿process plan that a process occurrence belongs to.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_PLANValue : IEnumInstance
 		{
@@ -3911,15 +3416,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ORDER_NUMBERValue _ORDER_NUMBER;
-		/// <summary>
-		﻿/// authorization of a process occurrence.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ORDER_NUMBERValue" path="/summary" />
 		public ORDER_NUMBERValue ORDER_NUMBER => _ORDER_NUMBER ?? (_ORDER_NUMBER = new ORDER_NUMBERValue());
 
-		/// <summary>
-		﻿/// authorization of a process occurrence.<br/><br />
-
+		/// <summary>﻿authorization of a process occurrence.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ORDER_NUMBERValue : IEnumInstance
 		{
@@ -3940,15 +3442,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PROCESS_NAMEValue _PROCESS_NAME;
-		/// <summary>
-		﻿/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_NAMEValue" path="/summary" />
 		public PROCESS_NAMEValue PROCESS_NAME => _PROCESS_NAME ?? (_PROCESS_NAME = new PROCESS_NAMEValue());
 
-		/// <summary>
-		﻿/// word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br/><br />
-
+		/// <summary>﻿word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to.<br /><br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_NAMEValue : IEnumInstance
 		{
@@ -3969,15 +3468,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ISO_STEP_EXECUTABLEValue _ISO_STEP_EXECUTABLE;
-		/// <summary>
-		﻿/// reference to a ISO 10303 Executable.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ISO_STEP_EXECUTABLEValue" path="/summary" />
 		public ISO_STEP_EXECUTABLEValue ISO_STEP_EXECUTABLE => _ISO_STEP_EXECUTABLE ?? (_ISO_STEP_EXECUTABLE = new ISO_STEP_EXECUTABLEValue());
 
-		/// <summary>
-		﻿/// reference to a ISO 10303 Executable.<br/><br />
-
+		/// <summary>﻿reference to a ISO 10303 Executable.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ISO_STEP_EXECUTABLEValue : IEnumInstance
 		{
@@ -3998,15 +3494,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private COMPLETEValue _COMPLETE;
-		/// <summary>
-		﻿/// associated with the completion of an activity or event.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COMPLETEValue" path="/summary" />
 		public COMPLETEValue COMPLETE => _COMPLETE ?? (_COMPLETE = new COMPLETEValue());
 
-		/// <summary>
-		﻿/// associated with the completion of an activity or event.<br/><br />
-
+		/// <summary>﻿associated with the completion of an activity or event.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class COMPLETEValue : IEnumInstance
 		{
@@ -4027,15 +3520,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTIVEValue _ACTIVE;
-		/// <summary>
-		﻿/// relating to logic or motion program currently executing.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVEValue" path="/summary" />
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
-		/// <summary>
-		﻿/// relating to logic or motion program currently executing.<br/><br />
-
+		/// <summary>﻿relating to logic or motion program currently executing.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -4056,15 +3546,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private FAILEDValue _FAILED;
-		/// <summary>
-		﻿/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FAILEDValue" path="/summary" />
 		public FAILEDValue FAILED => _FAILED ?? (_FAILED = new FAILEDValue());
 
-		/// <summary>
-		﻿/// actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.<br/><br />
-
+		/// <summary>﻿actions or activities that were attempted , but failed to complete or resulted in an unexpected or unacceptable outcome.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class FAILEDValue : IEnumInstance
 		{
@@ -4085,15 +3572,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ABORTEDValue _ABORTED;
-		/// <summary>
-		﻿/// actions or activities that were attempted, but terminated before they could be completed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ABORTEDValue" path="/summary" />
 		public ABORTEDValue ABORTED => _ABORTED ?? (_ABORTED = new ABORTEDValue());
 
-		/// <summary>
-		﻿/// actions or activities that were attempted, but terminated before they could be completed.<br/><br />
-
+		/// <summary>﻿actions or activities that were attempted, but terminated before they could be completed.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ABORTEDValue : IEnumInstance
 		{
@@ -4114,15 +3598,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ENDEDValue _ENDED;
-		/// <summary>
-		﻿/// boundary when an activity or an event terminates.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ENDEDValue" path="/summary" />
 		public ENDEDValue ENDED => _ENDED ?? (_ENDED = new ENDEDValue());
 
-		/// <summary>
-		﻿/// boundary when an activity or an event terminates.<br/><br />
-
+		/// <summary>﻿boundary when an activity or an event terminates.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ENDEDValue : IEnumInstance
 		{
@@ -4143,15 +3624,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private WASTEValue _WASTE;
-		/// <summary>
-		﻿/// amount discarded.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WASTEValue" path="/summary" />
 		public WASTEValue WASTE => _WASTE ?? (_WASTE = new WASTEValue());
 
-		/// <summary>
-		﻿/// amount discarded.<br/><br />
-
+		/// <summary>﻿amount discarded.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class WASTEValue : IEnumInstance
 		{
@@ -4172,15 +3650,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PARTValue _PART;
-		/// <summary>
-		﻿/// amount included in the <i>part</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PARTValue" path="/summary" />
 		public PARTValue PART => _PART ?? (_PART = new PARTValue());
 
-		/// <summary>
-		﻿/// amount included in the <i>part</i>.<br/><br />
-
+		/// <summary>﻿amount included in the <i>part</i>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class PARTValue : IEnumInstance
 		{
@@ -4201,15 +3676,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private REQUESTValue _REQUEST;
-		/// <summary>
-		﻿/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="REQUESTValue" path="/summary" />
 		public REQUESTValue REQUEST => _REQUEST ?? (_REQUEST = new REQUESTValue());
 
-		/// <summary>
-		﻿/// <i>request</i> by an <see cref="Interface">Interface</see> for a task.<br/><br />
-
+		/// <summary>﻿<i>request</i> by an <see cref="Interface">Interface</see> for a task.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class REQUESTValue : IEnumInstance
 		{
@@ -4230,15 +3702,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private RESPONSEValue _RESPONSE;
-		/// <summary>
-		﻿/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="RESPONSEValue" path="/summary" />
 		public RESPONSEValue RESPONSE => _RESPONSE ?? (_RESPONSE = new RESPONSEValue());
 
-		/// <summary>
-		﻿/// <i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.<br/><br />
-
+		/// <summary>﻿<i>response</i> by an <see cref="Interface">Interface</see> to a <i>request</i> for a task.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class RESPONSEValue : IEnumInstance
 		{
@@ -4259,15 +3728,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTIVITYValue _ACTIVITY;
-		/// <summary>
-		﻿/// phase or segment of a recipe or program.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVITYValue" path="/summary" />
 		public ACTIVITYValue ACTIVITY => _ACTIVITY ?? (_ACTIVITY = new ACTIVITYValue());
 
-		/// <summary>
-		﻿/// phase or segment of a recipe or program.<br/><br />
-
+		/// <summary>﻿phase or segment of a recipe or program.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVITYValue : IEnumInstance
 		{
@@ -4288,15 +3754,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SEGMENTValue _SEGMENT;
-		/// <summary>
-		﻿/// phase of a recipe process.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SEGMENTValue" path="/summary" />
 		public SEGMENTValue SEGMENT => _SEGMENT ?? (_SEGMENT = new SEGMENTValue());
 
-		/// <summary>
-		﻿/// phase of a recipe process.<br/><br />
-
+		/// <summary>﻿phase of a recipe process.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SEGMENTValue : IEnumInstance
 		{
@@ -4317,15 +3780,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private RECIPEValue _RECIPE;
-		/// <summary>
-		﻿/// process as part of product production; can be a subprocess of a larger process.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="RECIPEValue" path="/summary" />
 		public RECIPEValue RECIPE => _RECIPE ?? (_RECIPE = new RECIPEValue());
 
-		/// <summary>
-		﻿/// process as part of product production; can be a subprocess of a larger process.<br/><br />
-
+		/// <summary>﻿process as part of product production; can be a subprocess of a larger process.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class RECIPEValue : IEnumInstance
 		{
@@ -4346,15 +3806,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OPERATIONValue _OPERATION;
-		/// <summary>
-		﻿/// step of a discrete manufacturing process.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OPERATIONValue" path="/summary" />
 		public OPERATIONValue OPERATION => _OPERATION ?? (_OPERATION = new OPERATIONValue());
 
-		/// <summary>
-		﻿/// step of a discrete manufacturing process.<br/><br />
-
+		/// <summary>﻿step of a discrete manufacturing process.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class OPERATIONValue : IEnumInstance
 		{
@@ -4375,15 +3832,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private BINARYValue _BINARY;
-		/// <summary>
-		﻿/// observed as a binary data type.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BINARYValue" path="/summary" />
 		public BINARYValue BINARY => _BINARY ?? (_BINARY = new BINARYValue());
 
-		/// <summary>
-		﻿/// observed as a binary data type.<br/><br />
-
+		/// <summary>﻿observed as a binary data type.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class BINARYValue : IEnumInstance
 		{
@@ -4404,15 +3858,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private BOOLEANValue _BOOLEAN;
-		/// <summary>
-		﻿/// observed as a boolean data type.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BOOLEANValue" path="/summary" />
 		public BOOLEANValue BOOLEAN => _BOOLEAN ?? (_BOOLEAN = new BOOLEANValue());
 
-		/// <summary>
-		﻿/// observed as a boolean data type.<br/><br />
-
+		/// <summary>﻿observed as a boolean data type.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class BOOLEANValue : IEnumInstance
 		{
@@ -4433,15 +3884,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ENUMERATEDValue _ENUMERATED;
-		/// <summary>
-		﻿/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique.<br /><seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ENUMERATEDValue" path="/summary" />
 		public ENUMERATEDValue ENUMERATED => _ENUMERATED ?? (_ENUMERATED = new ENUMERATEDValue());
 
-		/// <summary>
-		﻿/// observed as a set containing a restricted number of discrete values where each discrete value is named and unique.<br /><seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso><br/><br />
-
+		/// <summary>﻿observed as a set containing a restricted number of discrete values where each discrete value is named and unique.<br /><seealso href="https://www.google.com/search?q=ISO 21961:2003, 013&btnI=I">ISO 21961:2003, 013</seealso><br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class ENUMERATEDValue : IEnumInstance
 		{
@@ -4463,15 +3911,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private DETECTValue _DETECT;
-		/// <summary>
-		﻿/// indicated by the presence or existence of something.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DETECTValue" path="/summary" />
 		public DETECTValue DETECT => _DETECT ?? (_DETECT = new DETECTValue());
 
-		/// <summary>
-		﻿/// indicated by the presence or existence of something.<br/><br />
-
+		/// <summary>﻿indicated by the presence or existence of something.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class DETECTValue : IEnumInstance
 		{
@@ -4492,15 +3937,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MODELValue _MODEL;
-		/// <summary>
-		﻿/// model info of the hardware or software.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MODELValue" path="/summary" />
 		public MODELValue MODEL => _MODEL ?? (_MODEL = new MODELValue());
 
-		/// <summary>
-		﻿/// model info of the hardware or software.<br/><br />
-
+		/// <summary>﻿model info of the hardware or software.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class MODELValue : IEnumInstance
 		{
@@ -4521,15 +3963,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SECONDARYValue _SECONDARY;
-		/// <summary>
-		﻿/// alternate or not primary.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SECONDARYValue" path="/summary" />
 		public SECONDARYValue SECONDARY => _SECONDARY ?? (_SECONDARY = new SECONDARYValue());
 
-		/// <summary>
-		﻿/// alternate or not primary.<br/><br />
-
+		/// <summary>﻿alternate or not primary.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class SECONDARYValue : IEnumInstance
 		{
@@ -4550,15 +3989,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private STANDBYValue _STANDBY;
-		/// <summary>
-		﻿/// held near at hand and ready for use.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STANDBYValue" path="/summary" />
 		public STANDBYValue STANDBY => _STANDBY ?? (_STANDBY = new STANDBYValue());
 
-		/// <summary>
-		﻿/// held near at hand and ready for use.<br/><br />
-
+		/// <summary>﻿held near at hand and ready for use.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
 		public sealed class STANDBYValue : IEnumInstance
 		{

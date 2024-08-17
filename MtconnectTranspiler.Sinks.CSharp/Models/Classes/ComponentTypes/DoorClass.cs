@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	/// <summary>
-	﻿/// <see cref="Component">Component</see> composed of a mechanical mechanism or closure that can cover a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br/><br />Description<br/>The closure can be opened or closed to allow or restrict access to other parts of the equipment.<br /><br /><see cref="Door">Door</see> <b>MUST</b> have <see cref="DoorState">DoorState</see> data item to indicate if the door is <c>OPEN</c>, <c>CLOSED</c>, or <c>UNLATCHED</c>. A <see cref="Component">Component</see> <b>MAY</b> contain multiple <see cref="Door">Door</see> entities.<br/><br/><br />
-
+	/// <summary>﻿<see cref="Component">Component</see> composed of a mechanical mechanism or closure that can cover a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br /><br /><br />Description<br /><br />The closure can be opened or closed to allow or restrict access to other parts of the equipment.<br /><br /><see cref="Door">Door</see> <b>MUST</b> have <see cref="DoorState">DoorState</see> data item to indicate if the door is <c>OPEN</c>, <c>CLOSED</c>, or <c>UNLATCHED</c>. A <see cref="Component">Component</see> <b>MAY</b> contain multiple <see cref="Door">Door</see> entities.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381984_481596_42228">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -47,18 +48,25 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		/// <inheritdoc />
 		public DoorClassProperties Properties { get; } = new DoorClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DoorClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties" />.
+		/// </summary>
 		public class DoorClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				ObservesDoorState,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ObservesDoorStateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesDoorState</remarks>
 			/// </summary>
-			public ObservesDoorStateProperty ObservesDoorState { get; } = new ObservesDoorStateProperty();
-			public sealed class ObservesDoorStateProperty : IProperty
+			public new ObservesDoorStateProperty ObservesDoorState { get; } = new ObservesDoorStateProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesDoorStateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

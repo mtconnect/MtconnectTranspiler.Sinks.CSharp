@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
-	/// <summary>
-	﻿/// design characteristics for a piece of equipment.<br /><br/><br />
-
+	/// <summary>﻿design characteristics for a piece of equipment.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580315898400_607214_47155">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		/// <inheritdoc />
 		public SpecificationClassProperties Properties { get; } = new SpecificationClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="SpecificationClass" />.
+		/// </summary>
 		public class SpecificationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -66,9 +70,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.type">type in DataItem</see>. See <see cref="DataItem Types">DataItem Types</see>.<br/><br />
-
+			
+			/// <summary>﻿same as <see cref="DataItem.type">type in DataItem</see>. See <see cref="DataItem Types">DataItem Types</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -122,9 +125,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: SubType</remarks>
 			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.subType">subType in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿same as <see cref="DataItem.subType">subType in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -178,9 +180,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: DataItemIdRef</remarks>
 			/// </summary>
 			public DataItemIdRefProperty DataItemIdRef { get; } = new DataItemIdRefProperty();
-			/// <summary>
-			﻿/// reference to the <see cref="DataItem.id">id in DataItem</see> associated with this entity.<br/><br />
-
+			
+			/// <summary>﻿reference to the <see cref="DataItem.id">id in DataItem</see> associated with this entity.<br /><br /><br />
 			/// </summary>
 			public sealed class DataItemIdRefProperty : IProperty
 			{
@@ -234,9 +235,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
@@ -290,9 +290,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: CompositionIdRef</remarks>
 			/// </summary>
 			public CompositionIdRefProperty CompositionIdRef { get; } = new CompositionIdRefProperty();
-			/// <summary>
-			﻿/// reference to the <see cref="Composition.id">id in Composition</see> associated with this entity.<br/><br />
-
+			
+			/// <summary>﻿reference to the <see cref="Composition.id">id in Composition</see> associated with this entity.<br /><br /><br />
 			/// </summary>
 			public sealed class CompositionIdRefProperty : IProperty
 			{
@@ -346,9 +345,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// <see cref="Specification.name">name in Specification</see> provides additional meaning and differentiates between <see cref="Specification">Specification</see> entities.<br/><br />
-
+			
+			/// <summary>﻿<see cref="Specification.name">name in Specification</see> provides additional meaning and differentiates between <see cref="Specification">Specification</see> entities.<br /><br /><br />
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -402,9 +400,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: CoordinateSystemIdRef</remarks>
 			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
-			/// <summary>
-			﻿/// references the <see cref="CoordinateSystem">CoordinateSystem</see> for geometric <see cref="Specification">Specification</see> elements.<br/><br />
-
+			
+			/// <summary>﻿references the <see cref="CoordinateSystem">CoordinateSystem</see> for geometric <see cref="Specification">Specification</see> elements.<br /><br /><br />
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
@@ -458,9 +455,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: Id</remarks>
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
-			/// <summary>
-			﻿/// unique identifier for this <see cref="Specification">Specification</see>.<br/><br />
-
+			
+			/// <summary>﻿unique identifier for this <see cref="Specification">Specification</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -514,9 +510,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: Originator</remarks>
 			/// </summary>
 			public OriginatorProperty Originator { get; } = new OriginatorProperty();
-			/// <summary>
-			﻿/// reference to the creator of the <see cref="Specification">Specification</see>.<br/><br />
-
+			
+			/// <summary>﻿reference to the creator of the <see cref="Specification">Specification</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class OriginatorProperty : IProperty
 			{
@@ -570,6 +565,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: HasMaximum</remarks>
 			/// </summary>
 			public HasMaximumPartProperty HasMaximumPart { get; } = new HasMaximumPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasMaximumPartProperty : IProperty
 			{
 				/// <summary>
@@ -621,6 +619,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: HasUpperLimit</remarks>
 			/// </summary>
 			public HasUpperLimitPartProperty HasUpperLimitPart { get; } = new HasUpperLimitPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasUpperLimitPartProperty : IProperty
 			{
 				/// <summary>
@@ -672,6 +673,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: HasLowerWarning</remarks>
 			/// </summary>
 			public HasLowerWarningPartProperty HasLowerWarningPart { get; } = new HasLowerWarningPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasLowerWarningPartProperty : IProperty
 			{
 				/// <summary>
@@ -723,6 +727,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: HasLowerLimit</remarks>
 			/// </summary>
 			public HasLowerLimitPartProperty HasLowerLimitPart { get; } = new HasLowerLimitPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasLowerLimitPartProperty : IProperty
 			{
 				/// <summary>
@@ -774,6 +781,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: HasUpperWarning</remarks>
 			/// </summary>
 			public HasUpperWarningPartProperty HasUpperWarningPart { get; } = new HasUpperWarningPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasUpperWarningPartProperty : IProperty
 			{
 				/// <summary>
@@ -825,6 +835,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: HasNominal</remarks>
 			/// </summary>
 			public HasNominalPartProperty HasNominalPart { get; } = new HasNominalPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasNominalPartProperty : IProperty
 			{
 				/// <summary>
@@ -876,6 +889,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: HasMinimum</remarks>
 			/// </summary>
 			public HasMinimumPartProperty HasMinimumPart { get; } = new HasMinimumPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasMinimumPartProperty : IProperty
 			{
 				/// <summary>

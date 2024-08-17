@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605276722719_257725_310">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605276722719_257725_310">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FileStateEnum
 	{
-		/// <summary>
-		﻿/// used for processes other than production or otherwise defined.<br/><br />
-
+		/// <summary>﻿used for processes other than production or otherwise defined.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EXPERIMENTAL,
-		/// <summary>
-		﻿/// used for production processes.<br /><br/><br />
-
+		/// <summary>﻿used for production processes.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PRODUCTION,
-		/// <summary>
-		﻿/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>.<br /><br/><br />
-
+		/// <summary>﻿content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,8 @@ namespace Mtconnect.DataTypes
 		REVISION,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605276722719_257725_310">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605276722719_257725_310">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FileStateEnumMetaClass : IEnum
@@ -60,6 +54,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(FileStateEnum);
 
 		/// <inheritdoc />
@@ -79,15 +74,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private EXPERIMENTALValue _EXPERIMENTAL;
-		/// <summary>
-		﻿/// used for processes other than production or otherwise defined.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EXPERIMENTALValue" path="/summary" />
 		public EXPERIMENTALValue EXPERIMENTAL => _EXPERIMENTAL ?? (_EXPERIMENTAL = new EXPERIMENTALValue());
 
-		/// <summary>
-		﻿/// used for processes other than production or otherwise defined.<br/><br />
-
+		/// <summary>﻿used for processes other than production or otherwise defined.<br /><br /><br />
+		/// Value for FileStateEnum.<br/>
+		/// <br/>See also <seealso cref="FileStateEnum">FileStateEnum</seealso>
 		/// </summary>
 		public sealed class EXPERIMENTALValue : IEnumInstance
 		{
@@ -108,15 +100,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PRODUCTIONValue _PRODUCTION;
-		/// <summary>
-		﻿/// used for production processes.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PRODUCTIONValue" path="/summary" />
 		public PRODUCTIONValue PRODUCTION => _PRODUCTION ?? (_PRODUCTION = new PRODUCTIONValue());
 
-		/// <summary>
-		﻿/// used for production processes.<br /><br/><br />
-
+		/// <summary>﻿used for production processes.<br /><br /><br /><br />
+		/// Value for FileStateEnum.<br/>
+		/// <br/>See also <seealso cref="FileStateEnum">FileStateEnum</seealso>
 		/// </summary>
 		public sealed class PRODUCTIONValue : IEnumInstance
 		{
@@ -137,15 +126,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private REVISIONValue _REVISION;
-		/// <summary>
-		﻿/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="REVISIONValue" path="/summary" />
 		public REVISIONValue REVISION => _REVISION ?? (_REVISION = new REVISIONValue());
 
-		/// <summary>
-		﻿/// content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>.<br /><br/><br />
-
+		/// <summary>﻿content is modified from <c>PRODUCTION</c> or <c>EXPERIMENTAL</c>.<br /><br /><br /><br />
+		/// Value for FileStateEnum.<br/>
+		/// <br/>See also <seealso cref="FileStateEnum">FileStateEnum</seealso>
 		/// </summary>
 		public sealed class REVISIONValue : IEnumInstance
 		{

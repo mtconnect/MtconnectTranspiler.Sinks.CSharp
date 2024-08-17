@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.AssetInformationModel.Files;
 
 namespace Mtconnect.AssetInformationModel
 {
-	/// <summary>
-	﻿/// This section provides semantic information for the <see cref="File">File</see> model.<br /><br />![Files](figures/Files.png "Files"){: width="0.8"}<br /><br />> Note: See <see cref="File Schema Diagrams">File Schema Diagrams</see> for XML schema.<br /><br/><br />Files Asset Information Model<br/>Manufacturing processes require various documents, programs, setup sheets, and digital media available at the device for a given process. The <see cref="File">File</see> and <see cref="FileArchetype">FileArchetype</see> <see cref="Asset">Asset</see>s provide a mechanism to communicate specific "Files" that are relevant to a process where the media is located on a server and represented by a Universal Resource Locator (URL).<br /><br />The <see cref="FileArchetype">FileArchetype</see> contains metadata common to all <see cref="File">File</see> <see cref="Asset">Asset</see>s for a certain purpose. The <see cref="File">File</see> <see cref="Asset">Asset</see> references the file specific to a given device or set of devices. The <see cref="File">File</see> <see cref="Asset">Asset</see> does not hold the contents of the file, it contains a reference to the location (URL) used to access the information. The metadata associated with the <see cref="File">File</see> provides semantic information about the representation (mime-type) and the application associated with the <see cref="File">File</see>. The application of the file is an extensible controlled vocabulary with common manufacturing uses provided.<br/><br/><br />
-
+	/// <summary>﻿This section provides semantic information for the <see cref="File">File</see> model.<br /><br />![Files](figures/Files.png "Files"){: width="0.8"}<br /><br />&gt; Note: See <see cref="File Schema Diagrams">File Schema Diagrams</see> for XML schema.<br /><br /><br /><br />Files Asset Information Model<br /><br />Manufacturing processes require various documents, programs, setup sheets, and digital media available at the device for a given process. The <see cref="File">File</see> and <see cref="FileArchetype">FileArchetype</see> <see cref="Asset">Asset</see>s provide a mechanism to communicate specific "Files" that are relevant to a process where the media is located on a server and represented by a Universal Resource Locator (URL).<br /><br />The <see cref="FileArchetype">FileArchetype</see> contains metadata common to all <see cref="File">File</see> <see cref="Asset">Asset</see>s for a certain purpose. The <see cref="File">File</see> <see cref="Asset">Asset</see> references the file specific to a given device or set of devices. The <see cref="File">File</see> <see cref="Asset">Asset</see> does not hold the contents of the file, it contains a reference to the location (URL) used to access the information. The metadata associated with the <see cref="File">File</see> provides semantic information about the representation (mime-type) and the application associated with the <see cref="File">File</see>. The application of the file is an extensible controlled vocabulary with common manufacturing uses provided.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1589825226627_349226_496">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -45,6 +45,11 @@ The {{block(FileArchetype)}} contains metadata common to all {{block(File)}} {{b
 			FileLocationClass,
 			DestinationClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -91,6 +96,9 @@ The {{block(FileArchetype)}} contains metadata common to all {{block(File)}} {{b
 	/// </summary>
 	public Package.DestinationClass DestinationClass => _DestinationClass ?? (_DestinationClass = new Package.DestinationClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

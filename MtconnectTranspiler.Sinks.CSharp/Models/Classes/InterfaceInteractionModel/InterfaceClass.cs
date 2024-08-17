@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.InterfaceInteractionModel
 {
-	/// <summary>
-	﻿/// abstract <see cref="Component">Component</see> that coordinates actions and activities between pieces of equipment.<br /><br/><br />
-
+	/// <summary>﻿abstract <see cref="Component">Component</see> that coordinates actions and activities between pieces of equipment.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572381996_964170_42252">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -45,10 +46,14 @@ namespace Mtconnect.InterfaceInteractionModel
 		/// <inheritdoc />
 		public InterfaceClassProperties Properties { get; } = new InterfaceClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="InterfaceClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties" />.
+		/// </summary>
 		public class InterfaceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				IsInterfaceOfPart,
 				ObservesInterfaceState,
 			}.Concat(base.Properties).ToArray();
@@ -56,8 +61,11 @@ namespace Mtconnect.InterfaceInteractionModel
 			/// <inheritdoc cref="IsInterfaceOfPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsInterfaceOf</remarks>
 			/// </summary>
-			public IsInterfaceOfPartProperty IsInterfaceOfPart { get; } = new IsInterfaceOfPartProperty();
-			public sealed class IsInterfaceOfPartProperty : IProperty
+			public new IsInterfaceOfPartProperty IsInterfaceOfPart { get; } = new IsInterfaceOfPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class IsInterfaceOfPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -107,8 +115,11 @@ namespace Mtconnect.InterfaceInteractionModel
 			/// <inheritdoc cref="ObservesInterfaceStateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesInterfaceState</remarks>
 			/// </summary>
-			public ObservesInterfaceStateProperty ObservesInterfaceState { get; } = new ObservesInterfaceStateProperty();
-			public sealed class ObservesInterfaceStateProperty : IProperty
+			public new ObservesInterfaceStateProperty ObservesInterfaceState { get; } = new ObservesInterfaceStateProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesInterfaceStateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

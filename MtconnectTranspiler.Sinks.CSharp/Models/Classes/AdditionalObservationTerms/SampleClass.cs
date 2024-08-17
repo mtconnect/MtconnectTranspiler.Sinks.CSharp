@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 {
-	/// <summary>
-	﻿/// The collection of one or more pieces of information.  <br /><br/><br />
-
+	/// <summary>﻿The collection of one or more pieces of information.  <br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581814695455_317721_5160">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -41,6 +42,9 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		/// <inheritdoc />
 		public SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="SampleClass" />.
+		/// </summary>
 		public class SampleClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -52,6 +56,9 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
 			public ResultProperty Result { get; } = new ResultProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ResultProperty : IProperty
 			{
 				/// <summary>

@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
-	/// <summary>
-	﻿/// defines the meaning of <see cref="Entry">Entry</see> and <see cref="Cell">Cell</see> entities when the associated <see cref="DataItem.representation">representation in DataItem</see> is either <c>DATA_SET</c> or <c>TABLE</c>.<br/><br />
-
+	/// <summary>﻿defines the meaning of <see cref="Entry">Entry</see> and <see cref="Cell">Cell</see> entities when the associated <see cref="DataItem.representation">representation in DataItem</see> is either <c>DATA_SET</c> or <c>TABLE</c>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581433165009_756087_158">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		/// <inheritdoc />
 		public DefinitionClassProperties Properties { get; } = new DefinitionClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DefinitionClass" />.
+		/// </summary>
 		public class DefinitionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -53,6 +57,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <remarks>Original Name: HasCellDefinition</remarks>
 			/// </summary>
 			public HasCellDefinitionPartProperty HasCellDefinitionPart { get; } = new HasCellDefinitionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasCellDefinitionPartProperty : IProperty
 			{
 				/// <summary>
@@ -104,6 +111,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <remarks>Original Name: HasDescription</remarks>
 			/// </summary>
 			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasDescriptionPartProperty : IProperty
 			{
 				/// <summary>
@@ -155,6 +165,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <remarks>Original Name: HasEntryDefinition</remarks>
 			/// </summary>
 			public HasEntryDefinitionPartProperty HasEntryDefinitionPart { get; } = new HasEntryDefinitionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasEntryDefinitionPartProperty : IProperty
 			{
 				/// <summary>

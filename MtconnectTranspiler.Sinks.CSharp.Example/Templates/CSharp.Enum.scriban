@@ -1,14 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace {{ to_code_safe source.namespace }}
 {
-	/// <summary>
-	{{~ if source?.summary != null && source?.summary != "" ~}}
-	{{ source?.summary }}
-	{{~ end ~}}
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso>
-	{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
+	/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	{{~ if source.normative_version != "" || source.deprecated_version != "" ~}}
 	/// <remarks>
@@ -29,8 +27,7 @@ namespace {{ to_code_safe source.namespace }}
 	public enum {{ source.name | to_code_safe | to_pascal_case }}
 	{
 		{{~ for item in source.items ~}}
-		/// <summary>
-		{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
+		/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
 		/// </summary>
 			{{~ if item?.normative_version != "" || item?.deprecated_version != "" ~}}
 		/// <remarks>
@@ -51,9 +48,8 @@ namespace {{ to_code_safe source.namespace }}
 		{{~ end ~}}
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso>
-	{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
+	/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public sealed class {{ source.name | to_code_safe | to_pascal_case }}MetaClass : IEnum
@@ -64,6 +60,7 @@ namespace {{ to_code_safe source.namespace }}
 		/// <inheritdoc />
 		public Type DataType => {{ if source.data_type != null && source.data_type != "" }}typeof({{ source.data_type }}){{ else }}null{{ end }};
 		
+		/// <inheritdoc />
 		public Type Instance => typeof({{ source.name | to_code_safe | to_pascal_case }});
 
 		/// <inheritdoc />
@@ -85,18 +82,13 @@ namespace {{ to_code_safe source.namespace }}
 	{{~ for item in source.items ~}}
 	{{~ item_code_name = item.original_name | to_code_safe ~}}
 		private {{ item_code_name }}Value _{{ item_code_name }};
-		{{~ if item?.summary != null && item?.summary != "" ~}}
-		/// <summary>
-		{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
-		/// </summary>
-		{{~ end ~}}
+		/// <inheritdoc cref="{{ item.original_name | to_code_safe }}Value" path="/summary" />
 		public {{ item_code_name }}Value {{ item_code_name }} => _{{ item_code_name }} ?? (_{{ item_code_name }} = new {{ item_code_name }}Value());
 
-		{{~ if item?.summary != null && item?.summary != "" ~}}
-		/// <summary>
-		{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
+		/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
+		/// Value for {{ source.name }}.<br/>
+		/// <br/>See also <seealso cref="{{ source.name | to_code_safe | to_pascal_case }}">{{ source.name | to_code_safe | to_pascal_case }}</seealso>
 		/// </summary>
-		{{~ end ~}}
 		public sealed class {{ item.original_name | to_code_safe }}Value : IEnumInstance
 		{
 			/// <inheritdoc />

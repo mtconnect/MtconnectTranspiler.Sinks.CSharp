@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	/// <summary>
-	﻿/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> and an <see cref="Asset">Asset</see>.<br/><br />
-
+	/// <summary>﻿<see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> and an <see cref="Asset">Asset</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1658942745281_216676_1135">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		/// <inheritdoc />
 		public AssetRelationshipClassProperties Properties { get; } = new AssetRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="AssetRelationshipClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass.ConfigurationRelationshipClassProperties" />.
+		/// </summary>
 		public class AssetRelationshipClassProperties : Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass.ConfigurationRelationshipClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				AssetIdRef,
 				AssetType,
 				Href,
@@ -56,12 +61,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// <inheritdoc cref="AssetIdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetIdRef</remarks>
 			/// </summary>
-			public AssetIdRefProperty AssetIdRef { get; } = new AssetIdRefProperty();
-			/// <summary>
-			﻿/// uuid of the related <see cref="Asset">Asset</see>.<br/><br />
-
+			public new AssetIdRefProperty AssetIdRef { get; } = new AssetIdRefProperty();
+			
+			/// <summary>﻿uuid of the related <see cref="Asset">Asset</see>.<br /><br /><br />
 			/// </summary>
-			public sealed class AssetIdRefProperty : IProperty
+			public new sealed class AssetIdRefProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -112,12 +116,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// <inheritdoc cref="AssetTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: AssetType</remarks>
 			/// </summary>
-			public AssetTypeProperty AssetType { get; } = new AssetTypeProperty();
-			/// <summary>
-			﻿/// type of <see cref="Asset">Asset</see> being referenced.<br/><br />
-
+			public new AssetTypeProperty AssetType { get; } = new AssetTypeProperty();
+			
+			/// <summary>﻿type of <see cref="Asset">Asset</see> being referenced.<br /><br /><br />
 			/// </summary>
-			public sealed class AssetTypeProperty : IProperty
+			public new sealed class AssetTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -168,12 +171,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// <inheritdoc cref="HrefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Href</remarks>
 			/// </summary>
-			public HrefProperty Href { get; } = new HrefProperty();
-			/// <summary>
-			﻿/// <i>URI</i> reference to the associated <see cref="Asset">Asset</see>.<br/><br />Description<br/><see cref="AssetRelationship.href">href in AssetRelationship</see> <b>MUST</b> also include the <see cref="Device.uuid">uuid in Device</see> for that specific piece of equipment.<br /><br /><see cref="AssetRelationship.href">href in AssetRelationship</see> is of type <c>xlink:href</c> from the W3C XLink specification: <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br/><br/><br />
-
+			public new HrefProperty Href { get; } = new HrefProperty();
+			
+			/// <summary>﻿<i>URI</i> reference to the associated <see cref="Asset">Asset</see>.<br /><br /><br />Description<br /><br /><see cref="AssetRelationship.href">href in AssetRelationship</see> <b>MUST</b> also include the <see cref="Device.uuid">uuid in Device</see> for that specific piece of equipment.<br /><br /><see cref="AssetRelationship.href">href in AssetRelationship</see> is of type <c>xlink:href</c> from the W3C XLink specification: <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br /><br /><br /><br /><br />
 			/// </summary>
-			public sealed class HrefProperty : IProperty
+			public new sealed class HrefProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

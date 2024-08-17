@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocument
 {
-	/// <summary>
-	﻿/// provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.<br/><br />
-
+	/// <summary>﻿provides information from an <i>agent</i> defining version information, storage capacity, and parameters associated with the data management within the <i>agent</i>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1579560593039_375117_6558">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 		/// <inheritdoc />
 		public HeaderClassProperties Properties { get; } = new HeaderClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="HeaderClass" />.
+		/// </summary>
 		public class HeaderClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -60,9 +64,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 			/// <remarks>Original Name: BufferSize</remarks>
 			/// </summary>
 			public BufferSizeProperty BufferSize { get; } = new BufferSizeProperty();
-			/// <summary>
-			﻿/// maximum number of <i>DataItem</i>s that <b>MAY</b> be retained in the <i>agent</i> that published the <i>response document</i> at any point in time.<br /><br />> Note 1 to entry:  <see cref="Header.bufferSize">bufferSize in Header</see> represents the maximum number of sequence numbers that <b>MAY</b> be stored in the <i>agent</i>. <br /><br />> Note 2 to entry: The implementer is responsible for allocating the appropriate amount of storage capacity required to accommodate the <see cref="Header.bufferSize">bufferSize in Header</see>.<br /><br/><br />
-
+			
+			/// <summary>﻿maximum number of <i>DataItem</i>s that <b>MAY</b> be retained in the <i>agent</i> that published the <i>response document</i> at any point in time.<br /><br />&gt; Note 1 to entry:  <see cref="Header.bufferSize">bufferSize in Header</see> represents the maximum number of sequence numbers that <b>MAY</b> be stored in the <i>agent</i>. <br /><br />&gt; Note 2 to entry: The implementer is responsible for allocating the appropriate amount of storage capacity required to accommodate the <see cref="Header.bufferSize">bufferSize in Header</see>.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class BufferSizeProperty : IProperty
 			{
@@ -121,9 +124,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 			/// <remarks>Original Name: CreationTime</remarks>
 			/// </summary>
 			public CreationTimeProperty CreationTime { get; } = new CreationTimeProperty();
-			/// <summary>
-			﻿/// timestamp that an <i>agent</i> published the <i>response document</i>. <br/><br />
-
+			
+			/// <summary>﻿timestamp that an <i>agent</i> published the <i>response document</i>. <br /><br /><br />
 			/// </summary>
 			public sealed class CreationTimeProperty : IProperty
 			{
@@ -177,9 +179,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 			/// <remarks>Original Name: InstanceId</remarks>
 			/// </summary>
 			public InstanceIdProperty InstanceId { get; } = new InstanceIdProperty();
-			/// <summary>
-			﻿/// identifier for a specific instantiation of the <i>buffer</i> associated with the <i>agent</i> that published the <i>response document</i>.  <br />     <br /><see cref="Header.instanceId">instanceId in Header</see> <b>MUST</b> be changed to a different unique number each time the <i>buffer</i> is cleared and a new set of data begins to be collected.<br/><br />
-
+			
+			/// <summary>﻿identifier for a specific instantiation of the <i>buffer</i> associated with the <i>agent</i> that published the <i>response document</i>.  <br />     <br /><see cref="Header.instanceId">instanceId in Header</see> <b>MUST</b> be changed to a different unique number each time the <i>buffer</i> is cleared and a new set of data begins to be collected.<br /><br /><br />
 			/// </summary>
 			public sealed class InstanceIdProperty : IProperty
 			{
@@ -235,9 +236,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 			/// <remarks>Original Name: Sender</remarks>
 			/// </summary>
 			public SenderProperty Sender { get; } = new SenderProperty();
-			/// <summary>
-			﻿/// identification defining where the <i>agent</i> that published the <i>response document</i> is installed or hosted.<br /><br /><see cref="Header.sender">sender in Header</see> <b>MUST</b> be either an IP Address or Hostname describing where the <i>agent</i> is installed or the URL of the <i>agent</i>; e.g., <c>http://<address>[:port]/</c>. <br /><br />> Note:  The port number need not be specified if it is the default HTTP port 80.<br/><br />
-
+			
+			/// <summary>﻿identification defining where the <i>agent</i> that published the <i>response document</i> is installed or hosted.<br /><br /><see cref="Header.sender">sender in Header</see> <b>MUST</b> be either an IP Address or Hostname describing where the <i>agent</i> is installed or the URL of the <i>agent</i>; e.g., <c>http://&lt;address&gt;[:port]/</c>. <br /><br />&gt; Note:  The port number need not be specified if it is the default HTTP port 80.<br /><br /><br />
 			/// </summary>
 			public sealed class SenderProperty : IProperty
 			{
@@ -295,9 +295,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 			/// <remarks>Original Name: TestIndicator</remarks>
 			/// </summary>
 			public TestIndicatorProperty TestIndicator { get; } = new TestIndicatorProperty();
-			/// <summary>
-			﻿/// indicates whether the <i>agent</i> that published the <i>response document</i> is operating in a test mode.<br /><br />If <see cref="Header.testIndicator">testIndicator in Header</see> is not specified, the value for <see cref="Header.testIndicator">testIndicator in Header</see> <b>MUST</b> be interpreted to be <c>false</c>.<br/><br />
-
+			
+			/// <summary>﻿indicates whether the <i>agent</i> that published the <i>response document</i> is operating in a test mode.<br /><br />If <see cref="Header.testIndicator">testIndicator in Header</see> is not specified, the value for <see cref="Header.testIndicator">testIndicator in Header</see> <b>MUST</b> be interpreted to be <c>false</c>.<br /><br /><br />
 			/// </summary>
 			public sealed class TestIndicatorProperty : IProperty
 			{
@@ -353,9 +352,8 @@ If {{property(Header::testIndicator)}} is not specified, the value for {{propert
 			/// <remarks>Original Name: Version</remarks>
 			/// </summary>
 			public VersionProperty Version { get; } = new VersionProperty();
-			/// <summary>
-			﻿/// <i>major</i>, <i>minor</i>, and <i>revision</i> number of the MTConnect Standard that defines the <i>semantic data model</i> that represents the content of the <i>response document</i>. It also includes the revision number of the <i>schema</i> associated with that specific <i>semantic data model</i>.<br /><br />As an example, the value reported for <see cref="Header.version">version in Header</see> for a <i>response document</i> that was structured based on <i>schema</i> revision 10 associated with Version 1.4.0 of the MTConnect Standard would be:  1.4.0.10<br/><br />
-
+			
+			/// <summary>﻿<i>major</i>, <i>minor</i>, and <i>revision</i> number of the MTConnect Standard that defines the <i>semantic data model</i> that represents the content of the <i>response document</i>. It also includes the revision number of the <i>schema</i> associated with that specific <i>semantic data model</i>.<br /><br />As an example, the value reported for <see cref="Header.version">version in Header</see> for a <i>response document</i> that was structured based on <i>schema</i> revision 10 associated with Version 1.4.0 of the MTConnect Standard would be:  1.4.0.10<br /><br /><br />
 			/// </summary>
 			public sealed class VersionProperty : IProperty
 			{
@@ -411,9 +409,8 @@ As an example, the value reported for {{property(Header::version)}} for a {{term
 			/// <remarks>Original Name: FirstSequence</remarks>
 			/// </summary>
 			public FirstSequenceProperty FirstSequence { get; } = new FirstSequenceProperty();
-			/// <summary>
-			﻿/// <i>sequence number</i> assigned to the oldest piece of <i>streaming data</i> stored in the <i>buffer</i> of the <i>agent</i> immediately prior to the time that the <i>agent</i> published the <i>response document</i>.   <br/><br />
-
+			
+			/// <summary>﻿<i>sequence number</i> assigned to the oldest piece of <i>streaming data</i> stored in the <i>buffer</i> of the <i>agent</i> immediately prior to the time that the <i>agent</i> published the <i>response document</i>.   <br /><br /><br />
 			/// </summary>
 			public sealed class FirstSequenceProperty : IProperty
 			{
@@ -467,9 +464,8 @@ As an example, the value reported for {{property(Header::version)}} for a {{term
 			/// <remarks>Original Name: LastSequence</remarks>
 			/// </summary>
 			public LastSequenceProperty LastSequence { get; } = new LastSequenceProperty();
-			/// <summary>
-			﻿/// <i>sequence number</i> assigned to the last piece of <i>streaming data</i> that was added to the <i>buffer</i> of the <i>agent</i> immediately prior to the time that the <i>agent</i> published the <i>response document</i>.   <br /><br /><br/><br />
-
+			
+			/// <summary>﻿<i>sequence number</i> assigned to the last piece of <i>streaming data</i> that was added to the <i>buffer</i> of the <i>agent</i> immediately prior to the time that the <i>agent</i> published the <i>response document</i>.   <br /><br /><br /><br /><br />
 			/// </summary>
 			public sealed class LastSequenceProperty : IProperty
 			{
@@ -525,9 +521,8 @@ As an example, the value reported for {{property(Header::version)}} for a {{term
 			/// <remarks>Original Name: NextSequence</remarks>
 			/// </summary>
 			public NextSequenceProperty NextSequence { get; } = new NextSequenceProperty();
-			/// <summary>
-			﻿/// <i>sequence number</i> of the piece of <i>streaming data</i> that is the next piece of data to be retrieved from the <i>buffer</i> of the <i>agent</i> that was not included in the <i>response document</i> published by the <i>agent</i>.<br /><br />If the <i>streaming data</i> included in the <i>response document</i> includes the last piece of data stored in the <i>buffer</i> of the <i>agent</i> at the time that the document was published, then the value reported for <see cref="Header.nextSequence">nextSequence in Header</see> <b>MUST</b> be equal to <see cref="Header.lastSequence">lastSequence in Header</see> + 1.<br/><br />
-
+			
+			/// <summary>﻿<i>sequence number</i> of the piece of <i>streaming data</i> that is the next piece of data to be retrieved from the <i>buffer</i> of the <i>agent</i> that was not included in the <i>response document</i> published by the <i>agent</i>.<br /><br />If the <i>streaming data</i> included in the <i>response document</i> includes the last piece of data stored in the <i>buffer</i> of the <i>agent</i> at the time that the document was published, then the value reported for <see cref="Header.nextSequence">nextSequence in Header</see> <b>MUST</b> be equal to <see cref="Header.lastSequence">lastSequence in Header</see> + 1.<br /><br /><br />
 			/// </summary>
 			public sealed class NextSequenceProperty : IProperty
 			{
@@ -583,9 +578,8 @@ If the {{term(streaming data)}} included in the {{term(response document)}} incl
 			/// <remarks>Original Name: DeviceModelChangeTime</remarks>
 			/// </summary>
 			public DeviceModelChangeTimeProperty DeviceModelChangeTime { get; } = new DeviceModelChangeTimeProperty();
-			/// <summary>
-			﻿/// timestamp of the last update of the <see cref="Device">Device</see> information for any device.<br/><br />
-
+			
+			/// <summary>﻿timestamp of the last update of the <see cref="Device">Device</see> information for any device.<br /><br /><br />
 			/// </summary>
 			public sealed class DeviceModelChangeTimeProperty : IProperty
 			{

@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632489430362_282150_112">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632489430362_282150_112">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PowerStateEnum
 	{
-		/// <summary>
-		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.<br/><br />
-
+		/// <summary>﻿source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ON,
-		/// <summary>
-		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.<br/><br />
-
+		/// <summary>﻿source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		OFF,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632489430362_282150_112">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632489430362_282150_112">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PowerStateEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(PowerStateEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ONValue _ON;
-		/// <summary>
-		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ONValue" path="/summary" />
 		public ONValue ON => _ON ?? (_ON = new ONValue());
 
-		/// <summary>
-		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.<br/><br />
-
+		/// <summary>﻿source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.<br /><br /><br />
+		/// Value for PowerStateEnum.<br/>
+		/// <br/>See also <seealso cref="PowerStateEnum">PowerStateEnum</seealso>
 		/// </summary>
 		public sealed class ONValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OFFValue _OFF;
-		/// <summary>
-		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OFFValue" path="/summary" />
 		public OFFValue OFF => _OFF ?? (_OFF = new OFFValue());
 
-		/// <summary>
-		﻿/// source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.<br/><br />
-
+		/// <summary>﻿source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.<br /><br /><br />
+		/// Value for PowerStateEnum.<br/>
+		/// <br/>See also <seealso cref="PowerStateEnum">PowerStateEnum</seealso>
 		/// </summary>
 		public sealed class OFFValue : IEnumInstance
 		{

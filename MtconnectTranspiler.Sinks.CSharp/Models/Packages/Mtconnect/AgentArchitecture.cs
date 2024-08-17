@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +7,9 @@ using Package = Mtconnect.AgentArchitecture;
 
 namespace Mtconnect
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1584923209945_326350_15088">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class AgentArchitecturePackage : IPackage
 	{
@@ -51,6 +56,11 @@ namespace Mtconnect
 			NCLinkClass,
 			MQTTSinkGeneralization,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.RestPackage _RestPackage;
 	/// <summary>
@@ -217,6 +227,9 @@ namespace Mtconnect
 	/// </summary>
 	public Package.MQTTSinkGeneralization MQTTSinkGeneralization => _MQTTSinkGeneralization ?? (_MQTTSinkGeneralization = new Package.MQTTSinkGeneralization());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

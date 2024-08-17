@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417665_982246_2879">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417665_982246_2879">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FunctionalModeEnum
 	{
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PRODUCTION,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product. <br /><br />It is being prepared or modified to begin production of product.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is not currently producing product. <br /><br />It is being prepared or modified to begin production of product.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SETUP,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is not currently producing product.<br /><br />Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TEARDOWN,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is not currently producing product.<br /><br />It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MAINTENANCE,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -67,9 +58,8 @@ namespace Mtconnect.DataTypes
 		PROCESS_DEVELOPMENT,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417665_982246_2879">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417665_982246_2879">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FunctionalModeEnumMetaClass : IEnum
@@ -80,6 +70,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(FunctionalModeEnum);
 
 		/// <inheritdoc />
@@ -101,15 +92,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private PRODUCTIONValue _PRODUCTION;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PRODUCTIONValue" path="/summary" />
 		public PRODUCTIONValue PRODUCTION => _PRODUCTION ?? (_PRODUCTION = new PRODUCTIONValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br /><br /><br />
+		/// Value for FunctionalModeEnum.<br/>
+		/// <br/>See also <seealso cref="FunctionalModeEnum">FunctionalModeEnum</seealso>
 		/// </summary>
 		public sealed class PRODUCTIONValue : IEnumInstance
 		{
@@ -130,15 +118,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SETUPValue _SETUP;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product. <br /><br />It is being prepared or modified to begin production of product.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SETUPValue" path="/summary" />
 		public SETUPValue SETUP => _SETUP ?? (_SETUP = new SETUPValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product. <br /><br />It is being prepared or modified to begin production of product.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is not currently producing product. <br /><br />It is being prepared or modified to begin production of product.<br /><br /><br />
+		/// Value for FunctionalModeEnum.<br/>
+		/// <br/>See also <seealso cref="FunctionalModeEnum">FunctionalModeEnum</seealso>
 		/// </summary>
 		public sealed class SETUPValue : IEnumInstance
 		{
@@ -161,15 +146,12 @@ It is being prepared or modified to begin production of product.&#10;
 ";
 		}
 		private TEARDOWNValue _TEARDOWN;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TEARDOWNValue" path="/summary" />
 		public TEARDOWNValue TEARDOWN => _TEARDOWN ?? (_TEARDOWN = new TEARDOWNValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is not currently producing product.<br /><br />Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.<br /><br /><br />
+		/// Value for FunctionalModeEnum.<br/>
+		/// <br/>See also <seealso cref="FunctionalModeEnum">FunctionalModeEnum</seealso>
 		/// </summary>
 		public sealed class TEARDOWNValue : IEnumInstance
 		{
@@ -192,15 +174,12 @@ Typically, it has completed the production of a product and is being modified or
 ";
 		}
 		private MAINTENANCEValue _MAINTENANCE;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MAINTENANCEValue" path="/summary" />
 		public MAINTENANCEValue MAINTENANCE => _MAINTENANCE ?? (_MAINTENANCE = new MAINTENANCEValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is not currently producing product.<br /><br />It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is not currently producing product.<br /><br />It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.<br /><br /><br />
+		/// Value for FunctionalModeEnum.<br/>
+		/// <br/>See also <seealso cref="FunctionalModeEnum">FunctionalModeEnum</seealso>
 		/// </summary>
 		public sealed class MAINTENANCEValue : IEnumInstance
 		{
@@ -223,15 +202,12 @@ It is currently being repaired, waiting to be repaired, or has not yet been retu
 ";
 		}
 		private PROCESS_DEVELOPMENTValue _PROCESS_DEVELOPMENT;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_DEVELOPMENTValue" path="/summary" />
 		public PROCESS_DEVELOPMENTValue PROCESS_DEVELOPMENT => _PROCESS_DEVELOPMENT ?? (_PROCESS_DEVELOPMENT = new PROCESS_DEVELOPMENTValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.<br /><br /><br />
+		/// Value for FunctionalModeEnum.<br/>
+		/// <br/>See also <seealso cref="FunctionalModeEnum">FunctionalModeEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_DEVELOPMENTValue : IEnumInstance
 		{

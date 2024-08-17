@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1696869014788_515272_2985">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class LocationAddressResultClass : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public LocationAddressResultClassProperties Properties { get; } = new LocationAddressResultClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="LocationAddressResultClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.Representations.DataSetClass.DataSetClassProperties" />.
+		/// </summary>
 		public class LocationAddressResultClassProperties : Mtconnect.ObservationInformationModel.Representations.DataSetClass.DataSetClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				GivenName,
 				Surname,
 				Qualification,
@@ -65,12 +75,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="GivenNameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: GivenName</remarks>
 			/// </summary>
-			public GivenNameProperty GivenName { get; } = new GivenNameProperty();
-			/// <summary>
-			﻿/// element specifying the name used to distinguish between persons having the same surname(s) and who may have access to a particular delivery point.<br/><br />
-
+			public new GivenNameProperty GivenName { get; } = new GivenNameProperty();
+			
+			/// <summary>﻿element specifying the name used to distinguish between persons having the same surname(s) and who may have access to a particular delivery point.<br /><br /><br />
 			/// </summary>
-			public sealed class GivenNameProperty : IProperty
+			public new sealed class GivenNameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -121,12 +130,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="SurnameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Surname</remarks>
 			/// </summary>
-			public SurnameProperty Surname { get; } = new SurnameProperty();
-			/// <summary>
-			﻿/// element which identifies the family or parentage of an individual.<br/><br />
-
+			public new SurnameProperty Surname { get; } = new SurnameProperty();
+			
+			/// <summary>﻿element which identifies the family or parentage of an individual.<br /><br /><br />
 			/// </summary>
-			public sealed class SurnameProperty : IProperty
+			public new sealed class SurnameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -177,12 +185,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="QualificationProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Qualification</remarks>
 			/// </summary>
-			public QualificationProperty Qualification { get; } = new QualificationProperty();
-			/// <summary>
-			﻿/// element indicating an individual’s professional or academic qualification or rank in a professional group or society (e.g. PhD, Fellow of the Royal Society, FRS, Barrister at Law).<br/><br />
-
+			public new QualificationProperty Qualification { get; } = new QualificationProperty();
+			
+			/// <summary>﻿element indicating an individual’s professional or academic qualification or rank in a professional group or society (e.g. PhD, Fellow of the Royal Society, FRS, Barrister at Law).<br /><br /><br />
 			/// </summary>
-			public sealed class QualificationProperty : IProperty
+			public new sealed class QualificationProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -233,12 +240,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="NameQualifierProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NameQualifier</remarks>
 			/// </summary>
-			public NameQualifierProperty NameQualifier { get; } = new NameQualifierProperty();
-			/// <summary>
-			﻿/// element used in some countries to distinguish between persons with the same surname(s) who have similar given names or initials (e.g.III, Senior, the Third.).<br/><br />
-
+			public new NameQualifierProperty NameQualifier { get; } = new NameQualifierProperty();
+			
+			/// <summary>﻿element used in some countries to distinguish between persons with the same surname(s) who have similar given names or initials (e.g.III, Senior, the Third.).<br /><br /><br />
 			/// </summary>
-			public sealed class NameQualifierProperty : IProperty
+			public new sealed class NameQualifierProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -289,12 +295,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="OrganizationNameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizationName</remarks>
 			/// </summary>
-			public OrganizationNameProperty OrganizationName { get; } = new OrganizationNameProperty();
-			/// <summary>
-			﻿/// element giving the official name, the registered business name or other official designation of an organization.<br/><br />
-
+			public new OrganizationNameProperty OrganizationName { get; } = new OrganizationNameProperty();
+			
+			/// <summary>﻿element giving the official name, the registered business name or other official designation of an organization.<br /><br /><br />
 			/// </summary>
-			public sealed class OrganizationNameProperty : IProperty
+			public new sealed class OrganizationNameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -345,12 +350,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="LegalStatusProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LegalStatus</remarks>
 			/// </summary>
-			public LegalStatusProperty LegalStatus { get; } = new LegalStatusProperty();
-			/// <summary>
-			﻿/// element indicating the formal registration of an organization (e.g. GmbH, Inc., Ltd.).<br/><br />
-
+			public new LegalStatusProperty LegalStatus { get; } = new LegalStatusProperty();
+			
+			/// <summary>﻿element indicating the formal registration of an organization (e.g. GmbH, Inc., Ltd.).<br /><br /><br />
 			/// </summary>
-			public sealed class LegalStatusProperty : IProperty
+			public new sealed class LegalStatusProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -401,12 +405,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="OrganizationUnitProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizationUnit</remarks>
 			/// </summary>
-			public OrganizationUnitProperty OrganizationUnit { get; } = new OrganizationUnitProperty();
-			/// <summary>
-			﻿/// element identifying a subdivision of an organization.<br/><br />
-
+			public new OrganizationUnitProperty OrganizationUnit { get; } = new OrganizationUnitProperty();
+			
+			/// <summary>﻿element identifying a subdivision of an organization.<br /><br /><br />
 			/// </summary>
-			public sealed class OrganizationUnitProperty : IProperty
+			public new sealed class OrganizationUnitProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -457,12 +460,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="BuildingProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Building</remarks>
 			/// </summary>
-			public BuildingProperty Building { get; } = new BuildingProperty();
-			/// <summary>
-			﻿/// element identifying the number or name and type of the edifice or construction in or adjacent to which a delivery point is located.<br/><br />
-
+			public new BuildingProperty Building { get; } = new BuildingProperty();
+			
+			/// <summary>﻿element identifying the number or name and type of the edifice or construction in or adjacent to which a delivery point is located.<br /><br /><br />
 			/// </summary>
-			public sealed class BuildingProperty : IProperty
+			public new sealed class BuildingProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -513,12 +515,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="FloorProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Floor</remarks>
 			/// </summary>
-			public FloorProperty Floor { get; } = new FloorProperty();
-			/// <summary>
-			﻿/// element indicating the floor or level on which a delivery point is located in a multi-story building.<br/><br />
-
+			public new FloorProperty Floor { get; } = new FloorProperty();
+			
+			/// <summary>﻿element indicating the floor or level on which a delivery point is located in a multi-story building.<br /><br /><br />
 			/// </summary>
-			public sealed class FloorProperty : IProperty
+			public new sealed class FloorProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -569,12 +570,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="DoorProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Door</remarks>
 			/// </summary>
-			public DoorProperty Door { get; } = new DoorProperty();
-			/// <summary>
-			﻿/// element indicating the apartment, room or office in, at or adjacent to which a delivery point, situated within a building, is located.<br/><br />
-
+			public new DoorProperty Door { get; } = new DoorProperty();
+			
+			/// <summary>﻿element indicating the apartment, room or office in, at or adjacent to which a delivery point, situated within a building, is located.<br /><br /><br />
 			/// </summary>
-			public sealed class DoorProperty : IProperty
+			public new sealed class DoorProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -625,12 +625,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="ThoroughfareProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Thoroughfare</remarks>
 			/// </summary>
-			public ThoroughfareProperty Thoroughfare { get; } = new ThoroughfareProperty();
-			/// <summary>
-			﻿/// element which identifies the road or part of a road or other access route along which a delivery point can be accessed, either directly or via a secondary or tertiary road or access route.<br/><br />
-
+			public new ThoroughfareProperty Thoroughfare { get; } = new ThoroughfareProperty();
+			
+			/// <summary>﻿element which identifies the road or part of a road or other access route along which a delivery point can be accessed, either directly or via a secondary or tertiary road or access route.<br /><br /><br />
 			/// </summary>
-			public sealed class ThoroughfareProperty : IProperty
+			public new sealed class ThoroughfareProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -681,12 +680,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="PremiseIdentifierProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: PremiseIdentifier</remarks>
 			/// </summary>
-			public PremiseIdentifierProperty PremiseIdentifier { get; } = new PremiseIdentifierProperty();
-			/// <summary>
-			﻿/// element designating the area or the object on an area, adjacent to thoroughfare, in which the delivery point or delivery point access is located.<br/><br />
-
+			public new PremiseIdentifierProperty PremiseIdentifier { get; } = new PremiseIdentifierProperty();
+			
+			/// <summary>﻿element designating the area or the object on an area, adjacent to thoroughfare, in which the delivery point or delivery point access is located.<br /><br /><br />
 			/// </summary>
-			public sealed class PremiseIdentifierProperty : IProperty
+			public new sealed class PremiseIdentifierProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -737,12 +735,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="TownProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Town</remarks>
 			/// </summary>
-			public TownProperty Town { get; } = new TownProperty();
-			/// <summary>
-			﻿/// element indicating the name of the populated place in which a delivery point is located, or the populated.<br/><br />
-
+			public new TownProperty Town { get; } = new TownProperty();
+			
+			/// <summary>﻿element indicating the name of the populated place in which a delivery point is located, or the populated.<br /><br /><br />
 			/// </summary>
-			public sealed class TownProperty : IProperty
+			public new sealed class TownProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -793,12 +790,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="RegionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Region</remarks>
 			/// </summary>
-			public RegionProperty Region { get; } = new RegionProperty();
-			/// <summary>
-			﻿/// element specifying the geographic or administrative area of the country in which the town is situated.<br/><br />
-
+			public new RegionProperty Region { get; } = new RegionProperty();
+			
+			/// <summary>﻿element specifying the geographic or administrative area of the country in which the town is situated.<br /><br /><br />
 			/// </summary>
-			public sealed class RegionProperty : IProperty
+			public new sealed class RegionProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -849,12 +845,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="DistrictProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: District</remarks>
 			/// </summary>
-			public DistrictProperty District { get; } = new DistrictProperty();
-			/// <summary>
-			﻿/// element indicating the name of the area within or adjacent to the town in which a delivery point is located, or via which it is accessed.<br/><br />
-
+			public new DistrictProperty District { get; } = new DistrictProperty();
+			
+			/// <summary>﻿element indicating the name of the area within or adjacent to the town in which a delivery point is located, or via which it is accessed.<br /><br /><br />
 			/// </summary>
-			public sealed class DistrictProperty : IProperty
+			public new sealed class DistrictProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -905,12 +900,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="CountryNameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CountryName</remarks>
 			/// </summary>
-			public CountryNameProperty CountryName { get; } = new CountryNameProperty();
-			/// <summary>
-			﻿/// element designating the country, dependency or area of geopolitical interest, in which a delivery point is located or via which the delivery point is accessed.<br/><br />
-
+			public new CountryNameProperty CountryName { get; } = new CountryNameProperty();
+			
+			/// <summary>﻿element designating the country, dependency or area of geopolitical interest, in which a delivery point is located or via which the delivery point is accessed.<br /><br /><br />
 			/// </summary>
-			public sealed class CountryNameProperty : IProperty
+			public new sealed class CountryNameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -961,12 +955,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="CountryCodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CountryCode</remarks>
 			/// </summary>
-			public CountryCodeProperty CountryCode { get; } = new CountryCodeProperty();
-			/// <summary>
-			﻿/// interest, in which a delivery point is located or via which the delivery point is accessed.<br/><br />
-
+			public new CountryCodeProperty CountryCode { get; } = new CountryCodeProperty();
+			
+			/// <summary>﻿interest, in which a delivery point is located or via which the delivery point is accessed.<br /><br /><br />
 			/// </summary>
-			public sealed class CountryCodeProperty : IProperty
+			public new sealed class CountryCodeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -1017,12 +1010,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="PostCodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: PostCode</remarks>
 			/// </summary>
-			public PostCodeProperty PostCode { get; } = new PostCodeProperty();
-			/// <summary>
-			﻿/// element designating the code used for the sorting of mail.<br/><br />
-
+			public new PostCodeProperty PostCode { get; } = new PostCodeProperty();
+			
+			/// <summary>﻿element designating the code used for the sorting of mail.<br /><br /><br />
 			/// </summary>
-			public sealed class PostCodeProperty : IProperty
+			public new sealed class PostCodeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

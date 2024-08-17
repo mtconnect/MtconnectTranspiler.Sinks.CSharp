@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
-	/// <summary>
-	﻿/// number of times the cutter has been reconditioned.<br /><br/><br />Description<br/><see cref="ReconditionCount">ReconditionCount</see> <b>MUST</b> be defined only for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingTool">CuttingTool</see> and <b>MUST NOT</b> be defined for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br/><br/><br />
-
+	/// <summary>﻿number of times the cutter has been reconditioned.<br /><br /><br /><br />Description<br /><br /><see cref="ReconditionCount">ReconditionCount</see> <b>MUST</b> be defined only for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingTool">CuttingTool</see> and <b>MUST NOT</b> be defined for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_AB33F1B2_493B_4f60_9394_4A69B30576F9">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -41,6 +42,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		/// <inheritdoc />
 		public ReconditionCountClassProperties Properties { get; } = new ReconditionCountClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ReconditionCountClass" />.
+		/// </summary>
 		public class ReconditionCountClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -53,9 +57,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// <remarks>Original Name: MaximumCount</remarks>
 			/// </summary>
 			public MaximumCountProperty MaximumCount { get; } = new MaximumCountProperty();
-			/// <summary>
-			﻿/// maximum number of times the tool may be reconditioned.<br /><br/><br />
-
+			
+			/// <summary>﻿maximum number of times the tool may be reconditioned.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class MaximumCountProperty : IProperty
 			{
@@ -109,6 +112,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>

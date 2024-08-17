@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 {
-	/// <summary>
-	﻿/// set of limits that is used to indicate whether a process variable is stable and in control.<br/><br />
-
+	/// <summary>﻿set of limits that is used to indicate whether a process variable is stable and in control.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605643876416_54094_959">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		/// <inheritdoc />
 		public ControlLimitsClassProperties Properties { get; } = new ControlLimitsClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ControlLimitsClass" />.
+		/// </summary>
 		public class ControlLimitsClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -55,6 +59,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: UpperLimit</remarks>
 			/// </summary>
 			public UpperLimitPartProperty UpperLimitPart { get; } = new UpperLimitPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class UpperLimitPartProperty : IProperty
 			{
 				/// <summary>
@@ -106,6 +113,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: UpperWarning</remarks>
 			/// </summary>
 			public UpperWarningPartProperty UpperWarningPart { get; } = new UpperWarningPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class UpperWarningPartProperty : IProperty
 			{
 				/// <summary>
@@ -157,6 +167,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: LowerWarning</remarks>
 			/// </summary>
 			public LowerWarningPartProperty LowerWarningPart { get; } = new LowerWarningPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class LowerWarningPartProperty : IProperty
 			{
 				/// <summary>
@@ -208,6 +221,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: Nominal</remarks>
 			/// </summary>
 			public NominalPartProperty NominalPart { get; } = new NominalPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class NominalPartProperty : IProperty
 			{
 				/// <summary>
@@ -259,6 +275,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// <remarks>Original Name: LowerLimit</remarks>
 			/// </summary>
 			public LowerLimitPartProperty LowerLimitPart { get; } = new LowerLimitPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class LowerLimitPartProperty : IProperty
 			{
 				/// <summary>

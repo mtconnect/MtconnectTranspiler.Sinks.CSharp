@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocument
 {
-	/// <summary>
-	﻿/// root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref="Asset">Asset</see> types.<br /><br />![MTConnectAssets](figures/MTConnectAssets.png "MTConnectAssets"){: width="0.8"}<br /><br />> Note: Additional properties of <see cref="MTConnectAssets">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.<br/><br />
-
+	/// <summary>﻿root entity of an <i>MTConnectAssets Response Document</i> that contains the <i>Asset Information Model</i> of <see cref="Asset">Asset</see> types.<br /><br />![MTConnectAssets](figures/MTConnectAssets.png "MTConnectAssets"){: width="0.8"}<br /><br />&gt; Note: Additional properties of <see cref="MTConnectAssets">MTConnectAssets</see> <b>MAY</b> be defined for schema and namespace declaration. See <see cref="Schema and Namespace Declaration Information">Schema and Namespace Declaration Information</see> for an <i>XML</i> example.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_AD98C122_E276_4506_AD69_B82107CB3802">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,6 +45,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 		/// <inheritdoc />
 		public MTConnectAssetsClassProperties Properties { get; } = new MTConnectAssetsClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="MTConnectAssetsClass" />.
+		/// </summary>
 		public class MTConnectAssetsClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -56,6 +60,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 			/// <remarks>Original Name: HasHeader</remarks>
 			/// </summary>
 			public HasHeaderPartProperty HasHeaderPart { get; } = new HasHeaderPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasHeaderPartProperty : IProperty
 			{
 				/// <summary>
@@ -107,6 +114,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 			/// <remarks>Original Name: HasAsset</remarks>
 			/// </summary>
 			public HasAssetPartProperty HasAssetPart { get; } = new HasAssetPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasAssetPartProperty : IProperty
 			{
 				/// <summary>

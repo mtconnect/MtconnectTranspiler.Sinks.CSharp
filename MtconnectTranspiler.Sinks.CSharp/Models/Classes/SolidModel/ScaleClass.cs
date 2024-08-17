@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 {
-	/// <summary>
-	﻿/// either a single multiplier applied to all three dimensions or a three space multiplier given in the X, Y, and Z dimensions in the coordinate system used for the <see cref="SolidModel">SolidModel</see>.<br/><br />
-
+	/// <summary>﻿either a single multiplier applied to all three dimensions or a three space multiplier given in the X, Y, and Z dimensions in the coordinate system used for the <see cref="SolidModel">SolidModel</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587596359868_51018_760">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 		/// <inheritdoc />
 		public ScaleClassProperties Properties { get; } = new ScaleClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ScaleClass" />.
+		/// </summary>
 		public class ScaleClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -51,9 +55,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// value of <see cref="Scale">Scale</see>.<br/><br />
-
+			
+			/// <summary>﻿value of <see cref="Scale">Scale</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{

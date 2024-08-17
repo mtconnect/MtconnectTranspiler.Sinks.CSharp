@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 {
-	/// <summary>
-	﻿/// abstract <see cref="DataItem">DataItem</see> that is a discrete piece of information from a piece of equipment. It does not have intermediate values that vary over time.<br /><br/><br />Description<br/>An <see cref="Event">Event</see> is information that, when provided at any specific point in time, represents the current state of the piece of equipment.<br/><br/><br />
-
+	/// <summary>﻿abstract <see cref="DataItem">DataItem</see> that is a discrete piece of information from a piece of equipment. It does not have intermediate values that vary over time.<br /><br /><br /><br />Description<br /><br />An <see cref="Event">Event</see> is information that, when provided at any specific point in time, represents the current state of the piece of equipment.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_ED83840A_A210_4afb_B987_376C88EC8B17">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -46,10 +47,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 		/// <inheritdoc />
 		public EventClassProperties Properties { get; } = new EventClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="EventClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.DataItems.DataItemClass.DataItemClassProperties" />.
+		/// </summary>
 		public class EventClassProperties : Mtconnect.DeviceInformationModel.DataItems.DataItemClass.DataItemClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Category,
 				Type,
 			}.Concat(base.Properties).ToArray();
@@ -57,8 +62,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 			/// <inheritdoc cref="CategoryProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Category</remarks>
 			/// </summary>
-			public CategoryProperty Category { get; } = new CategoryProperty();
-			public sealed class CategoryProperty : IProperty
+			public new CategoryProperty Category { get; } = new CategoryProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class CategoryProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -108,8 +116,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

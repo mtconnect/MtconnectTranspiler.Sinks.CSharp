@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	/// <summary>
-	﻿/// <see cref="EventEnum.ALARM">EventEnum.ALARM</see><br/><br />
-
+	/// <summary>﻿<see cref="EventEnum.ALARM">EventEnum.ALARM</see><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218144_231993_1515">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		/// <inheritdoc />
 		public AlarmClassProperties Properties { get; } = new AlarmClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="AlarmClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.EventClass.EventClassProperties" />.
+		/// </summary>
 		public class AlarmClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Type,
 				Code,
 				Severity,
@@ -59,8 +64,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -110,12 +118,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="CodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Code</remarks>
 			/// </summary>
-			public CodeProperty Code { get; } = new CodeProperty();
-			/// <summary>
-			﻿/// type of alarm.<br/><br />
-
+			public new CodeProperty Code { get; } = new CodeProperty();
+			
+			/// <summary>﻿type of alarm.<br /><br /><br />
 			/// </summary>
-			public sealed class CodeProperty : IProperty
+			public new sealed class CodeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -166,12 +173,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="SeverityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Severity</remarks>
 			/// </summary>
-			public SeverityProperty Severity { get; } = new SeverityProperty();
-			/// <summary>
-			﻿/// severity of the alarm.<br/><br />
-
+			public new SeverityProperty Severity { get; } = new SeverityProperty();
+			
+			/// <summary>﻿severity of the alarm.<br /><br /><br />
 			/// </summary>
-			public sealed class SeverityProperty : IProperty
+			public new sealed class SeverityProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -222,12 +228,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="NativeCodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeCode</remarks>
 			/// </summary>
-			public NativeCodeProperty NativeCode { get; } = new NativeCodeProperty();
-			/// <summary>
-			﻿/// native code for the piece of equipment.<br/><br />
-
+			public new NativeCodeProperty NativeCode { get; } = new NativeCodeProperty();
+			
+			/// <summary>﻿native code for the piece of equipment.<br /><br /><br />
 			/// </summary>
-			public sealed class NativeCodeProperty : IProperty
+			public new sealed class NativeCodeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -278,12 +283,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="StateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: State</remarks>
 			/// </summary>
-			public StateProperty State { get; } = new StateProperty();
-			/// <summary>
-			﻿/// state of the alarm.<br/><br />
-
+			public new StateProperty State { get; } = new StateProperty();
+			
+			/// <summary>﻿state of the alarm.<br /><br /><br />
 			/// </summary>
-			public sealed class StateProperty : IProperty
+			public new sealed class StateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -334,12 +338,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 			/// <inheritdoc cref="LangProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Lang</remarks>
 			/// </summary>
-			public LangProperty Lang { get; } = new LangProperty();
-			/// <summary>
-			﻿/// specifies the language of the alarm text.<br /><br />See <seealso href="https://www.google.com/search?q=IETF RFC 4646&btnI=I">IETF RFC 4646</seealso> (http://www.ietf.org/rfc/rfc4646.txt).<br/><br />
-
+			public new LangProperty Lang { get; } = new LangProperty();
+			
+			/// <summary>﻿specifies the language of the alarm text.<br /><br />See <seealso href="https://www.google.com/search?q=IETF RFC 4646&btnI=I">IETF RFC 4646</seealso> (http://www.ietf.org/rfc/rfc4646.txt).<br /><br /><br />
 			/// </summary>
-			public sealed class LangProperty : IProperty
+			public new sealed class LangProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

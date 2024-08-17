@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Components
 {
-	/// <summary>
-	﻿/// descriptive content.<br/><br />Description<br/>> Note 1 to entry: See {{figure(Component Example)}} for an example.<br /><br />> Note 2 to entry: See {{lst(component-example)}} for the <i>XML</i> representation of the same example.<br/><br/><br />
-
+	/// <summary>﻿descriptive content.<br /><br /><br />Description<br /><br />&gt; Note 1 to entry: See {{figure(Component Example)}} for an example.<br /><br />&gt; Note 2 to entry: See {{lst(component-example)}} for the <i>XML</i> representation of the same example.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_64352755_7251_46af_846D_937E5A1E3949">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -43,6 +44,9 @@ namespace Mtconnect.DeviceInformationModel.Components
 		/// <inheritdoc />
 		public DescriptionClassProperties Properties { get; } = new DescriptionClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DescriptionClass" />.
+		/// </summary>
 		public class DescriptionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -58,9 +62,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// <remarks>Original Name: Manufacturer</remarks>
 			/// </summary>
 			public ManufacturerProperty Manufacturer { get; } = new ManufacturerProperty();
-			/// <summary>
-			﻿/// name of the manufacturer of the physical or logical part of a piece of equipment represented by this element.<br/><br />
-
+			
+			/// <summary>﻿name of the manufacturer of the physical or logical part of a piece of equipment represented by this element.<br /><br /><br />
 			/// </summary>
 			public sealed class ManufacturerProperty : IProperty
 			{
@@ -114,9 +117,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// <remarks>Original Name: Model</remarks>
 			/// </summary>
 			public ModelProperty Model { get; } = new ModelProperty();
-			/// <summary>
-			﻿/// model description of the physical part or logical function of a piece of equipment represented by this element.<br/><br />
-
+			
+			/// <summary>﻿model description of the physical part or logical function of a piece of equipment represented by this element.<br /><br /><br />
 			/// </summary>
 			public sealed class ModelProperty : IProperty
 			{
@@ -170,9 +172,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// <remarks>Original Name: SerialNumber</remarks>
 			/// </summary>
 			public SerialNumberProperty SerialNumber { get; } = new SerialNumberProperty();
-			/// <summary>
-			﻿/// serial number associated with a piece of equipment.<br/><br />
-
+			
+			/// <summary>﻿serial number associated with a piece of equipment.<br /><br /><br />
 			/// </summary>
 			public sealed class SerialNumberProperty : IProperty
 			{
@@ -226,9 +227,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// <remarks>Original Name: Station</remarks>
 			/// </summary>
 			public StationProperty Station { get; } = new StationProperty();
-			/// <summary>
-			﻿/// identifier where a manufacturing function takes place.<br/><br />
-
+			
+			/// <summary>﻿identifier where a manufacturing function takes place.<br /><br /><br />
 			/// </summary>
 			public sealed class StationProperty : IProperty
 			{
@@ -282,9 +282,8 @@ namespace Mtconnect.DeviceInformationModel.Components
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// description of the element.<br/><br />
-
+			
+			/// <summary>﻿description of the element.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{

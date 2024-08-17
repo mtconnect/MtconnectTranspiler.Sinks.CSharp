@@ -55,7 +55,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             var regex = new Regex(@"\" + String.Join(@"|\", invalidFileCharacters), RegexOptions.Compiled);
             return regex.Replace(input, replaceBy);
         }
-        public static string GetTypeNamespace(string referenceId)
+        public static string? GetTypeNamespace(string referenceId)
             => TypeCache.GetTypeNamespaceFromId(referenceId);
         public static string[] GetClassNamespaces(CSharpClass cSharpClass)
         {
@@ -85,7 +85,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
     }
     internal class Transpiler : ITranspilerSink
     {
-        private readonly ILogger<ITranspilerSink> _logger;
+        private readonly ILogger<ITranspilerSink>? _logger;
 
         private readonly IScribanTemplateGenerator _generator;
 

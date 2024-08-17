@@ -36,7 +36,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             { "double", typeof(double) },
             
         };
-        public static Type ToPrimitiveType(string umlType)
+        public static Type? ToPrimitiveType(string umlType)
         {
             if (umlDataTypeToCSharp.TryGetValue(umlType, out var type))
                 return type;
@@ -48,7 +48,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         /// <param name="source">Reference to the packaged UML DataType</param>
         /// <returns>Primitive type. Returns null if unrecognizes or unhandled DataType</returns>
-        public static Type ToPrimitiveType(UmlDataType source)
+        public static Type? ToPrimitiveType(UmlDataType source)
             => ToPrimitiveType(source.Name);
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <param name="model">Reference to the source XMI document</param>
         /// <param name="source">Reference to the packaged UML Property</param>
         /// <returns>Primitive type. Returns null if unrecognizes or unhandled Property</returns>
-        public static Type ToPrimitiveType(Xmi.XmiDocument model, UmlProperty source)
+        public static Type? ToPrimitiveType(Xmi.XmiDocument model, UmlProperty source)
         {
             var umlDataType = model.LookupDataType(source.PropertyType);
             if (umlDataType == null)

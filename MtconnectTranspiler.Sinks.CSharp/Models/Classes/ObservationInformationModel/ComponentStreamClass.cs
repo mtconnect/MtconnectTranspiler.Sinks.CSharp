@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	/// <summary>
-	﻿/// organizes the data associated with each <see cref="Component">Component</see> entity defined for a <see cref="Device">Device</see> in the associated <i>MTConnectDevices Response Document</i>.<br/><br />Description<br/>At least one of <see cref="Sample">Sample</see>, <see cref="Event">Event</see>, or <see cref="Condition">Condition</see> <b>MUST</b> be organized by a <see cref="ComponentStream">ComponentStream</see> entity.<br/><br/><br />
-
+	/// <summary>﻿organizes the data associated with each <see cref="Component">Component</see> entity defined for a <see cref="Device">Device</see> in the associated <i>MTConnectDevices Response Document</i>.<br /><br /><br />Description<br /><br />At least one of <see cref="Sample">Sample</see>, <see cref="Event">Event</see>, or <see cref="Condition">Condition</see> <b>MUST</b> be organized by a <see cref="ComponentStream">ComponentStream</see> entity.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_9057AAF9_4687_42be_BD2B_E2F18DF049DC">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -41,6 +42,9 @@ namespace Mtconnect.ObservationInformationModel
 		/// <inheritdoc />
 		public ComponentStreamClassProperties Properties { get; } = new ComponentStreamClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ComponentStreamClass" />.
+		/// </summary>
 		public class ComponentStreamClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -60,9 +64,8 @@ namespace Mtconnect.ObservationInformationModel
 			/// <remarks>Original Name: Component</remarks>
 			/// </summary>
 			public ComponentProperty Component { get; } = new ComponentProperty();
-			/// <summary>
-			﻿/// identifies the <see cref="Component">Component</see> type associated with the <see cref="ComponentStream">ComponentStream</see>.<br /><br />Examples of <see cref="ComponentStream.component">component in ComponentStream</see> are <see cref="Device">Device</see>, <see cref="Controller">Controller</see>, <see cref="Linear">Linear</see> and <see cref="Loader">Loader</see>.<br/><br />
-
+			
+			/// <summary>﻿identifies the <see cref="Component">Component</see> type associated with the <see cref="ComponentStream">ComponentStream</see>.<br /><br />Examples of <see cref="ComponentStream.component">component in ComponentStream</see> are <see cref="Device">Device</see>, <see cref="Controller">Controller</see>, <see cref="Linear">Linear</see> and <see cref="Loader">Loader</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ComponentProperty : IProperty
 			{
@@ -118,9 +121,8 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 			/// <remarks>Original Name: ComponentId</remarks>
 			/// </summary>
 			public ComponentIdProperty ComponentId { get; } = new ComponentIdProperty();
-			/// <summary>
-			﻿/// identifier of the <see cref="Component">Component</see> as defined by the <see cref="Component.id">id in Component</see> in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			
+			/// <summary>﻿identifier of the <see cref="Component">Component</see> as defined by the <see cref="Component.id">id in Component</see> in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class ComponentIdProperty : IProperty
 			{
@@ -174,9 +176,8 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br/><br />
-
+			
+			/// <summary>﻿name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -230,9 +231,8 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 			/// <remarks>Original Name: NativeName</remarks>
 			/// </summary>
 			public NativeNameProperty NativeName { get; } = new NativeNameProperty();
-			/// <summary>
-			﻿/// common name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br/><br />
-
+			
+			/// <summary>﻿common name of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class NativeNameProperty : IProperty
 			{
@@ -286,9 +286,8 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 			/// <remarks>Original Name: Uuid</remarks>
 			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
-			/// <summary>
-			﻿/// uuid of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br/><br />
-
+			
+			/// <summary>﻿uuid of the <see cref="Component">Component</see> associated with the <see cref="ComponentStream">ComponentStream</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
@@ -342,6 +341,9 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 			/// <remarks>Original Name: OrganizesEvent</remarks>
 			/// </summary>
 			public OrganizesEventPartProperty OrganizesEventPart { get; } = new OrganizesEventPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class OrganizesEventPartProperty : IProperty
 			{
 				/// <summary>
@@ -393,6 +395,9 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 			/// <remarks>Original Name: OrganizesSample</remarks>
 			/// </summary>
 			public OrganizesSamplePartProperty OrganizesSamplePart { get; } = new OrganizesSamplePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class OrganizesSamplePartProperty : IProperty
 			{
 				/// <summary>
@@ -444,6 +449,9 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 			/// <remarks>Original Name: OrganizesCondition</remarks>
 			/// </summary>
 			public OrganizesConditionPartProperty OrganizesConditionPart { get; } = new OrganizesConditionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class OrganizesConditionPartProperty : IProperty
 			{
 				/// <summary>
@@ -495,6 +503,9 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 			/// <remarks>Original Name: IsOrganizerFor</remarks>
 			/// </summary>
 			public IsOrganizerForPartProperty IsOrganizerForPart { get; } = new IsOrganizerForPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class IsOrganizerForPartProperty : IProperty
 			{
 				/// <summary>

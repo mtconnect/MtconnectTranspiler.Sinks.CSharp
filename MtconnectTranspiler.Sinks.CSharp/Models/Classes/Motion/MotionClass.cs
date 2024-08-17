@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 {
-	/// <summary>
-	﻿/// movement of the component relative to a coordinate system. <br/><br />Description<br/><see cref="Motion">Motion</see> specifies the kinematic chain of the <see cref="component">component</see> entities.<br /><br />At most only one of <see cref="Origin">Origin</see> or <see cref="Transformation">Transformation</see> <b>MUST</b> be defined for a <see cref="Motion">Motion</see>.<br/><br/><br />
-
+	/// <summary>﻿movement of the component relative to a coordinate system. <br /><br /><br />Description<br /><br /><see cref="Motion">Motion</see> specifies the kinematic chain of the <see cref="component">component</see> entities.<br /><br />At most only one of <see cref="Origin">Origin</see> or <see cref="Transformation">Transformation</see> <b>MUST</b> be defined for a <see cref="Motion">Motion</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_1F084FBF_2AC7_41f6_8485_C356E6D7A9C1">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -43,6 +44,9 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 		/// <inheritdoc />
 		public MotionClassProperties Properties { get; } = new MotionClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="MotionClass" />.
+		/// </summary>
 		public class MotionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -62,9 +66,8 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 			/// <remarks>Original Name: Actuation</remarks>
 			/// </summary>
 			public ActuationProperty Actuation { get; } = new ActuationProperty();
-			/// <summary>
-			﻿/// describes if this component is actuated directly or indirectly as a result of other motion.<br/><br />
-
+			
+			/// <summary>﻿describes if this component is actuated directly or indirectly as a result of other motion.<br /><br /><br />
 			/// </summary>
 			public sealed class ActuationProperty : IProperty
 			{
@@ -118,9 +121,8 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 			/// <remarks>Original Name: CoordinateSystemIdRef</remarks>
 			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
-			/// <summary>
-			﻿/// coordinate system within which the kinematic motion occurs.<br/><br />
-
+			
+			/// <summary>﻿coordinate system within which the kinematic motion occurs.<br /><br /><br />
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
@@ -174,9 +176,8 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 			/// <remarks>Original Name: Id</remarks>
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
-			/// <summary>
-			﻿/// unique identifier for this element.<br/><br />
-
+			
+			/// <summary>﻿unique identifier for this element.<br /><br /><br />
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -230,9 +231,8 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 			/// <remarks>Original Name: ParentIdRef</remarks>
 			/// </summary>
 			public ParentIdRefProperty ParentIdRef { get; } = new ParentIdRefProperty();
-			/// <summary>
-			﻿/// pointer to the <see cref="Motion.id">id in Motion</see>.<br /><br />The kinematic chain connects all components using the parent relations. All motion is connected to the motion of the parent. The first node in the chain will not have a parent.<br/><br />
-
+			
+			/// <summary>﻿pointer to the <see cref="Motion.id">id in Motion</see>.<br /><br />The kinematic chain connects all components using the parent relations. All motion is connected to the motion of the parent. The first node in the chain will not have a parent.<br /><br /><br />
 			/// </summary>
 			public sealed class ParentIdRefProperty : IProperty
 			{
@@ -288,9 +288,8 @@ The kinematic chain connects all components using the parent relations. All moti
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
-			/// <summary>
-			﻿/// type of motion.<br/><br />
-
+			
+			/// <summary>﻿type of motion.<br /><br /><br />
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -344,6 +343,9 @@ The kinematic chain connects all components using the parent relations. All moti
 			/// <remarks>Original Name: HasAxis</remarks>
 			/// </summary>
 			public HasAxisPartProperty HasAxisPart { get; } = new HasAxisPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasAxisPartProperty : IProperty
 			{
 				/// <summary>
@@ -395,6 +397,9 @@ The kinematic chain connects all components using the parent relations. All moti
 			/// <remarks>Original Name: HasOrigin</remarks>
 			/// </summary>
 			public HasOriginPartProperty HasOriginPart { get; } = new HasOriginPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasOriginPartProperty : IProperty
 			{
 				/// <summary>
@@ -446,6 +451,9 @@ The kinematic chain connects all components using the parent relations. All moti
 			/// <remarks>Original Name: HasTransformation</remarks>
 			/// </summary>
 			public HasTransformationPartProperty HasTransformationPart { get; } = new HasTransformationPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasTransformationPartProperty : IProperty
 			{
 				/// <summary>
@@ -497,6 +505,9 @@ The kinematic chain connects all components using the parent relations. All moti
 			/// <remarks>Original Name: HasDescription</remarks>
 			/// </summary>
 			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasDescriptionPartProperty : IProperty
 			{
 				/// <summary>

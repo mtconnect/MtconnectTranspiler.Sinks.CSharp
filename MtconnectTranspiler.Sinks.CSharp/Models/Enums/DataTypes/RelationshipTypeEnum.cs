@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_17E78CC7_671B_40bb_91A0_1F7CC06799BF">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_17E78CC7_671B_40bb_91A0_1F7CC06799BF">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum RelationshipTypeEnum
 	{
-		/// <summary>
-		﻿/// functions as a parent in the relationship with the associated element.<br/><br />
-
+		/// <summary>﻿functions as a parent in the relationship with the associated element.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PARENT,
-		/// <summary>
-		﻿/// functions as a child in the relationship with the associated element.<br/><br />
-
+		/// <summary>﻿functions as a child in the relationship with the associated element.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHILD,
-		/// <summary>
-		﻿/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.<br/><br />
-
+		/// <summary>﻿functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,8 @@ namespace Mtconnect.DataTypes
 		PEER,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_17E78CC7_671B_40bb_91A0_1F7CC06799BF">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_17E78CC7_671B_40bb_91A0_1F7CC06799BF">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RelationshipTypeEnumMetaClass : IEnum
@@ -60,6 +54,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(RelationshipTypeEnum);
 
 		/// <inheritdoc />
@@ -79,15 +74,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private PARENTValue _PARENT;
-		/// <summary>
-		﻿/// functions as a parent in the relationship with the associated element.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PARENTValue" path="/summary" />
 		public PARENTValue PARENT => _PARENT ?? (_PARENT = new PARENTValue());
 
-		/// <summary>
-		﻿/// functions as a parent in the relationship with the associated element.<br/><br />
-
+		/// <summary>﻿functions as a parent in the relationship with the associated element.<br /><br /><br />
+		/// Value for RelationshipTypeEnum.<br/>
+		/// <br/>See also <seealso cref="RelationshipTypeEnum">RelationshipTypeEnum</seealso>
 		/// </summary>
 		public sealed class PARENTValue : IEnumInstance
 		{
@@ -108,15 +100,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private CHILDValue _CHILD;
-		/// <summary>
-		﻿/// functions as a child in the relationship with the associated element.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHILDValue" path="/summary" />
 		public CHILDValue CHILD => _CHILD ?? (_CHILD = new CHILDValue());
 
-		/// <summary>
-		﻿/// functions as a child in the relationship with the associated element.<br/><br />
-
+		/// <summary>﻿functions as a child in the relationship with the associated element.<br /><br /><br />
+		/// Value for RelationshipTypeEnum.<br/>
+		/// <br/>See also <seealso cref="RelationshipTypeEnum">RelationshipTypeEnum</seealso>
 		/// </summary>
 		public sealed class CHILDValue : IEnumInstance
 		{
@@ -137,15 +126,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private PEERValue _PEER;
-		/// <summary>
-		﻿/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PEERValue" path="/summary" />
 		public PEERValue PEER => _PEER ?? (_PEER = new PEERValue());
 
-		/// <summary>
-		﻿/// functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.<br/><br />
-
+		/// <summary>﻿functions as a peer which provides equal functionality and capabilities in the relationship with the associated element.<br /><br /><br />
+		/// Value for RelationshipTypeEnum.<br/>
+		/// <br/>See also <seealso cref="RelationshipTypeEnum">RelationshipTypeEnum</seealso>
 		/// </summary>
 		public sealed class PEERValue : IEnumInstance
 		{

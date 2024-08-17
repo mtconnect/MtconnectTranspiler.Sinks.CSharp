@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +7,9 @@ using Package = Mtconnect.Imports.UnitImports.BasicUnits;
 
 namespace Mtconnect.Imports.UnitImports
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579105790699_574141_162915">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class BasicUnitsPackage : IPackage
 	{
@@ -40,6 +45,11 @@ namespace Mtconnect.Imports.UnitImports
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.BasicLengthPackage _BasicLengthPackage;
 	/// <summary>
@@ -140,6 +150,9 @@ namespace Mtconnect.Imports.UnitImports
 	#endregion
 
 	#region Classes
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

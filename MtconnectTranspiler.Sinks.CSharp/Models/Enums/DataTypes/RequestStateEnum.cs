@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845125853_44708_2341">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845125853_44708_2341">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum RequestStateEnum
 	{
-		/// <summary>
-		﻿/// <i>requester</i> is not ready to make a <i>request</i>.<br/><br />
-
+		/// <summary>﻿<i>requester</i> is not ready to make a <i>request</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		NOT_READY,
-		/// <summary>
-		﻿/// <i>requester</i> is prepared to make a <i>request</i>, but no <i>request</i> for service is required.<br/><br />
-
+		/// <summary>﻿<i>requester</i> is prepared to make a <i>request</i>, but no <i>request</i> for service is required.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		READY,
-		/// <summary>
-		﻿/// <i>requester</i> has initiated a <i>request</i> for a service and the service has not yet been completed by the <i>responder</i>.<br/><br />
-
+		/// <summary>﻿<i>requester</i> has initiated a <i>request</i> for a service and the service has not yet been completed by the <i>responder</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVE,
-		/// <summary>
-		﻿/// <i>requester</i> has detected a failure condition.<br/><br />
-
+		/// <summary>﻿<i>requester</i> has detected a failure condition.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -57,9 +50,8 @@ namespace Mtconnect.DataTypes
 		FAIL,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845125853_44708_2341">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845125853_44708_2341">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RequestStateEnumMetaClass : IEnum
@@ -70,6 +62,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(RequestStateEnum);
 
 		/// <inheritdoc />
@@ -90,15 +83,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private NOT_READYValue _NOT_READY;
-		/// <summary>
-		﻿/// <i>requester</i> is not ready to make a <i>request</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NOT_READYValue" path="/summary" />
 		public NOT_READYValue NOT_READY => _NOT_READY ?? (_NOT_READY = new NOT_READYValue());
 
-		/// <summary>
-		﻿/// <i>requester</i> is not ready to make a <i>request</i>.<br/><br />
-
+		/// <summary>﻿<i>requester</i> is not ready to make a <i>request</i>.<br /><br /><br />
+		/// Value for RequestStateEnum.<br/>
+		/// <br/>See also <seealso cref="RequestStateEnum">RequestStateEnum</seealso>
 		/// </summary>
 		public sealed class NOT_READYValue : IEnumInstance
 		{
@@ -119,15 +109,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private READYValue _READY;
-		/// <summary>
-		﻿/// <i>requester</i> is prepared to make a <i>request</i>, but no <i>request</i> for service is required.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="READYValue" path="/summary" />
 		public READYValue READY => _READY ?? (_READY = new READYValue());
 
-		/// <summary>
-		﻿/// <i>requester</i> is prepared to make a <i>request</i>, but no <i>request</i> for service is required.<br/><br />
-
+		/// <summary>﻿<i>requester</i> is prepared to make a <i>request</i>, but no <i>request</i> for service is required.<br /><br /><br />
+		/// Value for RequestStateEnum.<br/>
+		/// <br/>See also <seealso cref="RequestStateEnum">RequestStateEnum</seealso>
 		/// </summary>
 		public sealed class READYValue : IEnumInstance
 		{
@@ -148,15 +135,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTIVEValue _ACTIVE;
-		/// <summary>
-		﻿/// <i>requester</i> has initiated a <i>request</i> for a service and the service has not yet been completed by the <i>responder</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVEValue" path="/summary" />
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
-		/// <summary>
-		﻿/// <i>requester</i> has initiated a <i>request</i> for a service and the service has not yet been completed by the <i>responder</i>.<br/><br />
-
+		/// <summary>﻿<i>requester</i> has initiated a <i>request</i> for a service and the service has not yet been completed by the <i>responder</i>.<br /><br /><br />
+		/// Value for RequestStateEnum.<br/>
+		/// <br/>See also <seealso cref="RequestStateEnum">RequestStateEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -177,15 +161,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private FAILValue _FAIL;
-		/// <summary>
-		﻿/// <i>requester</i> has detected a failure condition.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FAILValue" path="/summary" />
 		public FAILValue FAIL => _FAIL ?? (_FAIL = new FAILValue());
 
-		/// <summary>
-		﻿/// <i>requester</i> has detected a failure condition.<br/><br />
-
+		/// <summary>﻿<i>requester</i> has detected a failure condition.<br /><br /><br />
+		/// Value for RequestStateEnum.<br/>
+		/// <br/>See also <seealso cref="RequestStateEnum">RequestStateEnum</seealso>
 		/// </summary>
 		public sealed class FAILValue : IEnumInstance
 		{

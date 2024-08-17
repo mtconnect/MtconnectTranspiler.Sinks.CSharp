@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845159692_780642_2366">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845159692_780642_2366">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ResponseStateEnum
 	{
-		/// <summary>
-		﻿/// <i>responder</i> is not ready to perform a service.<br/><br />
-
+		/// <summary>﻿<i>responder</i> is not ready to perform a service.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		NOT_READY,
-		/// <summary>
-		﻿/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.<br/><br />
-
+		/// <summary>﻿<i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		READY,
-		/// <summary>
-		﻿/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet<br />been completed.<br/><br />
-
+		/// <summary>﻿<i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet<br />been completed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVE,
-		/// <summary>
-		﻿/// <i>responder</i> has completed the actions required to perform the service.<br/><br />
-
+		/// <summary>﻿<i>responder</i> has completed the actions required to perform the service.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COMPLETE,
-		/// <summary>
-		﻿/// <i>responder</i> has detected a failure condition.<br/><br />
-
+		/// <summary>﻿<i>responder</i> has detected a failure condition.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -67,9 +58,8 @@ namespace Mtconnect.DataTypes
 		FAIL,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845159692_780642_2366">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1623845159692_780642_2366">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ResponseStateEnumMetaClass : IEnum
@@ -80,6 +70,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(ResponseStateEnum);
 
 		/// <inheritdoc />
@@ -101,15 +92,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private NOT_READYValue _NOT_READY;
-		/// <summary>
-		﻿/// <i>responder</i> is not ready to perform a service.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NOT_READYValue" path="/summary" />
 		public NOT_READYValue NOT_READY => _NOT_READY ?? (_NOT_READY = new NOT_READYValue());
 
-		/// <summary>
-		﻿/// <i>responder</i> is not ready to perform a service.<br/><br />
-
+		/// <summary>﻿<i>responder</i> is not ready to perform a service.<br /><br /><br />
+		/// Value for ResponseStateEnum.<br/>
+		/// <br/>See also <seealso cref="ResponseStateEnum">ResponseStateEnum</seealso>
 		/// </summary>
 		public sealed class NOT_READYValue : IEnumInstance
 		{
@@ -130,15 +118,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private READYValue _READY;
-		/// <summary>
-		﻿/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="READYValue" path="/summary" />
 		public READYValue READY => _READY ?? (_READY = new READYValue());
 
-		/// <summary>
-		﻿/// <i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.<br/><br />
-
+		/// <summary>﻿<i>responder</i> is prepared to react to a <i>request</i>, but no <i>request</i> for service has been detected.<br /><br /><br />
+		/// Value for ResponseStateEnum.<br/>
+		/// <br/>See also <seealso cref="ResponseStateEnum">ResponseStateEnum</seealso>
 		/// </summary>
 		public sealed class READYValue : IEnumInstance
 		{
@@ -159,15 +144,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTIVEValue _ACTIVE;
-		/// <summary>
-		﻿/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet<br />been completed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVEValue" path="/summary" />
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
-		/// <summary>
-		﻿/// <i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet<br />been completed.<br/><br />
-
+		/// <summary>﻿<i>responder</i> has detected and accepted a <i>request</i> for a service and is in the process of performing the service, but the service has not yet<br />been completed.<br /><br /><br />
+		/// Value for ResponseStateEnum.<br/>
+		/// <br/>See also <seealso cref="ResponseStateEnum">ResponseStateEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -189,15 +171,12 @@ been completed.&#10;
 ";
 		}
 		private COMPLETEValue _COMPLETE;
-		/// <summary>
-		﻿/// <i>responder</i> has completed the actions required to perform the service.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COMPLETEValue" path="/summary" />
 		public COMPLETEValue COMPLETE => _COMPLETE ?? (_COMPLETE = new COMPLETEValue());
 
-		/// <summary>
-		﻿/// <i>responder</i> has completed the actions required to perform the service.<br/><br />
-
+		/// <summary>﻿<i>responder</i> has completed the actions required to perform the service.<br /><br /><br />
+		/// Value for ResponseStateEnum.<br/>
+		/// <br/>See also <seealso cref="ResponseStateEnum">ResponseStateEnum</seealso>
 		/// </summary>
 		public sealed class COMPLETEValue : IEnumInstance
 		{
@@ -218,15 +197,12 @@ been completed.&#10;
 ";
 		}
 		private FAILValue _FAIL;
-		/// <summary>
-		﻿/// <i>responder</i> has detected a failure condition.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FAILValue" path="/summary" />
 		public FAILValue FAIL => _FAIL ?? (_FAIL = new FAILValue());
 
-		/// <summary>
-		﻿/// <i>responder</i> has detected a failure condition.<br/><br />
-
+		/// <summary>﻿<i>responder</i> has detected a failure condition.<br /><br /><br />
+		/// Value for ResponseStateEnum.<br/>
+		/// <br/>See also <seealso cref="ResponseStateEnum">ResponseStateEnum</seealso>
 		/// </summary>
 		public sealed class FAILValue : IEnumInstance
 		{

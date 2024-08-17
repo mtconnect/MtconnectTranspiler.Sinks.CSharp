@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_C5CA1571_EA21_4123_942E_7329B6C61618">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_C5CA1571_EA21_4123_942E_7329B6C61618">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum MotionActuationTypeEnum
 	{
-		/// <summary>
-		﻿/// movement is initiated by the component.<br/><br />
-
+		/// <summary>﻿movement is initiated by the component.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DIRECT,
-		/// <summary>
-		﻿/// motion is computed and is used for expressing an imaginary movement.<br/><br />
-
+		/// <summary>﻿motion is computed and is used for expressing an imaginary movement.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VIRTUAL,
-		/// <summary>
-		﻿/// no actuation of this axis.<br /><br />> Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.<br/><br />
-
+		/// <summary>﻿no actuation of this axis.<br /><br />&gt; Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,8 @@ namespace Mtconnect.DataTypes
 		NONE,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_C5CA1571_EA21_4123_942E_7329B6C61618">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_C5CA1571_EA21_4123_942E_7329B6C61618">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MotionActuationTypeEnumMetaClass : IEnum
@@ -60,6 +54,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(MotionActuationTypeEnum);
 
 		/// <inheritdoc />
@@ -79,15 +74,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private DIRECTValue _DIRECT;
-		/// <summary>
-		﻿/// movement is initiated by the component.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DIRECTValue" path="/summary" />
 		public DIRECTValue DIRECT => _DIRECT ?? (_DIRECT = new DIRECTValue());
 
-		/// <summary>
-		﻿/// movement is initiated by the component.<br/><br />
-
+		/// <summary>﻿movement is initiated by the component.<br /><br /><br />
+		/// Value for MotionActuationTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MotionActuationTypeEnum">MotionActuationTypeEnum</seealso>
 		/// </summary>
 		public sealed class DIRECTValue : IEnumInstance
 		{
@@ -108,15 +100,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private VIRTUALValue _VIRTUAL;
-		/// <summary>
-		﻿/// motion is computed and is used for expressing an imaginary movement.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VIRTUALValue" path="/summary" />
 		public VIRTUALValue VIRTUAL => _VIRTUAL ?? (_VIRTUAL = new VIRTUALValue());
 
-		/// <summary>
-		﻿/// motion is computed and is used for expressing an imaginary movement.<br/><br />
-
+		/// <summary>﻿motion is computed and is used for expressing an imaginary movement.<br /><br /><br />
+		/// Value for MotionActuationTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MotionActuationTypeEnum">MotionActuationTypeEnum</seealso>
 		/// </summary>
 		public sealed class VIRTUALValue : IEnumInstance
 		{
@@ -137,15 +126,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private NONEValue _NONE;
-		/// <summary>
-		﻿/// no actuation of this axis.<br /><br />> Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NONEValue" path="/summary" />
 		public NONEValue NONE => _NONE ?? (_NONE = new NONEValue());
 
-		/// <summary>
-		﻿/// no actuation of this axis.<br /><br />> Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.<br/><br />
-
+		/// <summary>﻿no actuation of this axis.<br /><br />&gt; Note: Actuation of <c>NONE</c> can be either a derived <c>REVOLUTE</c> or <c>PRISMATIC</c> motion or static <c>FIXED</c> relationship.<br /><br /><br />
+		/// Value for MotionActuationTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MotionActuationTypeEnum">MotionActuationTypeEnum</seealso>
 		/// </summary>
 		public sealed class NONEValue : IEnumInstance
 		{

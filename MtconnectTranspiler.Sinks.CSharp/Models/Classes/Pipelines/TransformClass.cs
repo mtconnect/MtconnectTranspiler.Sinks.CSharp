@@ -1,9 +1,15 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674413898061_196217_3470">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TransformClass : IClass
 	{
@@ -34,6 +40,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <inheritdoc />
 		public TransformClassProperties Properties { get; } = new TransformClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="TransformClass" />.
+		/// </summary>
 		public class TransformClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -46,6 +55,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <remarks>Original Name: Guard</remarks>
 			/// </summary>
 			public GuardProperty Guard { get; } = new GuardProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class GuardProperty : IProperty
 			{
 				/// <summary>
@@ -97,6 +109,9 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <remarks>Original Name: Next</remarks>
 			/// </summary>
 			public NextProperty Next { get; } = new NextProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class NextProperty : IProperty
 			{
 				/// <summary>

@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.References
 {
-	/// <summary>
-	﻿/// <see cref="Reference">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment.<br /><br/><br />Description<br/><see cref="ComponentRef">ComponentRef</see> allows all of the information of (<i>lower level</i> <see cref="Component">Component</see> entities that is associated with the other entity to be directly associated with this entity.<br/><br/><br />
-
+	/// <summary>﻿<see cref="Reference">Reference</see> that is a pointer to all of the information associated with another entity defined for a piece of equipment.<br /><br /><br /><br />Description<br /><br /><see cref="ComponentRef">ComponentRef</see> allows all of the information of (<i>lower level</i> <see cref="Component">Component</see> entities that is associated with the other entity to be directly associated with this entity.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581212139957_418083_223">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -46,22 +47,25 @@ namespace Mtconnect.DeviceInformationModel.References
 		/// <inheritdoc />
 		public ComponentRefClassProperties Properties { get; } = new ComponentRefClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ComponentRefClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.References.ReferenceClass.ReferenceClassProperties" />.
+		/// </summary>
 		public class ComponentRefClassProperties : Mtconnect.DeviceInformationModel.References.ReferenceClass.ReferenceClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				IdRef,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="IdRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IdRef</remarks>
 			/// </summary>
-			public IdRefProperty IdRef { get; } = new IdRefProperty();
-			/// <summary>
-			﻿/// pointer to the <see cref="Component.id">id in Component</see> that contains the information to be associated with this entity.<br/><br />
-
+			public new IdRefProperty IdRef { get; } = new IdRefProperty();
+			
+			/// <summary>﻿pointer to the <see cref="Component.id">id in Component</see> that contains the information to be associated with this entity.<br /><br /><br />
 			/// </summary>
-			public sealed class IdRefProperty : IProperty
+			public new sealed class IdRefProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

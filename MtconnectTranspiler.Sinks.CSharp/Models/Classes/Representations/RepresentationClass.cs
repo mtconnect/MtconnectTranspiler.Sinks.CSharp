@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	/// <summary>
-	﻿/// specifies the format and structure of <see cref="Observation.result">result in Observation</see>.<br/><br />Description<br/>The <see cref="Representation">Representation</see> type for an <see cref="Observation">Observation</see> is defined by the associated <see cref="DataItem.representation">representation in DataItem</see> in the <i>MTConnectDevices Response Document</i>.<br /><br /><see cref="Value">Value</see> is the default <see cref="Representation">Representation</see> type for all <see cref="Observation">Observation</see> types.<br /><br />The name of the <see cref="Observation">Observation</see> type is modified for all <see cref="Representation">Representation</see> types other than <see cref="Value">Value</see> by appending the pascal case of the <see cref="Representation">Representation</see> type. <br /><br />Example: The name for <see cref="Sample">Sample</see> <see cref="Observation">Observation</see> type <c>Temperature</c>with <c>Representation</c> type of <c>TimeSeries</c> becomes <c>TemperatureTimeSeries</c>.<br/><br/><br />
-
+	/// <summary>﻿specifies the format and structure of <see cref="Observation.result">result in Observation</see>.<br /><br /><br />Description<br /><br />The <see cref="Representation">Representation</see> type for an <see cref="Observation">Observation</see> is defined by the associated <see cref="DataItem.representation">representation in DataItem</see> in the <i>MTConnectDevices Response Document</i>.<br /><br /><see cref="Value">Value</see> is the default <see cref="Representation">Representation</see> type for all <see cref="Observation">Observation</see> types.<br /><br />The name of the <see cref="Observation">Observation</see> type is modified for all <see cref="Representation">Representation</see> types other than <see cref="Value">Value</see> by appending the pascal case of the <see cref="Representation">Representation</see> type. <br /><br />Example: The name for <see cref="Sample">Sample</see> <see cref="Observation">Observation</see> type <c>Temperature</c>with <c>Representation</c> type of <c>TimeSeries</c> becomes <c>TemperatureTimeSeries</c>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1633615188301_96457_1251">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -47,6 +48,9 @@ Example: The name for {{block(Sample)}} {{block(Observation)}} type `Temperature
 		/// <inheritdoc />
 		public RepresentationClassProperties Properties { get; } = new RepresentationClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="RepresentationClass" />.
+		/// </summary>
 		public class RepresentationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />

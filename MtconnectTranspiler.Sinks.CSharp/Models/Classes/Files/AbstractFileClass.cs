@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.Files
 {
-	/// <summary>
-	﻿/// abstract <see cref="Asset">Asset</see> that contains the common properties of the <see cref="File">File</see> and <see cref="FileArchetype">FileArchetype</see> types.<br/><br />
-
+	/// <summary>﻿abstract <see cref="Asset">Asset</see> that contains the common properties of the <see cref="File">File</see> and <see cref="FileArchetype">FileArchetype</see> types.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1589825445428_505818_673">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.AssetInformationModel.Files
 		/// <inheritdoc />
 		public AbstractFileClassProperties Properties { get; } = new AbstractFileClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="AbstractFileClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties" />.
+		/// </summary>
 		public class AbstractFileClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Name,
 				MediaType,
 				ApplicationCategory,
@@ -59,12 +64,11 @@ namespace Mtconnect.AssetInformationModel.Files
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
-			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// name of the file.<br/><br />
-
+			public new NameProperty Name { get; } = new NameProperty();
+			
+			/// <summary>﻿name of the file.<br /><br /><br />
 			/// </summary>
-			public sealed class NameProperty : IProperty
+			public new sealed class NameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -115,12 +119,11 @@ namespace Mtconnect.AssetInformationModel.Files
 			/// <inheritdoc cref="MediaTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MediaType</remarks>
 			/// </summary>
-			public MediaTypeProperty MediaType { get; } = new MediaTypeProperty();
-			/// <summary>
-			﻿/// mime type of the file.<br /><br/><br />
-
+			public new MediaTypeProperty MediaType { get; } = new MediaTypeProperty();
+			
+			/// <summary>﻿mime type of the file.<br /><br /><br /><br />
 			/// </summary>
-			public sealed class MediaTypeProperty : IProperty
+			public new sealed class MediaTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -171,12 +174,11 @@ namespace Mtconnect.AssetInformationModel.Files
 			/// <inheritdoc cref="ApplicationCategoryProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ApplicationCategory</remarks>
 			/// </summary>
-			public ApplicationCategoryProperty ApplicationCategory { get; } = new ApplicationCategoryProperty();
-			/// <summary>
-			﻿/// category of application that will use this file.<br/><br />
-
+			public new ApplicationCategoryProperty ApplicationCategory { get; } = new ApplicationCategoryProperty();
+			
+			/// <summary>﻿category of application that will use this file.<br /><br /><br />
 			/// </summary>
-			public sealed class ApplicationCategoryProperty : IProperty
+			public new sealed class ApplicationCategoryProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -227,12 +229,11 @@ namespace Mtconnect.AssetInformationModel.Files
 			/// <inheritdoc cref="ApplicationTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ApplicationType</remarks>
 			/// </summary>
-			public ApplicationTypeProperty ApplicationType { get; } = new ApplicationTypeProperty();
-			/// <summary>
-			﻿/// type of application that will use this file.<br/><br />
-
+			public new ApplicationTypeProperty ApplicationType { get; } = new ApplicationTypeProperty();
+			
+			/// <summary>﻿type of application that will use this file.<br /><br /><br />
 			/// </summary>
-			public sealed class ApplicationTypeProperty : IProperty
+			public new sealed class ApplicationTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -283,8 +284,11 @@ namespace Mtconnect.AssetInformationModel.Files
 			/// <inheritdoc cref="HasFilePropertyPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasFileProperty</remarks>
 			/// </summary>
-			public HasFilePropertyPartProperty HasFilePropertyPart { get; } = new HasFilePropertyPartProperty();
-			public sealed class HasFilePropertyPartProperty : IProperty
+			public new HasFilePropertyPartProperty HasFilePropertyPart { get; } = new HasFilePropertyPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasFilePropertyPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -334,8 +338,11 @@ namespace Mtconnect.AssetInformationModel.Files
 			/// <inheritdoc cref="HasFileCommentPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasFileComment</remarks>
 			/// </summary>
-			public HasFileCommentPartProperty HasFileCommentPart { get; } = new HasFileCommentPartProperty();
-			public sealed class HasFileCommentPartProperty : IProperty
+			public new HasFileCommentPartProperty HasFileCommentPart { get; } = new HasFileCommentPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasFileCommentPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

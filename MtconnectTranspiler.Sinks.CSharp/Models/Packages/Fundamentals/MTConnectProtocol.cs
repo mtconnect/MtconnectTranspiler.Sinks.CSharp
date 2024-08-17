@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.Fundamentals.MTConnectProtocol;
 
 namespace Mtconnect.Fundamentals
 {
-	/// <summary>
-	﻿/// The <i>agent</i> <b>MUST</b> support the <see cref="REST Protocol">REST Protocol</see> and produce <i>XML</i> representations of the information models. <br /><br />All other protocols and representations are optional.<br /><br/><br />
-
+	/// <summary>﻿The <i>agent</i> <b>MUST</b> support the <see cref="REST Protocol">REST Protocol</see> and produce <i>XML</i> representations of the information models. <br /><br />All other protocols and representations are optional.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_50B7711E_30AA_4a94_9F73_C74061BA099D">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -38,6 +38,11 @@ All other protocols and representations are optional.
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.MTConnectAssetsResponseDocumentPackage _MTConnectAssetsResponseDocumentPackage;
 	/// <summary>
@@ -72,6 +77,9 @@ All other protocols and representations are optional.
 	#endregion
 
 	#region Classes
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

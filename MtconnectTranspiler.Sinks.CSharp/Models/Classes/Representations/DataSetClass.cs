@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	/// <summary>
-	﻿/// <see cref="Representation">Representation</see> for an <see cref="Observation">Observation</see> composed of value(s) represented as a set of <i>key-value pair</i>s.<br /><br/><br />Description<br/><br /><see cref="DataSet">DataSet</see> for an <see cref="Observation">Observation</see> is defined by the associated <see cref="DataItem.representation">representation in DataItem</see> as <c>DATA_SET</c>.<br /><br /><see cref="DataItem.representation">representation in DataItem</see> as <c>DATA_SET</c> <b>MUST</b> have <see cref="DataItem.category">category in DataItem</see> as <c>SAMPLE</c> or <c>EVENT</c>.<br /><br />{{figure(VariableDataSet)}} shows the model for <see cref="Variable">Variable</see> (<see cref="Event">Event</see> type) with a <see cref="Representation">Representation</see> type of <see cref="DataSet">DataSet</see>. <br /><br />![VariableDataSet](figures/VariableDataSet.png "VariableDataSet"){: width="0.8"}<br /><br />> Note: See {{figure(DataSet Schema)}} for XML schema.<br /><br /><see cref="DataSet">DataSet</see> reports multiple values as a set of <i>key-value pair</i> where each <i>key</i> <b>MUST</b> be unique. The representation of the <i>key-value pair</i> is an <see cref="Entry">Entry</see>. The value of each <see cref="Entry">Entry</see> <b>MUST</b> have the same constraints and format as the <see cref="Observation">Observation</see> defined for <see cref="DataItem.representation">representation in DataItem</see> as <c>VALUE</c> for the <see cref="DataItem">DataItem</see> type. (See <see cref="Value">Value</see>). <br /><br />The meaning of each <see cref="Entry">Entry</see> <b>MAY</b> be provided as the <see cref="DataItem">DataItem</see> <see cref="EntryDefinition">EntryDefinition</see>.<br /><br />{{figure(DataSet Example)}} shows <see cref="Event">Event</see> <see cref="Observation">Observation</see> type <see cref="Variable">Variable</see> with a <see cref="Representation">Representation</see> type of <c>DataSet</c>.<br /><br />![DataSet Example](figures/DataSet%20Example.png "DataSet Example"){: width="0.8"}<br /><br />> Note: See {{lst(dataset-example)}} for the <i>XML</i> representation of the same example.<br /><br />#### Management of Data Set Observations<br /><br />An <i>agent</i> <b>MUST</b> maintain the current state of the <see cref="DataSet">DataSet</see> as described in <see cref="Fundamentals">Fundamentals</see>.<br /><br />One or more <i>key-value pair</i>s <b>MAY</b> be added, removed, or changed in an <see cref="Observation">Observation</see>. An <i>agent</i> <b>MUST</b> publish the changes to one or more <i>key-value pair</i>s as a single <see cref="Observation">Observation</see>. An <i>agent</i> <b>MUST</b> indicate the removal of a <i>key-value pair</i> from a <see cref="DataSet">DataSet</see> using the <see cref="Entry.removed">removed in Entry</see> as <c>true</c>.<br /><br />When the <see cref="DataItem.discrete">discrete in DataItem</see> is <c>false</c> or is not present, an <i>agent</i> in response to a <i>sample request</i> <b>MUST</b> only publish the changed <i>key-value pair</i> since the previous state of the <see cref="DataSet">DataSet</see>.<br /><br />When the <see cref="DataItem.discrete">discrete in DataItem</see> attribute is <c>true</c>, an <i>agent</i>, in response to a <i>sample request</i>, <b>MUST</b> report all <i>key-value pair</i>s ignoring the state of the <see cref="DataSet">DataSet</see>.<br /><br />When an <i>agent</i> responds to a <i>current request</i>, the <i>response document</i> <b>MUST</b> include the full set of <i>key-value pair</i>s. If the <i>current request</i> includes an <c>at</c> query parameter, the <i>agent</i> <b>MUST</b> provide the set of <i>key-value pair</i>s at the  <i>sequence number</i>.<br /><br />When an <see cref="Observation">Observation</see> <i>reset</i> occurs, the <see cref="DataSet">DataSet</see> <b>MUST</b> remove all <i>key-value pair</i>s making the set empty. The <see cref="Observation">Observation</see> <b>MAY</b> simultaneously populate the <see cref="DataSet">DataSet</see> with new <i>key-value pair</i>s. The previous entries <b>MUST NOT</b> be included and <b>MUST NOT</b> have <see cref="Entry.removed">removed in Entry</see> as <c>true</c>.<br /><br />When the <see cref="Observation">Observation</see>  is <c>UNAVAILABLE</c> the <see cref="DataSet">DataSet</see> <b>MUST</b> remove all <i>key-value pair</i>s making the set empty.<br/><br/><br />
-
+	/// <summary>﻿<see cref="Representation">Representation</see> for an <see cref="Observation">Observation</see> composed of value(s) represented as a set of <i>key-value pair</i>s.<br /><br /><br /><br />Description<br /><br /><br /><see cref="DataSet">DataSet</see> for an <see cref="Observation">Observation</see> is defined by the associated <see cref="DataItem.representation">representation in DataItem</see> as <c>DATA_SET</c>.<br /><br /><see cref="DataItem.representation">representation in DataItem</see> as <c>DATA_SET</c> <b>MUST</b> have <see cref="DataItem.category">category in DataItem</see> as <c>SAMPLE</c> or <c>EVENT</c>.<br /><br />{{figure(VariableDataSet)}} shows the model for <see cref="Variable">Variable</see> (<see cref="Event">Event</see> type) with a <see cref="Representation">Representation</see> type of <see cref="DataSet">DataSet</see>. <br /><br />![VariableDataSet](figures/VariableDataSet.png "VariableDataSet"){: width="0.8"}<br /><br />&gt; Note: See {{figure(DataSet Schema)}} for XML schema.<br /><br /><see cref="DataSet">DataSet</see> reports multiple values as a set of <i>key-value pair</i> where each <i>key</i> <b>MUST</b> be unique. The representation of the <i>key-value pair</i> is an <see cref="Entry">Entry</see>. The value of each <see cref="Entry">Entry</see> <b>MUST</b> have the same constraints and format as the <see cref="Observation">Observation</see> defined for <see cref="DataItem.representation">representation in DataItem</see> as <c>VALUE</c> for the <see cref="DataItem">DataItem</see> type. (See <see cref="Value">Value</see>). <br /><br />The meaning of each <see cref="Entry">Entry</see> <b>MAY</b> be provided as the <see cref="DataItem">DataItem</see> <see cref="EntryDefinition">EntryDefinition</see>.<br /><br />{{figure(DataSet Example)}} shows <see cref="Event">Event</see> <see cref="Observation">Observation</see> type <see cref="Variable">Variable</see> with a <see cref="Representation">Representation</see> type of <c>DataSet</c>.<br /><br />![DataSet Example](figures/DataSet%20Example.png "DataSet Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(dataset-example)}} for the <i>XML</i> representation of the same example.<br /><br />#### Management of Data Set Observations<br /><br />An <i>agent</i> <b>MUST</b> maintain the current state of the <see cref="DataSet">DataSet</see> as described in <see cref="Fundamentals">Fundamentals</see>.<br /><br />One or more <i>key-value pair</i>s <b>MAY</b> be added, removed, or changed in an <see cref="Observation">Observation</see>. An <i>agent</i> <b>MUST</b> publish the changes to one or more <i>key-value pair</i>s as a single <see cref="Observation">Observation</see>. An <i>agent</i> <b>MUST</b> indicate the removal of a <i>key-value pair</i> from a <see cref="DataSet">DataSet</see> using the <see cref="Entry.removed">removed in Entry</see> as <c>true</c>.<br /><br />When the <see cref="DataItem.discrete">discrete in DataItem</see> is <c>false</c> or is not present, an <i>agent</i> in response to a <i>sample request</i> <b>MUST</b> only publish the changed <i>key-value pair</i> since the previous state of the <see cref="DataSet">DataSet</see>.<br /><br />When the <see cref="DataItem.discrete">discrete in DataItem</see> attribute is <c>true</c>, an <i>agent</i>, in response to a <i>sample request</i>, <b>MUST</b> report all <i>key-value pair</i>s ignoring the state of the <see cref="DataSet">DataSet</see>.<br /><br />When an <i>agent</i> responds to a <i>current request</i>, the <i>response document</i> <b>MUST</b> include the full set of <i>key-value pair</i>s. If the <i>current request</i> includes an <c>at</c> query parameter, the <i>agent</i> <b>MUST</b> provide the set of <i>key-value pair</i>s at the  <i>sequence number</i>.<br /><br />When an <see cref="Observation">Observation</see> <i>reset</i> occurs, the <see cref="DataSet">DataSet</see> <b>MUST</b> remove all <i>key-value pair</i>s making the set empty. The <see cref="Observation">Observation</see> <b>MAY</b> simultaneously populate the <see cref="DataSet">DataSet</see> with new <i>key-value pair</i>s. The previous entries <b>MUST NOT</b> be included and <b>MUST NOT</b> have <see cref="Entry.removed">removed in Entry</see> as <c>true</c>.<br /><br />When the <see cref="Observation">Observation</see>  is <c>UNAVAILABLE</c> the <see cref="DataSet">DataSet</see> <b>MUST</b> remove all <i>key-value pair</i>s making the set empty.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531114_503405_25727">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -81,10 +82,14 @@ When the {{block(Observation)}}  is `UNAVAILABLE` the {{block(DataSet)}} **MUST*
 		/// <inheritdoc />
 		public DataSetClassProperties Properties { get; } = new DataSetClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DataSetClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.Representations.RepresentationClass.RepresentationClassProperties" />.
+		/// </summary>
 		public class DataSetClassProperties : Mtconnect.ObservationInformationModel.Representations.RepresentationClass.RepresentationClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Count,
 				ResultPart,
 			}.Concat(base.Properties).ToArray();
@@ -92,12 +97,11 @@ When the {{block(Observation)}}  is `UNAVAILABLE` the {{block(DataSet)}} **MUST*
 			/// <inheritdoc cref="CountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Count</remarks>
 			/// </summary>
-			public CountProperty Count { get; } = new CountProperty();
-			/// <summary>
-			﻿/// number of <see cref="Entry">Entry</see> elements for the <see cref="Observation">Observation</see>.<br/><br />
-
+			public new CountProperty Count { get; } = new CountProperty();
+			
+			/// <summary>﻿number of <see cref="Entry">Entry</see> elements for the <see cref="Observation">Observation</see>.<br /><br /><br />
 			/// </summary>
-			public sealed class CountProperty : IProperty
+			public new sealed class CountProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -148,8 +152,11 @@ When the {{block(Observation)}}  is `UNAVAILABLE` the {{block(DataSet)}} **MUST*
 			/// <inheritdoc cref="ResultPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
-			public ResultPartProperty ResultPart { get; } = new ResultPartProperty();
-			public sealed class ResultPartProperty : IProperty
+			public new ResultPartProperty ResultPart { get; } = new ResultPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ResultPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

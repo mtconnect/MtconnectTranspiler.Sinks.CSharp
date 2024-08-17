@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398386435_855466_12827">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398386435_855466_12827">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ConditionEnum
 	{
-		/// <summary>
-		﻿/// indication that the piece of equipment has experienced a communications failure.<br/><br />
-
+		/// <summary>﻿indication that the piece of equipment has experienced a communications failure.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COMMUNICATIONS,
-		/// <summary>
-		﻿/// indication that the value of the data associated with a measured value or a calculation is outside of an expected range.<br/><br />
-
+		/// <summary>﻿indication that the value of the data associated with a measured value or a calculation is outside of an expected range.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DATA_RANGE,
-		/// <summary>
-		﻿/// indication that an error occurred in the logic program or programmable logic controller (PLC) associated with a piece of equipment.<br/><br />
-
+		/// <summary>﻿indication that an error occurred in the logic program or programmable logic controller (PLC) associated with a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LOGIC_PROGRAM,
-		/// <summary>
-		﻿/// indication that an error occurred in the motion program associated with a piece of equipment.<br/><br />
-
+		/// <summary>﻿indication that an error occurred in the motion program associated with a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MOTION_PROGRAM,
-		/// <summary>
-		﻿/// general purpose indication associated with an electronic component of a piece of equipment or a controller that represents a fault that is not associated with the operator, program, or hardware.<br/><br />
-
+		/// <summary>﻿general purpose indication associated with an electronic component of a piece of equipment or a controller that represents a fault that is not associated with the operator, program, or hardware.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SYSTEM,
-		/// <summary>
-		﻿/// indication of a fault associated with an actuator.<br/><br />
-
+		/// <summary>﻿indication of a fault associated with an actuator.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -77,9 +66,8 @@ namespace Mtconnect.DataTypes
 		ACTUATOR,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398386435_855466_12827">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398386435_855466_12827">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConditionEnumMetaClass : IEnum
@@ -90,6 +78,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(ConditionEnum);
 
 		/// <inheritdoc />
@@ -112,15 +101,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private COMMUNICATIONSValue _COMMUNICATIONS;
-		/// <summary>
-		﻿/// indication that the piece of equipment has experienced a communications failure.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COMMUNICATIONSValue" path="/summary" />
 		public COMMUNICATIONSValue COMMUNICATIONS => _COMMUNICATIONS ?? (_COMMUNICATIONS = new COMMUNICATIONSValue());
 
-		/// <summary>
-		﻿/// indication that the piece of equipment has experienced a communications failure.<br/><br />
-
+		/// <summary>﻿indication that the piece of equipment has experienced a communications failure.<br /><br /><br />
+		/// Value for ConditionEnum.<br/>
+		/// <br/>See also <seealso cref="ConditionEnum">ConditionEnum</seealso>
 		/// </summary>
 		public sealed class COMMUNICATIONSValue : IEnumInstance
 		{
@@ -141,15 +127,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private DATA_RANGEValue _DATA_RANGE;
-		/// <summary>
-		﻿/// indication that the value of the data associated with a measured value or a calculation is outside of an expected range.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DATA_RANGEValue" path="/summary" />
 		public DATA_RANGEValue DATA_RANGE => _DATA_RANGE ?? (_DATA_RANGE = new DATA_RANGEValue());
 
-		/// <summary>
-		﻿/// indication that the value of the data associated with a measured value or a calculation is outside of an expected range.<br/><br />
-
+		/// <summary>﻿indication that the value of the data associated with a measured value or a calculation is outside of an expected range.<br /><br /><br />
+		/// Value for ConditionEnum.<br/>
+		/// <br/>See also <seealso cref="ConditionEnum">ConditionEnum</seealso>
 		/// </summary>
 		public sealed class DATA_RANGEValue : IEnumInstance
 		{
@@ -170,15 +153,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LOGIC_PROGRAMValue _LOGIC_PROGRAM;
-		/// <summary>
-		﻿/// indication that an error occurred in the logic program or programmable logic controller (PLC) associated with a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LOGIC_PROGRAMValue" path="/summary" />
 		public LOGIC_PROGRAMValue LOGIC_PROGRAM => _LOGIC_PROGRAM ?? (_LOGIC_PROGRAM = new LOGIC_PROGRAMValue());
 
-		/// <summary>
-		﻿/// indication that an error occurred in the logic program or programmable logic controller (PLC) associated with a piece of equipment.<br/><br />
-
+		/// <summary>﻿indication that an error occurred in the logic program or programmable logic controller (PLC) associated with a piece of equipment.<br /><br /><br />
+		/// Value for ConditionEnum.<br/>
+		/// <br/>See also <seealso cref="ConditionEnum">ConditionEnum</seealso>
 		/// </summary>
 		public sealed class LOGIC_PROGRAMValue : IEnumInstance
 		{
@@ -199,15 +179,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private MOTION_PROGRAMValue _MOTION_PROGRAM;
-		/// <summary>
-		﻿/// indication that an error occurred in the motion program associated with a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MOTION_PROGRAMValue" path="/summary" />
 		public MOTION_PROGRAMValue MOTION_PROGRAM => _MOTION_PROGRAM ?? (_MOTION_PROGRAM = new MOTION_PROGRAMValue());
 
-		/// <summary>
-		﻿/// indication that an error occurred in the motion program associated with a piece of equipment.<br/><br />
-
+		/// <summary>﻿indication that an error occurred in the motion program associated with a piece of equipment.<br /><br /><br />
+		/// Value for ConditionEnum.<br/>
+		/// <br/>See also <seealso cref="ConditionEnum">ConditionEnum</seealso>
 		/// </summary>
 		public sealed class MOTION_PROGRAMValue : IEnumInstance
 		{
@@ -228,15 +205,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private SYSTEMValue _SYSTEM;
-		/// <summary>
-		﻿/// general purpose indication associated with an electronic component of a piece of equipment or a controller that represents a fault that is not associated with the operator, program, or hardware.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SYSTEMValue" path="/summary" />
 		public SYSTEMValue SYSTEM => _SYSTEM ?? (_SYSTEM = new SYSTEMValue());
 
-		/// <summary>
-		﻿/// general purpose indication associated with an electronic component of a piece of equipment or a controller that represents a fault that is not associated with the operator, program, or hardware.<br/><br />
-
+		/// <summary>﻿general purpose indication associated with an electronic component of a piece of equipment or a controller that represents a fault that is not associated with the operator, program, or hardware.<br /><br /><br />
+		/// Value for ConditionEnum.<br/>
+		/// <br/>See also <seealso cref="ConditionEnum">ConditionEnum</seealso>
 		/// </summary>
 		public sealed class SYSTEMValue : IEnumInstance
 		{
@@ -257,15 +231,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTUATORValue _ACTUATOR;
-		/// <summary>
-		﻿/// indication of a fault associated with an actuator.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTUATORValue" path="/summary" />
 		public ACTUATORValue ACTUATOR => _ACTUATOR ?? (_ACTUATOR = new ACTUATORValue());
 
-		/// <summary>
-		﻿/// indication of a fault associated with an actuator.<br/><br />
-
+		/// <summary>﻿indication of a fault associated with an actuator.<br /><br /><br />
+		/// Value for ConditionEnum.<br/>
+		/// <br/>See also <seealso cref="ConditionEnum">ConditionEnum</seealso>
 		/// </summary>
 		public sealed class ACTUATORValue : IEnumInstance
 		{

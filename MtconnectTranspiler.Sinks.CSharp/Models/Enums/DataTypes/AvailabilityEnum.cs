@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417656_729564_2870">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417656_729564_2870">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AvailabilityEnum
 	{
-		/// <summary>
-		﻿/// data source is active and capable of providing data.<br/><br />
-
+		/// <summary>﻿data source is active and capable of providing data.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		AVAILABLE,
-		/// <summary>
-		﻿/// data source is either inactive or not capable of providing data.<br/><br />
-
+		/// <summary>﻿data source is either inactive or not capable of providing data.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		UNAVAILABLE,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417656_729564_2870">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417656_729564_2870">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AvailabilityEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(AvailabilityEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private AVAILABLEValue _AVAILABLE;
-		/// <summary>
-		﻿/// data source is active and capable of providing data.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="AVAILABLEValue" path="/summary" />
 		public AVAILABLEValue AVAILABLE => _AVAILABLE ?? (_AVAILABLE = new AVAILABLEValue());
 
-		/// <summary>
-		﻿/// data source is active and capable of providing data.<br/><br />
-
+		/// <summary>﻿data source is active and capable of providing data.<br /><br /><br />
+		/// Value for AvailabilityEnum.<br/>
+		/// <br/>See also <seealso cref="AvailabilityEnum">AvailabilityEnum</seealso>
 		/// </summary>
 		public sealed class AVAILABLEValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private UNAVAILABLEValue _UNAVAILABLE;
-		/// <summary>
-		﻿/// data source is either inactive or not capable of providing data.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UNAVAILABLEValue" path="/summary" />
 		public UNAVAILABLEValue UNAVAILABLE => _UNAVAILABLE ?? (_UNAVAILABLE = new UNAVAILABLEValue());
 
-		/// <summary>
-		﻿/// data source is either inactive or not capable of providing data.<br/><br />
-
+		/// <summary>﻿data source is either inactive or not capable of providing data.<br /><br /><br />
+		/// Value for AvailabilityEnum.<br/>
+		/// <br/>See also <seealso cref="AvailabilityEnum">AvailabilityEnum</seealso>
 		/// </summary>
 		public sealed class UNAVAILABLEValue : IEnumInstance
 		{

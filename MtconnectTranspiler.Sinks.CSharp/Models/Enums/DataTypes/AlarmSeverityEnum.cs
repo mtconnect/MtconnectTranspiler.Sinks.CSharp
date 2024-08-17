@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968830721_843713_164">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968830721_843713_164">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -17,8 +18,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AlarmSeverityEnum
 	{
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -28,8 +28,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		CRITICAL,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -39,8 +38,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		ERROR,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -50,8 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		WARNING,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -63,9 +60,8 @@ namespace Mtconnect.DataTypes
 		INFORMATION,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968830721_843713_164">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968830721_843713_164">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmSeverityEnumMetaClass : IEnum
@@ -76,6 +72,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(AlarmSeverityEnum);
 
 		/// <inheritdoc />
@@ -96,8 +93,13 @@ namespace Mtconnect.DataTypes
 		};
 
 		private CRITICALValue _CRITICAL;
+		/// <inheritdoc cref="CRITICALValue" path="/summary" />
 		public CRITICALValue CRITICAL => _CRITICAL ?? (_CRITICAL = new CRITICALValue());
 
+		/// <summary>﻿
+		/// Value for AlarmSeverityEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmSeverityEnum">AlarmSeverityEnum</seealso>
+		/// </summary>
 		public sealed class CRITICALValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -116,8 +118,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private ERRORValue _ERROR;
+		/// <inheritdoc cref="ERRORValue" path="/summary" />
 		public ERRORValue ERROR => _ERROR ?? (_ERROR = new ERRORValue());
 
+		/// <summary>﻿
+		/// Value for AlarmSeverityEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmSeverityEnum">AlarmSeverityEnum</seealso>
+		/// </summary>
 		public sealed class ERRORValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -136,8 +143,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private WARNINGValue _WARNING;
+		/// <inheritdoc cref="WARNINGValue" path="/summary" />
 		public WARNINGValue WARNING => _WARNING ?? (_WARNING = new WARNINGValue());
 
+		/// <summary>﻿
+		/// Value for AlarmSeverityEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmSeverityEnum">AlarmSeverityEnum</seealso>
+		/// </summary>
 		public sealed class WARNINGValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -156,8 +168,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private INFORMATIONValue _INFORMATION;
+		/// <inheritdoc cref="INFORMATIONValue" path="/summary" />
 		public INFORMATIONValue INFORMATION => _INFORMATION ?? (_INFORMATION = new INFORMATIONValue());
 
+		/// <summary>﻿
+		/// Value for AlarmSeverityEnum.<br/>
+		/// <br/>See also <seealso cref="AlarmSeverityEnum">AlarmSeverityEnum</seealso>
+		/// </summary>
 		public sealed class INFORMATIONValue : IEnumInstance
 		{
 			/// <inheritdoc />

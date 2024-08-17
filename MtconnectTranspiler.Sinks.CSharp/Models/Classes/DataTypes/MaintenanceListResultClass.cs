@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1643971089385_291275_851">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaintenanceListResultClass : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public MaintenanceListResultClassProperties Properties { get; } = new MaintenanceListResultClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="MaintenanceListResultClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.Representations.TableClass.TableClassProperties" />.
+		/// </summary>
 		public class MaintenanceListResultClassProperties : Mtconnect.ObservationInformationModel.Representations.TableClass.TableClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Value,
 				Interval,
 				NextServiceDate,
@@ -57,12 +67,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
-			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// current interval value of the activity.<br/><br />
-
+			public new ValueProperty Value { get; } = new ValueProperty();
+			
+			/// <summary>﻿current interval value of the activity.<br /><br /><br />
 			/// </summary>
-			public sealed class ValueProperty : IProperty
+			public new sealed class ValueProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -113,12 +122,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="IntervalProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Interval</remarks>
 			/// </summary>
-			public IntervalProperty Interval { get; } = new IntervalProperty();
-			/// <summary>
-			﻿/// interval of the value observed.<br/><br />
-
+			public new IntervalProperty Interval { get; } = new IntervalProperty();
+			
+			/// <summary>﻿interval of the value observed.<br /><br /><br />
 			/// </summary>
-			public sealed class IntervalProperty : IProperty
+			public new sealed class IntervalProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -169,12 +177,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="NextServiceDateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NextServiceDate</remarks>
 			/// </summary>
-			public NextServiceDateProperty NextServiceDate { get; } = new NextServiceDateProperty();
-			/// <summary>
-			﻿/// next date/time stamp that maintenance should be performed.<br/><br />
-
+			public new NextServiceDateProperty NextServiceDate { get; } = new NextServiceDateProperty();
+			
+			/// <summary>﻿next date/time stamp that maintenance should be performed.<br /><br /><br />
 			/// </summary>
-			public sealed class NextServiceDateProperty : IProperty
+			public new sealed class NextServiceDateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -225,12 +232,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="ResetProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Reset</remarks>
 			/// </summary>
-			public ResetProperty Reset { get; } = new ResetProperty();
-			/// <summary>
-			﻿/// last date/time stamp of the <i>observation</i> was reset.<br/><br />
-
+			public new ResetProperty Reset { get; } = new ResetProperty();
+			
+			/// <summary>﻿last date/time stamp of the <i>observation</i> was reset.<br /><br /><br />
 			/// </summary>
-			public sealed class ResetProperty : IProperty
+			public new sealed class ResetProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -281,12 +287,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="SeverityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Severity</remarks>
 			/// </summary>
-			public SeverityProperty Severity { get; } = new SeverityProperty();
-			/// <summary>
-			﻿/// level of severity on a scale of 1-10.<br/><br />
-
+			public new SeverityProperty Severity { get; } = new SeverityProperty();
+			
+			/// <summary>﻿level of severity on a scale of 1-10.<br /><br /><br />
 			/// </summary>
-			public sealed class SeverityProperty : IProperty
+			public new sealed class SeverityProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -337,12 +342,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="DirectionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Direction</remarks>
 			/// </summary>
-			public DirectionProperty Direction { get; } = new DirectionProperty();
-			/// <summary>
-			﻿/// direction of the value observed.<br/><br />
-
+			public new DirectionProperty Direction { get; } = new DirectionProperty();
+			
+			/// <summary>﻿direction of the value observed.<br /><br /><br />
 			/// </summary>
-			public sealed class DirectionProperty : IProperty
+			public new sealed class DirectionProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -393,12 +397,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
-			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// identifier of the maintenance activity.<br/><br />
-
+			public new NameProperty Name { get; } = new NameProperty();
+			
+			/// <summary>﻿identifier of the maintenance activity.<br /><br /><br />
 			/// </summary>
-			public sealed class NameProperty : IProperty
+			public new sealed class NameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -449,12 +452,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="LastServiceDateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LastServiceDate</remarks>
 			/// </summary>
-			public LastServiceDateProperty LastServiceDate { get; } = new LastServiceDateProperty();
-			/// <summary>
-			﻿/// last date/time stamp that maintenance was performed.<br/><br />
-
+			public new LastServiceDateProperty LastServiceDate { get; } = new LastServiceDateProperty();
+			
+			/// <summary>﻿last date/time stamp that maintenance was performed.<br /><br /><br />
 			/// </summary>
-			public sealed class LastServiceDateProperty : IProperty
+			public new sealed class LastServiceDateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -505,12 +507,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
-			public UnitsProperty Units { get; } = new UnitsProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="Device Information Model">Device Information Model</see>.<br/><br />
-
+			public new UnitsProperty Units { get; } = new UnitsProperty();
+			
+			/// <summary>﻿same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="Device Information Model">Device Information Model</see>.<br /><br /><br />
 			/// </summary>
-			public sealed class UnitsProperty : IProperty
+			public new sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -561,12 +562,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="TargetProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Target</remarks>
 			/// </summary>
-			public TargetProperty Target { get; } = new TargetProperty();
-			/// <summary>
-			﻿/// target value of the next maintenance.<br/><br />
-
+			public new TargetProperty Target { get; } = new TargetProperty();
+			
+			/// <summary>﻿target value of the next maintenance.<br /><br /><br />
 			/// </summary>
-			public sealed class TargetProperty : IProperty
+			public new sealed class TargetProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

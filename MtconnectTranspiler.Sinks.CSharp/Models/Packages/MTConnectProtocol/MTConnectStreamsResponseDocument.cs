@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsRespons
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol
 {
-	/// <summary>
-	﻿/// This section provides semantic information for the <see cref="MTConnectStreams">MTConnectStreams</see> entity.<br/><br />
-
+	/// <summary>﻿This section provides semantic information for the <see cref="MTConnectStreams">MTConnectStreams</see> entity.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_E058AC1A_865D_4b99_BBEC_8CC65D67EDEB">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -32,6 +32,11 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 			MTConnectStreamsClass,
 			HeaderClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -48,6 +53,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 	/// </summary>
 	public Package.HeaderClass HeaderClass => _HeaderClass ?? (_HeaderClass = new Package.HeaderClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

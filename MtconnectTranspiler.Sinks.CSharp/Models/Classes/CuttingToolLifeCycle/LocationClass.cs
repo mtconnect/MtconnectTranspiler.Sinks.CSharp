@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
-	/// <summary>
-	﻿/// location of the pot or spindle the cutting tool currently resides in.<br /><br />If <see cref="Location.negativeOverlap">negativeOverlap in Location</see> or <see cref="Location.positiveOverlap">positiveOverlap in Location</see> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.<br /><br />If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref="Location.positiveOverlap">positiveOverlap in Location</see> of 1, the first pot <b>MAY</b> be occupied as well.<br/><br />Description<br/><see cref="Location">Location</see> <b>MUST</b> be defined only for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingTool">CuttingTool</see> and <b>MUST NOT</b> be defined for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br/><br/><br />
-
+	/// <summary>﻿location of the pot or spindle the cutting tool currently resides in.<br /><br />If <see cref="Location.negativeOverlap">negativeOverlap in Location</see> or <see cref="Location.positiveOverlap">positiveOverlap in Location</see> is provided, the tool reserves additional locations on either side, otherwise if they are not given, no additional locations are required for this tool.<br /><br />If the pot occupies the first or last location, a rollover to the beginning or the end of the indexable values may occur. For example, if there are 64 pots and the tool is in pot 64 with a <see cref="Location.positiveOverlap">positiveOverlap in Location</see> of 1, the first pot <b>MAY</b> be occupied as well.<br /><br /><br />Description<br /><br /><see cref="Location">Location</see> <b>MUST</b> be defined only for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingTool">CuttingTool</see> and <b>MUST NOT</b> be defined for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_A012A42B_DBEC_4334_891D_5B45D7A7E340">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -45,6 +46,9 @@ If the pot occupies the first or last location, a rollover to the beginning or t
 		/// <inheritdoc />
 		public LocationClassProperties Properties { get; } = new LocationClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="LocationClass" />.
+		/// </summary>
 		public class LocationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -64,9 +68,8 @@ If the pot occupies the first or last location, a rollover to the beginning or t
 			/// <remarks>Original Name: NegativeOverlap</remarks>
 			/// </summary>
 			public NegativeOverlapProperty NegativeOverlap { get; } = new NegativeOverlapProperty();
-			/// <summary>
-			﻿/// number of locations at lower index values from this location.<br/><br />
-
+			
+			/// <summary>﻿number of locations at lower index values from this location.<br /><br /><br />
 			/// </summary>
 			public sealed class NegativeOverlapProperty : IProperty
 			{
@@ -120,9 +123,8 @@ If the pot occupies the first or last location, a rollover to the beginning or t
 			/// <remarks>Original Name: PositiveOverlap</remarks>
 			/// </summary>
 			public PositiveOverlapProperty PositiveOverlap { get; } = new PositiveOverlapProperty();
-			/// <summary>
-			﻿/// number of locations at higher index value from this location.<br /><br/><br />
-
+			
+			/// <summary>﻿number of locations at higher index value from this location.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class PositiveOverlapProperty : IProperty
 			{
@@ -176,9 +178,8 @@ If the pot occupies the first or last location, a rollover to the beginning or t
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
-			/// <summary>
-			﻿/// type of location being identified. <br /><br />When a <c>POT</c> or <c>STATION</c> type is used, <see cref="Location.value">value in Location</see><b>MUST</b> be a numeric value.<br/><br />
-
+			
+			/// <summary>﻿type of location being identified. <br /><br />When a <c>POT</c> or <c>STATION</c> type is used, <see cref="Location.value">value in Location</see><b>MUST</b> be a numeric value.<br /><br /><br />
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -234,9 +235,8 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 			/// <remarks>Original Name: Turret</remarks>
 			/// </summary>
 			public TurretProperty Turret { get; } = new TurretProperty();
-			/// <summary>
-			﻿/// turret associated with a tool.<br/><br />
-
+			
+			/// <summary>﻿turret associated with a tool.<br /><br /><br />
 			/// </summary>
 			public sealed class TurretProperty : IProperty
 			{
@@ -290,9 +290,8 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 			/// <remarks>Original Name: ToolMagazine</remarks>
 			/// </summary>
 			public ToolMagazineProperty ToolMagazine { get; } = new ToolMagazineProperty();
-			/// <summary>
-			﻿/// tool magazine associated with a tool.<br /><br/><br />
-
+			
+			/// <summary>﻿tool magazine associated with a tool.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class ToolMagazineProperty : IProperty
 			{
@@ -346,9 +345,8 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 			/// <remarks>Original Name: ToolBar</remarks>
 			/// </summary>
 			public ToolBarProperty ToolBar { get; } = new ToolBarProperty();
-			/// <summary>
-			﻿/// tool bar associated with a tool.<br/><br />
-
+			
+			/// <summary>﻿tool bar associated with a tool.<br /><br /><br />
 			/// </summary>
 			public sealed class ToolBarProperty : IProperty
 			{
@@ -402,9 +400,8 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 			/// <remarks>Original Name: ToolRack</remarks>
 			/// </summary>
 			public ToolRackProperty ToolRack { get; } = new ToolRackProperty();
-			/// <summary>
-			﻿/// tool rack associated with a tool.<br/><br />
-
+			
+			/// <summary>﻿tool rack associated with a tool.<br /><br /><br />
 			/// </summary>
 			public sealed class ToolRackProperty : IProperty
 			{
@@ -458,9 +455,8 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 			/// <remarks>Original Name: AutomaticToolChanger</remarks>
 			/// </summary>
 			public AutomaticToolChangerProperty AutomaticToolChanger { get; } = new AutomaticToolChangerProperty();
-			/// <summary>
-			﻿/// automatic tool changer associated with a tool.<br/><br />
-
+			
+			/// <summary>﻿automatic tool changer associated with a tool.<br /><br /><br />
 			/// </summary>
 			public sealed class AutomaticToolChangerProperty : IProperty
 			{
@@ -514,6 +510,9 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>

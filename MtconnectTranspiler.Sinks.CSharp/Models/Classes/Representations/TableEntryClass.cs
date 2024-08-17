@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	/// <summary>
-	﻿/// <i>key-value pair</i> published as part of a <see cref="Table">Table</see>.<br /><br />> Note: In the <i>XML</i> representation, <see cref="TableEntry">TableEntry</see> <b>MUST</b> appear as <see cref="Entry">Entry</see>.<br /><br /><br/><br />
-
+	/// <summary>﻿<i>key-value pair</i> published as part of a <see cref="Table">Table</see>.<br /><br />&gt; Note: In the <i>XML</i> representation, <see cref="TableEntry">TableEntry</see> <b>MUST</b> appear as <see cref="Entry">Entry</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1600164112807_45306_44">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,6 +45,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		/// <inheritdoc />
 		public TableEntryClassProperties Properties { get; } = new TableEntryClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="TableEntryClass" />.
+		/// </summary>
 		public class TableEntryClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -58,9 +62,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// <remarks>Original Name: Key</remarks>
 			/// </summary>
 			public KeyProperty Key { get; } = new KeyProperty();
-			/// <summary>
-			﻿/// unique identifier for each <i>key-value pair</i>.<br/><br />
-
+			
+			/// <summary>﻿unique identifier for each <i>key-value pair</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class KeyProperty : IProperty
 			{
@@ -114,9 +117,8 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// <remarks>Original Name: Removed</remarks>
 			/// </summary>
 			public RemovedProperty Removed { get; } = new RemovedProperty();
-			/// <summary>
-			﻿/// removal indicator of a <i>key-value pair</i>.<br/><br />
-
+			
+			/// <summary>﻿removal indicator of a <i>key-value pair</i>.<br /><br /><br />
 			/// </summary>
 			public sealed class RemovedProperty : IProperty
 			{
@@ -170,6 +172,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
 			public ResultPartProperty ResultPart { get; } = new ResultPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ResultPartProperty : IProperty
 			{
 				/// <summary>
@@ -221,6 +226,9 @@ namespace Mtconnect.ObservationInformationModel.Representations
 			/// <remarks>Original Name: IsEntryFor</remarks>
 			/// </summary>
 			public IsEntryForPartProperty IsEntryForPart { get; } = new IsEntryForPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class IsEntryForPartProperty : IProperty
 			{
 				/// <summary>

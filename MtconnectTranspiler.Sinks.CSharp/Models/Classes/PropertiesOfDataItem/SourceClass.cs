@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
-	/// <summary>
-	﻿/// identifies the <see cref="Component">Component</see>, <see cref="DataItem">DataItem</see>, or <see cref="Composition">Composition</see> from which a measured value originates.<br/><br />
-
+	/// <summary>﻿identifies the <see cref="Component">Component</see>, <see cref="DataItem">DataItem</see>, or <see cref="Composition">Composition</see> from which a measured value originates.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_A2837EAA_7D27_45c0_B365_BC308844F978">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		/// <inheritdoc />
 		public SourceClassProperties Properties { get; } = new SourceClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="SourceClass" />.
+		/// </summary>
 		public class SourceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -54,9 +58,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <remarks>Original Name: ComponentId</remarks>
 			/// </summary>
 			public ComponentIdProperty ComponentId { get; } = new ComponentIdProperty();
-			/// <summary>
-			﻿/// identifier of the <see cref="Component">Component</see> that represents the physical part of a piece of equipment where the data represented by the <see cref="DataItem">DataItem</see> originated.<br/><br />
-
+			
+			/// <summary>﻿identifier of the <see cref="Component">Component</see> that represents the physical part of a piece of equipment where the data represented by the <see cref="DataItem">DataItem</see> originated.<br /><br /><br />
 			/// </summary>
 			public sealed class ComponentIdProperty : IProperty
 			{
@@ -110,9 +113,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <remarks>Original Name: CompositionId</remarks>
 			/// </summary>
 			public CompositionIdProperty CompositionId { get; } = new CompositionIdProperty();
-			/// <summary>
-			﻿/// identifier of the <see cref="Composition">Composition</see> that represents the physical part of a piece of equipment where the data represented by the <see cref="DataItem">DataItem</see> originated.<br/><br />
-
+			
+			/// <summary>﻿identifier of the <see cref="Composition">Composition</see> that represents the physical part of a piece of equipment where the data represented by the <see cref="DataItem">DataItem</see> originated.<br /><br /><br />
 			/// </summary>
 			public sealed class CompositionIdProperty : IProperty
 			{
@@ -166,9 +168,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <remarks>Original Name: DataItemId</remarks>
 			/// </summary>
 			public DataItemIdProperty DataItemId { get; } = new DataItemIdProperty();
-			/// <summary>
-			﻿/// identifier of the <see cref="DataItem">DataItem</see> that represents the originally measured value of the data referenced by this <see cref="DataItem">DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿identifier of the <see cref="DataItem">DataItem</see> that represents the originally measured value of the data referenced by this <see cref="DataItem">DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class DataItemIdProperty : IProperty
 			{
@@ -222,9 +223,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// identifier of the source entity.<br/><br />
-
+			
+			/// <summary>﻿identifier of the source entity.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{

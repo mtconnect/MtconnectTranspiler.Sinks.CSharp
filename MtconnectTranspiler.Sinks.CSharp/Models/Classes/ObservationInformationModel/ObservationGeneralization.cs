@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	/// <summary>
-	﻿/// abstract entity that provides telemetry data for a <see cref="DataItem">DataItem</see> at a point in time.<br/><br />Description<br/>![Observations](figures/Observations.png "Observations"){: width="0.8"}<br /><br />> Note: See <see cref="Observations Schema Diagrams">Observations Schema Diagrams</see> for XML schema. The XML schema also shows differences in XML representation of certain MTConnect entities.<br /><br />{{figure(DeviceStream Example)}} shows a complete example of <see cref="DeviceStream">DeviceStream</see> for the <see cref="Device">Device</see> shown in <see cref="Device Information Model">Device Information Model</see>.<br /><br />![DeviceStream Example](figures/DeviceStream%20Example.png "DeviceStream Example"){: width="0.8"}<br /><br />> Note: See {{lst(devicestream-example)}} for the <i>XML</i> representation of the same example.<br /><br /><br />This section provides semantic information for the <see cref="Observation">Observation</see> model.<br /><br />> Note: See <see cref="Observations Schema Diagrams">Observations Schema Diagrams</see> for XML schema of <see cref="Observation">Observation</see> types.<br /><br />#### Observations made for DataItem<br /><br /><see cref="Component">Component</see> <i>observe</i>s <see cref="DataItem">DataItem</see> entities and creates <see cref="Observation">Observation</see> entities for the <see cref="DataItem">DataItem</see> entities. See {{figure(Observations)}}.<br /><br /><see cref="Observation">Observation</see> entities made by a <see cref="Component">Component</see> are organized by a <see cref="ComponentStream">ComponentStream</see> which is specifically created for that <see cref="Component">Component</see>.<br /><br />![Observations made for DataItem Example](figures/Observations%20made%20for%20DataItem%20Example.png "Observations made for DataItem Example"){: width="0.8"}<br /><br />> Note: See <see cref="Observations made for DataItem Example">Observations made for DataItem Example</see> for how XML representation of the same example is separated into <i>MTConnectDevices Response Document</i> and <i>MTConnectStreams Response Document</i>.<br /><br />{{figure(Observations made for DataItem Example)}} is a subset of {{figure(DeviceStream Example)}}. It shows an example of the association between a <see cref="DataItem">DataItem</see> <see cref="Event">Event</see> type (<c>EMERGENCY_STOP</c>) and an <see cref="Observation">Observation</see> <see cref="Event">Event</see> type (<c>EmergencyStop</c>). See <see cref="Naming Convention for Observation types">Naming Convention for Observation types</see>.<br /><br />{{figure(Observations made for DataItem Example)}} also shows example of the association between a <see cref="Component">Component</see> type (<c>Controller</c>) and related <see cref="ComponentStream">ComponentStream</see>.<br /><br />#### Naming Convention for Observation types<br /><br />The name of an <see cref="Observation">Observation</see> type <b>MUST</b> derive from the associated <see cref="DataItem.type">type in DataItem</see> converted to Pascal-Case by removing underscores (_ ) and capitalizing each word. The conversion <b>MUST NOT</b> apply to the following abbreviated words: <c>PH</c>, <c>AC</c>, <c>DC</c> and <c>URI</c>. <c>MTCONNECT</c> <b>MUST</b> be converted to <c>MTConnect</c>. See {{figure(Observations made for DataItem Example)}} for an example.<br /><br />The name of an <see cref="Observation">Observation</see> type reported in the <i>MTConnectStreams Response Document</i> is extended when the <see cref="DataItem.representation">representation in DataItem</see> is used to further describe that <see cref="DataItem">DataItem</see> in the <i>MTConnectDevices Response Document</i>. See <see cref="Representations">Representations</see> for more details.<br/><br/><br />
-
+	/// <summary>﻿abstract entity that provides telemetry data for a <see cref="DataItem">DataItem</see> at a point in time.<br /><br /><br />Description<br /><br />![Observations](figures/Observations.png "Observations"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Observations Schema Diagrams">Observations Schema Diagrams</see> for XML schema. The XML schema also shows differences in XML representation of certain MTConnect entities.<br /><br />{{figure(DeviceStream Example)}} shows a complete example of <see cref="DeviceStream">DeviceStream</see> for the <see cref="Device">Device</see> shown in <see cref="Device Information Model">Device Information Model</see>.<br /><br />![DeviceStream Example](figures/DeviceStream%20Example.png "DeviceStream Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(devicestream-example)}} for the <i>XML</i> representation of the same example.<br /><br /><br />This section provides semantic information for the <see cref="Observation">Observation</see> model.<br /><br />&gt; Note: See <see cref="Observations Schema Diagrams">Observations Schema Diagrams</see> for XML schema of <see cref="Observation">Observation</see> types.<br /><br />#### Observations made for DataItem<br /><br /><see cref="Component">Component</see> <i>observe</i>s <see cref="DataItem">DataItem</see> entities and creates <see cref="Observation">Observation</see> entities for the <see cref="DataItem">DataItem</see> entities. See {{figure(Observations)}}.<br /><br /><see cref="Observation">Observation</see> entities made by a <see cref="Component">Component</see> are organized by a <see cref="ComponentStream">ComponentStream</see> which is specifically created for that <see cref="Component">Component</see>.<br /><br />![Observations made for DataItem Example](figures/Observations%20made%20for%20DataItem%20Example.png "Observations made for DataItem Example"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Observations made for DataItem Example">Observations made for DataItem Example</see> for how XML representation of the same example is separated into <i>MTConnectDevices Response Document</i> and <i>MTConnectStreams Response Document</i>.<br /><br />{{figure(Observations made for DataItem Example)}} is a subset of {{figure(DeviceStream Example)}}. It shows an example of the association between a <see cref="DataItem">DataItem</see> <see cref="Event">Event</see> type (<c>EMERGENCY_STOP</c>) and an <see cref="Observation">Observation</see> <see cref="Event">Event</see> type (<c>EmergencyStop</c>). See <see cref="Naming Convention for Observation types">Naming Convention for Observation types</see>.<br /><br />{{figure(Observations made for DataItem Example)}} also shows example of the association between a <see cref="Component">Component</see> type (<c>Controller</c>) and related <see cref="ComponentStream">ComponentStream</see>.<br /><br />#### Naming Convention for Observation types<br /><br />The name of an <see cref="Observation">Observation</see> type <b>MUST</b> derive from the associated <see cref="DataItem.type">type in DataItem</see> converted to Pascal-Case by removing underscores (_ ) and capitalizing each word. The conversion <b>MUST NOT</b> apply to the following abbreviated words: <c>PH</c>, <c>AC</c>, <c>DC</c> and <c>URI</c>. <c>MTCONNECT</c> <b>MUST</b> be converted to <c>MTConnect</c>. See {{figure(Observations made for DataItem Example)}} for an example.<br /><br />The name of an <see cref="Observation">Observation</see> type reported in the <i>MTConnectStreams Response Document</i> is extended when the <see cref="DataItem.representation">representation in DataItem</see> is used to further describe that <see cref="DataItem">DataItem</see> in the <i>MTConnectDevices Response Document</i>. See <see cref="Representations">Representations</see> for more details.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531115_47734_25731">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -78,10 +79,14 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 		/// <inheritdoc />
 		public ObservationGeneralizationProperties Properties { get; } = new ObservationGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ObservationGeneralization" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.Glossary.MTConnectTerms.ObservationClass.ObservationClassProperties" />.
+		/// </summary>
 		public class ObservationGeneralizationProperties : Mtconnect.Glossary.MTConnectTerms.ObservationClass.ObservationClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				CompositionId,
 				DataItemId,
 				Name,
@@ -99,12 +104,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="CompositionIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CompositionId</remarks>
 			/// </summary>
-			public CompositionIdProperty CompositionId { get; } = new CompositionIdProperty();
-			/// <summary>
-			﻿/// identifier of the <see cref="Composition">Composition</see> entity defined in the <i>MTConnectDevices Response Document</i> associated with the data reported for the <see cref="Observation">Observation</see>.<br/><br />
-
+			public new CompositionIdProperty CompositionId { get; } = new CompositionIdProperty();
+			
+			/// <summary>﻿identifier of the <see cref="Composition">Composition</see> entity defined in the <i>MTConnectDevices Response Document</i> associated with the data reported for the <see cref="Observation">Observation</see>.<br /><br /><br />
 			/// </summary>
-			public sealed class CompositionIdProperty : IProperty
+			public new sealed class CompositionIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -155,12 +159,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="DataItemIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DataItemId</remarks>
 			/// </summary>
-			public DataItemIdProperty DataItemId { get; } = new DataItemIdProperty();
-			/// <summary>
-			﻿/// unique identifier of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.dataItemId">dataItemId in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.id">id in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			public new DataItemIdProperty DataItemId { get; } = new DataItemIdProperty();
+			
+			/// <summary>﻿unique identifier of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.dataItemId">dataItemId in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.id">id in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class DataItemIdProperty : IProperty
+			public new sealed class DataItemIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -213,12 +216,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
-			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// name of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.name">name in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.name">name in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			public new NameProperty Name { get; } = new NameProperty();
+			
+			/// <summary>﻿name of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.name">name in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.name">name in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class NameProperty : IProperty
+			public new sealed class NameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -271,12 +273,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="SequenceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Sequence</remarks>
 			/// </summary>
-			public SequenceProperty Sequence { get; } = new SequenceProperty();
-			/// <summary>
-			﻿/// number representing the sequential position of an occurrence of an <i>observation</i> in the data buffer of an <i>agent</i>.<br /><br /><see cref="Observation.sequence">sequence in Observation</see> <b>MUST</b> have a value represented as an unsigned 64-bit value from 1 to <i> 2^{64}-1 </i>.<br/><br />
-
+			public new SequenceProperty Sequence { get; } = new SequenceProperty();
+			
+			/// <summary>﻿number representing the sequential position of an occurrence of an <i>observation</i> in the data buffer of an <i>agent</i>.<br /><br /><see cref="Observation.sequence">sequence in Observation</see> <b>MUST</b> have a value represented as an unsigned 64-bit value from 1 to <i> 2^{64}-1 </i>.<br /><br /><br />
 			/// </summary>
-			public sealed class SequenceProperty : IProperty
+			public new sealed class SequenceProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -329,12 +330,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
 			/// </summary>
-			public SubTypeProperty SubType { get; } = new SubTypeProperty();
-			/// <summary>
-			﻿/// subtype of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.subType">subType in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.subType">subType in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			public new SubTypeProperty SubType { get; } = new SubTypeProperty();
+			
+			/// <summary>﻿subtype of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.subType">subType in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.subType">subType in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class SubTypeProperty : IProperty
+			public new sealed class SubTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -387,12 +387,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="TimestampProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Timestamp</remarks>
 			/// </summary>
-			public TimestampProperty Timestamp { get; } = new TimestampProperty();
-			/// <summary>
-			﻿/// most accurate time available to a piece of equipment that represents the point in time that the data reported was measured.<br/><br />
-
+			public new TimestampProperty Timestamp { get; } = new TimestampProperty();
+			
+			/// <summary>﻿most accurate time available to a piece of equipment that represents the point in time that the data reported was measured.<br /><br /><br />
 			/// </summary>
-			public sealed class TimestampProperty : IProperty
+			public new sealed class TimestampProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -443,8 +442,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="MadeByComponentPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeByComponent</remarks>
 			/// </summary>
-			public MadeByComponentPartProperty MadeByComponentPart { get; } = new MadeByComponentPartProperty();
-			public sealed class MadeByComponentPartProperty : IProperty
+			public new MadeByComponentPartProperty MadeByComponentPart { get; } = new MadeByComponentPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class MadeByComponentPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -494,12 +496,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			/// <summary>
-			﻿/// type of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.type">type in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.type">type in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿type of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.type">type in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.type">type in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class TypeProperty : IProperty
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -552,12 +553,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
-			public UnitsProperty Units { get; } = new UnitsProperty();
-			/// <summary>
-			﻿/// units of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.units">units in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.units">units in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			public new UnitsProperty Units { get; } = new UnitsProperty();
+			
+			/// <summary>﻿units of the <see cref="DataItem">DataItem</see> associated with this <see cref="Observation">Observation</see>.<br /><br /><see cref="Observation.units">units in Observation</see> <b>MUST</b> match the associated <see cref="DataItem.units">units in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class UnitsProperty : IProperty
+			public new sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -610,12 +610,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="IsUnavailableProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsUnavailable</remarks>
 			/// </summary>
-			public IsUnavailableProperty IsUnavailable { get; } = new IsUnavailableProperty();
-			/// <summary>
-			﻿/// when <c>true</c>, <see cref="Observation.result">result in Observation</see> is indeterminate.<br /><br />> Note 1 to entry: In <i>XML</i>, when <c>isUnavailable</c> is <c>true</c>, the <i>XML</i> <c>CDATA</c> of the <c>Observation</c> <b>MUST</b> be <c>UNAVAILABLE</c>.<br /> <c></c>`xml<br /><Execution dataItemId="..." ...>UNAVAILABLE</Execution><br /><c></c>`<br /><br />> Note 2 to entry: In <i>JSON</i>, when <c>isUnavailable</c> is <c>true</c>, the <i>JSON</i> <c>value</c> of the <c>Observation</c> <b>MUST</b> be <c>UNAVAILABLE</c>.<br /><c></c>`json<br />  "Execution" : [ { "dataItemId": "..." ..., "value": "UNAVAILABLE" } ]<br /><c></c>`<br/><br />
-
+			public new IsUnavailableProperty IsUnavailable { get; } = new IsUnavailableProperty();
+			
+			/// <summary>﻿when <c>true</c>, <see cref="Observation.result">result in Observation</see> is indeterminate.<br /><br />&gt; Note 1 to entry: In <i>XML</i>, when <c>isUnavailable</c> is <c>true</c>, the <i>XML</i> <c>CDATA</c> of the <c>Observation</c> <b>MUST</b> be <c>UNAVAILABLE</c>.<br /> <c></c>`xml<br />&lt;Execution dataItemId="..." ...&gt;UNAVAILABLE&lt;/Execution&gt;<br /><c></c>`<br /><br />&gt; Note 2 to entry: In <i>JSON</i>, when <c>isUnavailable</c> is <c>true</c>, the <i>JSON</i> <c>value</c> of the <c>Observation</c> <b>MUST</b> be <c>UNAVAILABLE</c>.<br /><c></c>`json<br />  "Execution" : [ { "dataItemId": "..." ..., "value": "UNAVAILABLE" } ]<br /><c></c>`<br /><br /><br />
 			/// </summary>
-			public sealed class IsUnavailableProperty : IProperty
+			public new sealed class IsUnavailableProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -676,12 +675,11 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
-			public ResultProperty Result { get; } = new ResultProperty();
-			/// <summary>
-			﻿/// <i>observation</i> of the <see cref="Observation">Observation</see> entity.<br /><br />The default value type for <see cref="Observation.result">result in Observation</see> is <c>string</c>.<br /><br />> Note 1 to entry: in <i>XML</i> the <see cref="Observation.result">result in Observation</see> is the <c>CDATA</c> of the Observation <i>element</i>.<br /><br />~~~~xml<br /><Execution dataItemId="..." ...>READY</Execution><br />~~~~<br /><br />> Note 2 to entry: in <i>JSON</i> the <see cref="Observation.result">result in Observation</see> is the member <c>value</c> of the Observation object.<br /><br />~~~~json<br />"Execution" : [ { "dataItemId": "..." ..., "value": "READY" } ]<br />~~~~<br/><br />
-
+			public new ResultProperty Result { get; } = new ResultProperty();
+			
+			/// <summary>﻿<i>observation</i> of the <see cref="Observation">Observation</see> entity.<br /><br />The default value type for <see cref="Observation.result">result in Observation</see> is <c>string</c>.<br /><br />&gt; Note 1 to entry: in <i>XML</i> the <see cref="Observation.result">result in Observation</see> is the <c>CDATA</c> of the Observation <i>element</i>.<br /><br />~~~~xml<br />&lt;Execution dataItemId="..." ...&gt;READY&lt;/Execution&gt;<br />~~~~<br /><br />&gt; Note 2 to entry: in <i>JSON</i> the <see cref="Observation.result">result in Observation</see> is the member <c>value</c> of the Observation object.<br /><br />~~~~json<br />"Execution" : [ { "dataItemId": "..." ..., "value": "READY" } ]<br />~~~~<br /><br /><br />
 			/// </summary>
-			public sealed class ResultProperty : IProperty
+			public new sealed class ResultProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -746,8 +744,11 @@ The default value type for {{property(Observation::result)}} is `string`.
 			/// <inheritdoc cref="MadeForDataItemPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MadeForDataItem</remarks>
 			/// </summary>
-			public MadeForDataItemPartProperty MadeForDataItemPart { get; } = new MadeForDataItemPartProperty();
-			public sealed class MadeForDataItemPartProperty : IProperty
+			public new MadeForDataItemPartProperty MadeForDataItemPart { get; } = new MadeForDataItemPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class MadeForDataItemPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

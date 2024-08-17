@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems
 {
-	/// <summary>
-	﻿/// information reported about a piece of equipment.<br/><br />
-
+	/// <summary>﻿information reported about a piece of equipment.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_002C94B7_1257_49be_8EAA_CE7FCD7AFF8A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 		/// <inheritdoc />
 		public DataItemClassProperties Properties { get; } = new DataItemClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DataItemClass" />.
+		/// </summary>
 		public class DataItemClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -75,9 +79,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 			/// <remarks>Original Name: Category</remarks>
 			/// </summary>
 			public CategoryProperty Category { get; } = new CategoryProperty();
-			/// <summary>
-			﻿/// specifies the kind of information provided by a data item.<br/><br />
-
+			
+			/// <summary>﻿specifies the kind of information provided by a data item.<br /><br /><br />
 			/// </summary>
 			public sealed class CategoryProperty : IProperty
 			{
@@ -131,9 +134,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 			/// <remarks>Original Name: CompositionId</remarks>
 			/// </summary>
 			public CompositionIdProperty CompositionId { get; } = new CompositionIdProperty();
-			/// <summary>
-			﻿/// identifier attribute of the <see cref="Composition">Composition</see> that the reported data is most closely associated.<br/><br />
-
+			
+			/// <summary>﻿identifier attribute of the <see cref="Composition">Composition</see> that the reported data is most closely associated.<br /><br /><br />
 			/// </summary>
 			public sealed class CompositionIdProperty : IProperty
 			{
@@ -187,9 +189,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 			/// <remarks>Original Name: CoordinateSystem</remarks>
 			/// </summary>
 			public CoordinateSystemProperty CoordinateSystem { get; } = new CoordinateSystemProperty();
-			/// <summary>
-			﻿/// for measured values relative to a coordinate system like <see cref="Position">Position</see>, the coordinate system used may be reported.<br /><br /><b>DEPRECATED</b> in <i>Version 2.0</i>. Replaced by <see cref="Component.coordinateSystemIdRef">coordinateSystemIdRef in Component</see>. <br/><br />
-
+			
+			/// <summary>﻿for measured values relative to a coordinate system like <see cref="Position">Position</see>, the coordinate system used may be reported.<br /><br /><b>DEPRECATED</b> in <i>Version 2.0</i>. Replaced by <see cref="Component.coordinateSystemIdRef">coordinateSystemIdRef in Component</see>. <br /><br /><br />
 			/// </summary>
 			public sealed class CoordinateSystemProperty : IProperty
 			{
@@ -245,9 +246,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 			/// <remarks>Original Name: Discrete</remarks>
 			/// </summary>
 			public DiscreteProperty Discrete { get; } = new DiscreteProperty();
-			/// <summary>
-			﻿/// indication signifying whether each value reported for the <i>Observation</i> is significant and whether duplicate values are to be suppressed.<br /><br />If a value is not defined for <see cref="DataItem.discrete">discrete in DataItem</see>, the default value <b>MUST</b> be <c>false</c>.<br/><br />
-
+			
+			/// <summary>﻿indication signifying whether each value reported for the <i>Observation</i> is significant and whether duplicate values are to be suppressed.<br /><br />If a value is not defined for <see cref="DataItem.discrete">discrete in DataItem</see>, the default value <b>MUST</b> be <c>false</c>.<br /><br /><br />
 			/// </summary>
 			public sealed class DiscreteProperty : IProperty
 			{
@@ -303,9 +303,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: Id</remarks>
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
-			/// <summary>
-			﻿/// unique identifier for this data item.<br/><br />
-
+			
+			/// <summary>﻿unique identifier for this data item.<br /><br /><br />
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -359,9 +358,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// name of the data item.<br/><br />
-
+			
+			/// <summary>﻿name of the data item.<br /><br /><br />
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -415,9 +413,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: NativeScale</remarks>
 			/// </summary>
 			public NativeScaleProperty NativeScale { get; } = new NativeScaleProperty();
-			/// <summary>
-			﻿/// used to convert the reported value to represent the original measured value.<br/><br />
-
+			
+			/// <summary>﻿used to convert the reported value to represent the original measured value.<br /><br /><br />
 			/// </summary>
 			public sealed class NativeScaleProperty : IProperty
 			{
@@ -471,9 +468,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: NativeUnits</remarks>
 			/// </summary>
 			public NativeUnitsProperty NativeUnits { get; } = new NativeUnitsProperty();
-			/// <summary>
-			﻿/// native units of measurement for the reported value of the data item.<br/><br />
-
+			
+			/// <summary>﻿native units of measurement for the reported value of the data item.<br /><br /><br />
 			/// </summary>
 			public sealed class NativeUnitsProperty : IProperty
 			{
@@ -527,9 +523,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: SampleRate</remarks>
 			/// </summary>
 			public SampleRateProperty SampleRate { get; } = new SampleRateProperty();
-			/// <summary>
-			﻿/// rate at which successive samples of a data item are recorded by a piece of equipment.<br/><br />
-
+			
+			/// <summary>﻿rate at which successive samples of a data item are recorded by a piece of equipment.<br /><br /><br />
 			/// </summary>
 			public sealed class SampleRateProperty : IProperty
 			{
@@ -583,9 +578,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: SignificantDigits</remarks>
 			/// </summary>
 			public SignificantDigitsProperty SignificantDigits { get; } = new SignificantDigitsProperty();
-			/// <summary>
-			﻿/// number of significant digits in the reported value.<br/><br />
-
+			
+			/// <summary>﻿number of significant digits in the reported value.<br /><br /><br />
 			/// </summary>
 			public sealed class SignificantDigitsProperty : IProperty
 			{
@@ -639,9 +633,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: Statistic</remarks>
 			/// </summary>
 			public StatisticProperty Statistic { get; } = new StatisticProperty();
-			/// <summary>
-			﻿/// type of statistical calculation performed on a series of data samples to provide the reported data value.<br/><br />
-
+			
+			/// <summary>﻿type of statistical calculation performed on a series of data samples to provide the reported data value.<br /><br /><br />
 			/// </summary>
 			public sealed class StatisticProperty : IProperty
 			{
@@ -695,9 +688,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: SubType</remarks>
 			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
-			/// <summary>
-			﻿/// sub-categorization of the <see cref="DataItem.type">type in DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿sub-categorization of the <see cref="DataItem.type">type in DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -751,9 +743,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
-			/// <summary>
-			﻿/// type of data being measured. See <see cref="DataItem Types">DataItem Types</see>.<br/><br />
-
+			
+			/// <summary>﻿type of data being measured. See <see cref="DataItem Types">DataItem Types</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -807,9 +798,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
-			/// <summary>
-			﻿/// unit of measurement for the reported value of the data item.<br/><br />
-
+			
+			/// <summary>﻿unit of measurement for the reported value of the data item.<br /><br /><br />
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
@@ -863,6 +853,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: IsObservedBy</remarks>
 			/// </summary>
 			public IsObservedByPartProperty IsObservedByPart { get; } = new IsObservedByPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class IsObservedByPartProperty : IProperty
 			{
 				/// <summary>
@@ -914,9 +907,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 			/// <remarks>Original Name: Representation</remarks>
 			/// </summary>
 			public RepresentationProperty Representation { get; } = new RepresentationProperty();
-			/// <summary>
-			﻿/// description of a means to interpret data consisting of multiple data points or samples reported as a single value.  <br /><br />If <see cref="DataItem.representation">representation in DataItem</see> is not specified, it <b>MUST</b> be determined to be <c>VALUE</c>.<br /><br/><br />
-
+			
+			/// <summary>﻿description of a means to interpret data consisting of multiple data points or samples reported as a single value.  <br /><br />If <see cref="DataItem.representation">representation in DataItem</see> is not specified, it <b>MUST</b> be determined to be <c>VALUE</c>.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class RepresentationProperty : IProperty
 			{
@@ -973,6 +965,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: HasSource</remarks>
 			/// </summary>
 			public HasSourcePartProperty HasSourcePart { get; } = new HasSourcePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasSourcePartProperty : IProperty
 			{
 				/// <summary>
@@ -1024,6 +1019,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: HasConstraint</remarks>
 			/// </summary>
 			public HasConstraintPartProperty HasConstraintPart { get; } = new HasConstraintPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasConstraintPartProperty : IProperty
 			{
 				/// <summary>
@@ -1075,6 +1073,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: HasFilter</remarks>
 			/// </summary>
 			public HasFilterPartProperty HasFilterPart { get; } = new HasFilterPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasFilterPartProperty : IProperty
 			{
 				/// <summary>
@@ -1126,6 +1127,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: HasInitialValue</remarks>
 			/// </summary>
 			public HasInitialValuePartProperty HasInitialValuePart { get; } = new HasInitialValuePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasInitialValuePartProperty : IProperty
 			{
 				/// <summary>
@@ -1177,6 +1181,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: HasResetTrigger</remarks>
 			/// </summary>
 			public HasResetTriggerPartProperty HasResetTriggerPart { get; } = new HasResetTriggerPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasResetTriggerPartProperty : IProperty
 			{
 				/// <summary>
@@ -1228,6 +1235,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: HasObservation</remarks>
 			/// </summary>
 			public HasObservationPartProperty HasObservationPart { get; } = new HasObservationPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasObservationPartProperty : IProperty
 			{
 				/// <summary>
@@ -1279,6 +1289,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: HasDefinition</remarks>
 			/// </summary>
 			public HasDefinitionPartProperty HasDefinitionPart { get; } = new HasDefinitionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasDefinitionPartProperty : IProperty
 			{
 				/// <summary>
@@ -1330,9 +1343,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: CoordinateSystemIdRef</remarks>
 			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
-			/// <summary>
-			﻿/// associated <see cref="CoordinateSystem">CoordinateSystem</see> context for the <see cref="DataItem">DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿associated <see cref="CoordinateSystem">CoordinateSystem</see> context for the <see cref="DataItem">DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
@@ -1386,6 +1398,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 			/// <remarks>Original Name: HasRelationship</remarks>
 			/// </summary>
 			public HasRelationshipPartProperty HasRelationshipPart { get; } = new HasRelationshipPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasRelationshipPartProperty : IProperty
 			{
 				/// <summary>

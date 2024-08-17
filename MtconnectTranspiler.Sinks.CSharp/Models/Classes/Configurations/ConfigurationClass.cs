@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
-	/// <summary>
-	﻿/// technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.<br/><br />
-
+	/// <summary>﻿technical information about an entity describing its physical layout, functional characteristics, and relationships with other entities.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_C04DCC77_16E8_4cef_92D4_B777AFC52570">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		/// <inheritdoc />
 		public ConfigurationClassProperties Properties { get; } = new ConfigurationClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ConfigurationClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.Glossary.MTConnectTerms.ConfigurationGeneralization.ConfigurationGeneralizationProperties" />.
+		/// </summary>
 		public class ConfigurationClassProperties : Mtconnect.Glossary.MTConnectTerms.ConfigurationGeneralization.ConfigurationGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				IsConfigurationForPart,
 				HasSolidModelPart,
 				HasSensorConfigurationPart,
@@ -63,8 +68,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="IsConfigurationForPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsConfigurationFor</remarks>
 			/// </summary>
-			public IsConfigurationForPartProperty IsConfigurationForPart { get; } = new IsConfigurationForPartProperty();
-			public sealed class IsConfigurationForPartProperty : IProperty
+			public new IsConfigurationForPartProperty IsConfigurationForPart { get; } = new IsConfigurationForPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class IsConfigurationForPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -114,8 +122,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="HasSolidModelPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSolidModel</remarks>
 			/// </summary>
-			public HasSolidModelPartProperty HasSolidModelPart { get; } = new HasSolidModelPartProperty();
-			public sealed class HasSolidModelPartProperty : IProperty
+			public new HasSolidModelPartProperty HasSolidModelPart { get; } = new HasSolidModelPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasSolidModelPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -165,8 +176,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="HasSensorConfigurationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSensorConfiguration</remarks>
 			/// </summary>
-			public HasSensorConfigurationPartProperty HasSensorConfigurationPart { get; } = new HasSensorConfigurationPartProperty();
-			public sealed class HasSensorConfigurationPartProperty : IProperty
+			public new HasSensorConfigurationPartProperty HasSensorConfigurationPart { get; } = new HasSensorConfigurationPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasSensorConfigurationPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -216,8 +230,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="HasMotionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasMotion</remarks>
 			/// </summary>
-			public HasMotionPartProperty HasMotionPart { get; } = new HasMotionPartProperty();
-			public sealed class HasMotionPartProperty : IProperty
+			public new HasMotionPartProperty HasMotionPart { get; } = new HasMotionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasMotionPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -267,8 +284,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="HasRelationshipPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasRelationship</remarks>
 			/// </summary>
-			public HasRelationshipPartProperty HasRelationshipPart { get; } = new HasRelationshipPartProperty();
-			public sealed class HasRelationshipPartProperty : IProperty
+			public new HasRelationshipPartProperty HasRelationshipPart { get; } = new HasRelationshipPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasRelationshipPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -318,8 +338,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="HasCoordinateSystemPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasCoordinateSystem</remarks>
 			/// </summary>
-			public HasCoordinateSystemPartProperty HasCoordinateSystemPart { get; } = new HasCoordinateSystemPartProperty();
-			public sealed class HasCoordinateSystemPartProperty : IProperty
+			public new HasCoordinateSystemPartProperty HasCoordinateSystemPart { get; } = new HasCoordinateSystemPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasCoordinateSystemPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -369,8 +392,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="HasSpecificationPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSpecification</remarks>
 			/// </summary>
-			public HasSpecificationPartProperty HasSpecificationPart { get; } = new HasSpecificationPartProperty();
-			public sealed class HasSpecificationPartProperty : IProperty
+			public new HasSpecificationPartProperty HasSpecificationPart { get; } = new HasSpecificationPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasSpecificationPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -420,8 +446,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="IsConfigurationForCompositionPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: IsConfigurationForComposition</remarks>
 			/// </summary>
-			public IsConfigurationForCompositionPartProperty IsConfigurationForCompositionPart { get; } = new IsConfigurationForCompositionPartProperty();
-			public sealed class IsConfigurationForCompositionPartProperty : IProperty
+			public new IsConfigurationForCompositionPartProperty IsConfigurationForCompositionPart { get; } = new IsConfigurationForCompositionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class IsConfigurationForCompositionPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -471,8 +500,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="HasImageFilePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasImageFile</remarks>
 			/// </summary>
-			public HasImageFilePartProperty HasImageFilePart { get; } = new HasImageFilePartProperty();
-			public sealed class HasImageFilePartProperty : IProperty
+			public new HasImageFilePartProperty HasImageFilePart { get; } = new HasImageFilePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasImageFilePartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -522,8 +554,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			/// <inheritdoc cref="HasPowerSourcePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPowerSource</remarks>
 			/// </summary>
-			public HasPowerSourcePartProperty HasPowerSourcePart { get; } = new HasPowerSourcePartProperty();
-			public sealed class HasPowerSourcePartProperty : IProperty
+			public new HasPowerSourcePartProperty HasPowerSourcePart { get; } = new HasPowerSourcePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasPowerSourcePartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

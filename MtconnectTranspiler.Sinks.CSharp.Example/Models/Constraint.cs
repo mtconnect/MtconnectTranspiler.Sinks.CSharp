@@ -12,7 +12,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <summary>
         /// Internal string, used by <see cref="Name"/>.
         /// </summary>
-        protected string _name { get; set; }
+        protected string _name { get; set; } = string.Empty;
         /// <summary>
         /// The intended name for the C# method.
         /// </summary>
@@ -46,8 +46,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <param name="source"><inheritdoc cref="UmlConstraint"/></param>
         public Constraint(XmiDocument model, UmlConstraint source) : base(model, source)
         {
-            SourceLanguage = source.Specification?.Language;
-            RawScript = source.Specification?.Body;
+            SourceLanguage = source.Specification?.Language ?? "Unspecified";
+            RawScript = source.Specification?.Body ?? string.Empty;
         }
     }
 }

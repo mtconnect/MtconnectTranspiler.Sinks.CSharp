@@ -28,12 +28,6 @@ namespace Mtconnect
 			ImportsPackage,
 		};
 
-		/// <summary>
-		/// Collection of root <see cref="IClass" />'.
-		/// </summary>
-		public static IClass[] Classes => new IClass[] {
-		};
-
 		#region Packages
 	private static AssetInformationModelPackage _AssetInformationModelPackage;
 	/// <summary>
@@ -108,8 +102,5 @@ namespace Mtconnect
 	public static ImportsPackage ImportsPackage => _ImportsPackage ?? (_ImportsPackage = new ImportsPackage());
 
 		#endregion
-
-	#region Classes
-	#endregion
 	}
 }

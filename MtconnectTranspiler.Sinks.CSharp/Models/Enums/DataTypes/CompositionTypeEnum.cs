@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580312281115_595828_44604">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580312281115_595828_44604">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CompositionTypeEnum
 	{
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTUATOR,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		AMPLIFIER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BALLSCREW,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BELT,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BRAKE,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -75,9 +64,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHAIN,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -85,9 +72,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHOPPER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -95,9 +80,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHUCK,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an inclined channel that conveys material.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,9 +88,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHUTE,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -115,9 +96,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CIRCUIT_BREAKER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -125,9 +104,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CLAMP,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -135,9 +112,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COMPRESSOR,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -145,9 +120,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DOOR,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -155,9 +128,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DRAIN,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -165,9 +136,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ENCODER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -175,9 +144,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EXPOSURE_UNIT,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -185,9 +152,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EXTRUSION_UNIT,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -195,9 +160,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FAN,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -205,9 +168,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FILTER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -215,9 +176,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		GALVANOMOTOR,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -225,9 +184,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		GRIPPER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -235,9 +192,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		HOPPER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -245,9 +200,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LINEAR_POSITION_FEEDBACK,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -255,9 +208,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MOTOR,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a viscous liquid.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a viscous liquid.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -265,9 +216,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OIL,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -275,9 +224,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		POWER_SUPPLY,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -285,9 +232,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PULLEY,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -295,9 +240,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PUMP,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a rotary storage unit for material.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -305,9 +248,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		REEL,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -315,9 +256,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SENSING_ELEMENT,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -325,9 +264,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SPREADER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. <br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -335,9 +272,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		STORAGE_BATTERY,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -345,9 +280,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SWITCH,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a surface that holds an object or material.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -355,9 +288,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TABLE,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a receptacle or container that holds material.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -365,9 +296,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TANK,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -375,9 +304,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TENSIONER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -385,9 +312,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TRANSFORMER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -395,9 +320,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VALVE,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -405,9 +328,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VAT,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a fluid.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a fluid.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -415,9 +336,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WATER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -425,9 +344,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WIRE,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -435,9 +352,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WORKPIECE,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -445,9 +360,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COOLING_TOWER,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -455,9 +368,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		POT,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -465,9 +376,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		STATION,
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -475,9 +384,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TRANSFER_ARM,
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -485,9 +392,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TRANSFER_POT,
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -495,9 +400,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RETURN_POT,
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -505,9 +408,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		STAGING_POT,
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -515,9 +416,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		REMOVAL_POT,
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -527,9 +426,8 @@ namespace Mtconnect.DataTypes
 		EXPIRED_POT,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580312281115_595828_44604">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580312281115_595828_44604">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionTypeEnumMetaClass : IEnum
@@ -540,6 +438,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(CompositionTypeEnum);
 
 		/// <inheritdoc />
@@ -607,15 +506,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ACTUATORValue _ACTUATOR;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTUATORValue" path="/summary" />
 		public ACTUATORValue ACTUATOR => _ACTUATOR ?? (_ACTUATOR = new ACTUATORValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class ACTUATORValue : IEnumInstance
 		{
@@ -638,15 +534,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private AMPLIFIERValue _AMPLIFIER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="AMPLIFIERValue" path="/summary" />
 		public AMPLIFIERValue AMPLIFIER => _AMPLIFIER ?? (_AMPLIFIER = new AMPLIFIERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an electronic component or circuit that amplifies power, electric current, or voltage.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class AMPLIFIERValue : IEnumInstance
 		{
@@ -667,15 +560,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private BALLSCREWValue _BALLSCREW;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BALLSCREWValue" path="/summary" />
 		public BALLSCREWValue BALLSCREW => _BALLSCREW ?? (_BALLSCREW = new BALLSCREWValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanical structure that transforms rotary motion into linear motion.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class BALLSCREWValue : IEnumInstance
 		{
@@ -696,15 +586,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private BELTValue _BELT;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BELTValue" path="/summary" />
 		public BELTValue BELT => _BELT ?? (_BELT = new BELTValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an endless flexible band that transmits motion for a piece of equipment or conveys materials and objects.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class BELTValue : IEnumInstance
 		{
@@ -725,15 +612,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private BRAKEValue _BRAKE;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BRAKEValue" path="/summary" />
 		public BRAKEValue BRAKE => _BRAKE ?? (_BRAKE = new BRAKEValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that slows down or stops a moving object by the absorption or transfer of the energy of momentum, usually by means of friction, electrical force, or magnetic force.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class BRAKEValue : IEnumInstance
 		{
@@ -754,15 +638,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private CHAINValue _CHAIN;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHAINValue" path="/summary" />
 		public CHAINValue CHAIN => _CHAIN ?? (_CHAIN = new CHAINValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an interconnected series of objects that band together and transmit motion for a piece of equipment or to convey materials and objects.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class CHAINValue : IEnumInstance
 		{
@@ -783,15 +664,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private CHOPPERValue _CHOPPER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHOPPERValue" path="/summary" />
 		public CHOPPERValue CHOPPER => _CHOPPER ?? (_CHOPPER = new CHOPPERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that breaks material into smaller pieces.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class CHOPPERValue : IEnumInstance
 		{
@@ -812,15 +690,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private CHUCKValue _CHUCK;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHUCKValue" path="/summary" />
 		public CHUCKValue CHUCK => _CHUCK ?? (_CHUCK = new CHUCKValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class CHUCKValue : IEnumInstance
 		{
@@ -841,15 +716,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private CHUTEValue _CHUTE;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHUTEValue" path="/summary" />
 		public CHUTEValue CHUTE => _CHUTE ?? (_CHUTE = new CHUTEValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an inclined channel that conveys material.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an inclined channel that conveys material.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class CHUTEValue : IEnumInstance
 		{
@@ -870,15 +742,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private CIRCUIT_BREAKERValue _CIRCUIT_BREAKER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CIRCUIT_BREAKERValue" path="/summary" />
 		public CIRCUIT_BREAKERValue CIRCUIT_BREAKER => _CIRCUIT_BREAKER ?? (_CIRCUIT_BREAKER = new CIRCUIT_BREAKERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that interrupts an electric circuit.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class CIRCUIT_BREAKERValue : IEnumInstance
 		{
@@ -899,15 +768,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private CLAMPValue _CLAMP;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CLAMPValue" path="/summary" />
 		public CLAMPValue CLAMP => _CLAMP ?? (_CLAMP = new CLAMPValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that strengthens, supports, or fastens objects in place.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class CLAMPValue : IEnumInstance
 		{
@@ -928,15 +794,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private COMPRESSORValue _COMPRESSOR;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COMPRESSORValue" path="/summary" />
 		public COMPRESSORValue COMPRESSOR => _COMPRESSOR ?? (_COMPRESSOR = new COMPRESSORValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a pump or other mechanism that reduces volume and increases pressure of gases in order to condense the gases to drive pneumatically powered pieces of equipment.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class COMPRESSORValue : IEnumInstance
 		{
@@ -957,15 +820,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private DOORValue _DOOR;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DOORValue" path="/summary" />
 		public DOORValue DOOR => _DOOR ?? (_DOOR = new DOORValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanical mechanism or closure that covers a physical access portal into a piece of equipment allowing or restricting access to other parts of the equipment.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class DOORValue : IEnumInstance
 		{
@@ -986,15 +846,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private DRAINValue _DRAIN;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DRAINValue" path="/summary" />
 		public DRAINValue DRAIN => _DRAIN ?? (_DRAIN = new DRAINValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that allows material to flow for the purpose of drainage from, for example, a vessel or tank.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class DRAINValue : IEnumInstance
 		{
@@ -1015,15 +872,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private ENCODERValue _ENCODER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ENCODERValue" path="/summary" />
 		public ENCODERValue ENCODER => _ENCODER ?? (_ENCODER = new ENCODERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that measures rotary position.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class ENCODERValue : IEnumInstance
 		{
@@ -1044,15 +898,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private EXPOSURE_UNITValue _EXPOSURE_UNIT;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EXPOSURE_UNITValue" path="/summary" />
 		public EXPOSURE_UNITValue EXPOSURE_UNIT => _EXPOSURE_UNIT ?? (_EXPOSURE_UNIT = new EXPOSURE_UNITValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that emits a type of radiation.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class EXPOSURE_UNITValue : IEnumInstance
 		{
@@ -1073,15 +924,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private EXTRUSION_UNITValue _EXTRUSION_UNIT;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EXTRUSION_UNITValue" path="/summary" />
 		public EXTRUSION_UNITValue EXTRUSION_UNIT => _EXTRUSION_UNIT ?? (_EXTRUSION_UNIT = new EXTRUSION_UNITValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that dispenses liquid or powered materials.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class EXTRUSION_UNITValue : IEnumInstance
 		{
@@ -1102,15 +950,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private FANValue _FAN;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FANValue" path="/summary" />
 		public FANValue FAN => _FAN ?? (_FAN = new FANValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that produces a current of air.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class FANValue : IEnumInstance
 		{
@@ -1131,15 +976,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private FILTERValue _FILTER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FILTERValue" path="/summary" />
 		public FILTERValue FILTER => _FILTER ?? (_FILTER = new FILTERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a substance or structure that allows liquids or gases to pass through to remove suspended impurities or to recover solids.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class FILTERValue : IEnumInstance
 		{
@@ -1160,15 +1002,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private GALVANOMOTORValue _GALVANOMOTOR;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="GALVANOMOTORValue" path="/summary" />
 		public GALVANOMOTORValue GALVANOMOTOR => _GALVANOMOTOR ?? (_GALVANOMOTOR = new GALVANOMOTORValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an electromechanical actuator that produces deflection of a beam of light or energy in response to electric current through its coil in a magnetic field.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class GALVANOMOTORValue : IEnumInstance
 		{
@@ -1189,15 +1028,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private GRIPPERValue _GRIPPER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="GRIPPERValue" path="/summary" />
 		public GRIPPERValue GRIPPER => _GRIPPER ?? (_GRIPPER = new GRIPPERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that holds a part, stock material, or any other item in place.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class GRIPPERValue : IEnumInstance
 		{
@@ -1218,15 +1054,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private HOPPERValue _HOPPER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="HOPPERValue" path="/summary" />
 		public HOPPERValue HOPPER => _HOPPER ?? (_HOPPER = new HOPPERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a chamber or bin that stores materials temporarily, typically being filled through the top and dispensed through the bottom.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class HOPPERValue : IEnumInstance
 		{
@@ -1247,15 +1080,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private LINEAR_POSITION_FEEDBACKValue _LINEAR_POSITION_FEEDBACK;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LINEAR_POSITION_FEEDBACKValue" path="/summary" />
 		public LINEAR_POSITION_FEEDBACKValue LINEAR_POSITION_FEEDBACK => _LINEAR_POSITION_FEEDBACK ?? (_LINEAR_POSITION_FEEDBACK = new LINEAR_POSITION_FEEDBACKValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that measures linear motion or position.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class LINEAR_POSITION_FEEDBACKValue : IEnumInstance
 		{
@@ -1276,15 +1106,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private MOTORValue _MOTOR;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MOTORValue" path="/summary" />
 		public MOTORValue MOTOR => _MOTOR ?? (_MOTOR = new MOTORValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that converts electrical, pneumatic, or hydraulic energy into mechanical energy.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class MOTORValue : IEnumInstance
 		{
@@ -1305,15 +1132,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private OILValue _OIL;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a viscous liquid.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OILValue" path="/summary" />
 		public OILValue OIL => _OIL ?? (_OIL = new OILValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a viscous liquid.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a viscous liquid.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class OILValue : IEnumInstance
 		{
@@ -1334,15 +1158,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private POWER_SUPPLYValue _POWER_SUPPLY;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="POWER_SUPPLYValue" path="/summary" />
 		public POWER_SUPPLYValue POWER_SUPPLY => _POWER_SUPPLY ?? (_POWER_SUPPLY = new POWER_SUPPLYValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a unit that provides power to electric mechanisms.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class POWER_SUPPLYValue : IEnumInstance
 		{
@@ -1363,15 +1184,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private PULLEYValue _PULLEY;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PULLEYValue" path="/summary" />
 		public PULLEYValue PULLEY => _PULLEY ?? (_PULLEY = new PULLEYValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism or wheel that turns in a frame or block and serves to change the direction of or to transmit force.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class PULLEYValue : IEnumInstance
 		{
@@ -1392,15 +1210,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private PUMPValue _PUMP;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PUMPValue" path="/summary" />
 		public PUMPValue PUMP => _PUMP ?? (_PUMP = new PUMPValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an apparatus that raises, drives, exhausts, or compresses fluids or gases by means of a piston, plunger, or set of rotating vanes.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class PUMPValue : IEnumInstance
 		{
@@ -1421,15 +1236,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private REELValue _REEL;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="REELValue" path="/summary" />
 		public REELValue REEL => _REEL ?? (_REEL = new REELValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a rotary storage unit for material.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a rotary storage unit for material.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class REELValue : IEnumInstance
 		{
@@ -1450,15 +1262,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private SENSING_ELEMENTValue _SENSING_ELEMENT;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SENSING_ELEMENTValue" path="/summary" />
 		public SENSING_ELEMENTValue SENSING_ELEMENT => _SENSING_ELEMENT ?? (_SENSING_ELEMENT = new SENSING_ELEMENTValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that provides a signal or measured value.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class SENSING_ELEMENTValue : IEnumInstance
 		{
@@ -1479,15 +1288,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private SPREADERValue _SPREADER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SPREADERValue" path="/summary" />
 		public SPREADERValue SPREADER => _SPREADER ?? (_SPREADER = new SPREADERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that flattens or spreads materials.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class SPREADERValue : IEnumInstance
 		{
@@ -1508,15 +1314,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private STORAGE_BATTERYValue _STORAGE_BATTERY;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STORAGE_BATTERYValue" path="/summary" />
 		public STORAGE_BATTERYValue STORAGE_BATTERY => _STORAGE_BATTERY ?? (_STORAGE_BATTERY = new STORAGE_BATTERYValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. <br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of one or more cells that converts chemical energy to electricity and serves as a source of power. <br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class STORAGE_BATTERYValue : IEnumInstance
 		{
@@ -1537,15 +1340,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private SWITCHValue _SWITCH;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SWITCHValue" path="/summary" />
 		public SWITCHValue SWITCH => _SWITCH ?? (_SWITCH = new SWITCHValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that turns on or off an electric current or makes or breaks a circuit.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class SWITCHValue : IEnumInstance
 		{
@@ -1566,15 +1366,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private TABLEValue _TABLE;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TABLEValue" path="/summary" />
 		public TABLEValue TABLE => _TABLE ?? (_TABLE = new TABLEValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a surface that holds an object or material.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a surface that holds an object or material.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class TABLEValue : IEnumInstance
 		{
@@ -1595,15 +1392,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private TANKValue _TANK;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TANKValue" path="/summary" />
 		public TANKValue TANK => _TANK ?? (_TANK = new TANKValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a receptacle or container that holds material.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a receptacle or container that holds material.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class TANKValue : IEnumInstance
 		{
@@ -1624,15 +1418,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private TENSIONERValue _TENSIONER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TENSIONERValue" path="/summary" />
 		public TENSIONERValue TENSIONER => _TENSIONER ?? (_TENSIONER = new TENSIONERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that provides or applies a stretch or strain to another mechanism.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class TENSIONERValue : IEnumInstance
 		{
@@ -1653,15 +1444,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private TRANSFORMERValue _TRANSFORMER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRANSFORMERValue" path="/summary" />
 		public TRANSFORMERValue TRANSFORMER => _TRANSFORMER ?? (_TRANSFORMER = new TRANSFORMERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that transforms electric energy from a source to a secondary circuit.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class TRANSFORMERValue : IEnumInstance
 		{
@@ -1682,15 +1470,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private VALVEValue _VALVE;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VALVEValue" path="/summary" />
 		public VALVEValue VALVE => _VALVE ?? (_VALVE = new VALVEValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that halts or controls the flow of a liquid, gas, or other material through a passage, pipe, inlet, or outlet.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class VALVEValue : IEnumInstance
 		{
@@ -1711,15 +1496,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private VATValue _VAT;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VATValue" path="/summary" />
 		public VATValue VAT => _VAT ?? (_VAT = new VATValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a container for liquid or powdered materials.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class VATValue : IEnumInstance
 		{
@@ -1740,15 +1522,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private WATERValue _WATER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a fluid.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WATERValue" path="/summary" />
 		public WATERValue WATER => _WATER ?? (_WATER = new WATERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a fluid.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a fluid.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class WATERValue : IEnumInstance
 		{
@@ -1769,15 +1548,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private WIREValue _WIRE;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WIREValue" path="/summary" />
 		public WIREValue WIRE => _WIRE ?? (_WIRE = new WIREValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a string like piece or filament of relatively rigid or flexible material provided in a variety of diameters.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class WIREValue : IEnumInstance
 		{
@@ -1798,15 +1574,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private WORKPIECEValue _WORKPIECE;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WORKPIECEValue" path="/summary" />
 		public WORKPIECEValue WORKPIECE => _WORKPIECE ?? (_WORKPIECE = new WORKPIECEValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of an object or material on which a form of work is performed.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class WORKPIECEValue : IEnumInstance
 		{
@@ -1827,15 +1600,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private COOLING_TOWERValue _COOLING_TOWER;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COOLING_TOWERValue" path="/summary" />
 		public COOLING_TOWERValue COOLING_TOWER => _COOLING_TOWER ?? (_COOLING_TOWER = new COOLING_TOWERValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a heat exchange system that uses a fluid to transfer heat to the atmosphere.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class COOLING_TOWERValue : IEnumInstance
 		{
@@ -1856,15 +1626,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private POTValue _POT;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="POTValue" path="/summary" />
 		public POTValue POT => _POT ?? (_POT = new POTValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a tool storage location associated with a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="AutomaticToolChanger">AutomaticToolChanger</see>.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class POTValue : IEnumInstance
 		{
@@ -1885,15 +1652,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private STATIONValue _STATION;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STATIONValue" path="/summary" />
 		public STATIONValue STATION => _STATION ?? (_STATION = new STATIONValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a storage or mounting location for a tool associated with a <see cref="Turret">Turret</see>, <see cref="GangToolBar">GangToolBar</see>, or <see cref="ToolRack">ToolRack</see>.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class STATIONValue : IEnumInstance
 		{
@@ -1914,15 +1678,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private TRANSFER_ARMValue _TRANSFER_ARM;
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRANSFER_ARMValue" path="/summary" />
 		public TRANSFER_ARMValue TRANSFER_ARM => _TRANSFER_ARM ?? (_TRANSFER_ARM = new TRANSFER_ARMValue());
 
-		/// <summary>
-		﻿/// <see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.<br/><br />
-
+		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that physically moves a tool from one location to another.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class TRANSFER_ARMValue : IEnumInstance
 		{
@@ -1943,15 +1704,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private TRANSFER_POTValue _TRANSFER_POT;
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRANSFER_POTValue" path="/summary" />
 		public TRANSFER_POTValue TRANSFER_POT => _TRANSFER_POT ?? (_TRANSFER_POT = new TRANSFER_POTValue());
 
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool awaiting transfer from a <see cref="ToolMagazine">ToolMagazine</see> to <i>spindle</i> or <see cref="Turret">Turret</see>.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class TRANSFER_POTValue : IEnumInstance
 		{
@@ -1972,15 +1730,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private RETURN_POTValue _RETURN_POT;
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="RETURN_POTValue" path="/summary" />
 		public RETURN_POTValue RETURN_POT => _RETURN_POT ?? (_RETURN_POT = new RETURN_POTValue());
 
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool removed from <i>spindle</i> or <see cref="Turret">Turret</see> and awaiting for return to a <see cref="ToolMagazine">ToolMagazine</see>.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class RETURN_POTValue : IEnumInstance
 		{
@@ -2001,15 +1756,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private STAGING_POTValue _STAGING_POT;
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STAGING_POTValue" path="/summary" />
 		public STAGING_POTValue STAGING_POT => _STAGING_POT ?? (_STAGING_POT = new STAGING_POTValue());
 
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool awaiting transfer to a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> from outside of the piece of equipment.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class STAGING_POTValue : IEnumInstance
 		{
@@ -2030,15 +1782,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private REMOVAL_POTValue _REMOVAL_POT;
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="REMOVAL_POTValue" path="/summary" />
 		public REMOVAL_POTValue REMOVAL_POT => _REMOVAL_POT ?? (_REMOVAL_POT = new REMOVAL_POTValue());
 
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool to be removed from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see> to a location outside of the piece of equipment.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class REMOVAL_POTValue : IEnumInstance
 		{
@@ -2059,15 +1808,12 @@ It takes energy usually provided by air, electric current, or liquid and convert
 ";
 		}
 		private EXPIRED_POTValue _EXPIRED_POT;
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EXPIRED_POTValue" path="/summary" />
 		public EXPIRED_POTValue EXPIRED_POT => _EXPIRED_POT ?? (_EXPIRED_POT = new EXPIRED_POTValue());
 
-		/// <summary>
-		﻿/// <see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br/><br />
-
+		/// <summary>﻿<see cref="Pot">Pot</see> for a tool that is no longer usable for removal from a <see cref="ToolMagazine">ToolMagazine</see> or <see cref="Turret">Turret</see>.<br /><br /><br />
+		/// Value for CompositionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionTypeEnum">CompositionTypeEnum</seealso>
 		/// </summary>
 		public sealed class EXPIRED_POTValue : IEnumInstance
 		{

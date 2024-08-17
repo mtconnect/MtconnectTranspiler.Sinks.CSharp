@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.RawMaterial
 {
-	/// <summary>
-	﻿/// <see cref="Asset">Asset</see> that represents <i>raw material</i>.<br/><br />
-
+	/// <summary>﻿<see cref="Asset">Asset</see> that represents <i>raw material</i>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1618829902716_470188_214">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 		/// <inheritdoc />
 		public RawMaterialClassProperties Properties { get; } = new RawMaterialClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="RawMaterialClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties" />.
+		/// </summary>
 		public class RawMaterialClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Name,
 				ContainerType,
 				ProcessKind,
@@ -69,12 +74,11 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
-			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// name of the <i>raw material</i>.<br /><br />Examples: <c>Container1</c> and <c>AcrylicContainer</c>.<br/><br />
-
+			public new NameProperty Name { get; } = new NameProperty();
+			
+			/// <summary>﻿name of the <i>raw material</i>.<br /><br />Examples: <c>Container1</c> and <c>AcrylicContainer</c>.<br /><br /><br />
 			/// </summary>
-			public sealed class NameProperty : IProperty
+			public new sealed class NameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -127,12 +131,11 @@ Examples: `Container1` and `AcrylicContainer`.&#10;
 			/// <inheritdoc cref="ContainerTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ContainerType</remarks>
 			/// </summary>
-			public ContainerTypeProperty ContainerType { get; } = new ContainerTypeProperty();
-			/// <summary>
-			﻿/// type of container holding the <i>raw material</i>. <br /><br />Examples: <c>Pallet</c>, <c>Canister</c>, <c>Cartridge</c>, <c>Tank</c>, <c>Bin</c>, <c>Roll</c>, and <c>Spool</c>.<br/><br />
-
+			public new ContainerTypeProperty ContainerType { get; } = new ContainerTypeProperty();
+			
+			/// <summary>﻿type of container holding the <i>raw material</i>. <br /><br />Examples: <c>Pallet</c>, <c>Canister</c>, <c>Cartridge</c>, <c>Tank</c>, <c>Bin</c>, <c>Roll</c>, and <c>Spool</c>.<br /><br /><br />
 			/// </summary>
-			public sealed class ContainerTypeProperty : IProperty
+			public new sealed class ContainerTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -185,12 +188,11 @@ Examples: `Pallet`, `Canister`, `Cartridge`, `Tank`, `Bin`, `Roll`, and `Spool`.
 			/// <inheritdoc cref="ProcessKindProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ProcessKind</remarks>
 			/// </summary>
-			public ProcessKindProperty ProcessKind { get; } = new ProcessKindProperty();
-			/// <summary>
-			﻿/// ISO process type supported by this <i>raw material</i>. <br /><br />Examples include: <c>VAT_POLYMERIZATION</c>, <c>BINDER_JETTING</c>, <c>MATERIAL_EXTRUSION</c>, <c>MATERIAL_JETTING</c>, <c>SHEET_LAMINATION</c>, <c>POWDER_BED_FUSION</c> and <c>DIRECTED_ENERGY_DEPOSITION</c>.<br/><br />
-
+			public new ProcessKindProperty ProcessKind { get; } = new ProcessKindProperty();
+			
+			/// <summary>﻿ISO process type supported by this <i>raw material</i>. <br /><br />Examples include: <c>VAT_POLYMERIZATION</c>, <c>BINDER_JETTING</c>, <c>MATERIAL_EXTRUSION</c>, <c>MATERIAL_JETTING</c>, <c>SHEET_LAMINATION</c>, <c>POWDER_BED_FUSION</c> and <c>DIRECTED_ENERGY_DEPOSITION</c>.<br /><br /><br />
 			/// </summary>
-			public sealed class ProcessKindProperty : IProperty
+			public new sealed class ProcessKindProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -243,12 +245,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="SerialNumberProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SerialNumber</remarks>
 			/// </summary>
-			public SerialNumberProperty SerialNumber { get; } = new SerialNumberProperty();
-			/// <summary>
-			﻿/// serial number of the <i>raw material</i>.<br/><br />
-
+			public new SerialNumberProperty SerialNumber { get; } = new SerialNumberProperty();
+			
+			/// <summary>﻿serial number of the <i>raw material</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class SerialNumberProperty : IProperty
+			public new sealed class SerialNumberProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -299,12 +300,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="HasMaterialProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasMaterial</remarks>
 			/// </summary>
-			public HasMaterialProperty HasMaterial { get; } = new HasMaterialProperty();
-			/// <summary>
-			﻿/// <see cref="Material">Material</see> has existing usable volume.<br/><br />
-
+			public new HasMaterialProperty HasMaterial { get; } = new HasMaterialProperty();
+			
+			/// <summary>﻿<see cref="Material">Material</see> has existing usable volume.<br /><br /><br />
 			/// </summary>
-			public sealed class HasMaterialProperty : IProperty
+			public new sealed class HasMaterialProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -355,8 +355,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="HasMaterialPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasMaterial</remarks>
 			/// </summary>
-			public HasMaterialPartProperty HasMaterialPart { get; } = new HasMaterialPartProperty();
-			public sealed class HasMaterialPartProperty : IProperty
+			public new HasMaterialPartProperty HasMaterialPart { get; } = new HasMaterialPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasMaterialPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -406,12 +409,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="FormProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Form</remarks>
 			/// </summary>
-			public FormProperty Form { get; } = new FormProperty();
-			/// <summary>
-			﻿/// form of the <i>raw material</i>.<br/><br />
-
+			public new FormProperty Form { get; } = new FormProperty();
+			
+			/// <summary>﻿form of the <i>raw material</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class FormProperty : IProperty
+			public new sealed class FormProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -462,12 +464,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="ManufacturingDateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ManufacturingDate</remarks>
 			/// </summary>
-			public ManufacturingDateProperty ManufacturingDate { get; } = new ManufacturingDateProperty();
-			/// <summary>
-			﻿/// date the <i>raw material</i> was created.<br/><br />
-
+			public new ManufacturingDateProperty ManufacturingDate { get; } = new ManufacturingDateProperty();
+			
+			/// <summary>﻿date the <i>raw material</i> was created.<br /><br /><br />
 			/// </summary>
-			public sealed class ManufacturingDateProperty : IProperty
+			public new sealed class ManufacturingDateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -518,12 +519,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="FirstUseDateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: FirstUseDate</remarks>
 			/// </summary>
-			public FirstUseDateProperty FirstUseDate { get; } = new FirstUseDateProperty();
-			/// <summary>
-			﻿/// date <i>raw material</i> was first used.<br/><br />
-
+			public new FirstUseDateProperty FirstUseDate { get; } = new FirstUseDateProperty();
+			
+			/// <summary>﻿date <i>raw material</i> was first used.<br /><br /><br />
 			/// </summary>
-			public sealed class FirstUseDateProperty : IProperty
+			public new sealed class FirstUseDateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -574,12 +574,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="LastUseDateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: LastUseDate</remarks>
 			/// </summary>
-			public LastUseDateProperty LastUseDate { get; } = new LastUseDateProperty();
-			/// <summary>
-			﻿/// date <i>raw material</i> was last used.<br/><br />
-
+			public new LastUseDateProperty LastUseDate { get; } = new LastUseDateProperty();
+			
+			/// <summary>﻿date <i>raw material</i> was last used.<br /><br /><br />
 			/// </summary>
-			public sealed class LastUseDateProperty : IProperty
+			public new sealed class LastUseDateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -630,12 +629,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="InitialVolumeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: InitialVolume</remarks>
 			/// </summary>
-			public InitialVolumeProperty InitialVolume { get; } = new InitialVolumeProperty();
-			/// <summary>
-			﻿/// amount of material initially placed in <i>raw material</i> when manufactured.<br/><br />
-
+			public new InitialVolumeProperty InitialVolume { get; } = new InitialVolumeProperty();
+			
+			/// <summary>﻿amount of material initially placed in <i>raw material</i> when manufactured.<br /><br /><br />
 			/// </summary>
-			public sealed class InitialVolumeProperty : IProperty
+			public new sealed class InitialVolumeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -686,12 +684,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="InitialDimensionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: InitialDimension</remarks>
 			/// </summary>
-			public InitialDimensionProperty InitialDimension { get; } = new InitialDimensionProperty();
-			/// <summary>
-			﻿/// dimension of material initially placed in <i>raw material</i> when manufactured.<br/><br />
-
+			public new InitialDimensionProperty InitialDimension { get; } = new InitialDimensionProperty();
+			
+			/// <summary>﻿dimension of material initially placed in <i>raw material</i> when manufactured.<br /><br /><br />
 			/// </summary>
-			public sealed class InitialDimensionProperty : IProperty
+			public new sealed class InitialDimensionProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -742,12 +739,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="InitialQuantityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: InitialQuantity</remarks>
 			/// </summary>
-			public InitialQuantityProperty InitialQuantity { get; } = new InitialQuantityProperty();
-			/// <summary>
-			﻿/// quantity of material initially placed in <i>raw material</i> when manufactured.<br/><br />
-
+			public new InitialQuantityProperty InitialQuantity { get; } = new InitialQuantityProperty();
+			
+			/// <summary>﻿quantity of material initially placed in <i>raw material</i> when manufactured.<br /><br /><br />
 			/// </summary>
-			public sealed class InitialQuantityProperty : IProperty
+			public new sealed class InitialQuantityProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -798,12 +794,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="CurrentVolumeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CurrentVolume</remarks>
 			/// </summary>
-			public CurrentVolumeProperty CurrentVolume { get; } = new CurrentVolumeProperty();
-			/// <summary>
-			﻿/// amount of material currently in <i>raw material</i>.<br/><br />
-
+			public new CurrentVolumeProperty CurrentVolume { get; } = new CurrentVolumeProperty();
+			
+			/// <summary>﻿amount of material currently in <i>raw material</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class CurrentVolumeProperty : IProperty
+			public new sealed class CurrentVolumeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -854,12 +849,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="CurrentDimensionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CurrentDimension</remarks>
 			/// </summary>
-			public CurrentDimensionProperty CurrentDimension { get; } = new CurrentDimensionProperty();
-			/// <summary>
-			﻿/// dimension of material currently in <i>raw material</i>.<br/><br />
-
+			public new CurrentDimensionProperty CurrentDimension { get; } = new CurrentDimensionProperty();
+			
+			/// <summary>﻿dimension of material currently in <i>raw material</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class CurrentDimensionProperty : IProperty
+			public new sealed class CurrentDimensionProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -910,12 +904,11 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// <inheritdoc cref="CurrentQuantityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CurrentQuantity</remarks>
 			/// </summary>
-			public CurrentQuantityProperty CurrentQuantity { get; } = new CurrentQuantityProperty();
-			/// <summary>
-			﻿/// quantity of material currently in <i>raw material</i>.<br/><br />
-
+			public new CurrentQuantityProperty CurrentQuantity { get; } = new CurrentQuantityProperty();
+			
+			/// <summary>﻿quantity of material currently in <i>raw material</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class CurrentQuantityProperty : IProperty
+			public new sealed class CurrentQuantityProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

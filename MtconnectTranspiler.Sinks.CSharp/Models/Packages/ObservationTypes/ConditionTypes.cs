@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.ObservationInformationModel.ObservationTypes.Condition
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes
 {
-	/// <summary>
-	﻿/// This section provides semantic information for <see cref="Condition">Condition</see> types.<br /><br /><see cref="Condition">Condition</see> types are reported differently from other <see cref="Observation">Observation</see> types. They are reported based on the <i>condition state</i> for each <see cref="Condition">Condition</see>.<br /><br />The <see cref="DataItem.type">type in DataItem</see> and <see cref="DataItem.subType">subType in DataItem</see> (where applicable) for a <see cref="Condition">Condition</see> <b>MAY</b> be any of the <see cref="DataItem.type">type in DataItem</see> and <see cref="DataItem.subType">subType in DataItem</see> defined for <see cref="DataItem">DataItem</see>s with <see cref="DataItem.category">category in DataItem</see> as <c>SAMPLE</c> or <see cref="DataItem.category">category in DataItem</see> as <c>EVENT</c> listed in the <i>Device Information Model</i>.<br /><br />This section lists additional <see cref="Condition">Condition</see> types that have been defined to represent the health and fault status of <i>Component</i>s.<br/><br />
-
+	/// <summary>﻿This section provides semantic information for <see cref="Condition">Condition</see> types.<br /><br /><see cref="Condition">Condition</see> types are reported differently from other <see cref="Observation">Observation</see> types. They are reported based on the <i>condition state</i> for each <see cref="Condition">Condition</see>.<br /><br />The <see cref="DataItem.type">type in DataItem</see> and <see cref="DataItem.subType">subType in DataItem</see> (where applicable) for a <see cref="Condition">Condition</see> <b>MAY</b> be any of the <see cref="DataItem.type">type in DataItem</see> and <see cref="DataItem.subType">subType in DataItem</see> defined for <see cref="DataItem">DataItem</see>s with <see cref="DataItem.category">category in DataItem</see> as <c>SAMPLE</c> or <see cref="DataItem.category">category in DataItem</see> as <c>EVENT</c> listed in the <i>Device Information Model</i>.<br /><br />This section lists additional <see cref="Condition">Condition</see> types that have been defined to represent the health and fault status of <i>Component</i>s.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309879217_713704_44360">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -42,6 +42,11 @@ This section lists additional {{block(Condition)}} types that have been defined 
 			MotionProgramClass,
 			SystemClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -82,6 +87,9 @@ This section lists additional {{block(Condition)}} types that have been defined 
 	/// </summary>
 	public Package.SystemClass SystemClass => _SystemClass ?? (_SystemClass = new Package.SystemClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

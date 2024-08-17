@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.AgentArchitecture.Pipelines
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1673982843542_426445_629">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class Entity_ConnectionStatus_Class : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <inheritdoc />
 		public Entity_ConnectionStatus_ClassProperties Properties { get; } = new Entity_ConnectionStatus_ClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="Entity_ConnectionStatus_Class" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties" />.
+		/// </summary>
 		public class Entity_ConnectionStatus_ClassProperties : Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Name,
 				Source,
 			}.Concat(base.Properties).ToArray();
@@ -49,8 +59,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
-			public NameProperty Name { get; } = new NameProperty();
-			public sealed class NameProperty : IProperty
+			public new NameProperty Name { get; } = new NameProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class NameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -100,8 +113,11 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 			/// <inheritdoc cref="SourceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Source</remarks>
 			/// </summary>
-			public SourceProperty Source { get; } = new SourceProperty();
-			public sealed class SourceProperty : IProperty
+			public new SourceProperty Source { get; } = new SourceProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class SourceProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

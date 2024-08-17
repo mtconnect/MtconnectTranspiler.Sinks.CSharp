@@ -1,44 +1,38 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksInformationModel
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622721899109_23146_2663">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622721899109_23146_2663">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum TaskStateEnum
 	{
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		INACTIVE,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		PREPARING,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		COMMITTING,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		COMMITTED,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		COMPLETE,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		FAIL,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622721899109_23146_2663">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622721899109_23146_2663">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class TaskStateEnumMetaClass : IEnum
@@ -49,6 +43,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(TaskStateEnum);
 
 		/// <inheritdoc />
@@ -71,8 +66,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		};
 
 		private INACTIVEValue _INACTIVE;
+		/// <inheritdoc cref="INACTIVEValue" path="/summary" />
 		public INACTIVEValue INACTIVE => _INACTIVE ?? (_INACTIVE = new INACTIVEValue());
 
+		/// <summary>﻿
+		/// Value for TaskStateEnum.<br/>
+		/// <br/>See also <seealso cref="TaskStateEnum">TaskStateEnum</seealso>
+		/// </summary>
 		public sealed class INACTIVEValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -91,8 +91,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			public string Summary => @"";
 		}
 		private PREPARINGValue _PREPARING;
+		/// <inheritdoc cref="PREPARINGValue" path="/summary" />
 		public PREPARINGValue PREPARING => _PREPARING ?? (_PREPARING = new PREPARINGValue());
 
+		/// <summary>﻿
+		/// Value for TaskStateEnum.<br/>
+		/// <br/>See also <seealso cref="TaskStateEnum">TaskStateEnum</seealso>
+		/// </summary>
 		public sealed class PREPARINGValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -111,8 +116,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			public string Summary => @"";
 		}
 		private COMMITTINGValue _COMMITTING;
+		/// <inheritdoc cref="COMMITTINGValue" path="/summary" />
 		public COMMITTINGValue COMMITTING => _COMMITTING ?? (_COMMITTING = new COMMITTINGValue());
 
+		/// <summary>﻿
+		/// Value for TaskStateEnum.<br/>
+		/// <br/>See also <seealso cref="TaskStateEnum">TaskStateEnum</seealso>
+		/// </summary>
 		public sealed class COMMITTINGValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -131,8 +141,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			public string Summary => @"";
 		}
 		private COMMITTEDValue _COMMITTED;
+		/// <inheritdoc cref="COMMITTEDValue" path="/summary" />
 		public COMMITTEDValue COMMITTED => _COMMITTED ?? (_COMMITTED = new COMMITTEDValue());
 
+		/// <summary>﻿
+		/// Value for TaskStateEnum.<br/>
+		/// <br/>See also <seealso cref="TaskStateEnum">TaskStateEnum</seealso>
+		/// </summary>
 		public sealed class COMMITTEDValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -151,8 +166,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			public string Summary => @"";
 		}
 		private COMPLETEValue _COMPLETE;
+		/// <inheritdoc cref="COMPLETEValue" path="/summary" />
 		public COMPLETEValue COMPLETE => _COMPLETE ?? (_COMPLETE = new COMPLETEValue());
 
+		/// <summary>﻿
+		/// Value for TaskStateEnum.<br/>
+		/// <br/>See also <seealso cref="TaskStateEnum">TaskStateEnum</seealso>
+		/// </summary>
 		public sealed class COMPLETEValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -171,8 +191,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 			public string Summary => @"";
 		}
 		private FAILValue _FAIL;
+		/// <inheritdoc cref="FAILValue" path="/summary" />
 		public FAILValue FAIL => _FAIL ?? (_FAIL = new FAILValue());
 
+		/// <summary>﻿
+		/// Value for TaskStateEnum.<br/>
+		/// <br/>See also <seealso cref="TaskStateEnum">TaskStateEnum</seealso>
+		/// </summary>
 		public sealed class FAILValue : IEnumInstance
 		{
 			/// <inheritdoc />

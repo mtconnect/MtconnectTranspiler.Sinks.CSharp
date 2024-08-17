@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605297694306_501792_610">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605297694306_501792_610">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum MediaTypeEnum
 	{
-		/// <summary>
-		﻿/// ISO 10303 STEP AP203 or AP242 format.<br/><br />
-
+		/// <summary>﻿ISO 10303 STEP AP203 or AP242 format.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		STEP,
-		/// <summary>
-		﻿/// STereoLithography file format.<br/><br />
-
+		/// <summary>﻿STereoLithography file format.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		STL,
-		/// <summary>
-		﻿/// Geometry Description Markup Language.<br/><br />
-
+		/// <summary>﻿Geometry Description Markup Language.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		GDML,
-		/// <summary>
-		﻿/// Wavefront OBJ file format.<br /><br/><br />
-
+		/// <summary>﻿Wavefront OBJ file format.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OBJ,
-		/// <summary>
-		﻿/// ISO 17506.<br/><br />
-
+		/// <summary>﻿ISO 17506.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COLLADA,
-		/// <summary>
-		﻿/// Initial Graphics Exchange Specification.<br/><br />
-
+		/// <summary>﻿Initial Graphics Exchange Specification.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -75,9 +64,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		IGES,
-		/// <summary>
-		﻿/// Autodesk file format.<br/><br />
-
+		/// <summary>﻿Autodesk file format.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -85,9 +72,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		_3DS,
-		/// <summary>
-		﻿/// Dassault file format.<br/><br />
-
+		/// <summary>﻿Dassault file format.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -95,9 +80,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACIS,
-		/// <summary>
-		﻿/// Parasolid XT Siemens data interchange format.<br/><br />
-
+		/// <summary>﻿Parasolid XT Siemens data interchange format.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -107,9 +90,8 @@ namespace Mtconnect.DataTypes
 		X_T,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605297694306_501792_610">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605297694306_501792_610">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MediaTypeEnumMetaClass : IEnum
@@ -120,6 +102,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(MediaTypeEnum);
 
 		/// <inheritdoc />
@@ -145,15 +128,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private STEPValue _STEP;
-		/// <summary>
-		﻿/// ISO 10303 STEP AP203 or AP242 format.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STEPValue" path="/summary" />
 		public STEPValue STEP => _STEP ?? (_STEP = new STEPValue());
 
-		/// <summary>
-		﻿/// ISO 10303 STEP AP203 or AP242 format.<br/><br />
-
+		/// <summary>﻿ISO 10303 STEP AP203 or AP242 format.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class STEPValue : IEnumInstance
 		{
@@ -174,15 +154,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private STLValue _STL;
-		/// <summary>
-		﻿/// STereoLithography file format.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STLValue" path="/summary" />
 		public STLValue STL => _STL ?? (_STL = new STLValue());
 
-		/// <summary>
-		﻿/// STereoLithography file format.<br/><br />
-
+		/// <summary>﻿STereoLithography file format.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class STLValue : IEnumInstance
 		{
@@ -203,15 +180,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private GDMLValue _GDML;
-		/// <summary>
-		﻿/// Geometry Description Markup Language.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="GDMLValue" path="/summary" />
 		public GDMLValue GDML => _GDML ?? (_GDML = new GDMLValue());
 
-		/// <summary>
-		﻿/// Geometry Description Markup Language.<br/><br />
-
+		/// <summary>﻿Geometry Description Markup Language.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class GDMLValue : IEnumInstance
 		{
@@ -232,15 +206,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private OBJValue _OBJ;
-		/// <summary>
-		﻿/// Wavefront OBJ file format.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OBJValue" path="/summary" />
 		public OBJValue OBJ => _OBJ ?? (_OBJ = new OBJValue());
 
-		/// <summary>
-		﻿/// Wavefront OBJ file format.<br /><br/><br />
-
+		/// <summary>﻿Wavefront OBJ file format.<br /><br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class OBJValue : IEnumInstance
 		{
@@ -261,15 +232,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private COLLADAValue _COLLADA;
-		/// <summary>
-		﻿/// ISO 17506.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COLLADAValue" path="/summary" />
 		public COLLADAValue COLLADA => _COLLADA ?? (_COLLADA = new COLLADAValue());
 
-		/// <summary>
-		﻿/// ISO 17506.<br/><br />
-
+		/// <summary>﻿ISO 17506.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class COLLADAValue : IEnumInstance
 		{
@@ -290,15 +258,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private IGESValue _IGES;
-		/// <summary>
-		﻿/// Initial Graphics Exchange Specification.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="IGESValue" path="/summary" />
 		public IGESValue IGES => _IGES ?? (_IGES = new IGESValue());
 
-		/// <summary>
-		﻿/// Initial Graphics Exchange Specification.<br/><br />
-
+		/// <summary>﻿Initial Graphics Exchange Specification.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class IGESValue : IEnumInstance
 		{
@@ -319,15 +284,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private _3DSValue __3DS;
-		/// <summary>
-		﻿/// Autodesk file format.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="_3DSValue" path="/summary" />
 		public _3DSValue _3DS => __3DS ?? (__3DS = new _3DSValue());
 
-		/// <summary>
-		﻿/// Autodesk file format.<br/><br />
-
+		/// <summary>﻿Autodesk file format.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class _3DSValue : IEnumInstance
 		{
@@ -348,15 +310,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACISValue _ACIS;
-		/// <summary>
-		﻿/// Dassault file format.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACISValue" path="/summary" />
 		public ACISValue ACIS => _ACIS ?? (_ACIS = new ACISValue());
 
-		/// <summary>
-		﻿/// Dassault file format.<br/><br />
-
+		/// <summary>﻿Dassault file format.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class ACISValue : IEnumInstance
 		{
@@ -377,15 +336,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private X_TValue _X_T;
-		/// <summary>
-		﻿/// Parasolid XT Siemens data interchange format.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="X_TValue" path="/summary" />
 		public X_TValue X_T => _X_T ?? (_X_T = new X_TValue());
 
-		/// <summary>
-		﻿/// Parasolid XT Siemens data interchange format.<br/><br />
-
+		/// <summary>﻿Parasolid XT Siemens data interchange format.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
 		/// </summary>
 		public sealed class X_TValue : IEnumInstance
 		{

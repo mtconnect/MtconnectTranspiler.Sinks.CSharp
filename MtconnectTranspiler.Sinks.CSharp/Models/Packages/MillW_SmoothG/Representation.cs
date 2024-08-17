@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +7,9 @@ using Package = Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_SmoothG
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1634044347705_111979_477">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class RepresentationPackage : IPackage
 	{
@@ -27,6 +32,11 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 			WorkOffsetsClass,
 			TemperatureClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -49,6 +59,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 	/// </summary>
 	public Package.TemperatureClass TemperatureClass => _TemperatureClass ?? (_TemperatureClass = new Package.TemperatureClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

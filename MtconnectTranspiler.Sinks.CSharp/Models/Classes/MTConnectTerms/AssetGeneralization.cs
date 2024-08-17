@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.Glossary.MTConnectTerms
 {
-	/// <summary>
-	﻿/// <i>asset</i> that is used by the manufacturing process to perform tasks.<br /><br />> Note 1 to entry: An <i>Asset</i> relies upon an <i>Device</i> to provide <i>observation</i>s and information about itself and the <i>Device</i> revises the information to reflect changes to the <i>Asset</i> during their interaction. Examples of <i>Asset</i>s are cutting tools, Part Information, Manufacturing Processes, Fixtures, and Files.<br /><br />> Note 2 to entry: A singular <see cref="Asset.assetId">assetId in Asset</see> uniquely identifies an <i>Asset</i> throughout its lifecycle and is used to track and relate the <i>Asset</i> to other <i>Device</i>s and entities.<br /><br />> Note 3 to entry: <i>Asset</i>s are temporally associated with a device and can be removed from the device without damage or alteration to its primary functions.<br /><br /><br/><br />
-
+	/// <summary>﻿<i>asset</i> that is used by the manufacturing process to perform tasks.<br /><br />&gt; Note 1 to entry: An <i>Asset</i> relies upon an <i>Device</i> to provide <i>observation</i>s and information about itself and the <i>Device</i> revises the information to reflect changes to the <i>Asset</i> during their interaction. Examples of <i>Asset</i>s are cutting tools, Part Information, Manufacturing Processes, Fixtures, and Files.<br /><br />&gt; Note 2 to entry: A singular <see cref="Asset.assetId">assetId in Asset</see> uniquely identifies an <i>Asset</i> throughout its lifecycle and is used to track and relate the <i>Asset</i> to other <i>Device</i>s and entities.<br /><br />&gt; Note 3 to entry: <i>Asset</i>s are temporally associated with a device and can be removed from the device without damage or alteration to its primary functions.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581734255313_425984_984">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -52,18 +53,25 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		/// <inheritdoc />
 		public AssetGeneralizationProperties Properties { get; } = new AssetGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="AssetGeneralization" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.Glossary.IndustrialTerms.AssetClass.AssetClassProperties" />.
+		/// </summary>
 		public class AssetGeneralizationProperties : Mtconnect.Glossary.IndustrialTerms.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				BelongsTo,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="BelongsToProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: BelongsTo</remarks>
 			/// </summary>
-			public BelongsToProperty BelongsTo { get; } = new BelongsToProperty();
-			public sealed class BelongsToProperty : IProperty
+			public new BelongsToProperty BelongsTo { get; } = new BelongsToProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class BelongsToProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

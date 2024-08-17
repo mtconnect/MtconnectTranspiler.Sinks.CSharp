@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.DeviceInformationModel.DataItems;
 
 namespace Mtconnect.DeviceInformationModel
 {
-	/// <summary>
-	﻿/// This section provides semantic information for the <see cref="DataItem">DataItem</see> entity. {{figure(DataItems)}} shows the <see cref="DataItem">DataItem</see> model. <br /><br />![DataItems](figures/DataItems.png "DataItems"){: width="0.8"}<br /><br />> Note: See <see cref="DataItems Schema Diagrams">DataItems Schema Diagrams</see> for XML schema.<br/><br />DataItems Model<br/>For an <see cref="MTConnectDevices">MTConnectDevices</see> entity, <i>DataItem</i>s describe data that can be reported by a piece of equipment and are associated with <see cref="Device">Device</see> and <see cref="Component">Component</see> entities. While the <i>DataItem</i>s describe the data that can be reported by a piece of equipment as an <see cref="MTConnectDevices">MTConnectDevices</see> entity, the actual data values are provided by the <see cref="MTConnectStreams">MTConnectStreams</see> entity in the <i>MTConnectStreams Response Document</i>. See <see cref="Observation Information Model">Observation Information Model</see> for detail on the reported values.<br /><br />Each <i>DataItem</i> <b>SHOULD</b> be modeled for the <see cref="MTConnectDevices">MTConnectDevices</see> entity such that it is associated with the entity that the reported data directly applies.<br /><br /><see cref="DataItem">DataItem</see> describes specific types of <i>DataItem</i>s that represent a numeric value, a functioning state, or a health status reported by a piece of equipment. <see cref="DataItem">DataItem</see> provides a detailed description for each <i>DataItem</i> that is reported; it defines the type of data being reported and an array of optional attributes that further describe that data. The different types of <see cref="DataItem">DataItem</see> elements are defined in <see cref="DataItem Types">DataItem Types</see>.<br/><br/><br />
-
+	/// <summary>﻿This section provides semantic information for the <see cref="DataItem">DataItem</see> entity. {{figure(DataItems)}} shows the <see cref="DataItem">DataItem</see> model. <br /><br />![DataItems](figures/DataItems.png "DataItems"){: width="0.8"}<br /><br />&gt; Note: See <see cref="DataItems Schema Diagrams">DataItems Schema Diagrams</see> for XML schema.<br /><br /><br />DataItems Model<br /><br />For an <see cref="MTConnectDevices">MTConnectDevices</see> entity, <i>DataItem</i>s describe data that can be reported by a piece of equipment and are associated with <see cref="Device">Device</see> and <see cref="Component">Component</see> entities. While the <i>DataItem</i>s describe the data that can be reported by a piece of equipment as an <see cref="MTConnectDevices">MTConnectDevices</see> entity, the actual data values are provided by the <see cref="MTConnectStreams">MTConnectStreams</see> entity in the <i>MTConnectStreams Response Document</i>. See <see cref="Observation Information Model">Observation Information Model</see> for detail on the reported values.<br /><br />Each <i>DataItem</i> <b>SHOULD</b> be modeled for the <see cref="MTConnectDevices">MTConnectDevices</see> entity such that it is associated with the entity that the reported data directly applies.<br /><br /><see cref="DataItem">DataItem</see> describes specific types of <i>DataItem</i>s that represent a numeric value, a functioning state, or a health status reported by a piece of equipment. <see cref="DataItem">DataItem</see> provides a detailed description for each <i>DataItem</i> that is reported; it defines the type of data being reported and an array of optional attributes that further describe that data. The different types of <see cref="DataItem">DataItem</see> elements are defined in <see cref="DataItem Types">DataItem Types</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_0FAC31E7_7957_49d2_AD4C_BCFBEF9878FD">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -42,6 +42,11 @@ Each {{term(DataItem)}} **SHOULD** be modeled for the {{block(MTConnectDevices)}
 		public IClass[] Classes => new IClass[] {
 			DataItemClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	private Package.DataItemTypesPackage _DataItemTypesPackage;
 	/// <summary>
@@ -64,6 +69,9 @@ Each {{term(DataItem)}} **SHOULD** be modeled for the {{block(MTConnectDevices)}
 	/// </summary>
 	public Package.DataItemClass DataItemClass => _DataItemClass ?? (_DataItemClass = new Package.DataItemClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

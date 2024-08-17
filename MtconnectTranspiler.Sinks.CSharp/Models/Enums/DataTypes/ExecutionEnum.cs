@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417664_592980_2878">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417664_592980_2878">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ExecutionEnum
 	{
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is ready to execute instructions.<br /><br />It is currently idle.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is ready to execute instructions.<br /><br />It is currently idle.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		READY,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is actively executing an instruction.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is actively executing an instruction.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVE,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> suspends the execution of the program due to an external signal.<br /><br />Action is required to resume execution.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> suspends the execution of the program due to an external signal.<br /><br />Action is required to resume execution.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		INTERRUPTED,
-		/// <summary>
-		﻿/// motion of the active axes are commanded to stop at their current position.<br/><br />
-
+		/// <summary>﻿motion of the active axes are commanded to stop at their current position.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -55,9 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FEED_HOLD,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> program is not <c>READY</c> to execute.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> program is not <c>READY</c> to execute.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +56,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		STOPPED,
-		/// <summary>
-		﻿/// command from the program has intentionally interrupted execution.<br /><br />The <see cref="Component">Component</see> <b>MAY</b> have another state that indicates if the execution is interrupted or the execution ignores the interrupt instruction.<br/><br />
-
+		/// <summary>﻿command from the program has intentionally interrupted execution.<br /><br />The <see cref="Component">Component</see> <b>MAY</b> have another state that indicates if the execution is interrupted or the execution ignores the interrupt instruction.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -75,9 +64,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OPTIONAL_STOP,
-		/// <summary>
-		﻿/// command from the program has intentionally interrupted execution.<br /><br />Action is required to resume execution.<br/><br />
-
+		/// <summary>﻿command from the program has intentionally interrupted execution.<br /><br />Action is required to resume execution.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -85,9 +72,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_STOPPED,
-		/// <summary>
-		﻿/// program completed execution.<br/><br />
-
+		/// <summary>﻿program completed execution.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -95,9 +80,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_COMPLETED,
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> suspends execution while a secondary operation executes.<br /><br />Execution resumes automatically once the secondary operation completes.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> suspends execution while a secondary operation executes.<br /><br />Execution resumes automatically once the secondary operation completes.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -105,9 +88,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WAIT,
-		/// <summary>
-		﻿/// program has been intentionally optionally stopped using an M01 or similar code.<br /><br /><b>DEPRECATED</b> in <i>version 1.4</i> and replaced with <c>OPTIONAL_STOP</c>.<br/><br />
-
+		/// <summary>﻿program has been intentionally optionally stopped using an M01 or similar code.<br /><br /><b>DEPRECATED</b> in <i>version 1.4</i> and replaced with <c>OPTIONAL_STOP</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -119,9 +100,8 @@ namespace Mtconnect.DataTypes
 		PROGRAM_OPTIONAL_STOP,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417664_592980_2878">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417664_592980_2878">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ExecutionEnumMetaClass : IEnum
@@ -132,6 +112,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(ExecutionEnum);
 
 		/// <inheritdoc />
@@ -158,15 +139,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private READYValue _READY;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is ready to execute instructions.<br /><br />It is currently idle.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="READYValue" path="/summary" />
 		public READYValue READY => _READY ?? (_READY = new READYValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is ready to execute instructions.<br /><br />It is currently idle.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is ready to execute instructions.<br /><br />It is currently idle.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class READYValue : IEnumInstance
 		{
@@ -189,15 +167,12 @@ It is currently idle.&#10;
 ";
 		}
 		private ACTIVEValue _ACTIVE;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is actively executing an instruction.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVEValue" path="/summary" />
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> is actively executing an instruction.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> is actively executing an instruction.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -218,15 +193,12 @@ It is currently idle.&#10;
 ";
 		}
 		private INTERRUPTEDValue _INTERRUPTED;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> suspends the execution of the program due to an external signal.<br /><br />Action is required to resume execution.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="INTERRUPTEDValue" path="/summary" />
 		public INTERRUPTEDValue INTERRUPTED => _INTERRUPTED ?? (_INTERRUPTED = new INTERRUPTEDValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> suspends the execution of the program due to an external signal.<br /><br />Action is required to resume execution.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> suspends the execution of the program due to an external signal.<br /><br />Action is required to resume execution.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class INTERRUPTEDValue : IEnumInstance
 		{
@@ -249,15 +221,12 @@ Action is required to resume execution.&#10;
 ";
 		}
 		private FEED_HOLDValue _FEED_HOLD;
-		/// <summary>
-		﻿/// motion of the active axes are commanded to stop at their current position.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FEED_HOLDValue" path="/summary" />
 		public FEED_HOLDValue FEED_HOLD => _FEED_HOLD ?? (_FEED_HOLD = new FEED_HOLDValue());
 
-		/// <summary>
-		﻿/// motion of the active axes are commanded to stop at their current position.<br/><br />
-
+		/// <summary>﻿motion of the active axes are commanded to stop at their current position.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class FEED_HOLDValue : IEnumInstance
 		{
@@ -278,15 +247,12 @@ Action is required to resume execution.&#10;
 ";
 		}
 		private STOPPEDValue _STOPPED;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> program is not <c>READY</c> to execute.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="STOPPEDValue" path="/summary" />
 		public STOPPEDValue STOPPED => _STOPPED ?? (_STOPPED = new STOPPEDValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> program is not <c>READY</c> to execute.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> program is not <c>READY</c> to execute.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class STOPPEDValue : IEnumInstance
 		{
@@ -307,15 +273,12 @@ Action is required to resume execution.&#10;
 ";
 		}
 		private OPTIONAL_STOPValue _OPTIONAL_STOP;
-		/// <summary>
-		﻿/// command from the program has intentionally interrupted execution.<br /><br />The <see cref="Component">Component</see> <b>MAY</b> have another state that indicates if the execution is interrupted or the execution ignores the interrupt instruction.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OPTIONAL_STOPValue" path="/summary" />
 		public OPTIONAL_STOPValue OPTIONAL_STOP => _OPTIONAL_STOP ?? (_OPTIONAL_STOP = new OPTIONAL_STOPValue());
 
-		/// <summary>
-		﻿/// command from the program has intentionally interrupted execution.<br /><br />The <see cref="Component">Component</see> <b>MAY</b> have another state that indicates if the execution is interrupted or the execution ignores the interrupt instruction.<br/><br />
-
+		/// <summary>﻿command from the program has intentionally interrupted execution.<br /><br />The <see cref="Component">Component</see> <b>MAY</b> have another state that indicates if the execution is interrupted or the execution ignores the interrupt instruction.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class OPTIONAL_STOPValue : IEnumInstance
 		{
@@ -338,15 +301,12 @@ The {{block(Component)}} **MAY** have another state that indicates if the execut
 ";
 		}
 		private PROGRAM_STOPPEDValue _PROGRAM_STOPPED;
-		/// <summary>
-		﻿/// command from the program has intentionally interrupted execution.<br /><br />Action is required to resume execution.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_STOPPEDValue" path="/summary" />
 		public PROGRAM_STOPPEDValue PROGRAM_STOPPED => _PROGRAM_STOPPED ?? (_PROGRAM_STOPPED = new PROGRAM_STOPPEDValue());
 
-		/// <summary>
-		﻿/// command from the program has intentionally interrupted execution.<br /><br />Action is required to resume execution.<br/><br />
-
+		/// <summary>﻿command from the program has intentionally interrupted execution.<br /><br />Action is required to resume execution.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_STOPPEDValue : IEnumInstance
 		{
@@ -369,15 +329,12 @@ Action is required to resume execution.&#10;
 ";
 		}
 		private PROGRAM_COMPLETEDValue _PROGRAM_COMPLETED;
-		/// <summary>
-		﻿/// program completed execution.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_COMPLETEDValue" path="/summary" />
 		public PROGRAM_COMPLETEDValue PROGRAM_COMPLETED => _PROGRAM_COMPLETED ?? (_PROGRAM_COMPLETED = new PROGRAM_COMPLETEDValue());
 
-		/// <summary>
-		﻿/// program completed execution.<br/><br />
-
+		/// <summary>﻿program completed execution.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_COMPLETEDValue : IEnumInstance
 		{
@@ -398,15 +355,12 @@ Action is required to resume execution.&#10;
 ";
 		}
 		private WAITValue _WAIT;
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> suspends execution while a secondary operation executes.<br /><br />Execution resumes automatically once the secondary operation completes.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WAITValue" path="/summary" />
 		public WAITValue WAIT => _WAIT ?? (_WAIT = new WAITValue());
 
-		/// <summary>
-		﻿/// <see cref="Component">Component</see> suspends execution while a secondary operation executes.<br /><br />Execution resumes automatically once the secondary operation completes.<br/><br />
-
+		/// <summary>﻿<see cref="Component">Component</see> suspends execution while a secondary operation executes.<br /><br />Execution resumes automatically once the secondary operation completes.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class WAITValue : IEnumInstance
 		{
@@ -429,15 +383,12 @@ Execution resumes automatically once the secondary operation completes.&#10;
 ";
 		}
 		private PROGRAM_OPTIONAL_STOPValue _PROGRAM_OPTIONAL_STOP;
-		/// <summary>
-		﻿/// program has been intentionally optionally stopped using an M01 or similar code.<br /><br /><b>DEPRECATED</b> in <i>version 1.4</i> and replaced with <c>OPTIONAL_STOP</c>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_OPTIONAL_STOPValue" path="/summary" />
 		public PROGRAM_OPTIONAL_STOPValue PROGRAM_OPTIONAL_STOP => _PROGRAM_OPTIONAL_STOP ?? (_PROGRAM_OPTIONAL_STOP = new PROGRAM_OPTIONAL_STOPValue());
 
-		/// <summary>
-		﻿/// program has been intentionally optionally stopped using an M01 or similar code.<br /><br /><b>DEPRECATED</b> in <i>version 1.4</i> and replaced with <c>OPTIONAL_STOP</c>.<br/><br />
-
+		/// <summary>﻿program has been intentionally optionally stopped using an M01 or similar code.<br /><br /><b>DEPRECATED</b> in <i>version 1.4</i> and replaced with <c>OPTIONAL_STOP</c>.<br /><br /><br />
+		/// Value for ExecutionEnum.<br/>
+		/// <br/>See also <seealso cref="ExecutionEnum">ExecutionEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_OPTIONAL_STOPValue : IEnumInstance
 		{

@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_46066_2882">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_46066_2882">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum ProgramEditEnum
 	{
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is in the program edit mode.<br/><br />
-
+		/// <summary>﻿<see cref="Controller">Controller</see> is in the program edit mode.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVE,
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is capable of entering the program edit mode and no function is inhibiting a change to that mode.<br/><br />
-
+		/// <summary>﻿<see cref="Controller">Controller</see> is capable of entering the program edit mode and no function is inhibiting a change to that mode.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		READY,
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is being inhibited by a function from entering the program edit mode.<br/><br />
-
+		/// <summary>﻿<see cref="Controller">Controller</see> is being inhibited by a function from entering the program edit mode.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,8 @@ namespace Mtconnect.DataTypes
 		NOT_READY,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_46066_2882">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417667_46066_2882">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ProgramEditEnumMetaClass : IEnum
@@ -60,6 +54,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(ProgramEditEnum);
 
 		/// <inheritdoc />
@@ -79,15 +74,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ACTIVEValue _ACTIVE;
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is in the program edit mode.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVEValue" path="/summary" />
 		public ACTIVEValue ACTIVE => _ACTIVE ?? (_ACTIVE = new ACTIVEValue());
 
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is in the program edit mode.<br/><br />
-
+		/// <summary>﻿<see cref="Controller">Controller</see> is in the program edit mode.<br /><br /><br />
+		/// Value for ProgramEditEnum.<br/>
+		/// <br/>See also <seealso cref="ProgramEditEnum">ProgramEditEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVEValue : IEnumInstance
 		{
@@ -108,15 +100,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private READYValue _READY;
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is capable of entering the program edit mode and no function is inhibiting a change to that mode.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="READYValue" path="/summary" />
 		public READYValue READY => _READY ?? (_READY = new READYValue());
 
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is capable of entering the program edit mode and no function is inhibiting a change to that mode.<br/><br />
-
+		/// <summary>﻿<see cref="Controller">Controller</see> is capable of entering the program edit mode and no function is inhibiting a change to that mode.<br /><br /><br />
+		/// Value for ProgramEditEnum.<br/>
+		/// <br/>See also <seealso cref="ProgramEditEnum">ProgramEditEnum</seealso>
 		/// </summary>
 		public sealed class READYValue : IEnumInstance
 		{
@@ -137,15 +126,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private NOT_READYValue _NOT_READY;
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is being inhibited by a function from entering the program edit mode.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NOT_READYValue" path="/summary" />
 		public NOT_READYValue NOT_READY => _NOT_READY ?? (_NOT_READY = new NOT_READYValue());
 
-		/// <summary>
-		﻿/// <see cref="Controller">Controller</see> is being inhibited by a function from entering the program edit mode.<br/><br />
-
+		/// <summary>﻿<see cref="Controller">Controller</see> is being inhibited by a function from entering the program edit mode.<br /><br /><br />
+		/// Value for ProgramEditEnum.<br/>
+		/// <br/>See also <seealso cref="ProgramEditEnum">ProgramEditEnum</seealso>
 		/// </summary>
 		public sealed class NOT_READYValue : IEnumInstance
 		{

@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	/// <summary>
-	﻿/// identifier representing a consistent set of functionalities defined by the MTConnect Standard.<br/><br />
-
+	/// <summary>﻿identifier representing a consistent set of functionalities defined by the MTConnect Standard.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375169_635903_2025">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.Glossary
 		/// <inheritdoc />
 		public MajorClassProperties Properties { get; } = new MajorClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="MajorClass" />.
+		/// </summary>
 		public class MajorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />

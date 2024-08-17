@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 {
-	/// <summary>
-	﻿/// <i>organize</i>s a set of expected values that can be reported for a <see cref="DataItem">DataItem</see>.<br/><br />
-
+	/// <summary>﻿<i>organize</i>s a set of expected values that can be reported for a <see cref="DataItem">DataItem</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_E6F955EB_46CA_4c72_B547_8F4465A9620A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		/// <inheritdoc />
 		public ConstraintsClassProperties Properties { get; } = new ConstraintsClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ConstraintsClass" />.
+		/// </summary>
 		public class ConstraintsClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -55,9 +59,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <remarks>Original Name: Maximum</remarks>
 			/// </summary>
 			public MaximumProperty Maximum { get; } = new MaximumProperty();
-			/// <summary>
-			﻿/// numeric upper constraint.<br /><br /><br />If the data reported for a data item is a range of numeric values, the expected value reported <b>MAY</b> be described with an upper limit defined by this constraint.<br/><br />
-
+			
+			/// <summary>﻿numeric upper constraint.<br /><br /><br />If the data reported for a data item is a range of numeric values, the expected value reported <b>MAY</b> be described with an upper limit defined by this constraint.<br /><br /><br />
 			/// </summary>
 			public sealed class MaximumProperty : IProperty
 			{
@@ -113,9 +116,8 @@ If the data reported for a data item is a range of numeric values, the expected 
 			/// <remarks>Original Name: Minimum</remarks>
 			/// </summary>
 			public MinimumProperty Minimum { get; } = new MinimumProperty();
-			/// <summary>
-			﻿/// numeric lower constraint.<br /><br />If the data reported for a data item is a range of numeric values, the expected value reported <b>MAY</b> be described with a lower limit defined by this constraint.<br/><br />
-
+			
+			/// <summary>﻿numeric lower constraint.<br /><br />If the data reported for a data item is a range of numeric values, the expected value reported <b>MAY</b> be described with a lower limit defined by this constraint.<br /><br /><br />
 			/// </summary>
 			public sealed class MinimumProperty : IProperty
 			{
@@ -171,9 +173,8 @@ If the data reported for a data item is a range of numeric values, the expected 
 			/// <remarks>Original Name: Nominal</remarks>
 			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
-			/// <summary>
-			﻿/// numeric target or expected value.<br/><br />
-
+			
+			/// <summary>﻿numeric target or expected value.<br /><br /><br />
 			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
@@ -227,9 +228,8 @@ If the data reported for a data item is a range of numeric values, the expected 
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// single data value that is expected to be reported for a <see cref="DataItem">DataItem</see>.<br /><br /><see cref="Constraints.Value">Value in Constraints</see> <b>MUST NOT</b> be used in conjunction with any other <see cref="Constraint">Constraint</see> elements.<br/><br />
-
+			
+			/// <summary>﻿single data value that is expected to be reported for a <see cref="DataItem">DataItem</see>.<br /><br /><see cref="Constraints.Value">Value in Constraints</see> <b>MUST NOT</b> be used in conjunction with any other <see cref="Constraint">Constraint</see> elements.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
@@ -285,6 +285,9 @@ If the data reported for a data item is a range of numeric values, the expected 
 			/// <remarks>Original Name: HasFilter</remarks>
 			/// </summary>
 			public HasFilterPartProperty HasFilterPart { get; } = new HasFilterPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasFilterPartProperty : IProperty
 			{
 				/// <summary>

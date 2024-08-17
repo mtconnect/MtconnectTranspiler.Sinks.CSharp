@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	/// <summary>
-	﻿/// <see cref="Part">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp.<br/><br />Description<br/><see cref="PartId">PartId</see> <b>MUST</b> be defined for <see cref="PartOccurrence">PartOccurrence</see>.<br/><br/><br />Example<br/><br />~~~~xml<br /><Parts id="partOccSet"><br />   <Components><br />	   <PartOccurrence id="partOccur"><br />		 <DataItems><br />		   <DataItem id="partSet" category="EVENT" representation="TABLE" type ="COMPONENT_DATA"><br />			  <Definition><br />				 <EntryDefinitions><br />					  <EntryDefinition keyType="PART_UNIQUE_ID"/><br />				 </EntryDefinitions><br />				 <CellDefinitions><br />					<CellDefinition key="partNumber" type="PART_KIND_ID" subType="PART_NUMBER"/><br />					<CellDefinition key="batchId" type="PART_GROUP_ID" subType="BATCH"/><br />					<CellDefinition key="quantity" type="PART_COUNT" subType="TARGET"/><br />					<CellDefinition key="actualCompleteTime" type="PROCESS_TIME" subType="COMPLETE"/><br />					<CellDefinition key="partState" type="PROCESS_STATE"/><br />				</CellDefinitions><br />			  </Definition><br />			</DataItem><br />		 </DataItems><br />	   </PartOccurrence><br />	</Components><br /></Parts><br />~~~~<br />{: caption="XML Device Model Example for PartOccurrence and ComponentData"}<br /><br /><br />~~~~xml<br /><?xml version="1.0" encoding="UTF-8"?><br /><?xml-stylesheet type="text/xsl" href="/styles/Streams.xsl"?><br /><MTConnectStreams><br />  <Streams><br />    <DeviceStream name="VMC-3Axis" uuid="test_27MAY"><br />      <ComponentStream component="PartOccurrence" name="partSet" componentId="partOccur"><br />        <Events><br />          <ComponentDataTable dataItemId="partSet" timestamp="2020-10-28T19:45:43.070010Z" sequence="95" count="2"><br />            <Entry key="part1"><br />              <Cell key="actualStartTime">2009-06-15T00:00:00.000000</Cell><br />              <Cell key="partId">part1</Cell><br />              <Cell key="partName">SomeName</Cell><br />              <Cell key="uniqueID">abc-123</Cell><br />            </Entry><br />            <Entry key="part2"><br />              <Cell key="actualStartTime">2009-06-15T00:00:00.007925</Cell><br />              <Cell key="partId">part2</Cell><br />              <Cell key="partName">AnotherName</Cell><br />              <Cell key="uniqueID">def-123</Cell><br />            </Entry><br />          </ComponentDataTable><br />        </Events><br />      </ComponentStream><br />    </DeviceStream><br />  </Streams><br /></MTConnectStreams><br />~~~~<br />{: caption="XML Streams Response Example for PartOccurrence and ComponentData"}<br/><br/><br />
-
+	/// <summary>﻿<see cref="Part">Part</see> that exists at a specific place and time, such as a specific instance of a bracket at a specific timestamp.<br /><br /><br />Description<br /><br /><see cref="PartId">PartId</see> <b>MUST</b> be defined for <see cref="PartOccurrence">PartOccurrence</see>.<br /><br /><br /><br /><br />Example<br /><br /><br />~~~~xml<br />&lt;Parts id="partOccSet"&gt;<br />   &lt;Components&gt;<br />	   &lt;PartOccurrence id="partOccur"&gt;<br />		 &lt;DataItems&gt;<br />		   &lt;DataItem id="partSet" category="EVENT" representation="TABLE" type ="COMPONENT_DATA"&gt;<br />			  &lt;Definition&gt;<br />				 &lt;EntryDefinitions&gt;<br />					  &lt;EntryDefinition keyType="PART_UNIQUE_ID"/&gt;<br />				 &lt;/EntryDefinitions&gt;<br />				 &lt;CellDefinitions&gt;<br />					&lt;CellDefinition key="partNumber" type="PART_KIND_ID" subType="PART_NUMBER"/&gt;<br />					&lt;CellDefinition key="batchId" type="PART_GROUP_ID" subType="BATCH"/&gt;<br />					&lt;CellDefinition key="quantity" type="PART_COUNT" subType="TARGET"/&gt;<br />					&lt;CellDefinition key="actualCompleteTime" type="PROCESS_TIME" subType="COMPLETE"/&gt;<br />					&lt;CellDefinition key="partState" type="PROCESS_STATE"/&gt;<br />				&lt;/CellDefinitions&gt;<br />			  &lt;/Definition&gt;<br />			&lt;/DataItem&gt;<br />		 &lt;/DataItems&gt;<br />	   &lt;/PartOccurrence&gt;<br />	&lt;/Components&gt;<br />&lt;/Parts&gt;<br />~~~~<br />{: caption="XML Device Model Example for PartOccurrence and ComponentData"}<br /><br /><br />~~~~xml<br />&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br />&lt;?xml-stylesheet type="text/xsl" href="/styles/Streams.xsl"?&gt;<br />&lt;MTConnectStreams&gt;<br />  &lt;Streams&gt;<br />    &lt;DeviceStream name="VMC-3Axis" uuid="test_27MAY"&gt;<br />      &lt;ComponentStream component="PartOccurrence" name="partSet" componentId="partOccur"&gt;<br />        &lt;Events&gt;<br />          &lt;ComponentDataTable dataItemId="partSet" timestamp="2020-10-28T19:45:43.070010Z" sequence="95" count="2"&gt;<br />            &lt;Entry key="part1"&gt;<br />              &lt;Cell key="actualStartTime"&gt;2009-06-15T00:00:00.000000&lt;/Cell&gt;<br />              &lt;Cell key="partId"&gt;part1&lt;/Cell&gt;<br />              &lt;Cell key="partName"&gt;SomeName&lt;/Cell&gt;<br />              &lt;Cell key="uniqueID"&gt;abc-123&lt;/Cell&gt;<br />            &lt;/Entry&gt;<br />            &lt;Entry key="part2"&gt;<br />              &lt;Cell key="actualStartTime"&gt;2009-06-15T00:00:00.007925&lt;/Cell&gt;<br />              &lt;Cell key="partId"&gt;part2&lt;/Cell&gt;<br />              &lt;Cell key="partName"&gt;AnotherName&lt;/Cell&gt;<br />              &lt;Cell key="uniqueID"&gt;def-123&lt;/Cell&gt;<br />            &lt;/Entry&gt;<br />          &lt;/ComponentDataTable&gt;<br />        &lt;/Events&gt;<br />      &lt;/ComponentStream&gt;<br />    &lt;/DeviceStream&gt;<br />  &lt;/Streams&gt;<br />&lt;/MTConnectStreams&gt;<br />~~~~<br />{: caption="XML Streams Response Example for PartOccurrence and ComponentData"}<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605547467172_656422_264">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -102,10 +103,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		/// <inheritdoc />
 		public PartOccurrenceClassProperties Properties { get; } = new PartOccurrenceClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="PartOccurrenceClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartClass.PartClassProperties" />.
+		/// </summary>
 		public class PartOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartClass.PartClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				ObservesPartId,
 				ObservesPartUniqueId,
 				ObservesPartGroupId,
@@ -120,8 +125,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesPartIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartId</remarks>
 			/// </summary>
-			public ObservesPartIdProperty ObservesPartId { get; } = new ObservesPartIdProperty();
-			public sealed class ObservesPartIdProperty : IProperty
+			public new ObservesPartIdProperty ObservesPartId { get; } = new ObservesPartIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPartIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -171,8 +179,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesPartUniqueIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartUniqueId</remarks>
 			/// </summary>
-			public ObservesPartUniqueIdProperty ObservesPartUniqueId { get; } = new ObservesPartUniqueIdProperty();
-			public sealed class ObservesPartUniqueIdProperty : IProperty
+			public new ObservesPartUniqueIdProperty ObservesPartUniqueId { get; } = new ObservesPartUniqueIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPartUniqueIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -222,8 +233,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesPartGroupIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartGroupId</remarks>
 			/// </summary>
-			public ObservesPartGroupIdProperty ObservesPartGroupId { get; } = new ObservesPartGroupIdProperty();
-			public sealed class ObservesPartGroupIdProperty : IProperty
+			public new ObservesPartGroupIdProperty ObservesPartGroupId { get; } = new ObservesPartGroupIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPartGroupIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -273,8 +287,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesPartKindIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartKindId</remarks>
 			/// </summary>
-			public ObservesPartKindIdProperty ObservesPartKindId { get; } = new ObservesPartKindIdProperty();
-			public sealed class ObservesPartKindIdProperty : IProperty
+			public new ObservesPartKindIdProperty ObservesPartKindId { get; } = new ObservesPartKindIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPartKindIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -324,8 +341,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesPartCountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartCount</remarks>
 			/// </summary>
-			public ObservesPartCountProperty ObservesPartCount { get; } = new ObservesPartCountProperty();
-			public sealed class ObservesPartCountProperty : IProperty
+			public new ObservesPartCountProperty ObservesPartCount { get; } = new ObservesPartCountProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPartCountProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -375,8 +395,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesPartStatusProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartStatus</remarks>
 			/// </summary>
-			public ObservesPartStatusProperty ObservesPartStatus { get; } = new ObservesPartStatusProperty();
-			public sealed class ObservesPartStatusProperty : IProperty
+			public new ObservesPartStatusProperty ObservesPartStatus { get; } = new ObservesPartStatusProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPartStatusProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -426,8 +449,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesProcessOccurrenceIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessOccurrenceId</remarks>
 			/// </summary>
-			public ObservesProcessOccurrenceIdProperty ObservesProcessOccurrenceId { get; } = new ObservesProcessOccurrenceIdProperty();
-			public sealed class ObservesProcessOccurrenceIdProperty : IProperty
+			public new ObservesProcessOccurrenceIdProperty ObservesProcessOccurrenceId { get; } = new ObservesProcessOccurrenceIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProcessOccurrenceIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -477,8 +503,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesProcessTimeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessTime</remarks>
 			/// </summary>
-			public ObservesProcessTimeProperty ObservesProcessTime { get; } = new ObservesProcessTimeProperty();
-			public sealed class ObservesProcessTimeProperty : IProperty
+			public new ObservesProcessTimeProperty ObservesProcessTime { get; } = new ObservesProcessTimeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProcessTimeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -528,8 +557,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesUserProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUser</remarks>
 			/// </summary>
-			public ObservesUserProperty ObservesUser { get; } = new ObservesUserProperty();
-			public sealed class ObservesUserProperty : IProperty
+			public new ObservesUserProperty ObservesUser { get; } = new ObservesUserProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesUserProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

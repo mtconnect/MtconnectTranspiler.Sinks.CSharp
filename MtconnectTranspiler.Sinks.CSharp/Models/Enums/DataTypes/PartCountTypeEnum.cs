@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1640702052373_905765_57">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1640702052373_905765_57">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PartCountTypeEnum
 	{
-		/// <summary>
-		﻿/// count is of individual items.<br/><br />
-
+		/// <summary>﻿count is of individual items.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EACH,
-		/// <summary>
-		﻿/// pre-specified group of items.<br/><br />
-
+		/// <summary>﻿pre-specified group of items.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		BATCH,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1640702052373_905765_57">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1640702052373_905765_57">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PartCountTypeEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(PartCountTypeEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private EACHValue _EACH;
-		/// <summary>
-		﻿/// count is of individual items.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EACHValue" path="/summary" />
 		public EACHValue EACH => _EACH ?? (_EACH = new EACHValue());
 
-		/// <summary>
-		﻿/// count is of individual items.<br/><br />
-
+		/// <summary>﻿count is of individual items.<br /><br /><br />
+		/// Value for PartCountTypeEnum.<br/>
+		/// <br/>See also <seealso cref="PartCountTypeEnum">PartCountTypeEnum</seealso>
 		/// </summary>
 		public sealed class EACHValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private BATCHValue _BATCH;
-		/// <summary>
-		﻿/// pre-specified group of items.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BATCHValue" path="/summary" />
 		public BATCHValue BATCH => _BATCH ?? (_BATCH = new BATCHValue());
 
-		/// <summary>
-		﻿/// pre-specified group of items.<br/><br />
-
+		/// <summary>﻿pre-specified group of items.<br /><br /><br />
+		/// Value for PartCountTypeEnum.<br/>
+		/// <br/>See also <seealso cref="PartCountTypeEnum">PartCountTypeEnum</seealso>
 		/// </summary>
 		public sealed class BATCHValue : IEnumInstance
 		{

@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 {
-	/// <summary>
-	﻿/// references to a file with the three-dimensional geometry of the <see cref="Component">Component</see> or <see cref="Composition">Composition</see>.<br/><br />Description<br/>The geometry <b>MAY</b> have a transformation and a scale to position the <see cref="Component">Component</see> with respect to the other <see cref="Component">Component</see>s. A geometry file can contain a set of assembled items, in this case, the <see cref="SolidModel">SolidModel</see> references the <see cref="SolidModel.id">id in SolidModel</see> of the assembly model file and the specific item within that file.<br /><br />The <see cref="SolidModel">SolidModel</see> <b>MAY</b> provide a translation, rotation, and scale to correctly place it relative to the other geometries in the machine. If the <see cref="Component">Component</see> can move and has a <see cref="Motion">Motion</see> <see cref="Configuration">Configuration</see>, the <see cref="SolidModel">SolidModel</see> will move when the <see cref="Component">Component</see> or <see cref="Composition">Composition</see> moves.<br /><br />Either an <see cref="SolidModel.href">href in SolidModel</see> or a <see cref="SolidModel.modelIdRef">modelIdRef in SolidModel</see> and an <see cref="SolidModel.itemRef">itemRef in SolidModel</see> <b>MUST</b> be specified.<br/><br/><br />
-
+	/// <summary>﻿references to a file with the three-dimensional geometry of the <see cref="Component">Component</see> or <see cref="Composition">Composition</see>.<br /><br /><br />Description<br /><br />The geometry <b>MAY</b> have a transformation and a scale to position the <see cref="Component">Component</see> with respect to the other <see cref="Component">Component</see>s. A geometry file can contain a set of assembled items, in this case, the <see cref="SolidModel">SolidModel</see> references the <see cref="SolidModel.id">id in SolidModel</see> of the assembly model file and the specific item within that file.<br /><br />The <see cref="SolidModel">SolidModel</see> <b>MAY</b> provide a translation, rotation, and scale to correctly place it relative to the other geometries in the machine. If the <see cref="Component">Component</see> can move and has a <see cref="Motion">Motion</see> <see cref="Configuration">Configuration</see>, the <see cref="SolidModel">SolidModel</see> will move when the <see cref="Component">Component</see> or <see cref="Composition">Composition</see> moves.<br /><br />Either an <see cref="SolidModel.href">href in SolidModel</see> or a <see cref="SolidModel.modelIdRef">modelIdRef in SolidModel</see> and an <see cref="SolidModel.itemRef">itemRef in SolidModel</see> <b>MUST</b> be specified.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587596157073_106480_480">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -45,6 +46,9 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 		/// <inheritdoc />
 		public SolidModelClassProperties Properties { get; } = new SolidModelClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="SolidModelClass" />.
+		/// </summary>
 		public class SolidModelClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -65,9 +69,8 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 			/// <remarks>Original Name: Id</remarks>
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
-			/// <summary>
-			﻿/// unique identifier for this element.<br/><br />
-
+			
+			/// <summary>﻿unique identifier for this element.<br /><br /><br />
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -121,6 +124,9 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 			/// <remarks>Original Name: HasTransformation</remarks>
 			/// </summary>
 			public HasTransformationPartProperty HasTransformationPart { get; } = new HasTransformationPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasTransformationPartProperty : IProperty
 			{
 				/// <summary>
@@ -172,6 +178,9 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 			/// <remarks>Original Name: HasScale</remarks>
 			/// </summary>
 			public HasScalePartProperty HasScalePart { get; } = new HasScalePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasScalePartProperty : IProperty
 			{
 				/// <summary>
@@ -223,9 +232,8 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 			/// <remarks>Original Name: SolidModelIdRef</remarks>
 			/// </summary>
 			public SolidModelIdRefProperty SolidModelIdRef { get; } = new SolidModelIdRefProperty();
-			/// <summary>
-			﻿/// associated model file if an item reference is used.<br/><br />
-
+			
+			/// <summary>﻿associated model file if an item reference is used.<br /><br /><br />
 			/// </summary>
 			public sealed class SolidModelIdRefProperty : IProperty
 			{
@@ -279,9 +287,8 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 			/// <remarks>Original Name: Href</remarks>
 			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
-			/// <summary>
-			﻿/// <i>URL</i> giving the location of the <see cref="SolidModel">SolidModel</see>. <br /><br />If not present, the model referenced in the <see cref="SolidModel.solidModelIdRef">solidModelIdRef in SolidModel</see> is used.<br /><br /><br /><see cref="SolidModel.href">href in SolidModel</see> is of type <c>xlink:href</c> from the W3C XLink specification.<br/><br />
-
+			
+			/// <summary>﻿<i>URL</i> giving the location of the <see cref="SolidModel">SolidModel</see>. <br /><br />If not present, the model referenced in the <see cref="SolidModel.solidModelIdRef">solidModelIdRef in SolidModel</see> is used.<br /><br /><br /><see cref="SolidModel.href">href in SolidModel</see> is of type <c>xlink:href</c> from the W3C XLink specification.<br /><br /><br />
 			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
@@ -339,9 +346,8 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 			/// <remarks>Original Name: ItemRef</remarks>
 			/// </summary>
 			public ItemRefProperty ItemRef { get; } = new ItemRefProperty();
-			/// <summary>
-			﻿/// reference to the item within the model within the related geometry. A <see cref="SolidModel.solidModelIdRef">solidModelIdRef in SolidModel</see> <b>MUST</b> be given. <br /><br />> Note: <c>Item</c> defined in ASME Y14.100 - A nonspecific term used to denote any unit or product, including materials, parts, assemblies, equipment, accessories, and computer software.<br/><br />
-
+			
+			/// <summary>﻿reference to the item within the model within the related geometry. A <see cref="SolidModel.solidModelIdRef">solidModelIdRef in SolidModel</see> <b>MUST</b> be given. <br /><br />&gt; Note: <c>Item</c> defined in ASME Y14.100 - A nonspecific term used to denote any unit or product, including materials, parts, assemblies, equipment, accessories, and computer software.<br /><br /><br />
 			/// </summary>
 			public sealed class ItemRefProperty : IProperty
 			{
@@ -397,9 +403,8 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 			/// <remarks>Original Name: MediaType</remarks>
 			/// </summary>
 			public MediaTypeProperty MediaType { get; } = new MediaTypeProperty();
-			/// <summary>
-			﻿/// format of the referenced document.<br/><br />
-
+			
+			/// <summary>﻿format of the referenced document.<br /><br /><br />
 			/// </summary>
 			public sealed class MediaTypeProperty : IProperty
 			{
@@ -453,9 +458,8 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 			/// <remarks>Original Name: CoordinateSystemIdRef</remarks>
 			/// </summary>
 			public CoordinateSystemIdRefProperty CoordinateSystemIdRef { get; } = new CoordinateSystemIdRefProperty();
-			/// <summary>
-			﻿/// reference to the coordinate system for this <see cref="SolidModel">SolidModel</see>.<br /><br/><br />
-
+			
+			/// <summary>﻿reference to the coordinate system for this <see cref="SolidModel">SolidModel</see>.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
@@ -509,9 +513,8 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 			/// <remarks>Original Name: NativeUnits</remarks>
 			/// </summary>
 			public NativeUnitsProperty NativeUnits { get; } = new NativeUnitsProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.nativeUnits">nativeUnits in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿same as <see cref="DataItem.nativeUnits">nativeUnits in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class NativeUnitsProperty : IProperty
 			{
@@ -565,9 +568,8 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{

@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550806336_962403_162">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550806336_962403_162">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CompositionStateLateralEnum
 	{
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is oriented to the right to the point of a positive confirmation.<br/><br />
-
+		/// <summary>﻿position of the <see cref="Composition">Composition</see> is oriented to the right to the point of a positive confirmation.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		RIGHT,
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is oriented to the left to the point of a positive confirmation.<br/><br />
-
+		/// <summary>﻿position of the <see cref="Composition">Composition</see> is oriented to the left to the point of a positive confirmation.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LEFT,
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is not oriented to the right to the point of a positive confirmation and is not oriented to the left to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
-
+		/// <summary>﻿position of the <see cref="Composition">Composition</see> is not oriented to the right to the point of a positive confirmation and is not oriented to the left to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,8 @@ namespace Mtconnect.DataTypes
 		TRANSITIONING,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550806336_962403_162">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550806336_962403_162">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionStateLateralEnumMetaClass : IEnum
@@ -60,6 +54,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(CompositionStateLateralEnum);
 
 		/// <inheritdoc />
@@ -79,15 +74,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private RIGHTValue _RIGHT;
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is oriented to the right to the point of a positive confirmation.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="RIGHTValue" path="/summary" />
 		public RIGHTValue RIGHT => _RIGHT ?? (_RIGHT = new RIGHTValue());
 
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is oriented to the right to the point of a positive confirmation.<br/><br />
-
+		/// <summary>﻿position of the <see cref="Composition">Composition</see> is oriented to the right to the point of a positive confirmation.<br /><br /><br />
+		/// Value for CompositionStateLateralEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionStateLateralEnum">CompositionStateLateralEnum</seealso>
 		/// </summary>
 		public sealed class RIGHTValue : IEnumInstance
 		{
@@ -108,15 +100,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private LEFTValue _LEFT;
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is oriented to the left to the point of a positive confirmation.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LEFTValue" path="/summary" />
 		public LEFTValue LEFT => _LEFT ?? (_LEFT = new LEFTValue());
 
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is oriented to the left to the point of a positive confirmation.<br/><br />
-
+		/// <summary>﻿position of the <see cref="Composition">Composition</see> is oriented to the left to the point of a positive confirmation.<br /><br /><br />
+		/// Value for CompositionStateLateralEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionStateLateralEnum">CompositionStateLateralEnum</seealso>
 		/// </summary>
 		public sealed class LEFTValue : IEnumInstance
 		{
@@ -137,15 +126,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private TRANSITIONINGValue _TRANSITIONING;
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is not oriented to the right to the point of a positive confirmation and is not oriented to the left to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRANSITIONINGValue" path="/summary" />
 		public TRANSITIONINGValue TRANSITIONING => _TRANSITIONING ?? (_TRANSITIONING = new TRANSITIONINGValue());
 
-		/// <summary>
-		﻿/// position of the <see cref="Composition">Composition</see> is not oriented to the right to the point of a positive confirmation and is not oriented to the left to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br/><br />
-
+		/// <summary>﻿position of the <see cref="Composition">Composition</see> is not oriented to the right to the point of a positive confirmation and is not oriented to the left to the point of a positive confirmation. <br /><br />It is in an intermediate position.<br /><br /><br />
+		/// Value for CompositionStateLateralEnum.<br/>
+		/// <br/>See also <seealso cref="CompositionStateLateralEnum">CompositionStateLateralEnum</seealso>
 		/// </summary>
 		public sealed class TRANSITIONINGValue : IEnumInstance
 		{

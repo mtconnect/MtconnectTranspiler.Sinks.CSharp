@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel
 {
-	/// <summary>
-	﻿/// <see cref="Observation">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.<br /><br /><br/><br />Description<br/>It provides the information and data reported from a piece of equipment with <see cref="DataItem.category">category in DataItem</see> as <c>CONDITION</c> in the <i>MTConnectDevices Response Document</i>.<br /><br />{{figure(Condition Example)}} shows <see cref="Condition">Condition</see> type examples for various <see cref="Condition.state">state in Condition</see>: <c>Normal</c> (<c>dataItemId</c> = <c>path_system</c>) and <c>Warning</c> (<c>dataItemId</c> = <c>logic_cond</c>). It also shows an example for when the <see cref="Condition.state">state in Condition</see> is not available (<c>dataItemId</c> = <c>cont_system</c>).<br /><br />![Condition Example](figures/Condition%20Example.png "Condition Example"){: width="0.8"}<br /><br />> Note: See {{lst(condition-example)}} for the <i>XML</i> representation of the same example.<br /><br />The following <see cref="Value Properties of Condition">Value Properties of Condition</see> lists the additional and/or updated attributes for <see cref="Condition">Condition</see>.<br/><br/><br />
-
+	/// <summary>﻿<see cref="Observation">Observation</see> that provides the <i>condition</i> of a piece of equipment or a <i>Component</i>.<br /><br /><br /><br /><br />Description<br /><br />It provides the information and data reported from a piece of equipment with <see cref="DataItem.category">category in DataItem</see> as <c>CONDITION</c> in the <i>MTConnectDevices Response Document</i>.<br /><br />{{figure(Condition Example)}} shows <see cref="Condition">Condition</see> type examples for various <see cref="Condition.state">state in Condition</see>: <c>Normal</c> (<c>dataItemId</c> = <c>path_system</c>) and <c>Warning</c> (<c>dataItemId</c> = <c>logic_cond</c>). It also shows an example for when the <see cref="Condition.state">state in Condition</see> is not available (<c>dataItemId</c> = <c>cont_system</c>).<br /><br />![Condition Example](figures/Condition%20Example.png "Condition Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(condition-example)}} for the <i>XML</i> representation of the same example.<br /><br />The following <see cref="Value Properties of Condition">Value Properties of Condition</see> lists the additional and/or updated attributes for <see cref="Condition">Condition</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531113_85883_25726">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -55,10 +56,14 @@ The following {{sect(Value Properties of Condition)}} lists the additional and/o
 		/// <inheritdoc />
 		public ConditionClassProperties Properties { get; } = new ConditionClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ConditionClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.ObservationGeneralization.ObservationGeneralizationProperties" />.
+		/// </summary>
 		public class ConditionClassProperties : Mtconnect.ObservationInformationModel.ObservationGeneralization.ObservationGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				NativeCode,
 				NativeSeverity,
 				Qualifier,
@@ -73,12 +78,11 @@ The following {{sect(Value Properties of Condition)}} lists the additional and/o
 			/// <inheritdoc cref="NativeCodeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeCode</remarks>
 			/// </summary>
-			public NativeCodeProperty NativeCode { get; } = new NativeCodeProperty();
-			/// <summary>
-			﻿/// native code is the proprietary identifier designating a specific alarm, fault or warning code provided by the piece of equipment.<br/><br />
-
+			public new NativeCodeProperty NativeCode { get; } = new NativeCodeProperty();
+			
+			/// <summary>﻿native code is the proprietary identifier designating a specific alarm, fault or warning code provided by the piece of equipment.<br /><br /><br />
 			/// </summary>
-			public sealed class NativeCodeProperty : IProperty
+			public new sealed class NativeCodeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -129,12 +133,11 @@ The following {{sect(Value Properties of Condition)}} lists the additional and/o
 			/// <inheritdoc cref="NativeSeverityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: NativeSeverity</remarks>
 			/// </summary>
-			public NativeSeverityProperty NativeSeverity { get; } = new NativeSeverityProperty();
-			/// <summary>
-			﻿/// severity information to a client software application if the piece of equipment designates a severity level to a fault.<br/><br />
-
+			public new NativeSeverityProperty NativeSeverity { get; } = new NativeSeverityProperty();
+			
+			/// <summary>﻿severity information to a client software application if the piece of equipment designates a severity level to a fault.<br /><br /><br />
 			/// </summary>
-			public sealed class NativeSeverityProperty : IProperty
+			public new sealed class NativeSeverityProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -185,12 +188,11 @@ The following {{sect(Value Properties of Condition)}} lists the additional and/o
 			/// <inheritdoc cref="QualifierProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Qualifier</remarks>
 			/// </summary>
-			public QualifierProperty Qualifier { get; } = new QualifierProperty();
-			/// <summary>
-			﻿/// additional information regarding a <i>condition state</i> associated with the measured value of a process variable.<br /><br /><see cref="Condition.qualifier">qualifier in Condition</see> defines whether the <i>condition state</i> represented indicates a measured value that is above or below an expected value of a process variable.<br/><br />
-
+			public new QualifierProperty Qualifier { get; } = new QualifierProperty();
+			
+			/// <summary>﻿additional information regarding a <i>condition state</i> associated with the measured value of a process variable.<br /><br /><see cref="Condition.qualifier">qualifier in Condition</see> defines whether the <i>condition state</i> represented indicates a measured value that is above or below an expected value of a process variable.<br /><br /><br />
 			/// </summary>
-			public sealed class QualifierProperty : IProperty
+			public new sealed class QualifierProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -243,12 +245,11 @@ The following {{sect(Value Properties of Condition)}} lists the additional and/o
 			/// <inheritdoc cref="StatisticProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Statistic</remarks>
 			/// </summary>
-			public StatisticProperty Statistic { get; } = new StatisticProperty();
-			/// <summary>
-			﻿/// <see cref="Condition.statistic">statistic in Condition</see> provides additional information describing the meaning of the <see cref="Condition">Condition</see> entity.<br /><br /><see cref="Condition.statistic">statistic in Condition</see> <b>MUST</b> match the <see cref="DataItem.statistic">statistic in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br/><br />
-
+			public new StatisticProperty Statistic { get; } = new StatisticProperty();
+			
+			/// <summary>﻿<see cref="Condition.statistic">statistic in Condition</see> provides additional information describing the meaning of the <see cref="Condition">Condition</see> entity.<br /><br /><see cref="Condition.statistic">statistic in Condition</see> <b>MUST</b> match the <see cref="DataItem.statistic">statistic in DataItem</see> defined in the <i>MTConnectDevices Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class StatisticProperty : IProperty
+			public new sealed class StatisticProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -301,12 +302,11 @@ The following {{sect(Value Properties of Condition)}} lists the additional and/o
 			/// <inheritdoc cref="Xs_LangProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xs:Lang</remarks>
 			/// </summary>
-			public Xs_LangProperty Xs_Lang { get; } = new Xs_LangProperty();
-			/// <summary>
-			﻿/// specifies the language of the <see cref="Observation.result">result in Observation</see> returned for the <see cref="Condition">Condition</see>. <br /><br />See <seealso href="https://www.google.com/search?q=IETF RFC 4646&btnI=I">IETF RFC 4646</seealso> (http://www.ietf.org/rfc/rfc4646.txt).<br/><br />
-
+			public new Xs_LangProperty Xs_Lang { get; } = new Xs_LangProperty();
+			
+			/// <summary>﻿specifies the language of the <see cref="Observation.result">result in Observation</see> returned for the <see cref="Condition">Condition</see>. <br /><br />See <seealso href="https://www.google.com/search?q=IETF RFC 4646&btnI=I">IETF RFC 4646</seealso> (http://www.ietf.org/rfc/rfc4646.txt).<br /><br /><br />
 			/// </summary>
-			public sealed class Xs_LangProperty : IProperty
+			public new sealed class Xs_LangProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -359,8 +359,11 @@ See {{cite(IETF RFC 4646)}} (http://www.ietf.org/rfc/rfc4646.txt).&#10;
 			/// <inheritdoc cref="OrganizedByComponentStreamPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: OrganizedByComponentStream</remarks>
 			/// </summary>
-			public OrganizedByComponentStreamPartProperty OrganizedByComponentStreamPart { get; } = new OrganizedByComponentStreamPartProperty();
-			public sealed class OrganizedByComponentStreamPartProperty : IProperty
+			public new OrganizedByComponentStreamPartProperty OrganizedByComponentStreamPart { get; } = new OrganizedByComponentStreamPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class OrganizedByComponentStreamPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -410,12 +413,11 @@ See {{cite(IETF RFC 4646)}} (http://www.ietf.org/rfc/rfc4646.txt).&#10;
 			/// <inheritdoc cref="StateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: State</remarks>
 			/// </summary>
-			public StateProperty State { get; } = new StateProperty();
-			/// <summary>
-			﻿/// <i>condition state</i> of the piece of equipment or <see cref="Component">Component</see>.<br/><br />
-
+			public new StateProperty State { get; } = new StateProperty();
+			
+			/// <summary>﻿<i>condition state</i> of the piece of equipment or <see cref="Component">Component</see>.<br /><br /><br />
 			/// </summary>
-			public sealed class StateProperty : IProperty
+			public new sealed class StateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -466,8 +468,11 @@ See {{cite(IETF RFC 4646)}} (http://www.ietf.org/rfc/rfc4646.txt).&#10;
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -517,12 +522,11 @@ See {{cite(IETF RFC 4646)}} (http://www.ietf.org/rfc/rfc4646.txt).&#10;
 			/// <inheritdoc cref="ConditionIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ConditionId</remarks>
 			/// </summary>
-			public ConditionIdProperty ConditionId { get; } = new ConditionIdProperty();
-			/// <summary>
-			﻿/// identifier of an individual <i>condition activation</i> provided by a piece of equipment.<br /><br /><see cref="Condition.conditionId">conditionId in Condition</see> <b>MUST</b> be unique for all concurrent {{termpl(condition activation)}}.<br /><br /><see cref="Condition.conditionId">conditionId in Condition</see> <b>MUST</b> be maintained for all state transitions related to the same <i>condition activation</i>.<br /><br />Multiple <see cref="Condition.conditionId">conditionId in Condition</see>s <b>MAY</b> exist for the same {{property(nativeCode)}}.<br /><br />If <see cref="Condition.conditionId">conditionId in Condition</see> is not given, the value is the <see cref="Condition.nativeCode">nativeCode in Condition</see>. If <see cref="Condition.nativeCode">nativeCode in Condition</see> and <see cref="Condition.conditionId">conditionId in Condition</see> are not given, <see cref="Condition.conditionId">conditionId in Condition</see> <b>MUST</b> be generated.<br/><br />
-
+			public new ConditionIdProperty ConditionId { get; } = new ConditionIdProperty();
+			
+			/// <summary>﻿identifier of an individual <i>condition activation</i> provided by a piece of equipment.<br /><br /><see cref="Condition.conditionId">conditionId in Condition</see> <b>MUST</b> be unique for all concurrent {{termpl(condition activation)}}.<br /><br /><see cref="Condition.conditionId">conditionId in Condition</see> <b>MUST</b> be maintained for all state transitions related to the same <i>condition activation</i>.<br /><br />Multiple <see cref="Condition.conditionId">conditionId in Condition</see>s <b>MAY</b> exist for the same {{property(nativeCode)}}.<br /><br />If <see cref="Condition.conditionId">conditionId in Condition</see> is not given, the value is the <see cref="Condition.nativeCode">nativeCode in Condition</see>. If <see cref="Condition.nativeCode">nativeCode in Condition</see> and <see cref="Condition.conditionId">conditionId in Condition</see> are not given, <see cref="Condition.conditionId">conditionId in Condition</see> <b>MUST</b> be generated.<br /><br /><br />
 			/// </summary>
-			public sealed class ConditionIdProperty : IProperty
+			public new sealed class ConditionIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

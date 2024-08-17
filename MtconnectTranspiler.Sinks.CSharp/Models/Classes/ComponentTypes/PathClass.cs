@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	/// <summary>
-	﻿/// <see cref="Component">Component</see> that organizes an independent operation or function within a <see cref="Controller">Controller</see>.<br/><br />Description<br/>For many types of equipment, <see cref="Path">Path</see> organizes a set of <see cref="Axes">Axes</see>, one or more Program elements, and the data associated with the motion of a control point as it moves through space. However, it <b>MAY</b> also represent any independent function within a <see cref="Controller">Controller</see> that has unique data associated with that function.<br /> <br /><see cref="Path">Path</see> <b>SHOULD</b> provide an <see cref="Execution">Execution</see> data item to define the operational state of the <see cref="Controller">Controller</see> of the piece of equipment.<br /><br />If the <see cref="Controller">Controller</see> is capable of performing more than one independent operation or function simultaneously, a separate <see cref="Path">Path</see> <b>MUST</b> be used to organize the data associated with each independent operation or function.<br/><br/><br />
-
+	/// <summary>﻿<see cref="Component">Component</see> that organizes an independent operation or function within a <see cref="Controller">Controller</see>.<br /><br /><br />Description<br /><br />For many types of equipment, <see cref="Path">Path</see> organizes a set of <see cref="Axes">Axes</see>, one or more Program elements, and the data associated with the motion of a control point as it moves through space. However, it <b>MAY</b> also represent any independent function within a <see cref="Controller">Controller</see> that has unique data associated with that function.<br /> <br /><see cref="Path">Path</see> <b>SHOULD</b> provide an <see cref="Execution">Execution</see> data item to define the operational state of the <see cref="Controller">Controller</see> of the piece of equipment.<br /><br />If the <see cref="Controller">Controller</see> is capable of performing more than one independent operation or function simultaneously, a separate <see cref="Path">Path</see> <b>MUST</b> be used to organize the data associated with each independent operation or function.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382004_482583_42267">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -49,10 +50,14 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 		/// <inheritdoc />
 		public PathClassProperties Properties { get; } = new PathClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="PathClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties" />.
+		/// </summary>
 		public class PathClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				ObservesExecution,
 				ObservesProgram,
 				ObservesPathFeedrateOverrideProgrammed,
@@ -65,8 +70,11 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 			/// <inheritdoc cref="ObservesExecutionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesExecution</remarks>
 			/// </summary>
-			public ObservesExecutionProperty ObservesExecution { get; } = new ObservesExecutionProperty();
-			public sealed class ObservesExecutionProperty : IProperty
+			public new ObservesExecutionProperty ObservesExecution { get; } = new ObservesExecutionProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesExecutionProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -116,8 +124,11 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 			/// <inheritdoc cref="ObservesProgramProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProgram</remarks>
 			/// </summary>
-			public ObservesProgramProperty ObservesProgram { get; } = new ObservesProgramProperty();
-			public sealed class ObservesProgramProperty : IProperty
+			public new ObservesProgramProperty ObservesProgram { get; } = new ObservesProgramProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProgramProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -167,8 +178,11 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 			/// <inheritdoc cref="ObservesPathFeedrateOverrideProgrammedProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPathFeedrateOverrideProgrammed</remarks>
 			/// </summary>
-			public ObservesPathFeedrateOverrideProgrammedProperty ObservesPathFeedrateOverrideProgrammed { get; } = new ObservesPathFeedrateOverrideProgrammedProperty();
-			public sealed class ObservesPathFeedrateOverrideProgrammedProperty : IProperty
+			public new ObservesPathFeedrateOverrideProgrammedProperty ObservesPathFeedrateOverrideProgrammed { get; } = new ObservesPathFeedrateOverrideProgrammedProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPathFeedrateOverrideProgrammedProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -218,8 +232,11 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 			/// <inheritdoc cref="ObservesPathFeedrateOverrideRapidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPathFeedrateOverrideRapid</remarks>
 			/// </summary>
-			public ObservesPathFeedrateOverrideRapidProperty ObservesPathFeedrateOverrideRapid { get; } = new ObservesPathFeedrateOverrideRapidProperty();
-			public sealed class ObservesPathFeedrateOverrideRapidProperty : IProperty
+			public new ObservesPathFeedrateOverrideRapidProperty ObservesPathFeedrateOverrideRapid { get; } = new ObservesPathFeedrateOverrideRapidProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPathFeedrateOverrideRapidProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -269,8 +286,11 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 			/// <inheritdoc cref="ObservesRotaryVelocityOverrideProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesRotaryVelocityOverride</remarks>
 			/// </summary>
-			public ObservesRotaryVelocityOverrideProperty ObservesRotaryVelocityOverride { get; } = new ObservesRotaryVelocityOverrideProperty();
-			public sealed class ObservesRotaryVelocityOverrideProperty : IProperty
+			public new ObservesRotaryVelocityOverrideProperty ObservesRotaryVelocityOverride { get; } = new ObservesRotaryVelocityOverrideProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesRotaryVelocityOverrideProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -320,8 +340,11 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 			/// <inheritdoc cref="ObservesPathFeedrateProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPathFeedrate</remarks>
 			/// </summary>
-			public ObservesPathFeedrateProperty ObservesPathFeedrate { get; } = new ObservesPathFeedrateProperty();
-			public sealed class ObservesPathFeedrateProperty : IProperty
+			public new ObservesPathFeedrateProperty ObservesPathFeedrate { get; } = new ObservesPathFeedrateProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPathFeedrateProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -371,8 +394,11 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 			/// <inheritdoc cref="ObservesPartCountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartCount</remarks>
 			/// </summary>
-			public ObservesPartCountProperty ObservesPartCount { get; } = new ObservesPartCountProperty();
-			public sealed class ObservesPartCountProperty : IProperty
+			public new ObservesPartCountProperty ObservesPartCount { get; } = new ObservesPartCountProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPartCountProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

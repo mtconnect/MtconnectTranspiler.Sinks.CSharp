@@ -1,9 +1,15 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1582232689807_149219_388">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PositionClass : IClass
 	{
@@ -34,6 +40,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		/// <inheritdoc />
 		public PositionClassProperties Properties { get; } = new PositionClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="PositionClass" />.
+		/// </summary>
 		public class PositionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -50,6 +59,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: X</remarks>
 			/// </summary>
 			public XProperty X { get; } = new XProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class XProperty : IProperty
 			{
 				/// <summary>
@@ -101,6 +113,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Y</remarks>
 			/// </summary>
 			public YProperty Y { get; } = new YProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class YProperty : IProperty
 			{
 				/// <summary>
@@ -152,6 +167,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: Z</remarks>
 			/// </summary>
 			public ZProperty Z { get; } = new ZProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ZProperty : IProperty
 			{
 				/// <summary>
@@ -203,6 +221,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: A</remarks>
 			/// </summary>
 			public AProperty A { get; } = new AProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class AProperty : IProperty
 			{
 				/// <summary>
@@ -254,6 +275,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: B</remarks>
 			/// </summary>
 			public BProperty B { get; } = new BProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class BProperty : IProperty
 			{
 				/// <summary>
@@ -305,6 +329,9 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 			/// <remarks>Original Name: C</remarks>
 			/// </summary>
 			public CProperty C { get; } = new CProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class CProperty : IProperty
 			{
 				/// <summary>

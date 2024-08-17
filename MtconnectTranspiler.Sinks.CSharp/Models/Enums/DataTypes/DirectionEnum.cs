@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643977882360_173549_1229">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643977882360_173549_1229">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -17,9 +18,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum DirectionEnum
 	{
-		/// <summary>
-		﻿/// clockwise rotation using the right-hand rule.<br/><br />
-
+		/// <summary>﻿clockwise rotation using the right-hand rule.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -29,9 +28,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 		CLOCKWISE,
-		/// <summary>
-		﻿/// counter-clockwise rotation using the right-hand rule.<br/><br />
-
+		/// <summary>﻿counter-clockwise rotation using the right-hand rule.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -41,8 +38,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 		COUNTER_CLOCKWISE,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -52,8 +48,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 		POSITIVE,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -65,9 +60,8 @@ namespace Mtconnect.DataTypes
 		NEGATIVE,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643977882360_173549_1229">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643977882360_173549_1229">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DirectionEnumMetaClass : IEnum
@@ -78,6 +72,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(DirectionEnum);
 
 		/// <inheritdoc />
@@ -98,15 +93,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private CLOCKWISEValue _CLOCKWISE;
-		/// <summary>
-		﻿/// clockwise rotation using the right-hand rule.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CLOCKWISEValue" path="/summary" />
 		public CLOCKWISEValue CLOCKWISE => _CLOCKWISE ?? (_CLOCKWISE = new CLOCKWISEValue());
 
-		/// <summary>
-		﻿/// clockwise rotation using the right-hand rule.<br/><br />
-
+		/// <summary>﻿clockwise rotation using the right-hand rule.<br /><br /><br />
+		/// Value for DirectionEnum.<br/>
+		/// <br/>See also <seealso cref="DirectionEnum">DirectionEnum</seealso>
 		/// </summary>
 		public sealed class CLOCKWISEValue : IEnumInstance
 		{
@@ -127,15 +119,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private COUNTER_CLOCKWISEValue _COUNTER_CLOCKWISE;
-		/// <summary>
-		﻿/// counter-clockwise rotation using the right-hand rule.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COUNTER_CLOCKWISEValue" path="/summary" />
 		public COUNTER_CLOCKWISEValue COUNTER_CLOCKWISE => _COUNTER_CLOCKWISE ?? (_COUNTER_CLOCKWISE = new COUNTER_CLOCKWISEValue());
 
-		/// <summary>
-		﻿/// counter-clockwise rotation using the right-hand rule.<br/><br />
-
+		/// <summary>﻿counter-clockwise rotation using the right-hand rule.<br /><br /><br />
+		/// Value for DirectionEnum.<br/>
+		/// <br/>See also <seealso cref="DirectionEnum">DirectionEnum</seealso>
 		/// </summary>
 		public sealed class COUNTER_CLOCKWISEValue : IEnumInstance
 		{
@@ -156,8 +145,13 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private POSITIVEValue _POSITIVE;
+		/// <inheritdoc cref="POSITIVEValue" path="/summary" />
 		public POSITIVEValue POSITIVE => _POSITIVE ?? (_POSITIVE = new POSITIVEValue());
 
+		/// <summary>﻿
+		/// Value for DirectionEnum.<br/>
+		/// <br/>See also <seealso cref="DirectionEnum">DirectionEnum</seealso>
+		/// </summary>
 		public sealed class POSITIVEValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -176,8 +170,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private NEGATIVEValue _NEGATIVE;
+		/// <inheritdoc cref="NEGATIVEValue" path="/summary" />
 		public NEGATIVEValue NEGATIVE => _NEGATIVE ?? (_NEGATIVE = new NEGATIVEValue());
 
+		/// <summary>﻿
+		/// Value for DirectionEnum.<br/>
+		/// <br/>See also <seealso cref="DirectionEnum">DirectionEnum</seealso>
+		/// </summary>
 		public sealed class NEGATIVEValue : IEnumInstance
 		{
 			/// <inheritdoc />

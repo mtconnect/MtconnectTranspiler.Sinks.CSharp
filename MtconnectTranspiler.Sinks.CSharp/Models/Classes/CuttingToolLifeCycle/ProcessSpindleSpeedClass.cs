@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
-	/// <summary>
-	﻿/// constrained process spindle speed for the tool in revolutions/minute.<br /><br /><br />The <see cref="ProcessSpindleSpeed.value">value in ProcessSpindleSpeed</see> <b>MAY</b> contain the nominal process target spindle speed if available. If <see cref="ProcessSpindleSpeed">ProcessSpindleSpeed</see> is provided, at least one value of <see cref="ProcessSpindleSpeed.maximum">maximum in ProcessSpindleSpeed</see>, <see cref="ProcessSpindleSpeed.nominal">nominal in ProcessSpindleSpeed</see>, or <see cref="ProcessSpindleSpeed.minimum">minimum in ProcessSpindleSpeed</see> <b>MUST</b> be specified.<br/><br />
-
+	/// <summary>﻿constrained process spindle speed for the tool in revolutions/minute.<br /><br /><br />The <see cref="ProcessSpindleSpeed.value">value in ProcessSpindleSpeed</see> <b>MAY</b> contain the nominal process target spindle speed if available. If <see cref="ProcessSpindleSpeed">ProcessSpindleSpeed</see> is provided, at least one value of <see cref="ProcessSpindleSpeed.maximum">maximum in ProcessSpindleSpeed</see>, <see cref="ProcessSpindleSpeed.nominal">nominal in ProcessSpindleSpeed</see>, or <see cref="ProcessSpindleSpeed.minimum">minimum in ProcessSpindleSpeed</see> <b>MUST</b> be specified.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_3B2E47CE_BBF6_4b7a_A0C6_146B2BE8331A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -42,6 +43,9 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 		/// <inheritdoc />
 		public ProcessSpindleSpeedClassProperties Properties { get; } = new ProcessSpindleSpeedClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ProcessSpindleSpeedClass" />.
+		/// </summary>
 		public class ProcessSpindleSpeedClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -56,9 +60,8 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 			/// <remarks>Original Name: Maximum</remarks>
 			/// </summary>
 			public MaximumProperty Maximum { get; } = new MaximumProperty();
-			/// <summary>
-			﻿/// upper bound for the tool’s target spindle speed.<br/><br />
-
+			
+			/// <summary>﻿upper bound for the tool’s target spindle speed.<br /><br /><br />
 			/// </summary>
 			public sealed class MaximumProperty : IProperty
 			{
@@ -112,9 +115,8 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 			/// <remarks>Original Name: Minimum</remarks>
 			/// </summary>
 			public MinimumProperty Minimum { get; } = new MinimumProperty();
-			/// <summary>
-			﻿/// lower bound for the tools spindle speed.<br /><br/><br />
-
+			
+			/// <summary>﻿lower bound for the tools spindle speed.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class MinimumProperty : IProperty
 			{
@@ -168,9 +170,8 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 			/// <remarks>Original Name: Nominal</remarks>
 			/// </summary>
 			public NominalProperty Nominal { get; } = new NominalProperty();
-			/// <summary>
-			﻿/// nominal speed the tool is designed to operate at.<br/><br />
-
+			
+			/// <summary>﻿nominal speed the tool is designed to operate at.<br /><br /><br />
 			/// </summary>
 			public sealed class NominalProperty : IProperty
 			{
@@ -224,6 +225,9 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>

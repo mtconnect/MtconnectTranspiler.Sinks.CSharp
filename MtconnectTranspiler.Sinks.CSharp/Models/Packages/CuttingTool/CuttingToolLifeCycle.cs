@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
-	/// <summary>
-	﻿/// This section provides semantic information for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> model.<br /><br />![CuttingToolLifeCycle](figures/CuttingToolLifeCycle.png "CuttingToolLifeCycle"){: width="0.8"}<br /><br />> Note: See <see cref="CuttingToolLifeCycle Schema Diagrams">CuttingToolLifeCycle Schema Diagrams</see> for XML schema.<br /><br/><br />
-
+	/// <summary>﻿This section provides semantic information for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> model.<br /><br />![CuttingToolLifeCycle](figures/CuttingToolLifeCycle.png "CuttingToolLifeCycle"){: width="0.8"}<br /><br />&gt; Note: See <see cref="CuttingToolLifeCycle Schema Diagrams">CuttingToolLifeCycle Schema Diagrams</see> for XML schema.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1612424133851_339632_344">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -43,6 +43,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			StatusClass,
 			MeasurementClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -95,6 +100,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	/// </summary>
 	public Package.MeasurementClass MeasurementClass => _MeasurementClass ?? (_MeasurementClass = new Package.MeasurementClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

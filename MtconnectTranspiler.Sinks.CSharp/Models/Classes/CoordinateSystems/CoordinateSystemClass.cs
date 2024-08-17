@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
-	/// <summary>
-	﻿/// reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href="https://www.google.com/search?q=ISO 10303-218:2004&btnI=I">ISO 10303-218:2004</seealso><br/><br />Description<br/>At most only one of <see cref="Origin">Origin</see> or <see cref="Transformation">Transformation</see> <b>MUST</b> be defined for a <see cref="CoordinateSystem">CoordinateSystem</see>.<br/><br/><br />
-
+	/// <summary>﻿reference system that associates a unique set of n parameters with each point in an n-dimensional space. <seealso href="https://www.google.com/search?q=ISO 10303-218:2004&btnI=I">ISO 10303-218:2004</seealso><br /><br /><br />Description<br /><br />At most only one of <see cref="Origin">Origin</see> or <see cref="Transformation">Transformation</see> <b>MUST</b> be defined for a <see cref="CoordinateSystem">CoordinateSystem</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579100679936_1279_16310">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -41,6 +42,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		/// <inheritdoc />
 		public CoordinateSystemClassProperties Properties { get; } = new CoordinateSystemClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="CoordinateSystemClass" />.
+		/// </summary>
 		public class CoordinateSystemClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -60,9 +64,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: Id</remarks>
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
-			/// <summary>
-			﻿/// unique identifier for the coordinate system.<br/><br />
-
+			
+			/// <summary>﻿unique identifier for the coordinate system.<br /><br /><br />
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -116,9 +119,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// name of the coordinate system.<br/><br />
-
+			
+			/// <summary>﻿name of the coordinate system.<br /><br /><br />
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -172,9 +174,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: NativeName</remarks>
 			/// </summary>
 			public NativeNameProperty NativeName { get; } = new NativeNameProperty();
-			/// <summary>
-			﻿/// manufacturer's name or users name for the coordinate system.<br/><br />
-
+			
+			/// <summary>﻿manufacturer's name or users name for the coordinate system.<br /><br /><br />
 			/// </summary>
 			public sealed class NativeNameProperty : IProperty
 			{
@@ -228,9 +229,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: ParentIdRef</remarks>
 			/// </summary>
 			public ParentIdRefProperty ParentIdRef { get; } = new ParentIdRefProperty();
-			/// <summary>
-			﻿/// pointer to the <see cref="CoordinateSystem.id">id in CoordinateSystem</see>.<br/><br />
-
+			
+			/// <summary>﻿pointer to the <see cref="CoordinateSystem.id">id in CoordinateSystem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ParentIdRefProperty : IProperty
 			{
@@ -284,6 +284,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: HasOrigin</remarks>
 			/// </summary>
 			public HasOriginPartProperty HasOriginPart { get; } = new HasOriginPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasOriginPartProperty : IProperty
 			{
 				/// <summary>
@@ -335,6 +338,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: HasTransformation</remarks>
 			/// </summary>
 			public HasTransformationPartProperty HasTransformationPart { get; } = new HasTransformationPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasTransformationPartProperty : IProperty
 			{
 				/// <summary>
@@ -386,9 +392,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
-			/// <summary>
-			﻿/// type of coordinate system.<br/><br />
-
+			
+			/// <summary>﻿type of coordinate system.<br /><br /><br />
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -442,9 +447,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: Uuid</remarks>
 			/// </summary>
 			public UuidProperty Uuid { get; } = new UuidProperty();
-			/// <summary>
-			﻿/// <i>UUID</i> for the coordinate system.<br/><br />
-
+			
+			/// <summary>﻿<i>UUID</i> for the coordinate system.<br /><br /><br />
 			/// </summary>
 			public sealed class UuidProperty : IProperty
 			{
@@ -498,9 +502,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// <remarks>Original Name: Description</remarks>
 			/// </summary>
 			public DescriptionProperty Description { get; } = new DescriptionProperty();
-			/// <summary>
-			﻿/// natural language description of the <see cref="CoordinateSystem">CoordinateSystem</see>.<br/><br />
-
+			
+			/// <summary>﻿natural language description of the <see cref="CoordinateSystem">CoordinateSystem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class DescriptionProperty : IProperty
 			{

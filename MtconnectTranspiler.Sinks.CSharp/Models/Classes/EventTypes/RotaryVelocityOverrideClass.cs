@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	/// <summary>
-	﻿/// <see cref="EventEnum.ROTARY_VELOCITY_OVERRIDE">EventEnum.ROTARY_VELOCITY_OVERRIDE</see><br /><br />This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref="Rotary">Rotary</see> type axis.<br/><br />
-
+	/// <summary>﻿<see cref="EventEnum.ROTARY_VELOCITY_OVERRIDE">EventEnum.ROTARY_VELOCITY_OVERRIDE</see><br /><br />This command represents a percentage change to the velocity calculated by a logic or motion program or set by a switch for a <see cref="Rotary">Rotary</see> type axis.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218440_585732_2163">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -46,10 +47,14 @@ This command represents a percentage change to the velocity calculated by a logi
 		/// <inheritdoc />
 		public RotaryVelocityOverrideClassProperties Properties { get; } = new RotaryVelocityOverrideClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="RotaryVelocityOverrideClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.EventClass.EventClassProperties" />.
+		/// </summary>
 		public class RotaryVelocityOverrideClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Result,
 				Type,
 			}.Concat(base.Properties).ToArray();
@@ -57,8 +62,11 @@ This command represents a percentage change to the velocity calculated by a logi
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Result</remarks>
 			/// </summary>
-			public ResultProperty Result { get; } = new ResultProperty();
-			public sealed class ResultProperty : IProperty
+			public new ResultProperty Result { get; } = new ResultProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ResultProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -108,8 +116,11 @@ This command represents a percentage change to the velocity calculated by a logi
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

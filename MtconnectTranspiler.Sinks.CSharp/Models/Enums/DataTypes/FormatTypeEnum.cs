@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579537199908_332626_9197">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579537199908_332626_9197">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FormatTypeEnum
 	{
-		/// <summary>
-		﻿/// document will confirm to the ISO 10303 Part 21 standard.<br /><br/><br />
-
+		/// <summary>﻿document will confirm to the ISO 10303 Part 21 standard.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EXPRESS,
-		/// <summary>
-		﻿/// document will be a text representation of the tool data.<br /><br/><br />
-
+		/// <summary>﻿document will be a text representation of the tool data.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TEXT,
-		/// <summary>
-		﻿/// document will be provided in an undefined format.<br/><br />
-
+		/// <summary>﻿document will be provided in an undefined format.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,9 +40,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		UNDEFINED,
-		/// <summary>
-		﻿/// default value for the definition. The content will be an <i>XML</i> document.<br/><br />
-
+		/// <summary>﻿default value for the definition. The content will be an <i>XML</i> document.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -57,9 +50,8 @@ namespace Mtconnect.DataTypes
 		XML,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579537199908_332626_9197">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579537199908_332626_9197">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FormatTypeEnumMetaClass : IEnum
@@ -70,6 +62,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(FormatTypeEnum);
 
 		/// <inheritdoc />
@@ -90,15 +83,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private EXPRESSValue _EXPRESS;
-		/// <summary>
-		﻿/// document will confirm to the ISO 10303 Part 21 standard.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EXPRESSValue" path="/summary" />
 		public EXPRESSValue EXPRESS => _EXPRESS ?? (_EXPRESS = new EXPRESSValue());
 
-		/// <summary>
-		﻿/// document will confirm to the ISO 10303 Part 21 standard.<br /><br/><br />
-
+		/// <summary>﻿document will confirm to the ISO 10303 Part 21 standard.<br /><br /><br /><br />
+		/// Value for FormatTypeEnum.<br/>
+		/// <br/>See also <seealso cref="FormatTypeEnum">FormatTypeEnum</seealso>
 		/// </summary>
 		public sealed class EXPRESSValue : IEnumInstance
 		{
@@ -119,15 +109,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private TEXTValue _TEXT;
-		/// <summary>
-		﻿/// document will be a text representation of the tool data.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TEXTValue" path="/summary" />
 		public TEXTValue TEXT => _TEXT ?? (_TEXT = new TEXTValue());
 
-		/// <summary>
-		﻿/// document will be a text representation of the tool data.<br /><br/><br />
-
+		/// <summary>﻿document will be a text representation of the tool data.<br /><br /><br /><br />
+		/// Value for FormatTypeEnum.<br/>
+		/// <br/>See also <seealso cref="FormatTypeEnum">FormatTypeEnum</seealso>
 		/// </summary>
 		public sealed class TEXTValue : IEnumInstance
 		{
@@ -148,15 +135,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private UNDEFINEDValue _UNDEFINED;
-		/// <summary>
-		﻿/// document will be provided in an undefined format.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UNDEFINEDValue" path="/summary" />
 		public UNDEFINEDValue UNDEFINED => _UNDEFINED ?? (_UNDEFINED = new UNDEFINEDValue());
 
-		/// <summary>
-		﻿/// document will be provided in an undefined format.<br/><br />
-
+		/// <summary>﻿document will be provided in an undefined format.<br /><br /><br />
+		/// Value for FormatTypeEnum.<br/>
+		/// <br/>See also <seealso cref="FormatTypeEnum">FormatTypeEnum</seealso>
 		/// </summary>
 		public sealed class UNDEFINEDValue : IEnumInstance
 		{
@@ -177,15 +161,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private XMLValue _XML;
-		/// <summary>
-		﻿/// default value for the definition. The content will be an <i>XML</i> document.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="XMLValue" path="/summary" />
 		public XMLValue XML => _XML ?? (_XML = new XMLValue());
 
-		/// <summary>
-		﻿/// default value for the definition. The content will be an <i>XML</i> document.<br/><br />
-
+		/// <summary>﻿default value for the definition. The content will be an <i>XML</i> document.<br /><br /><br />
+		/// Value for FormatTypeEnum.<br/>
+		/// <br/>See also <seealso cref="FormatTypeEnum">FormatTypeEnum</seealso>
 		/// </summary>
 		public sealed class XMLValue : IEnumInstance
 		{

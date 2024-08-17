@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_EF8EFACB_B3D8_4199_B5D5_84735797D463">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_EF8EFACB_B3D8_4199_B5D5_84735797D463">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FilterEnum
 	{
-		/// <summary>
-		﻿/// new value <b>MUST NOT</b> be reported for a data item unless the measured value has changed from the last reported value by at least the delta given as the value of this element.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value using the same units as the reported data.<br/><br />
-
+		/// <summary>﻿new value <b>MUST NOT</b> be reported for a data item unless the measured value has changed from the last reported value by at least the delta given as the value of this element.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value using the same units as the reported data.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MINIMUM_DELTA,
-		/// <summary>
-		﻿/// data reported for a data item is provided on a periodic basis. The <c>PERIOD</c> for reporting data is defined in the value of the <see cref="Filter">Filter</see>.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value reported in seconds representing the time between reported samples of the value of the data item.<br/><br />
-
+		/// <summary>﻿data reported for a data item is provided on a periodic basis. The <c>PERIOD</c> for reporting data is defined in the value of the <see cref="Filter">Filter</see>.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value reported in seconds representing the time between reported samples of the value of the data item.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		PERIOD,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_EF8EFACB_B3D8_4199_B5D5_84735797D463">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_EF8EFACB_B3D8_4199_B5D5_84735797D463">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FilterEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(FilterEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private MINIMUM_DELTAValue _MINIMUM_DELTA;
-		/// <summary>
-		﻿/// new value <b>MUST NOT</b> be reported for a data item unless the measured value has changed from the last reported value by at least the delta given as the value of this element.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value using the same units as the reported data.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MINIMUM_DELTAValue" path="/summary" />
 		public MINIMUM_DELTAValue MINIMUM_DELTA => _MINIMUM_DELTA ?? (_MINIMUM_DELTA = new MINIMUM_DELTAValue());
 
-		/// <summary>
-		﻿/// new value <b>MUST NOT</b> be reported for a data item unless the measured value has changed from the last reported value by at least the delta given as the value of this element.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value using the same units as the reported data.<br/><br />
-
+		/// <summary>﻿new value <b>MUST NOT</b> be reported for a data item unless the measured value has changed from the last reported value by at least the delta given as the value of this element.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value using the same units as the reported data.<br /><br /><br />
+		/// Value for FilterEnum.<br/>
+		/// <br/>See also <seealso cref="FilterEnum">FilterEnum</seealso>
 		/// </summary>
 		public sealed class MINIMUM_DELTAValue : IEnumInstance
 		{
@@ -99,15 +93,12 @@ The value of {{block(Filter)}} **MUST** be an absolute value using the same unit
 ";
 		}
 		private PERIODValue _PERIOD;
-		/// <summary>
-		﻿/// data reported for a data item is provided on a periodic basis. The <c>PERIOD</c> for reporting data is defined in the value of the <see cref="Filter">Filter</see>.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value reported in seconds representing the time between reported samples of the value of the data item.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PERIODValue" path="/summary" />
 		public PERIODValue PERIOD => _PERIOD ?? (_PERIOD = new PERIODValue());
 
-		/// <summary>
-		﻿/// data reported for a data item is provided on a periodic basis. The <c>PERIOD</c> for reporting data is defined in the value of the <see cref="Filter">Filter</see>.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value reported in seconds representing the time between reported samples of the value of the data item.<br/><br />
-
+		/// <summary>﻿data reported for a data item is provided on a periodic basis. The <c>PERIOD</c> for reporting data is defined in the value of the <see cref="Filter">Filter</see>.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value reported in seconds representing the time between reported samples of the value of the data item.<br /><br /><br />
+		/// Value for FilterEnum.<br/>
+		/// <br/>See also <seealso cref="FilterEnum">FilterEnum</seealso>
 		/// </summary>
 		public sealed class PERIODValue : IEnumInstance
 		{

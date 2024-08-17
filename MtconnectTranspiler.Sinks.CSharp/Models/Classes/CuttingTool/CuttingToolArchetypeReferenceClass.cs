@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool
 {
-	/// <summary>
-	﻿/// reference information about the <see cref="Asset.assetId">assetId in Asset</see> and/or the URL of the data source of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br/><br />
-
+	/// <summary>﻿reference information about the <see cref="Asset.assetId">assetId in Asset</see> and/or the URL of the data source of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_D4CAAB4A_DE00_489d_ACCA_F00FC7296F0C">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		/// <inheritdoc />
 		public CuttingToolArchetypeReferenceClassProperties Properties { get; } = new CuttingToolArchetypeReferenceClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="CuttingToolArchetypeReferenceClass" />.
+		/// </summary>
 		public class CuttingToolArchetypeReferenceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -52,9 +56,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// <remarks>Original Name: Source</remarks>
 			/// </summary>
 			public SourceProperty Source { get; } = new SourceProperty();
-			/// <summary>
-			﻿/// <i>URL</i> of the <see cref="CuttingToolArchetype">CuttingToolArchetype</see> <i>information model</i>.<br /><br/><br />
-
+			
+			/// <summary>﻿<i>URL</i> of the <see cref="CuttingToolArchetype">CuttingToolArchetype</see> <i>information model</i>.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class SourceProperty : IProperty
 			{
@@ -108,9 +111,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// <c>assetId</c> of the related <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br/><br />
-
+			
+			/// <summary>﻿<c>assetId</c> of the related <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{

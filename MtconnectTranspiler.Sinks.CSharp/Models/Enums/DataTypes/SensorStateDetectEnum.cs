@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1677589978293_52377_922">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1677589978293_52377_922">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum SensorStateDetectEnum
 	{
-		/// <summary>
-		﻿/// sensor is active and the threshold has been met.<br/><br />
-
+		/// <summary>﻿sensor is active and the threshold has been met.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DETECTED,
-		/// <summary>
-		﻿/// sensor is active and ready but the threshold has not been met.<br/><br />
-
+		/// <summary>﻿sensor is active and ready but the threshold has not been met.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		NOT_DETECTED,
-		/// <summary>
-		﻿/// sensor is active, but the state cannot be determined.<br /><br />> Note: unknown covers situations where the sensor reading is unstable.<br/><br />
-
+		/// <summary>﻿sensor is active, but the state cannot be determined.<br /><br />&gt; Note: unknown covers situations where the sensor reading is unstable.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,8 @@ namespace Mtconnect.DataTypes
 		UNKNOWN,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1677589978293_52377_922">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1677589978293_52377_922">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SensorStateDetectEnumMetaClass : IEnum
@@ -60,6 +54,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(SensorStateDetectEnum);
 
 		/// <inheritdoc />
@@ -79,15 +74,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private DETECTEDValue _DETECTED;
-		/// <summary>
-		﻿/// sensor is active and the threshold has been met.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DETECTEDValue" path="/summary" />
 		public DETECTEDValue DETECTED => _DETECTED ?? (_DETECTED = new DETECTEDValue());
 
-		/// <summary>
-		﻿/// sensor is active and the threshold has been met.<br/><br />
-
+		/// <summary>﻿sensor is active and the threshold has been met.<br /><br /><br />
+		/// Value for SensorStateDetectEnum.<br/>
+		/// <br/>See also <seealso cref="SensorStateDetectEnum">SensorStateDetectEnum</seealso>
 		/// </summary>
 		public sealed class DETECTEDValue : IEnumInstance
 		{
@@ -108,15 +100,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private NOT_DETECTEDValue _NOT_DETECTED;
-		/// <summary>
-		﻿/// sensor is active and ready but the threshold has not been met.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NOT_DETECTEDValue" path="/summary" />
 		public NOT_DETECTEDValue NOT_DETECTED => _NOT_DETECTED ?? (_NOT_DETECTED = new NOT_DETECTEDValue());
 
-		/// <summary>
-		﻿/// sensor is active and ready but the threshold has not been met.<br/><br />
-
+		/// <summary>﻿sensor is active and ready but the threshold has not been met.<br /><br /><br />
+		/// Value for SensorStateDetectEnum.<br/>
+		/// <br/>See also <seealso cref="SensorStateDetectEnum">SensorStateDetectEnum</seealso>
 		/// </summary>
 		public sealed class NOT_DETECTEDValue : IEnumInstance
 		{
@@ -137,15 +126,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private UNKNOWNValue _UNKNOWN;
-		/// <summary>
-		﻿/// sensor is active, but the state cannot be determined.<br /><br />> Note: unknown covers situations where the sensor reading is unstable.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UNKNOWNValue" path="/summary" />
 		public UNKNOWNValue UNKNOWN => _UNKNOWN ?? (_UNKNOWN = new UNKNOWNValue());
 
-		/// <summary>
-		﻿/// sensor is active, but the state cannot be determined.<br /><br />> Note: unknown covers situations where the sensor reading is unstable.<br/><br />
-
+		/// <summary>﻿sensor is active, but the state cannot be determined.<br /><br />&gt; Note: unknown covers situations where the sensor reading is unstable.<br /><br /><br />
+		/// Value for SensorStateDetectEnum.<br/>
+		/// <br/>See also <seealso cref="SensorStateDetectEnum">SensorStateDetectEnum</seealso>
 		/// </summary>
 		public sealed class UNKNOWNValue : IEnumInstance
 		{

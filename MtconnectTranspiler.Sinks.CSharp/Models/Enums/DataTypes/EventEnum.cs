@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398379726_606068_12802">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398379726_606068_12802">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum EventEnum
 	{
-		/// <summary>
-		﻿/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br/><br />
-
+		/// <summary>﻿set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVE_AXES,
-		/// <summary>
-		﻿/// operational state of an apparatus for moving or controlling a mechanism or system.<br/><br />
-
+		/// <summary>﻿operational state of an apparatus for moving or controlling a mechanism or system.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +32,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTUATOR_STATE,
-		/// <summary>
-		﻿/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.<br/><br />
-
+		/// <summary>﻿<b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -47,9 +42,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		ALARM,
-		/// <summary>
-		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br/><br />
-
+		/// <summary>﻿<see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -57,9 +50,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ASSET_CHANGED,
-		/// <summary>
-		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br/><br />
-
+		/// <summary>﻿<see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -67,9 +58,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ASSET_REMOVED,
-		/// <summary>
-		﻿/// <i>agent</i>'s ability to communicate with the data source.<br/><br />
-
+		/// <summary>﻿<i>agent</i>'s ability to communicate with the data source.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -77,9 +66,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		AVAILABILITY,
-		/// <summary>
-		﻿/// describes the way the axes will be associated to each other. <br />  <br />This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.<br/><br />
-
+		/// <summary>﻿describes the way the axes will be associated to each other. <br />  <br />This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -87,9 +74,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		AXIS_COUPLING,
-		/// <summary>
-		﻿/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.<br/><br />
-
+		/// <summary>﻿value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -97,9 +82,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		AXIS_FEEDRATE_OVERRIDE,
-		/// <summary>
-		﻿/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.<br/><br />
-
+		/// <summary>﻿state of the axis lockout function when power has been removed and the axis is allowed to move freely.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -107,9 +90,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		AXIS_INTERLOCK,
-		/// <summary>
-		﻿/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.<br/><br />
-
+		/// <summary>﻿state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -117,9 +98,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		AXIS_STATE,
-		/// <summary>
-		﻿/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.<br/><br />
-
+		/// <summary>﻿line of code or command being executed by a <see cref="Controller">Controller</see> entity.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -127,9 +106,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BLOCK,
-		/// <summary>
-		﻿/// total count of the number of blocks of program code that have been executed since execution started.<br/><br />
-
+		/// <summary>﻿total count of the number of blocks of program code that have been executed since execution started.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -137,9 +114,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BLOCK_COUNT,
-		/// <summary>
-		﻿/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.<br/><br />
-
+		/// <summary>﻿state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -147,9 +122,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHUCK_INTERLOCK,
-		/// <summary>
-		﻿/// operating state of a mechanism that holds a part or stock material during a manufacturing process. <br /><br />It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.<br/><br />
-
+		/// <summary>﻿operating state of a mechanism that holds a part or stock material during a manufacturing process. <br /><br />It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -157,9 +130,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHUCK_STATE,
-		/// <summary>
-		﻿/// programmatic code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1</i>.<br/><br />
-
+		/// <summary>﻿programmatic code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -169,9 +140,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		CODE,
-		/// <summary>
-		﻿/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.<br/><br />
-
+		/// <summary>﻿operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -179,9 +148,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COMPOSITION_STATE,
-		/// <summary>
-		﻿/// current mode of the <see cref="Controller">Controller</see> component.<br/><br />
-
+		/// <summary>﻿current mode of the <see cref="Controller">Controller</see> component.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -189,9 +156,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CONTROLLER_MODE,
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of a piece of equipment.<br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -199,9 +164,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CONTROLLER_MODE_OVERRIDE,
-		/// <summary>
-		﻿/// set of associated axes.<br/><br />
-
+		/// <summary>﻿set of associated axes.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -209,9 +172,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COUPLED_AXES,
-		/// <summary>
-		﻿/// time and date code associated with a material or other physical item.<br/><br />
-
+		/// <summary>﻿time and date code associated with a material or other physical item.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -219,9 +180,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DATE_CODE,
-		/// <summary>
-		﻿/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.<br/><br />
-
+		/// <summary>﻿identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -229,9 +188,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DEVICE_UUID,
-		/// <summary>
-		﻿/// direction of motion.<br/><br />
-
+		/// <summary>﻿direction of motion.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -239,9 +196,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DIRECTION,
-		/// <summary>
-		﻿/// operational state of a <see cref="Door">Door</see> component or composition element.<br/><br />
-
+		/// <summary>﻿operational state of a <see cref="Door">Door</see> component or composition element.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -249,9 +204,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DOOR_STATE,
-		/// <summary>
-		﻿/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.<br/><br />
-
+		/// <summary>﻿state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -259,9 +212,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EMERGENCY_STOP,
-		/// <summary>
-		﻿/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.<br/><br />
-
+		/// <summary>﻿indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -269,9 +220,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		END_OF_BAR,
-		/// <summary>
-		﻿/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.<br/><br />
-
+		/// <summary>﻿indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -279,9 +228,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EQUIPMENT_MODE,
-		/// <summary>
-		﻿/// operating state of a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿operating state of a <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -289,9 +236,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		EXECUTION,
-		/// <summary>
-		﻿/// current intended production status of the <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿current intended production status of the <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -299,9 +244,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FUNCTIONAL_MODE,
-		/// <summary>
-		﻿/// hardness of a material.<br/><br />
-
+		/// <summary>﻿hardness of a material.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -309,9 +252,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		HARDNESS,
-		/// <summary>
-		﻿/// current line of code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.4.0</i>.<br/><br />
-
+		/// <summary>﻿current line of code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.4.0</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -321,9 +262,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 		LINE,
-		/// <summary>
-		﻿/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.<br/><br />
-
+		/// <summary>﻿identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -331,9 +270,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LINE_LABEL,
-		/// <summary>
-		﻿/// position of a block of program code within a control program.<br/><br />
-
+		/// <summary>﻿position of a block of program code within a control program.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -341,9 +278,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LINE_NUMBER,
-		/// <summary>
-		﻿/// identifier of a material used or consumed in the manufacturing process.<br/><br />
-
+		/// <summary>﻿identifier of a material used or consumed in the manufacturing process.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -351,9 +286,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MATERIAL,
-		/// <summary>
-		﻿/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.<br/><br />
-
+		/// <summary>﻿identifies the layers of material applied to a part or product as part of an additive manufacturing process.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -361,9 +294,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MATERIAL_LAYER,
-		/// <summary>
-		﻿/// information to be transferred from a piece of equipment to a client software application.<br/><br />
-
+		/// <summary>﻿information to be transferred from a piece of equipment to a client software application.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -371,9 +302,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MESSAGE,
-		/// <summary>
-		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
-
+		/// <summary>﻿identifier of the person currently responsible for operating the piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -381,9 +310,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OPERATOR_ID,
-		/// <summary>
-		﻿/// identifier for a pallet.<br/><br />
-
+		/// <summary>﻿identifier for a pallet.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -391,9 +318,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PALLET_ID,
-		/// <summary>
-		﻿/// aggregate count of parts.<br/><br />
-
+		/// <summary>﻿aggregate count of parts.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -401,9 +326,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_COUNT,
-		/// <summary>
-		﻿/// indication designating whether a part or work piece has been detected or is present.<br/><br />
-
+		/// <summary>﻿indication designating whether a part or work piece has been detected or is present.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -411,9 +334,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_DETECT,
-		/// <summary>
-		﻿/// identifier of a part in a manufacturing operation.<br/><br />
-
+		/// <summary>﻿identifier of a part in a manufacturing operation.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -421,9 +342,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_ID,
-		/// <summary>
-		﻿/// identifier of a part or product moving through the manufacturing process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.7</i>. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.<br/><br />
-
+		/// <summary>﻿identifier of a part or product moving through the manufacturing process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.7</i>. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -433,9 +352,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.7 according to https://model.mtconnect.org/#_Version_1.7")]
 		PART_NUMBER,
-		/// <summary>
-		﻿/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.<br/><br />
-
+		/// <summary>﻿value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -443,9 +360,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PATH_FEEDRATE_OVERRIDE,
-		/// <summary>
-		﻿/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.<br/><br />
-
+		/// <summary>﻿describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -453,9 +368,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PATH_MODE,
-		/// <summary>
-		﻿/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.<br/><br />
-
+		/// <summary>﻿indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -463,9 +376,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		POWER_STATE,
-		/// <summary>
-		﻿/// status of the <see cref="Component">Component</see>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1.0</i>.<br/><br />
-
+		/// <summary>﻿status of the <see cref="Component">Component</see>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1.0</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -475,9 +386,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 		POWER_STATUS,
-		/// <summary>
-		﻿/// time and date associated with an activity or event.<br/><br />
-
+		/// <summary>﻿time and date associated with an activity or event.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -485,9 +394,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS_TIME,
-		/// <summary>
-		﻿/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.<br/><br />
-
+		/// <summary>﻿name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -495,9 +402,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM,
-		/// <summary>
-		﻿/// comment or non-executable statement in the control program.<br/><br />
-
+		/// <summary>﻿comment or non-executable statement in the control program.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -505,9 +410,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_COMMENT,
-		/// <summary>
-		﻿/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.<br /><br />A program may be edited while another is executed.<br/><br />
-
+		/// <summary>﻿indication of the status of the <see cref="Controller">Controller</see> components program editing mode.<br /><br />A program may be edited while another is executed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -515,9 +418,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_EDIT,
-		/// <summary>
-		﻿/// name of the program being edited. <br /><br />This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. <br/><br />
-
+		/// <summary>﻿name of the program being edited. <br /><br />This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -525,9 +426,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_EDIT_NAME,
-		/// <summary>
-		﻿/// non-executable header section of the control program.<br/><br />
-
+		/// <summary>﻿non-executable header section of the control program.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -535,9 +434,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_HEADER,
-		/// <summary>
-		﻿/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.<br/><br />
-
+		/// <summary>﻿<i>URI</i> for the source file associated with <see cref="Program">Program</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -545,9 +442,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_LOCATION,
-		/// <summary>
-		﻿/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.<br/><br />
-
+		/// <summary>﻿defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -555,9 +450,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_LOCATION_TYPE,
-		/// <summary>
-		﻿/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.<br/><br />
-
+		/// <summary>﻿indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -565,9 +458,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROGRAM_NEST_LEVEL,
-		/// <summary>
-		﻿/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.<br/><br />
-
+		/// <summary>﻿current operating mode for a <see cref="Rotary">Rotary</see> type axis.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -575,9 +466,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ROTARY_MODE,
-		/// <summary>
-		﻿/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.<br/><br />
-
+		/// <summary>﻿percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -585,9 +474,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ROTARY_VELOCITY_OVERRIDE,
-		/// <summary>
-		﻿/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.<br/><br />
-
+		/// <summary>﻿serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -595,9 +482,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SERIAL_NUMBER,
-		/// <summary>
-		﻿/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.<br/><br />
-
+		/// <summary>﻿indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -605,9 +490,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SPINDLE_INTERLOCK,
-		/// <summary>
-		﻿/// identifier of an individual tool asset.<br/><br />
-
+		/// <summary>﻿identifier of an individual tool asset.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -615,9 +498,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TOOL_ASSET_ID,
-		/// <summary>
-		﻿/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.<br/><br />
-
+		/// <summary>﻿identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -625,9 +506,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TOOL_GROUP,
-		/// <summary>
-		﻿/// identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br/><br />
-
+		/// <summary>﻿identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -637,9 +516,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v1.2 according to https://model.mtconnect.org/#_Version_1.2")]
 		TOOL_ID,
-		/// <summary>
-		﻿/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.<br/><br />
-
+		/// <summary>﻿identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -647,9 +524,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TOOL_NUMBER,
-		/// <summary>
-		﻿/// reference to the tool offset variables applied to the active cutting tool.<br/><br />
-
+		/// <summary>﻿reference to the tool offset variables applied to the active cutting tool.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -657,9 +532,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TOOL_OFFSET,
-		/// <summary>
-		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
-
+		/// <summary>﻿identifier of the person currently responsible for operating the piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -667,9 +540,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		USER,
-		/// <summary>
-		﻿/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.<br/><br />
-
+		/// <summary>﻿data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -677,9 +548,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VARIABLE,
-		/// <summary>
-		﻿/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.<br/><br />
-
+		/// <summary>﻿indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -687,9 +556,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WAIT_STATE,
-		/// <summary>
-		﻿/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.<br/><br />
-
+		/// <summary>﻿identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -697,9 +564,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WIRE,
-		/// <summary>
-		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.<br/><br />
-
+		/// <summary>﻿identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -707,9 +572,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WORKHOLDING_ID,
-		/// <summary>
-		﻿/// reference to offset variables for a work piece or part.<br/><br />
-
+		/// <summary>﻿reference to offset variables for a work piece or part.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -717,9 +580,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WORK_OFFSET,
-		/// <summary>
-		﻿/// Operating System (OS) of a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿Operating System (OS) of a <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -727,9 +588,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OPERATING_SYSTEM,
-		/// <summary>
-		﻿/// embedded software of a <see cref="Component">Component</see><br />.<br/><br />
-
+		/// <summary>﻿embedded software of a <see cref="Component">Component</see><br />.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -737,9 +596,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FIRMWARE,
-		/// <summary>
-		﻿/// application on a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿application on a <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -747,9 +604,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		APPLICATION,
-		/// <summary>
-		﻿/// software library on a <see cref="Component">Component</see><br/><br />
-
+		/// <summary>﻿software library on a <see cref="Component">Component</see><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -757,9 +612,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LIBRARY,
-		/// <summary>
-		﻿/// hardware of a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿hardware of a <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -767,9 +620,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		HARDWARE,
-		/// <summary>
-		﻿/// network details of a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿network details of a <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -777,9 +628,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		NETWORK,
-		/// <summary>
-		﻿/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
-
+		/// <summary>﻿three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -787,9 +636,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ROTATION,
-		/// <summary>
-		﻿/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
-
+		/// <summary>﻿three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -797,9 +644,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TRANSLATION,
-		/// <summary>
-		﻿/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of new device added to an <i>MTConnect Agent</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -807,9 +652,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DEVICE_ADDED,
-		/// <summary>
-		﻿/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -817,9 +660,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DEVICE_REMOVED,
-		/// <summary>
-		﻿/// <i>UUID</i> of the device whose <i>metadata</i> has changed.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of the device whose <i>metadata</i> has changed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -827,9 +668,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DEVICE_CHANGED,
-		/// <summary>
-		﻿/// status of the connection between an <i>adapter</i> and an <i>agent</i>.<br/><br />
-
+		/// <summary>﻿status of the connection between an <i>adapter</i> and an <i>agent</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -837,9 +676,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CONNECTION_STATUS,
-		/// <summary>
-		﻿/// originator’s software version of the <i>adapter</i>.<br/><br />
-
+		/// <summary>﻿originator’s software version of the <i>adapter</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -847,9 +684,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ADAPTER_SOFTWARE_VERSION,
-		/// <summary>
-		﻿/// <i>URI</i> of the <i>adapter</i>.<br/><br />
-
+		/// <summary>﻿<i>URI</i> of the <i>adapter</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -857,9 +692,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ADAPTER_URI,
-		/// <summary>
-		﻿/// reference version of the MTConnect Standard supported by the <i>adapter</i>.<br/><br />
-
+		/// <summary>﻿reference version of the MTConnect Standard supported by the <i>adapter</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -867,9 +700,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MTCONNECT_VERSION,
-		/// <summary>
-		﻿/// <i>attachment</i> between a sensor and an entity.<br/><br />
-
+		/// <summary>﻿<i>attachment</i> between a sensor and an entity.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -877,9 +708,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SENSOR_ATTACHMENT,
-		/// <summary>
-		﻿/// state or condition of a part.<br/><br />
-
+		/// <summary>﻿state or condition of a part.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -887,9 +716,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_STATUS,
-		/// <summary>
-		﻿/// identifier of a process being executed by the device.<br/><br />
-
+		/// <summary>﻿identifier of a process being executed by the device.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -897,9 +724,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS_OCCURRENCE_ID,
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.<br/><br />
-
+		/// <summary>﻿identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -907,9 +732,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS_AGGREGATE_ID,
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a class of processes or process definition.<br /><br/><br />
-
+		/// <summary>﻿identifier given to link the individual occurrence to a class of processes or process definition.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -917,9 +740,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS_KIND_ID,
-		/// <summary>
-		﻿/// identifier given to a collection of individual parts. <br/><br />
-
+		/// <summary>﻿identifier given to a collection of individual parts. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -927,9 +748,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_GROUP_ID,
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.<br/><br />
-
+		/// <summary>﻿identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -937,9 +756,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_KIND_ID,
-		/// <summary>
-		﻿/// identifier given to a distinguishable, individual part. <br/><br />
-
+		/// <summary>﻿identifier given to a distinguishable, individual part. <br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -947,9 +764,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_UNIQUE_ID,
-		/// <summary>
-		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br/><br />
-
+		/// <summary>﻿set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -957,9 +772,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CONTROL_LIMIT,
-		/// <summary>
-		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br/><br />
-
+		/// <summary>﻿set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -967,9 +780,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SPECIFICATION_LIMIT,
-		/// <summary>
-		﻿/// set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br/><br />
-
+		/// <summary>﻿set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -977,9 +788,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ALARM_LIMIT,
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -987,9 +796,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LOAD_COUNT,
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -997,9 +804,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		UNLOAD_COUNT,
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1007,9 +812,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TRANSFER_COUNT,
-		/// <summary>
-		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1017,9 +820,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ACTIVATION_COUNT,
-		/// <summary>
-		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1027,9 +828,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		DEACTIVATION_COUNT,
-		/// <summary>
-		﻿/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1037,9 +836,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CYCLE_COUNT,
-		/// <summary>
-		﻿/// state of a valve is one of open, closed, or transitioning between the states.<br/><br />
-
+		/// <summary>﻿state of a valve is one of open, closed, or transitioning between the states.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1047,9 +844,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		VALVE_STATE,
-		/// <summary>
-		﻿/// state or operating mode of a <see cref="Lock">Lock</see>.<br/><br />
-
+		/// <summary>﻿state or operating mode of a <see cref="Lock">Lock</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1057,9 +852,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LOCK_STATE,
-		/// <summary>
-		﻿/// particular condition of the process occurrence at a specific time.<br/><br />
-
+		/// <summary>﻿particular condition of the process occurrence at a specific time.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1067,9 +860,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PROCESS_STATE,
-		/// <summary>
-		﻿/// particular condition of the part occurrence at a specific time.<br/><br />
-
+		/// <summary>﻿particular condition of the part occurrence at a specific time.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1077,9 +868,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_PROCESSING_STATE,
-		/// <summary>
-		﻿/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.<br/><br />
-
+		/// <summary>﻿state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1087,9 +876,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		OPERATING_MODE,
-		/// <summary>
-		﻿/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.<br/><br />
-
+		/// <summary>﻿<i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1097,9 +884,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ASSET_COUNT,
-		/// <summary>
-		﻿/// actions or activities to be performed in support of a piece of equipment.<br/><br />
-
+		/// <summary>﻿actions or activities to be performed in support of a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1107,9 +892,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MAINTENANCE_LIST,
-		/// <summary>
-		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br/><br />
-
+		/// <summary>﻿identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1117,9 +900,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FIXTURE_ID,
-		/// <summary>
-		﻿/// interpretation of <c>PART_COUNT</c>.<br/><br />
-
+		/// <summary>﻿interpretation of <c>PART_COUNT</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1127,9 +908,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		PART_COUNT_TYPE,
-		/// <summary>
-		﻿/// time provided by a timing device at a specific point in time.<br/><br />
-
+		/// <summary>﻿time provided by a timing device at a specific point in time.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1137,9 +916,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CLOCK_TIME,
-		/// <summary>
-		﻿/// name of the host computer supplying data.<br/><br />
-
+		/// <summary>﻿name of the host computer supplying data.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1147,9 +924,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		HOST_NAME,
-		/// <summary>
-		﻿/// number of the TCP/IP or UDP/IP port for the connection endpoint.<br/><br />
-
+		/// <summary>﻿number of the TCP/IP or UDP/IP port for the connection endpoint.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1157,9 +932,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		NETWORK_PORT,
-		/// <summary>
-		﻿/// indication designating whether a leak has been detected.<br/><br />
-
+		/// <summary>﻿indication designating whether a leak has been detected.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1167,9 +940,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LEAK_DETECT,
-		/// <summary>
-		﻿/// present status of the battery.<br/><br />
-
+		/// <summary>﻿present status of the battery.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1177,9 +948,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		BATTERY_STATE,
-		/// <summary>
-		﻿/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1187,9 +956,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FEATURE_PERSISTENT_ID,
-		/// <summary>
-		﻿/// detection result of a sensor.<br/><br />
-
+		/// <summary>﻿detection result of a sensor.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1197,9 +964,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SENSOR_STATE,
-		/// <summary>
-		﻿/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.<br/><br />
-
+		/// <summary>﻿<see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1207,9 +972,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		COMPONENT_DATA,
-		/// <summary>
-		﻿/// properties of each addressable work offset.<br/><br />
-
+		/// <summary>﻿properties of each addressable work offset.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1217,9 +980,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		WORK_OFFSETS,
-		/// <summary>
-		﻿/// properties of each addressable tool offset.<br/><br />
-
+		/// <summary>﻿properties of each addressable tool offset.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1227,9 +988,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TOOL_OFFSETS,
-		/// <summary>
-		﻿/// assessing elements of a <i>feature</i>.<br/><br />
-
+		/// <summary>﻿assessing elements of a <i>feature</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1237,9 +996,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		FEATURE_MEASUREMENT,
-		/// <summary>
-		﻿/// <i>UUID</i> of the <i>characteristic</i>.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of the <i>characteristic</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1247,9 +1004,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHARACTERISTIC_PERSISTENT_ID,
-		/// <summary>
-		﻿/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br/><br />
-
+		/// <summary>﻿class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1257,9 +1012,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MEASUREMENT_TYPE,
-		/// <summary>
-		﻿/// measurement based on the measurement type.<br/><br />
-
+		/// <summary>﻿measurement based on the measurement type.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1267,9 +1020,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MEASUREMENT_VALUE,
-		/// <summary>
-		﻿/// engineering units of the measurement.<br/><br />
-
+		/// <summary>﻿engineering units of the measurement.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1277,9 +1028,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		MEASUREMENT_UNITS,
-		/// <summary>
-		﻿/// pass/fail result of the measurement.<br/><br />
-
+		/// <summary>﻿pass/fail result of the measurement.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1287,9 +1036,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CHARACTERISTIC_STATUS,
-		/// <summary>
-		﻿/// method used to compute <i>standard uncertainty</i>.<br/><br />
-
+		/// <summary>﻿method used to compute <i>standard uncertainty</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1297,9 +1044,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		UNCERTAINTY_TYPE,
-		/// <summary>
-		﻿/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.<br/><br />
-
+		/// <summary>﻿<i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1307,9 +1052,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		UNCERTAINTY,
-		/// <summary>
-		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br/><br />
-
+		/// <summary>﻿set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1317,9 +1060,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		SPECIFICATION_LIMITS,
-		/// <summary>
-		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br/><br />
-
+		/// <summary>﻿set of limits used to indicate whether a process variable is stable and in control.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1327,9 +1068,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		CONTROL_LIMITS,
-		/// <summary>
-		﻿/// set of limits used to trigger warning or alarm indicators.<br/><br />
-
+		/// <summary>﻿set of limits used to trigger warning or alarm indicators.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1337,9 +1076,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ALARM_LIMITS,
-		/// <summary>
-		﻿/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem.indices">indices in CuttingItem</see> of the currently active cutting tool edge.<br/><br />
-
+		/// <summary>﻿references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem.indices">indices in CuttingItem</see> of the currently active cutting tool edge.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1347,9 +1084,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		TOOL_CUTTING_ITEM,
-		/// <summary>
-		﻿/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso><br/><br />
-
+		/// <summary>﻿structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1357,9 +1092,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		LOCATION_ADDRESS,
-		/// <summary>
-		﻿/// active energy source for the <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿active energy source for the <see cref="Component">Component</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1369,9 +1102,8 @@ namespace Mtconnect.DataTypes
 		POWER_SOURCE,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398379726_606068_12802">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398379726_606068_12802">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class EventEnumMetaClass : IEnum
@@ -1382,6 +1114,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(EventEnum);
 
 		/// <inheritdoc />
@@ -1532,15 +1265,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ACTIVE_AXESValue _ACTIVE_AXES;
-		/// <summary>
-		﻿/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVE_AXESValue" path="/summary" />
 		public ACTIVE_AXESValue ACTIVE_AXES => _ACTIVE_AXES ?? (_ACTIVE_AXES = new ACTIVE_AXESValue());
 
-		/// <summary>
-		﻿/// set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br/><br />
-
+		/// <summary>﻿set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVE_AXESValue : IEnumInstance
 		{
@@ -1561,15 +1291,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ACTUATOR_STATEValue _ACTUATOR_STATE;
-		/// <summary>
-		﻿/// operational state of an apparatus for moving or controlling a mechanism or system.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTUATOR_STATEValue" path="/summary" />
 		public ACTUATOR_STATEValue ACTUATOR_STATE => _ACTUATOR_STATE ?? (_ACTUATOR_STATE = new ACTUATOR_STATEValue());
 
-		/// <summary>
-		﻿/// operational state of an apparatus for moving or controlling a mechanism or system.<br/><br />
-
+		/// <summary>﻿operational state of an apparatus for moving or controlling a mechanism or system.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ACTUATOR_STATEValue : IEnumInstance
 		{
@@ -1590,15 +1317,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ALARMValue _ALARM;
-		/// <summary>
-		﻿/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ALARMValue" path="/summary" />
 		public ALARMValue ALARM => _ALARM ?? (_ALARM = new ALARMValue());
 
-		/// <summary>
-		﻿/// <b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.<br/><br />
-
+		/// <summary>﻿<b>DEPRECATED:</b> Replaced with <c>CONDITION</c> category data items in Version 1.1.0.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ALARMValue : IEnumInstance
 		{
@@ -1619,15 +1343,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ASSET_CHANGEDValue _ASSET_CHANGED;
-		/// <summary>
-		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ASSET_CHANGEDValue" path="/summary" />
 		public ASSET_CHANGEDValue ASSET_CHANGED => _ASSET_CHANGED ?? (_ASSET_CHANGED = new ASSET_CHANGEDValue());
 
-		/// <summary>
-		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br/><br />
-
+		/// <summary>﻿<see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ASSET_CHANGEDValue : IEnumInstance
 		{
@@ -1648,15 +1369,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private ASSET_REMOVEDValue _ASSET_REMOVED;
-		/// <summary>
-		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ASSET_REMOVEDValue" path="/summary" />
 		public ASSET_REMOVEDValue ASSET_REMOVED => _ASSET_REMOVED ?? (_ASSET_REMOVED = new ASSET_REMOVEDValue());
 
-		/// <summary>
-		﻿/// <see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br/><br />
-
+		/// <summary>﻿<see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ASSET_REMOVEDValue : IEnumInstance
 		{
@@ -1677,15 +1395,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private AVAILABILITYValue _AVAILABILITY;
-		/// <summary>
-		﻿/// <i>agent</i>'s ability to communicate with the data source.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="AVAILABILITYValue" path="/summary" />
 		public AVAILABILITYValue AVAILABILITY => _AVAILABILITY ?? (_AVAILABILITY = new AVAILABILITYValue());
 
-		/// <summary>
-		﻿/// <i>agent</i>'s ability to communicate with the data source.<br/><br />
-
+		/// <summary>﻿<i>agent</i>'s ability to communicate with the data source.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class AVAILABILITYValue : IEnumInstance
 		{
@@ -1706,15 +1421,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private AXIS_COUPLINGValue _AXIS_COUPLING;
-		/// <summary>
-		﻿/// describes the way the axes will be associated to each other. <br />  <br />This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="AXIS_COUPLINGValue" path="/summary" />
 		public AXIS_COUPLINGValue AXIS_COUPLING => _AXIS_COUPLING ?? (_AXIS_COUPLING = new AXIS_COUPLINGValue());
 
-		/// <summary>
-		﻿/// describes the way the axes will be associated to each other. <br />  <br />This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.<br/><br />
-
+		/// <summary>﻿describes the way the axes will be associated to each other. <br />  <br />This is used in conjunction with <c>COUPLED_AXES</c> to indicate the way they are interacting.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class AXIS_COUPLINGValue : IEnumInstance
 		{
@@ -1737,15 +1449,12 @@ This is used in conjunction with `COUPLED_AXES` to indicate the way they are int
 ";
 		}
 		private AXIS_FEEDRATE_OVERRIDEValue _AXIS_FEEDRATE_OVERRIDE;
-		/// <summary>
-		﻿/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="AXIS_FEEDRATE_OVERRIDEValue" path="/summary" />
 		public AXIS_FEEDRATE_OVERRIDEValue AXIS_FEEDRATE_OVERRIDE => _AXIS_FEEDRATE_OVERRIDE ?? (_AXIS_FEEDRATE_OVERRIDE = new AXIS_FEEDRATE_OVERRIDEValue());
 
-		/// <summary>
-		﻿/// value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.<br/><br />
-
+		/// <summary>﻿value of a signal or calculation issued to adjust the feedrate of an individual linear type axis.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class AXIS_FEEDRATE_OVERRIDEValue : IEnumInstance
 		{
@@ -1766,15 +1475,12 @@ This is used in conjunction with `COUPLED_AXES` to indicate the way they are int
 ";
 		}
 		private AXIS_INTERLOCKValue _AXIS_INTERLOCK;
-		/// <summary>
-		﻿/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="AXIS_INTERLOCKValue" path="/summary" />
 		public AXIS_INTERLOCKValue AXIS_INTERLOCK => _AXIS_INTERLOCK ?? (_AXIS_INTERLOCK = new AXIS_INTERLOCKValue());
 
-		/// <summary>
-		﻿/// state of the axis lockout function when power has been removed and the axis is allowed to move freely.<br/><br />
-
+		/// <summary>﻿state of the axis lockout function when power has been removed and the axis is allowed to move freely.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class AXIS_INTERLOCKValue : IEnumInstance
 		{
@@ -1795,15 +1501,12 @@ This is used in conjunction with `COUPLED_AXES` to indicate the way they are int
 ";
 		}
 		private AXIS_STATEValue _AXIS_STATE;
-		/// <summary>
-		﻿/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="AXIS_STATEValue" path="/summary" />
 		public AXIS_STATEValue AXIS_STATE => _AXIS_STATE ?? (_AXIS_STATE = new AXIS_STATEValue());
 
-		/// <summary>
-		﻿/// state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.<br/><br />
-
+		/// <summary>﻿state of a <see cref="Linear">Linear</see> or <see cref="Rotary">Rotary</see> component representing an axis.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class AXIS_STATEValue : IEnumInstance
 		{
@@ -1824,15 +1527,12 @@ This is used in conjunction with `COUPLED_AXES` to indicate the way they are int
 ";
 		}
 		private BLOCKValue _BLOCK;
-		/// <summary>
-		﻿/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BLOCKValue" path="/summary" />
 		public BLOCKValue BLOCK => _BLOCK ?? (_BLOCK = new BLOCKValue());
 
-		/// <summary>
-		﻿/// line of code or command being executed by a <see cref="Controller">Controller</see> entity.<br/><br />
-
+		/// <summary>﻿line of code or command being executed by a <see cref="Controller">Controller</see> entity.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class BLOCKValue : IEnumInstance
 		{
@@ -1853,15 +1553,12 @@ This is used in conjunction with `COUPLED_AXES` to indicate the way they are int
 ";
 		}
 		private BLOCK_COUNTValue _BLOCK_COUNT;
-		/// <summary>
-		﻿/// total count of the number of blocks of program code that have been executed since execution started.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BLOCK_COUNTValue" path="/summary" />
 		public BLOCK_COUNTValue BLOCK_COUNT => _BLOCK_COUNT ?? (_BLOCK_COUNT = new BLOCK_COUNTValue());
 
-		/// <summary>
-		﻿/// total count of the number of blocks of program code that have been executed since execution started.<br/><br />
-
+		/// <summary>﻿total count of the number of blocks of program code that have been executed since execution started.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class BLOCK_COUNTValue : IEnumInstance
 		{
@@ -1882,15 +1579,12 @@ This is used in conjunction with `COUPLED_AXES` to indicate the way they are int
 ";
 		}
 		private CHUCK_INTERLOCKValue _CHUCK_INTERLOCK;
-		/// <summary>
-		﻿/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHUCK_INTERLOCKValue" path="/summary" />
 		public CHUCK_INTERLOCKValue CHUCK_INTERLOCK => _CHUCK_INTERLOCK ?? (_CHUCK_INTERLOCK = new CHUCK_INTERLOCKValue());
 
-		/// <summary>
-		﻿/// state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.<br/><br />
-
+		/// <summary>﻿state of an interlock function or control logic state intended to prevent the associated <see cref="Chuck">Chuck</see> component from being operated.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CHUCK_INTERLOCKValue : IEnumInstance
 		{
@@ -1911,15 +1605,12 @@ This is used in conjunction with `COUPLED_AXES` to indicate the way they are int
 ";
 		}
 		private CHUCK_STATEValue _CHUCK_STATE;
-		/// <summary>
-		﻿/// operating state of a mechanism that holds a part or stock material during a manufacturing process. <br /><br />It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHUCK_STATEValue" path="/summary" />
 		public CHUCK_STATEValue CHUCK_STATE => _CHUCK_STATE ?? (_CHUCK_STATE = new CHUCK_STATEValue());
 
-		/// <summary>
-		﻿/// operating state of a mechanism that holds a part or stock material during a manufacturing process. <br /><br />It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.<br/><br />
-
+		/// <summary>﻿operating state of a mechanism that holds a part or stock material during a manufacturing process. <br /><br />It may also represent a mechanism that holds any other mechanism in place within a piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CHUCK_STATEValue : IEnumInstance
 		{
@@ -1942,15 +1633,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private CODEValue _CODE;
-		/// <summary>
-		﻿/// programmatic code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CODEValue" path="/summary" />
 		public CODEValue CODE => _CODE ?? (_CODE = new CODEValue());
 
-		/// <summary>
-		﻿/// programmatic code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1</i>.<br/><br />
-
+		/// <summary>﻿programmatic code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CODEValue : IEnumInstance
 		{
@@ -1973,15 +1661,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private COMPOSITION_STATEValue _COMPOSITION_STATE;
-		/// <summary>
-		﻿/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COMPOSITION_STATEValue" path="/summary" />
 		public COMPOSITION_STATEValue COMPOSITION_STATE => _COMPOSITION_STATE ?? (_COMPOSITION_STATE = new COMPOSITION_STATEValue());
 
-		/// <summary>
-		﻿/// operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.<br/><br />
-
+		/// <summary>﻿operating state of a mechanism represented by a <see cref="Composition">Composition</see> entity.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class COMPOSITION_STATEValue : IEnumInstance
 		{
@@ -2002,15 +1687,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private CONTROLLER_MODEValue _CONTROLLER_MODE;
-		/// <summary>
-		﻿/// current mode of the <see cref="Controller">Controller</see> component.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CONTROLLER_MODEValue" path="/summary" />
 		public CONTROLLER_MODEValue CONTROLLER_MODE => _CONTROLLER_MODE ?? (_CONTROLLER_MODE = new CONTROLLER_MODEValue());
 
-		/// <summary>
-		﻿/// current mode of the <see cref="Controller">Controller</see> component.<br/><br />
-
+		/// <summary>﻿current mode of the <see cref="Controller">Controller</see> component.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CONTROLLER_MODEValue : IEnumInstance
 		{
@@ -2031,15 +1713,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private CONTROLLER_MODE_OVERRIDEValue _CONTROLLER_MODE_OVERRIDE;
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CONTROLLER_MODE_OVERRIDEValue" path="/summary" />
 		public CONTROLLER_MODE_OVERRIDEValue CONTROLLER_MODE_OVERRIDE => _CONTROLLER_MODE_OVERRIDE ?? (_CONTROLLER_MODE_OVERRIDE = new CONTROLLER_MODE_OVERRIDEValue());
 
-		/// <summary>
-		﻿/// setting or operator selection that changes the behavior of a piece of equipment.<br/><br />
-
+		/// <summary>﻿setting or operator selection that changes the behavior of a piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CONTROLLER_MODE_OVERRIDEValue : IEnumInstance
 		{
@@ -2060,15 +1739,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private COUPLED_AXESValue _COUPLED_AXES;
-		/// <summary>
-		﻿/// set of associated axes.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COUPLED_AXESValue" path="/summary" />
 		public COUPLED_AXESValue COUPLED_AXES => _COUPLED_AXES ?? (_COUPLED_AXES = new COUPLED_AXESValue());
 
-		/// <summary>
-		﻿/// set of associated axes.<br/><br />
-
+		/// <summary>﻿set of associated axes.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class COUPLED_AXESValue : IEnumInstance
 		{
@@ -2089,15 +1765,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private DATE_CODEValue _DATE_CODE;
-		/// <summary>
-		﻿/// time and date code associated with a material or other physical item.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DATE_CODEValue" path="/summary" />
 		public DATE_CODEValue DATE_CODE => _DATE_CODE ?? (_DATE_CODE = new DATE_CODEValue());
 
-		/// <summary>
-		﻿/// time and date code associated with a material or other physical item.<br/><br />
-
+		/// <summary>﻿time and date code associated with a material or other physical item.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class DATE_CODEValue : IEnumInstance
 		{
@@ -2118,15 +1791,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private DEVICE_UUIDValue _DEVICE_UUID;
-		/// <summary>
-		﻿/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DEVICE_UUIDValue" path="/summary" />
 		public DEVICE_UUIDValue DEVICE_UUID => _DEVICE_UUID ?? (_DEVICE_UUID = new DEVICE_UUIDValue());
 
-		/// <summary>
-		﻿/// identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.<br/><br />
-
+		/// <summary>﻿identifier of another piece of equipment that is temporarily associated with a component of this piece of equipment to perform a particular function.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class DEVICE_UUIDValue : IEnumInstance
 		{
@@ -2147,15 +1817,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private DIRECTIONValue _DIRECTION;
-		/// <summary>
-		﻿/// direction of motion.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DIRECTIONValue" path="/summary" />
 		public DIRECTIONValue DIRECTION => _DIRECTION ?? (_DIRECTION = new DIRECTIONValue());
 
-		/// <summary>
-		﻿/// direction of motion.<br/><br />
-
+		/// <summary>﻿direction of motion.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class DIRECTIONValue : IEnumInstance
 		{
@@ -2176,15 +1843,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private DOOR_STATEValue _DOOR_STATE;
-		/// <summary>
-		﻿/// operational state of a <see cref="Door">Door</see> component or composition element.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DOOR_STATEValue" path="/summary" />
 		public DOOR_STATEValue DOOR_STATE => _DOOR_STATE ?? (_DOOR_STATE = new DOOR_STATEValue());
 
-		/// <summary>
-		﻿/// operational state of a <see cref="Door">Door</see> component or composition element.<br/><br />
-
+		/// <summary>﻿operational state of a <see cref="Door">Door</see> component or composition element.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class DOOR_STATEValue : IEnumInstance
 		{
@@ -2205,15 +1869,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private EMERGENCY_STOPValue _EMERGENCY_STOP;
-		/// <summary>
-		﻿/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EMERGENCY_STOPValue" path="/summary" />
 		public EMERGENCY_STOPValue EMERGENCY_STOP => _EMERGENCY_STOP ?? (_EMERGENCY_STOP = new EMERGENCY_STOPValue());
 
-		/// <summary>
-		﻿/// state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.<br/><br />
-
+		/// <summary>﻿state of the emergency stop signal for a piece of equipment, controller path, or any other component or subsystem of a piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class EMERGENCY_STOPValue : IEnumInstance
 		{
@@ -2234,15 +1895,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private END_OF_BARValue _END_OF_BAR;
-		/// <summary>
-		﻿/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="END_OF_BARValue" path="/summary" />
 		public END_OF_BARValue END_OF_BAR => _END_OF_BAR ?? (_END_OF_BAR = new END_OF_BARValue());
 
-		/// <summary>
-		﻿/// indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.<br/><br />
-
+		/// <summary>﻿indication of whether the end of a piece of bar stock being feed by a bar feeder has been reached.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class END_OF_BARValue : IEnumInstance
 		{
@@ -2263,15 +1921,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private EQUIPMENT_MODEValue _EQUIPMENT_MODE;
-		/// <summary>
-		﻿/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EQUIPMENT_MODEValue" path="/summary" />
 		public EQUIPMENT_MODEValue EQUIPMENT_MODE => _EQUIPMENT_MODE ?? (_EQUIPMENT_MODE = new EQUIPMENT_MODEValue());
 
-		/// <summary>
-		﻿/// indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.<br/><br />
-
+		/// <summary>﻿indication that a piece of equipment, or a sub-part of a piece of equipment, is performing specific types of activities.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class EQUIPMENT_MODEValue : IEnumInstance
 		{
@@ -2292,15 +1947,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private EXECUTIONValue _EXECUTION;
-		/// <summary>
-		﻿/// operating state of a <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="EXECUTIONValue" path="/summary" />
 		public EXECUTIONValue EXECUTION => _EXECUTION ?? (_EXECUTION = new EXECUTIONValue());
 
-		/// <summary>
-		﻿/// operating state of a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿operating state of a <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class EXECUTIONValue : IEnumInstance
 		{
@@ -2321,15 +1973,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private FUNCTIONAL_MODEValue _FUNCTIONAL_MODE;
-		/// <summary>
-		﻿/// current intended production status of the <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FUNCTIONAL_MODEValue" path="/summary" />
 		public FUNCTIONAL_MODEValue FUNCTIONAL_MODE => _FUNCTIONAL_MODE ?? (_FUNCTIONAL_MODE = new FUNCTIONAL_MODEValue());
 
-		/// <summary>
-		﻿/// current intended production status of the <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿current intended production status of the <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class FUNCTIONAL_MODEValue : IEnumInstance
 		{
@@ -2350,15 +1999,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private HARDNESSValue _HARDNESS;
-		/// <summary>
-		﻿/// hardness of a material.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="HARDNESSValue" path="/summary" />
 		public HARDNESSValue HARDNESS => _HARDNESS ?? (_HARDNESS = new HARDNESSValue());
 
-		/// <summary>
-		﻿/// hardness of a material.<br/><br />
-
+		/// <summary>﻿hardness of a material.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class HARDNESSValue : IEnumInstance
 		{
@@ -2379,15 +2025,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private LINEValue _LINE;
-		/// <summary>
-		﻿/// current line of code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.4.0</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LINEValue" path="/summary" />
 		public LINEValue LINE => _LINE ?? (_LINE = new LINEValue());
 
-		/// <summary>
-		﻿/// current line of code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.4.0</i>.<br/><br />
-
+		/// <summary>﻿current line of code being executed.<br /><br /><b>DEPRECATED</b> in <i>Version 1.4.0</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class LINEValue : IEnumInstance
 		{
@@ -2410,15 +2053,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private LINE_LABELValue _LINE_LABEL;
-		/// <summary>
-		﻿/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LINE_LABELValue" path="/summary" />
 		public LINE_LABELValue LINE_LABEL => _LINE_LABEL ?? (_LINE_LABEL = new LINE_LABELValue());
 
-		/// <summary>
-		﻿/// identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.<br/><br />
-
+		/// <summary>﻿identifier for a <see cref="Block">Block</see> of code in a <see cref="Program">Program</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class LINE_LABELValue : IEnumInstance
 		{
@@ -2439,15 +2079,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private LINE_NUMBERValue _LINE_NUMBER;
-		/// <summary>
-		﻿/// position of a block of program code within a control program.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LINE_NUMBERValue" path="/summary" />
 		public LINE_NUMBERValue LINE_NUMBER => _LINE_NUMBER ?? (_LINE_NUMBER = new LINE_NUMBERValue());
 
-		/// <summary>
-		﻿/// position of a block of program code within a control program.<br/><br />
-
+		/// <summary>﻿position of a block of program code within a control program.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class LINE_NUMBERValue : IEnumInstance
 		{
@@ -2468,15 +2105,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private MATERIALValue _MATERIAL;
-		/// <summary>
-		﻿/// identifier of a material used or consumed in the manufacturing process.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MATERIALValue" path="/summary" />
 		public MATERIALValue MATERIAL => _MATERIAL ?? (_MATERIAL = new MATERIALValue());
 
-		/// <summary>
-		﻿/// identifier of a material used or consumed in the manufacturing process.<br/><br />
-
+		/// <summary>﻿identifier of a material used or consumed in the manufacturing process.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class MATERIALValue : IEnumInstance
 		{
@@ -2497,15 +2131,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private MATERIAL_LAYERValue _MATERIAL_LAYER;
-		/// <summary>
-		﻿/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MATERIAL_LAYERValue" path="/summary" />
 		public MATERIAL_LAYERValue MATERIAL_LAYER => _MATERIAL_LAYER ?? (_MATERIAL_LAYER = new MATERIAL_LAYERValue());
 
-		/// <summary>
-		﻿/// identifies the layers of material applied to a part or product as part of an additive manufacturing process.<br/><br />
-
+		/// <summary>﻿identifies the layers of material applied to a part or product as part of an additive manufacturing process.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class MATERIAL_LAYERValue : IEnumInstance
 		{
@@ -2526,15 +2157,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private MESSAGEValue _MESSAGE;
-		/// <summary>
-		﻿/// information to be transferred from a piece of equipment to a client software application.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MESSAGEValue" path="/summary" />
 		public MESSAGEValue MESSAGE => _MESSAGE ?? (_MESSAGE = new MESSAGEValue());
 
-		/// <summary>
-		﻿/// information to be transferred from a piece of equipment to a client software application.<br/><br />
-
+		/// <summary>﻿information to be transferred from a piece of equipment to a client software application.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class MESSAGEValue : IEnumInstance
 		{
@@ -2555,15 +2183,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private OPERATOR_IDValue _OPERATOR_ID;
-		/// <summary>
-		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OPERATOR_IDValue" path="/summary" />
 		public OPERATOR_IDValue OPERATOR_ID => _OPERATOR_ID ?? (_OPERATOR_ID = new OPERATOR_IDValue());
 
-		/// <summary>
-		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
-
+		/// <summary>﻿identifier of the person currently responsible for operating the piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class OPERATOR_IDValue : IEnumInstance
 		{
@@ -2584,15 +2209,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PALLET_IDValue _PALLET_ID;
-		/// <summary>
-		﻿/// identifier for a pallet.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PALLET_IDValue" path="/summary" />
 		public PALLET_IDValue PALLET_ID => _PALLET_ID ?? (_PALLET_ID = new PALLET_IDValue());
 
-		/// <summary>
-		﻿/// identifier for a pallet.<br/><br />
-
+		/// <summary>﻿identifier for a pallet.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PALLET_IDValue : IEnumInstance
 		{
@@ -2613,15 +2235,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PART_COUNTValue _PART_COUNT;
-		/// <summary>
-		﻿/// aggregate count of parts.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_COUNTValue" path="/summary" />
 		public PART_COUNTValue PART_COUNT => _PART_COUNT ?? (_PART_COUNT = new PART_COUNTValue());
 
-		/// <summary>
-		﻿/// aggregate count of parts.<br/><br />
-
+		/// <summary>﻿aggregate count of parts.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_COUNTValue : IEnumInstance
 		{
@@ -2642,15 +2261,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PART_DETECTValue _PART_DETECT;
-		/// <summary>
-		﻿/// indication designating whether a part or work piece has been detected or is present.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_DETECTValue" path="/summary" />
 		public PART_DETECTValue PART_DETECT => _PART_DETECT ?? (_PART_DETECT = new PART_DETECTValue());
 
-		/// <summary>
-		﻿/// indication designating whether a part or work piece has been detected or is present.<br/><br />
-
+		/// <summary>﻿indication designating whether a part or work piece has been detected or is present.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_DETECTValue : IEnumInstance
 		{
@@ -2671,15 +2287,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PART_IDValue _PART_ID;
-		/// <summary>
-		﻿/// identifier of a part in a manufacturing operation.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_IDValue" path="/summary" />
 		public PART_IDValue PART_ID => _PART_ID ?? (_PART_ID = new PART_IDValue());
 
-		/// <summary>
-		﻿/// identifier of a part in a manufacturing operation.<br/><br />
-
+		/// <summary>﻿identifier of a part in a manufacturing operation.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_IDValue : IEnumInstance
 		{
@@ -2700,15 +2313,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PART_NUMBERValue _PART_NUMBER;
-		/// <summary>
-		﻿/// identifier of a part or product moving through the manufacturing process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.7</i>. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_NUMBERValue" path="/summary" />
 		public PART_NUMBERValue PART_NUMBER => _PART_NUMBER ?? (_PART_NUMBER = new PART_NUMBERValue());
 
-		/// <summary>
-		﻿/// identifier of a part or product moving through the manufacturing process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.7</i>. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.<br/><br />
-
+		/// <summary>﻿identifier of a part or product moving through the manufacturing process.<br /><br /><b>DEPRECATED</b> in <i>Version 1.7</i>. <c>PART_NUMBER</c> is now a <c>subType</c> of <c>PART_KIND_ID</c>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_NUMBERValue : IEnumInstance
 		{
@@ -2731,15 +2341,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PATH_FEEDRATE_OVERRIDEValue _PATH_FEEDRATE_OVERRIDE;
-		/// <summary>
-		﻿/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PATH_FEEDRATE_OVERRIDEValue" path="/summary" />
 		public PATH_FEEDRATE_OVERRIDEValue PATH_FEEDRATE_OVERRIDE => _PATH_FEEDRATE_OVERRIDE ?? (_PATH_FEEDRATE_OVERRIDE = new PATH_FEEDRATE_OVERRIDEValue());
 
-		/// <summary>
-		﻿/// value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.<br/><br />
-
+		/// <summary>﻿value of a signal or calculation issued to adjust the feedrate for the axes associated with a <see cref="Path">Path</see> component that may represent a single axis or the coordinated movement of multiple axes.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PATH_FEEDRATE_OVERRIDEValue : IEnumInstance
 		{
@@ -2760,15 +2367,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PATH_MODEValue _PATH_MODE;
-		/// <summary>
-		﻿/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PATH_MODEValue" path="/summary" />
 		public PATH_MODEValue PATH_MODE => _PATH_MODE ?? (_PATH_MODE = new PATH_MODEValue());
 
-		/// <summary>
-		﻿/// describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.<br/><br />
-
+		/// <summary>﻿describes the operational relationship between a <see cref="Path">Path</see> entity and another <see cref="Path">Path</see> entity for pieces of equipment comprised of multiple logical groupings of controlled axes or other logical operations.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PATH_MODEValue : IEnumInstance
 		{
@@ -2789,15 +2393,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private POWER_STATEValue _POWER_STATE;
-		/// <summary>
-		﻿/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="POWER_STATEValue" path="/summary" />
 		public POWER_STATEValue POWER_STATE => _POWER_STATE ?? (_POWER_STATE = new POWER_STATEValue());
 
-		/// <summary>
-		﻿/// indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.<br/><br />
-
+		/// <summary>﻿indication of the status of the source of energy for an entity to allow it to perform its intended function or the state of an enabling signal providing permission for the entity to perform its functions.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class POWER_STATEValue : IEnumInstance
 		{
@@ -2818,15 +2419,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private POWER_STATUSValue _POWER_STATUS;
-		/// <summary>
-		﻿/// status of the <see cref="Component">Component</see>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1.0</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="POWER_STATUSValue" path="/summary" />
 		public POWER_STATUSValue POWER_STATUS => _POWER_STATUS ?? (_POWER_STATUS = new POWER_STATUSValue());
 
-		/// <summary>
-		﻿/// status of the <see cref="Component">Component</see>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1.0</i>.<br/><br />
-
+		/// <summary>﻿status of the <see cref="Component">Component</see>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.1.0</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class POWER_STATUSValue : IEnumInstance
 		{
@@ -2849,15 +2447,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PROCESS_TIMEValue _PROCESS_TIME;
-		/// <summary>
-		﻿/// time and date associated with an activity or event.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_TIMEValue" path="/summary" />
 		public PROCESS_TIMEValue PROCESS_TIME => _PROCESS_TIME ?? (_PROCESS_TIME = new PROCESS_TIMEValue());
 
-		/// <summary>
-		﻿/// time and date associated with an activity or event.<br/><br />
-
+		/// <summary>﻿time and date associated with an activity or event.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_TIMEValue : IEnumInstance
 		{
@@ -2878,15 +2473,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PROGRAMValue _PROGRAM;
-		/// <summary>
-		﻿/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAMValue" path="/summary" />
 		public PROGRAMValue PROGRAM => _PROGRAM ?? (_PROGRAM = new PROGRAMValue());
 
-		/// <summary>
-		﻿/// name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.<br/><br />
-
+		/// <summary>﻿name of the logic or motion program being executed by the <see cref="Controller">Controller</see> component.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAMValue : IEnumInstance
 		{
@@ -2907,15 +2499,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PROGRAM_COMMENTValue _PROGRAM_COMMENT;
-		/// <summary>
-		﻿/// comment or non-executable statement in the control program.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_COMMENTValue" path="/summary" />
 		public PROGRAM_COMMENTValue PROGRAM_COMMENT => _PROGRAM_COMMENT ?? (_PROGRAM_COMMENT = new PROGRAM_COMMENTValue());
 
-		/// <summary>
-		﻿/// comment or non-executable statement in the control program.<br/><br />
-
+		/// <summary>﻿comment or non-executable statement in the control program.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_COMMENTValue : IEnumInstance
 		{
@@ -2936,15 +2525,12 @@ It may also represent a mechanism that holds any other mechanism in place within
 ";
 		}
 		private PROGRAM_EDITValue _PROGRAM_EDIT;
-		/// <summary>
-		﻿/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.<br /><br />A program may be edited while another is executed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_EDITValue" path="/summary" />
 		public PROGRAM_EDITValue PROGRAM_EDIT => _PROGRAM_EDIT ?? (_PROGRAM_EDIT = new PROGRAM_EDITValue());
 
-		/// <summary>
-		﻿/// indication of the status of the <see cref="Controller">Controller</see> components program editing mode.<br /><br />A program may be edited while another is executed.<br/><br />
-
+		/// <summary>﻿indication of the status of the <see cref="Controller">Controller</see> components program editing mode.<br /><br />A program may be edited while another is executed.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_EDITValue : IEnumInstance
 		{
@@ -2967,15 +2553,12 @@ A program may be edited while another is executed.&#10;
 ";
 		}
 		private PROGRAM_EDIT_NAMEValue _PROGRAM_EDIT_NAME;
-		/// <summary>
-		﻿/// name of the program being edited. <br /><br />This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_EDIT_NAMEValue" path="/summary" />
 		public PROGRAM_EDIT_NAMEValue PROGRAM_EDIT_NAME => _PROGRAM_EDIT_NAME ?? (_PROGRAM_EDIT_NAME = new PROGRAM_EDIT_NAMEValue());
 
-		/// <summary>
-		﻿/// name of the program being edited. <br /><br />This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. <br/><br />
-
+		/// <summary>﻿name of the program being edited. <br /><br />This is used in conjunction with <see cref="ProgramEdit">ProgramEdit</see> when in <c>ACTIVE</c> state. <br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_EDIT_NAMEValue : IEnumInstance
 		{
@@ -2998,15 +2581,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PROGRAM_HEADERValue _PROGRAM_HEADER;
-		/// <summary>
-		﻿/// non-executable header section of the control program.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_HEADERValue" path="/summary" />
 		public PROGRAM_HEADERValue PROGRAM_HEADER => _PROGRAM_HEADER ?? (_PROGRAM_HEADER = new PROGRAM_HEADERValue());
 
-		/// <summary>
-		﻿/// non-executable header section of the control program.<br/><br />
-
+		/// <summary>﻿non-executable header section of the control program.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_HEADERValue : IEnumInstance
 		{
@@ -3027,15 +2607,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PROGRAM_LOCATIONValue _PROGRAM_LOCATION;
-		/// <summary>
-		﻿/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_LOCATIONValue" path="/summary" />
 		public PROGRAM_LOCATIONValue PROGRAM_LOCATION => _PROGRAM_LOCATION ?? (_PROGRAM_LOCATION = new PROGRAM_LOCATIONValue());
 
-		/// <summary>
-		﻿/// <i>URI</i> for the source file associated with <see cref="Program">Program</see>.<br/><br />
-
+		/// <summary>﻿<i>URI</i> for the source file associated with <see cref="Program">Program</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_LOCATIONValue : IEnumInstance
 		{
@@ -3056,15 +2633,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PROGRAM_LOCATION_TYPEValue _PROGRAM_LOCATION_TYPE;
-		/// <summary>
-		﻿/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_LOCATION_TYPEValue" path="/summary" />
 		public PROGRAM_LOCATION_TYPEValue PROGRAM_LOCATION_TYPE => _PROGRAM_LOCATION_TYPE ?? (_PROGRAM_LOCATION_TYPE = new PROGRAM_LOCATION_TYPEValue());
 
-		/// <summary>
-		﻿/// defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.<br/><br />
-
+		/// <summary>﻿defines whether the logic or motion program defined by <see cref="Program">Program</see> is being executed from the local memory of the controller or from an outside source.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_LOCATION_TYPEValue : IEnumInstance
 		{
@@ -3085,15 +2659,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PROGRAM_NEST_LEVELValue _PROGRAM_NEST_LEVEL;
-		/// <summary>
-		﻿/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROGRAM_NEST_LEVELValue" path="/summary" />
 		public PROGRAM_NEST_LEVELValue PROGRAM_NEST_LEVEL => _PROGRAM_NEST_LEVEL ?? (_PROGRAM_NEST_LEVEL = new PROGRAM_NEST_LEVELValue());
 
-		/// <summary>
-		﻿/// indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.<br/><br />
-
+		/// <summary>﻿indication of the nesting level within a control program that is associated with the code or instructions that is currently being executed.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROGRAM_NEST_LEVELValue : IEnumInstance
 		{
@@ -3114,15 +2685,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ROTARY_MODEValue _ROTARY_MODE;
-		/// <summary>
-		﻿/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ROTARY_MODEValue" path="/summary" />
 		public ROTARY_MODEValue ROTARY_MODE => _ROTARY_MODE ?? (_ROTARY_MODE = new ROTARY_MODEValue());
 
-		/// <summary>
-		﻿/// current operating mode for a <see cref="Rotary">Rotary</see> type axis.<br/><br />
-
+		/// <summary>﻿current operating mode for a <see cref="Rotary">Rotary</see> type axis.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ROTARY_MODEValue : IEnumInstance
 		{
@@ -3143,15 +2711,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ROTARY_VELOCITY_OVERRIDEValue _ROTARY_VELOCITY_OVERRIDE;
-		/// <summary>
-		﻿/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ROTARY_VELOCITY_OVERRIDEValue" path="/summary" />
 		public ROTARY_VELOCITY_OVERRIDEValue ROTARY_VELOCITY_OVERRIDE => _ROTARY_VELOCITY_OVERRIDE ?? (_ROTARY_VELOCITY_OVERRIDE = new ROTARY_VELOCITY_OVERRIDEValue());
 
-		/// <summary>
-		﻿/// percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.<br/><br />
-
+		/// <summary>﻿percentage change to the velocity of the programmed velocity for a <see cref="Rotary">Rotary</see> axis.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ROTARY_VELOCITY_OVERRIDEValue : IEnumInstance
 		{
@@ -3172,15 +2737,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private SERIAL_NUMBERValue _SERIAL_NUMBER;
-		/// <summary>
-		﻿/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SERIAL_NUMBERValue" path="/summary" />
 		public SERIAL_NUMBERValue SERIAL_NUMBER => _SERIAL_NUMBER ?? (_SERIAL_NUMBER = new SERIAL_NUMBERValue());
 
-		/// <summary>
-		﻿/// serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.<br/><br />
-
+		/// <summary>﻿serial number associated with a <see cref="Component">Component</see>, <see cref="Asset">Asset</see>, or <see cref="Device">Device</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class SERIAL_NUMBERValue : IEnumInstance
 		{
@@ -3201,15 +2763,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private SPINDLE_INTERLOCKValue _SPINDLE_INTERLOCK;
-		/// <summary>
-		﻿/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SPINDLE_INTERLOCKValue" path="/summary" />
 		public SPINDLE_INTERLOCKValue SPINDLE_INTERLOCK => _SPINDLE_INTERLOCK ?? (_SPINDLE_INTERLOCK = new SPINDLE_INTERLOCKValue());
 
-		/// <summary>
-		﻿/// indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.<br/><br />
-
+		/// <summary>﻿indication of the status of the spindle for a piece of equipment when power has been removed and it is free to rotate.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class SPINDLE_INTERLOCKValue : IEnumInstance
 		{
@@ -3230,15 +2789,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TOOL_ASSET_IDValue _TOOL_ASSET_ID;
-		/// <summary>
-		﻿/// identifier of an individual tool asset.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOL_ASSET_IDValue" path="/summary" />
 		public TOOL_ASSET_IDValue TOOL_ASSET_ID => _TOOL_ASSET_ID ?? (_TOOL_ASSET_ID = new TOOL_ASSET_IDValue());
 
-		/// <summary>
-		﻿/// identifier of an individual tool asset.<br/><br />
-
+		/// <summary>﻿identifier of an individual tool asset.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TOOL_ASSET_IDValue : IEnumInstance
 		{
@@ -3259,15 +2815,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TOOL_GROUPValue _TOOL_GROUP;
-		/// <summary>
-		﻿/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOL_GROUPValue" path="/summary" />
 		public TOOL_GROUPValue TOOL_GROUP => _TOOL_GROUP ?? (_TOOL_GROUP = new TOOL_GROUPValue());
 
-		/// <summary>
-		﻿/// identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.<br/><br />
-
+		/// <summary>﻿identifier for the tool group associated with a specific tool. Commonly used to designate spare tools.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TOOL_GROUPValue : IEnumInstance
 		{
@@ -3288,15 +2841,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TOOL_IDValue _TOOL_ID;
-		/// <summary>
-		﻿/// identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOL_IDValue" path="/summary" />
 		public TOOL_IDValue TOOL_ID => _TOOL_ID ?? (_TOOL_ID = new TOOL_IDValue());
 
-		/// <summary>
-		﻿/// identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br/><br />
-
+		/// <summary>﻿identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TOOL_IDValue : IEnumInstance
 		{
@@ -3319,15 +2869,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TOOL_NUMBERValue _TOOL_NUMBER;
-		/// <summary>
-		﻿/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOL_NUMBERValue" path="/summary" />
 		public TOOL_NUMBERValue TOOL_NUMBER => _TOOL_NUMBER ?? (_TOOL_NUMBER = new TOOL_NUMBERValue());
 
-		/// <summary>
-		﻿/// identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.<br/><br />
-
+		/// <summary>﻿identifier assigned by the <see cref="Controller">Controller</see> component to a cutting tool when in use by a piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TOOL_NUMBERValue : IEnumInstance
 		{
@@ -3348,15 +2895,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TOOL_OFFSETValue _TOOL_OFFSET;
-		/// <summary>
-		﻿/// reference to the tool offset variables applied to the active cutting tool.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOL_OFFSETValue" path="/summary" />
 		public TOOL_OFFSETValue TOOL_OFFSET => _TOOL_OFFSET ?? (_TOOL_OFFSET = new TOOL_OFFSETValue());
 
-		/// <summary>
-		﻿/// reference to the tool offset variables applied to the active cutting tool.<br/><br />
-
+		/// <summary>﻿reference to the tool offset variables applied to the active cutting tool.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TOOL_OFFSETValue : IEnumInstance
 		{
@@ -3377,15 +2921,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private USERValue _USER;
-		/// <summary>
-		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="USERValue" path="/summary" />
 		public USERValue USER => _USER ?? (_USER = new USERValue());
 
-		/// <summary>
-		﻿/// identifier of the person currently responsible for operating the piece of equipment.<br/><br />
-
+		/// <summary>﻿identifier of the person currently responsible for operating the piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class USERValue : IEnumInstance
 		{
@@ -3406,15 +2947,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private VARIABLEValue _VARIABLE;
-		/// <summary>
-		﻿/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VARIABLEValue" path="/summary" />
 		public VARIABLEValue VARIABLE => _VARIABLE ?? (_VARIABLE = new VARIABLEValue());
 
-		/// <summary>
-		﻿/// data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.<br/><br />
-
+		/// <summary>﻿data whose meaning may change over time due to changes in the operation of a piece of equipment or the process being executed on that piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class VARIABLEValue : IEnumInstance
 		{
@@ -3435,15 +2973,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private WAIT_STATEValue _WAIT_STATE;
-		/// <summary>
-		﻿/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WAIT_STATEValue" path="/summary" />
 		public WAIT_STATEValue WAIT_STATE => _WAIT_STATE ?? (_WAIT_STATE = new WAIT_STATEValue());
 
-		/// <summary>
-		﻿/// indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.<br/><br />
-
+		/// <summary>﻿indication of the reason that <see cref="Execution">Execution</see> is reporting a value of <c>WAIT</c>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class WAIT_STATEValue : IEnumInstance
 		{
@@ -3464,15 +2999,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private WIREValue _WIRE;
-		/// <summary>
-		﻿/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WIREValue" path="/summary" />
 		public WIREValue WIRE => _WIRE ?? (_WIRE = new WIREValue());
 
-		/// <summary>
-		﻿/// identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.<br/><br />
-
+		/// <summary>﻿identifier for the type of wire used as the cutting mechanism in Electrical Discharge Machining or similar processes.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class WIREValue : IEnumInstance
 		{
@@ -3493,15 +3025,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private WORKHOLDING_IDValue _WORKHOLDING_ID;
-		/// <summary>
-		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WORKHOLDING_IDValue" path="/summary" />
 		public WORKHOLDING_IDValue WORKHOLDING_ID => _WORKHOLDING_ID ?? (_WORKHOLDING_ID = new WORKHOLDING_IDValue());
 
-		/// <summary>
-		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.<br/><br />
-
+		/// <summary>﻿identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><b>DEPRECATION WARNING</b>: Recommend using <c>FIXTURE_ID</c> instead.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class WORKHOLDING_IDValue : IEnumInstance
 		{
@@ -3524,15 +3053,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private WORK_OFFSETValue _WORK_OFFSET;
-		/// <summary>
-		﻿/// reference to offset variables for a work piece or part.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WORK_OFFSETValue" path="/summary" />
 		public WORK_OFFSETValue WORK_OFFSET => _WORK_OFFSET ?? (_WORK_OFFSET = new WORK_OFFSETValue());
 
-		/// <summary>
-		﻿/// reference to offset variables for a work piece or part.<br/><br />
-
+		/// <summary>﻿reference to offset variables for a work piece or part.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class WORK_OFFSETValue : IEnumInstance
 		{
@@ -3553,15 +3079,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private OPERATING_SYSTEMValue _OPERATING_SYSTEM;
-		/// <summary>
-		﻿/// Operating System (OS) of a <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OPERATING_SYSTEMValue" path="/summary" />
 		public OPERATING_SYSTEMValue OPERATING_SYSTEM => _OPERATING_SYSTEM ?? (_OPERATING_SYSTEM = new OPERATING_SYSTEMValue());
 
-		/// <summary>
-		﻿/// Operating System (OS) of a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿Operating System (OS) of a <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class OPERATING_SYSTEMValue : IEnumInstance
 		{
@@ -3582,15 +3105,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private FIRMWAREValue _FIRMWARE;
-		/// <summary>
-		﻿/// embedded software of a <see cref="Component">Component</see><br />.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FIRMWAREValue" path="/summary" />
 		public FIRMWAREValue FIRMWARE => _FIRMWARE ?? (_FIRMWARE = new FIRMWAREValue());
 
-		/// <summary>
-		﻿/// embedded software of a <see cref="Component">Component</see><br />.<br/><br />
-
+		/// <summary>﻿embedded software of a <see cref="Component">Component</see><br />.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class FIRMWAREValue : IEnumInstance
 		{
@@ -3611,15 +3131,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private APPLICATIONValue _APPLICATION;
-		/// <summary>
-		﻿/// application on a <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="APPLICATIONValue" path="/summary" />
 		public APPLICATIONValue APPLICATION => _APPLICATION ?? (_APPLICATION = new APPLICATIONValue());
 
-		/// <summary>
-		﻿/// application on a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿application on a <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class APPLICATIONValue : IEnumInstance
 		{
@@ -3640,15 +3157,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private LIBRARYValue _LIBRARY;
-		/// <summary>
-		﻿/// software library on a <see cref="Component">Component</see><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LIBRARYValue" path="/summary" />
 		public LIBRARYValue LIBRARY => _LIBRARY ?? (_LIBRARY = new LIBRARYValue());
 
-		/// <summary>
-		﻿/// software library on a <see cref="Component">Component</see><br/><br />
-
+		/// <summary>﻿software library on a <see cref="Component">Component</see><br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class LIBRARYValue : IEnumInstance
 		{
@@ -3669,15 +3183,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private HARDWAREValue _HARDWARE;
-		/// <summary>
-		﻿/// hardware of a <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="HARDWAREValue" path="/summary" />
 		public HARDWAREValue HARDWARE => _HARDWARE ?? (_HARDWARE = new HARDWAREValue());
 
-		/// <summary>
-		﻿/// hardware of a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿hardware of a <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class HARDWAREValue : IEnumInstance
 		{
@@ -3698,15 +3209,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private NETWORKValue _NETWORK;
-		/// <summary>
-		﻿/// network details of a <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NETWORKValue" path="/summary" />
 		public NETWORKValue NETWORK => _NETWORK ?? (_NETWORK = new NETWORKValue());
 
-		/// <summary>
-		﻿/// network details of a <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿network details of a <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class NETWORKValue : IEnumInstance
 		{
@@ -3727,15 +3235,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ROTATIONValue _ROTATION;
-		/// <summary>
-		﻿/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ROTATIONValue" path="/summary" />
 		public ROTATIONValue ROTATION => _ROTATION ?? (_ROTATION = new ROTATIONValue());
 
-		/// <summary>
-		﻿/// three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
-
+		/// <summary>﻿three space angular displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ROTATIONValue : IEnumInstance
 		{
@@ -3756,15 +3261,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TRANSLATIONValue _TRANSLATION;
-		/// <summary>
-		﻿/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRANSLATIONValue" path="/summary" />
 		public TRANSLATIONValue TRANSLATION => _TRANSLATION ?? (_TRANSLATION = new TRANSLATIONValue());
 
-		/// <summary>
-		﻿/// three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br/><br />
-
+		/// <summary>﻿three space linear displacement of an object or coordinate system relative to a <i>cartesian coordinate system</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TRANSLATIONValue : IEnumInstance
 		{
@@ -3785,15 +3287,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private DEVICE_ADDEDValue _DEVICE_ADDED;
-		/// <summary>
-		﻿/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DEVICE_ADDEDValue" path="/summary" />
 		public DEVICE_ADDEDValue DEVICE_ADDED => _DEVICE_ADDED ?? (_DEVICE_ADDED = new DEVICE_ADDEDValue());
 
-		/// <summary>
-		﻿/// <i>UUID</i> of new device added to an <i>MTConnect Agent</i>.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of new device added to an <i>MTConnect Agent</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class DEVICE_ADDEDValue : IEnumInstance
 		{
@@ -3814,15 +3313,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private DEVICE_REMOVEDValue _DEVICE_REMOVED;
-		/// <summary>
-		﻿/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DEVICE_REMOVEDValue" path="/summary" />
 		public DEVICE_REMOVEDValue DEVICE_REMOVED => _DEVICE_REMOVED ?? (_DEVICE_REMOVED = new DEVICE_REMOVEDValue());
 
-		/// <summary>
-		﻿/// <i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of a device removed from an <i>MTConnect Agent</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class DEVICE_REMOVEDValue : IEnumInstance
 		{
@@ -3843,15 +3339,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private DEVICE_CHANGEDValue _DEVICE_CHANGED;
-		/// <summary>
-		﻿/// <i>UUID</i> of the device whose <i>metadata</i> has changed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DEVICE_CHANGEDValue" path="/summary" />
 		public DEVICE_CHANGEDValue DEVICE_CHANGED => _DEVICE_CHANGED ?? (_DEVICE_CHANGED = new DEVICE_CHANGEDValue());
 
-		/// <summary>
-		﻿/// <i>UUID</i> of the device whose <i>metadata</i> has changed.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of the device whose <i>metadata</i> has changed.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class DEVICE_CHANGEDValue : IEnumInstance
 		{
@@ -3872,15 +3365,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private CONNECTION_STATUSValue _CONNECTION_STATUS;
-		/// <summary>
-		﻿/// status of the connection between an <i>adapter</i> and an <i>agent</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CONNECTION_STATUSValue" path="/summary" />
 		public CONNECTION_STATUSValue CONNECTION_STATUS => _CONNECTION_STATUS ?? (_CONNECTION_STATUS = new CONNECTION_STATUSValue());
 
-		/// <summary>
-		﻿/// status of the connection between an <i>adapter</i> and an <i>agent</i>.<br/><br />
-
+		/// <summary>﻿status of the connection between an <i>adapter</i> and an <i>agent</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CONNECTION_STATUSValue : IEnumInstance
 		{
@@ -3901,15 +3391,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ADAPTER_SOFTWARE_VERSIONValue _ADAPTER_SOFTWARE_VERSION;
-		/// <summary>
-		﻿/// originator’s software version of the <i>adapter</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ADAPTER_SOFTWARE_VERSIONValue" path="/summary" />
 		public ADAPTER_SOFTWARE_VERSIONValue ADAPTER_SOFTWARE_VERSION => _ADAPTER_SOFTWARE_VERSION ?? (_ADAPTER_SOFTWARE_VERSION = new ADAPTER_SOFTWARE_VERSIONValue());
 
-		/// <summary>
-		﻿/// originator’s software version of the <i>adapter</i>.<br/><br />
-
+		/// <summary>﻿originator’s software version of the <i>adapter</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ADAPTER_SOFTWARE_VERSIONValue : IEnumInstance
 		{
@@ -3930,15 +3417,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ADAPTER_URIValue _ADAPTER_URI;
-		/// <summary>
-		﻿/// <i>URI</i> of the <i>adapter</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ADAPTER_URIValue" path="/summary" />
 		public ADAPTER_URIValue ADAPTER_URI => _ADAPTER_URI ?? (_ADAPTER_URI = new ADAPTER_URIValue());
 
-		/// <summary>
-		﻿/// <i>URI</i> of the <i>adapter</i>.<br/><br />
-
+		/// <summary>﻿<i>URI</i> of the <i>adapter</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ADAPTER_URIValue : IEnumInstance
 		{
@@ -3959,15 +3443,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private MTCONNECT_VERSIONValue _MTCONNECT_VERSION;
-		/// <summary>
-		﻿/// reference version of the MTConnect Standard supported by the <i>adapter</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MTCONNECT_VERSIONValue" path="/summary" />
 		public MTCONNECT_VERSIONValue MTCONNECT_VERSION => _MTCONNECT_VERSION ?? (_MTCONNECT_VERSION = new MTCONNECT_VERSIONValue());
 
-		/// <summary>
-		﻿/// reference version of the MTConnect Standard supported by the <i>adapter</i>.<br/><br />
-
+		/// <summary>﻿reference version of the MTConnect Standard supported by the <i>adapter</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class MTCONNECT_VERSIONValue : IEnumInstance
 		{
@@ -3988,15 +3469,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private SENSOR_ATTACHMENTValue _SENSOR_ATTACHMENT;
-		/// <summary>
-		﻿/// <i>attachment</i> between a sensor and an entity.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SENSOR_ATTACHMENTValue" path="/summary" />
 		public SENSOR_ATTACHMENTValue SENSOR_ATTACHMENT => _SENSOR_ATTACHMENT ?? (_SENSOR_ATTACHMENT = new SENSOR_ATTACHMENTValue());
 
-		/// <summary>
-		﻿/// <i>attachment</i> between a sensor and an entity.<br/><br />
-
+		/// <summary>﻿<i>attachment</i> between a sensor and an entity.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class SENSOR_ATTACHMENTValue : IEnumInstance
 		{
@@ -4017,15 +3495,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PART_STATUSValue _PART_STATUS;
-		/// <summary>
-		﻿/// state or condition of a part.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_STATUSValue" path="/summary" />
 		public PART_STATUSValue PART_STATUS => _PART_STATUS ?? (_PART_STATUS = new PART_STATUSValue());
 
-		/// <summary>
-		﻿/// state or condition of a part.<br/><br />
-
+		/// <summary>﻿state or condition of a part.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_STATUSValue : IEnumInstance
 		{
@@ -4046,15 +3521,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PROCESS_OCCURRENCE_IDValue _PROCESS_OCCURRENCE_ID;
-		/// <summary>
-		﻿/// identifier of a process being executed by the device.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_OCCURRENCE_IDValue" path="/summary" />
 		public PROCESS_OCCURRENCE_IDValue PROCESS_OCCURRENCE_ID => _PROCESS_OCCURRENCE_ID ?? (_PROCESS_OCCURRENCE_ID = new PROCESS_OCCURRENCE_IDValue());
 
-		/// <summary>
-		﻿/// identifier of a process being executed by the device.<br/><br />
-
+		/// <summary>﻿identifier of a process being executed by the device.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_OCCURRENCE_IDValue : IEnumInstance
 		{
@@ -4075,15 +3547,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PROCESS_AGGREGATE_IDValue _PROCESS_AGGREGATE_ID;
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_AGGREGATE_IDValue" path="/summary" />
 		public PROCESS_AGGREGATE_IDValue PROCESS_AGGREGATE_ID => _PROCESS_AGGREGATE_ID ?? (_PROCESS_AGGREGATE_ID = new PROCESS_AGGREGATE_IDValue());
 
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.<br/><br />
-
+		/// <summary>﻿identifier given to link the individual occurrence to a group of related occurrences, such as a process step in a process plan.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_AGGREGATE_IDValue : IEnumInstance
 		{
@@ -4104,15 +3573,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PROCESS_KIND_IDValue _PROCESS_KIND_ID;
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a class of processes or process definition.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_KIND_IDValue" path="/summary" />
 		public PROCESS_KIND_IDValue PROCESS_KIND_ID => _PROCESS_KIND_ID ?? (_PROCESS_KIND_ID = new PROCESS_KIND_IDValue());
 
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a class of processes or process definition.<br /><br/><br />
-
+		/// <summary>﻿identifier given to link the individual occurrence to a class of processes or process definition.<br /><br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_KIND_IDValue : IEnumInstance
 		{
@@ -4133,15 +3599,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PART_GROUP_IDValue _PART_GROUP_ID;
-		/// <summary>
-		﻿/// identifier given to a collection of individual parts. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_GROUP_IDValue" path="/summary" />
 		public PART_GROUP_IDValue PART_GROUP_ID => _PART_GROUP_ID ?? (_PART_GROUP_ID = new PART_GROUP_IDValue());
 
-		/// <summary>
-		﻿/// identifier given to a collection of individual parts. <br/><br />
-
+		/// <summary>﻿identifier given to a collection of individual parts. <br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_GROUP_IDValue : IEnumInstance
 		{
@@ -4162,15 +3625,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PART_KIND_IDValue _PART_KIND_ID;
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_KIND_IDValue" path="/summary" />
 		public PART_KIND_IDValue PART_KIND_ID => _PART_KIND_ID ?? (_PART_KIND_ID = new PART_KIND_IDValue());
 
-		/// <summary>
-		﻿/// identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.<br/><br />
-
+		/// <summary>﻿identifier given to link the individual occurrence to a class of parts, typically distinguished by a particular part design.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_KIND_IDValue : IEnumInstance
 		{
@@ -4191,15 +3651,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PART_UNIQUE_IDValue _PART_UNIQUE_ID;
-		/// <summary>
-		﻿/// identifier given to a distinguishable, individual part. <br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_UNIQUE_IDValue" path="/summary" />
 		public PART_UNIQUE_IDValue PART_UNIQUE_ID => _PART_UNIQUE_ID ?? (_PART_UNIQUE_ID = new PART_UNIQUE_IDValue());
 
-		/// <summary>
-		﻿/// identifier given to a distinguishable, individual part. <br/><br />
-
+		/// <summary>﻿identifier given to a distinguishable, individual part. <br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_UNIQUE_IDValue : IEnumInstance
 		{
@@ -4220,15 +3677,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private CONTROL_LIMITValue _CONTROL_LIMIT;
-		/// <summary>
-		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CONTROL_LIMITValue" path="/summary" />
 		public CONTROL_LIMITValue CONTROL_LIMIT => _CONTROL_LIMIT ?? (_CONTROL_LIMIT = new CONTROL_LIMITValue());
 
-		/// <summary>
-		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br/><br />
-
+		/// <summary>﻿set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CONTROL_LIMITValue : IEnumInstance
 		{
@@ -4251,15 +3705,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private SPECIFICATION_LIMITValue _SPECIFICATION_LIMIT;
-		/// <summary>
-		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SPECIFICATION_LIMITValue" path="/summary" />
 		public SPECIFICATION_LIMITValue SPECIFICATION_LIMIT => _SPECIFICATION_LIMIT ?? (_SPECIFICATION_LIMIT = new SPECIFICATION_LIMITValue());
 
-		/// <summary>
-		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br/><br />
-
+		/// <summary>﻿set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class SPECIFICATION_LIMITValue : IEnumInstance
 		{
@@ -4282,15 +3733,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ALARM_LIMITValue _ALARM_LIMIT;
-		/// <summary>
-		﻿/// set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ALARM_LIMITValue" path="/summary" />
 		public ALARM_LIMITValue ALARM_LIMIT => _ALARM_LIMIT ?? (_ALARM_LIMIT = new ALARM_LIMITValue());
 
-		/// <summary>
-		﻿/// set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br/><br />
-
+		/// <summary>﻿set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ALARM_LIMITValue : IEnumInstance
 		{
@@ -4313,15 +3761,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private LOAD_COUNTValue _LOAD_COUNT;
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LOAD_COUNTValue" path="/summary" />
 		public LOAD_COUNTValue LOAD_COUNT => _LOAD_COUNT ?? (_LOAD_COUNT = new LOAD_COUNTValue());
 
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times an operation has attempted to, or is planned to attempt to, load materials, parts, or other items.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class LOAD_COUNTValue : IEnumInstance
 		{
@@ -4342,15 +3787,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private UNLOAD_COUNTValue _UNLOAD_COUNT;
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UNLOAD_COUNTValue" path="/summary" />
 		public UNLOAD_COUNTValue UNLOAD_COUNT => _UNLOAD_COUNT ?? (_UNLOAD_COUNT = new UNLOAD_COUNTValue());
 
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times an operation has attempted to, or is planned to attempt to, unload materials, parts, or other items.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class UNLOAD_COUNTValue : IEnumInstance
 		{
@@ -4371,15 +3813,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TRANSFER_COUNTValue _TRANSFER_COUNT;
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TRANSFER_COUNTValue" path="/summary" />
 		public TRANSFER_COUNTValue TRANSFER_COUNT => _TRANSFER_COUNT ?? (_TRANSFER_COUNT = new TRANSFER_COUNTValue());
 
-		/// <summary>
-		﻿/// accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times an operation has attempted to, or is planned to attempt to, transfer materials, parts, or other items from one location to another.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TRANSFER_COUNTValue : IEnumInstance
 		{
@@ -4400,15 +3839,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ACTIVATION_COUNTValue _ACTIVATION_COUNT;
-		/// <summary>
-		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ACTIVATION_COUNTValue" path="/summary" />
 		public ACTIVATION_COUNTValue ACTIVATION_COUNT => _ACTIVATION_COUNT ?? (_ACTIVATION_COUNT = new ACTIVATION_COUNTValue());
 
-		/// <summary>
-		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times a function has attempted to, or is planned to attempt to, activate or be performed.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ACTIVATION_COUNTValue : IEnumInstance
 		{
@@ -4429,15 +3865,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private DEACTIVATION_COUNTValue _DEACTIVATION_COUNT;
-		/// <summary>
-		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DEACTIVATION_COUNTValue" path="/summary" />
 		public DEACTIVATION_COUNTValue DEACTIVATION_COUNT => _DEACTIVATION_COUNT ?? (_DEACTIVATION_COUNT = new DEACTIVATION_COUNTValue());
 
-		/// <summary>
-		﻿/// accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times a function has attempted to, or is planned to attempt to, deactivate or cease.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class DEACTIVATION_COUNTValue : IEnumInstance
 		{
@@ -4458,15 +3891,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private CYCLE_COUNTValue _CYCLE_COUNT;
-		/// <summary>
-		﻿/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CYCLE_COUNTValue" path="/summary" />
 		public CYCLE_COUNTValue CYCLE_COUNT => _CYCLE_COUNT ?? (_CYCLE_COUNT = new CYCLE_COUNTValue());
 
-		/// <summary>
-		﻿/// accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.<br/><br />
-
+		/// <summary>﻿accumulation of the number of times a cyclic function has attempted to, or is planned to attempt to execute.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CYCLE_COUNTValue : IEnumInstance
 		{
@@ -4487,15 +3917,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private VALVE_STATEValue _VALVE_STATE;
-		/// <summary>
-		﻿/// state of a valve is one of open, closed, or transitioning between the states.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="VALVE_STATEValue" path="/summary" />
 		public VALVE_STATEValue VALVE_STATE => _VALVE_STATE ?? (_VALVE_STATE = new VALVE_STATEValue());
 
-		/// <summary>
-		﻿/// state of a valve is one of open, closed, or transitioning between the states.<br/><br />
-
+		/// <summary>﻿state of a valve is one of open, closed, or transitioning between the states.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class VALVE_STATEValue : IEnumInstance
 		{
@@ -4516,15 +3943,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private LOCK_STATEValue _LOCK_STATE;
-		/// <summary>
-		﻿/// state or operating mode of a <see cref="Lock">Lock</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LOCK_STATEValue" path="/summary" />
 		public LOCK_STATEValue LOCK_STATE => _LOCK_STATE ?? (_LOCK_STATE = new LOCK_STATEValue());
 
-		/// <summary>
-		﻿/// state or operating mode of a <see cref="Lock">Lock</see>.<br/><br />
-
+		/// <summary>﻿state or operating mode of a <see cref="Lock">Lock</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class LOCK_STATEValue : IEnumInstance
 		{
@@ -4545,15 +3969,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PROCESS_STATEValue _PROCESS_STATE;
-		/// <summary>
-		﻿/// particular condition of the process occurrence at a specific time.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PROCESS_STATEValue" path="/summary" />
 		public PROCESS_STATEValue PROCESS_STATE => _PROCESS_STATE ?? (_PROCESS_STATE = new PROCESS_STATEValue());
 
-		/// <summary>
-		﻿/// particular condition of the process occurrence at a specific time.<br/><br />
-
+		/// <summary>﻿particular condition of the process occurrence at a specific time.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PROCESS_STATEValue : IEnumInstance
 		{
@@ -4574,15 +3995,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PART_PROCESSING_STATEValue _PART_PROCESSING_STATE;
-		/// <summary>
-		﻿/// particular condition of the part occurrence at a specific time.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_PROCESSING_STATEValue" path="/summary" />
 		public PART_PROCESSING_STATEValue PART_PROCESSING_STATE => _PART_PROCESSING_STATE ?? (_PART_PROCESSING_STATE = new PART_PROCESSING_STATEValue());
 
-		/// <summary>
-		﻿/// particular condition of the part occurrence at a specific time.<br/><br />
-
+		/// <summary>﻿particular condition of the part occurrence at a specific time.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_PROCESSING_STATEValue : IEnumInstance
 		{
@@ -4603,15 +4021,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private OPERATING_MODEValue _OPERATING_MODE;
-		/// <summary>
-		﻿/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="OPERATING_MODEValue" path="/summary" />
 		public OPERATING_MODEValue OPERATING_MODE => _OPERATING_MODE ?? (_OPERATING_MODE = new OPERATING_MODEValue());
 
-		/// <summary>
-		﻿/// state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.<br/><br />
-
+		/// <summary>﻿state of <see cref="Component">Component</see> or <see cref="Composition">Composition</see> that describes the automatic or manual operation of the entity.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class OPERATING_MODEValue : IEnumInstance
 		{
@@ -4632,15 +4047,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ASSET_COUNTValue _ASSET_COUNT;
-		/// <summary>
-		﻿/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ASSET_COUNTValue" path="/summary" />
 		public ASSET_COUNTValue ASSET_COUNT => _ASSET_COUNT ?? (_ASSET_COUNT = new ASSET_COUNTValue());
 
-		/// <summary>
-		﻿/// <i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.<br/><br />
-
+		/// <summary>﻿<i>data set</i> of the number of <i>Asset</i>s of a given type for a <i>Device</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ASSET_COUNTValue : IEnumInstance
 		{
@@ -4661,15 +4073,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private MAINTENANCE_LISTValue _MAINTENANCE_LIST;
-		/// <summary>
-		﻿/// actions or activities to be performed in support of a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MAINTENANCE_LISTValue" path="/summary" />
 		public MAINTENANCE_LISTValue MAINTENANCE_LIST => _MAINTENANCE_LIST ?? (_MAINTENANCE_LIST = new MAINTENANCE_LISTValue());
 
-		/// <summary>
-		﻿/// actions or activities to be performed in support of a piece of equipment.<br/><br />
-
+		/// <summary>﻿actions or activities to be performed in support of a piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class MAINTENANCE_LISTValue : IEnumInstance
 		{
@@ -4690,15 +4099,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private FIXTURE_IDValue _FIXTURE_ID;
-		/// <summary>
-		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FIXTURE_IDValue" path="/summary" />
 		public FIXTURE_IDValue FIXTURE_ID => _FIXTURE_ID ?? (_FIXTURE_ID = new FIXTURE_IDValue());
 
-		/// <summary>
-		﻿/// identifier for the current workholding or part clamp in use by a piece of equipment.<br/><br />
-
+		/// <summary>﻿identifier for the current workholding or part clamp in use by a piece of equipment.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class FIXTURE_IDValue : IEnumInstance
 		{
@@ -4719,15 +4125,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private PART_COUNT_TYPEValue _PART_COUNT_TYPE;
-		/// <summary>
-		﻿/// interpretation of <c>PART_COUNT</c>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="PART_COUNT_TYPEValue" path="/summary" />
 		public PART_COUNT_TYPEValue PART_COUNT_TYPE => _PART_COUNT_TYPE ?? (_PART_COUNT_TYPE = new PART_COUNT_TYPEValue());
 
-		/// <summary>
-		﻿/// interpretation of <c>PART_COUNT</c>.<br/><br />
-
+		/// <summary>﻿interpretation of <c>PART_COUNT</c>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class PART_COUNT_TYPEValue : IEnumInstance
 		{
@@ -4748,15 +4151,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private CLOCK_TIMEValue _CLOCK_TIME;
-		/// <summary>
-		﻿/// time provided by a timing device at a specific point in time.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CLOCK_TIMEValue" path="/summary" />
 		public CLOCK_TIMEValue CLOCK_TIME => _CLOCK_TIME ?? (_CLOCK_TIME = new CLOCK_TIMEValue());
 
-		/// <summary>
-		﻿/// time provided by a timing device at a specific point in time.<br/><br />
-
+		/// <summary>﻿time provided by a timing device at a specific point in time.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CLOCK_TIMEValue : IEnumInstance
 		{
@@ -4777,15 +4177,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private HOST_NAMEValue _HOST_NAME;
-		/// <summary>
-		﻿/// name of the host computer supplying data.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="HOST_NAMEValue" path="/summary" />
 		public HOST_NAMEValue HOST_NAME => _HOST_NAME ?? (_HOST_NAME = new HOST_NAMEValue());
 
-		/// <summary>
-		﻿/// name of the host computer supplying data.<br/><br />
-
+		/// <summary>﻿name of the host computer supplying data.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class HOST_NAMEValue : IEnumInstance
 		{
@@ -4806,15 +4203,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private NETWORK_PORTValue _NETWORK_PORT;
-		/// <summary>
-		﻿/// number of the TCP/IP or UDP/IP port for the connection endpoint.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="NETWORK_PORTValue" path="/summary" />
 		public NETWORK_PORTValue NETWORK_PORT => _NETWORK_PORT ?? (_NETWORK_PORT = new NETWORK_PORTValue());
 
-		/// <summary>
-		﻿/// number of the TCP/IP or UDP/IP port for the connection endpoint.<br/><br />
-
+		/// <summary>﻿number of the TCP/IP or UDP/IP port for the connection endpoint.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class NETWORK_PORTValue : IEnumInstance
 		{
@@ -4835,15 +4229,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private LEAK_DETECTValue _LEAK_DETECT;
-		/// <summary>
-		﻿/// indication designating whether a leak has been detected.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LEAK_DETECTValue" path="/summary" />
 		public LEAK_DETECTValue LEAK_DETECT => _LEAK_DETECT ?? (_LEAK_DETECT = new LEAK_DETECTValue());
 
-		/// <summary>
-		﻿/// indication designating whether a leak has been detected.<br/><br />
-
+		/// <summary>﻿indication designating whether a leak has been detected.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class LEAK_DETECTValue : IEnumInstance
 		{
@@ -4864,15 +4255,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private BATTERY_STATEValue _BATTERY_STATE;
-		/// <summary>
-		﻿/// present status of the battery.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="BATTERY_STATEValue" path="/summary" />
 		public BATTERY_STATEValue BATTERY_STATE => _BATTERY_STATE ?? (_BATTERY_STATE = new BATTERY_STATEValue());
 
-		/// <summary>
-		﻿/// present status of the battery.<br/><br />
-
+		/// <summary>﻿present status of the battery.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class BATTERY_STATEValue : IEnumInstance
 		{
@@ -4893,15 +4281,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private FEATURE_PERSISTENT_IDValue _FEATURE_PERSISTENT_ID;
-		/// <summary>
-		﻿/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FEATURE_PERSISTENT_IDValue" path="/summary" />
 		public FEATURE_PERSISTENT_IDValue FEATURE_PERSISTENT_ID => _FEATURE_PERSISTENT_ID ?? (_FEATURE_PERSISTENT_ID = new FEATURE_PERSISTENT_IDValue());
 
-		/// <summary>
-		﻿/// <i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of a <i>feature</i>. <seealso href="https://www.google.com/search?q=ISO 10303 AP 242/239&btnI=I">ISO 10303 AP 242/239</seealso>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class FEATURE_PERSISTENT_IDValue : IEnumInstance
 		{
@@ -4922,15 +4307,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private SENSOR_STATEValue _SENSOR_STATE;
-		/// <summary>
-		﻿/// detection result of a sensor.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SENSOR_STATEValue" path="/summary" />
 		public SENSOR_STATEValue SENSOR_STATE => _SENSOR_STATE ?? (_SENSOR_STATE = new SENSOR_STATEValue());
 
-		/// <summary>
-		﻿/// detection result of a sensor.<br/><br />
-
+		/// <summary>﻿detection result of a sensor.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class SENSOR_STATEValue : IEnumInstance
 		{
@@ -4951,15 +4333,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private COMPONENT_DATAValue _COMPONENT_DATA;
-		/// <summary>
-		﻿/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="COMPONENT_DATAValue" path="/summary" />
 		public COMPONENT_DATAValue COMPONENT_DATA => _COMPONENT_DATA ?? (_COMPONENT_DATA = new COMPONENT_DATAValue());
 
-		/// <summary>
-		﻿/// <see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.<br/><br />
-
+		/// <summary>﻿<see cref="Event">Event</see> that represents a <see cref="Component">Component</see> where the <see cref="EntryDefinition">EntryDefinition</see> identifies the <see cref="Component">Component</see> and the <see cref="CellDefinition">CellDefinition</see>s define the <see cref="Component">Component</see>'s observed <see cref="DataItem">DataItem</see>s.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class COMPONENT_DATAValue : IEnumInstance
 		{
@@ -4980,15 +4359,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private WORK_OFFSETSValue _WORK_OFFSETS;
-		/// <summary>
-		﻿/// properties of each addressable work offset.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WORK_OFFSETSValue" path="/summary" />
 		public WORK_OFFSETSValue WORK_OFFSETS => _WORK_OFFSETS ?? (_WORK_OFFSETS = new WORK_OFFSETSValue());
 
-		/// <summary>
-		﻿/// properties of each addressable work offset.<br/><br />
-
+		/// <summary>﻿properties of each addressable work offset.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class WORK_OFFSETSValue : IEnumInstance
 		{
@@ -5009,15 +4385,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TOOL_OFFSETSValue _TOOL_OFFSETS;
-		/// <summary>
-		﻿/// properties of each addressable tool offset.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOL_OFFSETSValue" path="/summary" />
 		public TOOL_OFFSETSValue TOOL_OFFSETS => _TOOL_OFFSETS ?? (_TOOL_OFFSETS = new TOOL_OFFSETSValue());
 
-		/// <summary>
-		﻿/// properties of each addressable tool offset.<br/><br />
-
+		/// <summary>﻿properties of each addressable tool offset.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TOOL_OFFSETSValue : IEnumInstance
 		{
@@ -5038,15 +4411,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private FEATURE_MEASUREMENTValue _FEATURE_MEASUREMENT;
-		/// <summary>
-		﻿/// assessing elements of a <i>feature</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="FEATURE_MEASUREMENTValue" path="/summary" />
 		public FEATURE_MEASUREMENTValue FEATURE_MEASUREMENT => _FEATURE_MEASUREMENT ?? (_FEATURE_MEASUREMENT = new FEATURE_MEASUREMENTValue());
 
-		/// <summary>
-		﻿/// assessing elements of a <i>feature</i>.<br/><br />
-
+		/// <summary>﻿assessing elements of a <i>feature</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class FEATURE_MEASUREMENTValue : IEnumInstance
 		{
@@ -5067,15 +4437,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private CHARACTERISTIC_PERSISTENT_IDValue _CHARACTERISTIC_PERSISTENT_ID;
-		/// <summary>
-		﻿/// <i>UUID</i> of the <i>characteristic</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHARACTERISTIC_PERSISTENT_IDValue" path="/summary" />
 		public CHARACTERISTIC_PERSISTENT_IDValue CHARACTERISTIC_PERSISTENT_ID => _CHARACTERISTIC_PERSISTENT_ID ?? (_CHARACTERISTIC_PERSISTENT_ID = new CHARACTERISTIC_PERSISTENT_IDValue());
 
-		/// <summary>
-		﻿/// <i>UUID</i> of the <i>characteristic</i>.<br/><br />
-
+		/// <summary>﻿<i>UUID</i> of the <i>characteristic</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CHARACTERISTIC_PERSISTENT_IDValue : IEnumInstance
 		{
@@ -5096,15 +4463,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private MEASUREMENT_TYPEValue _MEASUREMENT_TYPE;
-		/// <summary>
-		﻿/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MEASUREMENT_TYPEValue" path="/summary" />
 		public MEASUREMENT_TYPEValue MEASUREMENT_TYPE => _MEASUREMENT_TYPE ?? (_MEASUREMENT_TYPE = new MEASUREMENT_TYPEValue());
 
-		/// <summary>
-		﻿/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br/><br />
-
+		/// <summary>﻿class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class MEASUREMENT_TYPEValue : IEnumInstance
 		{
@@ -5125,15 +4489,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private MEASUREMENT_VALUEValue _MEASUREMENT_VALUE;
-		/// <summary>
-		﻿/// measurement based on the measurement type.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MEASUREMENT_VALUEValue" path="/summary" />
 		public MEASUREMENT_VALUEValue MEASUREMENT_VALUE => _MEASUREMENT_VALUE ?? (_MEASUREMENT_VALUE = new MEASUREMENT_VALUEValue());
 
-		/// <summary>
-		﻿/// measurement based on the measurement type.<br/><br />
-
+		/// <summary>﻿measurement based on the measurement type.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class MEASUREMENT_VALUEValue : IEnumInstance
 		{
@@ -5154,15 +4515,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private MEASUREMENT_UNITSValue _MEASUREMENT_UNITS;
-		/// <summary>
-		﻿/// engineering units of the measurement.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MEASUREMENT_UNITSValue" path="/summary" />
 		public MEASUREMENT_UNITSValue MEASUREMENT_UNITS => _MEASUREMENT_UNITS ?? (_MEASUREMENT_UNITS = new MEASUREMENT_UNITSValue());
 
-		/// <summary>
-		﻿/// engineering units of the measurement.<br/><br />
-
+		/// <summary>﻿engineering units of the measurement.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class MEASUREMENT_UNITSValue : IEnumInstance
 		{
@@ -5183,15 +4541,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private CHARACTERISTIC_STATUSValue _CHARACTERISTIC_STATUS;
-		/// <summary>
-		﻿/// pass/fail result of the measurement.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CHARACTERISTIC_STATUSValue" path="/summary" />
 		public CHARACTERISTIC_STATUSValue CHARACTERISTIC_STATUS => _CHARACTERISTIC_STATUS ?? (_CHARACTERISTIC_STATUS = new CHARACTERISTIC_STATUSValue());
 
-		/// <summary>
-		﻿/// pass/fail result of the measurement.<br/><br />
-
+		/// <summary>﻿pass/fail result of the measurement.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CHARACTERISTIC_STATUSValue : IEnumInstance
 		{
@@ -5212,15 +4567,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private UNCERTAINTY_TYPEValue _UNCERTAINTY_TYPE;
-		/// <summary>
-		﻿/// method used to compute <i>standard uncertainty</i>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UNCERTAINTY_TYPEValue" path="/summary" />
 		public UNCERTAINTY_TYPEValue UNCERTAINTY_TYPE => _UNCERTAINTY_TYPE ?? (_UNCERTAINTY_TYPE = new UNCERTAINTY_TYPEValue());
 
-		/// <summary>
-		﻿/// method used to compute <i>standard uncertainty</i>.<br/><br />
-
+		/// <summary>﻿method used to compute <i>standard uncertainty</i>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class UNCERTAINTY_TYPEValue : IEnumInstance
 		{
@@ -5241,15 +4593,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private UNCERTAINTYValue _UNCERTAINTY;
-		/// <summary>
-		﻿/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UNCERTAINTYValue" path="/summary" />
 		public UNCERTAINTYValue UNCERTAINTY => _UNCERTAINTY ?? (_UNCERTAINTY = new UNCERTAINTYValue());
 
-		/// <summary>
-		﻿/// <i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.<br/><br />
-
+		/// <summary>﻿<i>uncertainty</i> specified by <see cref="UncertaintyType">UncertaintyType</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class UNCERTAINTYValue : IEnumInstance
 		{
@@ -5270,15 +4619,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private SPECIFICATION_LIMITSValue _SPECIFICATION_LIMITS;
-		/// <summary>
-		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="SPECIFICATION_LIMITSValue" path="/summary" />
 		public SPECIFICATION_LIMITSValue SPECIFICATION_LIMITS => _SPECIFICATION_LIMITS ?? (_SPECIFICATION_LIMITS = new SPECIFICATION_LIMITSValue());
 
-		/// <summary>
-		﻿/// set of limits defining a range of values designating acceptable performance for a variable.<br/><br />
-
+		/// <summary>﻿set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class SPECIFICATION_LIMITSValue : IEnumInstance
 		{
@@ -5299,15 +4645,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private CONTROL_LIMITSValue _CONTROL_LIMITS;
-		/// <summary>
-		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="CONTROL_LIMITSValue" path="/summary" />
 		public CONTROL_LIMITSValue CONTROL_LIMITS => _CONTROL_LIMITS ?? (_CONTROL_LIMITS = new CONTROL_LIMITSValue());
 
-		/// <summary>
-		﻿/// set of limits used to indicate whether a process variable is stable and in control.<br/><br />
-
+		/// <summary>﻿set of limits used to indicate whether a process variable is stable and in control.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class CONTROL_LIMITSValue : IEnumInstance
 		{
@@ -5328,15 +4671,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private ALARM_LIMITSValue _ALARM_LIMITS;
-		/// <summary>
-		﻿/// set of limits used to trigger warning or alarm indicators.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="ALARM_LIMITSValue" path="/summary" />
 		public ALARM_LIMITSValue ALARM_LIMITS => _ALARM_LIMITS ?? (_ALARM_LIMITS = new ALARM_LIMITSValue());
 
-		/// <summary>
-		﻿/// set of limits used to trigger warning or alarm indicators.<br/><br />
-
+		/// <summary>﻿set of limits used to trigger warning or alarm indicators.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class ALARM_LIMITSValue : IEnumInstance
 		{
@@ -5357,15 +4697,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private TOOL_CUTTING_ITEMValue _TOOL_CUTTING_ITEM;
-		/// <summary>
-		﻿/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem.indices">indices in CuttingItem</see> of the currently active cutting tool edge.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="TOOL_CUTTING_ITEMValue" path="/summary" />
 		public TOOL_CUTTING_ITEMValue TOOL_CUTTING_ITEM => _TOOL_CUTTING_ITEM ?? (_TOOL_CUTTING_ITEM = new TOOL_CUTTING_ITEMValue());
 
-		/// <summary>
-		﻿/// references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem.indices">indices in CuttingItem</see> of the currently active cutting tool edge.<br/><br />
-
+		/// <summary>﻿references the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> <see cref="CuttingItem">CuttingItem</see> index related to the <see cref="CuttingItem.indices">indices in CuttingItem</see> of the currently active cutting tool edge.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class TOOL_CUTTING_ITEMValue : IEnumInstance
 		{
@@ -5386,15 +4723,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private LOCATION_ADDRESSValue _LOCATION_ADDRESS;
-		/// <summary>
-		﻿/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="LOCATION_ADDRESSValue" path="/summary" />
 		public LOCATION_ADDRESSValue LOCATION_ADDRESS => _LOCATION_ADDRESS ?? (_LOCATION_ADDRESS = new LOCATION_ADDRESSValue());
 
-		/// <summary>
-		﻿/// structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso><br/><br />
-
+		/// <summary>﻿structured information that allows the unambiguous determination of an object for purposes of identification and location. <seealso href="https://www.google.com/search?q=ISO 19160-4:2017&btnI=I">ISO 19160-4:2017</seealso><br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class LOCATION_ADDRESSValue : IEnumInstance
 		{
@@ -5415,15 +4749,12 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 ";
 		}
 		private POWER_SOURCEValue _POWER_SOURCE;
-		/// <summary>
-		﻿/// active energy source for the <see cref="Component">Component</see>.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="POWER_SOURCEValue" path="/summary" />
 		public POWER_SOURCEValue POWER_SOURCE => _POWER_SOURCE ?? (_POWER_SOURCE = new POWER_SOURCEValue());
 
-		/// <summary>
-		﻿/// active energy source for the <see cref="Component">Component</see>.<br/><br />
-
+		/// <summary>﻿active energy source for the <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
 		public sealed class POWER_SOURCEValue : IEnumInstance
 		{

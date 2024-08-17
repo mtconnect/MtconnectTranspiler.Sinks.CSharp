@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.References
 {
-	/// <summary>
-	﻿/// pointer to information that is associated with another entity defined elsewhere in the <see cref="MTConnectDevices">MTConnectDevices</see> entity for a piece of equipment.<br/><br />Description<br/><see cref="Reference">Reference</see> is an abstract entity and will be realized by a specific <see cref="Reference">Reference</see> type for an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="ComponentRef">ComponentRef</see> and <see cref="DataItemRef">DataItemRef</see>.<br/><br/><br />
-
+	/// <summary>﻿pointer to information that is associated with another entity defined elsewhere in the <see cref="MTConnectDevices">MTConnectDevices</see> entity for a piece of equipment.<br /><br /><br />Description<br /><br /><see cref="Reference">Reference</see> is an abstract entity and will be realized by a specific <see cref="Reference">Reference</see> type for an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="ComponentRef">ComponentRef</see> and <see cref="DataItemRef">DataItemRef</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_25A13743_B12C_4c6c_B1DA_8E2EFDD156EF">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -41,6 +42,9 @@ namespace Mtconnect.DeviceInformationModel.References
 		/// <inheritdoc />
 		public ReferenceClassProperties Properties { get; } = new ReferenceClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ReferenceClass" />.
+		/// </summary>
 		public class ReferenceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -55,9 +59,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// <remarks>Original Name: IdRef</remarks>
 			/// </summary>
 			public IdRefProperty IdRef { get; } = new IdRefProperty();
-			/// <summary>
-			﻿/// pointer to the <c>id</c> of an entity that contains the information to be associated with this entity.<br/><br />
-
+			
+			/// <summary>﻿pointer to the <c>id</c> of an entity that contains the information to be associated with this entity.<br /><br /><br />
 			/// </summary>
 			public sealed class IdRefProperty : IProperty
 			{
@@ -111,9 +114,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿///  name of an element or a piece of equipment.<br/><br />
-
+			
+			/// <summary>﻿ name of an element or a piece of equipment.<br /><br /><br />
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
@@ -167,9 +169,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// <remarks>Original Name: DataItemId</remarks>
 			/// </summary>
 			public DataItemIdProperty DataItemId { get; } = new DataItemIdProperty();
-			/// <summary>
-			﻿/// pointer to the <see cref="DataItem.id">id in DataItem</see> that contains the information to be associated with this entity.<br/><br />
-
+			
+			/// <summary>﻿pointer to the <see cref="DataItem.id">id in DataItem</see> that contains the information to be associated with this entity.<br /><br /><br />
 			/// </summary>
 			public sealed class DataItemIdProperty : IProperty
 			{
@@ -223,9 +224,8 @@ namespace Mtconnect.DeviceInformationModel.References
 			/// <remarks>Original Name: RefDataItemId</remarks>
 			/// </summary>
 			public RefDataItemIdProperty RefDataItemId { get; } = new RefDataItemIdProperty();
-			/// <summary>
-			﻿/// pointer to the <see cref="DataItem.id">id in DataItem</see> that contains the information to be associated with this entity.<br/><br />
-
+			
+			/// <summary>﻿pointer to the <see cref="DataItem.id">id in DataItem</see> that contains the information to be associated with this entity.<br /><br /><br />
 			/// </summary>
 			public sealed class RefDataItemIdProperty : IProperty
 			{

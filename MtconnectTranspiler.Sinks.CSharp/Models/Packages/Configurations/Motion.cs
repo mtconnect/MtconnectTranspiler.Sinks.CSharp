@@ -1,3 +1,5 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +7,7 @@ using Package = Mtconnect.DeviceInformationModel.Configurations.Motion;
 
 namespace Mtconnect.DeviceInformationModel.Configurations
 {
-	/// <summary>
-	﻿/// This section provides semantic information for the <see cref="Motion">Motion</see> entity.<br /><br />![Motion](figures/Motion.png "Motion"){: width="0.8"}<br /><br />> Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![Motion Example](figures/Motion%20Example.png "Motion Example"){: width="0.8"}<br /><br />> Note: See {{lst(motion-example)}} for the <i>XML</i> representation of the same example.<br/><br />
-
+	/// <summary>﻿This section provides semantic information for the <see cref="Motion">Motion</see> entity.<br /><br />![Motion](figures/Motion.png "Motion"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![Motion Example](figures/Motion%20Example.png "Motion Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(motion-example)}} for the <i>XML</i> representation of the same example.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579526830201_236256_7625">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +40,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			MotionClass,
 			AxisClass,
 		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
 		#region Packages
 	#endregion
 
@@ -56,6 +61,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// </summary>
 	public Package.AxisClass AxisClass => _AxisClass ?? (_AxisClass = new Package.AxisClass());
 
+	#endregion
+
+	#region Enums
 	#endregion
 	}
 }

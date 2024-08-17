@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678194789732_239714_17210">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FeatureMeasurementResultClass : IClass
 	{
@@ -38,10 +44,14 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public FeatureMeasurementResultClassProperties Properties { get; } = new FeatureMeasurementResultClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="FeatureMeasurementResultClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.Representations.TableClass.TableClassProperties" />.
+		/// </summary>
 		public class FeatureMeasurementResultClassProperties : Mtconnect.ObservationInformationModel.Representations.TableClass.TableClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				MeasurementId,
 				FeaturePersistentId,
 				CharacteristicPersistentId,
@@ -56,12 +66,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="MeasurementIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MeasurementId</remarks>
 			/// </summary>
-			public MeasurementIdProperty MeasurementId { get; } = new MeasurementIdProperty();
-			/// <summary>
-			﻿/// identifier of this measurement.<br/><br />
-
+			public new MeasurementIdProperty MeasurementId { get; } = new MeasurementIdProperty();
+			
+			/// <summary>﻿identifier of this measurement.<br /><br /><br />
 			/// </summary>
-			public sealed class MeasurementIdProperty : IProperty
+			public new sealed class MeasurementIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -112,12 +121,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="FeaturePersistentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: FeaturePersistentId</remarks>
 			/// </summary>
-			public FeaturePersistentIdProperty FeaturePersistentId { get; } = new FeaturePersistentIdProperty();
-			/// <summary>
-			﻿/// <i>UUID</i> of the feature.<br/><br />
-
+			public new FeaturePersistentIdProperty FeaturePersistentId { get; } = new FeaturePersistentIdProperty();
+			
+			/// <summary>﻿<i>UUID</i> of the feature.<br /><br /><br />
 			/// </summary>
-			public sealed class FeaturePersistentIdProperty : IProperty
+			public new sealed class FeaturePersistentIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -168,12 +176,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="CharacteristicPersistentIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CharacteristicPersistentId</remarks>
 			/// </summary>
-			public CharacteristicPersistentIdProperty CharacteristicPersistentId { get; } = new CharacteristicPersistentIdProperty();
-			/// <summary>
-			﻿/// <i>UUID</i> of the characteristic.<br/><br />
-
+			public new CharacteristicPersistentIdProperty CharacteristicPersistentId { get; } = new CharacteristicPersistentIdProperty();
+			
+			/// <summary>﻿<i>UUID</i> of the characteristic.<br /><br /><br />
 			/// </summary>
-			public sealed class CharacteristicPersistentIdProperty : IProperty
+			public new sealed class CharacteristicPersistentIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -224,12 +231,11 @@ namespace Mtconnect.DataTypes
 			/// <inheritdoc cref="MeasurementTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MeasurementType</remarks>
 			/// </summary>
-			public MeasurementTypeProperty MeasurementType { get; } = new MeasurementTypeProperty();
-			/// <summary>
-			﻿/// class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br /><br />Examples: <c>POINT</c>, <c>RADIUS</c>, <c>ANGLE</c>, <c>LENGTH</c>, etc.<br/><br />
-
+			public new MeasurementTypeProperty MeasurementType { get; } = new MeasurementTypeProperty();
+			
+			/// <summary>﻿class of measurement being performed. <seealso href="https://www.google.com/search?q=QIF 3:2018 Section 6.3&btnI=I">QIF 3:2018 Section 6.3</seealso><br /><br />Examples: <c>POINT</c>, <c>RADIUS</c>, <c>ANGLE</c>, <c>LENGTH</c>, etc.<br /><br /><br />
 			/// </summary>
-			public sealed class MeasurementTypeProperty : IProperty
+			public new sealed class MeasurementTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -282,12 +288,11 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 			/// <inheritdoc cref="MeasurementValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MeasurementValue</remarks>
 			/// </summary>
-			public MeasurementValueProperty MeasurementValue { get; } = new MeasurementValueProperty();
-			/// <summary>
-			﻿/// measurement based on the measurement type.<br/><br />
-
+			public new MeasurementValueProperty MeasurementValue { get; } = new MeasurementValueProperty();
+			
+			/// <summary>﻿measurement based on the measurement type.<br /><br /><br />
 			/// </summary>
-			public sealed class MeasurementValueProperty : IProperty
+			public new sealed class MeasurementValueProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -338,12 +343,11 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 			/// <inheritdoc cref="MeasurementUnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MeasurementUnits</remarks>
 			/// </summary>
-			public MeasurementUnitsProperty MeasurementUnits { get; } = new MeasurementUnitsProperty();
-			/// <summary>
-			﻿/// engineering units of the measurement.<br/><br />
-
+			public new MeasurementUnitsProperty MeasurementUnits { get; } = new MeasurementUnitsProperty();
+			
+			/// <summary>﻿engineering units of the measurement.<br /><br /><br />
 			/// </summary>
-			public sealed class MeasurementUnitsProperty : IProperty
+			public new sealed class MeasurementUnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -394,12 +398,11 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 			/// <inheritdoc cref="CharacteristicStatusProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: CharacteristicStatus</remarks>
 			/// </summary>
-			public CharacteristicStatusProperty CharacteristicStatus { get; } = new CharacteristicStatusProperty();
-			/// <summary>
-			﻿/// pass/fail result of the measurement.<br/><br />
-
+			public new CharacteristicStatusProperty CharacteristicStatus { get; } = new CharacteristicStatusProperty();
+			
+			/// <summary>﻿pass/fail result of the measurement.<br /><br /><br />
 			/// </summary>
-			public sealed class CharacteristicStatusProperty : IProperty
+			public new sealed class CharacteristicStatusProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -450,12 +453,11 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 			/// <inheritdoc cref="UncertaintyTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: UncertaintyType</remarks>
 			/// </summary>
-			public UncertaintyTypeProperty UncertaintyType { get; } = new UncertaintyTypeProperty();
-			/// <summary>
-			﻿/// method used to compute <i>standard uncertainty</i>.<br/><br />
-
+			public new UncertaintyTypeProperty UncertaintyType { get; } = new UncertaintyTypeProperty();
+			
+			/// <summary>﻿method used to compute <i>standard uncertainty</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class UncertaintyTypeProperty : IProperty
+			public new sealed class UncertaintyTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -506,12 +508,11 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 			/// <inheritdoc cref="UncertaintyProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Uncertainty</remarks>
 			/// </summary>
-			public UncertaintyProperty Uncertainty { get; } = new UncertaintyProperty();
-			/// <summary>
-			﻿/// <i>uncertainty</i> specified by <c>UNCERTAINTY_TYPE</c>.<br/><br />
-
+			public new UncertaintyProperty Uncertainty { get; } = new UncertaintyProperty();
+			
+			/// <summary>﻿<i>uncertainty</i> specified by <c>UNCERTAINTY_TYPE</c>.<br /><br /><br />
 			/// </summary>
-			public sealed class UncertaintyProperty : IProperty
+			public new sealed class UncertaintyProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

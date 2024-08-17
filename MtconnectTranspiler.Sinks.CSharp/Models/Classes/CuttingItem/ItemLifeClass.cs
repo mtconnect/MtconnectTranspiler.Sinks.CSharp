@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 {
-	/// <summary>
-	﻿/// life of a <see cref="CuttingItem">CuttingItem</see>.<br/><br />
-
+	/// <summary>﻿life of a <see cref="CuttingItem">CuttingItem</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_CC4F8633_BAAC_47e8_9EFB_2BFC62215FC8">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		/// <inheritdoc />
 		public ItemLifeClassProperties Properties { get; } = new ItemLifeClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ItemLifeClass" />.
+		/// </summary>
 		public class ItemLifeClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -56,9 +60,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: CountDirection</remarks>
 			/// </summary>
 			public CountDirectionProperty CountDirection { get; } = new CountDirectionProperty();
-			/// <summary>
-			﻿/// indicates if the item life counts from zero to maximum or maximum to zero.<br/><br />
-
+			
+			/// <summary>﻿indicates if the item life counts from zero to maximum or maximum to zero.<br /><br /><br />
 			/// </summary>
 			public sealed class CountDirectionProperty : IProperty
 			{
@@ -112,9 +115,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: Initial</remarks>
 			/// </summary>
 			public InitialProperty Initial { get; } = new InitialProperty();
-			/// <summary>
-			﻿/// initial life of the item when it is new.<br/><br />
-
+			
+			/// <summary>﻿initial life of the item when it is new.<br /><br /><br />
 			/// </summary>
 			public sealed class InitialProperty : IProperty
 			{
@@ -168,9 +170,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: Limit</remarks>
 			/// </summary>
 			public LimitProperty Limit { get; } = new LimitProperty();
-			/// <summary>
-			﻿/// end of life limit for this item.<br/><br />
-
+			
+			/// <summary>﻿end of life limit for this item.<br /><br /><br />
 			/// </summary>
 			public sealed class LimitProperty : IProperty
 			{
@@ -224,9 +225,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
-			/// <summary>
-			﻿/// type of item life being accumulated.<br/><br />
-
+			
+			/// <summary>﻿type of item life being accumulated.<br /><br /><br />
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -280,9 +280,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: Warning</remarks>
 			/// </summary>
 			public WarningProperty Warning { get; } = new WarningProperty();
-			/// <summary>
-			﻿/// point at which a item life warning will be raised.<br /><br/><br />
-
+			
+			/// <summary>﻿point at which a item life warning will be raised.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class WarningProperty : IProperty
 			{
@@ -336,9 +335,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
-			/// <summary>
-			﻿/// value of <see cref="ItemLife">ItemLife</see>.<br/><br />
-
+			
+			/// <summary>﻿value of <see cref="ItemLife">ItemLife</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{

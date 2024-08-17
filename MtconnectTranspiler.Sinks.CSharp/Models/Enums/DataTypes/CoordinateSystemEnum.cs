@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_6B22B6F6_7073_4fa7_961B_B05AD4C7EF81">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_6B22B6F6_7073_4fa7_961B_B05AD4C7EF81">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -17,9 +18,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CoordinateSystemEnum
 	{
-		/// <summary>
-		﻿/// unchangeable coordinate system that has machine zero as its origin.<br/><br />
-
+		/// <summary>﻿unchangeable coordinate system that has machine zero as its origin.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -29,9 +28,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 		[Obsolete("Deprecated in v2.0 according to https://model.mtconnect.org/#_Version_2.0")]
 		MACHINE,
-		/// <summary>
-		﻿/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.<br /><br />If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.<br/><br />
-
+		/// <summary>﻿coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.<br /><br />If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -43,9 +40,8 @@ namespace Mtconnect.DataTypes
 		WORK,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_6B22B6F6_7073_4fa7_961B_B05AD4C7EF81">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_6B22B6F6_7073_4fa7_961B_B05AD4C7EF81">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CoordinateSystemEnumMetaClass : IEnum
@@ -56,6 +52,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(CoordinateSystemEnum);
 
 		/// <inheritdoc />
@@ -74,15 +71,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private MACHINEValue _MACHINE;
-		/// <summary>
-		﻿/// unchangeable coordinate system that has machine zero as its origin.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="MACHINEValue" path="/summary" />
 		public MACHINEValue MACHINE => _MACHINE ?? (_MACHINE = new MACHINEValue());
 
-		/// <summary>
-		﻿/// unchangeable coordinate system that has machine zero as its origin.<br/><br />
-
+		/// <summary>﻿unchangeable coordinate system that has machine zero as its origin.<br /><br /><br />
+		/// Value for CoordinateSystemEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemEnum">CoordinateSystemEnum</seealso>
 		/// </summary>
 		public sealed class MACHINEValue : IEnumInstance
 		{
@@ -103,15 +97,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private WORKValue _WORK;
-		/// <summary>
-		﻿/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.<br /><br />If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="WORKValue" path="/summary" />
 		public WORKValue WORK => _WORK ?? (_WORK = new WORKValue());
 
-		/// <summary>
-		﻿/// coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.<br /><br />If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.<br/><br />
-
+		/// <summary>﻿coordinate system that represents the working area for a particular workpiece whose origin is shifted within the <c>MACHINE</c> coordinate system.<br /><br />If the <c>WORK</c> coordinates are not currently defined in the piece of equipment, the <c>MACHINE</c> coordinates will be used.<br /><br /><br />
+		/// Value for CoordinateSystemEnum.<br/>
+		/// <br/>See also <seealso cref="CoordinateSystemEnum">CoordinateSystemEnum</seealso>
 		/// </summary>
 		public sealed class WORKValue : IEnumInstance
 		{

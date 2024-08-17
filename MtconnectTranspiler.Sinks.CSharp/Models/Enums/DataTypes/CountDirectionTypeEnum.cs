@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_CFE5DAF7_7F0E_40ce_B920_5151D846B636">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_CFE5DAF7_7F0E_40ce_B920_5151D846B636">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,9 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum CountDirectionTypeEnum
 	{
-		/// <summary>
-		﻿/// tool life counts up from zero to the maximum.<br /><br/><br />
-
+		/// <summary>﻿tool life counts up from zero to the maximum.<br /><br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -25,9 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		UP,
-		/// <summary>
-		﻿/// tool life counts down from the maximum to zero.<br/><br />
-
+		/// <summary>﻿tool life counts down from the maximum to zero.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -37,9 +34,8 @@ namespace Mtconnect.DataTypes
 		DOWN,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration__EAID_CFE5DAF7_7F0E_40ce_B920_5151D846B636">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_CFE5DAF7_7F0E_40ce_B920_5151D846B636">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CountDirectionTypeEnumMetaClass : IEnum
@@ -50,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(CountDirectionTypeEnum);
 
 		/// <inheritdoc />
@@ -68,15 +65,12 @@ namespace Mtconnect.DataTypes
 		};
 
 		private UPValue _UP;
-		/// <summary>
-		﻿/// tool life counts up from zero to the maximum.<br /><br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="UPValue" path="/summary" />
 		public UPValue UP => _UP ?? (_UP = new UPValue());
 
-		/// <summary>
-		﻿/// tool life counts up from zero to the maximum.<br /><br/><br />
-
+		/// <summary>﻿tool life counts up from zero to the maximum.<br /><br /><br /><br />
+		/// Value for CountDirectionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CountDirectionTypeEnum">CountDirectionTypeEnum</seealso>
 		/// </summary>
 		public sealed class UPValue : IEnumInstance
 		{
@@ -97,15 +91,12 @@ namespace Mtconnect.DataTypes
 ";
 		}
 		private DOWNValue _DOWN;
-		/// <summary>
-		﻿/// tool life counts down from the maximum to zero.<br/><br />
-
-		/// </summary>
+		/// <inheritdoc cref="DOWNValue" path="/summary" />
 		public DOWNValue DOWN => _DOWN ?? (_DOWN = new DOWNValue());
 
-		/// <summary>
-		﻿/// tool life counts down from the maximum to zero.<br/><br />
-
+		/// <summary>﻿tool life counts down from the maximum to zero.<br /><br /><br />
+		/// Value for CountDirectionTypeEnum.<br/>
+		/// <br/>See also <seealso cref="CountDirectionTypeEnum">CountDirectionTypeEnum</seealso>
 		/// </summary>
 		public sealed class DOWNValue : IEnumInstance
 		{

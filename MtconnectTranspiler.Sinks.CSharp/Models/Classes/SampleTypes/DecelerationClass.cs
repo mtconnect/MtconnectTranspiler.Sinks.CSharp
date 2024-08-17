@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 {
-	/// <summary>
-	﻿/// <see cref="SampleEnum.DECELERATION">SampleEnum.DECELERATION</see><br/><br />
-
+	/// <summary>﻿<see cref="SampleEnum.DECELERATION">SampleEnum.DECELERATION</see><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605642679847_825017_142">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		/// <inheritdoc />
 		public DecelerationClassProperties Properties { get; } = new DecelerationClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DecelerationClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties" />.
+		/// </summary>
 		public class DecelerationClassProperties : Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Units,
 				Type,
 				SubType,
@@ -56,8 +61,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
-			public UnitsProperty Units { get; } = new UnitsProperty();
-			public sealed class UnitsProperty : IProperty
+			public new UnitsProperty Units { get; } = new UnitsProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class UnitsProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -107,8 +115,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
-			public TypeProperty Type { get; } = new TypeProperty();
-			public sealed class TypeProperty : IProperty
+			public new TypeProperty Type { get; } = new TypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -158,8 +169,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SubType</remarks>
 			/// </summary>
-			public SubTypeProperty SubType { get; } = new SubTypeProperty();
-			public sealed class SubTypeProperty : IProperty
+			public new SubTypeProperty SubType { get; } = new SubTypeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class SubTypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

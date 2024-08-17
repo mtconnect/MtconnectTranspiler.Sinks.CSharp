@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
-	/// <summary>
-	﻿/// data regarding the application or use of the tool.<br /><br />This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.<br/><br />
-
+	/// <summary>﻿data regarding the application or use of the tool.<br /><br />This data is provided by various pieces of equipment (i.e. machine tool, presetter) and statistical process control applications. Life cycle data will not remain static, but will change periodically when a tool is used or measured.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_D1C82EBD_D828_4e5f_9F46_3337710837FE">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -42,6 +43,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 		/// <inheritdoc />
 		public CuttingToolLifeCycleClassProperties Properties { get; } = new CuttingToolLifeCycleClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="CuttingToolLifeCycleClass" />.
+		/// </summary>
 		public class CuttingToolLifeCycleClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -63,9 +67,8 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: ConnectionCodeMachineSide</remarks>
 			/// </summary>
 			public ConnectionCodeMachineSideProperty ConnectionCodeMachineSide { get; } = new ConnectionCodeMachineSideProperty();
-			/// <summary>
-			﻿/// identifier for the capability to connect any component of the cutting tool together, except Assembly Items, on the machine side. Code: <c>CCMS</c><br/><br />
-
+			
+			/// <summary>﻿identifier for the capability to connect any component of the cutting tool together, except Assembly Items, on the machine side. Code: <c>CCMS</c><br /><br /><br />
 			/// </summary>
 			public sealed class ConnectionCodeMachineSideProperty : IProperty
 			{
@@ -119,9 +122,8 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: ProgramToolGroup</remarks>
 			/// </summary>
 			public ProgramToolGroupProperty ProgramToolGroup { get; } = new ProgramToolGroupProperty();
-			/// <summary>
-			﻿/// tool group this tool is assigned in the part program.<br/><br />
-
+			
+			/// <summary>﻿tool group this tool is assigned in the part program.<br /><br /><br />
 			/// </summary>
 			public sealed class ProgramToolGroupProperty : IProperty
 			{
@@ -175,9 +177,8 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: ProgramToolNumber</remarks>
 			/// </summary>
 			public ProgramToolNumberProperty ProgramToolNumber { get; } = new ProgramToolNumberProperty();
-			/// <summary>
-			﻿/// number of the tool as referenced in the part program.<br/><br />
-
+			
+			/// <summary>﻿number of the tool as referenced in the part program.<br /><br /><br />
 			/// </summary>
 			public sealed class ProgramToolNumberProperty : IProperty
 			{
@@ -231,6 +232,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: HasProcessFeedRate</remarks>
 			/// </summary>
 			public HasProcessFeedRatePartProperty HasProcessFeedRatePart { get; } = new HasProcessFeedRatePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasProcessFeedRatePartProperty : IProperty
 			{
 				/// <summary>
@@ -282,6 +286,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: HasToolLife</remarks>
 			/// </summary>
 			public HasToolLifePartProperty HasToolLifePart { get; } = new HasToolLifePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasToolLifePartProperty : IProperty
 			{
 				/// <summary>
@@ -333,6 +340,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: HasProcessSpindleSpeed</remarks>
 			/// </summary>
 			public HasProcessSpindleSpeedPartProperty HasProcessSpindleSpeedPart { get; } = new HasProcessSpindleSpeedPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasProcessSpindleSpeedPartProperty : IProperty
 			{
 				/// <summary>
@@ -384,6 +394,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: HasCutterStatus</remarks>
 			/// </summary>
 			public HasCutterStatusPartProperty HasCutterStatusPart { get; } = new HasCutterStatusPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasCutterStatusPartProperty : IProperty
 			{
 				/// <summary>
@@ -435,6 +448,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: HasCuttingItem</remarks>
 			/// </summary>
 			public HasCuttingItemPartProperty HasCuttingItemPart { get; } = new HasCuttingItemPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasCuttingItemPartProperty : IProperty
 			{
 				/// <summary>
@@ -486,6 +502,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: HasMeasurement</remarks>
 			/// </summary>
 			public HasMeasurementPartProperty HasMeasurementPart { get; } = new HasMeasurementPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasMeasurementPartProperty : IProperty
 			{
 				/// <summary>
@@ -537,6 +556,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: HasReconditionCount</remarks>
 			/// </summary>
 			public HasReconditionCountPartProperty HasReconditionCountPart { get; } = new HasReconditionCountPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasReconditionCountPartProperty : IProperty
 			{
 				/// <summary>
@@ -588,6 +610,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 			/// <remarks>Original Name: HasLocation</remarks>
 			/// </summary>
 			public HasLocationPartProperty HasLocationPart { get; } = new HasLocationPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasLocationPartProperty : IProperty
 			{
 				/// <summary>

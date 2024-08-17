@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel
 {
-	/// <summary>
-	﻿/// <see cref="Component">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself.<br/><br />Description<br/>A <see cref="Device">Device</see> <i>organize</i>s its parts as <see cref="Component">Component</see> entities.<br /><br />A <see cref="Device">Device</see> <b>MUST</b> have a <see cref="Device.name">name in Device</see> and <see cref="Device.uuid">uuid in Device</see> to identify itself. <br /><br />A <see cref="Device">Device</see> <b>MUST</b> have the following <see cref="DataItems">DataItems</see>: <see cref="Availability">Availability</see>, <see cref="AssetChanged">AssetChanged</see>, and <see cref="AssetRemoved">AssetRemoved</see>.<br /><br />See <see cref="Components">Components</see> for more details on the properties of <see cref="Device">Device</see>.<br /><br />> See <see cref="Part Properties of Device">Part Properties of Device</see> for a list of <i>top level</i> <see cref="Component">Component</see> types for a <see cref="Device">Device</see>.<br /><br/><br/><br />
-
+	/// <summary>﻿<see cref="Component">Component</see> composed of a piece of equipment that produces <i>observation</i>s about itself.<br /><br /><br />Description<br /><br />A <see cref="Device">Device</see> <i>organize</i>s its parts as <see cref="Component">Component</see> entities.<br /><br />A <see cref="Device">Device</see> <b>MUST</b> have a <see cref="Device.name">name in Device</see> and <see cref="Device.uuid">uuid in Device</see> to identify itself. <br /><br />A <see cref="Device">Device</see> <b>MUST</b> have the following <see cref="DataItems">DataItems</see>: <see cref="Availability">Availability</see>, <see cref="AssetChanged">AssetChanged</see>, and <see cref="AssetRemoved">AssetRemoved</see>.<br /><br />See <see cref="Components">Components</see> for more details on the properties of <see cref="Device">Device</see>.<br /><br />&gt; See <see cref="Part Properties of Device">Part Properties of Device</see> for a list of <i>top level</i> <see cref="Component">Component</see> types for a <see cref="Device">Device</see>.<br /><br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1620240839406_285612_1596">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -54,10 +55,14 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 		/// <inheritdoc />
 		public DeviceClassProperties Properties { get; } = new DeviceClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DeviceClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties" />.
+		/// </summary>
 		public class DeviceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				HasAuxiliaryPart,
 				HasControllerPart,
 				HasInterfacePart,
@@ -81,8 +86,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasAuxiliaryPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAuxiliary</remarks>
 			/// </summary>
-			public HasAuxiliaryPartProperty HasAuxiliaryPart { get; } = new HasAuxiliaryPartProperty();
-			public sealed class HasAuxiliaryPartProperty : IProperty
+			public new HasAuxiliaryPartProperty HasAuxiliaryPart { get; } = new HasAuxiliaryPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasAuxiliaryPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -132,8 +140,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasControllerPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasController</remarks>
 			/// </summary>
-			public HasControllerPartProperty HasControllerPart { get; } = new HasControllerPartProperty();
-			public sealed class HasControllerPartProperty : IProperty
+			public new HasControllerPartProperty HasControllerPart { get; } = new HasControllerPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasControllerPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -183,8 +194,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasInterfacePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasInterface</remarks>
 			/// </summary>
-			public HasInterfacePartProperty HasInterfacePart { get; } = new HasInterfacePartProperty();
-			public sealed class HasInterfacePartProperty : IProperty
+			public new HasInterfacePartProperty HasInterfacePart { get; } = new HasInterfacePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasInterfacePartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -234,8 +248,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasResourcePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasResource</remarks>
 			/// </summary>
-			public HasResourcePartProperty HasResourcePart { get; } = new HasResourcePartProperty();
-			public sealed class HasResourcePartProperty : IProperty
+			public new HasResourcePartProperty HasResourcePart { get; } = new HasResourcePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasResourcePartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -285,8 +302,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasStructurePartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasStructure</remarks>
 			/// </summary>
-			public HasStructurePartProperty HasStructurePart { get; } = new HasStructurePartProperty();
-			public sealed class HasStructurePartProperty : IProperty
+			public new HasStructurePartProperty HasStructurePart { get; } = new HasStructurePartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasStructurePartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -336,12 +356,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="Iso841ClassProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Iso841Class</remarks>
 			/// </summary>
-			public Iso841ClassProperty Iso841Class { get; } = new Iso841ClassProperty();
-			/// <summary>
-			﻿/// <b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>.<br/><br />
-
+			public new Iso841ClassProperty Iso841Class { get; } = new Iso841ClassProperty();
+			
+			/// <summary>﻿<b>DEPRECATED</b> in <i>MTConnect Version 1.2</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class Iso841ClassProperty : IProperty
+			public new sealed class Iso841ClassProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -392,12 +411,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="UuidProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Uuid</remarks>
 			/// </summary>
-			public UuidProperty Uuid { get; } = new UuidProperty();
-			/// <summary>
-			﻿/// universally unique identifier for the element.<br/><br />
-
+			public new UuidProperty Uuid { get; } = new UuidProperty();
+			
+			/// <summary>﻿universally unique identifier for the element.<br /><br /><br />
 			/// </summary>
-			public sealed class UuidProperty : IProperty
+			public new sealed class UuidProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -448,12 +466,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="MtconnectVersionProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: MtconnectVersion</remarks>
 			/// </summary>
-			public MtconnectVersionProperty MtconnectVersion { get; } = new MtconnectVersionProperty();
-			/// <summary>
-			﻿/// MTConnect version of the <i>Device Information Model</i> used to configure the information to be published for a piece of equipment in an <i>MTConnect Response Document</i>.<br/><br />
-
+			public new MtconnectVersionProperty MtconnectVersion { get; } = new MtconnectVersionProperty();
+			
+			/// <summary>﻿MTConnect version of the <i>Device Information Model</i> used to configure the information to be published for a piece of equipment in an <i>MTConnect Response Document</i>.<br /><br /><br />
 			/// </summary>
-			public sealed class MtconnectVersionProperty : IProperty
+			public new sealed class MtconnectVersionProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -504,8 +521,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasSystemPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasSystem</remarks>
 			/// </summary>
-			public HasSystemPartProperty HasSystemPart { get; } = new HasSystemPartProperty();
-			public sealed class HasSystemPartProperty : IProperty
+			public new HasSystemPartProperty HasSystemPart { get; } = new HasSystemPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasSystemPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -555,12 +575,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
-			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// name of an element or a piece of equipment.<br/><br />
-
+			public new NameProperty Name { get; } = new NameProperty();
+			
+			/// <summary>﻿name of an element or a piece of equipment.<br /><br /><br />
 			/// </summary>
-			public sealed class NameProperty : IProperty
+			public new sealed class NameProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -611,8 +630,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasPartPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasPart</remarks>
 			/// </summary>
-			public HasPartPartProperty HasPartPart { get; } = new HasPartPartProperty();
-			public sealed class HasPartPartProperty : IProperty
+			public new HasPartPartProperty HasPartPart { get; } = new HasPartPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasPartPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -662,8 +684,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasProcessPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasProcess</remarks>
 			/// </summary>
-			public HasProcessPartProperty HasProcessPart { get; } = new HasProcessPartProperty();
-			public sealed class HasProcessPartProperty : IProperty
+			public new HasProcessPartProperty HasProcessPart { get; } = new HasProcessPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasProcessPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -713,8 +738,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasAxisPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAxis</remarks>
 			/// </summary>
-			public HasAxisPartProperty HasAxisPart { get; } = new HasAxisPartProperty();
-			public sealed class HasAxisPartProperty : IProperty
+			public new HasAxisPartProperty HasAxisPart { get; } = new HasAxisPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasAxisPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -764,8 +792,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HasAdapterPartProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: HasAdapter</remarks>
 			/// </summary>
-			public HasAdapterPartProperty HasAdapterPart { get; } = new HasAdapterPartProperty();
-			public sealed class HasAdapterPartProperty : IProperty
+			public new HasAdapterPartProperty HasAdapterPart { get; } = new HasAdapterPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class HasAdapterPartProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -815,8 +846,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="ObservesAvailabilityProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesAvailability</remarks>
 			/// </summary>
-			public ObservesAvailabilityProperty ObservesAvailability { get; } = new ObservesAvailabilityProperty();
-			public sealed class ObservesAvailabilityProperty : IProperty
+			public new ObservesAvailabilityProperty ObservesAvailability { get; } = new ObservesAvailabilityProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesAvailabilityProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -866,8 +900,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="ObservesAssetChangedProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesAssetChanged</remarks>
 			/// </summary>
-			public ObservesAssetChangedProperty ObservesAssetChanged { get; } = new ObservesAssetChangedProperty();
-			public sealed class ObservesAssetChangedProperty : IProperty
+			public new ObservesAssetChangedProperty ObservesAssetChanged { get; } = new ObservesAssetChangedProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesAssetChangedProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -917,8 +954,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="ObservesAssetRemovedProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesAssetRemoved</remarks>
 			/// </summary>
-			public ObservesAssetRemovedProperty ObservesAssetRemoved { get; } = new ObservesAssetRemovedProperty();
-			public sealed class ObservesAssetRemovedProperty : IProperty
+			public new ObservesAssetRemovedProperty ObservesAssetRemoved { get; } = new ObservesAssetRemovedProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesAssetRemovedProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -968,12 +1008,11 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 			/// <inheritdoc cref="HashProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Hash</remarks>
 			/// </summary>
-			public HashProperty Hash { get; } = new HashProperty();
-			/// <summary>
-			﻿/// condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso><br/><br />
-
+			public new HashProperty Hash { get; } = new HashProperty();
+			
+			/// <summary>﻿condensed message digest from a secure one-way hash function. <seealso href="https://www.google.com/search?q=FIPS PUB 180-4&btnI=I">FIPS PUB 180-4</seealso><br /><br /><br />
 			/// </summary>
-			public sealed class HashProperty : IProperty
+			public new sealed class HashProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

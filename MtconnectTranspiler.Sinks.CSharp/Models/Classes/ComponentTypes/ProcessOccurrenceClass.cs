@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	/// <summary>
-	﻿/// <see cref="Process">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp.<br/><br />Description<br/><see cref="ProcessOccurrenceId">ProcessOccurrenceId</see> <b>MUST</b> be defined for <see cref="ProcessOccurrence">ProcessOccurrence</see>.<br/><br/><br />
-
+	/// <summary>﻿<see cref="Process">Process</see> that takes place at a specific place and time, such as a specific instance of part-milling occurring at a specific timestamp.<br /><br /><br />Description<br /><br /><see cref="ProcessOccurrenceId">ProcessOccurrenceId</see> <b>MUST</b> be defined for <see cref="ProcessOccurrence">ProcessOccurrence</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1605547395898_219029_214">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -45,10 +46,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		/// <inheritdoc />
 		public ProcessOccurrenceClassProperties Properties { get; } = new ProcessOccurrenceClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ProcessOccurrenceClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Components.ComponentTypes.ProcessClass.ProcessClassProperties" />.
+		/// </summary>
 		public class ProcessOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.ProcessClass.ProcessClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				ObservesProcessOccurrenceId,
 				ObservesProcessAggregateId,
 				ObservesProcessTime,
@@ -61,8 +66,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesProcessOccurrenceIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessOccurrenceId</remarks>
 			/// </summary>
-			public ObservesProcessOccurrenceIdProperty ObservesProcessOccurrenceId { get; } = new ObservesProcessOccurrenceIdProperty();
-			public sealed class ObservesProcessOccurrenceIdProperty : IProperty
+			public new ObservesProcessOccurrenceIdProperty ObservesProcessOccurrenceId { get; } = new ObservesProcessOccurrenceIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProcessOccurrenceIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -112,8 +120,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesProcessAggregateIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessAggregateId</remarks>
 			/// </summary>
-			public ObservesProcessAggregateIdProperty ObservesProcessAggregateId { get; } = new ObservesProcessAggregateIdProperty();
-			public sealed class ObservesProcessAggregateIdProperty : IProperty
+			public new ObservesProcessAggregateIdProperty ObservesProcessAggregateId { get; } = new ObservesProcessAggregateIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProcessAggregateIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -163,8 +174,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesProcessTimeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessTime</remarks>
 			/// </summary>
-			public ObservesProcessTimeProperty ObservesProcessTime { get; } = new ObservesProcessTimeProperty();
-			public sealed class ObservesProcessTimeProperty : IProperty
+			public new ObservesProcessTimeProperty ObservesProcessTime { get; } = new ObservesProcessTimeProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProcessTimeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -214,8 +228,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesProcessKindIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProcessKindId</remarks>
 			/// </summary>
-			public ObservesProcessKindIdProperty ObservesProcessKindId { get; } = new ObservesProcessKindIdProperty();
-			public sealed class ObservesProcessKindIdProperty : IProperty
+			public new ObservesProcessKindIdProperty ObservesProcessKindId { get; } = new ObservesProcessKindIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProcessKindIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -265,8 +282,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesUserProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUser</remarks>
 			/// </summary>
-			public ObservesUserProperty ObservesUser { get; } = new ObservesUserProperty();
-			public sealed class ObservesUserProperty : IProperty
+			public new ObservesUserProperty ObservesUser { get; } = new ObservesUserProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesUserProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -316,8 +336,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesProgramProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesProgram</remarks>
 			/// </summary>
-			public ObservesProgramProperty ObservesProgram { get; } = new ObservesProgramProperty();
-			public sealed class ObservesProgramProperty : IProperty
+			public new ObservesProgramProperty ObservesProgram { get; } = new ObservesProgramProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesProgramProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -367,8 +390,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesPartUniqueIdProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesPartUniqueId</remarks>
 			/// </summary>
-			public ObservesPartUniqueIdProperty ObservesPartUniqueId { get; } = new ObservesPartUniqueIdProperty();
-			public sealed class ObservesPartUniqueIdProperty : IProperty
+			public new ObservesPartUniqueIdProperty ObservesPartUniqueId { get; } = new ObservesPartUniqueIdProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesPartUniqueIdProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

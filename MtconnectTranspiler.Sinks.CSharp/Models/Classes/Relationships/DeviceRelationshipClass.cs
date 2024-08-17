@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	/// <summary>
-	﻿/// <see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.<br/><br />
-
+	/// <summary>﻿<see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -44,10 +45,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		/// <inheritdoc />
 		public DeviceRelationshipClassProperties Properties { get; } = new DeviceRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="DeviceRelationshipClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass.ConfigurationRelationshipClassProperties" />.
+		/// </summary>
 		public class DeviceRelationshipClassProperties : Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass.ConfigurationRelationshipClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				DeviceUuidRef,
 				Href,
 				Role,
@@ -57,12 +62,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// <inheritdoc cref="DeviceUuidRefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: DeviceUuidRef</remarks>
 			/// </summary>
-			public DeviceUuidRefProperty DeviceUuidRef { get; } = new DeviceUuidRefProperty();
-			/// <summary>
-			﻿/// reference to the <see cref="Device.uuid">uuid in Device</see> of the associated piece of equipment.<br/><br />
-
+			public new DeviceUuidRefProperty DeviceUuidRef { get; } = new DeviceUuidRefProperty();
+			
+			/// <summary>﻿reference to the <see cref="Device.uuid">uuid in Device</see> of the associated piece of equipment.<br /><br /><br />
 			/// </summary>
-			public sealed class DeviceUuidRefProperty : IProperty
+			public new sealed class DeviceUuidRefProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -113,12 +117,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// <inheritdoc cref="HrefProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Href</remarks>
 			/// </summary>
-			public HrefProperty Href { get; } = new HrefProperty();
-			/// <summary>
-			﻿/// <i>URI</i> identifying the <i>agent</i> that is publishing information for the associated piece of equipment. <br/><br />Description<br/><see cref="DeviceRelationship.href">href in DeviceRelationship</see> <b>MUST</b> also include the <see cref="Device.uuid">uuid in Device</see> for that specific piece of equipment.<br /><br />{{property(href)}} is of type <c>xlink:href</c> from the W3C XLink specification: <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br/><br/><br />
-
+			public new HrefProperty Href { get; } = new HrefProperty();
+			
+			/// <summary>﻿<i>URI</i> identifying the <i>agent</i> that is publishing information for the associated piece of equipment. <br /><br /><br />Description<br /><br /><see cref="DeviceRelationship.href">href in DeviceRelationship</see> <b>MUST</b> also include the <see cref="Device.uuid">uuid in Device</see> for that specific piece of equipment.<br /><br />{{property(href)}} is of type <c>xlink:href</c> from the W3C XLink specification: <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br /><br /><br /><br /><br />
 			/// </summary>
-			public sealed class HrefProperty : IProperty
+			public new sealed class HrefProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -172,12 +175,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// <inheritdoc cref="RoleProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Role</remarks>
 			/// </summary>
-			public RoleProperty Role { get; } = new RoleProperty();
-			/// <summary>
-			﻿/// defines the services or capabilities that the referenced piece of equipment provides relative to this piece of equipment.<br/><br />
-
+			public new RoleProperty Role { get; } = new RoleProperty();
+			
+			/// <summary>﻿defines the services or capabilities that the referenced piece of equipment provides relative to this piece of equipment.<br /><br /><br />
 			/// </summary>
-			public sealed class RoleProperty : IProperty
+			public new sealed class RoleProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -228,12 +230,11 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 			/// <inheritdoc cref="Xlink_TypeProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Xlink:Type</remarks>
 			/// </summary>
-			public Xlink_TypeProperty Xlink_Type { get; } = new Xlink_TypeProperty();
-			/// <summary>
-			﻿/// <c>xlink:type</c><b>MUST</b> have a fixed value of <c>locator</c> as defined in W3C XLink 1.1 <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br/><br />Description<br/>If the <see cref="DeviceRelationship.href">href in DeviceRelationship</see> is provided, it <b>MUST</b> conform to the <i>URI</i> syntactic rules as defined in IETF RFC 3986 for Uniform Resource Identifiers. <seealso href="https://www.google.com/search?q=https://www.ietf.org/rfc/rfc3986.txt&btnI=I">https://www.ietf.org/rfc/rfc3986.txt</seealso><br/><br/><br />
-
+			public new Xlink_TypeProperty Xlink_Type { get; } = new Xlink_TypeProperty();
+			
+			/// <summary>﻿<c>xlink:type</c><b>MUST</b> have a fixed value of <c>locator</c> as defined in W3C XLink 1.1 <seealso href="https://www.google.com/search?q=https://www.w3.org/TR/xlink11/&btnI=I">https://www.w3.org/TR/xlink11/</seealso>.<br /><br /><br />Description<br /><br />If the <see cref="DeviceRelationship.href">href in DeviceRelationship</see> is provided, it <b>MUST</b> conform to the <i>URI</i> syntactic rules as defined in IETF RFC 3986 for Uniform Resource Identifiers. <seealso href="https://www.google.com/search?q=https://www.ietf.org/rfc/rfc3986.txt&btnI=I">https://www.ietf.org/rfc/rfc3986.txt</seealso><br /><br /><br /><br /><br />
 			/// </summary>
-			public sealed class Xlink_TypeProperty : IProperty
+			public new sealed class Xlink_TypeProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

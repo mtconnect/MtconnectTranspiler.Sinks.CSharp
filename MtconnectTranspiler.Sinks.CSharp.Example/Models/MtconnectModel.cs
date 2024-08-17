@@ -36,7 +36,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
         /// <summary>
         /// Collection of <inheritdoc cref="CSharpPackage"/>
         /// </summary>
-        public new IEnumerable<CSharpPackage> Packages => _packages;
+        public IEnumerable<CSharpPackage> Packages => _packages;
 
         public MtconnectModel(XmiDocument model, UmlModel source) : base(model, source)
         {

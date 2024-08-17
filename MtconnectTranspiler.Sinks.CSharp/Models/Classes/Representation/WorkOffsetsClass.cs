@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,6 +8,9 @@ using System.Linq;
 
 namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_SmoothG.Representation
 {
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1634045367649_547336_746">model.mtconnect.org</seealso> for more information.
+	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class WorkOffsetsClass : IClass
 	{
@@ -38,22 +44,25 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 		/// <inheritdoc />
 		public WorkOffsetsClassProperties Properties { get; } = new WorkOffsetsClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="WorkOffsetsClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.EventClass.EventClassProperties" />.
+		/// </summary>
 		public class WorkOffsetsClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				Count,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="CountProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Count</remarks>
 			/// </summary>
-			public CountProperty Count { get; } = new CountProperty();
-			/// <summary>
-			﻿/// number of <see cref="Entry">Entry</see> elements for the <see cref="Observation">Observation</see>.<br/><br />
-
+			public new CountProperty Count { get; } = new CountProperty();
+			
+			/// <summary>﻿number of <see cref="Entry">Entry</see> elements for the <see cref="Observation">Observation</see>.<br /><br /><br />
 			/// </summary>
-			public sealed class CountProperty : IProperty
+			public new sealed class CountProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

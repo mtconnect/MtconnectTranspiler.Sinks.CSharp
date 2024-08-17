@@ -1,3 +1,6 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -5,9 +8,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	/// <summary>
-	﻿/// <see cref="Resource">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment.<br /><br/><br />
-
+	/// <summary>﻿<see cref="Resource">Resource</see> composed of an individual or individuals who either control, support, or otherwise interface with a piece of equipment.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579572382005_168835_42270">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -45,10 +46,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		/// <inheritdoc />
 		public PersonnelClassProperties Properties { get; } = new PersonnelClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="PersonnelClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Components.ComponentTypes.ResourceClass.ResourceClassProperties" />.
+		/// </summary>
 		public class PersonnelClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.ResourceClass.ResourceClassProperties
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public new IProperty[] Properties => new IProperty[] {
 				ObservesUserOperator,
 				ObservesUserMaintenance,
 			}.Concat(base.Properties).ToArray();
@@ -56,8 +61,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesUserOperatorProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUserOperator</remarks>
 			/// </summary>
-			public ObservesUserOperatorProperty ObservesUserOperator { get; } = new ObservesUserOperatorProperty();
-			public sealed class ObservesUserOperatorProperty : IProperty
+			public new ObservesUserOperatorProperty ObservesUserOperator { get; } = new ObservesUserOperatorProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesUserOperatorProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />
@@ -107,8 +115,11 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			/// <inheritdoc cref="ObservesUserMaintenanceProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: ObservesUserMaintenance</remarks>
 			/// </summary>
-			public ObservesUserMaintenanceProperty ObservesUserMaintenance { get; } = new ObservesUserMaintenanceProperty();
-			public sealed class ObservesUserMaintenanceProperty : IProperty
+			public new ObservesUserMaintenanceProperty ObservesUserMaintenance { get; } = new ObservesUserMaintenanceProperty();
+			
+			/// <summary>﻿
+			/// </summary>
+			public new sealed class ObservesUserMaintenanceProperty : IProperty
 			{
 				/// <summary>
 				/// <inheritdoc />

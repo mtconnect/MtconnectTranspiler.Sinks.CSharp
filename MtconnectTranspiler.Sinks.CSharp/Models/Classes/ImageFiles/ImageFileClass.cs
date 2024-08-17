@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 {
-	/// <summary>
-	﻿/// reference to a file containing an image of the <see cref="Component">Component</see>.<br/><br />
-
+	/// <summary>﻿reference to a file containing an image of the <see cref="Component">Component</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1677585025728_765757_660">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 		/// <inheritdoc />
 		public ImageFileClassProperties Properties { get; } = new ImageFileClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="ImageFileClass" />.
+		/// </summary>
 		public class ImageFileClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -54,9 +58,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 			/// <remarks>Original Name: Id</remarks>
 			/// </summary>
 			public IdProperty Id { get; } = new IdProperty();
-			/// <summary>
-			﻿/// unique identifier of the image file.<br/><br />
-
+			
+			/// <summary>﻿unique identifier of the image file.<br /><br /><br />
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
@@ -110,9 +113,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 			/// <remarks>Original Name: Href</remarks>
 			/// </summary>
 			public HrefProperty Href { get; } = new HrefProperty();
-			/// <summary>
-			﻿/// <i>URL</i> giving the location of the image file.<br/><br />
-
+			
+			/// <summary>﻿<i>URL</i> giving the location of the image file.<br /><br /><br />
 			/// </summary>
 			public sealed class HrefProperty : IProperty
 			{
@@ -166,9 +168,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 			/// <remarks>Original Name: MediaType</remarks>
 			/// </summary>
 			public MediaTypeProperty MediaType { get; } = new MediaTypeProperty();
-			/// <summary>
-			﻿/// mime type of the image file.<br /><br/><br />
-
+			
+			/// <summary>﻿mime type of the image file.<br /><br /><br /><br />
 			/// </summary>
 			public sealed class MediaTypeProperty : IProperty
 			{
@@ -222,9 +223,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 			/// <remarks>Original Name: Name</remarks>
 			/// </summary>
 			public NameProperty Name { get; } = new NameProperty();
-			/// <summary>
-			﻿/// description of the image file.<br/><br />
-
+			
+			/// <summary>﻿description of the image file.<br /><br /><br />
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{

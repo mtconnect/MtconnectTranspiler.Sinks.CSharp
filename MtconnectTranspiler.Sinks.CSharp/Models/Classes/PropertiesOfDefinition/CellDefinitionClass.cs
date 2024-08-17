@@ -1,12 +1,13 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.PropertiesOfDefinition
 {
-	/// <summary>
-	﻿/// semantic definition of a <see cref="Cell">Cell</see>.<br/><br />
-
+	/// <summary>﻿semantic definition of a <see cref="Cell">Cell</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581433195808_917937_222">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
@@ -40,6 +41,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 		/// <inheritdoc />
 		public CellDefinitionClassProperties Properties { get; } = new CellDefinitionClassProperties();
         IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="CellDefinitionClass" />.
+		/// </summary>
 		public class CellDefinitionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
@@ -56,9 +60,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 			/// <remarks>Original Name: Units</remarks>
 			/// </summary>
 			public UnitsProperty Units { get; } = new UnitsProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="Value Properties of DataItem">Value Properties of DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿same as <see cref="DataItem.units">units in DataItem</see>. See <see cref="Value Properties of DataItem">Value Properties of DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
@@ -112,9 +115,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 			/// <remarks>Original Name: Key</remarks>
 			/// </summary>
 			public KeyProperty Key { get; } = new KeyProperty();
-			/// <summary>
-			﻿/// unique identification of the <see cref="Cell">Cell</see> in the <see cref="Definition">Definition</see>. <br /><br />The description applies to all <see cref="Cell">Cell</see> <i>observation</i>s having this <see cref="CellDefinition.key">key in CellDefinition</see>.<br/><br />
-
+			
+			/// <summary>﻿unique identification of the <see cref="Cell">Cell</see> in the <see cref="Definition">Definition</see>. <br /><br />The description applies to all <see cref="Cell">Cell</see> <i>observation</i>s having this <see cref="CellDefinition.key">key in CellDefinition</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class KeyProperty : IProperty
 			{
@@ -170,6 +172,9 @@ The description applies to all {{block(Cell)}} {{termplural(observation)}} havin
 			/// <remarks>Original Name: HasDescription</remarks>
 			/// </summary>
 			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
+			
+			/// <summary>﻿
+			/// </summary>
 			public sealed class HasDescriptionPartProperty : IProperty
 			{
 				/// <summary>
@@ -221,9 +226,8 @@ The description applies to all {{block(Cell)}} {{termplural(observation)}} havin
 			/// <remarks>Original Name: Type</remarks>
 			/// </summary>
 			public TypeProperty Type { get; } = new TypeProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.type">type in DataItem</see>. See <see cref="DataItem Types">DataItem Types</see>.<br/><br />
-
+			
+			/// <summary>﻿same as <see cref="DataItem.type">type in DataItem</see>. See <see cref="DataItem Types">DataItem Types</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
@@ -277,9 +281,8 @@ The description applies to all {{block(Cell)}} {{termplural(observation)}} havin
 			/// <remarks>Original Name: SubType</remarks>
 			/// </summary>
 			public SubTypeProperty SubType { get; } = new SubTypeProperty();
-			/// <summary>
-			﻿/// same as <see cref="DataItem.subType">subType in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br/><br />
-
+			
+			/// <summary>﻿same as <see cref="DataItem.subType">subType in DataItem</see>. See <see cref="DataItem">DataItem</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class SubTypeProperty : IProperty
 			{
@@ -333,9 +336,8 @@ The description applies to all {{block(Cell)}} {{termplural(observation)}} havin
 			/// <remarks>Original Name: KeyType</remarks>
 			/// </summary>
 			public KeyTypeProperty KeyType { get; } = new KeyTypeProperty();
-			/// <summary>
-			﻿/// <see cref="DataItem.type">type in DataItem</see> that defines the meaning of <see cref="CellDefinition.key">key in CellDefinition</see>.<br/><br />
-
+			
+			/// <summary>﻿<see cref="DataItem.type">type in DataItem</see> that defines the meaning of <see cref="CellDefinition.key">key in CellDefinition</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class KeyTypeProperty : IProperty
 			{

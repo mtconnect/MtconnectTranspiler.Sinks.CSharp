@@ -1,11 +1,12 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1640604472459_23562_405">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1640604472459_23562_405">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -15,8 +16,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum MaintenanceListIntervalEnum
 	{
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -24,8 +24,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		ABSOLUTE,
-		/// <summary>
-		﻿
+		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -35,9 +34,8 @@ namespace Mtconnect.DataTypes
 		INCREMENTAL,
 	}
 
-	/// <summary>
-	/// View in the MTConnect Model browser <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1640604472459_23562_405">model.mtconnect.org</seealso>
-	﻿
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1640604472459_23562_405">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class MaintenanceListIntervalEnumMetaClass : IEnum
@@ -48,6 +46,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc />
 		public Type DataType => null;
 		
+		/// <inheritdoc />
 		public Type Instance => typeof(MaintenanceListIntervalEnum);
 
 		/// <inheritdoc />
@@ -66,8 +65,13 @@ namespace Mtconnect.DataTypes
 		};
 
 		private ABSOLUTEValue _ABSOLUTE;
+		/// <inheritdoc cref="ABSOLUTEValue" path="/summary" />
 		public ABSOLUTEValue ABSOLUTE => _ABSOLUTE ?? (_ABSOLUTE = new ABSOLUTEValue());
 
+		/// <summary>﻿
+		/// Value for MaintenanceListIntervalEnum.<br/>
+		/// <br/>See also <seealso cref="MaintenanceListIntervalEnum">MaintenanceListIntervalEnum</seealso>
+		/// </summary>
 		public sealed class ABSOLUTEValue : IEnumInstance
 		{
 			/// <inheritdoc />
@@ -86,8 +90,13 @@ namespace Mtconnect.DataTypes
 			public string Summary => @"";
 		}
 		private INCREMENTALValue _INCREMENTAL;
+		/// <inheritdoc cref="INCREMENTALValue" path="/summary" />
 		public INCREMENTALValue INCREMENTAL => _INCREMENTAL ?? (_INCREMENTAL = new INCREMENTALValue());
 
+		/// <summary>﻿
+		/// Value for MaintenanceListIntervalEnum.<br/>
+		/// <br/>See also <seealso cref="MaintenanceListIntervalEnum">MaintenanceListIntervalEnum</seealso>
+		/// </summary>
 		public sealed class INCREMENTALValue : IEnumInstance
 		{
 			/// <inheritdoc />
