@@ -26,6 +26,8 @@ namespace Mtconnect
 			InterfaceInteractionModelPackage,
 			DeviceInformationModelPackage,
 			ImportsPackage,
+			DataTypesPackage,
+			StereotypesPackage,
 		};
 
 		#region Packages
@@ -100,6 +102,18 @@ namespace Mtconnect
 	/// <ineritdoc cref="Mtconnect.ImportsPackage" path="/summary" />
 	/// </summary>
 	public static ImportsPackage ImportsPackage => _ImportsPackage ?? (_ImportsPackage = new ImportsPackage());
+
+		private static DataTypesPackage _DataTypesPackage;
+	/// <summary>
+	/// <ineritdoc cref="Mtconnect.DataTypesPackage" path="/summary" />
+	/// </summary>
+	public static DataTypesPackage DataTypesPackage => _DataTypesPackage ?? (_DataTypesPackage = new DataTypesPackage());
+
+		private static StereotypesPackage _StereotypesPackage;
+	/// <summary>
+	/// <ineritdoc cref="Mtconnect.StereotypesPackage" path="/summary" />
+	/// </summary>
+	public static StereotypesPackage StereotypesPackage => _StereotypesPackage ?? (_StereotypesPackage = new StereotypesPackage());
 
 		#endregion
 	}

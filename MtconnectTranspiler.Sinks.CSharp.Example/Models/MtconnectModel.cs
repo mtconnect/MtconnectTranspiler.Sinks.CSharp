@@ -48,6 +48,13 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
                 ?.Select(o => new CSharpPackage(model, o))
                 ?.ToList()
                 ?? new List<CSharpPackage>();
+            foreach(var profile in source!.Profiles)
+            {
+                foreach (var package in profile.Packages)
+                {
+                    _packages.Add(new CSharpPackage(model, package));
+                }
+            }
         }
     }
 }
