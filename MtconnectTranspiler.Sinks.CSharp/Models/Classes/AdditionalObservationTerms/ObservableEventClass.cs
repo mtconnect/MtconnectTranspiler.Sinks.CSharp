@@ -46,7 +46,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public class ObservableEventClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Units,
 			};
 			/// <summary>

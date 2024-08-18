@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public class DeviceClassProperties : Mtconnect.Glossary.MTConnectTerms.ComponentClass.ComponentClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				HasAsset,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

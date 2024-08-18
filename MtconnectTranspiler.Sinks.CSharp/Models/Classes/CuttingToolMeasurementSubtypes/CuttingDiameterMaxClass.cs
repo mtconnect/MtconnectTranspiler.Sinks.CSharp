@@ -54,7 +54,7 @@ The normal of the machined peripheral surface points towards the axis of the cut
 		public class CuttingDiameterMaxClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Code,
 				Units,
 			}.Concat(base.Properties).ToArray();

@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public class SoundLevelDScaleClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.SoundLevelClass.SoundLevelClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

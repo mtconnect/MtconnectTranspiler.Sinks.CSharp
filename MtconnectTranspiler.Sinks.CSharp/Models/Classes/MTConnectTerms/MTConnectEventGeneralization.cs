@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public class MTConnectEventGeneralizationProperties : Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

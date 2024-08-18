@@ -46,7 +46,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public class PriorityClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Value,
 			};
 			/// <summary>

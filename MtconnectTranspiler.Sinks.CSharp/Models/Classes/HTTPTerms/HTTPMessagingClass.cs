@@ -47,7 +47,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public class HTTPMessagingClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

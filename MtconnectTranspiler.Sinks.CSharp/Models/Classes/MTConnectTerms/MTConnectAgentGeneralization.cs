@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public class MTConnectAgentGeneralizationProperties : Mtconnect.Glossary.AgentClass.AgentClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class BarFeederClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.LoaderClass.LoaderClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

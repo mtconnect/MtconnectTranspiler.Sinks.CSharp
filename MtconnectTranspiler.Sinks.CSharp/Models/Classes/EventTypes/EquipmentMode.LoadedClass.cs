@@ -54,7 +54,7 @@ Example: For traditional machine tools, this is an indication that the cutting t
 		public class EquipmentModeLoadedClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EquipmentModeClass.EquipmentModeClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

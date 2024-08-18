@@ -54,7 +54,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public class AbstractElementGeneralizationProperties : Mtconnect.Glossary.ElementClass.ElementClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

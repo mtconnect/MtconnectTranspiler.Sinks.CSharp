@@ -56,7 +56,7 @@ If no {{block(subType)}} is specified, {{block(PRIMARY)}} **MUST** be the defaul
 		public class EndOfBarPrimaryClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EndOfBarClass.EndOfBarClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

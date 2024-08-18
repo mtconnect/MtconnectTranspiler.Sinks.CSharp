@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public class AngularDecelerationCommandedClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngularDecelerationClass.AngularDecelerationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

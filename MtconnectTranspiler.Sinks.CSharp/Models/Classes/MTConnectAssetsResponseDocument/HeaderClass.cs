@@ -47,7 +47,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 		public class HeaderClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				DeviceModelChangeTime,
 				AssetBufferSize,
 				AssetCount,

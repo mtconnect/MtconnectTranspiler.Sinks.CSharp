@@ -63,7 +63,7 @@ Examples of {{block(Discrete)}}: A `PartCount` reporting the completion of each 
 		public class DiscreteClassProperties : Mtconnect.ObservationInformationModel.Representations.RepresentationClass.RepresentationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Result,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

@@ -51,7 +51,7 @@ namespace Mtconnect.AgentArchitecture.Source
 		public class MQTTDataSourceGeneralizationProperties : Mtconnect.AgentArchitecture.SourceClass.SourceClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

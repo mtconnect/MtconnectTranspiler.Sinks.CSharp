@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public class PartUniqueIdSerialNumberClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartUniqueIdClass.PartUniqueIdClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

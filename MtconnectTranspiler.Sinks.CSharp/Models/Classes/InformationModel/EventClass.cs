@@ -51,7 +51,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public class EventClassProperties : Mtconnect.AgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				HasValue,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

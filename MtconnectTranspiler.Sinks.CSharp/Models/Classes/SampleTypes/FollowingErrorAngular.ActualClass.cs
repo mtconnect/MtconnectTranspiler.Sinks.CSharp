@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public class FollowingErrorAngularActualClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.FollowingErrorAngularClass.FollowingErrorAngularClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

@@ -54,7 +54,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 		public class EventClassProperties : Mtconnect.DeviceInformationModel.DataItems.DataItemClass.DataItemClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Category,
 				Type,
 			}.Concat(base.Properties).ToArray();

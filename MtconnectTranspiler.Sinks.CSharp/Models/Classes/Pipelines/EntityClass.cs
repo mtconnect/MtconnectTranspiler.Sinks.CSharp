@@ -46,7 +46,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public class EntityClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Name,
 				Value,
 			};

@@ -47,7 +47,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public class FileLocationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Href,
 				Xlink_Type,
 			};

@@ -47,7 +47,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public class ParameterSetClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Name,
 				HasParameterPart,
 			};

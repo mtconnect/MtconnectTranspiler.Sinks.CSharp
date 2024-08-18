@@ -47,7 +47,7 @@ namespace Mtconnect.Glossary
 		public class TableCellClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

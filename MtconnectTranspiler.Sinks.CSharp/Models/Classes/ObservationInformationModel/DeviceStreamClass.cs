@@ -50,7 +50,7 @@ If the response to the request for data from an {{term(agent)}} does not contain
 		public class DeviceStreamClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Name,
 				Uuid,
 				HasComponentStreamPart,

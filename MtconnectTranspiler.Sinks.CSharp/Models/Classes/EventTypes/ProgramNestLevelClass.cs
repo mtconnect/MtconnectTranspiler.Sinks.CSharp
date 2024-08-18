@@ -55,7 +55,7 @@ If an initial value is not defined, the nesting level associated with the highes
 		public class ProgramNestLevelClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Result,
 				Type,
 			}.Concat(base.Properties).ToArray();

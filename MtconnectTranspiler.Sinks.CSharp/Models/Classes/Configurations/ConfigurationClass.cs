@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		public class ConfigurationClassProperties : Mtconnect.Glossary.MTConnectTerms.ConfigurationGeneralization.ConfigurationGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				IsConfigurationForPart,
 				HasSolidModelPart,
 				HasSensorConfigurationPart,

@@ -69,7 +69,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public class TimeSeriesClassProperties : Mtconnect.ObservationInformationModel.Representations.RepresentationClass.RepresentationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SampleCount,
 				Result,
 			}.Concat(base.Properties).ToArray();

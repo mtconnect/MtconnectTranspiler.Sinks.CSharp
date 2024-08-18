@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public class ProcessSpecificationGeneralizationProperties : Mtconnect.DeviceInformationModel.Configurations.Specifications.SpecificationClass.SpecificationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				HasSpecificationLimitsPart,
 				HasControlLimitsPart,
 				HasAlarmLimitsPart,

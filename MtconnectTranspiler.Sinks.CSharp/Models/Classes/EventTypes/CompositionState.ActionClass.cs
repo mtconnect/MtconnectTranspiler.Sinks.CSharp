@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public class CompositionStateActionClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.CompositionStateClass.CompositionStateClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
 			}.Concat(base.Properties).ToArray();

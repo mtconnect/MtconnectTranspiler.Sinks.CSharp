@@ -49,7 +49,7 @@ The {{property(ProcessFeedRate::value)}} **MAY** contain the nominal process tar
 		public class ProcessFeedRateClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Maximum,
 				Minimum,
 				Nominal,

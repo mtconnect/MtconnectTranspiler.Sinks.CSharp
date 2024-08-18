@@ -53,7 +53,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class AdapterClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				IsAdapterOfPart,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

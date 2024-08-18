@@ -54,7 +54,7 @@ This measurement will be with reference to the cutting tool and **MUST NOT** exi
 		public class FunctionalLengthClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Code,
 				Units,
 			}.Concat(base.Properties).ToArray();

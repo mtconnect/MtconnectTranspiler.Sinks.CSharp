@@ -51,7 +51,7 @@ namespace Mtconnect.DataTypes
 		public class AlarmLimitResultClassProperties : Mtconnect.ObservationInformationModel.Representations.DataSetClass.DataSetClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				UpperLimit,
 				UpperWarning,
 				LowerWarning,

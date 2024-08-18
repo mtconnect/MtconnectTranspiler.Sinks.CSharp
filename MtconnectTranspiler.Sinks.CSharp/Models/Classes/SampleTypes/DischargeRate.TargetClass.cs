@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public class DischargeRateTargetClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.DischargeRateClass.DischargeRateClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

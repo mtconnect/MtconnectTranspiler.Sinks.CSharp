@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class ResourceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				IsResourceOfPart,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

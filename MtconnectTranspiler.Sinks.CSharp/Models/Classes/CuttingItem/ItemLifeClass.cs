@@ -47,7 +47,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		public class ItemLifeClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				CountDirection,
 				Initial,
 				Limit,

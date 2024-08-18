@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public class AssetRelationshipClassProperties : Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass.ConfigurationRelationshipClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				AssetIdRef,
 				AssetType,
 				Href,

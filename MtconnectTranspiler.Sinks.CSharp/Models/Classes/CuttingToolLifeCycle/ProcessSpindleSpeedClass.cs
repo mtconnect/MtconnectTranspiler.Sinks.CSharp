@@ -49,7 +49,7 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 		public class ProcessSpindleSpeedClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Maximum,
 				Minimum,
 				Nominal,

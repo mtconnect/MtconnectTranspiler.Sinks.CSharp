@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class FeatureOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartOccurrenceClass.PartOccurrenceClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservesFeaturePersisitentId,
 				ObservesFeatureMeasurement,
 				ObservesMeasurementType,

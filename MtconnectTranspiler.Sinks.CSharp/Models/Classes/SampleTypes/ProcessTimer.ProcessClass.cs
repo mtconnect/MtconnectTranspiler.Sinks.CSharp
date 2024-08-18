@@ -55,7 +55,7 @@ This includes the time that the piece of equipment is running, producing parts o
 		public class ProcessTimerProcessClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.ProcessTimerClass.ProcessTimerClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

@@ -54,7 +54,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public class FeatureMeasurementClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Type,
 				Result,
 			}.Concat(base.Properties).ToArray();

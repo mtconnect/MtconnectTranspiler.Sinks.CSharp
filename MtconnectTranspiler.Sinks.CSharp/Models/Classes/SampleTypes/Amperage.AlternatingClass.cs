@@ -56,7 +56,7 @@ If not specified further in statistic, defaults to RMS voltage.
 		public class AmperageAlternatingClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AmperageClass.AmperageClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

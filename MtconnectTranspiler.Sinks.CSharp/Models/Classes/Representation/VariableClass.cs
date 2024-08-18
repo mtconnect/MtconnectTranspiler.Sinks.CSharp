@@ -51,7 +51,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 		public class VariableClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

@@ -110,7 +110,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class PartOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.PartClass.PartClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservesPartId,
 				ObservesPartUniqueId,
 				ObservesPartGroupId,

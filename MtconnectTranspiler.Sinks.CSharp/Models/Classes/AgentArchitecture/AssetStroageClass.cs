@@ -46,7 +46,7 @@ namespace Mtconnect.AgentArchitecture
 		public class AssetStroageClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

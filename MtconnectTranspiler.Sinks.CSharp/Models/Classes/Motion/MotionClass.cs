@@ -50,7 +50,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 		public class MotionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Actuation,
 				CoordinateSystemIdRef,
 				Id,

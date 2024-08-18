@@ -49,7 +49,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 		public class CuttingToolLifeCycleClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				ConnectionCodeMachineSide,
 				ProgramToolGroup,
 				ProgramToolNumber,

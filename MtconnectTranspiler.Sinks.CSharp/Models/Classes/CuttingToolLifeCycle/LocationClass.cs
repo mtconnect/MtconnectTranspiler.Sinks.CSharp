@@ -52,7 +52,7 @@ If the pot occupies the first or last location, a rollover to the beginning or t
 		public class LocationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				NegativeOverlap,
 				PositiveOverlap,
 				Type,

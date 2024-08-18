@@ -54,7 +54,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class LinearPositionFeedbackClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				HasComposition,
 				HasComponent,
 			}.Concat(base.Properties).ToArray();

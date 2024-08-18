@@ -51,7 +51,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public class Entity_ConnectionStatus_ClassProperties : Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Name,
 				Source,
 			}.Concat(base.Properties).ToArray();

@@ -85,7 +85,7 @@ A machine having an axis with more than one child **MUST** number each branch us
 		public class AxisClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				IsAxisOfPart,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

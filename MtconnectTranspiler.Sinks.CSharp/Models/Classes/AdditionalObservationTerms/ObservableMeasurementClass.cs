@@ -51,7 +51,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public class ObservableMeasurementClassProperties : Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservableSampleClass.ObservableSampleClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Units,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

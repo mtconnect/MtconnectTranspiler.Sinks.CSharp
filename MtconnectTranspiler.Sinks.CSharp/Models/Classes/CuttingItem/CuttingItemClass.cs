@@ -47,7 +47,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 		public class CuttingItemClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Description,
 				Grade,
 				Indices,

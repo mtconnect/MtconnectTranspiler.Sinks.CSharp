@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary
 		public class PositionClassProperties : Mtconnect.Glossary.LocationClass.LocationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

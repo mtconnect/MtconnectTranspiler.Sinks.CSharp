@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary.InformationModelTerms
 		public class MTConnectInformationModelGeneralizationProperties : Mtconnect.Glossary.InformationModelClass.InformationModelClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

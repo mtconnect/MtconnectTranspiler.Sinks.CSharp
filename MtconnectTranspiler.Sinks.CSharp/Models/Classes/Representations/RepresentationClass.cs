@@ -54,7 +54,7 @@ Example: The name for {{block(Sample)}} {{block(Observation)}} type `Temperature
 		public class RepresentationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

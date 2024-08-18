@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public class PowerStateLineClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PowerStateClass.PowerStateClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

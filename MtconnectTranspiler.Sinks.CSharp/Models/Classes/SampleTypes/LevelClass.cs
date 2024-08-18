@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public class LevelClassProperties : Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Type,
 				Units,
 			}.Concat(base.Properties).ToArray();

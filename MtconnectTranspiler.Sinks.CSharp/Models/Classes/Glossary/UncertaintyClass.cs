@@ -49,7 +49,7 @@ namespace Mtconnect.Glossary
 		public class UncertaintyClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

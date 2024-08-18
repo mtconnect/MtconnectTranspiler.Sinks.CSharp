@@ -51,7 +51,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public class AssetCommandClassProperties : Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Name,
 				Source,
 				AssetId,

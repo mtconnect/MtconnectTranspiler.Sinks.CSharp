@@ -52,7 +52,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public class FileClassProperties : Mtconnect.AssetInformationModel.Files.AbstractFileClass.AbstractFileClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Size,
 				VersionId,
 				State,

@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public class MinimumDeltaFilterGeneralizationProperties : Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.FilterClass.FilterClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Type,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

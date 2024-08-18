@@ -54,7 +54,7 @@ When {{property(Execution::result)}} is not `WAIT`, {{property(Observation::isUn
 		public class WaitStateClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Result,
 				Type,
 			}.Concat(base.Properties).ToArray();

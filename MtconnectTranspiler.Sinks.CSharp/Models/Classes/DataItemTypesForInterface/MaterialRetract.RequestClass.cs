@@ -52,7 +52,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public class MaterialRetractRequestClassProperties : Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.MaterialRetractClass.MaterialRetractClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
 			}.Concat(base.Properties).ToArray();

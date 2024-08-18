@@ -54,7 +54,7 @@ When the {{block(InterfaceState)}} is `DISABLED`, the state of all data items th
 		public class InterfaceStateClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Type,
 				Result,
 			}.Concat(base.Properties).ToArray();

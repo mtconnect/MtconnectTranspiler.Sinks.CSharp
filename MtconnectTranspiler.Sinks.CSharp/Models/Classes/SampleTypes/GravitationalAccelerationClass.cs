@@ -54,7 +54,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public class GravitationalAccelerationClassProperties : Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Units,
 				Type,
 			}.Concat(base.Properties).ToArray();

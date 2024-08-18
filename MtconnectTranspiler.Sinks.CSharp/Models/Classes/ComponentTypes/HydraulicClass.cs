@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class HydraulicClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.ActuatorClass.ActuatorClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservesPressure,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

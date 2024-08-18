@@ -51,7 +51,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public class ObservableStateClassProperties : Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservableEventClass.ObservableEventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

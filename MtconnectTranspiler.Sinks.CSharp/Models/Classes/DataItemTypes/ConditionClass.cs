@@ -55,7 +55,7 @@ All {{block(Sample)}}s **MAY** have associated {{block(Condition)}} states.  {{b
 		public class ConditionClassProperties : Mtconnect.DeviceInformationModel.DataItems.DataItemClass.DataItemClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Category,
 				Type,
 			}.Concat(base.Properties).ToArray();

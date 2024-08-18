@@ -53,7 +53,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class StockClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.MaterialClass.MaterialClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservesMaterial,
 				ObservesLengthRemaining,
 				ObservesLengthStandard,

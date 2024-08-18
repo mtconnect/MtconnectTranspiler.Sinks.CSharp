@@ -51,7 +51,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public class EquipmentClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

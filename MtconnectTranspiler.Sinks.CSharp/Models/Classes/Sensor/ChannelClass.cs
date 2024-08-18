@@ -48,7 +48,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		public class ChannelClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				CalibrationDate,
 				CalibrationInitials,
 				Name,

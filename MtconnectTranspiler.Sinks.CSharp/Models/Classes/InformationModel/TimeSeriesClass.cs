@@ -46,7 +46,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public class TimeSeriesClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

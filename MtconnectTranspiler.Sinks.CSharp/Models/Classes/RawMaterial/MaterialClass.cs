@@ -47,7 +47,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 		public class MaterialClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Id,
 				Name,
 				Type,

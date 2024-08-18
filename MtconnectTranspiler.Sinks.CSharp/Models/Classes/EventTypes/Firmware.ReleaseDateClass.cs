@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public class FirmwareReleaseDateClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.FirmwareClass.FirmwareClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
 			}.Concat(base.Properties).ToArray();

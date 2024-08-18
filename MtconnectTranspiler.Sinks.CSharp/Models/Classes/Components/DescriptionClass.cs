@@ -50,7 +50,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 		public class DescriptionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Manufacturer,
 				Model,
 				SerialNumber,

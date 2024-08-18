@@ -51,7 +51,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public class TableEntryClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Key,
 				Removed,
 				ResultPart,

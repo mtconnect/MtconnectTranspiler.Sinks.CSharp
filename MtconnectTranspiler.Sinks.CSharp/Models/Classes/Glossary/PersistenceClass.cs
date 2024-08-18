@@ -47,7 +47,7 @@ namespace Mtconnect.Glossary
 		public class PersistenceClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

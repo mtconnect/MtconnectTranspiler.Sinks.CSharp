@@ -53,7 +53,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class ProcessOccurrenceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.ProcessClass.ProcessClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservesProcessOccurrenceId,
 				ObservesProcessAggregateId,
 				ObservesProcessTime,

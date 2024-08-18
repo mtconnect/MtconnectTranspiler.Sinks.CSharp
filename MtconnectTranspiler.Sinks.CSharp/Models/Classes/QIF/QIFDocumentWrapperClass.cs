@@ -52,7 +52,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 		public class QIFDocumentWrapperClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				QifDocumentType,
 				HasQIFDocumentPart,
 			}.Concat(base.Properties).ToArray();

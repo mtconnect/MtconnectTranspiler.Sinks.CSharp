@@ -76,7 +76,7 @@ The meaning of each {{block(Entry)}} and {{block(Cell)}} **MAY** be provided as 
 		public class TableClassProperties : Mtconnect.ObservationInformationModel.Representations.RepresentationClass.RepresentationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ResultPart,
 				Count,
 			}.Concat(base.Properties).ToArray();

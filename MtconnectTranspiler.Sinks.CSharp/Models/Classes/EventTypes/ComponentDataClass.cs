@@ -56,7 +56,7 @@ If the {{block(Component)}} multiplicity can be determined, the device model **M
 		public class ComponentDataClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Type,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

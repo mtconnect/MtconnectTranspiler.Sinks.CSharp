@@ -48,7 +48,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 		public class CompositionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				IsCompositionOfPart,
 				HasDescriptionPart,
 				HasConfigurationPart,

@@ -49,7 +49,7 @@ namespace Mtconnect.Glossary
 		public class MetadataClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

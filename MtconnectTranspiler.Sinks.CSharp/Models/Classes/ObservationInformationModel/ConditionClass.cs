@@ -63,7 +63,7 @@ The following {{sect(Value Properties of Condition)}} lists the additional and/o
 		public class ConditionClassProperties : Mtconnect.ObservationInformationModel.ObservationGeneralization.ObservationGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				NativeCode,
 				NativeSeverity,
 				Qualifier,

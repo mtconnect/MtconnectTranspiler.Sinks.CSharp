@@ -53,7 +53,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class ElectricClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass.SystemClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservesWattage,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

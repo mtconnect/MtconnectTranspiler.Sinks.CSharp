@@ -51,7 +51,7 @@ namespace Mtconnect.DataTypes
 		public class LocationAddressResultClassProperties : Mtconnect.ObservationInformationModel.Representations.DataSetClass.DataSetClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				GivenName,
 				Surname,
 				Qualification,

@@ -52,7 +52,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public class OpenChuckResponseClassProperties : Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.OpenChuckClass.OpenChuckClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
 			}.Concat(base.Properties).ToArray();

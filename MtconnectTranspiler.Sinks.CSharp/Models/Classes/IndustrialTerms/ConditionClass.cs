@@ -47,7 +47,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public class ConditionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public class DataItemClassProperties : Mtconnect.Glossary.IndustrialTerms.ObservableClass.ObservableClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservedBy,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

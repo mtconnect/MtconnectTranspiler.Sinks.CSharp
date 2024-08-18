@@ -47,7 +47,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public class MTConnectResponseDocumentClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
 

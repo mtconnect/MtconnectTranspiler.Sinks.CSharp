@@ -52,7 +52,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public class MaterialChangeRequestClassProperties : Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.MaterialChangeClass.MaterialChangeClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
 			}.Concat(base.Properties).ToArray();

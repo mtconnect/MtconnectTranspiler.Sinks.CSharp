@@ -54,7 +54,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public class AxisFeedrateJogClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AxisFeedrateClass.AxisFeedrateClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

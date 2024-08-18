@@ -52,7 +52,7 @@ namespace Mtconnect.DataTypes
 		public class SensorAttachmentResultClassProperties : Mtconnect.ObservationInformationModel.Representations.DataSetClass.DataSetClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SensorId,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

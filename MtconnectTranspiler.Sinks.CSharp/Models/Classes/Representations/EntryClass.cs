@@ -55,7 +55,7 @@ An {{block(Entry)}} **MAY** be further constrained by the {{block(DataItem)}} de
 		public class EntryClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Key,
 				Removed,
 				IsEntryForPart,

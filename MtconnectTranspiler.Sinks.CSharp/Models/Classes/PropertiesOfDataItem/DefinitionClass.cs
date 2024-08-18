@@ -47,7 +47,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public class DefinitionClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				HasCellDefinitionPart,
 				HasDescriptionPart,
 				HasEntryDefinitionPart,

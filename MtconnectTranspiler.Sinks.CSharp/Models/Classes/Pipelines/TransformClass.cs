@@ -46,7 +46,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public class TransformClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Guard,
 				Next,
 			};

@@ -52,7 +52,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public class MaterialUnloadRequestClassProperties : Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.MaterialUnloadClass.MaterialUnloadClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 				Result,
 			}.Concat(base.Properties).ToArray();

@@ -50,7 +50,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		public class SensorConfigurationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				CalibrationDate,
 				CalibrationInitials,
 				FirmwareVersion,

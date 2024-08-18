@@ -58,7 +58,7 @@ If {{property(MaintenanceList::result::Units)}} `key` is not provided, it is ass
 		public class MaintenanceListClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Type,
 				Result,
 			}.Concat(base.Properties).ToArray();

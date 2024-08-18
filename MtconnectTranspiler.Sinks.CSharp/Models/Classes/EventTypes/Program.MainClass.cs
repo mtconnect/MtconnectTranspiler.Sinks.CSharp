@@ -54,7 +54,7 @@ It is the starting nest level in a call structure and may contain calls to sub p
 		public class ProgramMainClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProgramClass.ProgramClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

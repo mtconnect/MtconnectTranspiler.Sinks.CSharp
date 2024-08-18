@@ -47,7 +47,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public class SpecificationClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Type,
 				SubType,
 				DataItemIdRef,

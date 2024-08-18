@@ -52,7 +52,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public class AngularAccelerationClassProperties : Mtconnect.ObservationInformationModel.SampleClass.SampleClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Units,
 				Type,
 				SubType,

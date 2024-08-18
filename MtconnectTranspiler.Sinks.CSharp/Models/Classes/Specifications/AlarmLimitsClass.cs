@@ -47,7 +47,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public class AlarmLimitsClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				UpperLimitPart,
 				UpperWarningPart,
 				LowerLimitPart,

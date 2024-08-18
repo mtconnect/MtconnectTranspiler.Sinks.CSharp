@@ -53,7 +53,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public class PowerSourceStandbyClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PowerSourceClass.PowerSourceClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

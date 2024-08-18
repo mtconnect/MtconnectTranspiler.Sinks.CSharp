@@ -62,7 +62,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 		public class DeviceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				HasAuxiliaryPart,
 				HasControllerPart,
 				HasInterfacePart,

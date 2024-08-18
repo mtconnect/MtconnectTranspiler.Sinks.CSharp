@@ -61,7 +61,7 @@ At least one of {{block(Component)}}, {{block(DataItem)}}, or {{block(Reference)
 		public class ComponentGeneralizationProperties : Mtconnect.Glossary.MTConnectTerms.ComponentClass.ComponentClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Id,
 				Name,
 				NativeName,

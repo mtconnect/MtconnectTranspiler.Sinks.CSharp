@@ -65,7 +65,7 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 		public class SampleClassProperties : Mtconnect.ObservationInformationModel.ObservationGeneralization.ObservationGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Duration,
 				ResetTriggered,
 				SampleRate,

@@ -76,7 +76,7 @@ namespace {{ to_code_safe source.namespace }}
 		public class {{ code_name }}Properties : {{ if has_generalization == true }}{{ generalization }}.{{ source.generalization }}Properties{{ else }}IPropertyList{{ end }}
 		{
 			/// <inheritdoc />
-			public {{ if has_generalization }}new {{ end }}IProperty[] Properties => new IProperty[] {
+			public {{ if has_generalization }}override{{ else }}virtual{{ end }} IProperty[] Properties => new IProperty[] {
 			{{~ for item in source.properties ~}}
 {{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
 {{~

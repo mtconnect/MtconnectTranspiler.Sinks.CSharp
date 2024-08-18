@@ -53,7 +53,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public class XMLSchemaGeneralizationProperties : Mtconnect.Glossary.SchemaClass.SchemaClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

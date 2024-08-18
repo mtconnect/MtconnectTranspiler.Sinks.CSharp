@@ -51,7 +51,7 @@ namespace Mtconnect.DataTypes
 		public class FeatureMeasurementResultClassProperties : Mtconnect.ObservationInformationModel.Representations.TableClass.TableClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				MeasurementId,
 				FeaturePersistentId,
 				CharacteristicPersistentId,

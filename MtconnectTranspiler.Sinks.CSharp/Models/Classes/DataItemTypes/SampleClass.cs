@@ -54,7 +54,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 		public class SampleClassProperties : Mtconnect.DeviceInformationModel.DataItems.DataItemClass.DataItemClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Category,
 				Type,
 				Units,

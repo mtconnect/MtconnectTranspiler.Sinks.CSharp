@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary
 		public class StandardUncertaintyGeneralizationProperties : Mtconnect.Glossary.UncertaintyClass.UncertaintyClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

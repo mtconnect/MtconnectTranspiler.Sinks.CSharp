@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public class ConfigurationClassProperties : Mtconnect.Glossary.IndustrialTerms.ThingClass.ThingClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

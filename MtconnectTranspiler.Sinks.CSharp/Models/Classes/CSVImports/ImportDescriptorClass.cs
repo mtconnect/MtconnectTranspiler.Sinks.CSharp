@@ -46,7 +46,7 @@ namespace Mtconnect.Imports.CSVImports
 		public class ImportDescriptorClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				CsvFileName,
 				ElementTypeName,
 				PackageName,

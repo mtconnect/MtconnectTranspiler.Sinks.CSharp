@@ -54,7 +54,7 @@ If no {{property(DataItem::subType)}} is specified, `UUID` is default.&#10;
 		public class PartGroupIdClassProperties : Mtconnect.ObservationInformationModel.EventClass.EventClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Type,
 				SubType,
 			}.Concat(base.Properties).ToArray();

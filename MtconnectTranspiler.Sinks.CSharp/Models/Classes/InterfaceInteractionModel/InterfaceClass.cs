@@ -53,7 +53,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public class InterfaceClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				IsInterfaceOfPart,
 				ObservesInterfaceState,
 			}.Concat(base.Properties).ToArray();

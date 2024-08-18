@@ -86,7 +86,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 		public class ObservationGeneralizationProperties : Mtconnect.Glossary.MTConnectTerms.ObservationClass.ObservationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				CompositionId,
 				DataItemId,
 				Name,

@@ -52,7 +52,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 		public class RawMaterialClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Name,
 				ContainerType,
 				ProcessKind,

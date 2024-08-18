@@ -52,7 +52,7 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 		public class SolidModelClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Id,
 				HasTransformationPart,
 				HasScalePart,

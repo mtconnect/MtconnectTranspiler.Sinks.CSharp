@@ -51,7 +51,7 @@ namespace Mtconnect.AgentArchitecture.Sink
 		public class RestSinkGeneralizationProperties : Mtconnect.AgentArchitecture.SinkClass.SinkClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

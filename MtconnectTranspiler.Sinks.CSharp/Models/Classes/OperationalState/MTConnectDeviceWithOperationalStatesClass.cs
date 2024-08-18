@@ -51,7 +51,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples.Ope
 		public class MTConnectDeviceWithOperationalStatesClassProperties : Mtconnect.DeviceInformationModel.DeviceClass.DeviceClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

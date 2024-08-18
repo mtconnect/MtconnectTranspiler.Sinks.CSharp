@@ -52,7 +52,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public class AbstractFileClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Name,
 				MediaType,
 				ApplicationCategory,

@@ -55,7 +55,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public class DoorClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservesDoorState,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

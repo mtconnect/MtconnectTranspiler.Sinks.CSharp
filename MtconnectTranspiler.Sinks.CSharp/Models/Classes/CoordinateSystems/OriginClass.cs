@@ -47,7 +47,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public class OriginClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Value,
 			};
 			/// <summary>

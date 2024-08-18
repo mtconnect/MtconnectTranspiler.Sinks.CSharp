@@ -54,7 +54,7 @@ An {{block(Cell)}} **MAY** be further constrained by the {{block(DataItem)}} def
 		public class CellClassProperties : IPropertyList
 		{
 			/// <inheritdoc />
-			public IProperty[] Properties => new IProperty[] {
+			public virtual IProperty[] Properties => new IProperty[] {
 				Key,
 				Result,
 			};

@@ -54,7 +54,7 @@ The unique physical address of the network hardware.&#10;
 		public class NetworkMacAddressClassProperties : Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.NetworkClass.NetworkClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				SubType,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

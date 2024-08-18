@@ -52,7 +52,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public class ComponentConfigurationParametersClassProperties : Mtconnect.AssetInformationModel.AssetClass.AssetClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				HasParameterSetPart,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

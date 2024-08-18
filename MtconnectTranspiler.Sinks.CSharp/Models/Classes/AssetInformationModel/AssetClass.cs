@@ -58,7 +58,7 @@ namespace Mtconnect.AssetInformationModel
 		public class AssetClassProperties : Mtconnect.Glossary.MTConnectTerms.AssetGeneralization.AssetGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				AssetId,
 				DeviceUuid,
 				Removed,

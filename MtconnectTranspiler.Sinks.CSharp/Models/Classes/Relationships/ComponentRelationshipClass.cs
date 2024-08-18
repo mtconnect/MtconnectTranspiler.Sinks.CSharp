@@ -52,7 +52,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public class ComponentRelationshipClassProperties : Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass.ConfigurationRelationshipClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				IdRef,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

@@ -89,7 +89,7 @@ When the {{block(Observation)}}  is `UNAVAILABLE` the {{block(DataSet)}} **MUST*
 		public class DataSetClassProperties : Mtconnect.ObservationInformationModel.Representations.RepresentationClass.RepresentationClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Count,
 				ResultPart,
 			}.Concat(base.Properties).ToArray();

@@ -51,7 +51,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public class TimestampedClassProperties : Mtconnect.AgentArchitecture.Pipelines.TokensClass.TokensClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Timestamp,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

@@ -51,7 +51,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public class RequesterClassProperties : Mtconnect.InterfaceInteractionModel.InterfaceClass.InterfaceClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

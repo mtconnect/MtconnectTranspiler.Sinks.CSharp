@@ -63,7 +63,7 @@ The following {{sect(Value Properties of Event)}} lists the additional and/or up
 		public class EventClassProperties : Mtconnect.ObservationInformationModel.ObservationGeneralization.ObservationGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ResetTriggered,
 				OrganizedByComponentStreamPart,
 				Type,

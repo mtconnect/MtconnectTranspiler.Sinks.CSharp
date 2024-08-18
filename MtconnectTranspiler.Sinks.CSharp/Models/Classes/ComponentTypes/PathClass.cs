@@ -57,7 +57,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 		public class PathClassProperties : Mtconnect.DeviceInformationModel.Components.ComponentGeneralization.ComponentGeneralizationProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				ObservesExecution,
 				ObservesProgram,
 				ObservesPathFeedrateOverrideProgrammed,

@@ -53,7 +53,7 @@ namespace Mtconnect.DeviceInformationModel.References
 		public class DataItemRefClassProperties : Mtconnect.DeviceInformationModel.References.ReferenceClass.ReferenceClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				IdRef,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>

@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public class DataStreamingClassProperties : Mtconnect.Glossary.ProtocolTerms.StreamingDataClass.StreamingDataClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

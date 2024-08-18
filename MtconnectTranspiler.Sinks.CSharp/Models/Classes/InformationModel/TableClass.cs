@@ -51,7 +51,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public class TableClassProperties : Mtconnect.AgentArchitecture.InformationModel.DataSetClass.DataSetClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
 

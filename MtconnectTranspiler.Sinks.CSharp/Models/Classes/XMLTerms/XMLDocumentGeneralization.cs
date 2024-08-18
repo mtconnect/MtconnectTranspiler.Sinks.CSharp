@@ -52,7 +52,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public class XMLDocumentGeneralizationProperties : Mtconnect.Glossary.DocumentClass.DocumentClassProperties
 		{
 			/// <inheritdoc />
-			public new IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				HasDocumentHeader,
 				HasDocumentBody,
 				HasNamespace,
