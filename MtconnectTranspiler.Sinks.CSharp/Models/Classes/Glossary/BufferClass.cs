@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public BufferClassProperties Properties { get; } = new BufferClassProperties();
+		public new BufferClassProperties Properties { get; } = new BufferClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="BufferClass" />.

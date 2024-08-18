@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PositionClass);
 
 		/// <inheritdoc />
-		public PositionProgrammedClassProperties Properties { get; } = new PositionProgrammedClassProperties();
+		public new PositionProgrammedClassProperties Properties { get; } = new PositionProgrammedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PositionProgrammedClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public FlangeDiameterClassProperties Properties { get; } = new FlangeDiameterClassProperties();
+		public new FlangeDiameterClassProperties Properties { get; } = new FlangeDiameterClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FlangeDiameterClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ValveStateClassProperties Properties { get; } = new ValveStateClassProperties();
+		public new ValveStateClassProperties Properties { get; } = new ValveStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ValveStateClass" />.

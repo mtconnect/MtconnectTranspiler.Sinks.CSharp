@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SinkClassProperties Properties { get; } = new SinkClassProperties();
+		public new SinkClassProperties Properties { get; } = new SinkClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SinkClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public NetworkPortClassProperties Properties { get; } = new NetworkPortClassProperties();
+		public new NetworkPortClassProperties Properties { get; } = new NetworkPortClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="NetworkPortClass" />.

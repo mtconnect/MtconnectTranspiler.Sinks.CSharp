@@ -40,7 +40,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DocumentBodyClassProperties Properties { get; } = new DocumentBodyClassProperties();
+		public new DocumentBodyClassProperties Properties { get; } = new DocumentBodyClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DocumentBodyClass" />.

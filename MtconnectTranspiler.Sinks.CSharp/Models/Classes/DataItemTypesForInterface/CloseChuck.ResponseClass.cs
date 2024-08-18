@@ -43,7 +43,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.CloseChuckClass);
 
 		/// <inheritdoc />
-		public CloseChuckResponseClassProperties Properties { get; } = new CloseChuckResponseClassProperties();
+		public new CloseChuckResponseClassProperties Properties { get; } = new CloseChuckResponseClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CloseChuckResponseClass" />.

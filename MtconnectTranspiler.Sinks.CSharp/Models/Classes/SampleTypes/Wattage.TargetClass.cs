@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.WattageClass);
 
 		/// <inheritdoc />
-		public WattageTargetClassProperties Properties { get; } = new WattageTargetClassProperties();
+		public new WattageTargetClassProperties Properties { get; } = new WattageTargetClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="WattageTargetClass" />.

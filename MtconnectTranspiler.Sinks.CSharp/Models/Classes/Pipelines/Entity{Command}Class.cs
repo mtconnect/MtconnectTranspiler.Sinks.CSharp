@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.EntityClass);
 
 		/// <inheritdoc />
-		public Entity_Command_ClassProperties Properties { get; } = new Entity_Command_ClassProperties();
+		public new Entity_Command_ClassProperties Properties { get; } = new Entity_Command_ClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="Entity_Command_Class" />.

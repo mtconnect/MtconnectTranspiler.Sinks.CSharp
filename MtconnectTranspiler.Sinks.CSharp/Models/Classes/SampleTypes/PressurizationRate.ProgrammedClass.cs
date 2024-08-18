@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PressurizationRateClass);
 
 		/// <inheritdoc />
-		public PressurizationRateProgrammedClassProperties Properties { get; } = new PressurizationRateProgrammedClassProperties();
+		public new PressurizationRateProgrammedClassProperties Properties { get; } = new PressurizationRateProgrammedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PressurizationRateProgrammedClass" />.

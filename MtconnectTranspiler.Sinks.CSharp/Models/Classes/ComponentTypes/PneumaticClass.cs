@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ActuatorClass);
 
 		/// <inheritdoc />
-		public PneumaticClassProperties Properties { get; } = new PneumaticClassProperties();
+		public new PneumaticClassProperties Properties { get; } = new PneumaticClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PneumaticClass" />.

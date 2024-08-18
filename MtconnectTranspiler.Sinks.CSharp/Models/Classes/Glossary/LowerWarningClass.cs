@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public LowerWarningClassProperties Properties { get; } = new LowerWarningClassProperties();
+		public new LowerWarningClassProperties Properties { get; } = new LowerWarningClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LowerWarningClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public ConductivityClassProperties Properties { get; } = new ConductivityClassProperties();
+		public new ConductivityClassProperties Properties { get; } = new ConductivityClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConductivityClass" />.

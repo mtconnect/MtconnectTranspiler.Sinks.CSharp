@@ -41,7 +41,7 @@ The {{property(ProcessFeedRate::value)}} **MAY** contain the nominal process tar
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ProcessFeedRateClassProperties Properties { get; } = new ProcessFeedRateClassProperties();
+		public new ProcessFeedRateClassProperties Properties { get; } = new ProcessFeedRateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProcessFeedRateClass" />.

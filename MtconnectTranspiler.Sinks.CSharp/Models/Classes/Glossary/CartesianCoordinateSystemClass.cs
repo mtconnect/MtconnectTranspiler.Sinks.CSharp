@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CartesianCoordinateSystemClassProperties Properties { get; } = new CartesianCoordinateSystemClassProperties();
+		public new CartesianCoordinateSystemClassProperties Properties { get; } = new CartesianCoordinateSystemClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CartesianCoordinateSystemClass" />.

@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SequenceNumberClassProperties Properties { get; } = new SequenceNumberClassProperties();
+		public new SequenceNumberClassProperties Properties { get; } = new SequenceNumberClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SequenceNumberClass" />.

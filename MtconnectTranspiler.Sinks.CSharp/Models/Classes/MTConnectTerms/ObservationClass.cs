@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ThingClass);
 
 		/// <inheritdoc />
-		public ObservationClassProperties Properties { get; } = new ObservationClassProperties();
+		public new ObservationClassProperties Properties { get; } = new ObservationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ObservationClass" />.

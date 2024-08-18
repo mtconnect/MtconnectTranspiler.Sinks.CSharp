@@ -43,7 +43,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.MaterialChangeClass);
 
 		/// <inheritdoc />
-		public MaterialChangeRequestClassProperties Properties { get; } = new MaterialChangeRequestClassProperties();
+		public new MaterialChangeRequestClassProperties Properties { get; } = new MaterialChangeRequestClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaterialChangeRequestClass" />.

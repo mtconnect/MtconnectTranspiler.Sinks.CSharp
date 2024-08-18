@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ToolingDeliveryClass);
 
 		/// <inheritdoc />
-		public GangToolBarClassProperties Properties { get; } = new GangToolBarClassProperties();
+		public new GangToolBarClassProperties Properties { get; } = new GangToolBarClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="GangToolBarClass" />.

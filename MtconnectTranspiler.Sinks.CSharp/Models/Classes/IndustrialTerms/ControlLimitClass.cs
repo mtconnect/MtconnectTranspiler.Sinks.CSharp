@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ControlLimitClassProperties Properties { get; } = new ControlLimitClassProperties();
+		public new ControlLimitClassProperties Properties { get; } = new ControlLimitClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControlLimitClass" />.

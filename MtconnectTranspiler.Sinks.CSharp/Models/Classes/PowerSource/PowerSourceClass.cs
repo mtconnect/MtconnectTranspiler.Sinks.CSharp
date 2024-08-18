@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.PowerSource
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public PowerSourceClassProperties Properties { get; } = new PowerSourceClassProperties();
+		public new PowerSourceClassProperties Properties { get; } = new PowerSourceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PowerSourceClass" />.

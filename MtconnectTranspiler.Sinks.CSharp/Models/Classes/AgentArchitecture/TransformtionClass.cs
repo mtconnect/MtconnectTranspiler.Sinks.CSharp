@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public TransformtionClassProperties Properties { get; } = new TransformtionClassProperties();
+		public new TransformtionClassProperties Properties { get; } = new TransformtionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TransformtionClass" />.

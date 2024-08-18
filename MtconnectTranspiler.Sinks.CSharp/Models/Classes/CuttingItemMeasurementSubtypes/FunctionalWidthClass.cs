@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public FunctionalWidthClassProperties Properties { get; } = new FunctionalWidthClassProperties();
+		public new FunctionalWidthClassProperties Properties { get; } = new FunctionalWidthClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FunctionalWidthClass" />.

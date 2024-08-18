@@ -38,7 +38,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CollaboratorClassProperties Properties { get; } = new CollaboratorClassProperties();
+		public new CollaboratorClassProperties Properties { get; } = new CollaboratorClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CollaboratorClass" />.

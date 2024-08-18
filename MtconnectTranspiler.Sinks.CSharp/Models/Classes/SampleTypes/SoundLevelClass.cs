@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public SoundLevelClassProperties Properties { get; } = new SoundLevelClassProperties();
+		public new SoundLevelClassProperties Properties { get; } = new SoundLevelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SoundLevelClass" />.

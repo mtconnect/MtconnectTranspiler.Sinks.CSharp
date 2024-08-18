@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.UnloadCountClass);
 
 		/// <inheritdoc />
-		public UnloadCountCompleteClassProperties Properties { get; } = new UnloadCountCompleteClassProperties();
+		public new UnloadCountCompleteClassProperties Properties { get; } = new UnloadCountCompleteClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="UnloadCountCompleteClass" />.

@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MTConnectInterfaceClassProperties Properties { get; } = new MTConnectInterfaceClassProperties();
+		public new MTConnectInterfaceClassProperties Properties { get; } = new MTConnectInterfaceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectInterfaceClass" />.

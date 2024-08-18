@@ -45,7 +45,7 @@ The force exerted by the mass of the cutting tool.&#10;
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public WeightClassProperties Properties { get; } = new WeightClassProperties();
+		public new WeightClassProperties Properties { get; } = new WeightClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="WeightClass" />.

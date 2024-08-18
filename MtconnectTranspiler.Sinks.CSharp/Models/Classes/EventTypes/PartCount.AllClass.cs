@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartCountClass);
 
 		/// <inheritdoc />
-		public PartCountAllClassProperties Properties { get; } = new PartCountAllClassProperties();
+		public new PartCountAllClassProperties Properties { get; } = new PartCountAllClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PartCountAllClass" />.

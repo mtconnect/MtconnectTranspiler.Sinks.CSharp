@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.Printer
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public XmlPrinterClassProperties Properties { get; } = new XmlPrinterClassProperties();
+		public new XmlPrinterClassProperties Properties { get; } = new XmlPrinterClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="XmlPrinterClass" />.

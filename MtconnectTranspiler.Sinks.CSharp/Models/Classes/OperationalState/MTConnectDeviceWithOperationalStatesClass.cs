@@ -42,7 +42,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.MachineTool.DeviceExamples.Ope
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DeviceClass);
 
 		/// <inheritdoc />
-		public MTConnectDeviceWithOperationalStatesClassProperties Properties { get; } = new MTConnectDeviceWithOperationalStatesClassProperties();
+		public new MTConnectDeviceWithOperationalStatesClassProperties Properties { get; } = new MTConnectDeviceWithOperationalStatesClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectDeviceWithOperationalStatesClass" />.

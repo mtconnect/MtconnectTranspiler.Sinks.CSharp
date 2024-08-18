@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.ProtocolTerms.ProtocolClass);
 
 		/// <inheritdoc />
-		public TransportProtocolGeneralizationProperties Properties { get; } = new TransportProtocolGeneralizationProperties();
+		public new TransportProtocolGeneralizationProperties Properties { get; } = new TransportProtocolGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TransportProtocolGeneralization" />.

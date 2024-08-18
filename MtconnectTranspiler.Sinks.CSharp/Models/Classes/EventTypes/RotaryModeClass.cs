@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public RotaryModeClassProperties Properties { get; } = new RotaryModeClassProperties();
+		public new RotaryModeClassProperties Properties { get; } = new RotaryModeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RotaryModeClass" />.

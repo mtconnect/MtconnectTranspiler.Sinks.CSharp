@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Source
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SourceClass);
 
 		/// <inheritdoc />
-		public MQTTDataSourceGeneralizationProperties Properties { get; } = new MQTTDataSourceGeneralizationProperties();
+		public new MQTTDataSourceGeneralizationProperties Properties { get; } = new MQTTDataSourceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MQTTDataSourceGeneralization" />.

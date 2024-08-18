@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public PartProcessingStateClassProperties Properties { get; } = new PartProcessingStateClassProperties();
+		public new PartProcessingStateClassProperties Properties { get; } = new PartProcessingStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PartProcessingStateClass" />.

@@ -47,7 +47,7 @@ Program execution is paused when a command is executed requesting a cutting tool
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ControllerModeOverrideClass);
 
 		/// <inheritdoc />
-		public ControllerModeOverrideToolChangeStopClassProperties Properties { get; } = new ControllerModeOverrideToolChangeStopClassProperties();
+		public new ControllerModeOverrideToolChangeStopClassProperties Properties { get; } = new ControllerModeOverrideToolChangeStopClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControllerModeOverrideToolChangeStopClass" />.

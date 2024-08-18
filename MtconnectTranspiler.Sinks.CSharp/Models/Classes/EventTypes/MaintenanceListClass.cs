@@ -49,7 +49,7 @@ If {{property(MaintenanceList::result::Units)}} `key` is not provided, it is ass
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public MaintenanceListClassProperties Properties { get; } = new MaintenanceListClassProperties();
+		public new MaintenanceListClassProperties Properties { get; } = new MaintenanceListClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaintenanceListClass" />.

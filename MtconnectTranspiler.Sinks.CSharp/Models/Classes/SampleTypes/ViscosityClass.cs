@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public ViscosityClassProperties Properties { get; } = new ViscosityClassProperties();
+		public new ViscosityClassProperties Properties { get; } = new ViscosityClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ViscosityClass" />.

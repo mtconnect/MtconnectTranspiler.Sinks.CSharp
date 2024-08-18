@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public TransformerClassProperties Properties { get; } = new TransformerClassProperties();
+		public new TransformerClassProperties Properties { get; } = new TransformerClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TransformerClass" />.

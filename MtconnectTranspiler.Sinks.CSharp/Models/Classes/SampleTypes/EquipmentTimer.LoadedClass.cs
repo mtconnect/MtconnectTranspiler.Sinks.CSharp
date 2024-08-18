@@ -45,7 +45,7 @@ Example: For traditional machine tools, this is a measurement of the time that t
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.EquipmentTimerClass);
 
 		/// <inheritdoc />
-		public EquipmentTimerLoadedClassProperties Properties { get; } = new EquipmentTimerLoadedClassProperties();
+		public new EquipmentTimerLoadedClassProperties Properties { get; } = new EquipmentTimerLoadedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentTimerLoadedClass" />.

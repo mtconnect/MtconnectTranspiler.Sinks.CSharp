@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ProbeClassProperties Properties { get; } = new ProbeClassProperties();
+		public new ProbeClassProperties Properties { get; } = new ProbeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProbeClass" />.

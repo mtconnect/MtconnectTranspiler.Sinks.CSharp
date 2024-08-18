@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public SpindleInterlockClassProperties Properties { get; } = new SpindleInterlockClassProperties();
+		public new SpindleInterlockClassProperties Properties { get; } = new SpindleInterlockClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SpindleInterlockClass" />.

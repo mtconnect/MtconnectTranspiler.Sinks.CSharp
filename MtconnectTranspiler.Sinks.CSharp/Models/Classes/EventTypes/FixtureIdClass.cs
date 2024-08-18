@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public FixtureIdClassProperties Properties { get; } = new FixtureIdClassProperties();
+		public new FixtureIdClassProperties Properties { get; } = new FixtureIdClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FixtureIdClass" />.

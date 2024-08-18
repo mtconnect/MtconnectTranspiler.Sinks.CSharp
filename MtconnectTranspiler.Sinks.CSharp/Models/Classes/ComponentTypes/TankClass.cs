@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public TankClassProperties Properties { get; } = new TankClassProperties();
+		public new TankClassProperties Properties { get; } = new TankClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TankClass" />.

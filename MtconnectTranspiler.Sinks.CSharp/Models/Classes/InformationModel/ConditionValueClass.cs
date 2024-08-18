@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass);
 
 		/// <inheritdoc />
-		public ConditionValueClassProperties Properties { get; } = new ConditionValueClassProperties();
+		public new ConditionValueClassProperties Properties { get; } = new ConditionValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConditionValueClass" />.

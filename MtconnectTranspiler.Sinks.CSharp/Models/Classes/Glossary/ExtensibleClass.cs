@@ -40,7 +40,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ExtensibleClassProperties Properties { get; } = new ExtensibleClassProperties();
+		public new ExtensibleClassProperties Properties { get; } = new ExtensibleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ExtensibleClass" />.

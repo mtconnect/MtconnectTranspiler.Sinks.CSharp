@@ -41,7 +41,7 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ProcessSpindleSpeedClassProperties Properties { get; } = new ProcessSpindleSpeedClassProperties();
+		public new ProcessSpindleSpeedClassProperties Properties { get; } = new ProcessSpindleSpeedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProcessSpindleSpeedClass" />.

@@ -45,7 +45,7 @@ When {{block(ChuckInterlockManualUnclamp)}} is `ACTIVE`, it is expected that a c
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ChuckInterlockClass);
 
 		/// <inheritdoc />
-		public ChuckInterlockManualUnclampClassProperties Properties { get; } = new ChuckInterlockManualUnclampClassProperties();
+		public new ChuckInterlockManualUnclampClassProperties Properties { get; } = new ChuckInterlockManualUnclampClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ChuckInterlockManualUnclampClass" />.

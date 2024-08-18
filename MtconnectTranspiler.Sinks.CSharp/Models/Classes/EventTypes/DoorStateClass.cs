@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public DoorStateClassProperties Properties { get; } = new DoorStateClassProperties();
+		public new DoorStateClassProperties Properties { get; } = new DoorStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DoorStateClass" />.

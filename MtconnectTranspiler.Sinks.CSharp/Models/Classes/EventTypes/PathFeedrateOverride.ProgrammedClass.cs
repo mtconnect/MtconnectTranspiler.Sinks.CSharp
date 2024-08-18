@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PathFeedrateOverrideClass);
 
 		/// <inheritdoc />
-		public PathFeedrateOverrideProgrammedClassProperties Properties { get; } = new PathFeedrateOverrideProgrammedClassProperties();
+		public new PathFeedrateOverrideProgrammedClassProperties Properties { get; } = new PathFeedrateOverrideProgrammedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PathFeedrateOverrideProgrammedClass" />.

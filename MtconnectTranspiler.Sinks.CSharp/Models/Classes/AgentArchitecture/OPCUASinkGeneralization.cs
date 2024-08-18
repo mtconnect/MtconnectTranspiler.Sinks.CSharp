@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SinkClass);
 
 		/// <inheritdoc />
-		public OPCUASinkGeneralizationProperties Properties { get; } = new OPCUASinkGeneralizationProperties();
+		public new OPCUASinkGeneralizationProperties Properties { get; } = new OPCUASinkGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OPCUASinkGeneralization" />.

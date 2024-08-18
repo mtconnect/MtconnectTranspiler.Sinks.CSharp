@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public WorkpieceClassProperties Properties { get; } = new WorkpieceClassProperties();
+		public new WorkpieceClassProperties Properties { get; } = new WorkpieceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="WorkpieceClass" />.

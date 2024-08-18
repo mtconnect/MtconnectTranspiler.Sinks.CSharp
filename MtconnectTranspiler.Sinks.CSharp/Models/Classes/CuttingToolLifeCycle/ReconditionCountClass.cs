@@ -40,7 +40,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ReconditionCountClassProperties Properties { get; } = new ReconditionCountClassProperties();
+		public new ReconditionCountClassProperties Properties { get; } = new ReconditionCountClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ReconditionCountClass" />.

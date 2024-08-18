@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ConditionActivationClassProperties Properties { get; } = new ConditionActivationClassProperties();
+		public new ConditionActivationClassProperties Properties { get; } = new ConditionActivationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConditionActivationClass" />.

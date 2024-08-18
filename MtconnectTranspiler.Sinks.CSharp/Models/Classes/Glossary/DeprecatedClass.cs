@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DeprecatedClassProperties Properties { get; } = new DeprecatedClassProperties();
+		public new DeprecatedClassProperties Properties { get; } = new DeprecatedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DeprecatedClass" />.

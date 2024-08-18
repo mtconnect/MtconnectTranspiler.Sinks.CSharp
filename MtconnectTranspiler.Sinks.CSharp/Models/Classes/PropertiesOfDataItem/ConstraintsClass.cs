@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ConstraintsClassProperties Properties { get; } = new ConstraintsClassProperties();
+		public new ConstraintsClassProperties Properties { get; } = new ConstraintsClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConstraintsClass" />.

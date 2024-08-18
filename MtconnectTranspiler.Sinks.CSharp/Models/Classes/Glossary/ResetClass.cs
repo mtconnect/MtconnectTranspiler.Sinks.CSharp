@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ResetClassProperties Properties { get; } = new ResetClassProperties();
+		public new ResetClassProperties Properties { get; } = new ResetClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ResetClass" />.

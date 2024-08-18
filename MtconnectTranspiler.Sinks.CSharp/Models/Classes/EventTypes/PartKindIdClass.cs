@@ -45,7 +45,7 @@ If no {{property(DataItem::subType)}} is specified, `UUID` is default.&#10;
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public PartKindIdClassProperties Properties { get; } = new PartKindIdClassProperties();
+		public new PartKindIdClassProperties Properties { get; } = new PartKindIdClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PartKindIdClass" />.

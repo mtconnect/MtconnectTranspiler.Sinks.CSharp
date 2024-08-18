@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public SettlingErrorLinearClassProperties Properties { get; } = new SettlingErrorLinearClassProperties();
+		public new SettlingErrorLinearClassProperties Properties { get; } = new SettlingErrorLinearClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SettlingErrorLinearClass" />.

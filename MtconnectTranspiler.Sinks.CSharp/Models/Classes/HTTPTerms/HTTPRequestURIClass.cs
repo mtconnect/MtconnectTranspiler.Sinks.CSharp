@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public HTTPRequestURIClassProperties Properties { get; } = new HTTPRequestURIClassProperties();
+		public new HTTPRequestURIClassProperties Properties { get; } = new HTTPRequestURIClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HTTPRequestURIClass" />.

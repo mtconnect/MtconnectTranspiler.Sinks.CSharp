@@ -45,7 +45,7 @@ When `MACHINE_AXIS_LOCK` is `ON`, program execution continues normally, but no e
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ControllerModeOverrideClass);
 
 		/// <inheritdoc />
-		public ControllerModeOverrideMachineAxisLockClassProperties Properties { get; } = new ControllerModeOverrideMachineAxisLockClassProperties();
+		public new ControllerModeOverrideMachineAxisLockClassProperties Properties { get; } = new ControllerModeOverrideMachineAxisLockClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControllerModeOverrideMachineAxisLockClass" />.

@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AssetStroageClassProperties Properties { get; } = new AssetStroageClassProperties();
+		public new AssetStroageClassProperties Properties { get; } = new AssetStroageClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AssetStroageClass" />.

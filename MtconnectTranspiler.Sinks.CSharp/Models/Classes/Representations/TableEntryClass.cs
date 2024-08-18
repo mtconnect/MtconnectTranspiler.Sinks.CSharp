@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public TableEntryClassProperties Properties { get; } = new TableEntryClassProperties();
+		public new TableEntryClassProperties Properties { get; } = new TableEntryClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TableEntryClass" />.

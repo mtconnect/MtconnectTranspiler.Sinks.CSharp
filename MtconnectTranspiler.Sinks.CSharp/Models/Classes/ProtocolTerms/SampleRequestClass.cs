@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.ProtocolTerms.MTConnectRequestGeneralization);
 
 		/// <inheritdoc />
-		public SampleRequestClassProperties Properties { get; } = new SampleRequestClassProperties();
+		public new SampleRequestClassProperties Properties { get; } = new SampleRequestClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SampleRequestClass" />.

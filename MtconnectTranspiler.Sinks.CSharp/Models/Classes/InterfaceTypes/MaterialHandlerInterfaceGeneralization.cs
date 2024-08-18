@@ -52,7 +52,7 @@ A robot is a common example of a material handler.&#10;
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.InterfaceClass);
 
 		/// <inheritdoc />
-		public MaterialHandlerInterfaceGeneralizationProperties Properties { get; } = new MaterialHandlerInterfaceGeneralizationProperties();
+		public new MaterialHandlerInterfaceGeneralizationProperties Properties { get; } = new MaterialHandlerInterfaceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaterialHandlerInterfaceGeneralization" />.

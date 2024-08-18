@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LoadCountClass);
 
 		/// <inheritdoc />
-		public LoadCountTargetClassProperties Properties { get; } = new LoadCountTargetClassProperties();
+		public new LoadCountTargetClassProperties Properties { get; } = new LoadCountTargetClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LoadCountTargetClass" />.

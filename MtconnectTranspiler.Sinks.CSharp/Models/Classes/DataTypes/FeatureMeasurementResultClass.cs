@@ -42,7 +42,7 @@ namespace Mtconnect.DataTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.TableClass);
 
 		/// <inheritdoc />
-		public FeatureMeasurementResultClassProperties Properties { get; } = new FeatureMeasurementResultClassProperties();
+		public new FeatureMeasurementResultClassProperties Properties { get; } = new FeatureMeasurementResultClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FeatureMeasurementResultClass" />.

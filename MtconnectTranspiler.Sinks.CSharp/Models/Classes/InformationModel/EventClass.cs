@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationClass);
 
 		/// <inheritdoc />
-		public EventClassProperties Properties { get; } = new EventClassProperties();
+		public new EventClassProperties Properties { get; } = new EventClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EventClass" />.

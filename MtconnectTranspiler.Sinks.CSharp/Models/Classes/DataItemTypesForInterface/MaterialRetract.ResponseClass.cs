@@ -43,7 +43,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.MaterialRetractClass);
 
 		/// <inheritdoc />
-		public MaterialRetractResponseClassProperties Properties { get; } = new MaterialRetractResponseClassProperties();
+		public new MaterialRetractResponseClassProperties Properties { get; } = new MaterialRetractResponseClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaterialRetractResponseClass" />.

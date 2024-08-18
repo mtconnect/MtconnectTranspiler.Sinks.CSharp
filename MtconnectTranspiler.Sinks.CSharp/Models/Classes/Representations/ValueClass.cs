@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.RepresentationClass);
 
 		/// <inheritdoc />
-		public ValueClassProperties Properties { get; } = new ValueClassProperties();
+		public new ValueClassProperties Properties { get; } = new ValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ValueClass" />.

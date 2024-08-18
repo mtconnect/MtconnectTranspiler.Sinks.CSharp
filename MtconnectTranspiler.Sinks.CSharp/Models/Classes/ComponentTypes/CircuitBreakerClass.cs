@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public CircuitBreakerClassProperties Properties { get; } = new CircuitBreakerClassProperties();
+		public new CircuitBreakerClassProperties Properties { get; } = new CircuitBreakerClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CircuitBreakerClass" />.

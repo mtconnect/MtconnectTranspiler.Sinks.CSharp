@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AssetBufferClassProperties Properties { get; } = new AssetBufferClassProperties();
+		public new AssetBufferClassProperties Properties { get; } = new AssetBufferClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AssetBufferClass" />.

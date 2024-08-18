@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
-		public QIFDocumentWrapperClassProperties Properties { get; } = new QIFDocumentWrapperClassProperties();
+		public new QIFDocumentWrapperClassProperties Properties { get; } = new QIFDocumentWrapperClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="QIFDocumentWrapperClass" />.

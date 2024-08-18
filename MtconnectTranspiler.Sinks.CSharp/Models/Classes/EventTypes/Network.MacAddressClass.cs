@@ -45,7 +45,7 @@ The unique physical address of the network hardware.&#10;
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.NetworkClass);
 
 		/// <inheritdoc />
-		public NetworkMacAddressClassProperties Properties { get; } = new NetworkMacAddressClassProperties();
+		public new NetworkMacAddressClassProperties Properties { get; } = new NetworkMacAddressClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="NetworkMacAddressClass" />.

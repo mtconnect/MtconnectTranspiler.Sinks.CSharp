@@ -39,7 +39,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public QIFDocumentClassProperties Properties { get; } = new QIFDocumentClassProperties();
+		public new QIFDocumentClassProperties Properties { get; } = new QIFDocumentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="QIFDocumentClass" />.

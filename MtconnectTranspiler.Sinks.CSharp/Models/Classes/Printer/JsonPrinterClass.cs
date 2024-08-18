@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.Printer
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public JsonPrinterClassProperties Properties { get; } = new JsonPrinterClassProperties();
+		public new JsonPrinterClassProperties Properties { get; } = new JsonPrinterClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="JsonPrinterClass" />.

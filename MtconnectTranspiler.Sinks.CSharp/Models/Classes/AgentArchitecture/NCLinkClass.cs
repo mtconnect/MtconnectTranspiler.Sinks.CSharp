@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SinkClass);
 
 		/// <inheritdoc />
-		public NCLinkClassProperties Properties { get; } = new NCLinkClassProperties();
+		public new NCLinkClassProperties Properties { get; } = new NCLinkClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="NCLinkClass" />.

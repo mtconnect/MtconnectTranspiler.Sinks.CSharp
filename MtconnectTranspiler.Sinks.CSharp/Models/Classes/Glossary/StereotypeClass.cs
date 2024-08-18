@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public StereotypeClassProperties Properties { get; } = new StereotypeClassProperties();
+		public new StereotypeClassProperties Properties { get; } = new StereotypeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="StereotypeClass" />.

@@ -49,7 +49,7 @@ In the case of a G-Code program, a program block containing a M01 code designate
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ControllerModeOverrideClass);
 
 		/// <inheritdoc />
-		public ControllerModeOverrideOptionalStopClassProperties Properties { get; } = new ControllerModeOverrideOptionalStopClassProperties();
+		public new ControllerModeOverrideOptionalStopClassProperties Properties { get; } = new ControllerModeOverrideOptionalStopClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControllerModeOverrideOptionalStopClass" />.

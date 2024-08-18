@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LibraryClass);
 
 		/// <inheritdoc />
-		public LibraryReleaseDateClassProperties Properties { get; } = new LibraryReleaseDateClassProperties();
+		public new LibraryReleaseDateClassProperties Properties { get; } = new LibraryReleaseDateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LibraryReleaseDateClass" />.

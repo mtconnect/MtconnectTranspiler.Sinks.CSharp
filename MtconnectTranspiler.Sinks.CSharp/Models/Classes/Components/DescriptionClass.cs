@@ -42,7 +42,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DescriptionClassProperties Properties { get; } = new DescriptionClassProperties();
+		public new DescriptionClassProperties Properties { get; } = new DescriptionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DescriptionClass" />.

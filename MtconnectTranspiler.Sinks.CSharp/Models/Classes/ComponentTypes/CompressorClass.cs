@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public CompressorClassProperties Properties { get; } = new CompressorClassProperties();
+		public new CompressorClassProperties Properties { get; } = new CompressorClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CompressorClass" />.

@@ -39,7 +39,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public FileCommentClassProperties Properties { get; } = new FileCommentClassProperties();
+		public new FileCommentClassProperties Properties { get; } = new FileCommentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FileCommentClass" />.

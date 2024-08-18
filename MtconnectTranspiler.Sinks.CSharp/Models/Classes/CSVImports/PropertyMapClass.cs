@@ -38,7 +38,7 @@ namespace Mtconnect.Imports.CSVImports
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public PropertyMapClassProperties Properties { get; } = new PropertyMapClassProperties();
+		public new PropertyMapClassProperties Properties { get; } = new PropertyMapClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PropertyMapClass" />.

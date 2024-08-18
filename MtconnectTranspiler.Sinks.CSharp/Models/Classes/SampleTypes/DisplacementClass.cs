@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public DisplacementClassProperties Properties { get; } = new DisplacementClassProperties();
+		public new DisplacementClassProperties Properties { get; } = new DisplacementClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DisplacementClass" />.

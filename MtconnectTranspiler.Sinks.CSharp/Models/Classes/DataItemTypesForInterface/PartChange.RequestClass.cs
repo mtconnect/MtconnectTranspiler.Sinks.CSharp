@@ -43,7 +43,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.PartChangeClass);
 
 		/// <inheritdoc />
-		public PartChangeRequestClassProperties Properties { get; } = new PartChangeRequestClassProperties();
+		public new PartChangeRequestClassProperties Properties { get; } = new PartChangeRequestClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PartChangeRequestClass" />.

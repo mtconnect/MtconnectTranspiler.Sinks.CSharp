@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.DepositionAccelerationVolumetricClass);
 
 		/// <inheritdoc />
-		public DepositionAccelerationVolumetricActualClassProperties Properties { get; } = new DepositionAccelerationVolumetricActualClassProperties();
+		public new DepositionAccelerationVolumetricActualClassProperties Properties { get; } = new DepositionAccelerationVolumetricActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DepositionAccelerationVolumetricActualClass" />.

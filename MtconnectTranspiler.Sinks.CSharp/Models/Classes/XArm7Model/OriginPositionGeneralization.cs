@@ -42,7 +42,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public Type Generalization => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.PositionClass);
 
 		/// <inheritdoc />
-		public OriginPositionGeneralizationProperties Properties { get; } = new OriginPositionGeneralizationProperties();
+		public new OriginPositionGeneralizationProperties Properties { get; } = new OriginPositionGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OriginPositionGeneralization" />.

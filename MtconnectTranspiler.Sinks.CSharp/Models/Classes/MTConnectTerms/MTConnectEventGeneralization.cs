@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.EventClass);
 
 		/// <inheritdoc />
-		public MTConnectEventGeneralizationProperties Properties { get; } = new MTConnectEventGeneralizationProperties();
+		public new MTConnectEventGeneralizationProperties Properties { get; } = new MTConnectEventGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectEventGeneralization" />.

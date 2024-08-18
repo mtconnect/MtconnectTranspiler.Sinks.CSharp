@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 
 		/// <inheritdoc />
-		public WorkEnvelopeClassProperties Properties { get; } = new WorkEnvelopeClassProperties();
+		public new WorkEnvelopeClassProperties Properties { get; } = new WorkEnvelopeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="WorkEnvelopeClass" />.

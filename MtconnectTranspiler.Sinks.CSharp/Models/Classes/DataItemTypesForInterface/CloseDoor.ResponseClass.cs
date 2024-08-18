@@ -43,7 +43,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.CloseDoorClass);
 
 		/// <inheritdoc />
-		public CloseDoorResponseClassProperties Properties { get; } = new CloseDoorResponseClassProperties();
+		public new CloseDoorResponseClassProperties Properties { get; } = new CloseDoorResponseClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CloseDoorResponseClass" />.

@@ -42,7 +42,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public Type Generalization => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.VectorClass);
 
 		/// <inheritdoc />
-		public RotationVectorGeneralizationProperties Properties { get; } = new RotationVectorGeneralizationProperties();
+		public new RotationVectorGeneralizationProperties Properties { get; } = new RotationVectorGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RotationVectorGeneralization" />.

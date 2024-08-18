@@ -45,7 +45,7 @@ Example: For traditional machine tools, this includes `LOADED`, plus rapid moves
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.EquipmentTimerClass);
 
 		/// <inheritdoc />
-		public EquipmentTimerWorkingClassProperties Properties { get; } = new EquipmentTimerWorkingClassProperties();
+		public new EquipmentTimerWorkingClassProperties Properties { get; } = new EquipmentTimerWorkingClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentTimerWorkingClass" />.

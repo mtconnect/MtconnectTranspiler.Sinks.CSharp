@@ -38,7 +38,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ObservableSampleClassProperties Properties { get; } = new ObservableSampleClassProperties();
+		public new ObservableSampleClassProperties Properties { get; } = new ObservableSampleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ObservableSampleClass" />.

@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ForceClassProperties Properties { get; } = new ForceClassProperties();
+		public new ForceClassProperties Properties { get; } = new ForceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ForceClass" />.

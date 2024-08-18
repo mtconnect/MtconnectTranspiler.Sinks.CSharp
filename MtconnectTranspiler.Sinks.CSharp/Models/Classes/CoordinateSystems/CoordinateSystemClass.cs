@@ -40,7 +40,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CoordinateSystemClassProperties Properties { get; } = new CoordinateSystemClassProperties();
+		public new CoordinateSystemClassProperties Properties { get; } = new CoordinateSystemClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CoordinateSystemClass" />.

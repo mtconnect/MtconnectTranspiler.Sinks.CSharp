@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.AgentClass);
 
 		/// <inheritdoc />
-		public MTConnectAgentGeneralizationProperties Properties { get; } = new MTConnectAgentGeneralizationProperties();
+		public new MTConnectAgentGeneralizationProperties Properties { get; } = new MTConnectAgentGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectAgentGeneralization" />.

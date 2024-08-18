@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public TransferPotClassProperties Properties { get; } = new TransferPotClassProperties();
+		public new TransferPotClassProperties Properties { get; } = new TransferPotClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TransferPotClass" />.

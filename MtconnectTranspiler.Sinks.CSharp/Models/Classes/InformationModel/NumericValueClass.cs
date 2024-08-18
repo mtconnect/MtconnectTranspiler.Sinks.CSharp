@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.TextValueClass);
 
 		/// <inheritdoc />
-		public NumericValueClassProperties Properties { get; } = new NumericValueClassProperties();
+		public new NumericValueClassProperties Properties { get; } = new NumericValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="NumericValueClass" />.

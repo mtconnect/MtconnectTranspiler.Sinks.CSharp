@@ -45,7 +45,7 @@ When {{property(Execution::result)}} is not `WAIT`, {{property(Observation::isUn
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public WaitStateClassProperties Properties { get; } = new WaitStateClassProperties();
+		public new WaitStateClassProperties Properties { get; } = new WaitStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="WaitStateClass" />.

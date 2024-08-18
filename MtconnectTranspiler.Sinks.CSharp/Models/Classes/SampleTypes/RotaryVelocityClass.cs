@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public RotaryVelocityClassProperties Properties { get; } = new RotaryVelocityClassProperties();
+		public new RotaryVelocityClassProperties Properties { get; } = new RotaryVelocityClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RotaryVelocityClass" />.

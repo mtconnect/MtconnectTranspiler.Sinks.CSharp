@@ -38,7 +38,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public OriginPropertyClassProperties Properties { get; } = new OriginPropertyClassProperties();
+		public new OriginPropertyClassProperties Properties { get; } = new OriginPropertyClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OriginPropertyClass" />.

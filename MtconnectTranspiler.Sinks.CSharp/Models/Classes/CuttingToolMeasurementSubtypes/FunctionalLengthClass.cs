@@ -45,7 +45,7 @@ The {{block(CuttingTool)}} functional length will be the length of the entire to
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public FunctionalLengthClassProperties Properties { get; } = new FunctionalLengthClassProperties();
+		public new FunctionalLengthClassProperties Properties { get; } = new FunctionalLengthClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FunctionalLengthClass" />.

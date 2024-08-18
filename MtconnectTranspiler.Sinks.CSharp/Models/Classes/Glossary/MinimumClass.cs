@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MinimumClassProperties Properties { get; } = new MinimumClassProperties();
+		public new MinimumClassProperties Properties { get; } = new MinimumClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MinimumClass" />.

@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.Rest.Storage
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CircularBuffferClassProperties Properties { get; } = new CircularBuffferClassProperties();
+		public new CircularBuffferClassProperties Properties { get; } = new CircularBuffferClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CircularBuffferClass" />.

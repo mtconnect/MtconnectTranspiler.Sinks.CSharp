@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.TransferCountClass);
 
 		/// <inheritdoc />
-		public TransferCountRemainingClassProperties Properties { get; } = new TransferCountRemainingClassProperties();
+		public new TransferCountRemainingClassProperties Properties { get; } = new TransferCountRemainingClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TransferCountRemainingClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.Files
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
-		public AbstractFileClassProperties Properties { get; } = new AbstractFileClassProperties();
+		public new AbstractFileClassProperties Properties { get; } = new AbstractFileClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AbstractFileClass" />.

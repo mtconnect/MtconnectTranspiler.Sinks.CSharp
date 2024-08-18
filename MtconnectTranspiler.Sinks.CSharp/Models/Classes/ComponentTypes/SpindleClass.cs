@@ -45,7 +45,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.AxisClass);
 
 		/// <inheritdoc />
-		public SpindleClassProperties Properties { get; } = new SpindleClassProperties();
+		public new SpindleClassProperties Properties { get; } = new SpindleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SpindleClass" />.

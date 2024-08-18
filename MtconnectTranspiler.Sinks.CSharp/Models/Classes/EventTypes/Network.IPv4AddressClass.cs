@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.NetworkClass);
 
 		/// <inheritdoc />
-		public NetworkIPv4AddressClassProperties Properties { get; } = new NetworkIPv4AddressClassProperties();
+		public new NetworkIPv4AddressClassProperties Properties { get; } = new NetworkIPv4AddressClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="NetworkIPv4AddressClass" />.

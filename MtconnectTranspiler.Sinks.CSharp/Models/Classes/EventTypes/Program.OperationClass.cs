@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProgramClass);
 
 		/// <inheritdoc />
-		public ProgramOperationClassProperties Properties { get; } = new ProgramOperationClassProperties();
+		public new ProgramOperationClassProperties Properties { get; } = new ProgramOperationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProgramOperationClass" />.

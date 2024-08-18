@@ -43,7 +43,7 @@ namespace Mtconnect.DataTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.DataSetClass);
 
 		/// <inheritdoc />
-		public SensorAttachmentResultClassProperties Properties { get; } = new SensorAttachmentResultClassProperties();
+		public new SensorAttachmentResultClassProperties Properties { get; } = new SensorAttachmentResultClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SensorAttachmentResultClass" />.

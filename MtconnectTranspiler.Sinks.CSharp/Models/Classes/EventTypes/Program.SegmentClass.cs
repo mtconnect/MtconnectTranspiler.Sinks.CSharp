@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProgramClass);
 
 		/// <inheritdoc />
-		public ProgramSegmentClassProperties Properties { get; } = new ProgramSegmentClassProperties();
+		public new ProgramSegmentClassProperties Properties { get; } = new ProgramSegmentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProgramSegmentClass" />.

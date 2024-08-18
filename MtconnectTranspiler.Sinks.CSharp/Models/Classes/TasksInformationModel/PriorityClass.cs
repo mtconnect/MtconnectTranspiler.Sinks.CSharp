@@ -38,7 +38,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public PriorityClassProperties Properties { get; } = new PriorityClassProperties();
+		public new PriorityClassProperties Properties { get; } = new PriorityClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PriorityClass" />.

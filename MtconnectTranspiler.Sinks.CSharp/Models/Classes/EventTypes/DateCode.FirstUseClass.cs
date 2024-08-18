@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.DateCodeClass);
 
 		/// <inheritdoc />
-		public DateCodeFirstUseClassProperties Properties { get; } = new DateCodeFirstUseClassProperties();
+		public new DateCodeFirstUseClassProperties Properties { get; } = new DateCodeFirstUseClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DateCodeFirstUseClass" />.

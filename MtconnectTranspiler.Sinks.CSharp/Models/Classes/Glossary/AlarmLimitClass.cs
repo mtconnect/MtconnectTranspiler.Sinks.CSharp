@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AlarmLimitClassProperties Properties { get; } = new AlarmLimitClassProperties();
+		public new AlarmLimitClassProperties Properties { get; } = new AlarmLimitClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AlarmLimitClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.ProtocolTerms.PublishAndSubscribeClass);
 
 		/// <inheritdoc />
-		public SubscribeClassProperties Properties { get; } = new SubscribeClassProperties();
+		public new SubscribeClassProperties Properties { get; } = new SubscribeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SubscribeClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.LengthClass);
 
 		/// <inheritdoc />
-		public LengthRemainingClassProperties Properties { get; } = new LengthRemainingClassProperties();
+		public new LengthRemainingClassProperties Properties { get; } = new LengthRemainingClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LengthRemainingClass" />.

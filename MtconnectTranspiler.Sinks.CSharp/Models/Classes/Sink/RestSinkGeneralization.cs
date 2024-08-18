@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Sink
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SinkClass);
 
 		/// <inheritdoc />
-		public RestSinkGeneralizationProperties Properties { get; } = new RestSinkGeneralizationProperties();
+		public new RestSinkGeneralizationProperties Properties { get; } = new RestSinkGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RestSinkGeneralization" />.

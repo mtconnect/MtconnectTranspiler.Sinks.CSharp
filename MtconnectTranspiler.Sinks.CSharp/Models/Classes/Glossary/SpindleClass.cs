@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SpindleClassProperties Properties { get; } = new SpindleClassProperties();
+		public new SpindleClassProperties Properties { get; } = new SpindleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SpindleClass" />.

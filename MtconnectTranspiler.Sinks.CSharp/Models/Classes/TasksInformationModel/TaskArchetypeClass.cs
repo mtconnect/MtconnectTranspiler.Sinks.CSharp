@@ -42,7 +42,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
-		public TaskArchetypeClassProperties Properties { get; } = new TaskArchetypeClassProperties();
+		public new TaskArchetypeClassProperties Properties { get; } = new TaskArchetypeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TaskArchetypeClass" />.

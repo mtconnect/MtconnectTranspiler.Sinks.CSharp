@@ -40,7 +40,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CompositionClassProperties Properties { get; } = new CompositionClassProperties();
+		public new CompositionClassProperties Properties { get; } = new CompositionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CompositionClass" />.

@@ -47,7 +47,7 @@ When `SINGLE_BLOCK` is `ON`, {{block(Execution)}} **MUST** change to `INTERRUPTE
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ControllerModeOverrideClass);
 
 		/// <inheritdoc />
-		public ControllerModeOverrideSingleBlockClassProperties Properties { get; } = new ControllerModeOverrideSingleBlockClassProperties();
+		public new ControllerModeOverrideSingleBlockClassProperties Properties { get; } = new ControllerModeOverrideSingleBlockClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControllerModeOverrideSingleBlockClass" />.

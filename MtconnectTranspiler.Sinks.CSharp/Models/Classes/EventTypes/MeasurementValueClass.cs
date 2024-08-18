@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public MeasurementValueClassProperties Properties { get; } = new MeasurementValueClassProperties();
+		public new MeasurementValueClassProperties Properties { get; } = new MeasurementValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MeasurementValueClass" />.

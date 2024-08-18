@@ -53,7 +53,7 @@ An {{block(Agent)}} **MAY** provide information about the {{term(MTConnect Agent
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DeviceClass);
 
 		/// <inheritdoc />
-		public AgentClassProperties Properties { get; } = new AgentClassProperties();
+		public new AgentClassProperties Properties { get; } = new AgentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AgentClass" />.

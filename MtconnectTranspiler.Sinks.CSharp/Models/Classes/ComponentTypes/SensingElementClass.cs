@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public SensingElementClassProperties Properties { get; } = new SensingElementClassProperties();
+		public new SensingElementClassProperties Properties { get; } = new SensingElementClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SensingElementClass" />.

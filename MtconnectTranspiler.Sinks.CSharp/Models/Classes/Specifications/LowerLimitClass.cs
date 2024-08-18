@@ -41,7 +41,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public LowerLimitClassProperties Properties { get; } = new LowerLimitClassProperties();
+		public new LowerLimitClassProperties Properties { get; } = new LowerLimitClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LowerLimitClass" />.

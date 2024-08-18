@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public StructuralElementClassProperties Properties { get; } = new StructuralElementClassProperties();
+		public new StructuralElementClassProperties Properties { get; } = new StructuralElementClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="StructuralElementClass" />.

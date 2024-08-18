@@ -45,7 +45,7 @@ This measurement will be with reference to the cutting tool and **MUST NOT** exi
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public FunctionalLengthClassProperties Properties { get; } = new FunctionalLengthClassProperties();
+		public new FunctionalLengthClassProperties Properties { get; } = new FunctionalLengthClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FunctionalLengthClass" />.

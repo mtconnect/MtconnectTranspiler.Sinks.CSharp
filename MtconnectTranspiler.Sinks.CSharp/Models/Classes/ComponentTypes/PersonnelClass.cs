@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ResourceClass);
 
 		/// <inheritdoc />
-		public PersonnelClassProperties Properties { get; } = new PersonnelClassProperties();
+		public new PersonnelClassProperties Properties { get; } = new PersonnelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PersonnelClass" />.

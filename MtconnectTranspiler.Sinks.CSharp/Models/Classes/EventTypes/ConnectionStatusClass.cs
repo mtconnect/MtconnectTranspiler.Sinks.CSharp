@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ConnectionStatusClassProperties Properties { get; } = new ConnectionStatusClassProperties();
+		public new ConnectionStatusClassProperties Properties { get; } = new ConnectionStatusClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConnectionStatusClass" />.

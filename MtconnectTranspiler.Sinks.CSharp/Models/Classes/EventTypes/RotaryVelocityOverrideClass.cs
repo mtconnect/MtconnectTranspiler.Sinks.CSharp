@@ -45,7 +45,7 @@ This command represents a percentage change to the velocity calculated by a logi
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public RotaryVelocityOverrideClassProperties Properties { get; } = new RotaryVelocityOverrideClassProperties();
+		public new RotaryVelocityOverrideClassProperties Properties { get; } = new RotaryVelocityOverrideClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RotaryVelocityOverrideClass" />.

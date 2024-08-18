@@ -45,7 +45,7 @@ It is the starting nest level in a call structure and may contain calls to sub p
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProgramLocationClass);
 
 		/// <inheritdoc />
-		public ProgramLocationMainClassProperties Properties { get; } = new ProgramLocationMainClassProperties();
+		public new ProgramLocationMainClassProperties Properties { get; } = new ProgramLocationMainClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProgramLocationMainClass" />.

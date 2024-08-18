@@ -42,7 +42,7 @@ namespace Mtconnect.DataTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.DataSetClass);
 
 		/// <inheritdoc />
-		public SpecificationLimitResultClassProperties Properties { get; } = new SpecificationLimitResultClassProperties();
+		public new SpecificationLimitResultClassProperties Properties { get; } = new SpecificationLimitResultClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SpecificationLimitResultClass" />.

@@ -47,7 +47,7 @@ If not specified further in statistic, defaults to RMS voltage.
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.VoltageClass);
 
 		/// <inheritdoc />
-		public VoltageAlternatingClassProperties Properties { get; } = new VoltageAlternatingClassProperties();
+		public new VoltageAlternatingClassProperties Properties { get; } = new VoltageAlternatingClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="VoltageAlternatingClass" />.

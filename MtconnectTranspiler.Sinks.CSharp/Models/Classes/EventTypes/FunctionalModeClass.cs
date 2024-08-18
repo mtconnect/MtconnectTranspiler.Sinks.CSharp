@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public FunctionalModeClassProperties Properties { get; } = new FunctionalModeClassProperties();
+		public new FunctionalModeClassProperties Properties { get; } = new FunctionalModeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FunctionalModeClass" />.

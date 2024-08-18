@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.DocumentClass);
 
 		/// <inheritdoc />
-		public MTConnectDocumentGeneralizationProperties Properties { get; } = new MTConnectDocumentGeneralizationProperties();
+		public new MTConnectDocumentGeneralizationProperties Properties { get; } = new MTConnectDocumentGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectDocumentGeneralization" />.

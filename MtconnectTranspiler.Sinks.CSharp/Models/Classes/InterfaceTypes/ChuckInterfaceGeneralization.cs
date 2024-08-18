@@ -45,7 +45,7 @@ The piece of equipment that is controlling the chuck **MUST** provide the data i
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.InterfaceClass);
 
 		/// <inheritdoc />
-		public ChuckInterfaceGeneralizationProperties Properties { get; } = new ChuckInterfaceGeneralizationProperties();
+		public new ChuckInterfaceGeneralizationProperties Properties { get; } = new ChuckInterfaceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ChuckInterfaceGeneralization" />.

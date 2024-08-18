@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 
 		/// <inheritdoc />
-		public ElectricClassProperties Properties { get; } = new ElectricClassProperties();
+		public new ElectricClassProperties Properties { get; } = new ElectricClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ElectricClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public EmergencyStopClassProperties Properties { get; } = new EmergencyStopClassProperties();
+		public new EmergencyStopClassProperties Properties { get; } = new EmergencyStopClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EmergencyStopClass" />.

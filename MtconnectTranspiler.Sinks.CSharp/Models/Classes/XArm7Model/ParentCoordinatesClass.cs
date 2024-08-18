@@ -42,7 +42,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public Type Generalization => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.PositionClass);
 
 		/// <inheritdoc />
-		public ParentCoordinatesClassProperties Properties { get; } = new ParentCoordinatesClassProperties();
+		public new ParentCoordinatesClassProperties Properties { get; } = new ParentCoordinatesClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ParentCoordinatesClass" />.

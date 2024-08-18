@@ -43,7 +43,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MTConnectStreamsClassProperties Properties { get; } = new MTConnectStreamsClassProperties();
+		public new MTConnectStreamsClassProperties Properties { get; } = new MTConnectStreamsClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectStreamsClass" />.

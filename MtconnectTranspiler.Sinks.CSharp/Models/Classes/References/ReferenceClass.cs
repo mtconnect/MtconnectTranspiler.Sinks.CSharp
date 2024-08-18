@@ -40,7 +40,7 @@ namespace Mtconnect.DeviceInformationModel.References
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ReferenceClassProperties Properties { get; } = new ReferenceClassProperties();
+		public new ReferenceClassProperties Properties { get; } = new ReferenceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ReferenceClass" />.

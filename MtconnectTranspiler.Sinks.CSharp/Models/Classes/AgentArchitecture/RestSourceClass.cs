@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public RestSourceClassProperties Properties { get; } = new RestSourceClassProperties();
+		public new RestSourceClassProperties Properties { get; } = new RestSourceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RestSourceClass" />.

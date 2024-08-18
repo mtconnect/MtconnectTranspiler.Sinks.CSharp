@@ -45,7 +45,7 @@ Example: For traditional machine tools, this includes `WORKING`, plus idle time.
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.EquipmentTimerClass);
 
 		/// <inheritdoc />
-		public EquipmentTimerOperatingClassProperties Properties { get; } = new EquipmentTimerOperatingClassProperties();
+		public new EquipmentTimerOperatingClassProperties Properties { get; } = new EquipmentTimerOperatingClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentTimerOperatingClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.FollowingErrorLinearClass);
 
 		/// <inheritdoc />
-		public FollowingErrorLinearActualClassProperties Properties { get; } = new FollowingErrorLinearActualClassProperties();
+		public new FollowingErrorLinearActualClassProperties Properties { get; } = new FollowingErrorLinearActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FollowingErrorLinearActualClass" />.

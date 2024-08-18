@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public GalvanomotorClassProperties Properties { get; } = new GalvanomotorClassProperties();
+		public new GalvanomotorClassProperties Properties { get; } = new GalvanomotorClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="GalvanomotorClass" />.

@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public PersistenceClassProperties Properties { get; } = new PersistenceClassProperties();
+		public new PersistenceClassProperties Properties { get; } = new PersistenceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PersistenceClass" />.

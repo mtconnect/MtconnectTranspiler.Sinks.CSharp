@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.TextValueClass);
 
 		/// <inheritdoc />
-		public ControlledVocabularyValueClassProperties Properties { get; } = new ControlledVocabularyValueClassProperties();
+		public new ControlledVocabularyValueClassProperties Properties { get; } = new ControlledVocabularyValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControlledVocabularyValueClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.CycleCountClass);
 
 		/// <inheritdoc />
-		public CycleCountAbortedClassProperties Properties { get; } = new CycleCountAbortedClassProperties();
+		public new CycleCountAbortedClassProperties Properties { get; } = new CycleCountAbortedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CycleCountAbortedClass" />.

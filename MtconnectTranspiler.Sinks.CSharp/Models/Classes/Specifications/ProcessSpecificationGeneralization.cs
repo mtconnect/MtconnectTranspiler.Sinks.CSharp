@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.SpecificationClass);
 
 		/// <inheritdoc />
-		public ProcessSpecificationGeneralizationProperties Properties { get; } = new ProcessSpecificationGeneralizationProperties();
+		public new ProcessSpecificationGeneralizationProperties Properties { get; } = new ProcessSpecificationGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProcessSpecificationGeneralization" />.

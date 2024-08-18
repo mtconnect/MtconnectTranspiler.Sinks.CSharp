@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public EndOfBarClassProperties Properties { get; } = new EndOfBarClassProperties();
+		public new EndOfBarClassProperties Properties { get; } = new EndOfBarClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EndOfBarClass" />.

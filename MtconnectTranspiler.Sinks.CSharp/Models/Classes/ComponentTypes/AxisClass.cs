@@ -76,7 +76,7 @@ A machine having an axis with more than one child **MUST** number each branch us
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public AxisClassProperties Properties { get; } = new AxisClassProperties();
+		public new AxisClassProperties Properties { get; } = new AxisClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AxisClass" />.

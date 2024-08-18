@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public LowerCamelCaseClassProperties Properties { get; } = new LowerCamelCaseClassProperties();
+		public new LowerCamelCaseClassProperties Properties { get; } = new LowerCamelCaseClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LowerCamelCaseClass" />.

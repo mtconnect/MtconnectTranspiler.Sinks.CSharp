@@ -45,7 +45,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DataItems.DataItemClass);
 
 		/// <inheritdoc />
-		public EventClassProperties Properties { get; } = new EventClassProperties();
+		public new EventClassProperties Properties { get; } = new EventClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EventClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.InformationModelTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.InformationModelTerms.MTConnectInformationModelGeneralization);
 
 		/// <inheritdoc />
-		public DeviceInformationModelClassProperties Properties { get; } = new DeviceInformationModelClassProperties();
+		public new DeviceInformationModelClassProperties Properties { get; } = new DeviceInformationModelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DeviceInformationModelClass" />.

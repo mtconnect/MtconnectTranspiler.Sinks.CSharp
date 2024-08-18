@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ConditionClassProperties Properties { get; } = new ConditionClassProperties();
+		public new ConditionClassProperties Properties { get; } = new ConditionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConditionClass" />.

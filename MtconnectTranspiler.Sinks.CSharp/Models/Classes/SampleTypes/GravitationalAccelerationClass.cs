@@ -45,7 +45,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public GravitationalAccelerationClassProperties Properties { get; } = new GravitationalAccelerationClassProperties();
+		public new GravitationalAccelerationClassProperties Properties { get; } = new GravitationalAccelerationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="GravitationalAccelerationClass" />.

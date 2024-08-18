@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public LocationClassProperties Properties { get; } = new LocationClassProperties();
+		public new LocationClassProperties Properties { get; } = new LocationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LocationClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PathFeedratePerRevolutionClass);
 
 		/// <inheritdoc />
-		public PathFeedratePerRevolutionCommandedClassProperties Properties { get; } = new PathFeedratePerRevolutionCommandedClassProperties();
+		public new PathFeedratePerRevolutionCommandedClassProperties Properties { get; } = new PathFeedratePerRevolutionCommandedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PathFeedratePerRevolutionCommandedClass" />.

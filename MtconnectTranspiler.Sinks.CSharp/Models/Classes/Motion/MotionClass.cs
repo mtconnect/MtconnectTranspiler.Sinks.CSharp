@@ -42,7 +42,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MotionClassProperties Properties { get; } = new MotionClassProperties();
+		public new MotionClassProperties Properties { get; } = new MotionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MotionClass" />.

@@ -38,7 +38,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ObservableConditionClassProperties Properties { get; } = new ObservableConditionClassProperties();
+		public new ObservableConditionClassProperties Properties { get; } = new ObservableConditionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ObservableConditionClass" />.

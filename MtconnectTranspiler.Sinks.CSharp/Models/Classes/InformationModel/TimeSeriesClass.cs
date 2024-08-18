@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public TimeSeriesClassProperties Properties { get; } = new TimeSeriesClassProperties();
+		public new TimeSeriesClassProperties Properties { get; } = new TimeSeriesClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TimeSeriesClass" />.

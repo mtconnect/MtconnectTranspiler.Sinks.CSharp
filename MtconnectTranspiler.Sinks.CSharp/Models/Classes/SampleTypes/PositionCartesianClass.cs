@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public PositionCartesianClassProperties Properties { get; } = new PositionCartesianClassProperties();
+		public new PositionCartesianClassProperties Properties { get; } = new PositionCartesianClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PositionCartesianClass" />.

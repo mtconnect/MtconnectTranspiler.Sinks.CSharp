@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.References
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.References.ReferenceClass);
 
 		/// <inheritdoc />
-		public DataItemRefClassProperties Properties { get; } = new DataItemRefClassProperties();
+		public new DataItemRefClassProperties Properties { get; } = new DataItemRefClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataItemRefClass" />.

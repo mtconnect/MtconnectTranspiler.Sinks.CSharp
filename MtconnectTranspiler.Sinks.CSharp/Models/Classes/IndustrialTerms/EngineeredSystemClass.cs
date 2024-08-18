@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ThingClass);
 
 		/// <inheritdoc />
-		public EngineeredSystemClassProperties Properties { get; } = new EngineeredSystemClassProperties();
+		public new EngineeredSystemClassProperties Properties { get; } = new EngineeredSystemClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EngineeredSystemClass" />.

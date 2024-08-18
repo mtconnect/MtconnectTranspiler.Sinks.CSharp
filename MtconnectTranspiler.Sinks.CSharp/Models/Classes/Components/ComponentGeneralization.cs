@@ -52,7 +52,7 @@ At least one of {{block(Component)}}, {{block(DataItem)}}, or {{block(Reference)
 		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.ComponentClass);
 
 		/// <inheritdoc />
-		public ComponentGeneralizationProperties Properties { get; } = new ComponentGeneralizationProperties();
+		public new ComponentGeneralizationProperties Properties { get; } = new ComponentGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ComponentGeneralization" />.

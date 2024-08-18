@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public DriveAngleClassProperties Properties { get; } = new DriveAngleClassProperties();
+		public new DriveAngleClassProperties Properties { get; } = new DriveAngleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DriveAngleClass" />.

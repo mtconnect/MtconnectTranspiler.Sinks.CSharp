@@ -46,7 +46,7 @@ An {{block(Cell)}} **MAY** be further constrained by the {{block(DataItem)}} def
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CellClassProperties Properties { get; } = new CellClassProperties();
+		public new CellClassProperties Properties { get; } = new CellClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CellClass" />.

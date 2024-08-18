@@ -65,7 +65,7 @@ namespace {{ to_code_safe source.namespace }}
 		{{~ end ~}}
 
 		/// <inheritdoc />
-		public {{ code_name }}Properties Properties { get; } = new {{ code_name }}Properties();
+		public new {{ code_name }}Properties Properties { get; } = new {{ code_name }}Properties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="{{ code_name }}" />.

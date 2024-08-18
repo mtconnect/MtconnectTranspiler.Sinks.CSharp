@@ -40,7 +40,7 @@ namespace Mtconnect.ObservationInformationModel
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ComponentStreamClassProperties Properties { get; } = new ComponentStreamClassProperties();
+		public new ComponentStreamClassProperties Properties { get; } = new ComponentStreamClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ComponentStreamClass" />.

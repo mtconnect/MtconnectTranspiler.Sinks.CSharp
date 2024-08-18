@@ -54,7 +54,7 @@ Examples of {{block(Discrete)}}: A `PartCount` reporting the completion of each 
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.RepresentationClass);
 
 		/// <inheritdoc />
-		public DiscreteClassProperties Properties { get; } = new DiscreteClassProperties();
+		public new DiscreteClassProperties Properties { get; } = new DiscreteClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DiscreteClass" />.

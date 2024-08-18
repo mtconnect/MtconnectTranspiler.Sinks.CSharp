@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.SensorStateClass);
 
 		/// <inheritdoc />
-		public SensorStateBinaryClassProperties Properties { get; } = new SensorStateBinaryClassProperties();
+		public new SensorStateBinaryClassProperties Properties { get; } = new SensorStateBinaryClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SensorStateBinaryClass" />.

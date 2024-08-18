@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public DepositionMassClassProperties Properties { get; } = new DepositionMassClassProperties();
+		public new DepositionMassClassProperties Properties { get; } = new DepositionMassClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DepositionMassClass" />.

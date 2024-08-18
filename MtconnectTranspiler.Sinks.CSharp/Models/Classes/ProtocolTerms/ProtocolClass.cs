@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ProtocolClassProperties Properties { get; } = new ProtocolClassProperties();
+		public new ProtocolClassProperties Properties { get; } = new ProtocolClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProtocolClass" />.

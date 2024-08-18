@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
-		public RawMaterialClassProperties Properties { get; } = new RawMaterialClassProperties();
+		public new RawMaterialClassProperties Properties { get; } = new RawMaterialClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RawMaterialClass" />.

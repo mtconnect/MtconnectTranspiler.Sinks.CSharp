@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public AssetRemovedClassProperties Properties { get; } = new AssetRemovedClassProperties();
+		public new AssetRemovedClassProperties Properties { get; } = new AssetRemovedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AssetRemovedClass" />.

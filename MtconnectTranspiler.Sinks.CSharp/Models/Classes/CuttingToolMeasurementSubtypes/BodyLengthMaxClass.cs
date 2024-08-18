@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public BodyLengthMaxClassProperties Properties { get; } = new BodyLengthMaxClassProperties();
+		public new BodyLengthMaxClassProperties Properties { get; } = new BodyLengthMaxClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="BodyLengthMaxClass" />.

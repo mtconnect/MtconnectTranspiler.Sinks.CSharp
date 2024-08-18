@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Proper
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CellDefinitionClassProperties Properties { get; } = new CellDefinitionClassProperties();
+		public new CellDefinitionClassProperties Properties { get; } = new CellDefinitionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CellDefinitionClass" />.

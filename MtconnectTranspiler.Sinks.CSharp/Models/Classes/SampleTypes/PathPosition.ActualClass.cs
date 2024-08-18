@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PathPositionClass);
 
 		/// <inheritdoc />
-		public PathPositionActualClassProperties Properties { get; } = new PathPositionActualClassProperties();
+		public new PathPositionActualClassProperties Properties { get; } = new PathPositionActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PathPositionActualClass" />.

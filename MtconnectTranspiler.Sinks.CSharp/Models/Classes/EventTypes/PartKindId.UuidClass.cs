@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartKindIdClass);
 
 		/// <inheritdoc />
-		public PartKindIdUuidClassProperties Properties { get; } = new PartKindIdUuidClassProperties();
+		public new PartKindIdUuidClassProperties Properties { get; } = new PartKindIdUuidClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PartKindIdUuidClass" />.

@@ -45,7 +45,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.SpindleSpeedClass);
 
 		/// <inheritdoc />
-		public SpindleSpeedCommandedClassProperties Properties { get; } = new SpindleSpeedCommandedClassProperties();
+		public new SpindleSpeedCommandedClassProperties Properties { get; } = new SpindleSpeedCommandedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SpindleSpeedCommandedClass" />.

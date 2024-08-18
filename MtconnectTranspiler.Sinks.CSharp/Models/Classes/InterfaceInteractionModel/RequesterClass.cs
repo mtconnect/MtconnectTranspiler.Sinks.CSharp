@@ -42,7 +42,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.InterfaceClass);
 
 		/// <inheritdoc />
-		public RequesterClassProperties Properties { get; } = new RequesterClassProperties();
+		public new RequesterClassProperties Properties { get; } = new RequesterClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RequesterClass" />.

@@ -42,7 +42,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public Type Generalization => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.VectorClass);
 
 		/// <inheritdoc />
-		public AxisClassProperties Properties { get; } = new AxisClassProperties();
+		public new AxisClassProperties Properties { get; } = new AxisClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AxisClass" />.

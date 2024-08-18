@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.PipelineMessageClass);
 
 		/// <inheritdoc />
-		public JsonMessageClassProperties Properties { get; } = new JsonMessageClassProperties();
+		public new JsonMessageClassProperties Properties { get; } = new JsonMessageClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="JsonMessageClass" />.

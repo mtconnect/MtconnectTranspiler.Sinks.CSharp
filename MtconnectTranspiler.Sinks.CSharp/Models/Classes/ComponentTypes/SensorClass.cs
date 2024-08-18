@@ -48,7 +48,7 @@ See {{block(SensorConfiguration)}} for more details on the use and configuration
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public SensorClassProperties Properties { get; } = new SensorClassProperties();
+		public new SensorClassProperties Properties { get; } = new SensorClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SensorClass" />.

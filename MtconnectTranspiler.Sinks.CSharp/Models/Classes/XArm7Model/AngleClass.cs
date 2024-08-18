@@ -38,7 +38,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AngleClassProperties Properties { get; } = new AngleClassProperties();
+		public new AngleClassProperties Properties { get; } = new AngleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AngleClass" />.

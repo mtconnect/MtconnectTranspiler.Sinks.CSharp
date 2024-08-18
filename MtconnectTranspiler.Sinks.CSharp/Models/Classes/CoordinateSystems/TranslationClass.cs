@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public TranslationClassProperties Properties { get; } = new TranslationClassProperties();
+		public new TranslationClassProperties Properties { get; } = new TranslationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TranslationClass" />.

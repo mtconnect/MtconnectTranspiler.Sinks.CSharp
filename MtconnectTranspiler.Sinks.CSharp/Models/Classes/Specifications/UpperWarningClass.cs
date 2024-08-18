@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public UpperWarningClassProperties Properties { get; } = new UpperWarningClassProperties();
+		public new UpperWarningClassProperties Properties { get; } = new UpperWarningClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="UpperWarningClass" />.

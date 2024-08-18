@@ -40,7 +40,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SampleClassProperties Properties { get; } = new SampleClassProperties();
+		public new SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SampleClass" />.

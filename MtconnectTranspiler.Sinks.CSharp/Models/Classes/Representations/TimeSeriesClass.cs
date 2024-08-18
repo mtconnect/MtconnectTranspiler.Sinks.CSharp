@@ -60,7 +60,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.RepresentationClass);
 
 		/// <inheritdoc />
-		public TimeSeriesClassProperties Properties { get; } = new TimeSeriesClassProperties();
+		public new TimeSeriesClassProperties Properties { get; } = new TimeSeriesClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TimeSeriesClass" />.

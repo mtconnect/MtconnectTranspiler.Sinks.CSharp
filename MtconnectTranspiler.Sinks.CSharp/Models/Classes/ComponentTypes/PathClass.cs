@@ -48,7 +48,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public PathClassProperties Properties { get; } = new PathClassProperties();
+		public new PathClassProperties Properties { get; } = new PathClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PathClass" />.

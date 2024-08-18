@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ConditionClass);
 
 		/// <inheritdoc />
-		public ActuatorClassProperties Properties { get; } = new ActuatorClassProperties();
+		public new ActuatorClassProperties Properties { get; } = new ActuatorClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ActuatorClass" />.

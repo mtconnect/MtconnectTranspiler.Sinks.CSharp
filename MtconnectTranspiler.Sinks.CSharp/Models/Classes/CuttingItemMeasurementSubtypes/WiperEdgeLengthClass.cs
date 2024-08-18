@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public WiperEdgeLengthClassProperties Properties { get; } = new WiperEdgeLengthClassProperties();
+		public new WiperEdgeLengthClassProperties Properties { get; } = new WiperEdgeLengthClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="WiperEdgeLengthClass" />.

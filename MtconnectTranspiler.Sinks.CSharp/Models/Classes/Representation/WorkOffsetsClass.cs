@@ -42,7 +42,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public WorkOffsetsClassProperties Properties { get; } = new WorkOffsetsClassProperties();
+		public new WorkOffsetsClassProperties Properties { get; } = new WorkOffsetsClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="WorkOffsetsClass" />.

@@ -53,7 +53,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public DeviceClassProperties Properties { get; } = new DeviceClassProperties();
+		public new DeviceClassProperties Properties { get; } = new DeviceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DeviceClass" />.

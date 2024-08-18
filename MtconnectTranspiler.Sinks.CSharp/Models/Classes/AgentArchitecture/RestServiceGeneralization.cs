@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.ServiceClass);
 
 		/// <inheritdoc />
-		public RestServiceGeneralizationProperties Properties { get; } = new RestServiceGeneralizationProperties();
+		public new RestServiceGeneralizationProperties Properties { get; } = new RestServiceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RestServiceGeneralization" />.

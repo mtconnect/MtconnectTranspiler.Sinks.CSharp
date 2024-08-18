@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ApplicationClass);
 
 		/// <inheritdoc />
-		public ApplicationVersionClassProperties Properties { get; } = new ApplicationVersionClassProperties();
+		public new ApplicationVersionClassProperties Properties { get; } = new ApplicationVersionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ApplicationVersionClass" />.

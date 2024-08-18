@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass);
 
 		/// <inheritdoc />
-		public TextValueClassProperties Properties { get; } = new TextValueClassProperties();
+		public new TextValueClassProperties Properties { get; } = new TextValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TextValueClass" />.

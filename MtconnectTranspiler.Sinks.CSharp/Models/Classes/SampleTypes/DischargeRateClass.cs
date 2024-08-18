@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public DischargeRateClassProperties Properties { get; } = new DischargeRateClassProperties();
+		public new DischargeRateClassProperties Properties { get; } = new DischargeRateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DischargeRateClass" />.

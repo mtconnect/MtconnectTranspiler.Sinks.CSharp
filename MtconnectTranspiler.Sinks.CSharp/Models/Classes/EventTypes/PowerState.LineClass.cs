@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PowerStateClass);
 
 		/// <inheritdoc />
-		public PowerStateLineClassProperties Properties { get; } = new PowerStateLineClassProperties();
+		public new PowerStateLineClassProperties Properties { get; } = new PowerStateLineClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PowerStateLineClass" />.

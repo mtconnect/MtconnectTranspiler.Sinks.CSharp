@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.FilterClass);
 
 		/// <inheritdoc />
-		public MinimumDeltaFilterGeneralizationProperties Properties { get; } = new MinimumDeltaFilterGeneralizationProperties();
+		public new MinimumDeltaFilterGeneralizationProperties Properties { get; } = new MinimumDeltaFilterGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MinimumDeltaFilterGeneralization" />.

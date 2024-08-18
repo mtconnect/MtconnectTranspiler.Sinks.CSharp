@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.ElementClass);
 
 		/// <inheritdoc />
-		public RootElementGeneralizationProperties Properties { get; } = new RootElementGeneralizationProperties();
+		public new RootElementGeneralizationProperties Properties { get; } = new RootElementGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RootElementGeneralization" />.

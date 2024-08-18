@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LineNumberClass);
 
 		/// <inheritdoc />
-		public LineNumberIncrementalClassProperties Properties { get; } = new LineNumberIncrementalClassProperties();
+		public new LineNumberIncrementalClassProperties Properties { get; } = new LineNumberIncrementalClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LineNumberIncrementalClass" />.

@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.EntityClass);
 
 		/// <inheritdoc />
-		public TokensClassProperties Properties { get; } = new TokensClassProperties();
+		public new TokensClassProperties Properties { get; } = new TokensClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TokensClass" />.

@@ -47,7 +47,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.ProtocolTerms.ProtocolClass);
 
 		/// <inheritdoc />
-		public PublishAndSubscribeClassProperties Properties { get; } = new PublishAndSubscribeClassProperties();
+		public new PublishAndSubscribeClassProperties Properties { get; } = new PublishAndSubscribeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PublishAndSubscribeClass" />.

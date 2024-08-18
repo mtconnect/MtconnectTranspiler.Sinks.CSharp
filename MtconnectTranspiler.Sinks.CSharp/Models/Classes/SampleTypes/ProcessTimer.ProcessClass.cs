@@ -46,7 +46,7 @@ This includes the time that the piece of equipment is running, producing parts o
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.ProcessTimerClass);
 
 		/// <inheritdoc />
-		public ProcessTimerProcessClassProperties Properties { get; } = new ProcessTimerProcessClassProperties();
+		public new ProcessTimerProcessClassProperties Properties { get; } = new ProcessTimerProcessClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProcessTimerProcessClass" />.

@@ -40,7 +40,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ConfigurationRelationshipClassProperties Properties { get; } = new ConfigurationRelationshipClassProperties();
+		public new ConfigurationRelationshipClassProperties Properties { get; } = new ConfigurationRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConfigurationRelationshipClass" />.

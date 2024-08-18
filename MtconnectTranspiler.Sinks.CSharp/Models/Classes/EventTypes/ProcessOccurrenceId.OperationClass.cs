@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessOccurrenceIdClass);
 
 		/// <inheritdoc />
-		public ProcessOccurrenceIdOperationClassProperties Properties { get; } = new ProcessOccurrenceIdOperationClassProperties();
+		public new ProcessOccurrenceIdOperationClassProperties Properties { get; } = new ProcessOccurrenceIdOperationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProcessOccurrenceIdOperationClass" />.

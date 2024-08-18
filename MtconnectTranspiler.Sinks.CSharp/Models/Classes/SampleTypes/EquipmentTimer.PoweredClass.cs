@@ -45,7 +45,7 @@ Example: Heaters for an extrusion machine that are required to be powered even w
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.EquipmentTimerClass);
 
 		/// <inheritdoc />
-		public EquipmentTimerPoweredClassProperties Properties { get; } = new EquipmentTimerPoweredClassProperties();
+		public new EquipmentTimerPoweredClassProperties Properties { get; } = new EquipmentTimerPoweredClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentTimerPoweredClass" />.

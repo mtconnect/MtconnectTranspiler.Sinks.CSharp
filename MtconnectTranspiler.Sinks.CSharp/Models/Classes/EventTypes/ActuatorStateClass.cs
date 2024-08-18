@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ActuatorStateClassProperties Properties { get; } = new ActuatorStateClassProperties();
+		public new ActuatorStateClassProperties Properties { get; } = new ActuatorStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ActuatorStateClass" />.

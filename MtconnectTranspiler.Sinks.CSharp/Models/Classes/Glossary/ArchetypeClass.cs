@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.AssetClass);
 
 		/// <inheritdoc />
-		public ArchetypeClassProperties Properties { get; } = new ArchetypeClassProperties();
+		public new ArchetypeClassProperties Properties { get; } = new ArchetypeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ArchetypeClass" />.

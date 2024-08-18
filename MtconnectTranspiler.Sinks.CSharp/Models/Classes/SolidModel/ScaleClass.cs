@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ScaleClassProperties Properties { get; } = new ScaleClassProperties();
+		public new ScaleClassProperties Properties { get; } = new ScaleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ScaleClass" />.

@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ProcessClass);
 
 		/// <inheritdoc />
-		public ProcessOccurrenceClassProperties Properties { get; } = new ProcessOccurrenceClassProperties();
+		public new ProcessOccurrenceClassProperties Properties { get; } = new ProcessOccurrenceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProcessOccurrenceClass" />.

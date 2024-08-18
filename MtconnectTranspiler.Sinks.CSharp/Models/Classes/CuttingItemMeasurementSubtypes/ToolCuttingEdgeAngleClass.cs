@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public ToolCuttingEdgeAngleClassProperties Properties { get; } = new ToolCuttingEdgeAngleClassProperties();
+		public new ToolCuttingEdgeAngleClassProperties Properties { get; } = new ToolCuttingEdgeAngleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ToolCuttingEdgeAngleClass" />.

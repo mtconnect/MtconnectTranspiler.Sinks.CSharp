@@ -46,7 +46,7 @@ All {{block(Sample)}}s **MAY** have associated {{block(Condition)}} states.  {{b
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DataItems.DataItemClass);
 
 		/// <inheritdoc />
-		public ConditionClassProperties Properties { get; } = new ConditionClassProperties();
+		public new ConditionClassProperties Properties { get; } = new ConditionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConditionClass" />.

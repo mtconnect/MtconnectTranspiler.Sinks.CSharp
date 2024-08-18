@@ -40,7 +40,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DataSourceClassProperties Properties { get; } = new DataSourceClassProperties();
+		public new DataSourceClassProperties Properties { get; } = new DataSourceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataSourceClass" />.

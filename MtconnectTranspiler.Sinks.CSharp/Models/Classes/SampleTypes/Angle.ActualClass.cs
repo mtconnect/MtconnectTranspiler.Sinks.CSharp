@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngleClass);
 
 		/// <inheritdoc />
-		public AngleActualClassProperties Properties { get; } = new AngleActualClassProperties();
+		public new AngleActualClassProperties Properties { get; } = new AngleActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AngleActualClass" />.

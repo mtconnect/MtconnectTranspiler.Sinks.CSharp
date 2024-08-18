@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.DirectionClass);
 
 		/// <inheritdoc />
-		public DirectionLinearClassProperties Properties { get; } = new DirectionLinearClassProperties();
+		public new DirectionLinearClassProperties Properties { get; } = new DirectionLinearClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DirectionLinearClass" />.

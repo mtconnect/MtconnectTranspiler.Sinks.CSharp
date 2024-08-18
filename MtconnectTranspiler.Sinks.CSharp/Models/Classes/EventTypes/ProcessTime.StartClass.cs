@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProcessTimeClass);
 
 		/// <inheritdoc />
-		public ProcessTimeStartClassProperties Properties { get; } = new ProcessTimeStartClassProperties();
+		public new ProcessTimeStartClassProperties Properties { get; } = new ProcessTimeStartClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProcessTimeStartClass" />.

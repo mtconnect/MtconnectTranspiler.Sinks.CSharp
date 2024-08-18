@@ -45,7 +45,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DataItems.DataItemClass);
 
 		/// <inheritdoc />
-		public SampleClassProperties Properties { get; } = new SampleClassProperties();
+		public new SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SampleClass" />.

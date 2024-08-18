@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.OperatingSystemClass);
 
 		/// <inheritdoc />
-		public OperatingSystemReleaseDateClassProperties Properties { get; } = new OperatingSystemReleaseDateClassProperties();
+		public new OperatingSystemReleaseDateClassProperties Properties { get; } = new OperatingSystemReleaseDateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OperatingSystemReleaseDateClass" />.

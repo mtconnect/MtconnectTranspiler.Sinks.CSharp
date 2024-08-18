@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.FilterClass);
 
 		/// <inheritdoc />
-		public PeriodFilterGeneralizationProperties Properties { get; } = new PeriodFilterGeneralizationProperties();
+		public new PeriodFilterGeneralizationProperties Properties { get; } = new PeriodFilterGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PeriodFilterGeneralization" />.

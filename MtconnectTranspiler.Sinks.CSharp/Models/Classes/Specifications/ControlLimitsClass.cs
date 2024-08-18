@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ControlLimitsClassProperties Properties { get; } = new ControlLimitsClassProperties();
+		public new ControlLimitsClassProperties Properties { get; } = new ControlLimitsClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControlLimitsClass" />.

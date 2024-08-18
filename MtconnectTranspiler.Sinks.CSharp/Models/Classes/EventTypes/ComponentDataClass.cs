@@ -47,7 +47,7 @@ If the {{block(Component)}} multiplicity can be determined, the device model **M
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ComponentDataClassProperties Properties { get; } = new ComponentDataClassProperties();
+		public new ComponentDataClassProperties Properties { get; } = new ComponentDataClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ComponentDataClass" />.

@@ -38,7 +38,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public PositionClassProperties Properties { get; } = new PositionClassProperties();
+		public new PositionClassProperties Properties { get; } = new PositionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PositionClass" />.

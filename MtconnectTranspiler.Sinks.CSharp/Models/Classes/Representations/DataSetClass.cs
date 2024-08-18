@@ -80,7 +80,7 @@ When the {{block(Observation)}}  is `UNAVAILABLE` the {{block(DataSet)}} **MUST*
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.RepresentationClass);
 
 		/// <inheritdoc />
-		public DataSetClassProperties Properties { get; } = new DataSetClassProperties();
+		public new DataSetClassProperties Properties { get; } = new DataSetClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataSetClass" />.

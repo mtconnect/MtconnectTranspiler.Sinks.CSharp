@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PowerSourceClass);
 
 		/// <inheritdoc />
-		public PowerSourceSecondaryClassProperties Properties { get; } = new PowerSourceSecondaryClassProperties();
+		public new PowerSourceSecondaryClassProperties Properties { get; } = new PowerSourceSecondaryClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PowerSourceSecondaryClass" />.

@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Source
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SourceClass);
 
 		/// <inheritdoc />
-		public AdapterDataSourceGeneralizationProperties Properties { get; } = new AdapterDataSourceGeneralizationProperties();
+		public new AdapterDataSourceGeneralizationProperties Properties { get; } = new AdapterDataSourceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AdapterDataSourceGeneralization" />.

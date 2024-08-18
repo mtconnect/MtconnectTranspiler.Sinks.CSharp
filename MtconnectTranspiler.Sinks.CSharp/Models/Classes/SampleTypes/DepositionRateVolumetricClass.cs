@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public DepositionRateVolumetricClassProperties Properties { get; } = new DepositionRateVolumetricClassProperties();
+		public new DepositionRateVolumetricClassProperties Properties { get; } = new DepositionRateVolumetricClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DepositionRateVolumetricClass" />.

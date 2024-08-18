@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public EngineeringUnitsClassProperties Properties { get; } = new EngineeringUnitsClassProperties();
+		public new EngineeringUnitsClassProperties Properties { get; } = new EngineeringUnitsClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EngineeringUnitsClass" />.

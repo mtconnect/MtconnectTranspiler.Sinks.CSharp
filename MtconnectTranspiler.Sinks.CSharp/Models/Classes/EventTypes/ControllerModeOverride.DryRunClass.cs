@@ -45,7 +45,7 @@ When `DRY_RUN` is `ON`, the equipment performs all of its normal functions, exce
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ControllerModeOverrideClass);
 
 		/// <inheritdoc />
-		public ControllerModeOverrideDryRunClassProperties Properties { get; } = new ControllerModeOverrideDryRunClassProperties();
+		public new ControllerModeOverrideDryRunClassProperties Properties { get; } = new ControllerModeOverrideDryRunClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControllerModeOverrideDryRunClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EquipmentModeClass);
 
 		/// <inheritdoc />
-		public EquipmentModeDelayClassProperties Properties { get; } = new EquipmentModeDelayClassProperties();
+		public new EquipmentModeDelayClassProperties Properties { get; } = new EquipmentModeDelayClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentModeDelayClass" />.

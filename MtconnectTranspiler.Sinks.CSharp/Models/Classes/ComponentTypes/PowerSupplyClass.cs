@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public PowerSupplyClassProperties Properties { get; } = new PowerSupplyClassProperties();
+		public new PowerSupplyClassProperties Properties { get; } = new PowerSupplyClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PowerSupplyClass" />.

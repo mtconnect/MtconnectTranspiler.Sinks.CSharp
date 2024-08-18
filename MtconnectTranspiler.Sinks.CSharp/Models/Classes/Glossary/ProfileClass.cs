@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ProfileClassProperties Properties { get; } = new ProfileClassProperties();
+		public new ProfileClassProperties Properties { get; } = new ProfileClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProfileClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ToolNumberClassProperties Properties { get; } = new ToolNumberClassProperties();
+		public new ToolNumberClassProperties Properties { get; } = new ToolNumberClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ToolNumberClass" />.

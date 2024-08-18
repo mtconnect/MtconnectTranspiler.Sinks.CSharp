@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public YDimensionClassProperties Properties { get; } = new YDimensionClassProperties();
+		public new YDimensionClassProperties Properties { get; } = new YDimensionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="YDimensionClass" />.

@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public RestSinkClassProperties Properties { get; } = new RestSinkClassProperties();
+		public new RestSinkClassProperties Properties { get; } = new RestSinkClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RestSinkClass" />.

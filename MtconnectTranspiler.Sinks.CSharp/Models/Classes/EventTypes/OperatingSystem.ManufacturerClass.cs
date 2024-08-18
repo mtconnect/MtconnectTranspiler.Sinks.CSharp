@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.OperatingSystemClass);
 
 		/// <inheritdoc />
-		public OperatingSystemManufacturerClassProperties Properties { get; } = new OperatingSystemManufacturerClassProperties();
+		public new OperatingSystemManufacturerClassProperties Properties { get; } = new OperatingSystemManufacturerClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OperatingSystemManufacturerClass" />.

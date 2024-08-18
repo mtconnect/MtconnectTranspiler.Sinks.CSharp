@@ -39,7 +39,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ParameterSetClassProperties Properties { get; } = new ParameterSetClassProperties();
+		public new ParameterSetClassProperties Properties { get; } = new ParameterSetClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ParameterSetClass" />.

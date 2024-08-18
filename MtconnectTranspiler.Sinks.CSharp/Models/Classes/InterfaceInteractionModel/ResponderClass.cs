@@ -42,7 +42,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.InterfaceClass);
 
 		/// <inheritdoc />
-		public ResponderClassProperties Properties { get; } = new ResponderClassProperties();
+		public new ResponderClassProperties Properties { get; } = new ResponderClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ResponderClass" />.

@@ -40,7 +40,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ChannelClassProperties Properties { get; } = new ChannelClassProperties();
+		public new ChannelClassProperties Properties { get; } = new ChannelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ChannelClass" />.

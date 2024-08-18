@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.ServiceClass);
 
 		/// <inheritdoc />
-		public DataSinkServiceGeneralizationProperties Properties { get; } = new DataSinkServiceGeneralizationProperties();
+		public new DataSinkServiceGeneralizationProperties Properties { get; } = new DataSinkServiceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataSinkServiceGeneralization" />.

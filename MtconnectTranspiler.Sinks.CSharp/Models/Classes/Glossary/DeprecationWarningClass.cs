@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DeprecationWarningClassProperties Properties { get; } = new DeprecationWarningClassProperties();
+		public new DeprecationWarningClassProperties Properties { get; } = new DeprecationWarningClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DeprecationWarningClass" />.

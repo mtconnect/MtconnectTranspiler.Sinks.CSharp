@@ -47,7 +47,7 @@ If not specified further in statistic, defaults to RMS voltage.
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AmperageClass);
 
 		/// <inheritdoc />
-		public AmperageAlternatingClassProperties Properties { get; } = new AmperageAlternatingClassProperties();
+		public new AmperageAlternatingClassProperties Properties { get; } = new AmperageAlternatingClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AmperageAlternatingClass" />.

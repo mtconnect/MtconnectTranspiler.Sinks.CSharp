@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public PascalCaseClassProperties Properties { get; } = new PascalCaseClassProperties();
+		public new PascalCaseClassProperties Properties { get; } = new PascalCaseClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PascalCaseClass" />.

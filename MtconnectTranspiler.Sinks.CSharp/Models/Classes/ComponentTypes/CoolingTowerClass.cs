@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public CoolingTowerClassProperties Properties { get; } = new CoolingTowerClassProperties();
+		public new CoolingTowerClassProperties Properties { get; } = new CoolingTowerClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CoolingTowerClass" />.

@@ -42,7 +42,7 @@ namespace Mtconnect.DataTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.DataSetClass);
 
 		/// <inheritdoc />
-		public LocationAddressResultClassProperties Properties { get; } = new LocationAddressResultClassProperties();
+		public new LocationAddressResultClassProperties Properties { get; } = new LocationAddressResultClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LocationAddressResultClass" />.

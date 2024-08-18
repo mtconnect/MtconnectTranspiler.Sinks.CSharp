@@ -45,7 +45,7 @@ It is the starting nest level in a call structure and may contain calls to sub p
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProgramCommentClass);
 
 		/// <inheritdoc />
-		public ProgramCommentMainClassProperties Properties { get; } = new ProgramCommentMainClassProperties();
+		public new ProgramCommentMainClassProperties Properties { get; } = new ProgramCommentMainClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProgramCommentMainClass" />.

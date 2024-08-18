@@ -39,7 +39,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public StatusClassProperties Properties { get; } = new StatusClassProperties();
+		public new StatusClassProperties Properties { get; } = new StatusClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="StatusClass" />.

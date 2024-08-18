@@ -45,7 +45,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public EnvironmentalClassProperties Properties { get; } = new EnvironmentalClassProperties();
+		public new EnvironmentalClassProperties Properties { get; } = new EnvironmentalClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EnvironmentalClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public AccumulatedTimeClassProperties Properties { get; } = new AccumulatedTimeClassProperties();
+		public new AccumulatedTimeClassProperties Properties { get; } = new AccumulatedTimeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AccumulatedTimeClass" />.

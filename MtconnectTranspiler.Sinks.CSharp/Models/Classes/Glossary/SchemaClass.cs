@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SchemaClassProperties Properties { get; } = new SchemaClassProperties();
+		public new SchemaClassProperties Properties { get; } = new SchemaClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SchemaClass" />.

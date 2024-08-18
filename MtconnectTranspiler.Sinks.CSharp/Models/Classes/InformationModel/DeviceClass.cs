@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ComponentClass);
 
 		/// <inheritdoc />
-		public DeviceClassProperties Properties { get; } = new DeviceClassProperties();
+		public new DeviceClassProperties Properties { get; } = new DeviceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DeviceClass" />.

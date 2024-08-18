@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.StructureClass);
 
 		/// <inheritdoc />
-		public LinkClassProperties Properties { get; } = new LinkClassProperties();
+		public new LinkClassProperties Properties { get; } = new LinkClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LinkClass" />.

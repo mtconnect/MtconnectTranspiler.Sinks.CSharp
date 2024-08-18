@@ -40,7 +40,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public RotationClassProperties Properties { get; } = new RotationClassProperties();
+		public new RotationClassProperties Properties { get; } = new RotationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RotationClass" />.

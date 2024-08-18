@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AttachmentClassProperties Properties { get; } = new AttachmentClassProperties();
+		public new AttachmentClassProperties Properties { get; } = new AttachmentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AttachmentClass" />.

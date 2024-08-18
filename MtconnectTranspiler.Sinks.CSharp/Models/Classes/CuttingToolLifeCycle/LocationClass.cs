@@ -44,7 +44,7 @@ If the pot occupies the first or last location, a rollover to the beginning or t
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public LocationClassProperties Properties { get; } = new LocationClassProperties();
+		public new LocationClassProperties Properties { get; } = new LocationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LocationClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MTConnectErrorClassProperties Properties { get; } = new MTConnectErrorClassProperties();
+		public new MTConnectErrorClassProperties Properties { get; } = new MTConnectErrorClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectErrorClass" />.

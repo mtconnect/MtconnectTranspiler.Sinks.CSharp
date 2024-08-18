@@ -47,7 +47,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.ProtocolTerms.RequestClass);
 
 		/// <inheritdoc />
-		public HTTPRequestGeneralizationProperties Properties { get; } = new HTTPRequestGeneralizationProperties();
+		public new HTTPRequestGeneralizationProperties Properties { get; } = new HTTPRequestGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HTTPRequestGeneralization" />.

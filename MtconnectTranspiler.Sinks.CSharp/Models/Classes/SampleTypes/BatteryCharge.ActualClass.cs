@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.BatteryChargeClass);
 
 		/// <inheritdoc />
-		public BatteryChargeActualClassProperties Properties { get; } = new BatteryChargeActualClassProperties();
+		public new BatteryChargeActualClassProperties Properties { get; } = new BatteryChargeActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="BatteryChargeActualClass" />.

@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ObservableClassProperties Properties { get; } = new ObservableClassProperties();
+		public new ObservableClassProperties Properties { get; } = new ObservableClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ObservableClass" />.

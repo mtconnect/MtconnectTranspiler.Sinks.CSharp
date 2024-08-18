@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public HTTPHeaderClassProperties Properties { get; } = new HTTPHeaderClassProperties();
+		public new HTTPHeaderClassProperties Properties { get; } = new HTTPHeaderClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HTTPHeaderClass" />.

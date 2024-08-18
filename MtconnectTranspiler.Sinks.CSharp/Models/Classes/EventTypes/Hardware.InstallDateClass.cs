@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.HardwareClass);
 
 		/// <inheritdoc />
-		public HardwareInstallDateClassProperties Properties { get; } = new HardwareInstallDateClassProperties();
+		public new HardwareInstallDateClassProperties Properties { get; } = new HardwareInstallDateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HardwareInstallDateClass" />.

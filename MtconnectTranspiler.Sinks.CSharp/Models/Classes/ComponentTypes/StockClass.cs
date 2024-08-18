@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.MaterialClass);
 
 		/// <inheritdoc />
-		public StockClassProperties Properties { get; } = new StockClassProperties();
+		public new StockClassProperties Properties { get; } = new StockClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="StockClass" />.

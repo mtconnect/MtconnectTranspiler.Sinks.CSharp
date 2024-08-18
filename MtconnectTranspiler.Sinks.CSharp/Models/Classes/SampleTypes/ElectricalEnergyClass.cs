@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public ElectricalEnergyClassProperties Properties { get; } = new ElectricalEnergyClassProperties();
+		public new ElectricalEnergyClassProperties Properties { get; } = new ElectricalEnergyClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ElectricalEnergyClass" />.

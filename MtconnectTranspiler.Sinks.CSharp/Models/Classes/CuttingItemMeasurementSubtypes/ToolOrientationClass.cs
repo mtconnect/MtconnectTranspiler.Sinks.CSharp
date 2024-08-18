@@ -45,7 +45,7 @@ The value is application specific.&#10;
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public ToolOrientationClassProperties Properties { get; } = new ToolOrientationClassProperties();
+		public new ToolOrientationClassProperties Properties { get; } = new ToolOrientationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ToolOrientationClass" />.

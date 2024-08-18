@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public HTTPErrorMessageClassProperties Properties { get; } = new HTTPErrorMessageClassProperties();
+		public new HTTPErrorMessageClassProperties Properties { get; } = new HTTPErrorMessageClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HTTPErrorMessageClass" />.

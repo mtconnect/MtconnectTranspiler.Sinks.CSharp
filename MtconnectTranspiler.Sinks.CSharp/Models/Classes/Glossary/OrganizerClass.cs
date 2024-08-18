@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public OrganizerClassProperties Properties { get; } = new OrganizerClassProperties();
+		public new OrganizerClassProperties Properties { get; } = new OrganizerClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OrganizerClass" />.

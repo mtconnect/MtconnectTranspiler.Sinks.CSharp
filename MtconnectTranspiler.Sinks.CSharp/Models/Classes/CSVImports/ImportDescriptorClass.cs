@@ -38,7 +38,7 @@ namespace Mtconnect.Imports.CSVImports
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ImportDescriptorClassProperties Properties { get; } = new ImportDescriptorClassProperties();
+		public new ImportDescriptorClassProperties Properties { get; } = new ImportDescriptorClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ImportDescriptorClass" />.

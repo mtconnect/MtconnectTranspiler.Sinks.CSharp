@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.CuttingSpeedClass);
 
 		/// <inheritdoc />
-		public CuttingSpeedCommandedClassProperties Properties { get; } = new CuttingSpeedCommandedClassProperties();
+		public new CuttingSpeedCommandedClassProperties Properties { get; } = new CuttingSpeedCommandedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CuttingSpeedCommandedClass" />.

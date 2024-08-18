@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.DataSetClass);
 
 		/// <inheritdoc />
-		public TableClassProperties Properties { get; } = new TableClassProperties();
+		public new TableClassProperties Properties { get; } = new TableClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TableClass" />.

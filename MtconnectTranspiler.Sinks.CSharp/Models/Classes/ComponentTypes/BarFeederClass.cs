@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.LoaderClass);
 
 		/// <inheritdoc />
-		public BarFeederClassProperties Properties { get; } = new BarFeederClassProperties();
+		public new BarFeederClassProperties Properties { get; } = new BarFeederClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="BarFeederClass" />.

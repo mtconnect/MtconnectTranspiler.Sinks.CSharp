@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.HardnessClass);
 
 		/// <inheritdoc />
-		public HardnessVickersClassProperties Properties { get; } = new HardnessVickersClassProperties();
+		public new HardnessVickersClassProperties Properties { get; } = new HardnessVickersClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HardnessVickersClass" />.

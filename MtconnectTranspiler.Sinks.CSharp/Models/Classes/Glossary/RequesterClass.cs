@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public RequesterClassProperties Properties { get; } = new RequesterClassProperties();
+		public new RequesterClassProperties Properties { get; } = new RequesterClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RequesterClass" />.

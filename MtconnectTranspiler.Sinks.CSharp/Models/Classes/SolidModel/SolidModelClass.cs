@@ -44,7 +44,7 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SolidModelClassProperties Properties { get; } = new SolidModelClassProperties();
+		public new SolidModelClassProperties Properties { get; } = new SolidModelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SolidModelClass" />.

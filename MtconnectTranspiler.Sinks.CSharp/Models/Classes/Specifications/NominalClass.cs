@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public NominalClassProperties Properties { get; } = new NominalClassProperties();
+		public new NominalClassProperties Properties { get; } = new NominalClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="NominalClass" />.

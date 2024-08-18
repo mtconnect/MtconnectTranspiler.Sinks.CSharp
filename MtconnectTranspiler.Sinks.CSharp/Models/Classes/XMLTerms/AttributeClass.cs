@@ -40,7 +40,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AttributeClassProperties Properties { get; } = new AttributeClassProperties();
+		public new AttributeClassProperties Properties { get; } = new AttributeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AttributeClass" />.

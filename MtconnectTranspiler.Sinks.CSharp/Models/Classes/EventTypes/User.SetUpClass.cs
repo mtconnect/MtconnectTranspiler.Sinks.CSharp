@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.UserClass);
 
 		/// <inheritdoc />
-		public UserSetUpClassProperties Properties { get; } = new UserSetUpClassProperties();
+		public new UserSetUpClassProperties Properties { get; } = new UserSetUpClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="UserSetUpClass" />.

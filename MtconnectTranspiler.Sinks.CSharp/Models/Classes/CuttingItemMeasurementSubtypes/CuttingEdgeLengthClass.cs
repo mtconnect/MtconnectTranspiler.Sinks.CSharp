@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public CuttingEdgeLengthClassProperties Properties { get; } = new CuttingEdgeLengthClassProperties();
+		public new CuttingEdgeLengthClassProperties Properties { get; } = new CuttingEdgeLengthClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CuttingEdgeLengthClass" />.

@@ -42,7 +42,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservableEventClass);
 
 		/// <inheritdoc />
-		public ObservableStateClassProperties Properties { get; } = new ObservableStateClassProperties();
+		public new ObservableStateClassProperties Properties { get; } = new ObservableStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ObservableStateClass" />.

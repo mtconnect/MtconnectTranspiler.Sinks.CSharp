@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public AdapterSoftwareVersionClassProperties Properties { get; } = new AdapterSoftwareVersionClassProperties();
+		public new AdapterSoftwareVersionClassProperties Properties { get; } = new AdapterSoftwareVersionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AdapterSoftwareVersionClass" />.

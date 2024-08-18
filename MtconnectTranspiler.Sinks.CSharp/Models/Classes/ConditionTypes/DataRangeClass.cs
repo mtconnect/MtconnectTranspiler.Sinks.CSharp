@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ConditionClass);
 
 		/// <inheritdoc />
-		public DataRangeClassProperties Properties { get; } = new DataRangeClassProperties();
+		public new DataRangeClassProperties Properties { get; } = new DataRangeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataRangeClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.DepositionVolumeClass);
 
 		/// <inheritdoc />
-		public DepositionVolumeActualClassProperties Properties { get; } = new DepositionVolumeActualClassProperties();
+		public new DepositionVolumeActualClassProperties Properties { get; } = new DepositionVolumeActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DepositionVolumeActualClass" />.

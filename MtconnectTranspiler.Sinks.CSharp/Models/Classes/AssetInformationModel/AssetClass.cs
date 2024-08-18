@@ -49,7 +49,7 @@ namespace Mtconnect.AssetInformationModel
 		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.AssetGeneralization);
 
 		/// <inheritdoc />
-		public AssetClassProperties Properties { get; } = new AssetClassProperties();
+		public new AssetClassProperties Properties { get; } = new AssetClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AssetClass" />.

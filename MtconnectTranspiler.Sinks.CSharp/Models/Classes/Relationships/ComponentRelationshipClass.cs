@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.Relationships.ConfigurationRelationshipClass);
 
 		/// <inheritdoc />
-		public ComponentRelationshipClassProperties Properties { get; } = new ComponentRelationshipClassProperties();
+		public new ComponentRelationshipClassProperties Properties { get; } = new ComponentRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ComponentRelationshipClass" />.

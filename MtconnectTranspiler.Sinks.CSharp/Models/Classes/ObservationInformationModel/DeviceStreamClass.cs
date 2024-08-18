@@ -42,7 +42,7 @@ If the response to the request for data from an {{term(agent)}} does not contain
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DeviceStreamClassProperties Properties { get; } = new DeviceStreamClassProperties();
+		public new DeviceStreamClassProperties Properties { get; } = new DeviceStreamClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DeviceStreamClass" />.

@@ -41,7 +41,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CuttingToolLifeCycleClassProperties Properties { get; } = new CuttingToolLifeCycleClassProperties();
+		public new CuttingToolLifeCycleClassProperties Properties { get; } = new CuttingToolLifeCycleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CuttingToolLifeCycleClass" />.

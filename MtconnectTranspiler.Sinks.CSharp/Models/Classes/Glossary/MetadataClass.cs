@@ -41,7 +41,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MetadataClassProperties Properties { get; } = new MetadataClassProperties();
+		public new MetadataClassProperties Properties { get; } = new MetadataClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MetadataClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ActivationCountClass);
 
 		/// <inheritdoc />
-		public ActivationCountCompleteClassProperties Properties { get; } = new ActivationCountCompleteClassProperties();
+		public new ActivationCountCompleteClassProperties Properties { get; } = new ActivationCountCompleteClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ActivationCountCompleteClass" />.

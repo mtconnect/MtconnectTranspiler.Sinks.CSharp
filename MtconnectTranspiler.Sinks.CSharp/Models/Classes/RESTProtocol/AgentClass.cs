@@ -47,7 +47,7 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AgentClassProperties Properties { get; } = new AgentClassProperties();
+		public new AgentClassProperties Properties { get; } = new AgentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AgentClass" />.

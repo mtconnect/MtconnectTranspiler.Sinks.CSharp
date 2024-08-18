@@ -46,7 +46,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 
 		/// <inheritdoc />
-		public ControllerClassProperties Properties { get; } = new ControllerClassProperties();
+		public new ControllerClassProperties Properties { get; } = new ControllerClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControllerClass" />.

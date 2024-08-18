@@ -47,7 +47,7 @@ An {{block(Entry)}} **MAY** be further constrained by the {{block(DataItem)}} de
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public EntryClassProperties Properties { get; } = new EntryClassProperties();
+		public new EntryClassProperties Properties { get; } = new EntryClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EntryClass" />.

@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MQTTSourceClassProperties Properties { get; } = new MQTTSourceClassProperties();
+		public new MQTTSourceClassProperties Properties { get; } = new MQTTSourceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MQTTSourceClass" />.

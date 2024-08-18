@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public UsableLengthMaxClassProperties Properties { get; } = new UsableLengthMaxClassProperties();
+		public new UsableLengthMaxClassProperties Properties { get; } = new UsableLengthMaxClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="UsableLengthMaxClass" />.

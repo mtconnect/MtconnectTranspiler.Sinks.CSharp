@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.HardnessClass);
 
 		/// <inheritdoc />
-		public HardnessBrinellClassProperties Properties { get; } = new HardnessBrinellClassProperties();
+		public new HardnessBrinellClassProperties Properties { get; } = new HardnessBrinellClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HardnessBrinellClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.EquipmentTimerClass);
 
 		/// <inheritdoc />
-		public EquipmentTimerDelayClassProperties Properties { get; } = new EquipmentTimerDelayClassProperties();
+		public new EquipmentTimerDelayClassProperties Properties { get; } = new EquipmentTimerDelayClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentTimerDelayClass" />.

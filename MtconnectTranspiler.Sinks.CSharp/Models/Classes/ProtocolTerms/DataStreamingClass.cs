@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.ProtocolTerms.StreamingDataClass);
 
 		/// <inheritdoc />
-		public DataStreamingClassProperties Properties { get; } = new DataStreamingClassProperties();
+		public new DataStreamingClassProperties Properties { get; } = new DataStreamingClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataStreamingClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.InformationModelTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.InformationModelClass);
 
 		/// <inheritdoc />
-		public MTConnectInformationModelGeneralizationProperties Properties { get; } = new MTConnectInformationModelGeneralizationProperties();
+		public new MTConnectInformationModelGeneralizationProperties Properties { get; } = new MTConnectInformationModelGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectInformationModelGeneralization" />.

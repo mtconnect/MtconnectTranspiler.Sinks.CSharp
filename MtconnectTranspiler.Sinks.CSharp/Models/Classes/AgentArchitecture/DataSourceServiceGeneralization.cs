@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.ServiceClass);
 
 		/// <inheritdoc />
-		public DataSourceServiceGeneralizationProperties Properties { get; } = new DataSourceServiceGeneralizationProperties();
+		public new DataSourceServiceGeneralizationProperties Properties { get; } = new DataSourceServiceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataSourceServiceGeneralization" />.

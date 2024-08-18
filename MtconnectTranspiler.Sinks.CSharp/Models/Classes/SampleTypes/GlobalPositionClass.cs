@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public GlobalPositionClassProperties Properties { get; } = new GlobalPositionClassProperties();
+		public new GlobalPositionClassProperties Properties { get; } = new GlobalPositionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="GlobalPositionClass" />.

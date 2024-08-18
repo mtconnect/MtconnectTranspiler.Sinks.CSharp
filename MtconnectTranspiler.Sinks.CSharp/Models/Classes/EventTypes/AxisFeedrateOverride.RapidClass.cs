@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.AxisFeedrateOverrideClass);
 
 		/// <inheritdoc />
-		public AxisFeedrateOverrideRapidClassProperties Properties { get; } = new AxisFeedrateOverrideRapidClassProperties();
+		public new AxisFeedrateOverrideRapidClassProperties Properties { get; } = new AxisFeedrateOverrideRapidClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AxisFeedrateOverrideRapidClass" />.

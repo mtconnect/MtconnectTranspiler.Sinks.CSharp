@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
-		public ComponentConfigurationParametersClassProperties Properties { get; } = new ComponentConfigurationParametersClassProperties();
+		public new ComponentConfigurationParametersClassProperties Properties { get; } = new ComponentConfigurationParametersClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ComponentConfigurationParametersClass" />.

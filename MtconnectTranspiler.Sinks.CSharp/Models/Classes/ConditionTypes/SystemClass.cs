@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ConditionClass);
 
 		/// <inheritdoc />
-		public SystemClassProperties Properties { get; } = new SystemClassProperties();
+		public new SystemClassProperties Properties { get; } = new SystemClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SystemClass" />.

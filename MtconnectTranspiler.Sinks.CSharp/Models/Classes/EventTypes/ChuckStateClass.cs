@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ChuckStateClassProperties Properties { get; } = new ChuckStateClassProperties();
+		public new ChuckStateClassProperties Properties { get; } = new ChuckStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ChuckStateClass" />.

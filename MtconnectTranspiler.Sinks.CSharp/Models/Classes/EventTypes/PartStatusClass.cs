@@ -45,7 +45,7 @@ If unique identifier is given, part status is for that individual. If group iden
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public PartStatusClassProperties Properties { get; } = new PartStatusClassProperties();
+		public new PartStatusClassProperties Properties { get; } = new PartStatusClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PartStatusClass" />.

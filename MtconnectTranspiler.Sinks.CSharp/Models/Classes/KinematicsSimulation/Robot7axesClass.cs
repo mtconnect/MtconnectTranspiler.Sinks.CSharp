@@ -38,7 +38,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public Robot7axesClassProperties Properties { get; } = new Robot7axesClassProperties();
+		public new Robot7axesClassProperties Properties { get; } = new Robot7axesClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="Robot7axesClass" />.

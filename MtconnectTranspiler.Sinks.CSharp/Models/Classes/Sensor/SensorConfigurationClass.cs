@@ -42,7 +42,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SensorConfigurationClassProperties Properties { get; } = new SensorConfigurationClassProperties();
+		public new SensorConfigurationClassProperties Properties { get; } = new SensorConfigurationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SensorConfigurationClass" />.

@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationClass);
 
 		/// <inheritdoc />
-		public ContitionClassProperties Properties { get; } = new ContitionClassProperties();
+		public new ContitionClassProperties Properties { get; } = new ContitionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ContitionClass" />.

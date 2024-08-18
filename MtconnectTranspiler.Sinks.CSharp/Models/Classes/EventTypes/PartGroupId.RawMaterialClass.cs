@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.PartGroupIdClass);
 
 		/// <inheritdoc />
-		public PartGroupIdRawMaterialClassProperties Properties { get; } = new PartGroupIdRawMaterialClassProperties();
+		public new PartGroupIdRawMaterialClassProperties Properties { get; } = new PartGroupIdRawMaterialClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PartGroupIdRawMaterialClass" />.

@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.TransformClass);
 
 		/// <inheritdoc />
-		public ConvertSampleClassProperties Properties { get; } = new ConvertSampleClassProperties();
+		public new ConvertSampleClassProperties Properties { get; } = new ConvertSampleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConvertSampleClass" />.

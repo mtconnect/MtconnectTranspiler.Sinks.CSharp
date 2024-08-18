@@ -47,7 +47,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => typeof(Mtconnect.Glossary.ApplicationClass);
 
 		/// <inheritdoc />
-		public ClientClassProperties Properties { get; } = new ClientClassProperties();
+		public new ClientClassProperties Properties { get; } = new ClientClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ClientClass" />.

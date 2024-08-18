@@ -45,7 +45,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.VoltageClass);
 
 		/// <inheritdoc />
-		public VoltageActualClassProperties Properties { get; } = new VoltageActualClassProperties();
+		public new VoltageActualClassProperties Properties { get; } = new VoltageActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="VoltageActualClass" />.

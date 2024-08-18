@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.GuardClass);
 
 		/// <inheritdoc />
-		public ExactTypeGuardGeneralizationProperties Properties { get; } = new ExactTypeGuardGeneralizationProperties();
+		public new ExactTypeGuardGeneralizationProperties Properties { get; } = new ExactTypeGuardGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ExactTypeGuardGeneralization" />.

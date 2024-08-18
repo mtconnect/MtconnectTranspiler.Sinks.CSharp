@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms.ObservedConditionClass);
 
 		/// <inheritdoc />
-		public ConditionClassProperties Properties { get; } = new ConditionClassProperties();
+		public new ConditionClassProperties Properties { get; } = new ConditionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConditionClass" />.

@@ -45,7 +45,7 @@ Example: For traditional machine tools, this is an indication that the cutting t
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EquipmentModeClass);
 
 		/// <inheritdoc />
-		public EquipmentModeLoadedClassProperties Properties { get; } = new EquipmentModeLoadedClassProperties();
+		public new EquipmentModeLoadedClassProperties Properties { get; } = new EquipmentModeLoadedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentModeLoadedClass" />.

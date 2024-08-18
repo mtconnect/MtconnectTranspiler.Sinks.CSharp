@@ -45,7 +45,7 @@ When the {{block(InterfaceState)}} is `DISABLED`, the state of all data items th
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public InterfaceStateClassProperties Properties { get; } = new InterfaceStateClassProperties();
+		public new InterfaceStateClassProperties Properties { get; } = new InterfaceStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="InterfaceStateClass" />.

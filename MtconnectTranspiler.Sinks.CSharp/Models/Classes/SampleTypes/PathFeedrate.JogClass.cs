@@ -45,7 +45,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PathFeedrateClass);
 
 		/// <inheritdoc />
-		public PathFeedrateJogClassProperties Properties { get; } = new PathFeedrateJogClassProperties();
+		public new PathFeedrateJogClassProperties Properties { get; } = new PathFeedrateJogClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PathFeedrateJogClass" />.

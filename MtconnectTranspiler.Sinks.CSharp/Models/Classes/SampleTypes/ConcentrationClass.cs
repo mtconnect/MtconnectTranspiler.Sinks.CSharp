@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public ConcentrationClassProperties Properties { get; } = new ConcentrationClassProperties();
+		public new ConcentrationClassProperties Properties { get; } = new ConcentrationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConcentrationClass" />.

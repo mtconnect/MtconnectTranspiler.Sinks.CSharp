@@ -46,7 +46,7 @@ Example: The name for {{block(Sample)}} {{block(Observation)}} type `Temperature
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public RepresentationClassProperties Properties { get; } = new RepresentationClassProperties();
+		public new RepresentationClassProperties Properties { get; } = new RepresentationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RepresentationClass" />.

@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public HeartbeatClassProperties Properties { get; } = new HeartbeatClassProperties();
+		public new HeartbeatClassProperties Properties { get; } = new HeartbeatClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HeartbeatClass" />.

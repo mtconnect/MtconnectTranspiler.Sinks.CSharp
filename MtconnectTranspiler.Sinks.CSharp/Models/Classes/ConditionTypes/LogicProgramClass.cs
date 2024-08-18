@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ConditionClass);
 
 		/// <inheritdoc />
-		public LogicProgramClassProperties Properties { get; } = new LogicProgramClassProperties();
+		public new LogicProgramClassProperties Properties { get; } = new LogicProgramClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LogicProgramClass" />.

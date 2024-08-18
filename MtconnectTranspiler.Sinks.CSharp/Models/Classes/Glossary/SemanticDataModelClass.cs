@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SemanticDataModelClassProperties Properties { get; } = new SemanticDataModelClassProperties();
+		public new SemanticDataModelClassProperties Properties { get; } = new SemanticDataModelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SemanticDataModelClass" />.

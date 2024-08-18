@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.VolumeFluidClass);
 
 		/// <inheritdoc />
-		public VolumeFluidEndedClassProperties Properties { get; } = new VolumeFluidEndedClassProperties();
+		public new VolumeFluidEndedClassProperties Properties { get; } = new VolumeFluidEndedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="VolumeFluidEndedClass" />.

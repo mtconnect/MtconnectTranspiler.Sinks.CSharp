@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SpecificationLimitClassProperties Properties { get; } = new SpecificationLimitClassProperties();
+		public new SpecificationLimitClassProperties Properties { get; } = new SpecificationLimitClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SpecificationLimitClass" />.

@@ -44,7 +44,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.SchemaClass);
 
 		/// <inheritdoc />
-		public XMLSchemaGeneralizationProperties Properties { get; } = new XMLSchemaGeneralizationProperties();
+		public new XMLSchemaGeneralizationProperties Properties { get; } = new XMLSchemaGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="XMLSchemaGeneralization" />.

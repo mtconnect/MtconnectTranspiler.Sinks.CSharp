@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ConditionClass);
 
 		/// <inheritdoc />
-		public MotionProgramClassProperties Properties { get; } = new MotionProgramClassProperties();
+		public new MotionProgramClassProperties Properties { get; } = new MotionProgramClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MotionProgramClass" />.

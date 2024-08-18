@@ -41,7 +41,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public UncertaintyClassProperties Properties { get; } = new UncertaintyClassProperties();
+		public new UncertaintyClassProperties Properties { get; } = new UncertaintyClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="UncertaintyClass" />.

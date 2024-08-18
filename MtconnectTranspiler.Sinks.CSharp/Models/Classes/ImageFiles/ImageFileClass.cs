@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ImageFileClassProperties Properties { get; } = new ImageFileClassProperties();
+		public new ImageFileClassProperties Properties { get; } = new ImageFileClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ImageFileClass" />.

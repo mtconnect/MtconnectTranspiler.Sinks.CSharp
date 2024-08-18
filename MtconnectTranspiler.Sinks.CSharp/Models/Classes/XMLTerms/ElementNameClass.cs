@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ElementNameClassProperties Properties { get; } = new ElementNameClassProperties();
+		public new ElementNameClassProperties Properties { get; } = new ElementNameClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ElementNameClass" />.

@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 
 		/// <inheritdoc />
-		public FeederClassProperties Properties { get; } = new FeederClassProperties();
+		public new FeederClassProperties Properties { get; } = new FeederClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FeederClass" />.

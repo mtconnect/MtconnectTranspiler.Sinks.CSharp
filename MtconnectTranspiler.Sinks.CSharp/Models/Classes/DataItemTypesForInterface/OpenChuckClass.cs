@@ -43,7 +43,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public OpenChuckClassProperties Properties { get; } = new OpenChuckClassProperties();
+		public new OpenChuckClassProperties Properties { get; } = new OpenChuckClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OpenChuckClass" />.

@@ -46,7 +46,7 @@ Example: Heaters for an extrusion machine that required to be powered even when 
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EquipmentModeClass);
 
 		/// <inheritdoc />
-		public EquipmentModePoweredClassProperties Properties { get; } = new EquipmentModePoweredClassProperties();
+		public new EquipmentModePoweredClassProperties Properties { get; } = new EquipmentModePoweredClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentModePoweredClass" />.

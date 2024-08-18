@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public ExposureUnitClassProperties Properties { get; } = new ExposureUnitClassProperties();
+		public new ExposureUnitClassProperties Properties { get; } = new ExposureUnitClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ExposureUnitClass" />.

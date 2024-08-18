@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public CapacityFluidClassProperties Properties { get; } = new CapacityFluidClassProperties();
+		public new CapacityFluidClassProperties Properties { get; } = new CapacityFluidClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CapacityFluidClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public LineLabelClassProperties Properties { get; } = new LineLabelClassProperties();
+		public new LineLabelClassProperties Properties { get; } = new LineLabelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LineLabelClass" />.

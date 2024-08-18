@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationClass);
 
 		/// <inheritdoc />
-		public SampleClassProperties Properties { get; } = new SampleClassProperties();
+		public new SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SampleClass" />.

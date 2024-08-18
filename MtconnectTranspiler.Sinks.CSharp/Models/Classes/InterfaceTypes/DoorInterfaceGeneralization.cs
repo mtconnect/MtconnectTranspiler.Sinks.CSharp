@@ -45,7 +45,7 @@ The piece of equipment that is controlling the door **MUST** provide data item {
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.InterfaceClass);
 
 		/// <inheritdoc />
-		public DoorInterfaceGeneralizationProperties Properties { get; } = new DoorInterfaceGeneralizationProperties();
+		public new DoorInterfaceGeneralizationProperties Properties { get; } = new DoorInterfaceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DoorInterfaceGeneralization" />.

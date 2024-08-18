@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.ProgramLocationTypeClass);
 
 		/// <inheritdoc />
-		public ProgramLocationTypeScheduleClassProperties Properties { get; } = new ProgramLocationTypeScheduleClassProperties();
+		public new ProgramLocationTypeScheduleClassProperties Properties { get; } = new ProgramLocationTypeScheduleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProgramLocationTypeScheduleClass" />.

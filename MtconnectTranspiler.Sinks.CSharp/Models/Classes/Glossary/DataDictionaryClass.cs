@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DataDictionaryClassProperties Properties { get; } = new DataDictionaryClassProperties();
+		public new DataDictionaryClassProperties Properties { get; } = new DataDictionaryClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataDictionaryClass" />.

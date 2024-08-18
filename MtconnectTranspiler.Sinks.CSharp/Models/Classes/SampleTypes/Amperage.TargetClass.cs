@@ -45,7 +45,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AmperageClass);
 
 		/// <inheritdoc />
-		public AmperageTargetClassProperties Properties { get; } = new AmperageTargetClassProperties();
+		public new AmperageTargetClassProperties Properties { get; } = new AmperageTargetClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AmperageTargetClass" />.

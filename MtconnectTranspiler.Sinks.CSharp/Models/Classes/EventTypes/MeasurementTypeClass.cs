@@ -45,7 +45,7 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public MeasurementTypeClassProperties Properties { get; } = new MeasurementTypeClassProperties();
+		public new MeasurementTypeClassProperties Properties { get; } = new MeasurementTypeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MeasurementTypeClass" />.

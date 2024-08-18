@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ControlledVocabularyClassProperties Properties { get; } = new ControlledVocabularyClassProperties();
+		public new ControlledVocabularyClassProperties Properties { get; } = new ControlledVocabularyClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ControlledVocabularyClass" />.

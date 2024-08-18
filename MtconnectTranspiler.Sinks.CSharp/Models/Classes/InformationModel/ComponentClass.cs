@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ComponentClassProperties Properties { get; } = new ComponentClassProperties();
+		public new ComponentClassProperties Properties { get; } = new ComponentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ComponentClass" />.

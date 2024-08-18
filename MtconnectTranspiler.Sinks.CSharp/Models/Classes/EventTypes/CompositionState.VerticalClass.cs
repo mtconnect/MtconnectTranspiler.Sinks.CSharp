@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.CompositionStateClass);
 
 		/// <inheritdoc />
-		public CompositionStateVerticalClassProperties Properties { get; } = new CompositionStateVerticalClassProperties();
+		public new CompositionStateVerticalClassProperties Properties { get; } = new CompositionStateVerticalClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CompositionStateVerticalClass" />.

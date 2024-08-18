@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ToolingDeliveryClass);
 
 		/// <inheritdoc />
-		public TurretClassProperties Properties { get; } = new TurretClassProperties();
+		public new TurretClassProperties Properties { get; } = new TurretClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TurretClass" />.

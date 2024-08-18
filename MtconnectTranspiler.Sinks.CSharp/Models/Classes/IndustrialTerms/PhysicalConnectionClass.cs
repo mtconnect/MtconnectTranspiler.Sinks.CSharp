@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public PhysicalConnectionClassProperties Properties { get; } = new PhysicalConnectionClassProperties();
+		public new PhysicalConnectionClassProperties Properties { get; } = new PhysicalConnectionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PhysicalConnectionClass" />.

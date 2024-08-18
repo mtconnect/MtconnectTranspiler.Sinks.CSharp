@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AxisFeedrateClass);
 
 		/// <inheritdoc />
-		public AxisFeedrateActualClassProperties Properties { get; } = new AxisFeedrateActualClassProperties();
+		public new AxisFeedrateActualClassProperties Properties { get; } = new AxisFeedrateActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AxisFeedrateActualClass" />.

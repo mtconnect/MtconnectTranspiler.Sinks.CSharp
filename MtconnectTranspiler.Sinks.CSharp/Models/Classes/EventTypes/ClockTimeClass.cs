@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ClockTimeClassProperties Properties { get; } = new ClockTimeClassProperties();
+		public new ClockTimeClassProperties Properties { get; } = new ClockTimeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ClockTimeClass" />.

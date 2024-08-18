@@ -39,7 +39,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public HeaderClassProperties Properties { get; } = new HeaderClassProperties();
+		public new HeaderClassProperties Properties { get; } = new HeaderClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HeaderClass" />.

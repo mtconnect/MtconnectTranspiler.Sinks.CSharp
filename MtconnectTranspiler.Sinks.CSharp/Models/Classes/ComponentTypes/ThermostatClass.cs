@@ -45,7 +45,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SensorClass);
 
 		/// <inheritdoc />
-		public ThermostatClassProperties Properties { get; } = new ThermostatClassProperties();
+		public new ThermostatClassProperties Properties { get; } = new ThermostatClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ThermostatClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ObservableClass);
 
 		/// <inheritdoc />
-		public DataItemClassProperties Properties { get; } = new DataItemClassProperties();
+		public new DataItemClassProperties Properties { get; } = new DataItemClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataItemClass" />.

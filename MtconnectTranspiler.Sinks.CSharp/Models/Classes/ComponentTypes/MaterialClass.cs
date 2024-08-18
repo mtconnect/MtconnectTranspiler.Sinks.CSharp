@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ResourceClass);
 
 		/// <inheritdoc />
-		public MaterialClassProperties Properties { get; } = new MaterialClassProperties();
+		public new MaterialClassProperties Properties { get; } = new MaterialClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaterialClass" />.

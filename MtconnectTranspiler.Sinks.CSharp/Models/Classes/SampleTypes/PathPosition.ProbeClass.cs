@@ -45,7 +45,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.PathPositionClass);
 
 		/// <inheritdoc />
-		public PathPositionProbeClassProperties Properties { get; } = new PathPositionProbeClassProperties();
+		public new PathPositionProbeClassProperties Properties { get; } = new PathPositionProbeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="PathPositionProbeClass" />.

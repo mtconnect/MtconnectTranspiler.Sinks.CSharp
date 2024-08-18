@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SpecificationClassProperties Properties { get; } = new SpecificationClassProperties();
+		public new SpecificationClassProperties Properties { get; } = new SpecificationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SpecificationClass" />.

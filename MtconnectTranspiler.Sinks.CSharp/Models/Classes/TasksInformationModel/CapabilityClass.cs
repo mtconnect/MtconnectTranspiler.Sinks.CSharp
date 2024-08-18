@@ -38,7 +38,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CapabilityClassProperties Properties { get; } = new CapabilityClassProperties();
+		public new CapabilityClassProperties Properties { get; } = new CapabilityClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CapabilityClass" />.

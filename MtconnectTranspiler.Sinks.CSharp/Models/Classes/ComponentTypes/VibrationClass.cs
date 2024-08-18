@@ -45,7 +45,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SensorClass);
 
 		/// <inheritdoc />
-		public VibrationClassProperties Properties { get; } = new VibrationClassProperties();
+		public new VibrationClassProperties Properties { get; } = new VibrationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="VibrationClass" />.

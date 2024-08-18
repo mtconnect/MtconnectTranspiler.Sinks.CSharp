@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.DocumentClass);
 
 		/// <inheritdoc />
-		public XMLDocumentGeneralizationProperties Properties { get; } = new XMLDocumentGeneralizationProperties();
+		public new XMLDocumentGeneralizationProperties Properties { get; } = new XMLDocumentGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="XMLDocumentGeneralization" />.

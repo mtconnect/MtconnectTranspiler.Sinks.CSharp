@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public OriginClassProperties Properties { get; } = new OriginClassProperties();
+		public new OriginClassProperties Properties { get; } = new OriginClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OriginClass" />.

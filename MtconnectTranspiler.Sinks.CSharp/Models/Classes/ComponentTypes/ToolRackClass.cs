@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ToolingDeliveryClass);
 
 		/// <inheritdoc />
-		public ToolRackClassProperties Properties { get; } = new ToolRackClassProperties();
+		public new ToolRackClassProperties Properties { get; } = new ToolRackClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ToolRackClass" />.

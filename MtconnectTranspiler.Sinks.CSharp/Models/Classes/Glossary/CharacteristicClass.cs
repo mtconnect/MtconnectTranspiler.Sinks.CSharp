@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public CharacteristicClassProperties Properties { get; } = new CharacteristicClassProperties();
+		public new CharacteristicClassProperties Properties { get; } = new CharacteristicClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CharacteristicClass" />.

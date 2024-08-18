@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public UncertaintyTypeClassProperties Properties { get; } = new UncertaintyTypeClassProperties();
+		public new UncertaintyTypeClassProperties Properties { get; } = new UncertaintyTypeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="UncertaintyTypeClass" />.

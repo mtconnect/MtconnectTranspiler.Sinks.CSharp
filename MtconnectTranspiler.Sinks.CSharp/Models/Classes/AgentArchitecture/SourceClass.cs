@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SourceClassProperties Properties { get; } = new SourceClassProperties();
+		public new SourceClassProperties Properties { get; } = new SourceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SourceClass" />.

@@ -46,7 +46,7 @@ If an initial value is not defined, the nesting level associated with the highes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ProgramNestLevelClassProperties Properties { get; } = new ProgramNestLevelClassProperties();
+		public new ProgramNestLevelClassProperties Properties { get; } = new ProgramNestLevelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProgramNestLevelClass" />.

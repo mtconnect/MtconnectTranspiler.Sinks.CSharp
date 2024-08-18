@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public DeviceAddedClassProperties Properties { get; } = new DeviceAddedClassProperties();
+		public new DeviceAddedClassProperties Properties { get; } = new DeviceAddedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DeviceAddedClass" />.

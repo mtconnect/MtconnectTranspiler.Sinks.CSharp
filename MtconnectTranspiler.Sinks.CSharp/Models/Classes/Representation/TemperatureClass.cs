@@ -42,7 +42,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.MillW_PER_Smooth
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public TemperatureClassProperties Properties { get; } = new TemperatureClassProperties();
+		public new TemperatureClassProperties Properties { get; } = new TemperatureClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TemperatureClass" />.

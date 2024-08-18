@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public ToolOffsetsClassProperties Properties { get; } = new ToolOffsetsClassProperties();
+		public new ToolOffsetsClassProperties Properties { get; } = new ToolOffsetsClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ToolOffsetsClass" />.

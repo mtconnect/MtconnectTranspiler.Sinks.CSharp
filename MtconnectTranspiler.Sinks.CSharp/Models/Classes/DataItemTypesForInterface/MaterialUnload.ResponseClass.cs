@@ -43,7 +43,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface.MaterialUnloadClass);
 
 		/// <inheritdoc />
-		public MaterialUnloadResponseClassProperties Properties { get; } = new MaterialUnloadResponseClassProperties();
+		public new MaterialUnloadResponseClassProperties Properties { get; } = new MaterialUnloadResponseClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaterialUnloadResponseClass" />.

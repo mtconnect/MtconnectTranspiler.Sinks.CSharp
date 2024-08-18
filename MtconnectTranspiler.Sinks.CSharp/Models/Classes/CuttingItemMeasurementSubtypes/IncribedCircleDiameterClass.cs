@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public IncribedCircleDiameterClassProperties Properties { get; } = new IncribedCircleDiameterClassProperties();
+		public new IncribedCircleDiameterClassProperties Properties { get; } = new IncribedCircleDiameterClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="IncribedCircleDiameterClass" />.

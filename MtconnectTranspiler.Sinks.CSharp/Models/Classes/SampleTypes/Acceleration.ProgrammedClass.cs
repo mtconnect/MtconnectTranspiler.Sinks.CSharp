@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AccelerationClass);
 
 		/// <inheritdoc />
-		public AccelerationProgrammedClassProperties Properties { get; } = new AccelerationProgrammedClassProperties();
+		public new AccelerationProgrammedClassProperties Properties { get; } = new AccelerationProgrammedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AccelerationProgrammedClass" />.

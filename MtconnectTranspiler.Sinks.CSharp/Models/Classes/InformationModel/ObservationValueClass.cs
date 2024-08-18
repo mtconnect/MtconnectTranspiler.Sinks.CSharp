@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ObservationValueClassProperties Properties { get; } = new ObservationValueClassProperties();
+		public new ObservationValueClassProperties Properties { get; } = new ObservationValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ObservationValueClass" />.

@@ -56,7 +56,7 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationGeneralization);
 
 		/// <inheritdoc />
-		public SampleClassProperties Properties { get; } = new SampleClassProperties();
+		public new SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SampleClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MTConnectDevicesClassProperties Properties { get; } = new MTConnectDevicesClassProperties();
+		public new MTConnectDevicesClassProperties Properties { get; } = new MTConnectDevicesClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectDevicesClass" />.

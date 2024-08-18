@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.Parser
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public JsonParserClassProperties Properties { get; } = new JsonParserClassProperties();
+		public new JsonParserClassProperties Properties { get; } = new JsonParserClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="JsonParserClass" />.

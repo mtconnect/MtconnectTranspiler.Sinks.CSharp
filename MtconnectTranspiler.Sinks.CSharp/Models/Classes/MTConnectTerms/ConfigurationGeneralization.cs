@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.ConfigurationClass);
 
 		/// <inheritdoc />
-		public ConfigurationGeneralizationProperties Properties { get; } = new ConfigurationGeneralizationProperties();
+		public new ConfigurationGeneralizationProperties Properties { get; } = new ConfigurationGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConfigurationGeneralization" />.

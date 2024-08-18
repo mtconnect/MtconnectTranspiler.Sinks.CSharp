@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public BallscrewClassProperties Properties { get; } = new BallscrewClassProperties();
+		public new BallscrewClassProperties Properties { get; } = new BallscrewClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="BallscrewClass" />.

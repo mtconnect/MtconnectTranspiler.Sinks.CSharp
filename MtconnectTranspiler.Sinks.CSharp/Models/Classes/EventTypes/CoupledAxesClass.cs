@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public CoupledAxesClassProperties Properties { get; } = new CoupledAxesClassProperties();
+		public new CoupledAxesClassProperties Properties { get; } = new CoupledAxesClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CoupledAxesClass" />.

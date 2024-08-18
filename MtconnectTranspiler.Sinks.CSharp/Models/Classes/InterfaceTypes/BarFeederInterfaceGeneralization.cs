@@ -45,7 +45,7 @@ Bar feeder is a piece of equipment that pushes bar stock (i.e., long pieces of m
 		public Type Generalization => typeof(Mtconnect.InterfaceInteractionModel.InterfaceClass);
 
 		/// <inheritdoc />
-		public BarFeederInterfaceGeneralizationProperties Properties { get; } = new BarFeederInterfaceGeneralizationProperties();
+		public new BarFeederInterfaceGeneralizationProperties Properties { get; } = new BarFeederInterfaceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="BarFeederInterfaceGeneralization" />.

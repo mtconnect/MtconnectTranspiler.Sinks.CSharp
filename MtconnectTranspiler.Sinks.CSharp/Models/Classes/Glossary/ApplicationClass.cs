@@ -40,7 +40,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ApplicationClassProperties Properties { get; } = new ApplicationClassProperties();
+		public new ApplicationClassProperties Properties { get; } = new ApplicationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ApplicationClass" />.

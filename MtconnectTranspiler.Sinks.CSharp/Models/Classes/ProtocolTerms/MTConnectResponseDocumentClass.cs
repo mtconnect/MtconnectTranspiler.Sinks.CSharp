@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MTConnectResponseDocumentClassProperties Properties { get; } = new MTConnectResponseDocumentClassProperties();
+		public new MTConnectResponseDocumentClassProperties Properties { get; } = new MTConnectResponseDocumentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MTConnectResponseDocumentClass" />.

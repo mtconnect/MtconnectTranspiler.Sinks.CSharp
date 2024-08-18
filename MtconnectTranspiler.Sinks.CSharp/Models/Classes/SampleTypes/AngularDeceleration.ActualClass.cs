@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.AngularDecelerationClass);
 
 		/// <inheritdoc />
-		public AngularDecelerationActualClassProperties Properties { get; } = new AngularDecelerationActualClassProperties();
+		public new AngularDecelerationActualClassProperties Properties { get; } = new AngularDecelerationActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AngularDecelerationActualClass" />.

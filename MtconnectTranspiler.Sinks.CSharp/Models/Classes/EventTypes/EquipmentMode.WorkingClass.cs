@@ -45,7 +45,7 @@ Example: For traditional machine tools, this includes when the piece of equipmen
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EquipmentModeClass);
 
 		/// <inheritdoc />
-		public EquipmentModeWorkingClassProperties Properties { get; } = new EquipmentModeWorkingClassProperties();
+		public new EquipmentModeWorkingClassProperties Properties { get; } = new EquipmentModeWorkingClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EquipmentModeWorkingClass" />.

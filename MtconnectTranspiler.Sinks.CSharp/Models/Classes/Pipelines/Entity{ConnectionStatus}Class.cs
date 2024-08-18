@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.EntityClass);
 
 		/// <inheritdoc />
-		public Entity_ConnectionStatus_ClassProperties Properties { get; } = new Entity_ConnectionStatus_ClassProperties();
+		public new Entity_ConnectionStatus_ClassProperties Properties { get; } = new Entity_ConnectionStatus_ClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="Entity_ConnectionStatus_Class" />.

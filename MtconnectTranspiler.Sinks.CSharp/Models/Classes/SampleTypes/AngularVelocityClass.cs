@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public AngularVelocityClassProperties Properties { get; } = new AngularVelocityClassProperties();
+		public new AngularVelocityClassProperties Properties { get; } = new AngularVelocityClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AngularVelocityClass" />.

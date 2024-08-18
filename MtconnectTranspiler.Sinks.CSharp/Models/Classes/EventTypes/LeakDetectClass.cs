@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public LeakDetectClassProperties Properties { get; } = new LeakDetectClassProperties();
+		public new LeakDetectClassProperties Properties { get; } = new LeakDetectClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LeakDetectClass" />.

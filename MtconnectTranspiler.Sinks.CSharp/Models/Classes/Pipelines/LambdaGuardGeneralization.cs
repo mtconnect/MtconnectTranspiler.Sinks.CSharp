@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.GuardClass);
 
 		/// <inheritdoc />
-		public LambdaGuardGeneralizationProperties Properties { get; } = new LambdaGuardGeneralizationProperties();
+		public new LambdaGuardGeneralizationProperties Properties { get; } = new LambdaGuardGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LambdaGuardGeneralization" />.

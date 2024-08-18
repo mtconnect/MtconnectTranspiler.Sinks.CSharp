@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.ToolingDeliveryClass);
 
 		/// <inheritdoc />
-		public AutomaticToolChangerClassProperties Properties { get; } = new AutomaticToolChangerClassProperties();
+		public new AutomaticToolChangerClassProperties Properties { get; } = new AutomaticToolChangerClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AutomaticToolChangerClass" />.

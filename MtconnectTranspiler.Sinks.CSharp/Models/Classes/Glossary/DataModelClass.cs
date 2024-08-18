@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DataModelClassProperties Properties { get; } = new DataModelClassProperties();
+		public new DataModelClassProperties Properties { get; } = new DataModelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DataModelClass" />.

@@ -47,7 +47,7 @@ If no {{block(subType)}} is specified, {{block(PRIMARY)}} **MUST** be the defaul
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.EndOfBarClass);
 
 		/// <inheritdoc />
-		public EndOfBarPrimaryClassProperties Properties { get; } = new EndOfBarPrimaryClassProperties();
+		public new EndOfBarPrimaryClassProperties Properties { get; } = new EndOfBarPrimaryClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EndOfBarPrimaryClass" />.

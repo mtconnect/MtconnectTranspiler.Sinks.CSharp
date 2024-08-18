@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.Parser
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public XmlParserClassProperties Properties { get; } = new XmlParserClassProperties();
+		public new XmlParserClassProperties Properties { get; } = new XmlParserClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="XmlParserClass" />.

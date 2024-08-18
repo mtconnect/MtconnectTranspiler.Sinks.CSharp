@@ -54,7 +54,7 @@ The following {{sect(Value Properties of Condition)}} lists the additional and/o
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationGeneralization);
 
 		/// <inheritdoc />
-		public ConditionClassProperties Properties { get; } = new ConditionClassProperties();
+		public new ConditionClassProperties Properties { get; } = new ConditionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConditionClass" />.

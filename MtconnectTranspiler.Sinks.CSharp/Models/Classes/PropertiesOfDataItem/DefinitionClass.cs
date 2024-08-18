@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public DefinitionClassProperties Properties { get; } = new DefinitionClassProperties();
+		public new DefinitionClassProperties Properties { get; } = new DefinitionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DefinitionClass" />.

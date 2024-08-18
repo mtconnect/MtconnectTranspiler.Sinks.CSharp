@@ -42,7 +42,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.TimestampedClass);
 
 		/// <inheritdoc />
-		public AssetCommandClassProperties Properties { get; } = new AssetCommandClassProperties();
+		public new AssetCommandClassProperties Properties { get; } = new AssetCommandClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AssetCommandClass" />.

@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes.HumiditySpecificClass);
 
 		/// <inheritdoc />
-		public HumiditySpecificActualClassProperties Properties { get; } = new HumiditySpecificActualClassProperties();
+		public new HumiditySpecificActualClassProperties Properties { get; } = new HumiditySpecificActualClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HumiditySpecificActualClass" />.

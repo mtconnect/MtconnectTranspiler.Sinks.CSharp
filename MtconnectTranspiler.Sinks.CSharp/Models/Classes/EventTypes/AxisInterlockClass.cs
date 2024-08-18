@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public AxisInterlockClassProperties Properties { get; } = new AxisInterlockClassProperties();
+		public new AxisInterlockClassProperties Properties { get; } = new AxisInterlockClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AxisInterlockClass" />.

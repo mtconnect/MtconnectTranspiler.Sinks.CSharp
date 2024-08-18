@@ -77,7 +77,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.ObservationClass);
 
 		/// <inheritdoc />
-		public ObservationGeneralizationProperties Properties { get; } = new ObservationGeneralizationProperties();
+		public new ObservationGeneralizationProperties Properties { get; } = new ObservationGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ObservationGeneralization" />.

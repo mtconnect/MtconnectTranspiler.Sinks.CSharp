@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.EventClass);
 
 		/// <inheritdoc />
-		public BatteryStateClassProperties Properties { get; } = new BatteryStateClassProperties();
+		public new BatteryStateClassProperties Properties { get; } = new BatteryStateClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="BatteryStateClass" />.

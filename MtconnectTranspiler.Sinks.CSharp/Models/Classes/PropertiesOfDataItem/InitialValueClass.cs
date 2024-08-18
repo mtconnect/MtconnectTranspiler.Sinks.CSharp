@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public InitialValueClassProperties Properties { get; } = new InitialValueClassProperties();
+		public new InitialValueClassProperties Properties { get; } = new InitialValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="InitialValueClass" />.

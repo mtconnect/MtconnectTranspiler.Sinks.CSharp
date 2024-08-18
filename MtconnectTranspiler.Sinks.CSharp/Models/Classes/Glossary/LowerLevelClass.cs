@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => typeof(Mtconnect.Glossary.XMLTerms.ChildElementGeneralization);
 
 		/// <inheritdoc />
-		public LowerLevelClassProperties Properties { get; } = new LowerLevelClassProperties();
+		public new LowerLevelClassProperties Properties { get; } = new LowerLevelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LowerLevelClass" />.

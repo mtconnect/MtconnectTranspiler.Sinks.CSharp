@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public ElectricCurrentClassProperties Properties { get; } = new ElectricCurrentClassProperties();
+		public new ElectricCurrentClassProperties Properties { get; } = new ElectricCurrentClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ElectricCurrentClass" />.

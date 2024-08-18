@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.LineClass);
 
 		/// <inheritdoc />
-		public LineMinimumClassProperties Properties { get; } = new LineMinimumClassProperties();
+		public new LineMinimumClassProperties Properties { get; } = new LineMinimumClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LineMinimumClass" />.

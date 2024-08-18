@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.AssetClass);
 
 		/// <inheritdoc />
-		public CuttingToolArchetypeClassProperties Properties { get; } = new CuttingToolArchetypeClassProperties();
+		public new CuttingToolArchetypeClassProperties Properties { get; } = new CuttingToolArchetypeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CuttingToolArchetypeClass" />.

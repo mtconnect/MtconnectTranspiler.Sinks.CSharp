@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public FlangeDiameterMaxClassProperties Properties { get; } = new FlangeDiameterMaxClassProperties();
+		public new FlangeDiameterMaxClassProperties Properties { get; } = new FlangeDiameterMaxClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FlangeDiameterMaxClass" />.

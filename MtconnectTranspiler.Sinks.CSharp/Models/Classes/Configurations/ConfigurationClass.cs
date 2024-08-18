@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.ConfigurationGeneralization);
 
 		/// <inheritdoc />
-		public ConfigurationClassProperties Properties { get; } = new ConfigurationClassProperties();
+		public new ConfigurationClassProperties Properties { get; } = new ConfigurationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConfigurationClass" />.

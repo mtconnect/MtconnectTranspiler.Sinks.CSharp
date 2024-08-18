@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.HardwareClass);
 
 		/// <inheritdoc />
-		public HardwareModelClassProperties Properties { get; } = new HardwareModelClassProperties();
+		public new HardwareModelClassProperties Properties { get; } = new HardwareModelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HardwareModelClass" />.

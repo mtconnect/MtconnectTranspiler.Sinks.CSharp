@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.FirmwareClass);
 
 		/// <inheritdoc />
-		public FirmwareVersionClassProperties Properties { get; } = new FirmwareVersionClassProperties();
+		public new FirmwareVersionClassProperties Properties { get; } = new FirmwareVersionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="FirmwareVersionClass" />.

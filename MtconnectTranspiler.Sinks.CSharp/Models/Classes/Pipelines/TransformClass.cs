@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public TransformClassProperties Properties { get; } = new TransformClassProperties();
+		public new TransformClassProperties Properties { get; } = new TransformClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TransformClass" />.

@@ -51,7 +51,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.IndustrialTerms.AssetClass);
 
 		/// <inheritdoc />
-		public AssetGeneralizationProperties Properties { get; } = new AssetGeneralizationProperties();
+		public new AssetGeneralizationProperties Properties { get; } = new AssetGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AssetGeneralization" />.

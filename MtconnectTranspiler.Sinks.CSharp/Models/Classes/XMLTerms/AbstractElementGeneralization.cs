@@ -45,7 +45,7 @@ namespace Mtconnect.Glossary.XMLTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.ElementClass);
 
 		/// <inheritdoc />
-		public AbstractElementGeneralizationProperties Properties { get; } = new AbstractElementGeneralizationProperties();
+		public new AbstractElementGeneralizationProperties Properties { get; } = new AbstractElementGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AbstractElementGeneralization" />.

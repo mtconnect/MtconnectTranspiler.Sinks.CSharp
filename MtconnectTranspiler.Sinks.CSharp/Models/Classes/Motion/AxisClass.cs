@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AxisClassProperties Properties { get; } = new AxisClassProperties();
+		public new AxisClassProperties Properties { get; } = new AxisClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AxisClass" />.

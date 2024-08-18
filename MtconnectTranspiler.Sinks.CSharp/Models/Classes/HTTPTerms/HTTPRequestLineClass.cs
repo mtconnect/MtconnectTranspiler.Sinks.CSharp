@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public HTTPRequestLineClassProperties Properties { get; } = new HTTPRequestLineClassProperties();
+		public new HTTPRequestLineClassProperties Properties { get; } = new HTTPRequestLineClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HTTPRequestLineClass" />.

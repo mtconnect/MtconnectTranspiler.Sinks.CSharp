@@ -40,7 +40,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public AbstractDataItemRelationshipClassProperties Properties { get; } = new AbstractDataItemRelationshipClassProperties();
+		public new AbstractDataItemRelationshipClassProperties Properties { get; } = new AbstractDataItemRelationshipClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AbstractDataItemRelationshipClass" />.

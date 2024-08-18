@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public TableClassProperties Properties { get; } = new TableClassProperties();
+		public new TableClassProperties Properties { get; } = new TableClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TableClass" />.

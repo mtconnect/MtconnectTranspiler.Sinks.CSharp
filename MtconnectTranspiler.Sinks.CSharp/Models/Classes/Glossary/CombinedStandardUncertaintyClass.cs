@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => typeof(Mtconnect.Glossary.StandardUncertaintyGeneralization);
 
 		/// <inheritdoc />
-		public CombinedStandardUncertaintyClassProperties Properties { get; } = new CombinedStandardUncertaintyClassProperties();
+		public new CombinedStandardUncertaintyClassProperties Properties { get; } = new CombinedStandardUncertaintyClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CombinedStandardUncertaintyClass" />.

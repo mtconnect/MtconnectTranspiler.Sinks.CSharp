@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public ProtrudingLengthClassProperties Properties { get; } = new ProtrudingLengthClassProperties();
+		public new ProtrudingLengthClassProperties Properties { get; } = new ProtrudingLengthClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProtrudingLengthClass" />.

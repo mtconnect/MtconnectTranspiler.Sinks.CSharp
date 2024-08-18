@@ -38,7 +38,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public Entity_MClassProperties Properties { get; } = new Entity_MClassProperties();
+		public new Entity_MClassProperties Properties { get; } = new Entity_MClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="Entity_MClass" />.

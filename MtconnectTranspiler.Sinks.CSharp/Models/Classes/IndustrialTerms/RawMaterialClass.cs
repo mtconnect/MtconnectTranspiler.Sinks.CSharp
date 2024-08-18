@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public RawMaterialClassProperties Properties { get; } = new RawMaterialClassProperties();
+		public new RawMaterialClassProperties Properties { get; } = new RawMaterialClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RawMaterialClass" />.

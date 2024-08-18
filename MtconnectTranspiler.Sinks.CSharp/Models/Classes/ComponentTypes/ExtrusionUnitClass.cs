@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public ExtrusionUnitClassProperties Properties { get; } = new ExtrusionUnitClassProperties();
+		public new ExtrusionUnitClassProperties Properties { get; } = new ExtrusionUnitClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ExtrusionUnitClass" />.

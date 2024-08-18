@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.AuxiliaryClass);
 
 		/// <inheritdoc />
-		public DepositionClassProperties Properties { get; } = new DepositionClassProperties();
+		public new DepositionClassProperties Properties { get; } = new DepositionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DepositionClass" />.

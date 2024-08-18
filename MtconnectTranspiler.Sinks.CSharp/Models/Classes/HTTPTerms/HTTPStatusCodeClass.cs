@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public HTTPStatusCodeClassProperties Properties { get; } = new HTTPStatusCodeClassProperties();
+		public new HTTPStatusCodeClassProperties Properties { get; } = new HTTPStatusCodeClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="HTTPStatusCodeClass" />.

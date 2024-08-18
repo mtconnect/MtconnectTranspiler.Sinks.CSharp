@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.MTConnectTerms.ComponentClass);
 
 		/// <inheritdoc />
-		public CompositionClassProperties Properties { get; } = new CompositionClassProperties();
+		public new CompositionClassProperties Properties { get; } = new CompositionClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="CompositionClass" />.

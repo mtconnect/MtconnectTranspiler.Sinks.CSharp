@@ -44,7 +44,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public InterfaceClassProperties Properties { get; } = new InterfaceClassProperties();
+		public new InterfaceClassProperties Properties { get; } = new InterfaceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="InterfaceClass" />.

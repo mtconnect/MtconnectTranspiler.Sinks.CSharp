@@ -44,7 +44,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentTypes.SystemClass);
 
 		/// <inheritdoc />
-		public EndEffectorClassProperties Properties { get; } = new EndEffectorClassProperties();
+		public new EndEffectorClassProperties Properties { get; } = new EndEffectorClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EndEffectorClass" />.

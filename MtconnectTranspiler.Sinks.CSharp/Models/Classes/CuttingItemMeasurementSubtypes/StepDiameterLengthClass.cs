@@ -43,7 +43,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
 
 		/// <inheritdoc />
-		public StepDiameterLengthClassProperties Properties { get; } = new StepDiameterLengthClassProperties();
+		public new StepDiameterLengthClassProperties Properties { get; } = new StepDiameterLengthClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="StepDiameterLengthClass" />.

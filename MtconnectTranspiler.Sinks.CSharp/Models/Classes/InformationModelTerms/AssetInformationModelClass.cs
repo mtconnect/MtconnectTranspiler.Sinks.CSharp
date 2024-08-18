@@ -43,7 +43,7 @@ namespace Mtconnect.Glossary.InformationModelTerms
 		public Type Generalization => typeof(Mtconnect.Glossary.InformationModelTerms.MTConnectInformationModelGeneralization);
 
 		/// <inheritdoc />
-		public AssetInformationModelClassProperties Properties { get; } = new AssetInformationModelClassProperties();
+		public new AssetInformationModelClassProperties Properties { get; } = new AssetInformationModelClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="AssetInformationModelClass" />.

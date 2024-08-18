@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.SampleClass);
 
 		/// <inheritdoc />
-		public VolumeSpatialClassProperties Properties { get; } = new VolumeSpatialClassProperties();
+		public new VolumeSpatialClassProperties Properties { get; } = new VolumeSpatialClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="VolumeSpatialClass" />.

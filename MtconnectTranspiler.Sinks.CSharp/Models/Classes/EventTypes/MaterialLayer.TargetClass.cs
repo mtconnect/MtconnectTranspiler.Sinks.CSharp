@@ -43,7 +43,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes.MaterialLayerClass);
 
 		/// <inheritdoc />
-		public MaterialLayerTargetClassProperties Properties { get; } = new MaterialLayerTargetClassProperties();
+		public new MaterialLayerTargetClassProperties Properties { get; } = new MaterialLayerTargetClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaterialLayerTargetClass" />.

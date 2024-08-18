@@ -43,7 +43,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Components.ComponentGeneralization);
 
 		/// <inheritdoc />
-		public StorageBatteryClassProperties Properties { get; } = new StorageBatteryClassProperties();
+		public new StorageBatteryClassProperties Properties { get; } = new StorageBatteryClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="StorageBatteryClass" />.

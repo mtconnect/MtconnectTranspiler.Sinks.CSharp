@@ -39,7 +39,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public MaximumClassProperties Properties { get; } = new MaximumClassProperties();
+		public new MaximumClassProperties Properties { get; } = new MaximumClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaximumClass" />.

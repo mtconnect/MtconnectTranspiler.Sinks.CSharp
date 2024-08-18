@@ -39,7 +39,7 @@ namespace Mtconnect.Glossary
 		public Type Generalization => null;
 
 		/// <inheritdoc />
-		public SensingElementClassProperties Properties { get; } = new SensingElementClassProperties();
+		public new SensingElementClassProperties Properties { get; } = new SensingElementClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SensingElementClass" />.
