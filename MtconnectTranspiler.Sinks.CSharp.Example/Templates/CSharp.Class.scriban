@@ -30,12 +30,18 @@ namespace {{ to_code_safe source.namespace }}
 	/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
 	/// </summary>
+	{{ include 'NormativeRemarks.scriban' source }}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public sealed class {{ code_name }} : IClass
 	{
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure__{{ source.reference_id }}";
+
 		/// <inheritdoc />
 		public string ReferenceId => "{{ source.reference_id }}";
 		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
 		/// <inheritdoc />
 		public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
 
@@ -118,13 +124,7 @@ namespace {{ to_code_safe source.namespace }}
 			{
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: {{ item.original_property_type }}</item>
-				/// <item>Type: {{ item.type | to_pascal_case | to_code_safe }}</item>
-				/// <item>Namespace: {{ property_type_namespace }}</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: {{ item.type | to_pascal_case | to_code_safe }} </remarks>
 				/// </summary>
 				public System.Type Type => typeof({{ if property_type_namespace }}{{ property_type_namespace }}.{{ end }}{{ item_type_name }});
 				

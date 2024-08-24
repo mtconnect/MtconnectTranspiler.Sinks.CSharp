@@ -11,6 +11,11 @@
         string ReferenceId { get; }
 
         /// <summary>
+        /// Link to the MTConnect model browser.
+        /// </summary>
+        string HelpUrl { get; }
+
+        /// <summary>
         /// Reference to the SysML name defined in the XMI document.
         /// </summary>
         string Name { get; }

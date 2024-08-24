@@ -15,6 +15,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
         string ReferenceId { get; }
 
         /// <summary>
+        /// Link to the MTConnect model browser.
+        /// </summary>
+        string HelpUrl { get; }
+
+        /// <summary>
         /// Reference to the name of the SysML entity.
         /// </summary>
         string Name { get; }

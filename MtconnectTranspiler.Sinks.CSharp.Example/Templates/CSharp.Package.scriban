@@ -17,8 +17,13 @@ namespace {{ to_code_safe source.namespace }}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public class {{ code_name }}Package : IPackage
 	{
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__{{ source.reference_id }}";
+
 		/// <inheritdoc />
 		public string ReferenceId => "{{ source.reference_id }}";
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
 		
 		/// <inheritdoc />
 		public string Name => "{{ source.normative_name }}";

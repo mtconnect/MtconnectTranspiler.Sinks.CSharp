@@ -6,6 +6,16 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
     public interface IEnum
     {
         /// <summary>
+        /// Reference to the SysML Id defined in the XMI document.
+        /// </summary>
+        string ReferenceId { get; }
+
+        /// <summary>
+        /// Link to the MTConnect model browser.
+        /// </summary>
+        string HelpUrl { get; }
+
+        /// <summary>
         /// Reference to the name of the SysML entity.
         /// </summary>
         string Name { get; }
