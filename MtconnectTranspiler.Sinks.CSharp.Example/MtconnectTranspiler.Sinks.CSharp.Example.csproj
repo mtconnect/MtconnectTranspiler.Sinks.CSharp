@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Templates\CSharp.Model.scriban" />
     <None Remove="Templates\CSharp.Package.scriban" />
+    <None Remove="Templates\NormativeRemarks.scriban" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +37,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Templates\CSharp.Package.scriban">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\NormativeRemarks.scriban">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Templates\UmlCommentsSummaryContent.scriban" />
