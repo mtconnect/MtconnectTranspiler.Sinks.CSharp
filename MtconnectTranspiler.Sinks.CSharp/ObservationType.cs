@@ -11,7 +11,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <summary>
         /// The superclass of the type (aka is-a). For example: CONDITION, EVENT, or SAMPLE
         /// </summary>
-        public Type SuperClass { get; set; }
+        public string Category { get; set; }
 
         /// <summary>
         /// Name of the type

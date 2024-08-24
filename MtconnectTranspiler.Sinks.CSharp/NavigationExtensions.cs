@@ -17,32 +17,32 @@ namespace MtconnectTranspiler.Sinks.CSharp
         /// <exception cref="NotSupportedException"></exception>
         public static IEnumerable<ObservationType> GetObservationTypes(CategoryEnum category)
         {
-            Type superClass = null;
+            string categoryName = null;
             IPackage package = null;
             switch (category)
             {
                 case CategoryEnum.CONDITION:
                     package = Mtconnect.MtconnectModel.ObservationInformationModelPackage.ObservationTypesPackage.ConditionTypesPackage;
-                    superClass = typeof(Mtconnect.ObservationInformationModel.ConditionClass);
+                    categoryName = (new Mtconnect.ObservationInformationModel.ConditionClass()).Name;
                     break;
                 case CategoryEnum.EVENT:
                     package = Mtconnect.MtconnectModel.ObservationInformationModelPackage.ObservationTypesPackage.EventTypesPackage;
-                    superClass = typeof(Mtconnect.ObservationInformationModel.EventClass);
+                    categoryName = (new Mtconnect.ObservationInformationModel.EventClass()).Name;
                     break;
                 case CategoryEnum.SAMPLE:
                     package = Mtconnect.MtconnectModel.ObservationInformationModelPackage.ObservationTypesPackage.SampleTypesPackage;
-                    superClass = typeof(Mtconnect.ObservationInformationModel.SampleClass);
+                    categoryName = (new Mtconnect.ObservationInformationModel.SampleClass()).Name;
                     break;
                 default:
                     break;
             }
             if (package == null)
-                throw new NotSupportedException("Unknown category '" + category.ToString() + "' is not supported");
+                throw new NotSupportedException("Unknown category '" + categoryName.ToString() + "' is not supported");
 
             return package.Classes.Where(o => !o.Name.Contains("."))
                 .Select(o => new ObservationType()
                 {
-                    SuperClass = superClass,
+                    Category = categoryName,
                     Name = o.Name,
                     Definition = o.Summary,
                     Introduced = o.NormativeVersion,
