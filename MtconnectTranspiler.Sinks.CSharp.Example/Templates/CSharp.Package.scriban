@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 {{~ code_name = source.name | to_code_safe | string.remove "." ~}}
 using System;
 using System.CodeDom.Compiler;
