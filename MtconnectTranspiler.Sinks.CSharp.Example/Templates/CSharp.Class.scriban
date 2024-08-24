@@ -34,13 +34,21 @@ namespace {{ to_code_safe source.namespace }}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public sealed class {{ code_name }} : IClass
 	{
+		/// <summary>Constant value for <see cref="{{ code_name }}.ReferenceId" /></summary>
 		public const string REFERENCE_ID = "{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.Summary" /></summary>
 		public const string SUMMARY = @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.Name" /></summary>
 		public const string NAME = "{{ source.normative_name }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.AccessModifier" /></summary>
 		public const string ACCESS_MODIFIER = "{{ source.access_modifier }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.Modifier" /></summary>
 		public const string MODIFIER = "{{ source.modifier }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.NormativeVersion" /></summary>
 		public const string NORMATIVE_VERSION = "{{ source.normative_version }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.DeprecatedVersion" /></summary>
 		public const string DEPRECATED_VERSION = "{{ source.deprecated_version }}";
 
 		/// <inheritdoc />
@@ -129,15 +137,25 @@ namespace {{ to_code_safe source.namespace }}
 			/// </summary>
 			public {{ if has_generalization }}new {{ end }}sealed class {{ item_code_name }}{{ item_suffix }} : IProperty
 			{
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Name" /></summary>
 				public const string NAME = "{{ item.normative_name }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Summary" /></summary>
 				public const string SUMMARY = @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.AccessModifier" /></summary>
 				public const string ACCESS_MODIFIER = "{{ item.access_modifier }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Modifier" /></summary>
 				public const string MODIFIER = "{{ item.modifier }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.NormativeVersion" /></summary>
 				public const string NORMATIVE_VERSION = "{{ item.normative_version }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "{{ item.deprecated_version }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Aggregation" /></summary>
 				public const string AGGREGATION = "{{ item.aggregation }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Extension" /></summary>
 				public const string EXTENSION = "{{ item.extension }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Association" /></summary>
 				public const string ASSOCIATION = "{{ item.association }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "{{ item.default_value }}";
 
 				/// <summary>

@@ -26,11 +26,17 @@ namespace {{ to_code_safe source.namespace }}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public sealed class {{ source.name | to_code_safe | to_pascal_case }}MetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.ReferenceId" /></summary>
 		public const string REFERENCE_ID = "{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.Name" /></summary>
 		public const string NAME = "{{ source.name }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.NormativeVersion" /></summary>
 		public const string NORMATIVE_VERSION = "{{ source.normative_version }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.DeprecatedVersion" /></summary>
 		public const string DEPRECATED_VERSION = "{{ source.deprecated_version }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.Summary" /></summary>
 		public const string SUMMARY = @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
 
 		/// <inheritdoc />
@@ -77,9 +83,13 @@ namespace {{ to_code_safe source.namespace }}
 		{{ include 'NormativeRemarks.scriban' item }}
 		public sealed class {{ item.original_name | to_code_safe }}Value : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="{{ item.original_name | to_code_safe }}Value.Name" /></summary>
 			public const string NAME = "{{ item.original_name }}";
+			/// <summary>Constant value for <see cref="{{ item.original_name | to_code_safe }}Value.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "{{ item.normative_version }}";
+			/// <summary>Constant value for <see cref="{{ item.original_name | to_code_safe }}Value.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "{{ item.deprecated_version }}";
+			/// <summary>Constant value for <see cref="{{ item.original_name | to_code_safe }}Value.Summary" /></summary>
 			public const string SUMMARY = @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
 
 			/// <inheritdoc />

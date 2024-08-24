@@ -17,9 +17,13 @@ namespace {{ to_code_safe source.namespace }}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public class {{ code_name }}Package : IPackage
 	{
+		/// <summary>Constant value for <see cref="{{ code_name }}Package.ReferenceId" /></summary>
 		public const string REFERENCE_ID = "{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}Package.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Package__{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}Package.Name" /></summary>
 		public const string NAME = "{{ source.normative_name }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}Package.Summary" /></summary>
 		public const string SUMMARY = @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
 
 		/// <inheritdoc />
