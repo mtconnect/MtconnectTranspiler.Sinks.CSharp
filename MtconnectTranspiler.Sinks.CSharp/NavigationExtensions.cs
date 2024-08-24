@@ -44,6 +44,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
             return package.Classes.Where(o => !o.Name.Contains("."))
                 .Select(o => new ObservationType()
                 {
+                    HelpUrl = o.HelpUrl,
                     Category = categoryName,
                     Name = o.Name,
                     Definition = o.Summary,

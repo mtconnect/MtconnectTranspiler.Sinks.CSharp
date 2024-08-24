@@ -9,6 +9,11 @@ namespace MtconnectTranspiler.Sinks.CSharp
     public sealed class ObservationType
     {
         /// <summary>
+        /// Url to the MTConnect model browser.
+        /// </summary>
+        public string HelpUrl { get; set; }
+
+        /// <summary>
         /// The superclass of the type (aka is-a). For example: CONDITION, EVENT, or SAMPLE
         /// </summary>
         public string Category { get; set; }
