@@ -90,7 +90,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
             if (package == null)
                 throw new NotSupportedException("Unknown observation generalization '" + type.Generalization?.Name + "' is not supported");
 
-            return package.Classes.Where(o => o.Name.StartsWith(type.Name) && !o.Name.Equals(type.Name));
+            return package.Classes.Where(o => o.Name.StartsWith(type.Name + ".") && !o.Name.Equals(type.Name));
         }
     }
 }
