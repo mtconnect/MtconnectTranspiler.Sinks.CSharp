@@ -34,31 +34,38 @@ namespace {{ to_code_safe source.namespace }}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public sealed class {{ code_name }} : IClass
 	{
+		public const string REFERENCE_ID = "{{ source.reference_id }}";
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__{{ source.reference_id }}";
+		public const string SUMMARY = @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+		public const string NAME = "{{ source.normative_name }}";
+		public const string ACCESS_MODIFIER = "{{ source.access_modifier }}";
+		public const string MODIFIER = "{{ source.modifier }}";
+		public const string NORMATIVE_VERSION = "{{ source.normative_version }}";
+		public const string DEPRECATED_VERSION = "{{ source.deprecated_version }}";
 
 		/// <inheritdoc />
-		public string ReferenceId => "{{ source.reference_id }}";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
 		public string HelpUrl => HELP_URL;
 
 		/// <inheritdoc />
-		public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
-		public string Name => "{{ source.normative_name }}";
+		public string Name => NAME;
 		
 		/// <inheritdoc />
-		public string AccessModifier => "{{ source.access_modifier }}";
+		public string AccessModifier => ACCESS_MODIFIER;
 				
 		/// <inheritdoc />
-		public string Modifier => "{{ source.modifier }}";
+		public string Modifier => MODIFIER;
 				
 		/// <inheritdoc />
-		public string NormativeVersion => "{{ source.normative_version }}";
+		public string NormativeVersion => NORMATIVE_VERSION;
 				
 		/// <inheritdoc />
-		public string DeprecatedVersion => "{{ source.deprecated_version }}";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
 		{{~ if source.generalization != null && source.generalization != "" ~}}
@@ -122,6 +129,17 @@ namespace {{ to_code_safe source.namespace }}
 			/// </summary>
 			public {{ if has_generalization }}new {{ end }}sealed class {{ item_code_name }}{{ item_suffix }} : IProperty
 			{
+				public const string NAME = "{{ item.normative_name }}";
+				public const string SUMMARY = @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+				public const string ACCESS_MODIFIER = "{{ item.access_modifier }}";
+				public const string MODIFIER = "{{ item.modifier }}";
+				public const string NORMATIVE_VERSION = "{{ item.normative_version }}";
+				public const string DEPRECATED_VERSION = "{{ item.deprecated_version }}";
+				public const string AGGREGATION = "{{ item.aggregation }}";
+				public const string EXTENSION = "{{ item.extension }}";
+				public const string ASSOCIATION = "{{ item.association }}";
+				public const string DEFAULT_VALUE = "{{ item.default_value }}";
+
 				/// <summary>
 				/// <inheritdoc />
 				/// <remarks> Type: {{ item.type | to_pascal_case | to_code_safe }} </remarks>
@@ -129,36 +147,36 @@ namespace {{ to_code_safe source.namespace }}
 				public System.Type Type => typeof({{ if property_type_namespace }}{{ property_type_namespace }}.{{ end }}{{ item_type_name }});
 				
 				/// <inheritdoc />
-				public string Name => "{{ item.normative_name }}";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "{{ item.access_modifier }}";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "{{ item.modifier }}";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "{{ item.normative_version }}";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "{{ item.deprecated_version }}";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "{{ item.aggregation }}";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "{{ item.extension }}";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "{{ item.association }}";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "{{ item.default_value }}";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 		{{~ end ~}}
 		};

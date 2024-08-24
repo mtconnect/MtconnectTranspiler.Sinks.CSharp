@@ -26,16 +26,21 @@ namespace {{ to_code_safe source.namespace }}
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
 	public sealed class {{ source.name | to_code_safe | to_pascal_case }}MetaClass : IEnum
 	{
+		public const string REFERENCE_ID = "{{ source.reference_id }}";
 		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}";
+		public const string NAME = "{{ source.name }}";
+		public const string NORMATIVE_VERSION = "{{ source.normative_version }}";
+		public const string DEPRECATED_VERSION = "{{ source.deprecated_version }}";
+		public const string SUMMARY = @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
 
 		/// <inheritdoc />
-		public string ReferenceId => "{{ source.reference_id }}";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
 		public string HelpUrl => HELP_URL;
 
 		/// <inheritdoc />
-		public string Name => "{{ source.name }}";
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => {{ if source.data_type != null && source.data_type != "" }}typeof({{ source.data_type }}){{ else }}null{{ end }};
@@ -44,13 +49,13 @@ namespace {{ to_code_safe source.namespace }}
 		public Type Instance => typeof({{ source.name | to_code_safe | to_pascal_case }});
 
 		/// <inheritdoc />
-		public string NormativeVersion => "{{ source.normative_version }}";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "{{ source.deprecated_version }}";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -72,20 +77,25 @@ namespace {{ to_code_safe source.namespace }}
 		{{ include 'NormativeRemarks.scriban' item }}
 		public sealed class {{ item.original_name | to_code_safe }}Value : IEnumInstance
 		{
+			public const string NAME = "{{ item.original_name }}";
+			public const string NORMATIVE_VERSION = "{{ item.normative_version }}";
+			public const string DEPRECATED_VERSION = "{{ item.deprecated_version }}";
+			public const string SUMMARY = @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+
 			/// <inheritdoc />
-			public string Name => "{{ item.original_name }}";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "{{ item.normative_version }}";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "{{ item.deprecated_version }}";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+			public string Summary => SUMMARY;
 		}
 	{{~ end ~}}
 	}
