@@ -47,7 +47,7 @@ namespace MtconnectTranspiler.Sinks.CSharp
                     HelpUrl = o.HelpUrl,
                     Category = categoryName,
                     Name = o.Name,
-                    Definition = o.Summary,
+                    Definition = (Activator.CreateInstance(o.Properties.Properties.FirstOrDefault(p => p.Name.Equals("type", StringComparison.OrdinalIgnoreCase))?.Type) as IEnum)?.Values?.FirstOrDefault(v => v.Name.Equals(o.Name, StringComparison.OrdinalIgnoreCase))?.Summary ?? o.Summary,
                     Introduced = o.NormativeVersion,
                     Deprecated = o.DeprecatedVersion,
                     Properties = o.Properties.Properties,
