@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,17 +14,29 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class PropertiesOfDataItemPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_91b028d_1589399339634_269147_34";
-		
-		/// <inheritdoc />
-		public string Name => "Properties of DataItem";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides additional semantic information for the Part Properties of {{block(DataItem)}}.
+		/// <summary>Constant value for <see cref="PropertiesOfDataItemPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_91b028d_1589399339634_269147_34";
+		/// <summary>Constant value for <see cref="PropertiesOfDataItemPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_91b028d_1589399339634_269147_34";
+		/// <summary>Constant value for <see cref="PropertiesOfDataItemPackage.Name" /></summary>
+		public const string NAME = "Properties of DataItem";
+		/// <summary>Constant value for <see cref="PropertiesOfDataItemPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides additional semantic information for the Part Properties of {{block(DataItem)}}.
 
 > Note: See {{sect(DataItems Schema Diagrams)}} for XML schema of the elements for {{block(DataItem)}}.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

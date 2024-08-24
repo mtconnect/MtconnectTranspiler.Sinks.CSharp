@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class InterfaceInteractionModelPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_3DD65740_A905_4d89_9C80_C12E8199625A";
-		
-		/// <inheritdoc />
-		public string Name => "Interface Interaction Model";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;In many manufacturing processes, multiple pieces of equipment must work together to perform a task.  The traditional method for coordinating the activities between individual pieces of equipment is to connect them using a series of wires to communicate equipment states and demands for action.  These interactions use simple binary ON/OFF signals to accomplished their intention.
+		/// <summary>Constant value for <see cref="InterfaceInteractionModelPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_3DD65740_A905_4d89_9C80_C12E8199625A";
+		/// <summary>Constant value for <see cref="InterfaceInteractionModelPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_3DD65740_A905_4d89_9C80_C12E8199625A";
+		/// <summary>Constant value for <see cref="InterfaceInteractionModelPackage.Name" /></summary>
+		public const string NAME = "Interface Interaction Model";
+		/// <summary>Constant value for <see cref="InterfaceInteractionModelPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;In many manufacturing processes, multiple pieces of equipment must work together to perform a task.  The traditional method for coordinating the activities between individual pieces of equipment is to connect them using a series of wires to communicate equipment states and demands for action.  These interactions use simple binary ON/OFF signals to accomplished their intention.
 
 In the MTConnect Standard, {{termplural(interface)}} provides a means to replace this traditional method for interconnecting pieces of equipment with a structured {{term(interaction model)}} that provides a rich set of information used to coordinate the actions between pieces of equipment.  Implementers may utilize the information provided by this data model to (1) realize the interaction between pieces of equipment and (2) to extend the functionality of the equipment to improve the overall performance of the manufacturing process. 
 
@@ -84,6 +85,18 @@ The interaction between the pieces of equipment as illustrated in {{figure(Reque
 
 After the final action has been completed, both pieces of equipment are back in the `READY` state indicating that they are able to perform another action.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

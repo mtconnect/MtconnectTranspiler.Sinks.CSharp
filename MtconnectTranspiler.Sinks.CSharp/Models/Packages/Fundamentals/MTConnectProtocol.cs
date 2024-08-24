@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,18 +14,30 @@ namespace Mtconnect.Fundamentals
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MTConnectProtocolPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_50B7711E_30AA_4a94_9F73_C74061BA099D";
-		
-		/// <inheritdoc />
-		public string Name => "MTConnect Protocol";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;The {{term(agent)}} **MUST** support the {{package(REST Protocol)}} and produce {{term(XML)}} representations of the information models. 
+		/// <summary>Constant value for <see cref="MTConnectProtocolPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_50B7711E_30AA_4a94_9F73_C74061BA099D";
+		/// <summary>Constant value for <see cref="MTConnectProtocolPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_50B7711E_30AA_4a94_9F73_C74061BA099D";
+		/// <summary>Constant value for <see cref="MTConnectProtocolPackage.Name" /></summary>
+		public const string NAME = "MTConnect Protocol";
+		/// <summary>Constant value for <see cref="MTConnectProtocolPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;The {{term(agent)}} **MUST** support the {{package(REST Protocol)}} and produce {{term(XML)}} representations of the information models. 
 
 All other protocols and representations are optional.
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

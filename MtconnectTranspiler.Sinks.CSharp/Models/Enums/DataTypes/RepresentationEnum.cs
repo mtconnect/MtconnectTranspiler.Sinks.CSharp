@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
@@ -13,6 +14,7 @@ namespace Mtconnect.DataTypes
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 	/// </list>
 	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum RepresentationEnum
 	{
@@ -23,6 +25,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		TIME_SERIES,
 		/// <summary>﻿measured value of the sample data.<br /><br />If no <see cref="DataItem.representation">representation in DataItem</see> is specified for a data item, the <see cref="DataItem.representation">representation in DataItem</see> <b>MUST</b> be determined to be <c>VALUE</c>.<br /><br /><br />
 		/// </summary>
@@ -31,32 +34,34 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		VALUE,
 		/// <summary>﻿reported value(s) are represented as a set of <i>key-value pair</i>s.<br /><br />Each reported value in the <i>data set</i> <b>MUST</b> have a unique key.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		DATA_SET,
 		/// <summary>﻿<b>DEPRECATED</b> as <see cref="DataItem.representation">representation in DataItem</see> type in <i>MTConnect Version 1.5</i>. Replaced by the <see cref="DataItem.discrete">discrete in DataItem</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
-		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
-		[Obsolete("Deprecated in v1.5 according to https://model.mtconnect.org/#_Version_1.5")]
+
 		DISCRETE,
 		/// <summary>﻿two dimensional set of <i>key-value pair</i>s where the <see cref="Entry">Entry</see> represents a row, and the value is a set of <i>key-value pair</i> <see cref="Cell">Cell</see> elements. <br /><br />A <i>table</i> follows the same behavior as the <i>data set</i> for change tracking, clearing, and history. When an <see cref="Entry">Entry</see> changes, all <see cref="Cell">Cell</see> elements update as a single unit following the behavior of a <i>data set</i>.<br /><br />&gt; Note: It is best to use <see cref="Variable">Variable</see> if the <see cref="Cell">Cell</see> entities represent multiple semantic types.<br /><br />Each <see cref="Entry">Entry</see> in the <i>table</i> <b>MUST</b> have a unique key. Each <see cref="Cell">Cell</see> of each <see cref="Entry">Entry</see> in the <i>table</i> <b>MUST</b> have a unique key.<br /><br />See <see cref="Representation">Representation</see> in <see cref="Observation Information Model">Observation Information Model</see>, for a description of <see cref="Entry">Entry</see> and <see cref="Cell">Cell</see> elements.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.6">v1.6</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		TABLE,
 	}
 
@@ -66,8 +71,27 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RepresentationEnumMetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="RepresentationEnumMetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAID_67CD6E1B_53E3_45c1_B84F_B0732F79528D";
+		/// <summary>Constant value for <see cref="RepresentationEnumMetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration__EAID_67CD6E1B_53E3_45c1_B84F_B0732F79528D";
+		/// <summary>Constant value for <see cref="RepresentationEnumMetaClass.Name" /></summary>
+		public const string NAME = "RepresentationEnum";
+		/// <summary>Constant value for <see cref="RepresentationEnumMetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.2";
+		/// <summary>Constant value for <see cref="RepresentationEnumMetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
+		/// <summary>Constant value for <see cref="RepresentationEnumMetaClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+
 		/// <inheritdoc />
-		public string Name => "RepresentationEnum";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => null;
@@ -76,13 +100,13 @@ namespace Mtconnect.DataTypes
 		public Type Instance => typeof(RepresentationEnum);
 
 		/// <inheritdoc />
-		public string NormativeVersion => "1.2";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -101,25 +125,40 @@ namespace Mtconnect.DataTypes
 		/// Value for RepresentationEnum.<br/>
 		/// <br/>See also <seealso cref="RepresentationEnum">RepresentationEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class TIME_SERIESValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="TIME_SERIESValue.Name" /></summary>
+			public const string NAME = "TIME_SERIES";
+			/// <summary>Constant value for <see cref="TIME_SERIESValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="TIME_SERIESValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="TIME_SERIESValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;series of sampled data.
+
+The data is reported for a specified number of samples and each sample is reported with a fixed period.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "TIME_SERIES";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;series of sampled data.
-
-The data is reported for a specified number of samples and each sample is reported with a fixed period.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private VALUEValue _VALUE;
 		/// <inheritdoc cref="VALUEValue" path="/summary" />
@@ -129,25 +168,40 @@ The data is reported for a specified number of samples and each sample is report
 		/// Value for RepresentationEnum.<br/>
 		/// <br/>See also <seealso cref="RepresentationEnum">RepresentationEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class VALUEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="VALUEValue.Name" /></summary>
+			public const string NAME = "VALUE";
+			/// <summary>Constant value for <see cref="VALUEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="VALUEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="VALUEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;measured value of the sample data.
+
+If no {{property(DataItem::representation)}} is specified for a data item, the {{property(DataItem::representation)}} **MUST** be determined to be `VALUE`.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "VALUE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;measured value of the sample data.
-
-If no {{property(DataItem::representation)}} is specified for a data item, the {{property(DataItem::representation)}} **MUST** be determined to be `VALUE`.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private DATA_SETValue _DATA_SET;
 		/// <inheritdoc cref="DATA_SETValue" path="/summary" />
@@ -157,25 +211,40 @@ If no {{property(DataItem::representation)}} is specified for a data item, the {
 		/// Value for RepresentationEnum.<br/>
 		/// <br/>See also <seealso cref="RepresentationEnum">RepresentationEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class DATA_SETValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="DATA_SETValue.Name" /></summary>
+			public const string NAME = "DATA_SET";
+			/// <summary>Constant value for <see cref="DATA_SETValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.5";
+			/// <summary>Constant value for <see cref="DATA_SETValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="DATA_SETValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;reported value(s) are represented as a set of {{termplural(key-value pair)}}.
+
+Each reported value in the {{term(data set)}} **MUST** have a unique key.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "DATA_SET";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.5";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;reported value(s) are represented as a set of {{termplural(key-value pair)}}.
-
-Each reported value in the {{term(data set)}} **MUST** have a unique key.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private DISCRETEValue _DISCRETE;
 		/// <inheritdoc cref="DISCRETEValue" path="/summary" />
@@ -185,23 +254,38 @@ Each reported value in the {{term(data set)}} **MUST** have a unique key.&#10;
 		/// Value for RepresentationEnum.<br/>
 		/// <br/>See also <seealso cref="RepresentationEnum">RepresentationEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class DISCRETEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="DISCRETEValue.Name" /></summary>
+			public const string NAME = "DISCRETE";
+			/// <summary>Constant value for <see cref="DISCRETEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.3";
+			/// <summary>Constant value for <see cref="DISCRETEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "1.5";
+			/// <summary>Constant value for <see cref="DISCRETEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;**DEPRECATED** as {{property(DataItem::representation)}} type in *MTConnect Version 1.5*. Replaced by the {{property(DataItem::discrete)}}.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "DISCRETE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.3";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "1.5";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;**DEPRECATED** as {{property(DataItem::representation)}} type in *MTConnect Version 1.5*. Replaced by the {{property(DataItem::discrete)}}.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private TABLEValue _TABLE;
 		/// <inheritdoc cref="TABLEValue" path="/summary" />
@@ -211,22 +295,22 @@ Each reported value in the {{term(data set)}} **MUST** have a unique key.&#10;
 		/// Value for RepresentationEnum.<br/>
 		/// <br/>See also <seealso cref="RepresentationEnum">RepresentationEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class TABLEValue : IEnumInstance
 		{
-			/// <inheritdoc />
-			public string Name => "TABLE";
-			
-			/// <inheritdoc />
-			public object Value => null; // TODO: Add value, based on type.
-			
-			/// <inheritdoc />
-			public string NormativeVersion => "1.6";
-			
-			/// <inheritdoc />
-			public string DeprecatedVersion => "";
-			
-			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;two dimensional set of {{termplural(key-value pair)}} where the {{block(Entry)}} represents a row, and the value is a set of {{term(key-value pair)}} {{block(Cell)}} elements. 
+			/// <summary>Constant value for <see cref="TABLEValue.Name" /></summary>
+			public const string NAME = "TABLE";
+			/// <summary>Constant value for <see cref="TABLEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.6";
+			/// <summary>Constant value for <see cref="TABLEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="TABLEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;two dimensional set of {{termplural(key-value pair)}} where the {{block(Entry)}} represents a row, and the value is a set of {{term(key-value pair)}} {{block(Cell)}} elements. 
 
 A {{term(table)}} follows the same behavior as the {{term(data set)}} for change tracking, clearing, and history. When an {{block(Entry)}} changes, all {{block(Cell)}} elements update as a single unit following the behavior of a {{term(data set)}}.
 
@@ -236,6 +320,21 @@ Each {{block(Entry)}} in the {{term(table)}} **MUST** have a unique key. Each {{
 
 See {{block(Representation)}} in {{package(Observation Information Model)}}, for a description of {{block(Entry)}} and {{block(Cell)}} elements.&#10;
 ";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
 		}
 	}
 }

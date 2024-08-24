@@ -1,6 +1,7 @@
 #pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -11,30 +12,51 @@ namespace Mtconnect.Glossary.MTConnectTerms
 	/// <summary>﻿<i>Component</i> belonging to a <i>Component</i> and not composed of any <i>Component</i>s.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375147_715142_1964">model.mtconnect.org</seealso> for more information.
 	/// </summary>
+	
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CompositionClass : IClass
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1623664375147_715142_1964";
-		
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;{{term(Component)}} belonging to a {{term(Component)}} and not composed of any {{termplural(Component)}}.&#10;
+		/// <summary>Constant value for <see cref="CompositionClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1623664375147_715142_1964";
+		/// <summary>Constant value for <see cref="CompositionClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375147_715142_1964";
+		/// <summary>Constant value for <see cref="CompositionClass.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;{{term(Component)}} belonging to a {{term(Component)}} and not composed of any {{termplural(Component)}}.&#10;
 ";
+		/// <summary>Constant value for <see cref="CompositionClass.Name" /></summary>
+		public const string NAME = "Composition";
+		/// <summary>Constant value for <see cref="CompositionClass.AccessModifier" /></summary>
+		public const string ACCESS_MODIFIER = "public";
+		/// <summary>Constant value for <see cref="CompositionClass.Modifier" /></summary>
+		public const string MODIFIER = "";
+		/// <summary>Constant value for <see cref="CompositionClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "";
+		/// <summary>Constant value for <see cref="CompositionClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
 
 		/// <inheritdoc />
-		public string Name => "Composition";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
-		public string AccessModifier => "public";
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public string AccessModifier => ACCESS_MODIFIER;
 				
 		/// <inheritdoc />
-		public string Modifier => "";
+		public string Modifier => MODIFIER;
 				
 		/// <inheritdoc />
-		public string NormativeVersion => "";
+		public string NormativeVersion => NORMATIVE_VERSION;
 				
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
 		/// <remarks>
@@ -65,49 +87,64 @@ namespace Mtconnect.Glossary.MTConnectTerms
 			/// </summary>
 			public new sealed class BelongsToProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="BelongsToProperty.Name" /></summary>
+				public const string NAME = "belongs to";
+				/// <summary>Constant value for <see cref="BelongsToProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="BelongsToProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "private";
+				/// <summary>Constant value for <see cref="BelongsToProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="BelongsToProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="BelongsToProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="BelongsToProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "";
+				/// <summary>Constant value for <see cref="BelongsToProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="BelongsToProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="BelongsToProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_45f01b9_1581734537697_742151_1119</item>
-				/// <item>Type: ComponentClass</item>
-				/// <item>Namespace: Mtconnect.Glossary.MTConnectTerms</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: ComponentClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.Glossary.MTConnectTerms.ComponentClass);
 				
 				/// <inheritdoc />
-				public string Name => "belongs to";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "private";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 		};
 

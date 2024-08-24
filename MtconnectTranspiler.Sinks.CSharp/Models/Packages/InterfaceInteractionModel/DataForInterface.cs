@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -12,14 +13,14 @@ namespace Mtconnect.InterfaceInteractionModel
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class DataForInterfacePackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1629374886900_914612_22";
-		
-		/// <inheritdoc />
-		public string Name => "Data for Interface";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;Each {{term(interface)}} **MUST** provide the data associated with the specific {{term(interface)}} to implement the {{term(interaction model)}} and any additional data that may be needed by another piece of equipment to understand the operating states and conditions of the first piece of equipment as it applies to the {{term(interface)}}.
+		/// <summary>Constant value for <see cref="DataForInterfacePackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1629374886900_914612_22";
+		/// <summary>Constant value for <see cref="DataForInterfacePackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_68e0225_1629374886900_914612_22";
+		/// <summary>Constant value for <see cref="DataForInterfacePackage.Name" /></summary>
+		public const string NAME = "Data for Interface";
+		/// <summary>Constant value for <see cref="DataForInterfacePackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;Each {{term(interface)}} **MUST** provide the data associated with the specific {{term(interface)}} to implement the {{term(interaction model)}} and any additional data that may be needed by another piece of equipment to understand the operating states and conditions of the first piece of equipment as it applies to the {{term(interface)}}.
 
 Details on data items specific to the {{term(interaction model)}} for each type of {{term(interface)}} are provided in {{package(DataItem Types for Interface)}}.
 
@@ -37,6 +38,18 @@ Some of the data items needed to support a specific {{term(interface)}} may alre
 
 For more information on the {{block(References)}} model, see {{package(Device Information Model)}}.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

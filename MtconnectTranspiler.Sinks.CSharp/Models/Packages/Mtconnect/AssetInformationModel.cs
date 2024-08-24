@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class AssetInformationModelPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_029C7254_810A_45f2_8400_D4E69ED8DF85";
-		
-		/// <inheritdoc />
-		public string Name => "Asset Information Model";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;The MTConnect Standard supports a simple distributed storage mechanism that allows applications and equipment to share and exchange complex information models in a similar way to a distributed data store.  The {{term(Asset Information Model)}} associates each {{block(MTConnectAssets)}} entity with a unique identifier and allows for some predefined mechanisms to find, create, request, update, and delete these electronic documents in a way that provides for consistency across multiple pieces of equipment.
+		/// <summary>Constant value for <see cref="AssetInformationModelPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_029C7254_810A_45f2_8400_D4E69ED8DF85";
+		/// <summary>Constant value for <see cref="AssetInformationModelPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_029C7254_810A_45f2_8400_D4E69ED8DF85";
+		/// <summary>Constant value for <see cref="AssetInformationModelPackage.Name" /></summary>
+		public const string NAME = "Asset Information Model";
+		/// <summary>Constant value for <see cref="AssetInformationModelPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;The MTConnect Standard supports a simple distributed storage mechanism that allows applications and equipment to share and exchange complex information models in a similar way to a distributed data store.  The {{term(Asset Information Model)}} associates each {{block(MTConnectAssets)}} entity with a unique identifier and allows for some predefined mechanisms to find, create, request, update, and delete these electronic documents in a way that provides for consistency across multiple pieces of equipment.
 
 The protocol provides a limited mechanism of accessing {{termplural(Asset)}} using the following properties: {{property(Asset::assetId)}}, {{term(asset)}} type (element name of {{term(asset)}} root), and the piece of equipment associated with the {{term(asset)}}.  These access strategies will provide the following services and answer the following questions: What {{termplural(asset)}} are from a particular piece of equipment?  What are the {{termplural(asset)}} of a particular type? What {{term(asset)}} is stored for a given {{property(Asset::assetId)}}?
 
@@ -403,6 +404,18 @@ See `RawMaterial` element in `MTConnectAssets` schema.
 
 See `QIFDocumentWrapper` element in `MTConnectAssets` schema.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

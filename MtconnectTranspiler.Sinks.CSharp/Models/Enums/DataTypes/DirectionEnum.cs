@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
@@ -15,6 +16,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 	[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum DirectionEnum
 	{
@@ -27,6 +29,7 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 		CLOCKWISE,
 		/// <summary>﻿counter-clockwise rotation using the right-hand rule.<br /><br /><br />
 		/// </summary>
@@ -37,26 +40,29 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 		COUNTER_CLOCKWISE,
 		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
 		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 		/// </list>
 		/// </remarks>
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 		POSITIVE,
 		/// <summary>﻿
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
 		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 		/// </list>
 		/// </remarks>
 		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 		NEGATIVE,
 	}
 
@@ -66,8 +72,27 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class DirectionEnumMetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="DirectionEnumMetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1643977882360_173549_1229";
+		/// <summary>Constant value for <see cref="DirectionEnumMetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643977882360_173549_1229";
+		/// <summary>Constant value for <see cref="DirectionEnumMetaClass.Name" /></summary>
+		public const string NAME = "DirectionEnum";
+		/// <summary>Constant value for <see cref="DirectionEnumMetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.0";
+		/// <summary>Constant value for <see cref="DirectionEnumMetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "1.4";
+		/// <summary>Constant value for <see cref="DirectionEnumMetaClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+
 		/// <inheritdoc />
-		public string Name => "DirectionEnum";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => null;
@@ -76,13 +101,13 @@ namespace Mtconnect.DataTypes
 		public Type Instance => typeof(DirectionEnum);
 
 		/// <inheritdoc />
-		public string NormativeVersion => "1.0";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "1.4";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -100,23 +125,40 @@ namespace Mtconnect.DataTypes
 		/// Value for DirectionEnum.<br/>
 		/// <br/>See also <seealso cref="DirectionEnum">DirectionEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
+		/// </list>
+		/// </remarks>
+		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 		public sealed class CLOCKWISEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="CLOCKWISEValue.Name" /></summary>
+			public const string NAME = "CLOCKWISE";
+			/// <summary>Constant value for <see cref="CLOCKWISEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.0";
+			/// <summary>Constant value for <see cref="CLOCKWISEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "1.4";
+			/// <summary>Constant value for <see cref="CLOCKWISEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;clockwise rotation using the right-hand rule.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "CLOCKWISE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.0";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "1.4";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;clockwise rotation using the right-hand rule.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private COUNTER_CLOCKWISEValue _COUNTER_CLOCKWISE;
 		/// <inheritdoc cref="COUNTER_CLOCKWISEValue" path="/summary" />
@@ -126,23 +168,40 @@ namespace Mtconnect.DataTypes
 		/// Value for DirectionEnum.<br/>
 		/// <br/>See also <seealso cref="DirectionEnum">DirectionEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
+		/// </list>
+		/// </remarks>
+		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 		public sealed class COUNTER_CLOCKWISEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="COUNTER_CLOCKWISEValue.Name" /></summary>
+			public const string NAME = "COUNTER_CLOCKWISE";
+			/// <summary>Constant value for <see cref="COUNTER_CLOCKWISEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.0";
+			/// <summary>Constant value for <see cref="COUNTER_CLOCKWISEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "1.4";
+			/// <summary>Constant value for <see cref="COUNTER_CLOCKWISEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;counter-clockwise rotation using the right-hand rule.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "COUNTER_CLOCKWISE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.0";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "1.4";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;counter-clockwise rotation using the right-hand rule.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private POSITIVEValue _POSITIVE;
 		/// <inheritdoc cref="POSITIVEValue" path="/summary" />
@@ -152,22 +211,39 @@ namespace Mtconnect.DataTypes
 		/// Value for DirectionEnum.<br/>
 		/// <br/>See also <seealso cref="DirectionEnum">DirectionEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
+		/// </list>
+		/// </remarks>
+		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 		public sealed class POSITIVEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="POSITIVEValue.Name" /></summary>
+			public const string NAME = "POSITIVE";
+			/// <summary>Constant value for <see cref="POSITIVEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="POSITIVEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "1.4";
+			/// <summary>Constant value for <see cref="POSITIVEValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "POSITIVE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "1.4";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private NEGATIVEValue _NEGATIVE;
 		/// <inheritdoc cref="NEGATIVEValue" path="/summary" />
@@ -177,22 +253,39 @@ namespace Mtconnect.DataTypes
 		/// Value for DirectionEnum.<br/>
 		/// <br/>See also <seealso cref="DirectionEnum">DirectionEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
+		/// </list>
+		/// </remarks>
+		[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
+
 		public sealed class NEGATIVEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="NEGATIVEValue.Name" /></summary>
+			public const string NAME = "NEGATIVE";
+			/// <summary>Constant value for <see cref="NEGATIVEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="NEGATIVEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "1.4";
+			/// <summary>Constant value for <see cref="NEGATIVEValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "NEGATIVE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "1.4";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 	}
 }

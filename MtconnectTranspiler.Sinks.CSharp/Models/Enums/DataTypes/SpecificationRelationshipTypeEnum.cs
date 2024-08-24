@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
@@ -13,6 +14,7 @@ namespace Mtconnect.DataTypes
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 	/// </list>
 	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum SpecificationRelationshipTypeEnum
 	{
@@ -23,6 +25,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 		/// </list>
 		/// </remarks>
+
 		LIMIT,
 	}
 
@@ -32,8 +35,27 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SpecificationRelationshipTypeEnumMetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="SpecificationRelationshipTypeEnumMetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1605646000929_248969_3052";
+		/// <summary>Constant value for <see cref="SpecificationRelationshipTypeEnumMetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605646000929_248969_3052";
+		/// <summary>Constant value for <see cref="SpecificationRelationshipTypeEnumMetaClass.Name" /></summary>
+		public const string NAME = "SpecificationRelationshipTypeEnum";
+		/// <summary>Constant value for <see cref="SpecificationRelationshipTypeEnumMetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.7";
+		/// <summary>Constant value for <see cref="SpecificationRelationshipTypeEnumMetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
+		/// <summary>Constant value for <see cref="SpecificationRelationshipTypeEnumMetaClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+
 		/// <inheritdoc />
-		public string Name => "SpecificationRelationshipTypeEnum";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => null;
@@ -42,13 +64,13 @@ namespace Mtconnect.DataTypes
 		public Type Instance => typeof(SpecificationRelationshipTypeEnum);
 
 		/// <inheritdoc />
-		public string NormativeVersion => "1.7";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -63,23 +85,38 @@ namespace Mtconnect.DataTypes
 		/// Value for SpecificationRelationshipTypeEnum.<br/>
 		/// <br/>See also <seealso cref="SpecificationRelationshipTypeEnum">SpecificationRelationshipTypeEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class LIMITValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="LIMITValue.Name" /></summary>
+			public const string NAME = "LIMIT";
+			/// <summary>Constant value for <see cref="LIMITValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.7";
+			/// <summary>Constant value for <see cref="LIMITValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="LIMITValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;referenced {{block(Specification)}} provides process limits.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "LIMIT";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.7";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;referenced {{block(Specification)}} provides process limits.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 	}
 }

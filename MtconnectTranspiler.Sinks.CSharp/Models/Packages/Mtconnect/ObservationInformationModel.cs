@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class ObservationInformationModelPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_45f01b9_1579566288489_320279_24855";
-		
-		/// <inheritdoc />
-		public string Name => "Observation Information Model";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;The {{term(Observation Information Model)}} provides a representation of the data reported by a piece of equipment used for a manufacturing process, or used for any other purpose.  Additional descriptive information associated with the reported data is defined by the {{block(MTConnectDevices)}} entity, which is described in {{package(Device Information Model)}}.
+		/// <summary>Constant value for <see cref="ObservationInformationModelPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_45f01b9_1579566288489_320279_24855";
+		/// <summary>Constant value for <see cref="ObservationInformationModelPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579566288489_320279_24855";
+		/// <summary>Constant value for <see cref="ObservationInformationModelPackage.Name" /></summary>
+		public const string NAME = "Observation Information Model";
+		/// <summary>Constant value for <see cref="ObservationInformationModelPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;The {{term(Observation Information Model)}} provides a representation of the data reported by a piece of equipment used for a manufacturing process, or used for any other purpose.  Additional descriptive information associated with the reported data is defined by the {{block(MTConnectDevices)}} entity, which is described in {{package(Device Information Model)}}.
 
 Information defined in the {{term(Observation Information Model)}} allows a software application to (1) determine the {{termplural(Observation)}} for {{termplural(DataItem)}} returned from a piece of equipment and (2) interpret the data associated with those {{termplural(Observation)}} with the same meaning, value, and context that it had at its original source.  To do this, the software application issues one of two HTTP requests to an {{term(agent)}} associated with a piece of equipment.  They are:
 
@@ -220,6 +221,18 @@ If the {{term(condition state)}} is unavailable then the element name is represe
 ~~~~
 {: caption=""Table Example""}&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

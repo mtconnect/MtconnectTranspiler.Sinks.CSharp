@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.InterfaceInteractionModel
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class InterfaceTypesPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1622717338882_321462_855";
-		
-		/// <inheritdoc />
-		public string Name => "Interface Types";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;The abstract {{block(Interface)}} is realized by the following types listed in this section. 
+		/// <summary>Constant value for <see cref="InterfaceTypesPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1622717338882_321462_855";
+		/// <summary>Constant value for <see cref="InterfaceTypesPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_68e0225_1622717338882_321462_855";
+		/// <summary>Constant value for <see cref="InterfaceTypesPackage.Name" /></summary>
+		public const string NAME = "Interface Types";
+		/// <summary>Constant value for <see cref="InterfaceTypesPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;The abstract {{block(Interface)}} is realized by the following types listed in this section. 
 
 In order to implement the {{term(interaction model)}} for {{termplural(interface)}}, each piece of equipment associated with an {{term(interface)}} **MUST** provide the corresponding {{block(Interface)}} type. A piece of equipment **MAY** support any number of unique {{termplural(interface)}}.&#10;
 &#10;&#10;&#10;Interfaces for Device and Observation Information Models&#10;&#10;&#10;&#10;The {{term(interaction model)}} for implementing {{termplural(interface)}} is defined in the MTConnect Standard as an extension to the {{term(Device Information Model)}} and {{term(Observation Information Model)}}.
@@ -31,6 +32,18 @@ The {{figure(Interfaces in Entity Hierarchy)}} illustrates where an {{block(Inte
 
 ![Interfaces in Entity Hierarchy](figures/Interfaces%20in%20Entity%20Hierarchy.png ""Interfaces in Entity Hierarchy""){: width=""0.8""}&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

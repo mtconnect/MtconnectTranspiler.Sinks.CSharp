@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
@@ -13,6 +14,7 @@ namespace Mtconnect.DataTypes
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 	/// </list>
 	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum FormEnum
 	{
@@ -23,6 +25,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		BAR,
 		/// <summary>﻿
 		/// </summary>
@@ -31,6 +34,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		SHEET,
 		/// <summary>﻿
 		/// </summary>
@@ -39,6 +43,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		BLOCK,
 		/// <summary>﻿
 		/// </summary>
@@ -47,6 +52,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		CASTING,
 		/// <summary>﻿
 		/// </summary>
@@ -55,6 +61,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		POWDER,
 		/// <summary>﻿
 		/// </summary>
@@ -63,6 +70,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		LIQUID,
 		/// <summary>﻿
 		/// </summary>
@@ -71,6 +79,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		GEL,
 		/// <summary>﻿
 		/// </summary>
@@ -79,6 +88,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		FILAMENT,
 		/// <summary>﻿
 		/// </summary>
@@ -87,6 +97,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
 		/// </list>
 		/// </remarks>
+
 		GAS,
 	}
 
@@ -96,8 +107,27 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class FormEnumMetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="FormEnumMetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1618830616283_5956_278";
+		/// <summary>Constant value for <see cref="FormEnumMetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1618830616283_5956_278";
+		/// <summary>Constant value for <see cref="FormEnumMetaClass.Name" /></summary>
+		public const string NAME = "FormEnum";
+		/// <summary>Constant value for <see cref="FormEnumMetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.8";
+		/// <summary>Constant value for <see cref="FormEnumMetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
+		/// <summary>Constant value for <see cref="FormEnumMetaClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+
 		/// <inheritdoc />
-		public string Name => "FormEnum";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => null;
@@ -106,13 +136,13 @@ namespace Mtconnect.DataTypes
 		public Type Instance => typeof(FormEnum);
 
 		/// <inheritdoc />
-		public string NormativeVersion => "1.8";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -135,22 +165,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class BARValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="BARValue.Name" /></summary>
+			public const string NAME = "BAR";
+			/// <summary>Constant value for <see cref="BARValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="BARValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="BARValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "BAR";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private SHEETValue _SHEET;
 		/// <inheritdoc cref="SHEETValue" path="/summary" />
@@ -160,22 +205,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class SHEETValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="SHEETValue.Name" /></summary>
+			public const string NAME = "SHEET";
+			/// <summary>Constant value for <see cref="SHEETValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="SHEETValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="SHEETValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "SHEET";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private BLOCKValue _BLOCK;
 		/// <inheritdoc cref="BLOCKValue" path="/summary" />
@@ -185,22 +245,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class BLOCKValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="BLOCKValue.Name" /></summary>
+			public const string NAME = "BLOCK";
+			/// <summary>Constant value for <see cref="BLOCKValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="BLOCKValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="BLOCKValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "BLOCK";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private CASTINGValue _CASTING;
 		/// <inheritdoc cref="CASTINGValue" path="/summary" />
@@ -210,22 +285,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class CASTINGValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="CASTINGValue.Name" /></summary>
+			public const string NAME = "CASTING";
+			/// <summary>Constant value for <see cref="CASTINGValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="CASTINGValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="CASTINGValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "CASTING";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private POWDERValue _POWDER;
 		/// <inheritdoc cref="POWDERValue" path="/summary" />
@@ -235,22 +325,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class POWDERValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="POWDERValue.Name" /></summary>
+			public const string NAME = "POWDER";
+			/// <summary>Constant value for <see cref="POWDERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="POWDERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="POWDERValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "POWDER";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private LIQUIDValue _LIQUID;
 		/// <inheritdoc cref="LIQUIDValue" path="/summary" />
@@ -260,22 +365,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class LIQUIDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="LIQUIDValue.Name" /></summary>
+			public const string NAME = "LIQUID";
+			/// <summary>Constant value for <see cref="LIQUIDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="LIQUIDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="LIQUIDValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "LIQUID";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private GELValue _GEL;
 		/// <inheritdoc cref="GELValue" path="/summary" />
@@ -285,22 +405,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class GELValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="GELValue.Name" /></summary>
+			public const string NAME = "GEL";
+			/// <summary>Constant value for <see cref="GELValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="GELValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="GELValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "GEL";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private FILAMENTValue _FILAMENT;
 		/// <inheritdoc cref="FILAMENTValue" path="/summary" />
@@ -310,22 +445,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class FILAMENTValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="FILAMENTValue.Name" /></summary>
+			public const string NAME = "FILAMENT";
+			/// <summary>Constant value for <see cref="FILAMENTValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="FILAMENTValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FILAMENTValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "FILAMENT";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 		private GASValue _GAS;
 		/// <inheritdoc cref="GASValue" path="/summary" />
@@ -335,22 +485,37 @@ namespace Mtconnect.DataTypes
 		/// Value for FormEnum.<br/>
 		/// <br/>See also <seealso cref="FormEnum">FormEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class GASValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="GASValue.Name" /></summary>
+			public const string NAME = "GAS";
+			/// <summary>Constant value for <see cref="GASValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.8";
+			/// <summary>Constant value for <see cref="GASValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="GASValue.Summary" /></summary>
+			public const string SUMMARY = @"";
+
 			/// <inheritdoc />
-			public string Name => "GAS";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.8";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"";
+			public string Summary => SUMMARY;
 		}
 	}
 }

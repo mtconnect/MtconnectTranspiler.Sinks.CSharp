@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.DeviceInformationModel
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class DataItemsPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_0FAC31E7_7957_49d2_AD4C_BCFBEF9878FD";
-		
-		/// <inheritdoc />
-		public string Name => "DataItems";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(DataItem)}} entity. {{figure(DataItems)}} shows the {{block(DataItem)}} model. 
+		/// <summary>Constant value for <see cref="DataItemsPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_0FAC31E7_7957_49d2_AD4C_BCFBEF9878FD";
+		/// <summary>Constant value for <see cref="DataItemsPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_0FAC31E7_7957_49d2_AD4C_BCFBEF9878FD";
+		/// <summary>Constant value for <see cref="DataItemsPackage.Name" /></summary>
+		public const string NAME = "DataItems";
+		/// <summary>Constant value for <see cref="DataItemsPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the {{block(DataItem)}} entity. {{figure(DataItems)}} shows the {{block(DataItem)}} model. 
 
 ![DataItems](figures/DataItems.png ""DataItems""){: width=""0.8""}
 
@@ -31,6 +32,18 @@ Each {{term(DataItem)}} **SHOULD** be modeled for the {{block(MTConnectDevices)}
 
 {{block(DataItem)}} describes specific types of {{termplural(DataItem)}} that represent a numeric value, a functioning state, or a health status reported by a piece of equipment. {{block(DataItem)}} provides a detailed description for each {{term(DataItem)}} that is reported; it defines the type of data being reported and an array of optional attributes that further describe that data. The different types of {{block(DataItem)}} elements are defined in {{package(DataItem Types)}}.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

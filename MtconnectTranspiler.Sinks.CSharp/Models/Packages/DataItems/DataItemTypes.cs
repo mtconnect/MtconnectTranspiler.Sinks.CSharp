@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class DataItemTypesPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_3CC32EA3_C0E8_4cbe_8239_C706EC74F116";
-		
-		/// <inheritdoc />
-		public string Name => "DataItem Types";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the types of a {{block(DataItem)}}.
+		/// <summary>Constant value for <see cref="DataItemTypesPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_3CC32EA3_C0E8_4cbe_8239_C706EC74F116";
+		/// <summary>Constant value for <see cref="DataItemTypesPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_3CC32EA3_C0E8_4cbe_8239_C706EC74F116";
+		/// <summary>Constant value for <see cref="DataItemTypesPackage.Name" /></summary>
+		public const string NAME = "DataItem Types";
+		/// <summary>Constant value for <see cref="DataItemTypesPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the types of a {{block(DataItem)}}.
 
 In the MTConnect Standard, {{block(DataItem)}} are defined and organized based upon the {{property(DataItem::category)}} and {{property(DataItem::type)}}.  The {{property(DataItem::category)}} provides a high level grouping for {{block(DataItem)}}s based on the kind of information that is reported by the data item.
 
@@ -37,6 +38,18 @@ The {{property(DataItem::type)}} specifies the specific kind of data that is rep
 Many types of data items provide two forms of data: a value (reported as either a `SAMPLE` or `EVENT`) and a health status (reported as a `CONDITION`).  These {{block(DataItem)}} types **MAY** be defined in more than one {{property(DataItem::category)}} based on the data that they report.
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

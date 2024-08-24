@@ -3,6 +3,9 @@ using System;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
 {
+    /// <summary>
+    /// Represents a transpiled enumeration from SysML
+    /// </summary>
     public interface IEnum
     {
         /// <summary>
@@ -45,6 +48,9 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
         /// </summary>
         string Summary { get; }
 
+        /// <summary>
+        /// Collection of enumeration values (aka fields)
+        /// </summary>
         IEnumInstance[] Values { get; }
     }
 }

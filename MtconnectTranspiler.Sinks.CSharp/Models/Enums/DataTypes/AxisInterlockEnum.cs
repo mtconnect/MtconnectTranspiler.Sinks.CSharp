@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
@@ -13,6 +14,7 @@ namespace Mtconnect.DataTypes
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
 	/// </list>
 	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AxisInterlockEnum
 	{
@@ -23,6 +25,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
 		/// </list>
 		/// </remarks>
+
 		ACTIVE,
 		/// <summary>﻿axis lockout function has not been activated, the axis may be powered, and the axis is capable of being controlled by another component.<br /><br /><br />
 		/// </summary>
@@ -31,6 +34,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
 		/// </list>
 		/// </remarks>
+
 		INACTIVE,
 	}
 
@@ -40,8 +44,27 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AxisInterlockEnumMetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="AxisInterlockEnumMetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1632486691907_586773_73";
+		/// <summary>Constant value for <see cref="AxisInterlockEnumMetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1632486691907_586773_73";
+		/// <summary>Constant value for <see cref="AxisInterlockEnumMetaClass.Name" /></summary>
+		public const string NAME = "AxisInterlockEnum";
+		/// <summary>Constant value for <see cref="AxisInterlockEnumMetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.3";
+		/// <summary>Constant value for <see cref="AxisInterlockEnumMetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
+		/// <summary>Constant value for <see cref="AxisInterlockEnumMetaClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+
 		/// <inheritdoc />
-		public string Name => "AxisInterlockEnum";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => null;
@@ -50,13 +73,13 @@ namespace Mtconnect.DataTypes
 		public Type Instance => typeof(AxisInterlockEnum);
 
 		/// <inheritdoc />
-		public string NormativeVersion => "1.3";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -72,23 +95,38 @@ namespace Mtconnect.DataTypes
 		/// Value for AxisInterlockEnum.<br/>
 		/// <br/>See also <seealso cref="AxisInterlockEnum">AxisInterlockEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class ACTIVEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="ACTIVEValue.Name" /></summary>
+			public const string NAME = "ACTIVE";
+			/// <summary>Constant value for <see cref="ACTIVEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.3";
+			/// <summary>Constant value for <see cref="ACTIVEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="ACTIVEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;axis lockout function is activated, power has been removed from the axis, and the axis is allowed to move freely.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "ACTIVE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.3";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;axis lockout function is activated, power has been removed from the axis, and the axis is allowed to move freely.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private INACTIVEValue _INACTIVE;
 		/// <inheritdoc cref="INACTIVEValue" path="/summary" />
@@ -98,23 +136,38 @@ namespace Mtconnect.DataTypes
 		/// Value for AxisInterlockEnum.<br/>
 		/// <br/>See also <seealso cref="AxisInterlockEnum">AxisInterlockEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class INACTIVEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="INACTIVEValue.Name" /></summary>
+			public const string NAME = "INACTIVE";
+			/// <summary>Constant value for <see cref="INACTIVEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.3";
+			/// <summary>Constant value for <see cref="INACTIVEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="INACTIVEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;axis lockout function has not been activated, the axis may be powered, and the axis is capable of being controlled by another component.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "INACTIVE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.3";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;axis lockout function has not been activated, the axis may be powered, and the axis is capable of being controlled by another component.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 	}
 }

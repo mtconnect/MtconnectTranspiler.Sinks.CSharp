@@ -1,6 +1,7 @@
 #pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -11,33 +12,59 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 	/// <summary>﻿abstract <see cref="DataItem">DataItem</see> that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range.<br /><br /><br />Description<br /><br /><see cref="Condition">Condition</see> is reported differently than <see cref="Sample">Sample</see> or <see cref="Event">Event</see>.  <see cref="Condition">Condition</see> <b>MUST</b> be reported as <see cref="Normal">Normal</see>, <see cref="Warning">Warning</see>, or <see cref="Fault">Fault</see>.<br /><br />All <see cref="Sample">Sample</see>s <b>MAY</b> have associated <see cref="Condition">Condition</see> states.  <see cref="Condition">Condition</see> states indicate whether the value for the data is within an expected range and <b>MUST</b> be reported as <see cref="Normal">Normal</see>, or the value is unexpected or out of tolerance for the data and a <see cref="Warning">Warning</see> or <see cref="Fault">Fault</see> <b>MUST</b> be provided.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_3F5927FF_5B8D_4307_8D27_9654F724A657">model.mtconnect.org</seealso> for more information.
 	/// </summary>
+	/// <remarks>
+	/// <list type="bullet">
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+	/// </list>
+	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ConditionClass : IClass
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAID_3F5927FF_5B8D_4307_8D27_9654F724A657";
-		
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;abstract {{block(DataItem)}} that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range.&#10;
+		/// <summary>Constant value for <see cref="ConditionClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAID_3F5927FF_5B8D_4307_8D27_9654F724A657";
+		/// <summary>Constant value for <see cref="ConditionClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure__EAID_3F5927FF_5B8D_4307_8D27_9654F724A657";
+		/// <summary>Constant value for <see cref="ConditionClass.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;abstract {{block(DataItem)}} that is about an entity's status regarding its ability to operate or it provides an indication whether the data reported for the entity is within an expected range.&#10;
 &#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(Condition)}} is reported differently than {{block(Sample)}} or {{block(Event)}}.  {{block(Condition)}} **MUST** be reported as {{block(Normal)}}, {{block(Warning)}}, or {{block(Fault)}}.
 
 All {{block(Sample)}}s **MAY** have associated {{block(Condition)}} states.  {{block(Condition)}} states indicate whether the value for the data is within an expected range and **MUST** be reported as {{block(Normal)}}, or the value is unexpected or out of tolerance for the data and a {{block(Warning)}} or {{block(Fault)}} **MUST** be provided.&#10;
 ";
+		/// <summary>Constant value for <see cref="ConditionClass.Name" /></summary>
+		public const string NAME = "Condition";
+		/// <summary>Constant value for <see cref="ConditionClass.AccessModifier" /></summary>
+		public const string ACCESS_MODIFIER = "public";
+		/// <summary>Constant value for <see cref="ConditionClass.Modifier" /></summary>
+		public const string MODIFIER = "abstract";
+		/// <summary>Constant value for <see cref="ConditionClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.1";
+		/// <summary>Constant value for <see cref="ConditionClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
 
 		/// <inheritdoc />
-		public string Name => "Condition";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
-		public string AccessModifier => "public";
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public string AccessModifier => ACCESS_MODIFIER;
 				
 		/// <inheritdoc />
-		public string Modifier => "abstract";
+		public string Modifier => MODIFIER;
 				
 		/// <inheritdoc />
-		public string NormativeVersion => "1.1";
+		public string NormativeVersion => NORMATIVE_VERSION;
 				
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
 		/// <remarks>
@@ -69,49 +96,64 @@ All {{block(Sample)}}s **MAY** have associated {{block(Condition)}} states.  {{b
 			/// </summary>
 			public new sealed class CategoryProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="CategoryProperty.Name" /></summary>
+				public const string NAME = "category";
+				/// <summary>Constant value for <see cref="CategoryProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="CategoryProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="CategoryProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="CategoryProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="CategoryProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="CategoryProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "";
+				/// <summary>Constant value for <see cref="CategoryProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="CategoryProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="CategoryProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579277872728_249968_3735</item>
-				/// <item>Type: CategoryEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: CategoryEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.CategoryEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "category";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
@@ -123,49 +165,64 @@ All {{block(Sample)}}s **MAY** have associated {{block(Condition)}} states.  {{b
 			/// </summary>
 			public new sealed class TypeProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="TypeProperty.Name" /></summary>
+				public const string NAME = "type";
+				/// <summary>Constant value for <see cref="TypeProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="TypeProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="TypeProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="TypeProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_45f01b9_1580398386435_855466_12827</item>
-				/// <item>Type: ConditionEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: ConditionEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.ConditionEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "type";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 		};
 

@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,18 +14,30 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MTConnectErrorsResponseDocumentPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_91b028d_1579560529522_593444_6515";
-		
-		/// <inheritdoc />
-		public string Name => "MTConnectErrors Response Document";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(MTConnectErrors)}} entity.&#10;
+		/// <summary>Constant value for <see cref="MTConnectErrorsResponseDocumentPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_91b028d_1579560529522_593444_6515";
+		/// <summary>Constant value for <see cref="MTConnectErrorsResponseDocumentPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_91b028d_1579560529522_593444_6515";
+		/// <summary>Constant value for <see cref="MTConnectErrorsResponseDocumentPackage.Name" /></summary>
+		public const string NAME = "MTConnectErrors Response Document";
+		/// <summary>Constant value for <see cref="MTConnectErrorsResponseDocumentPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the {{block(MTConnectErrors)}} entity.&#10;
 &#10;&#10;&#10;Error Information Model&#10;&#10;&#10;&#10;The {{term(Error Information Model)}} establishes the rules and terminology that describes the {{term(response document)}} returned by an {{term(agent)}} when it encounters an error while interpreting a {{term(request)}} for information from a client software application or when an {{term(agent)}} experiences an error while publishing the {{term(response)}} to a {{term(request)}} for information.      
 
 An {{term(agent)}} provides the information regarding errors encountered when processing a {{term(request)}} for information by publishing an {{term(MTConnectErrors Response Document)}} to the client software application that made the {{term(request)}} for information.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

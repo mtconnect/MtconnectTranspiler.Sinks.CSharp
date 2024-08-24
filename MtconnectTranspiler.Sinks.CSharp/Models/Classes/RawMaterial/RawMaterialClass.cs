@@ -1,6 +1,7 @@
 #pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -11,30 +12,56 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 	/// <summary>﻿<see cref="Asset">Asset</see> that represents <i>raw material</i>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1618829902716_470188_214">model.mtconnect.org</seealso> for more information.
 	/// </summary>
+	/// <remarks>
+	/// <list type="bullet">
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.8">v1.8</see></item>
+	/// </list>
+	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class RawMaterialClass : IClass
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1618829902716_470188_214";
-		
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;{{block(Asset)}} that represents {{term(raw material)}}.&#10;
+		/// <summary>Constant value for <see cref="RawMaterialClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1618829902716_470188_214";
+		/// <summary>Constant value for <see cref="RawMaterialClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_68e0225_1618829902716_470188_214";
+		/// <summary>Constant value for <see cref="RawMaterialClass.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;{{block(Asset)}} that represents {{term(raw material)}}.&#10;
 ";
+		/// <summary>Constant value for <see cref="RawMaterialClass.Name" /></summary>
+		public const string NAME = "RawMaterial";
+		/// <summary>Constant value for <see cref="RawMaterialClass.AccessModifier" /></summary>
+		public const string ACCESS_MODIFIER = "public";
+		/// <summary>Constant value for <see cref="RawMaterialClass.Modifier" /></summary>
+		public const string MODIFIER = "";
+		/// <summary>Constant value for <see cref="RawMaterialClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.8";
+		/// <summary>Constant value for <see cref="RawMaterialClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
 
 		/// <inheritdoc />
-		public string Name => "RawMaterial";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
-		public string AccessModifier => "public";
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public string AccessModifier => ACCESS_MODIFIER;
 				
 		/// <inheritdoc />
-		public string Modifier => "";
+		public string Modifier => MODIFIER;
 				
 		/// <inheritdoc />
-		public string NormativeVersion => "1.8";
+		public string NormativeVersion => NORMATIVE_VERSION;
 				
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
 		/// <remarks>
@@ -80,52 +107,67 @@ namespace Mtconnect.AssetInformationModel.RawMaterial
 			/// </summary>
 			public new sealed class NameProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="NameProperty.Name" /></summary>
+				public const string NAME = "name";
+				/// <summary>Constant value for <see cref="NameProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;name of the {{term(raw material)}}.
+
+Examples: `Container1` and `AcrylicContainer`.&#10;
+";
+				/// <summary>Constant value for <see cref="NameProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="NameProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="NameProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="NameProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272360416_763325_681</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "name";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;name of the {{term(raw material)}}.
-
-Examples: `Container1` and `AcrylicContainer`.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ContainerTypeProperty" path="/summary" /><br/>
@@ -137,52 +179,67 @@ Examples: `Container1` and `AcrylicContainer`.&#10;
 			/// </summary>
 			public new sealed class ContainerTypeProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.Name" /></summary>
+				public const string NAME = "containerType";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;type of container holding the {{term(raw material)}}. 
+
+Examples: `Pallet`, `Canister`, `Cartridge`, `Tank`, `Bin`, `Roll`, and `Spool`.&#10;
+";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="ContainerTypeProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272360416_763325_681</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "containerType";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;type of container holding the {{term(raw material)}}. 
-
-Examples: `Pallet`, `Canister`, `Cartridge`, `Tank`, `Bin`, `Roll`, and `Spool`.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ProcessKindProperty" path="/summary" /><br/>
@@ -194,52 +251,67 @@ Examples: `Pallet`, `Canister`, `Cartridge`, `Tank`, `Bin`, `Roll`, and `Spool`.
 			/// </summary>
 			public new sealed class ProcessKindProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="ProcessKindProperty.Name" /></summary>
+				public const string NAME = "processKind";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;ISO process type supported by this {{term(raw material)}}. 
+
+Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, `MATERIAL_JETTING`, `SHEET_LAMINATION`, `POWDER_BED_FUSION` and `DIRECTED_ENERGY_DEPOSITION`.&#10;
+";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="ProcessKindProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272360416_763325_681</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "processKind";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;ISO process type supported by this {{term(raw material)}}. 
-
-Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, `MATERIAL_JETTING`, `SHEET_LAMINATION`, `POWDER_BED_FUSION` and `DIRECTED_ENERGY_DEPOSITION`.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SerialNumberProperty" path="/summary" /><br/>
@@ -251,50 +323,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class SerialNumberProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Name" /></summary>
+				public const string NAME = "serialNumber";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;serial number of the {{term(raw material)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272360416_763325_681</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "serialNumber";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;serial number of the {{term(raw material)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMaterialProperty" path="/summary" /><br/>
@@ -306,50 +393,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class HasMaterialProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasMaterialProperty.Name" /></summary>
+				public const string NAME = "HasMaterial";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;{{block(Material)}} has existing usable volume.&#10;
+";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="HasMaterialProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579278876899_683310_3821</item>
-				/// <item>Type: Boolean</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Boolean </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
-				public string Name => "HasMaterial";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;{{block(Material)}} has existing usable volume.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMaterialPartProperty" path="/summary" /><br/>
@@ -361,49 +463,64 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class HasMaterialPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.Name" /></summary>
+				public const string NAME = "hasMaterial";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "Material";
+				/// <summary>Constant value for <see cref="HasMaterialPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1618831557881_852871_420</item>
-				/// <item>Type: MaterialClass</item>
-				/// <item>Namespace: Mtconnect.AssetInformationModel.RawMaterial</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: MaterialClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.RawMaterial.MaterialClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasMaterial";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "Material";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="FormProperty" path="/summary" /><br/>
@@ -415,50 +532,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class FormProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="FormProperty.Name" /></summary>
+				public const string NAME = "Form";
+				/// <summary>Constant value for <see cref="FormProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;form of the {{term(raw material)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="FormProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="FormProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="FormProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="FormProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="FormProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="FormProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="FormProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="FormProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1618830616283_5956_278</item>
-				/// <item>Type: FormEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: FormEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.FormEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "Form";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;form of the {{term(raw material)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ManufacturingDateProperty" path="/summary" /><br/>
@@ -470,50 +602,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class ManufacturingDateProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.Name" /></summary>
+				public const string NAME = "ManufacturingDate";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;date the {{term(raw material)}} was created.&#10;
+";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="ManufacturingDateProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272233011_597138_670</item>
-				/// <item>Type: DateTime</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: DateTime </remarks>
 				/// </summary>
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "ManufacturingDate";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;date the {{term(raw material)}} was created.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="FirstUseDateProperty" path="/summary" /><br/>
@@ -525,50 +672,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class FirstUseDateProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.Name" /></summary>
+				public const string NAME = "FirstUseDate";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;date {{term(raw material)}} was first used.&#10;
+";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="FirstUseDateProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272233011_597138_670</item>
-				/// <item>Type: DateTime</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: DateTime </remarks>
 				/// </summary>
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "FirstUseDate";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;date {{term(raw material)}} was first used.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LastUseDateProperty" path="/summary" /><br/>
@@ -580,50 +742,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class LastUseDateProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="LastUseDateProperty.Name" /></summary>
+				public const string NAME = "LastUseDate";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;date {{term(raw material)}} was last used.&#10;
+";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="LastUseDateProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272233011_597138_670</item>
-				/// <item>Type: DateTime</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: DateTime </remarks>
 				/// </summary>
 				public System.Type Type => typeof(DateTime);
 				
 				/// <inheritdoc />
-				public string Name => "LastUseDate";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;date {{term(raw material)}} was last used.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="InitialVolumeProperty" path="/summary" /><br/>
@@ -635,50 +812,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class InitialVolumeProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.Name" /></summary>
+				public const string NAME = "InitialVolume";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;amount of material initially placed in {{term(raw material)}} when manufactured.&#10;
+";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="InitialVolumeProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1636369375198_732959_178</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Single </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "InitialVolume";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;amount of material initially placed in {{term(raw material)}} when manufactured.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="InitialDimensionProperty" path="/summary" /><br/>
@@ -690,50 +882,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class InitialDimensionProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.Name" /></summary>
+				public const string NAME = "InitialDimension";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;dimension of material initially placed in {{term(raw material)}} when manufactured.&#10;
+";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.Extension" /></summary>
+				public const string EXTENSION = "";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="InitialDimensionProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1620212518801_972048_162</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Single </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "InitialDimension";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;dimension of material initially placed in {{term(raw material)}} when manufactured.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="InitialQuantityProperty" path="/summary" /><br/>
@@ -745,50 +952,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class InitialQuantityProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.Name" /></summary>
+				public const string NAME = "InitialQuantity";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;quantity of material initially placed in {{term(raw material)}} when manufactured.&#10;
+";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="InitialQuantityProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272271512_537408_674</item>
-				/// <item>Type: Int32</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Int32 </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "InitialQuantity";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;quantity of material initially placed in {{term(raw material)}} when manufactured.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CurrentVolumeProperty" path="/summary" /><br/>
@@ -800,50 +1022,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class CurrentVolumeProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.Name" /></summary>
+				public const string NAME = "CurrentVolume";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;amount of material currently in {{term(raw material)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="CurrentVolumeProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1636369375198_732959_178</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Single </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "CurrentVolume";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;amount of material currently in {{term(raw material)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CurrentDimensionProperty" path="/summary" /><br/>
@@ -855,50 +1092,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class CurrentDimensionProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.Name" /></summary>
+				public const string NAME = "CurrentDimension";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;dimension of material currently in {{term(raw material)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.Extension" /></summary>
+				public const string EXTENSION = "";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="CurrentDimensionProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1620212518801_972048_162</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Single </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "CurrentDimension";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;dimension of material currently in {{term(raw material)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CurrentQuantityProperty" path="/summary" /><br/>
@@ -910,50 +1162,65 @@ Examples include: `VAT_POLYMERIZATION`, `BINDER_JETTING`, `MATERIAL_EXTRUSION`, 
 			/// </summary>
 			public new sealed class CurrentQuantityProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.Name" /></summary>
+				public const string NAME = "CurrentQuantity";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;quantity of material currently in {{term(raw material)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.8";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="CurrentQuantityProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272271512_537408_674</item>
-				/// <item>Type: Int32</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Int32 </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Int32);
 				
 				/// <inheritdoc />
-				public string Name => "CurrentQuantity";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;quantity of material currently in {{term(raw material)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.8";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 		};
 

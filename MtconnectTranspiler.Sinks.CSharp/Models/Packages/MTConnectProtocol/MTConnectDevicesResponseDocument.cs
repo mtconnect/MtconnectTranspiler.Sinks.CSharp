@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,15 +14,27 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MTConnectDevicesResponseDocumentPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_1812F5DC_90C0_47d9_B731_2E752A6D72A0";
-		
-		/// <inheritdoc />
-		public string Name => "MTConnectDevices Response Document";
+		/// <summary>Constant value for <see cref="MTConnectDevicesResponseDocumentPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_1812F5DC_90C0_47d9_B731_2E752A6D72A0";
+		/// <summary>Constant value for <see cref="MTConnectDevicesResponseDocumentPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_1812F5DC_90C0_47d9_B731_2E752A6D72A0";
+		/// <summary>Constant value for <see cref="MTConnectDevicesResponseDocumentPackage.Name" /></summary>
+		public const string NAME = "MTConnectDevices Response Document";
+		/// <summary>Constant value for <see cref="MTConnectDevicesResponseDocumentPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the {{block(MTConnectDevices)}} entity.&#10;
+";
 
 		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(MTConnectDevices)}} entity.&#10;
-";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

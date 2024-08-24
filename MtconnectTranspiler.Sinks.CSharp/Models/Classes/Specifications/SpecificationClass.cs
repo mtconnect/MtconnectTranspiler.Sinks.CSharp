@@ -1,6 +1,7 @@
 #pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -10,30 +11,56 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 	/// <summary>﻿design characteristics for a piece of equipment.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580315898400_607214_47155">model.mtconnect.org</seealso> for more information.
 	/// </summary>
+	/// <remarks>
+	/// <list type="bullet">
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.6">v1.6</see></item>
+	/// </list>
+	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class SpecificationClass : IClass
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_45f01b9_1580315898400_607214_47155";
-		
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;design characteristics for a piece of equipment.&#10;
+		/// <summary>Constant value for <see cref="SpecificationClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_45f01b9_1580315898400_607214_47155";
+		/// <summary>Constant value for <see cref="SpecificationClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580315898400_607214_47155";
+		/// <summary>Constant value for <see cref="SpecificationClass.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;design characteristics for a piece of equipment.&#10;
 ";
+		/// <summary>Constant value for <see cref="SpecificationClass.Name" /></summary>
+		public const string NAME = "Specification";
+		/// <summary>Constant value for <see cref="SpecificationClass.AccessModifier" /></summary>
+		public const string ACCESS_MODIFIER = "public";
+		/// <summary>Constant value for <see cref="SpecificationClass.Modifier" /></summary>
+		public const string MODIFIER = "";
+		/// <summary>Constant value for <see cref="SpecificationClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.6";
+		/// <summary>Constant value for <see cref="SpecificationClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
 
 		/// <inheritdoc />
-		public string Name => "Specification";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
-		public string AccessModifier => "public";
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public string AccessModifier => ACCESS_MODIFIER;
 				
 		/// <inheritdoc />
-		public string Modifier => "";
+		public string Modifier => MODIFIER;
 				
 		/// <inheritdoc />
-		public string NormativeVersion => "1.6";
+		public string NormativeVersion => NORMATIVE_VERSION;
 				
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
 		public Type Generalization => null;
@@ -75,50 +102,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class TypeProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="TypeProperty.Name" /></summary>
+				public const string NAME = "type";
+				/// <summary>Constant value for <see cref="TypeProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;same as {{property(DataItem::type)}}. See {{package(DataItem Types)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="TypeProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="TypeProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="TypeProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.6";
+				/// <summary>Constant value for <see cref="TypeProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_45f01b9_1579563576485_587701_22033</item>
-				/// <item>Type: DataItemTypeEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: DataItemTypeEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemTypeEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "type";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::type)}}. See {{package(DataItem Types)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.6";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
@@ -130,50 +172,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class SubTypeProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="SubTypeProperty.Name" /></summary>
+				public const string NAME = "subType";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;same as {{property(DataItem::subType)}}. See {{sect(DataItem)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="SubTypeProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="SubTypeProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.6";
+				/// <summary>Constant value for <see cref="SubTypeProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_45f01b9_1579563592155_977172_22064</item>
-				/// <item>Type: DataItemSubTypeEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: DataItemSubTypeEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.DataItemSubTypeEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "subType";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::subType)}}. See {{sect(DataItem)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.6";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DataItemIdRefProperty" path="/summary" /><br/>
@@ -185,50 +242,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class DataItemIdRefProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.Name" /></summary>
+				public const string NAME = "dataItemIdRef";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;reference to the {{property(DataItem::id)}} associated with this entity.&#10;
+";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.6";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272245466_691733_672</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "dataItemIdRef";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;reference to the {{property(DataItem::id)}} associated with this entity.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.6";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -240,50 +312,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class UnitsProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="UnitsProperty.Name" /></summary>
+				public const string NAME = "units";
+				/// <summary>Constant value for <see cref="UnitsProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;same as {{property(DataItem::units)}}. See {{sect(DataItem)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="UnitsProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="UnitsProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.6";
+				/// <summary>Constant value for <see cref="UnitsProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A</item>
-				/// <item>Type: UnitEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: UnitEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "units";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;same as {{property(DataItem::units)}}. See {{sect(DataItem)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.6";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CompositionIdRefProperty" path="/summary" /><br/>
@@ -295,50 +382,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class CompositionIdRefProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.Name" /></summary>
+				public const string NAME = "compositionIdRef";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;reference to the {{property(Composition::id)}} associated with this entity.&#10;
+";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.6";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272245466_691733_672</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "compositionIdRef";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;reference to the {{property(Composition::id)}} associated with this entity.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.6";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -350,50 +452,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class NameProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="NameProperty.Name" /></summary>
+				public const string NAME = "name";
+				/// <summary>Constant value for <see cref="NameProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;{{property(Specification::name)}} provides additional meaning and differentiates between {{block(Specification)}} entities.&#10;
+";
+				/// <summary>Constant value for <see cref="NameProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="NameProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="NameProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.6";
+				/// <summary>Constant value for <see cref="NameProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272360416_763325_681</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "name";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;{{property(Specification::name)}} provides additional meaning and differentiates between {{block(Specification)}} entities.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.6";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CoordinateSystemIdRefProperty" path="/summary" /><br/>
@@ -405,50 +522,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class CoordinateSystemIdRefProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Name" /></summary>
+				public const string NAME = "coordinateSystemIdRef";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;references the {{block(CoordinateSystem)}} for geometric {{block(Specification)}} elements.&#10;
+";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.6";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272245466_691733_672</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "coordinateSystemIdRef";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;references the {{block(CoordinateSystem)}} for geometric {{block(Specification)}} elements.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.6";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
@@ -460,50 +592,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class IdProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="IdProperty.Name" /></summary>
+				public const string NAME = "id";
+				/// <summary>Constant value for <see cref="IdProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;unique identifier for this {{block(Specification)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="IdProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="IdProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="IdProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.7";
+				/// <summary>Constant value for <see cref="IdProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272245466_691733_672</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "id";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;unique identifier for this {{block(Specification)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.7";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="OriginatorProperty" path="/summary" /><br/>
@@ -515,50 +662,65 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class OriginatorProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="OriginatorProperty.Name" /></summary>
+				public const string NAME = "originator";
+				/// <summary>Constant value for <see cref="OriginatorProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;reference to the creator of the {{block(Specification)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="OriginatorProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="OriginatorProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="OriginatorProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.7";
+				/// <summary>Constant value for <see cref="OriginatorProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="OriginatorProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="OriginatorProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="OriginatorProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="OriginatorProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "MANUFACTURER";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1605643327599_586044_593</item>
-				/// <item>Type: OriginatorEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: OriginatorEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.OriginatorEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "originator";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;reference to the creator of the {{block(Specification)}}.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.7";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "MANUFACTURER";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMaximumPartProperty" path="/summary" /><br/>
@@ -570,49 +732,64 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class HasMaximumPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.Name" /></summary>
+				public const string NAME = "hasMaximum";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "Maximum";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_45f01b9_1580316467759_200159_47586</item>
-				/// <item>Type: MaximumClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: MaximumClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.MaximumClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasMaximum";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "Maximum";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasUpperLimitPartProperty" path="/summary" /><br/>
@@ -624,49 +801,64 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class HasUpperLimitPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.Name" /></summary>
+				public const string NAME = "hasUpperLimit";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "UpperLimit";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1605643508394_491668_626</item>
-				/// <item>Type: UpperLimitClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: UpperLimitClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasUpperLimit";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "UpperLimit";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasLowerWarningPartProperty" path="/summary" /><br/>
@@ -678,49 +870,64 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class HasLowerWarningPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.Name" /></summary>
+				public const string NAME = "hasLowerWarning";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "LowerWarning";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1605643531502_63450_761</item>
-				/// <item>Type: LowerWarningClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: LowerWarningClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerWarningClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasLowerWarning";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "LowerWarning";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasLowerLimitPartProperty" path="/summary" /><br/>
@@ -732,49 +939,64 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class HasLowerLimitPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.Name" /></summary>
+				public const string NAME = "hasLowerLimit";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "LowerLimit";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1605643526040_637158_716</item>
-				/// <item>Type: LowerLimitClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: LowerLimitClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.LowerLimitClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasLowerLimit";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "LowerLimit";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasUpperWarningPartProperty" path="/summary" /><br/>
@@ -786,49 +1008,64 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class HasUpperWarningPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.Name" /></summary>
+				public const string NAME = "hasUpperWarning";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "UpperWarning";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1605643515595_841451_671</item>
-				/// <item>Type: UpperWarningClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: UpperWarningClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.UpperWarningClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasUpperWarning";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "UpperWarning";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasNominalPartProperty" path="/summary" /><br/>
@@ -840,49 +1077,64 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class HasNominalPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.Name" /></summary>
+				public const string NAME = "hasNominal";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "Nominal";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_45f01b9_1580316543777_893941_47725</item>
-				/// <item>Type: NominalClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: NominalClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.NominalClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasNominal";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "Nominal";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMinimumPartProperty" path="/summary" /><br/>
@@ -894,49 +1146,64 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 			/// </summary>
 			public sealed class HasMinimumPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.Name" /></summary>
+				public const string NAME = "hasMinimum";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "Minimum";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_45f01b9_1580316498580_886253_47645</item>
-				/// <item>Type: MinimumClass</item>
-				/// <item>Namespace: Mtconnect.DeviceInformationModel.Configurations.Specifications</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: MinimumClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Specifications.MinimumClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasMinimum";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "Minimum";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 		};
 

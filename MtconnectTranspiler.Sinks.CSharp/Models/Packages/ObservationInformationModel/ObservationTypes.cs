@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,19 +14,31 @@ namespace Mtconnect.ObservationInformationModel
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class ObservationTypesPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_91b028d_1589897764829_678664_48";
-		
-		/// <inheritdoc />
-		public string Name => "Observation Types";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(Observation)}} types.
+		/// <summary>Constant value for <see cref="ObservationTypesPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_91b028d_1589897764829_678664_48";
+		/// <summary>Constant value for <see cref="ObservationTypesPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_91b028d_1589897764829_678664_48";
+		/// <summary>Constant value for <see cref="ObservationTypesPackage.Name" /></summary>
+		public const string NAME = "Observation Types";
+		/// <summary>Constant value for <see cref="ObservationTypesPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the {{block(Observation)}} types.
 
 {{block(Observation)}} entities are instantiated as {{block(Sample)}}, {{block(Event)}} or {{block(Condition)}} entities based upon the {{property(DataItem::category)}} and {{property(DataItem::type)}} defined for the corresponding {{block(DataItem)}}.
 
 See {{figure(DeviceStream Example)}} for examples on how the {{block(Observation)}} types are organized within {{block(ComponentStream)}}.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

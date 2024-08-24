@@ -1,6 +1,7 @@
 #pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -11,14 +12,21 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 	/// <summary>﻿<see cref="SampleEnum.PATH_POSITION">SampleEnum.PATH_POSITION</see><br /><br /><br /><br /><br />Example<br /><br />~~~~xml<br />&lt;DataItem type='PATH_POSITION' id='pathposit1' units="MILLIMETER_3D"/&gt;<br />~~~~<br />{: caption="XML Device Model Example for <c>PathPosition</c> using <c>MILLIMETER_3D</c> unit"}<br /><br />~~~~xml<br />&lt;PathPosition&gt;10.0 0.0 20.0&lt;/PathPosition&gt;<br />~~~~<br />{: caption="XML Streams Response Example for <c>PathPosition</c> using <c>MILLIMETER_3D</c> unit"}<br /><br /><br />~~~~xml<br />&lt;DataItem type='PATH_POSITION' id='pathposit1' representation="DATA_SET"&gt;<br />  &lt;Definition&gt;<br />    &lt;EntryDefinition key='X' units='MILLIMETER'&gt;<br />    &lt;EntryDefinition key='Y' units='MILLIMETER'&gt;<br />    &lt;EntryDefinition key='Z' units='MILLIMETER'&gt;<br />  &lt;/Definition&gt;<br />&lt;/DataItem&gt;<br />~~~~<br />{: caption="XML Device Model Example for <c>PathPosition</c> to demonstrate multi-dimensional representation using <c>DataSet</c> representation"}<br /><br />~~~~xml<br />&lt;PathPositionDataSet id='pathposit1'&gt;<br />  &lt;Entry key='X'&gt;10.0&lt;/Entry&gt;<br />  &lt;Entry key='Z'&gt;20.0&lt;/Entry&gt;<br />&lt;/PathPositionDataSet&gt;<br />~~~~<br />{: caption="XML Streams Response Example for <c>PathPosition</c> to demonstrate multi-dimensional representation using <c>DataSet</c> representation"}<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218391_280410_2028">model.mtconnect.org</seealso> for more information.
 	/// </summary>
+	/// <remarks>
+	/// <list type="bullet">
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+	/// </list>
+	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class PathPositionClass : IClass
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_45f01b9_1580378218391_280410_2028";
-		
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;{{def(SampleEnum::PATH_POSITION)}}
+		/// <summary>Constant value for <see cref="PathPositionClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_45f01b9_1580378218391_280410_2028";
+		/// <summary>Constant value for <see cref="PathPositionClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580378218391_280410_2028";
+		/// <summary>Constant value for <see cref="PathPositionClass.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;{{def(SampleEnum::PATH_POSITION)}}
 
 &#10;
 &#10;&#10;&#10;Example&#10;&#10;&#10;&#10;~~~~xml
@@ -51,21 +59,40 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 ~~~~
 {: caption=""XML Streams Response Example for `PathPosition` to demonstrate multi-dimensional representation using `DataSet` representation""}&#10;
 ";
+		/// <summary>Constant value for <see cref="PathPositionClass.Name" /></summary>
+		public const string NAME = "PathPosition";
+		/// <summary>Constant value for <see cref="PathPositionClass.AccessModifier" /></summary>
+		public const string ACCESS_MODIFIER = "public";
+		/// <summary>Constant value for <see cref="PathPositionClass.Modifier" /></summary>
+		public const string MODIFIER = "";
+		/// <summary>Constant value for <see cref="PathPositionClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.1";
+		/// <summary>Constant value for <see cref="PathPositionClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
 
 		/// <inheritdoc />
-		public string Name => "PathPosition";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
-		public string AccessModifier => "public";
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public string AccessModifier => ACCESS_MODIFIER;
 				
 		/// <inheritdoc />
-		public string Modifier => "";
+		public string Modifier => MODIFIER;
 				
 		/// <inheritdoc />
-		public string NormativeVersion => "1.1";
+		public string NormativeVersion => NORMATIVE_VERSION;
 				
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
 		/// <remarks>
@@ -98,49 +125,64 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// </summary>
 			public new sealed class UnitsProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="UnitsProperty.Name" /></summary>
+				public const string NAME = "units";
+				/// <summary>Constant value for <see cref="UnitsProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="UnitsProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="UnitsProperty.Modifier" /></summary>
+				public const string MODIFIER = "static";
+				/// <summary>Constant value for <see cref="UnitsProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
+				public const string EXTENSION = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "MILLIMETER_3D";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A</item>
-				/// <item>Type: UnitEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: UnitEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.UnitEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "units";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "static";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "MILLIMETER_3D";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
@@ -152,49 +194,64 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// </summary>
 			public new sealed class TypeProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="TypeProperty.Name" /></summary>
+				public const string NAME = "type";
+				/// <summary>Constant value for <see cref="TypeProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="TypeProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="TypeProperty.Modifier" /></summary>
+				public const string MODIFIER = "static";
+				/// <summary>Constant value for <see cref="TypeProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
+				public const string EXTENSION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "PATH_POSITION";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_45f01b9_1580398370126_672808_12777</item>
-				/// <item>Type: SampleEnumMetaClass</item>
-				/// <item>Namespace: Mtconnect.DataTypes</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: SampleEnumMetaClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DataTypes.SampleEnumMetaClass);
 				
 				/// <inheritdoc />
-				public string Name => "type";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "static";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "PATH_POSITION";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
@@ -206,49 +263,64 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 			/// </summary>
 			public new sealed class ResultProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="ResultProperty.Name" /></summary>
+				public const string NAME = "result";
+				/// <summary>Constant value for <see cref="ResultProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="ResultProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="ResultProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="ResultProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="ResultProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="ResultProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="ResultProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="ResultProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_68e0225_1696078816660_574434_2106</item>
-				/// <item>Type: Float[]</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Float[] </remarks>
 				/// </summary>
 				public System.Type Type => typeof(float[]);
 				
 				/// <inheritdoc />
-				public string Name => "result";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 		};
 

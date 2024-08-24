@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,17 +14,29 @@ namespace Mtconnect.InterfaceInteractionModel
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class OperationAndErrorRecoveryPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1623755007633_105506_1249";
-		
-		/// <inheritdoc />
-		public string Name => "Operation and Error Recovery";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;The {{term(request and response)}} state model implemented for {{termplural(interface)}} may also be represented by a graphical model.  The scenario in {{figure(Success Scenario)}} demonstrates the state transitions that occur during a successful {{term(request)}} for service and the resulting {{term(response)}} to fulfill that service {{term(request)}}. 
+		/// <summary>Constant value for <see cref="OperationAndErrorRecoveryPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1623755007633_105506_1249";
+		/// <summary>Constant value for <see cref="OperationAndErrorRecoveryPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_68e0225_1623755007633_105506_1249";
+		/// <summary>Constant value for <see cref="OperationAndErrorRecoveryPackage.Name" /></summary>
+		public const string NAME = "Operation and Error Recovery";
+		/// <summary>Constant value for <see cref="OperationAndErrorRecoveryPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;The {{term(request and response)}} state model implemented for {{termplural(interface)}} may also be represented by a graphical model.  The scenario in {{figure(Success Scenario)}} demonstrates the state transitions that occur during a successful {{term(request)}} for service and the resulting {{term(response)}} to fulfill that service {{term(request)}}. 
 
 ![Success Scenario](figures/Success%20Scenario.png ""Success Scenario""){: width=""0.8""}&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

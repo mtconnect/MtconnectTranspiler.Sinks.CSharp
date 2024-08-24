@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class MotionPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_91b028d_1579526830201_236256_7625";
-		
-		/// <inheritdoc />
-		public string Name => "Motion";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(Motion)}} entity.
+		/// <summary>Constant value for <see cref="MotionPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_91b028d_1579526830201_236256_7625";
+		/// <summary>Constant value for <see cref="MotionPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_91b028d_1579526830201_236256_7625";
+		/// <summary>Constant value for <see cref="MotionPackage.Name" /></summary>
+		public const string NAME = "Motion";
+		/// <summary>Constant value for <see cref="MotionPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the {{block(Motion)}} entity.
 
 ![Motion](figures/Motion.png ""Motion""){: width=""0.8""}
 
@@ -30,6 +31,18 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 
 > Note: See {{lst(motion-example)}} for the {{term(XML)}} representation of the same example.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

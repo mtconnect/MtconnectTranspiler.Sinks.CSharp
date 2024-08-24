@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -12,14 +13,14 @@ namespace Mtconnect.InterfaceInteractionModel.OperationAndErrorRecovery
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class RequestAndResponseFailureHandlingAndRecoveryPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1623839073431_500021_2262";
-		
-		/// <inheritdoc />
-		public string Name => "Request and Response Failure Handling and Recovery";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;A significant feature of the {{term(request and response)}} {{term(interaction model)}} is the ability for either piece of equipment to detect a failure associated with either the {{term(request)}} or {{term(response)}} actions.  When either a failure or unexpected action occurs, the {{term(request)}} and the {{term(response)}} portion of the {{term(interaction model)}} can announce a `FAIL` state upon detecting a problem.  The following are graphical models describing multiple scenarios where either the {{term(requester)}} or {{term(responder)}} detects and reacts to a failure.  In these examples, either the {{term(requester)}} or {{term(responder)}} announces the detection of a failure by setting either the {{term(request)}} or the {{term(response)}} state to `FAIL`.  
+		/// <summary>Constant value for <see cref="RequestAndResponseFailureHandlingAndRecoveryPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1623839073431_500021_2262";
+		/// <summary>Constant value for <see cref="RequestAndResponseFailureHandlingAndRecoveryPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_68e0225_1623839073431_500021_2262";
+		/// <summary>Constant value for <see cref="RequestAndResponseFailureHandlingAndRecoveryPackage.Name" /></summary>
+		public const string NAME = "Request and Response Failure Handling and Recovery";
+		/// <summary>Constant value for <see cref="RequestAndResponseFailureHandlingAndRecoveryPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;A significant feature of the {{term(request and response)}} {{term(interaction model)}} is the ability for either piece of equipment to detect a failure associated with either the {{term(request)}} or {{term(response)}} actions.  When either a failure or unexpected action occurs, the {{term(request)}} and the {{term(response)}} portion of the {{term(interaction model)}} can announce a `FAIL` state upon detecting a problem.  The following are graphical models describing multiple scenarios where either the {{term(requester)}} or {{term(responder)}} detects and reacts to a failure.  In these examples, either the {{term(requester)}} or {{term(responder)}} announces the detection of a failure by setting either the {{term(request)}} or the {{term(response)}} state to `FAIL`.  
 
 Once a failure is detected, the {{term(interaction model)}} provides information from each piece of equipment as they attempt to recover from a failure, reset all of their functions associated with the {{term(interface)}} to their original state, and return to normal operation.
 
@@ -113,6 +114,18 @@ The {{term(requester)}}, as part of clearing its `FAIL` state, resets any partia
 The {{term(responder)}}, as part of clearing its `FAIL` state, resets any partial actions that were initiated and attempts to return to a condition where it is again ready to perform a service.  If the recovery is successful, the {{term(responder)}} changes its {{term(response)}} state from `FAIL` to `READY`.  If for some reason the {{term(responder)}} is not again prepared to perform a service, it transitions its state from `FAIL` to `NOT_READY`.
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,26 @@ namespace Mtconnect.Glossary
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class IndustrialTermsPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_4_45f01b9_1637105844205_327255_1120";
-		
-		/// <inheritdoc />
-		public string Name => "Industrial Terms";
+		/// <summary>Constant value for <see cref="IndustrialTermsPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_4_45f01b9_1637105844205_327255_1120";
+		/// <summary>Constant value for <see cref="IndustrialTermsPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_4_45f01b9_1637105844205_327255_1120";
+		/// <summary>Constant value for <see cref="IndustrialTermsPackage.Name" /></summary>
+		public const string NAME = "Industrial Terms";
+		/// <summary>Constant value for <see cref="IndustrialTermsPackage.Summary" /></summary>
+		public const string SUMMARY = @"";
 
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

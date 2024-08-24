@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class SupportingDocumentsPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_91b028d_1589301330036_553673_25";
-		
-		/// <inheritdoc />
-		public string Name => "Supporting Documents";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;Assets Appendix&#10;&#10;&#10;&#10;{{newpage()}}
+		/// <summary>Constant value for <see cref="SupportingDocumentsPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_91b028d_1589301330036_553673_25";
+		/// <summary>Constant value for <see cref="SupportingDocumentsPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_91b028d_1589301330036_553673_25";
+		/// <summary>Constant value for <see cref="SupportingDocumentsPackage.Name" /></summary>
+		public const string NAME = "Supporting Documents";
+		/// <summary>Constant value for <see cref="SupportingDocumentsPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;Assets Appendix&#10;&#10;&#10;&#10;{{newpage()}}
 
 ## XML Schema Diagrams
 
@@ -1469,6 +1470,18 @@ This section provides a dictionary of terms, reserved language, and document con
 {{glsaddall()}}
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

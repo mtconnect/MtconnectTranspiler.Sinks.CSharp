@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class DeviceInformationModelPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1642672857507_756619_19";
-		
-		/// <inheritdoc />
-		public string Name => "Device Information Model";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;The {{term(Device Information Model)}} provides a representation of the physical and logical configuration for a piece of equipment used for a manufacturing process or for any other purpose.  It also provides the definition of data that may be reported by that equipment. 
+		/// <summary>Constant value for <see cref="DeviceInformationModelPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1642672857507_756619_19";
+		/// <summary>Constant value for <see cref="DeviceInformationModelPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_68e0225_1642672857507_756619_19";
+		/// <summary>Constant value for <see cref="DeviceInformationModelPackage.Name" /></summary>
+		public const string NAME = "Device Information Model";
+		/// <summary>Constant value for <see cref="DeviceInformationModelPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;The {{term(Device Information Model)}} provides a representation of the physical and logical configuration for a piece of equipment used for a manufacturing process or for any other purpose.  It also provides the definition of data that may be reported by that equipment. 
 
 Using information defined in the {{term(Device Information Model)}}, a software application can determine the configuration and reporting capabilities of a piece of equipment.  To do this, the software application issues a {{term(probe request)}} (defined in {{package(Fundamentals)}}) to an {{term(agent)}} associated with a piece of equipment. An {{term(agent)}} responds to the {{term(probe request)}} with an {{term(MTConnectDevices Response Document)}} that contains information describing both the physical and logical structure of the piece of equipment and a detailed description of each {{term(Observation)}} that can be reported by the {{term(agent)}} associated with the piece of equipment. This information allows the client software application to interpret the document and to extract the data with the same meaning, value, and context that it had at its original source.  
 
@@ -529,6 +530,18 @@ In {{term(XML)}}, `Composition` types are represented differently than `Componen
 ~~~~
 {: caption=""Example of configuration data for Sensor""}  &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class CuttingItemPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_2734C012_030C_44a6_8CE6_559328AFDCB9";
-		
-		/// <inheritdoc />
-		public string Name => "Cutting Item";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;A {{block(CuttingItem)}} is the portion of the tool that physically removes the material from the workpiece by shear deformation. The cutting item can be either a single piece of material attached to the {{block(CuttingTool)}} or it can be one or more separate pieces of material attached to the {{block(CuttingTool)}} using a permanent or removable attachment.  A {{block(CuttingItem)}} can be comprised of one or more cutting edges. Cutting items include: replaceable inserts, brazed tips and the cutting portions of solid {{block(CuttingTools)}}.
+		/// <summary>Constant value for <see cref="CuttingItemPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_2734C012_030C_44a6_8CE6_559328AFDCB9";
+		/// <summary>Constant value for <see cref="CuttingItemPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_2734C012_030C_44a6_8CE6_559328AFDCB9";
+		/// <summary>Constant value for <see cref="CuttingItemPackage.Name" /></summary>
+		public const string NAME = "Cutting Item";
+		/// <summary>Constant value for <see cref="CuttingItemPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;A {{block(CuttingItem)}} is the portion of the tool that physically removes the material from the workpiece by shear deformation. The cutting item can be either a single piece of material attached to the {{block(CuttingTool)}} or it can be one or more separate pieces of material attached to the {{block(CuttingTool)}} using a permanent or removable attachment.  A {{block(CuttingItem)}} can be comprised of one or more cutting edges. Cutting items include: replaceable inserts, brazed tips and the cutting portions of solid {{block(CuttingTools)}}.
 
 MTConnect Standard considers {{block(CuttingItems)}} as part of the {{block(CuttingTool)}}.  A {{block(CuttingItems)}} **MUST NOT** exist in MTConnect unless it is attached to a {{block(CuttingTool)}}.  Some of the measurements, such as {{block(FunctionalLength)}}, **MUST** be made with reference to the entire {{block(CuttingTool)}} to be meaningful.
 
@@ -28,6 +29,18 @@ MTConnect Standard considers {{block(CuttingItems)}} as part of the {{block(Cutt
 
 > Note: See {{sect(CuttingItem Schema Diagrams)}} for XML schema.&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

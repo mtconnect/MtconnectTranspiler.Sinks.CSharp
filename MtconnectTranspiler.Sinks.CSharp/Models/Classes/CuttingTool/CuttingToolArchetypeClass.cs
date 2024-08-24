@@ -1,6 +1,7 @@
 #pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -11,30 +12,56 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	/// <summary>﻿<see cref="Asset">Asset</see> that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_8D60D3F8_AB1A_490b_923B_B978248EF331">model.mtconnect.org</seealso> for more information.
 	/// </summary>
+	/// <remarks>
+	/// <list type="bullet">
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
+	/// </list>
+	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class CuttingToolArchetypeClass : IClass
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAID_8D60D3F8_AB1A_490b_923B_B978248EF331";
-		
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;{{block(Asset)}} that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.&#10;
+		/// <summary>Constant value for <see cref="CuttingToolArchetypeClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAID_8D60D3F8_AB1A_490b_923B_B978248EF331";
+		/// <summary>Constant value for <see cref="CuttingToolArchetypeClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure__EAID_8D60D3F8_AB1A_490b_923B_B978248EF331";
+		/// <summary>Constant value for <see cref="CuttingToolArchetypeClass.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;{{block(Asset)}} that describes the static cutting tool geometries and nominal values as one would expect from a tool catalog.&#10;
 ";
+		/// <summary>Constant value for <see cref="CuttingToolArchetypeClass.Name" /></summary>
+		public const string NAME = "CuttingToolArchetype";
+		/// <summary>Constant value for <see cref="CuttingToolArchetypeClass.AccessModifier" /></summary>
+		public const string ACCESS_MODIFIER = "public";
+		/// <summary>Constant value for <see cref="CuttingToolArchetypeClass.Modifier" /></summary>
+		public const string MODIFIER = "";
+		/// <summary>Constant value for <see cref="CuttingToolArchetypeClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.3";
+		/// <summary>Constant value for <see cref="CuttingToolArchetypeClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
 
 		/// <inheritdoc />
-		public string Name => "CuttingToolArchetype";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
-		public string AccessModifier => "public";
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public string AccessModifier => ACCESS_MODIFIER;
 				
 		/// <inheritdoc />
-		public string Modifier => "";
+		public string Modifier => MODIFIER;
 				
 		/// <inheritdoc />
-		public string NormativeVersion => "1.3";
+		public string NormativeVersion => NORMATIVE_VERSION;
 				
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
 		/// <remarks>
@@ -69,55 +96,70 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			/// </summary>
 			public new sealed class ManufacturersProperty : IProperty
 			{
-				/// <summary>
-				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272360416_763325_681</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
-				/// </summary>
-				public System.Type Type => typeof(String);
-				
-				/// <inheritdoc />
-				public string Name => "manufacturers";
-				
-				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;manufacturers of the cutting tool.
+				/// <summary>Constant value for <see cref="ManufacturersProperty.Name" /></summary>
+				public const string NAME = "manufacturers";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;manufacturers of the cutting tool.
 
 This will reference the tool item and adaptive items specifically. The cutting items
 manufacturers’ will be a property of {{block(CuttingItem)}}.
 
 > Note: In {{term(XML)}}, the representation will be a comma(,) delimited list of manufacturer names. See {{sect(CuttingTool Schema Diagrams)}}.&#10;
 ";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.3";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.Extension" /></summary>
+				public const string EXTENSION = "";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: String </remarks>
+				/// </summary>
+				public System.Type Type => typeof(String);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.3";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SerialNumberProperty" path="/summary" /><br/>
@@ -129,50 +171,65 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 			/// </summary>
 			public new sealed class SerialNumberProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Name" /></summary>
+				public const string NAME = "serialNumber";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;unique identifier for this assembly.&#10;
+";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.3";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272360416_763325_681</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "serialNumber";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;unique identifier for this assembly.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.3";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ToolIdProperty" path="/summary" /><br/>
@@ -184,50 +241,65 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 			/// </summary>
 			public new sealed class ToolIdProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="ToolIdProperty.Name" /></summary>
+				public const string NAME = "toolId";
+				/// <summary>Constant value for <see cref="ToolIdProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;identifier for a class of cutting tools.&#10;
+";
+				/// <summary>Constant value for <see cref="ToolIdProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="ToolIdProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="ToolIdProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.3";
+				/// <summary>Constant value for <see cref="ToolIdProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="ToolIdProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "";
+				/// <summary>Constant value for <see cref="ToolIdProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="ToolIdProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="ToolIdProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272360416_763325_681</item>
-				/// <item>Type: String</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
 				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
-				public string Name => "toolId";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;identifier for a class of cutting tools.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.3";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCuttingToolDefinitionPartProperty" path="/summary" /><br/>
@@ -239,49 +311,64 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 			/// </summary>
 			public new sealed class HasCuttingToolDefinitionPartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Name" /></summary>
+				public const string NAME = "hasCuttingToolDefinition";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Association" /></summary>
+				public const string ASSOCIATION = "CuttingToolDefinition";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: EAID_37B8CFD0_D728_4841_9A07_B6CF819EC895</item>
-				/// <item>Type: CuttingToolDefinitionClass</item>
-				/// <item>Namespace: Mtconnect.AssetInformationModel.CuttingTool</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: CuttingToolDefinitionClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolDefinitionClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasCuttingToolDefinition";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "CuttingToolDefinition";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCuttingToolLifeCyclePartProperty" path="/summary" /><br/>
@@ -293,49 +380,64 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 			/// </summary>
 			public new sealed class HasCuttingToolLifeCyclePartProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Name" /></summary>
+				public const string NAME = "hasCuttingToolLifeCycle";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Summary" /></summary>
+				public const string SUMMARY = @"";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Association" /></summary>
+				public const string ASSOCIATION = "CuttingToolLifeCycle";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: EAID_D1C82EBD_D828_4e5f_9F46_3337710837FE</item>
-				/// <item>Type: CuttingToolLifeCycleClass</item>
-				/// <item>Namespace: Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle</item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: CuttingToolLifeCycleClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.CuttingToolLifeCycleClass);
 				
 				/// <inheritdoc />
-				public string Name => "hasCuttingToolLifeCycle";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "CuttingToolLifeCycle";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 		};
 

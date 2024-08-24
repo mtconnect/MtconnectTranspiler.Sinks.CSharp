@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class SensorPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_2799F394_9540_4e1f_8171_D8E5BC08A63E";
-		
-		/// <inheritdoc />
-		public string Name => "Sensor";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(SensorConfiguration)}} entity.
+		/// <summary>Constant value for <see cref="SensorPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_2799F394_9540_4e1f_8171_D8E5BC08A63E";
+		/// <summary>Constant value for <see cref="SensorPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_2799F394_9540_4e1f_8171_D8E5BC08A63E";
+		/// <summary>Constant value for <see cref="SensorPackage.Name" /></summary>
+		public const string NAME = "Sensor";
+		/// <summary>Constant value for <see cref="SensorPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the {{block(SensorConfiguration)}} entity.
 
 {{term(sensor)}} is a unique type of a piece of equipment.  A {{term(sensor)}} is typically comprised of two major components: a {{term(sensor unit)}} that provides signal processing, conversion, and communications and the {{termplural(sensing element)}} that provides a signal or measured value.
 
@@ -49,6 +50,18 @@ When {{block(Sensor)}} represents the {{term(sensor unit)}} for multiple {{term(
 > Note: See {{lst(example-of-configuration-data-for-sensor)}} for an {{term(XML)}} example.
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

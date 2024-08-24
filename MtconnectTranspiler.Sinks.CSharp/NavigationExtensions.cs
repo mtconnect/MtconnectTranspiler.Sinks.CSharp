@@ -3,10 +3,12 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace MtconnectTranspiler.Sinks.CSharp
 {
+    /// <summary>
+    /// Helper methods for navigating the transpiled SysML model through <see cref="Mtconnect.MtconnectModel"/>.
+    /// </summary>
     public static class NavigationExtensions
     {
         /// <summary>

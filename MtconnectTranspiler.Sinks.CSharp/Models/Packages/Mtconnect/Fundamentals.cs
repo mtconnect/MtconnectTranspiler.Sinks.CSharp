@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class FundamentalsPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_496E1978_22AF_4543_A020_4616FFC25649";
-		
-		/// <inheritdoc />
-		public string Name => "Fundamentals";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;The MTConnect Standard defines the normative information model and protocol for retrieving information from manufacturing equipment. This document specifies the {{term(agent)}} behavior and protocol.
+		/// <summary>Constant value for <see cref="FundamentalsPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_496E1978_22AF_4543_A020_4616FFC25649";
+		/// <summary>Constant value for <see cref="FundamentalsPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_496E1978_22AF_4543_A020_4616FFC25649";
+		/// <summary>Constant value for <see cref="FundamentalsPackage.Name" /></summary>
+		public const string NAME = "Fundamentals";
+		/// <summary>Constant value for <see cref="FundamentalsPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;The MTConnect Standard defines the normative information model and protocol for retrieving information from manufacturing equipment. This document specifies the {{term(agent)}} behavior and protocol.
 
 ## Agent
 
@@ -423,6 +424,18 @@ In this example:
 When an extended {{term(schema)}} is implemented, each {{term(structural element)}}, {{term(DataItem)}}, and {{term(asset)}} defined in the extended {{term(schema)}} **MUST** be identified in each respective {{term(response document)}} by adding a prefix to the XML {{term(element name)}} associated with that {{term(structural element)}}, {{term(DataItem)}}, or {{term(asset)}}.  The prefix identifies the {{term(schema)}} and {{term(namespace)}} where that XML Element is defined. 
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.DeviceInformationModel
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class ComponentsPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_6F87CB48_AFED_473f_92DF_E7AFDAFD3CAC";
-		
-		/// <inheritdoc />
-		public string Name => "Components";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(Component)}} entity. {{figure(Components)}} shows the {{block(Component)}} model. 
+		/// <summary>Constant value for <see cref="ComponentsPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_6F87CB48_AFED_473f_92DF_E7AFDAFD3CAC";
+		/// <summary>Constant value for <see cref="ComponentsPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_6F87CB48_AFED_473f_92DF_E7AFDAFD3CAC";
+		/// <summary>Constant value for <see cref="ComponentsPackage.Name" /></summary>
+		public const string NAME = "Components";
+		/// <summary>Constant value for <see cref="ComponentsPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the {{block(Component)}} entity. {{figure(Components)}} shows the {{block(Component)}} model. 
 
 ![Components](figures/Components.png ""Components""){: width=""0.8""}
 
@@ -57,6 +58,18 @@ This parent-child relationship can continue to any depth required to fully defin
 > Note: See {{figure(Device Entity Hierarchy Example)}} for an example.
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

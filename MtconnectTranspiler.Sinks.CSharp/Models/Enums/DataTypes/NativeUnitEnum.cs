@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
@@ -13,6 +14,7 @@ namespace Mtconnect.DataTypes
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum NativeUnitEnum
 	{
@@ -20,9 +22,10 @@ namespace Mtconnect.DataTypes
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		CENTIPOISE,
 		/// <summary>﻿rotational velocity in degrees per minute.<br /><br /><br />
 		/// </summary>
@@ -31,6 +34,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		DEGREE_PER_MINUTE,
 		/// <summary>﻿temperature in Fahrenheit.<br /><br /><br />
 		/// </summary>
@@ -39,6 +43,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		FAHRENHEIT,
 		/// <summary>﻿feet.<br /><br /><br />
 		/// </summary>
@@ -47,6 +52,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		FOOT,
 		/// <summary>﻿feet per minute.<br /><br /><br />
 		/// </summary>
@@ -55,6 +61,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		FOOT_PER_MINUTE,
 		/// <summary>﻿feet per second.<br /><br /><br />
 		/// </summary>
@@ -63,6 +70,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		FOOT_PER_SECOND,
 		/// <summary>﻿acceleration in feet per second squared.<br /><br /><br />
 		/// </summary>
@@ -71,6 +79,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		FOOT_PER_SECOND_SQUARED,
 		/// <summary>﻿point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.<br /><br /><br />
 		/// </summary>
@@ -79,6 +88,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		FOOT_3D,
 		/// <summary>﻿gallons per minute.<br /><br /><br />
 		/// </summary>
@@ -87,14 +97,16 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		GALLON_PER_MINUTE,
 		/// <summary>﻿measurement of time in hours.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		HOUR,
 		/// <summary>﻿inches.<br /><br /><br />
 		/// </summary>
@@ -103,6 +115,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		INCH,
 		/// <summary>﻿inches per minute.<br /><br /><br />
 		/// </summary>
@@ -111,6 +124,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		INCH_PER_MINUTE,
 		/// <summary>﻿inches per second.<br /><br /><br />
 		/// </summary>
@@ -119,6 +133,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		INCH_PER_SECOND,
 		/// <summary>﻿acceleration in inches per second squared.<br /><br /><br />
 		/// </summary>
@@ -127,6 +142,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		INCH_PER_SECOND_SQUARED,
 		/// <summary>﻿measure of torque in inch pounds.<br /><br /><br />
 		/// </summary>
@@ -135,6 +151,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		INCH_POUND,
 		/// <summary>﻿point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.<br /><br /><br />
 		/// </summary>
@@ -143,14 +160,16 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		INCH_3D,
 		/// <summary>﻿measurement of temperature.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.3">v1.3</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		KELVIN,
 		/// <summary>﻿measurement in kilowatt.<br /><br /><br />
 		/// </summary>
@@ -159,6 +178,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		KILOWATT,
 		/// <summary>﻿kilowatt hours which is 3.6 mega joules.<br /><br /><br />
 		/// </summary>
@@ -167,14 +187,16 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		KILOWATT_HOUR,
 		/// <summary>﻿measurement of rate of flow of a fluid.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		LITER_PER_MINUTE,
 		/// <summary>﻿velocity in millimeters per minute.<br /><br /><br />
 		/// </summary>
@@ -183,14 +205,16 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		MILLIMETER_PER_MINUTE,
 		/// <summary>﻿measurement of time in minutes.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		MINUTE,
 		/// <summary>﻿unsupported unit.<br /><br /><br />
 		/// </summary>
@@ -199,6 +223,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		OTHER,
 		/// <summary>﻿US pounds.<br /><br /><br />
 		/// </summary>
@@ -207,6 +232,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		POUND,
 		/// <summary>﻿pressure in pounds per square inch (PSI).<br /><br /><br />
 		/// </summary>
@@ -215,6 +241,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		POUND_PER_INCH_SQUARED,
 		/// <summary>﻿angle in radians.<br /><br /><br />
 		/// </summary>
@@ -223,6 +250,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		RADIAN,
 		/// <summary>﻿velocity in radians per minute.<br /><br /><br />
 		/// </summary>
@@ -231,6 +259,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		RADIAN_PER_MINUTE,
 		/// <summary>﻿rotational acceleration in radian per second squared.<br /><br /><br />
 		/// </summary>
@@ -239,6 +268,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		RADIAN_PER_SECOND,
 		/// <summary>﻿rotational acceleration in radian per second squared.<br /><br /><br />
 		/// </summary>
@@ -247,78 +277,88 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		RADIAN_PER_SECOND_SQUARED,
 		/// <summary>﻿pressure in Bar.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		BAR,
 		/// <summary>﻿pressure in Torr.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		TORR,
 		/// <summary>﻿pressure in Millimeter of Mercury (mmHg).<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		MILLIMETER_MERCURY,
 		/// <summary>﻿pascal per minute.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		PASCAL_PER_MINUTE,
 		/// <summary>﻿<i>MASS\times GRAVITATIONAL_ACCELERATION</i> (g) given in <c>METER/SECOND^2</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.1">v2.1</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		GRAVITATIONAL_FORCE,
 		/// <summary>﻿acceleration relative to earth's gravity given in <c>METER/SECOND^2</c>.<br /><br />&gt; Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.<br /><br />&gt; Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.1">v2.1</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		GRAVITATIONAL_ACCELERATION,
 		/// <summary>﻿electric charge in ampere hour.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.1">v2.1</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		AMPERE_HOUR,
 		/// <summary>﻿change of geometric volume in cubic foot per hour.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.3">v2.3</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		CUBIC_FOOT_PER_HOUR,
 		/// <summary>﻿change of geometric volume in cubic foot per minute.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_2.3">v2.3</see></item>
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		CUBIC_FOOT_PER_MINUTE,
 	}
 
@@ -328,8 +368,27 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class NativeUnitEnumMetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="NativeUnitEnumMetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAID_678122A4_E8FD_4243_8427_6B7E0E78D5F5";
+		/// <summary>Constant value for <see cref="NativeUnitEnumMetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration__EAID_678122A4_E8FD_4243_8427_6B7E0E78D5F5";
+		/// <summary>Constant value for <see cref="NativeUnitEnumMetaClass.Name" /></summary>
+		public const string NAME = "NativeUnitEnum";
+		/// <summary>Constant value for <see cref="NativeUnitEnumMetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.1";
+		/// <summary>Constant value for <see cref="NativeUnitEnumMetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
+		/// <summary>Constant value for <see cref="NativeUnitEnumMetaClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+
 		/// <inheritdoc />
-		public string Name => "NativeUnitEnum";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => null;
@@ -338,13 +397,13 @@ namespace Mtconnect.DataTypes
 		public Type Instance => typeof(NativeUnitEnum);
 
 		/// <inheritdoc />
-		public string NormativeVersion => "1.1";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -396,23 +455,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class CENTIPOISEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="CENTIPOISEValue.Name" /></summary>
+			public const string NAME = "CENTIPOISE";
+			/// <summary>Constant value for <see cref="CENTIPOISEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="CENTIPOISEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="CENTIPOISEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;measure of viscosity.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "CENTIPOISE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;measure of viscosity.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private DEGREE_PER_MINUTEValue _DEGREE_PER_MINUTE;
 		/// <inheritdoc cref="DEGREE_PER_MINUTEValue" path="/summary" />
@@ -422,23 +496,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class DEGREE_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="DEGREE_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "DEGREE/MINUTE";
+			/// <summary>Constant value for <see cref="DEGREE_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="DEGREE_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="DEGREE_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;rotational velocity in degrees per minute.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "DEGREE/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;rotational velocity in degrees per minute.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private FAHRENHEITValue _FAHRENHEIT;
 		/// <inheritdoc cref="FAHRENHEITValue" path="/summary" />
@@ -448,23 +537,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class FAHRENHEITValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="FAHRENHEITValue.Name" /></summary>
+			public const string NAME = "FAHRENHEIT";
+			/// <summary>Constant value for <see cref="FAHRENHEITValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="FAHRENHEITValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FAHRENHEITValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;temperature in Fahrenheit.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "FAHRENHEIT";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;temperature in Fahrenheit.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private FOOTValue _FOOT;
 		/// <inheritdoc cref="FOOTValue" path="/summary" />
@@ -474,23 +578,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class FOOTValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="FOOTValue.Name" /></summary>
+			public const string NAME = "FOOT";
+			/// <summary>Constant value for <see cref="FOOTValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="FOOTValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FOOTValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;feet.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "FOOT";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;feet.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private FOOT_PER_MINUTEValue _FOOT_PER_MINUTE;
 		/// <inheritdoc cref="FOOT_PER_MINUTEValue" path="/summary" />
@@ -500,23 +619,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class FOOT_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="FOOT_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "FOOT/MINUTE";
+			/// <summary>Constant value for <see cref="FOOT_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="FOOT_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FOOT_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;feet per minute.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "FOOT/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;feet per minute.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private FOOT_PER_SECONDValue _FOOT_PER_SECOND;
 		/// <inheritdoc cref="FOOT_PER_SECONDValue" path="/summary" />
@@ -526,23 +660,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class FOOT_PER_SECONDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="FOOT_PER_SECONDValue.Name" /></summary>
+			public const string NAME = "FOOT/SECOND";
+			/// <summary>Constant value for <see cref="FOOT_PER_SECONDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="FOOT_PER_SECONDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FOOT_PER_SECONDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;feet per second.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "FOOT/SECOND";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;feet per second.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private FOOT_PER_SECOND_SQUAREDValue _FOOT_PER_SECOND_SQUARED;
 		/// <inheritdoc cref="FOOT_PER_SECOND_SQUAREDValue" path="/summary" />
@@ -552,23 +701,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class FOOT_PER_SECOND_SQUAREDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="FOOT_PER_SECOND_SQUAREDValue.Name" /></summary>
+			public const string NAME = "FOOT/SECOND^2";
+			/// <summary>Constant value for <see cref="FOOT_PER_SECOND_SQUAREDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="FOOT_PER_SECOND_SQUAREDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FOOT_PER_SECOND_SQUAREDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;acceleration in feet per second squared.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "FOOT/SECOND^2";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;acceleration in feet per second squared.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private FOOT_3DValue _FOOT_3D;
 		/// <inheritdoc cref="FOOT_3DValue" path="/summary" />
@@ -578,23 +742,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class FOOT_3DValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="FOOT_3DValue.Name" /></summary>
+			public const string NAME = "FOOT_3D";
+			/// <summary>Constant value for <see cref="FOOT_3DValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="FOOT_3DValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FOOT_3DValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "FOOT_3D";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in feet.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private GALLON_PER_MINUTEValue _GALLON_PER_MINUTE;
 		/// <inheritdoc cref="GALLON_PER_MINUTEValue" path="/summary" />
@@ -604,23 +783,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class GALLON_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="GALLON_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "GALLON/MINUTE";
+			/// <summary>Constant value for <see cref="GALLON_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="GALLON_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="GALLON_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;gallons per minute.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "GALLON/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;gallons per minute.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private HOURValue _HOUR;
 		/// <inheritdoc cref="HOURValue" path="/summary" />
@@ -630,23 +824,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class HOURValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="HOURValue.Name" /></summary>
+			public const string NAME = "HOUR";
+			/// <summary>Constant value for <see cref="HOURValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.5";
+			/// <summary>Constant value for <see cref="HOURValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="HOURValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;measurement of time in hours.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "HOUR";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.5";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;measurement of time in hours.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private INCHValue _INCH;
 		/// <inheritdoc cref="INCHValue" path="/summary" />
@@ -656,23 +865,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class INCHValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="INCHValue.Name" /></summary>
+			public const string NAME = "INCH";
+			/// <summary>Constant value for <see cref="INCHValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="INCHValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="INCHValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;inches.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "INCH";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;inches.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private INCH_PER_MINUTEValue _INCH_PER_MINUTE;
 		/// <inheritdoc cref="INCH_PER_MINUTEValue" path="/summary" />
@@ -682,23 +906,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class INCH_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="INCH_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "INCH/MINUTE";
+			/// <summary>Constant value for <see cref="INCH_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="INCH_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="INCH_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;inches per minute.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "INCH/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;inches per minute.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private INCH_PER_SECONDValue _INCH_PER_SECOND;
 		/// <inheritdoc cref="INCH_PER_SECONDValue" path="/summary" />
@@ -708,23 +947,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class INCH_PER_SECONDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="INCH_PER_SECONDValue.Name" /></summary>
+			public const string NAME = "INCH/SECOND";
+			/// <summary>Constant value for <see cref="INCH_PER_SECONDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="INCH_PER_SECONDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="INCH_PER_SECONDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;inches per second.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "INCH/SECOND";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;inches per second.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private INCH_PER_SECOND_SQUAREDValue _INCH_PER_SECOND_SQUARED;
 		/// <inheritdoc cref="INCH_PER_SECOND_SQUAREDValue" path="/summary" />
@@ -734,23 +988,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class INCH_PER_SECOND_SQUAREDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="INCH_PER_SECOND_SQUAREDValue.Name" /></summary>
+			public const string NAME = "INCH/SECOND^2";
+			/// <summary>Constant value for <see cref="INCH_PER_SECOND_SQUAREDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="INCH_PER_SECOND_SQUAREDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="INCH_PER_SECOND_SQUAREDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;acceleration in inches per second squared.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "INCH/SECOND^2";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;acceleration in inches per second squared.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private INCH_POUNDValue _INCH_POUND;
 		/// <inheritdoc cref="INCH_POUNDValue" path="/summary" />
@@ -760,23 +1029,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class INCH_POUNDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="INCH_POUNDValue.Name" /></summary>
+			public const string NAME = "INCH_POUND";
+			/// <summary>Constant value for <see cref="INCH_POUNDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="INCH_POUNDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="INCH_POUNDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;measure of torque in inch pounds.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "INCH_POUND";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;measure of torque in inch pounds.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private INCH_3DValue _INCH_3D;
 		/// <inheritdoc cref="INCH_3DValue" path="/summary" />
@@ -786,23 +1070,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class INCH_3DValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="INCH_3DValue.Name" /></summary>
+			public const string NAME = "INCH_3D";
+			/// <summary>Constant value for <see cref="INCH_3DValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="INCH_3DValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="INCH_3DValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "INCH_3D";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;point in space identified by X, Y, and Z positions and represented by a space-delimited set of numbers each expressed in inches.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private KELVINValue _KELVIN;
 		/// <inheritdoc cref="KELVINValue" path="/summary" />
@@ -812,23 +1111,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class KELVINValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="KELVINValue.Name" /></summary>
+			public const string NAME = "KELVIN";
+			/// <summary>Constant value for <see cref="KELVINValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.3";
+			/// <summary>Constant value for <see cref="KELVINValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="KELVINValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;measurement of temperature.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "KELVIN";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.3";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;measurement of temperature.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private KILOWATTValue _KILOWATT;
 		/// <inheritdoc cref="KILOWATTValue" path="/summary" />
@@ -838,23 +1152,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class KILOWATTValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="KILOWATTValue.Name" /></summary>
+			public const string NAME = "KILOWATT";
+			/// <summary>Constant value for <see cref="KILOWATTValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="KILOWATTValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="KILOWATTValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;measurement in kilowatt.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "KILOWATT";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;measurement in kilowatt.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private KILOWATT_HOURValue _KILOWATT_HOUR;
 		/// <inheritdoc cref="KILOWATT_HOURValue" path="/summary" />
@@ -864,23 +1193,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class KILOWATT_HOURValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="KILOWATT_HOURValue.Name" /></summary>
+			public const string NAME = "KILOWATT_HOUR";
+			/// <summary>Constant value for <see cref="KILOWATT_HOURValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="KILOWATT_HOURValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="KILOWATT_HOURValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;kilowatt hours which is 3.6 mega joules.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "KILOWATT_HOUR";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;kilowatt hours which is 3.6 mega joules.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private LITER_PER_MINUTEValue _LITER_PER_MINUTE;
 		/// <inheritdoc cref="LITER_PER_MINUTEValue" path="/summary" />
@@ -890,23 +1234,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class LITER_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="LITER_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "LITER/MINUTE";
+			/// <summary>Constant value for <see cref="LITER_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="LITER_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="LITER_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;measurement of rate of flow of a fluid.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "LITER/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;measurement of rate of flow of a fluid.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private MILLIMETER_PER_MINUTEValue _MILLIMETER_PER_MINUTE;
 		/// <inheritdoc cref="MILLIMETER_PER_MINUTEValue" path="/summary" />
@@ -916,23 +1275,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class MILLIMETER_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="MILLIMETER_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "MILLIMETER/MINUTE";
+			/// <summary>Constant value for <see cref="MILLIMETER_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="MILLIMETER_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MILLIMETER_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;velocity in millimeters per minute.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "MILLIMETER/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;velocity in millimeters per minute.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private MINUTEValue _MINUTE;
 		/// <inheritdoc cref="MINUTEValue" path="/summary" />
@@ -942,23 +1316,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="MINUTEValue.Name" /></summary>
+			public const string NAME = "MINUTE";
+			/// <summary>Constant value for <see cref="MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.5";
+			/// <summary>Constant value for <see cref="MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;measurement of time in minutes.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.5";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;measurement of time in minutes.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private OTHERValue _OTHER;
 		/// <inheritdoc cref="OTHERValue" path="/summary" />
@@ -968,23 +1357,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class OTHERValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="OTHERValue.Name" /></summary>
+			public const string NAME = "OTHER";
+			/// <summary>Constant value for <see cref="OTHERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="OTHERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="OTHERValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;unsupported unit.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "OTHER";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;unsupported unit.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private POUNDValue _POUND;
 		/// <inheritdoc cref="POUNDValue" path="/summary" />
@@ -994,23 +1398,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class POUNDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="POUNDValue.Name" /></summary>
+			public const string NAME = "POUND";
+			/// <summary>Constant value for <see cref="POUNDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="POUNDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="POUNDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;US pounds.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "POUND";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;US pounds.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private POUND_PER_INCH_SQUAREDValue _POUND_PER_INCH_SQUARED;
 		/// <inheritdoc cref="POUND_PER_INCH_SQUAREDValue" path="/summary" />
@@ -1020,23 +1439,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class POUND_PER_INCH_SQUAREDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="POUND_PER_INCH_SQUAREDValue.Name" /></summary>
+			public const string NAME = "POUND/INCH^2";
+			/// <summary>Constant value for <see cref="POUND_PER_INCH_SQUAREDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="POUND_PER_INCH_SQUAREDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="POUND_PER_INCH_SQUAREDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;pressure in pounds per square inch (PSI).&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "POUND/INCH^2";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;pressure in pounds per square inch (PSI).&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private RADIANValue _RADIAN;
 		/// <inheritdoc cref="RADIANValue" path="/summary" />
@@ -1046,23 +1480,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class RADIANValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="RADIANValue.Name" /></summary>
+			public const string NAME = "RADIAN";
+			/// <summary>Constant value for <see cref="RADIANValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="RADIANValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="RADIANValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;angle in radians.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "RADIAN";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;angle in radians.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private RADIAN_PER_MINUTEValue _RADIAN_PER_MINUTE;
 		/// <inheritdoc cref="RADIAN_PER_MINUTEValue" path="/summary" />
@@ -1072,23 +1521,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class RADIAN_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="RADIAN_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "RADIAN/MINUTE";
+			/// <summary>Constant value for <see cref="RADIAN_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="RADIAN_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="RADIAN_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;velocity in radians per minute.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "RADIAN/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;velocity in radians per minute.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private RADIAN_PER_SECONDValue _RADIAN_PER_SECOND;
 		/// <inheritdoc cref="RADIAN_PER_SECONDValue" path="/summary" />
@@ -1098,23 +1562,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class RADIAN_PER_SECONDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="RADIAN_PER_SECONDValue.Name" /></summary>
+			public const string NAME = "RADIAN/SECOND";
+			/// <summary>Constant value for <see cref="RADIAN_PER_SECONDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="RADIAN_PER_SECONDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="RADIAN_PER_SECONDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;rotational acceleration in radian per second squared.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "RADIAN/SECOND";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;rotational acceleration in radian per second squared.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private RADIAN_PER_SECOND_SQUAREDValue _RADIAN_PER_SECOND_SQUARED;
 		/// <inheritdoc cref="RADIAN_PER_SECOND_SQUAREDValue" path="/summary" />
@@ -1124,23 +1603,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class RADIAN_PER_SECOND_SQUAREDValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="RADIAN_PER_SECOND_SQUAREDValue.Name" /></summary>
+			public const string NAME = "RADIAN/SECOND^2";
+			/// <summary>Constant value for <see cref="RADIAN_PER_SECOND_SQUAREDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="RADIAN_PER_SECOND_SQUAREDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="RADIAN_PER_SECOND_SQUAREDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;rotational acceleration in radian per second squared.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "RADIAN/SECOND^2";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;rotational acceleration in radian per second squared.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private BARValue _BAR;
 		/// <inheritdoc cref="BARValue" path="/summary" />
@@ -1150,23 +1644,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class BARValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="BARValue.Name" /></summary>
+			public const string NAME = "BAR";
+			/// <summary>Constant value for <see cref="BARValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.7";
+			/// <summary>Constant value for <see cref="BARValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="BARValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;pressure in Bar.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "BAR";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.7";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;pressure in Bar.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private TORRValue _TORR;
 		/// <inheritdoc cref="TORRValue" path="/summary" />
@@ -1176,23 +1685,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class TORRValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="TORRValue.Name" /></summary>
+			public const string NAME = "TORR";
+			/// <summary>Constant value for <see cref="TORRValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.7";
+			/// <summary>Constant value for <see cref="TORRValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="TORRValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;pressure in Torr.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "TORR";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.7";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;pressure in Torr.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private MILLIMETER_MERCURYValue _MILLIMETER_MERCURY;
 		/// <inheritdoc cref="MILLIMETER_MERCURYValue" path="/summary" />
@@ -1202,23 +1726,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class MILLIMETER_MERCURYValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="MILLIMETER_MERCURYValue.Name" /></summary>
+			public const string NAME = "MILLIMETER_MERCURY";
+			/// <summary>Constant value for <see cref="MILLIMETER_MERCURYValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.7";
+			/// <summary>Constant value for <see cref="MILLIMETER_MERCURYValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MILLIMETER_MERCURYValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;pressure in Millimeter of Mercury (mmHg).&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "MILLIMETER_MERCURY";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.7";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;pressure in Millimeter of Mercury (mmHg).&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private PASCAL_PER_MINUTEValue _PASCAL_PER_MINUTE;
 		/// <inheritdoc cref="PASCAL_PER_MINUTEValue" path="/summary" />
@@ -1228,23 +1767,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class PASCAL_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="PASCAL_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "PASCAL/MINUTE";
+			/// <summary>Constant value for <see cref="PASCAL_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.7";
+			/// <summary>Constant value for <see cref="PASCAL_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="PASCAL_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;pascal per minute.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "PASCAL/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.7";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;pascal per minute.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private GRAVITATIONAL_FORCEValue _GRAVITATIONAL_FORCE;
 		/// <inheritdoc cref="GRAVITATIONAL_FORCEValue" path="/summary" />
@@ -1254,23 +1808,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class GRAVITATIONAL_FORCEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="GRAVITATIONAL_FORCEValue.Name" /></summary>
+			public const string NAME = "GRAVITATIONAL_FORCE";
+			/// <summary>Constant value for <see cref="GRAVITATIONAL_FORCEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.1";
+			/// <summary>Constant value for <see cref="GRAVITATIONAL_FORCEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="GRAVITATIONAL_FORCEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;$$MASS\\times GRAVITATIONAL_ACCELERATION$$ (g) given in `METER/SECOND^2`.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "GRAVITATIONAL_FORCE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "2.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;$$MASS\\times GRAVITATIONAL_ACCELERATION$$ (g) given in `METER/SECOND^2`.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private GRAVITATIONAL_ACCELERATIONValue _GRAVITATIONAL_ACCELERATION;
 		/// <inheritdoc cref="GRAVITATIONAL_ACCELERATIONValue" path="/summary" />
@@ -1280,27 +1849,42 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class GRAVITATIONAL_ACCELERATIONValue : IEnumInstance
 		{
-			/// <inheritdoc />
-			public string Name => "GRAVITATIONAL_ACCELERATION";
-			
-			/// <inheritdoc />
-			public object Value => null; // TODO: Add value, based on type.
-			
-			/// <inheritdoc />
-			public string NormativeVersion => "2.1";
-			
-			/// <inheritdoc />
-			public string DeprecatedVersion => "";
-			
-			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;acceleration relative to earth's gravity given in `METER/SECOND^2`.
+			/// <summary>Constant value for <see cref="GRAVITATIONAL_ACCELERATIONValue.Name" /></summary>
+			public const string NAME = "GRAVITATIONAL_ACCELERATION";
+			/// <summary>Constant value for <see cref="GRAVITATIONAL_ACCELERATIONValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.1";
+			/// <summary>Constant value for <see cref="GRAVITATIONAL_ACCELERATIONValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="GRAVITATIONAL_ACCELERATIONValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;acceleration relative to earth's gravity given in `METER/SECOND^2`.
 
 > Note 1 to entry: At different points on Earth's surface, the free-fall acceleration ranges from 9.764 to 9.834 m/s2 (Wikipedia: Gravitational Acceleration). The constant can be customized depending on the location in the universe.
 
 > Note 2 to entry: In the standard, it is assumed that Earth's average value of gravitational acceleration is 9.90665 m/s2.&#10;
 ";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
 		}
 		private AMPERE_HOURValue _AMPERE_HOUR;
 		/// <inheritdoc cref="AMPERE_HOURValue" path="/summary" />
@@ -1310,23 +1894,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class AMPERE_HOURValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="AMPERE_HOURValue.Name" /></summary>
+			public const string NAME = "AMPERE_HOUR";
+			/// <summary>Constant value for <see cref="AMPERE_HOURValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.1";
+			/// <summary>Constant value for <see cref="AMPERE_HOURValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="AMPERE_HOURValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;electric charge in ampere hour.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "AMPERE_HOUR";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "2.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;electric charge in ampere hour.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private CUBIC_FOOT_PER_HOURValue _CUBIC_FOOT_PER_HOUR;
 		/// <inheritdoc cref="CUBIC_FOOT_PER_HOURValue" path="/summary" />
@@ -1336,23 +1935,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class CUBIC_FOOT_PER_HOURValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="CUBIC_FOOT_PER_HOURValue.Name" /></summary>
+			public const string NAME = "CUBIC_FOOT/HOUR";
+			/// <summary>Constant value for <see cref="CUBIC_FOOT_PER_HOURValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.3";
+			/// <summary>Constant value for <see cref="CUBIC_FOOT_PER_HOURValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="CUBIC_FOOT_PER_HOURValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;change of geometric volume in cubic foot per hour.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "CUBIC_FOOT/HOUR";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "2.3";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;change of geometric volume in cubic foot per hour.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private CUBIC_FOOT_PER_MINUTEValue _CUBIC_FOOT_PER_MINUTE;
 		/// <inheritdoc cref="CUBIC_FOOT_PER_MINUTEValue" path="/summary" />
@@ -1362,23 +1976,38 @@ namespace Mtconnect.DataTypes
 		/// Value for NativeUnitEnum.<br/>
 		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class CUBIC_FOOT_PER_MINUTEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="CUBIC_FOOT_PER_MINUTEValue.Name" /></summary>
+			public const string NAME = "CUBIC_FOOT/MINUTE";
+			/// <summary>Constant value for <see cref="CUBIC_FOOT_PER_MINUTEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.3";
+			/// <summary>Constant value for <see cref="CUBIC_FOOT_PER_MINUTEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="CUBIC_FOOT_PER_MINUTEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;change of geometric volume in cubic foot per minute.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "CUBIC_FOOT/MINUTE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "2.3";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;change of geometric volume in cubic foot per minute.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 	}
 }

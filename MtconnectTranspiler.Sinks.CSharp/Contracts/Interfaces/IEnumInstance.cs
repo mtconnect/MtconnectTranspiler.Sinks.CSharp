@@ -1,5 +1,8 @@
 ﻿namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
 {
+    /// <summary>
+    /// Represents a transpiled enumeration value from SysML
+    /// </summary>
     public interface IEnumInstance
     {
         /// <summary>

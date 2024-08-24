@@ -37,14 +37,26 @@
         /// </summary>
         string DeprecatedVersion { get; }
 
+        /// <summary>
+        /// Relationship between two or more classes where this class contains an <see cref="Extension"/>.
+        /// </summary>
         string Aggregation { get; }
 
         // Note: Extension.Extender
+        /// <summary>
+        /// Reference to the class this property adds to.
+        /// </summary>
         string Extension { get; }
 
+        /// <summary>
+        /// Relationship between classes that allows one object instance to cause another to perform and action on its behalf
+        /// </summary>
         string Association { get; }
 
         // Note: DefaultValue.Name
+        /// <summary>
+        /// Expected default value for an implementation of this property.
+        /// </summary>
         string DefaultValue { get; }
 
         /// <summary>

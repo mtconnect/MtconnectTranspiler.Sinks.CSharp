@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
@@ -13,6 +14,7 @@ namespace Mtconnect.DataTypes
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 	/// </list>
 	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum AxisCouplingEnum
 	{
@@ -23,6 +25,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		TANDEM,
 		/// <summary>﻿axes are not physically connected to each other but are operating together in lockstep.<br /><br /><br />
 		/// </summary>
@@ -31,6 +34,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		SYNCHRONOUS,
 		/// <summary>﻿axis is the master of the <see cref="CoupledAxes">CoupledAxes</see>.<br /><br /><br />
 		/// </summary>
@@ -39,6 +43,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		MASTER,
 		/// <summary>﻿axis is a slave to the <see cref="CoupledAxes">CoupledAxes</see>.<br /><br /><br />
 		/// </summary>
@@ -47,6 +52,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
 		/// </list>
 		/// </remarks>
+
 		SLAVE,
 	}
 
@@ -56,8 +62,27 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AxisCouplingEnumMetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="AxisCouplingEnumMetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_45f01b9_1580378417657_726565_2871";
+		/// <summary>Constant value for <see cref="AxisCouplingEnumMetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417657_726565_2871";
+		/// <summary>Constant value for <see cref="AxisCouplingEnumMetaClass.Name" /></summary>
+		public const string NAME = "AxisCouplingEnum";
+		/// <summary>Constant value for <see cref="AxisCouplingEnumMetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.1";
+		/// <summary>Constant value for <see cref="AxisCouplingEnumMetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
+		/// <summary>Constant value for <see cref="AxisCouplingEnumMetaClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+
 		/// <inheritdoc />
-		public string Name => "AxisCouplingEnum";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => null;
@@ -66,13 +91,13 @@ namespace Mtconnect.DataTypes
 		public Type Instance => typeof(AxisCouplingEnum);
 
 		/// <inheritdoc />
-		public string NormativeVersion => "1.1";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -90,23 +115,38 @@ namespace Mtconnect.DataTypes
 		/// Value for AxisCouplingEnum.<br/>
 		/// <br/>See also <seealso cref="AxisCouplingEnum">AxisCouplingEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class TANDEMValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="TANDEMValue.Name" /></summary>
+			public const string NAME = "TANDEM";
+			/// <summary>Constant value for <see cref="TANDEMValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="TANDEMValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="TANDEMValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;axes are physically connected to each other and operate as a single unit.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "TANDEM";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;axes are physically connected to each other and operate as a single unit.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private SYNCHRONOUSValue _SYNCHRONOUS;
 		/// <inheritdoc cref="SYNCHRONOUSValue" path="/summary" />
@@ -116,23 +156,38 @@ namespace Mtconnect.DataTypes
 		/// Value for AxisCouplingEnum.<br/>
 		/// <br/>See also <seealso cref="AxisCouplingEnum">AxisCouplingEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class SYNCHRONOUSValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="SYNCHRONOUSValue.Name" /></summary>
+			public const string NAME = "SYNCHRONOUS";
+			/// <summary>Constant value for <see cref="SYNCHRONOUSValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="SYNCHRONOUSValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="SYNCHRONOUSValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;axes are not physically connected to each other but are operating together in lockstep.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "SYNCHRONOUS";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;axes are not physically connected to each other but are operating together in lockstep.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private MASTERValue _MASTER;
 		/// <inheritdoc cref="MASTERValue" path="/summary" />
@@ -142,23 +197,38 @@ namespace Mtconnect.DataTypes
 		/// Value for AxisCouplingEnum.<br/>
 		/// <br/>See also <seealso cref="AxisCouplingEnum">AxisCouplingEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class MASTERValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="MASTERValue.Name" /></summary>
+			public const string NAME = "MASTER";
+			/// <summary>Constant value for <see cref="MASTERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="MASTERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MASTERValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;axis is the master of the {{block(CoupledAxes)}}.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "MASTER";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;axis is the master of the {{block(CoupledAxes)}}.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private SLAVEValue _SLAVE;
 		/// <inheritdoc cref="SLAVEValue" path="/summary" />
@@ -168,23 +238,38 @@ namespace Mtconnect.DataTypes
 		/// Value for AxisCouplingEnum.<br/>
 		/// <br/>See also <seealso cref="AxisCouplingEnum">AxisCouplingEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class SLAVEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="SLAVEValue.Name" /></summary>
+			public const string NAME = "SLAVE";
+			/// <summary>Constant value for <see cref="SLAVEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.1";
+			/// <summary>Constant value for <see cref="SLAVEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="SLAVEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;axis is a slave to the {{block(CoupledAxes)}}.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "SLAVE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.1";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;axis is a slave to the {{block(CoupledAxes)}}.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 	}
 }

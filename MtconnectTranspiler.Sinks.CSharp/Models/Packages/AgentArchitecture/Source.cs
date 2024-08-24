@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,26 @@ namespace Mtconnect.AgentArchitecture
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class SourcePackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_45f01b9_1585535650368_627874_1904";
-		
-		/// <inheritdoc />
-		public string Name => "Source";
+		/// <summary>Constant value for <see cref="SourcePackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_45f01b9_1585535650368_627874_1904";
+		/// <summary>Constant value for <see cref="SourcePackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_45f01b9_1585535650368_627874_1904";
+		/// <summary>Constant value for <see cref="SourcePackage.Name" /></summary>
+		public const string NAME = "Source";
+		/// <summary>Constant value for <see cref="SourcePackage.Summary" /></summary>
+		public const string SUMMARY = @"";
 
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

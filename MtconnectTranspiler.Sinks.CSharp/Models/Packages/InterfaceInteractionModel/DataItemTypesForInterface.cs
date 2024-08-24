@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.InterfaceInteractionModel
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class DataItemTypesForInterfacePackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1629373205367_975278_21";
-		
-		/// <inheritdoc />
-		public string Name => "DataItem Types for Interface";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;Each {{block(Interface)}} contains data items which are used to communicate information required to execute the {{term(interface)}}. When these data items are read by another piece of equipment, that piece of equipment can then determine the actions that it may take based upon that data.
+		/// <summary>Constant value for <see cref="DataItemTypesForInterfacePackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1629373205367_975278_21";
+		/// <summary>Constant value for <see cref="DataItemTypesForInterfacePackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_68e0225_1629373205367_975278_21";
+		/// <summary>Constant value for <see cref="DataItemTypesForInterfacePackage.Name" /></summary>
+		public const string NAME = "DataItem Types for Interface";
+		/// <summary>Constant value for <see cref="DataItemTypesForInterfacePackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;Each {{block(Interface)}} contains data items which are used to communicate information required to execute the {{term(interface)}}. When these data items are read by another piece of equipment, that piece of equipment can then determine the actions that it may take based upon that data.
 
 {{block(InterfaceState)}} is a data item specifically defined for {{termplural(interface)}}.  It defines the operational state of the {{term(interface)}}.  This is an indicator identifying whether the {{term(interface)}} is functioning or not. See {{sect(InterfaceState)}} for complete semantic details.
 
@@ -43,6 +44,18 @@ These data items and their associated `subType` provide the basic structure for 
 ![Response State Machine](figures/Response%20State%20Machine.png ""Response State Machine""){: width=""0.8""}
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.AssetInformationModel
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class CuttingToolPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "EAPK_E48B3DBE_1F88_44a2_A30D_869E9C800DEB";
-		
-		/// <inheritdoc />
-		public string Name => "Cutting Tool";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the {{block(CuttingTool)}} and {{block(CuttingToolArchetype)}} models.
+		/// <summary>Constant value for <see cref="CuttingToolPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAPK_E48B3DBE_1F88_44a2_A30D_869E9C800DEB";
+		/// <summary>Constant value for <see cref="CuttingToolPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package__EAPK_E48B3DBE_1F88_44a2_A30D_869E9C800DEB";
+		/// <summary>Constant value for <see cref="CuttingToolPackage.Name" /></summary>
+		public const string NAME = "Cutting Tool";
+		/// <summary>Constant value for <see cref="CuttingToolPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the {{block(CuttingTool)}} and {{block(CuttingToolArchetype)}} models.
 
 ![CuttingTool](figures/CuttingTool.png ""CuttingTool""){: width=""0.8""}
 
@@ -52,6 +53,18 @@ Additional diagrams will reference these dimensions by their codes that will be 
 
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

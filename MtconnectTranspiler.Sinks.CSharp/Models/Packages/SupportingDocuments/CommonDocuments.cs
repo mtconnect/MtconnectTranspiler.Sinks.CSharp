@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -12,14 +13,14 @@ namespace Mtconnect.SupportingDocuments
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class CommonDocumentsPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1596108922525_351463_147";
-		
-		/// <inheritdoc />
-		public string Name => "Common Documents";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;Acronyms&#10;&#10;&#10;&#10;
+		/// <summary>Constant value for <see cref="CommonDocumentsPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1596108922525_351463_147";
+		/// <summary>Constant value for <see cref="CommonDocumentsPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_68e0225_1596108922525_351463_147";
+		/// <summary>Constant value for <see cref="CommonDocumentsPackage.Name" /></summary>
+		public const string NAME = "Common Documents";
+		/// <summary>Constant value for <see cref="CommonDocumentsPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;Acronyms&#10;&#10;&#10;&#10;
 {{newacronym{API}{API}{application programming interface}()}}
 {{newacronym{BOM}{BOM}{bill of materials}()}}
 {{newacronym{DER}{DER}{designated-engineering representative}()}}
@@ -806,6 +807,18 @@ IEEE STD 1451.4-1994, Standard for a Smart Transducer Interface for Sensors and 
 
 {{input(appendix.md)}}&#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

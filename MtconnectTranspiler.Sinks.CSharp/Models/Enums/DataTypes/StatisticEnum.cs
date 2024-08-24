@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
@@ -13,6 +14,7 @@ namespace Mtconnect.DataTypes
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 	/// </list>
 	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum StatisticEnum
 	{
@@ -23,16 +25,16 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		AVERAGE,
 		/// <summary>﻿<b>DEPRECATED</b> in <i>Version 1.6</i>. ~~A measure of the "peakedness" of a probability distribution; i.e., the shape of the distribution curve.~~<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
-		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_1.6">v1.6</see></item>
 		/// </list>
 		/// </remarks>
-		[Obsolete("Deprecated in v1.6 according to https://model.mtconnect.org/#_Version_1.6")]
+
 		KURTOSIS,
 		/// <summary>﻿maximum or peak value recorded for the data item during the calculation period.<br /><br /><br />
 		/// </summary>
@@ -41,6 +43,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		MAXIMUM,
 		/// <summary>﻿middle number of a series of numbers.<br /><br /><br />
 		/// </summary>
@@ -49,6 +52,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		MEDIAN,
 		/// <summary>﻿minimum value recorded for the data item during the calculation period.<br /><br /><br />
 		/// </summary>
@@ -57,6 +61,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		MINIMUM,
 		/// <summary>﻿number in a series of numbers that occurs most often.<br /><br /><br />
 		/// </summary>
@@ -65,6 +70,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		MODE,
 		/// <summary>﻿difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.<br /><br /><br />
 		/// </summary>
@@ -73,6 +79,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		RANGE,
 		/// <summary>﻿mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.<br /><br /><br />
 		/// </summary>
@@ -81,6 +88,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		ROOT_MEAN_SQUARE,
 		/// <summary>﻿statistical Standard Deviation value calculated for the data item during the calculation period.<br /><br /><br />
 		/// </summary>
@@ -89,6 +97,7 @@ namespace Mtconnect.DataTypes
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
 		/// </list>
 		/// </remarks>
+
 		STANDARD_DEVIATION,
 	}
 
@@ -98,8 +107,27 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class StatisticEnumMetaClass : IEnum
 	{
+		/// <summary>Constant value for <see cref="StatisticEnumMetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "EAID_51F1600E_2F14_4045_86C0_42B336850079";
+		/// <summary>Constant value for <see cref="StatisticEnumMetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration__EAID_51F1600E_2F14_4045_86C0_42B336850079";
+		/// <summary>Constant value for <see cref="StatisticEnumMetaClass.Name" /></summary>
+		public const string NAME = "StatisticEnum";
+		/// <summary>Constant value for <see cref="StatisticEnumMetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.2";
+		/// <summary>Constant value for <see cref="StatisticEnumMetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
+		/// <summary>Constant value for <see cref="StatisticEnumMetaClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+
 		/// <inheritdoc />
-		public string Name => "StatisticEnum";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
 		
 		/// <inheritdoc />
 		public Type DataType => null;
@@ -108,13 +136,13 @@ namespace Mtconnect.DataTypes
 		public Type Instance => typeof(StatisticEnum);
 
 		/// <inheritdoc />
-		public string NormativeVersion => "1.2";
+		public string NormativeVersion => NORMATIVE_VERSION;
 		
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public string Summary => @"";
+		public string Summary => SUMMARY;
 		
 		/// <inheritdoc />
 		public IEnumInstance[] Values => new IEnumInstance[] {
@@ -137,23 +165,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class AVERAGEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="AVERAGEValue.Name" /></summary>
+			public const string NAME = "AVERAGE";
+			/// <summary>Constant value for <see cref="AVERAGEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="AVERAGEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="AVERAGEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;mathematical average value calculated for the data item during the calculation period.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "AVERAGE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;mathematical average value calculated for the data item during the calculation period.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private KURTOSISValue _KURTOSIS;
 		/// <inheritdoc cref="KURTOSISValue" path="/summary" />
@@ -163,23 +206,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class KURTOSISValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="KURTOSISValue.Name" /></summary>
+			public const string NAME = "KURTOSIS";
+			/// <summary>Constant value for <see cref="KURTOSISValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="KURTOSISValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "1.6";
+			/// <summary>Constant value for <see cref="KURTOSISValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;**DEPRECATED** in *Version 1.6*. ~~A measure of the ""peakedness"" of a probability distribution; i.e., the shape of the distribution curve.~~&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "KURTOSIS";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "1.6";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;**DEPRECATED** in *Version 1.6*. ~~A measure of the ""peakedness"" of a probability distribution; i.e., the shape of the distribution curve.~~&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private MAXIMUMValue _MAXIMUM;
 		/// <inheritdoc cref="MAXIMUMValue" path="/summary" />
@@ -189,23 +247,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class MAXIMUMValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="MAXIMUMValue.Name" /></summary>
+			public const string NAME = "MAXIMUM";
+			/// <summary>Constant value for <see cref="MAXIMUMValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="MAXIMUMValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MAXIMUMValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;maximum or peak value recorded for the data item during the calculation period.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "MAXIMUM";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;maximum or peak value recorded for the data item during the calculation period.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private MEDIANValue _MEDIAN;
 		/// <inheritdoc cref="MEDIANValue" path="/summary" />
@@ -215,23 +288,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class MEDIANValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="MEDIANValue.Name" /></summary>
+			public const string NAME = "MEDIAN";
+			/// <summary>Constant value for <see cref="MEDIANValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="MEDIANValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MEDIANValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;middle number of a series of numbers.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "MEDIAN";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;middle number of a series of numbers.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private MINIMUMValue _MINIMUM;
 		/// <inheritdoc cref="MINIMUMValue" path="/summary" />
@@ -241,23 +329,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class MINIMUMValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="MINIMUMValue.Name" /></summary>
+			public const string NAME = "MINIMUM";
+			/// <summary>Constant value for <see cref="MINIMUMValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="MINIMUMValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MINIMUMValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;minimum value recorded for the data item during the calculation period.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "MINIMUM";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;minimum value recorded for the data item during the calculation period.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private MODEValue _MODE;
 		/// <inheritdoc cref="MODEValue" path="/summary" />
@@ -267,23 +370,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class MODEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="MODEValue.Name" /></summary>
+			public const string NAME = "MODE";
+			/// <summary>Constant value for <see cref="MODEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="MODEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MODEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;number in a series of numbers that occurs most often.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "MODE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;number in a series of numbers that occurs most often.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private RANGEValue _RANGE;
 		/// <inheritdoc cref="RANGEValue" path="/summary" />
@@ -293,23 +411,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class RANGEValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="RANGEValue.Name" /></summary>
+			public const string NAME = "RANGE";
+			/// <summary>Constant value for <see cref="RANGEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="RANGEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="RANGEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "RANGE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;difference between the maximum and minimum value of a data item during the calculation period. Also represents Peak-to-Peak measurement in a waveform.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private ROOT_MEAN_SQUAREValue _ROOT_MEAN_SQUARE;
 		/// <inheritdoc cref="ROOT_MEAN_SQUAREValue" path="/summary" />
@@ -319,23 +452,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class ROOT_MEAN_SQUAREValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="ROOT_MEAN_SQUAREValue.Name" /></summary>
+			public const string NAME = "ROOT_MEAN_SQUARE";
+			/// <summary>Constant value for <see cref="ROOT_MEAN_SQUAREValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="ROOT_MEAN_SQUAREValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="ROOT_MEAN_SQUAREValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "ROOT_MEAN_SQUARE";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;mathematical Root Mean Square (RMS) value calculated for the data item during the calculation period.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 		private STANDARD_DEVIATIONValue _STANDARD_DEVIATION;
 		/// <inheritdoc cref="STANDARD_DEVIATIONValue" path="/summary" />
@@ -345,23 +493,38 @@ namespace Mtconnect.DataTypes
 		/// Value for StatisticEnum.<br/>
 		/// <br/>See also <seealso cref="StatisticEnum">StatisticEnum</seealso>
 		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.2">v1.2</see></item>
+		/// </list>
+		/// </remarks>
+
 		public sealed class STANDARD_DEVIATIONValue : IEnumInstance
 		{
+			/// <summary>Constant value for <see cref="STANDARD_DEVIATIONValue.Name" /></summary>
+			public const string NAME = "STANDARD_DEVIATION";
+			/// <summary>Constant value for <see cref="STANDARD_DEVIATIONValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "1.2";
+			/// <summary>Constant value for <see cref="STANDARD_DEVIATIONValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="STANDARD_DEVIATIONValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;statistical Standard Deviation value calculated for the data item during the calculation period.&#10;
+";
+
 			/// <inheritdoc />
-			public string Name => "STANDARD_DEVIATION";
+			public string Name => NAME;
 			
 			/// <inheritdoc />
 			public object Value => null; // TODO: Add value, based on type.
 			
 			/// <inheritdoc />
-			public string NormativeVersion => "1.2";
+			public string NormativeVersion => NORMATIVE_VERSION;
 			
 			/// <inheritdoc />
-			public string DeprecatedVersion => "";
+			public string DeprecatedVersion => DEPRECATED_VERSION;
 			
 			/// <inheritdoc />
-			public string Summary => @"&#10;&#10;&#10;statistical Standard Deviation value calculated for the data item during the calculation period.&#10;
-";
+			public string Summary => SUMMARY;
 		}
 	}
 }

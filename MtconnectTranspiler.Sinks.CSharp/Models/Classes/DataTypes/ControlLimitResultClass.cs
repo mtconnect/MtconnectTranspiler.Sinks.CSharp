@@ -1,6 +1,7 @@
 #pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -11,29 +12,55 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1620206731259_178927_703">model.mtconnect.org</seealso> for more information.
 	/// </summary>
+	/// <remarks>
+	/// <list type="bullet">
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+	/// </list>
+	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ControlLimitResultClass : IClass
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1620206731259_178927_703";
-		
-		/// <inheritdoc />
-		public string Summary => @"";
+		/// <summary>Constant value for <see cref="ControlLimitResultClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1620206731259_178927_703";
+		/// <summary>Constant value for <see cref="ControlLimitResultClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_68e0225_1620206731259_178927_703";
+		/// <summary>Constant value for <see cref="ControlLimitResultClass.Summary" /></summary>
+		public const string SUMMARY = @"";
+		/// <summary>Constant value for <see cref="ControlLimitResultClass.Name" /></summary>
+		public const string NAME = "ControlLimitResult";
+		/// <summary>Constant value for <see cref="ControlLimitResultClass.AccessModifier" /></summary>
+		public const string ACCESS_MODIFIER = "public";
+		/// <summary>Constant value for <see cref="ControlLimitResultClass.Modifier" /></summary>
+		public const string MODIFIER = "";
+		/// <summary>Constant value for <see cref="ControlLimitResultClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "1.7";
+		/// <summary>Constant value for <see cref="ControlLimitResultClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "";
 
 		/// <inheritdoc />
-		public string Name => "ControlLimitResult";
+		public string ReferenceId => REFERENCE_ID;
 		
 		/// <inheritdoc />
-		public string AccessModifier => "public";
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public string AccessModifier => ACCESS_MODIFIER;
 				
 		/// <inheritdoc />
-		public string Modifier => "";
+		public string Modifier => MODIFIER;
 				
 		/// <inheritdoc />
-		public string NormativeVersion => "1.7";
+		public string NormativeVersion => NORMATIVE_VERSION;
 				
 		/// <inheritdoc />
-		public string DeprecatedVersion => "";
+		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
 		/// <remarks>
@@ -68,54 +95,69 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public new sealed class UpperLimitProperty : IProperty
 			{
-				/// <summary>
-				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272506322_914606_702</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
-				/// </summary>
-				public System.Type Type => typeof(Single);
-				
-				/// <inheritdoc />
-				public string Name => "UpperLimit";
-				
-				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;upper conformance boundary for a variable.
+				/// <summary>Constant value for <see cref="UpperLimitProperty.Name" /></summary>
+				public const string NAME = "UpperLimit";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;upper conformance boundary for a variable.
 
 > Note: immediate concern or action may be required.
 
 &#10;
 ";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.7";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: Single </remarks>
+				/// </summary>
+				public System.Type Type => typeof(Single);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.7";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UpperWarningProperty" path="/summary" /><br/>
@@ -127,50 +169,65 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public new sealed class UpperWarningProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="UpperWarningProperty.Name" /></summary>
+				public const string NAME = "UpperWarning";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;upper boundary indicating increased concern and supervision may be required.&#10;
+";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.7";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272506322_914606_702</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Single </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "UpperWarning";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;upper boundary indicating increased concern and supervision may be required.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.7";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NominalProperty" path="/summary" /><br/>
@@ -182,50 +239,65 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public new sealed class NominalProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="NominalProperty.Name" /></summary>
+				public const string NAME = "Nominal";
+				/// <summary>Constant value for <see cref="NominalProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;ideal or desired value for a variable.&#10;
+";
+				/// <summary>Constant value for <see cref="NominalProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="NominalProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="NominalProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.7";
+				/// <summary>Constant value for <see cref="NominalProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="NominalProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="NominalProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="NominalProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="NominalProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272506322_914606_702</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Single </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "Nominal";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;ideal or desired value for a variable.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.7";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LowerWarningProperty" path="/summary" /><br/>
@@ -237,50 +309,65 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public new sealed class LowerWarningProperty : IProperty
 			{
+				/// <summary>Constant value for <see cref="LowerWarningProperty.Name" /></summary>
+				public const string NAME = "LowerWarning";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;lower boundary indicating increased concern and supervision may be required.&#10;
+";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.7";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272506322_914606_702</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
+				/// <remarks> Type: Single </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
-				public string Name => "LowerWarning";
+				public string Name => NAME;
 				
 				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;lower boundary indicating increased concern and supervision may be required.&#10;
-";
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.7";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LowerLimitProperty" path="/summary" /><br/>
@@ -292,54 +379,69 @@ namespace Mtconnect.DataTypes
 			/// </summary>
 			public new sealed class LowerLimitProperty : IProperty
 			{
-				/// <summary>
-				/// <inheritdoc />
-				/// <remarks>
-				/// <list type="bullet">
-				/// <item>Original Type: _19_0_3_91b028d_1579272506322_914606_702</item>
-				/// <item>Type: Single</item>
-				/// <item>Namespace: </item>
-				/// </list>
-				/// </remarks>
-				/// </summary>
-				public System.Type Type => typeof(Single);
-				
-				/// <inheritdoc />
-				public string Name => "LowerLimit";
-				
-				/// <inheritdoc />
-				public string Summary => @"&#10;&#10;&#10;lower conformance boundary for a variable.
+				/// <summary>Constant value for <see cref="LowerLimitProperty.Name" /></summary>
+				public const string NAME = "LowerLimit";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;lower conformance boundary for a variable.
 
 > Note: immediate concern or action may be required.
 
 &#10;
 ";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "public";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.7";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 19.0";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: Single </remarks>
+				/// </summary>
+				public System.Type Type => typeof(Single);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => "public";
+				public string AccessModifier => ACCESS_MODIFIER;
 				
 				/// <inheritdoc />
-				public string Modifier => "";
+				public string Modifier => MODIFIER;
 				
 				/// <inheritdoc />
-				public string NormativeVersion => "1.7";
+				public string NormativeVersion => NORMATIVE_VERSION;
 				
 				/// <inheritdoc />
-				public string DeprecatedVersion => "";
+				public string DeprecatedVersion => DEPRECATED_VERSION;
 				
 				/// <inheritdoc />
-				public string Aggregation => "composite";
+				public string Aggregation => AGGREGATION;
 
 				// Note: Extension.Extender
 				/// <inheritdoc />
-				public string Extension => "MagicDraw UML 19.0";
+				public string Extension => EXTENSION;
 				
 				/// <inheritdoc />
-				public string Association => "";
+				public string Association => ASSOCIATION;
 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
-				public string DefaultValue => "";
+				public string DefaultValue => DEFAULT_VALUE;
 			}
 		};
 

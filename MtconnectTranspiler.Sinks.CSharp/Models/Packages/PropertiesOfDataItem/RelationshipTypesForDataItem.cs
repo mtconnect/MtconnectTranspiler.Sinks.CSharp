@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,15 +14,27 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class RelationshipTypesForDataItemPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_68e0225_1605645450472_400925_2872";
-		
-		/// <inheritdoc />
-		public string Name => "Relationship Types for DataItem";
+		/// <summary>Constant value for <see cref="RelationshipTypesForDataItemPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_68e0225_1605645450472_400925_2872";
+		/// <summary>Constant value for <see cref="RelationshipTypesForDataItemPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_68e0225_1605645450472_400925_2872";
+		/// <summary>Constant value for <see cref="RelationshipTypesForDataItemPackage.Name" /></summary>
+		public const string NAME = "Relationship Types for DataItem";
+		/// <summary>Constant value for <see cref="RelationshipTypesForDataItemPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section provides semantic information for the types of {{block(AbstractDataItemRelationship)}} that can be defined for a {{block(DataItem)}}.&#10;
+";
 
 		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section provides semantic information for the types of {{block(AbstractDataItemRelationship)}} that can be defined for a {{block(DataItem)}}.&#10;
-";
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class CuttingToolMeasurementSubtypesPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_3_45f01b9_1582918427874_472723_1238";
-		
-		/// <inheritdoc />
-		public string Name => "Cutting Tool Measurement Subtypes";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;This section lists the {{block(Measurement)}} subtypes for {{block(CuttingTool)}}.
+		/// <summary>Constant value for <see cref="CuttingToolMeasurementSubtypesPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_45f01b9_1582918427874_472723_1238";
+		/// <summary>Constant value for <see cref="CuttingToolMeasurementSubtypesPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_45f01b9_1582918427874_472723_1238";
+		/// <summary>Constant value for <see cref="CuttingToolMeasurementSubtypesPackage.Name" /></summary>
+		public const string NAME = "Cutting Tool Measurement Subtypes";
+		/// <summary>Constant value for <see cref="CuttingToolMeasurementSubtypesPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;This section lists the {{block(Measurement)}} subtypes for {{block(CuttingTool)}}.
 
 These {{block(Measurement)}} subtypes for {{block(CuttingTool)}} are specific to the entire assembly and **MUST NOT** be used for the {{block(Measurement)}} pertaining to a {{block(CuttingItem)}}. {{figure(Cutting Tool Measurement 1)}} and {{figure(Cutting Tool Measurement 2)}} will be used to reference the assembly specific {{block(Measurement)}} subtypes.
 
@@ -29,6 +30,18 @@ These {{block(Measurement)}} subtypes for {{block(CuttingTool)}} are specific to
 ![Cutting Tool Measurement 2](figures/Cutting%20Tool%20Measurement%202.png ""Cutting Tool Measurement 2""){: width=""0.8""}
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {

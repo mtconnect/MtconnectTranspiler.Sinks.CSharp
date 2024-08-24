@@ -1,5 +1,6 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
@@ -13,14 +14,14 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public class RESTProtocolPackage : IPackage
 	{
-		/// <inheritdoc />
-		public string ReferenceId => "_19_0_4_45f01b9_1637706615628_274120_5004";
-		
-		/// <inheritdoc />
-		public string Name => "REST Protocol";
-
-		/// <inheritdoc />
-		public string Summary => @"&#10;&#10;&#10;An {{term(agent)}} **MUST** provide a REST API {{term(API)}} supporting HTTP version 1.0 or greater.  This interface **MUST** support HTTP (RFC7230) and use URIs (RFC3986) to identify specific information requested from an {{term(agent)}}. 
+		/// <summary>Constant value for <see cref="RESTProtocolPackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_4_45f01b9_1637706615628_274120_5004";
+		/// <summary>Constant value for <see cref="RESTProtocolPackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_4_45f01b9_1637706615628_274120_5004";
+		/// <summary>Constant value for <see cref="RESTProtocolPackage.Name" /></summary>
+		public const string NAME = "REST Protocol";
+		/// <summary>Constant value for <see cref="RESTProtocolPackage.Summary" /></summary>
+		public const string SUMMARY = @"&#10;&#10;&#10;An {{term(agent)}} **MUST** provide a REST API {{term(API)}} supporting HTTP version 1.0 or greater.  This interface **MUST** support HTTP (RFC7230) and use URIs (RFC3986) to identify specific information requested from an {{term(agent)}}. 
 
 The REST API adheres to the architectural principles of a stateless service to retrieve information associated with pieces of equipment. Additionally, the API is read-only and does not produce any side effects on the {{term(agent)}} or the equipment. In REST state management, the client is responsible for recovery in case of an error or loss of connection.
 
@@ -154,6 +155,18 @@ A {{block(Component)}} **MAY** include a set of {{block(Reference)}} entities of
 * A {{term(DataItem)}} reference ({{block(DataItemRef)}}) modifies the set of resulting {{termplural(Observation)}}, limited by a path query parameter of a {{term(current request)}} or {{term(sample request)}}, to include the {{termplural(Observation)}} whose value for its `id` attribute matches the value provided for the `idRef` attribute of the {{block(DataItemRef)}} element. The result is equivalent to appending `//[@id=<""idRef"">]` to the path query parameters of the {{term(current request)}} or {{term(sample request)}}. See {{package(Agent)}} for more details on path queries.
 &#10;
 ";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
