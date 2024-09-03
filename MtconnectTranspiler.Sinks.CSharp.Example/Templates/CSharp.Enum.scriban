@@ -1,0 +1,113 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
+using System;
+using System.CodeDom.Compiler;using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+
+namespace {{ to_code_safe source.namespace }}
+{
+	/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
+	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
+	/// </summary>
+	{{ include 'NormativeRemarks.scriban' source }}
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
+	public enum {{ source.name | to_code_safe | to_pascal_case }}
+	{
+		{{~ for item in source.items ~}}
+		/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
+		/// </summary>
+		{{ include 'NormativeRemarks.scriban' item }}
+		{{ item.original_name | to_code_safe | to_upper_case }},
+		{{~ end ~}}
+	}
+
+	/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
+	public sealed class {{ source.name | to_code_safe | to_pascal_case }}MetaClass : IEnum
+	{
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Enumeration__{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.Name" /></summary>
+		public const string NAME = "{{ source.name }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "{{ source.normative_version }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "{{ source.deprecated_version }}";
+		/// <summary>Constant value for <see cref="{{ source.name | to_code_safe | to_pascal_case }}MetaClass.Summary" /></summary>
+		public const string SUMMARY = @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public Type DataType => {{ if source.data_type != null && source.data_type != "" }}typeof({{ source.data_type }}){{ else }}null{{ end }};
+		
+		/// <inheritdoc />
+		public Type Instance => typeof({{ source.name | to_code_safe | to_pascal_case }});
+
+		/// <inheritdoc />
+		public string NormativeVersion => NORMATIVE_VERSION;
+		
+		/// <inheritdoc />
+		public string DeprecatedVersion => DEPRECATED_VERSION;
+		
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+		
+		/// <inheritdoc />
+		public IEnumInstance[] Values => new IEnumInstance[] {
+	{{~ for item in source.items ~}}
+		{{ item.original_name | to_code_safe }},
+	{{~ end ~}}
+		};
+
+	{{~ for item in source.items ~}}
+	{{~ item_code_name = item.original_name | to_code_safe ~}}
+		private {{ item_code_name }}Value _{{ item_code_name }};
+		/// <inheritdoc cref="{{ item.original_name | to_code_safe }}Value" path="/summary" />
+		public {{ item_code_name }}Value {{ item_code_name }} => _{{ item_code_name }} ?? (_{{ item_code_name }} = new {{ item_code_name }}Value());
+
+		/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
+		/// Value for {{ source.name }}.<br/>
+		/// <br/>See also <seealso cref="{{ source.name | to_code_safe | to_pascal_case }}">{{ source.name | to_code_safe | to_pascal_case }}</seealso>
+		/// </summary>
+		{{ include 'NormativeRemarks.scriban' item }}
+		public sealed class {{ item.original_name | to_code_safe }}Value : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="{{ item.original_name | to_code_safe }}Value.Name" /></summary>
+			public const string NAME = "{{ item.original_name }}";
+			/// <summary>Constant value for <see cref="{{ item.original_name | to_code_safe }}Value.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "{{ item.normative_version }}";
+			/// <summary>Constant value for <see cref="{{ item.original_name | to_code_safe }}Value.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "{{ item.deprecated_version }}";
+			/// <summary>Constant value for <see cref="{{ item.original_name | to_code_safe }}Value.Summary" /></summary>
+			public const string SUMMARY = @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+	{{~ end ~}}
+	}
+}

@@ -1,0 +1,35 @@
+using System;
+using System.CodeDom.Compiler;
+using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+
+namespace {{ to_code_safe source.namespace }}
+{
+	/// <summary>
+	/// Static root for the MTConnect SysML model.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
+	public static class MtconnectModel
+	{
+		/// <summary>
+		/// Collection of root <see cref="IPackage" />s.
+		/// </summary>
+		public static IPackage[] Packages => new IPackage[] {
+		{{~ for item in source.packages ~}}
+{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
+			{{ item_code_name }}Package,
+		{{~ end ~}}
+		};
+
+		#region Packages
+	{{~ for item in source.packages ~}}
+{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
+	private static {{ item_code_name }}Package _{{ item_code_name }}Package;
+	/// <summary>
+	/// <ineritdoc cref="Mtconnect.{{ item_code_name }}Package" path="/summary" />
+	/// </summary>
+	public static {{ item_code_name }}Package {{ item_code_name }}Package => _{{ item_code_name}}Package ?? (_{{ item_code_name }}Package = new {{ item_code_name }}Package());
+
+	{{ end ~}}
+	#endregion
+	}
+}

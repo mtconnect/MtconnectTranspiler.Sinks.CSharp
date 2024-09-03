@@ -5,145 +5,220 @@ using MtconnectTranspiler.Xmi.UML;
 using Scriban.Runtime;
 using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Contracts;
+using System.Linq;
+using CaseExtensions;
+using System.Text.RegularExpressions;
+using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Example
 {
     public class CategoryFunctions : ScriptObject
     {
-        public static bool CategoryContainsType(ExampleEnum @enum, EnumItem item) => @enum.SubTypes.ContainsKey(item.Name);
-        public static bool CategoryContainsValue(ExampleEnum @enum, EnumItem item) => @enum.ValueTypes.ContainsKey(item.Name);
-        public static bool EnumHasValues(ExampleEnum @enum) => @enum.ValueTypes.Any();
+        public static bool CategoryContainsType(CSharpEnum @enum, EnumItem item) => @enum.SubTypes.ContainsKey(item.Name);
+        public static bool CategoryContainsValue(CSharpEnum @enum, EnumItem item) => @enum.ValueTypes.ContainsKey(item.Name);
+        public static bool EnumHasValues(CSharpEnum @enum) => @enum.ValueTypes.Any();
+        public static string ToCodeSafe(string input, string replaceBy = "_")
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+            if (input.Contains("^2"))
+                input = input.Replace("^2", "_SQUARED");
+            if (input.Contains("^3"))
+                input = input.Replace("^3", "_CUBED");
+            if (input.Contains("/"))
+                input = input.Replace("/", "_PER_");
+            if (input.Equals("float[]", StringComparison.OrdinalIgnoreCase))
+                return input;
+            if (input.Equals("float[3]", StringComparison.OrdinalIgnoreCase))
+                return input;
+            char[] numbers = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            if (numbers.Any(c => input.StartsWith(c)))
+                input = $"_{input}";
+
+            var invlidFileCharacters = System.IO.Path
+            .GetInvalidFileNameChars()
+            .Concat(new char[] { ' ', '{', '}', '[', ']', '(', ')', '^', '`', '&', '+', '-', '!', '?', '%', '*', '<', '>', ',', '|', '\\', '/', '=', ':', ';' })
+            .ToArray();
+            /// <summary>
+            /// Regular expression to replace the <see cref="InvalidCharacters"/>
+            /// </summary>
+            var regex = new Regex(@"\" + String.Join(@"|\", invlidFileCharacters), RegexOptions.Compiled);
+            return regex.Replace(input, replaceBy);
+        }
+        public static string ToPathSafe(string input, string replaceBy = "_")
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
+            var invalidFileCharacters = System.IO.Path
+                .GetInvalidFileNameChars()
+                .ToArray();
+            var regex = new Regex(@"\" + String.Join(@"|\", invalidFileCharacters), RegexOptions.Compiled);
+            return regex.Replace(input, replaceBy);
+        }
+        public static string? GetTypeNamespace(string referenceId)
+            => TypeCache.GetTypeNamespaceFromId(referenceId);
+        public static string[] GetClassNamespaces(CSharpClass cSharpClass)
+        {
+            var result = new List<string>();
+            foreach (var property in cSharpClass.Properties)
+            {
+                string[] namespaces = TypeCache.GetTypeNamespaceFromName(property.Type);
+                if (namespaces?.Length > 0)
+                {
+                    result.AddRange(namespaces);
+                } else
+                {
+                    System.Diagnostics.Debug.WriteLine("Missing namespace for '" + property.Type + "'");
+                }
+            }
+            return result.Distinct().Where(o => !string.IsNullOrEmpty(o)).ToArray();
+        }
+        public static string[] GetPackageNamespaces(CSharpPackage cSharpPackage)
+        {
+            var namespaces = new List<string>();
+            foreach (var csharpClass in cSharpPackage.Classes)
+            {
+                namespaces.Add(csharpClass.Namespace);
+            }
+            return namespaces.Distinct().Where(o => !string.IsNullOrEmpty(o)).ToArray();
+        }
     }
-    internal class Transpiler : CsharpTranspiler
+    internal class Transpiler : ITranspilerSink
     {
+        private readonly ILogger<ITranspilerSink>? _logger;
+
+        private readonly IScribanTemplateGenerator _generator;
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="projectPath"></param>
-        public Transpiler(string projectPath, ILogger<ITranspilerSink>? logger = default) : base(projectPath, logger) { }
+        public Transpiler(IScribanTemplateGenerator generator, ILogger<ITranspilerSink>? logger = default)
+        {
+            _logger = logger;
 
-        public override void Transpile(XmiDocument model, CancellationToken cancellationToken = default)
+            _generator = generator;
+        }
+
+        public void Transpile(XmiDocument model, CancellationToken cancellationToken = default)
         {
             _logger?.LogInformation("Received MTConnectModel, beginning transpilation");
 
-            Model.SetValue("model", model, true);
+            _generator.Model.SetValue("model", model, true);
 
-            base.TemplateContext.PushGlobal(new CategoryFunctions());
+            _generator.TemplateContext.PushGlobal(new CategoryFunctions());
 
-            const string DataItemNamespace = "Example.Enums.DataItemTypes";
-            const string DataItemValueNamespace = "Example.Enums.DataItemValues";
-
-            // Process DataItem Types/Sub-Types
-            var dataItemTypeEnums = new List<ExampleEnum>();
-            var valueEnums = new List<ExampleEnum>();
-            string[] categories = new string[] { "Sample", "Event", "Condition" };
-
-            foreach (var category in categories)
+            //// Process the template into enum files
+            var allPackages = new List<CSharpPackage>();
+            var allClasses = new List<CSharpClass>();
+            var allEnumerations = new List<CSharpEnum>();
+            // TODO: Add Operations; aka functions
+            MtconnectModel rootPackage = new MtconnectModel(model, model.Model);
+            foreach (var package in model.Model.Packages)
             {
-                // Get the UmlPackage for the category (ie. Samples, Events, Conditions).
-                var typesPackage = MTConnectHelper.JumpToPackage(
-                    model!,
-                    MTConnectHelper.PackageNavigationTree.ObservationInformationModel.ObservationTypes
-                    )?
-                    .Packages
-                    .FirstOrDefault(o => o.Name == $"{category} Types");
-                if (typesPackage == null)
+                allPackages.Add(new CSharpPackage(model, package) { Namespace = "Mtconnect" });
+                // Packages
+                var subpackages = getPackages(model, package);
+                if (subpackages.Any())
+                    allPackages.AddRange(subpackages);
+
+                // Classes
+                var classes = getClasses(model, package);
+                if (classes.Any())
+                    allClasses.AddRange(classes);
+
+                // Enumerations
+                var enumerations = getEnums(model, package);
+                if (enumerations.Any())
+                    allEnumerations.AddRange(enumerations);
+            }
+            // Profiles
+            foreach (var profile in model.Model.Profiles)
+            {
+                if (profile.Packages.Any())
                 {
-                    _logger?.LogTrace("Couldn't find {Category} Types", category);
-                    continue;
-                }
-
-                // Get all DataItem Type and SubType references
-                var allTypes = typesPackage
-                    .Classes;
-                // Filter to get just the Type references
-                var types = allTypes
-                    ?.Where(o => !o!.Name!.Contains('.'));
-                if (types == null)
-                {
-                    _logger?.LogTrace("Couldn't find type classes for {Category} Types", category);
-                    continue;
-                }
-
-                // Filter and group each SubType by the relevant Type reference
-                var subTypes = allTypes
-                    ?.Where(o => o!.Name!.Contains('.'))
-                    ?.GroupBy(o => o!.Name![..o.Name!.IndexOf(".")], o => o)
-                    ?.Where(o => o.Any())
-                    ?.ToDictionary(o => o.Key, o => o?.ToList());
-
-                var categoryEnum = new ExampleEnum(model!, typesPackage)
-                {
-                    Name = $"{category}Types",
-                    Namespace = DataItemNamespace
-                };
-
-                foreach (var type in types)
-                {
-                    // Add type to CATEGORY enum
-                    categoryEnum.Add(model, type);
-
-                    // Find value
-                    var typeResult = type!.Properties?.FirstOrDefault(o => o.Name == "result");
-                    if (typeResult != null)
+                    foreach (var package in profile.Packages)
                     {
-                        var typeValuesSysEnum = MTConnectHelper.JumpToPackage(model!, MTConnectHelper.PackageNavigationTree.Profile.DataTypes)?
-                            .Enumerations
-                            .GetById(typeResult.PropertyType);
-                        if (typeValuesSysEnum != null && typeValuesSysEnum is UmlEnumeration)
-                        {
-                            var typeValuesEnum = new ExampleEnum(model!, typeValuesSysEnum!)
-                            {
-                                Namespace = DataItemValueNamespace,
-                                Name = $"{type.Name}Values"
-                            };
-                            foreach (var value in typeValuesEnum.Items)
-                            {
-                                value.Name = value.SysML_Name;
-                            }
-                            if (!categoryEnum.ValueTypes.ContainsKey(type.Name!)) categoryEnum.ValueTypes.Add(ScribanHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}Values");
-                            valueEnums.Add(typeValuesEnum);
-                        }
-                    }
+                        allPackages.Add(new CSharpPackage(model, package) { Namespace = "Mtconnect" });
+                        // Packages
+                        var subpackages = getPackages(model, package);
+                        if (subpackages.Any())
+                            allPackages.AddRange(subpackages);
 
-                    // Add subType as enum
-                    if (subTypes != null && subTypes.ContainsKey(type.Name!))
-                    {
-                        // Register type as having a subType in the CATEGORY enum
-                        if (!categoryEnum.SubTypes.ContainsKey(type.Name!)) categoryEnum.SubTypes.Add(ScribanHelperMethods.ToUpperSnakeCode(type.Name), $"{type.Name}SubTypes");
+                        // Classes
+                        var classes = getClasses(model, package);
+                        if (classes.Any())
+                            allClasses.AddRange(classes);
 
-                        var subTypeEnum = new ExampleEnum(model!, type, $"{type.Name}SubTypes") { Namespace = DataItemNamespace };
-
-                        var typeSubTypes = subTypes[type.Name!];
-                        subTypeEnum.AddRange(model, typeSubTypes);
-
-                        // Cleanup Enum names
-                        foreach (var item in subTypeEnum.Items)
-                        {
-                            if (!item.Name.Contains('.')) continue;
-                            item.Name = ScribanHelperMethods.ToUpperSnakeCode(item.Name[(item.Name.IndexOf(".") + 1)..]);
-                        }
-
-                        // Register the DataItem SubType Enum
-                        dataItemTypeEnums.Add(subTypeEnum);
+                        // Enumerations
+                        var enumerations = getEnums(model, package);
+                        if (enumerations.Any())
+                            allEnumerations.AddRange(enumerations);
                     }
                 }
-
-                // Cleanup Enum names
-                foreach (var item in categoryEnum.Items)
-                {
-                    item.Name = ScribanHelperMethods.ToUpperSnakeCode(item.Name);
-                }
-
-                // Register the DataItem Category Enum (ie. Samples, Events, Conditions)
-                dataItemTypeEnums.Add(categoryEnum);
             }
 
-            _logger?.LogInformation("Processing {Count} DataItem types/subTypes", dataItemTypeEnums.Count);
+            _logger?.LogInformation("Saving Packages...");
+            _generator.ProcessTemplate(allPackages, Path.Combine(_generator.OutputPath, "Packages"), true);
+            _logger?.LogInformation("Saving Classes...");
+            _generator.ProcessTemplate(allClasses, Path.Combine(_generator.OutputPath, "Classes"), true);
+            _logger?.LogInformation("Saving Enums...");
+            _generator.ProcessTemplate(allEnumerations, Path.Combine(_generator.OutputPath, "Enums"), true);
 
-            // Process the template into enum files
-            ProcessTemplate(dataItemTypeEnums, Path.Combine(ProjectPath, "Enums", "Devices", "DataItemTypes"), true);
-            ProcessTemplate(valueEnums, Path.Combine(ProjectPath, "Enums", "Streams"), true);
+            _logger?.LogInformation("Saving Root Package...");
+            _generator.ProcessTemplate(rootPackage, _generator.OutputPath, true);
         }
+
+        private IEnumerable<CSharpPackage> getPackages(XmiDocument model, UmlPackage package, string namespacePrefix = "Mtconnect")
+        {
+            namespacePrefix = $"{namespacePrefix}.{package.Name.ToPascalCase()}";
+            var results = new List<CSharpPackage>();
+            foreach (var subpackage in package.Packages)
+            {
+                results.Add(new CSharpPackage(model, subpackage) { Namespace = namespacePrefix });
+                if (subpackage.Packages.Count > 0)
+                    results.AddRange(getPackages(model, subpackage, namespacePrefix));
+            }
+            return results;
+        }
+
+        private IEnumerable<CSharpEnum> getEnums(XmiDocument model, UmlPackage package, string namespacePrefix = "Mtconnect")
+        {
+            namespacePrefix = $"{namespacePrefix}.{package.Name.ToPascalCase()}";
+            var results = new List<CSharpEnum>();
+            if (package.Enumerations.Count > 0)
+                foreach (var item in package.Enumerations)
+                    results.Add(new CSharpEnum(model, item) { Namespace = namespacePrefix });
+            if (package.Packages.Count > 0)
+            {
+                foreach (var item in package.Packages)
+                {
+                    var subEnums = getEnums(model, item, namespacePrefix);
+                    if (subEnums.Any())
+                        results.AddRange(subEnums);
+                }
+            }
+            return results;
+        }
+
+        private IEnumerable<CSharpClass> getClasses(XmiDocument model, UmlPackage package, string namespacePrefix = "Mtconnect")
+        {
+            namespacePrefix = $"{namespacePrefix}.{package.Name.ToPascalCase()}";
+            var results = new List<CSharpClass>();
+            if (package.Classes.Count > 0)
+                foreach (var item in package.Classes)
+                    results.Add(new CSharpClass(model, item) { Namespace = namespacePrefix });
+            if ( package.Packages.Count > 0)
+            {
+                foreach(var item in package.Packages)
+                {
+                    var subClasses = getClasses(model, item, namespacePrefix);
+                    if (subClasses.Any())
+                        results.AddRange(subClasses);
+                }
+            }
+            return results;
+        }
+
     }
 }

@@ -1,0 +1,218 @@
+#pragma warning disable CS0109 // Member does not hide an inherited member; new keyword is not required
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
+{{~ code_name = source.name | to_code_safe | string.remove "."
+has_generalization = false
+~}}
+using System;
+using System.CodeDom.Compiler;
+using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+{{~ if source.generalization != null && source.generalization != "" ~}}
+using System.Linq;
+{{~ generalization_type_namespace = source.generalization_id | get_type_namespace | to_code_safe ~}}
+{{~
+	if generalization_type_namespace
+		generalization_type_name = source.generalization | to_pascal_case | to_code_safe | string.remove "."
+	else
+		generalization_type_name = source.generalization | to_code_safe | string.remove "."
+	end
+
+	if generalization_type_namespace
+		generalization = generalization_type_namespace + "."
+	end
+	generalization = generalization + source.generalization
+	has_generalization = source.generalization != null && source.generalization != "" && generalization != null && generalization != ""
+~}}
+{{~ end ~}}
+
+namespace {{ to_code_safe source.namespace }}
+{
+	/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
+	/// </summary>
+	{{ include 'NormativeRemarks.scriban' source }}
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "{{ version }}")]
+	public sealed class {{ code_name }} : IClass
+	{
+		/// <summary>Constant value for <see cref="{{ code_name }}.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure__{{ source.reference_id }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.Summary" /></summary>
+		public const string SUMMARY = @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.Name" /></summary>
+		public const string NAME = "{{ source.normative_name }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.AccessModifier" /></summary>
+		public const string ACCESS_MODIFIER = "{{ source.access_modifier }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.Modifier" /></summary>
+		public const string MODIFIER = "{{ source.modifier }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.NormativeVersion" /></summary>
+		public const string NORMATIVE_VERSION = "{{ source.normative_version }}";
+		/// <summary>Constant value for <see cref="{{ code_name }}.DeprecatedVersion" /></summary>
+		public const string DEPRECATED_VERSION = "{{ source.deprecated_version }}";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public string Name => NAME;
+		
+		/// <inheritdoc />
+		public string AccessModifier => ACCESS_MODIFIER;
+				
+		/// <inheritdoc />
+		public string Modifier => MODIFIER;
+				
+		/// <inheritdoc />
+		public string NormativeVersion => NORMATIVE_VERSION;
+				
+		/// <inheritdoc />
+		public string DeprecatedVersion => DEPRECATED_VERSION;
+		
+		/// <inheritdoc />
+		{{~ if source.generalization != null && source.generalization != "" ~}}
+		/// <remarks>
+		/// Original Type: {{ source.generalization_id }}
+		/// </remarks>
+		public Type Generalization => typeof({{ generalization }});
+		{{~ else ~}}
+		public Type Generalization => null;
+		{{~ end ~}}
+
+		/// <inheritdoc />
+		public new {{ code_name }}Properties Properties { get; } = new {{ code_name }}Properties();
+        IPropertyList IClass.Properties => Properties;
+		/// <summary>
+		/// Property list for <see cref="{{ code_name }}" />.
+		{{~ if has_generalization ~}}
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="{{ generalization }}.{{ source.generalization }}Properties" />.
+		{{~ end ~}}
+		/// </summary>
+		public class {{ code_name }}Properties : {{ if has_generalization == true }}{{ generalization }}.{{ source.generalization }}Properties{{ else }}IPropertyList{{ end }}
+		{
+			/// <inheritdoc />
+			public {{ if has_generalization }}override{{ else }}virtual{{ end }} IProperty[] Properties => new IProperty[] {
+			{{~ for item in source.properties ~}}
+{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
+{{~
+	if item.association
+		item_suffix = "Part"
+	else
+		item_suffix = ""
+	end
+~}}
+				{{ item_code_name }}{{ item_suffix }},
+			{{~ end ~}}
+			}{{ if has_generalization }}.Concat(base.Properties).ToArray(){{ end }};
+		{{~ for item in source.properties ~}}
+		{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
+{{~ property_type_namespace = item.original_property_type | get_type_namespace | to_code_safe ~}}
+		{{~
+			if property_type_namespace
+				item_type_name = item.type | to_pascal_case | to_code_safe | string.remove "."
+			else
+				item_type_name = item.type | to_code_safe | string.remove "."
+			end
+		~}}
+		{{~
+			if item.association
+				item_suffix = "PartProperty"
+			else
+				item_suffix = "Property"
+			end
+		~}}
+			/// <summary>
+			/// <inheritdoc cref="{{ item_code_name}}{{ item_suffix }}" path="/summary" /><br/>
+			/// <remarks>Original Name: {{ item.name }}</remarks>
+			/// </summary>
+			public {{ if has_generalization }}new {{ end }}{{ item_code_name }}{{ item_suffix }} {{ item_code_name }}{{ if item.association }}Part{{ end }} { get; } = new {{ item_code_name }}{{ item_suffix }}();
+			
+			/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' item?.summary }}
+			/// </summary>
+			public {{ if has_generalization }}new {{ end }}sealed class {{ item_code_name }}{{ item_suffix }} : IProperty
+			{
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Name" /></summary>
+				public const string NAME = "{{ item.normative_name }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Summary" /></summary>
+				public const string SUMMARY = @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "{{ item.access_modifier }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Modifier" /></summary>
+				public const string MODIFIER = "{{ item.modifier }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "{{ item.normative_version }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "{{ item.deprecated_version }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Aggregation" /></summary>
+				public const string AGGREGATION = "{{ item.aggregation }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Extension" /></summary>
+				public const string EXTENSION = "{{ item.extension }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Association" /></summary>
+				public const string ASSOCIATION = "{{ item.association }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "{{ item.default_value }}";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: {{ item.type | to_pascal_case | to_code_safe }} </remarks>
+				/// </summary>
+				public System.Type Type => typeof({{ if property_type_namespace }}{{ property_type_namespace }}.{{ end }}{{ item_type_name }});
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
+
+				/// <inheritdoc />
+				public string AccessModifier => ACCESS_MODIFIER;
+				
+				/// <inheritdoc />
+				public string Modifier => MODIFIER;
+				
+				/// <inheritdoc />
+				public string NormativeVersion => NORMATIVE_VERSION;
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => DEPRECATED_VERSION;
+				
+				/// <inheritdoc />
+				public string Aggregation => AGGREGATION;
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => EXTENSION;
+				
+				/// <inheritdoc />
+				public string Association => ASSOCIATION;
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => DEFAULT_VALUE;
+			}
+		{{~ end ~}}
+		};
+
+		{{~ if source.constraints.size > 0 ~}}
+		# region Rules
+	{{~ for constraint in source.constraints ~}}
+		/// <summary>
+		/// {{ constraint.name }}
+		/// </summary>
+		/// <remarks>Specification Language: <c>{{ constraint?.specification?.language ?? "Unspecified" }}</c></remarks>
+		public string {{ constraint.name }} => @"{{ constraint?.raw_script | string.replace "\"" "\"\"" }}";
+		/*
+		{{ constraint?.raw_script ?? "No Content" }}
+		*/
+	{{~ end ~}}
+		# endregion
+		{{~ end ~}}
+	}
+}

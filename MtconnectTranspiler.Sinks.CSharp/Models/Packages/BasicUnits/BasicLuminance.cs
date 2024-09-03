@@ -1,0 +1,58 @@
+#pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
+#pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
+#pragma warning disable CS0618 // Type or member is obsolete
+using System;
+using System.CodeDom.Compiler;
+using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+
+namespace Mtconnect.Imports.UnitImports.BasicUnits
+{
+	/// <summary>﻿
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579105790710_824663_163207">model.mtconnect.org</seealso> for more information.
+	/// </summary>
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	public class BasicLuminancePackage : IPackage
+	{
+		/// <summary>Constant value for <see cref="BasicLuminancePackage.ReferenceId" /></summary>
+		public const string REFERENCE_ID = "_19_0_3_45f01b9_1579105790710_824663_163207";
+		/// <summary>Constant value for <see cref="BasicLuminancePackage.HelpUrl" /></summary>
+		public const string HELP_URL = "https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579105790710_824663_163207";
+		/// <summary>Constant value for <see cref="BasicLuminancePackage.Name" /></summary>
+		public const string NAME = "Basic Luminance";
+		/// <summary>Constant value for <see cref="BasicLuminancePackage.Summary" /></summary>
+		public const string SUMMARY = @"";
+
+		/// <inheritdoc />
+		public string ReferenceId => REFERENCE_ID;
+		
+		/// <inheritdoc />
+		public string HelpUrl => HELP_URL;
+		
+		/// <inheritdoc />
+		public string Name => NAME;
+
+		/// <inheritdoc />
+		public string Summary => SUMMARY;
+
+		/// <inheritdoc />
+		public IPackage[] Packages => new IPackage[] {
+		};
+		
+		/// <inheritdoc />
+		public IClass[] Classes => new IClass[] {
+		};
+		
+		/// <inheritdoc />
+		public IEnum[] Enums => new IEnum[] {
+		};
+
+		#region Packages
+	#endregion
+
+	#region Classes
+	#endregion
+
+	#region Enums
+	#endregion
+	}
+}

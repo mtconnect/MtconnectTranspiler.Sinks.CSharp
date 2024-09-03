@@ -5,12 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MtconnectTranspiler.Sinks.CSharp", "MtconnectTranspiler.Sinks.CSharp\MtconnectTranspiler.Sinks.CSharp.csproj", "{E5B69CB5-6763-4D37-9F0D-92B21B60A60A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MtconnectTranspiler.Sinks.CSharp.Example", "MtconnectTranspiler.Sinks.CSharp.Example\MtconnectTranspiler.Sinks.CSharp.Example.csproj", "{297BE937-D617-4F8E-93F3-DFA29C0E31D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MtconnectTranspiler.Sinks.CSharp.Example", "MtconnectTranspiler.Sinks.CSharp.Example\MtconnectTranspiler.Sinks.CSharp.Example.csproj", "{297BE937-D617-4F8E-93F3-DFA29C0E31D4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6D9F4E82-1674-498E-987C-5AFC80BA7DBC}"
-	ProjectSection(SolutionItems) = preProject
-		Mtconnect CSharp Transpiler.zip = Mtconnect CSharp Transpiler.zip
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

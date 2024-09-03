@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>MTConnect Transpiler Sink for C#</Title>
-    <Version>1.0.13</Version>
+    <Version>2.4.0</Version>
     <Authors>mtconnect, tbm0115</Authors>
     <Company>MTConnect Institute; TAMS;</Company>
     <Description>An implementation of `ITranspilerSink` from the `MtconnectTranspiler` library. This libary makes it possible to transpile the MTConnect Standard SysML model into C# code.</Description>
@@ -15,35 +15,11 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes>Updated to support v2.4.0 of the MTConnect Standard.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Templates\Class.scriban" />
-    <None Remove="Templates\Enum.scriban" />
-    <None Remove="Templates\GeneratedCodeAttribute.scriban" />
-    <None Remove="Templates\UmlCommentsSummaryContent.scriban" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Templates\Class.scriban">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Templates\Enum.scriban">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Templates\GeneratedCodeAttribute.scriban">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Templates\UmlCommentsSummaryContent.scriban">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="CaseExtensions" Version="1.1.0" />
-    <PackageReference Include="MtconnectTranspiler" Version="1.0.7" />
-    <PackageReference Include="MtconnectTranspiler.Sinks.ScribanTemplates" Version="1.0.14" />
-    <PackageReference Include="Scriban" Version="5.7.0" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
