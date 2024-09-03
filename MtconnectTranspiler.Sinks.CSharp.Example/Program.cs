@@ -24,7 +24,11 @@ internal class Program
         }
         IConfiguration configuration = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
+#if DEBUG
+            .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)
+#else
             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+#endif
             .AddEnvironmentVariables()
             .AddCommandLine(args)
             .Build();
@@ -59,28 +63,19 @@ internal class Program
             .BuildServiceProvider();
 
         //configure console logging
-        //serviceProvider
-        //    .GetService<ILoggerFactory>()
-        //    .AddConsole(LogLevel.Debug);
-
         var logger = serviceProvider.GetService<ILoggerFactory>()
             .CreateLogger<Program>();
         logger.LogDebug("Starting application");
 
-
-        //var logFactory = LoggerFactory.Create((o) => o.AddConsoulLogger());
-        //var dispatchLogger = logFactory.CreateLogger<TranspilerDispatcher>();
-        //var transpilerLogger = logFactory.CreateLogger<ITranspilerSink>();
-
-
         // NOTE: The GitHubRelease can be a reference to a specific tag referring to the version in which to download.
         TranspilerDispatcherOptions? dispatchOptions = null;
-        if (args.Length > 1)
+        string modelPath = configuration["ModelPath"];
+        if (!string.IsNullOrEmpty(modelPath))
         {
-            if (!File.Exists(args[1])) throw new FileNotFoundException(args[1]);
+            if (!File.Exists(modelPath)) throw new FileNotFoundException(modelPath);
 
-            dispatchOptions = new FromFileOptions() { Filepath = args[1] };
-            Consoul.Write("Dispatching from file: " + args[1]);
+            dispatchOptions = new FromFileOptions() { Filepath = modelPath };
+            Consoul.Write("Dispatching from file: " + modelPath);
         }
         else
         {

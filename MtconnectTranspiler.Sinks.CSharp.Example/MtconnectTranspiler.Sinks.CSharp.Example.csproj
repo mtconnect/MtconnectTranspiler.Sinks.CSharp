@@ -9,9 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="appsettings.Development.json" />
     <None Remove="Templates\CSharp.Model.scriban" />
     <None Remove="Templates\CSharp.Package.scriban" />
     <None Remove="Templates\NormativeRemarks.scriban" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="appsettings.Development.json" />
   </ItemGroup>
 
   <ItemGroup>
