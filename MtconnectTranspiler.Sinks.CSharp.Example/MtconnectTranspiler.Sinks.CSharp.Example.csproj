@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -13,10 +13,6 @@
     <None Remove="Templates\CSharp.Model.scriban" />
     <None Remove="Templates\CSharp.Package.scriban" />
     <None Remove="Templates\NormativeRemarks.scriban" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="appsettings.Development.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,6 +53,9 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+	  <Content Include="appsettings.Development.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
   </ItemGroup>
 
 </Project>
