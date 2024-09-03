@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.InformationModel
+namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1585537640204_557429_3724">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		/// <remarks>
 		/// Original Type: _19_0_3_45f01b9_1585537591558_380255_3580
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationValueClass);
 
 		/// <inheritdoc />
 		public new ConditionValueClassProperties Properties { get; } = new ConditionValueClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ConditionValueClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass.ObservationValueClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationValueClass.ObservationValueClassProperties" />.
 		/// </summary>
-		public class ConditionValueClassProperties : Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass.ObservationValueClassProperties
+		public class ConditionValueClassProperties : Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationValueClass.ObservationValueClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

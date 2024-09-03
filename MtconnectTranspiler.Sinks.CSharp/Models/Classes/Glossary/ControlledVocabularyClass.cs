@@ -8,10 +8,15 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	/// <summary>﻿restricted set of values that may be published for an <i>observation</i>.<br /><br /><br />
+	/// <summary>﻿restricted set of values for a given property.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375150_827203_1968">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	
+	/// <remarks>
+	/// <list type="bullet">
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0.1">v1.0.1</see></item>
+	/// </list>
+	/// </remarks>
+
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class ControlledVocabularyClass : IClass
 	{
@@ -20,7 +25,7 @@ namespace Mtconnect.Glossary
 		/// <summary>Constant value for <see cref="ControlledVocabularyClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375150_827203_1968";
 		/// <summary>Constant value for <see cref="ControlledVocabularyClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;restricted set of values that may be published for an {{term(observation)}}.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;restricted set of values for a given property.&#10;
 ";
 		/// <summary>Constant value for <see cref="ControlledVocabularyClass.Name" /></summary>
 		public const string NAME = "controlled vocabulary";
@@ -29,7 +34,7 @@ namespace Mtconnect.Glossary
 		/// <summary>Constant value for <see cref="ControlledVocabularyClass.Modifier" /></summary>
 		public const string MODIFIER = "";
 		/// <summary>Constant value for <see cref="ControlledVocabularyClass.NormativeVersion" /></summary>
-		public const string NORMATIVE_VERSION = "";
+		public const string NORMATIVE_VERSION = "1.0.1";
 		/// <summary>Constant value for <see cref="ControlledVocabularyClass.DeprecatedVersion" /></summary>
 		public const string DEPRECATED_VERSION = "";
 

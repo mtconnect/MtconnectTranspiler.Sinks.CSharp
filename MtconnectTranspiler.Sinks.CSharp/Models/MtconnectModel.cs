@@ -18,14 +18,15 @@ namespace Mtconnect
 			FundamentalsPackage,
 			ObservationInformationModelPackage,
 			GlossaryPackage,
-			AgentArchitecturePackage,
+			ReferenceAgentArchitecturePackage,
 			DevelopmentProcessPackage,
 			SupportingDocumentsPackage,
-			WIP_BestPracticesWithExamplesPackage,
+			WIP_DeviceExamplesPackage,
 			MTConnectDeviceValidationSuitePackage,
 			InterfaceInteractionModelPackage,
 			DeviceInformationModelPackage,
 			ImportsPackage,
+			WIP_UseCasesPackage,
 			DataTypesPackage,
 			StereotypesPackage,
 		};
@@ -55,11 +56,11 @@ namespace Mtconnect
 	/// </summary>
 	public static GlossaryPackage GlossaryPackage => _GlossaryPackage ?? (_GlossaryPackage = new GlossaryPackage());
 
-		private static AgentArchitecturePackage _AgentArchitecturePackage;
+		private static ReferenceAgentArchitecturePackage _ReferenceAgentArchitecturePackage;
 	/// <summary>
-	/// <ineritdoc cref="Mtconnect.AgentArchitecturePackage" path="/summary" />
+	/// <ineritdoc cref="Mtconnect.ReferenceAgentArchitecturePackage" path="/summary" />
 	/// </summary>
-	public static AgentArchitecturePackage AgentArchitecturePackage => _AgentArchitecturePackage ?? (_AgentArchitecturePackage = new AgentArchitecturePackage());
+	public static ReferenceAgentArchitecturePackage ReferenceAgentArchitecturePackage => _ReferenceAgentArchitecturePackage ?? (_ReferenceAgentArchitecturePackage = new ReferenceAgentArchitecturePackage());
 
 		private static DevelopmentProcessPackage _DevelopmentProcessPackage;
 	/// <summary>
@@ -73,11 +74,11 @@ namespace Mtconnect
 	/// </summary>
 	public static SupportingDocumentsPackage SupportingDocumentsPackage => _SupportingDocumentsPackage ?? (_SupportingDocumentsPackage = new SupportingDocumentsPackage());
 
-		private static WIP_BestPracticesWithExamplesPackage _WIP_BestPracticesWithExamplesPackage;
+		private static WIP_DeviceExamplesPackage _WIP_DeviceExamplesPackage;
 	/// <summary>
-	/// <ineritdoc cref="Mtconnect.WIP_BestPracticesWithExamplesPackage" path="/summary" />
+	/// <ineritdoc cref="Mtconnect.WIP_DeviceExamplesPackage" path="/summary" />
 	/// </summary>
-	public static WIP_BestPracticesWithExamplesPackage WIP_BestPracticesWithExamplesPackage => _WIP_BestPracticesWithExamplesPackage ?? (_WIP_BestPracticesWithExamplesPackage = new WIP_BestPracticesWithExamplesPackage());
+	public static WIP_DeviceExamplesPackage WIP_DeviceExamplesPackage => _WIP_DeviceExamplesPackage ?? (_WIP_DeviceExamplesPackage = new WIP_DeviceExamplesPackage());
 
 		private static MTConnectDeviceValidationSuitePackage _MTConnectDeviceValidationSuitePackage;
 	/// <summary>
@@ -102,6 +103,12 @@ namespace Mtconnect
 	/// <ineritdoc cref="Mtconnect.ImportsPackage" path="/summary" />
 	/// </summary>
 	public static ImportsPackage ImportsPackage => _ImportsPackage ?? (_ImportsPackage = new ImportsPackage());
+
+		private static WIP_UseCasesPackage _WIP_UseCasesPackage;
+	/// <summary>
+	/// <ineritdoc cref="Mtconnect.WIP_UseCasesPackage" path="/summary" />
+	/// </summary>
+	public static WIP_UseCasesPackage WIP_UseCasesPackage => _WIP_UseCasesPackage ?? (_WIP_UseCasesPackage = new WIP_UseCasesPackage());
 
 		private static DataTypesPackage _DataTypesPackage;
 	/// <summary>

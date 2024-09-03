@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.Pipelines
+namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674414517415_840067_3791">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <remarks>
 		/// Original Type: _19_0_4_45f01b9_1674414211400_186233_3570
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.GuardClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.Pipelines.GuardClass);
 
 		/// <inheritdoc />
 		public new LambdaGuardGeneralizationProperties Properties { get; } = new LambdaGuardGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="LambdaGuardGeneralization" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.GuardClass.GuardClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.Pipelines.GuardClass.GuardClassProperties" />.
 		/// </summary>
-		public class LambdaGuardGeneralizationProperties : Mtconnect.AgentArchitecture.Pipelines.GuardClass.GuardClassProperties
+		public class LambdaGuardGeneralizationProperties : Mtconnect.ReferenceAgentArchitecture.Pipelines.GuardClass.GuardClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

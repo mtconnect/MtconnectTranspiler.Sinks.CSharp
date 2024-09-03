@@ -459,6 +459,24 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		COULOMB,
+		/// <summary>﻿geometric volume in meters.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		CUBIC_METER,
+		/// <summary>﻿geometric area in millimeters.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		SQUARE_MILLIMETER,
 	}
 
 	/// <summary>﻿
@@ -555,6 +573,8 @@ namespace Mtconnect.DataTypes
 		GRAM,
 		METER_PER_SECOND_SQUARED,
 		COULOMB,
+		CUBIC_METER,
+		SQUARE_MILLIMETER,
 		};
 
 		private AMPEREValue _AMPERE;
@@ -2553,6 +2573,88 @@ Space delimited list of three floating point numbers.&#10;
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="COULOMBValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;electric charge in coulombs (C).&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private CUBIC_METERValue _CUBIC_METER;
+		/// <inheritdoc cref="CUBIC_METERValue" path="/summary" />
+		public CUBIC_METERValue CUBIC_METER => _CUBIC_METER ?? (_CUBIC_METER = new CUBIC_METERValue());
+
+		/// <summary>﻿geometric volume in meters.<br /><br /><br />
+		/// Value for UnitEnum.<br/>
+		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class CUBIC_METERValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="CUBIC_METERValue.Name" /></summary>
+			public const string NAME = "CUBIC_METER";
+			/// <summary>Constant value for <see cref="CUBIC_METERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.4";
+			/// <summary>Constant value for <see cref="CUBIC_METERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="CUBIC_METERValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;geometric volume in meters.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private SQUARE_MILLIMETERValue _SQUARE_MILLIMETER;
+		/// <inheritdoc cref="SQUARE_MILLIMETERValue" path="/summary" />
+		public SQUARE_MILLIMETERValue SQUARE_MILLIMETER => _SQUARE_MILLIMETER ?? (_SQUARE_MILLIMETER = new SQUARE_MILLIMETERValue());
+
+		/// <summary>﻿geometric area in millimeters.<br /><br /><br />
+		/// Value for UnitEnum.<br/>
+		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class SQUARE_MILLIMETERValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="SQUARE_MILLIMETERValue.Name" /></summary>
+			public const string NAME = "SQUARE_MILLIMETER";
+			/// <summary>Constant value for <see cref="SQUARE_MILLIMETERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.4";
+			/// <summary>Constant value for <see cref="SQUARE_MILLIMETERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="SQUARE_MILLIMETERValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;geometric area in millimeters.&#10;
 ";
 
 			/// <inheritdoc />

@@ -6,7 +6,7 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model
+namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1582232410859_111633_157">model.mtconnect.org</seealso> for more information.
@@ -111,7 +111,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: ParentCoordinatesClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.ParentCoordinatesClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.ParentCoordinatesClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -180,7 +180,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: OriginPositionGeneralization </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPositionGeneralization);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.OriginPositionGeneralization);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -249,7 +249,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: RotationVectorGeneralization </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.RotationVectorGeneralization);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.RotationVectorGeneralization);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -318,7 +318,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: TranslationVectorGeneralization </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.TranslationVectorGeneralization);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.TranslationVectorGeneralization);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -387,7 +387,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: TransformationClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.TransformationClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.TransformationClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -456,7 +456,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: AxisClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AxisClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.AxisClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

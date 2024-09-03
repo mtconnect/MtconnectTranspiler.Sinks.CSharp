@@ -6,7 +6,7 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.AgentArchitecture.Rest.Storage
+namespace Mtconnect.ReferenceAgentArchitecture.Rest.Storage
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584927801848_454326_15349">model.mtconnect.org</seealso> for more information.

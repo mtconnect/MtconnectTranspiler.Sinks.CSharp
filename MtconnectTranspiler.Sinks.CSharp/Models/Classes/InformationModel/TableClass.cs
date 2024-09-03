@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.InformationModel
+namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1585537769281_171822_3833">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		/// <remarks>
 		/// Original Type: _19_0_3_45f01b9_1585537129913_814690_3218
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.DataSetClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.InformationModel.DataSetClass);
 
 		/// <inheritdoc />
 		public new TableClassProperties Properties { get; } = new TableClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TableClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.InformationModel.DataSetClass.DataSetClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.InformationModel.DataSetClass.DataSetClassProperties" />.
 		/// </summary>
-		public class TableClassProperties : Mtconnect.AgentArchitecture.InformationModel.DataSetClass.DataSetClassProperties
+		public class TableClassProperties : Mtconnect.ReferenceAgentArchitecture.InformationModel.DataSetClass.DataSetClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

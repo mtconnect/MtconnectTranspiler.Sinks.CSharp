@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.InformationModel
+namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1585536710703_127812_2820">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		/// <remarks>
 		/// Original Type: _19_0_3_45f01b9_1585536700946_684682_2787
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationClass);
 
 		/// <inheritdoc />
 		public new SampleClassProperties Properties { get; } = new SampleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="SampleClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties" />.
 		/// </summary>
-		public class SampleClassProperties : Mtconnect.AgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties
+		public class SampleClassProperties : Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {
@@ -111,7 +111,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 				/// <inheritdoc />
 				/// <remarks> Type: NumericValueClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AgentArchitecture.InformationModel.NumericValueClass);
+				public System.Type Type => typeof(Mtconnect.ReferenceAgentArchitecture.InformationModel.NumericValueClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

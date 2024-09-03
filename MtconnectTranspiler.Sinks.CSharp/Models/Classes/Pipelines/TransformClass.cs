@@ -6,7 +6,7 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.AgentArchitecture.Pipelines
+namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674413898061_196217_3470">model.mtconnect.org</seealso> for more information.
@@ -107,7 +107,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				/// <inheritdoc />
 				/// <remarks> Type: GuardClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AgentArchitecture.Pipelines.GuardClass);
+				public System.Type Type => typeof(Mtconnect.ReferenceAgentArchitecture.Pipelines.GuardClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -176,7 +176,7 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 				/// <inheritdoc />
 				/// <remarks> Type: TransformClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AgentArchitecture.Pipelines.TransformClass);
+				public System.Type Type => typeof(Mtconnect.ReferenceAgentArchitecture.Pipelines.TransformClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

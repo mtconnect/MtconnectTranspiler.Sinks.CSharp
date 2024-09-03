@@ -6,7 +6,7 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.AgentArchitecture.Pipelines
+namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674414211400_186233_3570">model.mtconnect.org</seealso> for more information.

@@ -5,7 +5,7 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation
+namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1582337506334_937522_13698">model.mtconnect.org</seealso> for more information.

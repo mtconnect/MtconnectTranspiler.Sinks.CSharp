@@ -6,7 +6,7 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation
+namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1582231560100_542213_121">model.mtconnect.org</seealso> for more information.
@@ -120,7 +120,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: OriginPropertyClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -189,7 +189,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: OriginPropertyClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -258,7 +258,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: OriginPropertyClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -327,7 +327,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: OriginPropertyClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -396,7 +396,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: OriginPropertyClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -465,7 +465,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: OriginPropertyClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -534,7 +534,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: OriginPropertyClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.OriginPropertyClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -603,7 +603,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: PositionClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.PositionClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.PositionClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -672,7 +672,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: AngleClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -741,7 +741,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: AngleClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -810,7 +810,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: AngleClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -879,7 +879,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: AngleClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -948,7 +948,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: AngleClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -1017,7 +1017,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: AngleClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -1086,7 +1086,7 @@ namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimula
 				/// <inheritdoc />
 				/// <remarks> Type: AngleClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.XArm7Model.AngleClass);
+				public System.Type Type => typeof(Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model.AngleClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

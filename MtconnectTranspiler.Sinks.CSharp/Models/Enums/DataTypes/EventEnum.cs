@@ -1223,7 +1223,34 @@ namespace Mtconnect.DataTypes
 		/// </list>
 		/// </remarks>
 
-		POWER_SOURCE,
+		ACTIVE_POWER_SOURCE,
+		/// <summary>﻿textual description of the location of an object or activity.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		LOCATION_NARRATIVE,
+		/// <summary>﻿dimension between two surfaces of an object, usually the dimension of smallest measure, for example an additive layer, or a depth of cut.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		THICKNESS,
+		/// <summary>﻿absolute geographic location defined by two coordinates, longitude and latitude and an elevation.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		LOCATION_SPATIAL_GEOGRAPHIC,
 	}
 
 	/// <summary>﻿
@@ -1404,7 +1431,10 @@ namespace Mtconnect.DataTypes
 		ALARM_LIMITS,
 		TOOL_CUTTING_ITEM,
 		LOCATION_ADDRESS,
-		POWER_SOURCE,
+		ACTIVE_POWER_SOURCE,
+		LOCATION_NARRATIVE,
+		THICKNESS,
+		LOCATION_SPATIAL_GEOGRAPHIC,
 		};
 
 		private ACTIVE_AXESValue _ACTIVE_AXES;
@@ -6886,9 +6916,9 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 			/// <inheritdoc />
 			public string Summary => SUMMARY;
 		}
-		private POWER_SOURCEValue _POWER_SOURCE;
-		/// <inheritdoc cref="POWER_SOURCEValue" path="/summary" />
-		public POWER_SOURCEValue POWER_SOURCE => _POWER_SOURCE ?? (_POWER_SOURCE = new POWER_SOURCEValue());
+		private ACTIVE_POWER_SOURCEValue _ACTIVE_POWER_SOURCE;
+		/// <inheritdoc cref="ACTIVE_POWER_SOURCEValue" path="/summary" />
+		public ACTIVE_POWER_SOURCEValue ACTIVE_POWER_SOURCE => _ACTIVE_POWER_SOURCE ?? (_ACTIVE_POWER_SOURCE = new ACTIVE_POWER_SOURCEValue());
 
 		/// <summary>﻿active energy source for the <see cref="Component">Component</see>.<br /><br /><br />
 		/// Value for EventEnum.<br/>
@@ -6900,16 +6930,139 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 		/// </list>
 		/// </remarks>
 
-		public sealed class POWER_SOURCEValue : IEnumInstance
+		public sealed class ACTIVE_POWER_SOURCEValue : IEnumInstance
 		{
-			/// <summary>Constant value for <see cref="POWER_SOURCEValue.Name" /></summary>
-			public const string NAME = "POWER_SOURCE";
-			/// <summary>Constant value for <see cref="POWER_SOURCEValue.NormativeVersion" /></summary>
+			/// <summary>Constant value for <see cref="ACTIVE_POWER_SOURCEValue.Name" /></summary>
+			public const string NAME = "ACTIVE_POWER_SOURCE";
+			/// <summary>Constant value for <see cref="ACTIVE_POWER_SOURCEValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "2.3";
-			/// <summary>Constant value for <see cref="POWER_SOURCEValue.DeprecatedVersion" /></summary>
+			/// <summary>Constant value for <see cref="ACTIVE_POWER_SOURCEValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
-			/// <summary>Constant value for <see cref="POWER_SOURCEValue.Summary" /></summary>
+			/// <summary>Constant value for <see cref="ACTIVE_POWER_SOURCEValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;active energy source for the {{block(Component)}}.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private LOCATION_NARRATIVEValue _LOCATION_NARRATIVE;
+		/// <inheritdoc cref="LOCATION_NARRATIVEValue" path="/summary" />
+		public LOCATION_NARRATIVEValue LOCATION_NARRATIVE => _LOCATION_NARRATIVE ?? (_LOCATION_NARRATIVE = new LOCATION_NARRATIVEValue());
+
+		/// <summary>﻿textual description of the location of an object or activity.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class LOCATION_NARRATIVEValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="LOCATION_NARRATIVEValue.Name" /></summary>
+			public const string NAME = "LOCATION_NARRATIVE";
+			/// <summary>Constant value for <see cref="LOCATION_NARRATIVEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.4";
+			/// <summary>Constant value for <see cref="LOCATION_NARRATIVEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="LOCATION_NARRATIVEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;textual description of the location of an object or activity.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private THICKNESSValue _THICKNESS;
+		/// <inheritdoc cref="THICKNESSValue" path="/summary" />
+		public THICKNESSValue THICKNESS => _THICKNESS ?? (_THICKNESS = new THICKNESSValue());
+
+		/// <summary>﻿dimension between two surfaces of an object, usually the dimension of smallest measure, for example an additive layer, or a depth of cut.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class THICKNESSValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="THICKNESSValue.Name" /></summary>
+			public const string NAME = "THICKNESS";
+			/// <summary>Constant value for <see cref="THICKNESSValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.4";
+			/// <summary>Constant value for <see cref="THICKNESSValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="THICKNESSValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;dimension between two surfaces of an object, usually the dimension of smallest measure, for example an additive layer, or a depth of cut.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private LOCATION_SPATIAL_GEOGRAPHICValue _LOCATION_SPATIAL_GEOGRAPHIC;
+		/// <inheritdoc cref="LOCATION_SPATIAL_GEOGRAPHICValue" path="/summary" />
+		public LOCATION_SPATIAL_GEOGRAPHICValue LOCATION_SPATIAL_GEOGRAPHIC => _LOCATION_SPATIAL_GEOGRAPHIC ?? (_LOCATION_SPATIAL_GEOGRAPHIC = new LOCATION_SPATIAL_GEOGRAPHICValue());
+
+		/// <summary>﻿absolute geographic location defined by two coordinates, longitude and latitude and an elevation.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class LOCATION_SPATIAL_GEOGRAPHICValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="LOCATION_SPATIAL_GEOGRAPHICValue.Name" /></summary>
+			public const string NAME = "LOCATION_SPATIAL_GEOGRAPHIC";
+			/// <summary>Constant value for <see cref="LOCATION_SPATIAL_GEOGRAPHICValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.4";
+			/// <summary>Constant value for <see cref="LOCATION_SPATIAL_GEOGRAPHICValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="LOCATION_SPATIAL_GEOGRAPHICValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;absolute geographic location defined by two coordinates, longitude and latitude and an elevation.&#10;
 ";
 
 			/// <inheritdoc />

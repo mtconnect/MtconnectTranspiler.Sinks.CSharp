@@ -49,6 +49,7 @@ namespace Mtconnect
 			MaintenanceListResultClass,
 			FeatureMeasurementResultClass,
 			LocationAddressResultClass,
+			LocationSpatialGeographicResultClass,
 		};
 		
 		/// <inheritdoc />
@@ -196,6 +197,12 @@ namespace Mtconnect
 	/// <inheritdoc cref="Package.LocationAddressResultClass" path="/summary" />
 	/// </summary>
 	public Package.LocationAddressResultClass LocationAddressResultClass => _LocationAddressResultClass ?? (_LocationAddressResultClass = new Package.LocationAddressResultClass());
+
+	private Package.LocationSpatialGeographicResultClass _LocationSpatialGeographicResultClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.LocationSpatialGeographicResultClass" path="/summary" />
+	/// </summary>
+	public Package.LocationSpatialGeographicResultClass LocationSpatialGeographicResultClass => _LocationSpatialGeographicResultClass ?? (_LocationSpatialGeographicResultClass = new Package.LocationSpatialGeographicResultClass());
 
 	#endregion
 

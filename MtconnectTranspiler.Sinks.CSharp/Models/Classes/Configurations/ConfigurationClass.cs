@@ -737,9 +737,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <summary>Constant value for <see cref="HasPowerSourcePartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasPowerSourcePartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "";
 				/// <summary>Constant value for <see cref="HasPowerSourcePartProperty.Association" /></summary>
-				public const string ASSOCIATION = "PowerSource";
+				public const string ASSOCIATION = "PowerSources";
 				/// <summary>Constant value for <see cref="HasPowerSourcePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
 
@@ -747,7 +747,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <inheritdoc />
 				/// <remarks> Type: PowerSourceClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.PowerSource.PowerSourceClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.PowerSources.PowerSourceClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

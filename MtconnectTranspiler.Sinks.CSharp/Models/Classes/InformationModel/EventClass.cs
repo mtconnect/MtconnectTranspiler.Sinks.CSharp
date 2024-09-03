@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.InformationModel
+namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1585536721919_58626_2853">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		/// <remarks>
 		/// Original Type: _19_0_3_45f01b9_1585536700946_684682_2787
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationClass);
 
 		/// <inheritdoc />
 		public new EventClassProperties Properties { get; } = new EventClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="EventClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties" />.
 		/// </summary>
-		public class EventClassProperties : Mtconnect.AgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties
+		public class EventClassProperties : Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationClass.ObservationClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {
@@ -111,7 +111,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 				/// <inheritdoc />
 				/// <remarks> Type: TextValueClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AgentArchitecture.InformationModel.TextValueClass);
+				public System.Type Type => typeof(Mtconnect.ReferenceAgentArchitecture.InformationModel.TextValueClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

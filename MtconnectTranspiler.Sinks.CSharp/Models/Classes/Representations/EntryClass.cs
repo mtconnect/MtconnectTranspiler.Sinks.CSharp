@@ -8,7 +8,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.ObservationInformationModel.Representations
 {
-	/// <summary>﻿<i>key-value pair</i> published as part of a <see cref="DataSet">DataSet</see>.<br /><br /><br />Constraints for Entry Values<br /><br />#### Constraints for Entry Values<br /><br />The value of each <see cref="Entry">Entry</see> <b>MUST</b> have the same restrictions as the value of an <i>observation</i> with <see cref="DataItem.representation">representation in DataItem</see> as <c>VALUE</c>.<br /><br />An <see cref="Entry">Entry</see> <b>MAY</b> be further constrained by the <see cref="DataItem">DataItem</see> definition (see <see cref="Device Information Model">Device Information Model</see>), for example a <c>VariableDataSet</c> having a string value <b>MAY</b> have a floating-point <see cref="Temperature">Temperature</see> value. A restriction <b>MUST NOT</b> be broadened or removed, for example, the value "READY" <b>MUST NOT</b> occur with a <c>TemperatureDataSet</c> constrained to floating-point numbers.<br /><br /><see cref="EntryDefinition">EntryDefinition</see> <b>MAY</b> provide the type and units of an <see cref="Entry.key">key in Entry</see>.<br /><br /><br /><br /><br /><br />
+	/// <summary>﻿<i>key-value pair</i> published as part of a <see cref="DataSet">DataSet</see>.<br /><br /><br />Constraints for Entry Values<br /><br /><br />The value of each <see cref="Entry">Entry</see> <b>MUST</b> have the same restrictions as the value of an <i>observation</i> with <see cref="DataItem.representation">representation in DataItem</see> as <c>VALUE</c>.<br /><br />An <see cref="Entry">Entry</see> <b>MAY</b> be further constrained by the <see cref="DataItem">DataItem</see> definition (see <see cref="Device Information Model">Device Information Model</see>), for example a <c>VariableDataSet</c> having a string value <b>MAY</b> have a floating-point <see cref="Temperature">Temperature</see> value. A restriction <b>MUST NOT</b> be broadened or removed, for example, the value "READY" <b>MUST NOT</b> occur with a <c>TemperatureDataSet</c> constrained to floating-point numbers.<br /><br /><see cref="EntryDefinition">EntryDefinition</see> <b>MAY</b> provide the type and units of an <see cref="Entry.key">key in Entry</see>.<br /><br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531114_364030_25729">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -26,8 +26,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579566531114_364030_25729";
 		/// <summary>Constant value for <see cref="EntryClass.Summary" /></summary>
 		public const string SUMMARY = @"&#10;&#10;&#10;{{term(key-value pair)}} published as part of a {{block(DataSet)}}.&#10;
-&#10;&#10;&#10;Constraints for Entry Values&#10;&#10;&#10;&#10;#### Constraints for Entry Values
-
+&#10;&#10;&#10;Constraints for Entry Values&#10;&#10;&#10;&#10;
 The value of each {{block(Entry)}} **MUST** have the same restrictions as the value of an {{term(observation)}} with {{property(DataItem::representation)}} as `VALUE`.
 
 An {{block(Entry)}} **MAY** be further constrained by the {{block(DataItem)}} definition (see {{package(Device Information Model)}}), for example a `VariableDataSet` having a string value **MAY** have a floating-point {{block(Temperature)}} value. A restriction **MUST NOT** be broadened or removed, for example, the value ""READY"" **MUST NOT** occur with a `TemperatureDataSet` constrained to floating-point numbers.

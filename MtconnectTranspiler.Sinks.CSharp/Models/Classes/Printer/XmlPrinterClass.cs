@@ -6,7 +6,7 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.AgentArchitecture.Printer
+namespace Mtconnect.ReferenceAgentArchitecture.Printer
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929161140_966607_18514">model.mtconnect.org</seealso> for more information.

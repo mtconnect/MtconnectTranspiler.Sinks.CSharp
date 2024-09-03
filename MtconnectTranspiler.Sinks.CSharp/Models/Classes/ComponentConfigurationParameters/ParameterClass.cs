@@ -8,7 +8,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 {
-	/// <summary>﻿property defining a configuration of a <see cref="Component">Component</see>.<br /><br /><br />
+	/// <summary>﻿property that determines the characteristic or behavior of an entity.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197371649_500788_17992">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -25,7 +25,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 		/// <summary>Constant value for <see cref="ParameterClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_68e0225_1678197371649_500788_17992";
 		/// <summary>Constant value for <see cref="ParameterClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;property defining a configuration of a {{block(Component)}}.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;property that determines the characteristic or behavior of an entity.&#10;
 ";
 		/// <summary>Constant value for <see cref="ParameterClass.Name" /></summary>
 		public const string NAME = "Parameter";

@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.DataTypes
 {
-	/// <summary>﻿<see cref="SensorAttachment.result">result in SensorAttachment</see> <b>MUST</b> be of a <see cref="Table">Table</see>, <see cref="DataSet">DataSet</see> or <see cref="Value">Value</see> <see cref="Representation">Representation</see> type.<br /><br /><br />
+	/// <summary>﻿<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1620207520256_148935_1073">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -26,7 +26,7 @@ namespace Mtconnect.DataTypes
 		/// <summary>Constant value for <see cref="SensorAttachmentResultClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_68e0225_1620207520256_148935_1073";
 		/// <summary>Constant value for <see cref="SensorAttachmentResultClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;{{property(SensorAttachment::result)}} **MUST** be of a {{block(Table)}}, {{block(DataSet)}} or {{block(Value)}} {{block(Representation)}} type.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;&#10;
 ";
 		/// <summary>Constant value for <see cref="SensorAttachmentResultClass.Name" /></summary>
 		public const string NAME = "SensorAttachmentResult";

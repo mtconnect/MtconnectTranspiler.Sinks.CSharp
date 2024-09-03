@@ -8,7 +8,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 {
-	/// <summary>﻿number of times the cutter has been reconditioned.<br /><br /><br /><br />Description<br /><br /><see cref="ReconditionCount">ReconditionCount</see> <b>MUST</b> be defined only for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingTool">CuttingTool</see> and <b>MUST NOT</b> be defined for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> of <see cref="CuttingToolArchetype">CuttingToolArchetype</see>.<br /><br /><br /><br /><br />
+	/// <summary>﻿number of times the cutter has been reconditioned.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_AB33F1B2_493B_4f60_9394_4A69B30576F9">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -26,7 +26,6 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__EAID_AB33F1B2_493B_4f60_9394_4A69B30576F9";
 		/// <summary>Constant value for <see cref="ReconditionCountClass.Summary" /></summary>
 		public const string SUMMARY = @"&#10;&#10;&#10;number of times the cutter has been reconditioned.&#10;
-&#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(ReconditionCount)}} **MUST** be defined only for the {{block(CuttingToolLifeCycle)}} of {{block(CuttingTool)}} and **MUST NOT** be defined for the {{block(CuttingToolLifeCycle)}} of {{block(CuttingToolArchetype)}}.&#10;
 ";
 		/// <summary>Constant value for <see cref="ReconditionCountClass.Name" /></summary>
 		public const string NAME = "ReconditionCount";
@@ -155,14 +154,15 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			
-			/// <summary>﻿
+			/// <summary>﻿<see cref="ReconditionCount.value">value in ReconditionCount</see> <b>MUST</b> be provided for <see cref="CuttingTool::CuttingToolLifeCycle">CuttingTool::CuttingToolLifeCycle</see> and <b>MUST NOT</b> be provided for the <see cref="CuttingToolArchetype::CuttingToolLifeCycle">CuttingToolArchetype::CuttingToolLifeCycle</see>.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>Constant value for <see cref="ValueProperty.Name" /></summary>
 				public const string NAME = "value";
 				/// <summary>Constant value for <see cref="ValueProperty.Summary" /></summary>
-				public const string SUMMARY = @"";
+				public const string SUMMARY = @"&#10;&#10;&#10;{{property(ReconditionCount::value)}} **MUST** be provided for {{block(CuttingTool::CuttingToolLifeCycle)}} and **MUST NOT** be provided for the {{block(CuttingToolArchetype::CuttingToolLifeCycle)}}.&#10;
+";
 				/// <summary>Constant value for <see cref="ValueProperty.AccessModifier" /></summary>
 				public const string ACCESS_MODIFIER = "public";
 				/// <summary>Constant value for <see cref="ValueProperty.Modifier" /></summary>

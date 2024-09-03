@@ -497,9 +497,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: String </remarks>
+				/// <remarks> Type: Object </remarks>
 				/// </summary>
-				public System.Type Type => typeof(String);
+				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

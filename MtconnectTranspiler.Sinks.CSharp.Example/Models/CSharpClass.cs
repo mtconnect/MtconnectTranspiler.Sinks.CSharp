@@ -15,22 +15,22 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <summary>
         /// Reference to the xmi:id
         /// </summary>
-        public string ReferenceId { get; set; }
+        public string? ReferenceId { get; set; }
 
         /// <summary>
         /// Reference to the <c>name</c> attribute.
         /// </summary>
-        public string NormativeName { get; set; }
+        public string? NormativeName { get; set; }
 
         /// <summary>
         /// Reference to any Comments written in the SysML model to be converted into a C# format <c>&lt;summary /&gt;</c>
         /// </summary>
-        public Summary Summary { get; protected set; }
+        public Summary? Summary { get; protected set; }
 
         /// <summary>
         /// Internal reference to the class filename.
         /// </summary>
-        protected string _filename { get; set; }
+        protected string? _filename { get; set; }
         /// <inheritdoc />
         public virtual string Filename
         {
@@ -64,14 +64,14 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <summary>
         /// Remote type of the generalization
         /// </summary>
-        public string Generalization { get; set; }
+        public string? Generalization { get; set; }
 
         /// <summary>
         /// Original <c>generalization</c> value from the XMI
         /// </summary>
-        public string GeneralizationId { get; set; }
+        public string? GeneralizationId { get; set; }
 
-        private XmiElement _remoteType { get; set; }
+        private XmiElement? _remoteType { get; set; }
 
         /// <summary>
         /// Constructs an <see cref="CSharpClass"/> more generically. <b>NOTE</b>: You'll need to add items manually from here.
@@ -157,7 +157,6 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                     }
                     else
                     {
-                        //name += generalizedType;
                         name += "Class";
                     }
                 }

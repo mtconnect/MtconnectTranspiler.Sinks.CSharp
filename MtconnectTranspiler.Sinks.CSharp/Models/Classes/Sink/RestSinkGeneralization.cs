@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.Sink
+namespace Mtconnect.ReferenceAgentArchitecture.Sink
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929472006_955706_18942">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.Sink
 		/// <remarks>
 		/// Original Type: _19_0_4_45f01b9_1645213825022_980161_355
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SinkClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.SinkClass);
 
 		/// <inheritdoc />
 		public new RestSinkGeneralizationProperties Properties { get; } = new RestSinkGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RestSinkGeneralization" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.SinkClass.SinkClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.SinkClass.SinkClassProperties" />.
 		/// </summary>
-		public class RestSinkGeneralizationProperties : Mtconnect.AgentArchitecture.SinkClass.SinkClassProperties
+		public class RestSinkGeneralizationProperties : Mtconnect.ReferenceAgentArchitecture.SinkClass.SinkClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

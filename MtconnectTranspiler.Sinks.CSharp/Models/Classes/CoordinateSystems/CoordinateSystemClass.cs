@@ -608,9 +608,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: String </remarks>
+				/// <remarks> Type: Object </remarks>
 				/// </summary>
-				public System.Type Type => typeof(String);
+				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

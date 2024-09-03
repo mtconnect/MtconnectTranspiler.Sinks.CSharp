@@ -83,14 +83,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			
-			/// <summary>﻿The value of <see cref="Rotation">Rotation</see> in <c>MILLIMETER_3D</c>.<br /><br /><br />
+			/// <summary>﻿The value of <see cref="Translation">Translation</see> in <c>MILLIMETER_3D</c>.<br /><br /><br />
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>Constant value for <see cref="ValueProperty.Name" /></summary>
 				public const string NAME = "value";
 				/// <summary>Constant value for <see cref="ValueProperty.Summary" /></summary>
-				public const string SUMMARY = @"&#10;&#10;&#10;The value of {{block(Rotation)}} in `MILLIMETER_3D`.&#10;
+				public const string SUMMARY = @"&#10;&#10;&#10;The value of {{block(Translation)}} in `MILLIMETER_3D`.&#10;
 ";
 				/// <summary>Constant value for <see cref="ValueProperty.AccessModifier" /></summary>
 				public const string ACCESS_MODIFIER = "public";

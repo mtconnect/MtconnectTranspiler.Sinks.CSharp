@@ -414,7 +414,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		POWERED,
-		/// <summary>﻿main or most important.<br /><br /><br />
+		/// <summary>﻿main or principle.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1017,24 +1017,6 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MODEL,
-		/// <summary>﻿alternate or not primary.<br /><br /><br />
-		/// </summary>
-		/// <remarks>
-		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
-		/// </list>
-		/// </remarks>
-
-		SECONDARY,
-		/// <summary>﻿held near at hand and ready for use.<br /><br /><br />
-		/// </summary>
-		/// <remarks>
-		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
-		/// </list>
-		/// </remarks>
-
-		STANDBY,
 	}
 
 	/// <summary>﻿
@@ -1193,8 +1175,6 @@ namespace Mtconnect.DataTypes
 		ENUMERATED,
 		DETECT,
 		MODEL,
-		SECONDARY,
-		STANDBY,
 		};
 
 		private ABSOLUTEValue _ABSOLUTE;
@@ -3011,7 +2991,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="PRIMARYValue" path="/summary" />
 		public PRIMARYValue PRIMARY => _PRIMARY ?? (_PRIMARY = new PRIMARYValue());
 
-		/// <summary>﻿main or most important.<br /><br /><br />
+		/// <summary>﻿main or principle.<br /><br /><br />
 		/// Value for DataItemSubTypeEnum.<br/>
 		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
@@ -3030,7 +3010,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="PRIMARYValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PRIMARYValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;main or most important.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;main or principle.&#10;
 ";
 
 			/// <inheritdoc />
@@ -5740,88 +5720,6 @@ namespace Mtconnect.DataTypes
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MODELValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;model info of the hardware or software.&#10;
-";
-
-			/// <inheritdoc />
-			public string Name => NAME;
-			
-			/// <inheritdoc />
-			public object Value => null; // TODO: Add value, based on type.
-			
-			/// <inheritdoc />
-			public string NormativeVersion => NORMATIVE_VERSION;
-			
-			/// <inheritdoc />
-			public string DeprecatedVersion => DEPRECATED_VERSION;
-			
-			/// <inheritdoc />
-			public string Summary => SUMMARY;
-		}
-		private SECONDARYValue _SECONDARY;
-		/// <inheritdoc cref="SECONDARYValue" path="/summary" />
-		public SECONDARYValue SECONDARY => _SECONDARY ?? (_SECONDARY = new SECONDARYValue());
-
-		/// <summary>﻿alternate or not primary.<br /><br /><br />
-		/// Value for DataItemSubTypeEnum.<br/>
-		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
-		/// </summary>
-		/// <remarks>
-		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
-		/// </list>
-		/// </remarks>
-
-		public sealed class SECONDARYValue : IEnumInstance
-		{
-			/// <summary>Constant value for <see cref="SECONDARYValue.Name" /></summary>
-			public const string NAME = "SECONDARY";
-			/// <summary>Constant value for <see cref="SECONDARYValue.NormativeVersion" /></summary>
-			public const string NORMATIVE_VERSION = "2.3";
-			/// <summary>Constant value for <see cref="SECONDARYValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
-			/// <summary>Constant value for <see cref="SECONDARYValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;alternate or not primary.&#10;
-";
-
-			/// <inheritdoc />
-			public string Name => NAME;
-			
-			/// <inheritdoc />
-			public object Value => null; // TODO: Add value, based on type.
-			
-			/// <inheritdoc />
-			public string NormativeVersion => NORMATIVE_VERSION;
-			
-			/// <inheritdoc />
-			public string DeprecatedVersion => DEPRECATED_VERSION;
-			
-			/// <inheritdoc />
-			public string Summary => SUMMARY;
-		}
-		private STANDBYValue _STANDBY;
-		/// <inheritdoc cref="STANDBYValue" path="/summary" />
-		public STANDBYValue STANDBY => _STANDBY ?? (_STANDBY = new STANDBYValue());
-
-		/// <summary>﻿held near at hand and ready for use.<br /><br /><br />
-		/// Value for DataItemSubTypeEnum.<br/>
-		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
-		/// </summary>
-		/// <remarks>
-		/// <list type="bullet">
-		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
-		/// </list>
-		/// </remarks>
-
-		public sealed class STANDBYValue : IEnumInstance
-		{
-			/// <summary>Constant value for <see cref="STANDBYValue.Name" /></summary>
-			public const string NAME = "STANDBY";
-			/// <summary>Constant value for <see cref="STANDBYValue.NormativeVersion" /></summary>
-			public const string NORMATIVE_VERSION = "2.3";
-			/// <summary>Constant value for <see cref="STANDBYValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
-			/// <summary>Constant value for <see cref="STANDBYValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;held near at hand and ready for use.&#10;
 ";
 
 			/// <inheritdoc />

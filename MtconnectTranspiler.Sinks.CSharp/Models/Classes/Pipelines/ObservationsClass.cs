@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.Pipelines
+namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674406832907_5231_497">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <remarks>
 		/// Original Type: _19_0_4_45f01b9_1674406425739_249387_380
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.TimestampedClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.Pipelines.TimestampedClass);
 
 		/// <inheritdoc />
 		public new ObservationsClassProperties Properties { get; } = new ObservationsClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ObservationsClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties" />.
 		/// </summary>
-		public class ObservationsClassProperties : Mtconnect.AgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties
+		public class ObservationsClassProperties : Mtconnect.ReferenceAgentArchitecture.Pipelines.TimestampedClass.TimestampedClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

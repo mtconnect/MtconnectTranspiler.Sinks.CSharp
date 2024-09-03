@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.Pipelines
+namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1673982139230_860585_299">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <remarks>
 		/// Original Type: _19_0_4_45f01b9_1673982182900_756304_302
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.EntityClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.Pipelines.EntityClass);
 
 		/// <inheritdoc />
 		public new Entity_Data_ClassProperties Properties { get; } = new Entity_Data_ClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="Entity_Data_Class" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.Pipelines.EntityClass.EntityClassProperties" />.
 		/// </summary>
-		public class Entity_Data_ClassProperties : Mtconnect.AgentArchitecture.Pipelines.EntityClass.EntityClassProperties
+		public class Entity_Data_ClassProperties : Mtconnect.ReferenceAgentArchitecture.Pipelines.EntityClass.EntityClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

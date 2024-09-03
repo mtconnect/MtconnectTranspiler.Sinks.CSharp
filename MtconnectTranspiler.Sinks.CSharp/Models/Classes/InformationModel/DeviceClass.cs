@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.InformationModel
+namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1585538379379_351959_4415">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 		/// <remarks>
 		/// Original Type: _19_0_3_45f01b9_1585538356205_946899_4347
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.InformationModel.ComponentClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.InformationModel.ComponentClass);
 
 		/// <inheritdoc />
 		public new DeviceClassProperties Properties { get; } = new DeviceClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DeviceClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.InformationModel.ComponentClass.ComponentClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.InformationModel.ComponentClass.ComponentClassProperties" />.
 		/// </summary>
-		public class DeviceClassProperties : Mtconnect.AgentArchitecture.InformationModel.ComponentClass.ComponentClassProperties
+		public class DeviceClassProperties : Mtconnect.ReferenceAgentArchitecture.InformationModel.ComponentClass.ComponentClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

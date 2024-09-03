@@ -6,7 +6,7 @@ using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
-namespace Mtconnect.AgentArchitecture.InformationModel
+namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1585536700946_684682_2787">model.mtconnect.org</seealso> for more information.
@@ -106,7 +106,7 @@ namespace Mtconnect.AgentArchitecture.InformationModel
 				/// <inheritdoc />
 				/// <remarks> Type: ObservationValueClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AgentArchitecture.InformationModel.ObservationValueClass);
+				public System.Type Type => typeof(Mtconnect.ReferenceAgentArchitecture.InformationModel.ObservationValueClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

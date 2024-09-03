@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.Source
+namespace Mtconnect.ReferenceAgentArchitecture.Source
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929379292_433586_18837">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.Source
 		/// <remarks>
 		/// Original Type: _19_0_4_45f01b9_1645213778421_161707_289
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.SourceClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.SourceClass);
 
 		/// <inheritdoc />
 		public new MQTTDataSourceGeneralizationProperties Properties { get; } = new MQTTDataSourceGeneralizationProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MQTTDataSourceGeneralization" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.SourceClass.SourceClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.SourceClass.SourceClassProperties" />.
 		/// </summary>
-		public class MQTTDataSourceGeneralizationProperties : Mtconnect.AgentArchitecture.SourceClass.SourceClassProperties
+		public class MQTTDataSourceGeneralizationProperties : Mtconnect.ReferenceAgentArchitecture.SourceClass.SourceClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

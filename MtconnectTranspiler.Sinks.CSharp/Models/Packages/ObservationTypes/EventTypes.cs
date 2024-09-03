@@ -362,10 +362,14 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			ToolCuttingItemClass,
 			HardwareModelClass,
 			LocationAddressClass,
-			PowerSourceClass,
-			PowerSourceStandbyClass,
-			PowerSourceSecondaryClass,
-			PowerSourcePrimaryClass,
+			ActivePowerSourceClass,
+			LocationNarrativeClass,
+			ThicknessClass,
+			ThicknessActualClass,
+			ThicknessCommandedClass,
+			ThicknessTargetClass,
+			ThicknessProgrammedClass,
+			LocationSpatialGeographicClass,
 		};
 		
 		/// <inheritdoc />
@@ -2296,29 +2300,53 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// </summary>
 	public Package.LocationAddressClass LocationAddressClass => _LocationAddressClass ?? (_LocationAddressClass = new Package.LocationAddressClass());
 
-	private Package.PowerSourceClass _PowerSourceClass;
+	private Package.ActivePowerSourceClass _ActivePowerSourceClass;
 	/// <summary>
-	/// <inheritdoc cref="Package.PowerSourceClass" path="/summary" />
+	/// <inheritdoc cref="Package.ActivePowerSourceClass" path="/summary" />
 	/// </summary>
-	public Package.PowerSourceClass PowerSourceClass => _PowerSourceClass ?? (_PowerSourceClass = new Package.PowerSourceClass());
+	public Package.ActivePowerSourceClass ActivePowerSourceClass => _ActivePowerSourceClass ?? (_ActivePowerSourceClass = new Package.ActivePowerSourceClass());
 
-	private Package.PowerSourceStandbyClass _PowerSourceStandbyClass;
+	private Package.LocationNarrativeClass _LocationNarrativeClass;
 	/// <summary>
-	/// <inheritdoc cref="Package.PowerSourceStandbyClass" path="/summary" />
+	/// <inheritdoc cref="Package.LocationNarrativeClass" path="/summary" />
 	/// </summary>
-	public Package.PowerSourceStandbyClass PowerSourceStandbyClass => _PowerSourceStandbyClass ?? (_PowerSourceStandbyClass = new Package.PowerSourceStandbyClass());
+	public Package.LocationNarrativeClass LocationNarrativeClass => _LocationNarrativeClass ?? (_LocationNarrativeClass = new Package.LocationNarrativeClass());
 
-	private Package.PowerSourceSecondaryClass _PowerSourceSecondaryClass;
+	private Package.ThicknessClass _ThicknessClass;
 	/// <summary>
-	/// <inheritdoc cref="Package.PowerSourceSecondaryClass" path="/summary" />
+	/// <inheritdoc cref="Package.ThicknessClass" path="/summary" />
 	/// </summary>
-	public Package.PowerSourceSecondaryClass PowerSourceSecondaryClass => _PowerSourceSecondaryClass ?? (_PowerSourceSecondaryClass = new Package.PowerSourceSecondaryClass());
+	public Package.ThicknessClass ThicknessClass => _ThicknessClass ?? (_ThicknessClass = new Package.ThicknessClass());
 
-	private Package.PowerSourcePrimaryClass _PowerSourcePrimaryClass;
+	private Package.ThicknessActualClass _ThicknessActualClass;
 	/// <summary>
-	/// <inheritdoc cref="Package.PowerSourcePrimaryClass" path="/summary" />
+	/// <inheritdoc cref="Package.ThicknessActualClass" path="/summary" />
 	/// </summary>
-	public Package.PowerSourcePrimaryClass PowerSourcePrimaryClass => _PowerSourcePrimaryClass ?? (_PowerSourcePrimaryClass = new Package.PowerSourcePrimaryClass());
+	public Package.ThicknessActualClass ThicknessActualClass => _ThicknessActualClass ?? (_ThicknessActualClass = new Package.ThicknessActualClass());
+
+	private Package.ThicknessCommandedClass _ThicknessCommandedClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ThicknessCommandedClass" path="/summary" />
+	/// </summary>
+	public Package.ThicknessCommandedClass ThicknessCommandedClass => _ThicknessCommandedClass ?? (_ThicknessCommandedClass = new Package.ThicknessCommandedClass());
+
+	private Package.ThicknessTargetClass _ThicknessTargetClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ThicknessTargetClass" path="/summary" />
+	/// </summary>
+	public Package.ThicknessTargetClass ThicknessTargetClass => _ThicknessTargetClass ?? (_ThicknessTargetClass = new Package.ThicknessTargetClass());
+
+	private Package.ThicknessProgrammedClass _ThicknessProgrammedClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ThicknessProgrammedClass" path="/summary" />
+	/// </summary>
+	public Package.ThicknessProgrammedClass ThicknessProgrammedClass => _ThicknessProgrammedClass ?? (_ThicknessProgrammedClass = new Package.ThicknessProgrammedClass());
+
+	private Package.LocationSpatialGeographicClass _LocationSpatialGeographicClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.LocationSpatialGeographicClass" path="/summary" />
+	/// </summary>
+	public Package.LocationSpatialGeographicClass LocationSpatialGeographicClass => _LocationSpatialGeographicClass ?? (_LocationSpatialGeographicClass = new Package.LocationSpatialGeographicClass());
 
 	#endregion
 

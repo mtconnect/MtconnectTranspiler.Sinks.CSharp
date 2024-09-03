@@ -325,9 +325,9 @@ The {{property(ProcessFeedRate::value)}} **MAY** contain the nominal process tar
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: String </remarks>
+				/// <remarks> Type: Single </remarks>
 				/// </summary>
-				public System.Type Type => typeof(String);
+				public System.Type Type => typeof(Single);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

@@ -50,7 +50,7 @@ namespace Mtconnect.DeviceInformationModel
 			RelationshipsPackage,
 			SolidModelPackage,
 			ImageFilesPackage,
-			PowerSourcePackage,
+			PowerSourcesPackage,
 		};
 		
 		/// <inheritdoc />
@@ -105,11 +105,11 @@ namespace Mtconnect.DeviceInformationModel
 	/// </summary>
 	public Package.ImageFilesPackage ImageFilesPackage => _ImageFilesPackage ?? (_ImageFilesPackage = new Package.ImageFilesPackage());
 
-	private Package.PowerSourcePackage _PowerSourcePackage;
+	private Package.PowerSourcesPackage _PowerSourcesPackage;
 	/// <summary>
-	/// <inheritdoc cref="Package.PowerSourcePackage" path="/summary" />
+	/// <inheritdoc cref="Package.PowerSourcesPackage" path="/summary" />
 	/// </summary>
-	public Package.PowerSourcePackage PowerSourcePackage => _PowerSourcePackage ?? (_PowerSourcePackage = new Package.PowerSourcePackage());
+	public Package.PowerSourcesPackage PowerSourcesPackage => _PowerSourcesPackage ?? (_PowerSourcesPackage = new Package.PowerSourcesPackage());
 
 	#endregion
 

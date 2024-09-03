@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.Pipelines
+namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674411346874_94899_3274">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <remarks>
 		/// Original Type: _19_0_4_45f01b9_1674410939127_88235_2773
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.PipelineMessageClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.Pipelines.PipelineMessageClass);
 
 		/// <inheritdoc />
 		public new JsonMessageClassProperties Properties { get; } = new JsonMessageClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="JsonMessageClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.PipelineMessageClass.PipelineMessageClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.Pipelines.PipelineMessageClass.PipelineMessageClassProperties" />.
 		/// </summary>
-		public class JsonMessageClassProperties : Mtconnect.AgentArchitecture.Pipelines.PipelineMessageClass.PipelineMessageClassProperties
+		public class JsonMessageClassProperties : Mtconnect.ReferenceAgentArchitecture.Pipelines.PipelineMessageClass.PipelineMessageClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

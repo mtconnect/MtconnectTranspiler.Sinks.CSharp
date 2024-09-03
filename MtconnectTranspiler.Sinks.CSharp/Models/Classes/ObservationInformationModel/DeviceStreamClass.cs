@@ -188,9 +188,9 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: String </remarks>
+				/// <remarks> Type: Object </remarks>
 				/// </summary>
-				public System.Type Type => typeof(String);
+				public System.Type Type => typeof(object);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

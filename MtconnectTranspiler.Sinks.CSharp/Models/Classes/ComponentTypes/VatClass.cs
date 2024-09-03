@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 {
-	/// <summary>﻿leaf <see cref="Component">Component</see> composed of a container that holds liquid or powdered materials.<br /><br /><br />
+	/// <summary>﻿leaf <see cref="Component">Component</see> generally composed of an open container.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580312106479_944360_44477">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -26,7 +26,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 		/// <summary>Constant value for <see cref="VatClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1580312106479_944360_44477";
 		/// <summary>Constant value for <see cref="VatClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;leaf {{block(Component)}} composed of a container that holds liquid or powdered materials.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;leaf {{block(Component)}} generally composed of an open container.&#10;
 ";
 		/// <summary>Constant value for <see cref="VatClass.Name" /></summary>
 		public const string NAME = "Vat";

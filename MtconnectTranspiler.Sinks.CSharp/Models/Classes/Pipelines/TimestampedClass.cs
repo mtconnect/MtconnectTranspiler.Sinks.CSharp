@@ -7,7 +7,7 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 using System.Linq;
 
-namespace Mtconnect.AgentArchitecture.Pipelines
+namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674406425739_249387_380">model.mtconnect.org</seealso> for more information.
@@ -61,16 +61,16 @@ namespace Mtconnect.AgentArchitecture.Pipelines
 		/// <remarks>
 		/// Original Type: _19_0_4_45f01b9_1674406002024_615828_206
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AgentArchitecture.Pipelines.TokensClass);
+		public Type Generalization => typeof(Mtconnect.ReferenceAgentArchitecture.Pipelines.TokensClass);
 
 		/// <inheritdoc />
 		public new TimestampedClassProperties Properties { get; } = new TimestampedClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TimestampedClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AgentArchitecture.Pipelines.TokensClass.TokensClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ReferenceAgentArchitecture.Pipelines.TokensClass.TokensClassProperties" />.
 		/// </summary>
-		public class TimestampedClassProperties : Mtconnect.AgentArchitecture.Pipelines.TokensClass.TokensClassProperties
+		public class TimestampedClassProperties : Mtconnect.ReferenceAgentArchitecture.Pipelines.TokensClass.TokensClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

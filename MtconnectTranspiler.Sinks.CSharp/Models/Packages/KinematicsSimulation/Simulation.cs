@@ -4,9 +4,9 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
-using Package = Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation.Simulation;
+using Package = Mtconnect.WIP_DeviceExamples.KinematicsSimulation.Simulation;
 
-namespace Mtconnect.WIP_BestPracticesWithExamples.OtherExamples.KinematicsSimulation
+namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation
 {
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1582232371587_1993_123">model.mtconnect.org</seealso> for more information.

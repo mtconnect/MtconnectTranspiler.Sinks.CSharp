@@ -18,7 +18,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum PowerSourceTypeEnum
 	{
-		/// <summary>﻿main or most important location of a piece of bar stock.<br /><br /><br />
+		/// <summary>﻿main or principle.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -36,7 +36,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		SECONDARY,
-		/// <summary>﻿uninterruptible or generator power supply.<br /><br /><br />
+		/// <summary>﻿held near at hand and ready for use and is uninterruptible.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -101,7 +101,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="PRIMARYValue" path="/summary" />
 		public PRIMARYValue PRIMARY => _PRIMARY ?? (_PRIMARY = new PRIMARYValue());
 
-		/// <summary>﻿main or most important location of a piece of bar stock.<br /><br /><br />
+		/// <summary>﻿main or principle.<br /><br /><br />
 		/// Value for PowerSourceTypeEnum.<br/>
 		/// <br/>See also <seealso cref="PowerSourceTypeEnum">PowerSourceTypeEnum</seealso>
 		/// </summary>
@@ -120,7 +120,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="PRIMARYValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PRIMARYValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;main or most important location of a piece of bar stock.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;main or principle.&#10;
 ";
 
 			/// <inheritdoc />
@@ -183,7 +183,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="STANDBYValue" path="/summary" />
 		public STANDBYValue STANDBY => _STANDBY ?? (_STANDBY = new STANDBYValue());
 
-		/// <summary>﻿uninterruptible or generator power supply.<br /><br /><br />
+		/// <summary>﻿held near at hand and ready for use and is uninterruptible.<br /><br /><br />
 		/// Value for PowerSourceTypeEnum.<br/>
 		/// <br/>See also <seealso cref="PowerSourceTypeEnum">PowerSourceTypeEnum</seealso>
 		/// </summary>
@@ -202,7 +202,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="STANDBYValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="STANDBYValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;uninterruptible or generator power supply.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;held near at hand and ready for use and is uninterruptible.&#10;
 ";
 
 			/// <inheritdoc />
