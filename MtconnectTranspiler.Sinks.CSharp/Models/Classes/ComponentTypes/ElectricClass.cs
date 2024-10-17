@@ -108,7 +108,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <summary>Constant value for <see cref="ObservesWattageProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesWattageProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesWattageProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesWattageProperty.DefaultValue" /></summary>

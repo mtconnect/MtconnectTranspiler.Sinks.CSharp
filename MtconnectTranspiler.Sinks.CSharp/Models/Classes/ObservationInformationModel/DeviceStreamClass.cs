@@ -110,7 +110,7 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
@@ -180,7 +180,7 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				/// <summary>Constant value for <see cref="UuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.DefaultValue" /></summary>
@@ -249,7 +249,7 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ComponentStream";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.DefaultValue" /></summary>

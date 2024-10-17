@@ -107,7 +107,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Header";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.DefaultValue" /></summary>

@@ -106,7 +106,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <summary>Constant value for <see cref="ComponentIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ComponentIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ComponentIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ComponentIdProperty.DefaultValue" /></summary>
@@ -176,7 +176,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.DefaultValue" /></summary>
@@ -246,7 +246,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.DefaultValue" /></summary>
@@ -316,7 +316,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <summary>Constant value for <see cref="ValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>

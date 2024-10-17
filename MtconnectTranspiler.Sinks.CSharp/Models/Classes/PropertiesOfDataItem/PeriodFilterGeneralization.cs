@@ -102,13 +102,13 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <summary>Constant value for <see cref="TypeProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="TypeProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "";
+				public const string NORMATIVE_VERSION = "1.4";
 				/// <summary>Constant value for <see cref="TypeProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>

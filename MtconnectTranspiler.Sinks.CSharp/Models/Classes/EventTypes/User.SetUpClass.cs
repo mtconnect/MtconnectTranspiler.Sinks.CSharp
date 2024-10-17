@@ -14,7 +14,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
-	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_type, subType">vtype, subType</see></item>
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 	/// </list>
 	/// </remarks>
 
@@ -35,7 +35,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		/// <summary>Constant value for <see cref="UserSetUpClass.Modifier" /></summary>
 		public const string MODIFIER = "";
 		/// <summary>Constant value for <see cref="UserSetUpClass.NormativeVersion" /></summary>
-		public const string NORMATIVE_VERSION = "type, subType";
+		public const string NORMATIVE_VERSION = "1.4";
 		/// <summary>Constant value for <see cref="UserSetUpClass.DeprecatedVersion" /></summary>
 		public const string DEPRECATED_VERSION = "";
 

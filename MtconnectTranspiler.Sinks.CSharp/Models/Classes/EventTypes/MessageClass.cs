@@ -178,7 +178,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <summary>Constant value for <see cref="NativeCodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NativeCodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NativeCodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NativeCodeProperty.DefaultValue" /></summary>

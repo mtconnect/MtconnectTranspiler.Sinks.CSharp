@@ -13,7 +13,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
-	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 	/// </list>
 	/// </remarks>
 
@@ -35,7 +35,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 		/// <summary>Constant value for <see cref="AbstractDataItemRelationshipClass.Modifier" /></summary>
 		public const string MODIFIER = "abstract";
 		/// <summary>Constant value for <see cref="AbstractDataItemRelationshipClass.NormativeVersion" /></summary>
-		public const string NORMATIVE_VERSION = "1.5";
+		public const string NORMATIVE_VERSION = "1.7";
 		/// <summary>Constant value for <see cref="AbstractDataItemRelationshipClass.DeprecatedVersion" /></summary>
 		public const string DEPRECATED_VERSION = "";
 
@@ -105,7 +105,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				/// <summary>Constant value for <see cref="IdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="IdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdRefProperty.DefaultValue" /></summary>
@@ -169,13 +169,13 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				/// <summary>Constant value for <see cref="NameProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="NameProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "";
+				public const string NORMATIVE_VERSION = "1.7";
 				/// <summary>Constant value for <see cref="NameProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>

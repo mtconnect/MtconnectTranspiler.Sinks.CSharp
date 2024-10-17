@@ -86,7 +86,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 				HasAxisPart,
 				HasOriginPart,
 				HasTransformationPart,
-				HasDescriptionPart,
+				Description,
 			};
 			/// <summary>
 			/// <inheritdoc cref="ActuationProperty" path="/summary" /><br/>
@@ -114,7 +114,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 				/// <summary>Constant value for <see cref="ActuationProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ActuationProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ActuationProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ActuationProperty.DefaultValue" /></summary>
@@ -184,7 +184,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DefaultValue" /></summary>
@@ -254,7 +254,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
@@ -326,7 +326,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="ParentIdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ParentIdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ParentIdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ParentIdRefProperty.DefaultValue" /></summary>
@@ -396,7 +396,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
@@ -465,7 +465,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Axis";
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.DefaultValue" /></summary>
@@ -534,7 +534,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="HasOriginPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasOriginPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasOriginPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Origin";
 				/// <summary>Constant value for <see cref="HasOriginPartProperty.DefaultValue" /></summary>
@@ -603,7 +603,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Transformation";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.DefaultValue" /></summary>
@@ -648,41 +648,42 @@ The kinematic chain connects all components using the parent relations. All moti
 				public string DefaultValue => DEFAULT_VALUE;
 			}
 			/// <summary>
-			/// <inheritdoc cref="HasDescriptionPartProperty" path="/summary" /><br/>
-			/// <remarks>Original Name: HasDescription</remarks>
+			/// <inheritdoc cref="DescriptionProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: Description</remarks>
 			/// </summary>
-			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
+			public DescriptionProperty Description { get; } = new DescriptionProperty();
 			
-			/// <summary>﻿
+			/// <summary>﻿textual description for <see cref="Motion">Motion</see>.<br /><br /><br />
 			/// </summary>
-			public sealed class HasDescriptionPartProperty : IProperty
+			public sealed class DescriptionProperty : IProperty
 			{
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Name" /></summary>
-				public const string NAME = "hasDescription";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Summary" /></summary>
-				public const string SUMMARY = @"";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.AccessModifier" /></summary>
-				public const string ACCESS_MODIFIER = "public";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Modifier" /></summary>
+				/// <summary>Constant value for <see cref="DescriptionProperty.Name" /></summary>
+				public const string NAME = "Description";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;textual description for {{block(Motion)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="DescriptionProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "private";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.DeprecatedVersion" /></summary>
+				/// <summary>Constant value for <see cref="DescriptionProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.7";
+				/// <summary>Constant value for <see cref="DescriptionProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Aggregation" /></summary>
+				/// <summary>Constant value for <see cref="DescriptionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Association" /></summary>
-				public const string ASSOCIATION = "Description";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.DefaultValue" /></summary>
+				/// <summary>Constant value for <see cref="DescriptionProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 2024x";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: DescriptionClass </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
+				public System.Type Type => typeof(String);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

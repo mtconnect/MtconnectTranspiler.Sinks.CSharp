@@ -109,7 +109,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="LongitudeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LongitudeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="LongitudeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LongitudeProperty.DefaultValue" /></summary>
@@ -179,7 +179,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="LatitudeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LatitudeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="LatitudeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LatitudeProperty.DefaultValue" /></summary>
@@ -249,7 +249,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="AltitudeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="AltitudeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="AltitudeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AltitudeProperty.DefaultValue" /></summary>

@@ -103,7 +103,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				/// <summary>Constant value for <see cref="DataItemProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "shared";
 				/// <summary>Constant value for <see cref="DataItemProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="DataItemProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DataItemProperty.DefaultValue" /></summary>

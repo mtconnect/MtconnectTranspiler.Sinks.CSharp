@@ -480,7 +480,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="Iso841ClassProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="Iso841ClassProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="Iso841ClassProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="Iso841ClassProperty.DefaultValue" /></summary>
@@ -550,7 +550,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="UuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.DefaultValue" /></summary>
@@ -620,7 +620,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="MtconnectVersionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MtconnectVersionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="MtconnectVersionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MtconnectVersionProperty.DefaultValue" /></summary>
@@ -759,7 +759,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
@@ -1104,7 +1104,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.DefaultValue" /></summary>
@@ -1173,7 +1173,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.DefaultValue" /></summary>
@@ -1242,7 +1242,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.DefaultValue" /></summary>
@@ -1312,7 +1312,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="HashProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HashProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HashProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HashProperty.DefaultValue" /></summary>

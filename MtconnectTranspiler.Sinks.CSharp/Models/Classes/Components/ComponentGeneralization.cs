@@ -132,7 +132,7 @@ At least one of {{block(Component)}}, {{block(DataItem)}}, or {{block(Reference)
 				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
@@ -204,7 +204,7 @@ When provided, {{property(Component::name)}} **MUST** be unique for all child {{
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
@@ -274,7 +274,7 @@ When provided, {{property(Component::name)}} **MUST** be unique for all child {{
 				/// <summary>Constant value for <see cref="NativeNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NativeNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NativeNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NativeNameProperty.DefaultValue" /></summary>
@@ -349,7 +349,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="SampleIntervalProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SampleIntervalProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="SampleIntervalProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SampleIntervalProperty.DefaultValue" /></summary>
@@ -419,7 +419,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="SampleRateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SampleRateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="SampleRateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SampleRateProperty.DefaultValue" /></summary>
@@ -489,7 +489,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="UuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.DefaultValue" /></summary>
@@ -558,7 +558,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Description";
 				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.DefaultValue" /></summary>
@@ -765,7 +765,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Configuration";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.DefaultValue" /></summary>
@@ -834,7 +834,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Components";
 				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.DefaultValue" /></summary>
@@ -1111,7 +1111,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DefaultValue" /></summary>
@@ -1180,7 +1180,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "shared";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ComponentStream";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.DefaultValue" /></summary>

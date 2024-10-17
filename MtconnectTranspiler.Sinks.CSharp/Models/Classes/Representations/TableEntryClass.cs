@@ -110,7 +110,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <summary>Constant value for <see cref="KeyProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="KeyProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="KeyProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="KeyProperty.DefaultValue" /></summary>
@@ -180,7 +180,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <summary>Constant value for <see cref="RemovedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="RemovedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="RemovedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RemovedProperty.DefaultValue" /></summary>
@@ -318,7 +318,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <summary>Constant value for <see cref="IsEntryForPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IsEntryForPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IsEntryForPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "TableEntry";
 				/// <summary>Constant value for <see cref="IsEntryForPartProperty.DefaultValue" /></summary>

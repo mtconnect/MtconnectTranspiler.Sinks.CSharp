@@ -83,27 +83,26 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 			/// </summary>
 			public ValueProperty Value { get; } = new ValueProperty();
 			
-			/// <summary>﻿The value of <see cref="Origin">Origin</see> in <c>MILLIMETER_3D</c>.<br /><br /><br />
+			/// <summary>﻿
 			/// </summary>
 			public sealed class ValueProperty : IProperty
 			{
 				/// <summary>Constant value for <see cref="ValueProperty.Name" /></summary>
 				public const string NAME = "value";
 				/// <summary>Constant value for <see cref="ValueProperty.Summary" /></summary>
-				public const string SUMMARY = @"&#10;&#10;&#10;The value of {{block(Origin)}} in `MILLIMETER_3D`.&#10;
-";
+				public const string SUMMARY = @"";
 				/// <summary>Constant value for <see cref="ValueProperty.AccessModifier" /></summary>
 				public const string ACCESS_MODIFIER = "public";
 				/// <summary>Constant value for <see cref="ValueProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="ValueProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "1.6";
+				public const string NORMATIVE_VERSION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ValueProperty.Extension" /></summary>
-				public const string EXTENSION = "";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>
@@ -111,9 +110,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: Single </remarks>
+				/// <remarks> Type: OriginDataSetGeneralization </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Single);
+				public System.Type Type => typeof(Mtconnect.DataTypes.OriginDataSetGeneralization);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

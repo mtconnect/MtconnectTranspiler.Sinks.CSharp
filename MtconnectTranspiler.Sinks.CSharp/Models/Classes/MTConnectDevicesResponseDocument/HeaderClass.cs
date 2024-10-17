@@ -88,6 +88,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				NextSequence,
 				DeviceModelChangeTime,
 				HasAssetCountPart,
+				Validation,
 			};
 			/// <summary>
 			/// <inheritdoc cref="AssetBufferSizeProperty" path="/summary" /><br/>
@@ -118,7 +119,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="AssetBufferSizeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="AssetBufferSizeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="AssetBufferSizeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AssetBufferSizeProperty.DefaultValue" /></summary>
@@ -191,7 +192,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="AssetCountProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="AssetCountProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="AssetCountProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AssetCountProperty.DefaultValue" /></summary>
@@ -266,7 +267,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="BufferSizeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="BufferSizeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="BufferSizeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="BufferSizeProperty.DefaultValue" /></summary>
@@ -336,7 +337,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="CreationTimeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CreationTimeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CreationTimeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CreationTimeProperty.DefaultValue" /></summary>
@@ -408,7 +409,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="InstanceIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="InstanceIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="InstanceIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="InstanceIdProperty.DefaultValue" /></summary>
@@ -482,7 +483,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="SenderProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SenderProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="SenderProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SenderProperty.DefaultValue" /></summary>
@@ -554,7 +555,7 @@ If {{property(Header::testIndicator)}} is not specified, the value for {{propert
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.DefaultValue" /></summary>
@@ -626,7 +627,7 @@ As an example, the value reported for {{property(Header::version)}} for a {{term
 				/// <summary>Constant value for <see cref="VersionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="VersionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="VersionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="VersionProperty.DefaultValue" /></summary>
@@ -696,7 +697,7 @@ As an example, the value reported for {{property(Header::version)}} for a {{term
 				/// <summary>Constant value for <see cref="FirstSequenceProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="FirstSequenceProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="FirstSequenceProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FirstSequenceProperty.DefaultValue" /></summary>
@@ -768,7 +769,7 @@ As an example, the value reported for {{property(Header::version)}} for a {{term
 				/// <summary>Constant value for <see cref="LastSequenceProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="LastSequenceProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="LastSequenceProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LastSequenceProperty.DefaultValue" /></summary>
@@ -840,7 +841,7 @@ If the {{term(streaming data)}} included in the {{term(response document)}} incl
 				/// <summary>Constant value for <see cref="NextSequenceProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NextSequenceProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NextSequenceProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NextSequenceProperty.DefaultValue" /></summary>
@@ -910,7 +911,7 @@ If the {{term(streaming data)}} included in the {{term(response document)}} incl
 				/// <summary>Constant value for <see cref="DeviceModelChangeTimeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DeviceModelChangeTimeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="DeviceModelChangeTimeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceModelChangeTimeProperty.DefaultValue" /></summary>
@@ -990,6 +991,76 @@ If the {{term(streaming data)}} included in the {{term(response document)}} incl
 				/// <remarks> Type: AssetCountClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocument.AssetCountClass);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
+
+				/// <inheritdoc />
+				public string AccessModifier => ACCESS_MODIFIER;
+				
+				/// <inheritdoc />
+				public string Modifier => MODIFIER;
+				
+				/// <inheritdoc />
+				public string NormativeVersion => NORMATIVE_VERSION;
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => DEPRECATED_VERSION;
+				
+				/// <inheritdoc />
+				public string Aggregation => AGGREGATION;
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => EXTENSION;
+				
+				/// <inheritdoc />
+				public string Association => ASSOCIATION;
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => DEFAULT_VALUE;
+			}
+			/// <summary>
+			/// <inheritdoc cref="ValidationProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: Validation</remarks>
+			/// </summary>
+			public ValidationProperty Validation { get; } = new ValidationProperty();
+			
+			/// <summary>﻿indicates if the <i>MTConnect Agent</i> is validating against the normative model.<br /><br /><br />
+			/// </summary>
+			public sealed class ValidationProperty : IProperty
+			{
+				/// <summary>Constant value for <see cref="ValidationProperty.Name" /></summary>
+				public const string NAME = "validation";
+				/// <summary>Constant value for <see cref="ValidationProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;indicates if the {{term(MTConnect Agent)}} is validating against the normative model.&#10;
+";
+				/// <summary>Constant value for <see cref="ValidationProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "private";
+				/// <summary>Constant value for <see cref="ValidationProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="ValidationProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "2.5";
+				/// <summary>Constant value for <see cref="ValidationProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="ValidationProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="ValidationProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 2024x";
+				/// <summary>Constant value for <see cref="ValidationProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="ValidationProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: Boolean </remarks>
+				/// </summary>
+				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

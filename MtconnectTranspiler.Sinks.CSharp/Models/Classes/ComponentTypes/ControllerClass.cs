@@ -185,7 +185,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <summary>Constant value for <see cref="IsControllerOfPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IsControllerOfPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IsControllerOfPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ControllersClass";
 				/// <summary>Constant value for <see cref="IsControllerOfPartProperty.DefaultValue" /></summary>
@@ -254,7 +254,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <summary>Constant value for <see cref="ObservesEmergencyStopProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesEmergencyStopProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesEmergencyStopProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesEmergencyStopProperty.DefaultValue" /></summary>
@@ -323,7 +323,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <summary>Constant value for <see cref="ObservesSystemConditionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesSystemConditionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesSystemConditionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesSystemConditionProperty.DefaultValue" /></summary>
@@ -392,7 +392,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <summary>Constant value for <see cref="ObservesControllerModeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesControllerModeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesControllerModeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesControllerModeProperty.DefaultValue" /></summary>
@@ -461,7 +461,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <summary>Constant value for <see cref="ObservesCommunicationsConditionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesCommunicationsConditionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesCommunicationsConditionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesCommunicationsConditionProperty.DefaultValue" /></summary>
@@ -530,7 +530,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <summary>Constant value for <see cref="ObservesLogicProgramConditionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesLogicProgramConditionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesLogicProgramConditionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesLogicProgramConditionProperty.DefaultValue" /></summary>

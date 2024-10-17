@@ -102,7 +102,7 @@ namespace Mtconnect.WIP_DeviceExamples.MillW_PER_SmoothG.Representation
 				/// <summary>Constant value for <see cref="CountProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CountProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CountProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CountProperty.DefaultValue" /></summary>

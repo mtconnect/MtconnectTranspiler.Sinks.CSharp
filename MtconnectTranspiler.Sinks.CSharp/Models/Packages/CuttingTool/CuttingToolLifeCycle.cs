@@ -54,7 +54,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			ProcessSpindleSpeedClass,
 			ProcessFeedRateClass,
 			StatusClass,
-			MeasurementClass,
+			ToolingMeasurementGeneralization,
 		};
 		
 		/// <inheritdoc />
@@ -107,11 +107,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	/// </summary>
 	public Package.StatusClass StatusClass => _StatusClass ?? (_StatusClass = new Package.StatusClass());
 
-	private Package.MeasurementClass _MeasurementClass;
+	private Package.ToolingMeasurementGeneralization _ToolingMeasurementGeneralization;
 	/// <summary>
-	/// <inheritdoc cref="Package.MeasurementClass" path="/summary" />
+	/// <inheritdoc cref="Package.ToolingMeasurementGeneralization" path="/summary" />
 	/// </summary>
-	public Package.MeasurementClass MeasurementClass => _MeasurementClass ?? (_MeasurementClass = new Package.MeasurementClass());
+	public Package.ToolingMeasurementGeneralization ToolingMeasurementGeneralization => _ToolingMeasurementGeneralization ?? (_ToolingMeasurementGeneralization = new Package.ToolingMeasurementGeneralization());
 
 	#endregion
 

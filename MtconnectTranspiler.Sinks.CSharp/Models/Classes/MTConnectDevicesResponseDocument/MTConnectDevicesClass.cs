@@ -107,7 +107,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Header";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.DefaultValue" /></summary>
@@ -176,7 +176,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="HasDevicePartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasDevicePartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasDevicePartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Devices";
 				/// <summary>Constant value for <see cref="HasDevicePartProperty.DefaultValue" /></summary>

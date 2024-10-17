@@ -126,6 +126,9 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				IsUnavailable,
 				Result,
 				MadeForDataItemPart,
+				Quality,
+				Deprecated,
+				Extended,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="CompositionIdProperty" path="/summary" /><br/>
@@ -153,7 +156,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.DefaultValue" /></summary>
@@ -225,7 +228,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.DefaultValue" /></summary>
@@ -297,7 +300,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
@@ -369,7 +372,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="SequenceProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SequenceProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="SequenceProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SequenceProperty.DefaultValue" /></summary>
@@ -441,7 +444,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="SubTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
@@ -511,7 +514,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="TimestampProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TimestampProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TimestampProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TimestampProperty.DefaultValue" /></summary>
@@ -580,7 +583,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="MadeByComponentPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MadeByComponentPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="MadeByComponentPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Observations";
 				/// <summary>Constant value for <see cref="MadeByComponentPartProperty.DefaultValue" /></summary>
@@ -652,7 +655,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
@@ -724,7 +727,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
@@ -804,7 +807,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.DefaultValue" /></summary>
@@ -888,7 +891,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="ResultProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ResultProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ResultProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>
@@ -957,7 +960,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="MadeForDataItemPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MadeForDataItemPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="MadeForDataItemPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Observations";
 				/// <summary>Constant value for <see cref="MadeForDataItemPartProperty.DefaultValue" /></summary>
@@ -968,6 +971,216 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <remarks> Type: DataItemClass </remarks>
 				/// </summary>
 				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.DataItems.DataItemClass);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
+
+				/// <inheritdoc />
+				public string AccessModifier => ACCESS_MODIFIER;
+				
+				/// <inheritdoc />
+				public string Modifier => MODIFIER;
+				
+				/// <inheritdoc />
+				public string NormativeVersion => NORMATIVE_VERSION;
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => DEPRECATED_VERSION;
+				
+				/// <inheritdoc />
+				public string Aggregation => AGGREGATION;
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => EXTENSION;
+				
+				/// <inheritdoc />
+				public string Association => ASSOCIATION;
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => DEFAULT_VALUE;
+			}
+			/// <summary>
+			/// <inheritdoc cref="QualityProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: Quality</remarks>
+			/// </summary>
+			public new QualityProperty Quality { get; } = new QualityProperty();
+			
+			/// <summary>﻿indicates if the <see cref="Observation">Observation</see> is verifiable and is in accordance with the normative definitions within the MTConnect Standard.<br /><br /><br />
+			/// </summary>
+			public new sealed class QualityProperty : IProperty
+			{
+				/// <summary>Constant value for <see cref="QualityProperty.Name" /></summary>
+				public const string NAME = "quality";
+				/// <summary>Constant value for <see cref="QualityProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;indicates if the {{block(Observation)}} is verifiable and is in accordance with the normative definitions within the MTConnect Standard.&#10;
+";
+				/// <summary>Constant value for <see cref="QualityProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "private";
+				/// <summary>Constant value for <see cref="QualityProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="QualityProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "2.5";
+				/// <summary>Constant value for <see cref="QualityProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="QualityProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="QualityProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 2024x";
+				/// <summary>Constant value for <see cref="QualityProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="QualityProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "UNVERIFIABLE";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: QualityEnumMetaClass </remarks>
+				/// </summary>
+				public System.Type Type => typeof(Mtconnect.DataTypes.QualityEnumMetaClass);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
+
+				/// <inheritdoc />
+				public string AccessModifier => ACCESS_MODIFIER;
+				
+				/// <inheritdoc />
+				public string Modifier => MODIFIER;
+				
+				/// <inheritdoc />
+				public string NormativeVersion => NORMATIVE_VERSION;
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => DEPRECATED_VERSION;
+				
+				/// <inheritdoc />
+				public string Aggregation => AGGREGATION;
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => EXTENSION;
+				
+				/// <inheritdoc />
+				public string Association => ASSOCIATION;
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => DEFAULT_VALUE;
+			}
+			/// <summary>
+			/// <inheritdoc cref="DeprecatedProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: Deprecated</remarks>
+			/// </summary>
+			public new DeprecatedProperty Deprecated { get; } = new DeprecatedProperty();
+			
+			/// <summary>﻿indicates if the <see cref="Observation">Observation</see> has any property or controlled vocabulary that has been deprecated in the MTConnect Standard.<br /><br /><br />
+			/// </summary>
+			public new sealed class DeprecatedProperty : IProperty
+			{
+				/// <summary>Constant value for <see cref="DeprecatedProperty.Name" /></summary>
+				public const string NAME = "deprecated";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;indicates if the {{block(Observation)}} has any property or controlled vocabulary that has been deprecated in the MTConnect Standard.&#10;
+";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "private";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "2.5";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 2024x";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="DeprecatedProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: Boolean </remarks>
+				/// </summary>
+				public System.Type Type => typeof(Boolean);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
+
+				/// <inheritdoc />
+				public string AccessModifier => ACCESS_MODIFIER;
+				
+				/// <inheritdoc />
+				public string Modifier => MODIFIER;
+				
+				/// <inheritdoc />
+				public string NormativeVersion => NORMATIVE_VERSION;
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => DEPRECATED_VERSION;
+				
+				/// <inheritdoc />
+				public string Aggregation => AGGREGATION;
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => EXTENSION;
+				
+				/// <inheritdoc />
+				public string Association => ASSOCIATION;
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => DEFAULT_VALUE;
+			}
+			/// <summary>
+			/// <inheritdoc cref="ExtendedProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: Extended</remarks>
+			/// </summary>
+			public new ExtendedProperty Extended { get; } = new ExtendedProperty();
+			
+			/// <summary>﻿indicates if the <see cref="Observation">Observation</see> has any property or controlled vocabulary that has been extended and cannot be validated.<br /><br /><br />
+			/// </summary>
+			public new sealed class ExtendedProperty : IProperty
+			{
+				/// <summary>Constant value for <see cref="ExtendedProperty.Name" /></summary>
+				public const string NAME = "extended";
+				/// <summary>Constant value for <see cref="ExtendedProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;indicates if the {{block(Observation)}} has any property or controlled vocabulary that has been extended and cannot be validated.&#10;
+";
+				/// <summary>Constant value for <see cref="ExtendedProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "private";
+				/// <summary>Constant value for <see cref="ExtendedProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="ExtendedProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "2.5";
+				/// <summary>Constant value for <see cref="ExtendedProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="ExtendedProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="ExtendedProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 2024x";
+				/// <summary>Constant value for <see cref="ExtendedProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="ExtendedProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: Boolean </remarks>
+				/// </summary>
+				public System.Type Type => typeof(Boolean);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

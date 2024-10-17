@@ -100,7 +100,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="HasPriorityPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasPriorityPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasPriorityPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Priority";
 				/// <summary>Constant value for <see cref="HasPriorityPartProperty.DefaultValue" /></summary>
@@ -169,7 +169,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="CollaboratorIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CollaboratorIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CollaboratorIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CollaboratorIdProperty.DefaultValue" /></summary>
@@ -238,7 +238,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="CollaboratorTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CollaboratorTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CollaboratorTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CollaboratorTypeProperty.DefaultValue" /></summary>
@@ -307,7 +307,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="OptionalProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="OptionalProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="OptionalProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OptionalProperty.DefaultValue" /></summary>

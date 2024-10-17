@@ -105,7 +105,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.DefaultValue" /></summary>
@@ -174,7 +174,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.DefaultValue" /></summary>
@@ -243,7 +243,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.DefaultValue" /></summary>
@@ -312,7 +312,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.DefaultValue" /></summary>

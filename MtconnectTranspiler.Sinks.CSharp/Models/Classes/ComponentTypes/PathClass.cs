@@ -118,7 +118,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.DefaultValue" /></summary>
@@ -187,7 +187,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.DefaultValue" /></summary>
@@ -256,7 +256,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.DefaultValue" /></summary>
@@ -325,7 +325,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.DefaultValue" /></summary>
@@ -394,7 +394,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.DefaultValue" /></summary>
@@ -463,7 +463,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.DefaultValue" /></summary>
@@ -532,7 +532,7 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.DefaultValue" /></summary>

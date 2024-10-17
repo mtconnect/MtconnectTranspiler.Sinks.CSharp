@@ -111,7 +111,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.DefaultValue" /></summary>
@@ -184,7 +184,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="HrefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HrefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HrefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HrefProperty.DefaultValue" /></summary>
@@ -254,7 +254,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="RoleProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="RoleProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="RoleProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RoleProperty.DefaultValue" /></summary>
@@ -325,7 +325,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="Xlink_TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="Xlink_TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="Xlink_TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="Xlink_TypeProperty.DefaultValue" /></summary>

@@ -114,7 +114,7 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 				/// <summary>Constant value for <see cref="ComponentProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ComponentProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ComponentProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ComponentProperty.DefaultValue" /></summary>
@@ -184,7 +184,7 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 				/// <summary>Constant value for <see cref="ComponentIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ComponentIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ComponentIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ComponentIdProperty.DefaultValue" /></summary>
@@ -254,7 +254,7 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
@@ -324,7 +324,7 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 				/// <summary>Constant value for <see cref="NativeNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NativeNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NativeNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NativeNameProperty.DefaultValue" /></summary>
@@ -394,7 +394,7 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 				/// <summary>Constant value for <see cref="UuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.DefaultValue" /></summary>
@@ -670,7 +670,7 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 				/// <summary>Constant value for <see cref="IsOrganizerForPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IsOrganizerForPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IsOrganizerForPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ComponentStream";
 				/// <summary>Constant value for <see cref="IsOrganizerForPartProperty.DefaultValue" /></summary>

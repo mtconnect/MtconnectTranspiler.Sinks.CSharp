@@ -67,16 +67,16 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 		/// <remarks>
 		/// Original Type: EAID_C09F377D_8946_421b_B746_E23C01D97EAC
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization);
 
 		/// <inheritdoc />
 		public new DriveAngleClassProperties Properties { get; } = new DriveAngleClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="DriveAngleClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization.ToolingMeasurementGeneralizationProperties" />.
 		/// </summary>
-		public class DriveAngleClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
+		public class DriveAngleClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization.ToolingMeasurementGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {
@@ -108,7 +108,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				/// <summary>Constant value for <see cref="CodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CodeProperty.DefaultValue" /></summary>
@@ -177,7 +177,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>

@@ -109,7 +109,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.DefaultValue" /></summary>
@@ -178,7 +178,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "QIFDocument";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.DefaultValue" /></summary>

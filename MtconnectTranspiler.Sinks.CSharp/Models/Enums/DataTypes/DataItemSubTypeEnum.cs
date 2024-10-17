@@ -36,7 +36,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		ACTION,
-		/// <summary>﻿measured or reported value of an <i>observation</i>.<br /><br /><br />
+		/// <summary>﻿reported value of an <i>observation</i>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1017,6 +1017,42 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MODEL,
+		/// <summary>﻿<see cref="DataItemSubType.ACTUAL">DataItemSubType.ACTUAL</see> that has <i>uncertainty</i>.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		MEASURED,
+		/// <summary>﻿fluid that has no definite shape or volume.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		GAS,
+		/// <summary>﻿fluid that has a definite volume but no definite shape.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		LIQUID,
+		/// <summary>﻿matter that has a definite shape and a definite volume.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		SOLID,
 	}
 
 	/// <summary>﻿
@@ -1175,6 +1211,10 @@ namespace Mtconnect.DataTypes
 		ENUMERATED,
 		DETECT,
 		MODEL,
+		MEASURED,
+		GAS,
+		LIQUID,
+		SOLID,
 		};
 
 		private ABSOLUTEValue _ABSOLUTE;
@@ -1263,7 +1303,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="ACTUALValue" path="/summary" />
 		public ACTUALValue ACTUAL => _ACTUAL ?? (_ACTUAL = new ACTUALValue());
 
-		/// <summary>﻿measured or reported value of an <i>observation</i>.<br /><br /><br />
+		/// <summary>﻿reported value of an <i>observation</i>.<br /><br /><br />
 		/// Value for DataItemSubTypeEnum.<br/>
 		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
 		/// </summary>
@@ -1282,7 +1322,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="ACTUALValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="ACTUALValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measured or reported value of an {{term(observation)}}.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;reported value of an {{term(observation)}}.&#10;
 ";
 
 			/// <inheritdoc />
@@ -5720,6 +5760,170 @@ namespace Mtconnect.DataTypes
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MODELValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;model info of the hardware or software.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private MEASUREDValue _MEASURED;
+		/// <inheritdoc cref="MEASUREDValue" path="/summary" />
+		public MEASUREDValue MEASURED => _MEASURED ?? (_MEASURED = new MEASUREDValue());
+
+		/// <summary>﻿<see cref="DataItemSubType.ACTUAL">DataItemSubType.ACTUAL</see> that has <i>uncertainty</i>.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class MEASUREDValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="MEASUREDValue.Name" /></summary>
+			public const string NAME = "MEASURED";
+			/// <summary>Constant value for <see cref="MEASUREDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="MEASUREDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MEASUREDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;{{def(DataItemSubType::ACTUAL)}} that has {{term(uncertainty)}}.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private GASValue _GAS;
+		/// <inheritdoc cref="GASValue" path="/summary" />
+		public GASValue GAS => _GAS ?? (_GAS = new GASValue());
+
+		/// <summary>﻿fluid that has no definite shape or volume.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class GASValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="GASValue.Name" /></summary>
+			public const string NAME = "GAS";
+			/// <summary>Constant value for <see cref="GASValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="GASValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="GASValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;fluid that has no definite shape or volume.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private LIQUIDValue _LIQUID;
+		/// <inheritdoc cref="LIQUIDValue" path="/summary" />
+		public LIQUIDValue LIQUID => _LIQUID ?? (_LIQUID = new LIQUIDValue());
+
+		/// <summary>﻿fluid that has a definite volume but no definite shape.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class LIQUIDValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="LIQUIDValue.Name" /></summary>
+			public const string NAME = "LIQUID";
+			/// <summary>Constant value for <see cref="LIQUIDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="LIQUIDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="LIQUIDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;fluid that has a definite volume but no definite shape.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private SOLIDValue _SOLID;
+		/// <inheritdoc cref="SOLIDValue" path="/summary" />
+		public SOLIDValue SOLID => _SOLID ?? (_SOLID = new SOLIDValue());
+
+		/// <summary>﻿matter that has a definite shape and a definite volume.<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class SOLIDValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="SOLIDValue.Name" /></summary>
+			public const string NAME = "SOLID";
+			/// <summary>Constant value for <see cref="SOLIDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="SOLIDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="SOLIDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;matter that has a definite shape and a definite volume.&#10;
 ";
 
 			/// <inheritdoc />

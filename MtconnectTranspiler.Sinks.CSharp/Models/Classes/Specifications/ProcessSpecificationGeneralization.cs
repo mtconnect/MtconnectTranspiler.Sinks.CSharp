@@ -109,7 +109,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "SpecificationLimits";
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.DefaultValue" /></summary>
@@ -178,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ControlLimits";
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.DefaultValue" /></summary>
@@ -247,7 +247,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "AlarmLimits";
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.DefaultValue" /></summary>

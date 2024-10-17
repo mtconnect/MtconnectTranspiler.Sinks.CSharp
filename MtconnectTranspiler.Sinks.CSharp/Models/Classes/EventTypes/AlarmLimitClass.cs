@@ -15,8 +15,10 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+	/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.5">v2.5</see></item>
 	/// </list>
 	/// </remarks>
+	[Obsolete("Deprecated in v2.5 according to https://model.mtconnect.org/#_Version_2.5")]
 
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public sealed class AlarmLimitClass : IClass
@@ -37,7 +39,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		/// <summary>Constant value for <see cref="AlarmLimitClass.NormativeVersion" /></summary>
 		public const string NORMATIVE_VERSION = "1.7";
 		/// <summary>Constant value for <see cref="AlarmLimitClass.DeprecatedVersion" /></summary>
-		public const string DEPRECATED_VERSION = "";
+		public const string DEPRECATED_VERSION = "2.5";
 
 		/// <inheritdoc />
 		public string ReferenceId => REFERENCE_ID;
@@ -177,7 +179,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <summary>Constant value for <see cref="ResultProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ResultProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ResultProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>

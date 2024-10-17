@@ -185,7 +185,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <summary>Constant value for <see cref="HasSolidModelPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasSolidModelPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasSolidModelPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "SolidModel";
 				/// <summary>Constant value for <see cref="HasSolidModelPartProperty.DefaultValue" /></summary>
@@ -254,7 +254,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <summary>Constant value for <see cref="HasSensorConfigurationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasSensorConfigurationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasSensorConfigurationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "SensorConfiguration";
 				/// <summary>Constant value for <see cref="HasSensorConfigurationPartProperty.DefaultValue" /></summary>
@@ -323,7 +323,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 				/// <summary>Constant value for <see cref="HasMotionPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasMotionPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasMotionPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Motion";
 				/// <summary>Constant value for <see cref="HasMotionPartProperty.DefaultValue" /></summary>

@@ -80,87 +80,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {
-				Manufacturers,
 				SerialNumber,
 				ToolId,
 				HasCuttingToolDefinitionPart,
 				HasCuttingToolLifeCyclePart,
 			}.Concat(base.Properties).ToArray();
-			/// <summary>
-			/// <inheritdoc cref="ManufacturersProperty" path="/summary" /><br/>
-			/// <remarks>Original Name: Manufacturers</remarks>
-			/// </summary>
-			public new ManufacturersProperty Manufacturers { get; } = new ManufacturersProperty();
-			
-			/// <summary>﻿manufacturers of the cutting tool.<br /><br />This will reference the tool item and adaptive items specifically. The cutting items<br />manufacturers’ will be a property of <see cref="CuttingItem">CuttingItem</see>.<br /><br />&gt; Note: In <i>XML</i>, the representation will be a comma(,) delimited list of manufacturer names. See <see cref="CuttingTool Schema Diagrams">CuttingTool Schema Diagrams</see>.<br /><br /><br />
-			/// </summary>
-			public new sealed class ManufacturersProperty : IProperty
-			{
-				/// <summary>Constant value for <see cref="ManufacturersProperty.Name" /></summary>
-				public const string NAME = "manufacturers";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.Summary" /></summary>
-				public const string SUMMARY = @"&#10;&#10;&#10;manufacturers of the cutting tool.
-
-This will reference the tool item and adaptive items specifically. The cutting items
-manufacturers’ will be a property of {{block(CuttingItem)}}.
-
-> Note: In {{term(XML)}}, the representation will be a comma(,) delimited list of manufacturer names. See {{sect(CuttingTool Schema Diagrams)}}.&#10;
-";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.AccessModifier" /></summary>
-				public const string ACCESS_MODIFIER = "public";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.Modifier" /></summary>
-				public const string MODIFIER = "";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "1.3";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.DeprecatedVersion" /></summary>
-				public const string DEPRECATED_VERSION = "";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.Aggregation" /></summary>
-				public const string AGGREGATION = "";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.Extension" /></summary>
-				public const string EXTENSION = "";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.Association" /></summary>
-				public const string ASSOCIATION = "";
-				/// <summary>Constant value for <see cref="ManufacturersProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
-
-				/// <summary>
-				/// <inheritdoc />
-				/// <remarks> Type: String </remarks>
-				/// </summary>
-				public System.Type Type => typeof(String);
-				
-				/// <inheritdoc />
-				public string Name => NAME;
-				
-				/// <inheritdoc />
-				public string Summary => SUMMARY;
-
-				/// <inheritdoc />
-				public string AccessModifier => ACCESS_MODIFIER;
-				
-				/// <inheritdoc />
-				public string Modifier => MODIFIER;
-				
-				/// <inheritdoc />
-				public string NormativeVersion => NORMATIVE_VERSION;
-				
-				/// <inheritdoc />
-				public string DeprecatedVersion => DEPRECATED_VERSION;
-				
-				/// <inheritdoc />
-				public string Aggregation => AGGREGATION;
-
-				// Note: Extension.Extender
-				/// <inheritdoc />
-				public string Extension => EXTENSION;
-				
-				/// <inheritdoc />
-				public string Association => ASSOCIATION;
-
-				// Note: DefaultValue.Name
-				/// <inheritdoc />
-				public string DefaultValue => DEFAULT_VALUE;
-			}
 			/// <summary>
 			/// <inheritdoc cref="SerialNumberProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: SerialNumber</remarks>
@@ -187,7 +111,7 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.DefaultValue" /></summary>
@@ -257,7 +181,7 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				/// <summary>Constant value for <see cref="ToolIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ToolIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ToolIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ToolIdProperty.DefaultValue" /></summary>
@@ -326,7 +250,7 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "CuttingToolDefinition";
 				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.DefaultValue" /></summary>
@@ -395,7 +319,7 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Association" /></summary>
 				public const string ASSOCIATION = "CuttingToolLifeCycle";
 				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.DefaultValue" /></summary>

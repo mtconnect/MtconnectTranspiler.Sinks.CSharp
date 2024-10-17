@@ -424,11 +424,14 @@ See `QIFDocumentWrapper` element in `MTConnectAssets` schema.&#10;
 			RawMaterialPackage,
 			QIFPackage,
 			ComponentConfigurationParametersPackage,
+			FixturePackage,
+			PalletPackage,
 		};
 		
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			AssetClass,
+			PhysicalAssetGeneralization,
 		};
 		
 		/// <inheritdoc />
@@ -466,6 +469,18 @@ See `QIFDocumentWrapper` element in `MTConnectAssets` schema.&#10;
 	/// </summary>
 	public Package.ComponentConfigurationParametersPackage ComponentConfigurationParametersPackage => _ComponentConfigurationParametersPackage ?? (_ComponentConfigurationParametersPackage = new Package.ComponentConfigurationParametersPackage());
 
+	private Package.FixturePackage _FixturePackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.FixturePackage" path="/summary" />
+	/// </summary>
+	public Package.FixturePackage FixturePackage => _FixturePackage ?? (_FixturePackage = new Package.FixturePackage());
+
+	private Package.PalletPackage _PalletPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.PalletPackage" path="/summary" />
+	/// </summary>
+	public Package.PalletPackage PalletPackage => _PalletPackage ?? (_PalletPackage = new Package.PalletPackage());
+
 	#endregion
 
 	#region Classes
@@ -474,6 +489,12 @@ See `QIFDocumentWrapper` element in `MTConnectAssets` schema.&#10;
 	/// <inheritdoc cref="Package.AssetClass" path="/summary" />
 	/// </summary>
 	public Package.AssetClass AssetClass => _AssetClass ?? (_AssetClass = new Package.AssetClass());
+
+	private Package.PhysicalAssetGeneralization _PhysicalAssetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.PhysicalAssetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.PhysicalAssetGeneralization PhysicalAssetGeneralization => _PhysicalAssetGeneralization ?? (_PhysicalAssetGeneralization = new Package.PhysicalAssetGeneralization());
 
 	#endregion
 

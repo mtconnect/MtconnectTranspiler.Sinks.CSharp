@@ -265,6 +265,15 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			DisplacementLinearClass,
 			DisplacementAngularClass,
 			PositionCartesianClass,
+			ResistivityClass,
+			FillHeightClass,
+			FillHeightActualClass,
+			FillHeightTargetClass,
+			ParticleCountClass,
+			ParticleCountGasClass,
+			ParticleCountLiquidClass,
+			ParticleCountSolidClass,
+			ParticleSizeClass,
 		};
 		
 		/// <inheritdoc />
@@ -1612,6 +1621,60 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <inheritdoc cref="Package.PositionCartesianClass" path="/summary" />
 	/// </summary>
 	public Package.PositionCartesianClass PositionCartesianClass => _PositionCartesianClass ?? (_PositionCartesianClass = new Package.PositionCartesianClass());
+
+	private Package.ResistivityClass _ResistivityClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ResistivityClass" path="/summary" />
+	/// </summary>
+	public Package.ResistivityClass ResistivityClass => _ResistivityClass ?? (_ResistivityClass = new Package.ResistivityClass());
+
+	private Package.FillHeightClass _FillHeightClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.FillHeightClass" path="/summary" />
+	/// </summary>
+	public Package.FillHeightClass FillHeightClass => _FillHeightClass ?? (_FillHeightClass = new Package.FillHeightClass());
+
+	private Package.FillHeightActualClass _FillHeightActualClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.FillHeightActualClass" path="/summary" />
+	/// </summary>
+	public Package.FillHeightActualClass FillHeightActualClass => _FillHeightActualClass ?? (_FillHeightActualClass = new Package.FillHeightActualClass());
+
+	private Package.FillHeightTargetClass _FillHeightTargetClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.FillHeightTargetClass" path="/summary" />
+	/// </summary>
+	public Package.FillHeightTargetClass FillHeightTargetClass => _FillHeightTargetClass ?? (_FillHeightTargetClass = new Package.FillHeightTargetClass());
+
+	private Package.ParticleCountClass _ParticleCountClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleCountClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleCountClass ParticleCountClass => _ParticleCountClass ?? (_ParticleCountClass = new Package.ParticleCountClass());
+
+	private Package.ParticleCountGasClass _ParticleCountGasClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleCountGasClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleCountGasClass ParticleCountGasClass => _ParticleCountGasClass ?? (_ParticleCountGasClass = new Package.ParticleCountGasClass());
+
+	private Package.ParticleCountLiquidClass _ParticleCountLiquidClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleCountLiquidClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleCountLiquidClass ParticleCountLiquidClass => _ParticleCountLiquidClass ?? (_ParticleCountLiquidClass = new Package.ParticleCountLiquidClass());
+
+	private Package.ParticleCountSolidClass _ParticleCountSolidClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleCountSolidClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleCountSolidClass ParticleCountSolidClass => _ParticleCountSolidClass ?? (_ParticleCountSolidClass = new Package.ParticleCountSolidClass());
+
+	private Package.ParticleSizeClass _ParticleSizeClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleSizeClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleSizeClass ParticleSizeClass => _ParticleSizeClass ?? (_ParticleSizeClass = new Package.ParticleSizeClass());
 
 	#endregion
 

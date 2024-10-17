@@ -558,7 +558,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		TOOL_GROUP,
-		/// <summary>﻿identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br /><br /><br />
+		/// <summary>﻿identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_NUMBER</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -846,7 +846,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		PART_UNIQUE_ID,
-		/// <summary>﻿set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br /><br /><br />
+		/// <summary>﻿set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATED</b> in <i>Version 2.5</i>. Replaced by <c>CONTROL_LIMITS</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -855,7 +855,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		CONTROL_LIMIT,
-		/// <summary>﻿set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br /><br /><br />
+		/// <summary>﻿set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATED</b> in <i>Version 2.5</i>. Replaced by  <c>SPECIFICATION_LIMITS</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -864,7 +864,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		SPECIFICATION_LIMIT,
-		/// <summary>﻿set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br /><br /><br />
+		/// <summary>﻿set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATED</b> in <i>Version 2.5</i>. Replaced by  <c>ALARM_LIMITS</c>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1251,6 +1251,15 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		LOCATION_SPATIAL_GEOGRAPHIC,
+		/// <summary>﻿sequence of a part in a group of parts.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		PART_INDEX,
 	}
 
 	/// <summary>﻿
@@ -1435,6 +1444,7 @@ namespace Mtconnect.DataTypes
 		LOCATION_NARRATIVE,
 		THICKNESS,
 		LOCATION_SPATIAL_GEOGRAPHIC,
+		PART_INDEX,
 		};
 
 		private ACTIVE_AXESValue _ACTIVE_AXES;
@@ -3917,7 +3927,7 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 		/// <inheritdoc cref="TOOL_IDValue" path="/summary" />
 		public TOOL_IDValue TOOL_ID => _TOOL_ID ?? (_TOOL_ID = new TOOL_IDValue());
 
-		/// <summary>﻿identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_ASSET_ID</c>.<br /><br /><br />
+		/// <summary>﻿identifier of the tool currently in use for a given <c>Path</c>.<br /><br /><b>DEPRECATED</b> in <i>Version 1.2.0</i>.   See <c>TOOL_NUMBER</c>.<br /><br /><br />
 		/// Value for EventEnum.<br/>
 		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
@@ -3938,7 +3948,7 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 			/// <summary>Constant value for <see cref="TOOL_IDValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;identifier of the tool currently in use for a given `Path`.
 
-**DEPRECATED** in *Version 1.2.0*.   See `TOOL_ASSET_ID`.&#10;
+**DEPRECATED** in *Version 1.2.0*.   See `TOOL_NUMBER`.&#10;
 ";
 
 			/// <inheritdoc />
@@ -5233,7 +5243,7 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 		/// <inheritdoc cref="CONTROL_LIMITValue" path="/summary" />
 		public CONTROL_LIMITValue CONTROL_LIMIT => _CONTROL_LIMIT ?? (_CONTROL_LIMIT = new CONTROL_LIMITValue());
 
-		/// <summary>﻿set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>CONTROL_LIMITS</c>.<br /><br /><br />
+		/// <summary>﻿set of limits used to indicate whether a process variable is stable and in control.<br /><br /><b>DEPRECATED</b> in <i>Version 2.5</i>. Replaced by <c>CONTROL_LIMITS</c>.<br /><br /><br />
 		/// Value for EventEnum.<br/>
 		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
@@ -5250,11 +5260,11 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 			/// <summary>Constant value for <see cref="CONTROL_LIMITValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.7";
 			/// <summary>Constant value for <see cref="CONTROL_LIMITValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.5";
 			/// <summary>Constant value for <see cref="CONTROL_LIMITValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;set of limits used to indicate whether a process variable is stable and in control.
 
-**DEPRECATION WARNING**. Recommend using `CONTROL_LIMITS`.&#10;
+**DEPRECATED** in *Version 2.5*. Replaced by `CONTROL_LIMITS`.&#10;
 ";
 
 			/// <inheritdoc />
@@ -5276,7 +5286,7 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 		/// <inheritdoc cref="SPECIFICATION_LIMITValue" path="/summary" />
 		public SPECIFICATION_LIMITValue SPECIFICATION_LIMIT => _SPECIFICATION_LIMIT ?? (_SPECIFICATION_LIMIT = new SPECIFICATION_LIMITValue());
 
-		/// <summary>﻿set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>SPECIFICATION_LIMITS</c>.<br /><br /><br />
+		/// <summary>﻿set of limits defining a range of values designating acceptable performance for a variable.<br /><br /><b>DEPRECATED</b> in <i>Version 2.5</i>. Replaced by  <c>SPECIFICATION_LIMITS</c>.<br /><br /><br />
 		/// Value for EventEnum.<br/>
 		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
@@ -5293,11 +5303,11 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 			/// <summary>Constant value for <see cref="SPECIFICATION_LIMITValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.7";
 			/// <summary>Constant value for <see cref="SPECIFICATION_LIMITValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.5";
 			/// <summary>Constant value for <see cref="SPECIFICATION_LIMITValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;set of limits defining a range of values designating acceptable performance for a variable.
 
-**DEPRECATION WARNING**. Recommend using `SPECIFICATION_LIMITS`.&#10;
+**DEPRECATED** in *Version 2.5*. Replaced by  `SPECIFICATION_LIMITS`.&#10;
 ";
 
 			/// <inheritdoc />
@@ -5319,7 +5329,7 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 		/// <inheritdoc cref="ALARM_LIMITValue" path="/summary" />
 		public ALARM_LIMITValue ALARM_LIMIT => _ALARM_LIMIT ?? (_ALARM_LIMIT = new ALARM_LIMITValue());
 
-		/// <summary>﻿set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATION WARNING</b>. Recommend using <c>ALARM_LIMITS</c>.<br /><br /><br />
+		/// <summary>﻿set of limits used to trigger warning or alarm indicators.<br /><br /><b>DEPRECATED</b> in <i>Version 2.5</i>. Replaced by  <c>ALARM_LIMITS</c>.<br /><br /><br />
 		/// Value for EventEnum.<br/>
 		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
@@ -5336,11 +5346,11 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 			/// <summary>Constant value for <see cref="ALARM_LIMITValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.7";
 			/// <summary>Constant value for <see cref="ALARM_LIMITValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.5";
 			/// <summary>Constant value for <see cref="ALARM_LIMITValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;set of limits used to trigger warning or alarm indicators.
 
-**DEPRECATION WARNING**. Recommend using `ALARM_LIMITS`.&#10;
+**DEPRECATED** in *Version 2.5*. Replaced by  `ALARM_LIMITS`.&#10;
 ";
 
 			/// <inheritdoc />
@@ -7063,6 +7073,47 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="LOCATION_SPATIAL_GEOGRAPHICValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;absolute geographic location defined by two coordinates, longitude and latitude and an elevation.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private PART_INDEXValue _PART_INDEX;
+		/// <inheritdoc cref="PART_INDEXValue" path="/summary" />
+		public PART_INDEXValue PART_INDEX => _PART_INDEX ?? (_PART_INDEX = new PART_INDEXValue());
+
+		/// <summary>﻿sequence of a part in a group of parts.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class PART_INDEXValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="PART_INDEXValue.Name" /></summary>
+			public const string NAME = "PART_INDEX";
+			/// <summary>Constant value for <see cref="PART_INDEXValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="PART_INDEXValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="PART_INDEXValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;sequence of a part in a group of parts.&#10;
 ";
 
 			/// <inheritdoc />

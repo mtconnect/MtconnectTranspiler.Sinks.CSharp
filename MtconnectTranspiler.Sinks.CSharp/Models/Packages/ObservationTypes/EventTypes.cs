@@ -370,6 +370,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			ThicknessTargetClass,
 			ThicknessProgrammedClass,
 			LocationSpatialGeographicClass,
+			PartIndexClass,
 		};
 		
 		/// <inheritdoc />
@@ -2347,6 +2348,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <inheritdoc cref="Package.LocationSpatialGeographicClass" path="/summary" />
 	/// </summary>
 	public Package.LocationSpatialGeographicClass LocationSpatialGeographicClass => _LocationSpatialGeographicClass ?? (_LocationSpatialGeographicClass = new Package.LocationSpatialGeographicClass());
+
+	private Package.PartIndexClass _PartIndexClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.PartIndexClass" path="/summary" />
+	/// </summary>
+	public Package.PartIndexClass PartIndexClass => _PartIndexClass ?? (_PartIndexClass = new Package.PartIndexClass());
 
 	#endregion
 

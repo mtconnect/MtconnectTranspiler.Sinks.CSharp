@@ -104,7 +104,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "UpperLimit";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.DefaultValue" /></summary>
@@ -173,7 +173,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="NominalPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NominalPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NominalPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Nominal";
 				/// <summary>Constant value for <see cref="NominalPartProperty.DefaultValue" /></summary>
@@ -242,7 +242,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "LowerLimit";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.DefaultValue" /></summary>
