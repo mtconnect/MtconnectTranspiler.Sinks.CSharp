@@ -74,7 +74,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
             Aggregation = source.Aggregation;
             var extensions = source.Extensions?.Select(o => o.Extender)?.DefaultIfEmpty("")?.ToArray();
-            if (extensions.Any())
+            if (extensions != null && extensions.Any())
                 Extension = string.Join(";", extensions);
             Association = CSharpHelperMethods.TypeDeepSearch(model, source.Association, out remoteType);
             if (source.DefaultValue is UmlInstanceValue instanceValue)
