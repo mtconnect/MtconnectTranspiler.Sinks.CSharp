@@ -91,14 +91,14 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                         o.ModelExtension?
                         .LowerValue
                     )
-                    .FirstOrDefault() as LowerValue;
+                    .FirstOrDefault(o => o != null) as LowerValue;
             var upperValueExtension = source.UpperValue
                 ?? source.Extensions?
                     .Select(o =>
                         o.ModelExtension?
                         .UpperValue
                     )
-                    .FirstOrDefault() as UpperValue;
+                    .FirstOrDefault(o => o != null) as UpperValue;
 
             string lowerValue = lowerValueExtension?.Type == "uml:LiteralUnlimitedNatural"
                 ? lowerValueExtension?.Value ?? "*"
