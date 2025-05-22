@@ -23,15 +23,29 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public string Type { get; set; }
 
+        /// <summary>
+        /// SysML model value for <c>xmi:type</c>
+        /// </summary>
         public string OriginalPropertyType { get; set; }
 
+        /// <summary>
+        /// Relationship of with other parts. E.g. <c>composite</c> indicates a "has-a" relationship with an associated object
+        /// </summary>
         public string Aggregation { get; set; }
 
+        /// <summary>
+        /// UML extension, delimitted by semi-colon (;)
+        /// </summary>
         public string Extension { get; set; }
 
+        /// <summary>
+        /// Reference to a related remote object
+        /// </summary>
         public string Association { get; set; }
 
         public string DefaultValue { get; set; }
+
+        public string Multiplicity { get; set; }
 
         private XmiElement? _remoteType { get; set; }
 
@@ -59,7 +73,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             OriginalPropertyType = source.PropertyType;
 
             Aggregation = source.Aggregation;
-            Extension = source.Extension?.Extender;
+            Extension = string.Join(";", source.Extensions?.Select(o => o.Extender)?.DefaultIfEmpty("").ToArray());
             Association = CSharpHelperMethods.TypeDeepSearch(model, source.Association, out remoteType);
             if (source.DefaultValue is UmlInstanceValue instanceValue)
             {
@@ -69,7 +83,16 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 DefaultValue = source.DefaultValue?.Name;
             }
 
-            // TODO: Determine multiplicity from lowerValue and upperValue
+            var lowerValueExtension = source.LowerValue ?? source.Extensions?.Select(o => o.ChildElements.Where(c => c is LowerValue).FirstOrDefault()).FirstOrDefault() as LowerValue;
+            var upperValueExtension = source.Extensions?.Select(o => o.ChildElements.Where(c => c is UpperValue).FirstOrDefault()).FirstOrDefault() as UpperValue;
+            Multiplicity = lowerValueExtension != null && upperValueExtension != null
+                ? $"{lowerValueExtension.Value ?? "0"}..{upperValueExtension.Value}"
+                : upperValueExtension != null
+                    ? $"{upperValueExtension.Value}"
+                    : lowerValueExtension != null
+                        ? $"{lowerValueExtension.Value ?? "0"}"
+                        : string.Empty;
+            // QUESTION: What are the options for lowerValue.Value and upperValue.Value?
         }
 
     }

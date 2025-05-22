@@ -63,5 +63,10 @@
         /// Concatenation of all Comments.
         /// </summary>
         string Summary { get; }
+
+        /// <summary>
+        /// Potential range of the number of items that can be associated with this property.
+        /// </summary>
+        string Multiplicity { get; }
     }
 }
