@@ -88,19 +88,15 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             var lowerValueExtension = source.LowerValue
                 ?? source.Extensions?
                     .Select(o =>
-                        o.ChildElements?
-                            .Where(c => c is ModelExtension)
-                            .Select(c => (c as ModelExtension).LowerValue)
-                            .FirstOrDefault()
+                        o.ModelExtension?
+                        .LowerValue
                     )
                     .FirstOrDefault() as LowerValue;
             var upperValueExtension = source.UpperValue
                 ?? source.Extensions?
                     .Select(o =>
-                        o.ChildElements?
-                            .Where(c => c is ModelExtension)
-                            .Select(c => (c as ModelExtension).UpperValue)
-                            .FirstOrDefault()
+                        o.ModelExtension?
+                        .UpperValue
                     )
                     .FirstOrDefault() as UpperValue;
 
