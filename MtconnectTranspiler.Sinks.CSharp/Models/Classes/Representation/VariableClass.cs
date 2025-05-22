@@ -13,7 +13,7 @@ namespace Mtconnect.WIP_DeviceExamples.MillW_PER_SmoothG.Representation
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1634043463233_893872_100">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class VariableClass : IClass
 	{
 		/// <summary>Constant value for <see cref="VariableClass.ReferenceId" /></summary>

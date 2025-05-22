@@ -11,7 +11,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 	/// <summary>﻿This section provides semantic information for the <see cref="MTConnectErrors">MTConnectErrors</see> entity.<br /><br /><br />Error Information Model<br /><br />The <i>Error Information Model</i> establishes the rules and terminology that describes the <i>response document</i> returned by an <i>agent</i> when it encounters an error while interpreting a <i>request</i> for information from a client software application or when an <i>agent</i> experiences an error while publishing the <i>response</i> to a <i>request</i> for information.      <br /><br />An <i>agent</i> provides the information regarding errors encountered when processing a <i>request</i> for information by publishing an <i>MTConnectErrors Response Document</i> to the client software application that made the <i>request</i> for information.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579560529522_593444_6515">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public class MTConnectErrorsResponseDocumentPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="MTConnectErrorsResponseDocumentPackage.ReferenceId" /></summary>

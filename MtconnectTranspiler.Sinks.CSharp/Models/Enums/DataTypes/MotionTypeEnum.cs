@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public enum MotionTypeEnum
 	{
 		/// <summary>﻿sliding linear motion along an axis with a fixed range of motion.<br /><br /><br />
@@ -59,7 +59,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_4BA8528B_F152_49aa_BEFD_2574649F9F1A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class MotionTypeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="MotionTypeEnumMetaClass.ReferenceId" /></summary>

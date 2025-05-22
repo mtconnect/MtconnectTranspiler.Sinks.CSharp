@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375174_472178_2046">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class MTConnectStreamsResponseDocumentClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MTConnectStreamsResponseDocumentClass.ReferenceId" /></summary>

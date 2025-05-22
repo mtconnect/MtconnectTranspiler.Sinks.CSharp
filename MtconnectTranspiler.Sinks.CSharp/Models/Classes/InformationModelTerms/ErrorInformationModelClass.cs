@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.InformationModelTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375159_827377_1990">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class ErrorInformationModelClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ErrorInformationModelClass.ReferenceId" /></summary>

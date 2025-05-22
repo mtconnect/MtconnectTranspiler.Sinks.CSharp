@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class SampleClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SampleClass.ReferenceId" /></summary>

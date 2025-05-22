@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375161_349547_1998">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class HTTPErrorMessageClass : IClass
 	{
 		/// <summary>Constant value for <see cref="HTTPErrorMessageClass.ReferenceId" /></summary>

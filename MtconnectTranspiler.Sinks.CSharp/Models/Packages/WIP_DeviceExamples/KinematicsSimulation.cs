@@ -11,7 +11,7 @@ namespace Mtconnect.WIP_DeviceExamples
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_C2851860_6C4E_4c7a_AABF_D7D01EA6F98D">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public class KinematicsSimulationPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="KinematicsSimulationPackage.ReferenceId" /></summary>

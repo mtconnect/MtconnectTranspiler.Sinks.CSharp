@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class MaximumClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MaximumClass.ReferenceId" /></summary>

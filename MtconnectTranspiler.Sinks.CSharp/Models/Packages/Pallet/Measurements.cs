@@ -11,7 +11,7 @@ namespace Mtconnect.AssetInformationModel.Pallet
 	/// <summary>﻿This section lists common <see cref="Measurement">Measurement</see> types for a <see cref="PhysicalAsset">PhysicalAsset</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___2024x_68e0225_1727795912850_845735_24465">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public class MeasurementsPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="MeasurementsPackage.ReferenceId" /></summary>

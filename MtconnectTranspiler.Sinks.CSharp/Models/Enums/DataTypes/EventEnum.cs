@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public enum EventEnum
 	{
 		/// <summary>﻿set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br /><br /><br />
@@ -1265,7 +1265,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398379726_606068_12802">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class EventEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="EventEnumMetaClass.ReferenceId" /></summary>

@@ -10,7 +10,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579105790700_15924_162934">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public class BasicVolumePackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="BasicVolumePackage.ReferenceId" /></summary>

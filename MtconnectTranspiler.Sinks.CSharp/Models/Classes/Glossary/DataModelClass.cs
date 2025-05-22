@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375153_511704_1974">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class DataModelClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DataModelClass.ReferenceId" /></summary>

@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <summary>﻿This section provides semantic information for the <see cref="ImageFile">ImageFile</see> entity.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1677586007782_145120_733">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public class ImageFilesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ImageFilesPackage.ReferenceId" /></summary>
