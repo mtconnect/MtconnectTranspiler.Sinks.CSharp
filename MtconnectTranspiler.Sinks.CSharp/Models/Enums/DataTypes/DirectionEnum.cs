@@ -17,7 +17,7 @@ namespace Mtconnect.DataTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public enum DirectionEnum
 	{
 		/// <summary>﻿clockwise rotation using the right-hand rule.<br /><br /><br />
@@ -69,7 +69,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643977882360_173549_1229">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class DirectionEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="DirectionEnumMetaClass.ReferenceId" /></summary>

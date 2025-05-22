@@ -20,7 +20,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.2 according to https://model.mtconnect.org/#_Version_1.2")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class SpindleSpeedClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SpindleSpeedClass.ReferenceId" /></summary>

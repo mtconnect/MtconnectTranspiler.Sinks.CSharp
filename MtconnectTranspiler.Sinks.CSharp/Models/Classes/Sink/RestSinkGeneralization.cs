@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Sink
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929472006_955706_18942">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class RestSinkGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="RestSinkGeneralization.ReferenceId" /></summary>

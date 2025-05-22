@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587354467231_863431_1827">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class TransformationServiceGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="TransformationServiceGeneralization.ReferenceId" /></summary>

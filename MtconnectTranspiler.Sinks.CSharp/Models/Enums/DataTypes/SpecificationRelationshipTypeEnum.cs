@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public enum SpecificationRelationshipTypeEnum
 	{
 		/// <summary>﻿referenced <see cref="Specification">Specification</see> provides process limits.<br /><br /><br /><br />
@@ -32,7 +32,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605646000929_248969_3052">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class SpecificationRelationshipTypeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="SpecificationRelationshipTypeEnumMetaClass.ReferenceId" /></summary>

@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 	/// <summary>﻿This section provides semantic information for the elements of the <see cref="Definition">Definition</see> for a <see cref="DataItem">DataItem</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1589399411687_610742_35">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public class PropertiesOfDefinitionPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="PropertiesOfDefinitionPackage.ReferenceId" /></summary>

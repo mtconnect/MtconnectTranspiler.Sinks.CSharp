@@ -11,7 +11,7 @@ namespace Mtconnect
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1584923209945_326350_15088">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public class ReferenceAgentArchitecturePackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ReferenceAgentArchitecturePackage.ReferenceId" /></summary>

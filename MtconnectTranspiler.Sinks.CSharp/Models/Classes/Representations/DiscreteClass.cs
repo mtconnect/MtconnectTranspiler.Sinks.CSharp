@@ -20,7 +20,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 	/// </remarks>
 	[Obsolete("Deprecated in v1.5 according to https://model.mtconnect.org/#_Version_1.5")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class DiscreteClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DiscreteClass.ReferenceId" /></summary>

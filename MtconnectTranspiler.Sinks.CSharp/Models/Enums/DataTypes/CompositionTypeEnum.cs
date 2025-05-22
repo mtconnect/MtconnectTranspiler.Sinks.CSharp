@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public enum CompositionTypeEnum
 	{
 		/// <summary>﻿<see cref="Composition">Composition</see> composed of a mechanism that moves or controls a mechanical part of a piece of equipment.<br /><br />It takes energy usually provided by air, electric current, or liquid and converts the energy into some kind of motion. <br /><br /><br />
@@ -482,7 +482,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580312281115_595828_44604">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class CompositionTypeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="CompositionTypeEnumMetaClass.ReferenceId" /></summary>

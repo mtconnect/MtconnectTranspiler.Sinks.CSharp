@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public enum ValveStateEnum
 	{
 		/// <summary>﻿<see cref="ValveState">ValveState</see> where flow is allowed and the aperture is static.<br /><br />&gt; Note: For a binary value, <c>OPEN</c> indicates the valve has the maximum possible aperture.<br /><br /><br />
@@ -59,7 +59,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1622456100008_63209_110">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class ValveStateEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="ValveStateEnumMetaClass.ReferenceId" /></summary>

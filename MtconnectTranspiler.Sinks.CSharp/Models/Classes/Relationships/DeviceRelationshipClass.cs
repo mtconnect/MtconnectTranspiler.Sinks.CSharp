@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class DeviceRelationshipClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DeviceRelationshipClass.ReferenceId" /></summary>

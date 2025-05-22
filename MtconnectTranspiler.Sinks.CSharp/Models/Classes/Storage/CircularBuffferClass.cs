@@ -12,7 +12,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Rest.Storage
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584927801848_454326_15349">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class CircularBuffferClass : IClass
 	{
 		/// <summary>Constant value for <see cref="CircularBuffferClass.ReferenceId" /></summary>

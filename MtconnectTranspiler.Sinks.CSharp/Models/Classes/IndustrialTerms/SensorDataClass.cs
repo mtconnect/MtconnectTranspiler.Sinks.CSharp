@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375185_14541_2087">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class SensorDataClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SensorDataClass.ReferenceId" /></summary>

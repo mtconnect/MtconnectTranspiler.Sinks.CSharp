@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class ObservationGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="ObservationGeneralization.ReferenceId" /></summary>

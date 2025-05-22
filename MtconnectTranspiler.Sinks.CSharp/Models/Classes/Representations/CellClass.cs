@@ -17,7 +17,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public sealed class CellClass : IClass
 	{
 		/// <summary>Constant value for <see cref="CellClass.ReferenceId" /></summary>

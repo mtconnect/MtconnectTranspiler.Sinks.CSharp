@@ -10,7 +10,7 @@ namespace Mtconnect
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1585765371629_136997_13">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
 	public class DevelopmentProcessPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="DevelopmentProcessPackage.ReferenceId" /></summary>
