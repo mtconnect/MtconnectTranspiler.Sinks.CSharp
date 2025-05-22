@@ -86,11 +86,19 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             }
 
             var lowerValueExtension = source.LowerValue ?? source.Extensions?.Select(o => o.ChildElements.Where(c => c is LowerValue).FirstOrDefault()).FirstOrDefault() as LowerValue;
-            var upperValueExtension = source.Extensions?.Select(o => o.ChildElements.Where(c => c is UpperValue).FirstOrDefault()).FirstOrDefault() as UpperValue;
-            Multiplicity = lowerValueExtension != null && upperValueExtension != null
-                ? $"{lowerValueExtension.Value ?? "0"}..{upperValueExtension.Value}"
-                : upperValueExtension != null
-                    ? $"{upperValueExtension.Value}"
+            var upperValueExtension = source.UpperValue ?? source.Extensions?.Select(o => o.ChildElements.Where(c => c is UpperValue).FirstOrDefault()).FirstOrDefault() as UpperValue;
+
+            string lowerValue = upperValueExtension?.Type == "uml:LiteralUnlimitedNatural"
+                ? lowerValueExtension?.Value ?? "*"
+                : lowerValueExtension?.Value;
+            string upperValue = upperValueExtension?.Type == "uml:LiteralUnlimitedNatural"
+                ? upperValueExtension?.Value ?? "*" // Sometimes a value is not present and that means "*"
+                : upperValueExtension?.Value;
+
+            Multiplicity = !string.IsNullOrEmpty(lowerValue) && !string.IsNullOrEmpty(upperValue)
+                ? $"{lowerValue}..{upperValue}"
+                : !string.IsNullOrEmpty(upperValue)
+                    ? $"{upperValue}"
                     : lowerValueExtension != null
                         ? $"{lowerValueExtension.Value ?? "0"}"
                         : string.Empty;
