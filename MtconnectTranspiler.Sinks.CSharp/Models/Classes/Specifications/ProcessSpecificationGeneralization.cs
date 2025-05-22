@@ -114,6 +114,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "SpecificationLimits";
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -152,6 +154,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasControlLimitsPartProperty" path="/summary" /><br/>
@@ -183,6 +188,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "ControlLimits";
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -221,6 +228,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasAlarmLimitsPartProperty" path="/summary" /><br/>
@@ -252,6 +262,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "AlarmLimits";
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -290,6 +302,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

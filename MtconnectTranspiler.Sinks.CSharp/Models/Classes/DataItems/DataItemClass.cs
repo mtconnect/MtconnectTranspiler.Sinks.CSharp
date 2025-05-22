@@ -127,11 +127,13 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				/// <summary>Constant value for <see cref="CategoryProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CategoryProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="CategoryProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CategoryProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CategoryProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -170,6 +172,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CompositionIdProperty" path="/summary" /><br/>
@@ -202,6 +207,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CompositionIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -240,6 +247,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CoordinateSystemProperty" path="/summary" /><br/>
@@ -274,6 +284,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CoordinateSystemProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -312,6 +324,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DiscreteProperty" path="/summary" /><br/>
@@ -341,11 +356,13 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				/// <summary>Constant value for <see cref="DiscreteProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DiscreteProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="DiscreteProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DiscreteProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DiscreteProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -384,6 +401,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
@@ -411,11 +431,13 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -454,6 +476,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -486,6 +511,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -524,6 +551,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NativeScaleProperty" path="/summary" /><br/>
@@ -556,6 +586,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NativeScaleProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NativeScaleProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -594,6 +626,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NativeUnitsProperty" path="/summary" /><br/>
@@ -626,6 +661,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NativeUnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NativeUnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -664,6 +701,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SampleRateProperty" path="/summary" /><br/>
@@ -696,6 +736,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SampleRateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SampleRateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -734,6 +776,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SignificantDigitsProperty" path="/summary" /><br/>
@@ -766,6 +811,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SignificantDigitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SignificantDigitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -804,6 +851,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="StatisticProperty" path="/summary" /><br/>
@@ -836,6 +886,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="StatisticProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="StatisticProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -874,6 +926,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
@@ -906,6 +961,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -944,6 +1001,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
@@ -971,11 +1031,13 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1014,6 +1076,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -1046,6 +1111,8 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1084,6 +1151,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IsObservedByPartProperty" path="/summary" /><br/>
@@ -1110,11 +1180,13 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				/// <summary>Constant value for <see cref="IsObservedByPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IsObservedByPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IsObservedByPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "DataItems";
 				/// <summary>Constant value for <see cref="IsObservedByPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IsObservedByPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1153,6 +1225,9 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="RepresentationProperty" path="/summary" /><br/>
@@ -1188,6 +1263,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RepresentationProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="RepresentationProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1226,6 +1303,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasSourcePartProperty" path="/summary" /><br/>
@@ -1257,6 +1337,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "Source";
 				/// <summary>Constant value for <see cref="HasSourcePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasSourcePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1295,6 +1377,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasConstraintPartProperty" path="/summary" /><br/>
@@ -1326,6 +1411,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "Constraints";
 				/// <summary>Constant value for <see cref="HasConstraintPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasConstraintPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1364,6 +1451,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasFilterPartProperty" path="/summary" /><br/>
@@ -1395,6 +1485,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "Filters";
 				/// <summary>Constant value for <see cref="HasFilterPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasFilterPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1433,6 +1525,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasInitialValuePartProperty" path="/summary" /><br/>
@@ -1464,6 +1559,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "InitialValue";
 				/// <summary>Constant value for <see cref="HasInitialValuePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasInitialValuePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1502,6 +1599,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasResetTriggerPartProperty" path="/summary" /><br/>
@@ -1533,6 +1633,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "ResetTrigger";
 				/// <summary>Constant value for <see cref="HasResetTriggerPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasResetTriggerPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1571,6 +1673,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasObservationPartProperty" path="/summary" /><br/>
@@ -1602,6 +1707,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "Observations";
 				/// <summary>Constant value for <see cref="HasObservationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasObservationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1640,6 +1747,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasDefinitionPartProperty" path="/summary" /><br/>
@@ -1671,6 +1781,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "Definition";
 				/// <summary>Constant value for <see cref="HasDefinitionPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasDefinitionPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1709,6 +1821,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CoordinateSystemIdRefProperty" path="/summary" /><br/>
@@ -1741,6 +1856,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1779,6 +1896,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasRelationshipPartProperty" path="/summary" /><br/>
@@ -1810,6 +1930,8 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public const string ASSOCIATION = "Relationships";
 				/// <summary>Constant value for <see cref="HasRelationshipPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasRelationshipPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1848,6 +1970,9 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

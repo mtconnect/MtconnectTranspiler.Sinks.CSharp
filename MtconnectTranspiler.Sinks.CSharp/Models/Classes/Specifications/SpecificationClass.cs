@@ -118,11 +118,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -161,6 +163,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
@@ -193,6 +198,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -231,6 +238,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DataItemIdRefProperty" path="/summary" /><br/>
@@ -263,6 +273,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DataItemIdRefProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DataItemIdRefProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -301,6 +313,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -333,6 +348,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -371,6 +388,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CompositionIdRefProperty" path="/summary" /><br/>
@@ -403,6 +423,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CompositionIdRefProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CompositionIdRefProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -441,6 +463,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -473,6 +498,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -511,6 +538,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CoordinateSystemIdRefProperty" path="/summary" /><br/>
@@ -543,6 +573,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -581,6 +613,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
@@ -613,6 +648,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -651,6 +688,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="OriginatorProperty" path="/summary" /><br/>
@@ -678,11 +718,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="OriginatorProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="OriginatorProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="OriginatorProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OriginatorProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "MANUFACTURER";
+				/// <summary>Constant value for <see cref="OriginatorProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -721,6 +763,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMaximumPartProperty" path="/summary" /><br/>
@@ -752,6 +797,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "Maximum";
 				/// <summary>Constant value for <see cref="HasMaximumPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasMaximumPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -790,6 +837,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasUpperLimitPartProperty" path="/summary" /><br/>
@@ -821,6 +871,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "UpperLimit";
 				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasUpperLimitPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -859,6 +911,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasLowerWarningPartProperty" path="/summary" /><br/>
@@ -890,6 +945,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "LowerWarning";
 				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasLowerWarningPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -928,6 +985,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasLowerLimitPartProperty" path="/summary" /><br/>
@@ -959,6 +1019,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "LowerLimit";
 				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasLowerLimitPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -997,6 +1059,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasUpperWarningPartProperty" path="/summary" /><br/>
@@ -1028,6 +1093,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "UpperWarning";
 				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasUpperWarningPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1066,6 +1133,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasNominalPartProperty" path="/summary" /><br/>
@@ -1097,6 +1167,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "Nominal";
 				/// <summary>Constant value for <see cref="HasNominalPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasNominalPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1135,6 +1207,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMinimumPartProperty" path="/summary" /><br/>
@@ -1166,6 +1241,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "Minimum";
 				/// <summary>Constant value for <see cref="HasMinimumPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasMinimumPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1204,6 +1281,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

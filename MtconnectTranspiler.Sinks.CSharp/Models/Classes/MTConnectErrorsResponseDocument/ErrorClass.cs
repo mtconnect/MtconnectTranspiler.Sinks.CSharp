@@ -104,11 +104,13 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				/// <summary>Constant value for <see cref="ErrorCodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ErrorCodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ErrorCodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ErrorCodeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ErrorCodeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -147,6 +149,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
@@ -179,6 +184,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ValueProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -217,6 +224,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

@@ -119,6 +119,8 @@ namespace Mtconnect.DataTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UpperLimitProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UpperLimitProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -157,6 +159,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UpperWarningProperty" path="/summary" /><br/>
@@ -189,6 +194,8 @@ namespace Mtconnect.DataTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UpperWarningProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UpperWarningProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -227,6 +234,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LowerWarningProperty" path="/summary" /><br/>
@@ -259,6 +269,8 @@ namespace Mtconnect.DataTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LowerWarningProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="LowerWarningProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -297,6 +309,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LowerLimitProperty" path="/summary" /><br/>
@@ -333,6 +348,8 @@ namespace Mtconnect.DataTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LowerLimitProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="LowerLimitProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -371,6 +388,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

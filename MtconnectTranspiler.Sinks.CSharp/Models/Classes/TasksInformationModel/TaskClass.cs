@@ -113,6 +113,8 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public const string ASSOCIATION = "TaskArchetype";
 				/// <summary>Constant value for <see cref="HasTaskArchetypePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasTaskArchetypePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -151,6 +153,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCollaboratorPartProperty" path="/summary" /><br/>
@@ -182,6 +187,8 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public const string ASSOCIATION = "Collaborators";
 				/// <summary>Constant value for <see cref="HasCollaboratorPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCollaboratorPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -220,6 +227,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCoordinatorPartProperty" path="/summary" /><br/>
@@ -246,11 +256,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Coordinator";
 				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -289,6 +301,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasParentPartProperty" path="/summary" /><br/>
@@ -315,11 +330,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="HasParentPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasParentPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasParentPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Parent";
 				/// <summary>Constant value for <see cref="HasParentPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasParentPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -358,6 +375,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasAssetPartProperty" path="/summary" /><br/>
@@ -389,6 +409,8 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				public const string ASSOCIATION = "Assets";
 				/// <summary>Constant value for <see cref="HasAssetPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasAssetPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -427,6 +449,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TaskTypeProperty" path="/summary" /><br/>
@@ -453,11 +478,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="TaskTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TaskTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TaskTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TaskTypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TaskTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -496,6 +523,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="StateProperty" path="/summary" /><br/>
@@ -522,11 +552,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="StateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="StateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="StateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="StateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="StateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -565,6 +597,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasPriorityPartProperty" path="/summary" /><br/>
@@ -591,11 +626,13 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="HasPriorityPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasPriorityPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasPriorityPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Priority";
 				/// <summary>Constant value for <see cref="HasPriorityPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasPriorityPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -634,6 +671,9 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

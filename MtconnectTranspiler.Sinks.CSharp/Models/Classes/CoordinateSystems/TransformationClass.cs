@@ -109,6 +109,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public const string ASSOCIATION = "Translation";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -147,6 +149,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasRotationPartProperty" path="/summary" /><br/>
@@ -178,6 +183,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				public const string ASSOCIATION = "Rotation";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasRotationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -216,6 +223,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

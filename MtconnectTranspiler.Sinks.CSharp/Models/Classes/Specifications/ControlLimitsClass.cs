@@ -111,6 +111,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "UpperLimit";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -149,6 +151,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UpperWarningPartProperty" path="/summary" /><br/>
@@ -180,6 +185,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "UpperWarning";
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UpperWarningPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -218,6 +225,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LowerWarningPartProperty" path="/summary" /><br/>
@@ -249,6 +259,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "LowerWarning";
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="LowerWarningPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -287,6 +299,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NominalPartProperty" path="/summary" /><br/>
@@ -318,6 +333,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "Nominal";
 				/// <summary>Constant value for <see cref="NominalPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NominalPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -356,6 +373,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LowerLimitPartProperty" path="/summary" /><br/>
@@ -387,6 +407,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				public const string ASSOCIATION = "LowerLimit";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -425,6 +447,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

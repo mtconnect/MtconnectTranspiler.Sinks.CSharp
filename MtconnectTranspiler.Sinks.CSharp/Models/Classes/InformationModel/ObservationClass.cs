@@ -101,6 +101,8 @@ namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasValueProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasValueProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -139,6 +141,9 @@ namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

@@ -113,6 +113,8 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MaximumProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MaximumProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -151,6 +153,9 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MinimumProperty" path="/summary" /><br/>
@@ -183,6 +188,8 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MinimumProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MinimumProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -221,6 +228,9 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NominalProperty" path="/summary" /><br/>
@@ -253,6 +263,8 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NominalProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NominalProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -291,6 +303,9 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
@@ -322,6 +337,8 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ValueProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -360,6 +377,9 @@ The {{property(ProcessSpindleSpeed::value)}} **MAY** contain the nominal process
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

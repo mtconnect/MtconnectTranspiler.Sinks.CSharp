@@ -115,6 +115,8 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesLoadProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesLoadProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -153,6 +155,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesTemperatureProperty" path="/summary" /><br/>
@@ -184,6 +189,8 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesTemperatureProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesTemperatureProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -222,6 +229,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesRotaryVelocityProperty" path="/summary" /><br/>
@@ -253,6 +263,8 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesRotaryVelocityProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -291,6 +303,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesAxisFeedrateProperty" path="/summary" /><br/>
@@ -322,6 +337,8 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesAxisFeedrateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesAxisFeedrateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -360,6 +377,9 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

@@ -115,11 +115,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="MeasurementIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MeasurementIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="MeasurementIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MeasurementIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MeasurementIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -158,6 +160,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="FeaturePersistentIdProperty" path="/summary" /><br/>
@@ -185,11 +190,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -228,6 +235,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CharacteristicPersistentIdProperty" path="/summary" /><br/>
@@ -260,6 +270,8 @@ namespace Mtconnect.DataTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CharacteristicPersistentIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CharacteristicPersistentIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -298,6 +310,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MeasurementTypeProperty" path="/summary" /><br/>
@@ -327,11 +342,13 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="MeasurementTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MeasurementTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="MeasurementTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MeasurementTypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MeasurementTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -370,6 +387,9 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MeasurementValueProperty" path="/summary" /><br/>
@@ -397,11 +417,13 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="MeasurementValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MeasurementValueProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="MeasurementValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MeasurementValueProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MeasurementValueProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -440,6 +462,9 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MeasurementUnitsProperty" path="/summary" /><br/>
@@ -467,11 +492,13 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -510,6 +537,9 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CharacteristicStatusProperty" path="/summary" /><br/>
@@ -542,6 +572,8 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CharacteristicStatusProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CharacteristicStatusProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -580,6 +612,9 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UncertaintyTypeProperty" path="/summary" /><br/>
@@ -612,6 +647,8 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UncertaintyTypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UncertaintyTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -650,6 +687,9 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UncertaintyProperty" path="/summary" /><br/>
@@ -682,6 +722,8 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UncertaintyProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UncertaintyProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -720,6 +762,9 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

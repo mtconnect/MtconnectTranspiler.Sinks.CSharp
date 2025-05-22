@@ -135,6 +135,8 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DurationProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DurationProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -173,6 +175,9 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ResetTriggeredProperty" path="/summary" /><br/>
@@ -207,6 +212,8 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResetTriggeredProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ResetTriggeredProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -245,6 +252,9 @@ The following {{sect(Value Properties of Sample)}} lists the additional and/or u
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SampleRateProperty" path="/summary" /><br/>
@@ -283,6 +293,8 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SampleRateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SampleRateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -321,6 +333,9 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="StatisticProperty" path="/summary" /><br/>
@@ -353,6 +368,8 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="StatisticProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="StatisticProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -391,6 +408,9 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="OrganizedByComponentStreamPartProperty" path="/summary" /><br/>
@@ -422,6 +442,8 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				public const string ASSOCIATION = "Samples";
 				/// <summary>Constant value for <see cref="OrganizedByComponentStreamPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="OrganizedByComponentStreamPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -460,6 +482,9 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ResultProperty" path="/summary" /><br/>
@@ -491,6 +516,8 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ResultProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -529,6 +556,9 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -555,11 +585,13 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -598,6 +630,9 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
@@ -624,11 +659,13 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -667,6 +704,9 @@ When {{property(DataItem::representation)}} is not `TIME_SERIES`, it **MUST** be
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

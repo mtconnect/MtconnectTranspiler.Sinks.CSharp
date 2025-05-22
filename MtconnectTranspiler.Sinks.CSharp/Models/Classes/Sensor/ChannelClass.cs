@@ -115,6 +115,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CalibrationDateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -153,6 +155,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CalibrationInitialsProperty" path="/summary" /><br/>
@@ -185,6 +190,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -223,6 +230,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -255,6 +265,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -293,6 +305,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NextCalibrationDateProperty" path="/summary" /><br/>
@@ -325,6 +340,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -363,6 +380,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NumberProperty" path="/summary" /><br/>
@@ -390,11 +410,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="NumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NumberProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NumberProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -433,6 +455,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IsChannelOfPartProperty" path="/summary" /><br/>
@@ -464,6 +489,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public const string ASSOCIATION = "Channels";
 				/// <summary>Constant value for <see cref="IsChannelOfPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IsChannelOfPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -502,6 +529,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DescriptionProperty" path="/summary" /><br/>
@@ -534,6 +564,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -572,6 +604,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

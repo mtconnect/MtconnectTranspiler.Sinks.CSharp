@@ -123,6 +123,8 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesExecutionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -161,6 +163,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesProgramProperty" path="/summary" /><br/>
@@ -192,6 +197,8 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesProgramProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -230,6 +237,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPathFeedrateOverrideProgrammedProperty" path="/summary" /><br/>
@@ -261,6 +271,8 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -299,6 +311,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPathFeedrateOverrideRapidProperty" path="/summary" /><br/>
@@ -330,6 +345,8 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -368,6 +385,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesRotaryVelocityOverrideProperty" path="/summary" /><br/>
@@ -399,6 +419,8 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -437,6 +459,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPathFeedrateProperty" path="/summary" /><br/>
@@ -468,6 +493,8 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -506,6 +533,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPartCountProperty" path="/summary" /><br/>
@@ -537,6 +567,8 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPartCountProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -575,6 +607,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

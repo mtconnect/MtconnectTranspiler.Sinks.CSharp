@@ -110,6 +110,8 @@ namespace Mtconnect.Glossary.XMLTerms
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -148,6 +150,9 @@ namespace Mtconnect.Glossary.XMLTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasDocumentBodyProperty" path="/summary" /><br/>
@@ -179,6 +184,8 @@ namespace Mtconnect.Glossary.XMLTerms
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -217,6 +224,9 @@ namespace Mtconnect.Glossary.XMLTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasNamespaceProperty" path="/summary" /><br/>
@@ -248,6 +258,8 @@ namespace Mtconnect.Glossary.XMLTerms
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasNamespaceProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -286,6 +298,9 @@ namespace Mtconnect.Glossary.XMLTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasXmlSchemaProperty" path="/summary" /><br/>
@@ -317,6 +332,8 @@ namespace Mtconnect.Glossary.XMLTerms
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -355,6 +372,9 @@ namespace Mtconnect.Glossary.XMLTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

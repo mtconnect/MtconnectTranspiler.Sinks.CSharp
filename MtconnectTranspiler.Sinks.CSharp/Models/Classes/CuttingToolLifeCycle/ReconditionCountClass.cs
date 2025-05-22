@@ -109,6 +109,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MaximumCountProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MaximumCountProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -147,6 +149,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
@@ -179,6 +184,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ValueProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -217,6 +224,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

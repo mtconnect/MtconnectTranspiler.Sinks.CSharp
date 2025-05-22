@@ -109,6 +109,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -147,6 +149,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasParameterPartProperty" path="/summary" /><br/>
@@ -178,6 +183,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public const string ASSOCIATION = "Parameters";
 				/// <summary>Constant value for <see cref="HasParameterPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasParameterPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -216,6 +223,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

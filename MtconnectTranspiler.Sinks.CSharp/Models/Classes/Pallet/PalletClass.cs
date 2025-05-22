@@ -119,6 +119,8 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -157,6 +159,9 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="PalletIdProperty" path="/summary" /><br/>
@@ -189,6 +194,8 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PalletIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="PalletIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -227,6 +234,9 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="PalletNumberProperty" path="/summary" /><br/>
@@ -259,6 +269,8 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PalletNumberProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="PalletNumberProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -297,6 +309,9 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ClampingMethodProperty" path="/summary" /><br/>
@@ -329,6 +344,8 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ClampingMethodProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -367,6 +384,9 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MountingMethodProperty" path="/summary" /><br/>
@@ -399,6 +419,8 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MountingMethodProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MountingMethodProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -437,6 +459,9 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

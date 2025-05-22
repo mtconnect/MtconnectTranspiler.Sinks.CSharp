@@ -124,11 +124,13 @@ namespace Mtconnect.AssetInformationModel
 				/// <summary>Constant value for <see cref="AssetIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="AssetIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="AssetIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AssetIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="AssetIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -167,6 +169,9 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DeviceUuidProperty" path="/summary" /><br/>
@@ -201,6 +206,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DeviceUuidProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -239,6 +246,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="RemovedProperty" path="/summary" /><br/>
@@ -271,6 +281,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RemovedProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="RemovedProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -309,6 +321,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TimestampProperty" path="/summary" /><br/>
@@ -336,11 +351,13 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="TimestampProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TimestampProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="TimestampProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TimestampProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TimestampProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -379,6 +396,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasConfigurationPartProperty" path="/summary" /><br/>
@@ -410,6 +430,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "Configuration";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -448,6 +470,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HashProperty" path="/summary" /><br/>
@@ -480,6 +505,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HashProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HashProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -518,6 +545,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DescriptionProperty" path="/summary" /><br/>
@@ -550,6 +580,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -588,6 +620,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ManufacturersProperty" path="/summary" /><br/>
@@ -619,6 +654,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ManufacturersProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -657,6 +694,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ModelProperty" path="/summary" /><br/>
@@ -688,6 +728,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ModelProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ModelProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -726,6 +768,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SerialNumberProperty" path="/summary" /><br/>
@@ -757,6 +802,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -795,6 +842,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="StationProperty" path="/summary" /><br/>
@@ -826,6 +876,8 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="StationProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="StationProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -864,6 +916,9 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

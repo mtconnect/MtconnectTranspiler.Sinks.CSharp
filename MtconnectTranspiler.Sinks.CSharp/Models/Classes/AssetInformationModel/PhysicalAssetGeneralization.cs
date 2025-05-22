@@ -117,6 +117,8 @@ namespace Mtconnect.AssetInformationModel
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ManufactureDateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ManufactureDateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -155,6 +157,9 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CalibrationDateProperty" path="/summary" /><br/>
@@ -187,6 +192,8 @@ namespace Mtconnect.AssetInformationModel
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CalibrationDateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -225,6 +232,9 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="InspectionDateProperty" path="/summary" /><br/>
@@ -257,6 +267,8 @@ namespace Mtconnect.AssetInformationModel
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="InspectionDateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="InspectionDateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -295,6 +307,9 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NextInspectionDateProperty" path="/summary" /><br/>
@@ -327,6 +342,8 @@ namespace Mtconnect.AssetInformationModel
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NextInspectionDateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NextInspectionDateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -365,6 +382,9 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMeasurementPartProperty" path="/summary" /><br/>
@@ -396,6 +416,8 @@ namespace Mtconnect.AssetInformationModel
 				public const string ASSOCIATION = "Measurements";
 				/// <summary>Constant value for <see cref="HasMeasurementPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasMeasurementPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -434,6 +456,9 @@ namespace Mtconnect.AssetInformationModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

@@ -109,6 +109,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public const string ASSOCIATION = "CellDefinitions";
 				/// <summary>Constant value for <see cref="HasCellDefinitionPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCellDefinitionPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -147,6 +149,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasEntryDefinitionPartProperty" path="/summary" /><br/>
@@ -178,6 +183,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public const string ASSOCIATION = "EntryDefinitions";
 				/// <summary>Constant value for <see cref="HasEntryDefinitionPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasEntryDefinitionPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -216,6 +223,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DescriptionProperty" path="/summary" /><br/>
@@ -248,6 +258,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -286,6 +298,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

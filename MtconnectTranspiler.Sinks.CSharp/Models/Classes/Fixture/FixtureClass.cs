@@ -115,6 +115,8 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FixtureIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="FixtureIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -153,6 +155,9 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="FixtureNumberProperty" path="/summary" /><br/>
@@ -185,6 +190,8 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FixtureNumberProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="FixtureNumberProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -223,6 +230,9 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ClampingMethodProperty" path="/summary" /><br/>
@@ -255,6 +265,8 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ClampingMethodProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -293,6 +305,9 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MountingMethodProperty" path="/summary" /><br/>
@@ -325,6 +340,8 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MountingMethodProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MountingMethodProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -363,6 +380,9 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

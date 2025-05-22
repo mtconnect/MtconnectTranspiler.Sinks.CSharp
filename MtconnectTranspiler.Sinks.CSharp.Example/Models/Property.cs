@@ -116,6 +116,10 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                     : lowerValueExtension != null
                         ? $"{lowerValueExtension.Value ?? "0"}"
                         : string.Empty;
+            if (Multiplicity == "1..1")
+                Multiplicity = "1";
+            if (Multiplicity == "0..0")
+                Multiplicity = string.Empty;
             // QUESTION: What are the options for lowerValue.Value and upperValue.Value?
         }
 

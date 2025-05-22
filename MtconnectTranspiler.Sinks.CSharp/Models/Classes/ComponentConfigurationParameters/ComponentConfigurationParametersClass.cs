@@ -112,6 +112,8 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				public const string ASSOCIATION = "ParameterSets";
 				/// <summary>Constant value for <see cref="HasParameterSetPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasParameterSetPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -150,6 +152,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

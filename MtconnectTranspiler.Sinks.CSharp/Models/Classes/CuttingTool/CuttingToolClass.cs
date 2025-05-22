@@ -112,11 +112,13 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SerialNumberProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -155,6 +157,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ToolIdProperty" path="/summary" /><br/>
@@ -182,11 +187,13 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				/// <summary>Constant value for <see cref="ToolIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ToolIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ToolIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ToolIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ToolIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -225,6 +232,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCuttingToolLifeCyclePartProperty" path="/summary" /><br/>
@@ -256,6 +266,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public const string ASSOCIATION = "CuttingToolLifeCycle";
 				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolLifeCyclePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -294,6 +306,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCuttingToolArchetypeReferencePartProperty" path="/summary" /><br/>
@@ -325,6 +340,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public const string ASSOCIATION = "CuttingToolArchetypeReference";
 				/// <summary>Constant value for <see cref="HasCuttingToolArchetypeReferencePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolArchetypeReferencePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -363,6 +380,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCuttingToolDefinitionPartProperty" path="/summary" /><br/>
@@ -395,6 +415,8 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				public const string ASSOCIATION = "CuttingToolDefinition";
 				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCuttingToolDefinitionPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -433,6 +455,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

@@ -139,6 +139,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "AuxiliariesClass";
 				/// <summary>Constant value for <see cref="HasAuxiliaryPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasAuxiliaryPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -177,6 +179,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasControllerPartProperty" path="/summary" /><br/>
@@ -208,6 +213,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "ControllersClass";
 				/// <summary>Constant value for <see cref="HasControllerPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasControllerPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -246,6 +253,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasInterfacePartProperty" path="/summary" /><br/>
@@ -277,6 +287,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "InterfacesClass";
 				/// <summary>Constant value for <see cref="HasInterfacePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasInterfacePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -315,6 +327,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasResourcePartProperty" path="/summary" /><br/>
@@ -346,6 +361,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "ResourcesClass";
 				/// <summary>Constant value for <see cref="HasResourcePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasResourcePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -384,6 +401,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasStructurePartProperty" path="/summary" /><br/>
@@ -415,6 +435,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "StructuresClass";
 				/// <summary>Constant value for <see cref="HasStructurePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasStructurePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -453,6 +475,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="Iso841ClassProperty" path="/summary" /><br/>
@@ -485,6 +510,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="Iso841ClassProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="Iso841ClassProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -523,6 +550,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UuidProperty" path="/summary" /><br/>
@@ -550,11 +580,13 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="UuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="UuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UuidProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -593,6 +625,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MtconnectVersionProperty" path="/summary" /><br/>
@@ -625,6 +660,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MtconnectVersionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MtconnectVersionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -663,6 +700,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasSystemPartProperty" path="/summary" /><br/>
@@ -694,6 +734,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "SystemsClass";
 				/// <summary>Constant value for <see cref="HasSystemPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasSystemPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -732,6 +774,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -759,11 +804,13 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -802,6 +849,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasPartPartProperty" path="/summary" /><br/>
@@ -833,6 +883,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "PartsClass";
 				/// <summary>Constant value for <see cref="HasPartPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasPartPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -871,6 +923,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasProcessPartProperty" path="/summary" /><br/>
@@ -902,6 +957,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "ProcessesClass";
 				/// <summary>Constant value for <see cref="HasProcessPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasProcessPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -940,6 +997,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasAxisPartProperty" path="/summary" /><br/>
@@ -971,6 +1031,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "AxesClass";
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasAxisPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1009,6 +1071,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasAdapterPartProperty" path="/summary" /><br/>
@@ -1040,6 +1105,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "AdaptersClass";
 				/// <summary>Constant value for <see cref="HasAdapterPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasAdapterPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1078,6 +1145,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesAvailabilityProperty" path="/summary" /><br/>
@@ -1104,11 +1174,13 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesAvailabilityProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1147,6 +1219,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesAssetChangedProperty" path="/summary" /><br/>
@@ -1173,11 +1248,13 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesAssetChangedProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1216,6 +1293,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesAssetRemovedProperty" path="/summary" /><br/>
@@ -1242,11 +1322,13 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesAssetRemovedProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1285,6 +1367,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HashProperty" path="/summary" /><br/>
@@ -1317,6 +1402,8 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HashProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HashProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1355,6 +1442,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 
