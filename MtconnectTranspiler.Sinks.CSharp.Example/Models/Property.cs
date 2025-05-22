@@ -90,7 +90,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
 
             string lowerValue = upperValueExtension?.Type == "uml:LiteralUnlimitedNatural"
                 ? lowerValueExtension?.Value ?? "*"
-                : lowerValueExtension?.Value;
+                : lowerValueExtension?.Value ?? "0";
             string upperValue = upperValueExtension?.Type == "uml:LiteralUnlimitedNatural"
                 ? upperValueExtension?.Value ?? "*" // Sometimes a value is not present and that means "*"
                 : upperValueExtension?.Value;
