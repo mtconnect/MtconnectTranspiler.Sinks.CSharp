@@ -85,8 +85,24 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 DefaultValue = source.DefaultValue?.Name;
             }
 
-            var lowerValueExtension = source.LowerValue ?? source.Extensions?.Select(o => o.ChildElements.Where(c => c is LowerValue).FirstOrDefault()).FirstOrDefault() as LowerValue;
-            var upperValueExtension = source.UpperValue ?? source.Extensions?.Select(o => o.ChildElements.Where(c => c is UpperValue).FirstOrDefault()).FirstOrDefault() as UpperValue;
+            var lowerValueExtension = source.LowerValue
+                ?? source.Extensions?
+                    .Select(o =>
+                        o.ChildElements
+                            .Where(c => c is ModelExtension)
+                            .Select(c => (c as ModelExtension).LowerValue)
+                            .FirstOrDefault()
+                    )
+                    .FirstOrDefault() as LowerValue;
+            var upperValueExtension = source.UpperValue
+                ?? source.Extensions?
+                    .Select(o =>
+                        o.ChildElements
+                            .Where(c => c is ModelExtension)
+                            .Select(c => (c as ModelExtension).UpperValue)
+                            .FirstOrDefault()
+                    )
+                    .FirstOrDefault() as UpperValue;
 
             string lowerValue = lowerValueExtension?.Type == "uml:LiteralUnlimitedNatural"
                 ? lowerValueExtension?.Value ?? "*"
