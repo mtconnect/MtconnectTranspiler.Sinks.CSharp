@@ -112,11 +112,13 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				/// <summary>Constant value for <see cref="DescriptionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="DescriptionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -155,6 +157,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="GradeProperty" path="/summary" /><br/>
@@ -182,11 +187,13 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				/// <summary>Constant value for <see cref="GradeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="GradeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="GradeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="GradeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="GradeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -225,6 +232,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IndicesProperty" path="/summary" /><br/>
@@ -256,11 +266,13 @@ Indices **SHOULD** start numbering with the inserts or {{block(CuttingItem)}} fu
 				/// <summary>Constant value for <see cref="IndicesProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IndicesProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="IndicesProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IndicesProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IndicesProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -299,6 +311,9 @@ Indices **SHOULD** start numbering with the inserts or {{block(CuttingItem)}} fu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ItemIdProperty" path="/summary" /><br/>
@@ -326,11 +341,13 @@ Indices **SHOULD** start numbering with the inserts or {{block(CuttingItem)}} fu
 				/// <summary>Constant value for <see cref="ItemIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ItemIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ItemIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ItemIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ItemIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -369,6 +386,9 @@ Indices **SHOULD** start numbering with the inserts or {{block(CuttingItem)}} fu
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LocusProperty" path="/summary" /><br/>
@@ -404,11 +424,13 @@ For clarity, the words `FLUTE`, `INSERT`, and `CARTRIDGE` **SHOULD** be used to 
 				/// <summary>Constant value for <see cref="LocusProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="LocusProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="LocusProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LocusProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="LocusProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -447,6 +469,9 @@ For clarity, the words `FLUTE`, `INSERT`, and `CARTRIDGE` **SHOULD** be used to 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ManufacturersProperty" path="/summary" /><br/>
@@ -484,6 +509,8 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ManufacturersProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ManufacturersProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -522,6 +549,9 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ProgramToolGroupProperty" path="/summary" /><br/>
@@ -549,11 +579,13 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -592,6 +624,9 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCutterStatusPartProperty" path="/summary" /><br/>
@@ -618,11 +653,13 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "CutterStatus";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -661,6 +698,9 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasItemLifePartProperty" path="/summary" /><br/>
@@ -693,6 +733,8 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				public const string ASSOCIATION = "ItemLife";
 				/// <summary>Constant value for <see cref="HasItemLifePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasItemLifePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..3";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -731,6 +773,9 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMeasurementPartProperty" path="/summary" /><br/>
@@ -763,12 +808,14 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				public const string ASSOCIATION = "Measurements";
 				/// <summary>Constant value for <see cref="HasMeasurementPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasMeasurementPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: MeasurementClass </remarks>
+				/// <remarks> Type: ToolingMeasurementGeneralization </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
+				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -801,6 +848,9 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

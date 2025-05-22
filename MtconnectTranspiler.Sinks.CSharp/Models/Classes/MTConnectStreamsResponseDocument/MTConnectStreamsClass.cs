@@ -107,11 +107,13 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Header";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -150,6 +152,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasDeviceStreamPartProperty" path="/summary" /><br/>
@@ -181,6 +186,8 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 				public const string ASSOCIATION = "Streams";
 				/// <summary>Constant value for <see cref="HasDeviceStreamPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasDeviceStreamPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -219,6 +226,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

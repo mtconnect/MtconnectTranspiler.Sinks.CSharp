@@ -104,11 +104,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Translation";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -147,6 +149,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasRotationPartProperty" path="/summary" /><br/>
@@ -173,11 +178,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Rotation";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasRotationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -216,6 +223,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

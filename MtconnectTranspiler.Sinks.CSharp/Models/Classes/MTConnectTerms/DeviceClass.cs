@@ -107,6 +107,8 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasAssetProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasAssetProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -145,6 +147,9 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

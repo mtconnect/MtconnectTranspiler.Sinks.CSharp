@@ -115,11 +115,13 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -158,6 +160,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ProgramToolGroupProperty" path="/summary" /><br/>
@@ -185,11 +190,13 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -228,6 +235,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ProgramToolNumberProperty" path="/summary" /><br/>
@@ -255,11 +265,13 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -298,6 +310,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasProcessFeedRatePartProperty" path="/summary" /><br/>
@@ -324,11 +339,13 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ProcessFeedRate";
 				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -367,6 +384,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasToolLifePartProperty" path="/summary" /><br/>
@@ -398,6 +418,8 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				public const string ASSOCIATION = "ToolLife";
 				/// <summary>Constant value for <see cref="HasToolLifePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasToolLifePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..3";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -436,6 +458,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasProcessSpindleSpeedPartProperty" path="/summary" /><br/>
@@ -462,11 +487,13 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ProcessSpindleSpeed";
 				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -505,6 +532,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCutterStatusPartProperty" path="/summary" /><br/>
@@ -531,11 +561,13 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "CutterStatus";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -574,6 +606,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCuttingItemPartProperty" path="/summary" /><br/>
@@ -605,6 +640,8 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				public const string ASSOCIATION = "CuttingItemsClass";
 				/// <summary>Constant value for <see cref="HasCuttingItemPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCuttingItemPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -643,6 +680,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasMeasurementPartProperty" path="/summary" /><br/>
@@ -674,12 +714,14 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				public const string ASSOCIATION = "Measurements";
 				/// <summary>Constant value for <see cref="HasMeasurementPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasMeasurementPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: MeasurementClass </remarks>
+				/// <remarks> Type: ToolingMeasurementGeneralization </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
+				public System.Type Type => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -712,6 +754,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasReconditionCountPartProperty" path="/summary" /><br/>
@@ -738,11 +783,13 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ReconditionCount";
 				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -781,6 +828,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasLocationPartProperty" path="/summary" /><br/>
@@ -807,11 +857,13 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasLocationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasLocationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="HasLocationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Location";
 				/// <summary>Constant value for <see cref="HasLocationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasLocationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -850,6 +902,9 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

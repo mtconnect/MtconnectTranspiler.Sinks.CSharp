@@ -18,7 +18,7 @@ namespace Mtconnect.DataTypes
 	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
 	public enum UnitEnum
 	{
-		/// <summary>﻿amps.<br /><br /><br />
+		/// <summary>﻿electric current in ampere.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -27,7 +27,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		AMPERE,
-		/// <summary>﻿degrees Celsius.<br /><br /><br />
+		/// <summary>﻿temperature in degree Celsius.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -45,7 +45,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		COUNT,
-		/// <summary>﻿sound level.<br /><br /><br />
+		/// <summary>﻿sound level in decibel.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -54,7 +54,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		DECIBEL,
-		/// <summary>﻿angle in degrees.<br /><br /><br />
+		/// <summary>﻿angle in degree.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -72,7 +72,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		DEGREE_3D,
-		/// <summary>﻿angular degrees per second.<br /><br /><br />
+		/// <summary>﻿angular velocity in degree per second.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -81,7 +81,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		DEGREE_PER_SECOND,
-		/// <summary>﻿angular acceleration in degrees per second squared.<br /><br /><br />
+		/// <summary>﻿angular acceleration in degree per second squared.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -90,7 +90,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		DEGREE_PER_SECOND_SQUARED,
-		/// <summary>﻿frequency measured in cycles per second.<br /><br /><br />
+		/// <summary>﻿frequency in cycles per second.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -99,7 +99,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		HERTZ,
-		/// <summary>﻿measurement of energy.<br /><br /><br />
+		/// <summary>﻿energy in joule.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -108,7 +108,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		JOULE,
-		/// <summary>﻿kilograms.<br /><br /><br />
+		/// <summary>﻿mass in kilogram.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -117,7 +117,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		KILOGRAM,
-		/// <summary>﻿measurement of volume of a fluid.<br /><br /><br />
+		/// <summary>﻿volume in liter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -126,7 +126,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		LITER,
-		/// <summary>﻿liters per second.<br /><br /><br />
+		/// <summary>﻿volumetric flow in liter per second.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -135,7 +135,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		LITER_PER_SECOND,
-		/// <summary>﻿measurement of tilt.<br /><br /><br />
+		/// <summary>﻿tilt in micro radian.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -144,7 +144,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MICRO_RADIAN,
-		/// <summary>﻿millimeters.<br /><br /><br />
+		/// <summary>﻿length in millimeter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -162,7 +162,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MILLIMETER_3D,
-		/// <summary>﻿millimeters per revolution.<br /><br /><br />
+		/// <summary>﻿feedrate per revolution in millimeter per revolution.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -171,7 +171,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MILLIMETER_PER_REVOLUTION,
-		/// <summary>﻿millimeters per second.<br /><br /><br />
+		/// <summary>﻿speed in millimeter per second.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -180,7 +180,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MILLIMETER_PER_SECOND,
-		/// <summary>﻿acceleration in millimeters per second squared.<br /><br /><br />
+		/// <summary>﻿acceleration in millimeter per second squared.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -189,7 +189,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MILLIMETER_PER_SECOND_SQUARED,
-		/// <summary>﻿force in Newtons.<br /><br /><br />
+		/// <summary>﻿force in newton.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -198,7 +198,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		NEWTON,
-		/// <summary>﻿torque, a unit for force times distance.<br /><br /><br />
+		/// <summary>﻿torque in newton-meter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -207,7 +207,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		NEWTON_METER,
-		/// <summary>﻿measure of electrical resistance.<br /><br /><br />
+		/// <summary>﻿electrical resistance in ohm.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -216,7 +216,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		OHM,
-		/// <summary>﻿pressure in Newtons per square meter.<br /><br /><br />
+		/// <summary>﻿pressure or stress in pascal.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -225,7 +225,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		PASCAL,
-		/// <summary>﻿measurement of viscosity.<br /><br /><br />
+		/// <summary>﻿viscosity in pascal-second.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -234,7 +234,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		PASCAL_SECOND,
-		/// <summary>﻿percentage.<br /><br /><br />
+		/// <summary>﻿amount in or for every hundred.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -243,7 +243,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		PERCENT,
-		/// <summary>﻿measure of the acidity or alkalinity of a solution.<br /><br /><br />
+		/// <summary>﻿acidity or alkalinity of a solution in pH.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -252,7 +252,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		PH,
-		/// <summary>﻿revolutions per minute.<br /><br /><br />
+		/// <summary>﻿rotational velocity in revolution per minute.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -261,7 +261,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		REVOLUTION_PER_MINUTE,
-		/// <summary>﻿measurement of time.<br /><br /><br />
+		/// <summary>﻿time in second.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -270,7 +270,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		SECOND,
-		/// <summary>﻿measurement of electrical conductivity.<br /><br /><br />
+		/// <summary>﻿electrical conductivity in siemens per meter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -279,7 +279,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		SIEMENS_PER_METER,
-		/// <summary>﻿volts.<br /><br /><br />
+		/// <summary>﻿electric potential, electric potential difference or electromotive force in volt.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -288,7 +288,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		VOLT,
-		/// <summary>﻿measurement of the apparent power in an electrical circuit, equal to the product of root-mean-square (RMS) voltage and RMS current (commonly referred to as VA).<br /><br /><br />
+		/// <summary>﻿apparent power in an electrical circuit, equal to the product of root-mean-square (RMS) voltage and RMS current (commonly referred to as VA) in volt-ampere.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -297,7 +297,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		VOLT_AMPERE,
-		/// <summary>﻿measurement of reactive power in an AC electrical circuit (commonly referred to as VAR).<br /><br /><br />
+		/// <summary>﻿reactive power in an AC electrical circuit (commonly referred to as VAR) in volt-ampere-reactive.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -306,7 +306,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		VOLT_AMPERE_REACTIVE,
-		/// <summary>﻿watts.<br /><br /><br />
+		/// <summary>﻿power in watt.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -315,7 +315,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		WATT,
-		/// <summary>﻿measurement of electrical energy, equal to one Joule.<br /><br /><br />
+		/// <summary>﻿electrical energy in watt-second<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -324,7 +324,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		WATT_SECOND,
-		/// <summary>﻿gram per cubic meter.<br /><br /><br />
+		/// <summary>﻿density in gram per cubic meter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -333,7 +333,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		GRAM_PER_CUBIC_METER,
-		/// <summary>﻿geometric volume in millimeters.<br /><br /><br />
+		/// <summary>﻿geometric volume in millimeter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -360,7 +360,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		CUBIC_MILLIMETER_PER_SECOND_SQUARED,
-		/// <summary>﻿milligram.<br /><br /><br />
+		/// <summary>﻿mass in milligram.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -369,7 +369,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MILLIGRAM,
-		/// <summary>﻿milligram per cubic millimeter.<br /><br /><br />
+		/// <summary>﻿density in milligram per cubic millimeter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -378,7 +378,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MILLIGRAM_PER_CUBIC_MILLIMETER,
-		/// <summary>﻿milliliter.<br /><br /><br />
+		/// <summary>﻿volume in milliliter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -387,7 +387,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MILLILITER,
-		/// <summary>﻿counts per second.<br /><br /><br />
+		/// <summary>﻿frequency in count per second.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -396,7 +396,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		COUNT_PER_SECOND,
-		/// <summary>﻿pascal per second.<br /><br /><br />
+		/// <summary>﻿pressurization rate in pascal per second.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -414,7 +414,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		UNIT_VECTOR_3D,
-		/// <summary>﻿revolutions per second squared.<br /><br /><br />
+		/// <summary>﻿rotational acceleration in revolution per second squared.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -432,7 +432,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		REVOLUTION_PER_SECOND,
-		/// <summary>﻿gram.<br /><br /><br />
+		/// <summary>﻿mass in gram.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -441,7 +441,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		GRAM,
-		/// <summary>﻿acceleration in meters per second squared.<br /><br /><br />
+		/// <summary>﻿acceleration in meter per second squared.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -450,7 +450,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		METER_PER_SECOND_SQUARED,
-		/// <summary>﻿electric charge in coulombs (C).<br /><br /><br />
+		/// <summary>﻿electric charge in coulomb.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -459,7 +459,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		COULOMB,
-		/// <summary>﻿geometric volume in meters.<br /><br /><br />
+		/// <summary>﻿geometric volume in meter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -468,7 +468,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		CUBIC_METER,
-		/// <summary>﻿geometric area in millimeters.<br /><br /><br />
+		/// <summary>﻿geometric area in millimeter.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -477,6 +477,15 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		SQUARE_MILLIMETER,
+		/// <summary>﻿resistivity in ohm-meter.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		OHM_METER,
 	}
 
 	/// <summary>﻿
@@ -575,13 +584,14 @@ namespace Mtconnect.DataTypes
 		COULOMB,
 		CUBIC_METER,
 		SQUARE_MILLIMETER,
+		OHM_METER,
 		};
 
 		private AMPEREValue _AMPERE;
 		/// <inheritdoc cref="AMPEREValue" path="/summary" />
 		public AMPEREValue AMPERE => _AMPERE ?? (_AMPERE = new AMPEREValue());
 
-		/// <summary>﻿amps.<br /><br /><br />
+		/// <summary>﻿electric current in ampere.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -600,7 +610,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="AMPEREValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="AMPEREValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;amps.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;electric current in ampere.&#10;
 ";
 
 			/// <inheritdoc />
@@ -622,7 +632,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="CELSIUSValue" path="/summary" />
 		public CELSIUSValue CELSIUS => _CELSIUS ?? (_CELSIUS = new CELSIUSValue());
 
-		/// <summary>﻿degrees Celsius.<br /><br /><br />
+		/// <summary>﻿temperature in degree Celsius.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -641,7 +651,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="CELSIUSValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="CELSIUSValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;degrees Celsius.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;temperature in degree Celsius.&#10;
 ";
 
 			/// <inheritdoc />
@@ -704,7 +714,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="DECIBELValue" path="/summary" />
 		public DECIBELValue DECIBEL => _DECIBEL ?? (_DECIBEL = new DECIBELValue());
 
-		/// <summary>﻿sound level.<br /><br /><br />
+		/// <summary>﻿sound level in decibel.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -723,7 +733,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="DECIBELValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="DECIBELValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;sound level.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;sound level in decibel.&#10;
 ";
 
 			/// <inheritdoc />
@@ -745,7 +755,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="DEGREEValue" path="/summary" />
 		public DEGREEValue DEGREE => _DEGREE ?? (_DEGREE = new DEGREEValue());
 
-		/// <summary>﻿angle in degrees.<br /><br /><br />
+		/// <summary>﻿angle in degree.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -764,7 +774,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="DEGREEValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="DEGREEValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;angle in degrees.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;angle in degree.&#10;
 ";
 
 			/// <inheritdoc />
@@ -829,7 +839,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="DEGREE_PER_SECONDValue" path="/summary" />
 		public DEGREE_PER_SECONDValue DEGREE_PER_SECOND => _DEGREE_PER_SECOND ?? (_DEGREE_PER_SECOND = new DEGREE_PER_SECONDValue());
 
-		/// <summary>﻿angular degrees per second.<br /><br /><br />
+		/// <summary>﻿angular velocity in degree per second.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -848,7 +858,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="DEGREE_PER_SECONDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="DEGREE_PER_SECONDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;angular degrees per second.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;angular velocity in degree per second.&#10;
 ";
 
 			/// <inheritdoc />
@@ -870,7 +880,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="DEGREE_PER_SECOND_SQUAREDValue" path="/summary" />
 		public DEGREE_PER_SECOND_SQUAREDValue DEGREE_PER_SECOND_SQUARED => _DEGREE_PER_SECOND_SQUARED ?? (_DEGREE_PER_SECOND_SQUARED = new DEGREE_PER_SECOND_SQUAREDValue());
 
-		/// <summary>﻿angular acceleration in degrees per second squared.<br /><br /><br />
+		/// <summary>﻿angular acceleration in degree per second squared.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -889,7 +899,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="DEGREE_PER_SECOND_SQUAREDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="DEGREE_PER_SECOND_SQUAREDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;angular acceleration in degrees per second squared.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;angular acceleration in degree per second squared.&#10;
 ";
 
 			/// <inheritdoc />
@@ -911,7 +921,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="HERTZValue" path="/summary" />
 		public HERTZValue HERTZ => _HERTZ ?? (_HERTZ = new HERTZValue());
 
-		/// <summary>﻿frequency measured in cycles per second.<br /><br /><br />
+		/// <summary>﻿frequency in cycles per second.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -930,7 +940,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="HERTZValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="HERTZValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;frequency measured in cycles per second.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;frequency in cycles per second.&#10;
 ";
 
 			/// <inheritdoc />
@@ -952,7 +962,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="JOULEValue" path="/summary" />
 		public JOULEValue JOULE => _JOULE ?? (_JOULE = new JOULEValue());
 
-		/// <summary>﻿measurement of energy.<br /><br /><br />
+		/// <summary>﻿energy in joule.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -971,7 +981,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="JOULEValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="JOULEValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of energy.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;energy in joule.&#10;
 ";
 
 			/// <inheritdoc />
@@ -993,7 +1003,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="KILOGRAMValue" path="/summary" />
 		public KILOGRAMValue KILOGRAM => _KILOGRAM ?? (_KILOGRAM = new KILOGRAMValue());
 
-		/// <summary>﻿kilograms.<br /><br /><br />
+		/// <summary>﻿mass in kilogram.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1012,7 +1022,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="KILOGRAMValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="KILOGRAMValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;kilograms.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;mass in kilogram.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1034,7 +1044,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="LITERValue" path="/summary" />
 		public LITERValue LITER => _LITER ?? (_LITER = new LITERValue());
 
-		/// <summary>﻿measurement of volume of a fluid.<br /><br /><br />
+		/// <summary>﻿volume in liter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1053,7 +1063,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="LITERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="LITERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of volume of a fluid.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;volume in liter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1075,7 +1085,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="LITER_PER_SECONDValue" path="/summary" />
 		public LITER_PER_SECONDValue LITER_PER_SECOND => _LITER_PER_SECOND ?? (_LITER_PER_SECOND = new LITER_PER_SECONDValue());
 
-		/// <summary>﻿liters per second.<br /><br /><br />
+		/// <summary>﻿volumetric flow in liter per second.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1094,7 +1104,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="LITER_PER_SECONDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="LITER_PER_SECONDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;liters per second.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;volumetric flow in liter per second.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1116,7 +1126,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="MICRO_RADIANValue" path="/summary" />
 		public MICRO_RADIANValue MICRO_RADIAN => _MICRO_RADIAN ?? (_MICRO_RADIAN = new MICRO_RADIANValue());
 
-		/// <summary>﻿measurement of tilt.<br /><br /><br />
+		/// <summary>﻿tilt in micro radian.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1135,7 +1145,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="MICRO_RADIANValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MICRO_RADIANValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of tilt.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;tilt in micro radian.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1157,7 +1167,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="MILLIMETERValue" path="/summary" />
 		public MILLIMETERValue MILLIMETER => _MILLIMETER ?? (_MILLIMETER = new MILLIMETERValue());
 
-		/// <summary>﻿millimeters.<br /><br /><br />
+		/// <summary>﻿length in millimeter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1176,7 +1186,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="MILLIMETERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MILLIMETERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;millimeters.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;length in millimeter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1239,7 +1249,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="MILLIMETER_PER_REVOLUTIONValue" path="/summary" />
 		public MILLIMETER_PER_REVOLUTIONValue MILLIMETER_PER_REVOLUTION => _MILLIMETER_PER_REVOLUTION ?? (_MILLIMETER_PER_REVOLUTION = new MILLIMETER_PER_REVOLUTIONValue());
 
-		/// <summary>﻿millimeters per revolution.<br /><br /><br />
+		/// <summary>﻿feedrate per revolution in millimeter per revolution.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1258,7 +1268,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="MILLIMETER_PER_REVOLUTIONValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MILLIMETER_PER_REVOLUTIONValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;millimeters per revolution.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;feedrate per revolution in millimeter per revolution.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1280,7 +1290,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="MILLIMETER_PER_SECONDValue" path="/summary" />
 		public MILLIMETER_PER_SECONDValue MILLIMETER_PER_SECOND => _MILLIMETER_PER_SECOND ?? (_MILLIMETER_PER_SECOND = new MILLIMETER_PER_SECONDValue());
 
-		/// <summary>﻿millimeters per second.<br /><br /><br />
+		/// <summary>﻿speed in millimeter per second.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1299,7 +1309,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="MILLIMETER_PER_SECONDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MILLIMETER_PER_SECONDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;millimeters per second.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;speed in millimeter per second.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1321,7 +1331,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="MILLIMETER_PER_SECOND_SQUAREDValue" path="/summary" />
 		public MILLIMETER_PER_SECOND_SQUAREDValue MILLIMETER_PER_SECOND_SQUARED => _MILLIMETER_PER_SECOND_SQUARED ?? (_MILLIMETER_PER_SECOND_SQUARED = new MILLIMETER_PER_SECOND_SQUAREDValue());
 
-		/// <summary>﻿acceleration in millimeters per second squared.<br /><br /><br />
+		/// <summary>﻿acceleration in millimeter per second squared.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1340,7 +1350,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="MILLIMETER_PER_SECOND_SQUAREDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MILLIMETER_PER_SECOND_SQUAREDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;acceleration in millimeters per second squared.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;acceleration in millimeter per second squared.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1362,7 +1372,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="NEWTONValue" path="/summary" />
 		public NEWTONValue NEWTON => _NEWTON ?? (_NEWTON = new NEWTONValue());
 
-		/// <summary>﻿force in Newtons.<br /><br /><br />
+		/// <summary>﻿force in newton.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1381,7 +1391,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="NEWTONValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="NEWTONValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;force in Newtons.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;force in newton.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1403,7 +1413,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="NEWTON_METERValue" path="/summary" />
 		public NEWTON_METERValue NEWTON_METER => _NEWTON_METER ?? (_NEWTON_METER = new NEWTON_METERValue());
 
-		/// <summary>﻿torque, a unit for force times distance.<br /><br /><br />
+		/// <summary>﻿torque in newton-meter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1422,7 +1432,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="NEWTON_METERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="NEWTON_METERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;torque, a unit for force times distance.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;torque in newton-meter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1444,7 +1454,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="OHMValue" path="/summary" />
 		public OHMValue OHM => _OHM ?? (_OHM = new OHMValue());
 
-		/// <summary>﻿measure of electrical resistance.<br /><br /><br />
+		/// <summary>﻿electrical resistance in ohm.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1463,7 +1473,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="OHMValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="OHMValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measure of electrical resistance.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;electrical resistance in ohm.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1485,7 +1495,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="PASCALValue" path="/summary" />
 		public PASCALValue PASCAL => _PASCAL ?? (_PASCAL = new PASCALValue());
 
-		/// <summary>﻿pressure in Newtons per square meter.<br /><br /><br />
+		/// <summary>﻿pressure or stress in pascal.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1504,7 +1514,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="PASCALValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PASCALValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;pressure in Newtons per square meter.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;pressure or stress in pascal.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1526,7 +1536,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="PASCAL_SECONDValue" path="/summary" />
 		public PASCAL_SECONDValue PASCAL_SECOND => _PASCAL_SECOND ?? (_PASCAL_SECOND = new PASCAL_SECONDValue());
 
-		/// <summary>﻿measurement of viscosity.<br /><br /><br />
+		/// <summary>﻿viscosity in pascal-second.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1545,7 +1555,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="PASCAL_SECONDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PASCAL_SECONDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of viscosity.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;viscosity in pascal-second.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1567,7 +1577,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="PERCENTValue" path="/summary" />
 		public PERCENTValue PERCENT => _PERCENT ?? (_PERCENT = new PERCENTValue());
 
-		/// <summary>﻿percentage.<br /><br /><br />
+		/// <summary>﻿amount in or for every hundred.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1586,7 +1596,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="PERCENTValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PERCENTValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;percentage.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;amount in or for every hundred.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1608,7 +1618,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="PHValue" path="/summary" />
 		public PHValue PH => _PH ?? (_PH = new PHValue());
 
-		/// <summary>﻿measure of the acidity or alkalinity of a solution.<br /><br /><br />
+		/// <summary>﻿acidity or alkalinity of a solution in pH.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1627,7 +1637,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="PHValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PHValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measure of the acidity or alkalinity of a solution.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;acidity or alkalinity of a solution in pH.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1649,7 +1659,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="REVOLUTION_PER_MINUTEValue" path="/summary" />
 		public REVOLUTION_PER_MINUTEValue REVOLUTION_PER_MINUTE => _REVOLUTION_PER_MINUTE ?? (_REVOLUTION_PER_MINUTE = new REVOLUTION_PER_MINUTEValue());
 
-		/// <summary>﻿revolutions per minute.<br /><br /><br />
+		/// <summary>﻿rotational velocity in revolution per minute.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1668,7 +1678,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="REVOLUTION_PER_MINUTEValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="REVOLUTION_PER_MINUTEValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;revolutions per minute.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;rotational velocity in revolution per minute.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1690,7 +1700,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="SECONDValue" path="/summary" />
 		public SECONDValue SECOND => _SECOND ?? (_SECOND = new SECONDValue());
 
-		/// <summary>﻿measurement of time.<br /><br /><br />
+		/// <summary>﻿time in second.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1709,7 +1719,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="SECONDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="SECONDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of time.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;time in second.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1731,7 +1741,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="SIEMENS_PER_METERValue" path="/summary" />
 		public SIEMENS_PER_METERValue SIEMENS_PER_METER => _SIEMENS_PER_METER ?? (_SIEMENS_PER_METER = new SIEMENS_PER_METERValue());
 
-		/// <summary>﻿measurement of electrical conductivity.<br /><br /><br />
+		/// <summary>﻿electrical conductivity in siemens per meter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1750,7 +1760,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="SIEMENS_PER_METERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="SIEMENS_PER_METERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of electrical conductivity.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;electrical conductivity in siemens per meter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1772,7 +1782,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="VOLTValue" path="/summary" />
 		public VOLTValue VOLT => _VOLT ?? (_VOLT = new VOLTValue());
 
-		/// <summary>﻿volts.<br /><br /><br />
+		/// <summary>﻿electric potential, electric potential difference or electromotive force in volt.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1791,7 +1801,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="VOLTValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="VOLTValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;volts.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;electric potential, electric potential difference or electromotive force in volt.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1813,7 +1823,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="VOLT_AMPEREValue" path="/summary" />
 		public VOLT_AMPEREValue VOLT_AMPERE => _VOLT_AMPERE ?? (_VOLT_AMPERE = new VOLT_AMPEREValue());
 
-		/// <summary>﻿measurement of the apparent power in an electrical circuit, equal to the product of root-mean-square (RMS) voltage and RMS current (commonly referred to as VA).<br /><br /><br />
+		/// <summary>﻿apparent power in an electrical circuit, equal to the product of root-mean-square (RMS) voltage and RMS current (commonly referred to as VA) in volt-ampere.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1832,7 +1842,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="VOLT_AMPEREValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="VOLT_AMPEREValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of the apparent power in an electrical circuit, equal to the product of root-mean-square (RMS) voltage and RMS current (commonly referred to as VA).&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;apparent power in an electrical circuit, equal to the product of root-mean-square (RMS) voltage and RMS current (commonly referred to as VA) in volt-ampere.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1854,7 +1864,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="VOLT_AMPERE_REACTIVEValue" path="/summary" />
 		public VOLT_AMPERE_REACTIVEValue VOLT_AMPERE_REACTIVE => _VOLT_AMPERE_REACTIVE ?? (_VOLT_AMPERE_REACTIVE = new VOLT_AMPERE_REACTIVEValue());
 
-		/// <summary>﻿measurement of reactive power in an AC electrical circuit (commonly referred to as VAR).<br /><br /><br />
+		/// <summary>﻿reactive power in an AC electrical circuit (commonly referred to as VAR) in volt-ampere-reactive.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1873,7 +1883,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="VOLT_AMPERE_REACTIVEValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="VOLT_AMPERE_REACTIVEValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of reactive power in an AC electrical circuit (commonly referred to as VAR).&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;reactive power in an AC electrical circuit (commonly referred to as VAR) in volt-ampere-reactive.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1895,7 +1905,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="WATTValue" path="/summary" />
 		public WATTValue WATT => _WATT ?? (_WATT = new WATTValue());
 
-		/// <summary>﻿watts.<br /><br /><br />
+		/// <summary>﻿power in watt.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1914,7 +1924,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="WATTValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="WATTValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;watts.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;power in watt.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1936,7 +1946,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="WATT_SECONDValue" path="/summary" />
 		public WATT_SECONDValue WATT_SECOND => _WATT_SECOND ?? (_WATT_SECOND = new WATT_SECONDValue());
 
-		/// <summary>﻿measurement of electrical energy, equal to one Joule.<br /><br /><br />
+		/// <summary>﻿electrical energy in watt-second<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1955,7 +1965,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="WATT_SECONDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="WATT_SECONDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;measurement of electrical energy, equal to one Joule.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;electrical energy in watt-second&#10;
 ";
 
 			/// <inheritdoc />
@@ -1977,7 +1987,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="GRAM_PER_CUBIC_METERValue" path="/summary" />
 		public GRAM_PER_CUBIC_METERValue GRAM_PER_CUBIC_METER => _GRAM_PER_CUBIC_METER ?? (_GRAM_PER_CUBIC_METER = new GRAM_PER_CUBIC_METERValue());
 
-		/// <summary>﻿gram per cubic meter.<br /><br /><br />
+		/// <summary>﻿density in gram per cubic meter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -1996,7 +2006,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="GRAM_PER_CUBIC_METERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="GRAM_PER_CUBIC_METERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;gram per cubic meter.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;density in gram per cubic meter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2018,7 +2028,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="CUBIC_MILLIMETERValue" path="/summary" />
 		public CUBIC_MILLIMETERValue CUBIC_MILLIMETER => _CUBIC_MILLIMETER ?? (_CUBIC_MILLIMETER = new CUBIC_MILLIMETERValue());
 
-		/// <summary>﻿geometric volume in millimeters.<br /><br /><br />
+		/// <summary>﻿geometric volume in millimeter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2037,7 +2047,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="CUBIC_MILLIMETERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="CUBIC_MILLIMETERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;geometric volume in millimeters.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;geometric volume in millimeter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2141,7 +2151,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="MILLIGRAMValue" path="/summary" />
 		public MILLIGRAMValue MILLIGRAM => _MILLIGRAM ?? (_MILLIGRAM = new MILLIGRAMValue());
 
-		/// <summary>﻿milligram.<br /><br /><br />
+		/// <summary>﻿mass in milligram.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2160,7 +2170,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="MILLIGRAMValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MILLIGRAMValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;milligram.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;mass in milligram.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2182,7 +2192,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="MILLIGRAM_PER_CUBIC_MILLIMETERValue" path="/summary" />
 		public MILLIGRAM_PER_CUBIC_MILLIMETERValue MILLIGRAM_PER_CUBIC_MILLIMETER => _MILLIGRAM_PER_CUBIC_MILLIMETER ?? (_MILLIGRAM_PER_CUBIC_MILLIMETER = new MILLIGRAM_PER_CUBIC_MILLIMETERValue());
 
-		/// <summary>﻿milligram per cubic millimeter.<br /><br /><br />
+		/// <summary>﻿density in milligram per cubic millimeter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2201,7 +2211,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="MILLIGRAM_PER_CUBIC_MILLIMETERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MILLIGRAM_PER_CUBIC_MILLIMETERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;milligram per cubic millimeter.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;density in milligram per cubic millimeter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2223,7 +2233,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="MILLILITERValue" path="/summary" />
 		public MILLILITERValue MILLILITER => _MILLILITER ?? (_MILLILITER = new MILLILITERValue());
 
-		/// <summary>﻿milliliter.<br /><br /><br />
+		/// <summary>﻿volume in milliliter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2242,7 +2252,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="MILLILITERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MILLILITERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;milliliter.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;volume in milliliter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2264,7 +2274,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="COUNT_PER_SECONDValue" path="/summary" />
 		public COUNT_PER_SECONDValue COUNT_PER_SECOND => _COUNT_PER_SECOND ?? (_COUNT_PER_SECOND = new COUNT_PER_SECONDValue());
 
-		/// <summary>﻿counts per second.<br /><br /><br />
+		/// <summary>﻿frequency in count per second.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2283,7 +2293,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="COUNT_PER_SECONDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="COUNT_PER_SECONDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;counts per second.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;frequency in count per second.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2305,7 +2315,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 		/// <inheritdoc cref="PASCAL_PER_SECONDValue" path="/summary" />
 		public PASCAL_PER_SECONDValue PASCAL_PER_SECOND => _PASCAL_PER_SECOND ?? (_PASCAL_PER_SECOND = new PASCAL_PER_SECONDValue());
 
-		/// <summary>﻿pascal per second.<br /><br /><br />
+		/// <summary>﻿pressurization rate in pascal per second.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2324,7 +2334,7 @@ If any of the rotations is not known, it **MUST** be zero (0).&#10;
 			/// <summary>Constant value for <see cref="PASCAL_PER_SECONDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PASCAL_PER_SECONDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;pascal per second.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;pressurization rate in pascal per second.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2389,7 +2399,7 @@ Space delimited list of three floating point numbers.&#10;
 		/// <inheritdoc cref="REVOLUTION_PER_SECOND_SQUAREDValue" path="/summary" />
 		public REVOLUTION_PER_SECOND_SQUAREDValue REVOLUTION_PER_SECOND_SQUARED => _REVOLUTION_PER_SECOND_SQUARED ?? (_REVOLUTION_PER_SECOND_SQUARED = new REVOLUTION_PER_SECOND_SQUAREDValue());
 
-		/// <summary>﻿revolutions per second squared.<br /><br /><br />
+		/// <summary>﻿rotational acceleration in revolution per second squared.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2408,7 +2418,7 @@ Space delimited list of three floating point numbers.&#10;
 			/// <summary>Constant value for <see cref="REVOLUTION_PER_SECOND_SQUAREDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="REVOLUTION_PER_SECOND_SQUAREDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;revolutions per second squared.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;rotational acceleration in revolution per second squared.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2471,7 +2481,7 @@ Space delimited list of three floating point numbers.&#10;
 		/// <inheritdoc cref="GRAMValue" path="/summary" />
 		public GRAMValue GRAM => _GRAM ?? (_GRAM = new GRAMValue());
 
-		/// <summary>﻿gram.<br /><br /><br />
+		/// <summary>﻿mass in gram.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2490,7 +2500,7 @@ Space delimited list of three floating point numbers.&#10;
 			/// <summary>Constant value for <see cref="GRAMValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="GRAMValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;gram.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;mass in gram.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2512,7 +2522,7 @@ Space delimited list of three floating point numbers.&#10;
 		/// <inheritdoc cref="METER_PER_SECOND_SQUAREDValue" path="/summary" />
 		public METER_PER_SECOND_SQUAREDValue METER_PER_SECOND_SQUARED => _METER_PER_SECOND_SQUARED ?? (_METER_PER_SECOND_SQUARED = new METER_PER_SECOND_SQUAREDValue());
 
-		/// <summary>﻿acceleration in meters per second squared.<br /><br /><br />
+		/// <summary>﻿acceleration in meter per second squared.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2531,7 +2541,7 @@ Space delimited list of three floating point numbers.&#10;
 			/// <summary>Constant value for <see cref="METER_PER_SECOND_SQUAREDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="METER_PER_SECOND_SQUAREDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;acceleration in meters per second squared.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;acceleration in meter per second squared.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2553,7 +2563,7 @@ Space delimited list of three floating point numbers.&#10;
 		/// <inheritdoc cref="COULOMBValue" path="/summary" />
 		public COULOMBValue COULOMB => _COULOMB ?? (_COULOMB = new COULOMBValue());
 
-		/// <summary>﻿electric charge in coulombs (C).<br /><br /><br />
+		/// <summary>﻿electric charge in coulomb.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2572,7 +2582,7 @@ Space delimited list of three floating point numbers.&#10;
 			/// <summary>Constant value for <see cref="COULOMBValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="COULOMBValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;electric charge in coulombs (C).&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;electric charge in coulomb.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2594,7 +2604,7 @@ Space delimited list of three floating point numbers.&#10;
 		/// <inheritdoc cref="CUBIC_METERValue" path="/summary" />
 		public CUBIC_METERValue CUBIC_METER => _CUBIC_METER ?? (_CUBIC_METER = new CUBIC_METERValue());
 
-		/// <summary>﻿geometric volume in meters.<br /><br /><br />
+		/// <summary>﻿geometric volume in meter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2613,7 +2623,7 @@ Space delimited list of three floating point numbers.&#10;
 			/// <summary>Constant value for <see cref="CUBIC_METERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="CUBIC_METERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;geometric volume in meters.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;geometric volume in meter.&#10;
 ";
 
 			/// <inheritdoc />
@@ -2635,7 +2645,7 @@ Space delimited list of three floating point numbers.&#10;
 		/// <inheritdoc cref="SQUARE_MILLIMETERValue" path="/summary" />
 		public SQUARE_MILLIMETERValue SQUARE_MILLIMETER => _SQUARE_MILLIMETER ?? (_SQUARE_MILLIMETER = new SQUARE_MILLIMETERValue());
 
-		/// <summary>﻿geometric area in millimeters.<br /><br /><br />
+		/// <summary>﻿geometric area in millimeter.<br /><br /><br />
 		/// Value for UnitEnum.<br/>
 		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
 		/// </summary>
@@ -2654,7 +2664,48 @@ Space delimited list of three floating point numbers.&#10;
 			/// <summary>Constant value for <see cref="SQUARE_MILLIMETERValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="SQUARE_MILLIMETERValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;geometric area in millimeters.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;geometric area in millimeter.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private OHM_METERValue _OHM_METER;
+		/// <inheritdoc cref="OHM_METERValue" path="/summary" />
+		public OHM_METERValue OHM_METER => _OHM_METER ?? (_OHM_METER = new OHM_METERValue());
+
+		/// <summary>﻿resistivity in ohm-meter.<br /><br /><br />
+		/// Value for UnitEnum.<br/>
+		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class OHM_METERValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="OHM_METERValue.Name" /></summary>
+			public const string NAME = "OHM_METER";
+			/// <summary>Constant value for <see cref="OHM_METERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="OHM_METERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="OHM_METERValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;resistivity in ohm-meter.&#10;
 ";
 
 			/// <inheritdoc />

@@ -50,6 +50,11 @@ namespace Mtconnect
 			FeatureMeasurementResultClass,
 			LocationAddressResultClass,
 			LocationSpatialGeographicResultClass,
+			TranslationDataSetGeneralization,
+			RotationDataSetGeneralization,
+			ScaleDataSetGeneralization,
+			AxisDataSetGeneralization,
+			OriginDataSetGeneralization,
 		};
 		
 		/// <inheritdoc />
@@ -150,6 +155,7 @@ namespace Mtconnect
 			CharacteristicStatusEnum,
 			UncertaintyTypeEnum,
 			PowerSourceTypeEnum,
+			QualityEnum,
 		};
 
 		#region Packages
@@ -203,6 +209,36 @@ namespace Mtconnect
 	/// <inheritdoc cref="Package.LocationSpatialGeographicResultClass" path="/summary" />
 	/// </summary>
 	public Package.LocationSpatialGeographicResultClass LocationSpatialGeographicResultClass => _LocationSpatialGeographicResultClass ?? (_LocationSpatialGeographicResultClass = new Package.LocationSpatialGeographicResultClass());
+
+	private Package.TranslationDataSetGeneralization _TranslationDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.TranslationDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.TranslationDataSetGeneralization TranslationDataSetGeneralization => _TranslationDataSetGeneralization ?? (_TranslationDataSetGeneralization = new Package.TranslationDataSetGeneralization());
+
+	private Package.RotationDataSetGeneralization _RotationDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.RotationDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.RotationDataSetGeneralization RotationDataSetGeneralization => _RotationDataSetGeneralization ?? (_RotationDataSetGeneralization = new Package.RotationDataSetGeneralization());
+
+	private Package.ScaleDataSetGeneralization _ScaleDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.ScaleDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.ScaleDataSetGeneralization ScaleDataSetGeneralization => _ScaleDataSetGeneralization ?? (_ScaleDataSetGeneralization = new Package.ScaleDataSetGeneralization());
+
+	private Package.AxisDataSetGeneralization _AxisDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.AxisDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.AxisDataSetGeneralization AxisDataSetGeneralization => _AxisDataSetGeneralization ?? (_AxisDataSetGeneralization = new Package.AxisDataSetGeneralization());
+
+	private Package.OriginDataSetGeneralization _OriginDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.OriginDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.OriginDataSetGeneralization OriginDataSetGeneralization => _OriginDataSetGeneralization ?? (_OriginDataSetGeneralization = new Package.OriginDataSetGeneralization());
 
 	#endregion
 
@@ -782,6 +818,12 @@ namespace Mtconnect
 	/// <inheritdoc cref="Package.PowerSourceTypeEnumMetaClass" path="/summary" />
 	/// </summary>
 	public Package.PowerSourceTypeEnumMetaClass PowerSourceTypeEnum => _PowerSourceTypeEnum ?? (_PowerSourceTypeEnum = new Package.PowerSourceTypeEnumMetaClass());
+
+	private Package.QualityEnumMetaClass _QualityEnum;
+	/// <summary>
+	/// <inheritdoc cref="Package.QualityEnumMetaClass" path="/summary" />
+	/// </summary>
+	public Package.QualityEnumMetaClass QualityEnum => _QualityEnum ?? (_QualityEnum = new Package.QualityEnumMetaClass());
 
 	#endregion
 	}

@@ -103,11 +103,13 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				/// <summary>Constant value for <see cref="DataItemProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "shared";
 				/// <summary>Constant value for <see cref="DataItemProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="DataItemProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DataItemProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DataItemProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -146,6 +148,9 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DeviceProperty" path="/summary" /><br/>
@@ -177,6 +182,8 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DeviceProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -215,6 +222,9 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -246,6 +256,8 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -284,6 +296,9 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
 

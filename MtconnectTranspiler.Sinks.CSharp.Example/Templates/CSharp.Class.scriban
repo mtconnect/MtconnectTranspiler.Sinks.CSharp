@@ -158,6 +158,8 @@ namespace {{ to_code_safe source.namespace }}
 				public const string ASSOCIATION = "{{ item.association }}";
 				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "{{ item.default_value }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "{{ item.multiplicity }}";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -196,6 +198,9 @@ namespace {{ to_code_safe source.namespace }}
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		{{~ end ~}}
 		};
