@@ -31,7 +31,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		/// <summary>Constant value for <see cref="ThingClass.Name" /></summary>
 		public const string NAME = "Thing";
 		/// <summary>Constant value for <see cref="ThingClass.AccessModifier" /></summary>
-		public const string ACCESS_MODIFIER = "public";
+		public const string ACCESS_MODIFIER = "private";
 		/// <summary>Constant value for <see cref="ThingClass.Modifier" /></summary>
 		public const string MODIFIER = "";
 		/// <summary>Constant value for <see cref="ThingClass.NormativeVersion" /></summary>

@@ -61,7 +61,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             if (source.Comments?.Length > 0)
                 Summary = new Summary(source.Comments);
 
-            AccessModifier = source.Visibility;
+            AccessModifier = source.Visibility ?? "public";
 
             Modifier = source.IsStatic ? "static" : source.IsReadOnly ? "readonly" : "";
 

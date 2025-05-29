@@ -88,7 +88,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             if (source.IsAbstract)
                 Modifier = "abstract";
 
-            AccessModifier = "public";
+            AccessModifier = source?.Visibility ?? "public";
 
             _properties = source.Properties
                 ?.Where(o => !string.IsNullOrEmpty(o.Name))

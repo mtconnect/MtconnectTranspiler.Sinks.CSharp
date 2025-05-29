@@ -30,7 +30,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		/// <summary>Constant value for <see cref="ResponderClass.Name" /></summary>
 		public const string NAME = "Responder";
 		/// <summary>Constant value for <see cref="ResponderClass.AccessModifier" /></summary>
-		public const string ACCESS_MODIFIER = "public";
+		public const string ACCESS_MODIFIER = "private";
 		/// <summary>Constant value for <see cref="ResponderClass.Modifier" /></summary>
 		public const string MODIFIER = "";
 		/// <summary>Constant value for <see cref="ResponderClass.NormativeVersion" /></summary>
