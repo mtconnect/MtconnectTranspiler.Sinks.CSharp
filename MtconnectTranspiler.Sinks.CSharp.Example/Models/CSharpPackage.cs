@@ -88,6 +88,13 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example.Models
                 ?.ToList()
                 ?? new List<CSharpClass>();
 
+            var associations = source!.AssociationClasses
+                ?.Select(o => new CSharpClass(model, o))
+                ?.ToList()
+                ?? new List<CSharpClass>();
+            if (associations.Count > 0)
+                _classes.AddRange(associations);
+
             _enums = source!.Enumerations
                 ?.Select(o => new CSharpEnum(model, o))
                 ?.ToList()
