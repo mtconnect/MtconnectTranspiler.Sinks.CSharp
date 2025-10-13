@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.XMLTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375178_894466_2058">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class ParentElementGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="ParentElementGeneralization.ReferenceId" /></summary>

@@ -12,7 +12,7 @@ namespace Mtconnect.Imports.CSVImports
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579210647406_198412_3583">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class PropertyMapClass : IClass
 	{
 		/// <summary>Constant value for <see cref="PropertyMapClass.ReferenceId" /></summary>

@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Source
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929379292_433586_18837">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class MQTTDataSourceGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="MQTTDataSourceGeneralization.ReferenceId" /></summary>

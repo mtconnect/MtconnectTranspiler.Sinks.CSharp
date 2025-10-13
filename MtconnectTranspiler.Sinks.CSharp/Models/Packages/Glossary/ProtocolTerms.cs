@@ -11,7 +11,7 @@ namespace Mtconnect.Glossary
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1623665982544_883035_11209">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class ProtocolTermsPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ProtocolTermsPackage.ReferenceId" /></summary>
@@ -61,6 +61,7 @@ namespace Mtconnect.Glossary
 			RequestClass,
 			ResponseClass,
 			RequestAndResponseClass,
+			MTConnectExceptionsReportResponseDocumentClass,
 		};
 		
 		/// <inheritdoc />
@@ -190,6 +191,12 @@ namespace Mtconnect.Glossary
 	/// <inheritdoc cref="Package.RequestAndResponseClass" path="/summary" />
 	/// </summary>
 	public Package.RequestAndResponseClass RequestAndResponseClass => _RequestAndResponseClass ?? (_RequestAndResponseClass = new Package.RequestAndResponseClass());
+
+	private Package.MTConnectExceptionsReportResponseDocumentClass _MTConnectExceptionsReportResponseDocumentClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.MTConnectExceptionsReportResponseDocumentClass" path="/summary" />
+	/// </summary>
+	public Package.MTConnectExceptionsReportResponseDocumentClass MTConnectExceptionsReportResponseDocumentClass => _MTConnectExceptionsReportResponseDocumentClass ?? (_MTConnectExceptionsReportResponseDocumentClass = new Package.MTConnectExceptionsReportResponseDocumentClass());
 
 	#endregion
 

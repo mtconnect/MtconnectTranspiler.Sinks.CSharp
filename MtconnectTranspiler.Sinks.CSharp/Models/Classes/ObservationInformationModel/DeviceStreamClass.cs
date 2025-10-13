@@ -17,7 +17,7 @@ namespace Mtconnect.ObservationInformationModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class DeviceStreamClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DeviceStreamClass.ReferenceId" /></summary>

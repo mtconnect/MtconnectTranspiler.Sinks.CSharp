@@ -10,7 +10,7 @@ namespace Mtconnect.DataTypes
 	/// <br/> Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1646992208875_933134_35">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public enum InterfaceEventEnum
 	{
 		/// <summary>﻿operational state of an <see cref="Interface">Interface</see>.<br /><br /><br />
@@ -62,7 +62,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1646992208875_933134_35">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class InterfaceEventEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="InterfaceEventEnumMetaClass.ReferenceId" /></summary>

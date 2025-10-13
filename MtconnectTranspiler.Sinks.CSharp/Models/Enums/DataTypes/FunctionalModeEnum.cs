@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public enum FunctionalModeEnum
 	{
 		/// <summary>﻿<see cref="Component">Component</see> is currently producing product, ready to produce product, or its current intended use is to be producing product.<br /><br /><br />
@@ -68,7 +68,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580378417665_982246_2879">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class FunctionalModeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="FunctionalModeEnumMetaClass.ReferenceId" /></summary>

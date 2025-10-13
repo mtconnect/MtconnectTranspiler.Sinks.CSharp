@@ -12,7 +12,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1585537591558_380255_3580">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class ObservationValueClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ObservationValueClass.ReferenceId" /></summary>

@@ -11,7 +11,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1622718436806_684422_1202">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class TasksInformationModelPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="TasksInformationModelPackage.ReferenceId" /></summary>

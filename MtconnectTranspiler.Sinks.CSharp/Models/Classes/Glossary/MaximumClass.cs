@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375169_239155_2026">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class MaximumClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MaximumClass.ReferenceId" /></summary>

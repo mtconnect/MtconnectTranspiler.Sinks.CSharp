@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1630404681033_826443_46">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class StereotypeClass : IClass
 	{
 		/// <summary>Constant value for <see cref="StereotypeClass.ReferenceId" /></summary>

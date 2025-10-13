@@ -11,7 +11,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	/// <summary>﻿This section provides semantic information for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> model.<br /><br />![CuttingToolLifeCycle](figures/CuttingToolLifeCycle.png "CuttingToolLifeCycle"){: width="0.8"}<br /><br />&gt; Note: See <see cref="CuttingToolLifeCycle Schema Diagrams">CuttingToolLifeCycle Schema Diagrams</see> for XML schema.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1612424133851_339632_344">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class CuttingToolLifeCyclePackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="CuttingToolLifeCyclePackage.ReferenceId" /></summary>

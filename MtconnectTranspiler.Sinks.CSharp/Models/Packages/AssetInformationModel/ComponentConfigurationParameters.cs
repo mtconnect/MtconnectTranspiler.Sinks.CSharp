@@ -11,7 +11,7 @@ namespace Mtconnect.AssetInformationModel
 	/// <summary>﻿This section provides semantic information for the <see cref="ComponentConfigurationParameters">ComponentConfigurationParameters</see> model.<br /><br />![ComponentConfigurationParameters](figures/ComponentConfigurationParameters.png "ComponentConfigurationParameters"){: width="0.8"}<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1678197141009_35817_17749">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class ComponentConfigurationParametersPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ComponentConfigurationParametersPackage.ReferenceId" /></summary>

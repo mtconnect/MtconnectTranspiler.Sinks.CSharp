@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	/// <summary>﻿<see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.<br /><br /><br />
+	/// <summary>﻿<see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> or an <see cref="Asset">Asset</see> and another {{block(Component).<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_2D0A9D8F_2538_4f46_8B83_6B1988818511">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class ComponentRelationshipClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ComponentRelationshipClass.ReferenceId" /></summary>
@@ -26,7 +26,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		/// <summary>Constant value for <see cref="ComponentRelationshipClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__EAID_2D0A9D8F_2538_4f46_8B83_6B1988818511";
 		/// <summary>Constant value for <see cref="ComponentRelationshipClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between two components within a piece of equipment that function independently but together perform a capability or service within a piece of equipment.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between a {{block(Component)}} or an {{block(Asset)}} and another {{block(Component).&#10;
 ";
 		/// <summary>Constant value for <see cref="ComponentRelationshipClass.Name" /></summary>
 		public const string NAME = "ComponentRelationship";

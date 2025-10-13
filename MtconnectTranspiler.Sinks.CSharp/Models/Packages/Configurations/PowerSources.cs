@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <summary>﻿This section provides semantic information for the <see cref="PowerSource">PowerSource</see> entity.<br /><br />![PowerSources](figures/PowerSources.png "PowerSources"){: width="0.8"}<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1696870885238_252064_3316">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class PowerSourcesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="PowerSourcesPackage.ReferenceId" /></summary>

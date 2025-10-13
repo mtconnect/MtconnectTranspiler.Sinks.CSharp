@@ -20,7 +20,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v2.5 according to https://model.mtconnect.org/#_Version_2.5")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class SpecificationLimitClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SpecificationLimitClass.ReferenceId" /></summary>
