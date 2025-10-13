@@ -212,7 +212,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Example
             if (package.AssociationClasses.Count > 0)
                 foreach (var item in package.AssociationClasses)
                     results.Add(new CSharpClass(model, item) { Namespace = namespacePrefix });
-
+            
             if ( package.Packages.Count > 0)
             {
                 foreach(var item in package.Packages)
