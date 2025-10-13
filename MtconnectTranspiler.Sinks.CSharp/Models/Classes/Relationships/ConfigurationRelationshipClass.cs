@@ -8,7 +8,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	/// <summary>﻿association between two pieces of equipment that function independently but together perform a manufacturing operation.<br /><br /><br />Description<br /><br /><see cref="ConfigurationRelationship">ConfigurationRelationship</see> is an abstract entity and hence will be realized by specific <see cref="ConfigurationRelationship">ConfigurationRelationship</see> types in an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="ComponentRelationship">ComponentRelationship</see> and <see cref="DeviceRelationship">DeviceRelationship</see>.<br /><br /><br /><br /><br />
+	/// <summary>﻿association between two pieces of equipment or assets that may function independently but together perform a manufacturing operation.<br /><br /><br />Description<br /><br /><see cref="ConfigurationRelationship">ConfigurationRelationship</see> is an abstract entity and hence will be realized by specific <see cref="ConfigurationRelationship">ConfigurationRelationship</see> types in an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="ComponentRelationship">ComponentRelationship</see> and <see cref="DeviceRelationship">DeviceRelationship</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_28132294_DF39_4e8e_8AE5_B79565F991A2">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class ConfigurationRelationshipClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ConfigurationRelationshipClass.ReferenceId" /></summary>
@@ -25,7 +25,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		/// <summary>Constant value for <see cref="ConfigurationRelationshipClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__EAID_28132294_DF39_4e8e_8AE5_B79565F991A2";
 		/// <summary>Constant value for <see cref="ConfigurationRelationshipClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;association between two pieces of equipment that function independently but together perform a manufacturing operation.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;association between two pieces of equipment or assets that may function independently but together perform a manufacturing operation.&#10;
 &#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(ConfigurationRelationship)}} is an abstract entity and hence will be realized by specific {{block(ConfigurationRelationship)}} types in an {{block(MTConnectDevices)}} entity. See {{sect(ComponentRelationship)}} and {{sect(DeviceRelationship)}}.&#10;
 ";
 		/// <summary>Constant value for <see cref="ConfigurationRelationshipClass.Name" /></summary>

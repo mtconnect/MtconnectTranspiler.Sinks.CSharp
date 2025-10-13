@@ -11,7 +11,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 	/// <summary>﻿This section lists the <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingItem">CuttingItem</see>.<br /><br />These <see cref="Measurement">Measurement</see> subtypes for <see cref="CuttingItem">CuttingItem</see> are specific to an individual <see cref="CuttingItem">CuttingItem</see> and <b>MUST NOT</b> be used for the <see cref="Measurement">Measurement</see> pertaining to an assembly. Figures below will be used to for reference for the <see cref="CuttingItem">CuttingItem</see> specific <see cref="Measurement">Measurement</see> types.<br /><br />![Cutting Tool](figures/Cutting%20Tool.png "Cutting Tool"){: width="0.8"}<br /><br />![Cutting Item](figures/Cutting%20Item.png "Cutting Item"){: width="0.8"}<br /><br />![Cutting Item Measurement](figures/Cutting%20Item%20Measurement.png "Cutting Item Measurement"){: width="0.8"}<br /><br />![Cutting Item Drive Angle](figures/Cutting%20Item%20Drive%20Angle.png "Cutting Item Drive Angle"){: width="0.8"}<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1582919154044_31808_1537">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class CuttingItemMeasurementSubtypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="CuttingItemMeasurementSubtypesPackage.ReferenceId" /></summary>

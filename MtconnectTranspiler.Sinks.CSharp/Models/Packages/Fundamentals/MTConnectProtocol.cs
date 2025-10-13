@@ -11,7 +11,7 @@ namespace Mtconnect.Fundamentals
 	/// <summary>﻿The <i>agent</i> <b>MUST</b> support the <see cref="REST Protocol">REST Protocol</see> and produce <i>XML</i> representations of the information models. <br /><br />All other protocols and representations are optional.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_50B7711E_30AA_4a94_9F73_C74061BA099D">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class MTConnectProtocolPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="MTConnectProtocolPackage.ReferenceId" /></summary>
@@ -46,6 +46,7 @@ All other protocols and representations are optional.
 			MTConnectStreamsResponseDocumentPackage,
 			MTConnectErrorsResponseDocumentPackage,
 			RESTProtocolPackage,
+			MTConnectExceptionsReportResponseDocumentPackage,
 		};
 		
 		/// <inheritdoc />
@@ -86,6 +87,12 @@ All other protocols and representations are optional.
 	/// <inheritdoc cref="Package.RESTProtocolPackage" path="/summary" />
 	/// </summary>
 	public Package.RESTProtocolPackage RESTProtocolPackage => _RESTProtocolPackage ?? (_RESTProtocolPackage = new Package.RESTProtocolPackage());
+
+	private Package.MTConnectExceptionsReportResponseDocumentPackage _MTConnectExceptionsReportResponseDocumentPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.MTConnectExceptionsReportResponseDocumentPackage" path="/summary" />
+	/// </summary>
+	public Package.MTConnectExceptionsReportResponseDocumentPackage MTConnectExceptionsReportResponseDocumentPackage => _MTConnectExceptionsReportResponseDocumentPackage ?? (_MTConnectExceptionsReportResponseDocumentPackage = new Package.MTConnectExceptionsReportResponseDocumentPackage());
 
 	#endregion
 

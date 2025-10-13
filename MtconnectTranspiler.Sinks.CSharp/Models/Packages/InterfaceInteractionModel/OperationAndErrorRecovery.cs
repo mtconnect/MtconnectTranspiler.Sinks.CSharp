@@ -11,7 +11,7 @@ namespace Mtconnect.InterfaceInteractionModel
 	/// <summary>﻿The <i>request and response</i> state model implemented for <i>interface</i>s may also be represented by a graphical model.  The scenario in {{figure(Success Scenario)}} demonstrates the state transitions that occur during a successful <i>request</i> for service and the resulting <i>response</i> to fulfill that service <i>request</i>. <br /><br />![Success Scenario](figures/Success%20Scenario.png "Success Scenario"){: width="0.8"}<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1623755007633_105506_1249">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class OperationAndErrorRecoveryPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="OperationAndErrorRecoveryPackage.ReferenceId" /></summary>

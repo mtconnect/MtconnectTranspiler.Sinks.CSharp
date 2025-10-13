@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public enum ResetTriggerEnum
 	{
 		/// <summary>﻿<i>observation</i> of the <see cref="DataItem">DataItem</see> that is measuring an action or operation is to be reset upon completion of that action or operation.<br /><br /><br />
@@ -104,7 +104,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_8616CF52_2918_4462_A494_9F4A3EEFD597">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class ResetTriggerEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="ResetTriggerEnumMetaClass.ReferenceId" /></summary>

@@ -12,10 +12,12 @@ namespace Mtconnect.DataTypes
 	/// <remarks>
 	/// <list type="bullet">
 	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+	/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 	/// </list>
 	/// </remarks>
+	[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public enum ErrorCodeEnum
 	{
 		/// <summary>﻿<i>request</i> for information specifies an <see cref="Asset">Asset</see> that is not recognized by the <i>agent</i>.<br /><br /><br />
@@ -23,8 +25,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		ASSET_NOT_FOUND,
 		/// <summary>﻿<i>agent</i> experienced an error while attempting to published the requested information.<br /><br /><br />
@@ -32,8 +36,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		INTERNAL_ERROR,
 		/// <summary>﻿<i>request</i> contains information that was not recognized by the <i>agent</i>.<br /><br /><br />
@@ -41,8 +47,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		INVALID_REQUEST,
 		/// <summary>﻿<i>URI</i> provided was incorrect.<br /><br /><br />
@@ -50,8 +58,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		INVALID_URI,
 		/// <summary>﻿<i>XPath</i> identified in the <i>request</i> for information could not be parsed correctly by the <i>agent</i>.<br /><br />This could be caused by an invalid syntax or the <i>XPath</i> did not match a valid identify for any information stored in the <i>agent</i>. <br /><br /><br />
@@ -59,8 +69,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		INVALID_XPATH,
 		/// <summary>﻿identity of the <see cref="Device">Device</see> specified in the <i>request</i> for information is not associated with the <i>agent</i>.<br /><br /><br />
@@ -68,8 +80,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		NO_DEVICE,
 		/// <summary>﻿<i>request</i> for information specifies <i>streaming data</i> that includes sequence number(s) for pieces of data that are beyond the end of the <i>buffer</i>.<br /><br /><br />
@@ -77,8 +91,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		OUT_OF_RANGE,
 		/// <summary>﻿<i>agent</i> was unable to interpret the query.<br /><br />The query parameters do not contain valid values or include an invalid parameter.<br /><br /><br />
@@ -86,8 +102,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		QUERY_ERROR,
 		/// <summary>﻿<c>count</c> parameter provided in the <i>request</i> for information requires either of the following:<br /><br />* <i>streaming data</i> that includes more pieces of data than the <i>agent</i> is capable of organizing in an <i>MTConnectStreams Response Document</i>. <br /><br />* <see cref="Assets">Assets</see> that include more <see cref="Asset">Asset</see> in an <i>MTConnectAssets Response Document</i> than the <i>agent</i> is capable of handling. <br /><br /><br />
@@ -95,8 +113,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		TOO_MANY,
 		/// <summary>﻿<i>requester</i> does not have sufficient permissions to access the requested information.<br /><br /><br />
@@ -104,8 +124,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		UNAUTHORIZED,
 		/// <summary>﻿valid <i>request</i> was provided, but the <i>agent</i> does not support the feature or type of <i>request</i>.<br /><br /><br />
@@ -113,8 +135,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		UNSUPPORTED,
 	}
@@ -122,7 +146,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579560813203_683279_6795">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class ErrorCodeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="ErrorCodeEnumMetaClass.ReferenceId" /></summary>
@@ -134,7 +158,7 @@ namespace Mtconnect.DataTypes
 		/// <summary>Constant value for <see cref="ErrorCodeEnumMetaClass.NormativeVersion" /></summary>
 		public const string NORMATIVE_VERSION = "1.0";
 		/// <summary>Constant value for <see cref="ErrorCodeEnumMetaClass.DeprecatedVersion" /></summary>
-		public const string DEPRECATED_VERSION = "";
+		public const string DEPRECATED_VERSION = "2.6";
 		/// <summary>Constant value for <see cref="ErrorCodeEnumMetaClass.Summary" /></summary>
 		public const string SUMMARY = @"";
 
@@ -188,8 +212,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class ASSET_NOT_FOUNDValue : IEnumInstance
 		{
@@ -198,7 +224,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="ASSET_NOT_FOUNDValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.2";
 			/// <summary>Constant value for <see cref="ASSET_NOT_FOUNDValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="ASSET_NOT_FOUNDValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{term(request)}} for information specifies an {{block(Asset)}} that is not recognized by the {{term(agent)}}.&#10;
 ";
@@ -229,8 +255,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class INTERNAL_ERRORValue : IEnumInstance
 		{
@@ -239,7 +267,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="INTERNAL_ERRORValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="INTERNAL_ERRORValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="INTERNAL_ERRORValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{term(agent)}} experienced an error while attempting to published the requested information.&#10;
 ";
@@ -270,8 +298,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class INVALID_REQUESTValue : IEnumInstance
 		{
@@ -280,7 +310,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="INVALID_REQUESTValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="INVALID_REQUESTValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="INVALID_REQUESTValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{term(request)}} contains information that was not recognized by the {{term(agent)}}.&#10;
 ";
@@ -311,8 +341,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class INVALID_URIValue : IEnumInstance
 		{
@@ -321,7 +353,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="INVALID_URIValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="INVALID_URIValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="INVALID_URIValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{term(URI)}} provided was incorrect.&#10;
 ";
@@ -352,8 +384,10 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class INVALID_XPATHValue : IEnumInstance
 		{
@@ -362,7 +396,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="INVALID_XPATHValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="INVALID_XPATHValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="INVALID_XPATHValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{term(XPath)}} identified in the {{term(request)}} for information could not be parsed correctly by the {{term(agent)}}.
 
@@ -395,8 +429,10 @@ This could be caused by an invalid syntax or the {{term(XPath)}} did not match a
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class NO_DEVICEValue : IEnumInstance
 		{
@@ -405,7 +441,7 @@ This could be caused by an invalid syntax or the {{term(XPath)}} did not match a
 			/// <summary>Constant value for <see cref="NO_DEVICEValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="NO_DEVICEValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="NO_DEVICEValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;identity of the {{block(Device)}} specified in the {{term(request)}} for information is not associated with the {{term(agent)}}.&#10;
 ";
@@ -436,8 +472,10 @@ This could be caused by an invalid syntax or the {{term(XPath)}} did not match a
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class OUT_OF_RANGEValue : IEnumInstance
 		{
@@ -446,7 +484,7 @@ This could be caused by an invalid syntax or the {{term(XPath)}} did not match a
 			/// <summary>Constant value for <see cref="OUT_OF_RANGEValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="OUT_OF_RANGEValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="OUT_OF_RANGEValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{term(request)}} for information specifies {{term(streaming data)}} that includes sequence number(s) for pieces of data that are beyond the end of the {{term(buffer)}}.&#10;
 ";
@@ -477,8 +515,10 @@ This could be caused by an invalid syntax or the {{term(XPath)}} did not match a
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class QUERY_ERRORValue : IEnumInstance
 		{
@@ -487,7 +527,7 @@ This could be caused by an invalid syntax or the {{term(XPath)}} did not match a
 			/// <summary>Constant value for <see cref="QUERY_ERRORValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.4";
 			/// <summary>Constant value for <see cref="QUERY_ERRORValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="QUERY_ERRORValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{term(agent)}} was unable to interpret the query.
 
@@ -520,8 +560,10 @@ The query parameters do not contain valid values or include an invalid parameter
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class TOO_MANYValue : IEnumInstance
 		{
@@ -530,7 +572,7 @@ The query parameters do not contain valid values or include an invalid parameter
 			/// <summary>Constant value for <see cref="TOO_MANYValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="TOO_MANYValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="TOO_MANYValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;`count` parameter provided in the {{term(request)}} for information requires either of the following:
 
@@ -565,8 +607,10 @@ The query parameters do not contain valid values or include an invalid parameter
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class UNAUTHORIZEDValue : IEnumInstance
 		{
@@ -575,7 +619,7 @@ The query parameters do not contain valid values or include an invalid parameter
 			/// <summary>Constant value for <see cref="UNAUTHORIZEDValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="UNAUTHORIZEDValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="UNAUTHORIZEDValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{term(requester)}} does not have sufficient permissions to access the requested information.&#10;
 ";
@@ -606,8 +650,10 @@ The query parameters do not contain valid values or include an invalid parameter
 		/// <remarks>
 		/// <list type="bullet">
 		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// <item><b>Deprecated</b>: <see href="https://model.mtconnect.org/#_Version_2.6">v2.6</see></item>
 		/// </list>
 		/// </remarks>
+		[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
 		public sealed class UNSUPPORTEDValue : IEnumInstance
 		{
@@ -616,7 +662,7 @@ The query parameters do not contain valid values or include an invalid parameter
 			/// <summary>Constant value for <see cref="UNSUPPORTEDValue.NormativeVersion" /></summary>
 			public const string NORMATIVE_VERSION = "1.0";
 			/// <summary>Constant value for <see cref="UNSUPPORTEDValue.DeprecatedVersion" /></summary>
-			public const string DEPRECATED_VERSION = "";
+			public const string DEPRECATED_VERSION = "2.6";
 			/// <summary>Constant value for <see cref="UNSUPPORTEDValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;valid {{term(request)}} was provided, but the {{term(agent)}} does not support the feature or type of {{term(request)}}.&#10;
 ";

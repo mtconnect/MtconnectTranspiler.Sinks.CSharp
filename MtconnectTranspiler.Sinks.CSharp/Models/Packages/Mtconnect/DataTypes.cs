@@ -11,7 +11,7 @@ namespace Mtconnect
 	/// <summary>﻿<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579567325331_179717_33552">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class DataTypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="DataTypesPackage.ReferenceId" /></summary>
@@ -156,6 +156,10 @@ namespace Mtconnect
 			UncertaintyTypeEnum,
 			PowerSourceTypeEnum,
 			QualityEnum,
+			QueryParameterEnum,
+			ScopeTypeEnum,
+			ExceptionCodeEnum,
+			SeverityEnum,
 		};
 
 		#region Packages
@@ -824,6 +828,30 @@ namespace Mtconnect
 	/// <inheritdoc cref="Package.QualityEnumMetaClass" path="/summary" />
 	/// </summary>
 	public Package.QualityEnumMetaClass QualityEnum => _QualityEnum ?? (_QualityEnum = new Package.QualityEnumMetaClass());
+
+	private Package.QueryParameterEnumMetaClass _QueryParameterEnum;
+	/// <summary>
+	/// <inheritdoc cref="Package.QueryParameterEnumMetaClass" path="/summary" />
+	/// </summary>
+	public Package.QueryParameterEnumMetaClass QueryParameterEnum => _QueryParameterEnum ?? (_QueryParameterEnum = new Package.QueryParameterEnumMetaClass());
+
+	private Package.ScopeTypeEnumMetaClass _ScopeTypeEnum;
+	/// <summary>
+	/// <inheritdoc cref="Package.ScopeTypeEnumMetaClass" path="/summary" />
+	/// </summary>
+	public Package.ScopeTypeEnumMetaClass ScopeTypeEnum => _ScopeTypeEnum ?? (_ScopeTypeEnum = new Package.ScopeTypeEnumMetaClass());
+
+	private Package.ExceptionCodeEnumMetaClass _ExceptionCodeEnum;
+	/// <summary>
+	/// <inheritdoc cref="Package.ExceptionCodeEnumMetaClass" path="/summary" />
+	/// </summary>
+	public Package.ExceptionCodeEnumMetaClass ExceptionCodeEnum => _ExceptionCodeEnum ?? (_ExceptionCodeEnum = new Package.ExceptionCodeEnumMetaClass());
+
+	private Package.SeverityEnumMetaClass _SeverityEnum;
+	/// <summary>
+	/// <inheritdoc cref="Package.SeverityEnumMetaClass" path="/summary" />
+	/// </summary>
+	public Package.SeverityEnumMetaClass SeverityEnum => _SeverityEnum ?? (_SeverityEnum = new Package.SeverityEnumMetaClass());
 
 	#endregion
 	}

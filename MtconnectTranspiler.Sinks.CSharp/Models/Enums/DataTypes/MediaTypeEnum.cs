@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public enum MediaTypeEnum
 	{
 		/// <summary>﻿ISO 10303 STEP AP203 or AP242 format.<br /><br /><br />
@@ -99,12 +99,21 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		X_T,
+		/// <summary>﻿provides the 3D geometric boundary representation used to associate with product information.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+		/// </list>
+		/// </remarks>
+
+		QIF_MBD,
 	}
 
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1605297694306_501792_610">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class MediaTypeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="MediaTypeEnumMetaClass.ReferenceId" /></summary>
@@ -155,6 +164,7 @@ namespace Mtconnect.DataTypes
 		_3DS,
 		ACIS,
 		X_T,
+		QIF_MBD,
 		};
 
 		private STEPValue _STEP;
@@ -509,6 +519,47 @@ namespace Mtconnect.DataTypes
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="X_TValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;Parasolid XT Siemens data interchange format.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private QIF_MBDValue _QIF_MBD;
+		/// <inheritdoc cref="QIF_MBDValue" path="/summary" />
+		public QIF_MBDValue QIF_MBD => _QIF_MBD ?? (_QIF_MBD = new QIF_MBDValue());
+
+		/// <summary>﻿provides the 3D geometric boundary representation used to associate with product information.<br /><br /><br />
+		/// Value for MediaTypeEnum.<br/>
+		/// <br/>See also <seealso cref="MediaTypeEnum">MediaTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class QIF_MBDValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="QIF_MBDValue.Name" /></summary>
+			public const string NAME = "QIF_MBD";
+			/// <summary>Constant value for <see cref="QIF_MBDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.6";
+			/// <summary>Constant value for <see cref="QIF_MBDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="QIF_MBDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;provides the 3D geometric boundary representation used to associate with product information.&#10;
 ";
 
 			/// <inheritdoc />

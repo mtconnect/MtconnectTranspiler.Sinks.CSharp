@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375171_197977_2034">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class DeviceClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DeviceClass.ReferenceId" /></summary>

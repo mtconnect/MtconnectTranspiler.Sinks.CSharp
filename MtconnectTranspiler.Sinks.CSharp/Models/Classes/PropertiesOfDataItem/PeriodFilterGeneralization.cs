@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class PeriodFilterGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="PeriodFilterGeneralization.ReferenceId" /></summary>

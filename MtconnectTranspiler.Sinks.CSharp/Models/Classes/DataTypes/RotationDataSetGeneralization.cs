@@ -18,7 +18,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class RotationDataSetGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="RotationDataSetGeneralization.ReferenceId" /></summary>
@@ -79,42 +79,42 @@ namespace Mtconnect.DataTypes
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {
-				X,
-				Y,
-				Z,
+				A,
+				B,
+				C,
 			}.Concat(base.Properties).ToArray();
 			/// <summary>
-			/// <inheritdoc cref="XProperty" path="/summary" /><br/>
-			/// <remarks>Original Name: X</remarks>
+			/// <inheritdoc cref="AProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: A</remarks>
 			/// </summary>
-			public new XProperty X { get; } = new XProperty();
+			public new AProperty A { get; } = new AProperty();
 			
 			/// <summary>﻿rotation about X axis.<br /><br /><br />
 			/// </summary>
-			public new sealed class XProperty : IProperty
+			public new sealed class AProperty : IProperty
 			{
-				/// <summary>Constant value for <see cref="XProperty.Name" /></summary>
-				public const string NAME = "X";
-				/// <summary>Constant value for <see cref="XProperty.Summary" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.Name" /></summary>
+				public const string NAME = "A";
+				/// <summary>Constant value for <see cref="AProperty.Summary" /></summary>
 				public const string SUMMARY = @"&#10;&#10;&#10;rotation about X axis.&#10;
 ";
-				/// <summary>Constant value for <see cref="XProperty.AccessModifier" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.AccessModifier" /></summary>
 				public const string ACCESS_MODIFIER = "public";
-				/// <summary>Constant value for <see cref="XProperty.Modifier" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
-				/// <summary>Constant value for <see cref="XProperty.NormativeVersion" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.NormativeVersion" /></summary>
 				public const string NORMATIVE_VERSION = "2.5";
-				/// <summary>Constant value for <see cref="XProperty.DeprecatedVersion" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
-				/// <summary>Constant value for <see cref="XProperty.Aggregation" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
-				/// <summary>Constant value for <see cref="XProperty.Extension" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.Extension" /></summary>
 				public const string EXTENSION = "MagicDraw UML 2024x";
-				/// <summary>Constant value for <see cref="XProperty.Association" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
-				/// <summary>Constant value for <see cref="XProperty.DefaultValue" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
-				/// <summary>Constant value for <see cref="XProperty.Multiplicity" /></summary>
+				/// <summary>Constant value for <see cref="AProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
@@ -159,37 +159,37 @@ namespace Mtconnect.DataTypes
 				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
-			/// <inheritdoc cref="YProperty" path="/summary" /><br/>
-			/// <remarks>Original Name: Y</remarks>
+			/// <inheritdoc cref="BProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: B</remarks>
 			/// </summary>
-			public new YProperty Y { get; } = new YProperty();
+			public new BProperty B { get; } = new BProperty();
 			
 			/// <summary>﻿rotation about Y axis.<br /><br /><br />
 			/// </summary>
-			public new sealed class YProperty : IProperty
+			public new sealed class BProperty : IProperty
 			{
-				/// <summary>Constant value for <see cref="YProperty.Name" /></summary>
-				public const string NAME = "Y";
-				/// <summary>Constant value for <see cref="YProperty.Summary" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.Name" /></summary>
+				public const string NAME = "B";
+				/// <summary>Constant value for <see cref="BProperty.Summary" /></summary>
 				public const string SUMMARY = @"&#10;&#10;&#10;rotation about Y axis.&#10;
 ";
-				/// <summary>Constant value for <see cref="YProperty.AccessModifier" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.AccessModifier" /></summary>
 				public const string ACCESS_MODIFIER = "public";
-				/// <summary>Constant value for <see cref="YProperty.Modifier" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
-				/// <summary>Constant value for <see cref="YProperty.NormativeVersion" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.NormativeVersion" /></summary>
 				public const string NORMATIVE_VERSION = "2.5";
-				/// <summary>Constant value for <see cref="YProperty.DeprecatedVersion" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
-				/// <summary>Constant value for <see cref="YProperty.Aggregation" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
-				/// <summary>Constant value for <see cref="YProperty.Extension" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.Extension" /></summary>
 				public const string EXTENSION = "MagicDraw UML 2024x";
-				/// <summary>Constant value for <see cref="YProperty.Association" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
-				/// <summary>Constant value for <see cref="YProperty.DefaultValue" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
-				/// <summary>Constant value for <see cref="YProperty.Multiplicity" /></summary>
+				/// <summary>Constant value for <see cref="BProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
@@ -234,37 +234,37 @@ namespace Mtconnect.DataTypes
 				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
-			/// <inheritdoc cref="ZProperty" path="/summary" /><br/>
-			/// <remarks>Original Name: Z</remarks>
+			/// <inheritdoc cref="CProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: C</remarks>
 			/// </summary>
-			public new ZProperty Z { get; } = new ZProperty();
+			public new CProperty C { get; } = new CProperty();
 			
 			/// <summary>﻿rotation about Z axis.<br /><br /><br />
 			/// </summary>
-			public new sealed class ZProperty : IProperty
+			public new sealed class CProperty : IProperty
 			{
-				/// <summary>Constant value for <see cref="ZProperty.Name" /></summary>
-				public const string NAME = "Z";
-				/// <summary>Constant value for <see cref="ZProperty.Summary" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.Name" /></summary>
+				public const string NAME = "C";
+				/// <summary>Constant value for <see cref="CProperty.Summary" /></summary>
 				public const string SUMMARY = @"&#10;&#10;&#10;rotation about Z axis.&#10;
 ";
-				/// <summary>Constant value for <see cref="ZProperty.AccessModifier" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.AccessModifier" /></summary>
 				public const string ACCESS_MODIFIER = "public";
-				/// <summary>Constant value for <see cref="ZProperty.Modifier" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
-				/// <summary>Constant value for <see cref="ZProperty.NormativeVersion" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.NormativeVersion" /></summary>
 				public const string NORMATIVE_VERSION = "2.5";
-				/// <summary>Constant value for <see cref="ZProperty.DeprecatedVersion" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
-				/// <summary>Constant value for <see cref="ZProperty.Aggregation" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
-				/// <summary>Constant value for <see cref="ZProperty.Extension" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.Extension" /></summary>
 				public const string EXTENSION = "MagicDraw UML 2024x";
-				/// <summary>Constant value for <see cref="ZProperty.Association" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
-				/// <summary>Constant value for <see cref="ZProperty.DefaultValue" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
-				/// <summary>Constant value for <see cref="ZProperty.Multiplicity" /></summary>
+				/// <summary>Constant value for <see cref="CProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>

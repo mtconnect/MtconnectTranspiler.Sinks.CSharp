@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class PathFeedratePerRevolutionProgrammedClass : IClass
 	{
 		/// <summary>Constant value for <see cref="PathFeedratePerRevolutionProgrammedClass.ReferenceId" /></summary>

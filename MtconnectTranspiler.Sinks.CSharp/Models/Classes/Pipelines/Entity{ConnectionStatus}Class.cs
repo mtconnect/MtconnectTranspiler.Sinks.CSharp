@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1673982843542_426445_629">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class Entity_ConnectionStatus_Class : IClass
 	{
 		/// <summary>Constant value for <see cref="Entity_ConnectionStatus_Class.ReferenceId" /></summary>

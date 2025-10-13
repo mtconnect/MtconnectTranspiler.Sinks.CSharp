@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Compositions
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class CompositionClass : IClass
 	{
 		/// <summary>Constant value for <see cref="CompositionClass.ReferenceId" /></summary>

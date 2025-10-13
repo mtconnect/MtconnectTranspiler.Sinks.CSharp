@@ -11,7 +11,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <summary>﻿This section provides semantic information for <see cref="Event">Event</see> types.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309852285_621670_44358">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public class EventTypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="EventTypesPackage.ReferenceId" /></summary>
@@ -371,6 +371,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			ThicknessProgrammedClass,
 			LocationSpatialGeographicClass,
 			PartIndexClass,
+			AssociatedAssetIdClass,
+			AssetAddedClass,
 		};
 		
 		/// <inheritdoc />
@@ -2354,6 +2356,18 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <inheritdoc cref="Package.PartIndexClass" path="/summary" />
 	/// </summary>
 	public Package.PartIndexClass PartIndexClass => _PartIndexClass ?? (_PartIndexClass = new Package.PartIndexClass());
+
+	private Package.AssociatedAssetIdClass _AssociatedAssetIdClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AssociatedAssetIdClass" path="/summary" />
+	/// </summary>
+	public Package.AssociatedAssetIdClass AssociatedAssetIdClass => _AssociatedAssetIdClass ?? (_AssociatedAssetIdClass = new Package.AssociatedAssetIdClass());
+
+	private Package.AssetAddedClass _AssetAddedClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AssetAddedClass" path="/summary" />
+	/// </summary>
+	public Package.AssetAddedClass AssetAddedClass => _AssetAddedClass ?? (_AssetAddedClass = new Package.AssetAddedClass());
 
 	#endregion
 

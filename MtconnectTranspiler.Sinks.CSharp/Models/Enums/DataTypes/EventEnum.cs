@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public enum EventEnum
 	{
 		/// <summary>﻿set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br /><br /><br />
@@ -45,7 +45,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		ALARM,
-		/// <summary>﻿<see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br /><br /><br />
+		/// <summary>﻿<see cref="Asset.assetId">assetId in Asset</see> of the <see cref="Asset">Asset</see> that has been changed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -54,7 +54,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		ASSET_CHANGED,
-		/// <summary>﻿<see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br /><br /><br />
+		/// <summary>﻿<see cref="Asset.assetId">assetId in Asset</see> of the <see cref="Asset">Asset</see> that has been removed.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -1260,12 +1260,30 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		PART_INDEX,
+		/// <summary>﻿<see cref="Asset.assetId">assetId in Asset</see> of the <see cref="Asset">Asset</see>s associated with a <see cref="Component">Component</see>.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		ASSOCIATED_ASSET_ID,
+		/// <summary>﻿<see cref="Asset.assetId">assetId in Asset</see> of the <see cref="Asset">Asset</see> that has been added.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		ASSET_ADDED,
 	}
 
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398379726_606068_12802">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.5.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
 	public sealed class EventEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="EventEnumMetaClass.ReferenceId" /></summary>
@@ -1445,6 +1463,8 @@ namespace Mtconnect.DataTypes
 		THICKNESS,
 		LOCATION_SPATIAL_GEOGRAPHIC,
 		PART_INDEX,
+		ASSOCIATED_ASSET_ID,
+		ASSET_ADDED,
 		};
 
 		private ACTIVE_AXESValue _ACTIVE_AXES;
@@ -1574,7 +1594,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="ASSET_CHANGEDValue" path="/summary" />
 		public ASSET_CHANGEDValue ASSET_CHANGED => _ASSET_CHANGED ?? (_ASSET_CHANGED = new ASSET_CHANGEDValue());
 
-		/// <summary>﻿<see cref="assetId">assetId</see> of the <i>Asset</i> that has been added or changed.<br /><br /><br />
+		/// <summary>﻿<see cref="Asset.assetId">assetId in Asset</see> of the <see cref="Asset">Asset</see> that has been changed.<br /><br /><br />
 		/// Value for EventEnum.<br/>
 		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
@@ -1593,7 +1613,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="ASSET_CHANGEDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="ASSET_CHANGEDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;{{block(assetId)}} of the {{term(Asset)}} that has been added or changed.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;{{property(Asset::assetId)}} of the {{block(Asset)}} that has been changed.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1615,7 +1635,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="ASSET_REMOVEDValue" path="/summary" />
 		public ASSET_REMOVEDValue ASSET_REMOVED => _ASSET_REMOVED ?? (_ASSET_REMOVED = new ASSET_REMOVEDValue());
 
-		/// <summary>﻿<see cref="assetId">assetId</see> of the <i>Asset</i> that has been removed.<br /><br /><br />
+		/// <summary>﻿<see cref="Asset.assetId">assetId in Asset</see> of the <see cref="Asset">Asset</see> that has been removed.<br /><br /><br />
 		/// Value for EventEnum.<br/>
 		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
 		/// </summary>
@@ -1634,7 +1654,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="ASSET_REMOVEDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="ASSET_REMOVEDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;{{block(assetId)}} of the {{term(Asset)}} that has been removed.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;{{property(Asset::assetId)}} of the {{block(Asset)}} that has been removed.&#10;
 ";
 
 			/// <inheritdoc />
@@ -7114,6 +7134,88 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PART_INDEXValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;sequence of a part in a group of parts.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private ASSOCIATED_ASSET_IDValue _ASSOCIATED_ASSET_ID;
+		/// <inheritdoc cref="ASSOCIATED_ASSET_IDValue" path="/summary" />
+		public ASSOCIATED_ASSET_IDValue ASSOCIATED_ASSET_ID => _ASSOCIATED_ASSET_ID ?? (_ASSOCIATED_ASSET_ID = new ASSOCIATED_ASSET_IDValue());
+
+		/// <summary>﻿<see cref="Asset.assetId">assetId in Asset</see> of the <see cref="Asset">Asset</see>s associated with a <see cref="Component">Component</see>.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class ASSOCIATED_ASSET_IDValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="ASSOCIATED_ASSET_IDValue.Name" /></summary>
+			public const string NAME = "ASSOCIATED_ASSET_ID";
+			/// <summary>Constant value for <see cref="ASSOCIATED_ASSET_IDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.6";
+			/// <summary>Constant value for <see cref="ASSOCIATED_ASSET_IDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="ASSOCIATED_ASSET_IDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;{{property(Asset::assetId)}} of the {{block(Asset)}}s associated with a {{block(Component)}}.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private ASSET_ADDEDValue _ASSET_ADDED;
+		/// <inheritdoc cref="ASSET_ADDEDValue" path="/summary" />
+		public ASSET_ADDEDValue ASSET_ADDED => _ASSET_ADDED ?? (_ASSET_ADDED = new ASSET_ADDEDValue());
+
+		/// <summary>﻿<see cref="Asset.assetId">assetId in Asset</see> of the <see cref="Asset">Asset</see> that has been added.<br /><br /><br />
+		/// Value for EventEnum.<br/>
+		/// <br/>See also <seealso cref="EventEnum">EventEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class ASSET_ADDEDValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="ASSET_ADDEDValue.Name" /></summary>
+			public const string NAME = "ASSET_ADDED";
+			/// <summary>Constant value for <see cref="ASSET_ADDEDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.6";
+			/// <summary>Constant value for <see cref="ASSET_ADDEDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="ASSET_ADDEDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;{{property(Asset::assetId)}} of the {{block(Asset)}} that has been added.&#10;
 ";
 
 			/// <inheritdoc />
