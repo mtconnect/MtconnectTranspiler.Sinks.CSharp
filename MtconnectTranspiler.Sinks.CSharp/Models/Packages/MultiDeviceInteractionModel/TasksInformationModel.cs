@@ -46,6 +46,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel
 			TaskClass,
 			PriorityClass,
 			CapabilityClass,
+			SubTaskRefClass,
 		};
 		
 		/// <inheritdoc />
@@ -89,6 +90,12 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel
 	/// <inheritdoc cref="Package.CapabilityClass" path="/summary" />
 	/// </summary>
 	public Package.CapabilityClass CapabilityClass => _CapabilityClass ?? (_CapabilityClass = new Package.CapabilityClass());
+
+	private Package.SubTaskRefClass _SubTaskRefClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.SubTaskRefClass" path="/summary" />
+	/// </summary>
+	public Package.SubTaskRefClass SubTaskRefClass => _SubTaskRefClass ?? (_SubTaskRefClass = new Package.SubTaskRefClass());
 
 	#endregion
 

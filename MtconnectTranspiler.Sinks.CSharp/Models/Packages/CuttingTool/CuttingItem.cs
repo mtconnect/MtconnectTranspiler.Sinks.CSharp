@@ -51,6 +51,7 @@ MTConnect Standard considers {{block(CuttingItems)}} as part of the {{block(Cutt
 		public IClass[] Classes => new IClass[] {
 			CuttingItemClass,
 			ItemLifeClass,
+			CuttingItemsClass,
 		};
 		
 		/// <inheritdoc />
@@ -78,6 +79,12 @@ MTConnect Standard considers {{block(CuttingItems)}} as part of the {{block(Cutt
 	/// <inheritdoc cref="Package.ItemLifeClass" path="/summary" />
 	/// </summary>
 	public Package.ItemLifeClass ItemLifeClass => _ItemLifeClass ?? (_ItemLifeClass = new Package.ItemLifeClass());
+
+	private Package.CuttingItemsClass _CuttingItemsClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.CuttingItemsClass" path="/summary" />
+	/// </summary>
+	public Package.CuttingItemsClass CuttingItemsClass => _CuttingItemsClass ?? (_CuttingItemsClass = new Package.CuttingItemsClass());
 
 	#endregion
 
