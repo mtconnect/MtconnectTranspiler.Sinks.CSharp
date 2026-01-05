@@ -100,7 +100,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				/// <summary>Constant value for <see cref="AngleProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AngleProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "0";
 				/// <summary>Constant value for <see cref="AngleProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 

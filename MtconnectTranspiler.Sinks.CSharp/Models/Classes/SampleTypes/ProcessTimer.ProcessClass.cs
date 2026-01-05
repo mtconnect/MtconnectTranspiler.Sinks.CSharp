@@ -114,7 +114,7 @@ This includes the time that the piece of equipment is running, producing parts o
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "PROCESS";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 

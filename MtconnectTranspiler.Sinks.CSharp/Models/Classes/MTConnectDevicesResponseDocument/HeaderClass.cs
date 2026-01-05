@@ -589,7 +589,7 @@ If {{property(Header::testIndicator)}} is not specified, the value for {{propert
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "false";
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 
@@ -1119,7 +1119,7 @@ If the {{term(streaming data)}} included in the {{term(response document)}} incl
 				/// <summary>Constant value for <see cref="ValidationProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValidationProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "false";
 				/// <summary>Constant value for <see cref="ValidationProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 

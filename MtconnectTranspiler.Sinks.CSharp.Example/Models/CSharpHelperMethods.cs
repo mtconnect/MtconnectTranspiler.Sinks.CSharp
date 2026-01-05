@@ -3,6 +3,7 @@ using System;
 using MtconnectTranspiler.Xmi.UML;
 using MtconnectTranspiler.Contracts;
 using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
+using System.Diagnostics;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
@@ -91,6 +92,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                                 return "float[]";
                             case "binary":
                                 return "bool";
+                            case "UUID":
+                                return "string";
                             default:
                                 break;
                         }
@@ -104,6 +107,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                     case UmlEnumerationLiteral umlEnumerationLiteral:
                         return umlEnumerationLiteral.Name;
                     default:
+                        Debug.WriteLine("Unhandled type deep search for property type: " + _remote.GetType().Name);
                         break;
                 }
             }

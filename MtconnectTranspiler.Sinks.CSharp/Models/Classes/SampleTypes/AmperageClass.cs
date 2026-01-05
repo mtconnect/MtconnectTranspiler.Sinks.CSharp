@@ -114,7 +114,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "AMPERE";
 				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 

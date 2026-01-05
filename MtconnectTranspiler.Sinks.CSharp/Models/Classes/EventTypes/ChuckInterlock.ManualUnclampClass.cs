@@ -113,7 +113,7 @@ When {{block(ChuckInterlockManualUnclamp)}} is `ACTIVE`, it is expected that a c
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "MANUAL_UNCLAMP";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 

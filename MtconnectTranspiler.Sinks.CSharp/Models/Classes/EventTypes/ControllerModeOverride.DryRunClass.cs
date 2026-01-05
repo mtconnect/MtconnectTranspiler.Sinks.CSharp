@@ -113,7 +113,7 @@ When `DRY_RUN` is `ON`, the equipment performs all of its normal functions, exce
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "DRY_RUN";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 

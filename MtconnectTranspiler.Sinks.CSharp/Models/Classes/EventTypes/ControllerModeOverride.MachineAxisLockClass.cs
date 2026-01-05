@@ -113,7 +113,7 @@ When `MACHINE_AXIS_LOCK` is `ON`, program execution continues normally, but no e
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "MACHINE_AXIS_LOCK";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 

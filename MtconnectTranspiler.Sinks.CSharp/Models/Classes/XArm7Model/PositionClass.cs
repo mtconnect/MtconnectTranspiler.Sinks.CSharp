@@ -105,7 +105,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				/// <summary>Constant value for <see cref="XProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="XProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "0";
 				/// <summary>Constant value for <see cref="XProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 
@@ -179,7 +179,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				/// <summary>Constant value for <see cref="YProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="YProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "0";
 				/// <summary>Constant value for <see cref="YProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 
@@ -253,7 +253,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				/// <summary>Constant value for <see cref="ZProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ZProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "0";
 				/// <summary>Constant value for <see cref="ZProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 
@@ -327,7 +327,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				/// <summary>Constant value for <see cref="AProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "0";
 				/// <summary>Constant value for <see cref="AProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 
@@ -401,7 +401,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				/// <summary>Constant value for <see cref="BProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="BProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "0";
 				/// <summary>Constant value for <see cref="BProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 
@@ -475,7 +475,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				/// <summary>Constant value for <see cref="CProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "0";
 				/// <summary>Constant value for <see cref="CProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 

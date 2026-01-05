@@ -115,7 +115,7 @@ Program execution is paused when a command is executed requesting a cutting tool
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "TOOL_CHANGE_STOP";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 
