@@ -94,6 +94,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 else if (source.DefaultValue is UmlLiteralString stringValue)
                 {
                     DefaultValue = stringValue.Value;
+                    if (DefaultValue.StartsWith("\"") && DefaultValue.EndsWith("\""))
+                    {
+                        // Already quoted
+                        DefaultValue = DefaultValue.Remove(DefaultValue.Length - 1, 1).Remove(0, 1);
+                    }
                 } else if (source.DefaultValue is UmlLiteralReal realValue)
                 {
                     DefaultValue = realValue.Value.GetValueOrDefault().ToString();
