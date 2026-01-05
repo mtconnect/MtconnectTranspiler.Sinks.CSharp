@@ -107,7 +107,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = ""Message"";
+				public const string DEFAULT_VALUE = "Message";
 				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "";
 
