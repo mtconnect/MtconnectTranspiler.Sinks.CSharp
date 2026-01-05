@@ -83,6 +83,21 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 {
                     DefaultValue = CSharpHelperMethods.TypeDeepSearch(model, instanceValue.Instance, out XmiElement instanceType);
                 }
+                else if (source.DefaultValue is UmlLiteralBoolean booleanValue)
+                {
+                    DefaultValue = booleanValue.Value.ToString().ToLower();
+                }
+                else if (source.DefaultValue is UmlLiteralInteger integerValue)
+                {
+                    DefaultValue = integerValue.Value.ToString();
+                }
+                else if (source.DefaultValue is UmlLiteralString stringValue)
+                {
+                    DefaultValue = $"\"{stringValue.Value}\"";
+                } else if (source.DefaultValue is UmlLiteralReal realValue)
+                {
+                    DefaultValue = realValue.Value.ToString();
+                }
                 else if (!string.IsNullOrEmpty(source.DefaultValue?.Name))
                 {
                     DefaultValue = source.DefaultValue?.Name;
