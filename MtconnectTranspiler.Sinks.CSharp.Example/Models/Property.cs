@@ -77,12 +77,16 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             if (extensions != null && extensions.Any())
                 Extension = string.Join(";", extensions);
             Association = CSharpHelperMethods.TypeDeepSearch(model, source.Association, out remoteType);
-            if (source.DefaultValue is UmlInstanceValue instanceValue)
+            if (source.DefaultValue != null)
             {
-                DefaultValue = CSharpHelperMethods.TypeDeepSearch(model, instanceValue.Instance, out XmiElement instanceType);
-            } else
-            {
-                DefaultValue = source.DefaultValue?.Name;
+                if (source.DefaultValue is UmlInstanceValue instanceValue)
+                {
+                    DefaultValue = CSharpHelperMethods.TypeDeepSearch(model, instanceValue.Instance, out XmiElement instanceType);
+                }
+                else if (!string.IsNullOrEmpty(source.DefaultValue?.Name))
+                {
+                    DefaultValue = source.DefaultValue?.Name;
+                }
             }
 
             var lowerValueExtension = source.LowerValue

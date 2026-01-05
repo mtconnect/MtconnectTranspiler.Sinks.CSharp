@@ -590,9 +590,9 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: Object </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
-				public System.Type Type => typeof(object);
+				public System.Type Type => typeof(string);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
