@@ -856,7 +856,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "true";
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "1";
 
@@ -1169,7 +1169,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="DeprecatedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeprecatedProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "false";
 				/// <summary>Constant value for <see cref="DeprecatedProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 
@@ -1244,7 +1244,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="ExtendedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ExtendedProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "false";
 				/// <summary>Constant value for <see cref="ExtendedProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 

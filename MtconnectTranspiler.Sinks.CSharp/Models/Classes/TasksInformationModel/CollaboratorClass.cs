@@ -326,7 +326,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="OptionalProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OptionalProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "false";
 				/// <summary>Constant value for <see cref="OptionalProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 

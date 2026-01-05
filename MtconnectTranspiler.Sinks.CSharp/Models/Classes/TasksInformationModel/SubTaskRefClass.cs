@@ -253,7 +253,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="ParallelProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ParallelProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "false";
 				/// <summary>Constant value for <see cref="ParallelProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 
@@ -475,7 +475,7 @@ namespace Mtconnect.InterfaceInteractionModel.MultiDeviceInteractionModel.TasksI
 				/// <summary>Constant value for <see cref="OptionalProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OptionalProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "false";
 				/// <summary>Constant value for <see cref="OptionalProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "0..1";
 

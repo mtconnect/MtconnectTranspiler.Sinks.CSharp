@@ -85,18 +85,18 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                 }
                 else if (source.DefaultValue is UmlLiteralBoolean booleanValue)
                 {
-                    DefaultValue = booleanValue.Value.ToString().ToLower();
+                    DefaultValue = booleanValue.Value.GetValueOrDefault().ToString().ToLower();
                 }
                 else if (source.DefaultValue is UmlLiteralInteger integerValue)
                 {
-                    DefaultValue = integerValue.Value.ToString();
+                    DefaultValue = integerValue.Value.GetValueOrDefault().ToString();
                 }
                 else if (source.DefaultValue is UmlLiteralString stringValue)
                 {
-                    DefaultValue = $"\"{stringValue.Value}\"";
+                    DefaultValue = stringValue.Value;
                 } else if (source.DefaultValue is UmlLiteralReal realValue)
                 {
-                    DefaultValue = realValue.Value.ToString();
+                    DefaultValue = realValue.Value.GetValueOrDefault().ToString();
                 }
                 else if (!string.IsNullOrEmpty(source.DefaultValue?.Name))
                 {

@@ -115,7 +115,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				/// <summary>Constant value for <see cref="CategoryProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CategoryProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "SAMPLE";
 				/// <summary>Constant value for <see cref="CategoryProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "1";
 

@@ -360,7 +360,7 @@ If a value is not defined for {{property(DataItem::discrete)}}, the default valu
 				/// <summary>Constant value for <see cref="DiscreteProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DiscreteProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "false";
 				/// <summary>Constant value for <see cref="DiscreteProperty.Multiplicity" /></summary>
 				public const string MULTIPLICITY = "1";
 
