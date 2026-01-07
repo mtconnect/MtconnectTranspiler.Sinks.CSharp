@@ -90,7 +90,13 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                         .Select(o => o as UmlClass)
                         .ToList();
                     if (classExtensions.Count > 0)
-                        AddRange(model, classExtensions);
+                    {
+                        foreach (var classExtension in classExtensions)
+                        {
+                            var pseudoClassEnum = new CSharpEnum(model, classExtension);
+                            AddRange(model, pseudoClassEnum.Items);
+                        }
+                    }
 
                     // Add any extending enumerations
                     var enumExtensions = extensions
@@ -98,7 +104,13 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
                         .Select(o => o as UmlEnumeration)
                         .ToList();
                     if (enumExtensions.Count > 0)
-                        AddRange(model, enumExtensions);
+                    {
+                        foreach (var enumExtension in enumExtensions)
+                        {
+                            var pseudoEnum = new CSharpEnum(model, enumExtension);
+                            AddRange(model, pseudoEnum.Items);
+                        }
+                    }
 
                     if (enumExtensions.Count + classExtensions.Count < extensions.Length)
                         Debug.WriteLine($"Unhandled extension types for enumeration {source.Name}");
@@ -202,6 +214,20 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             foreach (var item in arr)
             {
                 Add(model, item);
+            }
+        }
+
+        /// <inheritdoc cref="AddRange(XmiDocument, IEnumerable{EnumItem})"/>
+        public void AddRange(XmiDocument model, IEnumerable<EnumItem> items)
+        {
+            if (items == null) return;
+
+            var arr = items.ToArray();
+            if (arr.Length <= 0) return;
+
+            foreach (var item in arr)
+            {
+                Add(item);
             }
         }
     }
