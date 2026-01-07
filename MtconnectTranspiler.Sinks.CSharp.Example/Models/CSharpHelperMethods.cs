@@ -66,6 +66,52 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             return ToPrimitiveType(umlDataType);
         }
 
+        public static IXmiElement[] FindGenericElements(Xmi.XmiDocument model, string genericTypeId)
+        {
+            var generics = new List<IXmiElement>();
+
+            foreach (var profile in model.Model.Profiles)
+            {
+                foreach (var package in profile.Packages)
+                {
+                    var profilePackageElements = FindGenericElements(model, genericTypeId, package);
+                    if (profilePackageElements.Length > 0)
+                        generics.AddRange(profilePackageElements);
+                }
+            }
+
+            // Search Packages
+            foreach (var package in model.Model.Packages)
+            {
+                var packageElements = FindGenericElements(model, genericTypeId, package);
+                if (packageElements.Length > 0)
+                    generics.AddRange(packageElements);
+            }
+
+            return generics.ToArray();
+        }
+        private static IXmiElement[] FindGenericElements(Xmi.XmiDocument model, string genericTypeId, UmlPackage package)
+        {
+            var generics = new List<IXmiElement>();
+            // Search Packages
+            foreach (var pkg in package.Packages)
+            {
+                generics.AddRange(FindGenericElements(model, genericTypeId, pkg));
+            }
+            // Search Classes
+            foreach (var cls in package.Classes)
+            {
+                if (cls.Generalization?.General == genericTypeId)
+                    generics.Add(cls);
+            }
+            // Search Enumerations
+            foreach (var enm in package.Enumerations)
+            {
+                if (enm.Generalization?.Any(o => o.General == genericTypeId) == true)
+                    generics.Add(enm);
+            }
+            return generics.ToArray();
+        }
 
         public static string? TypeDeepSearch(Xmi.XmiDocument model, string propertyType, out Xmi.XmiElement? remoteType)
         {

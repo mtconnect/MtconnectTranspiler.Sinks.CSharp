@@ -3,6 +3,7 @@ using MtconnectTranspiler.CodeGenerators.ScribanTemplates;
 using MtconnectTranspiler.Sinks.CSharp.Example;
 using MtconnectTranspiler.Xmi;
 using MtconnectTranspiler.Xmi.UML;
+using System.Diagnostics;
 
 namespace MtconnectTranspiler.Sinks.CSharp.Models
 {
@@ -73,6 +74,36 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         public CSharpEnum(XmiDocument model, UmlEnumeration source) : this(model, source, source.Name)
         {
             AddRange(model, source.Items);
+
+            // Check for abstract modifier
+            if (source.IsAbstract)
+            {
+                Modifier = "abstract";
+
+                // Look for extensions to this enumeration
+                var extensions = CSharpHelperMethods.FindGenericElements(model, source.Id);
+                if (extensions.Length > 0)
+                {
+                    // Add any extending classes
+                    var classExtensions = extensions
+                        .Where(o => o is UmlClass)
+                        .Select(o => o as UmlClass)
+                        .ToList();
+                    if (classExtensions.Count > 0)
+                        AddRange(model, classExtensions);
+
+                    // Add any extending enumerations
+                    var enumExtensions = extensions
+                        .Where(o => o is UmlEnumeration)
+                        .Select(o => o as UmlEnumeration)
+                        .ToList();
+                    if (enumExtensions.Count > 0)
+                        AddRange(model, enumExtensions);
+
+                    if (enumExtensions.Count + classExtensions.Count < extensions.Length)
+                        Debug.WriteLine($"Unhandled extension types for enumeration {source.Name}");
+                }
+            }
         }
 
         /// <summary>
@@ -107,7 +138,8 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// <param name="item">Reference to <see cref="EnumItem"/> to add to the internal list</param>
         public void Add(EnumItem item)
         {
-            item.Namespace = $"{this.Namespace}.{this.Name}";
+            if (!Modifier.Equals("abstract", StringComparison.OrdinalIgnoreCase))
+                item.Namespace = $"{this.Namespace}.{this.Name}";
             _items.Add(item);
         }
 
