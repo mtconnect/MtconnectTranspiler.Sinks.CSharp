@@ -163,6 +163,14 @@ See {{package(Cutting Tool Measurement Subtypes)}} and {{package(Cutting Item Me
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ToolingMeasurementGeneralization" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

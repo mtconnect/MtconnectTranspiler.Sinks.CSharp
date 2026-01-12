@@ -1975,7 +1975,7 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
 		/// <summary>
 		/// List of constraint rules for <see cref="DataItemClass" />.

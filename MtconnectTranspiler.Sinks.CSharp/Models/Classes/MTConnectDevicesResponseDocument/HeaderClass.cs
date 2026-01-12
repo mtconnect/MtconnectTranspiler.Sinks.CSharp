@@ -1165,7 +1165,7 @@ If the {{term(streaming data)}} included in the {{term(response document)}} incl
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
 		/// <summary>
 		/// List of constraint rules for <see cref="HeaderClass" />.

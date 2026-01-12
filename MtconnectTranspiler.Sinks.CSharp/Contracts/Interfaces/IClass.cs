@@ -58,5 +58,10 @@ namespace MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces
         /// Concatenation of all Comments.
         /// </summary>
         string Summary { get; }
+
+        /// <summary>
+        /// Collection of constraint rules defined for the SysML class entity.
+        /// </summary>
+        string[] Rules { get; }
     }
 }

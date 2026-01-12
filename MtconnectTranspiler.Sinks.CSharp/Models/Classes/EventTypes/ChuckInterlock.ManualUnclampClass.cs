@@ -159,6 +159,14 @@ When {{block(ChuckInterlockManualUnclamp)}} is `ACTIVE`, it is expected that a c
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ChuckInterlockManualUnclampClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

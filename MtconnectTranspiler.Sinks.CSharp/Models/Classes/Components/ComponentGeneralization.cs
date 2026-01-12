@@ -1305,7 +1305,7 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
 		/// <summary>
 		/// List of constraint rules for <see cref="ComponentGeneralization" />.

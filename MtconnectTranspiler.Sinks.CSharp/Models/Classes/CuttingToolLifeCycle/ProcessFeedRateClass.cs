@@ -382,6 +382,14 @@ The {{property(ProcessFeedRate::value)}} **MAY** contain the nominal process tar
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ProcessFeedRateClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

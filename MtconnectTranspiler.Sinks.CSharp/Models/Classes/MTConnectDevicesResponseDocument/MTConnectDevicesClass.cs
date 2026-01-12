@@ -231,7 +231,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
 		/// <summary>
 		/// List of constraint rules for <see cref="MTConnectDevicesClass" />.

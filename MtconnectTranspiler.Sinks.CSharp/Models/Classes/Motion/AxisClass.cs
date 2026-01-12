@@ -152,7 +152,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
 		/// <summary>
 		/// List of constraint rules for <see cref="AxisClass" />.

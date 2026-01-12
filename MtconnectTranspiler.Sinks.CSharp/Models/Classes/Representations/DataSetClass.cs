@@ -270,6 +270,14 @@ When the {{block(Observation)}}  is `UNAVAILABLE` the {{block(DataSet)}} **MUST*
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="DataSetClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

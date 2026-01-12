@@ -157,6 +157,14 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="MotionProgramClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

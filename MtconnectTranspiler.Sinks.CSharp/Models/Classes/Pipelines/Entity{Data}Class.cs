@@ -226,6 +226,14 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="Entity_Data_Class" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

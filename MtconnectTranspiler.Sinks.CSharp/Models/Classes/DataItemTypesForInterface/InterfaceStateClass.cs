@@ -234,6 +234,14 @@ When the {{block(InterfaceState)}} is `DISABLED`, the state of all data items th
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="InterfaceStateClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

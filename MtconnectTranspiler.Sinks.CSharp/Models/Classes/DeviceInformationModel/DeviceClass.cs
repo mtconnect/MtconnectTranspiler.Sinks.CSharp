@@ -1447,7 +1447,7 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
 		/// <summary>
 		/// List of constraint rules for <see cref="DeviceClass" />.

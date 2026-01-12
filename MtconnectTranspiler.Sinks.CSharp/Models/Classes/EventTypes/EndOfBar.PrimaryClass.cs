@@ -161,6 +161,14 @@ If no {{block(subType)}} is specified, {{block(PRIMARY)}} **MUST** be the defaul
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="EndOfBarPrimaryClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }
