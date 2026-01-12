@@ -760,8 +760,14 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ComponentStreamClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			ComponentStream1,
+		};
 		/// <summary>
 		/// ComponentStream1
 		/// </summary>

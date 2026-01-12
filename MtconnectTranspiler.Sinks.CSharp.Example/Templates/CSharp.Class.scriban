@@ -204,9 +204,21 @@ namespace {{ to_code_safe source.namespace }}
 			}
 		{{~ end ~}}
 		};
-
-		{{~ if source.constraints.size > 0 ~}}
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="{{ code_name }}" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+		{{~ if source.constraints.size > 0 ~}}
+		{{~ for constraint in source.constraints ~}}
+			{{ constraint.name }},
+		{{~ end ~}}
+		{{~ else ~}}
+			// No Constraints
+		{{~ end ~}}
+		};
+		{{~ if source.constraints.size > 0 ~}}
 	{{~ for constraint in source.constraints ~}}
 		/// <summary>
 		/// {{ constraint.name }}
@@ -217,7 +229,7 @@ namespace {{ to_code_safe source.namespace }}
 		{{ constraint?.raw_script ?? "No Content" }}
 		*/
 	{{~ end ~}}
-		# endregion
 		{{~ end ~}}
+		# endregion
 	}
 }

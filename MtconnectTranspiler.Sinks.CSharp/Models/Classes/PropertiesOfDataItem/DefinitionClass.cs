@@ -303,6 +303,14 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="DefinitionClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

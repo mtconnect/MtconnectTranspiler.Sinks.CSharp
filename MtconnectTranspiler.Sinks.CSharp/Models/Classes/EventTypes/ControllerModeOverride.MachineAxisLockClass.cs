@@ -159,6 +159,14 @@ When `MACHINE_AXIS_LOCK` is `ON`, program execution continues normally, but no e
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ControllerModeOverrideMachineAxisLockClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

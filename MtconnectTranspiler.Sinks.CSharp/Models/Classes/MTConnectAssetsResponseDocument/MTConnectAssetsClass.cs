@@ -231,6 +231,14 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="MTConnectAssetsClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

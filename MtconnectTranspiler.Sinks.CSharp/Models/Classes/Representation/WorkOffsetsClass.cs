@@ -152,6 +152,14 @@ namespace Mtconnect.WIP_DeviceExamples.MillW_PER_SmoothG.Representation
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="WorkOffsetsClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

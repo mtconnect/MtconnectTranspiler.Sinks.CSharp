@@ -907,6 +907,14 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="CuttingToolLifeCycleClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -617,8 +617,15 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="AgentClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			SufficientObservationSpace,
+			SufficientAssetSpace,
+		};
 		/// <summary>
 		/// SufficientObservationSpace
 		/// </summary>
