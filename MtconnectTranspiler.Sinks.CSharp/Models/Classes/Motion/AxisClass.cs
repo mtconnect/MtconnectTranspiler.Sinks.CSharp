@@ -155,6 +155,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 
 		# region Rules
 		/// <summary>
+		/// List of constraint rules for <see cref="AxisClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Axis,
+		};
+		/// <summary>
 		/// Axis
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>

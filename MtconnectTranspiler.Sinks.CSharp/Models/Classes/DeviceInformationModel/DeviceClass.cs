@@ -1450,6 +1450,13 @@ See {{package(Components)}} for more details on the properties of {{block(Device
 
 		# region Rules
 		/// <summary>
+		/// List of constraint rules for <see cref="DeviceClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Device1,
+			Device2,
+		};
+		/// <summary>
 		/// Device1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>

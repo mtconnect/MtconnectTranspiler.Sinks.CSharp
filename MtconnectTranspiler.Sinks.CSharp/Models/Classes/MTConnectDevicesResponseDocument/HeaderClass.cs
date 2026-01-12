@@ -1168,6 +1168,13 @@ If the {{term(streaming data)}} included in the {{term(response document)}} incl
 
 		# region Rules
 		/// <summary>
+		/// List of constraint rules for <see cref="HeaderClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Header,
+			Header2,
+		};
+		/// <summary>
 		/// Header
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>

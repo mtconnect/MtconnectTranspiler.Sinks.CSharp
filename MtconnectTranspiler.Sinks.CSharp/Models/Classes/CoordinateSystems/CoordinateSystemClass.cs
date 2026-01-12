@@ -763,6 +763,12 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 
 		# region Rules
 		/// <summary>
+		/// List of constraint rules for <see cref="CoordinateSystemClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Coordinatesystem,
+		};
+		/// <summary>
 		/// Coordinatesystem
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>

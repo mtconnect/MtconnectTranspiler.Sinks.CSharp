@@ -1978,6 +1978,13 @@ If {{property(DataItem::representation)}} is not specified, it **MUST** be deter
 
 		# region Rules
 		/// <summary>
+		/// List of constraint rules for <see cref="DataItemClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Dataitem1,
+			Dataitem2,
+		};
+		/// <summary>
 		/// Dataitem1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>

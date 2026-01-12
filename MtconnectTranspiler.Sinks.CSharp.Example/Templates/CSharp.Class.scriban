@@ -207,6 +207,14 @@ namespace {{ to_code_safe source.namespace }}
 
 		{{~ if source.constraints.size > 0 ~}}
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="{{ code_name }}" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+		{{~ for constraint in source.constraints ~}}
+			{{ constraint.name }},
+		{{~ end ~}}
+		};
 	{{~ for constraint in source.constraints ~}}
 		/// <summary>
 		/// {{ constraint.name }}

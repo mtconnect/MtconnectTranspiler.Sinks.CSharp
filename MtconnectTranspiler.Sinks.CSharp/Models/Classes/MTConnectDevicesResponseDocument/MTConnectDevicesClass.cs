@@ -234,6 +234,12 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 
 		# region Rules
 		/// <summary>
+		/// List of constraint rules for <see cref="MTConnectDevicesClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			MtconnectDevices1,
+		};
+		/// <summary>
 		/// MtconnectDevices1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>

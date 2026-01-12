@@ -1874,6 +1874,12 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 
 		# region Rules
 		/// <summary>
+		/// List of constraint rules for <see cref="TransformationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Constraints,
+		};
+		/// <summary>
 		/// Constraints
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
