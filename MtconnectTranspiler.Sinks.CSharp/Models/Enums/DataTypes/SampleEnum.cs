@@ -864,6 +864,15 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		PARTICLE_SIZE,
+		/// <summary>﻿concentration of calcium carbonate (CaCO3) in water<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		WATER_HARDNESS,
 	}
 
 	/// <summary>﻿
@@ -1005,6 +1014,7 @@ namespace Mtconnect.DataTypes
 		FILL_HEIGHT,
 		PARTICLE_COUNT,
 		PARTICLE_SIZE,
+		WATER_HARDNESS,
 		};
 
 		private ACCELERATIONValue _ACCELERATION;
@@ -4858,6 +4868,47 @@ The average is computed over a rolling window defined by the implementation.&#10
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="PARTICLE_SIZEValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;size of particles counted by their size or other characteristics.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private WATER_HARDNESSValue _WATER_HARDNESS;
+		/// <inheritdoc cref="WATER_HARDNESSValue" path="/summary" />
+		public WATER_HARDNESSValue WATER_HARDNESS => _WATER_HARDNESS ?? (_WATER_HARDNESS = new WATER_HARDNESSValue());
+
+		/// <summary>﻿concentration of calcium carbonate (CaCO3) in water<br /><br /><br />
+		/// Value for SampleEnum.<br/>
+		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class WATER_HARDNESSValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.Name" /></summary>
+			public const string NAME = "WATER_HARDNESS";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;concentration of calcium carbonate (CaCO3) in water&#10;
 ";
 
 			/// <inheritdoc />

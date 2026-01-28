@@ -864,6 +864,15 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		PARTICLE_SIZE,
+		/// <summary>﻿concentration of calcium carbonate (CaCO3) in water<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		WATER_HARDNESS,
 		/// <summary>﻿set of axes currently associated with a <see cref="Path">Path</see> or <see cref="Controller">Controller</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
@@ -1152,7 +1161,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		LINE_NUMBER,
-		/// <summary>﻿identifier of a material used or consumed in the manufacturing process.<br /><br /><br />
+		/// <summary>﻿identifier of a material used or consumed in the manufacturing process<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -2124,6 +2133,69 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		ASSET_ADDED,
+		/// <summary>﻿<see cref="Task.assetId">assetId in Task</see> of the <see cref="Task">Task</see> that the <see cref="Component">Component</see> binds to<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		TASK_ASSET_ID,
+		/// <summary>﻿state of the binding process when <see cref="Component">Component</see> participates in a task as a collaborator<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		BINDING_STATE,
+		/// <summary>﻿angular range over which the object is designed to move about a fixed axis or pivot<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		SWING_ANGLE,
+		/// <summary>﻿maximal linear distance from the pivot or axis to the furthest point reached by the object’s swing<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		SWING_RADIUS,
+		/// <summary>﻿maximal linear width (diameter) of the area described by the object’s movement about an axis<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		SWING_DIAMETER,
+		/// <summary>﻿dimension or distance as measured downwards from the top<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		DEPTH,
+		/// <summary>﻿<see cref="Fixture.assetId">assetId in Fixture</see> of the <see cref="Fixture">Fixture</see> that is associated with a <see cref="Component">Component</see><br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		FIXTURE_ASSET_ID,
 		/// <summary>﻿operational state of an <see cref="Interface">Interface</see>.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
@@ -2364,6 +2436,7 @@ namespace Mtconnect.DataTypes
 		FILL_HEIGHT,
 		PARTICLE_COUNT,
 		PARTICLE_SIZE,
+		WATER_HARDNESS,
 		ACTIVE_AXES,
 		ACTUATOR_STATE,
 		ALARM,
@@ -2504,6 +2577,13 @@ namespace Mtconnect.DataTypes
 		PART_INDEX,
 		ASSOCIATED_ASSET_ID,
 		ASSET_ADDED,
+		TASK_ASSET_ID,
+		BINDING_STATE,
+		SWING_ANGLE,
+		SWING_RADIUS,
+		SWING_DIAMETER,
+		DEPTH,
+		FIXTURE_ASSET_ID,
 		INTERFACE_STATE,
 		MATERIAL_FEED,
 		MATERIAL_CHANGE,
@@ -6385,6 +6465,47 @@ The average is computed over a rolling window defined by the implementation.&#10
 			/// <inheritdoc />
 			public string Summary => SUMMARY;
 		}
+		private WATER_HARDNESSValue _WATER_HARDNESS;
+		/// <inheritdoc cref="WATER_HARDNESSValue" path="/summary" />
+		public WATER_HARDNESSValue WATER_HARDNESS => _WATER_HARDNESS ?? (_WATER_HARDNESS = new WATER_HARDNESSValue());
+
+		/// <summary>﻿concentration of calcium carbonate (CaCO3) in water<br /><br /><br />
+		/// Value for DataItemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class WATER_HARDNESSValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.Name" /></summary>
+			public const string NAME = "WATER_HARDNESS";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;concentration of calcium carbonate (CaCO3) in water&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
 		private ACTIVE_AXESValue _ACTIVE_AXES;
 		/// <inheritdoc cref="ACTIVE_AXESValue" path="/summary" />
 		public ACTIVE_AXESValue ACTIVE_AXES => _ACTIVE_AXES ?? (_ACTIVE_AXES = new ACTIVE_AXESValue());
@@ -7709,7 +7830,7 @@ It may also represent a mechanism that holds any other mechanism in place within
 		/// <inheritdoc cref="MATERIALValue" path="/summary" />
 		public MATERIALValue MATERIAL => _MATERIAL ?? (_MATERIAL = new MATERIALValue());
 
-		/// <summary>﻿identifier of a material used or consumed in the manufacturing process.<br /><br /><br />
+		/// <summary>﻿identifier of a material used or consumed in the manufacturing process<br /><br /><br />
 		/// Value for DataItemTypeEnum.<br/>
 		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
 		/// </summary>
@@ -7728,7 +7849,7 @@ It may also represent a mechanism that holds any other mechanism in place within
 			/// <summary>Constant value for <see cref="MATERIALValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MATERIALValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;identifier of a material used or consumed in the manufacturing process.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;identifier of a material used or consumed in the manufacturing process&#10;
 ";
 
 			/// <inheritdoc />
@@ -12134,6 +12255,293 @@ This is used in conjunction with {{block(ProgramEdit)}} when in `ACTIVE` state. 
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="ASSET_ADDEDValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;{{property(Asset::assetId)}} of the {{block(Asset)}} that has been added.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private TASK_ASSET_IDValue _TASK_ASSET_ID;
+		/// <inheritdoc cref="TASK_ASSET_IDValue" path="/summary" />
+		public TASK_ASSET_IDValue TASK_ASSET_ID => _TASK_ASSET_ID ?? (_TASK_ASSET_ID = new TASK_ASSET_IDValue());
+
+		/// <summary>﻿<see cref="Task.assetId">assetId in Task</see> of the <see cref="Task">Task</see> that the <see cref="Component">Component</see> binds to<br /><br /><br />
+		/// Value for DataItemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class TASK_ASSET_IDValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="TASK_ASSET_IDValue.Name" /></summary>
+			public const string NAME = "TASK_ASSET_ID";
+			/// <summary>Constant value for <see cref="TASK_ASSET_IDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="TASK_ASSET_IDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="TASK_ASSET_IDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;{{property(Task::assetId)}} of the {{block(Task)}} that the {{block(Component)}} binds to&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private BINDING_STATEValue _BINDING_STATE;
+		/// <inheritdoc cref="BINDING_STATEValue" path="/summary" />
+		public BINDING_STATEValue BINDING_STATE => _BINDING_STATE ?? (_BINDING_STATE = new BINDING_STATEValue());
+
+		/// <summary>﻿state of the binding process when <see cref="Component">Component</see> participates in a task as a collaborator<br /><br /><br />
+		/// Value for DataItemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class BINDING_STATEValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="BINDING_STATEValue.Name" /></summary>
+			public const string NAME = "BINDING_STATE";
+			/// <summary>Constant value for <see cref="BINDING_STATEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="BINDING_STATEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="BINDING_STATEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;state of the binding process when {{block(Component)}} participates in a task as a collaborator&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private SWING_ANGLEValue _SWING_ANGLE;
+		/// <inheritdoc cref="SWING_ANGLEValue" path="/summary" />
+		public SWING_ANGLEValue SWING_ANGLE => _SWING_ANGLE ?? (_SWING_ANGLE = new SWING_ANGLEValue());
+
+		/// <summary>﻿angular range over which the object is designed to move about a fixed axis or pivot<br /><br /><br />
+		/// Value for DataItemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class SWING_ANGLEValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="SWING_ANGLEValue.Name" /></summary>
+			public const string NAME = "SWING_ANGLE";
+			/// <summary>Constant value for <see cref="SWING_ANGLEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="SWING_ANGLEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="SWING_ANGLEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;angular range over which the object is designed to move about a fixed axis or pivot&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private SWING_RADIUSValue _SWING_RADIUS;
+		/// <inheritdoc cref="SWING_RADIUSValue" path="/summary" />
+		public SWING_RADIUSValue SWING_RADIUS => _SWING_RADIUS ?? (_SWING_RADIUS = new SWING_RADIUSValue());
+
+		/// <summary>﻿maximal linear distance from the pivot or axis to the furthest point reached by the object’s swing<br /><br /><br />
+		/// Value for DataItemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class SWING_RADIUSValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="SWING_RADIUSValue.Name" /></summary>
+			public const string NAME = "SWING_RADIUS";
+			/// <summary>Constant value for <see cref="SWING_RADIUSValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="SWING_RADIUSValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="SWING_RADIUSValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;maximal linear distance from the pivot or axis to the furthest point reached by the object’s swing&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private SWING_DIAMETERValue _SWING_DIAMETER;
+		/// <inheritdoc cref="SWING_DIAMETERValue" path="/summary" />
+		public SWING_DIAMETERValue SWING_DIAMETER => _SWING_DIAMETER ?? (_SWING_DIAMETER = new SWING_DIAMETERValue());
+
+		/// <summary>﻿maximal linear width (diameter) of the area described by the object’s movement about an axis<br /><br /><br />
+		/// Value for DataItemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class SWING_DIAMETERValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="SWING_DIAMETERValue.Name" /></summary>
+			public const string NAME = "SWING_DIAMETER";
+			/// <summary>Constant value for <see cref="SWING_DIAMETERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="SWING_DIAMETERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="SWING_DIAMETERValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;maximal linear width (diameter) of the area described by the object’s movement about an axis&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private DEPTHValue _DEPTH;
+		/// <inheritdoc cref="DEPTHValue" path="/summary" />
+		public DEPTHValue DEPTH => _DEPTH ?? (_DEPTH = new DEPTHValue());
+
+		/// <summary>﻿dimension or distance as measured downwards from the top<br /><br /><br />
+		/// Value for DataItemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class DEPTHValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="DEPTHValue.Name" /></summary>
+			public const string NAME = "DEPTH";
+			/// <summary>Constant value for <see cref="DEPTHValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="DEPTHValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="DEPTHValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;dimension or distance as measured downwards from the top&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private FIXTURE_ASSET_IDValue _FIXTURE_ASSET_ID;
+		/// <inheritdoc cref="FIXTURE_ASSET_IDValue" path="/summary" />
+		public FIXTURE_ASSET_IDValue FIXTURE_ASSET_ID => _FIXTURE_ASSET_ID ?? (_FIXTURE_ASSET_ID = new FIXTURE_ASSET_IDValue());
+
+		/// <summary>﻿<see cref="Fixture.assetId">assetId in Fixture</see> of the <see cref="Fixture">Fixture</see> that is associated with a <see cref="Component">Component</see><br /><br /><br />
+		/// Value for DataItemTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemTypeEnum">DataItemTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class FIXTURE_ASSET_IDValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="FIXTURE_ASSET_IDValue.Name" /></summary>
+			public const string NAME = "FIXTURE_ASSET_ID";
+			/// <summary>Constant value for <see cref="FIXTURE_ASSET_IDValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="FIXTURE_ASSET_IDValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FIXTURE_ASSET_IDValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;{{property(Fixture::assetId)}} of the {{block(Fixture)}} that is associated with a {{block(Component)}}&#10;
 ";
 
 			/// <inheritdoc />

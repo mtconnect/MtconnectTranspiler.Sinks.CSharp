@@ -275,9 +275,9 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: ScaleClass </remarks>
+				/// <remarks> Type: AbstractScaleClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.SolidModel.ScaleClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.SolidModel.AbstractScaleClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

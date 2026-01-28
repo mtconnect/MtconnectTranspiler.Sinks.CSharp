@@ -8,7 +8,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResponseDocument
 {
-	/// <summary>﻿root entity of an <i>MTConnectExceptionsReport Response Document</i> that contains the <i>ExceptionReport Information Model</i>.<br /><br />![MTConnectExceptionsReport](figures/MTConnectExceptionsReport.png "MTConnectAssets"){: width="0.8"}<br /><br /><br />
+	/// <summary>﻿root entity of an <i>MTConnectExceptionsReport Response Document</i> that contains the <i>ExceptionReport Information Model</i>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_68e0225_1744801655431_368883_23324">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -25,9 +25,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 		/// <summary>Constant value for <see cref="MTConnectExceptionsReportClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___2024x_68e0225_1744801655431_368883_23324";
 		/// <summary>Constant value for <see cref="MTConnectExceptionsReportClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;root entity of an {{term(MTConnectExceptionsReport Response Document)}} that contains the {{term(ExceptionReport Information Model)}}.
-
-![MTConnectExceptionsReport](figures/MTConnectExceptionsReport.png ""MTConnectAssets""){: width=""0.8""}&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;root entity of an {{term(MTConnectExceptionsReport Response Document)}} that contains the {{term(ExceptionReport Information Model)}}.&#10;
 ";
 		/// <summary>Constant value for <see cref="MTConnectExceptionsReportClass.Name" /></summary>
 		public const string NAME = "MTConnectExceptionsReport";

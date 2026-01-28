@@ -772,9 +772,49 @@ Examples of {{property(ComponentStream::component)}} are {{block(Device)}}, {{bl
 		/// ComponentStream1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string ComponentStream1 => @"self.organizesEvent->size() <> 0 or self.organizesSample->size() <> 0 or self.organizesCondition->size() <> 0";
+		public string ComponentStream1 => @"val:ComponentStreamMustHaveEventSampleOrCondition
+    a sh:NodeShape ;
+    sh:message ""`ComponentStream` MUST have at least one of `Event`, `Sample`, or `Condition`."" ;
+    sh:targetClass mt:ComponentStream ;
+    sh:or (
+        [ sh:property [
+            sh:path mt:organizesEvent ;
+            sh:minCount 1 ;
+            sh:class mt:Event ;
+        ] ]
+        [ sh:property [
+            sh:path mt:organizesSample ;
+            sh:minCount 1 ;
+            sh:class mt:Sample ;
+        ] ]
+        [ sh:property [
+            sh:path mt:organizesCondition ;
+            sh:minCount 1 ;
+            sh:class mt:Condition ;
+        ] ]
+    ) .";
 		/*
-		self.organizesEvent->size() <> 0 or self.organizesSample->size() <> 0 or self.organizesCondition->size() <> 0
+		val:ComponentStreamMustHaveEventSampleOrCondition
+		    a sh:NodeShape ;
+		    sh:message "`ComponentStream` MUST have at least one of `Event`, `Sample`, or `Condition`." ;
+		    sh:targetClass mt:ComponentStream ;
+		    sh:or (
+		        [ sh:property [
+		            sh:path mt:organizesEvent ;
+		            sh:minCount 1 ;
+		            sh:class mt:Event ;
+		        ] ]
+		        [ sh:property [
+		            sh:path mt:organizesSample ;
+		            sh:minCount 1 ;
+		            sh:class mt:Sample ;
+		        ] ]
+		        [ sh:property [
+		            sh:path mt:organizesCondition ;
+		            sh:minCount 1 ;
+		            sh:class mt:Condition ;
+		        ] ]
+		    ) .
 		*/
 		# endregion
 	}

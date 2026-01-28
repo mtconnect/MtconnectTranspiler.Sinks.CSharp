@@ -37,14 +37,12 @@ namespace Mtconnect.WIP_UseCases
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
-			RequirementsPackage,
-			UseCasesPackage,
 		};
 		
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			ManufacturingEquipmentClass,
-			MTConnectDeviceWithPowerSourceConfigClass,
+			PowerConfigurationLookupClass,
 		};
 		
 		/// <inheritdoc />
@@ -52,18 +50,6 @@ namespace Mtconnect.WIP_UseCases
 		};
 
 		#region Packages
-	private Package.RequirementsPackage _RequirementsPackage;
-	/// <summary>
-	/// <inheritdoc cref="Package.RequirementsPackage" path="/summary" />
-	/// </summary>
-	public Package.RequirementsPackage RequirementsPackage => _RequirementsPackage ?? (_RequirementsPackage = new Package.RequirementsPackage());
-
-	private Package.UseCasesPackage _UseCasesPackage;
-	/// <summary>
-	/// <inheritdoc cref="Package.UseCasesPackage" path="/summary" />
-	/// </summary>
-	public Package.UseCasesPackage UseCasesPackage => _UseCasesPackage ?? (_UseCasesPackage = new Package.UseCasesPackage());
-
 	#endregion
 
 	#region Classes
@@ -73,11 +59,11 @@ namespace Mtconnect.WIP_UseCases
 	/// </summary>
 	public Package.ManufacturingEquipmentClass ManufacturingEquipmentClass => _ManufacturingEquipmentClass ?? (_ManufacturingEquipmentClass = new Package.ManufacturingEquipmentClass());
 
-	private Package.MTConnectDeviceWithPowerSourceConfigClass _MTConnectDeviceWithPowerSourceConfigClass;
+	private Package.PowerConfigurationLookupClass _PowerConfigurationLookupClass;
 	/// <summary>
-	/// <inheritdoc cref="Package.MTConnectDeviceWithPowerSourceConfigClass" path="/summary" />
+	/// <inheritdoc cref="Package.PowerConfigurationLookupClass" path="/summary" />
 	/// </summary>
-	public Package.MTConnectDeviceWithPowerSourceConfigClass MTConnectDeviceWithPowerSourceConfigClass => _MTConnectDeviceWithPowerSourceConfigClass ?? (_MTConnectDeviceWithPowerSourceConfigClass = new Package.MTConnectDeviceWithPowerSourceConfigClass());
+	public Package.PowerConfigurationLookupClass PowerConfigurationLookupClass => _PowerConfigurationLookupClass ?? (_PowerConfigurationLookupClass = new Package.PowerConfigurationLookupClass());
 
 	#endregion
 

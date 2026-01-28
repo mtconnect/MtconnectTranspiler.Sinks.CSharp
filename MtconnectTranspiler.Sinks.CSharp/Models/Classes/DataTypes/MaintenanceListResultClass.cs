@@ -66,16 +66,16 @@ namespace Mtconnect.DataTypes
 		/// <remarks>
 		/// Original Type: _19_0_3_45f01b9_1582846972437_483160_2181
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.TableClass);
+		public Type Generalization => typeof(Mtconnect.ObservationInformationModel.Representations.Table.TableClass);
 
 		/// <inheritdoc />
 		public new MaintenanceListResultClassProperties Properties { get; } = new MaintenanceListResultClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="MaintenanceListResultClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.Representations.TableClass.TableClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.ObservationInformationModel.Representations.Table.TableClass.TableClassProperties" />.
 		/// </summary>
-		public class MaintenanceListResultClassProperties : Mtconnect.ObservationInformationModel.Representations.TableClass.TableClassProperties
+		public class MaintenanceListResultClassProperties : Mtconnect.ObservationInformationModel.Representations.Table.TableClass.TableClassProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {

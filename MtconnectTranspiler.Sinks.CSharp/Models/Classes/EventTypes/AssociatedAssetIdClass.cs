@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	/// <summary>﻿<see cref="EventEnum.ASSOCIATED_ASSET_ID">EventEnum.ASSOCIATED_ASSET_ID</see><br /><br />If defined as a DataSet or Table:<br /><br />* <c>key</c> <b>MUST</b> be an {(block(Asset)}} type. Examples: CuttingTool, Fixture, File.<br /><br />* <c>value</c> <b>MUST</b> be the corresponding <see cref="Asset::assetId">Asset::assetId</see>.<br /><br /><br />
+	/// <summary>﻿<see cref="EventEnum.ASSOCIATED_ASSET_ID">EventEnum.ASSOCIATED_ASSET_ID</see><br /><br />If defined as a DataSet or Table:<br /><br />* <c>key</c> <b>MUST</b> be an {{(block(Asset)}} type. Examples: CuttingTool, Fixture, File.<br /><br />* <c>value</c> <b>MUST</b> be the corresponding <see cref="Asset::assetId">Asset::assetId</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_68e0225_1744720952328_73710_24751">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -30,7 +30,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 
 If defined as a DataSet or Table:
 
-* `key` **MUST** be an {(block(Asset)}} type. Examples: CuttingTool, Fixture, File.
+* `key` **MUST** be an {{(block(Asset)}} type. Examples: CuttingTool, Fixture, File.
 
 * `value` **MUST** be the corresponding {{block(Asset::assetId)}}.&#10;
 ";

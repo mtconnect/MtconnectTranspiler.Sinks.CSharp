@@ -159,6 +159,8 @@ As described in {{package(Components)}}, {{block(Component)}} is an abstract ent
 			AirHandlerClass,
 			ElectrodeClass,
 			CuttingTorchClass,
+			ToolHolderClass,
+			PinToolClass,
 		};
 		
 		/// <inheritdoc />
@@ -810,6 +812,18 @@ As described in {{package(Components)}}, {{block(Component)}} is an abstract ent
 	/// <inheritdoc cref="Package.CuttingTorchClass" path="/summary" />
 	/// </summary>
 	public Package.CuttingTorchClass CuttingTorchClass => _CuttingTorchClass ?? (_CuttingTorchClass = new Package.CuttingTorchClass());
+
+	private Package.ToolHolderClass _ToolHolderClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ToolHolderClass" path="/summary" />
+	/// </summary>
+	public Package.ToolHolderClass ToolHolderClass => _ToolHolderClass ?? (_ToolHolderClass = new Package.ToolHolderClass());
+
+	private Package.PinToolClass _PinToolClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.PinToolClass" path="/summary" />
+	/// </summary>
+	public Package.PinToolClass PinToolClass => _PinToolClass ?? (_PinToolClass = new Package.PinToolClass());
 
 	#endregion
 

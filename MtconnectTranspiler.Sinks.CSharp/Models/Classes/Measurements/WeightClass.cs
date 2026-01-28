@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.Pallet.Measurements
 {
-	/// <summary>﻿weight of the <see cref="PhysicalAsset">PhysicalAsset</see>.<br /><br /><br />
+	/// <summary>﻿{{termuniversal(weight)}} of the <see cref="PhysicalAsset">PhysicalAsset</see><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_68e0225_1727795939487_321518_24545">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -26,7 +26,7 @@ namespace Mtconnect.AssetInformationModel.Pallet.Measurements
 		/// <summary>Constant value for <see cref="WeightClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___2024x_68e0225_1727795939487_321518_24545";
 		/// <summary>Constant value for <see cref="WeightClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;weight of the {{block(PhysicalAsset)}}.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;{{termuniversal(weight)}} of the {{block(PhysicalAsset)}}&#10;
 ";
 		/// <summary>Constant value for <see cref="WeightClass.Name" /></summary>
 		public const string NAME = "Weight";

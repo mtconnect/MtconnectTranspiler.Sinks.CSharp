@@ -1178,9 +1178,39 @@ If the {{term(streaming data)}} included in the {{term(response document)}} incl
 		/// Header
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string Header => @"assetCount <= assetBufferSize";
+		public string Header => @"val:AssetCountShouldBeLessThanAssetBufferSize
+    a sh:NodeShape ;
+    sh:targetClass mt:Device ;
+    sh:sparql [
+      a sh:SPARQLConstraint ;
+      sh:prefixes val:Prefix ;
+      sh:severity sh:Warning ;
+      sh:message ""`assetCount` **SHOULD** be less than the `assetBufferSize`."" ;
+      sh:select """"""
+        SELECT $this ?assetCount ?assetBufferSize WHERE {
+            $this mt:hasAssetCount ?assetCount .
+            $this mt:hasAssetBufferSize ?assetBufferSize .
+            FILTER (?assetCount > ?assetBufferSize)
+        }
+      """""" ;
+    ] .";
 		/*
-		assetCount <= assetBufferSize
+		val:AssetCountShouldBeLessThanAssetBufferSize
+		    a sh:NodeShape ;
+		    sh:targetClass mt:Device ;
+		    sh:sparql [
+		      a sh:SPARQLConstraint ;
+		      sh:prefixes val:Prefix ;
+		      sh:severity sh:Warning ;
+		      sh:message "`assetCount` **SHOULD** be less than the `assetBufferSize`." ;
+		      sh:select """
+		        SELECT $this ?assetCount ?assetBufferSize WHERE {
+		            $this mt:hasAssetCount ?assetCount .
+		            $this mt:hasAssetBufferSize ?assetBufferSize .
+		            FILTER (?assetCount > ?assetBufferSize)
+		        }
+		      """ ;
+		    ] .
 		*/
 		/// <summary>
 		/// Header2

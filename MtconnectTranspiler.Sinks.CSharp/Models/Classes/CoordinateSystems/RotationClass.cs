@@ -5,11 +5,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>﻿rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector. <br /><br /><br /><br />
-	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1583182385473_997250_4783">model.mtconnect.org</seealso> for more information.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_3_3870182_1764951373391_145162_327">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -21,9 +22,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 	public sealed class RotationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="RotationClass.ReferenceId" /></summary>
-		public const string REFERENCE_ID = "_19_0_3_45f01b9_1583182385473_997250_4783";
+		public const string REFERENCE_ID = "_2024x_3_3870182_1764951373391_145162_327";
 		/// <summary>Constant value for <see cref="RotationClass.HelpUrl" /></summary>
-		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1583182385473_997250_4783";
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure___2024x_3_3870182_1764951373391_145162_327";
 		/// <summary>Constant value for <see cref="RotationClass.Summary" /></summary>
 		public const string SUMMARY = @"&#10;&#10;&#10;rotations about X, Y, and Z axes are expressed in A, B, and C respectively within a 3-dimensional vector. 
 &#10;
@@ -64,36 +65,40 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public Type Generalization => null;
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1583182385473_997250_4783
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractRotationClass);
 
 		/// <inheritdoc />
 		public new RotationClassProperties Properties { get; } = new RotationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="RotationClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractRotationClass.AbstractRotationClassProperties" />.
 		/// </summary>
-		public class RotationClassProperties : IPropertyList
+		public class RotationClassProperties : Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractRotationClass.AbstractRotationClassProperties
 		{
 			/// <inheritdoc />
-			public virtual IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Value,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
-			public ValueProperty Value { get; } = new ValueProperty();
+			public new ValueProperty Value { get; } = new ValueProperty();
 			
 			/// <summary>﻿
 			/// </summary>
-			public sealed class ValueProperty : IProperty
+			public new sealed class ValueProperty : IProperty
 			{
 				/// <summary>Constant value for <see cref="ValueProperty.Name" /></summary>
 				public const string NAME = "value";
 				/// <summary>Constant value for <see cref="ValueProperty.Summary" /></summary>
 				public const string SUMMARY = @"";
 				/// <summary>Constant value for <see cref="ValueProperty.AccessModifier" /></summary>
-				public const string ACCESS_MODIFIER = "public";
+				public const string ACCESS_MODIFIER = "private";
 				/// <summary>Constant value for <see cref="ValueProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="ValueProperty.NormativeVersion" /></summary>
@@ -113,9 +118,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: RotationDataSetGeneralization </remarks>
+				/// <remarks> Type: Float[] </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.RotationDataSetGeneralization);
+				public System.Type Type => typeof(float[]);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

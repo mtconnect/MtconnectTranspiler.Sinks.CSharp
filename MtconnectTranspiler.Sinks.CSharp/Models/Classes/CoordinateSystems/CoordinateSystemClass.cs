@@ -421,9 +421,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: OriginClass </remarks>
+				/// <remarks> Type: AbstractOriginClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.OriginClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractOriginClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -772,9 +772,61 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		/// Coordinatesystem
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string Coordinatesystem => @"hasOrigin->size() + hasTransformation->size() <= 1 and hasOrigin->size() + hasTransformation->size() <> 0";
+		public string Coordinatesystem => @"val:CoordinateSystemOriginOrTransformationExclusiveOptional
+    a sh:NodeShape ;
+    sh:message ""`CoordinateSystem` may have either an `Origin` or a `Transformation` but not both."" ;
+    sh:targetClass mt:CoordinateSystem ;
+
+    sh:property [
+        sh:path mt:hasOrigin ;
+        sh:maxCount 1 ;
+        sh:class mt:Origin ;
+    ] ;
+
+    sh:property [
+        sh:path mt:hasTransformation ;
+        sh:maxCount 1 ;
+        sh:class mt:Transformation ;
+    ] ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:select """"""
+            SELECT $this
+            WHERE {
+                OPTIONAL { $this mt:hasOrigin ?origin . }
+                OPTIONAL { $this mt:hasTransformation ?trans . }
+                FILTER (BOUND(?origin) && BOUND(?trans))
+            }
+        """""" ;
+    ] .";
 		/*
-		hasOrigin->size() + hasTransformation->size() <= 1 and hasOrigin->size() + hasTransformation->size() <> 0
+		val:CoordinateSystemOriginOrTransformationExclusiveOptional
+		    a sh:NodeShape ;
+		    sh:message "`CoordinateSystem` may have either an `Origin` or a `Transformation` but not both." ;
+		    sh:targetClass mt:CoordinateSystem ;
+		
+		    sh:property [
+		        sh:path mt:hasOrigin ;
+		        sh:maxCount 1 ;
+		        sh:class mt:Origin ;
+		    ] ;
+		
+		    sh:property [
+		        sh:path mt:hasTransformation ;
+		        sh:maxCount 1 ;
+		        sh:class mt:Transformation ;
+		    ] ;
+		    sh:sparql [
+		        a sh:SPARQLConstraint ;
+		        sh:select """
+		            SELECT $this
+		            WHERE {
+		                OPTIONAL { $this mt:hasOrigin ?origin . }
+		                OPTIONAL { $this mt:hasTransformation ?trans . }
+		                FILTER (BOUND(?origin) && BOUND(?trans))
+		            }
+		        """ ;
+		    ] .
 		*/
 		# endregion
 	}

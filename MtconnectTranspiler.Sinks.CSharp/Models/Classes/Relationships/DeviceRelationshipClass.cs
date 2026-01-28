@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	/// <summary>﻿<see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> or an <see cref="Asset">Asset</see> and a {{block(Device).<br /><br /><br />
+	/// <summary>﻿<see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> or an <see cref="Asset">Asset</see> and a <see cref="Device">Device</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -26,7 +26,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		/// <summary>Constant value for <see cref="DeviceRelationshipClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69";
 		/// <summary>Constant value for <see cref="DeviceRelationshipClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between a {{block(Component)}} or an {{block(Asset)}} and a {{block(Device).&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between a {{block(Component)}} or an {{block(Asset)}} and a {{block(Device)}}.&#10;
 ";
 		/// <summary>Constant value for <see cref="DeviceRelationshipClass.Name" /></summary>
 		public const string NAME = "DeviceRelationship";

@@ -373,6 +373,20 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			PartIndexClass,
 			AssociatedAssetIdClass,
 			AssetAddedClass,
+			TaskAssetIdClass,
+			BindingStateClass,
+			MaterialElectrodeClass,
+			MaterialGasClass,
+			MaterialFillerClass,
+			SwingAngleClass,
+			SwingDiameterClass,
+			SwingRadiusClass,
+			DepthClass,
+			DepthPlungeClass,
+			DepthPeckClass,
+			DepthCutClass,
+			DepthLayerClass,
+			FixtureAssetIdClass,
 		};
 		
 		/// <inheritdoc />
@@ -2368,6 +2382,90 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <inheritdoc cref="Package.AssetAddedClass" path="/summary" />
 	/// </summary>
 	public Package.AssetAddedClass AssetAddedClass => _AssetAddedClass ?? (_AssetAddedClass = new Package.AssetAddedClass());
+
+	private Package.TaskAssetIdClass _TaskAssetIdClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.TaskAssetIdClass" path="/summary" />
+	/// </summary>
+	public Package.TaskAssetIdClass TaskAssetIdClass => _TaskAssetIdClass ?? (_TaskAssetIdClass = new Package.TaskAssetIdClass());
+
+	private Package.BindingStateClass _BindingStateClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.BindingStateClass" path="/summary" />
+	/// </summary>
+	public Package.BindingStateClass BindingStateClass => _BindingStateClass ?? (_BindingStateClass = new Package.BindingStateClass());
+
+	private Package.MaterialElectrodeClass _MaterialElectrodeClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.MaterialElectrodeClass" path="/summary" />
+	/// </summary>
+	public Package.MaterialElectrodeClass MaterialElectrodeClass => _MaterialElectrodeClass ?? (_MaterialElectrodeClass = new Package.MaterialElectrodeClass());
+
+	private Package.MaterialGasClass _MaterialGasClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.MaterialGasClass" path="/summary" />
+	/// </summary>
+	public Package.MaterialGasClass MaterialGasClass => _MaterialGasClass ?? (_MaterialGasClass = new Package.MaterialGasClass());
+
+	private Package.MaterialFillerClass _MaterialFillerClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.MaterialFillerClass" path="/summary" />
+	/// </summary>
+	public Package.MaterialFillerClass MaterialFillerClass => _MaterialFillerClass ?? (_MaterialFillerClass = new Package.MaterialFillerClass());
+
+	private Package.SwingAngleClass _SwingAngleClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.SwingAngleClass" path="/summary" />
+	/// </summary>
+	public Package.SwingAngleClass SwingAngleClass => _SwingAngleClass ?? (_SwingAngleClass = new Package.SwingAngleClass());
+
+	private Package.SwingDiameterClass _SwingDiameterClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.SwingDiameterClass" path="/summary" />
+	/// </summary>
+	public Package.SwingDiameterClass SwingDiameterClass => _SwingDiameterClass ?? (_SwingDiameterClass = new Package.SwingDiameterClass());
+
+	private Package.SwingRadiusClass _SwingRadiusClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.SwingRadiusClass" path="/summary" />
+	/// </summary>
+	public Package.SwingRadiusClass SwingRadiusClass => _SwingRadiusClass ?? (_SwingRadiusClass = new Package.SwingRadiusClass());
+
+	private Package.DepthClass _DepthClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.DepthClass" path="/summary" />
+	/// </summary>
+	public Package.DepthClass DepthClass => _DepthClass ?? (_DepthClass = new Package.DepthClass());
+
+	private Package.DepthPlungeClass _DepthPlungeClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.DepthPlungeClass" path="/summary" />
+	/// </summary>
+	public Package.DepthPlungeClass DepthPlungeClass => _DepthPlungeClass ?? (_DepthPlungeClass = new Package.DepthPlungeClass());
+
+	private Package.DepthPeckClass _DepthPeckClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.DepthPeckClass" path="/summary" />
+	/// </summary>
+	public Package.DepthPeckClass DepthPeckClass => _DepthPeckClass ?? (_DepthPeckClass = new Package.DepthPeckClass());
+
+	private Package.DepthCutClass _DepthCutClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.DepthCutClass" path="/summary" />
+	/// </summary>
+	public Package.DepthCutClass DepthCutClass => _DepthCutClass ?? (_DepthCutClass = new Package.DepthCutClass());
+
+	private Package.DepthLayerClass _DepthLayerClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.DepthLayerClass" path="/summary" />
+	/// </summary>
+	public Package.DepthLayerClass DepthLayerClass => _DepthLayerClass ?? (_DepthLayerClass = new Package.DepthLayerClass());
+
+	private Package.FixtureAssetIdClass _FixtureAssetIdClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.FixtureAssetIdClass" path="/summary" />
+	/// </summary>
+	public Package.FixtureAssetIdClass FixtureAssetIdClass => _FixtureAssetIdClass ?? (_FixtureAssetIdClass = new Package.FixtureAssetIdClass());
 
 	#endregion
 

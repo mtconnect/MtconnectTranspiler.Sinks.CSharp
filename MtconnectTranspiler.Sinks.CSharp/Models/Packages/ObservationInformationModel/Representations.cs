@@ -42,6 +42,7 @@ namespace Mtconnect.ObservationInformationModel
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
+			TablePackage,
 		};
 		
 		/// <inheritdoc />
@@ -52,9 +53,6 @@ namespace Mtconnect.ObservationInformationModel
 			DiscreteClass,
 			DataSetClass,
 			EntryClass,
-			TableClass,
-			TableEntryClass,
-			CellClass,
 		};
 		
 		/// <inheritdoc />
@@ -62,6 +60,12 @@ namespace Mtconnect.ObservationInformationModel
 		};
 
 		#region Packages
+	private Package.TablePackage _TablePackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.TablePackage" path="/summary" />
+	/// </summary>
+	public Package.TablePackage TablePackage => _TablePackage ?? (_TablePackage = new Package.TablePackage());
+
 	#endregion
 
 	#region Classes
@@ -100,24 +104,6 @@ namespace Mtconnect.ObservationInformationModel
 	/// <inheritdoc cref="Package.EntryClass" path="/summary" />
 	/// </summary>
 	public Package.EntryClass EntryClass => _EntryClass ?? (_EntryClass = new Package.EntryClass());
-
-	private Package.TableClass _TableClass;
-	/// <summary>
-	/// <inheritdoc cref="Package.TableClass" path="/summary" />
-	/// </summary>
-	public Package.TableClass TableClass => _TableClass ?? (_TableClass = new Package.TableClass());
-
-	private Package.TableEntryClass _TableEntryClass;
-	/// <summary>
-	/// <inheritdoc cref="Package.TableEntryClass" path="/summary" />
-	/// </summary>
-	public Package.TableEntryClass TableEntryClass => _TableEntryClass ?? (_TableEntryClass = new Package.TableEntryClass());
-
-	private Package.CellClass _CellClass;
-	/// <summary>
-	/// <inheritdoc cref="Package.CellClass" path="/summary" />
-	/// </summary>
-	public Package.CellClass CellClass => _CellClass ?? (_CellClass = new Package.CellClass());
 
 	#endregion
 

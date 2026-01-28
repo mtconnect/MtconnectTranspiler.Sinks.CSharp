@@ -114,13 +114,13 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				/// <summary>Constant value for <see cref="ObservesProcessOccurrenceIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesProcessOccurrenceIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2024x";
 				/// <summary>Constant value for <see cref="ObservesProcessOccurrenceIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesProcessOccurrenceIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
 				/// <summary>Constant value for <see cref="ObservesProcessOccurrenceIdProperty.Multiplicity" /></summary>
-				public const string MULTIPLICITY = "1";
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />

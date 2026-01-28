@@ -53,8 +53,14 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 			CoordinateSystemClass,
 			OriginClass,
 			TransformationClass,
-			RotationClass,
+			AbstractRotationClass,
+			AbstractTranslationClass,
+			AbstractOriginClass,
+			OriginDataSetGeneralization,
 			TranslationClass,
+			TranslationDataSetGeneralization,
+			RotationDataSetGeneralization,
+			RotationClass,
 		};
 		
 		/// <inheritdoc />
@@ -83,17 +89,53 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// </summary>
 	public Package.TransformationClass TransformationClass => _TransformationClass ?? (_TransformationClass = new Package.TransformationClass());
 
-	private Package.RotationClass _RotationClass;
+	private Package.AbstractRotationClass _AbstractRotationClass;
 	/// <summary>
-	/// <inheritdoc cref="Package.RotationClass" path="/summary" />
+	/// <inheritdoc cref="Package.AbstractRotationClass" path="/summary" />
 	/// </summary>
-	public Package.RotationClass RotationClass => _RotationClass ?? (_RotationClass = new Package.RotationClass());
+	public Package.AbstractRotationClass AbstractRotationClass => _AbstractRotationClass ?? (_AbstractRotationClass = new Package.AbstractRotationClass());
+
+	private Package.AbstractTranslationClass _AbstractTranslationClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AbstractTranslationClass" path="/summary" />
+	/// </summary>
+	public Package.AbstractTranslationClass AbstractTranslationClass => _AbstractTranslationClass ?? (_AbstractTranslationClass = new Package.AbstractTranslationClass());
+
+	private Package.AbstractOriginClass _AbstractOriginClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AbstractOriginClass" path="/summary" />
+	/// </summary>
+	public Package.AbstractOriginClass AbstractOriginClass => _AbstractOriginClass ?? (_AbstractOriginClass = new Package.AbstractOriginClass());
+
+	private Package.OriginDataSetGeneralization _OriginDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.OriginDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.OriginDataSetGeneralization OriginDataSetGeneralization => _OriginDataSetGeneralization ?? (_OriginDataSetGeneralization = new Package.OriginDataSetGeneralization());
 
 	private Package.TranslationClass _TranslationClass;
 	/// <summary>
 	/// <inheritdoc cref="Package.TranslationClass" path="/summary" />
 	/// </summary>
 	public Package.TranslationClass TranslationClass => _TranslationClass ?? (_TranslationClass = new Package.TranslationClass());
+
+	private Package.TranslationDataSetGeneralization _TranslationDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.TranslationDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.TranslationDataSetGeneralization TranslationDataSetGeneralization => _TranslationDataSetGeneralization ?? (_TranslationDataSetGeneralization = new Package.TranslationDataSetGeneralization());
+
+	private Package.RotationDataSetGeneralization _RotationDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.RotationDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.RotationDataSetGeneralization RotationDataSetGeneralization => _RotationDataSetGeneralization ?? (_RotationDataSetGeneralization = new Package.RotationDataSetGeneralization());
+
+	private Package.RotationClass _RotationClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.RotationClass" path="/summary" />
+	/// </summary>
+	public Package.RotationClass RotationClass => _RotationClass ?? (_RotationClass = new Package.RotationClass());
 
 	#endregion
 

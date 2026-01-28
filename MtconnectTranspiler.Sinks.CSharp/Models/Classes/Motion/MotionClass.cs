@@ -500,9 +500,9 @@ The kinematic chain connects all components using the parent relations. All moti
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: AxisClass </remarks>
+				/// <remarks> Type: AbstractAxisClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Motion.AxisClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.Motion.AbstractAxisClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -574,9 +574,9 @@ The kinematic chain connects all components using the parent relations. All moti
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: OriginClass </remarks>
+				/// <remarks> Type: AbstractOriginClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.OriginClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractOriginClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

@@ -102,7 +102,6 @@ After the final action has been completed, both pieces of equipment are back in 
 		public IPackage[] Packages => new IPackage[] {
 			SignalsPackage,
 			InterfaceTypesPackage,
-			MultiDeviceInteractionModelPackage,
 			OperationAndErrorRecoveryPackage,
 			DataItemTypesForInterfacePackage,
 			DataForInterfacePackage,
@@ -131,12 +130,6 @@ After the final action has been completed, both pieces of equipment are back in 
 	/// <inheritdoc cref="Package.InterfaceTypesPackage" path="/summary" />
 	/// </summary>
 	public Package.InterfaceTypesPackage InterfaceTypesPackage => _InterfaceTypesPackage ?? (_InterfaceTypesPackage = new Package.InterfaceTypesPackage());
-
-	private Package.MultiDeviceInteractionModelPackage _MultiDeviceInteractionModelPackage;
-	/// <summary>
-	/// <inheritdoc cref="Package.MultiDeviceInteractionModelPackage" path="/summary" />
-	/// </summary>
-	public Package.MultiDeviceInteractionModelPackage MultiDeviceInteractionModelPackage => _MultiDeviceInteractionModelPackage ?? (_MultiDeviceInteractionModelPackage = new Package.MultiDeviceInteractionModelPackage());
 
 	private Package.OperationAndErrorRecoveryPackage _OperationAndErrorRecoveryPackage;
 	/// <summary>

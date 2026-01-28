@@ -1317,25 +1317,49 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 		/// Component1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string Component1 => @"Components::Component::allInstances()->iterate(comp;compcount:Real=0|
-if comp.id->size() = 1 and
-    (comp.observes->size() <> 0 or comp.hasReference->size() <> 0 or comp.hasComponent->size() <> 0 or comp.oclAsType(Components::""Component Types""::Organizer)->size() <> 0) 
-then
-    compcount + 1
-else
-    compcount + 0                                
-endif
-) = Components::Component::allInstances()->size()";
+		public string Component1 => @"val:MustHaveComponentOrDataItemOrReference
+    a sh:NodeShape ;
+    sh:message ""`Component` **MUST** have at least one of `Component`, `DataItem` or  `Reference` entities."" ;
+    sh:targetClass mt:Component ;
+    sh:or (
+        [ sh:property [
+            sh:path mt:hasComponent ;
+            sh:minCount 1 ;
+            sh:class mt:Component ;
+        ] ]
+        [ sh:property [
+            sh:path mt:observes ;
+            sh:minCount 1 ;
+            sh:class mt:DataItem ;
+        ] ]
+        [ sh:property [
+            sh:path mt:hasReference ;
+            sh:minCount 1 ;
+            sh:class mt:Reference ;
+        ] ]
+    ) .";
 		/*
-		Components::Component::allInstances()->iterate(comp;compcount:Real=0|
-		if comp.id->size() = 1 and
-		    (comp.observes->size() <> 0 or comp.hasReference->size() <> 0 or comp.hasComponent->size() <> 0 or comp.oclAsType(Components::"Component Types"::Organizer)->size() <> 0) 
-		then
-		    compcount + 1
-		else
-		    compcount + 0                                
-		endif
-		) = Components::Component::allInstances()->size()
+		val:MustHaveComponentOrDataItemOrReference
+		    a sh:NodeShape ;
+		    sh:message "`Component` **MUST** have at least one of `Component`, `DataItem` or  `Reference` entities." ;
+		    sh:targetClass mt:Component ;
+		    sh:or (
+		        [ sh:property [
+		            sh:path mt:hasComponent ;
+		            sh:minCount 1 ;
+		            sh:class mt:Component ;
+		        ] ]
+		        [ sh:property [
+		            sh:path mt:observes ;
+		            sh:minCount 1 ;
+		            sh:class mt:DataItem ;
+		        ] ]
+		        [ sh:property [
+		            sh:path mt:hasReference ;
+		            sh:minCount 1 ;
+		            sh:class mt:Reference ;
+		        ] ]
+		    ) .
 		*/
 		# endregion
 	}

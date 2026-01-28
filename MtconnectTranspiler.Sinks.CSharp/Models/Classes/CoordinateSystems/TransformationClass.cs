@@ -114,9 +114,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: TranslationClass </remarks>
+				/// <remarks> Type: AbstractTranslationClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.TranslationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractTranslationClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -188,9 +188,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: RotationClass </remarks>
+				/// <remarks> Type: AbstractRotationClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.RotationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractRotationClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -240,9 +240,59 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		/// Transform
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string Transform => @"hasTranslation->size() + hasRotation->size() = 1 and hasTranslation->size() + hasRotation->size() <> 0 ";
+		public string Transform => @"val:TransformationMustHaveRotationOrTranslation
+    a sh:NodeShape ;
+    sh:message ""`Transformation` MUST have at least one of `Rotation` or `Translation` defined, and neither can be multiply defined."" ;
+    sh:targetClass mt:Transformation ;
+
+    sh:property [
+        sh:path mt:hasRotation ;
+        sh:maxCount 1 ;
+        sh:class mt:Rotation ;
+    ] ;
+    sh:property [
+        sh:path mt:hasTranslation ;
+        sh:maxCount 1 ;
+        sh:class mt:Translation ;
+    ] ;
+
+    sh:or (
+        [ sh:property [
+            sh:path mt:hasRotation ;
+            sh:minCount 1 ;
+        ] ]
+        [ sh:property [
+            sh:path mt:hasTranslation ;
+            sh:minCount 1 ;
+        ] ]
+    ) .";
 		/*
-		hasTranslation->size() + hasRotation->size() = 1 and hasTranslation->size() + hasRotation->size() <> 0 
+		val:TransformationMustHaveRotationOrTranslation
+		    a sh:NodeShape ;
+		    sh:message "`Transformation` MUST have at least one of `Rotation` or `Translation` defined, and neither can be multiply defined." ;
+		    sh:targetClass mt:Transformation ;
+		
+		    sh:property [
+		        sh:path mt:hasRotation ;
+		        sh:maxCount 1 ;
+		        sh:class mt:Rotation ;
+		    ] ;
+		    sh:property [
+		        sh:path mt:hasTranslation ;
+		        sh:maxCount 1 ;
+		        sh:class mt:Translation ;
+		    ] ;
+		
+		    sh:or (
+		        [ sh:property [
+		            sh:path mt:hasRotation ;
+		            sh:minCount 1 ;
+		        ] ]
+		        [ sh:property [
+		            sh:path mt:hasTranslation ;
+		            sh:minCount 1 ;
+		        ] ]
+		    ) .
 		*/
 		# endregion
 	}

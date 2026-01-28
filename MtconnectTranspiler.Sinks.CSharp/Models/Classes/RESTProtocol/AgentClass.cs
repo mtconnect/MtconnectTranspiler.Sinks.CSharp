@@ -630,17 +630,81 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 		/// SufficientObservationSpace
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string SufficientObservationSpace => @"buffer.length < agent.bufferSize";
+		public string SufficientObservationSpace => @"val:SufficientObservationSpace
+    a sh:NodeShape ;
+    sh:message ""Observation buffer length **MUST** be strictly less than Agent's buffer size."" ;
+    sh:targetClass mt:Agent ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:select """"""
+            SELECT $this
+            WHERE {
+                $this mt:observationBuffer ?buffer .
+                $this mt:bufferSize ?maxSize .
+                ?buffer mt:length ?bufferLen .
+                FILTER (xsd:integer(?bufferLen) >= xsd:integer(?maxSize))
+            }
+        """""" ;
+    ] .
+";
 		/*
-		buffer.length < agent.bufferSize
+		val:SufficientObservationSpace
+		    a sh:NodeShape ;
+		    sh:message "Observation buffer length **MUST** be strictly less than Agent's buffer size." ;
+		    sh:targetClass mt:Agent ;
+		    sh:sparql [
+		        a sh:SPARQLConstraint ;
+		        sh:select """
+		            SELECT $this
+		            WHERE {
+		                $this mt:observationBuffer ?buffer .
+		                $this mt:bufferSize ?maxSize .
+		                ?buffer mt:length ?bufferLen .
+		                FILTER (xsd:integer(?bufferLen) >= xsd:integer(?maxSize))
+		            }
+		        """ ;
+		    ] .
+
 		*/
 		/// <summary>
 		/// SufficientAssetSpace
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string SufficientAssetSpace => @"assetBuffer.length < agent.maxAssets";
+		public string SufficientAssetSpace => @"val:SufficientAssetSpace
+    a sh:NodeShape ;
+    sh:message ""Asset buffer length **MUST** be less than Agent's max assets."" ;
+    sh:targetClass mt:Agent ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:select """"""
+            SELECT $this
+            WHERE {
+                $this mt:assetBuffer ?buffer .
+                $this mt:maxAssets ?maxAssets .
+                ?buffer mt:length ?bufferLen .
+                FILTER (xsd:integer(?bufferLen) >= xsd:integer(?maxAssets))
+            }
+        """""" ;
+    ] .
+";
 		/*
-		assetBuffer.length < agent.maxAssets
+		val:SufficientAssetSpace
+		    a sh:NodeShape ;
+		    sh:message "Asset buffer length **MUST** be less than Agent's max assets." ;
+		    sh:targetClass mt:Agent ;
+		    sh:sparql [
+		        a sh:SPARQLConstraint ;
+		        sh:select """
+		            SELECT $this
+		            WHERE {
+		                $this mt:assetBuffer ?buffer .
+		                $this mt:maxAssets ?maxAssets .
+		                ?buffer mt:length ?bufferLen .
+		                FILTER (xsd:integer(?bufferLen) >= xsd:integer(?maxAssets))
+		            }
+		        """ ;
+		    ] .
+
 		*/
 		# endregion
 	}

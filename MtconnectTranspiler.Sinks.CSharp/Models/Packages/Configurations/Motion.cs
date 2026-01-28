@@ -51,6 +51,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			MotionClass,
+			AbstractAxisClass,
+			AxisDataSetGeneralization,
 			AxisClass,
 		};
 		
@@ -67,6 +69,18 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <inheritdoc cref="Package.MotionClass" path="/summary" />
 	/// </summary>
 	public Package.MotionClass MotionClass => _MotionClass ?? (_MotionClass = new Package.MotionClass());
+
+	private Package.AbstractAxisClass _AbstractAxisClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AbstractAxisClass" path="/summary" />
+	/// </summary>
+	public Package.AbstractAxisClass AbstractAxisClass => _AbstractAxisClass ?? (_AbstractAxisClass = new Package.AbstractAxisClass());
+
+	private Package.AxisDataSetGeneralization _AxisDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.AxisDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.AxisDataSetGeneralization AxisDataSetGeneralization => _AxisDataSetGeneralization ?? (_AxisDataSetGeneralization = new Package.AxisDataSetGeneralization());
 
 	private Package.AxisClass _AxisClass;
 	/// <summary>

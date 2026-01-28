@@ -51,6 +51,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			SolidModelClass,
+			AbstractScaleClass,
+			ScaleDataSetGeneralization,
 			ScaleClass,
 		};
 		
@@ -67,6 +69,18 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <inheritdoc cref="Package.SolidModelClass" path="/summary" />
 	/// </summary>
 	public Package.SolidModelClass SolidModelClass => _SolidModelClass ?? (_SolidModelClass = new Package.SolidModelClass());
+
+	private Package.AbstractScaleClass _AbstractScaleClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AbstractScaleClass" path="/summary" />
+	/// </summary>
+	public Package.AbstractScaleClass AbstractScaleClass => _AbstractScaleClass ?? (_AbstractScaleClass = new Package.AbstractScaleClass());
+
+	private Package.ScaleDataSetGeneralization _ScaleDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.ScaleDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.ScaleDataSetGeneralization ScaleDataSetGeneralization => _ScaleDataSetGeneralization ?? (_ScaleDataSetGeneralization = new Package.ScaleDataSetGeneralization());
 
 	private Package.ScaleClass _ScaleClass;
 	/// <summary>

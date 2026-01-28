@@ -8,7 +8,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.AssetInformationModel.Pallet.Measurements
 {
-	/// <summary>﻿constrained scalar value associated with an <see cref="Asset">Asset</see>.<br /><br /><br />
+	/// <summary>﻿constrained scalar value associated with an <see cref="Asset">Asset</see><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_68e0225_1727793846441_986747_23754">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -25,7 +25,7 @@ namespace Mtconnect.AssetInformationModel.Pallet.Measurements
 		/// <summary>Constant value for <see cref="MeasurementClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___2024x_68e0225_1727793846441_986747_23754";
 		/// <summary>Constant value for <see cref="MeasurementClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;constrained scalar value associated with an {{block(Asset)}}.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;constrained scalar value associated with an {{block(Asset)}}&#10;
 ";
 		/// <summary>Constant value for <see cref="MeasurementClass.Name" /></summary>
 		public const string NAME = "Measurement";

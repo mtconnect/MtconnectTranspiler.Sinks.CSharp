@@ -426,6 +426,9 @@ See `QIFDocumentWrapper` element in `MTConnectAssets` schema.&#10;
 			ComponentConfigurationParametersPackage,
 			FixturePackage,
 			PalletPackage,
+			ProcessPackage,
+			PartPackage,
+			TaskPackage,
 		};
 		
 		/// <inheritdoc />
@@ -480,6 +483,24 @@ See `QIFDocumentWrapper` element in `MTConnectAssets` schema.&#10;
 	/// <inheritdoc cref="Package.PalletPackage" path="/summary" />
 	/// </summary>
 	public Package.PalletPackage PalletPackage => _PalletPackage ?? (_PalletPackage = new Package.PalletPackage());
+
+	private Package.ProcessPackage _ProcessPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.ProcessPackage" path="/summary" />
+	/// </summary>
+	public Package.ProcessPackage ProcessPackage => _ProcessPackage ?? (_ProcessPackage = new Package.ProcessPackage());
+
+	private Package.PartPackage _PartPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.PartPackage" path="/summary" />
+	/// </summary>
+	public Package.PartPackage PartPackage => _PartPackage ?? (_PartPackage = new Package.PartPackage());
+
+	private Package.TaskPackage _TaskPackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.TaskPackage" path="/summary" />
+	/// </summary>
+	public Package.TaskPackage TaskPackage => _TaskPackage ?? (_TaskPackage = new Package.TaskPackage());
 
 	#endregion
 

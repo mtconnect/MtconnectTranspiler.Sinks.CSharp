@@ -238,22 +238,115 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 		/// </summary>
 		public string[] Rules => new string[] {
 			MtconnectDevices1,
+			MtconnectDevices2,
 		};
 		/// <summary>
 		/// MtconnectDevices1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string MtconnectDevices1 => @"Components::Component::allInstances()->forAll(comp1, comp2 | comp1 <> comp2 implies comp1.id <> comp2.id and comp1.name <> comp2.name)  and 
-DataItems::DataItem::allInstances()->forAll(di1, di2 | di1 <> di2 implies di1.id <> di2.id and di1.name <> di2.name) and
-Components::Devices::Device::allInstances()->forAll(d1, d2 | d1 <> d2 implies d1.id <> d2.id and d1.name <> d2.name) and 
-Compositions::Composition::allInstances()->forAll(compn1, compn2 | compn1 <> compn2 implies compn1.id <> compn2.id and compn1.name <> compn2.name)
- ";
+		public string MtconnectDevices1 => @"val:IdsMustBeUnique
+    a sh:PredicateShape ;
+    sh:targetSubjectsOf mt:hasId ;
+    sh:sparql [
+        sh:prefixes val:Prefix ;
+        sh:message ""All `id` properties **MUST** be unique."" ;
+        sh:select """"""
+            SELECT $this ?id WHERE {
+                $this mt:hasId ?id .
+                ?other mt:hasId ?id .
+                FILTER ($this != ?other)
+            }
+        """""" ;
+    ] .";
 		/*
-		Components::Component::allInstances()->forAll(comp1, comp2 | comp1 <> comp2 implies comp1.id <> comp2.id and comp1.name <> comp2.name)  and 
-		DataItems::DataItem::allInstances()->forAll(di1, di2 | di1 <> di2 implies di1.id <> di2.id and di1.name <> di2.name) and
-		Components::Devices::Device::allInstances()->forAll(d1, d2 | d1 <> d2 implies d1.id <> d2.id and d1.name <> d2.name) and 
-		Compositions::Composition::allInstances()->forAll(compn1, compn2 | compn1 <> compn2 implies compn1.id <> compn2.id and compn1.name <> compn2.name)
-		 
+		val:IdsMustBeUnique
+		    a sh:PredicateShape ;
+		    sh:targetSubjectsOf mt:hasId ;
+		    sh:sparql [
+		        sh:prefixes val:Prefix ;
+		        sh:message "All `id` properties **MUST** be unique." ;
+		        sh:select """
+		            SELECT $this ?id WHERE {
+		                $this mt:hasId ?id .
+		                ?other mt:hasId ?id .
+		                FILTER ($this != ?other)
+		            }
+		        """ ;
+		    ] .
+		*/
+		/// <summary>
+		/// MtconnectDevices2
+		/// </summary>
+		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string MtconnectDevices2 => @"val:NamesShouldBeUnique
+    a sh:PredicateShape ;
+    sh:targetSubjectsOf mt:hasName ;
+    sh:sparql [
+      a sh:SPARQLConstraint ;
+        sh:prefixes val:Prefix ;
+        sh:message ""All `name` properties **SHOULD** be unique."" ;
+        sh:severity sh:Warning ;
+        sh:select """"""
+            SELECT $this ?name WHERE {
+                $this mt:hasName ?name .
+                ?other mt:hasName ?name .
+                FILTER ($this != ?other)
+            }
+        """""" ;
+    ] .
+
+val:NamesAtTheSameLevelMustBeUnique
+    a sh:NodeShape ;
+    sh:targetClass mt:Component ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:prefixes val:Prefix ;
+        sh:message ""All `name` properties at the same level **MUST** be unique."" ;
+        sh:select """"""
+            SELECT $this ?name ?sub1 ?sub2 WHERE {
+                $this mt:hasComponent ?sub1 .
+                ?sub1 mt:hasName ?name .
+                $this mt:hasComponent ?sub2 .
+                ?sub2 mt:hasName ?name .
+                FILTER (?sub1 != ?sub2)
+            }
+        """""" ;
+    ] .";
+		/*
+		val:NamesShouldBeUnique
+		    a sh:PredicateShape ;
+		    sh:targetSubjectsOf mt:hasName ;
+		    sh:sparql [
+		      a sh:SPARQLConstraint ;
+		        sh:prefixes val:Prefix ;
+		        sh:message "All `name` properties **SHOULD** be unique." ;
+		        sh:severity sh:Warning ;
+		        sh:select """
+		            SELECT $this ?name WHERE {
+		                $this mt:hasName ?name .
+		                ?other mt:hasName ?name .
+		                FILTER ($this != ?other)
+		            }
+		        """ ;
+		    ] .
+		
+		val:NamesAtTheSameLevelMustBeUnique
+		    a sh:NodeShape ;
+		    sh:targetClass mt:Component ;
+		    sh:sparql [
+		        a sh:SPARQLConstraint ;
+		        sh:prefixes val:Prefix ;
+		        sh:message "All `name` properties at the same level **MUST** be unique." ;
+		        sh:select """
+		            SELECT $this ?name ?sub1 ?sub2 WHERE {
+		                $this mt:hasComponent ?sub1 .
+		                ?sub1 mt:hasName ?name .
+		                $this mt:hasComponent ?sub2 .
+		                ?sub2 mt:hasName ?name .
+		                FILTER (?sub1 != ?sub2)
+		            }
+		        """ ;
+		    ] .
 		*/
 		# endregion
 	}

@@ -486,6 +486,15 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		OHM_METER,
+		/// <summary>﻿concentration of a dissolved substance in milligram per liter<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		MILLIGRAM_PER_LITER,
 	}
 
 	/// <summary>﻿
@@ -585,6 +594,7 @@ namespace Mtconnect.DataTypes
 		CUBIC_METER,
 		SQUARE_MILLIMETER,
 		OHM_METER,
+		MILLIGRAM_PER_LITER,
 		};
 
 		private AMPEREValue _AMPERE;
@@ -2706,6 +2716,47 @@ Space delimited list of three floating point numbers.&#10;
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="OHM_METERValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;resistivity in ohm-meter.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private MILLIGRAM_PER_LITERValue _MILLIGRAM_PER_LITER;
+		/// <inheritdoc cref="MILLIGRAM_PER_LITERValue" path="/summary" />
+		public MILLIGRAM_PER_LITERValue MILLIGRAM_PER_LITER => _MILLIGRAM_PER_LITER ?? (_MILLIGRAM_PER_LITER = new MILLIGRAM_PER_LITERValue());
+
+		/// <summary>﻿concentration of a dissolved substance in milligram per liter<br /><br /><br />
+		/// Value for UnitEnum.<br/>
+		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class MILLIGRAM_PER_LITERValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="MILLIGRAM_PER_LITERValue.Name" /></summary>
+			public const string NAME = "MILLIGRAM/LITER";
+			/// <summary>Constant value for <see cref="MILLIGRAM_PER_LITERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="MILLIGRAM_PER_LITERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MILLIGRAM_PER_LITERValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;concentration of a dissolved substance in milligram per liter&#10;
 ";
 
 			/// <inheritdoc />

@@ -5,6 +5,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
@@ -63,36 +64,40 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public Type Generalization => null;
+		/// <remarks>
+		/// Original Type: _2024x_3_3870182_1764950887632_747424_46
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractOriginClass);
 
 		/// <inheritdoc />
 		public new OriginClassProperties Properties { get; } = new OriginClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OriginClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractOriginClass.AbstractOriginClassProperties" />.
 		/// </summary>
-		public class OriginClassProperties : IPropertyList
+		public class OriginClassProperties : Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractOriginClass.AbstractOriginClassProperties
 		{
 			/// <inheritdoc />
-			public virtual IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Value,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
-			public ValueProperty Value { get; } = new ValueProperty();
+			public new ValueProperty Value { get; } = new ValueProperty();
 			
 			/// <summary>﻿
 			/// </summary>
-			public sealed class ValueProperty : IProperty
+			public new sealed class ValueProperty : IProperty
 			{
 				/// <summary>Constant value for <see cref="ValueProperty.Name" /></summary>
 				public const string NAME = "value";
 				/// <summary>Constant value for <see cref="ValueProperty.Summary" /></summary>
 				public const string SUMMARY = @"";
 				/// <summary>Constant value for <see cref="ValueProperty.AccessModifier" /></summary>
-				public const string ACCESS_MODIFIER = "public";
+				public const string ACCESS_MODIFIER = "private";
 				/// <summary>Constant value for <see cref="ValueProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="ValueProperty.NormativeVersion" /></summary>
@@ -112,9 +117,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: OriginDataSetGeneralization </remarks>
+				/// <remarks> Type: Float[] </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DataTypes.OriginDataSetGeneralization);
+				public System.Type Type => typeof(float[]);
 				
 				/// <inheritdoc />
 				public string Name => NAME;

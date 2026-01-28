@@ -274,6 +274,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			ParticleCountLiquidClass,
 			ParticleCountSolidClass,
 			ParticleSizeClass,
+			WaterHardnessClass,
 		};
 		
 		/// <inheritdoc />
@@ -1675,6 +1676,12 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <inheritdoc cref="Package.ParticleSizeClass" path="/summary" />
 	/// </summary>
 	public Package.ParticleSizeClass ParticleSizeClass => _ParticleSizeClass ?? (_ParticleSizeClass = new Package.ParticleSizeClass());
+
+	private Package.WaterHardnessClass _WaterHardnessClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.WaterHardnessClass" path="/summary" />
+	/// </summary>
+	public Package.WaterHardnessClass WaterHardnessClass => _WaterHardnessClass ?? (_WaterHardnessClass = new Package.WaterHardnessClass());
 
 	#endregion
 

@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.AssetInformationModel.Pallet.Measurements
 {
-	/// <summary>﻿height of the <see cref="PhysicalAsset">PhysicalAsset</see>.<br /><br /><br />
+	/// <summary>﻿{{termuniversal(height)}} of the <see cref="PhysicalAsset">PhysicalAsset</see><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_68e0225_1727795946018_306044_24580">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -26,7 +26,7 @@ namespace Mtconnect.AssetInformationModel.Pallet.Measurements
 		/// <summary>Constant value for <see cref="HeightClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___2024x_68e0225_1727795946018_306044_24580";
 		/// <summary>Constant value for <see cref="HeightClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;height of the {{block(PhysicalAsset)}}.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;{{termuniversal(height)}} of the {{block(PhysicalAsset)}}&#10;
 ";
 		/// <summary>Constant value for <see cref="HeightClass.Name" /></summary>
 		public const string NAME = "Height";

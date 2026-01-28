@@ -8,7 +8,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.Glossary
 {
-	/// <summary>﻿discrete item that has both defined and measurable physical characteristics including mass, material, and features, and is created by applying one or more manufacturing process steps to a workpiece<br /><br /><br />
+	/// <summary>﻿discrete item that has both defined and measurable physical characteristics including mass, material, and features, and is created by applying one or more manufacturing process steps to material<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375178_991512_2059">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
@@ -20,7 +20,7 @@ namespace Mtconnect.Glossary
 		/// <summary>Constant value for <see cref="PartClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375178_991512_2059";
 		/// <summary>Constant value for <see cref="PartClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;discrete item that has both defined and measurable physical characteristics including mass, material, and features, and is created by applying one or more manufacturing process steps to a workpiece&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;discrete item that has both defined and measurable physical characteristics including mass, material, and features, and is created by applying one or more manufacturing process steps to material&#10;
 ";
 		/// <summary>Constant value for <see cref="PartClass.Name" /></summary>
 		public const string NAME = "part";
