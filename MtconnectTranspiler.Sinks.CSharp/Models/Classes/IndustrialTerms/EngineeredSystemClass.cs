@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1635250812908_628647_270">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class EngineeredSystemClass : IClass
 	{
 		/// <summary>Constant value for <see cref="EngineeredSystemClass.ReferenceId" /></summary>
@@ -106,7 +106,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <summary>Constant value for <see cref="PartOfProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="PartOfProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PartOfProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PartOfProperty.DefaultValue" /></summary>

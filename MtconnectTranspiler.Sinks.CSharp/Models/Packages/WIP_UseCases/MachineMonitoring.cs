@@ -11,7 +11,7 @@ namespace Mtconnect.WIP_UseCases
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1702396421910_311633_28">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class MachineMonitoringPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="MachineMonitoringPackage.ReferenceId" /></summary>

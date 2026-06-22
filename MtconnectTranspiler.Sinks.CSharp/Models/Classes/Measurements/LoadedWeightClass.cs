@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Pallet.Measurements
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class LoadedWeightClass : IClass
 	{
 		/// <summary>Constant value for <see cref="LoadedWeightClass.ReferenceId" /></summary>

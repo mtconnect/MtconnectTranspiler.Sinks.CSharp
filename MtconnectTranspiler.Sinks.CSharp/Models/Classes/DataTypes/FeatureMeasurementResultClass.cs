@@ -18,7 +18,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class FeatureMeasurementResultClass : IClass
 	{
 		/// <summary>Constant value for <see cref="FeatureMeasurementResultClass.ReferenceId" /></summary>
@@ -115,7 +115,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="MeasurementIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MeasurementIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MeasurementIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MeasurementIdProperty.DefaultValue" /></summary>
@@ -190,7 +190,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FeaturePersistentIdProperty.DefaultValue" /></summary>
@@ -265,7 +265,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="CharacteristicPersistentIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CharacteristicPersistentIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CharacteristicPersistentIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CharacteristicPersistentIdProperty.DefaultValue" /></summary>
@@ -342,7 +342,7 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="MeasurementTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MeasurementTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MeasurementTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MeasurementTypeProperty.DefaultValue" /></summary>
@@ -417,7 +417,7 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="MeasurementValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MeasurementValueProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MeasurementValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MeasurementValueProperty.DefaultValue" /></summary>
@@ -492,7 +492,7 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MeasurementUnitsProperty.DefaultValue" /></summary>
@@ -567,7 +567,7 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="CharacteristicStatusProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CharacteristicStatusProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CharacteristicStatusProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CharacteristicStatusProperty.DefaultValue" /></summary>
@@ -642,7 +642,7 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="UncertaintyTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UncertaintyTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UncertaintyTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UncertaintyTypeProperty.DefaultValue" /></summary>
@@ -717,7 +717,7 @@ Examples: `POINT`, `RADIUS`, `ANGLE`, `LENGTH`, etc.&#10;
 				/// <summary>Constant value for <see cref="UncertaintyProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UncertaintyProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UncertaintyProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UncertaintyProperty.DefaultValue" /></summary>

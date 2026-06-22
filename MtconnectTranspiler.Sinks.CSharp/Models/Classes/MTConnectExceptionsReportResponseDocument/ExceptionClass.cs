@@ -17,7 +17,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ExceptionClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ExceptionClass.ReferenceId" /></summary>
@@ -106,7 +106,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 				/// <summary>Constant value for <see cref="SeverityProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="SeverityProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SeverityProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SeverityProperty.DefaultValue" /></summary>
@@ -181,7 +181,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 				/// <summary>Constant value for <see cref="CodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CodeProperty.DefaultValue" /></summary>
@@ -255,7 +255,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 				/// <summary>Constant value for <see cref="MessageProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MessageProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MessageProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MessageProperty.DefaultValue" /></summary>
@@ -329,7 +329,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 				/// <summary>Constant value for <see cref="HasTracePartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasTracePartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasTracePartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Trace";
 				/// <summary>Constant value for <see cref="HasTracePartProperty.DefaultValue" /></summary>

@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class PhysicalAssetGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="PhysicalAssetGeneralization.ReferenceId" /></summary>
@@ -112,7 +112,7 @@ namespace Mtconnect.AssetInformationModel
 				/// <summary>Constant value for <see cref="ManufactureDateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ManufactureDateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ManufactureDateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ManufactureDateProperty.DefaultValue" /></summary>
@@ -187,7 +187,7 @@ namespace Mtconnect.AssetInformationModel
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.DefaultValue" /></summary>
@@ -262,7 +262,7 @@ namespace Mtconnect.AssetInformationModel
 				/// <summary>Constant value for <see cref="InspectionDateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="InspectionDateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="InspectionDateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="InspectionDateProperty.DefaultValue" /></summary>
@@ -337,7 +337,7 @@ namespace Mtconnect.AssetInformationModel
 				/// <summary>Constant value for <see cref="NextInspectionDateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NextInspectionDateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NextInspectionDateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NextInspectionDateProperty.DefaultValue" /></summary>

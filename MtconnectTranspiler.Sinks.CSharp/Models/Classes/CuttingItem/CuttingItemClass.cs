@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CuttingItemClass : IClass
 	{
 		/// <summary>Constant value for <see cref="CuttingItemClass.ReferenceId" /></summary>
@@ -112,7 +112,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				/// <summary>Constant value for <see cref="DescriptionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DescriptionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
@@ -187,7 +187,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem
 				/// <summary>Constant value for <see cref="GradeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="GradeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="GradeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="GradeProperty.DefaultValue" /></summary>
@@ -266,7 +266,7 @@ Indices **SHOULD** start numbering with the inserts or {{block(CuttingItem)}} fu
 				/// <summary>Constant value for <see cref="IndicesProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IndicesProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IndicesProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IndicesProperty.DefaultValue" /></summary>
@@ -341,7 +341,7 @@ Indices **SHOULD** start numbering with the inserts or {{block(CuttingItem)}} fu
 				/// <summary>Constant value for <see cref="ItemIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ItemIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ItemIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ItemIdProperty.DefaultValue" /></summary>
@@ -424,7 +424,7 @@ For clarity, the words `FLUTE`, `INSERT`, and `CARTRIDGE` **SHOULD** be used to 
 				/// <summary>Constant value for <see cref="LocusProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="LocusProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="LocusProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LocusProperty.DefaultValue" /></summary>
@@ -579,7 +579,7 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.DefaultValue" /></summary>
@@ -653,7 +653,7 @@ manufacturers’ will be a property of {{block(CuttingItem)}}.
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "CutterStatus";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.DefaultValue" /></summary>

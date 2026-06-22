@@ -20,7 +20,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 	/// </remarks>
 	[Obsolete("Deprecated in v1.5 according to https://model.mtconnect.org/#_Version_1.5")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DiscreteClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DiscreteClass.ReferenceId" /></summary>
@@ -120,7 +120,7 @@ Examples of {{block(Discrete)}}: A `PartCount` reporting the completion of each 
 				/// <summary>Constant value for <see cref="ResultProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ResultProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>

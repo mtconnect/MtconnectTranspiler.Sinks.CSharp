@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AssetClass : IClass
 	{
 		/// <summary>Constant value for <see cref="AssetClass.ReferenceId" /></summary>
@@ -124,7 +124,7 @@ namespace Mtconnect.AssetInformationModel
 				/// <summary>Constant value for <see cref="AssetIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="AssetIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="AssetIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AssetIdProperty.DefaultValue" /></summary>
@@ -201,7 +201,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.DefaultValue" /></summary>
@@ -276,7 +276,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="RemovedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="RemovedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="RemovedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RemovedProperty.DefaultValue" /></summary>
@@ -351,7 +351,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="TimestampProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TimestampProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TimestampProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TimestampProperty.DefaultValue" /></summary>
@@ -425,7 +425,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Configuration";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.DefaultValue" /></summary>
@@ -500,7 +500,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="HashProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HashProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HashProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HashProperty.DefaultValue" /></summary>
@@ -575,7 +575,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="DescriptionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DescriptionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DescriptionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
@@ -723,7 +723,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="ModelProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ModelProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ModelProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ModelProperty.DefaultValue" /></summary>
@@ -797,7 +797,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SerialNumberProperty.DefaultValue" /></summary>
@@ -871,7 +871,7 @@ It references to {{property(Device::uuid)}} defined in {{package(Device Informat
 				/// <summary>Constant value for <see cref="StationProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="StationProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="StationProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="StationProperty.DefaultValue" /></summary>

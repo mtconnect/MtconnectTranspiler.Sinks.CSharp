@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class SensorConfigurationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SensorConfigurationClass.ReferenceId" /></summary>
@@ -110,7 +110,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.DefaultValue" /></summary>
@@ -185,7 +185,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.DefaultValue" /></summary>
@@ -260,7 +260,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="FirmwareVersionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="FirmwareVersionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="FirmwareVersionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FirmwareVersionProperty.DefaultValue" /></summary>
@@ -335,7 +335,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.DefaultValue" /></summary>

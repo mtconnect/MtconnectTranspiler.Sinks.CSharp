@@ -17,7 +17,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MTConnectExceptionsReportClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MTConnectExceptionsReportClass.ReferenceId" /></summary>

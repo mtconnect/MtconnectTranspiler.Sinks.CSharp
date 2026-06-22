@@ -18,7 +18,7 @@ namespace Mtconnect.InterfaceInteractionModel.DataItemTypesForInterface
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class InterfaceStateClass : IClass
 	{
 		/// <summary>Constant value for <see cref="InterfaceStateClass.ReferenceId" /></summary>
@@ -184,7 +184,7 @@ When the {{block(InterfaceState)}} is `DISABLED`, the state of all data items th
 				/// <summary>Constant value for <see cref="ResultProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ResultProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ResultProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>

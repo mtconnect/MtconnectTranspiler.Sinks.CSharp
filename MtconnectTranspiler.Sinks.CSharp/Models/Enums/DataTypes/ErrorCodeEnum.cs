@@ -17,7 +17,7 @@ namespace Mtconnect.DataTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v2.6 according to https://model.mtconnect.org/#_Version_2.6")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum ErrorCodeEnum
 	{
 		/// <summary>﻿<i>request</i> for information specifies an <see cref="Asset">Asset</see> that is not recognized by the <i>agent</i>.<br /><br /><br />
@@ -146,7 +146,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_91b028d_1579560813203_683279_6795">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ErrorCodeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="ErrorCodeEnumMetaClass.ReferenceId" /></summary>

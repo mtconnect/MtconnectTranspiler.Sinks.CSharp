@@ -11,7 +11,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <summary>﻿This section provides semantic information for <see cref="Sample">Sample</see> types.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309868367_570061_44359">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class SampleTypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="SampleTypesPackage.ReferenceId" /></summary>
@@ -275,6 +275,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			ParticleCountSolidClass,
 			ParticleSizeClass,
 			WaterHardnessClass,
+			ElevationClass,
+			ElevationGroundLevelClass,
+			ElevationMeanSeaLevelClass,
 		};
 		
 		/// <inheritdoc />
@@ -1682,6 +1685,24 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <inheritdoc cref="Package.WaterHardnessClass" path="/summary" />
 	/// </summary>
 	public Package.WaterHardnessClass WaterHardnessClass => _WaterHardnessClass ?? (_WaterHardnessClass = new Package.WaterHardnessClass());
+
+	private Package.ElevationClass _ElevationClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ElevationClass" path="/summary" />
+	/// </summary>
+	public Package.ElevationClass ElevationClass => _ElevationClass ?? (_ElevationClass = new Package.ElevationClass());
+
+	private Package.ElevationGroundLevelClass _ElevationGroundLevelClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ElevationGroundLevelClass" path="/summary" />
+	/// </summary>
+	public Package.ElevationGroundLevelClass ElevationGroundLevelClass => _ElevationGroundLevelClass ?? (_ElevationGroundLevelClass = new Package.ElevationGroundLevelClass());
+
+	private Package.ElevationMeanSeaLevelClass _ElevationMeanSeaLevelClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ElevationMeanSeaLevelClass" path="/summary" />
+	/// </summary>
+	public Package.ElevationMeanSeaLevelClass ElevationMeanSeaLevelClass => _ElevationMeanSeaLevelClass ?? (_ElevationMeanSeaLevelClass = new Package.ElevationMeanSeaLevelClass());
 
 	#endregion
 

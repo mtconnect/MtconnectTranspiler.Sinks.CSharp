@@ -11,7 +11,7 @@ namespace Mtconnect
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1581733974382_65435_581">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class GlossaryPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="GlossaryPackage.ReferenceId" /></summary>

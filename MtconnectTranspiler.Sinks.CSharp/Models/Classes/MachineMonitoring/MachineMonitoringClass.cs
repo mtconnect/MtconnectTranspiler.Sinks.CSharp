@@ -12,7 +12,7 @@ namespace Mtconnect.WIP_UseCases.MachineMonitoring
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_68e0225_1760862608203_768314_877">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MachineMonitoringClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MachineMonitoringClass.ReferenceId" /></summary>

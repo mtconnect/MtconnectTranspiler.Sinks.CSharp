@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TaskArchetypeClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TaskArchetypeClass.ReferenceId" /></summary>
@@ -113,7 +113,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 				/// <summary>Constant value for <see cref="HasCollaboratorPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasCollaboratorPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasCollaboratorPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Collaborators";
 				/// <summary>Constant value for <see cref="HasCollaboratorPartProperty.DefaultValue" /></summary>
@@ -187,7 +187,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Coordinator";
 				/// <summary>Constant value for <see cref="HasCoordinatorPartProperty.DefaultValue" /></summary>
@@ -264,7 +264,7 @@ Examples include `MOVE_MATERIAL` and `CHANGE_TOOL`.&#10;
 				/// <summary>Constant value for <see cref="TaskTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TaskTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TaskTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TaskTypeProperty.DefaultValue" /></summary>
@@ -338,7 +338,7 @@ Examples include `MOVE_MATERIAL` and `CHANGE_TOOL`.&#10;
 				/// <summary>Constant value for <see cref="IsSubTaskOfPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IsSubTaskOfPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IsSubTaskOfPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "SubTaskRefClass";
 				/// <summary>Constant value for <see cref="IsSubTaskOfPartProperty.DefaultValue" /></summary>
@@ -487,7 +487,7 @@ Examples include `MOVE_MATERIAL` and `CHANGE_TOOL`.&#10;
 				/// <summary>Constant value for <see cref="PriorityProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="PriorityProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PriorityProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PriorityProperty.DefaultValue" /></summary>

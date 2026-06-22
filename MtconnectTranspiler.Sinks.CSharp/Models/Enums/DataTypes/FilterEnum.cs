@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum FilterEnum
 	{
 		/// <summary>﻿new value <b>MUST NOT</b> be reported for a data item unless the measured value has changed from the last reported value by at least the delta given as the value of this element.<br /><br />The value of <see cref="Filter">Filter</see> <b>MUST</b> be an absolute value using the same units as the reported data.<br /><br /><br />
@@ -41,7 +41,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_EF8EFACB_B3D8_4199_B5D5_84735797D463">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class FilterEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="FilterEnumMetaClass.ReferenceId" /></summary>

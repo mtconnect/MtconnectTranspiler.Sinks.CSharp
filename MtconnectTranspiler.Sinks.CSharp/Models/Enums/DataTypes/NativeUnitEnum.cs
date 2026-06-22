@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum NativeUnitEnum
 	{
 		/// <summary>﻿viscosity in centipoise.<br /><br /><br />
@@ -414,12 +414,30 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MICROTORR,
+		/// <summary>﻿number of occurrences of a specific event or entity per one million total occurrences<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
+		COUNT_PER_MILLION,
+		/// <summary>﻿number of occurrences of a specific event or entity per one trillion total occurrences<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
+		COUNT_PER_TRILLION,
 	}
 
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_678122A4_E8FD_4243_8427_6B7E0E78D5F5">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class NativeUnitEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="NativeUnitEnumMetaClass.ReferenceId" /></summary>
@@ -505,6 +523,8 @@ namespace Mtconnect.DataTypes
 		MICROMETER,
 		RANKINE,
 		MICROTORR,
+		COUNT_PER_MILLION,
+		COUNT_PER_TRILLION,
 		};
 
 		private CENTIPOISEValue _CENTIPOISE;
@@ -2298,6 +2318,88 @@ namespace Mtconnect.DataTypes
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MICROTORRValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;pressure in microtorr.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private COUNT_PER_MILLIONValue _COUNT_PER_MILLION;
+		/// <inheritdoc cref="COUNT_PER_MILLIONValue" path="/summary" />
+		public COUNT_PER_MILLIONValue COUNT_PER_MILLION => _COUNT_PER_MILLION ?? (_COUNT_PER_MILLION = new COUNT_PER_MILLIONValue());
+
+		/// <summary>﻿number of occurrences of a specific event or entity per one million total occurrences<br /><br /><br />
+		/// Value for NativeUnitEnum.<br/>
+		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class COUNT_PER_MILLIONValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="COUNT_PER_MILLIONValue.Name" /></summary>
+			public const string NAME = "COUNT/MILLION";
+			/// <summary>Constant value for <see cref="COUNT_PER_MILLIONValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.8";
+			/// <summary>Constant value for <see cref="COUNT_PER_MILLIONValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="COUNT_PER_MILLIONValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;number of occurrences of a specific event or entity per one million total occurrences&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private COUNT_PER_TRILLIONValue _COUNT_PER_TRILLION;
+		/// <inheritdoc cref="COUNT_PER_TRILLIONValue" path="/summary" />
+		public COUNT_PER_TRILLIONValue COUNT_PER_TRILLION => _COUNT_PER_TRILLION ?? (_COUNT_PER_TRILLION = new COUNT_PER_TRILLIONValue());
+
+		/// <summary>﻿number of occurrences of a specific event or entity per one trillion total occurrences<br /><br /><br />
+		/// Value for NativeUnitEnum.<br/>
+		/// <br/>See also <seealso cref="NativeUnitEnum">NativeUnitEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.1">v1.1</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class COUNT_PER_TRILLIONValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="COUNT_PER_TRILLIONValue.Name" /></summary>
+			public const string NAME = "COUNT/TRILLION";
+			/// <summary>Constant value for <see cref="COUNT_PER_TRILLIONValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.8";
+			/// <summary>Constant value for <see cref="COUNT_PER_TRILLIONValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="COUNT_PER_TRILLIONValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;number of occurrences of a specific event or entity per one trillion total occurrences&#10;
 ";
 
 			/// <inheritdoc />

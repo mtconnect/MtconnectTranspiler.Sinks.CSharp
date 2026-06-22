@@ -18,7 +18,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class SpecificationLimitResultClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SpecificationLimitResultClass.ReferenceId" /></summary>
@@ -113,7 +113,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="UpperLimitProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UpperLimitProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UpperLimitProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UpperLimitProperty.DefaultValue" /></summary>
@@ -188,7 +188,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="NominalProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NominalProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NominalProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NominalProperty.DefaultValue" /></summary>
@@ -267,7 +267,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="LowerLimitProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LowerLimitProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="LowerLimitProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LowerLimitProperty.DefaultValue" /></summary>

@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581734255313_425984_984">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AssetGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="AssetGeneralization.ReferenceId" /></summary>
@@ -110,7 +110,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				/// <summary>Constant value for <see cref="BelongsToProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="BelongsToProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="BelongsToProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="BelongsToProperty.DefaultValue" /></summary>

@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 {
-	/// <summary>﻿<see cref="EventEnum.DEPTH">EventEnum.DEPTH</see> when the action is to <see cref="DataItemSubType.PLUNGE">DataItemSubType.PLUNGE</see><br /><br /><br />
+	/// <summary>﻿<see cref="EventEnum.DEPTH">EventEnum.DEPTH</see> when the action is to <see cref="DataItemSubType.CUT">DataItemSubType.CUT</see><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_68e0225_1760962181131_97195_478">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DepthCutClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DepthCutClass.ReferenceId" /></summary>
@@ -26,7 +26,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		/// <summary>Constant value for <see cref="DepthCutClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure___2024x_68e0225_1760962181131_97195_478";
 		/// <summary>Constant value for <see cref="DepthCutClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;{{def(EventEnum::DEPTH)}} when the action is to {{def(DataItemSubType::PLUNGE)}}&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;{{def(EventEnum::DEPTH)}} when the action is to {{def(DataItemSubType::CUT)}}&#10;
 ";
 		/// <summary>Constant value for <see cref="DepthCutClass.Name" /></summary>
 		public const string NAME = "Depth.Cut";

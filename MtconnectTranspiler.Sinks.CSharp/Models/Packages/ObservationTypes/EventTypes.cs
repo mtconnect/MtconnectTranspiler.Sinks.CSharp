@@ -11,7 +11,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <summary>﻿This section provides semantic information for <see cref="Event">Event</see> types.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309852285_621670_44358">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class EventTypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="EventTypesPackage.ReferenceId" /></summary>
