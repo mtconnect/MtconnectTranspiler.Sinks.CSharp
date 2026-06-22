@@ -11,7 +11,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <summary>﻿This section provides semantic information for <see cref="Sample">Sample</see> types.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1580309868367_570061_44359">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class SampleTypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="SampleTypesPackage.ReferenceId" /></summary>
@@ -265,6 +265,19 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 			DisplacementLinearClass,
 			DisplacementAngularClass,
 			PositionCartesianClass,
+			ResistivityClass,
+			FillHeightClass,
+			FillHeightActualClass,
+			FillHeightTargetClass,
+			ParticleCountClass,
+			ParticleCountGasClass,
+			ParticleCountLiquidClass,
+			ParticleCountSolidClass,
+			ParticleSizeClass,
+			WaterHardnessClass,
+			ElevationClass,
+			ElevationGroundLevelClass,
+			ElevationMeanSeaLevelClass,
 		};
 		
 		/// <inheritdoc />
@@ -1612,6 +1625,84 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes
 	/// <inheritdoc cref="Package.PositionCartesianClass" path="/summary" />
 	/// </summary>
 	public Package.PositionCartesianClass PositionCartesianClass => _PositionCartesianClass ?? (_PositionCartesianClass = new Package.PositionCartesianClass());
+
+	private Package.ResistivityClass _ResistivityClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ResistivityClass" path="/summary" />
+	/// </summary>
+	public Package.ResistivityClass ResistivityClass => _ResistivityClass ?? (_ResistivityClass = new Package.ResistivityClass());
+
+	private Package.FillHeightClass _FillHeightClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.FillHeightClass" path="/summary" />
+	/// </summary>
+	public Package.FillHeightClass FillHeightClass => _FillHeightClass ?? (_FillHeightClass = new Package.FillHeightClass());
+
+	private Package.FillHeightActualClass _FillHeightActualClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.FillHeightActualClass" path="/summary" />
+	/// </summary>
+	public Package.FillHeightActualClass FillHeightActualClass => _FillHeightActualClass ?? (_FillHeightActualClass = new Package.FillHeightActualClass());
+
+	private Package.FillHeightTargetClass _FillHeightTargetClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.FillHeightTargetClass" path="/summary" />
+	/// </summary>
+	public Package.FillHeightTargetClass FillHeightTargetClass => _FillHeightTargetClass ?? (_FillHeightTargetClass = new Package.FillHeightTargetClass());
+
+	private Package.ParticleCountClass _ParticleCountClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleCountClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleCountClass ParticleCountClass => _ParticleCountClass ?? (_ParticleCountClass = new Package.ParticleCountClass());
+
+	private Package.ParticleCountGasClass _ParticleCountGasClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleCountGasClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleCountGasClass ParticleCountGasClass => _ParticleCountGasClass ?? (_ParticleCountGasClass = new Package.ParticleCountGasClass());
+
+	private Package.ParticleCountLiquidClass _ParticleCountLiquidClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleCountLiquidClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleCountLiquidClass ParticleCountLiquidClass => _ParticleCountLiquidClass ?? (_ParticleCountLiquidClass = new Package.ParticleCountLiquidClass());
+
+	private Package.ParticleCountSolidClass _ParticleCountSolidClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleCountSolidClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleCountSolidClass ParticleCountSolidClass => _ParticleCountSolidClass ?? (_ParticleCountSolidClass = new Package.ParticleCountSolidClass());
+
+	private Package.ParticleSizeClass _ParticleSizeClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ParticleSizeClass" path="/summary" />
+	/// </summary>
+	public Package.ParticleSizeClass ParticleSizeClass => _ParticleSizeClass ?? (_ParticleSizeClass = new Package.ParticleSizeClass());
+
+	private Package.WaterHardnessClass _WaterHardnessClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.WaterHardnessClass" path="/summary" />
+	/// </summary>
+	public Package.WaterHardnessClass WaterHardnessClass => _WaterHardnessClass ?? (_WaterHardnessClass = new Package.WaterHardnessClass());
+
+	private Package.ElevationClass _ElevationClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ElevationClass" path="/summary" />
+	/// </summary>
+	public Package.ElevationClass ElevationClass => _ElevationClass ?? (_ElevationClass = new Package.ElevationClass());
+
+	private Package.ElevationGroundLevelClass _ElevationGroundLevelClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ElevationGroundLevelClass" path="/summary" />
+	/// </summary>
+	public Package.ElevationGroundLevelClass ElevationGroundLevelClass => _ElevationGroundLevelClass ?? (_ElevationGroundLevelClass = new Package.ElevationGroundLevelClass());
+
+	private Package.ElevationMeanSeaLevelClass _ElevationMeanSeaLevelClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ElevationMeanSeaLevelClass" path="/summary" />
+	/// </summary>
+	public Package.ElevationMeanSeaLevelClass ElevationMeanSeaLevelClass => _ElevationMeanSeaLevelClass ?? (_ElevationMeanSeaLevelClass = new Package.ElevationMeanSeaLevelClass());
 
 	#endregion
 

@@ -18,7 +18,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class LocationAddressResultClass : IClass
 	{
 		/// <summary>Constant value for <see cref="LocationAddressResultClass.ReferenceId" /></summary>
@@ -124,11 +124,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="GivenNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="GivenNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="GivenNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="GivenNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="GivenNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -167,6 +169,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SurnameProperty" path="/summary" /><br/>
@@ -194,11 +199,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="SurnameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="SurnameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SurnameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SurnameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SurnameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -237,6 +244,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="QualificationProperty" path="/summary" /><br/>
@@ -264,11 +274,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="QualificationProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="QualificationProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="QualificationProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="QualificationProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="QualificationProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -307,6 +319,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameQualifierProperty" path="/summary" /><br/>
@@ -334,11 +349,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="NameQualifierProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NameQualifierProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameQualifierProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameQualifierProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameQualifierProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -377,6 +394,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="OrganizationNameProperty" path="/summary" /><br/>
@@ -404,11 +424,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="OrganizationNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="OrganizationNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="OrganizationNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OrganizationNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="OrganizationNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -447,6 +469,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LegalStatusProperty" path="/summary" /><br/>
@@ -474,11 +499,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="LegalStatusProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LegalStatusProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="LegalStatusProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LegalStatusProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="LegalStatusProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -517,6 +544,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="OrganizationUnitProperty" path="/summary" /><br/>
@@ -544,11 +574,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="OrganizationUnitProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="OrganizationUnitProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="OrganizationUnitProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OrganizationUnitProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="OrganizationUnitProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -587,6 +619,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="BuildingProperty" path="/summary" /><br/>
@@ -614,11 +649,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="BuildingProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="BuildingProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="BuildingProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="BuildingProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="BuildingProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -657,6 +694,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="FloorProperty" path="/summary" /><br/>
@@ -684,11 +724,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="FloorProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="FloorProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="FloorProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FloorProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="FloorProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -727,6 +769,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DoorProperty" path="/summary" /><br/>
@@ -754,11 +799,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="DoorProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DoorProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DoorProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DoorProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DoorProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -797,6 +844,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ThoroughfareProperty" path="/summary" /><br/>
@@ -824,11 +874,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="ThoroughfareProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ThoroughfareProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ThoroughfareProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ThoroughfareProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ThoroughfareProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -867,6 +919,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="PremiseIdentifierProperty" path="/summary" /><br/>
@@ -894,11 +949,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -937,6 +994,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TownProperty" path="/summary" /><br/>
@@ -964,11 +1024,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="TownProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TownProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TownProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TownProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TownProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1007,6 +1069,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="RegionProperty" path="/summary" /><br/>
@@ -1034,11 +1099,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="RegionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="RegionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="RegionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RegionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="RegionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1077,6 +1144,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DistrictProperty" path="/summary" /><br/>
@@ -1104,11 +1174,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="DistrictProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DistrictProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DistrictProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DistrictProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DistrictProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1147,6 +1219,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CountryNameProperty" path="/summary" /><br/>
@@ -1174,11 +1249,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="CountryNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CountryNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CountryNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CountryNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CountryNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1217,6 +1294,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CountryCodeProperty" path="/summary" /><br/>
@@ -1244,11 +1324,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="CountryCodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CountryCodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CountryCodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CountryCodeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CountryCodeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1287,6 +1369,9 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="PostCodeProperty" path="/summary" /><br/>
@@ -1314,11 +1399,13 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="PostCodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="PostCodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PostCodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PostCodeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="PostCodeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1357,8 +1444,19 @@ namespace Mtconnect.DataTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="LocationAddressResultClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

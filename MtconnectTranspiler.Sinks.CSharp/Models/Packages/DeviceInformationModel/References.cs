@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel
 	/// <summary>﻿This section provides semantic information for the <see cref="Reference">Reference</see> entity. {{figure(References)}} shows the <see cref="Reference">Reference</see> model. <br /><br /><see cref="Reference">Reference</see> may be modeled as part of a <see cref="Device">Device</see>, <see cref="Component">Component</see> or <see cref="Interface">Interface</see> type.<br /><br />![References](figures/References.png "References"){: width="0.8"}<br /><br />&gt; Note: See <see cref="References Schema Diagrams">References Schema Diagrams</see> for XML schema of <see cref="Reference">Reference</see> and its types.<br /><br /><br />References Model<br /><br /><see cref="References">References</see> <i>organize</i>s pointers to information defined elsewhere within the <see cref="MTConnectDevices">MTConnectDevices</see> entity for a piece of equipment. It is an efficient method to associate information with an element without duplicating any of the data or structure.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_F54CCA63_E73C_468b_B64E_F97DEE70FFC6">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class ReferencesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ReferencesPackage.ReferenceId" /></summary>

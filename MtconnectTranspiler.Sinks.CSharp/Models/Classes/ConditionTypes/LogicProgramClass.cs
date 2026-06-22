@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class LogicProgramClass : IClass
 	{
 		/// <summary>Constant value for <see cref="LogicProgramClass.ReferenceId" /></summary>
@@ -107,11 +107,13 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "LOGIC_PROGRAM";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -150,8 +152,19 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.ConditionTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="LogicProgramClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

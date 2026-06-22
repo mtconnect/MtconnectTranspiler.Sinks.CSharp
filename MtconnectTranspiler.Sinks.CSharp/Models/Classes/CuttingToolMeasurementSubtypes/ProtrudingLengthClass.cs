@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ProtrudingLengthClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ProtrudingLengthClass.ReferenceId" /></summary>
@@ -67,16 +67,16 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 		/// <remarks>
 		/// Original Type: EAID_C09F377D_8946_421b_B746_E23C01D97EAC
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization);
 
 		/// <inheritdoc />
 		public new ProtrudingLengthClassProperties Properties { get; } = new ProtrudingLengthClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="ProtrudingLengthClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization.ToolingMeasurementGeneralizationProperties" />.
 		/// </summary>
-		public class ProtrudingLengthClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
+		public class ProtrudingLengthClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization.ToolingMeasurementGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {
@@ -108,11 +108,13 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				/// <summary>Constant value for <see cref="CodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CodeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "LPR";
+				/// <summary>Constant value for <see cref="CodeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -151,6 +153,9 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -177,11 +182,13 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "MILLIMETER";
+				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -220,8 +227,19 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ProtrudingLengthClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

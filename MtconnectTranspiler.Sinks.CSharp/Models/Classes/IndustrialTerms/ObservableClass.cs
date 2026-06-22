@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1629291153288_544363_79">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ObservableClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ObservableClass.ReferenceId" /></summary>
@@ -98,11 +98,13 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <summary>Constant value for <see cref="ObservedByProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ObservedByProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservedByProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservedByProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservedByProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -141,6 +143,9 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasObservationProperty" path="/summary" /><br/>
@@ -172,6 +177,8 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasObservationProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasObservationProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -210,8 +217,19 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ObservableClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

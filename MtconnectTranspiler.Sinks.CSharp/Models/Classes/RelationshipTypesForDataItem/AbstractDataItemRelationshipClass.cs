@@ -13,11 +13,11 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
-	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.5">v1.5</see></item>
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.7">v1.7</see></item>
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AbstractDataItemRelationshipClass : IClass
 	{
 		/// <summary>Constant value for <see cref="AbstractDataItemRelationshipClass.ReferenceId" /></summary>
@@ -35,7 +35,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 		/// <summary>Constant value for <see cref="AbstractDataItemRelationshipClass.Modifier" /></summary>
 		public const string MODIFIER = "abstract";
 		/// <summary>Constant value for <see cref="AbstractDataItemRelationshipClass.NormativeVersion" /></summary>
-		public const string NORMATIVE_VERSION = "1.5";
+		public const string NORMATIVE_VERSION = "1.7";
 		/// <summary>Constant value for <see cref="AbstractDataItemRelationshipClass.DeprecatedVersion" /></summary>
 		public const string DEPRECATED_VERSION = "";
 
@@ -105,11 +105,13 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				/// <summary>Constant value for <see cref="IdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="IdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdRefProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IdRefProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -148,6 +150,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -169,17 +174,19 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				/// <summary>Constant value for <see cref="NameProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="NameProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "";
+				public const string NORMATIVE_VERSION = "1.7";
 				/// <summary>Constant value for <see cref="NameProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -218,8 +225,19 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem.Relati
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="AbstractDataItemRelationshipClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

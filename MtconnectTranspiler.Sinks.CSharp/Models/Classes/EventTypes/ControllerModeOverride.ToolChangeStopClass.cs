@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ControllerModeOverrideToolChangeStopClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ControllerModeOverrideToolChangeStopClass.ReferenceId" /></summary>
@@ -115,7 +115,9 @@ Program execution is paused when a command is executed requesting a cutting tool
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "TOOL_CHANGE_STOP";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -154,8 +156,19 @@ Program execution is paused when a command is executed requesting a cutting tool
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ControllerModeOverrideToolChangeStopClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

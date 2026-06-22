@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375155_885919_1978">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DeprecatedClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DeprecatedClass.ReferenceId" /></summary>
@@ -72,6 +72,14 @@ namespace Mtconnect.Glossary
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="DeprecatedClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class PathClass : IClass
 	{
 		/// <summary>Constant value for <see cref="PathClass.ReferenceId" /></summary>
@@ -118,11 +118,13 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesExecutionProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesExecutionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -161,6 +163,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesProgramProperty" path="/summary" /><br/>
@@ -187,11 +192,13 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesProgramProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesProgramProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -230,6 +237,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPathFeedrateOverrideProgrammedProperty" path="/summary" /><br/>
@@ -256,11 +266,13 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideProgrammedProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -299,6 +311,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPathFeedrateOverrideRapidProperty" path="/summary" /><br/>
@@ -325,11 +340,13 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPathFeedrateOverrideRapidProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -368,6 +385,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesRotaryVelocityOverrideProperty" path="/summary" /><br/>
@@ -394,11 +414,13 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesRotaryVelocityOverrideProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -437,6 +459,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPathFeedrateProperty" path="/summary" /><br/>
@@ -463,11 +488,13 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPathFeedrateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -506,6 +533,9 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPartCountProperty" path="/summary" /><br/>
@@ -532,11 +562,13 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesPartCountProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPartCountProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -575,8 +607,19 @@ If the {{block(Controller)}} is capable of performing more than one independent 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="PathClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

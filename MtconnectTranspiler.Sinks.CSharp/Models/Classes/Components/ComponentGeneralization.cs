@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ComponentGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="ComponentGeneralization.ReferenceId" /></summary>
@@ -132,11 +132,13 @@ At least one of {{block(Component)}}, {{block(DataItem)}}, or {{block(Reference)
 				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -175,6 +177,9 @@ At least one of {{block(Component)}}, {{block(DataItem)}}, or {{block(Reference)
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -204,11 +209,13 @@ When provided, {{property(Component::name)}} **MUST** be unique for all child {{
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -247,6 +254,9 @@ When provided, {{property(Component::name)}} **MUST** be unique for all child {{
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NativeNameProperty" path="/summary" /><br/>
@@ -274,11 +284,13 @@ When provided, {{property(Component::name)}} **MUST** be unique for all child {{
 				/// <summary>Constant value for <see cref="NativeNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NativeNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NativeNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NativeNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NativeNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -317,6 +329,9 @@ When provided, {{property(Component::name)}} **MUST** be unique for all child {{
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SampleIntervalProperty" path="/summary" /><br/>
@@ -349,11 +364,13 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="SampleIntervalProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SampleIntervalProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SampleIntervalProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SampleIntervalProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SampleIntervalProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -392,6 +409,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SampleRateProperty" path="/summary" /><br/>
@@ -419,11 +439,13 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="SampleRateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SampleRateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SampleRateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SampleRateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SampleRateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -462,6 +484,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UuidProperty" path="/summary" /><br/>
@@ -489,17 +514,19 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="UuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UuidProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: Object </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
-				public System.Type Type => typeof(object);
+				public System.Type Type => typeof(string);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -532,6 +559,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasDescriptionPartProperty" path="/summary" /><br/>
@@ -558,11 +588,13 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Description";
 				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -601,6 +633,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasCompositionPartProperty" path="/summary" /><br/>
@@ -632,6 +667,8 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				public const string ASSOCIATION = "Compositions";
 				/// <summary>Constant value for <see cref="HasCompositionPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCompositionPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -670,6 +707,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasComponentPartProperty" path="/summary" /><br/>
@@ -701,6 +741,8 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				public const string ASSOCIATION = "Components";
 				/// <summary>Constant value for <see cref="HasComponentPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasComponentPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -739,6 +781,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasConfigurationPartProperty" path="/summary" /><br/>
@@ -765,11 +810,13 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Configuration";
 				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasConfigurationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -808,6 +855,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IsComponentOfPartProperty" path="/summary" /><br/>
@@ -834,11 +884,13 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Components";
 				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IsComponentOfPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -877,6 +929,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesPartProperty" path="/summary" /><br/>
@@ -908,6 +963,8 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				public const string ASSOCIATION = "DataItems";
 				/// <summary>Constant value for <see cref="ObservesPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -946,6 +1003,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MadeObservationPartProperty" path="/summary" /><br/>
@@ -977,6 +1037,8 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				public const string ASSOCIATION = "Observations";
 				/// <summary>Constant value for <see cref="MadeObservationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MadeObservationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1015,6 +1077,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasReferencePartProperty" path="/summary" /><br/>
@@ -1046,6 +1111,8 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				public const string ASSOCIATION = "References";
 				/// <summary>Constant value for <see cref="HasReferencePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasReferencePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1084,6 +1151,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CoordinateSystemIdRefProperty" path="/summary" /><br/>
@@ -1111,11 +1181,13 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1154,6 +1226,9 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasComponentStreamPartProperty" path="/summary" /><br/>
@@ -1180,11 +1255,13 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "shared";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ComponentStream";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1223,33 +1300,66 @@ same as for the parent {{block(Component)}} element unless specifically overridd
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ComponentGeneralization" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Component1,
+		};
 		/// <summary>
 		/// Component1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string Component1 => @"Components::Component::allInstances()->iterate(comp;compcount:Real=0|
-if comp.id->size() = 1 and
-    (comp.observes->size() <> 0 or comp.hasReference->size() <> 0 or comp.hasComponent->size() <> 0 or comp.oclAsType(Components::""Component Types""::Organizer)->size() <> 0) 
-then
-    compcount + 1
-else
-    compcount + 0                                
-endif
-) = Components::Component::allInstances()->size()";
+		public string Component1 => @"val:MustHaveComponentOrDataItemOrReference
+    a sh:NodeShape ;
+    sh:message ""`Component` **MUST** have at least one of `Component`, `DataItem` or  `Reference` entities."" ;
+    sh:targetClass mt:Component ;
+    sh:or (
+        [ sh:property [
+            sh:path mt:hasComponent ;
+            sh:minCount 1 ;
+            sh:class mt:Component ;
+        ] ]
+        [ sh:property [
+            sh:path mt:observes ;
+            sh:minCount 1 ;
+            sh:class mt:DataItem ;
+        ] ]
+        [ sh:property [
+            sh:path mt:hasReference ;
+            sh:minCount 1 ;
+            sh:class mt:Reference ;
+        ] ]
+    ) .";
 		/*
-		Components::Component::allInstances()->iterate(comp;compcount:Real=0|
-		if comp.id->size() = 1 and
-		    (comp.observes->size() <> 0 or comp.hasReference->size() <> 0 or comp.hasComponent->size() <> 0 or comp.oclAsType(Components::"Component Types"::Organizer)->size() <> 0) 
-		then
-		    compcount + 1
-		else
-		    compcount + 0                                
-		endif
-		) = Components::Component::allInstances()->size()
+		val:MustHaveComponentOrDataItemOrReference
+		    a sh:NodeShape ;
+		    sh:message "`Component` **MUST** have at least one of `Component`, `DataItem` or  `Reference` entities." ;
+		    sh:targetClass mt:Component ;
+		    sh:or (
+		        [ sh:property [
+		            sh:path mt:hasComponent ;
+		            sh:minCount 1 ;
+		            sh:class mt:Component ;
+		        ] ]
+		        [ sh:property [
+		            sh:path mt:observes ;
+		            sh:minCount 1 ;
+		            sh:class mt:DataItem ;
+		        ] ]
+		        [ sh:property [
+		            sh:path mt:hasReference ;
+		            sh:minCount 1 ;
+		            sh:class mt:Reference ;
+		        ] ]
+		    ) .
 		*/
 		# endregion
 	}

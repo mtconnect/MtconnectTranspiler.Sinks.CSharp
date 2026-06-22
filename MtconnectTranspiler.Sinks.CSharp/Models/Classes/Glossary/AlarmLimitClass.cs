@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375140_922873_1948">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AlarmLimitClass : IClass
 	{
 		/// <summary>Constant value for <see cref="AlarmLimitClass.ReferenceId" /></summary>
@@ -72,6 +72,14 @@ namespace Mtconnect.Glossary
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="AlarmLimitClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

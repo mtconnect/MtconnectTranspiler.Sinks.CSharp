@@ -17,7 +17,7 @@ namespace Mtconnect.DataTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v2.0 according to https://model.mtconnect.org/#_Version_2.0")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum CoordinateSystemEnum
 	{
 		/// <summary>﻿unchangeable coordinate system that has machine zero as its origin.<br /><br /><br />
@@ -47,7 +47,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_6B22B6F6_7073_4fa7_961B_B05AD4C7EF81">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CoordinateSystemEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="CoordinateSystemEnumMetaClass.ReferenceId" /></summary>

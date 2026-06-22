@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class SensorClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SensorClass.ReferenceId" /></summary>
@@ -87,6 +87,14 @@ See {{block(SensorConfiguration)}} for more details on the use and configuration
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="SensorClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class StructureClass : IClass
 	{
 		/// <summary>Constant value for <see cref="StructureClass.ReferenceId" /></summary>
@@ -112,6 +112,8 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				public const string ASSOCIATION = "StructuresClass";
 				/// <summary>Constant value for <see cref="IsStructureOfPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IsStructureOfPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -150,8 +152,19 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="StructureClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

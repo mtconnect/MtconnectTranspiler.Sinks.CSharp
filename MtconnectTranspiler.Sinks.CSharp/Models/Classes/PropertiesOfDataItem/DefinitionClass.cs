@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DefinitionClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DefinitionClass.ReferenceId" /></summary>
@@ -76,8 +76,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 			/// <inheritdoc />
 			public virtual IProperty[] Properties => new IProperty[] {
 				HasCellDefinitionPart,
-				HasDescriptionPart,
 				HasEntryDefinitionPart,
+				Description,
 			};
 			/// <summary>
 			/// <inheritdoc cref="HasCellDefinitionPartProperty" path="/summary" /><br/>
@@ -109,6 +109,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public const string ASSOCIATION = "CellDefinitions";
 				/// <summary>Constant value for <see cref="HasCellDefinitionPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasCellDefinitionPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -147,75 +149,9 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
-			}
-			/// <summary>
-			/// <inheritdoc cref="HasDescriptionPartProperty" path="/summary" /><br/>
-			/// <remarks>Original Name: HasDescription</remarks>
-			/// </summary>
-			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
-			
-			/// <summary>﻿
-			/// </summary>
-			public sealed class HasDescriptionPartProperty : IProperty
-			{
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Name" /></summary>
-				public const string NAME = "hasDescription";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Summary" /></summary>
-				public const string SUMMARY = @"";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.AccessModifier" /></summary>
-				public const string ACCESS_MODIFIER = "public";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Modifier" /></summary>
-				public const string MODIFIER = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.DeprecatedVersion" /></summary>
-				public const string DEPRECATED_VERSION = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Aggregation" /></summary>
-				public const string AGGREGATION = "composite";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Association" /></summary>
-				public const string ASSOCIATION = "Description";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
-
-				/// <summary>
-				/// <inheritdoc />
-				/// <remarks> Type: DescriptionClass </remarks>
-				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
-				
-				/// <inheritdoc />
-				public string Name => NAME;
-				
-				/// <inheritdoc />
-				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => ACCESS_MODIFIER;
-				
-				/// <inheritdoc />
-				public string Modifier => MODIFIER;
-				
-				/// <inheritdoc />
-				public string NormativeVersion => NORMATIVE_VERSION;
-				
-				/// <inheritdoc />
-				public string DeprecatedVersion => DEPRECATED_VERSION;
-				
-				/// <inheritdoc />
-				public string Aggregation => AGGREGATION;
-
-				// Note: Extension.Extender
-				/// <inheritdoc />
-				public string Extension => EXTENSION;
-				
-				/// <inheritdoc />
-				public string Association => ASSOCIATION;
-
-				// Note: DefaultValue.Name
-				/// <inheritdoc />
-				public string DefaultValue => DEFAULT_VALUE;
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasEntryDefinitionPartProperty" path="/summary" /><br/>
@@ -247,6 +183,8 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				public const string ASSOCIATION = "EntryDefinitions";
 				/// <summary>Constant value for <see cref="HasEntryDefinitionPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasEntryDefinitionPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -285,8 +223,94 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
+			}
+			/// <summary>
+			/// <inheritdoc cref="DescriptionProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: Description</remarks>
+			/// </summary>
+			public DescriptionProperty Description { get; } = new DescriptionProperty();
+			
+			/// <summary>﻿textual description for <see cref="Definition">Definition</see>.<br /><br /><br />
+			/// </summary>
+			public sealed class DescriptionProperty : IProperty
+			{
+				/// <summary>Constant value for <see cref="DescriptionProperty.Name" /></summary>
+				public const string NAME = "Description";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;textual description for {{block(Definition)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="DescriptionProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "private";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.6";
+				/// <summary>Constant value for <see cref="DescriptionProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 2026x";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: String </remarks>
+				/// </summary>
+				public System.Type Type => typeof(String);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
+
+				/// <inheritdoc />
+				public string AccessModifier => ACCESS_MODIFIER;
+				
+				/// <inheritdoc />
+				public string Modifier => MODIFIER;
+				
+				/// <inheritdoc />
+				public string NormativeVersion => NORMATIVE_VERSION;
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => DEPRECATED_VERSION;
+				
+				/// <inheritdoc />
+				public string Aggregation => AGGREGATION;
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => EXTENSION;
+				
+				/// <inheritdoc />
+				public string Association => ASSOCIATION;
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="DefinitionClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

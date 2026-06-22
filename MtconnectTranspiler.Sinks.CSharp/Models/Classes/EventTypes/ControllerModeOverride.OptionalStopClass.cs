@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ControllerModeOverrideOptionalStopClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ControllerModeOverrideOptionalStopClass.ReferenceId" /></summary>
@@ -117,7 +117,9 @@ In the case of a G-Code program, a program block containing a M01 code designate
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "OPTIONAL_STOP";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -156,8 +158,19 @@ In the case of a G-Code program, a program block containing a M01 code designate
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ControllerModeOverrideOptionalStopClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

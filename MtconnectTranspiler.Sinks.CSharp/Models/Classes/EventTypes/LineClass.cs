@@ -20,7 +20,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class LineClass : IClass
 	{
 		/// <summary>Constant value for <see cref="LineClass.ReferenceId" /></summary>
@@ -114,6 +114,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "LINE";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -152,8 +154,19 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="LineClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

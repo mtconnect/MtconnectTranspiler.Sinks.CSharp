@@ -20,7 +20,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.3 according to https://model.mtconnect.org/#_Version_1.3")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AxisFeedrateOverrideClass : IClass
 	{
 		/// <summary>Constant value for <see cref="AxisFeedrateOverrideClass.ReferenceId" /></summary>
@@ -113,7 +113,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "OVERRIDE";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -152,8 +154,19 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="AxisFeedrateOverrideClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

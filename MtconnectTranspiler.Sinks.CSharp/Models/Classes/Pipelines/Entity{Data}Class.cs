@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1673982139230_860585_299">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class Entity_Data_Class : IClass
 	{
 		/// <summary>Constant value for <see cref="Entity_Data_Class.ReferenceId" /></summary>
@@ -106,7 +106,9 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "Data";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -145,6 +147,9 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SourceProperty" path="/summary" /><br/>
@@ -176,6 +181,8 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SourceProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SourceProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -214,8 +221,19 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="Entity_Data_Class" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581813388630_658160_4475">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ObservableEventClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ObservableEventClass.ReferenceId" /></summary>
@@ -96,11 +96,13 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -139,8 +141,19 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ObservableEventClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

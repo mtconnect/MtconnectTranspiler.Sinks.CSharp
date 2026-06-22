@@ -20,7 +20,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.2 according to https://model.mtconnect.org/#_Version_1.2")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class LevelClass : IClass
 	{
 		/// <summary>Constant value for <see cref="LevelClass.ReferenceId" /></summary>
@@ -115,6 +115,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "LEVEL";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -153,6 +155,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -183,7 +188,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "PERCENT";
+				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -222,8 +229,19 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="LevelClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

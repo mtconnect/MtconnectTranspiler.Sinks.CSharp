@@ -20,7 +20,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class PowerClass : IClass
 	{
 		/// <summary>Constant value for <see cref="PowerClass.ReferenceId" /></summary>
@@ -84,6 +84,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="PowerClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

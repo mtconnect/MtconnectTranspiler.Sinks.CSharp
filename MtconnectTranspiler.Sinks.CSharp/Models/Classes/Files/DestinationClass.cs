@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.Files
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DestinationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DestinationClass.ReferenceId" /></summary>
@@ -103,17 +103,19 @@ namespace Mtconnect.AssetInformationModel.Files
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DeviceUuidProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: Object </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
-				public System.Type Type => typeof(object);
+				public System.Type Type => typeof(string);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -146,8 +148,19 @@ namespace Mtconnect.AssetInformationModel.Files
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="DestinationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

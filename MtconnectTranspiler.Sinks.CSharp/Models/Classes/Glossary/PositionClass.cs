@@ -18,7 +18,7 @@ namespace Mtconnect.Glossary
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class PositionClass : IClass
 	{
 		/// <summary>Constant value for <see cref="PositionClass.ReferenceId" /></summary>
@@ -82,6 +82,14 @@ namespace Mtconnect.Glossary
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="PositionClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

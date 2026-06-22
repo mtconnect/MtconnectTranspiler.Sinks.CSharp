@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AngularAccelerationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="AngularAccelerationClass.ReferenceId" /></summary>
@@ -114,6 +114,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "DEGREE/SECOND^2";
+				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -152,6 +154,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
@@ -183,6 +188,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "ANGULAR_ACCELERATION";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -221,6 +228,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SubTypeProperty" path="/summary" /><br/>
@@ -252,6 +262,8 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "ACTUAL";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -290,8 +302,19 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.SampleTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="AngularAccelerationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

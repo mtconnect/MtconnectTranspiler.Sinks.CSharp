@@ -11,7 +11,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol
 	/// <summary>﻿This section provides semantic information for the <see cref="MTConnectDevices">MTConnectDevices</see> entity.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_1812F5DC_90C0_47d9_B731_2E752A6D72A0">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class MTConnectDevicesResponseDocumentPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="MTConnectDevicesResponseDocumentPackage.ReferenceId" /></summary>

@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MinimumDeltaFilterGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="MinimumDeltaFilterGeneralization.ReferenceId" /></summary>
@@ -101,17 +101,19 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				/// <summary>Constant value for <see cref="TypeProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="TypeProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "";
+				public const string NORMATIVE_VERSION = "1.3";
 				/// <summary>Constant value for <see cref="TypeProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "MINIMUM_DELTA";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -150,8 +152,19 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="MinimumDeltaFilterGeneralization" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

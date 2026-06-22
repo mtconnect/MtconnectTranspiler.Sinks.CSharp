@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TransformationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TransformationClass.ReferenceId" /></summary>
@@ -104,17 +104,19 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Translation";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: TranslationClass </remarks>
+				/// <remarks> Type: AbstractTranslationClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.TranslationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractTranslationClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -147,6 +149,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasRotationPartProperty" path="/summary" /><br/>
@@ -173,17 +178,19 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Rotation";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasRotationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: RotationClass </remarks>
+				/// <remarks> Type: AbstractRotationClass </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.RotationClass);
+				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractRotationClass);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -216,17 +223,76 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="TransformationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Transform,
+		};
 		/// <summary>
 		/// Transform
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string Transform => @"hasTranslation->size() + hasRotation->size() = 1 and hasTranslation->size() + hasRotation->size() <> 0 ";
+		public string Transform => @"val:TransformationMustHaveRotationOrTranslation
+    a sh:NodeShape ;
+    sh:message ""`Transformation` MUST have at least one of `Rotation` or `Translation` defined, and neither can be multiply defined."" ;
+    sh:targetClass mt:Transformation ;
+
+    sh:property [
+        sh:path mt:hasRotation ;
+        sh:maxCount 1 ;
+        sh:class mt:Rotation ;
+    ] ;
+    sh:property [
+        sh:path mt:hasTranslation ;
+        sh:maxCount 1 ;
+        sh:class mt:Translation ;
+    ] ;
+
+    sh:or (
+        [ sh:property [
+            sh:path mt:hasRotation ;
+            sh:minCount 1 ;
+        ] ]
+        [ sh:property [
+            sh:path mt:hasTranslation ;
+            sh:minCount 1 ;
+        ] ]
+    ) .";
 		/*
-		hasTranslation->size() + hasRotation->size() = 1 and hasTranslation->size() + hasRotation->size() <> 0 
+		val:TransformationMustHaveRotationOrTranslation
+		    a sh:NodeShape ;
+		    sh:message "`Transformation` MUST have at least one of `Rotation` or `Translation` defined, and neither can be multiply defined." ;
+		    sh:targetClass mt:Transformation ;
+		
+		    sh:property [
+		        sh:path mt:hasRotation ;
+		        sh:maxCount 1 ;
+		        sh:class mt:Rotation ;
+		    ] ;
+		    sh:property [
+		        sh:path mt:hasTranslation ;
+		        sh:maxCount 1 ;
+		        sh:class mt:Translation ;
+		    ] ;
+		
+		    sh:or (
+		        [ sh:property [
+		            sh:path mt:hasRotation ;
+		            sh:minCount 1 ;
+		        ] ]
+		        [ sh:property [
+		            sh:path mt:hasTranslation ;
+		            sh:minCount 1 ;
+		        ] ]
+		    ) .
 		*/
 		# endregion
 	}

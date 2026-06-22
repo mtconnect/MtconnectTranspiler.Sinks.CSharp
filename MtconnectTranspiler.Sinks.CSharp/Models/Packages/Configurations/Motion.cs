@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <summary>﻿This section provides semantic information for the <see cref="Motion">Motion</see> entity.<br /><br />![Motion](figures/Motion.png "Motion"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![Motion Example](figures/Motion%20Example.png "Motion Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(motion-example)}} for the <i>XML</i> representation of the same example.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579526830201_236256_7625">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class MotionPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="MotionPackage.ReferenceId" /></summary>
@@ -51,6 +51,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			MotionClass,
+			AbstractAxisClass,
+			AxisDataSetGeneralization,
 			AxisClass,
 		};
 		
@@ -67,6 +69,18 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <inheritdoc cref="Package.MotionClass" path="/summary" />
 	/// </summary>
 	public Package.MotionClass MotionClass => _MotionClass ?? (_MotionClass = new Package.MotionClass());
+
+	private Package.AbstractAxisClass _AbstractAxisClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AbstractAxisClass" path="/summary" />
+	/// </summary>
+	public Package.AbstractAxisClass AbstractAxisClass => _AbstractAxisClass ?? (_AbstractAxisClass = new Package.AbstractAxisClass());
+
+	private Package.AxisDataSetGeneralization _AxisDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.AxisDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.AxisDataSetGeneralization AxisDataSetGeneralization => _AxisDataSetGeneralization ?? (_AxisDataSetGeneralization = new Package.AxisDataSetGeneralization());
 
 	private Package.AxisClass _AxisClass;
 	/// <summary>

@@ -12,7 +12,7 @@ namespace Mtconnect.Imports.CSVImports
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1579210647410_88327_3587">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ImportDescriptorClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ImportDescriptorClass.ReferenceId" /></summary>
@@ -111,6 +111,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CsvFileNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CsvFileNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -149,6 +151,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ElementTypeNameProperty" path="/summary" /><br/>
@@ -180,6 +185,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ElementTypeNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ElementTypeNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -218,6 +225,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="PackageNameProperty" path="/summary" /><br/>
@@ -249,6 +259,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PackageNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="PackageNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -287,6 +299,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="DiagramTypeNameProperty" path="/summary" /><br/>
@@ -318,6 +333,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DiagramTypeNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DiagramTypeNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -356,6 +373,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UseFirstRowAsHeadersProperty" path="/summary" /><br/>
@@ -387,6 +407,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UseFirstRowAsHeadersProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UseFirstRowAsHeadersProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -425,6 +447,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UseFindOwnerByTagIdProperty" path="/summary" /><br/>
@@ -456,6 +481,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UseFindOwnerByTagIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UseFindOwnerByTagIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -494,6 +521,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="StereoTypeNamesProperty" path="/summary" /><br/>
@@ -525,6 +555,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="StereoTypeNamesProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="StereoTypeNamesProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -563,6 +595,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IdentifierNameProperty" path="/summary" /><br/>
@@ -594,6 +629,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdentifierNameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IdentifierNameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -632,6 +669,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="RelationEndIdentifierProperty" path="/summary" /><br/>
@@ -663,6 +703,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RelationEndIdentifierProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="RelationEndIdentifierProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -701,6 +743,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="PropertyMapNamesProperty" path="/summary" /><br/>
@@ -732,6 +777,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PropertyMapNamesProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="PropertyMapNamesProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "*..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -770,6 +817,9 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="FieldSeparatorProperty" path="/summary" /><br/>
@@ -801,6 +851,8 @@ namespace Mtconnect.Imports.CSVImports
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FieldSeparatorProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="FieldSeparatorProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -839,8 +891,19 @@ namespace Mtconnect.Imports.CSVImports
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ImportDescriptorClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

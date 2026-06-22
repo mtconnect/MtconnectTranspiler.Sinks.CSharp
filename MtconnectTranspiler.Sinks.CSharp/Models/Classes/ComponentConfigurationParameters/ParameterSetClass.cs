@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ParameterSetClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ParameterSetClass.ReferenceId" /></summary>
@@ -104,11 +104,13 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -147,6 +149,9 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasParameterPartProperty" path="/summary" /><br/>
@@ -173,11 +178,13 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				/// <summary>Constant value for <see cref="HasParameterPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasParameterPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasParameterPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Parameters";
 				/// <summary>Constant value for <see cref="HasParameterPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasParameterPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -216,8 +223,19 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ParameterSetClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

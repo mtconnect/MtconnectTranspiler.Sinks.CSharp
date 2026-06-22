@@ -13,7 +13,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1582232453022_186519_292">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class RotationVectorGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="RotationVectorGeneralization.ReferenceId" /></summary>
@@ -76,6 +76,14 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="RotationVectorGeneralization" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

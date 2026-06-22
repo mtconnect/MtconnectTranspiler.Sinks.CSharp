@@ -17,7 +17,7 @@ namespace Mtconnect.Glossary
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ConditionActivationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ConditionActivationClass.ReferenceId" /></summary>
@@ -77,6 +77,14 @@ namespace Mtconnect.Glossary
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ConditionActivationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

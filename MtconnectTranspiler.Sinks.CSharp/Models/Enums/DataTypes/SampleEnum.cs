@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum SampleEnum
 	{
 		/// <summary>﻿positive rate of change of velocity.<br /><br /><br />
@@ -81,7 +81,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		AXIS_FEEDRATE,
-		/// <summary>﻿fluid capacity of an object or container.<br /><br /><br />
+		/// <summary>﻿maximum amount of fluid that can be held by a container.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -90,7 +90,7 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		CAPACITY_FLUID,
-		/// <summary>﻿geometric capacity of an object or container.<br /><br /><br />
+		/// <summary>﻿maximum amount of material that can be held by a container.<br /><br /><br />
 		/// </summary>
 		/// <remarks>
 		/// <list type="bullet">
@@ -828,12 +828,66 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		POSITION_CARTESIAN,
+		/// <summary>﻿inability of a material to conduct electricity.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		RESISTIVITY,
+		/// <summary>﻿amount of a substance in a container.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		FILL_HEIGHT,
+		/// <summary>﻿number of particles counted by their size or other characteristics.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		PARTICLE_COUNT,
+		/// <summary>﻿size of particles counted by their size or other characteristics.<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		PARTICLE_SIZE,
+		/// <summary>﻿concentration of calcium carbonate (CaCO3) in water<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		WATER_HARDNESS,
+		/// <summary>﻿height of a geographic location above a fixed reference point<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		ELEVATION,
 	}
 
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398370126_672808_12777">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class SampleEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="SampleEnumMetaClass.ReferenceId" /></summary>
@@ -965,6 +1019,12 @@ namespace Mtconnect.DataTypes
 		DISPLACEMENT_LINEAR,
 		DISPLACEMENT_ANGULAR,
 		POSITION_CARTESIAN,
+		RESISTIVITY,
+		FILL_HEIGHT,
+		PARTICLE_COUNT,
+		PARTICLE_SIZE,
+		WATER_HARDNESS,
+		ELEVATION,
 		};
 
 		private ACCELERATIONValue _ACCELERATION;
@@ -1260,7 +1320,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="CAPACITY_FLUIDValue" path="/summary" />
 		public CAPACITY_FLUIDValue CAPACITY_FLUID => _CAPACITY_FLUID ?? (_CAPACITY_FLUID = new CAPACITY_FLUIDValue());
 
-		/// <summary>﻿fluid capacity of an object or container.<br /><br /><br />
+		/// <summary>﻿maximum amount of fluid that can be held by a container.<br /><br /><br />
 		/// Value for SampleEnum.<br/>
 		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
 		/// </summary>
@@ -1279,7 +1339,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="CAPACITY_FLUIDValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="CAPACITY_FLUIDValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;fluid capacity of an object or container.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;maximum amount of fluid that can be held by a container.&#10;
 ";
 
 			/// <inheritdoc />
@@ -1301,7 +1361,7 @@ namespace Mtconnect.DataTypes
 		/// <inheritdoc cref="CAPACITY_SPATIALValue" path="/summary" />
 		public CAPACITY_SPATIALValue CAPACITY_SPATIAL => _CAPACITY_SPATIAL ?? (_CAPACITY_SPATIAL = new CAPACITY_SPATIALValue());
 
-		/// <summary>﻿geometric capacity of an object or container.<br /><br /><br />
+		/// <summary>﻿maximum amount of material that can be held by a container.<br /><br /><br />
 		/// Value for SampleEnum.<br/>
 		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
 		/// </summary>
@@ -1320,7 +1380,7 @@ namespace Mtconnect.DataTypes
 			/// <summary>Constant value for <see cref="CAPACITY_SPATIALValue.DeprecatedVersion" /></summary>
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="CAPACITY_SPATIALValue.Summary" /></summary>
-			public const string SUMMARY = @"&#10;&#10;&#10;geometric capacity of an object or container.&#10;
+			public const string SUMMARY = @"&#10;&#10;&#10;maximum amount of material that can be held by a container.&#10;
 ";
 
 			/// <inheritdoc />
@@ -4654,6 +4714,252 @@ The average is computed over a rolling window defined by the implementation.&#10
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="POSITION_CARTESIANValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;point in a {{term(cartesian coordinate system)}}.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private RESISTIVITYValue _RESISTIVITY;
+		/// <inheritdoc cref="RESISTIVITYValue" path="/summary" />
+		public RESISTIVITYValue RESISTIVITY => _RESISTIVITY ?? (_RESISTIVITY = new RESISTIVITYValue());
+
+		/// <summary>﻿inability of a material to conduct electricity.<br /><br /><br />
+		/// Value for SampleEnum.<br/>
+		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class RESISTIVITYValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="RESISTIVITYValue.Name" /></summary>
+			public const string NAME = "RESISTIVITY";
+			/// <summary>Constant value for <see cref="RESISTIVITYValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="RESISTIVITYValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="RESISTIVITYValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;inability of a material to conduct electricity.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private FILL_HEIGHTValue _FILL_HEIGHT;
+		/// <inheritdoc cref="FILL_HEIGHTValue" path="/summary" />
+		public FILL_HEIGHTValue FILL_HEIGHT => _FILL_HEIGHT ?? (_FILL_HEIGHT = new FILL_HEIGHTValue());
+
+		/// <summary>﻿amount of a substance in a container.<br /><br /><br />
+		/// Value for SampleEnum.<br/>
+		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class FILL_HEIGHTValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="FILL_HEIGHTValue.Name" /></summary>
+			public const string NAME = "FILL_HEIGHT";
+			/// <summary>Constant value for <see cref="FILL_HEIGHTValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="FILL_HEIGHTValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="FILL_HEIGHTValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;amount of a substance in a container.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private PARTICLE_COUNTValue _PARTICLE_COUNT;
+		/// <inheritdoc cref="PARTICLE_COUNTValue" path="/summary" />
+		public PARTICLE_COUNTValue PARTICLE_COUNT => _PARTICLE_COUNT ?? (_PARTICLE_COUNT = new PARTICLE_COUNTValue());
+
+		/// <summary>﻿number of particles counted by their size or other characteristics.<br /><br /><br />
+		/// Value for SampleEnum.<br/>
+		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class PARTICLE_COUNTValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="PARTICLE_COUNTValue.Name" /></summary>
+			public const string NAME = "PARTICLE_COUNT";
+			/// <summary>Constant value for <see cref="PARTICLE_COUNTValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="PARTICLE_COUNTValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="PARTICLE_COUNTValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;number of particles counted by their size or other characteristics.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private PARTICLE_SIZEValue _PARTICLE_SIZE;
+		/// <inheritdoc cref="PARTICLE_SIZEValue" path="/summary" />
+		public PARTICLE_SIZEValue PARTICLE_SIZE => _PARTICLE_SIZE ?? (_PARTICLE_SIZE = new PARTICLE_SIZEValue());
+
+		/// <summary>﻿size of particles counted by their size or other characteristics.<br /><br /><br />
+		/// Value for SampleEnum.<br/>
+		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class PARTICLE_SIZEValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="PARTICLE_SIZEValue.Name" /></summary>
+			public const string NAME = "PARTICLE_SIZE";
+			/// <summary>Constant value for <see cref="PARTICLE_SIZEValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.5";
+			/// <summary>Constant value for <see cref="PARTICLE_SIZEValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="PARTICLE_SIZEValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;size of particles counted by their size or other characteristics.&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private WATER_HARDNESSValue _WATER_HARDNESS;
+		/// <inheritdoc cref="WATER_HARDNESSValue" path="/summary" />
+		public WATER_HARDNESSValue WATER_HARDNESS => _WATER_HARDNESS ?? (_WATER_HARDNESS = new WATER_HARDNESSValue());
+
+		/// <summary>﻿concentration of calcium carbonate (CaCO3) in water<br /><br /><br />
+		/// Value for SampleEnum.<br/>
+		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class WATER_HARDNESSValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.Name" /></summary>
+			public const string NAME = "WATER_HARDNESS";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.7";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;concentration of calcium carbonate (CaCO3) in water&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private ELEVATIONValue _ELEVATION;
+		/// <inheritdoc cref="ELEVATIONValue" path="/summary" />
+		public ELEVATIONValue ELEVATION => _ELEVATION ?? (_ELEVATION = new ELEVATIONValue());
+
+		/// <summary>﻿height of a geographic location above a fixed reference point<br /><br /><br />
+		/// Value for SampleEnum.<br/>
+		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class ELEVATIONValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="ELEVATIONValue.Name" /></summary>
+			public const string NAME = "ELEVATION";
+			/// <summary>Constant value for <see cref="ELEVATIONValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.8";
+			/// <summary>Constant value for <see cref="ELEVATIONValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="ELEVATIONValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;height of a geographic location above a fixed reference point&#10;
 ";
 
 			/// <inheritdoc />

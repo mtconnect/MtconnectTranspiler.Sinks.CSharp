@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary.HTTPTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375163_189288_2006">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class HTTPRequestLineClass : IClass
 	{
 		/// <summary>Constant value for <see cref="HTTPRequestLineClass.ReferenceId" /></summary>
@@ -76,6 +76,14 @@ namespace Mtconnect.Glossary.HTTPTerms
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="HTTPRequestLineClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

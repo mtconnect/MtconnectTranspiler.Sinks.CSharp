@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum ToolLifeEnum
 	{
 		/// <summary>﻿tool life measured in minutes. <br /><br />All units for minimum, maximum, and nominal <b>MUST</b> be provided in minutes.<br /><br /><br />
@@ -50,7 +50,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1634824001211_966890_187">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ToolLifeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="ToolLifeEnumMetaClass.ReferenceId" /></summary>

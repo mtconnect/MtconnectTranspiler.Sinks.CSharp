@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	/// <summary>﻿<see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.<br /><br /><br />
+	/// <summary>﻿<see cref="ConfigurationRelationship">ConfigurationRelationship</see> that describes the association between a <see cref="Component">Component</see> or an <see cref="Asset">Asset</see> and a <see cref="Device">Device</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DeviceRelationshipClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DeviceRelationshipClass.ReferenceId" /></summary>
@@ -26,7 +26,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		/// <summary>Constant value for <see cref="DeviceRelationshipClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__EAID_E20AAF35_BE17_40e8_8701_D2D7676EDC69";
 		/// <summary>Constant value for <see cref="DeviceRelationshipClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between two pieces of equipment that function independently but together perform a manufacturing operation.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;{{block(ConfigurationRelationship)}} that describes the association between a {{block(Component)}} or an {{block(Asset)}} and a {{block(Device)}}.&#10;
 ";
 		/// <summary>Constant value for <see cref="DeviceRelationshipClass.Name" /></summary>
 		public const string NAME = "DeviceRelationship";
@@ -111,17 +111,19 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DeviceUuidRefProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: Object </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
-				public System.Type Type => typeof(object);
+				public System.Type Type => typeof(string);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -154,6 +156,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HrefProperty" path="/summary" /><br/>
@@ -184,11 +189,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="HrefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HrefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HrefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HrefProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HrefProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -227,6 +234,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="RoleProperty" path="/summary" /><br/>
@@ -254,11 +264,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="RoleProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="RoleProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="RoleProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RoleProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="RoleProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -297,6 +309,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="Xlink_TypeProperty" path="/summary" /><br/>
@@ -325,11 +340,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="Xlink_TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="Xlink_TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="Xlink_TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="Xlink_TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="Xlink_TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -368,8 +385,19 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="DeviceRelationshipClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

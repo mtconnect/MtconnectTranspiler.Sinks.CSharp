@@ -18,7 +18,7 @@ namespace Mtconnect.InterfaceInteractionModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ResponderClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ResponderClass.ReferenceId" /></summary>
@@ -30,7 +30,7 @@ namespace Mtconnect.InterfaceInteractionModel
 		/// <summary>Constant value for <see cref="ResponderClass.Name" /></summary>
 		public const string NAME = "Responder";
 		/// <summary>Constant value for <see cref="ResponderClass.AccessModifier" /></summary>
-		public const string ACCESS_MODIFIER = "public";
+		public const string ACCESS_MODIFIER = "private";
 		/// <summary>Constant value for <see cref="ResponderClass.Modifier" /></summary>
 		public const string MODIFIER = "";
 		/// <summary>Constant value for <see cref="ResponderClass.NormativeVersion" /></summary>
@@ -81,6 +81,14 @@ namespace Mtconnect.InterfaceInteractionModel
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ResponderClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

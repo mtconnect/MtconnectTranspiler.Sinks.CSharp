@@ -23,15 +23,29 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         /// </summary>
         public string Type { get; set; }
 
+        /// <summary>
+        /// SysML model value for <c>xmi:type</c>
+        /// </summary>
         public string OriginalPropertyType { get; set; }
 
+        /// <summary>
+        /// Relationship of with other parts. E.g. <c>composite</c> indicates a "has-a" relationship with an associated object
+        /// </summary>
         public string Aggregation { get; set; }
 
+        /// <summary>
+        /// UML extension, delimitted by semi-colon (;)
+        /// </summary>
         public string Extension { get; set; }
 
+        /// <summary>
+        /// Reference to a related remote object
+        /// </summary>
         public string Association { get; set; }
 
         public string DefaultValue { get; set; }
+
+        public string Multiplicity { get; set; }
 
         private XmiElement? _remoteType { get; set; }
 
@@ -47,7 +61,7 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             if (source.Comments?.Length > 0)
                 Summary = new Summary(source.Comments);
 
-            AccessModifier = source.Visibility;
+            AccessModifier = source.Visibility ?? "public";
 
             Modifier = source.IsStatic ? "static" : source.IsReadOnly ? "readonly" : "";
 
@@ -59,17 +73,78 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
             OriginalPropertyType = source.PropertyType;
 
             Aggregation = source.Aggregation;
-            Extension = source.Extension?.Extender;
+            var extensions = source.Extensions?.Select(o => o.Extender)?.DefaultIfEmpty("")?.ToArray();
+            if (extensions != null && extensions.Any())
+                Extension = string.Join(";", extensions);
             Association = CSharpHelperMethods.TypeDeepSearch(model, source.Association, out remoteType);
-            if (source.DefaultValue is UmlInstanceValue instanceValue)
+            if (source.DefaultValue != null)
             {
-                DefaultValue = CSharpHelperMethods.TypeDeepSearch(model, instanceValue.Instance, out XmiElement instanceType);
-            } else
-            {
-                DefaultValue = source.DefaultValue?.Name;
+                if (source.DefaultValue is UmlInstanceValue instanceValue)
+                {
+                    DefaultValue = CSharpHelperMethods.TypeDeepSearch(model, instanceValue.Instance, out XmiElement instanceType);
+                }
+                else if (source.DefaultValue is UmlLiteralBoolean booleanValue)
+                {
+                    DefaultValue = booleanValue.Value.GetValueOrDefault().ToString().ToLower();
+                }
+                else if (source.DefaultValue is UmlLiteralInteger integerValue)
+                {
+                    DefaultValue = integerValue.Value.GetValueOrDefault().ToString();
+                }
+                else if (source.DefaultValue is UmlLiteralString stringValue)
+                {
+                    DefaultValue = stringValue.Value;
+                    if (DefaultValue.StartsWith("\"") && DefaultValue.EndsWith("\""))
+                    {
+                        // Already quoted
+                        DefaultValue = DefaultValue.Remove(DefaultValue.Length - 1, 1).Remove(0, 1);
+                    }
+                } else if (source.DefaultValue is UmlLiteralReal realValue)
+                {
+                    DefaultValue = realValue.Value.GetValueOrDefault().ToString();
+                }
+                else if (!string.IsNullOrEmpty(source.DefaultValue?.Name))
+                {
+                    DefaultValue = source.DefaultValue?.Name;
+                }
             }
 
-            // TODO: Determine multiplicity from lowerValue and upperValue
+            var lowerValueExtension = source.LowerValue
+                ?? source.Extensions?
+                    .Select(o =>
+                        o.ModelExtension?
+                        .LowerValue
+                    )
+                    .FirstOrDefault(o => o != null) as LowerValue;
+            var upperValueExtension = source.UpperValue
+                ?? source.Extensions?
+                    .Select(o =>
+                        o.ModelExtension?
+                        .UpperValue
+                    )
+                    .FirstOrDefault(o => o != null) as UpperValue;
+
+            string lowerValue = lowerValueExtension?.Type == "uml:LiteralUnlimitedNatural"
+                ? lowerValueExtension?.Value ?? "*"
+                : lowerValueExtension != null
+                    ? lowerValueExtension?.Value ?? "0"
+                    : string.Empty;
+            string upperValue = upperValueExtension?.Type == "uml:LiteralUnlimitedNatural"
+                ? upperValueExtension?.Value ?? "*" // Sometimes a value is not present and that means "*"
+                : upperValueExtension?.Value;
+
+            Multiplicity = !string.IsNullOrEmpty(lowerValue) && !string.IsNullOrEmpty(upperValue)
+                ? $"{lowerValue}..{upperValue}"
+                : !string.IsNullOrEmpty(upperValue)
+                    ? $"{upperValue}"
+                    : lowerValueExtension != null
+                        ? $"{lowerValueExtension.Value ?? "0"}"
+                        : string.Empty;
+            if (Multiplicity == "1..1")
+                Multiplicity = "1";
+            if (Multiplicity == "0..0")
+                Multiplicity = string.Empty;
+            // QUESTION: What are the options for lowerValue.Value and upperValue.Value?
         }
 
     }

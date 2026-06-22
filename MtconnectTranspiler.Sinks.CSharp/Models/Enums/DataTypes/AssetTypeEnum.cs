@@ -17,7 +17,7 @@ namespace Mtconnect.DataTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v2.1 according to https://model.mtconnect.org/#_Version_2.1")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum AssetTypeEnum
 	{
 		/// <summary>﻿<see cref="CuttingTool">CuttingTool</see> <see cref="Asset">Asset</see> type.<br /><br /><br />
@@ -91,7 +91,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612349180903_336283_32">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AssetTypeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="AssetTypeEnumMetaClass.ReferenceId" /></summary>

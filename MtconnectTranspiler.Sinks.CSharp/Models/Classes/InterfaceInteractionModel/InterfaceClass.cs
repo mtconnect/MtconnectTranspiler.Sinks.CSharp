@@ -18,7 +18,7 @@ namespace Mtconnect.InterfaceInteractionModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class InterfaceClass : IClass
 	{
 		/// <summary>Constant value for <see cref="InterfaceClass.ReferenceId" /></summary>
@@ -114,6 +114,8 @@ namespace Mtconnect.InterfaceInteractionModel
 				public const string ASSOCIATION = "InterfacesClass";
 				/// <summary>Constant value for <see cref="IsInterfaceOfPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IsInterfaceOfPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -152,6 +154,9 @@ namespace Mtconnect.InterfaceInteractionModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ObservesInterfaceStateProperty" path="/summary" /><br/>
@@ -178,11 +183,13 @@ namespace Mtconnect.InterfaceInteractionModel
 				/// <summary>Constant value for <see cref="ObservesInterfaceStateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ObservesInterfaceStateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservesInterfaceStateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservesInterfaceStateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ObservesInterfaceStateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -221,8 +228,19 @@ namespace Mtconnect.InterfaceInteractionModel
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="InterfaceClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

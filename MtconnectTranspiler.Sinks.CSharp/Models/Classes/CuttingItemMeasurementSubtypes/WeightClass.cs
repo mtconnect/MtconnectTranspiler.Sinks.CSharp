@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingItem.CuttingItemMea
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class WeightClass : IClass
 	{
 		/// <summary>Constant value for <see cref="WeightClass.ReferenceId" /></summary>
@@ -69,16 +69,16 @@ The force exerted by the mass of the cutting tool.&#10;
 		/// <remarks>
 		/// Original Type: EAID_C09F377D_8946_421b_B746_E23C01D97EAC
 		/// </remarks>
-		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass);
+		public Type Generalization => typeof(Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization);
 
 		/// <inheritdoc />
 		public new WeightClassProperties Properties { get; } = new WeightClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="WeightClass" />.
-		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization.ToolingMeasurementGeneralizationProperties" />.
 		/// </summary>
-		public class WeightClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.MeasurementClass.MeasurementClassProperties
+		public class WeightClassProperties : Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle.ToolingMeasurementGeneralization.ToolingMeasurementGeneralizationProperties
 		{
 			/// <inheritdoc />
 			public override IProperty[] Properties => new IProperty[] {
@@ -110,11 +110,13 @@ The force exerted by the mass of the cutting tool.&#10;
 				/// <summary>Constant value for <see cref="CodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CodeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "WT";
+				/// <summary>Constant value for <see cref="CodeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -153,6 +155,9 @@ The force exerted by the mass of the cutting tool.&#10;
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UnitsProperty" path="/summary" /><br/>
@@ -179,11 +184,13 @@ The force exerted by the mass of the cutting tool.&#10;
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UnitsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -222,8 +229,19 @@ The force exerted by the mass of the cutting tool.&#10;
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="WeightClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

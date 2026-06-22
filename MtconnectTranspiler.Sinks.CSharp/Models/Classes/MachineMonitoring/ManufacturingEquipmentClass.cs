@@ -12,7 +12,7 @@ namespace Mtconnect.WIP_UseCases.MachineMonitoring
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1701432130672_535436_68">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ManufacturingEquipmentClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ManufacturingEquipmentClass.ReferenceId" /></summary>
@@ -71,6 +71,14 @@ namespace Mtconnect.WIP_UseCases.MachineMonitoring
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ManufacturingEquipmentClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

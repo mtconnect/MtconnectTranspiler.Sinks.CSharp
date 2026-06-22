@@ -12,7 +12,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Parser
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929719698_801680_19241">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class XmlParserClass : IClass
 	{
 		/// <summary>Constant value for <see cref="XmlParserClass.ReferenceId" /></summary>
@@ -71,6 +71,14 @@ namespace Mtconnect.ReferenceAgentArchitecture.Parser
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="XmlParserClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

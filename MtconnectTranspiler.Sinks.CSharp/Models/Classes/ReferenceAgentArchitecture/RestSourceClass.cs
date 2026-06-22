@@ -12,7 +12,7 @@ namespace Mtconnect.ReferenceAgentArchitecture
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587355932955_42035_2314">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class RestSourceClass : IClass
 	{
 		/// <summary>Constant value for <see cref="RestSourceClass.ReferenceId" /></summary>
@@ -71,6 +71,14 @@ namespace Mtconnect.ReferenceAgentArchitecture
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="RestSourceClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

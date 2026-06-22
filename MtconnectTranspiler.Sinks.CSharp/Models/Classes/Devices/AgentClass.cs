@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Components.Devices
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AgentClass : IClass
 	{
 		/// <summary>Constant value for <see cref="AgentClass.ReferenceId" /></summary>
@@ -92,6 +92,14 @@ An {{block(Agent)}} **MAY** provide information about the {{term(MTConnect Agent
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="AgentClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

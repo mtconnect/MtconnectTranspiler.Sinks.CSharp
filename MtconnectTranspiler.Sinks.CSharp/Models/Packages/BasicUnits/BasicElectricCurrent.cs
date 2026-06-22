@@ -10,7 +10,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579105790702_649058_163005">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class BasicElectricCurrentPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="BasicElectricCurrentPackage.ReferenceId" /></summary>

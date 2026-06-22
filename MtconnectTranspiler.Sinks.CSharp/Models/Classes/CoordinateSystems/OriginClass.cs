@@ -5,6 +5,7 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
@@ -17,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class OriginClass : IClass
 	{
 		/// <summary>Constant value for <see cref="OriginClass.ReferenceId" /></summary>
@@ -63,57 +64,62 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public Type Generalization => null;
+		/// <remarks>
+		/// Original Type: _2024x_3_3870182_1764950887632_747424_46
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractOriginClass);
 
 		/// <inheritdoc />
 		public new OriginClassProperties Properties { get; } = new OriginClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="OriginClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractOriginClass.AbstractOriginClassProperties" />.
 		/// </summary>
-		public class OriginClassProperties : IPropertyList
+		public class OriginClassProperties : Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractOriginClass.AbstractOriginClassProperties
 		{
 			/// <inheritdoc />
-			public virtual IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Value,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
-			public ValueProperty Value { get; } = new ValueProperty();
+			public new ValueProperty Value { get; } = new ValueProperty();
 			
-			/// <summary>﻿The value of <see cref="Origin">Origin</see> in <c>MILLIMETER_3D</c>.<br /><br /><br />
+			/// <summary>﻿
 			/// </summary>
-			public sealed class ValueProperty : IProperty
+			public new sealed class ValueProperty : IProperty
 			{
 				/// <summary>Constant value for <see cref="ValueProperty.Name" /></summary>
 				public const string NAME = "value";
 				/// <summary>Constant value for <see cref="ValueProperty.Summary" /></summary>
-				public const string SUMMARY = @"&#10;&#10;&#10;The value of {{block(Origin)}} in `MILLIMETER_3D`.&#10;
-";
+				public const string SUMMARY = @"";
 				/// <summary>Constant value for <see cref="ValueProperty.AccessModifier" /></summary>
-				public const string ACCESS_MODIFIER = "public";
+				public const string ACCESS_MODIFIER = "private";
 				/// <summary>Constant value for <see cref="ValueProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="ValueProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "1.6";
+				public const string NORMATIVE_VERSION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ValueProperty.Extension" /></summary>
-				public const string EXTENSION = "";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ValueProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: Single </remarks>
+				/// <remarks> Type: Float[] </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Single);
+				public System.Type Type => typeof(float[]);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -146,8 +152,19 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="OriginClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

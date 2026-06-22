@@ -5,11 +5,12 @@
 using System;
 using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
+using System.Linq;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 {
 	/// <summary>﻿translations along X, Y, and Z axes are expressed as x,y, and z respectively within a 3-dimensional vector. <br /><br /><br />
-	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1583182362743_846297_4736">model.mtconnect.org</seealso> for more information.
+	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_3_3870182_1764951167326_754957_161">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
@@ -17,13 +18,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TranslationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TranslationClass.ReferenceId" /></summary>
-		public const string REFERENCE_ID = "_19_0_3_45f01b9_1583182362743_846297_4736";
+		public const string REFERENCE_ID = "_2024x_3_3870182_1764951167326_754957_161";
 		/// <summary>Constant value for <see cref="TranslationClass.HelpUrl" /></summary>
-		public const string HELP_URL = "https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1583182362743_846297_4736";
+		public const string HELP_URL = "https://model.mtconnect.org/#Structure___2024x_3_3870182_1764951167326_754957_161";
 		/// <summary>Constant value for <see cref="TranslationClass.Summary" /></summary>
 		public const string SUMMARY = @"&#10;&#10;&#10;translations along X, Y, and Z axes are expressed as x,y, and z respectively within a 3-dimensional vector. &#10;
 ";
@@ -63,57 +64,62 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 		public string DeprecatedVersion => DEPRECATED_VERSION;
 		
 		/// <inheritdoc />
-		public Type Generalization => null;
+		/// <remarks>
+		/// Original Type: _19_0_3_45f01b9_1583182362743_846297_4736
+		/// </remarks>
+		public Type Generalization => typeof(Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractTranslationClass);
 
 		/// <inheritdoc />
 		public new TranslationClassProperties Properties { get; } = new TranslationClassProperties();
         IPropertyList IClass.Properties => Properties;
 		/// <summary>
 		/// Property list for <see cref="TranslationClass" />.
+		/// <br/><b>Note</b>, some properties (<see cref="IProperty" />) are inherited from <see cref="Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractTranslationClass.AbstractTranslationClassProperties" />.
 		/// </summary>
-		public class TranslationClassProperties : IPropertyList
+		public class TranslationClassProperties : Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems.AbstractTranslationClass.AbstractTranslationClassProperties
 		{
 			/// <inheritdoc />
-			public virtual IProperty[] Properties => new IProperty[] {
+			public override IProperty[] Properties => new IProperty[] {
 				Value,
-			};
+			}.Concat(base.Properties).ToArray();
 			/// <summary>
 			/// <inheritdoc cref="ValueProperty" path="/summary" /><br/>
 			/// <remarks>Original Name: Value</remarks>
 			/// </summary>
-			public ValueProperty Value { get; } = new ValueProperty();
+			public new ValueProperty Value { get; } = new ValueProperty();
 			
-			/// <summary>﻿The value of <see cref="Translation">Translation</see> in <c>MILLIMETER_3D</c>.<br /><br /><br />
+			/// <summary>﻿
 			/// </summary>
-			public sealed class ValueProperty : IProperty
+			public new sealed class ValueProperty : IProperty
 			{
 				/// <summary>Constant value for <see cref="ValueProperty.Name" /></summary>
 				public const string NAME = "value";
 				/// <summary>Constant value for <see cref="ValueProperty.Summary" /></summary>
-				public const string SUMMARY = @"&#10;&#10;&#10;The value of {{block(Translation)}} in `MILLIMETER_3D`.&#10;
-";
+				public const string SUMMARY = @"";
 				/// <summary>Constant value for <see cref="ValueProperty.AccessModifier" /></summary>
-				public const string ACCESS_MODIFIER = "public";
+				public const string ACCESS_MODIFIER = "private";
 				/// <summary>Constant value for <see cref="ValueProperty.Modifier" /></summary>
 				public const string MODIFIER = "";
 				/// <summary>Constant value for <see cref="ValueProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "1.6";
+				public const string NORMATIVE_VERSION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DeprecatedVersion" /></summary>
 				public const string DEPRECATED_VERSION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ValueProperty.Extension" /></summary>
-				public const string EXTENSION = "";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ValueProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: Single </remarks>
+				/// <remarks> Type: Float[] </remarks>
 				/// </summary>
-				public System.Type Type => typeof(Single);
+				public System.Type Type => typeof(float[]);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -146,8 +152,19 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="TranslationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

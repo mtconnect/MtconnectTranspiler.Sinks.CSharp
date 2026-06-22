@@ -2,7 +2,7 @@
 #pragma warning disable CS1574 // XML comment has cref attribute that could not be resolved
 #pragma warning disable CS1584 // XML comment has syntactically incorrect cref attribute
 #pragma warning disable CS0618 // Type or member is obsolete
-{{~ code_name = source.name | to_code_safe | string.remove "."
+{{~ code_name = source.name | to_csharp_code_safe | remove_dots
 has_generalization = false
 ~}}
 using System;
@@ -10,15 +10,16 @@ using System.CodeDom.Compiler;
 using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 {{~ if source.generalization != null && source.generalization != "" ~}}
 using System.Linq;
-{{~ generalization_type_namespace = source.generalization_id | get_type_namespace | to_code_safe ~}}
+{{~ generalization_type_namespace = source.generalization_id | get_type_namespace | to_csharp_code_safe ~}}
 {{~
-	if generalization_type_namespace
-		generalization_type_name = source.generalization | to_pascal_case | to_code_safe | string.remove "."
+	has_generalization_namespace = generalization_type_namespace != null && generalization_type_namespace != ""
+	if has_generalization_namespace
+		generalization_type_name = source.generalization | to_pascal_case | to_csharp_code_safe | remove_dots
 	else
-		generalization_type_name = source.generalization | to_code_safe | string.remove "."
+		generalization_type_name = source.generalization | to_csharp_code_safe | remove_dots
 	end
 
-	if generalization_type_namespace
+	if has_generalization_namespace
 		generalization = generalization_type_namespace + "."
 	end
 	generalization = generalization + source.generalization
@@ -26,7 +27,7 @@ using System.Linq;
 ~}}
 {{~ end ~}}
 
-namespace {{ to_code_safe source.namespace }}
+namespace {{ to_csharp_code_safe source.namespace }}
 {
 	/// <summary>{{ include 'UmlCommentsSummaryContent.scriban' source?.summary }}
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__{{ source.reference_id }}">model.mtconnect.org</seealso> for more information.
@@ -40,7 +41,7 @@ namespace {{ to_code_safe source.namespace }}
 		/// <summary>Constant value for <see cref="{{ code_name }}.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__{{ source.reference_id }}";
 		/// <summary>Constant value for <see cref="{{ code_name }}.Summary" /></summary>
-		public const string SUMMARY = @"{{ source.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+		public const string SUMMARY = @"{{ source.summary | to_csharp_literal }}";
 		/// <summary>Constant value for <see cref="{{ code_name }}.Name" /></summary>
 		public const string NAME = "{{ source.normative_name }}";
 		/// <summary>Constant value for <see cref="{{ code_name }}.AccessModifier" /></summary>
@@ -100,7 +101,7 @@ namespace {{ to_code_safe source.namespace }}
 			/// <inheritdoc />
 			public {{ if has_generalization }}override{{ else }}virtual{{ end }} IProperty[] Properties => new IProperty[] {
 			{{~ for item in source.properties ~}}
-{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
+{{~ item_code_name = item.name | to_csharp_code_safe | remove_dots ~}}
 {{~
 	if item.association
 		item_suffix = "Part"
@@ -112,13 +113,14 @@ namespace {{ to_code_safe source.namespace }}
 			{{~ end ~}}
 			}{{ if has_generalization }}.Concat(base.Properties).ToArray(){{ end }};
 		{{~ for item in source.properties ~}}
-		{{~ item_code_name = item.name | to_code_safe | string.remove "." ~}}
-{{~ property_type_namespace = item.original_property_type | get_type_namespace | to_code_safe ~}}
+		{{~ item_code_name = item.name | to_csharp_code_safe | remove_dots ~}}
+{{~ property_type_namespace = item.original_property_type | get_type_namespace | to_csharp_code_safe ~}}
 		{{~
-			if property_type_namespace
-				item_type_name = item.type | to_pascal_case | to_code_safe | string.remove "."
+			has_property_type_namespace = property_type_namespace != null && property_type_namespace != ""
+			if has_property_type_namespace
+				item_type_name = item.type | to_pascal_case | to_csharp_code_safe | remove_dots
 			else
-				item_type_name = item.type | to_code_safe | string.remove "."
+				item_type_name = item.type | to_csharp_code_safe | remove_dots
 			end
 		~}}
 		{{~
@@ -141,7 +143,7 @@ namespace {{ to_code_safe source.namespace }}
 				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Name" /></summary>
 				public const string NAME = "{{ item.normative_name }}";
 				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Summary" /></summary>
-				public const string SUMMARY = @"{{ item.summary | string.replace "\"" "\"\"" | string.replace "\\" "\\\\" }}";
+				public const string SUMMARY = @"{{ item.summary | to_csharp_literal }}";
 				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.AccessModifier" /></summary>
 				public const string ACCESS_MODIFIER = "{{ item.access_modifier }}";
 				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Modifier" /></summary>
@@ -158,12 +160,14 @@ namespace {{ to_code_safe source.namespace }}
 				public const string ASSOCIATION = "{{ item.association }}";
 				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "{{ item.default_value }}";
+				/// <summary>Constant value for <see cref="{{ item_code_name }}{{ item_suffix }}.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "{{ item.multiplicity }}";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: {{ item.type | to_pascal_case | to_code_safe }} </remarks>
+				/// <remarks> Type: {{ item.type | to_pascal_case | to_csharp_code_safe }} </remarks>
 				/// </summary>
-				public System.Type Type => typeof({{ if property_type_namespace }}{{ property_type_namespace }}.{{ end }}{{ item_type_name }});
+				public System.Type Type => typeof({{ if has_property_type_namespace }}{{ property_type_namespace }}.{{ end }}{{ item_type_name }});
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -196,12 +200,27 @@ namespace {{ to_code_safe source.namespace }}
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		{{~ end ~}}
 		};
-
-		{{~ if source.constraints.size > 0 ~}}
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="{{ code_name }}" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+		{{~ if source.constraints.size > 0 ~}}
+		{{~ for constraint in source.constraints ~}}
+			{{ constraint.name }},
+		{{~ end ~}}
+		{{~ else ~}}
+			// No Constraints
+		{{~ end ~}}
+		};
+		{{~ if source.constraints.size > 0 ~}}
 	{{~ for constraint in source.constraints ~}}
 		/// <summary>
 		/// {{ constraint.name }}
@@ -212,7 +231,7 @@ namespace {{ to_code_safe source.namespace }}
 		{{ constraint?.raw_script ?? "No Content" }}
 		*/
 	{{~ end ~}}
-		# endregion
 		{{~ end ~}}
+		# endregion
 	}
 }

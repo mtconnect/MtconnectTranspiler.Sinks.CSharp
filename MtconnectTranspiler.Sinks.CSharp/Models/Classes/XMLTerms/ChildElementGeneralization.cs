@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.XMLTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375146_261316_1961">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ChildElementGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="ChildElementGeneralization.ReferenceId" /></summary>
@@ -77,6 +77,14 @@ namespace Mtconnect.Glossary.XMLTerms
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ChildElementGeneralization" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

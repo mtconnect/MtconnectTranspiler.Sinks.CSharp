@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class QIFDocumentWrapperClass : IClass
 	{
 		/// <summary>Constant value for <see cref="QIFDocumentWrapperClass.ReferenceId" /></summary>
@@ -109,11 +109,13 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -152,6 +154,9 @@ namespace Mtconnect.AssetInformationModel.QIF
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasQIFDocumentPartProperty" path="/summary" /><br/>
@@ -178,11 +183,13 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "QIFDocument";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -221,8 +228,19 @@ namespace Mtconnect.AssetInformationModel.QIF
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="QIFDocumentWrapperClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

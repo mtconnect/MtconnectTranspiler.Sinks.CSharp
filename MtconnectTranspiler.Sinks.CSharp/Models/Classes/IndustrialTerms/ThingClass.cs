@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581733974550_623533_615">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ThingClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ThingClass.ReferenceId" /></summary>
@@ -31,7 +31,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 		/// <summary>Constant value for <see cref="ThingClass.Name" /></summary>
 		public const string NAME = "Thing";
 		/// <summary>Constant value for <see cref="ThingClass.AccessModifier" /></summary>
-		public const string ACCESS_MODIFIER = "public";
+		public const string ACCESS_MODIFIER = "private";
 		/// <summary>Constant value for <see cref="ThingClass.Modifier" /></summary>
 		public const string MODIFIER = "";
 		/// <summary>Constant value for <see cref="ThingClass.NormativeVersion" /></summary>
@@ -78,6 +78,14 @@ namespace Mtconnect.Glossary.IndustrialTerms
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ThingClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>MTConnect Transpiler Sink for C#</Title>
-    <Version>2.4.0</Version>
+    <Version>2.8.0</Version>
     <Authors>mtconnect, tbm0115</Authors>
     <Company>MTConnect Institute; TAMS;</Company>
     <Description>An implementation of `ITranspilerSink` from the `MtconnectTranspiler` library. This libary makes it possible to transpile the MTConnect Standard SysML model into C# code.</Description>
@@ -15,11 +15,19 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>Updated to support v2.4.0 of the MTConnect Standard.</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated to support v2.8.0 of the MTConnect Standard.</PackageReleaseNotes>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
+    <ItemGroup>
+	    <Content Include="icon.png" />
+	    <Content Include="README.md">
+		    <Pack>True</Pack>
+		    <PackagePath>\</PackagePath>
+	    </Content>
+    </ItemGroup>
 
 </Project>

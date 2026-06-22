@@ -17,7 +17,7 @@ namespace Mtconnect.ObservationInformationModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DeviceStreamClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DeviceStreamClass.ReferenceId" /></summary>
@@ -110,11 +110,13 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -153,6 +155,9 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UuidProperty" path="/summary" /><br/>
@@ -180,17 +185,19 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				/// <summary>Constant value for <see cref="UuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UuidProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UuidProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
-				/// <remarks> Type: Object </remarks>
+				/// <remarks> Type: String </remarks>
 				/// </summary>
-				public System.Type Type => typeof(object);
+				public System.Type Type => typeof(string);
 				
 				/// <inheritdoc />
 				public string Name => NAME;
@@ -223,6 +230,9 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasComponentStreamPartProperty" path="/summary" /><br/>
@@ -249,11 +259,13 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ComponentStream";
 				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasComponentStreamPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -292,8 +304,19 @@ The value reported for {{property(DeviceStream::name)}} **MUST** be the same as 
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="DeviceStreamClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -12,7 +12,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_91b028d_1582233160564_921570_689">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TransformationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TransformationClass.ReferenceId" /></summary>
@@ -124,6 +124,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="XinProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="XinProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -162,6 +164,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="YinProperty" path="/summary" /><br/>
@@ -193,6 +198,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="YinProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="YinProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -231,6 +238,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ZinProperty" path="/summary" /><br/>
@@ -262,6 +272,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ZinProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ZinProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -300,6 +312,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="XoutProperty" path="/summary" /><br/>
@@ -331,6 +346,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="XoutProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="XoutProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -369,6 +386,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="YoutProperty" path="/summary" /><br/>
@@ -400,6 +420,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="YoutProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="YoutProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -438,6 +460,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ZoutProperty" path="/summary" /><br/>
@@ -469,6 +494,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ZoutProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ZoutProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -507,6 +534,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="XtProperty" path="/summary" /><br/>
@@ -538,6 +568,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="XtProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="XtProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -576,6 +608,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="YtProperty" path="/summary" /><br/>
@@ -607,6 +642,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="YtProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="YtProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -645,6 +682,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ZtProperty" path="/summary" /><br/>
@@ -676,6 +716,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ZtProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ZtProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -714,6 +756,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="XrProperty" path="/summary" /><br/>
@@ -745,6 +790,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="XrProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="XrProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -783,6 +830,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="YrProperty" path="/summary" /><br/>
@@ -814,6 +864,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="YrProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="YrProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -852,6 +904,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ZrProperty" path="/summary" /><br/>
@@ -883,6 +938,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ZrProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ZrProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -921,6 +978,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="AinProperty" path="/summary" /><br/>
@@ -952,6 +1012,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AinProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="AinProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -990,6 +1052,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="BinProperty" path="/summary" /><br/>
@@ -1021,6 +1086,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="BinProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="BinProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1059,6 +1126,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CinProperty" path="/summary" /><br/>
@@ -1090,6 +1160,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CinProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CinProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1128,6 +1200,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="AoutProperty" path="/summary" /><br/>
@@ -1159,6 +1234,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AoutProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="AoutProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1197,6 +1274,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="BoutProperty" path="/summary" /><br/>
@@ -1228,6 +1308,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="BoutProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="BoutProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1266,6 +1348,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CoutProperty" path="/summary" /><br/>
@@ -1297,6 +1382,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoutProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CoutProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1335,6 +1422,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="XuProperty" path="/summary" /><br/>
@@ -1366,6 +1456,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="XuProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="XuProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1404,6 +1496,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="YuProperty" path="/summary" /><br/>
@@ -1435,6 +1530,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="YuProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="YuProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1473,6 +1570,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="ZuProperty" path="/summary" /><br/>
@@ -1504,6 +1604,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ZuProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="ZuProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1542,6 +1644,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="AngProperty" path="/summary" /><br/>
@@ -1573,6 +1678,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AngProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="AngProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1611,6 +1718,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="AnginProperty" path="/summary" /><br/>
@@ -1642,6 +1752,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AnginProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="AnginProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1680,6 +1792,9 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="AngoutProperty" path="/summary" /><br/>
@@ -1711,6 +1826,8 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AngoutProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="AngoutProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -1749,10 +1866,19 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation.XArm7Model
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="TransformationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			Constraints,
+		};
 		/// <summary>
 		/// Constraints
 		/// </summary>

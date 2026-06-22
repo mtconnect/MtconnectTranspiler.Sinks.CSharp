@@ -17,7 +17,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class RepresentationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="RepresentationClass.ReferenceId" /></summary>
@@ -84,6 +84,14 @@ Example: The name for {{block(Sample)}} {{block(Observation)}} type `Temperature
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="RepresentationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

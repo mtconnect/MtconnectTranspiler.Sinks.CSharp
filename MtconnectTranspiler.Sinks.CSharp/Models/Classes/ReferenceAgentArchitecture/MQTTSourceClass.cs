@@ -12,7 +12,7 @@ namespace Mtconnect.ReferenceAgentArchitecture
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1587355953516_870476_2368">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MQTTSourceClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MQTTSourceClass.ReferenceId" /></summary>
@@ -71,6 +71,14 @@ namespace Mtconnect.ReferenceAgentArchitecture
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="MQTTSourceClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Sink
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929472006_955706_18942">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class RestSinkGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="RestSinkGeneralization.ReferenceId" /></summary>
@@ -76,6 +76,14 @@ namespace Mtconnect.ReferenceAgentArchitecture.Sink
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="RestSinkGeneralization" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

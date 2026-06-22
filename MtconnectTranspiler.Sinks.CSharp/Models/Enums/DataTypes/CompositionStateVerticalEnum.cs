@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum CompositionStateVerticalEnum
 	{
 		/// <summary>﻿position of the <see cref="Composition">Composition</see> element is oriented in an upward direction to the point of a positive confirmation.<br /><br /><br />
@@ -50,7 +50,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1612550799197_550203_137">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CompositionStateVerticalEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="CompositionStateVerticalEnumMetaClass.ReferenceId" /></summary>

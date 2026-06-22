@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <summary>﻿This section provides semantic information for the <see cref="SolidModel">SolidModel</see> entity.<br /><br />![SolidModel](figures/SolidModel.png "SolidModel"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![SolidModel Example](figures/SolidModel%20Example.png "SolidModel Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(solidmodel-example)}} for the <i>XML</i> representation of the same example.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1587596036608_721900_298">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class SolidModelPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="SolidModelPackage.ReferenceId" /></summary>
@@ -51,6 +51,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			SolidModelClass,
+			AbstractScaleClass,
+			ScaleDataSetGeneralization,
 			ScaleClass,
 		};
 		
@@ -67,6 +69,18 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <inheritdoc cref="Package.SolidModelClass" path="/summary" />
 	/// </summary>
 	public Package.SolidModelClass SolidModelClass => _SolidModelClass ?? (_SolidModelClass = new Package.SolidModelClass());
+
+	private Package.AbstractScaleClass _AbstractScaleClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.AbstractScaleClass" path="/summary" />
+	/// </summary>
+	public Package.AbstractScaleClass AbstractScaleClass => _AbstractScaleClass ?? (_AbstractScaleClass = new Package.AbstractScaleClass());
+
+	private Package.ScaleDataSetGeneralization _ScaleDataSetGeneralization;
+	/// <summary>
+	/// <inheritdoc cref="Package.ScaleDataSetGeneralization" path="/summary" />
+	/// </summary>
+	public Package.ScaleDataSetGeneralization ScaleDataSetGeneralization => _ScaleDataSetGeneralization ?? (_ScaleDataSetGeneralization = new Package.ScaleDataSetGeneralization());
 
 	private Package.ScaleClass _ScaleClass;
 	/// <summary>

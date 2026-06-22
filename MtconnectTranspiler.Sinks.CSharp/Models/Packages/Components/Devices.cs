@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 	/// <summary>﻿This section provides semantic information for the <see cref="Device">Device</see> types.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1588604708900_376505_13">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class DevicesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="DevicesPackage.ReferenceId" /></summary>

@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ControlLimitsClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ControlLimitsClass.ReferenceId" /></summary>
@@ -106,11 +106,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "UpperLimit";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -149,6 +151,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="UpperWarningPartProperty" path="/summary" /><br/>
@@ -175,11 +180,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "UpperWarning";
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="UpperWarningPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -218,6 +225,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LowerWarningPartProperty" path="/summary" /><br/>
@@ -244,11 +254,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "LowerWarning";
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="LowerWarningPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -287,6 +299,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NominalPartProperty" path="/summary" /><br/>
@@ -313,11 +328,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="NominalPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NominalPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NominalPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Nominal";
 				/// <summary>Constant value for <see cref="NominalPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NominalPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -356,6 +373,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="LowerLimitPartProperty" path="/summary" /><br/>
@@ -382,11 +402,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "LowerLimit";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -425,8 +447,19 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ControlLimitsClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

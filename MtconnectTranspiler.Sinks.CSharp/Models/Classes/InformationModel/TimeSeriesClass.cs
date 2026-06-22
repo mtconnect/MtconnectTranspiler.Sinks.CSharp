@@ -12,7 +12,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1585537822355_792831_3893">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TimeSeriesClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TimeSeriesClass.ReferenceId" /></summary>
@@ -71,6 +71,14 @@ namespace Mtconnect.ReferenceAgentArchitecture.InformationModel
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="TimeSeriesClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

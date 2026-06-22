@@ -20,7 +20,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.2 according to https://model.mtconnect.org/#_Version_1.2")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class VibrationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="VibrationClass.ReferenceId" /></summary>
@@ -86,6 +86,14 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="VibrationClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

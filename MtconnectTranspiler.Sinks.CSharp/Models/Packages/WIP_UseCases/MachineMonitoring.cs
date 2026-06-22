@@ -11,7 +11,7 @@ namespace Mtconnect.WIP_UseCases
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1702396421910_311633_28">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class MachineMonitoringPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="MachineMonitoringPackage.ReferenceId" /></summary>
@@ -37,14 +37,12 @@ namespace Mtconnect.WIP_UseCases
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
-			RequirementsPackage,
-			UseCasesPackage,
 		};
 		
 		/// <inheritdoc />
 		public IClass[] Classes => new IClass[] {
 			ManufacturingEquipmentClass,
-			MTConnectDeviceWithOperationalStatesClass,
+			MachineMonitoringClass,
 		};
 		
 		/// <inheritdoc />
@@ -52,18 +50,6 @@ namespace Mtconnect.WIP_UseCases
 		};
 
 		#region Packages
-	private Package.RequirementsPackage _RequirementsPackage;
-	/// <summary>
-	/// <inheritdoc cref="Package.RequirementsPackage" path="/summary" />
-	/// </summary>
-	public Package.RequirementsPackage RequirementsPackage => _RequirementsPackage ?? (_RequirementsPackage = new Package.RequirementsPackage());
-
-	private Package.UseCasesPackage _UseCasesPackage;
-	/// <summary>
-	/// <inheritdoc cref="Package.UseCasesPackage" path="/summary" />
-	/// </summary>
-	public Package.UseCasesPackage UseCasesPackage => _UseCasesPackage ?? (_UseCasesPackage = new Package.UseCasesPackage());
-
 	#endregion
 
 	#region Classes
@@ -73,11 +59,11 @@ namespace Mtconnect.WIP_UseCases
 	/// </summary>
 	public Package.ManufacturingEquipmentClass ManufacturingEquipmentClass => _ManufacturingEquipmentClass ?? (_ManufacturingEquipmentClass = new Package.ManufacturingEquipmentClass());
 
-	private Package.MTConnectDeviceWithOperationalStatesClass _MTConnectDeviceWithOperationalStatesClass;
+	private Package.MachineMonitoringClass _MachineMonitoringClass;
 	/// <summary>
-	/// <inheritdoc cref="Package.MTConnectDeviceWithOperationalStatesClass" path="/summary" />
+	/// <inheritdoc cref="Package.MachineMonitoringClass" path="/summary" />
 	/// </summary>
-	public Package.MTConnectDeviceWithOperationalStatesClass MTConnectDeviceWithOperationalStatesClass => _MTConnectDeviceWithOperationalStatesClass ?? (_MTConnectDeviceWithOperationalStatesClass = new Package.MTConnectDeviceWithOperationalStatesClass());
+	public Package.MachineMonitoringClass MachineMonitoringClass => _MachineMonitoringClass ?? (_MachineMonitoringClass = new Package.MachineMonitoringClass());
 
 	#endregion
 

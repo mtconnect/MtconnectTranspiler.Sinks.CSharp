@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.Components
 	/// <summary>﻿This section provides semantic information for the types of <see cref="Component">Component</see>. <br /><br />&gt; Note: In the <i>XML</i> representation, <see cref="Component">Component</see> entities are defined into two major categories:<br /><br />&gt; * <i>top level</i> <see cref="Component">Component</see> entities that <i>organize</i>s the most significant physical or logical functions of a piece of equipment (see <see cref="Part Properties of Device">Part Properties of Device</see>).  They <b>MAY</b> also be used as <i>lower level</i> <see cref="Component">Component</see> entities; as required. See <see cref="Component Organizer Types">Component Organizer Types</see>.<br /><br />&gt; * <i>lower level</i> <see cref="Component">Component</see> entities composed of the sub-parts of the parent <see cref="Component">Component</see> to provide more clarity and granularity to the physical or logical structure of the <i>top level</i> <see cref="Component">Component</see> entities.<br /><br />This section provides guidance for the most common relationships between <see cref="Component">Component</see> types.  However, all <see cref="Component">Component</see> types <b>MAY</b> be used in any configuration, as required, to fully describe a piece of equipment.<br /><br />As described in <see cref="Components">Components</see>, <see cref="Component">Component</see> is an abstract entity and will be always realized by a specific <see cref="Component">Component</see> type.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_6BEE6977_1698_498c_87A6_34B5E656F773">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class ComponentTypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ComponentTypesPackage.ReferenceId" /></summary>
@@ -157,6 +157,10 @@ As described in {{package(Components)}}, {{block(Component)}} is an abstract ent
 			WorkEnvelopeClass,
 			FeatureOccurrenceClass,
 			AirHandlerClass,
+			ElectrodeClass,
+			CuttingTorchClass,
+			ToolHolderClass,
+			PinToolClass,
 		};
 		
 		/// <inheritdoc />
@@ -796,6 +800,30 @@ As described in {{package(Components)}}, {{block(Component)}} is an abstract ent
 	/// <inheritdoc cref="Package.AirHandlerClass" path="/summary" />
 	/// </summary>
 	public Package.AirHandlerClass AirHandlerClass => _AirHandlerClass ?? (_AirHandlerClass = new Package.AirHandlerClass());
+
+	private Package.ElectrodeClass _ElectrodeClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ElectrodeClass" path="/summary" />
+	/// </summary>
+	public Package.ElectrodeClass ElectrodeClass => _ElectrodeClass ?? (_ElectrodeClass = new Package.ElectrodeClass());
+
+	private Package.CuttingTorchClass _CuttingTorchClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.CuttingTorchClass" path="/summary" />
+	/// </summary>
+	public Package.CuttingTorchClass CuttingTorchClass => _CuttingTorchClass ?? (_CuttingTorchClass = new Package.CuttingTorchClass());
+
+	private Package.ToolHolderClass _ToolHolderClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ToolHolderClass" path="/summary" />
+	/// </summary>
+	public Package.ToolHolderClass ToolHolderClass => _ToolHolderClass ?? (_ToolHolderClass = new Package.ToolHolderClass());
+
+	private Package.PinToolClass _PinToolClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.PinToolClass" path="/summary" />
+	/// </summary>
+	public Package.PinToolClass PinToolClass => _PinToolClass ?? (_PinToolClass = new Package.PinToolClass());
 
 	#endregion
 

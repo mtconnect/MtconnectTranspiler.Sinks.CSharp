@@ -11,7 +11,7 @@ namespace Mtconnect.ObservationInformationModel
 	/// <summary>﻿This section provides semantic information for the <see cref="Representation">Representation</see> model.<br /><br />![Representation](figures/Representation.png "Representation"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Representation Schema Diagrams">Representation Schema Diagrams</see> for XML schema.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1583339330789_426055_14911">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class RepresentationsPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="RepresentationsPackage.ReferenceId" /></summary>
@@ -42,6 +42,7 @@ namespace Mtconnect.ObservationInformationModel
 
 		/// <inheritdoc />
 		public IPackage[] Packages => new IPackage[] {
+			TablePackage,
 		};
 		
 		/// <inheritdoc />
@@ -52,9 +53,6 @@ namespace Mtconnect.ObservationInformationModel
 			DiscreteClass,
 			DataSetClass,
 			EntryClass,
-			TableClass,
-			TableEntryClass,
-			CellClass,
 		};
 		
 		/// <inheritdoc />
@@ -62,6 +60,12 @@ namespace Mtconnect.ObservationInformationModel
 		};
 
 		#region Packages
+	private Package.TablePackage _TablePackage;
+	/// <summary>
+	/// <inheritdoc cref="Package.TablePackage" path="/summary" />
+	/// </summary>
+	public Package.TablePackage TablePackage => _TablePackage ?? (_TablePackage = new Package.TablePackage());
+
 	#endregion
 
 	#region Classes
@@ -100,24 +104,6 @@ namespace Mtconnect.ObservationInformationModel
 	/// <inheritdoc cref="Package.EntryClass" path="/summary" />
 	/// </summary>
 	public Package.EntryClass EntryClass => _EntryClass ?? (_EntryClass = new Package.EntryClass());
-
-	private Package.TableClass _TableClass;
-	/// <summary>
-	/// <inheritdoc cref="Package.TableClass" path="/summary" />
-	/// </summary>
-	public Package.TableClass TableClass => _TableClass ?? (_TableClass = new Package.TableClass());
-
-	private Package.TableEntryClass _TableEntryClass;
-	/// <summary>
-	/// <inheritdoc cref="Package.TableEntryClass" path="/summary" />
-	/// </summary>
-	public Package.TableEntryClass TableEntryClass => _TableEntryClass ?? (_TableEntryClass = new Package.TableEntryClass());
-
-	private Package.CellClass _CellClass;
-	/// <summary>
-	/// <inheritdoc cref="Package.CellClass" path="/summary" />
-	/// </summary>
-	public Package.CellClass CellClass => _CellClass ?? (_CellClass = new Package.CellClass());
 
 	#endregion
 

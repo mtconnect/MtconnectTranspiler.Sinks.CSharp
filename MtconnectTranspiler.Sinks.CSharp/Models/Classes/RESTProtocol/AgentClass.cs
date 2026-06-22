@@ -17,7 +17,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.RESTProtocol
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AgentClass : IClass
 	{
 		/// <summary>Constant value for <see cref="AgentClass.ReferenceId" /></summary>
@@ -124,6 +124,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="InstanceIdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="InstanceIdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -162,6 +164,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SequenceNumberProperty" path="/summary" /><br/>
@@ -194,6 +199,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SequenceNumberProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SequenceNumberProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -232,6 +239,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="BufferSizeProperty" path="/summary" /><br/>
@@ -264,6 +274,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="BufferSizeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="BufferSizeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -302,6 +314,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="MaxAssetsProperty" path="/summary" /><br/>
@@ -334,6 +349,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MaxAssetsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="MaxAssetsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -372,6 +389,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="AssetCountProperty" path="/summary" /><br/>
@@ -404,6 +424,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AssetCountProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="AssetCountProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -442,6 +464,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasObservationPartProperty" path="/summary" /><br/>
@@ -473,6 +498,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				public const string ASSOCIATION = "buffer";
 				/// <summary>Constant value for <see cref="HasObservationPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasObservationPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -511,6 +538,9 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasAssetPartProperty" path="/summary" /><br/>
@@ -542,6 +572,8 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				public const string ASSOCIATION = "assetBuffer";
 				/// <summary>Constant value for <see cref="HasAssetPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasAssetPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -580,25 +612,99 @@ In addition to {{term(XML)}} and {{term(HTTP)}}, An {{term(agent)}} **MAY** prov
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="AgentClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			SufficientObservationSpace,
+			SufficientAssetSpace,
+		};
 		/// <summary>
 		/// SufficientObservationSpace
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string SufficientObservationSpace => @"buffer.length < agent.bufferSize";
+		public string SufficientObservationSpace => @"val:SufficientObservationSpace
+    a sh:NodeShape ;
+    sh:message ""Observation buffer length **MUST** be strictly less than Agent's buffer size."" ;
+    sh:targetClass mt:Agent ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:select """"""
+            SELECT $this
+            WHERE {
+                $this mt:observationBuffer ?buffer .
+                $this mt:bufferSize ?maxSize .
+                ?buffer mt:length ?bufferLen .
+                FILTER (xsd:integer(?bufferLen) >= xsd:integer(?maxSize))
+            }
+        """""" ;
+    ] .
+";
 		/*
-		buffer.length < agent.bufferSize
+		val:SufficientObservationSpace
+		    a sh:NodeShape ;
+		    sh:message "Observation buffer length **MUST** be strictly less than Agent's buffer size." ;
+		    sh:targetClass mt:Agent ;
+		    sh:sparql [
+		        a sh:SPARQLConstraint ;
+		        sh:select """
+		            SELECT $this
+		            WHERE {
+		                $this mt:observationBuffer ?buffer .
+		                $this mt:bufferSize ?maxSize .
+		                ?buffer mt:length ?bufferLen .
+		                FILTER (xsd:integer(?bufferLen) >= xsd:integer(?maxSize))
+		            }
+		        """ ;
+		    ] .
+
 		*/
 		/// <summary>
 		/// SufficientAssetSpace
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string SufficientAssetSpace => @"assetBuffer.length < agent.maxAssets";
+		public string SufficientAssetSpace => @"val:SufficientAssetSpace
+    a sh:NodeShape ;
+    sh:message ""Asset buffer length **MUST** be less than Agent's max assets."" ;
+    sh:targetClass mt:Agent ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:select """"""
+            SELECT $this
+            WHERE {
+                $this mt:assetBuffer ?buffer .
+                $this mt:maxAssets ?maxAssets .
+                ?buffer mt:length ?bufferLen .
+                FILTER (xsd:integer(?bufferLen) >= xsd:integer(?maxAssets))
+            }
+        """""" ;
+    ] .
+";
 		/*
-		assetBuffer.length < agent.maxAssets
+		val:SufficientAssetSpace
+		    a sh:NodeShape ;
+		    sh:message "Asset buffer length **MUST** be less than Agent's max assets." ;
+		    sh:targetClass mt:Agent ;
+		    sh:sparql [
+		        a sh:SPARQLConstraint ;
+		        sh:select """
+		            SELECT $this
+		            WHERE {
+		                $this mt:assetBuffer ?buffer .
+		                $this mt:maxAssets ?maxAssets .
+		                ?buffer mt:length ?bufferLen .
+		                FILTER (xsd:integer(?bufferLen) >= xsd:integer(?maxAssets))
+		            }
+		        """ ;
+		    ] .
+
 		*/
 		# endregion
 	}

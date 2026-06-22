@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674406002024_615828_206">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TokensClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TokensClass.ReferenceId" /></summary>
@@ -108,6 +108,8 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -146,6 +148,9 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="SourceProperty" path="/summary" /><br/>
@@ -177,6 +182,8 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SourceProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="SourceProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -215,6 +222,9 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TokensProperty" path="/summary" /><br/>
@@ -246,6 +256,8 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TokensProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TokensProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -284,8 +296,19 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="TokensClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

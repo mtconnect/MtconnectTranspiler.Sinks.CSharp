@@ -14,11 +14,11 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </summary>
 	/// <remarks>
 	/// <list type="bullet">
-	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_type, subType">vtype, subType</see></item>
+	/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.4">v1.4</see></item>
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class UserSetUpClass : IClass
 	{
 		/// <summary>Constant value for <see cref="UserSetUpClass.ReferenceId" /></summary>
@@ -35,7 +35,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 		/// <summary>Constant value for <see cref="UserSetUpClass.Modifier" /></summary>
 		public const string MODIFIER = "";
 		/// <summary>Constant value for <see cref="UserSetUpClass.NormativeVersion" /></summary>
-		public const string NORMATIVE_VERSION = "type, subType";
+		public const string NORMATIVE_VERSION = "1.4";
 		/// <summary>Constant value for <see cref="UserSetUpClass.DeprecatedVersion" /></summary>
 		public const string DEPRECATED_VERSION = "";
 
@@ -111,7 +111,9 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
+				public const string DEFAULT_VALUE = "SET_UP";
+				/// <summary>Constant value for <see cref="SubTypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -150,8 +152,19 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="UserSetUpClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

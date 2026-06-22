@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_4_45f01b9_1674414640162_550569_3845">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ConvertSampleClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ConvertSampleClass.ReferenceId" /></summary>
@@ -76,6 +76,14 @@ namespace Mtconnect.ReferenceAgentArchitecture.Pipelines
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ConvertSampleClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Files
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class FileArchetypeClass : IClass
 	{
 		/// <summary>Constant value for <see cref="FileArchetypeClass.ReferenceId" /></summary>
@@ -82,6 +82,14 @@ namespace Mtconnect.AssetInformationModel.Files
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="FileArchetypeClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

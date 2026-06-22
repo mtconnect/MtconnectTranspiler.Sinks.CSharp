@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ChannelClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ChannelClass.ReferenceId" /></summary>
@@ -81,8 +81,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				Name,
 				NextCalibrationDate,
 				Number,
-				HasDescriptionPart,
 				IsChannelOfPart,
+				Description,
 			};
 			/// <summary>
 			/// <inheritdoc cref="CalibrationDateProperty" path="/summary" /><br/>
@@ -110,11 +110,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CalibrationDateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CalibrationDateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -153,6 +155,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CalibrationInitialsProperty" path="/summary" /><br/>
@@ -180,11 +185,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CalibrationInitialsProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -223,6 +230,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NameProperty" path="/summary" /><br/>
@@ -250,11 +260,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -293,6 +305,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NextCalibrationDateProperty" path="/summary" /><br/>
@@ -320,11 +335,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NextCalibrationDateProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -363,6 +380,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="NumberProperty" path="/summary" /><br/>
@@ -390,11 +410,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				/// <summary>Constant value for <see cref="NumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NumberProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NumberProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -433,75 +455,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
-			}
-			/// <summary>
-			/// <inheritdoc cref="HasDescriptionPartProperty" path="/summary" /><br/>
-			/// <remarks>Original Name: HasDescription</remarks>
-			/// </summary>
-			public HasDescriptionPartProperty HasDescriptionPart { get; } = new HasDescriptionPartProperty();
-			
-			/// <summary>﻿
-			/// </summary>
-			public sealed class HasDescriptionPartProperty : IProperty
-			{
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Name" /></summary>
-				public const string NAME = "hasDescription";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Summary" /></summary>
-				public const string SUMMARY = @"";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.AccessModifier" /></summary>
-				public const string ACCESS_MODIFIER = "public";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Modifier" /></summary>
-				public const string MODIFIER = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.NormativeVersion" /></summary>
-				public const string NORMATIVE_VERSION = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.DeprecatedVersion" /></summary>
-				public const string DEPRECATED_VERSION = "";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Aggregation" /></summary>
-				public const string AGGREGATION = "composite";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.Association" /></summary>
-				public const string ASSOCIATION = "Description";
-				/// <summary>Constant value for <see cref="HasDescriptionPartProperty.DefaultValue" /></summary>
-				public const string DEFAULT_VALUE = "";
-
-				/// <summary>
-				/// <inheritdoc />
-				/// <remarks> Type: DescriptionClass </remarks>
-				/// </summary>
-				public System.Type Type => typeof(Mtconnect.DeviceInformationModel.Components.DescriptionClass);
-				
-				/// <inheritdoc />
-				public string Name => NAME;
-				
-				/// <inheritdoc />
-				public string Summary => SUMMARY;
 
 				/// <inheritdoc />
-				public string AccessModifier => ACCESS_MODIFIER;
-				
-				/// <inheritdoc />
-				public string Modifier => MODIFIER;
-				
-				/// <inheritdoc />
-				public string NormativeVersion => NORMATIVE_VERSION;
-				
-				/// <inheritdoc />
-				public string DeprecatedVersion => DEPRECATED_VERSION;
-				
-				/// <inheritdoc />
-				public string Aggregation => AGGREGATION;
-
-				// Note: Extension.Extender
-				/// <inheritdoc />
-				public string Extension => EXTENSION;
-				
-				/// <inheritdoc />
-				public string Association => ASSOCIATION;
-
-				// Note: DefaultValue.Name
-				/// <inheritdoc />
-				public string DefaultValue => DEFAULT_VALUE;
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IsChannelOfPartProperty" path="/summary" /><br/>
@@ -533,6 +489,8 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				public const string ASSOCIATION = "Channels";
 				/// <summary>Constant value for <see cref="IsChannelOfPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IsChannelOfPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -571,8 +529,94 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Sensor
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
+			}
+			/// <summary>
+			/// <inheritdoc cref="DescriptionProperty" path="/summary" /><br/>
+			/// <remarks>Original Name: Description</remarks>
+			/// </summary>
+			public DescriptionProperty Description { get; } = new DescriptionProperty();
+			
+			/// <summary>﻿textual description for <see cref="Channel">Channel</see>.<br /><br /><br />
+			/// </summary>
+			public sealed class DescriptionProperty : IProperty
+			{
+				/// <summary>Constant value for <see cref="DescriptionProperty.Name" /></summary>
+				public const string NAME = "Description";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Summary" /></summary>
+				public const string SUMMARY = @"&#10;&#10;&#10;textual description for {{block(Channel)}}.&#10;
+";
+				/// <summary>Constant value for <see cref="DescriptionProperty.AccessModifier" /></summary>
+				public const string ACCESS_MODIFIER = "private";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Modifier" /></summary>
+				public const string MODIFIER = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.NormativeVersion" /></summary>
+				public const string NORMATIVE_VERSION = "1.2";
+				/// <summary>Constant value for <see cref="DescriptionProperty.DeprecatedVersion" /></summary>
+				public const string DEPRECATED_VERSION = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Aggregation" /></summary>
+				public const string AGGREGATION = "composite";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Extension" /></summary>
+				public const string EXTENSION = "MagicDraw UML 2026x";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Association" /></summary>
+				public const string ASSOCIATION = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>
+				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="DescriptionProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
+
+				/// <summary>
+				/// <inheritdoc />
+				/// <remarks> Type: String </remarks>
+				/// </summary>
+				public System.Type Type => typeof(String);
+				
+				/// <inheritdoc />
+				public string Name => NAME;
+				
+				/// <inheritdoc />
+				public string Summary => SUMMARY;
+
+				/// <inheritdoc />
+				public string AccessModifier => ACCESS_MODIFIER;
+				
+				/// <inheritdoc />
+				public string Modifier => MODIFIER;
+				
+				/// <inheritdoc />
+				public string NormativeVersion => NORMATIVE_VERSION;
+				
+				/// <inheritdoc />
+				public string DeprecatedVersion => DEPRECATED_VERSION;
+				
+				/// <inheritdoc />
+				public string Aggregation => AGGREGATION;
+
+				// Note: Extension.Extender
+				/// <inheritdoc />
+				public string Extension => EXTENSION;
+				
+				/// <inheritdoc />
+				public string Association => ASSOCIATION;
+
+				// Note: DefaultValue.Name
+				/// <inheritdoc />
+				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ChannelClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

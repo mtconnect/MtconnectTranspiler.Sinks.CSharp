@@ -17,7 +17,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MTConnectDevicesClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MTConnectDevicesClass.ReferenceId" /></summary>
@@ -107,11 +107,13 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Header";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -150,6 +152,9 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="HasDevicePartProperty" path="/summary" /><br/>
@@ -176,11 +181,13 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="HasDevicePartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasDevicePartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasDevicePartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Devices";
 				/// <summary>Constant value for <see cref="HasDevicePartProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="HasDevicePartProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1..*";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -219,25 +226,127 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
 		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="MTConnectDevicesClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			MtconnectDevices1,
+			MtconnectDevices2,
+		};
 		/// <summary>
 		/// MtconnectDevices1
 		/// </summary>
 		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
-		public string MtconnectDevices1 => @"Components::Component::allInstances()->forAll(comp1, comp2 | comp1 <> comp2 implies comp1.id <> comp2.id and comp1.name <> comp2.name)  and 
-DataItems::DataItem::allInstances()->forAll(di1, di2 | di1 <> di2 implies di1.id <> di2.id and di1.name <> di2.name) and
-Components::Devices::Device::allInstances()->forAll(d1, d2 | d1 <> d2 implies d1.id <> d2.id and d1.name <> d2.name) and 
-Compositions::Composition::allInstances()->forAll(compn1, compn2 | compn1 <> compn2 implies compn1.id <> compn2.id and compn1.name <> compn2.name)
- ";
+		public string MtconnectDevices1 => @"val:IdsMustBeUnique
+    a sh:PredicateShape ;
+    sh:targetSubjectsOf mt:hasId ;
+    sh:sparql [
+        sh:prefixes val:Prefix ;
+        sh:message ""All `id` properties **MUST** be unique."" ;
+        sh:select """"""
+            SELECT $this ?id WHERE {
+                $this mt:hasId ?id .
+                ?other mt:hasId ?id .
+                FILTER ($this != ?other)
+            }
+        """""" ;
+    ] .";
 		/*
-		Components::Component::allInstances()->forAll(comp1, comp2 | comp1 <> comp2 implies comp1.id <> comp2.id and comp1.name <> comp2.name)  and 
-		DataItems::DataItem::allInstances()->forAll(di1, di2 | di1 <> di2 implies di1.id <> di2.id and di1.name <> di2.name) and
-		Components::Devices::Device::allInstances()->forAll(d1, d2 | d1 <> d2 implies d1.id <> d2.id and d1.name <> d2.name) and 
-		Compositions::Composition::allInstances()->forAll(compn1, compn2 | compn1 <> compn2 implies compn1.id <> compn2.id and compn1.name <> compn2.name)
-		 
+		val:IdsMustBeUnique
+		    a sh:PredicateShape ;
+		    sh:targetSubjectsOf mt:hasId ;
+		    sh:sparql [
+		        sh:prefixes val:Prefix ;
+		        sh:message "All `id` properties **MUST** be unique." ;
+		        sh:select """
+		            SELECT $this ?id WHERE {
+		                $this mt:hasId ?id .
+		                ?other mt:hasId ?id .
+		                FILTER ($this != ?other)
+		            }
+		        """ ;
+		    ] .
+		*/
+		/// <summary>
+		/// MtconnectDevices2
+		/// </summary>
+		/// <remarks>Specification Language: <c>Unspecified</c></remarks>
+		public string MtconnectDevices2 => @"val:NamesShouldBeUnique
+    a sh:PredicateShape ;
+    sh:targetSubjectsOf mt:hasName ;
+    sh:sparql [
+      a sh:SPARQLConstraint ;
+        sh:prefixes val:Prefix ;
+        sh:message ""All `name` properties **SHOULD** be unique."" ;
+        sh:severity sh:Warning ;
+        sh:select """"""
+            SELECT $this ?name WHERE {
+                $this mt:hasName ?name .
+                ?other mt:hasName ?name .
+                FILTER ($this != ?other)
+            }
+        """""" ;
+    ] .
+
+val:NamesAtTheSameLevelMustBeUnique
+    a sh:NodeShape ;
+    sh:targetClass mt:Component ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:prefixes val:Prefix ;
+        sh:message ""All `name` properties at the same level **MUST** be unique."" ;
+        sh:select """"""
+            SELECT $this ?name ?sub1 ?sub2 WHERE {
+                $this mt:hasComponent ?sub1 .
+                ?sub1 mt:hasName ?name .
+                $this mt:hasComponent ?sub2 .
+                ?sub2 mt:hasName ?name .
+                FILTER (?sub1 != ?sub2)
+            }
+        """""" ;
+    ] .";
+		/*
+		val:NamesShouldBeUnique
+		    a sh:PredicateShape ;
+		    sh:targetSubjectsOf mt:hasName ;
+		    sh:sparql [
+		      a sh:SPARQLConstraint ;
+		        sh:prefixes val:Prefix ;
+		        sh:message "All `name` properties **SHOULD** be unique." ;
+		        sh:severity sh:Warning ;
+		        sh:select """
+		            SELECT $this ?name WHERE {
+		                $this mt:hasName ?name .
+		                ?other mt:hasName ?name .
+		                FILTER ($this != ?other)
+		            }
+		        """ ;
+		    ] .
+		
+		val:NamesAtTheSameLevelMustBeUnique
+		    a sh:NodeShape ;
+		    sh:targetClass mt:Component ;
+		    sh:sparql [
+		        a sh:SPARQLConstraint ;
+		        sh:prefixes val:Prefix ;
+		        sh:message "All `name` properties at the same level **MUST** be unique." ;
+		        sh:select """
+		            SELECT $this ?name ?sub1 ?sub2 WHERE {
+		                $this mt:hasComponent ?sub1 .
+		                ?sub1 mt:hasName ?name .
+		                $this mt:hasComponent ?sub2 .
+		                ?sub2 mt:hasName ?name .
+		                FILTER (?sub1 != ?sub2)
+		            }
+		        """ ;
+		    ] .
 		*/
 		# endregion
 	}

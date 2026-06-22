@@ -18,7 +18,7 @@ namespace Mtconnect.InterfaceInteractionModel.InterfaceTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MaterialHandlerInterfaceGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="MaterialHandlerInterfaceGeneralization.ReferenceId" /></summary>
@@ -91,6 +91,14 @@ A robot is a common example of a material handler.&#10;
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="MaterialHandlerInterfaceGeneralization" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

@@ -13,7 +13,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Source
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929351481_353678_18793">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AdapterDataSourceGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="AdapterDataSourceGeneralization.ReferenceId" /></summary>
@@ -76,6 +76,14 @@ namespace Mtconnect.ReferenceAgentArchitecture.Source
 			public override IProperty[] Properties => new IProperty[] {
 			}.Concat(base.Properties).ToArray();
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="AdapterDataSourceGeneralization" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

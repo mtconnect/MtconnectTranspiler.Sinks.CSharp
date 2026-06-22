@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <summary>﻿This section provides semantic information for the <see cref="ConfigurationRelationship">ConfigurationRelationship</see> entity.<br /><br />![Relationships](figures/Relationships.png "Relationships"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![Relationship Example](figures/Relationship%20Example.png "Relationship Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(relationship-example)}} for the <i>XML</i> representation of the same example.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package__EAPK_A055F7A8_3D2C_4a01_8D09_072F34E65044">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class RelationshipsPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="RelationshipsPackage.ReferenceId" /></summary>

@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary.ProtocolTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623664375173_527411_2040">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MTConnectResponseDocumentClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MTConnectResponseDocumentClass.ReferenceId" /></summary>
@@ -72,6 +72,14 @@ namespace Mtconnect.Glossary.ProtocolTerms
 			public virtual IProperty[] Properties => new IProperty[] {
 			};
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="MTConnectResponseDocumentClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

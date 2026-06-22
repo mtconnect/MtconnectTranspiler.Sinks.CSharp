@@ -8,7 +8,7 @@ using MtconnectTranspiler.Sinks.CSharp.Contracts.Interfaces;
 
 namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 {
-	/// <summary>﻿association between two pieces of equipment that function independently but together perform a manufacturing operation.<br /><br /><br />Description<br /><br /><see cref="ConfigurationRelationship">ConfigurationRelationship</see> is an abstract entity and hence will be realized by specific <see cref="ConfigurationRelationship">ConfigurationRelationship</see> types in an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="ComponentRelationship">ComponentRelationship</see> and <see cref="DeviceRelationship">DeviceRelationship</see>.<br /><br /><br /><br /><br />
+	/// <summary>﻿association between two pieces of equipment or assets that may function independently but together perform a manufacturing operation.<br /><br /><br />Description<br /><br /><see cref="ConfigurationRelationship">ConfigurationRelationship</see> is an abstract entity and hence will be realized by specific <see cref="ConfigurationRelationship">ConfigurationRelationship</see> types in an <see cref="MTConnectDevices">MTConnectDevices</see> entity. See <see cref="ComponentRelationship">ComponentRelationship</see> and <see cref="DeviceRelationship">DeviceRelationship</see>.<br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure__EAID_28132294_DF39_4e8e_8AE5_B79565F991A2">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	/// <remarks>
@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ConfigurationRelationshipClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ConfigurationRelationshipClass.ReferenceId" /></summary>
@@ -25,7 +25,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 		/// <summary>Constant value for <see cref="ConfigurationRelationshipClass.HelpUrl" /></summary>
 		public const string HELP_URL = "https://model.mtconnect.org/#Structure__EAID_28132294_DF39_4e8e_8AE5_B79565F991A2";
 		/// <summary>Constant value for <see cref="ConfigurationRelationshipClass.Summary" /></summary>
-		public const string SUMMARY = @"&#10;&#10;&#10;association between two pieces of equipment that function independently but together perform a manufacturing operation.&#10;
+		public const string SUMMARY = @"&#10;&#10;&#10;association between two pieces of equipment or assets that may function independently but together perform a manufacturing operation.&#10;
 &#10;&#10;&#10;Description&#10;&#10;&#10;&#10;{{block(ConfigurationRelationship)}} is an abstract entity and hence will be realized by specific {{block(ConfigurationRelationship)}} types in an {{block(MTConnectDevices)}} entity. See {{sect(ComponentRelationship)}} and {{sect(DeviceRelationship)}}.&#10;
 ";
 		/// <summary>Constant value for <see cref="ConfigurationRelationshipClass.Name" /></summary>
@@ -107,11 +107,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="NameProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -150,6 +152,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="IdProperty" path="/summary" /><br/>
@@ -177,11 +182,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="IdProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -220,6 +227,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="TypeProperty" path="/summary" /><br/>
@@ -247,11 +257,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="TypeProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -290,6 +302,9 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 			/// <summary>
 			/// <inheritdoc cref="CriticalityProperty" path="/summary" /><br/>
@@ -317,11 +332,13 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				/// <summary>Constant value for <see cref="CriticalityProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CriticalityProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 19.0";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CriticalityProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CriticalityProperty.DefaultValue" /></summary>
 				public const string DEFAULT_VALUE = "";
+				/// <summary>Constant value for <see cref="CriticalityProperty.Multiplicity" /></summary>
+				public const string MULTIPLICITY = "0..1";
 
 				/// <summary>
 				/// <inheritdoc />
@@ -360,8 +377,19 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Relationships
 				// Note: DefaultValue.Name
 				/// <inheritdoc />
 				public string DefaultValue => DEFAULT_VALUE;
+
+				/// <inheritdoc />
+				public string Multiplicity => MULTIPLICITY;
 			}
 		};
-
+		
+		# region Rules
+		/// <summary>
+		/// List of constraint rules for <see cref="ConfigurationRelationshipClass" />.
+		/// </summary>
+		public string[] Rules => new string[] {
+			// No Constraints
+		};
+		# endregion
 	}
 }

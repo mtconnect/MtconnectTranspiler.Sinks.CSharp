@@ -11,7 +11,7 @@ namespace Mtconnect.Glossary
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1623665808313_870132_8816">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class InformationModelTermsPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="InformationModelTermsPackage.ReferenceId" /></summary>
@@ -46,6 +46,7 @@ namespace Mtconnect.Glossary
 			MTConnectInformationModelGeneralization,
 			ObservationInformationModelClass,
 			DeviceInformationModelClass,
+			ExceptionReportInformationModelClass,
 		};
 		
 		/// <inheritdoc />
@@ -85,6 +86,12 @@ namespace Mtconnect.Glossary
 	/// <inheritdoc cref="Package.DeviceInformationModelClass" path="/summary" />
 	/// </summary>
 	public Package.DeviceInformationModelClass DeviceInformationModelClass => _DeviceInformationModelClass ?? (_DeviceInformationModelClass = new Package.DeviceInformationModelClass());
+
+	private Package.ExceptionReportInformationModelClass _ExceptionReportInformationModelClass;
+	/// <summary>
+	/// <inheritdoc cref="Package.ExceptionReportInformationModelClass" path="/summary" />
+	/// </summary>
+	public Package.ExceptionReportInformationModelClass ExceptionReportInformationModelClass => _ExceptionReportInformationModelClass ?? (_ExceptionReportInformationModelClass = new Package.ExceptionReportInformationModelClass());
 
 	#endregion
 

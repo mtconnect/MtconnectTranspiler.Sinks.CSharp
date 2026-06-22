@@ -11,7 +11,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	/// <summary>﻿This section provides semantic information for the <see cref="CuttingToolLifeCycle">CuttingToolLifeCycle</see> model.<br /><br />![CuttingToolLifeCycle](figures/CuttingToolLifeCycle.png "CuttingToolLifeCycle"){: width="0.8"}<br /><br />&gt; Note: See <see cref="CuttingToolLifeCycle Schema Diagrams">CuttingToolLifeCycle Schema Diagrams</see> for XML schema.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_68e0225_1612424133851_339632_344">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.4.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class CuttingToolLifeCyclePackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="CuttingToolLifeCyclePackage.ReferenceId" /></summary>
@@ -54,7 +54,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 			ProcessSpindleSpeedClass,
 			ProcessFeedRateClass,
 			StatusClass,
-			MeasurementClass,
+			ToolingMeasurementGeneralization,
 		};
 		
 		/// <inheritdoc />
@@ -107,11 +107,11 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	/// </summary>
 	public Package.StatusClass StatusClass => _StatusClass ?? (_StatusClass = new Package.StatusClass());
 
-	private Package.MeasurementClass _MeasurementClass;
+	private Package.ToolingMeasurementGeneralization _ToolingMeasurementGeneralization;
 	/// <summary>
-	/// <inheritdoc cref="Package.MeasurementClass" path="/summary" />
+	/// <inheritdoc cref="Package.ToolingMeasurementGeneralization" path="/summary" />
 	/// </summary>
-	public Package.MeasurementClass MeasurementClass => _MeasurementClass ?? (_MeasurementClass = new Package.MeasurementClass());
+	public Package.ToolingMeasurementGeneralization ToolingMeasurementGeneralization => _ToolingMeasurementGeneralization ?? (_ToolingMeasurementGeneralization = new Package.ToolingMeasurementGeneralization());
 
 	#endregion
 
