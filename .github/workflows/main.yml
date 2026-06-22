@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
 
 env:
-  NUGET_REGISTRY: https://nuget.pkg.github.com/
+  NUGET_REGISTRY: https://nuget.org/
   NUGET_NAMESPACE: mtconnect
-  NUGET_API_KEY: ${{ secrets.GITHUB_TOKEN }}
+  NUGET_API_KEY: ${{ secrets.NUGET_TOKEN }}
   VS_PROJECT_FOLDER: MtconnectTranspiler.Sinks.CSharp
   VS_PROJECT: MtconnectTranspiler.Sinks.CSharp.csproj
   PACKAGE_ARTIFACT_NAME: MtconnectTranspiler.Sinks.CSharp-nupkg
