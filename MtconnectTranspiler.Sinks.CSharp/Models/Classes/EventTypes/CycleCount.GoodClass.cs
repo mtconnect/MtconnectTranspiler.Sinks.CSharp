@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CycleCountGoodClass : IClass
 	{
 		/// <summary>Constant value for <see cref="CycleCountGoodClass.ReferenceId" /></summary>
@@ -107,7 +107,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 				/// <summary>Constant value for <see cref="SubTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>

@@ -11,7 +11,7 @@ namespace Mtconnect.WIP_DeviceExamples.KinematicsSimulation
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1582232381130_844490_124">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class XArm7ModelPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="XArm7ModelPackage.ReferenceId" /></summary>

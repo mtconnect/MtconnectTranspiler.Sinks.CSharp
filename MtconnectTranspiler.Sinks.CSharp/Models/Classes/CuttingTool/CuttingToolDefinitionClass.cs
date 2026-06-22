@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CuttingToolDefinitionClass : IClass
 	{
 		/// <summary>Constant value for <see cref="CuttingToolDefinitionClass.ReferenceId" /></summary>
@@ -104,7 +104,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool
 				/// <summary>Constant value for <see cref="FormatProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="FormatProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="FormatProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FormatProperty.DefaultValue" /></summary>

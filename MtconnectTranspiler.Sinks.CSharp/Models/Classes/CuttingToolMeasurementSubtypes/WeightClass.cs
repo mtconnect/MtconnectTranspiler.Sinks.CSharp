@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolMeasurementSubt
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class WeightClass : IClass
 	{
 		/// <summary>Constant value for <see cref="WeightClass.ReferenceId" /></summary>
@@ -110,7 +110,7 @@ The force exerted by the mass of the cutting tool.&#10;
 				/// <summary>Constant value for <see cref="CodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CodeProperty.DefaultValue" /></summary>
@@ -184,7 +184,7 @@ The force exerted by the mass of the cutting tool.&#10;
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>

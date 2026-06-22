@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.PropertiesOfDataItem
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ConstraintsClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ConstraintsClass.ReferenceId" /></summary>
@@ -109,7 +109,7 @@ If the data reported for a data item is a range of numeric values, the expected 
 				/// <summary>Constant value for <see cref="MaximumProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MaximumProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MaximumProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MaximumProperty.DefaultValue" /></summary>
@@ -186,7 +186,7 @@ If the data reported for a data item is a range of numeric values, the expected 
 				/// <summary>Constant value for <see cref="MinimumProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MinimumProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MinimumProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MinimumProperty.DefaultValue" /></summary>
@@ -261,7 +261,7 @@ If the data reported for a data item is a range of numeric values, the expected 
 				/// <summary>Constant value for <see cref="NominalProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NominalProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NominalProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NominalProperty.DefaultValue" /></summary>
@@ -412,7 +412,7 @@ If the data reported for a data item is a range of numeric values, the expected 
 				/// <summary>Constant value for <see cref="HasFilterPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasFilterPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasFilterPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Filter";
 				/// <summary>Constant value for <see cref="HasFilterPartProperty.DefaultValue" /></summary>

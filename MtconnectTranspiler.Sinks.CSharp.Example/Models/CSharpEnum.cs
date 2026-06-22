@@ -24,6 +24,11 @@ namespace MtconnectTranspiler.Sinks.CSharp.Models
         public Summary Summary { get; protected set; }
 
         /// <summary>
+        /// Optional C# data type for enum values.
+        /// </summary>
+        public string? DataType { get; set; }
+
+        /// <summary>
         /// Internal list of <see cref="EnumItem"/>, used by <see cref="Items"/>.
         /// </summary>
         protected List<EnumItem> _items { get; set; } = new List<EnumItem>();

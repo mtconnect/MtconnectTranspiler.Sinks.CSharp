@@ -11,7 +11,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Rest
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1585535517110_128182_1817">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class StoragePackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="StoragePackage.ReferenceId" /></summary>

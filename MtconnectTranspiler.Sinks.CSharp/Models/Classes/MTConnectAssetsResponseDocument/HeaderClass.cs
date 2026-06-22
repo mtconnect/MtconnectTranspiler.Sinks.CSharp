@@ -17,7 +17,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class HeaderClass : IClass
 	{
 		/// <summary>Constant value for <see cref="HeaderClass.ReferenceId" /></summary>
@@ -111,7 +111,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				/// <summary>Constant value for <see cref="DeviceModelChangeTimeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DeviceModelChangeTimeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DeviceModelChangeTimeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceModelChangeTimeProperty.DefaultValue" /></summary>
@@ -189,7 +189,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				/// <summary>Constant value for <see cref="AssetBufferSizeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="AssetBufferSizeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="AssetBufferSizeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AssetBufferSizeProperty.DefaultValue" /></summary>
@@ -267,7 +267,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				/// <summary>Constant value for <see cref="AssetCountProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="AssetCountProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="AssetCountProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AssetCountProperty.DefaultValue" /></summary>
@@ -342,7 +342,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				/// <summary>Constant value for <see cref="CreationTimeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CreationTimeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CreationTimeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CreationTimeProperty.DefaultValue" /></summary>
@@ -419,7 +419,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				/// <summary>Constant value for <see cref="InstanceIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="InstanceIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="InstanceIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="InstanceIdProperty.DefaultValue" /></summary>
@@ -498,7 +498,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectAssetsResponseDocume
 				/// <summary>Constant value for <see cref="SenderProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SenderProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SenderProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SenderProperty.DefaultValue" /></summary>
@@ -575,7 +575,7 @@ If {{property(Header::testIndicator)}} is not specified, the value for {{propert
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TestIndicatorProperty.DefaultValue" /></summary>
@@ -652,7 +652,7 @@ As an example, the value reported for {{property(Header::version)}} for a {{term
 				/// <summary>Constant value for <see cref="VersionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="VersionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="VersionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="VersionProperty.DefaultValue" /></summary>
@@ -727,7 +727,7 @@ As an example, the value reported for {{property(Header::version)}} for a {{term
 				/// <summary>Constant value for <see cref="ValidationProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ValidationProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ValidationProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValidationProperty.DefaultValue" /></summary>

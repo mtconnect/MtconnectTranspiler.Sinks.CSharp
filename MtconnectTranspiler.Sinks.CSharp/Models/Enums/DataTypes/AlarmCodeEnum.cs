@@ -17,7 +17,7 @@ namespace Mtconnect.DataTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.1 according to https://model.mtconnect.org/#_Version_1.1")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum AlarmCodeEnum
 	{
 		/// <summary>﻿spindle crashed.<br /><br /><br />
@@ -135,7 +135,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_68e0225_1643968895333_107274_240">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AlarmCodeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="AlarmCodeEnumMetaClass.ReferenceId" /></summary>

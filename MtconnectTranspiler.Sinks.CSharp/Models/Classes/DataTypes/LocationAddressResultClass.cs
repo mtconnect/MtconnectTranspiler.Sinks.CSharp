@@ -18,7 +18,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class LocationAddressResultClass : IClass
 	{
 		/// <summary>Constant value for <see cref="LocationAddressResultClass.ReferenceId" /></summary>
@@ -124,7 +124,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="GivenNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="GivenNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="GivenNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="GivenNameProperty.DefaultValue" /></summary>
@@ -199,7 +199,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="SurnameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="SurnameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SurnameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SurnameProperty.DefaultValue" /></summary>
@@ -274,7 +274,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="QualificationProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="QualificationProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="QualificationProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="QualificationProperty.DefaultValue" /></summary>
@@ -349,7 +349,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="NameQualifierProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NameQualifierProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameQualifierProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameQualifierProperty.DefaultValue" /></summary>
@@ -424,7 +424,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="OrganizationNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="OrganizationNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="OrganizationNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OrganizationNameProperty.DefaultValue" /></summary>
@@ -499,7 +499,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="LegalStatusProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LegalStatusProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="LegalStatusProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="LegalStatusProperty.DefaultValue" /></summary>
@@ -574,7 +574,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="OrganizationUnitProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="OrganizationUnitProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="OrganizationUnitProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OrganizationUnitProperty.DefaultValue" /></summary>
@@ -649,7 +649,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="BuildingProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="BuildingProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="BuildingProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="BuildingProperty.DefaultValue" /></summary>
@@ -724,7 +724,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="FloorProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="FloorProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="FloorProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FloorProperty.DefaultValue" /></summary>
@@ -799,7 +799,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="DoorProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DoorProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DoorProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DoorProperty.DefaultValue" /></summary>
@@ -874,7 +874,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="ThoroughfareProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ThoroughfareProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ThoroughfareProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ThoroughfareProperty.DefaultValue" /></summary>
@@ -949,7 +949,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PremiseIdentifierProperty.DefaultValue" /></summary>
@@ -1024,7 +1024,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="TownProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TownProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TownProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TownProperty.DefaultValue" /></summary>
@@ -1099,7 +1099,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="RegionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="RegionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="RegionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RegionProperty.DefaultValue" /></summary>
@@ -1174,7 +1174,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="DistrictProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DistrictProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DistrictProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DistrictProperty.DefaultValue" /></summary>
@@ -1249,7 +1249,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="CountryNameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CountryNameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CountryNameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CountryNameProperty.DefaultValue" /></summary>
@@ -1324,7 +1324,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="CountryCodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CountryCodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CountryCodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CountryCodeProperty.DefaultValue" /></summary>
@@ -1399,7 +1399,7 @@ namespace Mtconnect.DataTypes
 				/// <summary>Constant value for <see cref="PostCodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="PostCodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PostCodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PostCodeProperty.DefaultValue" /></summary>

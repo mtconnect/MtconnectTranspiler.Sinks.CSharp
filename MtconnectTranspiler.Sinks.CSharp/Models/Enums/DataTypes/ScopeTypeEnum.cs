@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum ScopeTypeEnum
 	{
 		/// <summary>﻿scope or context is directly upon the source itself.<br /><br /><br />
@@ -50,7 +50,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___2024x_68e0225_1744802647776_12571_23869">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ScopeTypeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="ScopeTypeEnumMetaClass.ReferenceId" /></summary>

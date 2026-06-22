@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ControlLimitsClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ControlLimitsClass.ReferenceId" /></summary>
@@ -106,7 +106,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "UpperLimit";
 				/// <summary>Constant value for <see cref="UpperLimitPartProperty.DefaultValue" /></summary>
@@ -180,7 +180,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "UpperWarning";
 				/// <summary>Constant value for <see cref="UpperWarningPartProperty.DefaultValue" /></summary>
@@ -254,7 +254,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "LowerWarning";
 				/// <summary>Constant value for <see cref="LowerWarningPartProperty.DefaultValue" /></summary>
@@ -328,7 +328,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="NominalPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NominalPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NominalPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Nominal";
 				/// <summary>Constant value for <see cref="NominalPartProperty.DefaultValue" /></summary>
@@ -402,7 +402,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "LowerLimit";
 				/// <summary>Constant value for <see cref="LowerLimitPartProperty.DefaultValue" /></summary>

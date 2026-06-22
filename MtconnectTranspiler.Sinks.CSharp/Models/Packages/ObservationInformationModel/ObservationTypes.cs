@@ -11,7 +11,7 @@ namespace Mtconnect.ObservationInformationModel
 	/// <summary>﻿This section provides semantic information for the <see cref="Observation">Observation</see> types.<br /><br /><see cref="Observation">Observation</see> entities are instantiated as <see cref="Sample">Sample</see>, <see cref="Event">Event</see> or <see cref="Condition">Condition</see> entities based upon the <see cref="DataItem.category">category in DataItem</see> and <see cref="DataItem.type">type in DataItem</see> defined for the corresponding <see cref="DataItem">DataItem</see>.<br /><br />See {{figure(DeviceStream Example)}} for examples on how the <see cref="Observation">Observation</see> types are organized within <see cref="ComponentStream">ComponentStream</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1589897764829_678664_48">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class ObservationTypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ObservationTypesPackage.ReferenceId" /></summary>

@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum SampleEnum
 	{
 		/// <summary>﻿positive rate of change of velocity.<br /><br /><br />
@@ -873,12 +873,21 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		WATER_HARDNESS,
+		/// <summary>﻿height of a geographic location above a fixed reference point<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		ELEVATION,
 	}
 
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1580398370126_672808_12777">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class SampleEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="SampleEnumMetaClass.ReferenceId" /></summary>
@@ -1015,6 +1024,7 @@ namespace Mtconnect.DataTypes
 		PARTICLE_COUNT,
 		PARTICLE_SIZE,
 		WATER_HARDNESS,
+		ELEVATION,
 		};
 
 		private ACCELERATIONValue _ACCELERATION;
@@ -4909,6 +4919,47 @@ The average is computed over a rolling window defined by the implementation.&#10
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="WATER_HARDNESSValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;concentration of calcium carbonate (CaCO3) in water&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private ELEVATIONValue _ELEVATION;
+		/// <inheritdoc cref="ELEVATIONValue" path="/summary" />
+		public ELEVATIONValue ELEVATION => _ELEVATION ?? (_ELEVATION = new ELEVATIONValue());
+
+		/// <summary>﻿height of a geographic location above a fixed reference point<br /><br /><br />
+		/// Value for SampleEnum.<br/>
+		/// <br/>See also <seealso cref="SampleEnum">SampleEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class ELEVATIONValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="ELEVATIONValue.Name" /></summary>
+			public const string NAME = "ELEVATION";
+			/// <summary>Constant value for <see cref="ELEVATIONValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.8";
+			/// <summary>Constant value for <see cref="ELEVATIONValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="ELEVATIONValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;height of a geographic location above a fixed reference point&#10;
 ";
 
 			/// <inheritdoc />

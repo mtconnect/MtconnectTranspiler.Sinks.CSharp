@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ImageFileClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ImageFileClass.ReferenceId" /></summary>
@@ -106,7 +106,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
@@ -181,7 +181,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				/// <summary>Constant value for <see cref="HrefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HrefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HrefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HrefProperty.DefaultValue" /></summary>
@@ -256,7 +256,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				/// <summary>Constant value for <see cref="MediaTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MediaTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MediaTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MediaTypeProperty.DefaultValue" /></summary>
@@ -331,7 +331,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.ImageFiles
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>

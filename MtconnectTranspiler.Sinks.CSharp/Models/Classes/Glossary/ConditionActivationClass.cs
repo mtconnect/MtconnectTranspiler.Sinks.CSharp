@@ -17,7 +17,7 @@ namespace Mtconnect.Glossary
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ConditionActivationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ConditionActivationClass.ReferenceId" /></summary>

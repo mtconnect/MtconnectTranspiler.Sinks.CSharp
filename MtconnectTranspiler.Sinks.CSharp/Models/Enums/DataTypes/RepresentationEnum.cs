@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum RepresentationEnum
 	{
 		/// <summary>﻿series of sampled data.<br /><br />The data is reported for a specified number of samples and each sample is reported with a fixed period.<br /><br /><br />
@@ -68,7 +68,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_67CD6E1B_53E3_45c1_B84F_B0732F79528D">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class RepresentationEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="RepresentationEnumMetaClass.ReferenceId" /></summary>

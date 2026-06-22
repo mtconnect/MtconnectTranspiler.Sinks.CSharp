@@ -18,7 +18,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MTConnectDevicesExceptionsReportClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MTConnectDevicesExceptionsReportClass.ReferenceId" /></summary>
@@ -108,7 +108,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectExceptionsReportResp
 				/// <summary>Constant value for <see cref="HasMTConnectDevicesExceptionPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasMTConnectDevicesExceptionPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasMTConnectDevicesExceptionPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Exceptions";
 				/// <summary>Constant value for <see cref="HasMTConnectDevicesExceptionPartProperty.DefaultValue" /></summary>

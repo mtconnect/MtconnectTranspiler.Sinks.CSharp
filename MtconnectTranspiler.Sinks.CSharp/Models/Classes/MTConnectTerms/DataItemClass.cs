@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1635251889215_363828_393">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DataItemClass : IClass
 	{
 		/// <summary>Constant value for <see cref="DataItemClass.ReferenceId" /></summary>
@@ -102,7 +102,7 @@ namespace Mtconnect.Glossary.MTConnectTerms
 				/// <summary>Constant value for <see cref="ObservedByProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ObservedByProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ObservedByProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ObservedByProperty.DefaultValue" /></summary>

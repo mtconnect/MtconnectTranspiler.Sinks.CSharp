@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel
 	/// <summary>﻿{{figure(Configuration)}} shows the abstract <see cref="Configuration">Configuration</see> and its types.<br /><br />![Configuration](figures/Configuration.png "Configuration"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br /><br />Configurations Model<br /><br />This section provides semantic information for the <see cref="Configuration">Configuration</see> entity that is used to model technical information about a <see cref="Component">Component</see>. <br /><br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579526876433_244855_7626">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class ConfigurationsPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ConfigurationsPackage.ReferenceId" /></summary>

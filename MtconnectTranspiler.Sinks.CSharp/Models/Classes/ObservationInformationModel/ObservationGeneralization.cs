@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ObservationGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="ObservationGeneralization.ReferenceId" /></summary>
@@ -156,7 +156,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CompositionIdProperty.DefaultValue" /></summary>
@@ -233,7 +233,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DataItemIdProperty.DefaultValue" /></summary>
@@ -310,7 +310,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="NameProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NameProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NameProperty.DefaultValue" /></summary>
@@ -387,7 +387,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="SequenceProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SequenceProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SequenceProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SequenceProperty.DefaultValue" /></summary>
@@ -464,7 +464,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="SubTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SubTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SubTypeProperty.DefaultValue" /></summary>
@@ -539,7 +539,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="TimestampProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TimestampProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TimestampProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TimestampProperty.DefaultValue" /></summary>
@@ -613,7 +613,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="MadeByComponentPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MadeByComponentPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MadeByComponentPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Observations";
 				/// <summary>Constant value for <see cref="MadeByComponentPartProperty.DefaultValue" /></summary>
@@ -690,7 +690,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
@@ -767,7 +767,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>
@@ -852,7 +852,7 @@ The name of an {{block(Observation)}} type reported in the {{term(MTConnectStrea
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IsUnavailableProperty.DefaultValue" /></summary>
@@ -941,7 +941,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="ResultProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ResultProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ResultProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>
@@ -1015,7 +1015,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="MadeForDataItemPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MadeForDataItemPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MadeForDataItemPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Observations";
 				/// <summary>Constant value for <see cref="MadeForDataItemPartProperty.DefaultValue" /></summary>
@@ -1090,7 +1090,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="QualityProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="QualityProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="QualityProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="QualityProperty.DefaultValue" /></summary>
@@ -1165,7 +1165,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="DeprecatedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DeprecatedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DeprecatedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeprecatedProperty.DefaultValue" /></summary>
@@ -1240,7 +1240,7 @@ The default value type for {{property(Observation::result)}} is `string`.
 				/// <summary>Constant value for <see cref="ExtendedProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ExtendedProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ExtendedProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ExtendedProperty.DefaultValue" /></summary>

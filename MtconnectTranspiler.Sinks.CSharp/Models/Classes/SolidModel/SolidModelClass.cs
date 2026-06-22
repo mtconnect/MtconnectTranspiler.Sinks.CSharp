@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class SolidModelClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SolidModelClass.ReferenceId" /></summary>
@@ -117,7 +117,7 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
@@ -191,7 +191,7 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Transformation";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.DefaultValue" /></summary>
@@ -265,7 +265,7 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 				/// <summary>Constant value for <see cref="HasScalePartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasScalePartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasScalePartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Scale";
 				/// <summary>Constant value for <see cref="HasScalePartProperty.DefaultValue" /></summary>
@@ -340,7 +340,7 @@ Either an {{property(SolidModel::href)}} or a {{property(SolidModel::modelIdRef)
 				/// <summary>Constant value for <see cref="SolidModelIdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="SolidModelIdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SolidModelIdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SolidModelIdRefProperty.DefaultValue" /></summary>
@@ -419,7 +419,7 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 				/// <summary>Constant value for <see cref="HrefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HrefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HrefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HrefProperty.DefaultValue" /></summary>
@@ -496,7 +496,7 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 				/// <summary>Constant value for <see cref="ItemRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ItemRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ItemRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ItemRefProperty.DefaultValue" /></summary>
@@ -571,7 +571,7 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 				/// <summary>Constant value for <see cref="MediaTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MediaTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MediaTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MediaTypeProperty.DefaultValue" /></summary>
@@ -646,7 +646,7 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DefaultValue" /></summary>
@@ -721,7 +721,7 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 				/// <summary>Constant value for <see cref="NativeUnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NativeUnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NativeUnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NativeUnitsProperty.DefaultValue" /></summary>
@@ -796,7 +796,7 @@ If not present, the model referenced in the {{property(SolidModel::solidModelIdR
 				/// <summary>Constant value for <see cref="UnitsProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="UnitsProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="UnitsProperty.DefaultValue" /></summary>

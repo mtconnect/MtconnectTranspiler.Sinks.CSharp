@@ -12,7 +12,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1629291060726_222338_26">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ObservationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ObservationClass.ReferenceId" /></summary>
@@ -98,7 +98,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <summary>Constant value for <see cref="MadeByProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MadeByProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MadeByProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MadeByProperty.DefaultValue" /></summary>
@@ -172,7 +172,7 @@ namespace Mtconnect.Glossary.IndustrialTerms
 				/// <summary>Constant value for <see cref="MadeForProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MadeForProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MadeForProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MadeForProperty.DefaultValue" /></summary>

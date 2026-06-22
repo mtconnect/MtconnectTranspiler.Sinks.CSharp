@@ -17,7 +17,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MTConnectStreamsClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MTConnectStreamsClass.ReferenceId" /></summary>
@@ -107,7 +107,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectStreamsResponseDocum
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Header";
 				/// <summary>Constant value for <see cref="HasHeaderPartProperty.DefaultValue" /></summary>

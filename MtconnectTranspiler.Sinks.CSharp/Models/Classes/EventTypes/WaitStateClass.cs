@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class WaitStateClass : IClass
 	{
 		/// <summary>Constant value for <see cref="WaitStateClass.ReferenceId" /></summary>
@@ -110,7 +110,7 @@ When {{property(Execution::result)}} is not `WAIT`, {{property(Observation::isUn
 				/// <summary>Constant value for <see cref="ResultProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ResultProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ResultProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>

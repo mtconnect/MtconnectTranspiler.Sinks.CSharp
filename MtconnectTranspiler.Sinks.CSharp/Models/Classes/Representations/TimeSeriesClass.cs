@@ -18,7 +18,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TimeSeriesClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TimeSeriesClass.ReferenceId" /></summary>
@@ -126,7 +126,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <summary>Constant value for <see cref="SampleCountProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="SampleCountProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="SampleCountProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="SampleCountProperty.DefaultValue" /></summary>
@@ -200,7 +200,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 				/// <summary>Constant value for <see cref="ResultProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ResultProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ResultProperty.DefaultValue" /></summary>

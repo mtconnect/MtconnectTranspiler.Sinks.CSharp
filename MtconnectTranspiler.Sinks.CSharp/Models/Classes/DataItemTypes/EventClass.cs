@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class EventClass : IClass
 	{
 		/// <summary>Constant value for <see cref="EventClass.ReferenceId" /></summary>
@@ -110,7 +110,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				/// <summary>Constant value for <see cref="CategoryProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CategoryProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CategoryProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CategoryProperty.DefaultValue" /></summary>
@@ -184,7 +184,7 @@ namespace Mtconnect.DeviceInformationModel.DataItems.DataItemTypes
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>

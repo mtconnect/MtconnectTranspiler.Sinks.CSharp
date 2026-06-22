@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum CodeEnum
 	{
 		/// <summary>﻿largest diameter of the body of a tool item.<br /><br /><br />
@@ -311,7 +311,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1582919522403_926879_1581">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CodeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="CodeEnumMetaClass.ReferenceId" /></summary>

@@ -12,7 +12,7 @@ namespace Mtconnect.ReferenceAgentArchitecture.Printer
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1584929161140_966607_18514">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class XmlPrinterClass : IClass
 	{
 		/// <summary>Constant value for <see cref="XmlPrinterClass.ReferenceId" /></summary>

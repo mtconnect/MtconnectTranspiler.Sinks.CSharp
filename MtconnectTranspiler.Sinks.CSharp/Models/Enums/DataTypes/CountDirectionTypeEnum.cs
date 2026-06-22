@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum CountDirectionTypeEnum
 	{
 		/// <summary>﻿tool life counts up from zero to the maximum.<br /><br /><br /><br />
@@ -41,7 +41,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_CFE5DAF7_7F0E_40ce_B920_5151D846B636">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CountDirectionTypeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="CountDirectionTypeEnumMetaClass.ReferenceId" /></summary>

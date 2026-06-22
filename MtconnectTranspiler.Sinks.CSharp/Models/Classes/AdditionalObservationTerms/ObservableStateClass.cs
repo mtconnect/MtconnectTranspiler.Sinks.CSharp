@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.MTConnectTerms.AdditionalObservationTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_45f01b9_1581816403159_968406_5939">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ObservableStateClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ObservableStateClass.ReferenceId" /></summary>

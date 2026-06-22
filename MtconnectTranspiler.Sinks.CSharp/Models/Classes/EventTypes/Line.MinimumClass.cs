@@ -20,7 +20,7 @@ namespace Mtconnect.ObservationInformationModel.ObservationTypes.EventTypes
 	/// </remarks>
 	[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class LineMinimumClass : IClass
 	{
 		/// <summary>Constant value for <see cref="LineMinimumClass.ReferenceId" /></summary>

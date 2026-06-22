@@ -19,7 +19,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 	/// </remarks>
 	[Obsolete("Deprecated in v1.4 according to https://model.mtconnect.org/#_Version_1.4")]
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class AssetCountClass : IClass
 	{
 		/// <summary>Constant value for <see cref="AssetCountClass.ReferenceId" /></summary>
@@ -105,7 +105,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectDevicesResponseDocum
 				/// <summary>Constant value for <see cref="AssetTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="AssetTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="AssetTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AssetTypeProperty.DefaultValue" /></summary>

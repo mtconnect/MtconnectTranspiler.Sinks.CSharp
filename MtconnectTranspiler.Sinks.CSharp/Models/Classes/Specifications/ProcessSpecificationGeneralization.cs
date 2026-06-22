@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ProcessSpecificationGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="ProcessSpecificationGeneralization.ReferenceId" /></summary>
@@ -109,7 +109,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "SpecificationLimits";
 				/// <summary>Constant value for <see cref="HasSpecificationLimitsPartProperty.DefaultValue" /></summary>
@@ -183,7 +183,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ControlLimits";
 				/// <summary>Constant value for <see cref="HasControlLimitsPartProperty.DefaultValue" /></summary>
@@ -257,7 +257,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Specifications
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "AlarmLimits";
 				/// <summary>Constant value for <see cref="HasAlarmLimitsPartProperty.DefaultValue" /></summary>

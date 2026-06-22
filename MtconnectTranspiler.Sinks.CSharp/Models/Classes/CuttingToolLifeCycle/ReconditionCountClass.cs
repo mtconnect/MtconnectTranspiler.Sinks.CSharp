@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ReconditionCountClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ReconditionCountClass.ReferenceId" /></summary>
@@ -104,7 +104,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <summary>Constant value for <see cref="MaximumCountProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="MaximumCountProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MaximumCountProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MaximumCountProperty.DefaultValue" /></summary>
@@ -179,7 +179,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 				/// <summary>Constant value for <see cref="ValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ValueProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>

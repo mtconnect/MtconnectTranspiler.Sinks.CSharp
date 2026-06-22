@@ -11,7 +11,7 @@ namespace Mtconnect.ObservationInformationModel.Representations
 	/// <summary>﻿This section provides semantic information for the <see cref="Representation">Representation</see> type <see cref="Table">Table</see>.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___2024x_68e0225_1759817482958_638823_2781">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class TablePackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="TablePackage.ReferenceId" /></summary>
