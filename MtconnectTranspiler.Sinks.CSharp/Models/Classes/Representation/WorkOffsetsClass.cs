@@ -13,7 +13,7 @@ namespace Mtconnect.WIP_DeviceExamples.MillW_PER_SmoothG.Representation
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1634045367649_547336_746">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class WorkOffsetsClass : IClass
 	{
 		/// <summary>Constant value for <see cref="WorkOffsetsClass.ReferenceId" /></summary>
@@ -102,7 +102,7 @@ namespace Mtconnect.WIP_DeviceExamples.MillW_PER_SmoothG.Representation
 				/// <summary>Constant value for <see cref="CountProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CountProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CountProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CountProperty.DefaultValue" /></summary>

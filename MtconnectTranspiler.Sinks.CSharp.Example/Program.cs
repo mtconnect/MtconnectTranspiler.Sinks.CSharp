@@ -15,7 +15,7 @@ internal class Program
     private static void Main(string[] args)
     {
         IConfiguration configuration = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
+            .SetBasePath(AppContext.BaseDirectory)
 #if DEBUG
             .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)
 #else
@@ -24,6 +24,12 @@ internal class Program
             .AddEnvironmentVariables()
             .AddCommandLine(args)
             .Build();
+
+        string? configuredOutputPath = configuration["OutputPath"];
+        if (string.IsNullOrWhiteSpace(configuredOutputPath))
+            throw new InvalidOperationException("OutputPath configuration value is required.");
+
+        string outputPath = Path.GetFullPath(configuredOutputPath, AppContext.BaseDirectory);
 
         //setup our DI
         var services = new ServiceCollection()
@@ -48,7 +54,7 @@ internal class Program
                         .AddCodeFormatter("csharp_formatter", new CSharpCodeFormatter())
                     )
                     .ConfigureGenerator((options) => {
-                        options.OutputPath = configuration["OutputPath"];
+                        options.OutputPath = outputPath;
                     });
             })
             .AddScoped<Transpiler>()
@@ -58,6 +64,7 @@ internal class Program
         var logger = serviceProvider.GetService<ILoggerFactory>()
             .CreateLogger<Program>();
         logger.LogDebug("Starting application");
+        logger.LogInformation("Using output path: {OutputPath}", outputPath);
 
         // NOTE: The GitHubRelease can be a reference to a specific tag referring to the version in which to download.
         TranspilerDispatcherOptions? dispatchOptions = null;
@@ -86,8 +93,14 @@ internal class Program
             var task = Task.Run(() => dispatcher.TranspileAsync(tokenSource.Token));
 
 #if DEBUG
-            task = task.ContinueWith((t) => tokenSource.Cancel());
-            Consoul.Wait(cancellationToken: tokenSource.Token);
+            try
+            {
+                task.Wait();
+            }
+            finally
+            {
+                tokenSource.Cancel();
+            }
 #else
             task.Wait();
 #endif

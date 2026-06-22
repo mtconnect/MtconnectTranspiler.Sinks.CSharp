@@ -11,7 +11,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations
 	/// <summary>﻿This section provides semantic information for the <see cref="CoordinateSystem">CoordinateSystem</see> entity.<br /><br />![CoordinateSystem](figures/CoordinateSystem.png "CoordinateSystem"){: width="0.8"}<br /><br />&gt; Note: See <see cref="Configuration Schema Diagrams">Configuration Schema Diagrams</see> for XML schema.<br /><br />![CoordinateSystem Example](figures/CoordinateSystem%20Example.png "CoordinateSystem Example"){: width="0.8"}<br /><br />&gt; Note: See {{lst(coordinatesystem-example)}} for the <i>XML</i> representation of the same example.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579100640484_17380_16262">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class CoordinateSystemsPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="CoordinateSystemsPackage.ReferenceId" /></summary>

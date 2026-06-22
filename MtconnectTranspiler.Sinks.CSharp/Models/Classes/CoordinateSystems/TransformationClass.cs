@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TransformationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TransformationClass.ReferenceId" /></summary>
@@ -104,7 +104,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Translation";
 				/// <summary>Constant value for <see cref="HasTranslationPartProperty.DefaultValue" /></summary>
@@ -178,7 +178,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.CoordinateSystems
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Rotation";
 				/// <summary>Constant value for <see cref="HasRotationPartProperty.DefaultValue" /></summary>

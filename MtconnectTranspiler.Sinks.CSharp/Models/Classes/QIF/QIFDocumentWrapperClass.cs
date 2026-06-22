@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class QIFDocumentWrapperClass : IClass
 	{
 		/// <summary>Constant value for <see cref="QIFDocumentWrapperClass.ReferenceId" /></summary>
@@ -109,7 +109,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="QifDocumentTypeProperty.DefaultValue" /></summary>
@@ -183,7 +183,7 @@ namespace Mtconnect.AssetInformationModel.QIF
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "QIFDocument";
 				/// <summary>Constant value for <see cref="HasQIFDocumentPartProperty.DefaultValue" /></summary>

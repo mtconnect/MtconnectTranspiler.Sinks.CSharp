@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Pallet
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class PalletClass : IClass
 	{
 		/// <summary>Constant value for <see cref="PalletClass.ReferenceId" /></summary>
@@ -114,7 +114,7 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
@@ -189,7 +189,7 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				/// <summary>Constant value for <see cref="PalletIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="PalletIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PalletIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PalletIdProperty.DefaultValue" /></summary>
@@ -264,7 +264,7 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				/// <summary>Constant value for <see cref="PalletNumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="PalletNumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PalletNumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PalletNumberProperty.DefaultValue" /></summary>
@@ -339,7 +339,7 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.DefaultValue" /></summary>
@@ -414,7 +414,7 @@ Common types of pallet include: Process, Warehouse, Shipping, Fixture and Machin
 				/// <summary>Constant value for <see cref="MountingMethodProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MountingMethodProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MountingMethodProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MountingMethodProperty.DefaultValue" /></summary>

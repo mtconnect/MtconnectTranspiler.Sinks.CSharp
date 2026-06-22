@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.Task
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CollaboratorClass : IClass
 	{
 		/// <summary>Constant value for <see cref="CollaboratorClass.ReferenceId" /></summary>
@@ -106,7 +106,7 @@ namespace Mtconnect.AssetInformationModel.Task
 				/// <summary>Constant value for <see cref="CollaboratorIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CollaboratorIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CollaboratorIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CollaboratorIdProperty.DefaultValue" /></summary>
@@ -183,7 +183,7 @@ Examples include `ROBOT`, `CNC`, `CMM` and `BUFFER`.&#10;
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
@@ -258,7 +258,7 @@ Examples include `ROBOT`, `CNC`, `CMM` and `BUFFER`.&#10;
 				/// <summary>Constant value for <see cref="CollaboratorDeviceUuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="CollaboratorDeviceUuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CollaboratorDeviceUuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CollaboratorDeviceUuidProperty.DefaultValue" /></summary>
@@ -333,7 +333,7 @@ Examples include `ROBOT`, `CNC`, `CMM` and `BUFFER`.&#10;
 				/// <summary>Constant value for <see cref="RequirementIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="RequirementIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="RequirementIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RequirementIdProperty.DefaultValue" /></summary>

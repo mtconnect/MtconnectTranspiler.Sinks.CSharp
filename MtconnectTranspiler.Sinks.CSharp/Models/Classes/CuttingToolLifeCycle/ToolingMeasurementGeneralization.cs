@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ToolingMeasurementGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="ToolingMeasurementGeneralization.ReferenceId" /></summary>
@@ -113,7 +113,7 @@ See {{package(Cutting Tool Measurement Subtypes)}} and {{package(Cutting Item Me
 				/// <summary>Constant value for <see cref="CodeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CodeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CodeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CodeProperty.DefaultValue" /></summary>

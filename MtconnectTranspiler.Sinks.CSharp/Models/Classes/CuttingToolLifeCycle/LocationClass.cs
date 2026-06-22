@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class LocationClass : IClass
 	{
 		/// <summary>Constant value for <see cref="LocationClass.ReferenceId" /></summary>
@@ -116,7 +116,7 @@ If the pot occupies the first or last location, a rollover to the beginning or t
 				/// <summary>Constant value for <see cref="NegativeOverlapProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="NegativeOverlapProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="NegativeOverlapProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="NegativeOverlapProperty.DefaultValue" /></summary>
@@ -191,7 +191,7 @@ If the pot occupies the first or last location, a rollover to the beginning or t
 				/// <summary>Constant value for <see cref="PositiveOverlapProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="PositiveOverlapProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PositiveOverlapProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PositiveOverlapProperty.DefaultValue" /></summary>
@@ -268,7 +268,7 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
@@ -343,7 +343,7 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 				/// <summary>Constant value for <see cref="TurretProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="TurretProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TurretProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TurretProperty.DefaultValue" /></summary>
@@ -418,7 +418,7 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 				/// <summary>Constant value for <see cref="ToolMagazineProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ToolMagazineProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ToolMagazineProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ToolMagazineProperty.DefaultValue" /></summary>
@@ -493,7 +493,7 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 				/// <summary>Constant value for <see cref="ToolBarProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ToolBarProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ToolBarProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ToolBarProperty.DefaultValue" /></summary>
@@ -568,7 +568,7 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 				/// <summary>Constant value for <see cref="ToolRackProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ToolRackProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ToolRackProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ToolRackProperty.DefaultValue" /></summary>
@@ -643,7 +643,7 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 				/// <summary>Constant value for <see cref="AutomaticToolChangerProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="AutomaticToolChangerProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="AutomaticToolChangerProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="AutomaticToolChangerProperty.DefaultValue" /></summary>
@@ -717,7 +717,7 @@ When a `POT` or `STATION` type is used, {{property(Location::value)}}**MUST** be
 				/// <summary>Constant value for <see cref="ValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ValueProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>

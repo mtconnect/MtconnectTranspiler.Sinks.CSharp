@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum ExceptionCodeEnum
 	{
 		/// <summary>﻿scope value type is mismatched.<br /><br />&gt; Note: For example, a <c>string</c> instead of an <c>Enumeration</c> value.<br /><br /><br />
@@ -86,7 +86,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___2024x_68e0225_1744802385717_420523_23719">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ExceptionCodeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="ExceptionCodeEnumMetaClass.ReferenceId" /></summary>

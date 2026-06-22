@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Components.ComponentTypes.ComponentOr
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ControllersClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ControllersClass.ReferenceId" /></summary>

@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.Process.Target
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TargetClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TargetClass.ReferenceId" /></summary>

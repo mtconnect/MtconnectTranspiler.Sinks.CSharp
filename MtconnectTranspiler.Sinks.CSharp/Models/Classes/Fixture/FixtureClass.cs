@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Fixture
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class FixtureClass : IClass
 	{
 		/// <summary>Constant value for <see cref="FixtureClass.ReferenceId" /></summary>
@@ -110,7 +110,7 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				/// <summary>Constant value for <see cref="FixtureIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="FixtureIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="FixtureIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FixtureIdProperty.DefaultValue" /></summary>
@@ -185,7 +185,7 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				/// <summary>Constant value for <see cref="FixtureNumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="FixtureNumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="FixtureNumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="FixtureNumberProperty.DefaultValue" /></summary>
@@ -260,7 +260,7 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ClampingMethodProperty.DefaultValue" /></summary>
@@ -335,7 +335,7 @@ namespace Mtconnect.AssetInformationModel.Fixture
 				/// <summary>Constant value for <see cref="MountingMethodProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="MountingMethodProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="MountingMethodProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="MountingMethodProperty.DefaultValue" /></summary>

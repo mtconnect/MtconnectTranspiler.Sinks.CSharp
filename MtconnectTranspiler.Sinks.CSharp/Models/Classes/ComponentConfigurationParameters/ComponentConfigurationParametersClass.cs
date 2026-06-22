@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ComponentConfigurationParametersClass : IClass
 	{
 		/// <summary>Constant value for <see cref="ComponentConfigurationParametersClass.ReferenceId" /></summary>
@@ -107,7 +107,7 @@ namespace Mtconnect.AssetInformationModel.ComponentConfigurationParameters
 				/// <summary>Constant value for <see cref="HasParameterSetPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasParameterSetPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasParameterSetPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ParameterSets";
 				/// <summary>Constant value for <see cref="HasParameterSetPartProperty.DefaultValue" /></summary>

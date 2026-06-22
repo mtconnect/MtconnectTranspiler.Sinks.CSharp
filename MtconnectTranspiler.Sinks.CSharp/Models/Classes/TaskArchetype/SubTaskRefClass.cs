@@ -12,7 +12,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___2024x_68e0225_1759816184988_138247_660">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class SubTaskRefClass : IClass
 	{
 		/// <summary>Constant value for <see cref="SubTaskRefClass.ReferenceId" /></summary>
@@ -251,7 +251,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 				/// <summary>Constant value for <see cref="ParallelProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ParallelProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ParallelProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ParallelProperty.DefaultValue" /></summary>
@@ -326,7 +326,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 				/// <summary>Constant value for <see cref="GroupProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="GroupProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="GroupProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="GroupProperty.DefaultValue" /></summary>
@@ -401,7 +401,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 				/// <summary>Constant value for <see cref="OrderProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="OrderProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="OrderProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OrderProperty.DefaultValue" /></summary>
@@ -476,7 +476,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 				/// <summary>Constant value for <see cref="OptionalProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="OptionalProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="OptionalProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="OptionalProperty.DefaultValue" /></summary>
@@ -550,7 +550,7 @@ namespace Mtconnect.AssetInformationModel.Task.TaskArchetype
 				/// <summary>Constant value for <see cref="ValueProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ValueProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ValueProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ValueProperty.DefaultValue" /></summary>

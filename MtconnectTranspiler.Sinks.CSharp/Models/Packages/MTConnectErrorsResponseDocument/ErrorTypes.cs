@@ -11,7 +11,7 @@ namespace Mtconnect.Fundamentals.MTConnectProtocol.MTConnectErrorsResponseDocume
 	/// <summary>﻿This section provides semantic information for the types of {block(Error)}}.<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___2024x_68e0225_1744886534332_597743_23496">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class ErrorTypesPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="ErrorTypesPackage.ReferenceId" /></summary>

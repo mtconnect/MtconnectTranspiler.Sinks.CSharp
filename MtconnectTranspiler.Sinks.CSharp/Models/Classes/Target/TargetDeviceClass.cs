@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Process.Target
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TargetDeviceClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TargetDeviceClass.ReferenceId" /></summary>
@@ -110,7 +110,7 @@ namespace Mtconnect.AssetInformationModel.Process.Target
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DeviceUuidProperty.DefaultValue" /></summary>

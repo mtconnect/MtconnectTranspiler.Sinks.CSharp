@@ -13,7 +13,7 @@ namespace Mtconnect.Glossary.XMLTerms
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Structure___19_0_3_68e0225_1623669632303_353398_16887">model.mtconnect.org</seealso> for more information.
 	/// </summary>
 	
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class XMLDocumentGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="XMLDocumentGeneralization.ReferenceId" /></summary>
@@ -105,7 +105,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentHeaderProperty.DefaultValue" /></summary>
@@ -179,7 +179,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasDocumentBodyProperty.DefaultValue" /></summary>
@@ -253,7 +253,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasNamespaceProperty.DefaultValue" /></summary>
@@ -327,7 +327,7 @@ namespace Mtconnect.Glossary.XMLTerms
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasXmlSchemaProperty.DefaultValue" /></summary>

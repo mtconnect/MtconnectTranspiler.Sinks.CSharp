@@ -10,7 +10,7 @@ namespace Mtconnect.InterfaceInteractionModel
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_91b028d_1579551273276_491529_4448">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class SignalsPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="SignalsPackage.ReferenceId" /></summary>

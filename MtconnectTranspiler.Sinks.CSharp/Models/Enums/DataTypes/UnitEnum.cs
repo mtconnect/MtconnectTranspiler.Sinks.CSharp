@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum UnitEnum
 	{
 		/// <summary>﻿electric current in ampere.<br /><br /><br />
@@ -495,12 +495,21 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		MILLIGRAM_PER_LITER,
+		/// <summary>﻿length in meter<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		METER,
 	}
 
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration__EAID_8FEC81E4_8E1F_4f45_820B_F9F25DD83F9A">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class UnitEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="UnitEnumMetaClass.ReferenceId" /></summary>
@@ -595,6 +604,7 @@ namespace Mtconnect.DataTypes
 		SQUARE_MILLIMETER,
 		OHM_METER,
 		MILLIGRAM_PER_LITER,
+		METER,
 		};
 
 		private AMPEREValue _AMPERE;
@@ -2757,6 +2767,47 @@ Space delimited list of three floating point numbers.&#10;
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="MILLIGRAM_PER_LITERValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;concentration of a dissolved substance in milligram per liter&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private METERValue _METER;
+		/// <inheritdoc cref="METERValue" path="/summary" />
+		public METERValue METER => _METER ?? (_METER = new METERValue());
+
+		/// <summary>﻿length in meter<br /><br /><br />
+		/// Value for UnitEnum.<br/>
+		/// <br/>See also <seealso cref="UnitEnum">UnitEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class METERValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="METERValue.Name" /></summary>
+			public const string NAME = "METER";
+			/// <summary>Constant value for <see cref="METERValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.8";
+			/// <summary>Constant value for <see cref="METERValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="METERValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;length in meter&#10;
 ";
 
 			/// <inheritdoc />

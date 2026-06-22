@@ -17,7 +17,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.Motion
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class MotionClass : IClass
 	{
 		/// <summary>Constant value for <see cref="MotionClass.ReferenceId" /></summary>
@@ -114,7 +114,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 				/// <summary>Constant value for <see cref="ActuationProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ActuationProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ActuationProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ActuationProperty.DefaultValue" /></summary>
@@ -189,7 +189,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="CoordinateSystemIdRefProperty.DefaultValue" /></summary>
@@ -264,7 +264,7 @@ At most only one of {{block(Origin)}} or {{block(Transformation)}} **MUST** be d
 				/// <summary>Constant value for <see cref="IdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="IdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="IdProperty.DefaultValue" /></summary>
@@ -341,7 +341,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="ParentIdRefProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ParentIdRefProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ParentIdRefProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ParentIdRefProperty.DefaultValue" /></summary>
@@ -416,7 +416,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="TypeProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="TypeProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="TypeProperty.DefaultValue" /></summary>
@@ -490,7 +490,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Axis";
 				/// <summary>Constant value for <see cref="HasAxisPartProperty.DefaultValue" /></summary>
@@ -564,7 +564,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="HasOriginPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasOriginPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasOriginPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Origin";
 				/// <summary>Constant value for <see cref="HasOriginPartProperty.DefaultValue" /></summary>
@@ -638,7 +638,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Transformation";
 				/// <summary>Constant value for <see cref="HasTransformationPartProperty.DefaultValue" /></summary>
@@ -713,7 +713,7 @@ The kinematic chain connects all components using the parent relations. All moti
 				/// <summary>Constant value for <see cref="DescriptionProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="DescriptionProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="DescriptionProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="DescriptionProperty.DefaultValue" /></summary>

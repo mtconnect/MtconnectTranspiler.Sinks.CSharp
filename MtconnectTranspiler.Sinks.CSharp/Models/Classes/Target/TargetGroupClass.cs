@@ -18,7 +18,7 @@ namespace Mtconnect.AssetInformationModel.Process.Target
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class TargetGroupClass : IClass
 	{
 		/// <summary>Constant value for <see cref="TargetGroupClass.ReferenceId" /></summary>
@@ -184,7 +184,7 @@ namespace Mtconnect.AssetInformationModel.Process.Target
 				/// <summary>Constant value for <see cref="GroupIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="GroupIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="GroupIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="GroupIdProperty.DefaultValue" /></summary>

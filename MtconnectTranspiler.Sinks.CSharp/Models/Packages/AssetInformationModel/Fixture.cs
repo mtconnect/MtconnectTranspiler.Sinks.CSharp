@@ -11,7 +11,7 @@ namespace Mtconnect.AssetInformationModel
 	/// <summary>﻿This section provides semantic information for the <see cref="Fixture">Fixture</see> model.<br /><br />![Fixture](figures/Fixture.png "Files"){: width="0.8"}<br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___2024x_68e0225_1727795800350_745933_24127">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class FixturePackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="FixturePackage.ReferenceId" /></summary>

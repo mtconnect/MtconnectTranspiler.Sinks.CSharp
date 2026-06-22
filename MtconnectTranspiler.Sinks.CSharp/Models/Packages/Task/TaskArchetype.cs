@@ -11,7 +11,7 @@ namespace Mtconnect.AssetInformationModel.Task
 	/// <summary>﻿This section provides semantic information for the <see cref="TaskArchetype">TaskArchetype</see> model.<br /><br /><br /><br />
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___2024x_3_3870182_1764673009363_48126_1567">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class TaskArchetypePackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="TaskArchetypePackage.ReferenceId" /></summary>

@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.CuttingTool.CuttingToolLifeCycle
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class CuttingToolLifeCycleClass : IClass
 	{
 		/// <summary>Constant value for <see cref="CuttingToolLifeCycleClass.ReferenceId" /></summary>
@@ -115,7 +115,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ConnectionCodeMachineSideProperty.DefaultValue" /></summary>
@@ -190,7 +190,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolGroupProperty.DefaultValue" /></summary>
@@ -265,7 +265,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ProgramToolNumberProperty.DefaultValue" /></summary>
@@ -339,7 +339,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ProcessFeedRate";
 				/// <summary>Constant value for <see cref="HasProcessFeedRatePartProperty.DefaultValue" /></summary>
@@ -487,7 +487,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ProcessSpindleSpeed";
 				/// <summary>Constant value for <see cref="HasProcessSpindleSpeedPartProperty.DefaultValue" /></summary>
@@ -561,7 +561,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "CutterStatus";
 				/// <summary>Constant value for <see cref="HasCutterStatusPartProperty.DefaultValue" /></summary>
@@ -783,7 +783,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "ReconditionCount";
 				/// <summary>Constant value for <see cref="HasReconditionCountPartProperty.DefaultValue" /></summary>
@@ -857,7 +857,7 @@ This data is provided by various pieces of equipment (i.e. machine tool, presett
 				/// <summary>Constant value for <see cref="HasLocationPartProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasLocationPartProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasLocationPartProperty.Association" /></summary>
 				public const string ASSOCIATION = "Location";
 				/// <summary>Constant value for <see cref="HasLocationPartProperty.DefaultValue" /></summary>

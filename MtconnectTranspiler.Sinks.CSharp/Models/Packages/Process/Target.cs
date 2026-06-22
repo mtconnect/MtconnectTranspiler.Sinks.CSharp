@@ -11,7 +11,7 @@ namespace Mtconnect.AssetInformationModel.Process
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___2024x_68e0225_1759816962513_799082_2496">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class TargetPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="TargetPackage.ReferenceId" /></summary>

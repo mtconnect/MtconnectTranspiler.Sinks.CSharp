@@ -10,7 +10,7 @@ namespace Mtconnect.Imports.UnitImports.BasicUnits
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Package___19_0_3_45f01b9_1579105790696_634992_162827">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public class BasicLuminousIntensityPackage : IPackage
 	{
 		/// <summary>Constant value for <see cref="BasicLuminousIntensityPackage.ReferenceId" /></summary>

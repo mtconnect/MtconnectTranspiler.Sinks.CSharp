@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum DataItemSubTypeEnum
 	{
 		/// <summary>﻿relating to or derived in the simplest manner from the fundamental units or measurements.<br /><br /><br />
@@ -1107,12 +1107,30 @@ namespace Mtconnect.DataTypes
 		/// </remarks>
 
 		LAYER,
+		/// <summary>﻿surface representing the arithmetic mean of all sea levels at a specific location over a defined period<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		MEAN_SEA_LEVEL,
+		/// <summary>﻿physical interface between the Earth's surface and the atmosphere at a specific horizontal coordinate<br /><br /><br />
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		GROUND_LEVEL,
 	}
 
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___19_0_3_45f01b9_1579563592155_977172_22064">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class DataItemSubTypeEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="DataItemSubTypeEnumMetaClass.ReferenceId" /></summary>
@@ -1275,6 +1293,8 @@ namespace Mtconnect.DataTypes
 		PECK,
 		CUT,
 		LAYER,
+		MEAN_SEA_LEVEL,
+		GROUND_LEVEL,
 		};
 
 		private ABSOLUTEValue _ABSOLUTE;
@@ -6230,6 +6250,88 @@ namespace Mtconnect.DataTypes
 			public const string DEPRECATED_VERSION = "";
 			/// <summary>Constant value for <see cref="LAYERValue.Summary" /></summary>
 			public const string SUMMARY = @"&#10;&#10;&#10;sheet, quantity, or thickness of material, typically one of several, covering a surface or body&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private MEAN_SEA_LEVELValue _MEAN_SEA_LEVEL;
+		/// <inheritdoc cref="MEAN_SEA_LEVELValue" path="/summary" />
+		public MEAN_SEA_LEVELValue MEAN_SEA_LEVEL => _MEAN_SEA_LEVEL ?? (_MEAN_SEA_LEVEL = new MEAN_SEA_LEVELValue());
+
+		/// <summary>﻿surface representing the arithmetic mean of all sea levels at a specific location over a defined period<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class MEAN_SEA_LEVELValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="MEAN_SEA_LEVELValue.Name" /></summary>
+			public const string NAME = "MEAN_SEA_LEVEL";
+			/// <summary>Constant value for <see cref="MEAN_SEA_LEVELValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.8";
+			/// <summary>Constant value for <see cref="MEAN_SEA_LEVELValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="MEAN_SEA_LEVELValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;surface representing the arithmetic mean of all sea levels at a specific location over a defined period&#10;
+";
+
+			/// <inheritdoc />
+			public string Name => NAME;
+			
+			/// <inheritdoc />
+			public object Value => null; // TODO: Add value, based on type.
+			
+			/// <inheritdoc />
+			public string NormativeVersion => NORMATIVE_VERSION;
+			
+			/// <inheritdoc />
+			public string DeprecatedVersion => DEPRECATED_VERSION;
+			
+			/// <inheritdoc />
+			public string Summary => SUMMARY;
+		}
+		private GROUND_LEVELValue _GROUND_LEVEL;
+		/// <inheritdoc cref="GROUND_LEVELValue" path="/summary" />
+		public GROUND_LEVELValue GROUND_LEVEL => _GROUND_LEVEL ?? (_GROUND_LEVEL = new GROUND_LEVELValue());
+
+		/// <summary>﻿physical interface between the Earth's surface and the atmosphere at a specific horizontal coordinate<br /><br /><br />
+		/// Value for DataItemSubTypeEnum.<br/>
+		/// <br/>See also <seealso cref="DataItemSubTypeEnum">DataItemSubTypeEnum</seealso>
+		/// </summary>
+		/// <remarks>
+		/// <list type="bullet">
+		/// <item><b>Introduced</b>: <see href="https://model.mtconnect.org/#_Version_1.0">v1.0</see></item>
+		/// </list>
+		/// </remarks>
+
+		public sealed class GROUND_LEVELValue : IEnumInstance
+		{
+			/// <summary>Constant value for <see cref="GROUND_LEVELValue.Name" /></summary>
+			public const string NAME = "GROUND_LEVEL";
+			/// <summary>Constant value for <see cref="GROUND_LEVELValue.NormativeVersion" /></summary>
+			public const string NORMATIVE_VERSION = "2.8";
+			/// <summary>Constant value for <see cref="GROUND_LEVELValue.DeprecatedVersion" /></summary>
+			public const string DEPRECATED_VERSION = "";
+			/// <summary>Constant value for <see cref="GROUND_LEVELValue.Summary" /></summary>
+			public const string SUMMARY = @"&#10;&#10;&#10;physical interface between the Earth's surface and the atmosphere at a specific horizontal coordinate&#10;
 ";
 
 			/// <inheritdoc />

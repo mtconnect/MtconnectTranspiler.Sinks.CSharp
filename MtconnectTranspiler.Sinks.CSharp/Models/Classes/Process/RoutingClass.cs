@@ -17,7 +17,7 @@ namespace Mtconnect.AssetInformationModel.Process
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class RoutingClass : IClass
 	{
 		/// <summary>Constant value for <see cref="RoutingClass.ReferenceId" /></summary>
@@ -105,7 +105,7 @@ namespace Mtconnect.AssetInformationModel.Process
 				/// <summary>Constant value for <see cref="PrecedenceProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="PrecedenceProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="PrecedenceProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="PrecedenceProperty.DefaultValue" /></summary>
@@ -180,7 +180,7 @@ namespace Mtconnect.AssetInformationModel.Process
 				/// <summary>Constant value for <see cref="RoutingIdProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="RoutingIdProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x;MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x;MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="RoutingIdProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="RoutingIdProperty.DefaultValue" /></summary>
@@ -254,7 +254,7 @@ namespace Mtconnect.AssetInformationModel.Process
 				/// <summary>Constant value for <see cref="HasProcessStepProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="HasProcessStepProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="HasProcessStepProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="HasProcessStepProperty.DefaultValue" /></summary>

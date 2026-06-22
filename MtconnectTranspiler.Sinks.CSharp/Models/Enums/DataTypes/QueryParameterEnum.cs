@@ -15,7 +15,7 @@ namespace Mtconnect.DataTypes
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public enum QueryParameterEnum
 	{
 		/// <summary>﻿See <c>device</c> parameter of <see cref="Agent::Operation">Agent::Operation</see> types.<br /><br /><br />
@@ -86,7 +86,7 @@ namespace Mtconnect.DataTypes
 	/// <summary>﻿
 	/// <br/>Visit <seealso href="https://model.mtconnect.org/#Enumeration___2024x_68e0225_1744716359774_334841_23505">model.mtconnect.org</seealso> for more information.
 	/// </summary>
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class QueryParameterEnumMetaClass : IEnum
 	{
 		/// <summary>Constant value for <see cref="QueryParameterEnumMetaClass.ReferenceId" /></summary>

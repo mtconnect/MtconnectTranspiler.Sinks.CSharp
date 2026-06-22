@@ -18,7 +18,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 	/// </list>
 	/// </remarks>
 
-	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.6.0.0")]
+	[GeneratedCode("MtconnectTranspiler.Sinks.CSharp", "2.8.0.0")]
 	public sealed class ScaleDataSetGeneralization : IClass
 	{
 		/// <summary>Constant value for <see cref="ScaleDataSetGeneralization.ReferenceId" /></summary>
@@ -110,7 +110,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				/// <summary>Constant value for <see cref="XProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="XProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="XProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="XProperty.DefaultValue" /></summary>
@@ -185,7 +185,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				/// <summary>Constant value for <see cref="YProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="YProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="YProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="YProperty.DefaultValue" /></summary>
@@ -260,7 +260,7 @@ namespace Mtconnect.DeviceInformationModel.Configurations.SolidModel
 				/// <summary>Constant value for <see cref="ZProperty.Aggregation" /></summary>
 				public const string AGGREGATION = "composite";
 				/// <summary>Constant value for <see cref="ZProperty.Extension" /></summary>
-				public const string EXTENSION = "MagicDraw UML 2024x";
+				public const string EXTENSION = "MagicDraw UML 2026x";
 				/// <summary>Constant value for <see cref="ZProperty.Association" /></summary>
 				public const string ASSOCIATION = "";
 				/// <summary>Constant value for <see cref="ZProperty.DefaultValue" /></summary>
